@@ -1,0 +1,53 @@
+/*
+* Copyright (c) 2002-2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  ?Description
+*
+*/
+
+#include <platform_paths.hrh>
+#include "../../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+
+DEFAULT
+
+PRJ_EXPORTS
+../rom/DownloadMgrUiLib.iby			  CORE_MW_LAYER_IBY_EXPORT_PATH(DownloadMgrUiLib.iby)
+../rom/DownloadMgrUiLibResources.iby  LANGUAGE_MW_LAYER_IBY_EXPORT_PATH(DownloadMgrUiLibResources.iby)
+../loc/DownloadMgrUiLib.loc			  MW_LAYER_LOC_EXPORT_PATH(DownloadMgrUiLib.loc)
+
+#ifdef __SERIES60_32__
+
+PRJ_MMPFILES
+gnumakefile DownloadMgrUiLibIconsdc.mk
+DownloadMgrUiLib.mmp
+
+#else
+
+PRJ_EXTENSIONS
+START EXTENSION s60/mifconv
+OPTION TARGETFILE downloadmgruilib.mif
+OPTION HEADERFILE downloadmgruilib.mbg
+OPTION SOURCES 		-c8,1 qgn_menu_unknown_lst -c8,1 qgn_indi_paused -c8,1 qgn_indi_browser_mmc_add
+END
+
+PRJ_MMPFILES
+DownloadMgrUiLib.mmp
+
+#endif
+
+PRJ_TESTMMPFILES
+
+//  End of File  
+

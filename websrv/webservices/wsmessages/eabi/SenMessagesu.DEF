@@ -1,0 +1,298 @@
+EXPORTS
+	_ZN14CSenSoapFault210ConstructLER14TXmlEngElement @ 1 NONAME
+	_ZN14CSenSoapFault210ConstructLER14TXmlEngElementR12RSenDocument @ 2 NONAME
+	_ZN14CSenSoapFault210ConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 3 NONAME
+	_ZN14CSenSoapFault210FaultActorEv @ 4 NONAME
+	_ZN14CSenSoapFault211FaultStringEv @ 5 NONAME
+	_ZN14CSenSoapFault212FaultSubcodeEv @ 6 NONAME
+	_ZN14CSenSoapFault24NewLER14TXmlEngElement @ 7 NONAME
+	_ZN14CSenSoapFault24NewLER14TXmlEngElementR12RSenDocument @ 8 NONAME
+	_ZN14CSenSoapFault24NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 9 NONAME
+	_ZN14CSenSoapFault26DetailEv @ 10 NONAME
+	_ZN14CSenSoapFault29FaultCodeEv @ 11 NONAME
+	_ZN14CSenSoapFault2C1Ev @ 12 NONAME
+	_ZN14CSenSoapFault2C2Ev @ 13 NONAME
+	_ZN14CSenSoapFault2D0Ev @ 14 NONAME
+	_ZN14CSenSoapFault2D1Ev @ 15 NONAME
+	_ZN14CSenSoapFault2D2Ev @ 16 NONAME
+	_ZN15CSenMessageBase14BaseConstructLEv @ 17 NONAME
+	_ZN15CSenMessageBase4NewLER9CSenChunk @ 18 NONAME
+	_ZN15CSenMessageBase5NewLCER9CSenChunk @ 19 NONAME
+	_ZN15CSenMessageBaseC1ER9CSenChunk @ 20 NONAME
+	_ZN15CSenMessageBaseC2ER9CSenChunk @ 21 NONAME
+	_ZN15CSenMessageBaseD0Ev @ 22 NONAME
+	_ZN15CSenMessageBaseD1Ev @ 23 NONAME
+	_ZN15CSenMessageBaseD2Ev @ 24 NONAME
+	_ZN16CSenSoapMessage212ParseHeaderLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEE @ 25 NONAME
+	_ZN16CSenSoapMessage214BaseConstructLE12TSOAPVersion @ 26 NONAME
+	_ZN16CSenSoapMessage214BaseConstructLE12TSOAPVersionRK6TDesC8 @ 27 NONAME
+	_ZN16CSenSoapMessage214BaseConstructLER18MSenMessageContext @ 28 NONAME
+	_ZN16CSenSoapMessage214BaseConstructLER18MSenMessageContext12TSOAPVersion @ 29 NONAME
+	_ZN16CSenSoapMessage214BaseConstructLER18MSenMessageContext12TSOAPVersionRK6TDesC8 @ 30 NONAME
+	_ZN16CSenSoapMessage214BaseConstructLEv @ 31 NONAME
+	_ZN16CSenSoapMessage217AddSecurityTokenLERK6TDesC8 @ 32 NONAME
+	_ZN16CSenSoapMessage218SetSecurityHeaderLERK6TDesC8 @ 33 NONAME
+	_ZN16CSenSoapMessage219NewSecurityHeaderLCEPK6TDesC812RSenDocument14TXmlEngElement @ 34 NONAME
+	_ZN16CSenSoapMessage24NewLE12TSOAPVersion @ 35 NONAME
+	_ZN16CSenSoapMessage24NewLE12TSOAPVersionRK6TDesC8 @ 36 NONAME
+	_ZN16CSenSoapMessage24NewLER18MSenMessageContext @ 37 NONAME
+	_ZN16CSenSoapMessage24NewLER18MSenMessageContext12TSOAPVersion @ 38 NONAME
+	_ZN16CSenSoapMessage24NewLER18MSenMessageContext12TSOAPVersionRK6TDesC8 @ 39 NONAME
+	_ZN16CSenSoapMessage24NewLEv @ 40 NONAME
+	_ZN16CSenSoapMessage24TypeEv @ 41 NONAME
+	_ZN16CSenSoapMessage25NewLCE12TSOAPVersion @ 42 NONAME
+	_ZN16CSenSoapMessage25NewLCE12TSOAPVersionRK6TDesC8 @ 43 NONAME
+	_ZN16CSenSoapMessage25NewLCER18MSenMessageContext @ 44 NONAME
+	_ZN16CSenSoapMessage25NewLCER18MSenMessageContext12TSOAPVersion @ 45 NONAME
+	_ZN16CSenSoapMessage25NewLCER18MSenMessageContext12TSOAPVersionRK6TDesC8 @ 46 NONAME
+	_ZN16CSenSoapMessage25NewLCEv @ 47 NONAME
+	_ZN16CSenSoapMessage2C1Ev @ 48 NONAME
+	_ZN16CSenSoapMessage2C2Ev @ 49 NONAME
+	_ZN16CSenSoapMessage2D0Ev @ 50 NONAME
+	_ZN16CSenSoapMessage2D1Ev @ 51 NONAME
+	_ZN16CSenSoapMessage2D2Ev @ 52 NONAME
+	_ZN17CSenSoapEnvelope210AddHeaderLE14TXmlEngElement @ 53 NONAME
+	_ZN17CSenSoapEnvelope210PropertiesEv @ 54 NONAME
+	_ZN17CSenSoapEnvelope210SetContextEP18MSenMessageContext @ 55 NONAME
+	_ZN17CSenSoapEnvelope210SoapActionEv @ 56 NONAME
+	_ZN17CSenSoapEnvelope211SoapVersionEv @ 57 NONAME
+	_ZN17CSenSoapEnvelope212DetachFaultLEv @ 58 NONAME
+	_ZN17CSenSoapEnvelope212IsSafeToCastEN11MSenMessage6TClassE @ 59 NONAME
+	_ZN17CSenSoapEnvelope212ParseHeaderLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEE @ 60 NONAME
+	_ZN17CSenSoapEnvelope213BodyAsStringLEv @ 61 NONAME
+	_ZN17CSenSoapEnvelope213OnEndElementLERKN3Xml8RTagInfoEi @ 62 NONAME
+	_ZN17CSenSoapEnvelope213SetPropertiesEP14MSenProperties @ 63 NONAME
+	_ZN17CSenSoapEnvelope214BaseConstructLE12TSOAPVersion @ 64 NONAME
+	_ZN17CSenSoapEnvelope214BaseConstructLER18MSenMessageContext @ 65 NONAME
+	_ZN17CSenSoapEnvelope214BaseConstructLER18MSenMessageContext12TSOAPVersion @ 66 NONAME
+	_ZN17CSenSoapEnvelope214BaseConstructLEv @ 67 NONAME
+	_ZN17CSenSoapEnvelope214SetSoapActionLERK6TDesC8 @ 68 NONAME
+	_ZN17CSenSoapEnvelope215OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 69 NONAME
+	_ZN17CSenSoapEnvelope219CreateBodyFragmentLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 70 NONAME
+	_ZN17CSenSoapEnvelope24NewLER18MSenMessageContext @ 71 NONAME
+	_ZN17CSenSoapEnvelope24NewLEv @ 72 NONAME
+	_ZN17CSenSoapEnvelope24TypeEv @ 73 NONAME
+	_ZN17CSenSoapEnvelope25BodyLEv @ 74 NONAME
+	_ZN17CSenSoapEnvelope25NewLCER18MSenMessageContext @ 75 NONAME
+	_ZN17CSenSoapEnvelope25NewLCEv @ 76 NONAME
+	_ZN17CSenSoapEnvelope25TxnIdEv @ 77 NONAME
+	_ZN17CSenSoapEnvelope26FaultLEv @ 78 NONAME
+	_ZN17CSenSoapEnvelope27ContextEv @ 79 NONAME
+	_ZN17CSenSoapEnvelope27HasBodyEv @ 80 NONAME
+	_ZN17CSenSoapEnvelope27HeaderLEv @ 81 NONAME
+	_ZN17CSenSoapEnvelope27IsFaultEv @ 82 NONAME
+	_ZN17CSenSoapEnvelope28SetBodyLE14TXmlEngElement @ 83 NONAME
+	_ZN17CSenSoapEnvelope28SetBodyLERK6TDesC8 @ 84 NONAME
+	_ZN17CSenSoapEnvelope29DirectionEv @ 85 NONAME
+	_ZN17CSenSoapEnvelope29HasHeaderEv @ 86 NONAME
+	_ZN17CSenSoapEnvelope2D0Ev @ 87 NONAME
+	_ZN17CSenSoapEnvelope2D1Ev @ 88 NONAME
+	_ZN17CSenSoapEnvelope2D2Ev @ 89 NONAME
+	_ZN19CSenSoapMessageDom219CreateBodyFragmentLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 90 NONAME
+	_ZN19CSenSoapMessageDom24NewLE12TSOAPVersion @ 91 NONAME
+	_ZN19CSenSoapMessageDom24NewLE12TSOAPVersionRK6TDesC8 @ 92 NONAME
+	_ZN19CSenSoapMessageDom24NewLER18MSenMessageContext @ 93 NONAME
+	_ZN19CSenSoapMessageDom24NewLER18MSenMessageContext12TSOAPVersion @ 94 NONAME
+	_ZN19CSenSoapMessageDom24NewLER18MSenMessageContext12TSOAPVersionRK6TDesC8 @ 95 NONAME
+	_ZN19CSenSoapMessageDom24NewLEv @ 96 NONAME
+	_ZN19CSenSoapMessageDom24TypeEv @ 97 NONAME
+	_ZN19CSenSoapMessageDom25NewLCE12TSOAPVersion @ 98 NONAME
+	_ZN19CSenSoapMessageDom25NewLCE12TSOAPVersionRK6TDesC8 @ 99 NONAME
+	_ZN19CSenSoapMessageDom25NewLCER18MSenMessageContext @ 100 NONAME
+	_ZN19CSenSoapMessageDom25NewLCER18MSenMessageContext12TSOAPVersion @ 101 NONAME
+	_ZN19CSenSoapMessageDom25NewLCER18MSenMessageContext12TSOAPVersionRK6TDesC8 @ 102 NONAME
+	_ZN19CSenSoapMessageDom25NewLCEv @ 103 NONAME
+	_ZN19CSenSoapMessageDom2C1Ev @ 104 NONAME
+	_ZN19CSenSoapMessageDom2C2Ev @ 105 NONAME
+	_ZN19CSenSoapMessageDom2D0Ev @ 106 NONAME
+	_ZN19CSenSoapMessageDom2D1Ev @ 107 NONAME
+	_ZN19CSenSoapMessageDom2D2Ev @ 108 NONAME
+	_ZN21CSenWsSecurityHeader210TimestampLERK6TDesC8RP6HBufC8 @ 109 NONAME
+	_ZN21CSenWsSecurityHeader210TimestampLERK6TDesC8S2_RP6HBufC8 @ 110 NONAME
+	_ZN21CSenWsSecurityHeader211XmlNsPrefixEv @ 111 NONAME
+	_ZN21CSenWsSecurityHeader214BaseConstructLE12RSenDocument14TXmlEngElement @ 112 NONAME
+	_ZN21CSenWsSecurityHeader214BaseConstructLERK6TDesC812RSenDocument14TXmlEngElement @ 113 NONAME
+	_ZN21CSenWsSecurityHeader214BaseConstructLERK6TDesC8S2_12RSenDocument14TXmlEngElement @ 114 NONAME
+	_ZN21CSenWsSecurityHeader214UsernameTokenLER20CSenIdentityProvider @ 115 NONAME
+	_ZN21CSenWsSecurityHeader214UsernameTokenLER20CSenIdentityProviderNS_13TPasswordTypeE @ 116 NONAME
+	_ZN21CSenWsSecurityHeader214UsernameTokenLERK6TDesC8RP6HBufC8 @ 117 NONAME
+	_ZN21CSenWsSecurityHeader214UsernameTokenLERK6TDesC8S2_NS_13TPasswordTypeERP6HBufC8 @ 118 NONAME
+	_ZN21CSenWsSecurityHeader214UsernameTokenLERK6TDesC8S2_RP6HBufC8 @ 119 NONAME
+	_ZN21CSenWsSecurityHeader24NewLE12RSenDocument14TXmlEngElement @ 120 NONAME
+	_ZN21CSenWsSecurityHeader24NewLERK6TDesC812RSenDocument14TXmlEngElement @ 121 NONAME
+	_ZN21CSenWsSecurityHeader24NewLERK6TDesC8S2_12RSenDocument14TXmlEngElement @ 122 NONAME
+	_ZN21CSenWsSecurityHeader25NewLCE12RSenDocument14TXmlEngElement @ 123 NONAME
+	_ZN21CSenWsSecurityHeader25NewLCERK6TDesC812RSenDocument14TXmlEngElement @ 124 NONAME
+	_ZN21CSenWsSecurityHeader25NewLCERK6TDesC8S2_12RSenDocument14TXmlEngElement @ 125 NONAME
+	_ZN21CSenWsSecurityHeader25XmlNsEv @ 126 NONAME
+	_ZN21CSenWsSecurityHeader2C1Ev @ 127 NONAME
+	_ZN21CSenWsSecurityHeader2C2Ev @ 128 NONAME
+	_ZN21CSenWsSecurityHeader2D0Ev @ 129 NONAME
+	_ZN21CSenWsSecurityHeader2D1Ev @ 130 NONAME
+	_ZN21CSenWsSecurityHeader2D2Ev @ 131 NONAME
+	_ZTI14CSenSoapFault2 @ 132 NONAME ; #<TI>#
+	_ZTI15CSenMessageBase @ 133 NONAME ; #<TI>#
+	_ZTI16CSenSoapMessage2 @ 134 NONAME ; #<TI>#
+	_ZTI17CSenSoapEnvelope2 @ 135 NONAME ; #<TI>#
+	_ZTI19CSenSoapMessageDom2 @ 136 NONAME ; #<TI>#
+	_ZTI21CSenWsSecurityHeader2 @ 137 NONAME ; #<TI>#
+	_ZTV14CSenSoapFault2 @ 138 NONAME ; #<VT>#
+	_ZTV15CSenMessageBase @ 139 NONAME ; #<VT>#
+	_ZTV16CSenSoapMessage2 @ 140 NONAME ; #<VT>#
+	_ZTV17CSenSoapEnvelope2 @ 141 NONAME ; #<VT>#
+	_ZTV19CSenSoapMessageDom2 @ 142 NONAME ; #<VT>#
+	_ZTV21CSenWsSecurityHeader2 @ 143 NONAME ; #<VT>#
+	_ZThn4_N17CSenSoapEnvelope213OnEndElementLERKN3Xml8RTagInfoEi @ 144 NONAME ; #<thunk>#
+	_ZThn4_N17CSenSoapEnvelope215OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 145 NONAME ; #<thunk>#
+	_ZThn52_N16CSenSoapMessage24TypeEv @ 146 NONAME ; #<thunk>#
+	_ZThn52_N17CSenSoapEnvelope210PropertiesEv @ 147 NONAME ; #<thunk>#
+	_ZThn52_N17CSenSoapEnvelope210SetContextEP18MSenMessageContext @ 148 NONAME ; #<thunk>#
+	_ZThn52_N17CSenSoapEnvelope212IsSafeToCastEN11MSenMessage6TClassE @ 149 NONAME ; #<thunk>#
+	_ZThn52_N17CSenSoapEnvelope213SetPropertiesEP14MSenProperties @ 150 NONAME ; #<thunk>#
+	_ZThn52_N17CSenSoapEnvelope24TypeEv @ 151 NONAME ; #<thunk>#
+	_ZThn52_N17CSenSoapEnvelope25TxnIdEv @ 152 NONAME ; #<thunk>#
+	_ZThn52_N17CSenSoapEnvelope27ContextEv @ 153 NONAME ; #<thunk>#
+	_ZThn52_N17CSenSoapEnvelope29DirectionEv @ 154 NONAME ; #<thunk>#
+	_ZThn52_N19CSenSoapMessageDom24TypeEv @ 155 NONAME ; #<thunk>#
+	_ZN16CSenSoapMessage214BaseConstructLERS_ @ 156 NONAME
+	_ZN16CSenSoapMessage24NewLERS_ @ 157 NONAME
+	_ZN16CSenSoapMessage25NewLCERS_ @ 158 NONAME
+	_ZN16CSenSoapMessage26CloneLEv @ 159 NONAME
+	_ZN17CSenSoapEnvelope214BaseConstructLERS_ @ 160 NONAME
+	_ZN17CSenSoapEnvelope24NewLERS_ @ 161 NONAME
+	_ZN17CSenSoapEnvelope25NewLCERS_ @ 162 NONAME
+	_ZN17CSenSoapEnvelope26CloneLEv @ 163 NONAME
+	_ZN19CSenSoapMessageDom24NewLERS_ @ 164 NONAME
+	_ZN19CSenSoapMessageDom25NewLCERS_ @ 165 NONAME
+	_ZN19CSenSoapMessageDom26CloneLEv @ 166 NONAME
+	_ZThn52_N16CSenSoapMessage26CloneLEv @ 167 NONAME ; #<thunk>#
+	_ZThn52_N17CSenSoapEnvelope26CloneLEv @ 168 NONAME ; #<thunk>#
+	_ZThn52_N19CSenSoapMessageDom26CloneLEv @ 169 NONAME ; #<thunk>#
+	_ZN12CSenAtomFeed11RemoveEntryEi @ 170 NONAME ABSENT
+	_ZN12CSenAtomFeed14BaseConstructLEv @ 171 NONAME
+	_ZN12CSenAtomFeed4NewLEx @ 172 NONAME
+	_ZN12CSenAtomFeed5NewLCEx @ 173 NONAME
+	_ZN12CSenAtomFeedD0Ev @ 174 NONAME
+	_ZN12CSenAtomFeedD1Ev @ 175 NONAME
+	_ZN12CSenAtomFeedD2Ev @ 176 NONAME
+	_ZN13CSenAtomEntry11MediaGroupLEv @ 177 NONAME ABSENT
+	_ZN13CSenAtomEntry13OnEndElementLERKN3Xml8RTagInfoEi @ 178 NONAME
+	_ZN13CSenAtomEntry14BaseConstructLEv @ 179 NONAME
+	_ZN13CSenAtomEntry14SetMediaTitleLERK6TDesC8 @ 180 NONAME ABSENT
+	_ZN13CSenAtomEntry15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 181 NONAME
+	_ZN13CSenAtomEntry16ParseMediaGroupLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEE @ 182 NONAME ABSENT
+	_ZN13CSenAtomEntry17SetMediaCategoryLERK6TDesC8 @ 183 NONAME ABSENT
+	_ZN13CSenAtomEntry17SetMediaKeyWordsLERK6TDesC8 @ 184 NONAME ABSENT
+	_ZN13CSenAtomEntry20SetMediaDescriptionLERK6TDesC8 @ 185 NONAME ABSENT
+	_ZN13CSenAtomEntry4NewLEv @ 186 NONAME
+	_ZN13CSenAtomEntry5NewLCEv @ 187 NONAME
+	_ZN13CSenAtomEntry9CategoryLEv @ 188 NONAME ABSENT
+	_ZN13CSenAtomEntryD0Ev @ 189 NONAME
+	_ZN13CSenAtomEntryD1Ev @ 190 NONAME
+	_ZN13CSenAtomEntryD2Ev @ 191 NONAME
+	_ZN15CSenAtomMessage10PropertiesEv @ 192 NONAME
+	_ZN15CSenAtomMessage10SetContextEP18MSenMessageContext @ 193 NONAME
+	_ZN15CSenAtomMessage12IsSafeToCastEN11MSenMessage6TClassE @ 194 NONAME
+	_ZN15CSenAtomMessage13OnEndElementLERKN3Xml8RTagInfoEi @ 195 NONAME
+	_ZN15CSenAtomMessage13SetPropertiesEP14MSenProperties @ 196 NONAME
+	_ZN15CSenAtomMessage15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 197 NONAME
+	_ZN15CSenAtomMessage19CreateBodyFragmentLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 198 NONAME
+	_ZN15CSenAtomMessage4TypeEv @ 199 NONAME
+	_ZN15CSenAtomMessage5TxnIdEv @ 200 NONAME
+	_ZN15CSenAtomMessage6CloneLEv @ 201 NONAME
+	_ZN15CSenAtomMessage7ContextEv @ 202 NONAME
+	_ZN15CSenAtomMessage9DirectionEv @ 203 NONAME
+	_ZN15CSenAtomMessageD0Ev @ 204 NONAME
+	_ZN15CSenAtomMessageD1Ev @ 205 NONAME
+	_ZN15CSenAtomMessageD2Ev @ 206 NONAME
+	_ZNK12CSenAtomFeed10EntryCountEv @ 207 NONAME ABSENT
+	_ZNK12CSenAtomFeed14EntryIdToIndexE12TFeedEntryId @ 208 NONAME ABSENT
+	_ZNK12CSenAtomFeed5EntryE12TFeedEntryId @ 209 NONAME ABSENT
+	_ZNK12CSenAtomFeed5EntryEi @ 210 NONAME
+	_ZNK13CSenAtomEntry10MediaTitleEv @ 211 NONAME ABSENT
+	_ZNK13CSenAtomEntry13MediaCategoryEv @ 212 NONAME ABSENT
+	_ZNK13CSenAtomEntry13MediaKeyWordsEv @ 213 NONAME ABSENT
+	_ZNK13CSenAtomEntry16MediaDescriptionEv @ 214 NONAME ABSENT
+	_ZNK15CSenAtomMessage2IdEv @ 215 NONAME
+	_ZTI12CSenAtomFeed @ 216 NONAME ; #<TI>#
+	_ZTI13CSenAtomEntry @ 217 NONAME ; #<TI>#
+	_ZTI15CSenAtomMessage @ 218 NONAME ; #<TI>#
+	_ZTV12CSenAtomFeed @ 219 NONAME ; #<VT>#
+	_ZTV13CSenAtomEntry @ 220 NONAME ; #<VT>#
+	_ZTV15CSenAtomMessage @ 221 NONAME ; #<VT>#
+	_ZThn4_N13CSenAtomEntry13OnEndElementLERKN3Xml8RTagInfoEi @ 222 NONAME ; #<thunk>#
+	_ZThn4_N13CSenAtomEntry15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 223 NONAME ; #<thunk>#
+	_ZThn4_N15CSenAtomMessage13OnEndElementLERKN3Xml8RTagInfoEi @ 224 NONAME ; #<thunk>#
+	_ZThn4_N15CSenAtomMessage15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 225 NONAME ; #<thunk>#
+	_ZThn52_N15CSenAtomMessage10PropertiesEv @ 226 NONAME ; #<thunk>#
+	_ZThn52_N15CSenAtomMessage10SetContextEP18MSenMessageContext @ 227 NONAME ; #<thunk>#
+	_ZThn52_N15CSenAtomMessage12IsSafeToCastEN11MSenMessage6TClassE @ 228 NONAME ; #<thunk>#
+	_ZThn52_N15CSenAtomMessage13SetPropertiesEP14MSenProperties @ 229 NONAME ; #<thunk>#
+	_ZThn52_N15CSenAtomMessage4TypeEv @ 230 NONAME ; #<thunk>#
+	_ZThn52_N15CSenAtomMessage5TxnIdEv @ 231 NONAME ; #<thunk>#
+	_ZThn52_N15CSenAtomMessage6CloneLEv @ 232 NONAME ; #<thunk>#
+	_ZThn52_N15CSenAtomMessage7ContextEv @ 233 NONAME ; #<thunk>#
+	_ZThn52_N15CSenAtomMessage9DirectionEv @ 234 NONAME ; #<thunk>#
+	_ZN12CSenAtomFeed10EntryCountEv @ 235 NONAME
+	_ZN12CSenAtomFeed10OnContentLERK6TDesC8i @ 236 NONAME
+	_ZN12CSenAtomFeed11ParseEntryLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEE @ 237 NONAME
+	_ZN12CSenAtomFeed11RemoveEntryER13CSenAtomEntry @ 238 NONAME ABSENT
+	_ZN12CSenAtomFeed12SetSubtitleLERK6TDesC8 @ 239 NONAME
+	_ZN12CSenAtomFeed13OnEndElementLERKN3Xml8RTagInfoEi @ 240 NONAME
+	_ZN12CSenAtomFeed13SetGeneratorLERK6TDesC8S2_S2_ @ 241 NONAME
+	_ZN12CSenAtomFeed15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 242 NONAME
+	_ZN12CSenAtomFeed5IconLEv @ 243 NONAME
+	_ZN12CSenAtomFeed5LogoLEv @ 244 NONAME
+	_ZN12CSenAtomFeed8SetIconLERK6TDesC8 @ 245 NONAME
+	_ZN12CSenAtomFeed8SetLogoLERK6TDesC8 @ 246 NONAME
+	_ZN12CSenAtomFeed9AddEntryLER13CSenAtomEntry @ 247 NONAME
+	_ZN12CSenAtomFeed9SubtitleLEv @ 248 NONAME
+	_ZN13CSenAtomEntry10OnContentLERK6TDesC8i @ 249 NONAME
+	_ZN13CSenAtomEntry10SetAuthorLERK6TDesC8S2_S2_ @ 250 NONAME ABSENT
+	_ZN13CSenAtomEntry11SetUpdatedLERK6TDesC8 @ 251 NONAME ABSENT
+	_ZN13CSenAtomEntry13SetPublishedLERK6TDesC8 @ 252 NONAME ABSENT
+	_ZN13CSenAtomEntry15AddContributorLERK6TDesC8S2_S2_ @ 253 NONAME ABSENT
+	_ZN13CSenAtomEntry8AddLinkLERK6TDesC8S2_S2_S2_S2_S2_ @ 254 NONAME ABSENT
+	_ZN13CSenAtomEntry9SetIdTagLERK6TDesC8 @ 255 NONAME ABSENT
+	_ZN13CSenAtomEntry9SetTitleLERK6TDesC8 @ 256 NONAME ABSENT
+	_ZNK13CSenAtomEntry5IdTagEv @ 257 NONAME ABSENT
+	_ZNK13CSenAtomEntry5TitleEv @ 258 NONAME ABSENT
+	_ZNK13CSenAtomEntry7UpdatedEv @ 259 NONAME ABSENT
+	_ZNK13CSenAtomEntry9PublishedEv @ 260 NONAME ABSENT
+	_ZThn4_N12CSenAtomFeed10OnContentLERK6TDesC8i @ 261 NONAME ; #<thunk>#
+	_ZThn4_N12CSenAtomFeed13OnEndElementLERKN3Xml8RTagInfoEi @ 262 NONAME ; #<thunk>#
+	_ZThn4_N12CSenAtomFeed15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 263 NONAME ; #<thunk>#
+	_ZThn4_N13CSenAtomEntry10OnContentLERK6TDesC8i @ 264 NONAME ; #<thunk>#
+	_ZN12CSenAtomFeed12RemoveEntryLER13CSenAtomEntry @ 265 NONAME
+	_ZN12CSenAtomFeed12RemoveEntryLERK6TDesC8 @ 266 NONAME
+	_ZN12CSenAtomFeed13GetGeneratorLEv @ 267 NONAME
+	_ZN15CSenAtomMessage10SetAuthorLERK6TDesC8S2_S2_ @ 268 NONAME
+	_ZN15CSenAtomMessage10SetRightsLERK6TDesC8 @ 269 NONAME
+	_ZN15CSenAtomMessage11RemoveLinkLERK6TDesC8 @ 270 NONAME
+	_ZN15CSenAtomMessage11RemoveLinkLEi @ 271 NONAME
+	_ZN15CSenAtomMessage11SetUpdatedLERK6TDesC8 @ 272 NONAME
+	_ZN15CSenAtomMessage12AddCategoryLERK6TDesC8S2_S2_ @ 273 NONAME
+	_ZN15CSenAtomMessage14CategoryCountLEv @ 274 NONAME
+	_ZN15CSenAtomMessage13RemoveAuthorLEv @ 275 NONAME
+	_ZN15CSenAtomMessage13SetPublishedLERK6TDesC8 @ 276 NONAME
+	_ZN15CSenAtomMessage15AttributeCountLERK6TDesC8S2_ @ 277 NONAME
+	_ZN15CSenAtomMessage15AddContributorLERK6TDesC8S2_S2_ @ 278 NONAME
+	_ZN15CSenAtomMessage15RemoveBySubtagLERK6TDesC8S2_S2_S2_ @ 279 NONAME
+	_ZN15CSenAtomMessage15RemoveCategoryLERK6TDesC8 @ 280 NONAME
+	_ZN15CSenAtomMessage17ContributorCountLEv @ 281 NONAME
+	_ZN15CSenAtomMessage18RemoveByAttributeLERK6TDesC8S2_S2_S2_ @ 282 NONAME
+	_ZN15CSenAtomMessage18RemoveContributorLERK6TDesC8 @ 283 NONAME
+	_ZN15CSenAtomMessage7RightsLEv @ 284 NONAME
+	_ZN15CSenAtomMessage8AddLinkLERK6TDesC8S2_S2_S2_S2_S2_ @ 285 NONAME
+	_ZN15CSenAtomMessage10LinkCountLEv @ 286 NONAME
+	_ZN15CSenAtomMessage9SetIdTagLERK6TDesC8 @ 287 NONAME
+	_ZN15CSenAtomMessage9SetTitleLERK6TDesC8 @ 288 NONAME
+	_ZNK15CSenAtomMessage5IdTagEv @ 289 NONAME
+	_ZNK15CSenAtomMessage5TitleEv @ 290 NONAME
+	_ZNK15CSenAtomMessage7UpdatedEv @ 291 NONAME
+	_ZNK15CSenAtomMessage9PublishedEv @ 292 NONAME
+	_ZN12CSenAtomFeedC1Ev @ 293 NONAME
+	_ZN12CSenAtomFeedC2Ev @ 294 NONAME
+	_ZN13CSenAtomEntryC1Ev @ 295 NONAME
+	_ZN13CSenAtomEntryC2Ev @ 296 NONAME
+

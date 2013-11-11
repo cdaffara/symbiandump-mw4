@@ -1,0 +1,50 @@
+/** @file
+* Copyright (c) 2005-2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build info for the UPnP Stack subsystem
+*
+*/
+
+
+#include "../upnputils/inc/upnpcompvariant.hrh"
+#include "../../group/upnpplatformvar.hrh"
+
+PRJ_PLATFORMS
+WINSCW ARMV5
+//DEFAULT
+
+PRJ_EXPORTS
+../rom/upnpstack.iby CORE_MW_LAYER_IBY_EXPORT_PATH(upnpstack.iby)
+../rom/upnpstack_stub.iby CORE_MW_LAYER_IBY_EXPORT_PATH(upnpstack_stub.iby)
+//Stub SIS File to update upnpstack in future
+../data/upnpstack.sis /epoc32/data/z/system/install/upnpstack.sis
+../data/homemedia.sis /epoc32/data/z/system/install/homemedia.sis
+../conf/upnpstack.confml MW_LAYER_CONFML(upnpstack.confml)
+../conf/upnpstack_101f9784.crml MW_LAYER_CRML(upnpstack_101f9784.crml)
+
+PRJ_MMPFILES
+#include "../upnputils/group/bld.inf"
+#include "../upnpconnectionmanagersession/group/bld.inf"
+#include "../upnpconnmanager/group/bld.inf"  
+#ifdef RD_UPNP_REMOTE_ACCESS
+#include "../radasync/group/bld.inf"
+#include "../radaclient/group/bld.inf"
+#endif
+#include "../dlnawebserver/group/bld.inf"
+#include "../serviceframework/group/bld.inf"
+#include "../ssdpserver/group/bld.inf"
+#include "../messagehandler/group/bld.inf"
+#include "../controlpointbase/group/bld.inf"
+#include "../upnphttptransfer/group/bld.inf"
+
+//  End of File

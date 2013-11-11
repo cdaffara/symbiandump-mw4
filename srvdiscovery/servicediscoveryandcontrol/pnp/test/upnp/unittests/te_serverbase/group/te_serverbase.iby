@@ -1,0 +1,43 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+#ifndef __TE_SERVERBASE_IBY__
+#define __TE_SERVERBASE_IBY__
+
+#include <testexecute.iby>
+
+file=ABI_DIR\DEBUG_DIR\te_serverbase.exe							System\Libs\te_serverbase.exe
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_udpclient.script			Testdata\scripts\te_upnp_udpclient.script
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_udpserver.script			Testdata\scripts\te_upnp_udpserver.script
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_tcpserver.script			Testdata\scripts\te_upnp_tcpserver.script
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_tcpclient.script			Testdata\scripts\te_upnp_tcpclient.script
+
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_udpclient_test_with_config.script		Testdata\scripts\te_upnp_udpclient_test_with_config.script
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_udpserver_test_with_config.script		Testdata\scripts\te_upnp_udpserver_test_with_config.script
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_tcpserver_test_with_config.script		Testdata\scripts\te_upnp_tcpserver_test_with_config.script
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_tcpclient_test_with_config.script		Testdata\scripts\te_upnp_tcpclient_test_with_config.script
+
+data=EPOCROOT##epoc32\data\z\testdata\configs\esock\ip.proxy.udpclient.esk TestData\configs\ESock\ip.proxy.udpclient.esk
+data=EPOCROOT##epoc32\data\z\testdata\configs\esock\ip.proxy.udpserver.esk TestData\configs\ESock\ip.proxy.udpserver.esk
+data=EPOCROOT##epoc32\data\z\testdata\configs\esock\ip.proxy.tcpserver.esk TestData\configs\ESock\ip.proxy.tcpserver.esk
+data=EPOCROOT##epoc32\data\z\testdata\configs\esock\ip.proxy.tcpclient.esk TestData\configs\ESock\ip.proxy.tcpclient.esk
+
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_test_remove_config_files.script Testdata\scripts\te_upnp_test_remove_config_files.script
+data=EPOCROOT##epoc32\data\z\TestData\scripts\te_upnp_test_copy_config_files.script	Testdata\scripts\te_upnp_test_copy_config_files.script
+
+#endif
+

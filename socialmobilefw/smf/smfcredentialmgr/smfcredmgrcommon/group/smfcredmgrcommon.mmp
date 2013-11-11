@@ -1,0 +1,54 @@
+/*
+============================================================================
+ Name		: smfcredmgrcommon.mmp
+ Author	  : pritam
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for SmfCredMgrClient.
+============================================================================
+*/
+
+TARGET		  smfcredmgrcommon.lib
+TARGETTYPE	  lib
+UID			 0
+EPOCALLOWDLLDATA
+
+USERINCLUDE	 ..\inc
+
+// Qt Macros
+MACRO		UNICODE
+MACRO		QT_KEYPAD_NAVIGATION
+MACRO		QT_SOFTKEYS_ENABLED
+MACRO		QT_USE_MATH_H_FLOATS
+MACRO		Q_OS_SYMBIAN
+MACRO		QT_GUI_LIB
+MACRO		QT_NETWORK_LIB
+MACRO		QT_CORE_LIB
+
+SYSTEMINCLUDE		.
+SYSTEMINCLUDE		/epoc32/include
+SYSTEMINCLUDE		/epoc32/include/stdapis
+SYSTEMINCLUDE		/epoc32/include/stdapis/sys
+/* 
+SYSTEMINCLUDE		/epoc32/include/stdapis/stlport
+SYSTEMINCLUDE		/epoc32/include/domain/middleware
+SYSTEMINCLUDE		/epoc32/include/domain/middleware/loc
+*/
+SYSTEMINCLUDE		/epoc32/include/platform
+
+CAPABILITY		None
+
+OPTION CW -wchar_t on
+
+
+VERSION 10.0
+
+PAGED
+
+OPTION_REPLACE ARMCC --export_all_vtbl // don't use --export_all_vtbl
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+SOURCEPATH ..\src
+SOURCE  smfutils.cpp smfcredmgrclientdatastruct.cpp 
+

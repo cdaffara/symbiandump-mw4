@@ -1,0 +1,37 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     Build information file
+*     
+*
+*/
+
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+
+DEFAULT
+
+PRJ_EXPORTS
+
+../inc/BrowserLauncher.h                MW_LAYER_PLATFORM_EXPORT_PATH(BrowserLauncher.h)
+../inc/DownloadedContentHandler.h       MW_LAYER_PLATFORM_EXPORT_PATH(DownloadedContentHandler.h)
+../inc/BrowserOverriddenSettings.h      MW_LAYER_PLATFORM_EXPORT_PATH(BrowserOverriddenSettings.h)
+../inc/BrowserOverriddenSettings.inl    MW_LAYER_PLATFORM_EXPORT_PATH(BrowserOverriddenSettings.inl)
+PRJ_MMPFILES
+
+// End of file
+
+

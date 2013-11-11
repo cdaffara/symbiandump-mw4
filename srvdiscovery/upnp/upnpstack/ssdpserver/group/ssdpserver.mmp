@@ -1,0 +1,71 @@
+/** @file
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This is the project specification file for Upnp.
+*
+*/
+
+#include "../../../inc/upnpcompvariant.hrh"
+
+TARGETTYPE      DLL
+#if defined(__HN_31__) || defined(__HN_32__)
+TARGET          hnssdpserver.dll
+UID             0x1000008d 0x2000F885
+#else
+TARGET          ssdpserver.dll
+UID             0x1000008d 0x10204166
+#endif
+
+
+LANG            SC
+CAPABILITY      CAP_GENERAL_DLL
+VENDORID        VID_DEFAULT
+
+
+SOURCEPATH      ../src
+SOURCE          upnpssdpserver.cpp
+SOURCE          upnpudpserver.cpp
+SOURCE          upnpudpsendrequest.cpp
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../../inc
+SYSTEMINCLUDE   ../../inc
+USERINCLUDE     ../inc
+
+LIBRARY                    euser.lib 
+LIBRARY                    esock.lib
+LIBRARY                    insock.lib
+
+#if defined(__HN_31__) || defined(__HN_32__)
+LIBRARY                    hnipserversutils.lib
+LIBRARY                    hnserviceframework.lib
+LIBRARY                    hnupnpconnectionmanagersession.lib
+#else
+LIBRARY                    upnpipserversutils.lib
+LIBRARY                    upnpserviceframework.lib
+LIBRARY                    upnpconnectionmanagersession.lib
+#endif
+
+LIBRARY                    bafl.lib
+LIBRARY                    commdb.lib 
+
+LIBRARY                    flogger.lib
+DEFFILE                    SSDPServer
+
+//end of file
+
+VERSION 10.1
+
+paged
+
+SMPSAFE

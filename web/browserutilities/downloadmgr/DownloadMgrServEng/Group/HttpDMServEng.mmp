@@ -1,0 +1,106 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*   This is project specification file for the Download Manager Server Engine.
+*
+*/
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET  HttpDMServEng.dll
+TARGETTYPE  dll
+UID  0x1000008d 0x10008D61
+
+CAPABILITY  CAP_GENERAL_DLL
+VENDORID    VID_DEFAULT
+
+// uncomment to enable logs
+//MACRO _DEBUG
+//#define _DEBUG
+  
+#if defined(ARMCC)
+  DEFFILE ../EABI/HTTPDMSERVENGU_EKA2.def
+#else
+  DEFFILE ../BWinsCw/HTTPDMSERVENGU_EKA2.def
+#endif
+  
+SOURCEPATH ../Src
+
+//APP_LAYER_SYSTEMINCLUDE
+/* SF TODO: resolve APP LAYER DEPENDENCY: 
+	s60/app/gallery/gallery_dom/media_file_api/inc/CMGXFileManager.h
+	s60/app/gallery/gallery_dom/media_file_api/inc/MGXFileManagerFactory.h
+*/
+MW_LAYER_SYSTEMINCLUDE
+
+MW_LAYER_ECOM_SYSTEMINCLUDE
+MW_LAYER_HTTP_SYSTEMINCLUDE
+
+
+USERINCLUDE ../Inc
+
+SOURCE HttpDownloadManagerServerEngine.cpp
+SOURCE HttpClientApp.cpp
+SOURCE HttpClientAppInstance.cpp
+SOURCE HttpDownload.cpp
+SOURCE HttpConnHandler.cpp
+SOURCE HeaderField.cpp
+SOURCE HttpStorage.cpp
+SOURCE HttpDownloadMgrLogger.cpp
+SOURCE  FileExt.cpp
+SOURCE DownloadDataServ.cpp
+SOURCE  BuffStorage.cpp
+
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+
+LIBRARY		Euser.lib
+LIBRARY     http.lib
+LIBRARY		esock.lib
+LIBRARY		bafl.lib
+LIBRARY     commdb.lib
+LIBRARY     inetprotutil.lib
+LIBRARY     efsrv.lib
+LIBRARY     ecom.lib
+LIBRARY     sysutil.lib
+LIBRARY     HttpFilterCommon.lib
+#ifdef __SYNCML_DM_FOTA
+LIBRARY     fotaengine.lib
+LIBRARY     estor.lib
+#endif
+LIBRARY     centralrepository.lib
+#if defined(_DEBUG )
+	LIBRARY    flogger.lib
+#else
+	DEBUGLIBRARY    flogger.lib
+#endif
+
+LIBRARY     commonui.lib            // For CDocumentHandler
+LIBRARY     apmime.lib              // For mime type handling (class TDataType)
+
+LIBRARY     PlatformEnv.lib
+
+#ifdef BRDO_APP_GALLERY_SUPPORTED_FF
+LIBRARY     MGXMediaFileAPI.lib
+#endif
+
+LIBRARY     DcfRep.lib
+LIBRARY     FeatMgr.lib
+
+// End of File

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<api id="5769e9616f484c2af8e6053119478571" dataversion="2.0">
+  <name>USB Watcher API</name>
+  <description>Defines interface for setting personalities via UsbWatcher.</description>
+  <type>c++</type>
+  <collection>usbengines</collection>
+  <libs>
+  </libs>
+  <release category="platform"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

@@ -1,0 +1,41 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Project description file for the Favourites Engine Server
+*
+*
+*/
+
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          FavouritesSrv.exe
+TARGETTYPE      exe
+UID             0x1000007a 0x10008D38
+CAPABILITY      ProtServ
+VENDORID        VID_DEFAULT
+
+EPOCSTACKSIZE 	0x5000
+
+SOURCEPATH      ../srvsrc
+SOURCE          FavouritesSrvMain.cpp
+
+USERINCLUDE     ../srvinc
+USERINCLUDE     ../inc
+MW_LAYER_SYSTEMINCLUDE
+
+
+LIBRARY         euser.lib
+LIBRARY         FavouritesEngine.lib

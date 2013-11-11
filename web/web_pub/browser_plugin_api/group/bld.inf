@@ -1,0 +1,40 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+#ifndef __BROWSER_SDK
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+#endif
+
+PRJ_PLATFORMS
+DEFAULT GCCE
+
+PRJ_EXPORTS
+
+../inc/BrowserPluginInterface.h      MW_LAYER_PUBLIC_EXPORT_PATH(BrowserPluginInterface.h)
+../inc/CEcomBrowserPluginInterface.h MW_LAYER_PUBLIC_EXPORT_PATH(CEcomBrowserPluginInterface.h)
+../inc/npapi.h                       MW_LAYER_PUBLIC_EXPORT_PATH(npapi.h)
+../inc/np_defines.h                  MW_LAYER_PUBLIC_EXPORT_PATH(np_defines.h)
+../inc/npupp.h                       MW_LAYER_PUBLIC_EXPORT_PATH(npupp.h)
+../inc/jri.h                         MW_LAYER_PUBLIC_EXPORT_PATH(jri.h)
+../inc/prcpucfg.h                    MW_LAYER_PUBLIC_EXPORT_PATH(prcpucfg.h)
+../inc/PluginAdapterInterface.h      MW_LAYER_PUBLIC_EXPORT_PATH(PluginAdapterInterface.h)
+../inc/prtypes.h                     MW_LAYER_PUBLIC_EXPORT_PATH(prtypes.h)
+../inc/obsolete/protypes.h           MW_LAYER_PUBLIC_EXPORT_PATH(obsolete/protypes.h)
+                      
+PRJ_MMPFILES
+
+PRJ_TESTMMPFILES

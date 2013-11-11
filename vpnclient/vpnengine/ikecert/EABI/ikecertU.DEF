@@ -1,0 +1,57 @@
+EXPORTS
+	_ZN10CIkeCaElem4NewLEP6HBufC8 @ 1 NONAME
+	_ZN10CIkeCaElemD0Ev @ 2 NONAME
+	_ZN10CIkeCaElemD1Ev @ 3 NONAME
+	_ZN10CIkeCaElemD2Ev @ 4 NONAME
+	_ZN10CIkeCaListC1Ei @ 5 NONAME
+	_ZN10CIkeCaListC2Ei @ 6 NONAME
+	_ZN11IkePkiUtils13CastCertArrayEPK13CArrayFixFlatIPK18TCertificateISAKMPE @ 7 NONAME
+	_ZN11IkePkiUtils16CertifyIdentityLEPK16CX509CertificateR6TDesC8i @ 8 NONAME
+	_ZN11IkePkiUtils16VerifyCertChainLERK13CArrayFixFlatIP16CX509CertificateERS2_RK10CIkeCaList @ 9 NONAME
+	_ZN11IkePkiUtils18VerifyCertificateLERK13CArrayFixFlatIP17TCertPayloadIkev2ERK10CIkeCaList @ 10 NONAME
+	_ZN11IkePkiUtils18VerifyCertificateLERK13CArrayFixFlatIPK18TCertificateISAKMPERK10CIkeCaList @ 11 NONAME
+	_ZN11IkePkiUtils20GetIdentityFromCertLEhRK6TDesC8 @ 12 NONAME
+	_ZN11IkePkiUtils21VerifyIkev1SignatureLERK6TDesC8S2_RK16CX509Certificate @ 13 NONAME
+	_ZN11IkePkiUtils21VerifyIkev2SignatureLERK6TDesC8S2_RK16CX509Certificate @ 14 NONAME
+	_ZN11IkePkiUtils22GetCertSubjectNameDERLEPK16CX509CertificateR5TDes8 @ 15 NONAME
+	_ZN16CIkeV1PkiService10ReadChainLEP8CIkeDataPK6HBufC8 @ 16 NONAME
+	_ZN16CIkeV1PkiService12GetTrustedCAEv @ 17 NONAME
+	_ZN16CIkeV1PkiService14GetCertificateEv @ 18 NONAME
+	_ZN16CIkeV1PkiService14GetTrustedICA1Ev @ 19 NONAME
+	_ZN16CIkeV1PkiService14GetTrustedICA2Ev @ 20 NONAME
+	_ZN16CIkeV1PkiService14ImportCACertsLEP13CArrayFixFlatIP9TCertInfoE @ 21 NONAME
+	_ZN16CIkeV1PkiService15Ikev1SignatureLERK6TDesC8P8CIkeDataS2_R5TDes8 @ 22 NONAME
+	_ZN16CIkeV1PkiService21ReadUserCertWithNameLERK6TDesC8P8CIkeDatai @ 23 NONAME
+	_ZN16CIkeV1PkiService4NewLEP8CIkeDataR9MIkeDebug @ 24 NONAME
+	_ZN16CIkeV1PkiService6CaListEv @ 25 NONAME
+	_ZN16CIkeV1PkiServiceD0Ev @ 26 NONAME
+	_ZN16CIkeV1PkiServiceD1Ev @ 27 NONAME
+	_ZN16CIkeV1PkiServiceD2Ev @ 28 NONAME
+	_ZN16CIkeV2PkiService15Ikev2SignatureLERK6TDesC8RK12TOwnCertInfoS2_R5TDes8h @ 29 NONAME
+	_ZN16CIkeV2PkiService19InitIkeV2PkiServiceEPK8CIkeData @ 30 NONAME
+	_ZN16CIkeV2PkiService27ReadTrustedUserCertificateLEv @ 31 NONAME
+	_ZN16CIkeV2PkiService4NewLER24MIkeV2PkiServiceObserverR9MIkeDebug @ 32 NONAME
+	_ZN16CIkeV2PkiServiceD0Ev @ 33 NONAME
+	_ZN16CIkeV2PkiServiceD1Ev @ 34 NONAME
+	_ZN16CIkeV2PkiServiceD2Ev @ 35 NONAME
+	_ZN7IkeCert22GetSubjectAltNameDataLEPK16CX509Certificateh @ 36 NONAME
+	_ZN7IkeCert23GetCertificateFieldDERLEP6HBufC8i @ 37 NONAME
+	_ZN7IkeCert23GetCertificateFieldDERLEPK16CX509Certificatei @ 38 NONAME
+	_ZNK10CIkeCaElem11CertificateEv @ 39 NONAME
+	_ZNK10CIkeCaElem7KeyHashEv @ 40 NONAME
+	_ZNK16CIkeV2PkiService13TrustedCaNameEv @ 41 NONAME
+	_ZNK16CIkeV2PkiService17I1CertificateDataEv @ 42 NONAME
+	_ZNK16CIkeV2PkiService17I2CertificateDataEv @ 43 NONAME
+	_ZNK16CIkeV2PkiService19UserCertificateDataEv @ 44 NONAME
+	_ZNK16CIkeV2PkiService6CaListEv @ 45 NONAME
+	_ZTI10CIkeCaElem @ 46 NONAME ; #<TI>#
+	_ZTI10CIkeCaList @ 47 NONAME ; #<TI>#
+	_ZTI13CIkePublicKey @ 48 NONAME ; #<TI>#
+	_ZTI16CIkeV1PkiService @ 49 NONAME ; #<TI>#
+	_ZTI16CIkeV2PkiService @ 50 NONAME ; #<TI>#
+	_ZTV10CIkeCaElem @ 51 NONAME ; #<VT>#
+	_ZTV10CIkeCaList @ 52 NONAME ; #<VT>#
+	_ZTV13CIkePublicKey @ 53 NONAME ; #<VT>#
+	_ZTV16CIkeV1PkiService @ 54 NONAME ; #<VT>#
+	_ZTV16CIkeV2PkiService @ 55 NONAME ; #<VT>#
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="" dataversion="1.0">
+  <name>UPnP Http Transfer API</name>
+  <description>Interface to Http Transfer component, providing generic utilities.</description>
+  <type>c++</type>
+  <subsystem>upnpstack</subsystem>
+  <libs>
+    <lib name="httptransfer.dll" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

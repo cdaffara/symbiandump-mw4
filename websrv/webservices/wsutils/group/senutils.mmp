@@ -1,0 +1,124 @@
+/*
+* Copyright (c) 2005-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:       Project specification file for wsutils    
+*
+*/
+
+
+
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+TARGETTYPE      DLL
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET          SenUtils.DLL
+UID             0x1000008d 0x101F9703
+#else
+TARGET          wsutils.DLL
+UID             0x1000008d 0x101F973A
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_GENERAL_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_GENERAL_DLL
+    #endif
+#endif
+
+SOURCEPATH      ../src
+SOURCE          senutilsdll.cpp
+SOURCE          senguidgen.cpp
+SOURCE          sendateutils.cpp
+SOURCE          sensoapenvelope.cpp
+SOURCE          sensoapmessage.cpp
+SOURCE          sensoapfault.cpp
+SOURCE          senwssecurityheader.cpp
+SOURCE          senpropertieselement.cpp
+SOURCE          senpropertiesfragment.cpp
+SOURCE          senxmlproperties.cpp
+SOURCE          sentransportproperties.cpp
+SOURCE          senhttptransportproperties.cpp
+SOURCE          senvtcptransportproperties.cpp
+SOURCE          sensaxutils.cpp
+
+
+// new private classes for 4.0:
+SOURCE          senattribute.cpp
+SOURCE          senattributes.cpp
+SOURCE          senidentifier.cpp
+SOURCE          sencertutils.cpp
+SOURCE          senchunk.cpp
+SOURCE          sencryptoutils.cpp
+
+
+SYSTEMINCLUDE   ../../inc
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wslogger/inc // for TLS based logging
+USERINCLUDE   ../../wsdescription/inc      // removes <SenXmlServiceDescription.h> warning..
+USERINCLUDE   ../../wsxml/inc								//senxmldebug.h
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         euser.lib
+LIBRARY         hash.lib
+LIBRARY         estor.lib
+LIBRARY         efsrv.lib // TVolumeInfo => hostid for CMD5 based UUID (URN) generation
+LIBRARY         flogger.lib
+LIBRARY         bafl.lib    // RStringbase
+LIBRARY 				inetprotutil.lib // for base64 encoding
+
+// WSF libraries
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY         SenLogger.lib // for TLS based logging
+LIBRARY         SenXml.lib
+#else
+LIBRARY         wslogger.lib // for TLS based logging
+LIBRARY         wsxml.lib
+#endif
+
+
+LANG            SC
+
+#if defined(ARMCC)
+	#if defined (RD_SEN_COMPILE_SIS_PACKAGE_FILES)
+		DEFFILE ../EABI/SENUTILS_V2.DEF
+	#else
+  	DEFFILE ../eabi/SENUTILS.DEF
+	#endif//RD_SEN_COMPILE_SIS_PACKAGE_FILES  	
+#elif defined(WINSCW)
+	#if defined (RD_SEN_COMPILE_SIS_PACKAGE_FILES)
+		DEFFILE ../BWINSCW/SENUTILS_V2.DEF
+	#else
+  DEFFILE ../BWINSCW/SENUTILS.DEF
+  #endif//RD_SEN_COMPILE_SIS_PACKAGE_FILES
+#elif defined(WINS)
+  DEFFILE ../BWINS/SENUTILS.DEF
+#else 
+  DEFFILE ../BMARM/SENUTILS.DEF
+#endif
+
+SMPSAFE
+
+

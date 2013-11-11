@@ -1,0 +1,393 @@
+EXPORTS
+	_ZN16CSvgDocumentImpl11RootElementEv @ 1 NONAME
+	_ZN18CSvgSvgElementImpl12GetAttributeERK7TDesC16R6TDes16 @ 2 NONAME
+	_ZN23CSvgEngineInterfaceImpl10ADDCloseToEP15CGfxGeneralPath @ 3 NONAME
+	_ZN23CSvgEngineInterfaceImpl10ADDCurveToEP15CGfxGeneralPathffffff @ 4 NONAME
+	_ZN23CSvgEngineInterfaceImpl10CancelLoadEi @ 5 NONAME
+	_ZN23CSvgEngineInterfaceImpl10ConstructLEP10CFbsBitmapP19MSvgRequestObserverR9TFontSpec @ 6 NONAME
+	_ZN23CSvgEngineInterfaceImpl10ConstructLEv @ 7 NONAME
+	_ZN23CSvgEngineInterfaceImpl10PrepareDomER5RFileRii @ 8 NONAME
+	_ZN23CSvgEngineInterfaceImpl10PrepareDomERK6TDesC8Rii @ 9 NONAME
+	_ZN23CSvgEngineInterfaceImpl10PrepareDomERK7TDesC16Rii @ 10 NONAME
+	_ZN23CSvgEngineInterfaceImpl10SaveSvgDomEiRK7TDesC16i @ 11 NONAME
+	_ZN23CSvgEngineInterfaceImpl10SetDRMModeEii @ 12 NONAME
+	_ZN23CSvgEngineInterfaceImpl10UpdatePathEiP15CSvgElementImpl @ 13 NONAME
+	_ZN23CSvgEngineInterfaceImpl11AddListenerEPK12MSvgListener16TSvgListenerTypei @ 14 NONAME
+	_ZN23CSvgEngineInterfaceImpl11AppendChildEP15CXmlElementImplS1_i @ 15 NONAME
+	_ZN23CSvgEngineInterfaceImpl11PanPositionEi @ 16 NONAME
+	_ZN23CSvgEngineInterfaceImpl11RemoveChildEP15CXmlElementImplS1_ @ 17 NONAME
+	_ZN23CSvgEngineInterfaceImpl11RenderFrameEP14CSvgEngineImplj @ 18 NONAME
+	_ZN23CSvgEngineInterfaceImpl11SetDocumentEP14CSvgEngineImplP16CSvgDocumentImpl @ 19 NONAME
+	_ZN23CSvgEngineInterfaceImpl11StartEngineEP14CSvgEngineImpl @ 20 NONAME
+	_ZN23CSvgEngineInterfaceImpl11SvgDocumentEv @ 21 NONAME
+	_ZN23CSvgEngineInterfaceImpl12CurrentStateEi @ 22 NONAME
+	_ZN23CSvgEngineInterfaceImpl12CustomOptionEii @ 23 NONAME
+	_ZN23CSvgEngineInterfaceImpl12GenerateMaskEP10CFbsBitmapi @ 24 NONAME
+	_ZN23CSvgEngineInterfaceImpl12IsRemoveableEP15CSvgElementImpli @ 25 NONAME
+	_ZN23CSvgEngineInterfaceImpl12OriginalViewEi @ 26 NONAME
+	_ZN23CSvgEngineInterfaceImpl12RenderFramesEiRK5TSizejjj12TDisplayModeS3_R13RPointerArrayI10CFbsBitmapES7_R6RArrayIjEi @ 27 NONAME
+	_ZN23CSvgEngineInterfaceImpl12SetMediaTimeEli @ 28 NONAME
+	_ZN23CSvgEngineInterfaceImpl12ViewportInitEP16CSvgDocumentImpl @ 29 NONAME
+	_ZN23CSvgEngineInterfaceImpl13DestroyEngineEP14CSvgEngineImpl @ 30 NONAME
+	_ZN23CSvgEngineInterfaceImpl13FillDocumentLEP16CSvgDocumentImplRK7TDesC16 @ 31 NONAME
+	_ZN23CSvgEngineInterfaceImpl13FocusPreviousEv @ 32 NONAME
+	_ZN23CSvgEngineInterfaceImpl13GetFirstChildEP15CXmlElementImpl @ 33 NONAME
+	_ZN23CSvgEngineInterfaceImpl13IsPanPossibleEiii @ 34 NONAME
+	_ZN23CSvgEngineInterfaceImpl13SearchForTextERK7TDesC16R13RPointerArrayI5MRectER6RArrayI7TPtrC16ERS7_IiEii @ 35 NONAME
+	_ZN23CSvgEngineInterfaceImpl13SvgCreatePathEv @ 36 NONAME
+	_ZN23CSvgEngineInterfaceImpl13SvgEngineNewLEv @ 37 NONAME
+	_ZN23CSvgEngineInterfaceImpl13WaitForImagesEii @ 38 NONAME
+	_ZN23CSvgEngineInterfaceImpl14CreateElementLEP16CSvgDocumentImpli @ 39 NONAME
+	_ZN23CSvgEngineInterfaceImpl14DestroyElementEP15CXmlElementImpl @ 40 NONAME
+	_ZN23CSvgEngineInterfaceImpl14GetElementByIdEP16CSvgDocumentImplRK7TDesC16 @ 41 NONAME
+	_ZN23CSvgEngineInterfaceImpl14GetElementTypeEP15CXmlElementImpl @ 42 NONAME
+	_ZN23CSvgEngineInterfaceImpl14GetNextSiblingEP15CXmlElementImpl @ 43 NONAME
+	_ZN23CSvgEngineInterfaceImpl14GetNumberOfIdsEP16CSvgDocumentImpl @ 44 NONAME
+	_ZN23CSvgEngineInterfaceImpl14GetRootElementEP16CSvgDocumentImpl @ 45 NONAME
+	_ZN23CSvgEngineInterfaceImpl14GetSegmentTypeEP15CGfxGeneralPathi @ 46 NONAME
+	_ZN23CSvgEngineInterfaceImpl14RemoveListenerEPK12MSvgListener16TSvgListenerTypei @ 47 NONAME
+	_ZN23CSvgEngineInterfaceImpl14SetFrameBufferEP10CFbsBitmapi @ 48 NONAME
+	_ZN23CSvgEngineInterfaceImpl14SetGdiContextLEP14CSvgEngineImplP10CFbsBitmap @ 49 NONAME
+	_ZN23CSvgEngineInterfaceImpl14SetNextSiblingEP15CXmlElementImplS1_ @ 50 NONAME
+	_ZN23CSvgEngineInterfaceImpl14SvgDestroyPathEP15CGfxGeneralPath @ 51 NONAME
+	_ZN23CSvgEngineInterfaceImpl15AddExternalDataEP16CSvgDocumentImplRK7TDesC16RK6TDesC8iii @ 52 NONAME
+	_ZN23CSvgEngineInterfaceImpl15AddTextListenerEP16MSvgTextListeneri @ 53 NONAME
+	_ZN23CSvgEngineInterfaceImpl15AssignImageDataERK7TDesC16P6HBufC8 @ 54 NONAME
+	_ZN23CSvgEngineInterfaceImpl15DestroyDocumentEP16CSvgDocumentImpl @ 55 NONAME
+	_ZN23CSvgEngineInterfaceImpl15FindAllElementsEP15CSvgElementImpliR13RPointerArrayIS0_Ei @ 56 NONAME
+	_ZN23CSvgEngineInterfaceImpl15FramesPerSecondEii @ 57 NONAME
+	_ZN23CSvgEngineInterfaceImpl15GetSegmentCountEP15CGfxGeneralPath @ 58 NONAME
+	_ZN23CSvgEngineInterfaceImpl15InitRootElementEP16CSvgDocumentImpl @ 59 NONAME
+	_ZN23CSvgEngineInterfaceImpl15IsElementActiveEP15CSvgElementImpl @ 60 NONAME
+	_ZN23CSvgEngineInterfaceImpl15SVGElementInDomEP16CSvgDocumentImplP15CXmlElementImpl @ 61 NONAME
+	_ZN23CSvgEngineInterfaceImpl15SetClientWindowEP7RWindow @ 62 NONAME
+	_ZN23CSvgEngineInterfaceImpl15SetFocusElementEP15CXmlElementImplP16CSvgDocumentImpl @ 63 NONAME
+	_ZN23CSvgEngineInterfaceImpl15SvgDocumentNewLEv @ 64 NONAME
+	_ZN23CSvgEngineInterfaceImpl15SvgEndElementAtEP15CXmlElementImplmP16CSvgDocumentImpl @ 65 NONAME
+	_ZN23CSvgEngineInterfaceImpl15SvgGetMediaTimeEP16CSvgDocumentImpl @ 66 NONAME
+	_ZN23CSvgEngineInterfaceImpl15SvgHasAnimationEP16CSvgDocumentImpl @ 67 NONAME
+	_ZN23CSvgEngineInterfaceImpl15SvgSetMediaTimeEP16CSvgDocumentImplm @ 68 NONAME
+	_ZN23CSvgEngineInterfaceImpl15SwitchDebugInfoEi @ 69 NONAME
+	_ZN23CSvgEngineInterfaceImpl16ClearFrameBufferEP10CFbsBitmapmi @ 70 NONAME
+	_ZN23CSvgEngineInterfaceImpl16GetEnumAttributeEP15CSvgElementImpliRl @ 71 NONAME
+	_ZN23CSvgEngineInterfaceImpl16GetOwnerDocumentEP15CXmlElementImpl @ 72 NONAME
+	_ZN23CSvgEngineInterfaceImpl16GetParentElementEP15CXmlElementImpl @ 73 NONAME
+	_ZN23CSvgEngineInterfaceImpl16GetPathAttributeEP15CXmlElementImpli @ 74 NONAME
+	_ZN23CSvgEngineInterfaceImpl16GetRectAttributeEP15CXmlElementImplPfS2_S2_S2_ @ 75 NONAME
+	_ZN23CSvgEngineInterfaceImpl16GetRenderQualityEv @ 76 NONAME
+	_ZN23CSvgEngineInterfaceImpl16GetViewportUnitsEP16CSvgDocumentImpl @ 77 NONAME
+	_ZN23CSvgEngineInterfaceImpl16GetViewportWidthEP16CSvgDocumentImpl @ 78 NONAME
+	_ZN23CSvgEngineInterfaceImpl16InitializeEngineEP14CSvgEngineImpli @ 79 NONAME
+	_ZN23CSvgEngineInterfaceImpl16IsElementVisibleEii @ 80 NONAME
+	_ZN23CSvgEngineInterfaceImpl16PrintAllElementsEP16CSvgDocumentImpl @ 81 NONAME
+	_ZN23CSvgEngineInterfaceImpl16SetEnumAttributeEP15CSvgElementImplil @ 82 NONAME
+	_ZN23CSvgEngineInterfaceImpl16SetParentElementEP15CXmlElementImplS1_ @ 83 NONAME
+	_ZN23CSvgEngineInterfaceImpl16SetPathAttributeEP15CSvgElementImpliP15CGfxGeneralPath @ 84 NONAME
+	_ZN23CSvgEngineInterfaceImpl16SetRectAttributeEP15CXmlElementImplffff @ 85 NONAME
+	_ZN23CSvgEngineInterfaceImpl16SetRenderQualityEji @ 86 NONAME
+	_ZN23CSvgEngineInterfaceImpl16SetThumbNailModeEii @ 87 NONAME
+	_ZN23CSvgEngineInterfaceImpl16SetViewportWidthEP16CSvgDocumentImpli @ 88 NONAME
+	_ZN23CSvgEngineInterfaceImpl17ContentDimensionsERfS0_i @ 89 NONAME
+	_ZN23CSvgEngineInterfaceImpl17ContentDimensionsEi @ 90 NONAME
+	_ZN23CSvgEngineInterfaceImpl17GetFocusedElementEP16CSvgDocumentImpl @ 91 NONAME
+	_ZN23CSvgEngineInterfaceImpl17GetSvgBoundingBoxEi @ 92 NONAME
+	_ZN23CSvgEngineInterfaceImpl17GetViewportHeightEP16CSvgDocumentImpl @ 93 NONAME
+	_ZN23CSvgEngineInterfaceImpl17SetViewportHeightEP16CSvgDocumentImpli @ 94 NONAME
+	_ZN23CSvgEngineInterfaceImpl17SvgBeginElementAtEP15CXmlElementImplmP16CSvgDocumentImpl @ 95 NONAME
+	_ZN23CSvgEngineInterfaceImpl18GetMatrixAttributeEP15CXmlElementImplPfS2_S2_S2_S2_S2_ @ 96 NONAME
+	_ZN23CSvgEngineInterfaceImpl18RemoveTextListenerEP16MSvgTextListeneri @ 97 NONAME
+	_ZN23CSvgEngineInterfaceImpl18SetBackgroundColorEmP14CSvgEngineImpl @ 98 NONAME
+	_ZN23CSvgEngineInterfaceImpl18SetMatrixAttributeEP15CXmlElementImplffffff @ 99 NONAME
+	_ZN23CSvgEngineInterfaceImpl18SetRequestObserverEP14CSvgEngineImplP19MSvgRequestObserver @ 100 NONAME
+	_ZN23CSvgEngineInterfaceImpl19AddTextAreaListenerEP20MSvgTextAreaListeneri @ 101 NONAME
+	_ZN23CSvgEngineInterfaceImpl19GetExternalListSizeEP16CSvgDocumentImpl @ 102 NONAME
+	_ZN23CSvgEngineInterfaceImpl19GetSegmentParameterEP15CGfxGeneralPathii @ 103 NONAME
+	_ZN23CSvgEngineInterfaceImpl19PrintElementsStylesEP15CSvgElementImpl @ 104 NONAME
+	_ZN23CSvgEngineInterfaceImpl20AddAnimationListenerEP21MSvgAnimationListeneri @ 105 NONAME
+	_ZN23CSvgEngineInterfaceImpl20AddHyperlinkListenerEP21MSvgHyperlinkListeneri @ 106 NONAME
+	_ZN23CSvgEngineInterfaceImpl20DispatchFocusInEventEP16CSvgDocumentImplP15CSvgElementImpl @ 107 NONAME
+	_ZN23CSvgEngineInterfaceImpl20GetExternalListItemLEP16CSvgDocumentImpliR7TPtrC16 @ 108 NONAME
+	_ZN23CSvgEngineInterfaceImpl20IsContentInteractiveEP16CSvgDocumentImpli @ 109 NONAME
+	_ZN23CSvgEngineInterfaceImpl20IsPanPossibleFourWayERiS0_S0_S0_i @ 110 NONAME
+	_ZN23CSvgEngineInterfaceImpl20SetAnimFrameDurationEji @ 111 NONAME
+	_ZN23CSvgEngineInterfaceImpl20SetFirstChildElementEP15CXmlElementImplS1_ @ 112 NONAME
+	_ZN23CSvgEngineInterfaceImpl20SvgActivateAnimationEP16CSvgDocumentImpl @ 113 NONAME
+	_ZN23CSvgEngineInterfaceImpl21ActivateObjectInFocusEv @ 114 NONAME
+	_ZN23CSvgEngineInterfaceImpl21ChooseViewBoxIfNotSetEi @ 115 NONAME
+	_ZN23CSvgEngineInterfaceImpl21DispatchFocusOutEventEP16CSvgDocumentImplP15CSvgElementImpl @ 116 NONAME
+	_ZN23CSvgEngineInterfaceImpl21DispatchMouseEventsAtEP16CSvgDocumentImpliiP17MSvgMouseListener @ 117 NONAME
+	_ZN23CSvgEngineInterfaceImpl21GetElementBoundingboxEP15CSvgElementImplRfS2_S2_S2_ @ 118 NONAME
+	_ZN23CSvgEngineInterfaceImpl21GetTextForTextElementEiRiR6TDes16 @ 119 NONAME
+	_ZN23CSvgEngineInterfaceImpl21SetTextForTextElementEiR7TDesC16 @ 120 NONAME
+	_ZN23CSvgEngineInterfaceImpl22AddToEventReceiverListEP15CXmlElementImplh @ 121 NONAME
+	_ZN23CSvgEngineInterfaceImpl22GetElementDesAttributeEP15CSvgElementImpliR7TPtrC16 @ 122 NONAME
+	_ZN23CSvgEngineInterfaceImpl22GetUnscaledContentSizeEi @ 123 NONAME
+	_ZN23CSvgEngineInterfaceImpl22RemoveTextAreaListenerEP20MSvgTextAreaListeneri @ 124 NONAME
+	_ZN23CSvgEngineInterfaceImpl22SetElementDesAttributeEP15CSvgElementImpliRK7TDesC16 @ 125 NONAME
+	_ZN23CSvgEngineInterfaceImpl22SetPreserveAspectRatioEP16CSvgDocumentImpl27TSvgPreserveAspectAlignType19TSvgMeetOrSliceTypei @ 126 NONAME
+	_ZN23CSvgEngineInterfaceImpl23RemoveAnimationListenerEP21MSvgAnimationListeneri @ 127 NONAME
+	_ZN23CSvgEngineInterfaceImpl23RemoveHyperlinkListenerEP21MSvgHyperlinkListeneri @ 128 NONAME
+	_ZN23CSvgEngineInterfaceImpl23SetDataRetrievalTimeOutEji @ 129 NONAME
+	_ZN23CSvgEngineInterfaceImpl24GetElementColorAttributeEP15CSvgElementImpli @ 130 NONAME
+	_ZN23CSvgEngineInterfaceImpl24GetElementFloatAttributeEP15CSvgElementImpli @ 131 NONAME
+	_ZN23CSvgEngineInterfaceImpl24SVGElementGetUsedElementEP15CXmlElementImpl @ 132 NONAME
+	_ZN23CSvgEngineInterfaceImpl24SetElementColorAttributeEP15CSvgElementImplil @ 133 NONAME
+	_ZN23CSvgEngineInterfaceImpl24SetElementFloatAttributeEP15CSvgElementImplif @ 134 NONAME
+	_ZN23CSvgEngineInterfaceImpl25GetTextForTextAreaElementEiRiR6TDes16 @ 135 NONAME
+	_ZN23CSvgEngineInterfaceImpl25SetTextForTextAreaElementEiR7TDesC16 @ 136 NONAME
+	_ZN23CSvgEngineInterfaceImpl27RemoveFromEventReceiverListEP15CXmlElementImpl @ 137 NONAME
+	_ZN23CSvgEngineInterfaceImpl28SetSvgDimensionToFrameBufferEjji @ 138 NONAME
+	_ZN23CSvgEngineInterfaceImpl29ContentDimensionsInPercentageEi @ 139 NONAME
+	_ZN23CSvgEngineInterfaceImpl29GetElementUnScaledBoundingBoxEP15CSvgElementImplRfS2_S2_S2_ @ 140 NONAME
+	_ZN23CSvgEngineInterfaceImpl30GetFourPointElementBoundingBoxEP19CSvgTextElementImplR6TPointS3_S3_S3_ @ 141 NONAME
+	_ZN23CSvgEngineInterfaceImpl31InitSvgStylePropertiesWithNullLEP15CSvgElementImpl @ 142 NONAME
+	_ZN23CSvgEngineInterfaceImpl3PanEiii @ 143 NONAME
+	_ZN23CSvgEngineInterfaceImpl4LoadER5RFile @ 144 NONAME
+	_ZN23CSvgEngineInterfaceImpl4LoadERK6TDesC8 @ 145 NONAME
+	_ZN23CSvgEngineInterfaceImpl4LoadERK7TDesC16 @ 146 NONAME
+	_ZN23CSvgEngineInterfaceImpl4NewLEP10CFbsBitmapP19MSvgRequestObserverR9TFontSpec @ 147 NONAME
+	_ZN23CSvgEngineInterfaceImpl4SizeEi @ 148 NONAME
+	_ZN23CSvgEngineInterfaceImpl4StopEP14CSvgEngineImpl @ 149 NONAME
+	_ZN23CSvgEngineInterfaceImpl4ZoomEfi @ 150 NONAME
+	_ZN23CSvgEngineInterfaceImpl5GetIdEP16CSvgDocumentImpli @ 151 NONAME
+	_ZN23CSvgEngineInterfaceImpl5NewLCEP10CFbsBitmapP19MSvgRequestObserverR9TFontSpec @ 152 NONAME
+	_ZN23CSvgEngineInterfaceImpl5PauseEP14CSvgEngineImpl @ 153 NONAME
+	_ZN23CSvgEngineInterfaceImpl5StartEP14CSvgEngineImpli @ 154 NONAME
+	_ZN23CSvgEngineInterfaceImpl6RedrawEii @ 155 NONAME
+	_ZN23CSvgEngineInterfaceImpl6ReplayEi @ 156 NONAME
+	_ZN23CSvgEngineInterfaceImpl6ResumeEP14CSvgEngineImpl @ 157 NONAME
+	_ZN23CSvgEngineInterfaceImpl6RotateEfiii @ 158 NONAME
+	_ZN23CSvgEngineInterfaceImpl6UseDomEiP10CFbsBitmapS1_i @ 159 NONAME
+	_ZN23CSvgEngineInterfaceImpl7DestroyEv @ 160 NONAME
+	_ZN23CSvgEngineInterfaceImpl7DrawBoxE5TRecti @ 161 NONAME
+	_ZN23CSvgEngineInterfaceImpl7MouseUpEiii @ 162 NONAME
+	_ZN23CSvgEngineInterfaceImpl7SaveSvgEiRK7TDesC16i @ 163 NONAME
+	_ZN23CSvgEngineInterfaceImpl8DurationEi @ 164 NONAME
+	_ZN23CSvgEngineInterfaceImpl8KeyPressERK9TKeyEventi @ 165 NONAME
+	_ZN23CSvgEngineInterfaceImpl8PositionEi @ 166 NONAME
+	_ZN23CSvgEngineInterfaceImpl9ADDLineToEP15CGfxGeneralPathff @ 167 NONAME
+	_ZN23CSvgEngineInterfaceImpl9ADDMoveToEP15CGfxGeneralPathff @ 168 NONAME
+	_ZN23CSvgEngineInterfaceImpl9ADDQuadToEP15CGfxGeneralPathffff @ 169 NONAME
+	_ZN23CSvgEngineInterfaceImpl9DeleteDomEi @ 170 NONAME
+	_ZN23CSvgEngineInterfaceImpl9FocusNextEv @ 171 NONAME
+	_ZN23CSvgEngineInterfaceImpl9IsLoadingEi @ 172 NONAME
+	_ZN23CSvgEngineInterfaceImpl9MediaTimeEi @ 173 NONAME
+	_ZN23CSvgEngineInterfaceImpl9MouseDownEiii @ 174 NONAME
+	_ZN23CSvgEngineInterfaceImpl9MouseMoveEiii @ 175 NONAME
+	_ZN23CSvgEngineInterfaceImpl9RenderDomEiP10CFbsBitmapS1_ @ 176 NONAME
+	_ZN23CSvgEngineInterfaceImplC1Ev @ 177 NONAME
+	_ZN23CSvgEngineInterfaceImplC2Ev @ 178 NONAME
+	_ZN23CSvgEngineInterfaceImplD0Ev @ 179 NONAME
+	_ZN23CSvgEngineInterfaceImplD1Ev @ 180 NONAME
+	_ZN23CSvgEngineInterfaceImplD2Ev @ 181 NONAME
+	_ZTI10TGfxLine2D @ 182 NONAME ; #<TI>#
+	_ZTI11CGfx2dGcVGR @ 183 NONAME ; #<TI>#
+	_ZTI11CSvgDecoder @ 184 NONAME ; #<TI>#
+	_ZTI13CSvgErrorImpl @ 185 NONAME ; #<TI>#
+	_ZTI13CSvgTestsImpl @ 186 NONAME ; #<TI>#
+	_ZTI13TGfxEllipse2D @ 187 NONAME ; #<TI>#
+	_ZTI14CGfx2dGcOpenVG @ 188 NONAME ; #<TI>#
+	_ZTI14CSvgEngineImpl @ 189 NONAME ; #<TI>#
+	_ZTI14CSvgSchemaData @ 190 NONAME ; #<TI>#
+	_ZTI14TSvgTimerEvent @ 191 NONAME ; #<TI>#
+	_ZTI14TSvgUiKeyEvent @ 192 NONAME ; #<TI>#
+	_ZTI15CGfxGeneralPath @ 193 NONAME ; #<TI>#
+	_ZTI15CSvgElementImpl @ 194 NONAME ; #<TI>#
+	_ZTI15CSvgFontHashMap @ 195 NONAME ; #<TI>#
+	_ZTI15CSvgFontMapItem @ 196 NONAME ; #<TI>#
+	_ZTI15CXmlElementImpl @ 197 NONAME ; #<TI>#
+	_ZTI15TGfxRectangle2D @ 198 NONAME ; #<TI>#
+	_ZTI16CClrCssValueImpl @ 199 NONAME ; #<TI>#
+	_ZTI16CIntCssValueImpl @ 200 NONAME ; #<TI>#
+	_ZTI16CStrCssValueImpl @ 201 NONAME ; #<TI>#
+	_ZTI16CSvgAElementImpl @ 202 NONAME ; #<TI>#
+	_ZTI16CSvgDocumentImpl @ 203 NONAME ; #<TI>#
+	_ZTI16CSvgEventHandler @ 204 NONAME ; #<TI>#
+	_ZTI16CSvgGElementImpl @ 205 NONAME ; #<TI>#
+	_ZTI16CSvgImageHashMap @ 206 NONAME ; #<TI>#
+	_ZTI16CSvgImageMapItem @ 207 NONAME ; #<TI>#
+	_ZTI16TSvgUiMouseEvent @ 208 NONAME ; #<TI>#
+	_ZTI17CGfxLineIteratorP @ 209 NONAME ; #<TI>#
+	_ZTI17CSvgAnimationBase @ 210 NONAME ; #<TI>#
+	_ZTI17CSvgLangSpaceImpl @ 211 NONAME ; #<TI>#
+	_ZTI17CSvgMemoryManager @ 212 NONAME ; #<TI>#
+	_ZTI17TGfxGradientPaint @ 213 NONAME ; #<TI>#
+	_ZTI17TSvgFourPointRect @ 214 NONAME ; #<TI>#
+	_ZTI17TSvgInternalEvent @ 215 NONAME ; #<TI>#
+	_ZTI18CFloatCssValueImpl @ 216 NONAME ; #<TI>#
+	_ZTI18CPaintCssValueImpl @ 217 NONAME ; #<TI>#
+	_ZTI18CSvgContentHandler @ 218 NONAME ; #<TI>#
+	_ZTI18CSvgSetElementImpl @ 219 NONAME ; #<TI>#
+	_ZTI18CSvgSvgElementImpl @ 220 NONAME ; #<TI>#
+	_ZTI18CSvgUseElementImpl @ 221 NONAME ; #<TI>#
+	_ZTI18TSvgTimerEventPrep @ 222 NONAME ; #<TI>#
+	_ZTI19CSvgDefsElementImpl @ 223 NONAME ; #<TI>#
+	_ZTI19CSvgDescElementImpl @ 224 NONAME ; #<TI>#
+	_ZTI19CSvgEventAttributes @ 225 NONAME ; #<TI>#
+	_ZTI19CSvgFontElementImpl @ 226 NONAME ; #<TI>#
+	_ZTI19CSvgLineElementImpl @ 227 NONAME ; #<TI>#
+	_ZTI19CSvgPathElementImpl @ 228 NONAME ; #<TI>#
+	_ZTI19CSvgRectElementImpl @ 229 NONAME ; #<TI>#
+	_ZTI19CSvgStopElementImpl @ 230 NONAME ; #<TI>#
+	_ZTI19CSvgTextElementImpl @ 231 NONAME ; #<TI>#
+	_ZTI19CVectorCssValueImpl @ 232 NONAME ; #<TI>#
+	_ZTI20CGfxEllipseIteratorP @ 233 NONAME ; #<TI>#
+	_ZTI20CSvgAnimTimingParser @ 234 NONAME ; #<TI>#
+	_ZTI20CSvgFitToViewBoxImpl @ 235 NONAME ; #<TI>#
+	_ZTI20CSvgGlyphElementImpl @ 236 NONAME ; #<TI>#
+	_ZTI20CSvgHkernElementImpl @ 237 NONAME ; #<TI>#
+	_ZTI20CSvgImageElementImpl @ 238 NONAME ; #<TI>#
+	_ZTI20CSvgMpathElementImpl @ 239 NONAME ; #<TI>#
+	_ZTI20CSvgStyleElementImpl @ 240 NONAME ; #<TI>#
+	_ZTI20CSvgTitleElementImpl @ 241 NONAME ; #<TI>#
+	_ZTI20CSvgUriReferenceImpl @ 242 NONAME ; #<TI>#
+	_ZTI20TGfxRectangularShape @ 243 NONAME ; #<TI>#
+	_ZTI20TGfxRoundRectangle2D @ 244 NONAME ; #<TI>#
+	_ZTI21CSvgCircleElementImpl @ 245 NONAME ; #<TI>#
+	_ZTI21CSvgScriptElementImpl @ 246 NONAME ; #<TI>#
+	_ZTI21CSvgTransformListImpl @ 247 NONAME ; #<TI>#
+	_ZTI21CSvgTransformableImpl @ 248 NONAME ; #<TI>#
+	_ZTI21TSvgScreenUpdateEvent @ 249 NONAME ; #<TI>#
+	_ZTI22CGfxRectangleIteratorP @ 250 NONAME ; #<TI>#
+	_ZTI22CSvgAnimTimeController @ 251 NONAME ; #<TI>#
+	_ZTI22CSvgAnimateElementImpl @ 252 NONAME ; #<TI>#
+	_ZTI22CSvgDiscardElementImpl @ 253 NONAME ; #<TI>#
+	_ZTI22CSvgEllipseElementImpl @ 254 NONAME ; #<TI>#
+	_ZTI23CSvgEngineInterfaceImpl @ 255 NONAME ; #<TI>#
+	_ZTI23CSvgFontFaceElementImpl @ 256 NONAME ; #<TI>#
+	_ZTI23CSvgGradientElementImpl @ 257 NONAME ; #<TI>#
+	_ZTI23CSvgMetadataElementImpl @ 258 NONAME ; #<TI>#
+	_ZTI23CSvgPolylineElementImpl @ 259 NONAME ; #<TI>#
+	_ZTI23CSvgTextAreaElementImpl @ 260 NONAME ; #<TI>#
+	_ZTI23TGfxLinearGradientPaint @ 261 NONAME ; #<TI>#
+	_ZTI23TGfxRadialGradientPaint @ 262 NONAME ; #<TI>#
+	_ZTI24CGfxGeneralPathIteratorP @ 263 NONAME ; #<TI>#
+	_ZTI24CSvgAnimationElementImpl @ 264 NONAME ; #<TI>#
+	_ZTI25CSvgDOMImplementationImpl @ 265 NONAME ; #<TI>#
+	_ZTI25CSvgSolidColorElementImpl @ 266 NONAME ; #<TI>#
+	_ZTI26CGfxFlatteningPathIterator @ 267 NONAME ; #<TI>#
+	_ZTI27CGfxRoundRectangleIteratorP @ 268 NONAME ; #<TI>#
+	_ZTI27CSvgMissingGlyphElementImpl @ 269 NONAME ; #<TI>#
+	_ZTI27CSvgPreserveAspectRatioImpl @ 270 NONAME ; #<TI>#
+	_ZTI28CSvgAnimateMotionElementImpl @ 271 NONAME ; #<TI>#
+	_ZTI28CSvgForeignObjectElementImpl @ 272 NONAME ; #<TI>#
+	_ZTI29CSvgLinearGradientElementImpl @ 273 NONAME ; #<TI>#
+	_ZTI29CSvgRadialGradientElementImpl @ 274 NONAME ; #<TI>#
+	_ZTI31CSvgAnimateTransformElementImpl @ 275 NONAME ; #<TI>#
+	_ZTI9CSvgTimer @ 276 NONAME ; #<TI>#
+	_ZTI9TGfxColor @ 277 NONAME ; #<TI>#
+	_ZTIN20CSvgImageElementImpl19CSvgImageLoaderUtilE @ 278 NONAME ; #<TI>#
+	_ZTV10TGfxLine2D @ 279 NONAME ; #<VT>#
+	_ZTV11CGfx2dGcVGR @ 280 NONAME ; #<VT>#
+	_ZTV11CSvgDecoder @ 281 NONAME ; #<VT>#
+	_ZTV13CSvgErrorImpl @ 282 NONAME ; #<VT>#
+	_ZTV13CSvgTestsImpl @ 283 NONAME ; #<VT>#
+	_ZTV13TGfxEllipse2D @ 284 NONAME ; #<VT>#
+	_ZTV14CGfx2dGcOpenVG @ 285 NONAME ; #<VT>#
+	_ZTV14CSvgEngineImpl @ 286 NONAME ; #<VT>#
+	_ZTV14CSvgSchemaData @ 287 NONAME ; #<VT>#
+	_ZTV14TSvgTimerEvent @ 288 NONAME ; #<VT>#
+	_ZTV14TSvgUiKeyEvent @ 289 NONAME ; #<VT>#
+	_ZTV15CGfxGeneralPath @ 290 NONAME ; #<VT>#
+	_ZTV15CSvgElementImpl @ 291 NONAME ; #<VT>#
+	_ZTV15CSvgFontHashMap @ 292 NONAME ; #<VT>#
+	_ZTV15CSvgFontMapItem @ 293 NONAME ; #<VT>#
+	_ZTV15CXmlElementImpl @ 294 NONAME ; #<VT>#
+	_ZTV15TGfxRectangle2D @ 295 NONAME ; #<VT>#
+	_ZTV16CClrCssValueImpl @ 296 NONAME ; #<VT>#
+	_ZTV16CIntCssValueImpl @ 297 NONAME ; #<VT>#
+	_ZTV16CStrCssValueImpl @ 298 NONAME ; #<VT>#
+	_ZTV16CSvgAElementImpl @ 299 NONAME ; #<VT>#
+	_ZTV16CSvgDocumentImpl @ 300 NONAME ; #<VT>#
+	_ZTV16CSvgEventHandler @ 301 NONAME ; #<VT>#
+	_ZTV16CSvgGElementImpl @ 302 NONAME ; #<VT>#
+	_ZTV16CSvgImageHashMap @ 303 NONAME ; #<VT>#
+	_ZTV16CSvgImageMapItem @ 304 NONAME ; #<VT>#
+	_ZTV16TSvgUiMouseEvent @ 305 NONAME ; #<VT>#
+	_ZTV17CGfxLineIteratorP @ 306 NONAME ; #<VT>#
+	_ZTV17CSvgAnimationBase @ 307 NONAME ; #<VT>#
+	_ZTV17CSvgLangSpaceImpl @ 308 NONAME ; #<VT>#
+	_ZTV17CSvgMemoryManager @ 309 NONAME ; #<VT>#
+	_ZTV17TGfxGradientPaint @ 310 NONAME ; #<VT>#
+	_ZTV17TSvgFourPointRect @ 311 NONAME ; #<VT>#
+	_ZTV17TSvgInternalEvent @ 312 NONAME ; #<VT>#
+	_ZTV18CFloatCssValueImpl @ 313 NONAME ; #<VT>#
+	_ZTV18CPaintCssValueImpl @ 314 NONAME ; #<VT>#
+	_ZTV18CSvgContentHandler @ 315 NONAME ; #<VT>#
+	_ZTV18CSvgSetElementImpl @ 316 NONAME ; #<VT>#
+	_ZTV18CSvgSvgElementImpl @ 317 NONAME ; #<VT>#
+	_ZTV18CSvgUseElementImpl @ 318 NONAME ; #<VT>#
+	_ZTV18TSvgTimerEventPrep @ 319 NONAME ; #<VT>#
+	_ZTV19CSvgDefsElementImpl @ 320 NONAME ; #<VT>#
+	_ZTV19CSvgDescElementImpl @ 321 NONAME ; #<VT>#
+	_ZTV19CSvgEventAttributes @ 322 NONAME ; #<VT>#
+	_ZTV19CSvgFontElementImpl @ 323 NONAME ; #<VT>#
+	_ZTV19CSvgLineElementImpl @ 324 NONAME ; #<VT>#
+	_ZTV19CSvgPathElementImpl @ 325 NONAME ; #<VT>#
+	_ZTV19CSvgRectElementImpl @ 326 NONAME ; #<VT>#
+	_ZTV19CSvgStopElementImpl @ 327 NONAME ; #<VT>#
+	_ZTV19CSvgTextElementImpl @ 328 NONAME ; #<VT>#
+	_ZTV19CVectorCssValueImpl @ 329 NONAME ; #<VT>#
+	_ZTV20CGfxEllipseIteratorP @ 330 NONAME ; #<VT>#
+	_ZTV20CSvgAnimTimingParser @ 331 NONAME ; #<VT>#
+	_ZTV20CSvgFitToViewBoxImpl @ 332 NONAME ; #<VT>#
+	_ZTV20CSvgGlyphElementImpl @ 333 NONAME ; #<VT>#
+	_ZTV20CSvgHkernElementImpl @ 334 NONAME ; #<VT>#
+	_ZTV20CSvgImageElementImpl @ 335 NONAME ; #<VT>#
+	_ZTV20CSvgMpathElementImpl @ 336 NONAME ; #<VT>#
+	_ZTV20CSvgStyleElementImpl @ 337 NONAME ; #<VT>#
+	_ZTV20CSvgTitleElementImpl @ 338 NONAME ; #<VT>#
+	_ZTV20CSvgUriReferenceImpl @ 339 NONAME ; #<VT>#
+	_ZTV20TGfxRectangularShape @ 340 NONAME ; #<VT>#
+	_ZTV20TGfxRoundRectangle2D @ 341 NONAME ; #<VT>#
+	_ZTV21CSvgCircleElementImpl @ 342 NONAME ; #<VT>#
+	_ZTV21CSvgScriptElementImpl @ 343 NONAME ; #<VT>#
+	_ZTV21CSvgTransformListImpl @ 344 NONAME ; #<VT>#
+	_ZTV21CSvgTransformableImpl @ 345 NONAME ; #<VT>#
+	_ZTV21TSvgScreenUpdateEvent @ 346 NONAME ; #<VT>#
+	_ZTV22CGfxRectangleIteratorP @ 347 NONAME ; #<VT>#
+	_ZTV22CSvgAnimTimeController @ 348 NONAME ; #<VT>#
+	_ZTV22CSvgAnimateElementImpl @ 349 NONAME ; #<VT>#
+	_ZTV22CSvgDiscardElementImpl @ 350 NONAME ; #<VT>#
+	_ZTV22CSvgEllipseElementImpl @ 351 NONAME ; #<VT>#
+	_ZTV23CSvgEngineInterfaceImpl @ 352 NONAME ; #<VT>#
+	_ZTV23CSvgFontFaceElementImpl @ 353 NONAME ; #<VT>#
+	_ZTV23CSvgGradientElementImpl @ 354 NONAME ; #<VT>#
+	_ZTV23CSvgMetadataElementImpl @ 355 NONAME ; #<VT>#
+	_ZTV23CSvgPolylineElementImpl @ 356 NONAME ; #<VT>#
+	_ZTV23CSvgTextAreaElementImpl @ 357 NONAME ; #<VT>#
+	_ZTV23TGfxLinearGradientPaint @ 358 NONAME ; #<VT>#
+	_ZTV23TGfxRadialGradientPaint @ 359 NONAME ; #<VT>#
+	_ZTV24CGfxGeneralPathIteratorP @ 360 NONAME ; #<VT>#
+	_ZTV24CSvgAnimationElementImpl @ 361 NONAME ; #<VT>#
+	_ZTV25CSvgDOMImplementationImpl @ 362 NONAME ; #<VT>#
+	_ZTV25CSvgSolidColorElementImpl @ 363 NONAME ; #<VT>#
+	_ZTV26CGfxFlatteningPathIterator @ 364 NONAME ; #<VT>#
+	_ZTV27CGfxRoundRectangleIteratorP @ 365 NONAME ; #<VT>#
+	_ZTV27CSvgMissingGlyphElementImpl @ 366 NONAME ; #<VT>#
+	_ZTV27CSvgPreserveAspectRatioImpl @ 367 NONAME ; #<VT>#
+	_ZTV28CSvgAnimateMotionElementImpl @ 368 NONAME ; #<VT>#
+	_ZTV28CSvgForeignObjectElementImpl @ 369 NONAME ; #<VT>#
+	_ZTV29CSvgLinearGradientElementImpl @ 370 NONAME ; #<VT>#
+	_ZTV29CSvgRadialGradientElementImpl @ 371 NONAME ; #<VT>#
+	_ZTV31CSvgAnimateTransformElementImpl @ 372 NONAME ; #<VT>#
+	_ZTV9CSvgTimer @ 373 NONAME ; #<VT>#
+	_ZTV9TGfxColor @ 374 NONAME ; #<VT>#
+	_ZTVN20CSvgImageElementImpl19CSvgImageLoaderUtilE @ 375 NONAME ; #<VT>#
+	_ZN23CSvgEngineInterfaceImpl5StartERP9MSvgErrorP14CSvgEngineImpl @ 376 NONAME
+	_ZN23CSvgEngineInterfaceImpl12SetDRMRightsEi @ 377 NONAME
+	_ZN23CSvgEngineInterfaceImpl14SetAudioVolumeEii @ 378 NONAME
+	_ZN23CSvgEngineInterfaceImpl15MuteAudioVolumeEi @ 379 NONAME
+	_ZN23CSvgEngineInterfaceImpl18GetMatrixAttributeEP15CXmlElementImpliPfS2_S2_S2_S2_S2_ @ 380 NONAME
+	_ZN23CSvgEngineInterfaceImpl10ConstructLER9TFontSpec @ 381 NONAME
+	_ZN23CSvgEngineInterfaceImpl12ResetContextEi @ 382 NONAME
+	_ZN23CSvgEngineInterfaceImpl10ConstructLEP10CFbsBitmapP19MSvgRequestObserverR9TFontSpec13SVGRendererId @ 383 NONAME
+	_ZN23CSvgEngineInterfaceImpl4NewLEP10CFbsBitmapP19MSvgRequestObserverR9TFontSpec13SVGRendererId @ 384 NONAME
+	_ZN23CSvgEngineInterfaceImpl5NewLCEP10CFbsBitmapP19MSvgRequestObserverR9TFontSpec13SVGRendererId @ 385 NONAME
+	_ZN23CSvgEngineInterfaceImpl5StartEPK6TDesC8P14CSvgEngineImpli @ 386 NONAME
+	_ZN23CSvgEngineInterfaceImpl5StartERP9MSvgErrorPK6TDesC8P14CSvgEngineImpl @ 387 NONAME
+	_ZN23CSvgEngineInterfaceImpl6UseDomEiP10CFbsBitmapS1_5TSize12TDisplayModeS3_i @ 388 NONAME
+	_ZNK23CSvgEngineInterfaceImpl14TLVEncodedDataEv @ 389 NONAME
+	_ZN23CSvgEngineInterfaceImpl12GenerateMaskEP11CSvgtBitmapi @ 390 NONAME
+	_ZN23CSvgEngineInterfaceImpl14SetGdiContextLEP14CSvgEngineImplP11CSvgtBitmap @ 391 NONAME
+

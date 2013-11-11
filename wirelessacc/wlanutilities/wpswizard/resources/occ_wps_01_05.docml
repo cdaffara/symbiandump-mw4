@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hbdocument version="1.2">
+    <widget name="occ_wps_P1" type="HbWidget">
+        <!-- layout id: txt_occ_dblist_val_infrastructure_public -->
+        <widget name="radioButtonList" type="HbRadioButtonList"/>
+        <!-- layout id: txt_occ_dialog_insert_the_name_of_the_new_wlan_net -->
+        <widget name="label" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <enums name="alignment" value="AlignTop"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+            <integer name="maximumLines" value="4"/>
+        </widget>
+        <sizepolicy horizontalPolicy="Expanding" horizontalStretch="0" verticalPolicy="Expanding" verticalStretch="0"/>
+        <layout type="anchor"/>
+    </widget>
+    <section name="portrait">
+        <widget name="occ_wps_P1" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="radioButtonList" dstEdge="LEFT" src="" srcEdge="LEFT"/>
+                <anchoritem dst="radioButtonList" dstEdge="TOP" prefLength="var(hb-param-margin-gene-middle-vertical)" src="label" srcEdge="BOTTOM"/>
+                <anchoritem dst="radioButtonList" dstEdge="RIGHT" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="radioButtonList" dstEdge="BOTTOM" src="" srcEdge="BOTTOM"/>
+                <anchoritem dst="label" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="label" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="label" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+            </layout>
+        </widget>
+    </section>
+    <section name="landscape">
+        <widget name="occ_wps_P1" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="label" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem dst="label" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem direction="NEGATIVE" dst="label" dstEdge="RIGHT" prefLength="expr(var(hb-param-margin-gene-middle-horizontal) / 2)" src="" srcEdge="CENTERH"/>
+                <anchoritem dst="radioButtonList" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-middle-horizontal)" src="label" srcEdge="RIGHT"/>
+                <anchoritem dst="radioButtonList" dstEdge="TOP" src="" srcEdge="TOP"/>
+                <anchoritem dst="radioButtonList" dstEdge="RIGHT" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="radioButtonList" dstEdge="BOTTOM" src="" srcEdge="BOTTOM"/>
+            </layout>
+        </widget>
+    </section>
+    <metadata activeUIState="portrait" display="NHD-3.2-inch_portrait" unit="un">
+        <uistate name="Common ui state" sections="#common"/>
+        <uistate name="landscape" sections="#common landscape"/>
+        <uistate name="portrait" sections="#common portrait"/>
+    </metadata>
+</hbdocument>

@@ -1,0 +1,28 @@
+EXPORTS
+	_ZN13MemoryManager10AddStopperEP11MOOMStopper @ 1 NONAME
+	_ZN13MemoryManager11SetNotifierEP12MOOMNotifier @ 2 NONAME
+	_ZN13MemoryManager12AddCollectorEP16MMemoryCollector @ 3 NONAME
+	_ZN13MemoryManager13RemoveStopperEP11MOOMStopper @ 4 NONAME
+	_ZN13MemoryManager15RemoveCollectorEP16MMemoryCollector @ 5 NONAME
+	_ZN13MemoryManager4FreeEPv @ 6 NONAME
+	_ZN13MemoryManager5AllocEj @ 7 NONAME
+	_ZN13MemoryManager6CallocEjj @ 8 NONAME
+	_ZN13MemoryManager6StatusEv @ 9 NONAME
+	_ZN13MemoryManager7ReAllocEPvj @ 10 NONAME
+	_ZN13MemoryManager8PreCheckEjjRK6TDesC8 @ 11 NONAME
+	_ZN13MemoryManager9PostCheckEv @ 12 NONAME
+	_ZN13MemoryManager9SetStatusE15TOOMCheckResult @ 13 NONAME
+	_ZTI10CAllocator @ 14 NONAME ; #<TI>#
+	_ZTI14CSlabAllocator @ 15 NONAME ; #<TI>#
+	_ZTI14CStopScheduler @ 16 NONAME ; #<TI>#
+	_ZTI15CPlainAllocator @ 17 NONAME ; #<TI>#
+	_ZTI15CSimpleNotifier @ 18 NONAME ; #<TI>#
+	_ZTV10CAllocator @ 19 NONAME ; #<VT>#
+	_ZTV14CSlabAllocator @ 20 NONAME ; #<VT>#
+	_ZTV14CStopScheduler @ 21 NONAME ; #<VT>#
+	_ZTV15CPlainAllocator @ 22 NONAME ; #<VT>#
+	_ZTV15CSimpleNotifier @ 23 NONAME ; #<VT>#
+	_ZN13MemoryManager14PrepareForExitEv @ 24 NONAME
+	_ZN13MemoryManager17RestoreCollectorsEv @ 25 NONAME
+	_ZN13MemoryManager7FreeRamEv @ 26 NONAME
+

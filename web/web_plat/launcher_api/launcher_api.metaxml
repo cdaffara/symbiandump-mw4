@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="44453c8f7ec34cc2a3624bc562230750" dataversion="1.0">
+  <name>Launcher API</name>
+  <description>Browser launcher API allows users to launch the browser as a stand alone or embedded application</description>
+  <type>c++</type>
+  <subsystem>WebUI</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="3.1"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

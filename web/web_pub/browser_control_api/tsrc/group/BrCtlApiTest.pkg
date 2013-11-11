@@ -1,0 +1,46 @@
+;
+; Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of the License "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description: 
+;
+; Languages
+; none -  English only by default
+&EN
+
+; Installation header
+; Only one component name as we only support English
+; UID is the main app's UID
+
+#{"BrCtlApiTest"},(0x101FB3E7),1,0,0,TYPE=SA
+(0x101F7961),0,0,0,{"Series60ProductID"}
+
+; Non-localised vendor name
+:"Nokia Corporation"
+
+; Localised vendor names
+%{"Nokia Corporation"}
+
+; Files to install and to where
+"\epoc32\Release\armv5\urel\BrCtlApiTest.dll"-"!:\sys\bin\BrCtlApiTest.dll"
+"..\init\testframework.ini"-"!:\testframework\testframework.ini"
+"..\conf\ui_browser_control_api.cfg"-"!:\testframework\ui_browser_control_api.cfg"
+"..\data\loadtest.html"-"!:\BrCtlTest\loadtest.html"
+"..\data\loadtest2.html"-"!:\BrCtlTest\loadtest2.html"
+"..\data\loadtest.saved"-"!:\BrCtlTest\loadtest.saved"
+"..\data\img8.jpg"-"!:\BrCtlTest\img8.jpg"
+"..\data\historytest1.html"-"!:\BrCtlTest\historytest1.html"
+"..\data\historytest2.html"-"!:\BrCtlTest\historytest2.html"
+"..\data\historytest3.html"-"!:\BrCtlTest\historytest3.html"
+"..\data\loadtest1.wml"-"!:\BrCtlTest\loadtest1.wml"
+"..\data\loadtest2.wml"-"!:\BrCtlTest\loadtest2.wml"
+"..\data\loadtest3.wml"-"!:\BrCtlTest\loadtest3.wml"

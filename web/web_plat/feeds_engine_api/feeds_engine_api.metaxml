@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="a03670a292647413ee25c78c2b579f78" dataversion="1.0">
+  <name>Feeds Engine API</name>
+  <description>Feeds Engine API</description>
+  <type>c++</type>
+  <subsystem>BrowserUtilities</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="5.1"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

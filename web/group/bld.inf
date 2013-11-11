@@ -1,0 +1,39 @@
+/*
+* Copyright (c) 2006 - 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors: brmorris
+*
+* Description:  Highlevel bld.inf
+*
+*/
+
+
+/*
+*   Order is important
+*/
+#include "../web_plat/group/bld.inf"
+#include "../web_pub/group/bld.inf"
+#include "../browserutilities/group/bld.inf"
+//#include "../webengine/group/bld.inf"
+//#include "../codhandler/group/bld.inf"
+
+//#ifdef RD_BROWSER_WIDGETS
+//#include "../widgets/group/bld.inf"
+//#endif
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+PRJ_MMPFILES
+
+PRJ_TESTMMPFILES

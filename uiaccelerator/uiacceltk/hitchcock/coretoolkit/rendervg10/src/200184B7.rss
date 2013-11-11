@@ -1,0 +1,55 @@
+/*
+* Copyright (c) 2001 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Resource definitions for project ?myapp
+*
+*/
+
+
+
+NAME VG10
+
+#include <registryinfo.rh>
+
+// ---------------------------------------------------------------------------
+// HuiRendererPluginInformation
+// Data structure for ECOM framework
+// ---------------------------------------------------------------------------
+//
+RESOURCE REGISTRY_INFO HuiRendererPluginInformation
+    {
+    dll_uid = 0x200184B7; // dll uid3
+    interfaces = 
+        {
+        INTERFACE_INFO
+            {
+            // Renderer Plugin interface UID, KUidHuiRenderPluginBase
+            interface_uid = 0x200113D4;
+            implementations =
+                {
+                // OpenVG 1.0
+                IMPLEMENTATION_INFO
+                    {
+                    // OpenVg10 Renderer implementation UID
+                    implementation_uid = 0x200184B8;
+                    version_no = 1;
+                    display_name = "OpenVG10||Implements a Renderer Plug-in";
+                    default_data = "2";     // Vg10 = 2, from HuiRenderer.h
+                    opaque_data = "";
+                    }
+                };
+            }
+        };
+    }
+    
+// End of File

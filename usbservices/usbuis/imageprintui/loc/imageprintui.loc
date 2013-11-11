@@ -1,0 +1,312 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Localization strings for project Image Print UI
+*
+*/
+
+
+
+// LOCALISATION STRINGS
+
+// d: Text on the status pane on empty view
+// l: title_pane_t2/opt9
+// r: 3.2
+// 
+#define qtn_usb_title_image_print "Image print"
+
+
+// d: Text on the status pane on print preview view
+// l: title_pane_t2/opt9
+// r: 3.2
+// 
+#define qtn_usb_image_print_preview "Print preview"
+
+
+// d: Text on the navi pane which shows the printer name and the vendor name
+// l: navi_navi_text_pane_t1
+// r: 3.2
+// 
+#define qtn_usb_navi_printer_name "%U"
+
+// d: Print command in the "Options" menu of the print preview view
+// l: list_single_pane_t1_cp2
+// r: 3.2
+#define qtn_usb_option_print "Print"
+
+// d: Print settings command in the "Options" menu of the print preview view
+// l: list_single_pane_t1_cp2
+// r: 3.2
+//
+#define qtn_usb_print_settings "Print settings"
+
+// d: Text on the status pane on print settings
+// l: title_pane_t2/opt9
+// r: 3.2
+//
+#define qtn_print_title_print_settings "Print settings"
+
+// d: Print settings command in the "Options" menu of the print preview view
+// l: list_single_pane_t1_cp2
+// r: 3.2
+//
+#define qtn_usb_opt_change "Change"
+
+// d: Print layout capability presented in the list box in print settings view
+// l: list_setting_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_layout "Layout"
+
+// d: Paper size capability presented in the list box in print settings view
+// l: list_setting_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_paper_size "Paper size"
+
+// d: Print quality capability presented in the list box in print settings view
+// l: list_setting_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_quality "Print quality"
+
+// *** PAPER SIZES ***
+
+// d: Paper size "Automatic" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_paper_size_automatic "Default"
+
+// d: Paper size "A4" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_paper_size_a4 "A4"
+
+// d: Paper size "A6" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_paper_size_a6 "A6"
+
+// d: Paper size "4*6 (inch)" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_paper_size_inch "4*6 (inch)"
+
+// d: Paper size "Card size" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_paper_size_card "Card size"
+
+// d: Paper size "Letter" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_paper_size_letter "Letter"
+
+
+// *** PRINT QUALITIES *** 
+
+
+// d: Print quality "Default" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+// 
+#define qtn_usb_print_quality_default "Default"
+
+// d: Print quality "High" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+// 
+#define qtn_usb_print_quality_high "High"
+
+// d: Print quality "Normal" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+// 
+#define qtn_usb_print_quality_normal "Normal"
+
+// d: Print quality "Draft" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+// 
+#define qtn_usb_print_quality_draft "Draft"
+
+
+// *** LAYOUTS ***
+
+// d: Print layout "Default" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_layout_default "Default"
+
+// d: Print layout "1-up" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_layout_1_up "1 per page"
+
+// d: Print layout "2-up" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_layout_2_up "Up to 2 per page"
+
+
+// d: Print layout "4-up" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_layout_4_up "Up to 4 per page"
+
+
+// d: Print layout "6-up" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_layout_6_up "Up to 6 per page"
+
+
+// d: Print layout "9-up" in the print settings view list box / pop-up window
+// l: list_set_graphic_pane_t1
+// r: 3.2
+//
+#define qtn_usb_print_layout_9_up "Up to 9 per page"
+
+
+// *** NOTES ***
+
+// d: Progress note
+// d: Text on the print progress dialog
+// l: popup_note_wait_window
+// r: 3.2
+//
+#define qtn_usb_wait_printing "Printing"
+
+// d: Printing error note
+// d: Error note is displayed, when connection over the chosen transmission technology fails
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_unable_to_connect "Unable to connect printer"
+
+// d: Printing error note
+// d: Shown when there is already printing process ongoing
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_printer_busy "Unable to send image to printer. Printer may be busy."
+
+// d: Printing error note
+// d: Error note is displayed when the connection is unexpectedly terminated while the
+// d: printer is printing or somehow connected to a printer (for example when USB cable is disconnected)
+// d: or then a software error happens, data is not transmitted and 
+// d: system timeout causes transmission to terminate.
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_connection_lost "Connection to printer lost"
+
+// d: Printing error note
+// d: This is a generic error note that is displayed, when no specific error message is available.
+//    It tells to user that there has been problem during printing and (most probably) the printer
+//    will cancel its current print job.
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_in_printing "Printing error"
+
+// d: Printing error note
+// d: Shown when something is wrong in the status of printer
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_check_status "Check status of printer"
+
+// d: Printing error note
+// d: Notifies user that the printer has run out of paper
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_out_of_paper "Out of paper"
+
+// d: Printing error note
+// d: Notifies user that the printer is running out of ink
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_ink_low "Ink low"
+
+// d: Printing error note
+// d: Notifies user that the printer has run out of ink
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_out_of_ink "Out of ink"
+
+
+// d: Printing error note
+// d: Shown when there is a paper jam in the printer
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_paper_jam "Paper jam"
+
+// d: Printing error note
+// d: Notifies that the file type is not supported
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_file_not_supported "A file that is not supported will be removed from the selection."
+
+// d: Printing error note.
+// d: This note is used to inform the user that one or many files of unsupported type(other than .jpeg) has been 
+//    selected and the application will discard them and continue with the images that are of the supported filetype(.jpeg).
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_unsupported_files_removed "Files that are not supported will be removed from the selection."
+
+// d: Printing error note
+// d: Shown if the selected file could not be found from device/MMC for 
+//    some reason
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_error_file_not_found "File not found"
+
+// d: Printing information note.
+// d: The purpose of the note is to inform the user that printing is already ongoing 
+//    and it may therefore not be initiated again elsewhere.
+// l: popup_note_window
+// r: 3.2
+//
+#define qtn_usb_info_app_in_use "Application already in use"
+
+// d: Info note displayed to user  connect the cable to PictBridge Printer if connected to 
+//    other printer or PC
+// l: popup_note_wait_window
+// r: 3.2
+#define qtn_usb_wait_connect_cable_compatible "Connect cable to PictBridge printer"
+
+// d: Info note displayed to user  connect the cable if cable is not connected
+//    and user has select print from menu option
+// l: popup_note_wait_window
+// r: 3.2
+#define qtn_usb_wait_connect_cable "Connect USB cable"
+

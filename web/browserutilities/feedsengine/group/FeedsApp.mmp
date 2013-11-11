@@ -1,0 +1,105 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Feeds
+*
+*/
+
+
+#include <bldvariant.hrh>
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+
+TARGET          FeedsApp.exe
+TARGETTYPE      exe
+
+EPOCSTACKSIZE   0x5000
+EPOCHEAPSIZE    0x5000 0x1000000
+
+UID             0x100039CE 0x10207303 // Get a real UID
+
+VENDORID        VID_DEFAULT
+CAPABILITY      CAP_APPLICATION NetworkControl -Location
+
+START RESOURCE   ../data/FeedsApp.rss
+DEPENDS avkon.rsg
+HEADER
+TARGETPATH       APP_RESOURCE_DIR
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END
+
+// Client UI sources
+SOURCEPATH        ../FeedsUI/FeedsApp/src
+SOURCE            Feeds.cpp
+SOURCE            FeedsApplication.cpp
+SOURCE            FeedsAppUi.cpp
+SOURCE            FeedsDocument.cpp
+
+// Test harness sources
+SOURCEPATH        ../FeedsUI/TestHarness/src
+SOURCE            FeedsWaitDialog.cpp
+SOURCE            TestHarness.cpp
+SOURCE            TestHarnessContainer.cpp
+SOURCE            TestHarnessView.cpp
+
+
+// Client UI Util sources
+SOURCEPATH        ../FeedsUI/Common/src
+SOURCE            StatusPane.cpp
+
+
+// Utils sources
+SOURCEPATH        ../FeedsServer/Common/src
+SOURCE            LeakTracker.cpp
+
+
+// Include paths
+USERINCLUDE       ../FeedsServer/Common/inc
+USERINCLUDE       ../FeedsUI/TestHarness/inc
+USERINCLUDE       ../FeedsUI/FeedsApp/inc
+USERINCLUDE       ../FeedsUI/Common/inc
+USERINCLUDE       ../../inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+
+// Libraries
+DEBUGLIBRARY             flogger.lib
+
+LIBRARY             euser.lib
+LIBRARY             apparc.lib
+LIBRARY             cone.lib
+LIBRARY             eikcore.lib
+LIBRARY             eikcoctl.lib
+LIBRARY             avkon.lib
+LIBRARY             CommonUI.lib
+LIBRARY             CommonEngine.lib
+LIBRARY             efsrv.lib 
+LIBRARY				eikctl.lib
+
+LIBRARY             FeedsServerClient.lib
+LIBRARY             connectionmanager.lib
+
+
+SOURCEPATH          ../
+
+START RESOURCE      data/FeedsApp_reg.rss
+DEPENDS feedsapp.rsg
+TARGETPATH          /private/10003a3f/apps 
+END

@@ -1,0 +1,14 @@
+EXPORTS
+	_ZN16CWidgetInstaller14FinishInstallLEi @ 1 NONAME
+	_ZN16CWidgetInstaller14RenameIconFileER3RFsP13RPointerArrayI20CWidgetPropertyValueE @ 2 NONAME
+	_ZN16CWidgetInstaller15RegisterWidgetLERK7TDesC16S2_S2_S2_RK4TUid @ 3 NONAME
+	_ZN16CWidgetInstaller17DeregisterWidgetLERK4TUid @ 4 NONAME
+	_ZN16CWidgetInstaller36WidgetPropertiesFromInstalledWidgetLER3RFsRK7TDesC16S4_4TUid @ 5 NONAME
+	_ZN16CWidgetInstaller4NewLEv @ 6 NONAME
+	_ZN16CWidgetInstaller8InstallLER7TDesC16 @ 7 NONAME
+	_ZN16CWidgetInstaller8RunErrorEi @ 8 NONAME
+	_ZTI14CIconConverter @ 9 NONAME ; #<TI>#
+	_ZTV14CIconConverter @ 10 NONAME ; #<VT>#
+	_ZTI24CWidgetBackupRegistryXml @ 11 NONAME ; #<TI>#
+	_ZTV24CWidgetBackupRegistryXml @ 12 NONAME ; #<VT>#
+

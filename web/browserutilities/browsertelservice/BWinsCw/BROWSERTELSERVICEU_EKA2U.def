@@ -1,0 +1,21 @@
+EXPORTS
+	??1CBrowserTelService@@UAE@XZ @ 1 NONAME ; CBrowserTelService::~CBrowserTelService(void)
+	?AddObserver@CBrowserTelService@@QAEXPAVMBrowserTelServiceObserver@@@Z @ 2 NONAME ; void CBrowserTelService::AddObserver(class MBrowserTelServiceObserver *)
+	?AddPBEntryL@CBrowserTelService@@QAEHAAVTDesC16@@00@Z @ 3 NONAME ; int CBrowserTelService::AddPBEntryL(class TDesC16 &, class TDesC16 &, class TDesC16 &)
+	?CancelMakeCall@CBrowserTelService@@QAEXXZ @ 4 NONAME ; void CBrowserTelService::CancelMakeCall(void)
+	?CancelSendDTMFL@CBrowserTelService@@QAEXXZ @ 5 NONAME ; void CBrowserTelService::CancelSendDTMFL(void)
+	?DisconnectActiveCSDConnectionL@CBrowserTelService@@QAEXXZ @ 6 NONAME ; void CBrowserTelService::DisconnectActiveCSDConnectionL(void)
+	?MakeCall@CBrowserTelService@@QAEHAAVTDesC16@@H@Z @ 7 NONAME ; int CBrowserTelService::MakeCall(class TDesC16 &, int)
+	?MakeCall@CBrowserTelService@@QAEXAAVTRequestStatus@@AAVTDesC16@@H@Z @ 8 NONAME ; void CBrowserTelService::MakeCall(class TRequestStatus &, class TDesC16 &, int)
+	?NewL@CBrowserTelService@@SAPAV1@PAVMBrowserTelServiceObserver@@@Z @ 9 NONAME ; class CBrowserTelService * CBrowserTelService::NewL(class MBrowserTelServiceObserver *)
+	?NewLC@CBrowserTelService@@SAPAV1@PAVMBrowserTelServiceObserver@@@Z @ 10 NONAME ; class CBrowserTelService * CBrowserTelService::NewLC(class MBrowserTelServiceObserver *)
+	?ParsePhoneNumberL@CBrowserTelService@@QAEPAVHBufC16@@PAVTDes16@@@Z @ 11 NONAME ; class HBufC16 * CBrowserTelService::ParsePhoneNumberL(class TDes16 *)
+	?RemoveObserver@CBrowserTelService@@QAEXPAVMBrowserTelServiceObserver@@@Z @ 12 NONAME ; void CBrowserTelService::RemoveObserver(class MBrowserTelServiceObserver *)
+	?SendDTMF@CBrowserTelService@@QAEHAAVTDesC16@@H@Z @ 13 NONAME ; int CBrowserTelService::SendDTMF(class TDesC16 &, int)
+	?SendDTMF@CBrowserTelService@@QAEXAAVTRequestStatus@@AAVTDesC16@@H@Z @ 14 NONAME ; void CBrowserTelService::SendDTMF(class TRequestStatus &, class TDesC16 &, int)
+	?SendEmailMessageL@CBrowserTelService@@QAEHABVTDesC16@@000@Z @ 15 NONAME ; int CBrowserTelService::SendEmailMessageL(class TDesC16 const &, class TDesC16 const &, class TDesC16 const &, class TDesC16 const &)
+	?SendEmailMessageL@CBrowserTelService@@QAEHABVTDesC16@@000H@Z @ 16 NONAME ; int CBrowserTelService::SendEmailMessageL(class TDesC16 const &, class TDesC16 const &, class TDesC16 const &, class TDesC16 const &, int)
+	?ShowDialogL@CBrowserTelService@@QAEHABVTDesC16@@ABW4TBrowserTelServiceDlgType@@@Z @ 17 NONAME ; int CBrowserTelService::ShowDialogL(class TDesC16 const &, enum TBrowserTelServiceDlgType const &)
+	?State@CBrowserTelService@@QBE?AW4TBrowserTelServiceState@@XZ @ 18 NONAME ; enum TBrowserTelServiceState CBrowserTelService::State(void) const
+	?MakeVOIPCall@CBrowserTelService@@QAEHAAVTDesC16@@H@Z @ 19 NONAME ; int CBrowserTelService::MakeVOIPCall(class TDesC16 &, int)
+

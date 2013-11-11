@@ -1,0 +1,77 @@
+/*
+* Copyright (c) 2003-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project ikev1lib
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+TARGET          ikev1lib.dll
+TARGETTYPE      DLL
+UID             0x1000008d 0x10206994
+
+CAPABILITY      CAP_SERVER CommDD NetworkControl
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          ikev1crack.cpp
+SOURCE          ikev1crypto.cpp
+SOURCE          ikev1dialog.cpp
+SOURCE          ikev1extra.cpp
+SOURCE          ikev1infonegotiation.cpp
+SOURCE          ikev1keepalive.cpp
+SOURCE          ikev1natdiscovery.cpp
+SOURCE          ikev1negotiation.cpp
+SOURCE          ikev1payload.cpp
+SOURCE          ikev1plugin.cpp 
+SOURCE          ikev1pluginsession.cpp
+SOURCE          ikev1private.cpp
+SOURCE          ikev1receiver.cpp
+SOURCE          ikev1sa.cpp
+SOURCE          ikev1sender.cpp 
+SOURCE          ikev1timeout.cpp
+SOURCE          ikev1trans.cpp
+SOURCE          ikev1isakmpstream.cpp    
+SOURCE          ikev1nokianattkeepalive.cpp
+
+USERINCLUDE    ../inc
+USERINCLUDE    ../../ikesocket/inc
+USERINCLUDE    ../../kmdapi/inc 
+USERINCLUDE    ../../kmdserver/inc 
+USERINCLUDE    ../../ikecert/inc 
+USERINCLUDE    ../../eventmediatorapi/inc
+USERINCLUDE    ../../ikepolparser/inc 
+USERINCLUDE    ../../vpnmanager/inc
+USERINCLUDE    ../../utlcrypto/inc 
+USERINCLUDE    ../../pkiserviceapi/inc
+USERINCLUDE    ../../vpncommon/inc
+USERINCLUDE    ../../../vpnapiimpl/inc
+USERINCLUDE    ../../ikeutils/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY     euser.lib 
+LIBRARY     esock.lib 
+LIBRARY     insock.lib
+LIBRARY     efsrv.lib 
+LIBRARY     utlcrypto.lib
+LIBRARY     ikecert.lib
+LIBRARY     ikepolparser.lib
+LIBRARY     ikesocket.lib
+LIBRARY     random.lib
+LIBRARY     ikeutils.lib
+
+

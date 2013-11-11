@@ -1,0 +1,13 @@
+EXPORTS
+	??1CPkcs10Req@@UAE@XZ @ 1 NONAME ; CPkcs10Req::~CPkcs10Req(void)
+	?AttributeTypeOidToText@CPkcs10Req@@SA?AVTPtrC8@@ABVTDesC16@@@Z @ 2 NONAME ; class TPtrC8 CPkcs10Req::AttributeTypeOidToText(class TDesC16 const &)
+	?BuildDistinguishedNameDerFromTextL@CPkcs10Req@@SAXAAPAVHBufC8@@ABVTDesC8@@H1@Z @ 3 NONAME ; void CPkcs10Req::BuildDistinguishedNameDerFromTextL(class HBufC8 * &, class TDesC8 const &, int, class TDesC8 const &)
+	?CreateCertificateRequestLC@CPkcs10Req@@QAEPAVHBufC8@@W4THashType@@ABV?$TBuf8@$0BE@@@HHP6AHABVTDesC8@@AAVTDes8@@1PAX@Z4@Z @ 4 NONAME ; class HBufC8 * CPkcs10Req::CreateCertificateRequestLC(enum THashType, class TBuf8<20> const &, int, int, int (*)(class TDesC8 const &, class TDes8 &, class TBuf8<20> const &, void *), void *)
+	?SetChallengePw@CPkcs10Req@@QAEHABVTDesC8@@@Z @ 5 NONAME ; int CPkcs10Req::SetChallengePw(class TDesC8 const &)
+	?SetDNSName@CPkcs10Req@@QAEHABVTDesC8@@@Z @ 6 NONAME ; int CPkcs10Req::SetDNSName(class TDesC8 const &)
+	?SetDistinguishedName@CPkcs10Req@@QAEHABVTDesC8@@@Z @ 7 NONAME ; int CPkcs10Req::SetDistinguishedName(class TDesC8 const &)
+	?SetDistinguishedNameExtendedL@CPkcs10Req@@QAEHABVTDesC8@@@Z @ 8 NONAME ; int CPkcs10Req::SetDistinguishedNameExtendedL(class TDesC8 const &)
+	?SetPublicKey@CPkcs10Req@@QAEHABVTDesC8@@@Z @ 9 NONAME ; int CPkcs10Req::SetPublicKey(class TDesC8 const &)
+	?SetSubjectAltNameRfc822@CPkcs10Req@@QAEHABVTDesC8@@@Z @ 10 NONAME ; int CPkcs10Req::SetSubjectAltNameRfc822(class TDesC8 const &)
+	??0CPkcs10Req@@QAE@XZ @ 11 NONAME ; CPkcs10Req::CPkcs10Req(void)
+

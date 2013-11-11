@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<service>
+  <name>wlansniffer</name>
+  <filepath>No path</filepath>
+  <description>WLAN Sniffer</description>
+  <interface>
+    <name>com.nokia.symbian.IWlanSniffer</name>
+    <version>1.0</version>
+    <description>WLAN Sniffer List View</description>
+  </interface>
+</service>

@@ -1,0 +1,77 @@
+/*
+* Copyright (c) 2003-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Test project definition file for project kmdserver
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET      kmdserver.exe
+TARGETTYPE  exe
+UID         0x1000008d 0x1000088A
+
+CAPABILITY  CAP_SERVER CommDD NetworkControl
+VENDORID    VID_DEFAULT
+
+SOURCEPATH  ../src
+SOURCE      activationstarter.cpp
+SOURCE      connectionstarter.cpp
+SOURCE      connectionstopper.cpp
+SOURCE      disconnectionobserver.cpp
+SOURCE      fqdnresolver.cpp
+SOURCE      errorobserver.cpp
+SOURCE      iachangeobserver.cpp
+SOURCE      ikepluginhandler.cpp
+SOURCE      ikepluginsessionhandler.cpp
+SOURCE      ikepcaptrace.cpp
+SOURCE      kmddebuglogger.cpp
+SOURCE      kmdeventlogger.cpp
+SOURCE      kmdserver.cpp
+SOURCE      kmdsession.cpp
+SOURCE      kmdstarter.cpp
+SOURCE      secpolpayload.cpp
+SOURCE      secpolreader.cpp
+SOURCE      vpnconnection.cpp 
+
+SOURCEPATH  ../../vpncommon/src
+SOURCE      srvstatic.cpp
+
+USERINCLUDE ../inc
+USERINCLUDE ../../kmdapi/inc 
+USERINCLUDE ../../ikepolparser/inc 
+USERINCLUDE ../../vpnmanager/inc 
+USERINCLUDE ../../eventmediatorapi/inc
+USERINCLUDE ../../vpncommon/inc 
+USERINCLUDE ../../eventviewer/inc 
+USERINCLUDE ../../ikesocket/inc
+USERINCLUDE ../../ikeutils/inc
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE /epoc32/include/networking
+
+LIBRARY         kmd_proxy.lib
+LIBRARY         ikesocket_proxy.lib
+LIBRARY         bafl.lib
+LIBRARY         cmmanager.lib
+LIBRARY         efsrv.lib 
+LIBRARY         euser.lib
+LIBRARY         esock.lib 
+LIBRARY         eventmedapi.lib
+LIBRARY         eventviewer.lib
+LIBRARY         ikesocket.lib
+LIBRARY         ikepolparser.lib
+LIBRARY         insock.lib
+LIBRARY         ipsecpolapi.lib
+DEBUGLIBRARY    flogger.lib
+

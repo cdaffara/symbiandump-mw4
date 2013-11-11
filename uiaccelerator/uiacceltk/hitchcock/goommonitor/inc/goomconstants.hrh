@@ -1,0 +1,38 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Graphics Out of Memory Monitor Constants
+*
+*/
+
+
+#ifndef GOOMCONSTANTS_HRH_
+#define GOOMCONSTANTS_HRH_
+
+const TInt KAppNotInWindowGroupList = -1;
+
+const TInt KGOomDefaultAppId = 0;
+const TInt KGOomDefaultPluginId = 0;
+const TInt KGOomThresholdUnset = 0;
+
+const TInt KGOomBusyAppId = 0x10286A84;
+const TInt KGOomHighPriorityAppId = 0x10286A85;
+
+const TInt KGOomPriorityInfinate = 1024;
+
+// same as Akncapserver since fast swap is contained in it
+const TUid  KUidFastSwap = { 0x10207218 };
+const TUid  KUidPenInputServer = { 0x10281855 };
+
+
+#endif /*GOOMCONSTANTS_HRH_*/

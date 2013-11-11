@@ -1,0 +1,348 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// Script file for HTTP Integration Test.
+// @internalAll
+// 
+//
+
+PRINT UPNP_MESSAGE_TESTS
+
+// Load the test
+LOAD_SUITE upnpmessagetest
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_1
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-001
+//! @SYMTestCaseDesc                Parsing a simple response.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!                                                •	Response has no excess data.
+//!                                                •	Response data appears in a single chunk.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_1
+END_TESTCASE 	RESPONSE_PARSER_TEST_1
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_2
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-002
+//! @SYMTestCaseDesc 	            Parsing 2 simple responses.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 simple responses.
+//!				                                •	2nd response is present as excess data of the 1st response. 
+//!				                                •	Response data appears in a single chunk.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_2
+END_TESTCASE 	RESPONSE_PARSER_TEST_2
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_3
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-003
+//! @SYMTestCaseDesc 	            Parsing a simple response that has a chunked body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!				                                •	Response has a chunked body.
+//!				                                •	No excess data in the response.
+//!                                                •	Response data appears in a single chunk.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_3
+END_TESTCASE 	RESPONSE_PARSER_TEST_3
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_4
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-004
+//! @SYMTestCaseDesc 	            Parsing 2 simple responses that have a chunked body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 simple responses.
+//!				                                •	Both responses have chunked body.
+//!				                                •	2nd response is present as excess data of the 1st response.
+//!                                                •	Response data appears in a single chunk.
+//!         
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_4
+END_TESTCASE 	RESPONSE_PARSER_TEST_4
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_5
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-005
+//! @SYMTestCaseDesc 	            Parsing 2 simple responses one of which has the Content-Length header and the other has a chunked body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 simple responses.
+//!				                                •	1st response has Content-Length and the 2nd has a chunked body.
+//!				                                •	2nd response is present as excess data of the 1st response.
+//!                                                •	Response data appears in a single chunk.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_5
+END_TESTCASE 	RESPONSE_PARSER_TEST_5
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_6
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-006
+//! @SYMTestCaseDesc 	            Parsing 2 simple responses one of which has the Content-Length header and the other has a chunked body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 simple responses.
+//!				                                •	1st response has a chunked body and the 2nd has Content-Length.
+//!				                                •	2nd response is present as excess data of the 1st response.
+//!                                                •	Response data appears in a single chunk.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_6
+END_TESTCASE 	RESPONSE_PARSER_TEST_6
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_7
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-007
+//! @SYMTestCaseDesc 	            Parsing a simple response.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!				                                •	Response has no excess data.
+//!				                                •	Response data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_7
+END_TESTCASE 	RESPONSE_PARSER_TEST_7
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_8
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-008
+//! @SYMTestCaseDesc 	            Parsing a simple response that has a chunked body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!				                                •	Response has no excess data.
+//!				                                •	Response has a chunked body.
+//!                                                •	Response data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_8
+END_TESTCASE 	RESPONSE_PARSER_TEST_8
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_9
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-009
+//! @SYMTestCaseDesc 	            Parsing a simple response where the entity body appears in multiple chunks.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!				                                •	Response has no excess data.
+//!				                                •	Entity body appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_9
+END_TESTCASE 	RESPONSE_PARSER_TEST_9
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_10
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-10
+//! @SYMTestCaseDesc 	            Parsing a simple response where the entity body appears in multiple chunks. The response has a chunked body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!				                                •	Response has no excess data.
+//!				                                •	Response has a chunked body.
+//!                                                •	Entity body appears in multiple chunks.    
+//! 
+//! @SYMTestExpectedResults     
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_10
+END_TESTCASE 	RESPONSE_PARSER_TEST_10
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_11
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-11
+//! @SYMTestCaseDesc 	            Parsing 2 simple responses.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 simple responses.
+//!				                                •	2nd response is present as excess data of the 1st response.
+//!				                                •	Response data appears in a multiple chunks.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_11
+END_TESTCASE 	RESPONSE_PARSER_TEST_11
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_12
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-12
+//! @SYMTestCaseDesc 	            Parsing 2 simple responses that have a chunked body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 simple responses.
+//!				                                •	2nd response is present as excess data of the 1st response.
+//!				                                •	Response data appears in a multiple chunks.
+//!                                                •	Both responses have chunked body.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_12
+END_TESTCASE 	RESPONSE_PARSER_TEST_12
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_13
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-13
+//! @SYMTestCaseDesc 	            Parsing 2 simple responses one of which has the Content-Length header and the other has a chunked body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 simple responses.
+//!				                                •	1st response has Content-Length and the 2nd has a chunked body.
+//!				                                •	2nd response is present as excess data of the 1st response.
+//!                                                •	Response data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_13
+END_TESTCASE 	RESPONSE_PARSER_TEST_13
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_14
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-050
+//! @SYMTestCaseDesc                Parsing 100-Continue response.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!                                                •	Response has status code 100.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the start line, headers and body.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_14
+END_TESTCASE 	RESPONSE_PARSER_TEST_14
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_15
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-NEG-051
+//! @SYMTestCaseDesc                Parsing 100-Continue response.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!                                                •	CResponse object will not be provided to the parser.
+//!
+//! @SYMTestExpectedResults     The parser panics with TUPnPMessagePanic::EMissingResponse.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM !PanicCode=3 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_15
+END_TESTCASE 	RESPONSE_PARSER_TEST_15
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_16
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-52
+//! @SYMTestCaseDesc                Parsing response with HTTP/1.0.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!                                                •	HTTP version 1.0.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the response.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_16
+END_TESTCASE 	RESPONSE_PARSER_TEST_16
+
+
+
+START_TESTCASE	RESPONSE_PARSER_TEST_17
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-53
+//! @SYMTestCaseDesc                Parsing response with HTTP/0.1.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple response.
+//!                                                •	HTTP version 0.1.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the response.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest ResponseParserTest	z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  RESPONSE_PARSER_TEST_17
+END_TESTCASE 	RESPONSE_PARSER_TEST_17

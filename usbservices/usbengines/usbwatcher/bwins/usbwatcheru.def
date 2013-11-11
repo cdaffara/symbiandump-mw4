@@ -1,0 +1,12 @@
+EXPORTS
+	??0RUsbWatcher@@QAE@XZ @ 1 NONAME ; RUsbWatcher::RUsbWatcher(void)
+	??1RUsbWatcher@@QAE@XZ @ 2 NONAME ; RUsbWatcher::~RUsbWatcher(void)
+	?CancelSetPersonality@RUsbWatcher@@QAEXXZ @ 3 NONAME ; void RUsbWatcher::CancelSetPersonality(void)
+	?CancelSetPreviousPersonality@RUsbWatcher@@QAEXXZ @ 4 NONAME ; void RUsbWatcher::CancelSetPreviousPersonality(void)
+	?Connect@RUsbWatcher@@QAEHXZ @ 5 NONAME ; int RUsbWatcher::Connect(void)
+	?SetPersonality@RUsbWatcher@@QAEXAAVTRequestStatus@@HHH@Z @ 6 NONAME ; void RUsbWatcher::SetPersonality(class TRequestStatus &, int, int, int)
+	?SetPreviousPersonality@RUsbWatcher@@QAEXAAVTRequestStatus@@@Z @ 7 NONAME ; void RUsbWatcher::SetPreviousPersonality(class TRequestStatus &)
+	?SetPreviousPersonality@RUsbWatcher@@QAEXXZ @ 8 NONAME ; void RUsbWatcher::SetPreviousPersonality(void)
+	?SetPreviousPersonalityOnDisconnect@RUsbWatcher@@QAEXXZ @ 9 NONAME ; void RUsbWatcher::SetPreviousPersonalityOnDisconnect(void)
+	?Version@RUsbWatcher@@QBE?AVTVersion@@XZ @ 10 NONAME ; class TVersion RUsbWatcher::Version(void) const
+

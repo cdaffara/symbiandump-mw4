@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<api id="8860504bbc78c66f71816aeb53e609bc" dataversion="1.0">
+  <name>Browser Dialogs Provider API</name>
+  <description>Provides prompt dialogs used by browser.</description>
+  <type>c++</type>
+  <subsystem>BrowserUtilities</subsystem>
+  <libs>
+    <lib name="browserdialogsprovider.lib" />
+  </libs>
+  <release category="domain" sinceversion="2.8"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

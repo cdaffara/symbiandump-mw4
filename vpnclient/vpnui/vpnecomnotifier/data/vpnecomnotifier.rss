@@ -1,0 +1,526 @@
+/*
+* Copyright (c) 2007-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Resource definitions for project vpnecomnotifier
+*
+*/
+
+NAME ANOT
+
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.hrh>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <avkon.loc>
+
+#include "vpnecomnotifier.hrh"
+#include <vpnnotifier.loc>
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=""; }
+
+RESOURCE EIK_APP_INFO
+    {
+    }
+
+//=================================================================
+
+RESOURCE DIALOG r_acu_server_identity_query
+    {
+    flags = EEikDialogFlagNotifyEsc;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EEikCidPassword;
+            control = AVKON_DATA_QUERY 
+                {
+                layout = EDataLayout;
+                label = qtn_p_policy_server_identity;
+                control = EDWIN
+                    {
+                    flags = 0;
+                    maxlength=4;
+                    avkon_flags = EAknEditorFlagNoT9  | 
+                        EAknEditorFlagLatinInputModesOnly;
+
+                    // Editor cases
+                    default_case = EAknEditorLowerCase;
+                    allowed_case_modes = EAknEditorAllCaseModes;
+                    
+                    // Input modes
+                    allowed_input_modes = EAknEditorTextInputMode  | 
+                        EAknEditorNumericInputMode;
+                    default_input_mode = EAknEditorNumericInputMode;
+
+                    // Means no functionality when pressing * or # in numeric keymap
+                    numeric_keymap = EAknEditorPlainNumberModeKeymap; 
+                
+                    // Contains .@;?'-_&/~*+= characters
+                    //special_character_table = R_AVKON_EMAIL_ADDR_SPECIAL_CHARACTER_TABLE_DIALOG;
+                    };
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_acu_legacy_authentication
+    {
+    flags = EEikDialogFlagNotifyEsc;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtMultilineQuery;
+            id = EEikCidPassword;
+            control = AVKON_DATA_QUERY
+                {
+                layout = EMultiDataFirstEdwin;
+//                label = qtn_p_policy_server_logon;
+                label = qtn_vpn_prmpt_policy_server_username;
+                control = EDWIN
+                    {
+                    flags = 0;
+                    width = 5;                    
+                    lines = 1;
+                    maxlength = 50;
+                    default_case = EAknEditorLowerCase;
+                    allowed_case_modes = EAknEditorAllCaseModes;
+                    avkon_flags = EAknEditorFlagNoT9  | 
+                        EAknEditorFlagLatinInputModesOnly;                    
+                    };
+                };
+            },
+        DLG_LINE
+            {
+            type = EAknCtMultilineQuery;
+            id = EEikCidPasswordConfirm;
+            control = AVKON_DATA_QUERY 
+                {
+                layout = EMultiDataSecondSecEd;
+                //label = qtn_p2_policy_server_logon;
+                label = qtn_vpn_prmpt_policy_server_password;
+                control = SECRETED
+                    {
+                    num_letters=50;                   
+                    };
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_vpn_user_identity_query
+    {
+    flags = EEikDialogFlagNotifyEsc;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EEikCidPassword;
+            control = AVKON_DATA_QUERY 
+                {
+                layout = EDataLayout;
+                label = qtn_vpn_prmpt_user_identity;
+                control = EDWIN
+                    {
+                    flags=0;
+                    lines=1;
+                    maxlength=50;
+                    default_case = EAknEditorLowerCase;
+                    allowed_case_modes = EAknEditorAllCaseModes;
+                    avkon_flags = EAknEditorFlagNoT9  | 
+                        EAknEditorFlagLatinInputModesOnly;                     
+                    };
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_vpn_policy_update_confirmation_query
+    {
+    flags = EEikDialogFlagNotifyEsc;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = qtn_vpn_quest_dl_policy_update;
+                // Use default icon
+                // bmpfile = AKNEXQUERY_BMPFILE_NAME;
+                // bmpid = EMbmAknexqueryLshellicon;
+                // bmpmask = AKNEXQUERY_BITMAP_MASK_FLAG;
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_vpn_quest_import_policy
+    {
+    flags = EEikDialogFlagNotifyEsc;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = qtn_vpn_quest_import_policy;
+                // Use default icon
+                // bmpfile = AKNEXQUERY_BMPFILE_NAME;
+                // bmpid = EMbmAknexqueryLshellicon;
+                // bmpmask = AKNEXQUERY_BITMAP_MASK_FLAG;
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_vpn_quest_apply_devlock
+    {
+    flags = EEikDialogFlagNotifyEsc;
+    buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = qtn_vpn_quest_import_policy_forcing_dev_lock;
+                // Use default icon
+                // bmpfile = AKNEXQUERY_BMPFILE_NAME;
+                // bmpid = EMbmAknexqueryLshellicon;
+                // bmpmask = AKNEXQUERY_BITMAP_MASK_FLAG;
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_vpn_wait_import_policy
+{
+ flags = EAknWaitNoteFlags | EEikDialogFlagNotifyEsc;
+ buttons=R_AVKON_SOFTKEYS_CANCEL;
+ items =
+ {
+   DLG_LINE
+   {
+     type = EAknCtNote;
+     id = EGeneralNote;
+     control = AVKON_NOTE
+     {
+       layout = EWaitLayout;
+       singular_label = qtn_vpn_wait_importing_policy;
+       animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+     };
+   }
+ };
+}
+
+RESOURCE DIALOG r_vpn_wait_processing
+{
+ flags = EAknWaitNoteFlags | EEikDialogFlagNotifyEsc;
+// buttons=R_AVKON_SOFTKEYS_CANCEL;
+ items =
+ {
+   DLG_LINE
+   {
+     type = EAknCtNote;
+     id = EGeneralNote;
+     control = AVKON_NOTE
+     {
+       layout = EWaitLayout;
+       singular_label = qtn_gen_note_processing;
+       animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+     };
+   }
+ };
+}
+
+RESOURCE DIALOG r_vpn_pkcs12_password_query
+    {
+    flags = EEikDialogFlagNotifyEsc;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EEikCidPassword;
+            control = AVKON_DATA_QUERY 
+                {
+                layout = ECodeLayout;
+                label = qtn_vpn_prmpt_pkcs12_password;
+                control = SECRETED
+                    {
+                    num_letters = 32;
+                    };
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_kmd_crack_unpw_query
+    {
+    flags=EEikDialogFlagNotifyEsc;
+    buttons=R_AVKON_SOFTKEYS_OK_CANCEL;
+    items=
+        {
+        DLG_LINE
+            {
+            type = EAknCtMultilineQuery;
+            id = EEikCidPassword;
+            control = AVKON_DATA_QUERY
+                {
+                layout = EMultiDataFirstEdwin;
+                label = qtn_vpn_prmpt_gw_username_legacy;
+                control = EDWIN
+                    {
+                    flags = 0;
+                    width = 5;
+                    lines = 1;
+                    maxlength = 32;
+                    default_case = EAknEditorLowerCase;
+                    allowed_case_modes = EAknEditorAllCaseModes;
+                    avkon_flags = EAknEditorFlagNoT9  | 
+                        EAknEditorFlagLatinInputModesOnly;                     
+                    };
+                };
+            },
+        DLG_LINE
+            {
+            type = EAknCtMultilineQuery;
+            id = EEikCidPasswordConfirm;
+            control = AVKON_DATA_QUERY 
+                {
+                layout = EMultiDataSecondSecEd;
+                label = qtn_vpn_prmpt_gw_password_legacy;
+                control = SECRETED
+                    {
+                    num_letters = 32;
+                    };
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_kmd_crack_sid_query
+    {
+    flags=EEikDialogFlagNotifyEsc;
+    buttons=R_AVKON_SOFTKEYS_OK_CANCEL;
+    items=
+        {
+        DLG_LINE
+            {
+            type=EAknCtMultilineQuery;
+            id=EEikCidPassword;
+            control=AVKON_DATA_QUERY
+                {
+                layout = EMultiDataFirstEdwin;
+                label = qtn_vpn_prmpt_gw_username_legacy;
+                control=EDWIN
+                    {
+                    flags=0;
+                    width=5;
+                    lines=1;
+                    maxlength=32;
+                    default_case = EAknEditorLowerCase;
+                    allowed_case_modes = EAknEditorAllCaseModes;
+                    avkon_flags = EAknEditorFlagNoT9  | 
+                        EAknEditorFlagLatinInputModesOnly;                      
+                    };
+                };
+            },
+        DLG_LINE
+            {
+            type=EAknCtMultilineQuery;
+            id=EEikCidPasswordConfirm;
+            control= AVKON_DATA_QUERY
+                {
+                layout = EMultiDataSecondPinEd;
+                label = qtn_vpn_prmpt_gw_securid_passcode;
+                control = SECRETED
+                    {
+                    num_letters=32;
+                    };
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_kmd_crack_sid_next_query
+    {
+    flags=EEikDialogFlagNotifyEsc;
+    buttons=R_AVKON_SOFTKEYS_OK_CANCEL;
+    items=
+        {
+        DLG_LINE
+            {
+            type=EAknCtMultilineQuery;
+            id=EEikCidPassword;
+            control=AVKON_DATA_QUERY
+                {
+                layout = EMultiDataFirstEdwin;
+                label = qtn_vpn_prmpt_gw_username_legacy;
+                control=EDWIN
+                    {
+                    flags=0;
+                    width=5;
+                    lines=1;
+                    maxlength=32;
+                    default_case = EAknEditorLowerCase;
+                    allowed_case_modes = EAknEditorAllCaseModes;
+                    avkon_flags = EAknEditorFlagNoT9  | 
+                        EAknEditorFlagLatinInputModesOnly;                      
+                    };
+                };
+            },
+        DLG_LINE
+            {
+            type=EAknCtMultilineQuery;
+            id=EEikCidPasswordConfirm;
+            control= AVKON_DATA_QUERY 
+                {
+                layout = EMultiDataSecondPinEd;
+                label = qtn_vpn_prmpt_next_passcode;
+                control = SECRETED
+                    {
+                    num_letters=32;
+                    };
+                };
+            }
+        };
+    }
+
+
+//=================================================================
+RESOURCE TBUF r_kmd_crack_auth_failed
+    {
+    buf = qtn_vpn_err_auth_failed;
+    }
+
+RESOURCE TBUF r_acu_next_server_identity
+    {
+    buf = qtn_vpn_info_verify_hash;
+    //buf = qtn_n_next_server_identity;
+    }
+
+RESOURCE TBUF r_acu_wrong_server_identity_code
+    {
+    buf = qtn_vpn_err_server_hash_error;
+    //buf = qtn_n_wrong_identity_code;
+    }
+
+RESOURCE TBUF r_acu_server_identity
+    {
+    buf = qtn_p2_policy_server_identity;
+    }
+
+RESOURCE TBUF r_acu_auth_failed
+    {
+    buf = qtn_vpn_err_auth_failed;
+    }
+
+RESOURCE TBUF r_acu_invalid_server_cert
+    {
+    buf = qtn_vpn_info_server_cert_expired;
+    }
+
+RESOURCE TBUF r_acu_invalid_client_cert
+    {
+    buf = qtn_vpn_info_client_cert_expired;
+    }
+
+// VPN related strings
+
+RESOURCE TBUF r_vpn_user_identity
+    {
+    buf = qtn_vpn_prmpt_user_identity;
+    }
+
+RESOURCE TBUF r_vpn_policy_update_succeeded
+    {
+    buf = qtn_vpn_conf_policy_update_complete;
+    }
+
+RESOURCE TBUF r_vpn_policy_update_failed
+    {
+    buf = qtn_vpn_info_policy_dl_error;
+    }
+
+RESOURCE TBUF r_vpn_policy_delete_succeeded
+    {
+    buf = qtn_vpn_info_policy_deleted;
+    }
+
+RESOURCE TBUF r_vpn_user_name_missing
+    {
+    buf = qtn_vpn_info_user_name_missing;
+    }
+
+RESOURCE TBUF r_vpn_fqdn_missing
+    {
+    buf = qtn_vpn_info_fqdn_missing;
+    }
+
+RESOURCE TBUF r_vpn_policy_installation_failed
+    {
+    buf = qtn_vpn_info_sis_definition_install_failed;
+    }
+
+RESOURCE TBUF r_vpn_conf_policy_import_complete
+    {
+    buf = qtn_vpn_conf_policy_import_complete;
+    }
+
+RESOURCE TBUF r_vpn_str_quest_import_policy_str
+    {
+    buf = qtn_vpn_quest_import_policy;
+    }
+
+RESOURCE TBUF r_vpn_str_quest_apply_devlock_str
+    {
+    buf = qtn_vpn_quest_import_policy_forcing_dev_lock;
+    }
+    
+RESOURCE TBUF r_vpn_str_quest_pkcs12_password_str
+    {
+    buf = qtn_vpn_prmpt_pkcs12_password;
+    }
+
+RESOURCE TBUF r_vpn_str_wrong_pkcs12_password_str
+    {
+    buf = qtn_vpn_info_incorrect_pkcs12_password;
+    }
+
+RESOURCE TBUF r_vpn_str_cannot_force_device_lock
+    {
+    buf = qtn_vpn_info_import_cannot_force_dev_lock;
+    }
+
+

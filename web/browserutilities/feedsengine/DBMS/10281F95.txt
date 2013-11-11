@@ -1,0 +1,14 @@
+; policy file for accessing Notepad database, to generate .spd file, follow steps:
+; remove all comment lines at the top, copy this file to \epoc32\winscw\c\
+; run \EPOC32\RELEASE\WINSCW\UDEB\EDBSPCONV.EXE /f=c:\10281F95.txt /b=10281F95 /p
+;
+[database]
+read
+capability = ReadUserData
+write
+capability = WriteUserData
+schema
+capability = WriteUserData
+
+[BACKUP]
+SID = 1020728E

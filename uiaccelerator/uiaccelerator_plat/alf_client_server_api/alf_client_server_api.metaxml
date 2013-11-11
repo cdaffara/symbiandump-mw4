@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<api id="06a8f7af63062d0aff730ccacb27dd5f" dataversion="1.0">
+  <name>ALF Client Server API</name>
+  <description>Client Server headers. Application developers shoud not need this</description>
+  <type>c++</type>
+  <subsystem>uiacceltk</subsystem>
+  <libs>
+    <lib name="alfappservercore.lib" />
+    <lib name="alfclient.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

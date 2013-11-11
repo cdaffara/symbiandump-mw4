@@ -1,0 +1,38 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Holds metadata, one version per widget.
+*
+*
+*/
+
+#ifndef __WIDGETREGISTRY_IBY__
+#define __WIDGETREGISTRY_IBY__
+
+#include <platform/mw/Browser_platform_variant.hrh>
+
+// app exe
+S60_APP_EXE(WidgetRegistry)
+
+// bitmaps
+
+// DLLs
+file=ABI_DIR\BUILD_DIR\WidgetRegistryClient.dll    SHARED_LIB_DIR\WidgetRegistryClient.dll
+
+// data
+data=ZPRIVATE\10282f06\Widget_lproj.xml    private\10282f06\Widget_lproj.xml
+#ifdef BRDO_WRT_SECURITY_MGR_FF
+data=ZPRIVATE\10282f06\WidgetAccessPolicy.xml    private\10282f06\WidgetAccessPolicy.xml
+#endif
+
+#endif

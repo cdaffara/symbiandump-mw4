@@ -1,0 +1,343 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     Dialogs Provider resource file
+*     
+*
+*/
+
+//  INCLUDES
+#include "BrowserDialogsProvider.hrh"
+#include <BrowserDialogsProvider.loc>
+
+#include <avkon.rsg>
+#include <avkon.rh>	
+#include <avkon.loc>
+#include <eikon.rh>
+#include <uikon.rh>
+#include <CommonDialogs.rh>
+#include <pathconfiguration.hrh>
+
+NAME    BRDP // for Browser Dialogs Provider
+
+RESOURCE RSS_SIGNATURE { }
+
+//-----------------------------------------------------------------------------
+//  RESOURCE IDENTIFIER
+//
+
+RESOURCE TBUF r_browser_dlgprov_query_script_prompt			{ buf=qtn_browser_dlgprov_query_script_prompt; }
+
+
+//-----------------------------------------------------------------------------
+// Download Dialog Object
+//
+RESOURCE TBUF r_browser_dlgprov_obj_download_title			{ buf = qtn_browser_dlgprov_query_object_info_header; }
+RESOURCE TBUF r_browser_dlgprov_obj_download_not_supported	{ buf = qtn_browser_dlgprov_query_object_info_notsupported; }
+RESOURCE TBUF r_browser_dlgprov_obj_download_size			{ buf = qtn_browser_dlgprov_query_object_info_filesize; }
+RESOURCE TBUF r_browser_dlgprov_unit_kb						{ buf = qtn_browser_dlgprov_unit_kb; }
+RESOURCE TBUF r_wml_decimal_separator						{ buf = text_calc_decimal_separator; }
+RESOURCE TBUF r_browser_dlgprov_unit_mb						{ buf = qtn_browser_dlgprov_unit_mb; }
+RESOURCE TBUF r_browser_dlgprov_obj_download_unknown		{ buf = qtn_browser_dlgprov_query_object_unknown; }
+RESOURCE TBUF r_browser_dlgprov_obj_download_openwith		{ buf = qtn_browser_dlgprov_query_object_info_openwith; }
+RESOURCE TBUF r_browser_dlgprov_obj_download_filetype		{ buf = qtn_browser_dlgprov_query_object_info_filetype; }
+
+// Authentication Dialog
+RESOURCE TBUF r_browser_dlgprov_auth_fail_retry_query		{ buf=text_wml_auth_fail_retry_query; }
+RESOURCE TBUF r_browser_dlgprov_query_basic_authentication	{ buf=qtn_browser_dlgprov_query_basic_authentication; }
+// DNS look up failed message
+RESOURCE TBUF r_browser_not_valid_dns_name						{ buf = qtn_browser_not_valid_dns_name; }
+
+//
+// ===================================================
+// File Upload Dialog
+// ===================================================
+RESOURCE MEMORYSELECTIONDIALOG r_memory_selection_dialog
+    {
+    locations =
+        {
+        LOCATION { root_path = text_phone_memory_root_path; },
+        LOCATION { root_path = text_memory_card_root_path; }
+        };
+    }
+
+// For DialogDisplayPageImagesL
+//----------------------------------------------------
+//
+//    View images popup texts
+//   
+//----------------------------------------------------
+RESOURCE CBA r_dialogsprovider_viewimages_buttons
+    {
+	flags = EAknCBAFlagRespondWhenInvisible;
+    buttons =
+            {
+            CBA_BUTTON {id=EDialogsProviderCmdViewImagesView; txt=text_softkey_ok;},
+            CBA_BUTTON {id=EAknSoftkeyCancel; txt=text_softkey_cancel;},
+            CBA_BUTTON {id=EDialogsProviderCmdViewImagesView; txt=text_softkey_ok;}
+            };
+    }
+
+RESOURCE TBUF r_browser_query_select_image { buf = qtn_browser_query_select_image; }
+
+// For DialogPromptLC
+// ---------------------------------------------------------
+//   
+//    r_data_query_with_heading
+//
+// ---------------------------------------------------------
+//
+RESOURCE DIALOG r_data_query_with_heading
+	{
+	flags=EGeneralQueryFlags | EEikDialogFlagNoShadow;
+	buttons=R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+	items=
+		{
+		DLG_LINE 
+		{
+		type = EAknCtPopupHeadingPane;
+		id = EAknMessageQueryHeaderId;
+		control = AVKON_HEADING
+			{
+			label = qtn_browser_dlgprov_query_script_prompt;
+			};
+		},
+		DLG_LINE
+			{
+			type=EAknCtQuery;
+			id=EGeneralQuery;
+			control= AVKON_DATA_QUERY 
+				{ 
+				layout = EStaticSizeDataLayout; // Use this when you have a heading in data query
+				control=EDWIN 
+					{
+					flags= EEikEdwinNoHorizScrolling | EEikEdwinResizable; 
+					};
+				};
+			}
+		};
+	}
+
+// For ConfirmQueryDialogL
+// ---------------------------------------------------------
+//   
+//    r_browser_confirm_query
+//
+// ---------------------------------------------------------
+//
+RESOURCE DIALOG r_browser_confirm_query
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO__YES;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+			control= AVERELL_CONFIRMATION_QUERY 
+				{ 
+					layout = EConfirmationLayout;
+					label = "";
+				};
+			}
+        };
+    }
+
+
+// User Authentication Dialog
+// ---------------------------------------------------------
+//   
+//    r_wb_script_userpasswd_lines_non_japan
+//
+// ---------------------------------------------------------
+//
+RESOURCE DIALOG r_wb_script_userpasswd_lines_non_japan
+	{
+	flags=EGeneralQueryFlags;
+	buttons=R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+	items=
+		{
+		DLG_LINE
+			{
+			type=EAknCtMultilineQuery;
+			id=EMultilineFirstLine;
+			control = AVERELL_DATA_QUERY
+				{ 
+				layout = EMultiDataFirstEdwin;
+				label = text_wml_username_query;				
+				control = EDWIN
+					{
+					flags=0;
+					width=5;
+					lines=1;
+					maxlength = KBrowserDialogsProviderMaxUsername;
+                                        default_case = EAknEditorLowerCase;
+                                        allowed_case_modes = EAknEditorAllCaseModes;
+                                        allowed_input_modes= EAknEditorTextInputMode| EAknEditorNumericInputMode;
+                                        default_input_mode = EAknEditorTextInputMode;
+					};
+				};
+			},
+		DLG_LINE
+			{
+			type=EAknCtMultilineQuery;
+			id=EMultilineSecondLine;
+			control= AVERELL_DATA_QUERY 
+				{ 
+					layout = EMultiDataSecondSecEd;
+					label = text_wml_passwd_query;
+					control = SECRETED
+						{
+ 						num_letters=KBrowserDialogsProviderMaxPassword;
+						};
+				};
+			}
+		};
+	}
+	
+// ---------------------------------------------------------
+//   
+//    r_wb_script_userpasswd_lines_japan
+//
+// ---------------------------------------------------------
+//
+RESOURCE DIALOG r_wb_script_userpasswd_lines_japan
+	{
+	flags=EGeneralQueryFlags;
+	buttons=R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+	items=
+		{
+		DLG_LINE
+			{
+			type=EAknCtMultilineQuery;
+			id=EMultilineFirstLine;
+			control = AVERELL_DATA_QUERY
+				{ 
+				layout = EMultiDataFirstEdwin;
+				label = text_wml_username_query;				
+				control = EDWIN
+					{
+					flags=0;
+					width=5;
+					lines=1;
+					maxlength = KBrowserDialogsProviderMaxUsername;
+                                        default_case = EAknEditorLowerCase;
+                                        allowed_case_modes = EAknEditorAllCaseModes;
+                                        allowed_input_modes= EAknEditorTextInputMode| EAknEditorNumericInputMode | EAknEditorFullWidthTextInputMode | EAknEditorHalfWidthTextInputMode;
+                                        default_input_mode = EAknEditorHalfWidthTextInputMode;
+					};
+				};
+			},
+		DLG_LINE
+			{
+			type=EAknCtMultilineQuery;
+			id=EMultilineSecondLine;
+			control= AVERELL_DATA_QUERY 
+				{ 
+					layout = EMultiDataSecondSecEd;
+					label = text_wml_passwd_query;
+					control = SECRETED
+						{
+ 						num_letters=KBrowserDialogsProviderMaxPassword;
+						};
+				};
+			}
+		};
+
+	}
+RESOURCE DIALOG r_dialogsprovider_ok_note
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar |
+            EEikDialogFlagCbaButtons | EEikDialogFlagWait;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVERELL_NOTE 
+                { 
+                layout = EGeneralLayout;
+                singular_label = "";
+                plural_label = "";
+                animation = R_QGN_NOTE_OK_ANIM;
+                };
+            }
+        };
+    }
+    
+    
+    
+RESOURCE DIALOG r_browser_message_query_dialog
+    {
+    flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    items=
+        {
+        DLG_LINE
+            {
+            type = EAknCtPopupHeadingPane;
+            id = EAknMessageQueryHeaderId;
+            control = AVKON_HEADING
+                {
+                headinglayout = R_AVKON_WML_SIGN_QUERY_HEADING_PANE;
+                };
+            },
+        DLG_LINE
+            {
+            type = EAknCtMessageQuery;
+            id = EAknMessageQueryContentId;
+            control = AVKON_MESSAGE_QUERY
+                {
+                };
+            }
+        };
+    }
+    
+    
+//-----------------------------------------------------------------------------
+//   
+//   Upload progress note strings
+//   
+//-----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_qtn_browser_upload_progressnote_uploaded 	{ buf = qtn_browser_upload_progressnote_uploaded; }
+RESOURCE TBUF r_qtn_browser_upload_progressnote_unit_kbyte 	{ buf = qtn_browser_upload_progressnote_unit_kbyte; }
+RESOURCE TBUF r_qtn_browser_upload_progressnote_unit_mb 	{ buf = qtn_browser_upload_progressnote_unit_mb; }
+    
+//----------------------------------------------------
+//   r_upload_progressnote
+//   Upload progress note dialog.
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_upload_progressnote
+    {
+    flags = EAknProgressNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE
+                {
+                layout = EProgressLayout;
+                animation = 0;
+                };
+            }
+        };
+    }
+// End of File

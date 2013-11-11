@@ -1,0 +1,103 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   
+*
+*/
+
+NAME HELL
+
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rh>
+#include <avkon.rsg>
+
+#include "alfexstickers.hrh"
+#include "alfexstickers.loc"
+
+// ---------------------------------------------------------
+//   
+//    Define the resource file signature 
+//    This resource should be empty.
+//
+// ---------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE { }
+
+// ---------------------------------------------------------
+//   
+//    Default Document Name
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF r_default_document_name { buf=""; }
+
+// ---------------------------------------------------------
+//   
+//    Define default menu and CBA key.
+//
+// ---------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+    //menubar = r_AlfExStickers_menubar;
+    //cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+
+// ---------------------------------------------------------
+//   
+//   r_AlfExStickers_menubar
+//   Menubar for AlfExStickers example
+//
+// ---------------------------------------------------------
+//
+/*
+RESOURCE MENU_BAR r_AlfExStickers_menubar
+    {
+     titles =
+        {
+        MENU_TITLE {menu_pane = r_AlfExStickers_menu;}
+        };
+    }
+
+*/
+
+// ---------------------------------------------------------
+//   
+//   r_AlfExStickers_menu
+//   Menu for "Options"
+//
+// ---------------------------------------------------------
+//
+/*
+RESOURCE MENU_PANE r_AlfExStickers_menu
+    {
+   
+      items = 
+        {
+        MENU_ITEM {command = EAlfExStickersCommand1;  txt = "Say Hey!";},
+        MENU_ITEM {command = EAknSoftkeyExit;   txt = "Exit";}
+        };
+        
+    }
+*/
+
+RESOURCE TBUF       r_alfexstickers_board_texture              { buf = alfexstickers_board_texture; }
+RESOURCE TBUF       r_alfexstickers_default_text               { buf = alfexstickers_default_text; }
+
+// Sticker bitmap names must be kept last. Extra sticker bitmaps should added below this line.
+RESOURCE TBUF       r_alfexstickers_sticker_texture_blue               { buf = alfexstickers_sticker_texture_blue; }
+RESOURCE TBUF       r_alfexstickers_sticker_texture_green              { buf = alfexstickers_sticker_texture_green; }
+RESOURCE TBUF       r_alfexstickers_sticker_texture_pink               { buf = alfexstickers_sticker_texture_pink; }
+RESOURCE TBUF       r_alfexstickers_sticker_texture_yellow             { buf = alfexstickers_sticker_texture_yellow; }

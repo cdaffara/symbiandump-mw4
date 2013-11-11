@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hbdocument version="1.2">
+    <widget name="occ_wps_04" type="HbWidget">
+        <!-- layout id: txt_occ_dialog_insert_the_name_of_the_new_wlan_net -->
+        <widget name="label_heading" type="HbLabel">
+            <string locid="txt_occ_dialog_negotiating" name="plainText" value="Negotiating...."/>
+            <enums name="alignment" value="AlignTop"/>
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/> 
+            <integer name="maximumLines" value="4"/>                       
+        </widget>
+        <widget name="horizontalProgressBar" type="HbProgressBar">
+            <integer name="progressValue" value="0"/>
+            <integer name="minimum" value="0"/>
+            <enums name="orientation" value="Horizontal"/>
+            <integer name="maximum" value="0"/>
+        </widget>
+        <sizepolicy horizontalPolicy="Expanding" horizontalStretch="0" verticalPolicy="Expanding" verticalStretch="0"/>
+        <layout type="anchor"/>
+    </widget>
+    <section name="portrait">
+        <widget name="occ_wps_04" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="horizontalProgressBar" dstEdge="LEFT" src="label_heading" srcEdge="LEFT"/>
+                <anchoritem dst="horizontalProgressBar" dstEdge="TOP" prefLength="var(hb-param-margin-gene-middle-vertical)" src="label_heading" srcEdge="BOTTOM"/>
+                <anchoritem dst="horizontalProgressBar" dstEdge="RIGHT" src="label_heading" srcEdge="RIGHT"/>
+                <anchoritem dst="label_heading" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="label_heading" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="label_heading" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+            </layout>
+        </widget>
+    </section>
+    <section name="landscape">
+        <widget name="occ_wps_04" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="label_heading" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem dst="label_heading" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem direction="NEGATIVE" dst="label_heading" dstEdge="RIGHT" prefLength="expr(var(hb-param-margin-gene-middle-horizontal) / 2)" src="" srcEdge="CENTERH"/>
+                <anchoritem dst="horizontalProgressBar" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-middle-horizontal)" src="label_heading" srcEdge="RIGHT"/>
+                <anchoritem dst="horizontalProgressBar" dstEdge="TOP" src="label_heading" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="horizontalProgressBar" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+            </layout>
+        </widget>
+    </section>
+    <metadata activeUIState="portrait" display="NHD-3.2-inch_portrait" unit="un">
+        <uistate name="Common ui state" sections="#common"/>
+        <uistate name="landscape" sections="#common landscape"/>
+        <uistate name="portrait" sections="#common portrait"/>
+    </metadata>
+</hbdocument>

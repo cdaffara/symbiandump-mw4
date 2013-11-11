@@ -1,0 +1,60 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+#include <BrowserLauncher.iby>                    // from .\sf\app\webui\browserui\BROWSER\Rom
+#include <BrowserUi.iby>                          // from .\sf\app\webui\browserui\BROWSER\Rom
+#include <CodHandler.iby>                         // from .\sf\app\webui\browserui\CodHandler\rom
+#include <operatormenu.iby>                       // from .\sf\app\webui\browserui\OperatorMenu\rom
+#include <VideoServices.iby>                      // from .\sf\app\webui\browserui\VideoServices\rom
+#include <Widgets.iby>                            // from .\sf\app\webui\widgets\Rom
+//#include <BrowserWidgetUtilsPlugin.iby>           // from .\sf\mw\web\BrowserPlugins\BrowserWidgetUtilsPlugin\rom
+#include <BrowserAudioVideoPlugin.iby>            // from .\sf\mw\web\BrowserPlugins\BrowserAudioVideoPlugin\rom
+#include <BrowserGpsPlugin.iby>                   // from .\sf\mw\web\BrowserPlugins\BrowserGpsPlugin\rom
+#include <BrowserSystemInfoPlugin.iby>            // from .\sf\mw\web\BrowserPlugins\BrowserSystemInfoPlugin\rom
+#include <BrowserDialogsProvider.iby>             // from .\sf\mw\web\BrowserUtilities\BrowserDialogsProvider\rom
+#include <browsertelservice.iby>                  // from .\sf\mw\web\BrowserUtilities\BrowserTelService\Rom
+#include <Connectionmanager.iby>                  // from .\sf\mw\web\BrowserUtilities\ConnectionManager\rom
+#include <cXmlParser.iby>                         // from .\sf\mw\web\BrowserUtilities\cXmlLibrary\rom
+#include <DownloadMgrUiLib.iby>                   // from .\sf\mw\web\BrowserUtilities\DownloadMgr\DownloadMgrUiLib\rom
+#include <DownloadMgr.iby>                        // from .\sf\mw\web\BrowserUtilities\DownloadMgr\Rom
+#include <FavouritesEngine.iby>                   // from .\sf\mw\web\BrowserUtilities\FavouritesEngine\ClientServer\rom
+#include <FeedsEngine.iby>                        // from .\sf\mw\web\BrowserUtilities\FeedsEngine\rom
+#include <MultipartParser.iby>                    // from .\sf\mw\web\BrowserUtilities\MultipartParser\rom
+#include <PushMtm.iby>                            // from .\sf\mw\web\BrowserUtilities\PushMtm\Rom
+#include <S60SiSlWapPush.iby>                     // from .\sf\mw\web\BrowserUtilities\PushMtm\Rom
+#include <wappush.iby>                            // from .\sf\mw\web\BrowserUtilities\PushMtm\Rom
+#include <RecentUrlStore.iby>                     // from .\sf\mw\web\BrowserUtilities\RecentUrlStore\rom
+#include <SchemeHandler.iby>                      // from .\sf\mw\web\BrowserUtilities\SchemeHandler\Rom
+#include <webutils.iby>                           // from .\sf\mw\web\BrowserUtilities\WebUtils\rom
+#include <CookieFilter.iby>                       // from .\sf\mw\web\HttpFilters\Cookie\Rom
+#include <CookieManager.iby>                      // from .\sf\mw\web\HttpFilters\Cookie\Rom
+#include <deflatefilter.iby>                      // from .\sf\mw\web\HttpFilters\DeflateFilter\rom
+#include <HttpFilterAcceptHeader.iby>             // from .\sf\mw\web\HttpFilters\HttpFilterAcceptHeader\rom
+#include <HttpFilterAuthentication.iby>           // from .\sf\mw\web\HttpFilters\HttpFilterAuthentication\rom
+#include <HttpFilterCommon.iby>                   // from .\sf\mw\web\HttpFilters\HttpFilterCommon\rom
+#include <HttpFilterConnHandler.iby>              // from .\sf\mw\web\HttpFilters\HttpFilterConnHandler\rom
+#include <HttpFilterIop.iby>                      // from .\sf\mw\web\HttpFilters\HttpFilterIop\rom
+#include <HttpFilterProxy.iby>                    // from .\sf\mw\web\HttpFilters\HttpFilterProxy\rom
+#include <uaproffilter.iby>                       // from .\sf\mw\web\HttpFilters\uaproffilter\rom
+#include <webkit.iby>                             // from .\sf\mw\web\WebEngine\OssWebengine\WebKit\rom
+#include <WidgetBackupRestore.iby>                // from .\sf\mw\web\WebEngine\WidgetBackupRestore\Rom
+#include <WidgetEngine.iby>                       // from .\sf\mw\web\WebEngine\WidgetEngine\rom
+#include <WidgetRegistry.iby>                     // from .\sf\mw\web\WebEngine\WidgetRegistry\Rom
+#include <WidgetInstaller.iby>                    // from .\sf\mw\web\WebEngine\WidgetInstaller\Rom
+#include <BrowserRecognizers.iby>                 // from .\sf\mw\web\WebEngine\BrowserRecognizers\Rom
+#include <rt_gesturehelper.iby>                   // from .\sf\mw\web\WebEngine\WebKitUtils\rt_gesturehelper\rom
+#include <wrtharvester.iby>                       // from .\sf\mw\web\WebEngine\wrtharvester\rom

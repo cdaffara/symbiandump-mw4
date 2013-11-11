@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="2b62a948a70cbe7384add9c67bf681df" dataversion="1.0">
+  <name>Web Service Manager API</name>
+  <description>The Web Service Manager API is used to store and retrieve service and identity information.</description>
+  <type>c++</type>
+  <collection>webservices</collection>
+  <libs>
+    <lib name="SenServMgr.LIB" />
+  </libs>
+  <release category="public" sinceversion="3.0"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

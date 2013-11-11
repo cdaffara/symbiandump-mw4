@@ -1,0 +1,78 @@
+EXPORTS
+	_ZN10CXmlWriter10AddEndTagLERK6TDesC8 @ 1 NONAME
+	_ZN10CXmlWriter10AddPrologLERK6TDesC8 @ 2 NONAME
+	_ZN10CXmlWriter10AddPrologLEv @ 3 NONAME
+	_ZN10CXmlWriter11AddXmlTextLERK6TDesC8 @ 4 NONAME
+	_ZN10CXmlWriter11InsertTextLEiRK6TDesC8 @ 5 NONAME
+	_ZN10CXmlWriter12AddStartTagLERK6TDesC8 @ 6 NONAME
+	_ZN10CXmlWriter13AddAttributeLERK6TDesC8S2_ @ 7 NONAME
+	_ZN10CXmlWriter13AddCdataSectLERK6TDesC8 @ 8 NONAME
+	_ZN10CXmlWriter13OpenStartTagLERK6TDesC8 @ 9 NONAME
+	_ZN10CXmlWriter14CloseStartTagLEi @ 10 NONAME
+	_ZN10CXmlWriter14InsertXmlTextLEiRK6TDesC8 @ 11 NONAME
+	_ZN10CXmlWriter4NewLEv @ 12 NONAME
+	_ZN10CXmlWriter5NewLCEv @ 13 NONAME
+	_ZN10CXmlWriter5ResetEv @ 14 NONAME
+	_ZN10CXmlWriter6LengthEv @ 15 NONAME
+	_ZN10CXmlWriter7DocPartEii @ 16 NONAME
+	_ZN10CXmlWriter8AddTextLERK6TDesC8 @ 17 NONAME
+	_ZN14CXmlPullParser13AttributeNameEiR6TPtrC8 @ 18 NONAME
+	_ZN14CXmlPullParser14AttributeCountERi @ 19 NONAME
+	_ZN14CXmlPullParser14IsEmptyElementERi @ 20 NONAME
+	_ZN14CXmlPullParser15AttributeValueLERK6TDesC8R6TPtrC8 @ 21 NONAME
+	_ZN14CXmlPullParser15AttributeValueLEiR6TPtrC8 @ 22 NONAME
+	_ZN14CXmlPullParser17CurrentElementPosEv @ 23 NONAME
+	_ZN14CXmlPullParser28TextPredefEntitiesNotEscapedER6TPtrC8 @ 24 NONAME
+	_ZN14CXmlPullParser38AttributeValuePredefEntitiesNotEscapedERK6TDesC8R6TPtrC8 @ 25 NONAME
+	_ZN14CXmlPullParser38AttributeValuePredefEntitiesNotEscapedEiR6TPtrC8 @ 26 NONAME
+	_ZN14CXmlPullParser3PosEv @ 27 NONAME
+	_ZN14CXmlPullParser4NameER6TPtrC8 @ 28 NONAME
+	_ZN14CXmlPullParser4NewLER15CDesC8ArrayFlat @ 29 NONAME
+	_ZN14CXmlPullParser5DepthERi @ 30 NONAME
+	_ZN14CXmlPullParser5NewLCER15CDesC8ArrayFlat @ 31 NONAME
+	_ZN14CXmlPullParser5NextLEv @ 32 NONAME
+	_ZN14CXmlPullParser5PathLER6TPtrC8 @ 33 NONAME
+	_ZN14CXmlPullParser5StateEv @ 34 NONAME
+	_ZN14CXmlPullParser5TextLER6TPtrC8 @ 35 NONAME
+	_ZN14CXmlPullParser6LengthEv @ 36 NONAME
+	_ZN14CXmlPullParser7DocPartEii @ 37 NONAME
+	_ZN14CXmlPullParser8SetInputERK6TDesC8 @ 38 NONAME
+	_ZTI10CXmlWriter @ 39 NONAME ; #<TI>#
+	_ZTI14CXmlPullParser @ 40 NONAME ; #<TI>#
+	_ZTV10CXmlWriter @ 41 NONAME ; #<VT>#
+	_ZTV14CXmlPullParser @ 42 NONAME ; #<VT>#
+	_ZThn4_N10CXmlWriter10AddEndTagLERK6TDesC8 @ 43 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter10AddPrologLERK6TDesC8 @ 44 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter10AddPrologLEv @ 45 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter11AddXmlTextLERK6TDesC8 @ 46 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter11InsertTextLEiRK6TDesC8 @ 47 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter12AddStartTagLERK6TDesC8 @ 48 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter13AddAttributeLERK6TDesC8S2_ @ 49 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter13AddCdataSectLERK6TDesC8 @ 50 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter13OpenStartTagLERK6TDesC8 @ 51 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter14CloseStartTagLEi @ 52 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter14InsertXmlTextLEiRK6TDesC8 @ 53 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter5ResetEv @ 54 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter6LengthEv @ 55 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter7DocPartEii @ 56 NONAME ; #<thunk>#
+	_ZThn4_N10CXmlWriter8AddTextLERK6TDesC8 @ 57 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser13AttributeNameEiR6TPtrC8 @ 58 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser14AttributeCountERi @ 59 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser14IsEmptyElementERi @ 60 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser15AttributeValueLERK6TDesC8R6TPtrC8 @ 61 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser15AttributeValueLEiR6TPtrC8 @ 62 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser17CurrentElementPosEv @ 63 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser28TextPredefEntitiesNotEscapedER6TPtrC8 @ 64 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser38AttributeValuePredefEntitiesNotEscapedERK6TDesC8R6TPtrC8 @ 65 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser38AttributeValuePredefEntitiesNotEscapedEiR6TPtrC8 @ 66 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser3PosEv @ 67 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser4NameER6TPtrC8 @ 68 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser5DepthERi @ 69 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser5NextLEv @ 70 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser5PathLER6TPtrC8 @ 71 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser5StateEv @ 72 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser5TextLER6TPtrC8 @ 73 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser6LengthEv @ 74 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser7DocPartEii @ 75 NONAME ; #<thunk>#
+	_ZThn4_N14CXmlPullParser8SetInputERK6TDesC8 @ 76 NONAME ; #<thunk>#
+

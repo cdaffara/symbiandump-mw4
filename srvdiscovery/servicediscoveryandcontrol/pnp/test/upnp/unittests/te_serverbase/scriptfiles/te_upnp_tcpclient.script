@@ -1,0 +1,107 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+
+LOAD_SUITE te_serverbase
+
+START_TESTCASE			UPnP-TCP-CLIENT-0101
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0101
+RUN_TEST_STEP 500 te_serverbase TestUPnP z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0101
+
+START_TESTCASE			UPnP-TCP-CLIENT-0102
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0102
+RUN_TEST_STEP 500 te_serverbase TestUPnP1 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0102
+
+START_TESTCASE			UPnP-TCP-CLIENT-0103
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0103
+RUN_TEST_STEP 500 te_serverbase TestUPnP2 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0103
+
+START_TESTCASE			UPnP-TCP-CLIENT-0116
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0116
+RUN_TEST_STEP 500 te_serverbase TestUPnP15 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0116
+
+START_TESTCASE			UPnP-TCP-CLIENT-0117
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0117
+RUN_TEST_STEP 500 te_serverbase TestUPnP16 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0117
+
+START_TESTCASE			UPnP-TCP-CLIENT-0118
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0118
+RUN_TEST_STEP 500 te_serverbase TestUPnP17 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0118
+
+START_TESTCASE			UPnP-TCP-CLIENT-0104
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0104
+RUN_TEST_STEP 500 te_serverbase TestUPnP3 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0104
+
+START_TESTCASE			UPnP-TCP-CLIENT-0105
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0105
+RUN_TEST_STEP 500 te_serverbase TestUPnP4 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0105
+
+START_TESTCASE			UPnP-TCP-CLIENT-0108
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0108
+RUN_TEST_STEP 500 te_serverbase TestUPnP7 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0108
+
+START_TESTCASE			UPnP-TCP-CLIENT-0114
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0114
+RUN_TEST_STEP 500 te_serverbase TestUPnP13 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0114
+
+START_TESTCASE			UPnP-TCP-CLIENT-0115
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0115
+RUN_TEST_STEP 500 te_serverbase TestUPnP14 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0115
+
+START_TESTCASE			UPnP-TCP-CLIENT-0111
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0111
+RUN_TEST_STEP 500 te_serverbase TestUPnP10 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0111
+
+//START_TESTCASE			UPnP-TCP-CLIENT-0110
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0110
+//RUN_TEST_STEP 500 te_serverbase TestUPnP9 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+//END_TESTCASE			UPnP-TCP-CLIENT-0110
+
+START_TESTCASE			UPnP-TCP-CLIENT-0112
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0112
+RUN_TEST_STEP 500 te_serverbase TestUPnP11 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0112
+
+START_TESTCASE			UPnP-TCP-CLIENT-0113
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0113
+RUN_TEST_STEP 500 te_serverbase TestUPnP12 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0113
+
+START_TESTCASE			UPnP-TCP-CLIENT-0106
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0106
+RUN_TEST_STEP 500 te_serverbase TestUPnP5 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0106
+
+START_TESTCASE			UPnP-TCP-CLIENT-0107
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0107
+RUN_TEST_STEP 500 te_serverbase TestUPnP6 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0107
+
+START_TESTCASE			UPnP-TCP-CLIENT-0109
+//! @SYMTestCaseID		UPnP-TCP-CLIENT-0109
+RUN_TEST_STEP 500 te_serverbase TestUPnP8 z:\upnp\servertests\scripts\dummy.ini te_upnp_tcpclient
+END_TESTCASE			UPnP-TCP-CLIENT-0109

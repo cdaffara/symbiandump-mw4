@@ -1,0 +1,149 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for wspolicytester 
+*
+*/
+
+#if defined(__S60_)
+        #include <platform_paths.hrh>
+#endif
+
+TARGET          wsPolicyTester.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E3
+
+CAPABILITY      ALL -TCB
+
+//TARGETPATH      ?target_path
+DEFFILE         wsPolicyTester.def
+SOURCEPATH              ../src
+SOURCE			myxml.cpp
+SOURCE			testinternalwspolicy.cpp
+
+SOURCEPATH		../../../../../webservices/wsstar/wsstarpolicy/src
+SOURCE 			seninternalwspolicy.cpp
+SOURCE			wspolicywriter.cpp
+SOURCE			wspolicyreader.cpp
+SOURCE			policyassertion.cpp
+SOURCE			assertion.cpp
+SOURCE			andcompositeassertion.cpp
+SOURCE			xorcompositeassertion.cpp
+SOURCE			compositeassertion.cpp
+SOURCE			policyreferenceassertion.cpp
+SOURCE			primitiveassertion.cpp
+SOURCE			wspolicyutils.cpp
+
+USERINCLUDE             ../src
+USERINCLUDE     ../inc 
+
+
+MW_LAYER_SYSTEMINCLUDE // SRC-HRCHY-CHANGES
+
+SYSTEMINCLUDE           ../../../../../webservices/wsutils/inc
+SYSTEMINCLUDE           ../../../../../webservices/wsstar/wsstarpolicy/inc
+SYSTEMINCLUDE           ../../../../../webservices/wsframework/inc
+SYSTEMINCLUDE           ../../../../../webservices/wsdescription/inc
+SYSTEMINCLUDE           /epoc32/include/libc
+SYSTEMINCLUDE           /epoc32/include/xml
+
+
+	
+#ifdef SBSV2
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#else // SBSV2 not defined
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#endif // SBSV2
+
+SOURCE          	wsPolicyTester.cpp
+SOURCE          	wsPolicyTesterBlocks.cpp
+
+//RESOURCE        resource_file
+//RESOURCE        resource_file2
+
+LIBRARY         	stiftestinterface.lib
+LIBRARY         	stiftestengine.lib
+LIBRARY			flogger.lib
+LIBRARY                 ecom.lib
+LIBRARY                 efsrv.lib
+LIBRARY                 estlib.lib
+LIBRARY                 estor.lib
+LIBRARY                 euser.lib
+LIBRARY                 bafl.lib 
+LIBRARY                 flogger.lib
+LIBRARY                 WSPolicy.lib
+LIBRARY                 XMLFRAMEWORK.lib
+
+LANG            SC
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// SOA for S60 libraries
+LIBRARY 		SenFramework.lib
+LIBRARY 		SenLogger.lib
+LIBRARY 		SenServDesc.lib
+LIBRARY 		SenUtils.lib
+LIBRARY 		SenXml.lib
+#else
+LIBRARY 		wsFramework.lib
+LIBRARY 		wsLogger.lib
+LIBRARY 		wsServDesc.lib
+LIBRARY 		wsUtils.lib
+LIBRARY 		wsXml.lib
+#endif
+
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+LIBRARY                 XmlEngine.lib
+LIBRARY                 XmlEngineDOM.lib
+LIBRARY                 XmlEngineUtils.lib
+#else
+LIBRARY         	WsStarXmlEngine.lib
+LIBRARY         	WsStarXmlEngineDOM.lib
+LIBRARY         	WsStarXmlEngineUtils.lib
+#endif
+/*
+START WINS      
+?wins_specific_information
+END
+
+START MARM
+?marm_specific_information
+END
+*/
+// Other possible keywords:
+ 
+// DOCUMENT     ?file, that is not compiled, but added to MSVC project workspace (i.e. release notes)
+/*
+START BITMAP ?target
+TARGETPATH   ?emulated_path_on_target_machine
+HEADER
+SOURCE       ?color_depth ?source_bitmap
+END
+*/
+// DEFFILE ?filename
+// AIF ?filename
+
+// End of File

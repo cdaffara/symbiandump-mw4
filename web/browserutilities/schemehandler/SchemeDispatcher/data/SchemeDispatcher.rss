@@ -1,0 +1,69 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This file contains all the resources for the SchemeDispatcher
+*     
+*
+*/
+
+
+//  RESOURCE IDENTIFIER
+NAME    SCHD // 4 letter ID
+//
+//  INCLUDES
+
+#include "SchemeDispatcher.loc"
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <avkon.hrh>
+#include <avkon.loc>
+
+
+//  CONSTANTS  
+//#define ?constant   ?value
+
+
+//  MACROS  
+//#define ?macro
+
+
+//  RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf="SchemeDispatcher"; }
+
+RESOURCE TBUF r_qtn_wml_wtai_call_no { buf=qtn_wml_wtai_call_no; }
+
+RESOURCE DIALOG r_confirmation_query
+    {
+    flags=EGeneralQueryFlags;
+    buttons=R_AVKON_SOFTKEYS_YES_NO__YES;
+     items=
+        {
+        DLG_LINE
+            {
+            type=EAknCtQuery;
+            id=EGeneralQuery;
+            control= AVKON_CONFIRMATION_QUERY
+                {
+                    layout = EConfirmationLayout;
+                };
+            }
+        };
+    }
+
+// End of File

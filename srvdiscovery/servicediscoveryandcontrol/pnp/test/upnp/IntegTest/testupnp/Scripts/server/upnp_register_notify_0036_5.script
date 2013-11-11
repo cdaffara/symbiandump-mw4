@@ -1,0 +1,40 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_register_notify_0036_5.script
+//! @SYMTestSuiteName	multiple_machines_server 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_server 
+
+LOAD_SUITE multiple_machines_server
+LOAD_SUITE test_synchronize_server
+
+START_TESTCASE	upnp_register_notify_0036_5
+//! @file					
+//! @SYMTestCaseID			UPNP - POS - 0036
+//! @SYMTestCaseDesc 		Control points register for NOTIFY announcements. Register to ssdp:alive and ssdp:byebye
+//! @SYMREQ					REQ8634,REQ8617,REQ8618,REQ8620,REQ8621, REQ8625
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Control point register to SSDP: Alive and SSDP: ByeBye
+//! 						2.	If requested subscription is not approved then control point will be getting appropriate error message. 
+//! @SYMTestExpectedResults	If register for notify is approved then control point gets subsequent event messages.
+//! @SYMTestType 			CIT
+
+RUN_TEST_STEP 1000 test_synchronize_server TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini serverdata
+RUN_TEST_STEP 500  multiple_machines_server TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\register_0036.ini upnp_register_notify_0036_5_server
+
+END_TESTCASE	upnp_register_notify_0036_5

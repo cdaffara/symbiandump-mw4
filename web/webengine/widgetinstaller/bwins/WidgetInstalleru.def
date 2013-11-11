@@ -1,0 +1,10 @@
+EXPORTS
+	?DeregisterWidgetL@CWidgetInstaller@@QAEXABVTUid@@@Z @ 1 NONAME ; void CWidgetInstaller::DeregisterWidgetL(class TUid const &)
+	?FinishInstallL@CWidgetInstaller@@QAEXH@Z @ 2 NONAME ; void CWidgetInstaller::FinishInstallL(int)
+	?InstallL@CWidgetInstaller@@QAEXAAVTDesC16@@@Z @ 3 NONAME ; void CWidgetInstaller::InstallL(class TDesC16 &)
+	?NewL@CWidgetInstaller@@SAPAV1@XZ @ 4 NONAME ; class CWidgetInstaller * CWidgetInstaller::NewL(void)
+	?RegisterWidgetL@CWidgetInstaller@@QAEXABVTDesC16@@000ABVTUid@@@Z @ 5 NONAME ; void CWidgetInstaller::RegisterWidgetL(class TDesC16 const &, class TDesC16 const &, class TDesC16 const &, class TDesC16 const &, class TUid const &)
+	?RenameIconFile@CWidgetInstaller@@QAEHAAVRFs@@PAV?$RPointerArray@VCWidgetPropertyValue@@@@@Z @ 6 NONAME ; int CWidgetInstaller::RenameIconFile(class RFs &, class RPointerArray<class CWidgetPropertyValue> *)
+	?RunError@CWidgetInstaller@@QAEHH@Z @ 7 NONAME ; int CWidgetInstaller::RunError(int)
+	?WidgetPropertiesFromInstalledWidgetL@CWidgetInstaller@@QAEPAV?$RPointerArray@VCWidgetPropertyValue@@@@AAVRFs@@ABVTDesC16@@1VTUid@@@Z @ 8 NONAME ; class RPointerArray<class CWidgetPropertyValue> * CWidgetInstaller::WidgetPropertiesFromInstalledWidgetL(class RFs &, class TDesC16 const &, class TDesC16 const &, class TUid)
+

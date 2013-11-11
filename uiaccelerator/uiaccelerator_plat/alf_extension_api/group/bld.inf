@@ -1,0 +1,36 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   File that exports the files belonging to 
+:                ALF Extension API
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+../inc/alf/alfserverutils.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfserverutils.h)
+../inc/alf/alfred.hrh     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfred.hrh)
+../inc/alf/alfextensionfactory.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfextensionfactory.h)
+../inc/alf/ftokenclient.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/ftokenclient.h)
+../inc/alf/alflayouthandlers.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alflayouthandlers.h)
+../inc/alf/alfvisualhandlers.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfvisualhandlers.h)
+../inc/alf/alfconstants.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfconstants.h)
+../inc/alf/alfbrushhandlers.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfbrushhandlers.h)
+../inc/alf/alfhintplugin.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfhintplugin.h)

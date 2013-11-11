@@ -1,0 +1,26 @@
+EXPORTS
+	__27TAllowUnRegisterDlgResponse @ 1 NONAME R3UNUSED ; TAllowUnRegisterDlgResponse::TAllowUnRegisterDlgResponse(void)
+	OkButtonPressed__C19TAskSaveDlgResponse @ 2 NONAME R3UNUSED ; TAskSaveDlgResponse::OkButtonPressed(void) const
+	OkButtonPressed__C25TAllowRegisterDlgResponse @ 3 NONAME R3UNUSED ; TAllowRegisterDlgResponse::OkButtonPressed(void) const
+	OkButtonPressed__C26TAuthenticationDlgResponse @ 4 NONAME R3UNUSED ; TAuthenticationDlgResponse::OkButtonPressed(void) const
+	OkButtonPressed__C27TAllowUnRegisterDlgResponse @ 5 NONAME R3UNUSED ; TAllowUnRegisterDlgResponse::OkButtonPressed(void) const
+	Password__C25TAuthenticationDlgRequest @ 6 NONAME R3UNUSED ; TAuthenticationDlgRequest::Password(void) const
+	Password__C26TAuthenticationDlgResponse @ 7 NONAME R3UNUSED ; TAuthenticationDlgResponse::Password(void) const
+	SetData__25TAuthenticationDlgRequestRC7TDesC16T1 @ 8 NONAME R3UNUSED ; TAuthenticationDlgRequest::SetData(TDesC16 const &, TDesC16 const &)
+	SetData__26TAuthenticationDlgResponseRC7TDesC16T1i @ 9 NONAME ; TAuthenticationDlgResponse::SetData(TDesC16 const &, TDesC16 const &, int)
+	SetOkButton__19TAskSaveDlgResponsei @ 10 NONAME R3UNUSED ; TAskSaveDlgResponse::SetOkButton(int)
+	SetOkButton__25TAllowRegisterDlgResponsei @ 11 NONAME R3UNUSED ; TAllowRegisterDlgResponse::SetOkButton(int)
+	SetOkButton__27TAllowUnRegisterDlgResponsei @ 12 NONAME R3UNUSED ; TAllowUnRegisterDlgResponse::SetOkButton(int)
+	Username__C25TAuthenticationDlgRequest @ 13 NONAME R3UNUSED ; TAuthenticationDlgRequest::Username(void) const
+	Username__C26TAuthenticationDlgResponse @ 14 NONAME R3UNUSED ; TAuthenticationDlgResponse::Username(void) const
+	__18TAskSaveDlgRequest @ 15 NONAME R3UNUSED ; TAskSaveDlgRequest::TAskSaveDlgRequest(void)
+	__19TAskSaveDlgResponse @ 16 NONAME R3UNUSED ; TAskSaveDlgResponse::TAskSaveDlgResponse(void)
+	__20TSenNotPluginRequest @ 17 NONAME R3UNUSED ; TSenNotPluginRequest::TSenNotPluginRequest(void)
+	__20TSenNotPluginRequesti @ 18 NONAME R3UNUSED ; TSenNotPluginRequest::TSenNotPluginRequest(int)
+	__24TAllowRegisterDlgRequest @ 19 NONAME R3UNUSED ; TAllowRegisterDlgRequest::TAllowRegisterDlgRequest(void)
+	__25TAllowRegisterDlgResponse @ 20 NONAME R3UNUSED ; TAllowRegisterDlgResponse::TAllowRegisterDlgResponse(void)
+	__25TAuthenticationDlgRequest @ 21 NONAME R3UNUSED ; TAuthenticationDlgRequest::TAuthenticationDlgRequest(void)
+	__26TAllowUnRegisterDlgRequest @ 22 NONAME R3UNUSED ; TAllowUnRegisterDlgRequest::TAllowUnRegisterDlgRequest(void)
+	__26TAuthenticationDlgResponse @ 23 NONAME R3UNUSED ; TAuthenticationDlgResponse::TAuthenticationDlgResponse(void)
+	Method__20TSenNotPluginRequest @ 24 NONAME R3UNUSED ; TSenNotPluginRequest::Method(void)
+

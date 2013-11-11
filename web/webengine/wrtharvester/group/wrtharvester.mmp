@@ -1,0 +1,71 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  build for wrtharvester
+*
+*/
+
+TARGET		    wrtharvester.dll
+TARGETTYPE	    PLUGIN
+UID			    0x10009D8D 0x2001FE2C
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+CAPABILITY      CAP_ECOM_PLUGIN
+
+SOURCEPATH      ../src
+SOURCE          wrtharvester.cpp
+SOURCE          wrtharvesterpsnotifier.cpp
+SOURCE          wrtharvesterpublisherobserver.cpp
+SOURCE          wrtharvesterregistryaccess.cpp
+SOURCE          wrtusbhandler.cpp
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_ECOM_SYSTEMINCLUDE
+USERINCLUDE     ../inc
+
+START RESOURCE  ../data/2001FE2C.rss
+TARGET           wrtharvester.rsc
+END
+
+START RESOURCE  ../data/wrtharvester.rss 
+DEPENDS avkon.rsg
+HEADER
+TARGET          wrtharvester.rsc
+TARGETPATH      resource 
+END
+
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+
+LIBRARY	      ecom.lib
+LIBRARY	      euser.lib
+LIBRARY       bafl.lib
+LIBRARY       apgrfx.lib
+LIBRARY       apparc.lib
+LIBRARY       estor.lib
+LIBRARY		  liwservicehandler.lib
+LIBRARY       widgetregistryclient.lib
+LIBRARY		  efsrv.lib
+LIBRARY		  aknnotify.lib
+LIBRARY		  eiksrv.lib
+LIBRARY		  cone.lib 		    // CoeControl
+LIBRARY		  CommonEngine.lib
+LIBRARY       ws32.lib
+LIBRARY       PlatformEnv.lib
+
+//end of file

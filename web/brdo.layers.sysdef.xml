@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<!DOCTYPE SystemDefinition SYSTEM "sysdef_1_4_0.dtd"
+  [ <!ENTITY layer_real_source_path "sf/mw/web" > ]>
+
+<SystemDefinition name="web" schema="1.4.0">
+  <systemModel>
+    <layer name="mw_layer">
+      <module name="web_plat">
+        <unit unitID="aiw_browser_provider_api" name="aiw_browser_provider_api" bldFile="&layer_real_source_path;/web_plat/aiw_browser_provider_api/group" mrp=""/>
+        <unit unitID="browser_dialogs_provider_api" name="browser_dialogs_provider_api" bldFile="&layer_real_source_path;/web_plat/browser_dialogs_provider_api/group" mrp=""/>
+        <unit unitID="browser_platform_api" name="browser_platform_api" bldFile="&layer_real_source_path;/web_plat/browser_platform_api/group" mrp=""/>
+        <unit unitID="cod_handler_api" name="cod_handler_api" bldFile="&layer_real_source_path;/web_plat/cod_handler_api/group" mrp=""/>
+        <unit unitID="multipart_parser_api" name="multipart_parser_api" bldFile="&layer_real_source_path;/web_plat/multipart_parser_api/group" mrp=""/>
+        <unit unitID="scheme_handler_plugin_api" name="scheme_handler_plugin_api" bldFile="&layer_real_source_path;/web_plat/scheme_handler_plugin_api/group" mrp=""/>
+        <unit unitID="download_mgr_client_api_extn" name="download_mgr_client_api_extn" bldFile="&layer_real_source_path;/web_plat/download_mgr_client_api_extn/group" mrp=""/>
+        <unit unitID="connection_manager_api" name="connection_manager_api" bldFile="&layer_real_source_path;/web_plat/connection_manager_api/group" mrp=""/>        
+        <unit unitID="feeds_engine_api" name="feeds_engine_api" bldFile="&layer_real_source_path;/web_plat/feeds_engine_api/group" mrp=""/>        
+        <unit unitID="launcher_api" name="launcher_api" bldFile="&layer_real_source_path;/web_plat/launcher_api/group" mrp=""/>                  
+        <unit unitID="recent_url_store_api" name="recent_url_store_api" bldFile="&layer_real_source_path;/web_plat/recent_url_store_api/group" mrp=""/>    
+        <unit unitID="rt_gesturehelper_api" name="rt_gesturehelper_api" bldFile="&layer_real_source_path;/web_plat/rt_gesturehelper_api/group" mrp=""/>    
+        <unit unitID="scriptable_plugin_api" name="scriptable_plugin_api" bldFile="&layer_real_source_path;/web_plat/scriptable_plugin_api/group" mrp=""/>            
+        <unit unitID="webutils_api" name="webutils_api" bldFile="&layer_real_source_path;/web_plat/webutils_api/group" mrp=""/>                    
+        <unit unitID="widget_registry_api" name="widget_registry_api" bldFile="&layer_real_source_path;/web_plat/widget_registry_api/group" mrp=""/>                         
+        <unit unitID="xml_parser_api" name="xml_parser_api" bldFile="&layer_real_source_path;/web_plat/xml_parser_api/group" mrp=""/>                         
+      </module>
+      <module name="web_pub">
+        <unit unitID="browser_control_api" name="browser_control_api" bldFile="&layer_real_source_path;/web_pub/browser_control_api/group" mrp=""/>
+        <unit unitID="browser_plugin_api" name="browser_plugin_api" bldFile="&layer_real_source_path;/web_pub/browser_plugin_api/group" mrp=""/>
+        <unit unitID="download_mgr_client_api" name="download_mgr_client_api" bldFile="&layer_real_source_path;/web_pub/download_mgr_client_api/group" mrp=""/>
+        <unit unitID="download_mgr_ui_api" name="download_mgr_ui_api" bldFile="&layer_real_source_path;/web_pub/download_mgr_ui_api/group" mrp=""/>
+        <unit unitID="favourites_engine_api" name="favourites_engine_api" bldFile="&layer_real_source_path;/web_pub/favourites_engine_api/group" mrp=""/>
+        <unit unitID="settings_api" name="settings_api" bldFile="&layer_real_source_path;/web_pub/settings_api/group" mrp=""/>        
+      </module>
+      <module name="browser_utilities">
+        <unit unitID="browserdialogsprovider" name="browserdialogsprovider" bldFile="&layer_real_source_path;/browserutilities/browserdialogsprovider/group" mrp=""/>
+        <unit unitID="recenturlstore" name="recenturlstore" bldFile="&layer_real_source_path;/browserutilities/recenturlstore/group" mrp=""/>
+        <unit unitID="xmlparser" name="cxmlparser" bldFile="&layer_real_source_path;/browserutilities/xmlparser/group" mrp=""/>
+        <unit unitID="cxmllibrary" name="cxmlparser" bldFile="&layer_real_source_path;/browserutilities/cxmllibrary/group" mrp=""/>
+        <unit unitID="downloadmgr" name="downloadmgr" bldFile="&layer_real_source_path;/browserutilities/downloadmgr/group" mrp=""/>
+        <unit unitID="connectionmanager" name="connectionmanager" bldFile="&layer_real_source_path;/browserutilities/connectionmanager/group" mrp=""/>
+        <unit unitID="browsertelservice" name="browsertelservice" bldFile="&layer_real_source_path;/browserutilities/browsertelservice/group" mrp=""/>
+        <unit unitID="favouritesengine" name="favouritesengine" bldFile="&layer_real_source_path;/browserutilities/favouritesengine/group" mrp=""/>
+        <unit unitID="feedsengine" name="feedsengine" bldFile="&layer_real_source_path;/browserutilities/feedsengine/group" mrp=""/>
+        <unit unitID="multipartparser" name="multipartparser" bldFile="&layer_real_source_path;/browserutilities/multipartparser/group" mrp=""/>
+        <unit unitID="schemehandler" name="schemehandler" bldFile="&layer_real_source_path;/browserutilities/schemehandler/group" mrp=""/>
+        <unit unitID="webutils" name="webutils" bldFile="&layer_real_source_path;/browserutilities/webutils/group" mrp=""/>
+      </module>
+      <module name="webengine">
+        <unit unitID="cache" name="cache" bldFile="&layer_real_source_path;/webengine/osswebengine/cache/group" mrp=""/>
+        <unit unitID="memorymanager" name="memorymanager" bldFile="&layer_real_source_path;/webengine/osswebengine/MemoryManager/group" mrp=""/>
+        <unit unitID="javascriptcore" name="javascriptcore" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/JavaScriptCore" mrp=""/>
+        <unit unitID="npscript" name="npscript" bldFile="&layer_real_source_path;/webengine/osswebengine/npscript/group" mrp=""/>
+        <unit unitID="webkitutils" name="webkitutils" bldFile="&layer_real_source_path;/webengine/webkitutils/group" mrp=""/>
+        <unit unitID="pagescaler" name="pagescaler" bldFile="&layer_real_source_path;/webengine/pagescaler/group" mrp=""/>
+        <unit unitID="widgetinstaller" name="widgetinstaller" bldFile="&layer_real_source_path;/webengine/widgetinstaller/group" mrp=""/>
+        <unit unitID="widgetregistry" name="widgetregistry" bldFile="&layer_real_source_path;/webengine/widgetregistry/group" mrp=""/>
+        <unit unitID="webkit_libxml2" name="webkit_libxml2" bldFile="&layer_real_source_path;/webengine/osswebengine/webkit/s60/group/libxml2" mrp=""/>
+        <component name="webcore">
+          <unit unitID="webcore_derivedsources" name="webcore_derivedsources" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/DerivedSources" mrp=""/>
+          <unit unitID="webcore_bindings" name="webcore_bindings" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/bindings" mrp=""/>
+          <unit unitID="webcore_webcorecss" name="webcore_webcorecss" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/webcorecss" mrp=""/>
+          <unit unitID="webcore_dom" name="webcore_dom" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/dom" mrp=""/>
+          <unit unitID="webcore_editing" name="webcore_editing" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/editing" mrp=""/>
+          <unit unitID="webcore_history" name="webcore_history" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/history" mrp=""/>
+          <unit unitID="webcore_html" name="webcore_html" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/html" mrp=""/>
+          <unit unitID="webcore_loader" name="webcore_loader" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/loader" mrp=""/>
+          <unit unitID="webcore_page" name="webcore_page" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/page" mrp=""/>
+          <unit unitID="webcore_rendering" name="webcore_rendering" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/rendering" mrp=""/>
+          <unit unitID="webcore_xml" name="webcore_xml" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/xml" mrp=""/>
+          <unit unitID="webcore_bridge" name="webcore_bridge" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/bridge" mrp=""/>
+          <unit unitID="webcore_platform" name="webcore_platform" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webcore/platform" mrp=""/>
+        </component>
+        <unit unitID="webkit_plugins" name="webkit_plugins" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/plugins" mrp=""/>
+        <unit unitID="webkit_webkit" name="webkit_webkit" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/webkit" mrp=""/>
+        <unit unitID="webkit_browserengine" name="webkit_browserengine" bldFile="&layer_real_source_path;/webengine/osswebengine/WebKit/S60/group/browserengine" mrp=""/>
+        <component name="wmlengine">
+        <unit unitID="wmlengine_adt" name="wmlengine_adt" bldFile="&layer_real_source_path;/webengine/wmlengine/group/adt" mrp=""/>
+          <unit unitID="wmlengine_css" name="wmlengine_css" bldFile="&layer_real_source_path;/webengine/wmlengine/group/css" mrp=""/>
+          <unit unitID="wmlengine_evt" name="wmlengine_evt" bldFile="&layer_real_source_path;/webengine/wmlengine/group/evt" mrp=""/>
+          <unit unitID="wmlengine_fbox" name="wmlengine_fbox" bldFile="&layer_real_source_path;/webengine/wmlengine/group/fbox" mrp=""/>
+          <unit unitID="wmlengine_gdi" name="wmlengine_gdi" bldFile="&layer_real_source_path;/webengine/wmlengine/group/gdi" mrp=""/>
+          <unit unitID="wmlengine_hed" name="wmlengine_hed" bldFile="&layer_real_source_path;/webengine/wmlengine/group/hed" mrp=""/>
+          <unit unitID="wmlengine_htmlp" name="wmlengine_htmlp" bldFile="&layer_real_source_path;/webengine/wmlengine/group/htmlp" mrp=""/>
+          <unit unitID="wmlengine_image" name="wmlengine_image" bldFile="&layer_real_source_path;/webengine/wmlengine/group/image" mrp=""/>
+          <unit unitID="wmlengine_imagech" name="wmlengine_imagech" bldFile="&layer_real_source_path;/webengine/wmlengine/group/imagech" mrp=""/>
+          <unit unitID="wmlengine_lmgr" name="wmlengine_lmgr" bldFile="&layer_real_source_path;/webengine/wmlengine/group/lmgr" mrp=""/>
+          <unit unitID="wmlengine_object" name="wmlengine_object" bldFile="&layer_real_source_path;/webengine/wmlengine/group/object" mrp=""/>
+          <unit unitID="wmlengine_markup" name="wmlengine_markup" bldFile="&layer_real_source_path;/webengine/wmlengine/group/markup" mrp=""/>
+          <unit unitID="wmlengine_msg" name="wmlengine_msg" bldFile="&layer_real_source_path;/webengine/wmlengine/group/msg" mrp=""/>
+          <unit unitID="wmlengine_system" name="wmlengine_system" bldFile="&layer_real_source_path;/webengine/wmlengine/group/system" mrp=""/>
+          <unit unitID="wmlengine_text" name="wmlengine_text" bldFile="&layer_real_source_path;/webengine/wmlengine/group/text" mrp=""/>
+          <unit unitID="wmlengine_Unicode" name="wmlengine_Unicode" bldFile="&layer_real_source_path;/webengine/wmlengine/group/Unicode" mrp=""/>
+          <unit unitID="wmlengine_wml1x" name="wmlengine_wml1x" bldFile="&layer_real_source_path;/webengine/wmlengine/group/wml1x" mrp=""/>
+          <unit unitID="wmlengine_wmlscriptch" name="wmlengine_wmlscriptch" bldFile="&layer_real_source_path;/webengine/wmlengine/group/wmlscriptch" mrp=""/>
+          <unit unitID="wmlengine_xhtml" name="wmlengine_xhtml" bldFile="&layer_real_source_path;/webengine/wmlengine/group/xhtml" mrp=""/>
+          <unit unitID="wmlengine_script" name="wmlengine_script" bldFile="&layer_real_source_path;/webengine/wmlengine/group/script" mrp=""/>
+          <unit unitID="wmlengine_wml" name="wmlengine_wml" bldFile="&layer_real_source_path;/webengine/wmlengine/group/wml" mrp=""/>
+          <unit unitID="wmlengine_fileloader" name="wmlengine_fileloader" bldFile="&layer_real_source_path;/webengine/wmlengine/group/fileloader" mrp=""/>
+          <unit unitID="wmlengine_urlloader" name="wmlengine_urlloader" bldFile="&layer_real_source_path;/webengine/wmlengine/group/urlloader" mrp=""/>
+          <unit unitID="wmlengine_browser" name="wmlengine_browser" bldFile="&layer_real_source_path;/webengine/wmlengine/group/browser" mrp=""/>
+          <unit unitID="wmlengine_wmlengine" name="wmlengine_wmlengine" bldFile="&layer_real_source_path;/webengine/wmlengine/group/wmlengine" mrp=""/>
+        </component>    
+        <unit unitID="device" name="device" bldFile="&layer_real_source_path;/webengine/device/group" mrp=""/>
+        <unit unitID="widgetengine" name="widgetengine"     bldFile="&layer_real_source_path;/webengine/widgetengine/group" mrp=""/>
+        <unit unitID="memoryplugin" name="memoryplugin"     bldFile="&layer_real_source_path;/webengine/memoryplugin/group" mrp=""/>
+        <unit unitID="widgetmemoryplugin" name="widgetmemoryplugin"  bldFile="&layer_real_source_path;/webengine/widgetmemoryplugin/group" mrp=""/>
+        <unit unitID="widgetbackuprestore" name="widgetbackuprestore" bldFile="&layer_real_source_path;/webengine/widgetbackuprestore/group" mrp=""/>
+        <unit unitID="browserrecognizers" name="browserrecognizers" bldFile="&layer_real_source_path;/webengine/browserrecognizers/group" mrp=""/>
+        <unit unitID="wrtharvester" name="wrtharvester" bldFile="&layer_real_source_path;/webengine/wrtharvester/group" mrp=""/>        
+      </module>
+      <module name="codhandler">
+        <unit unitID="codhandler" name="codhandler" bldFile="&layer_real_source_path;/codhandler/group" mrp=""/>
+      </module>
+      <module name="widgets">
+        <unit unitID="widgets" name="widgets" bldFile="&layer_real_source_path;/widgets/group" mrp=""/>
+      </module>
+    </layer>
+  </systemModel>
+</SystemDefinition>

@@ -1,0 +1,4 @@
+EXPORTS
+	?NewL@CSenHostletConnection@@SAPAV1@AAVMSenHostlet@@@Z @ 1 NONAME ; public: static class CSenHostletConnection * __cdecl CSenHostletConnection::NewL(class MSenHostlet &)
+	?NewLC@CSenHostletConnection@@SAPAV1@AAVMSenHostlet@@@Z @ 2 NONAME ; public: static class CSenHostletConnection * __cdecl CSenHostletConnection::NewLC(class MSenHostlet &)
+

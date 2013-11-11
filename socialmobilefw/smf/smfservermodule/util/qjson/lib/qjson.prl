@@ -1,0 +1,5 @@
+QMAKE_PRL_BUILD_DIR = D:/ARMv5/sfmerged/sf/smf/smfservermodule/util/qjson/src
+QMAKE_PRO_INPUT = src.pro
+QMAKE_PRL_TARGET = qjson
+QMAKE_PRL_CONFIG = include_source_dir lex yacc warn_on debug uic resources qt warn_on incremental debug shared stl exceptions rtti def_files create_prl dll shared qtmain moc thread
+QMAKE_PRL_VERSION = 0.7.1

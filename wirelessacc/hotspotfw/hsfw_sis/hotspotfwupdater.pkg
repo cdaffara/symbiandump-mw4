@@ -1,0 +1,50 @@
+; Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description:    Hotspot FW updater
+;
+
+;Languages
+; - None (English only by default)
+
+;Header
+#{"Hotspot FW updater"},(0x10282ECB),1,0,1, TYPE=SP
+
+; Product / platform version compatibility - S60 5.2
+[0x20022e6d],0,0,0,{"Series60ProductID"}
+
+; Localised Vendor Name
+%{"Nokia"}
+
+;Unique Vendor Name
+:"Nokia"
+
+;Server
+"\epoc32\release\armv5\udeb\HotSpotServer.exe"-"c:\sys\bin\HotSpotServer.exe"
+
+; Client 
+"\epoc32\release\armv5\udeb\hotspotclient.dll"-"c:\sys\bin\hotspotclient.dll"
+
+; ECOM plugin for daemon
+"\epoc32\data\z\resource\plugins\NetCfgExtnHotSpot.rsc"-"c:\resource\plugins\NetCfgExtnHotSpot.rsc"
+"\epoc32\release\armv5\udeb\NetCfgExtnHotSpot.dll"-"c:\sys\bin\NetCfgExtnHotSpot.dll"
+
+; ECOM plugin for Mgmt API
+"\epoc32\data\z\resource\plugins\HssMgmtImpl.rsc"-"c:\resource\plugins\HssMgmtImpl.rsc"
+"\epoc32\release\armv5\udeb\hssmgmtimpl.dll"-"c:\sys\bin\hssmgmtimpl.dll"
+
+; ECOM plugin for Agent
+"\epoc32\data\z\resource\plugins\WlanAgtHotSpotImpl.rsc"-"c:\resource\plugins\WlanAgtHotSpotImpl.rsc"
+"\epoc32\release\armv5\udeb\wlanagthotspotimpl.dll"-"c:\sys\bin\wlanagthotspotimpl.dll"
+
+
+

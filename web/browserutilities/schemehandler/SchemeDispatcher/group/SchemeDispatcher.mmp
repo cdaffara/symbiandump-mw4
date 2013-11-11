@@ -1,0 +1,83 @@
+  /*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Project specification for Scheme Handler Dispatcher.   
+*      
+*
+*/
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#include    <platform/mw/SchemeDefs.hrh>
+
+TARGET      SchemeDispatcher.dll
+TARGETTYPE  PLUGIN
+UID         0x10009D8D SCHEME_DISPATCHER_UID
+
+VENDORID    VID_DEFAULT
+
+SOURCEPATH ../data
+START RESOURCE SCHEME_DISPATCHER_UID_RSS_NAME
+DEPENDS avkon.rsg
+TARGET SchemeDispatcher.rsc
+END
+
+CAPABILITY  CAP_ECOM_PLUGIN
+
+SOURCEPATH  ../src
+
+SOURCE      DllEntryPoint.cpp
+SOURCE      BaseHandler.cpp
+SOURCE      SchemeProxy.cpp
+//SOURCE      FileHandler.cpp
+//SOURCE      HttpHandler.cpp
+SOURCE      RtspHandler.cpp
+//SOURCE      MailToHandler.cpp
+//SOURCE      WtaiHandler.cpp
+//SOURCE      TelHandler.cpp
+//SOURCE      CtiHandler.cpp
+SOURCE      MmsHandler.cpp
+
+USERINCLUDE     ../inc
+SYSTEMINCLUDE     ../../../../inc
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_ECOM_SYSTEMINCLUDE
+
+LIBRARY     euser.lib
+LIBRARY	    ECOM.LIB
+LIBRARY	    cone.lib
+LIBRARY     commonui.lib
+LIBRARY     apgrfx.lib                                                                              
+LIBRARY     apmime.lib
+LIBRARY     apparc.lib
+LIBRARY     efsrv.lib
+//LIBRARY     BrowserTelService.lib
+LIBRARY     INETPROTUTIL.LIB
+LIBRARY     estor.lib
+LIBRARY     ws32.lib
+LIBRARY     ServiceHandler.lib
+//LIBRARY     BrowserLauncher.lib
+LIBRARY     avkon.lib
+LIBRARY Centralrepository.lib
+
+// Define this macro if you wish to enable logging
+//#define __TEST_SCHEMEDISP_LOG_ENABLED
+
+#ifdef __TEST_SCHEMEDISP_LOG_ENABLED
+	MACRO __SCHEMEDISP_LOG__
+	DEBUGLIBRARY     flogger.lib
+#endif	// __TEST_SCHEMEDISP_LOG_ENABLED
+
+

@@ -1,0 +1,149 @@
+/*
+* Copyright (c) 2005-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This is a localisation file for usbuinotif. 
+*
+*/
+
+
+// LOCALISATION STRINGS
+
+// *** STRINGS FOR CONFIRMATION QUERIES ***
+
+//d: Memory card needs to be unlocked before it can be used
+//l: popup_note_window
+//w:
+//r: 3.0
+//
+#define qtn_usb_mode_note_memory_card_locked "Memory card needs to be unlocked"
+
+//d: Mass storage memory is not accessible because it cannot be unmounted for some reason
+//d: Softkey "OK" is shown. 
+//l: popup_note_window
+//w:
+//r: 3.2
+//
+#define qtn_usb_mode_note_storage_media_failure "Storage media not accessible"
+
+//d: User disconnects the cable without disconnecting or unmounting it from the PC
+//l: popup_note_window
+//w:
+//r: 3.0
+//
+#define qtn_usb_mode_note_cable_unsafely_removed "Data loss may have occurred. In future, stop file transfers before removing the cable"
+
+//d: While in file transfer mode, the phone receives a card eject event
+//l: popup_note_window
+//w:
+//r: 3.0
+//
+#define qtn_usb_mode_note_mmc_unsafely_removed "Data loss may have occurred. In future, stop file transfers before removing the memory card"
+
+//d: User changes the mode to something from Mass storage mode. Memory card
+//d: might corrupt here so asking for confirmation. Note that the soft keys 
+//d: are labeled as "OK" and "Cancel". 
+//l: popup_note_window
+//w:
+//r: 3.1
+//
+#define qtn_usb_mode_query_change_from_mass_storage "Change USB mode? Storage media may be corrupted if file transfer is ongoing."
+
+
+//d: User tries to use MTP personality without memory card. Since that can be 
+//d: the only media shared via this personality, the connection may be partly 
+//d: or fully unusable. 
+//d: Softkey "OK" is shown. 
+//l: popup_note_window
+//w:
+//r: 3.2
+//
+#define qtn_usb_mode_query_no_memory_card "Memory card is not present. The connection may not work as expected."
+
+//d: The header for USB connected pop-up
+//l: popup_discreet_window_t1
+//r: 5.2
+#define qtn_usb_mode_msg_header "USB Connected"
+
+//d: Too much power error in USB OTG during operating, cable disconnect required
+//l: popup_note_window
+//w:
+//r: 5.2
+//
+#define qtn_usb_otg_error_current_limit "Error in USB connection. Disconnect device."
+
+//d: Too much power error in USB OTG during enumerating, cable disconnect required
+//l: popup_note_window
+//w:
+//r: 5.2
+//
+#define qtn_usb_otg_error_too_much_current_required "Unsupported USB device. Disconnect device."
+
+
+//d: Unsupported device error in USB OTG, cable disconnect required
+//l: popup_note_window
+//w:
+//r: 5.2
+//
+#define qtn_usb_otg_error_unsupported "Unsupported USB device. Disconnect device."
+
+//d: USB hubs are not supported.
+//l: popup_note_window
+//w:
+//r: 5.2
+//
+#define qtn_usb_otg_error_hub "Hubs are not supported. Disconnect USB cable."
+
+//d: Connection error in USB OTG, cable disconnect required
+//l: popup_note_window
+//w:
+//r: 5.2
+//
+#define qtn_usb_otg_error_unrecoverable "Error in USB connection. Disconnect cable."
+
+//d: Partially supported warning in USB OTG.
+//l: popup_note_window
+//w:
+//r: 5.2
+//
+#define qtn_usb_otg_warning_partial_support "Partially supported USB device connected. All functionality might not work."
+
+
+//d: Emptry cable error in USB OTG.
+//l: popup_note_window
+//w:
+//r: 5.2
+//
+#define qtn_usb_otg_error_cable "Remove USB cable or connect a device."
+
+//d: Unknown mass storage  filesystem, disconnect device.
+//l: popup_note_window
+//w:
+//r: 5.2
+//
+#define qtn_usb_otg_error_unsupported_filesystem "Unknown file system. Disconnect device."
+
+//d: General Mass storage error in USB OTG.
+//l: popup_note_window
+//w:
+//r: 5.2
+//
+#define qtn_usb_otg_general_mass_storage_error "General Mass storage error"
+
+//d: Memory not enough or full error
+//l: popup_note_window
+//r: 5.2
+#define qtn_usb_error_memory_not_enough "Memory full. Close some applications and try to connect USB cable again"
+
+// End of USB_OTG
+
+// End of File

@@ -1,0 +1,72 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*    mmp file for WidgetBackupRestore component
+*
+*
+*/
+
+TARGET          WidgetBackupRestore.exe
+TARGETTYPE      exe
+UID             0x100039CE 0x2000B4D8
+
+//  INCLUDES
+#include <bldvariant.hrh>
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+// Capability assignment.
+CAPABILITY      CAP_APPLICATION AllFiles -Location
+VENDORID        VID_DEFAULT
+
+EPOCSTACKSIZE   0x5000
+EPOCHEAPSIZE    0x5000 0x1000000
+
+// Sources
+SOURCEPATH      .
+SOURCEPATH      ../Src
+
+SOURCE          WidgetBackupRestore.cpp
+SOURCE          WidgetActiveCallback.cpp
+
+// Includes
+USERINCLUDE     . ../Inc/
+USERINCLUDE     ../../../inc
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+MW_LAYER_CONNECT_SYSTEMINCLUDE
+
+// Libraries
+LIBRARY         euser.lib
+LIBRARY         bafl.lib
+LIBRARY         platformenv.lib
+LIBRARY         centralrepository.lib
+LIBRARY         XmlEngineUtils.lib 
+LIBRARY         XMLEngine.lib
+LIBRARY         XmlEngineDOM.lib
+LIBRARY         apgrfx.lib
+LIBRARY         estor.lib
+LIBRARY         efsrv.lib 
+LIBRARY         abclient.lib 
+LIBRARY         charconv.lib 
+LIBRARY         WidgetRegistryClient.lib
+LIBRARY         WidgetInstaller.lib
+
+//#ifdef _DEBUG
+LIBRARY		    flogger.lib
+//#endif
+
+// End of file

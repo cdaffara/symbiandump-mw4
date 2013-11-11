@@ -1,0 +1,44 @@
+/*
+* Copyright (c) 2007-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: Recognize vpn policy files
+*
+*/
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+
+TARGET          vpnpolicyrecognizer.dll
+TARGETTYPE      plugin
+UID             0x10009d8d 0x101F6D37
+
+CAPABILITY      Protserv
+VENDORID		VID_DEFAULT 
+
+// Sources and headers
+SOURCEPATH      ../src
+SOURCE          vpnpolicyrecognizer.cpp 
+
+USERINCLUDE     ../inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH      ../data
+START RESOURCE  vpnpolicyrecognizer.rss
+TARGET vpnpolicyrecognizer.rsc
+END
+
+// Libraries
+LIBRARY         euser.lib
+LIBRARY         apmime.lib 
+LIBRARY         ECom.lib

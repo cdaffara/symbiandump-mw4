@@ -1,0 +1,83 @@
+// *
+// * Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// * All rights reserved.
+// * This component and the accompanying materials are made available
+// * under the terms of the License "Eclipse Public License v1.0"
+// * which accompanies this distribution, and is available
+// * at the URL "http://www.eclipse.org/legal/epl-v10.html".
+// *
+// * Initial Contributors:
+// * Nokia Corporation - initial contribution.
+// *
+// * Contributors:
+// *
+// * Description:  This is the project specification file for WebCore.
+// *
+
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#include "../../common.mmpi"
+
+TARGET  WebCorebindings.lib
+
+TARGETTYPE  lib
+
+VENDORID    VID_DEFAULT
+
+//OPTION CW -prefix pragmas.pref
+
+SOURCEPATH ../../../../../WebCore/bindings/js
+
+SOURCE GCController.cpp
+SOURCE JSAttrCustom.cpp
+SOURCE JSCanvasRenderingContext2DCustom.cpp
+SOURCE JSCSSRuleCustom.cpp
+SOURCE JSCSSStyleDeclarationCustom.cpp
+SOURCE JSCSSValueCustom.cpp
+SOURCE JSCustomXPathNSResolver.cpp
+SOURCE JSDocumentCustom.cpp
+SOURCE JSDOMExceptionConstructor.cpp
+SOURCE JSDOMWindowCustom.cpp
+SOURCE JSElementCustom.cpp
+SOURCE JSEventCustom.cpp
+SOURCE JSEventTargetNode.cpp
+SOURCE JSHTMLAppletElementCustom.cpp
+SOURCE JSHTMLCollectionCustom.cpp
+SOURCE JSHTMLDocumentCustom.cpp
+SOURCE JSHTMLElementCustom.cpp
+SOURCE JSHTMLElementWrapperFactory.cpp
+SOURCE JSHTMLEmbedElementCustom.cpp
+SOURCE JSHTMLFormElementCustom.cpp
+SOURCE JSHTMLFrameElementCustom.cpp
+SOURCE JSHTMLIFrameElementCustom.cpp
+SOURCE JSHTMLFrameSetElementCustom.cpp
+SOURCE JSHTMLInputElementBase.cpp
+SOURCE JSHTMLObjectElementCustom.cpp
+SOURCE JSHTMLOptionElementConstructor.cpp
+SOURCE JSHTMLOptionsCollectionCustom.cpp
+SOURCE JSHTMLSelectElementCustom.cpp
+SOURCE JSNamedNodeMapCustom.cpp
+SOURCE JSNamedNodesCollection.cpp
+SOURCE JSNodeCustom.cpp
+SOURCE JSNodeFilterCondition.cpp
+SOURCE JSNodeFilterCustom.cpp
+SOURCE JSNodeIteratorCustom.cpp
+SOURCE JSNodeListCustom.cpp
+SOURCE JSStyleSheetCustom.cpp
+SOURCE JSTreeWalkerCustom.cpp
+SOURCE JSXMLHttpRequest.cpp
+SOURCE JSXSLTProcessor.cpp
+SOURCE kjs_binding.cpp
+SOURCE kjs_css.cpp
+SOURCE kjs_dom.cpp
+SOURCE kjs_events.cpp
+SOURCE kjs_html.cpp
+SOURCE kjs_navigator.cpp
+SOURCE kjs_proxy.cpp
+SOURCE kjs_window.cpp
+
+SOURCEPATH ../../../../../WebCore/bindings/js/symbian
+
+SOURCE kjs_console.cpp

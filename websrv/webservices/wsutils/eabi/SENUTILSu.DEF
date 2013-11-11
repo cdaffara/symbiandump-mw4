@@ -1,0 +1,340 @@
+EXPORTS
+	_ZN11CSenGuidGen15GetRandomGuidLCEv @ 1 NONAME
+	_ZN11CSenGuidGen16GetRandomGuid8LCEv @ 2 NONAME
+	_ZN11CSenGuidGen17GetRandomGuid16LCEv @ 3 NONAME
+	_ZN11CSenGuidGen4NewLEv @ 4 NONAME
+	_ZN11CSenGuidGen5NewLCEv @ 5 NONAME
+	_ZN12SenDateUtils16FromXmlDateTimeLERK6TDesC8 @ 6 NONAME
+	_ZN12SenDateUtils18ToXmlDateTimeUtf8LER5TDes8RK5TTime @ 7 NONAME
+	_ZN13CSenSoapFault10ConstructLER11CSenElement @ 8 NONAME
+	_ZN13CSenSoapFault10ConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 9 NONAME
+	_ZN13CSenSoapFault10FaultActorEv @ 10 NONAME
+	_ZN13CSenSoapFault11FaultStringEv @ 11 NONAME
+	_ZN13CSenSoapFault4NewLER11CSenElement @ 12 NONAME
+	_ZN13CSenSoapFault4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 13 NONAME
+	_ZN13CSenSoapFault6DetailEv @ 14 NONAME
+	_ZN13CSenSoapFault9FaultCodeEv @ 15 NONAME
+	_ZN13CSenSoapFaultC1Ev @ 16 NONAME
+	_ZN13CSenSoapFaultC2Ev @ 17 NONAME
+	_ZN13CSenSoapFaultD0Ev @ 18 NONAME
+	_ZN13CSenSoapFaultD1Ev @ 19 NONAME
+	_ZN13CSenSoapFaultD2Ev @ 20 NONAME
+	_ZN15CSenSoapMessage12ParseHeaderLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 21 NONAME
+	_ZN15CSenSoapMessage14BaseConstructLEv @ 22 NONAME
+	_ZN15CSenSoapMessage17AddSecurityTokenLERK6TDesC8 @ 23 NONAME
+	_ZN15CSenSoapMessage18SetSecurityHeaderLERK6TDesC8 @ 24 NONAME
+	_ZN15CSenSoapMessage19NewSecurityHeaderLCEPK6TDesC8 @ 25 NONAME
+	_ZN15CSenSoapMessage4NewLEv @ 26 NONAME
+	_ZN15CSenSoapMessageC1Ev @ 27 NONAME
+	_ZN15CSenSoapMessageC2Ev @ 28 NONAME
+	_ZN15CSenSoapMessageD0Ev @ 29 NONAME
+	_ZN15CSenSoapMessageD1Ev @ 30 NONAME
+	_ZN15CSenSoapMessageD2Ev @ 31 NONAME
+	_ZN16CSenSoapEnvelope10AddHeaderLER11CSenElement @ 32 NONAME
+	_ZN16CSenSoapEnvelope10SoapActionEv @ 33 NONAME
+	_ZN16CSenSoapEnvelope11EndElementLERK6TDesC8S2_S2_ @ 34 NONAME
+	_ZN16CSenSoapEnvelope13BodyAsStringLEv @ 35 NONAME
+	_ZN16CSenSoapEnvelope12DetachFaultLEv @ 36 NONAME
+	_ZN16CSenSoapEnvelope12ParseHeaderLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 37 NONAME
+	_ZN16CSenSoapEnvelope13StartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 38 NONAME
+	_ZN16CSenSoapEnvelope14BaseConstructLEv @ 39 NONAME
+	_ZN16CSenSoapEnvelope14SetSoapActionLERK6TDesC8 @ 40 NONAME
+	_ZN16CSenSoapEnvelope4NewLEv @ 41 NONAME
+	_ZN16CSenSoapEnvelope5BodyLEv @ 42 NONAME
+	_ZN16CSenSoapEnvelope6FaultLEv @ 43 NONAME
+	_ZN16CSenSoapEnvelope7HeaderLEv @ 44 NONAME
+	_ZN16CSenSoapEnvelope7IsFaultEv @ 45 NONAME
+	_ZN16CSenSoapEnvelope8SetBodyLERK6TDesC8 @ 46 NONAME
+	_ZN16CSenSoapEnvelopeD0Ev @ 47 NONAME
+	_ZN16CSenSoapEnvelopeD1Ev @ 48 NONAME
+	_ZN16CSenSoapEnvelopeD2Ev @ 49 NONAME
+	_ZN20CSenWsSecurityHeader11XmlNsPrefixEv @ 50 NONAME
+	_ZN20CSenWsSecurityHeader14BaseConstructLERK6TDesC8 @ 51 NONAME
+	_ZN20CSenWsSecurityHeader14BaseConstructLEv @ 52 NONAME
+	_ZN20CSenWsSecurityHeader14UsernameTokenLER20CSenIdentityProvider @ 53 NONAME
+	_ZN20CSenWsSecurityHeader14UsernameTokenLERK6TDesC8RP6HBufC8 @ 54 NONAME
+	_ZN20CSenWsSecurityHeader4NewLERK6TDesC8 @ 55 NONAME
+	_ZN20CSenWsSecurityHeader4NewLEv @ 56 NONAME
+	_ZN20CSenWsSecurityHeader5XmlNsEv @ 57 NONAME
+	_ZN20CSenWsSecurityHeaderC1Ev @ 58 NONAME
+	_ZN20CSenWsSecurityHeaderC2Ev @ 59 NONAME
+	_ZN20CSenWsSecurityHeaderD0Ev @ 60 NONAME
+	_ZN20CSenWsSecurityHeaderD1Ev @ 61 NONAME
+	_ZN20CSenWsSecurityHeaderD2Ev @ 62 NONAME
+	_ZTI11CSenGuidGen @ 63 NONAME ; #<TI>#
+	_ZTI13CSenSoapFault @ 64 NONAME ; #<TI>#
+	_ZTI15CSenSoapMessage @ 65 NONAME ; #<TI>#
+	_ZTI16CSenSoapEnvelope @ 66 NONAME ; #<TI>#
+	_ZTI20CSenWsSecurityHeader @ 67 NONAME ; #<TI>#
+	_ZTV11CSenGuidGen @ 68 NONAME ; #<VT>#
+	_ZTV13CSenSoapFault @ 69 NONAME ; #<VT>#
+	_ZTV15CSenSoapMessage @ 70 NONAME ; #<VT>#
+	_ZTV16CSenSoapEnvelope @ 71 NONAME ; #<VT>#
+	_ZTV20CSenWsSecurityHeader @ 72 NONAME ; #<VT>#
+	_ZN11SenSaxUtils13SearchEndTagLERK6TDesC8S2_RiS3_R6TPtrC8 @ 73 NONAME
+	_ZN11SenSaxUtils13SearchEndTagLERK6TDesC8S2_S2_RiS3_ @ 74 NONAME
+	_ZN11SenSaxUtils15SearchStartTagLERK6TDesC8S2_RiS3_R6TPtrC8 @ 75 NONAME
+	_ZN11SenSaxUtils15SearchStartTagLERK6TDesC8S2_S2_RiS3_ @ 76 NONAME
+	_ZN12SenCertUtils18CertInfoToStringLCERK9TCertInfo @ 77 NONAME
+	_ZN13CSenAttribute10ConstructLERK6TDesC8S2_S2_S2_ @ 78 NONAME
+	_ZN13CSenAttribute4NewLERK6TDesC8S2_S2_ @ 79 NONAME
+	_ZN13CSenAttribute4NewLERK6TDesC8S2_S2_S2_ @ 80 NONAME
+	_ZN13CSenAttribute9AddValueLERK6TDesC8 @ 81 NONAME
+	_ZN13CSenAttribute9SetValueLERK6TDesC8 @ 82 NONAME
+	_ZN13CSenAttributeC1Ev @ 83 NONAME
+	_ZN13CSenAttributeC2Ev @ 84 NONAME
+	_ZN13CSenAttributeD0Ev @ 85 NONAME
+	_ZN13CSenAttributeD1Ev @ 86 NONAME
+	_ZN13CSenAttributeD2Ev @ 87 NONAME
+	_ZN13CSenSoapFault12FaultSubcodeEv @ 88 NONAME
+	_ZN14CSenAttributes13AddAttributeLERK13CSenAttribute @ 89 NONAME
+	_ZN14CSenAttributes4NewLERKS_ @ 90 NONAME
+	_ZN14CSenAttributes4NewLEv @ 91 NONAME
+	_ZN14CSenAttributes5NewLCERKS_ @ 92 NONAME
+	_ZN14CSenAttributes5NewLCEv @ 93 NONAME
+	_ZN14CSenAttributes8MatchAnyERKS_ @ 94 NONAME
+	_ZN14CSenAttributesD0Ev @ 95 NONAME
+	_ZN14CSenAttributesD1Ev @ 96 NONAME
+	_ZN14CSenAttributesD2Ev @ 97 NONAME
+	_ZN14CSenIdentifier13AddAttributeLER13CSenAttribute @ 98 NONAME
+	_ZN14CSenIdentifier4NewLEN13SenIdentifier15TIdentifierTypeERK6TDesC8 @ 99 NONAME
+	_ZN14CSenIdentifier4NewLEN13SenIdentifier15TIdentifierTypeERK6TDesC8S4_ @ 100 NONAME
+	_ZN14CSenIdentifier4NewLEN13SenIdentifier15TIdentifierTypeERK9TCertInfo @ 101 NONAME
+	_ZN14CSenIdentifier4NewLERKS_ @ 102 NONAME
+	_ZN14CSenIdentifier4NewLEv @ 103 NONAME
+	_ZN14CSenIdentifier5NewLCEN13SenIdentifier15TIdentifierTypeERK6TDesC8 @ 104 NONAME
+	_ZN14CSenIdentifier5NewLCEN13SenIdentifier15TIdentifierTypeERK6TDesC8S4_ @ 105 NONAME
+	_ZN14CSenIdentifier5NewLCEN13SenIdentifier15TIdentifierTypeERK9TCertInfo @ 106 NONAME
+	_ZN14CSenIdentifier5NewLCERKS_ @ 107 NONAME
+	_ZN14CSenIdentifier5NewLCEv @ 108 NONAME
+	_ZN14CSenIdentifier6EqualsERKS_ @ 109 NONAME
+	_ZN14CSenIdentifier8ProxyForEPS_ @ 110 NONAME
+	_ZN14CSenIdentifierD0Ev @ 111 NONAME
+	_ZN14CSenIdentifierD1Ev @ 112 NONAME
+	_ZN14CSenIdentifierD2Ev @ 113 NONAME
+	_ZN14CSenIdentifiereqERKS_ @ 114 NONAME
+	_ZN14SenCryptoUtils13DecodeBase64LERK6TDesC8 @ 115 NONAME
+	_ZN14SenCryptoUtils13EncodeBase64LERK6TDesC8 @ 116 NONAME
+	_ZN14SenCryptoUtils18RandomAndHashMd5LCEv @ 117 NONAME
+	_ZN14SenCryptoUtils26CreateEncodedBinarySecretLERK6TDesC8S2_ @ 118 NONAME
+	_ZN14SenCryptoUtils13GetPSHA1HashLERK6TDesC8S2_i @ 119 NONAME
+	_ZN15CSenSoapMessage14BaseConstructLE12TSOAPVersion @ 120 NONAME
+	_ZN15CSenSoapMessage14BaseConstructLE12TSOAPVersionRK6TDesC8 @ 121 NONAME
+	_ZN15CSenSoapMessage4NewLE12TSOAPVersion @ 122 NONAME
+	_ZN15CSenSoapMessage4NewLE12TSOAPVersionRK6TDesC8 @ 123 NONAME
+	_ZN16CSenSoapEnvelope11SoapVersionEv @ 124 NONAME
+	_ZN16CSenSoapEnvelope14BaseConstructLE12TSOAPVersion @ 125 NONAME
+	_ZN16CSenSoapEnvelope6ParseLERK6TDesC8 @ 126 NONAME
+	_ZN16CSenSoapEnvelope7HasBodyEv @ 127 NONAME
+	_ZN16CSenSoapEnvelope9HasHeaderEv @ 128 NONAME
+	_ZN17CSenXmlProperties4NewLERK11CSenElement @ 129 NONAME
+	_ZN17CSenXmlProperties4NewLERK6TDesC8R13CSenXmlReader @ 130 NONAME
+	_ZN17CSenXmlProperties4NewLEv @ 131 NONAME
+	_ZN17CSenXmlProperties5NewLCERK11CSenElement @ 132 NONAME
+	_ZN17CSenXmlProperties5NewLCERK6TDesC8R13CSenXmlReader @ 133 NONAME
+	_ZN17CSenXmlProperties5NewLCEv @ 134 NONAME
+	_ZN20CSenWsSecurityHeader10TimestampLERK6TDesC8RP6HBufC8 @ 135 NONAME
+	_ZN20CSenWsSecurityHeader10TimestampLERK6TDesC8S2_RP6HBufC8 @ 136 NONAME
+	_ZN20CSenWsSecurityHeader14BaseConstructLERK6TDesC8S2_ @ 137 NONAME
+	_ZN20CSenWsSecurityHeader14UsernameTokenLER20CSenIdentityProviderNS_13TPasswordTypeE @ 138 NONAME
+	_ZN20CSenWsSecurityHeader14UsernameTokenLERK6TDesC8S2_NS_13TPasswordTypeERP6HBufC8 @ 139 NONAME
+	_ZN20CSenWsSecurityHeader14UsernameTokenLERK6TDesC8S2_RP6HBufC8 @ 140 NONAME
+	_ZN20CSenWsSecurityHeader20BinarySecurityTokenLERK6TDesC8RP6HBufC8 @ 141 NONAME
+	_ZN20CSenWsSecurityHeader4NewLERK6TDesC8S2_ @ 142 NONAME
+	_ZN20CSenWsSecurityHeader5NewLCERK6TDesC8 @ 143 NONAME
+	_ZN20CSenWsSecurityHeader5NewLCERK6TDesC8S2_ @ 144 NONAME
+	_ZN20CSenWsSecurityHeader5NewLCEv @ 145 NONAME
+	_ZN21CSenPropertiesElement4NewLERK6TDesC8P11RStringPool @ 146 NONAME
+	_ZN21CSenPropertiesElement4NewLERK6TDesC8S2_P11RStringPool @ 147 NONAME
+	_ZN21CSenPropertiesElement4NewLERK6TDesC8S2_S2_P11RStringPool @ 148 NONAME
+	_ZN21CSenPropertiesElement4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEEP11RStringPool @ 149 NONAME
+	_ZN21CSenPropertiesElement4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElementP11RStringPool @ 150 NONAME
+	_ZN22CSenPropertiesFragment4NewLEP11RStringPool @ 151 NONAME
+	_ZN22CSenPropertiesFragment4NewLERK11CSenElementP11RStringPool @ 152 NONAME
+	_ZN22CSenPropertiesFragment4NewLERK6TDesC8P11RStringPool @ 153 NONAME
+	_ZN22CSenPropertiesFragment4NewLERK6TDesC8S2_P11RStringPool @ 154 NONAME
+	_ZN22CSenPropertiesFragment4NewLERK6TDesC8S2_S2_P11RStringPool @ 155 NONAME
+	_ZN22CSenPropertiesFragment4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEEP11RStringPool @ 156 NONAME
+	_ZN22CSenPropertiesFragment4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElementP11RStringPool @ 157 NONAME
+	_ZN23CSenTransportProperties10HeartbeatLERi @ 158 NONAME
+	_ZN23CSenTransportProperties10MessageIdLER6TPtrC8 @ 159 NONAME
+	_ZN23CSenTransportProperties10ProxyHostLER6TPtrC8 @ 160 NONAME
+	_ZN23CSenTransportProperties10ProxyPortLERi @ 161 NONAME
+	_ZN23CSenTransportProperties10UserAgentLER6TPtrC8 @ 162 NONAME
+	_ZN23CSenTransportProperties11ProxyUsageLERi @ 163 NONAME
+	_ZN23CSenTransportProperties11SetOmittedLERK6TDesC8i @ 164 NONAME
+	_ZN23CSenTransportProperties11SoapActionLER6TPtrC8 @ 165 NONAME
+	_ZN23CSenTransportProperties12IntPropertyLERK6TDesC8Ri @ 166 NONAME
+	_ZN23CSenTransportProperties12IsSafeToCastEN14MSenProperties23TSenPropertiesClassTypeE @ 167 NONAME
+	_ZN23CSenTransportProperties12SetDeviceIDLERK6TDesC8 @ 168 NONAME
+	_ZN23CSenTransportProperties12SetPropertyLERK6TDesC8S2_ @ 169 NONAME
+	_ZN23CSenTransportProperties12SetPropertyLERK6TDesC8S2_S2_ @ 170 NONAME
+	_ZN23CSenTransportProperties13ApplyBindingLE12TSOAPVersion @ 171 NONAME
+	_ZN23CSenTransportProperties13BoolPropertyLERK6TDesC8Ri @ 172 NONAME
+	_ZN23CSenTransportProperties13MwsNamespaceLER6TPtrC8 @ 173 NONAME
+	_ZN23CSenTransportProperties13SecureDialogLERi @ 174 NONAME
+	_ZN23CSenTransportProperties13SetHeartbeatLEi @ 175 NONAME
+	_ZN23CSenTransportProperties13SetMessageIdLERK6TDesC8 @ 176 NONAME
+	_ZN23CSenTransportProperties13SetProxyHostLERK6TDesC8 @ 177 NONAME
+	_ZN23CSenTransportProperties13SetProxyPortLEi @ 178 NONAME
+	_ZN23CSenTransportProperties13SetUserAgentLERK6TDesC8 @ 179 NONAME
+	_ZN23CSenTransportProperties14BaseConstructLERK11CSenElement @ 180 NONAME
+	_ZN23CSenTransportProperties14BaseConstructLERK6TDesC8S2_P13CSenXmlReader @ 181 NONAME
+	_ZN23CSenTransportProperties14BaseConstructLERK6TDesC8S2_S2_P13CSenXmlReader @ 182 NONAME
+	_ZN23CSenTransportProperties14MaxTimeToLiveLERi @ 183 NONAME
+	_ZN23CSenTransportProperties14MinTimeToLiveLERi @ 184 NONAME
+	_ZN23CSenTransportProperties14SetProxyUsageLEi @ 185 NONAME
+	_ZN23CSenTransportProperties14SetSoapActionLERK6TDesC8 @ 186 NONAME
+	_ZN23CSenTransportProperties15DownloadFolderLER6TPtrC8 @ 187 NONAME
+	_ZN23CSenTransportProperties15FileAttachmentLERK6TDesC8RP6HBufC8 @ 188 NONAME
+	_ZN23CSenTransportProperties15RemovePropertyLERK6TDesC8 @ 189 NONAME
+	_ZN23CSenTransportProperties15SetIntPropertyLERK6TDesC8i @ 190 NONAME
+	_ZN23CSenTransportProperties16SetBoolPropertyLERK6TDesC8i @ 191 NONAME
+	_ZN23CSenTransportProperties16SetMwsNamespaceLERK6TDesC8 @ 192 NONAME
+	_ZN23CSenTransportProperties16SetSecureDialogLEi @ 193 NONAME
+	_ZN23CSenTransportProperties17SetMaxTimeToLiveLEi @ 194 NONAME
+	_ZN23CSenTransportProperties17SetMinTimeToLiveLEi @ 195 NONAME
+	_ZN23CSenTransportProperties18SetDownloadFolderLERK6TDesC8 @ 196 NONAME
+	_ZN23CSenTransportProperties18SetFileAttachmentLERK6TDesC8S2_ @ 197 NONAME
+	_ZN23CSenTransportProperties19OnewayMessageOnOffLERi @ 198 NONAME
+	_ZN23CSenTransportProperties19PropertiesClassTypeEv @ 199 NONAME
+	_ZN23CSenTransportProperties22SetOnewayMessageOnOffLEi @ 200 NONAME
+	_ZN23CSenTransportProperties4NewLERK11CSenElement @ 201 NONAME
+	_ZN23CSenTransportProperties4NewLERK6TDesC8R13CSenXmlReader @ 202 NONAME
+	_ZN23CSenTransportProperties4NewLEv @ 203 NONAME
+	_ZN23CSenTransportProperties5NewLCERK11CSenElement @ 204 NONAME
+	_ZN23CSenTransportProperties5NewLCERK6TDesC8R13CSenXmlReader @ 205 NONAME
+	_ZN23CSenTransportProperties5NewLCEv @ 206 NONAME
+	_ZN23CSenTransportProperties6IapIdLERm @ 207 NONAME
+	_ZN23CSenTransportProperties7AsUtf8LEv @ 208 NONAME
+	_ZN23CSenTransportProperties8AsUtf8LCEv @ 209 NONAME
+	_ZN23CSenTransportProperties8WriteToLER12RWriteStream @ 210 NONAME
+	_ZN23CSenTransportProperties9DeviceIDLER6TPtrC8 @ 211 NONAME
+	_ZN23CSenTransportProperties9PropertyLERK6TDesC8R6TPtrC8 @ 212 NONAME
+	_ZN23CSenTransportProperties9PropertyLERK6TDesC8R6TPtrC8S4_ @ 213 NONAME
+	_ZN23CSenTransportProperties9ReadFromLERK6TDesC8 @ 214 NONAME
+	_ZN23CSenTransportProperties9SetIapIdLEm @ 215 NONAME
+	_ZN23CSenTransportProperties9SetReaderER13CSenXmlReader @ 216 NONAME
+	_ZN23CSenTransportPropertiesC1Ev @ 217 NONAME
+	_ZN23CSenTransportPropertiesC2Ev @ 218 NONAME
+	_ZN23CSenTransportPropertiesD0Ev @ 219 NONAME
+	_ZN23CSenTransportPropertiesD1Ev @ 220 NONAME
+	_ZN23CSenTransportPropertiesD2Ev @ 221 NONAME
+	_ZN27CSenHttpTransportProperties4NewLERK11CSenElement @ 222 NONAME
+	_ZN27CSenHttpTransportProperties4NewLERK6TDesC8R13CSenXmlReader @ 223 NONAME
+	_ZN27CSenHttpTransportProperties4NewLEv @ 224 NONAME
+	_ZN27CSenHttpTransportProperties5NewLCERK11CSenElement @ 225 NONAME
+	_ZN27CSenHttpTransportProperties5NewLCERK6TDesC8R13CSenXmlReader @ 226 NONAME
+	_ZN27CSenHttpTransportProperties5NewLCEv @ 227 NONAME
+	_ZN27CSenVtcpTransportProperties4NewLERK11CSenElement @ 228 NONAME
+	_ZN27CSenVtcpTransportProperties4NewLERK6TDesC8R13CSenXmlReader @ 229 NONAME
+	_ZN27CSenVtcpTransportProperties4NewLEv @ 230 NONAME
+	_ZN27CSenVtcpTransportProperties5NewLCERK11CSenElement @ 231 NONAME
+	_ZN27CSenVtcpTransportProperties5NewLCERK6TDesC8R13CSenXmlReader @ 232 NONAME
+	_ZN27CSenVtcpTransportProperties5NewLCEv @ 233 NONAME
+	_ZN9CSenChunk10CloseChunkEv @ 234 NONAME
+	_ZN9CSenChunk11AdjustChunkEi @ 235 NONAME
+	_ZN9CSenChunk11ChunkHeaderEv @ 236 NONAME
+	_ZN9CSenChunk11ChunkToArgsER8TIpcArgsi @ 237 NONAME
+	_ZN9CSenChunk11CreateChunkEv @ 238 NONAME
+	_ZN9CSenChunk11DescToChunkERK6TDesC8 @ 239 NONAME
+	_ZN9CSenChunk11DescToChunkERK6TDesC8i @ 240 NONAME
+	_ZN9CSenChunk12DescsToChunkERK6TDesC8S2_ @ 241 NONAME
+	_ZN9CSenChunk13DescFromChunkER6TPtrC8i @ 242 NONAME
+	_ZN9CSenChunk14DescsFromChunkER6TPtrC8S1_ @ 243 NONAME
+	_ZN9CSenChunk16AllocDescToChunkEiRP5TPtr8 @ 244 NONAME
+	_ZN9CSenChunk18OpenChunkFromRMsgLERK9RMessage2i @ 245 NONAME
+	_ZN9CSenChunk26OpenChunkFromHandleNumberLEi @ 246 NONAME
+	_ZN9CSenChunk4NewLERK7TDesC16 @ 247 NONAME
+	_ZN9CSenChunk5ChunkEv @ 248 NONAME
+	_ZN9CSenChunk5NewLCERK7TDesC16 @ 249 NONAME
+	_ZN9CSenChunk9OpenChunkEv @ 250 NONAME
+	_ZN9CSenChunk9SetLoggerEP11RFileLogger @ 251 NONAME
+	_ZN9CSenChunkC1Ev @ 252 NONAME
+	_ZN9CSenChunkC2Ev @ 253 NONAME
+	_ZN9CSenChunkD0Ev @ 254 NONAME
+	_ZN9CSenChunkD1Ev @ 255 NONAME
+	_ZN9CSenChunkD2Ev @ 256 NONAME
+	_ZN9CSenChunkeqERKS_ @ 257 NONAME
+	_ZNK13CSenAttribute12FriendlyNameEv @ 258 NONAME
+	_ZNK13CSenAttribute4NameEv @ 259 NONAME
+	_ZNK13CSenAttribute4TypeEv @ 260 NONAME
+	_ZNK13CSenAttribute5ValueEv @ 261 NONAME
+	_ZNK13CSenAttribute6EqualsERKS_ @ 262 NONAME
+	_ZNK13CSenAttribute9GetValuesEv @ 263 NONAME
+	_ZNK13CSenAttribute9NumValuesEv @ 264 NONAME
+	_ZNK14CSenAttributes12GetAttributeERK6TDesC8 @ 265 NONAME
+	_ZNK14CSenAttributes5CountEv @ 266 NONAME
+	_ZNK14CSenAttributes6EqualsERK13CSenAttribute @ 267 NONAME
+	_ZNK14CSenIdentifier10AttributesEv @ 268 NONAME
+	_ZNK14CSenIdentifier4RootEv @ 269 NONAME
+	_ZNK14CSenIdentifier4TypeEv @ 270 NONAME
+	_ZNK14CSenIdentifier5ProxyEv @ 271 NONAME
+	_ZNK14CSenIdentifier5ValueEv @ 272 NONAME
+	_ZNK14CSenIdentifier7IsProxyEv @ 273 NONAME
+	_ZNK23CSenTransportProperties5CloneERi @ 274 NONAME
+	_ZNK23CSenTransportProperties6CloneLEv @ 275 NONAME
+	_ZNK9CSenChunk3LogEv @ 276 NONAME
+	_ZNK9CSenChunk9ChunkNameEv @ 277 NONAME
+	_ZTI13CSenAttribute @ 278 NONAME ; #<TI>#
+	_ZTI14CSenAttributes @ 279 NONAME ; #<TI>#
+	_ZTI14CSenIdentifier @ 280 NONAME ; #<TI>#
+	_ZTI17CSenXmlProperties @ 281 NONAME ; #<TI>#
+	_ZTI21CSenPropertiesElement @ 282 NONAME ; #<TI>#
+	_ZTI22CSenPropertiesFragment @ 283 NONAME ; #<TI>#
+	_ZTI23CSenTransportProperties @ 284 NONAME ; #<TI>#
+	_ZTI27CSenHttpTransportProperties @ 285 NONAME ; #<TI>#
+	_ZTI27CSenVtcpTransportProperties @ 286 NONAME ; #<TI>#
+	_ZTI9CSenChunk @ 287 NONAME ; #<TI>#
+	_ZTV13CSenAttribute @ 288 NONAME ; #<VT>#
+	_ZTV14CSenAttributes @ 289 NONAME ; #<VT>#
+	_ZTV14CSenIdentifier @ 290 NONAME ; #<VT>#
+	_ZTV17CSenXmlProperties @ 291 NONAME ; #<VT>#
+	_ZTV21CSenPropertiesElement @ 292 NONAME ; #<VT>#
+	_ZTV22CSenPropertiesFragment @ 293 NONAME ; #<VT>#
+	_ZTV23CSenTransportProperties @ 294 NONAME ; #<VT>#
+	_ZTV27CSenHttpTransportProperties @ 295 NONAME ; #<VT>#
+	_ZTV27CSenVtcpTransportProperties @ 296 NONAME ; #<VT>#
+	_ZTV9CSenChunk @ 297 NONAME ; #<VT>#
+	_ZThn4_N16CSenSoapEnvelope6ParseLERK6TDesC8 @ 298 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties12IntPropertyLERK6TDesC8Ri @ 299 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties12IsSafeToCastEN14MSenProperties23TSenPropertiesClassTypeE @ 300 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties12SetPropertyLERK6TDesC8S2_ @ 301 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties13BoolPropertyLERK6TDesC8Ri @ 302 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties15SetIntPropertyLERK6TDesC8i @ 303 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties16SetBoolPropertyLERK6TDesC8i @ 304 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties19PropertiesClassTypeEv @ 305 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties7AsUtf8LEv @ 306 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties8AsUtf8LCEv @ 307 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties8WriteToLER12RWriteStream @ 308 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties9PropertyLERK6TDesC8R6TPtrC8 @ 309 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties9ReadFromLERK6TDesC8 @ 310 NONAME ; #<thunk>#
+	_ZThn4_N23CSenTransportProperties9SetReaderER13CSenXmlReader @ 311 NONAME ; #<thunk>#
+	_ZThn4_NK23CSenTransportProperties5CloneERi @ 312 NONAME ; #<thunk>#
+	_ZThn4_NK23CSenTransportProperties6CloneLEv @ 313 NONAME ; #<thunk>#
+	_ZN20CSenWsSecurityHeader20BinarySecurityTokenLERK6TDesC8S2_RP6HBufC8 @ 314 NONAME
+	_ZN12SenDateUtils19ToXmlDateTimeUtf82LER5TDes8RK5TTime @ 315 NONAME
+	_ZN16CSenSoapEnvelope11SoapAction2Ev @ 316 NONAME
+	_ZN14SenCryptoUtils13GetTimestampLEv @ 317 NONAME
+	_ZN14SenCryptoUtils15GetRandomNonceLEv @ 318 NONAME
+	_ZN23CSenTransportProperties17EndpointResourceLER6TPtrC8 @ 319 NONAME
+	_ZN23CSenTransportProperties20SetEndpointResourceLERK6TDesC8 @ 320 NONAME
+	_ZN14SenCryptoUtils13GetTimestampLE5TTime @ 321 NONAME
+	_ZN23CSenTransportProperties10SetSnapIdLEm @ 322 NONAME
+	_ZN23CSenTransportProperties7SnapIdLERm @ 323 NONAME
+	_ZN9CSenChunk17RequestFileHandleER5RFile @ 324 NONAME
+	_ZN9CSenChunk17RequestFileHandleEv @ 325 NONAME
+	_ZN23CSenTransportProperties14BaseConstructLERK6TDesC8S2_S2_S2_P13CSenXmlReader @ 326 NONAME
+	_ZN27CSenVtcpTransportProperties12MaxRetryTTLLERi @ 327 NONAME
+	_ZN27CSenVtcpTransportProperties12MinRetryTTLLERi @ 328 NONAME
+	_ZN27CSenVtcpTransportProperties14MaxTimeToLiveLERi @ 329 NONAME
+	_ZN27CSenVtcpTransportProperties14MinTimeToLiveLERi @ 330 NONAME
+	_ZN27CSenVtcpTransportProperties15SetMaxRetryTTLLEi @ 331 NONAME
+	_ZN27CSenVtcpTransportProperties15SetMinRetryTTLLEi @ 332 NONAME
+	_ZN27CSenVtcpTransportProperties17SetMaxTimeToLiveLEi @ 333 NONAME
+	_ZN27CSenVtcpTransportProperties17SetMinTimeToLiveLEi @ 334 NONAME
+	_ZN27CSenVtcpTransportProperties18RetryDeltaTimeoutLERi @ 335 NONAME
+	_ZN27CSenVtcpTransportProperties19OnewayMessageOnOffLERi @ 336 NONAME
+	_ZN27CSenVtcpTransportProperties21SetRetryDeltaTimeoutLEi @ 337 NONAME
+	_ZN27CSenVtcpTransportProperties22SetOnewayMessageOnOffLEi @ 338 NONAME
+

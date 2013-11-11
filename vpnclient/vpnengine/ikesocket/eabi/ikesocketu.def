@@ -1,0 +1,7 @@
+EXPORTS
+	_ZN23CIkeConnectionInterface4NewLER9MIkeDebug @ 1 NONAME
+	_ZTI13CDataTransfer @ 2 NONAME ; #<TI>#
+	_ZTI23CIkeConnectionInterface @ 3 NONAME ; #<TI>#
+	_ZTV13CDataTransfer @ 4 NONAME ; #<VT>#
+	_ZTV23CIkeConnectionInterface @ 5 NONAME ; #<VT>#
+

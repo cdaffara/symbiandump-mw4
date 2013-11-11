@@ -1,0 +1,19 @@
+EXPORTS
+	??0RVpnServ@@QAE@XZ @ 1 NONAME ; public: __thiscall RVpnServ::RVpnServ(void)
+	?CancelChange@RVpnServ@@QAEXXZ @ 2 NONAME ; public: void __thiscall RVpnServ::CancelChange(void)
+	?CancelImport@RVpnServ@@QAEXXZ @ 3 NONAME ; public: void __thiscall RVpnServ::CancelImport(void)
+	?ChangePassword@RVpnServ@@QAEXABV?$TPckg@V?$TBuf@$0DC@@@@@AAVTRequestStatus@@@Z @ 4 NONAME ; public: void __thiscall RVpnServ::ChangePassword(class TPckg<class TBuf<50> > const &,class TRequestStatus &)
+	?Close@RVpnServ@@QAEXXZ @ 5 NONAME ; public: void __thiscall RVpnServ::Close(void)
+	?Connect@RVpnServ@@QAEHXZ @ 6 NONAME ; public: int __thiscall RVpnServ::Connect(void)
+	?DeletePolicy@RVpnServ@@QAEHABV?$TBuf@$0DC@@@@Z @ 7 NONAME ; public: int __thiscall RVpnServ::DeletePolicy(class TBuf<50> const &)
+	?EnumeratePolicies@RVpnServ@@QAEHAAH@Z @ 8 NONAME ; public: int __thiscall RVpnServ::EnumeratePolicies(int &)
+	?GetPolicyDetails@RVpnServ@@QAEHABV?$TBuf@$0DC@@@AAUTVpnPolicyDetails@@@Z @ 9 NONAME ; public: int __thiscall RVpnServ::GetPolicyDetails(class TBuf<50> const &,struct TVpnPolicyDetails &)
+	?GetPolicyInfoList@RVpnServ@@QAEHPAV?$CArrayFixFlat@UTVpnPolicyInfo@@@@@Z @ 10 NONAME ; public: int __thiscall RVpnServ::GetPolicyInfoList(class CArrayFixFlat<struct TVpnPolicyInfo> *)
+	?ImportPolicy@RVpnServ@@QAEXABVTDesC16@@AAVTRequestStatus@@@Z @ 11 NONAME ; public: void __thiscall RVpnServ::ImportPolicy(class TDesC16 const &,class TRequestStatus &)
+	?Version@RVpnServ@@QBE?AVTVersion@@XZ @ 12 NONAME ; public: class TVersion  __thiscall RVpnServ::Version(void)const 
+	?GetPolicyData@RVpnServ@@QAEHABV?$TBuf@$0DC@@@AAPAVHBufC8@@@Z @ 13 NONAME ; public: int __thiscall RVpnServ::GetPolicyData(class TBuf<50> const &,class HBufC8 * &)
+	?AddPolicy@RVpnServ@@QAEHAAUTVpnPolicyDetails@@ABVTDesC8@@@Z @ 14 NONAME ; int RVpnServ::AddPolicy(struct TVpnPolicyDetails &, class TDesC8 const &)
+	?UpdatePolicyData@RVpnServ@@QAEHABV?$TBuf@$0DC@@@ABVTDesC8@@@Z @ 15 NONAME ; int RVpnServ::UpdatePolicyData(class TBuf<50> const &, class TDesC8 const &)
+	?UpdatePolicyDetails@RVpnServ@@QAEHABUTVpnPolicyDetails@@@Z @ 16 NONAME ; int RVpnServ::UpdatePolicyDetails(struct TVpnPolicyDetails const &)
+	?UpdatePolicyDetails@RVpnServ@@QAEHAAUTVpnPolicyDetails@@@Z @ 17 NONAME ; int RVpnServ::UpdatePolicyDetails(struct TVpnPolicyDetails &)
+

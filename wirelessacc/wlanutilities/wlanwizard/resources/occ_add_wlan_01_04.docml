@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hbdocument version="1.2">
+    <widget name="occ_add_wlan_01" type="HbWidget">
+        <!-- layout id: txt_occ_dialog_insert_the_name_of_the_new_wlan_net -->
+        <widget name="dialog" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <enums name="alignment" value="AlignLeft|AlignTop|AlignLeading"/>
+            <sizepolicy horizontalPolicy="Preferred" horizontalStretch="0" verticalPolicy="Preferred" verticalStretch="0"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+            <integer name="maximumLines" value="4"/>
+            <string name="plainText" value=""/>
+        </widget>
+        <widget name="lineEditKey" type="HbLineEdit">
+            <integer name="maxRows" value="3"/>
+        </widget>
+        <!-- layout id: qtl_dialog_pri3 -->
+        <widget name="labelErrorNote" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+            <integer name="maximumLines" value="3"/>
+            <string name="plainText" value=""/>
+        </widget>
+        <sizepolicy horizontalPolicy="Expanding" horizontalStretch="0" verticalPolicy="Expanding" verticalStretch="0"/>
+        <layout type="anchor"/>
+    </widget>
+    <section name="portrait_section">
+        <widget name="occ_add_wlan_01" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="dialog" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="dialog" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="dialog" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditKey" dstEdge="LEFT" src="dialog" srcEdge="LEFT"/>
+                <anchoritem dst="lineEditKey" dstEdge="TOP" prefLength="var(hb-param-margin-gene-middle-vertical)" src="dialog" srcEdge="BOTTOM"/>
+                <anchoritem dst="lineEditKey" dstEdge="RIGHT" src="dialog" srcEdge="RIGHT"/>
+                <anchoritem dst="labelErrorNote" dstEdge="LEFT" src="dialog" srcEdge="LEFT"/>
+                <anchoritem dst="labelErrorNote" dstEdge="RIGHT" src="dialog" srcEdge="RIGHT"/>
+                <anchoritem dst="labelErrorNote" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="lineEditKey" srcEdge="BOTTOM"/>
+            </layout>
+        </widget>
+    </section>
+    <section name="landscape_section">
+        <widget name="occ_add_wlan_01" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="dialog" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="dialog" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="dialog" dstEdge="RIGHT" prefLength="expr(var(hb-param-margin-gene-middle-horizontal)/2)" src="" srcEdge="CENTERH"/>
+                <anchoritem dst="lineEditKey" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-middle-horizontal)" src="dialog" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditKey" dstEdge="TOP" src="dialog" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="lineEditKey" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="labelErrorNote" dstEdge="LEFT" src="dialog" srcEdge="LEFT"/>
+                <anchoritem dst="labelErrorNote" dstEdge="RIGHT" src="lineEditKey" srcEdge="RIGHT"/>
+                <anchoritem direction="NEGATIVE" dst="lineEditKey" dstEdge="BOTTOM" minLength="var(hb-param-margin-gene-popup)" prefLength="var(hb-param-margin-gene-popup)" sizePolicy="Minimum" src="labelErrorNote" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="dialog" dstEdge="BOTTOM" minLength="var(hb-param-margin-gene-popup)" prefLength="var(hb-param-margin-gene-popup)" sizePolicy="Minimum" src="labelErrorNote" srcEdge="TOP"/>
+            </layout>
+        </widget>
+    </section>
+    <metadata activeUIState="landscape" display="NHD-3.2-inch_landscape" unit="un">
+        <uistate name="Common ui state" sections="#common"/>
+        <uistate name="portrait" sections="#common portrait_section"/>
+        <uistate name="landscape" sections="#common landscape_section"/>
+    </metadata>
+</hbdocument>

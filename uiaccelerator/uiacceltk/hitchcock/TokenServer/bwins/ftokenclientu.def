@@ -1,0 +1,10 @@
+EXPORTS
+	?Connect@RFTokenClient@@QAEHXZ @ 1 NONAME ; int RFTokenClient::Connect(void)
+	?GenerateToken@RFTokenClient@@QBEHABVRFile@@ABVTSecurityPolicy@@AAVTDes8@@@Z @ 2 NONAME ; int RFTokenClient::GenerateToken(class RFile const &, class TSecurityPolicy const &, class TDes8 &) const
+	?GenerateToken@RFTokenClient@@QBEHABVRFile@@ABVTUid@@AAVTDes8@@@Z @ 3 NONAME ; int RFTokenClient::GenerateToken(class RFile const &, class TUid const &, class TDes8 &) const
+	?GenerateToken@RFTokenClient@@QBEHABVTDesC16@@ABVTSecurityPolicy@@AAVTDes8@@@Z @ 4 NONAME ; int RFTokenClient::GenerateToken(class TDesC16 const &, class TSecurityPolicy const &, class TDes8 &) const
+	?GenerateToken@RFTokenClient@@QBEHABVTDesC16@@ABVTUid@@AAVTDes8@@@Z @ 5 NONAME ; int RFTokenClient::GenerateToken(class TDesC16 const &, class TUid const &, class TDes8 &) const
+	?GenerateToken@RFTokenClient@@QBEHABVTDesC8@@ABVTSecurityPolicy@@AAVTDes8@@@Z @ 6 NONAME ; int RFTokenClient::GenerateToken(class TDesC8 const &, class TSecurityPolicy const &, class TDes8 &) const
+	?GenerateToken@RFTokenClient@@QBEHABVTDesC8@@ABVTUid@@AAVTDes8@@@Z @ 7 NONAME ; int RFTokenClient::GenerateToken(class TDesC8 const &, class TUid const &, class TDes8 &) const
+	?OpenFileForToken@RFTokenClient@@QBEHAAVRFile@@ABVTDesC8@@@Z @ 8 NONAME ; int RFTokenClient::OpenFileForToken(class RFile &, class TDesC8 const &) const
+

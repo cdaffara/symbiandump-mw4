@@ -1,0 +1,55 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! @file
+//! @SYMTestSuiteName	 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all  
+
+LOAD_SUITE testpnp
+
+START_TESTCASE				testpnp_1				
+//! @SYMTestCaseID			PNP_001,PNP_002,PNP_003,PNP_004,PNP_005,PNP_006,PNP_007
+//! @SYMREQ					
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		High
+//! @SYMTestType 			UT
+
+RUN_TEST_STEP 500 testpnp TestPnPManager z:\pnp\testpnp\testdata\ini\testpnp.ini  testpnp_1
+END_TESTCASE	testpnp_1
+PRINT Completed 
+
+START_TESTCASE				testpnp_2				
+//! @SYMREQ					
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		High
+//! @SYMTestType 			UT
+
+RUN_TEST_STEP !Error=-1 500 testpnp TestPnPManager z:\pnp\testpnp\testdata\ini\testpnp.ini  testpnp_2
+END_TESTCASE	testpnp_2
+PRINT Completed 
+
+START_TESTCASE				testpnp_3				
+//! @SYMREQ					
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		High
+//! @SYMTestType 			UT
+
+RUN_TEST_STEP !Error=-11 500 testpnp TestPnPManager z:\pnp\testpnp\testdata\ini\testpnp.ini  testpnp_3
+END_TESTCASE	testpnp_3
+PRINT Completed 
+
+

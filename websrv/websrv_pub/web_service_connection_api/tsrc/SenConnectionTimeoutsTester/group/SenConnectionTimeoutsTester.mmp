@@ -1,0 +1,149 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senconnectiontimeoutstester 
+*
+*/
+
+#if defined(__S60_)
+        #include <platform_paths.hrh>
+#endif
+
+TARGET          SenConnectionTimeoutsTester.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E3
+
+CAPABILITY      ALL -TCB
+/* Remove comments and replace 0x00000000 with correct vendor id */
+// VENDORID     0x00000000
+/* Remove comments and replace 0x00000000 with correct secure id */
+// SECUREID     0x00000000
+// Enables Nokia intra hosted AB service endpoint to be used:
+MACRO           VALIMO_ADDRESSBOOK_SERVICE 
+
+//TARGETPATH      ?target_path
+DEFFILE         SenConnectionTimeoutsTester.def
+
+#ifdef SBSV2
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE 
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#else // SBSV2 not defined
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#endif // SBSV2
+USERINCLUDE     ../src
+
+
+MW_LAYER_SYSTEMINCLUDE // SRC-HRCHY-CHANGES
+
+SYSTEMINCLUDE   /epoc32/include/xml
+SYSTEMINCLUDE   /epoc32/include/ecom
+SYSTEMINCLUDE   /epoc32/include/libc
+SYSTEMINCLUDE   /epoc32/include/libc/sys
+
+USERINCLUDE     ../../../../../inc
+
+SOURCE          SenConnectionTimeoutsTester.cpp
+SOURCE          SenConnectionTimeoutsTesterBlocks.cpp
+
+//RESOURCE        resource_file
+//RESOURCE        resource_file2
+
+LIBRARY         euser.lib
+LIBRARY         stiftestinterface.lib
+LIBRARY         stiftestengine.lib
+
+LIBRARY         euser.lib
+LIBRARY         flogger.lib
+
+LIBRARY         apparc.lib 
+LIBRARY         cone.lib 
+LIBRARY         eikcore.lib 
+LIBRARY         eikcoctl.lib 
+LIBRARY         avkon.lib 
+LIBRARY         bafl.lib 
+LIBRARY         eikctl.lib
+LIBRARY         egul.lib 
+LIBRARY         fbscli.lib 
+LIBRARY         PBKENG.LIB 
+LIBRARY         cntmodel.lib 
+LIBRARY         aknskins.lib //for skin sbackground
+LIBRARY         gdi.lib
+
+LIBRARY         XMLFRAMEWORK.lib
+LIBRARY         ecom.lib
+LIBRARY         commdb.lib
+LIBRARY         efsrv.lib
+LIBRARY         estor.lib
+LANG            SC
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// SOA for S60 libraries
+		LIBRARY SenServConn.lib
+		LIBRARY SenServMgr.lib
+		LIBRARY SenMessages.lib
+		LIBRARY SenServDesc.lib
+		LIBRARY SenUtils.lib
+		LIBRARY SenXml.lib
+#else
+		LIBRARY wsServConn.lib
+		LIBRARY wsServMgr.lib
+		LIBRARY wsMessages.lib
+		LIBRARY wsServDesc.lib
+		LIBRARY wsUtils.lib
+		LIBRARY wsXml.lib
+#endif
+
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    LIBRARY                 XmlEngineDOM.lib
+    LIBRARY                 XmlEngineSerializer.lib
+#else
+    LIBRARY         WsStarXmlEngineDOM.lib
+    LIBRARY         WsStarXmlEngineSerializer.lib
+#endif
+/*
+START WINS      
+?wins_specific_information
+END
+
+START MARM
+?marm_specific_information
+END
+*/
+// Other possible keywords:
+ 
+// DOCUMENT     ?file, that is not compiled, but added to MSVC project workspace (i.e. release notes)
+/*
+START BITMAP ?target
+TARGETPATH   ?emulated_path_on_target_machine
+HEADER
+SOURCE       ?color_depth ?source_bitmap
+END
+*/
+// DEFFILE ?filename
+// AIF ?filename
+
+// End of File

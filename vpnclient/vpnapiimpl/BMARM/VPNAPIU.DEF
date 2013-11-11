@@ -1,0 +1,18 @@
+EXPORTS
+	__8RVpnServ @ 1 NONAME R3UNUSED ; RVpnServ::RVpnServ(void)
+	CancelImport__8RVpnServ @ 2 NONAME R3UNUSED ; RVpnServ::CancelImport(void)
+	ChangePassword__8RVpnServRCt5TPckg1Zt4TBuf1i50R14TRequestStatus @ 3 NONAME R3UNUSED ; RVpnServ::ChangePassword(TPckg<TBuf<50> > const &, TRequestStatus &)
+	Close__8RVpnServ @ 4 NONAME R3UNUSED ; RVpnServ::Close(void)
+	Connect__8RVpnServ @ 5 NONAME R3UNUSED ; RVpnServ::Connect(void)
+	DeletePolicy__8RVpnServRCt4TBuf1i50 @ 6 NONAME R3UNUSED ; RVpnServ::DeletePolicy(TBuf<50> const &)
+	EnumeratePolicies__8RVpnServRi @ 7 NONAME R3UNUSED ; RVpnServ::EnumeratePolicies(int &)
+	GetPolicyDetails__8RVpnServRCt4TBuf1i50R17TVpnPolicyDetails @ 8 NONAME R3UNUSED ; RVpnServ::GetPolicyDetails(TBuf<50> const &, TVpnPolicyDetails &)
+	GetPolicyInfoList__8RVpnServPt13CArrayFixFlat1Z14TVpnPolicyInfo @ 9 NONAME R3UNUSED ; RVpnServ::GetPolicyInfoList(CArrayFixFlat<TVpnPolicyInfo> *)
+	ImportPolicy__8RVpnServRC7TDesC16R14TRequestStatus @ 10 NONAME R3UNUSED ; RVpnServ::ImportPolicy(TDesC16 const &, TRequestStatus &)
+	Version__C8RVpnServ @ 11 NONAME R3UNUSED ; RVpnServ::Version(void) const
+	CancelChange__8RVpnServ @ 12 NONAME R3UNUSED ; RVpnServ::CancelChange(void)
+	GetPolicyData__8RVpnServRCt4TBuf1i50RP6HBufC8 @ 13 NONAME R3UNUSED ; RVpnServ::GetPolicyData(TBuf<50> const &, HBufC8 *&)
+	UpdatePolicyData__8RVpnServRCt4TBuf1i50RC6TDesC8 @ 14 NONAME R3UNUSED ; RVpnServ::UpdatePolicyData(TBuf<50> const &, TDesC8 const &)
+	UpdatePolicyDetails__8RVpnServR17TVpnPolicyDetails @ 15 NONAME R3UNUSED ; RVpnServ::UpdatePolicyDetails(TVpnPolicyDetails &)
+	AddPolicy__8RVpnServR17TVpnPolicyDetailsRC6TDesC8 @ 16 NONAME R3UNUSED ; RVpnServ::AddPolicy(TVpnPolicyDetails &, TDesC8 const &)
+

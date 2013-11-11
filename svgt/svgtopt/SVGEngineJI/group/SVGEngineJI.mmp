@@ -1,0 +1,69 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This mmp file generates makefile for SVG Engine
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET SVGEngineJI.dll
+TARGETTYPE dll
+
+VENDORID      VID_DEFAULT
+
+UID 0x1000008D 0x101F8821
+
+
+#if defined( ARMCC )
+deffile ../eabi/SVGEngineJI.def
+#elif defined( WINSCW )
+deffile ../BWINSCW/SVGEngineJI.def
+#elif defined( WINS )
+deffile ../bwins/SVGEngineJI.def
+#else
+deffile ../bmarm/SVGEngineJI.def
+#endif
+
+CAPABILITY  CAP_GENERAL_DLL DRM
+
+SOURCEPATH ../src
+
+SOURCE SvgJavaInterfaceImpl.cpp
+
+USERINCLUDE ../inc
+
+// This is a SYSTEMINCLUDE macro containing the middleware
+// layer specific include directories
+MW_LAYER_SYSTEMINCLUDE
+
+SYSTEMINCLUDE /epoc32/include/libc
+
+LIBRARY SVGEngine.lib
+
+LIBRARY euser.lib
+LIBRARY fbscli.lib
+
+//utility libraries only....can be removed in final version
+LIBRARY hal.lib
+//LIBRARY ImageConversion.lib
+//LIBRARY efsrv.lib 
+
+//#define JAVA_POPUP
+
+#ifdef JAVA_POPUP
+//used for debugging the java side accessing the native side
+LIBRARY eikcore.lib
+#endif
+

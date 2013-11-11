@@ -1,0 +1,33 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   File that exports the files belonging to 
+:                ALF Extended Visual API
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+../inc/alf/AlfTransEffectPlugin.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/AlfTransEffectPlugin.h)
+../inc/alf/alflcttextvisual.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alflcttextvisual.h)
+../inc/alf/alflctgridlayout.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alflctgridlayout.h)
+../inc/alf/alfsrveffectenv.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfsrveffectenv.h)
+../inc/alf/alflctanchorlayout.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alflctanchorlayout.h)
+../inc/alf/AlfTransEffectPlugin.hrh     MW_LAYER_PLATFORM_EXPORT_PATH(alf/AlfTransEffectPlugin.hrh)

@@ -1,0 +1,7 @@
+EXPORTS
+	??0TBase64Codec@@QAE@XZ @ 1 NONAME ; public: __thiscall TBase64Codec::TBase64Codec(void)
+	?Base64Decode@TBase64Codec@@QAEHABVTDesC8@@ABVTDes8@@@Z @ 2 NONAME ; public: int __thiscall TBase64Codec::Base64Decode(class TDesC8 const &,class TDes8 const &)
+	?Base64DecodeLC@TBase64Codec@@QAEPAVHBufC8@@ABVTDesC8@@@Z @ 3 NONAME ; public: class HBufC8 * __thiscall TBase64Codec::Base64DecodeLC(class TDesC8 const &)
+	?Base64Encode@TBase64Codec@@QAEHABVTDesC8@@ABVTDes8@@@Z @ 4 NONAME ; public: int __thiscall TBase64Codec::Base64Encode(class TDesC8 const &,class TDes8 const &)
+	?Base64EncodeLC@TBase64Codec@@QAEPAVHBufC8@@ABVTDesC8@@@Z @ 5 NONAME ; public: class HBufC8 * __thiscall TBase64Codec::Base64EncodeLC(class TDesC8 const &)
+

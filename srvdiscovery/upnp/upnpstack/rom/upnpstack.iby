@@ -1,0 +1,39 @@
+/** @file
+* Copyright (c) 2005-2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  IBY file for the UPnP Stack subsystem
+*
+*/
+
+
+#ifndef __UPNPSTACK_IBY__
+#define __UPNPSTACK_IBY__
+
+#ifdef __UPNP_STACK
+file=ABI_DIR\BUILD_DIR\upnpipserversutils.dll   \sys\bin\upnpipserversutils.dll 
+file=ABI_DIR\BUILD_DIR\dlnawebserver.dll    \sys\bin\dlnawebserver.dll 
+file=ABI_DIR\BUILD_DIR\upnpserviceframework.dll \sys\bin\upnpserviceframework.dll 
+file=ABI_DIR\BUILD_DIR\ssdpserver.dll       \sys\bin\ssdpserver.dll 
+file=ABI_DIR\BUILD_DIR\messagehandler.exe   \sys\bin\messagehandler.exe 
+file=ABI_DIR\BUILD_DIR\upnpcontrolpointbase.dll \sys\bin\upnpcontrolpointbase.dll 
+file=ABI_DIR\BUILD_DIR\httptransfer.dll \sys\bin\httptransfer.dll
+file=ABI_DIR\BUILD_DIR\upnpconnectionmanagersession.dll \sys\bin\upnpconnectionmanagersession.dll
+file=ABI_DIR\BUILD_DIR\upnpconnmanager.exe \sys\bin\upnpconnmanager.exe
+
+//Backup registartion
+data=DATAZ_\private\10204162\backup_registration.xml \private\10204162\backup_registration.xml
+#endif // __UPNP_STACK
+
+#endif // __UPNPSTACK_IBY__
+
+//  End of File  

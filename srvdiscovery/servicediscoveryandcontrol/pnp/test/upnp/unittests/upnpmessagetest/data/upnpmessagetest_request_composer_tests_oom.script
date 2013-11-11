@@ -1,0 +1,208 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// Script file for HTTP Integration Test.
+// @internalAll
+// 
+//
+
+PRINT UPNP_MESSAGE_TESTS
+
+// Load the test
+LOAD_SUITE upnpmessagetest
+
+
+START_TESTCASE	REQUEST_COMPOSER_TEST_1
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-14
+//! @SYMTestCaseDesc 	            Compose a simple GET request.
+//! @SYMREQ						REQ10742, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Compose a simple GET request.
+//!				                                •	Request has only 2 headers.
+//!				                                •	Headers do not have multiple values.
+//!                                                •	Headers do not have parameters.
+//!                                                •	No request entity body.
+//!
+//! @SYMTestExpectedResults     The composer successfully composes the request using the provided data.
+//!                                                The test F/W writes the composed request to epoc32/winscw/c/logs/UpnpMessageTestLogs\composedrequests.dump
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest RequestComposerTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_COMPOSER_TEST_1
+END_TESTCASE 	REQUEST_COMPOSER_TEST_1
+
+
+
+START_TESTCASE	REQUEST_COMPOSER_TEST_2
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-15
+//! @SYMTestCaseDesc 	            Composer a simple GET request.
+//! @SYMREQ						REQ10742, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Compose a simple GET request.
+//!				                                •	Request has 7 headers.
+//!				                                •	Headers do not have multiple values.
+//!                                                •	Headers do not have parameters.
+//!                                                •	No request entity body.
+//!
+//! @SYMTestExpectedResults     The composer successfully composes the request using the provided data.
+//!                                                The test F/W writes the composed request to epoc32/winscw/c/logs/UpnpMessageTestLogs\composedrequests.dump
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest RequestComposerTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_COMPOSER_TEST_2
+END_TESTCASE 	REQUEST_COMPOSER_TEST_2
+
+
+
+START_TESTCASE	REQUEST_COMPOSER_TEST_3
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-16
+//! @SYMTestCaseDesc 	            Composer a simple GET request.
+//! @SYMREQ						REQ10742, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Compose a simple GET request.
+//!				                                •	Request has 7 headers.
+//!				                                •	Some headers have multiple values.
+//!                                                •	Headers do not have parameters.
+//!                                                •	No request entity body.
+//!
+//! @SYMTestExpectedResults     The composer successfully composes the request using the provided data.
+//!                                                The test F/W writes the composed request to epoc32/winscw/c/logs/UpnpMessageTestLogs\composedrequests.dump
+//!
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest RequestComposerTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_COMPOSER_TEST_3
+END_TESTCASE 	REQUEST_COMPOSER_TEST_3
+
+
+
+START_TESTCASE	REQUEST_COMPOSER_TEST_4
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-17
+//! @SYMTestCaseDesc 	            Composer a simple GET request.
+//! @SYMREQ						REQ10742, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Compose a simple GET request.
+//!				                                •	Request has 7 headers.
+//!				                                •	Some headers have multiple values.
+//!                                                •	Some headers have parameters.
+//!                                                •	No request entity body.
+//!
+//! @SYMTestExpectedResults     The composer successfully composes the request using the provided data.
+//!                                                The test F/W writes the composed request to epoc32/winscw/c/logs/UpnpMessageTestLogs\composedrequests.dump
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest RequestComposerTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_COMPOSER_TEST_4
+END_TESTCASE 	REQUEST_COMPOSER_TEST_4
+
+
+
+START_TESTCASE	REQUEST_COMPOSER_TEST_5
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-18
+//! @SYMTestCaseDesc 	            Composer a simple POST request.
+//! @SYMREQ						REQ10742, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		    
+//!			                                    •	Compose a simple POST request.	
+//!				                                •	Request has 7 headers.
+//!				                                •	Some headers have multiple values.
+//!                                                •	Some headers have parameters.
+//!                                                •	Request has an entity body.
+//!
+//! @SYMTestExpectedResults     The composer successfully composes the request using the provided data.
+//!                                                The test F/W writes the composed request to epoc32/winscw/c/logs/UpnpMessageTestLogs\composedrequests.dump
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest RequestComposerTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_COMPOSER_TEST_5
+END_TESTCASE 	REQUEST_COMPOSER_TEST_5
+
+
+
+START_TESTCASE	REQUEST_COMPOSER_TEST_6
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-19
+//! @SYMTestCaseDesc 	            Composer a simple M-SEARCH request.
+//! @SYMREQ						REQ10742, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Compose a simple M-SEARCH request.
+//!				                                •	No request entity body.
+//!				
+//! @SYMTestExpectedResults     The composer successfully composes the request using the provided data.
+//!                                                The test F/W writes the composed request to epoc32/winscw/c/logs/UpnpMessageTestLogs\composedrequests.dump
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest RequestComposerTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_COMPOSER_TEST_6
+END_TESTCASE 	REQUEST_COMPOSER_TEST_6
+
+
+
+START_TESTCASE	REQUEST_COMPOSER_TEST_7
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-20
+//! @SYMTestCaseDesc 	            Composer a simple NOTIFY request.
+//! @SYMREQ						REQ10742, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Compose a simple NOTIFY request.
+//!				                                •	No request entity body.
+//!				        
+//! @SYMTestExpectedResults     The composer successfully composes the request using the provided data.
+//!                                                The test F/W writes the composed request to epoc32/winscw/c/logs/UpnpMessageTestLogs\composedrequests.dump
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest RequestComposerTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_COMPOSER_TEST_7
+END_TESTCASE 	REQUEST_COMPOSER_TEST_7
+
+
+
+START_TESTCASE	REQUEST_COMPOSER_TEST_8
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-21
+//! @SYMTestCaseDesc 	            Composer a simple SUBSCRIBE request
+//! @SYMREQ						REQ10742, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Compose a simple SUBSCRIBE request.
+//!				                                •	No request entity body.
+//!				
+//! @SYMTestExpectedResults     The composer successfully composes the request using the provided data.
+//!                                                The test F/W writes the composed request to epoc32/winscw/c/logs/UpnpMessageTestLogs\composedrequests.dump
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest RequestComposerTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_COMPOSER_TEST_8
+END_TESTCASE 	REQUEST_COMPOSER_TEST_8
+
+
+
+START_TESTCASE	REQUEST_COMPOSER_TEST_9
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-22
+//! @SYMTestCaseDesc 	            Composer a simple UNSUBSCRIBE request.
+//! @SYMREQ						REQ10742, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Compose a simple UNSUBSCRIBE request.
+//!				                                •	No request entity body.
+//!				
+//! @SYMTestExpectedResults     The composer successfully composes the request using the provided data.
+//!                                                The test F/W writes the composed request to epoc32/winscw/c/logs/UpnpMessageTestLogs\composedrequests.dump
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	!OOM 100 	upnpmessagetest RequestComposerTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_COMPOSER_TEST_9
+END_TESTCASE 	REQUEST_COMPOSER_TEST_9

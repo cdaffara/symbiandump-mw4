@@ -1,0 +1,17 @@
+EXPORTS
+	"_._19CSenHostletResponse" @ 1 NONAME R3UNUSED ; CSenHostletResponse::~CSenHostletResponse(void)
+	ExtractResponseUtf8__19CSenHostletResponse @ 2 NONAME R3UNUSED ; CSenHostletResponse::ExtractResponseUtf8(void)
+	NewLC__18CSenHostletRequestiRC6TDesC8G7RThreadRC14CSenIdentifier @ 3 NONAME ; CSenHostletRequest::NewLC(int, TDesC8 const &, RThread, CSenIdentifier const &)
+	NewLC__19CSenHostletResponsei @ 4 NONAME R3UNUSED ; CSenHostletResponse::NewLC(int)
+	NewL__18CSenHostletRequestiRC6TDesC8G7RThreadRC14CSenIdentifier @ 5 NONAME ; CSenHostletRequest::NewL(int, TDesC8 const &, RThread, CSenIdentifier const &)
+	NewL__19CSenHostletResponsei @ 6 NONAME R3UNUSED ; CSenHostletResponse::NewL(int)
+	RequestId__C18CSenHostletRequest @ 7 NONAME R3UNUSED ; CSenHostletRequest::RequestId(void) const
+	RequestId__C19CSenHostletResponse @ 8 NONAME R3UNUSED ; CSenHostletResponse::RequestId(void) const
+	RequestUtf8__C18CSenHostletRequest @ 9 NONAME R3UNUSED ; CSenHostletRequest::RequestUtf8(void) const
+	ResponseCode__C19CSenHostletResponse @ 10 NONAME R3UNUSED ; CSenHostletResponse::ResponseCode(void) const
+	ResponseUtf8__19CSenHostletResponse @ 11 NONAME R3UNUSED ; CSenHostletResponse::ResponseUtf8(void)
+	SetResponseUtf8L__19CSenHostletResponseRC6TDesC8i @ 12 NONAME R3UNUSED ; CSenHostletResponse::SetResponseUtf8L(TDesC8 const &, int)
+	ThreadId__C18CSenHostletRequest @ 13 NONAME R3UNUSED ; CSenHostletRequest::ThreadId(void) const
+	"_._18CSenHostletRequest" @ 14 NONAME R3UNUSED ; CSenHostletRequest::~CSenHostletRequest(void)
+	ConsumerId__C18CSenHostletRequest @ 15 NONAME R3UNUSED ; CSenHostletRequest::ConsumerId(void) const
+

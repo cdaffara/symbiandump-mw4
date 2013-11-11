@@ -1,0 +1,59 @@
+/*
+* Copyright (c) 2002-2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file
+*
+*/
+
+
+#include <bldvariant.hrh>
+#include <defaultcaps.hrh>
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET		    WidgetStartup.exe
+TARGETTYPE	    exe
+UID	            0x100039ce 0x200100B6
+
+CAPABILITY 	CAP_APPLICATION
+VENDORID        VID_DEFAULT
+               
+SOURCEPATH	    ../Src
+SOURCE          WidgetStartupDocument.cpp
+SOURCE          WidgetStartupApp.cpp
+SOURCE		WidgetStartup.cpp
+
+SOURCEPATH ../data
+START RESOURCE ../Data/WidgetStartup_reg.rss
+// Do not change the UID below.
+TARGETPATH /private/10003a3f/apps
+END
+
+USERINCLUDE     ../Inc
+USERINCLUDE     ../../WidgetInstaller/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY euser.lib
+LIBRARY apparc.lib
+LIBRARY apgrfx.lib
+LIBRARY cone.lib 
+LIBRARY avkon.lib
+LIBRARY eikcore.lib
+LIBRARY eiksrv.lib
+
+
+// End of File
+
+

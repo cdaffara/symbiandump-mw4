@@ -1,0 +1,57 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          pagescaler.dll
+TARGETTYPE      dll
+
+UID 0x1000008D  0x10281B6C  
+
+VENDORID    VID_DEFAULT
+CAPABILITY  CAP_GENERAL_DLL
+
+// MACRO ENABLE_MINIMAP_COLORING
+
+SOURCEPATH      ../src
+SOURCE          PagescalerMinimap.cpp
+SOURCE          minimap.cpp
+SOURCE          minimapgenerator.cpp
+SOURCE          minimaptimer.cpp
+SOURCE          minimapscaler.cpp
+SOURCE          DllEntryPoint.cpp
+
+USERINCLUDE     ../inc
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+SYSTEMINCLUDE 	../../osswebengine/MemoryManager/Inc
+
+
+LIBRARY         euser.lib 
+LIBRARY         cone.lib
+LIBRARY         fbscli.lib 
+LIBRARY         bitgdi.lib 
+LIBRARY         gdi.lib 
+LIBRARY         ws32.lib
+LIBRARY         BitmapTransforms.lib
+LIBRARY         MemMan.lib
+
+
+

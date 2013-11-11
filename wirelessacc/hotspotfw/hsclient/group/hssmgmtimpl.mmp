@@ -1,0 +1,48 @@
+/*
+* Copyright (c) 2002-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   project specification file for the CHSSMgmtImpl
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET          hssmgmtimpl.dll
+TARGETTYPE	    plugin
+CAPABILITY 	    CAP_ECOM_PLUGIN
+VENDORID        VID_DEFAULT
+
+UID             0x10009D8D 0x10282ecc
+
+SOURCEPATH      ../src
+SOURCE          hssmgmtimpl.cpp
+SOURCE          hssmgmtscaninfoimpl.cpp
+
+START RESOURCE ../src/10282ecc.rss
+TARGET          HSSMgmtImpl.rsc
+END
+
+USERINCLUDE     ../../inc
+USERINCLUDE     ../../hsserver/inc
+USERINCLUDE     ../inc
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   /epoc32/include/ecom
+
+LIBRARY         euser.lib
+LIBRARY         ecom.lib
+LIBRARY         hotspotclient.lib
+
+
+STATICLIBRARY   hssscanlist.lib

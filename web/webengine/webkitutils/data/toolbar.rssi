@@ -1,0 +1,88 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  The Toolbar resource file
+*
+*/
+
+
+//  RESOURCE IDENTIFIER
+NAME    TBAR
+
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.loc>
+#include <CommonDialogs.rh>
+#include <Toolbar.loc>
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf="ToolBar"; }
+
+// ===================================================
+// ToolBar Tool Tips
+// ===================================================
+RESOURCE TBUF r_browser_tooltip_show_keymap             { buf = qtn_browser_tooltip_show_keymap; }
+RESOURCE TBUF r_browser_tooltip_go_to_web_address       { buf = qtn_browser_tooltip_go_to_web_address; }
+RESOURCE TBUF r_browser_tooltip_list_bookmarks          { buf = qtn_browser_tooltip_list_bookmarks; }
+RESOURCE TBUF r_browser_tooltip_save_as_bookmark        { buf = qtn_browser_tooltip_save_as_bookmark; }
+RESOURCE TBUF r_browser_tooltip_recent_urls             { buf = qtn_browser_tooltip_recent_urls; }
+RESOURCE TBUF r_browser_tooltip_find_keyword            { buf = qtn_browser_tooltip_find_keyword; }
+RESOURCE TBUF r_browser_tooltip_reload                  { buf = qtn_browser_tooltip_reload; }
+RESOURCE TBUF r_browser_tooltip_miniature_show          { buf = qtn_browser_tooltip_list_miniature_show; }
+RESOURCE TBUF r_browser_tooltip_previous_page           { buf = qtn_browser_tooltip_previous_page; }
+RESOURCE TBUF r_browser_tooltip_go_to_hompage           { buf = qtn_browser_tooltip_go_to_hompage; }
+RESOURCE TBUF r_browser_tooltip_zoom_out                { buf = qtn_browser_tooltip_zoom_out; }
+RESOURCE TBUF r_browser_tooltip_zoom_in                 { buf = qtn_browser_tooltip_zoom_in; }
+RESOURCE TBUF r_browser_tooltip_zoom_mode               { buf = qtn_browser_tooltip_zoom_mode; }
+RESOURCE TBUF r_browser_tooltip_settings                { buf = qtn_browser_tooltip_settings; }
+RESOURCE TBUF r_browser_tooltip_rotate_screen           { buf = qtn_browser_tooltip_rotate_screen; }
+RESOURCE TBUF r_browser_tooltip_subscribe_to_feeds      { buf = qtn_browser_tooltip_subscribe_to_feeds; }
+RESOURCE TBUF r_browser_tooltip_manage_bookmarks        { buf = qtn_browser_tooltip_manage_bookmarks; }
+RESOURCE TBUF r_browser_tooltip_visual_history          { buf = qtn_browser_tooltip_visual_history; }
+RESOURCE TBUF r_browser_tooltip_view_images             { buf = qtn_browser_tooltip_view_images; }
+RESOURCE TBUF r_browser_tooltip_save_page               { buf = qtn_browser_tooltip_save_page; }
+RESOURCE TBUF r_browser_tooltip_switch_window           { buf = qtn_browser_tooltip_switch_window; }
+RESOURCE TBUF r_browser_tooltip_show_help               { buf = qtn_browser_tooltip_show_help; }
+RESOURCE TBUF r_browser_tooltip_full_screen             { buf = qtn_browser_tooltip_full_screen; }
+
+// ---------------------------------------------------------
+//
+//    toolbar softkeys
+//
+// ---------------------------------------------------------
+//
+
+RESOURCE CBA r_toolbar_selectable_button
+    {
+    flags = EAknCBAFlagRespondWhenInvisible;
+    buttons =
+            {
+              AVKON_CBA_BUTTON{id=EAknSoftkeyChange; longpressid=0; txt= qtn_browser_toolbar_settings; },
+              CBA_BUTTON {id=EAknSoftkeyCancel; txt=qtn_browser_toolbar_hide;},
+              AVKON_CBA_BUTTON{id=EAknSoftkeySelect; longpressid=0; txt= text_softkey_empty; }
+            };
+    }
+
+RESOURCE CBA r_toolbar_nonselectable_button
+    {
+    flags = EAknCBAFlagRespondWhenInvisible;
+    buttons =
+            {
+            AVKON_CBA_BUTTON{id=EAknSoftkeyChange; longpressid=0; txt= qtn_browser_toolbar_settings; },
+            CBA_BUTTON {id=EAknSoftkeyCancel; txt=qtn_browser_toolbar_hide;},
+              AVKON_CBA_BUTTON{id=EAknSoftkeyEmpty; longpressid=0; txt= text_softkey_empty; }
+            };
+    }

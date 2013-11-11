@@ -1,0 +1,51 @@
+/*
+* Copyright (c) 2002-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   project specification file
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET			hotspotclient.dll
+TARGETTYPE		dll
+UID				0x1000008d 0x10282EC8
+CAPABILITY 	    CAP_GENERAL_DLL
+VENDORID	    VID_DEFAULT
+
+SOURCEPATH		../src
+SOURCE          hssinterface.cpp
+SOURCE          hsssrvnotifications.cpp
+SOURCE          hssiaphandler.cpp
+SOURCE          hssscanhandler.cpp
+
+USERINCLUDE     ../../inc
+USERINCLUDE     ../inc
+USERINCLUDE     ../../hsserver/inc
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   /epoc32/include/ecom
+
+LIBRARY         commdb.lib
+LIBRARY         commsdat.lib
+LIBRARY         euser.lib
+LIBRARY         estor.lib 
+LIBRARY         esock.lib
+LIBRARY         ecom.lib
+LIBRARY         efsrv.lib 
+LIBRARY 	cmmanager.lib
+
+STATICLIBRARY   wlanscanlist.lib
+STATICLIBRARY 		  hssscanlist.lib
+

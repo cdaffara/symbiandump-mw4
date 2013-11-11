@@ -1,0 +1,14 @@
+EXPORTS
+	??0RSocketHandler@@QAE@AAVMSocketHandlerObserver@@@Z @ 1 NONAME ; RSocketHandler::RSocketHandler(class MSocketHandlerObserver &)
+	??1CSocketOpener@@UAE@XZ @ 2 NONAME ; CSocketOpener::~CSocketOpener(void)
+	?Accept@RSocketHandler@@QAEXXZ @ 3 NONAME ; void RSocketHandler::Accept(void)
+	?Attach@RSocketHandler@@QAEXAAVRInternalSocket@@@Z @ 4 NONAME ; void RSocketHandler::Attach(class RInternalSocket &)
+	?CancelAll@RSocketHandler@@QAEXXZ @ 5 NONAME ; void RSocketHandler::CancelAll(void)
+	?Connect@RSocketHandler@@QAEXABVTSockAddr@@@Z @ 6 NONAME ; void RSocketHandler::Connect(class TSockAddr const &)
+	?MakeSocket@CSocketOpener@@QAEXIII@Z @ 7 NONAME ; void CSocketOpener::MakeSocket(unsigned int, unsigned int, unsigned int)
+	?NewL@CSocketOpener@@SAPAV1@AAVMSocketHandlerObserver@@@Z @ 8 NONAME ; class CSocketOpener * CSocketOpener::NewL(class MSocketHandlerObserver &)
+	?Recv@RSocketHandler@@QAEXXZ @ 9 NONAME ; void RSocketHandler::Recv(void)
+	?RecvFrom@RSocketHandler@@QAEXXZ @ 10 NONAME ; void RSocketHandler::RecvFrom(void)
+	?Send@RSocketHandler@@QAEXAAVRMBufChain@@@Z @ 11 NONAME ; void RSocketHandler::Send(class RMBufChain &)
+	?SendTo@RSocketHandler@@QAEXABVRMBufChain@@AAVTSockAddr@@@Z @ 12 NONAME ; void RSocketHandler::SendTo(class RMBufChain const &, class TSockAddr &)
+

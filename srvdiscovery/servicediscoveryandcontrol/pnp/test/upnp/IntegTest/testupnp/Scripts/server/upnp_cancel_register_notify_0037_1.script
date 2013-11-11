@@ -1,0 +1,41 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_cancel_register_notify_0037_1.script
+//! @SYMTestSuiteName	multiple_machines_server 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_server 
+
+LOAD_SUITE multiple_machines_server
+LOAD_SUITE test_synchronize_server
+
+START_TESTCASE	upnp_cancel_register_notify_0037_1
+//! @file					
+//! @SYMTestCaseID			UPNP - POS - 0037
+//! @SYMTestCaseDesc 		Control point cancels registration for NOTIFY announcements
+//! @SYMREQ					REQ8634,REQ8617,REQ8618,REQ8620,REQ8621
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Control point cancels registration to SSDP: Alive and SSDP: ByeBye
+//! 						2.	If requested operation is not approved then control point may acknowledge with appropriate error message. 
+//! 						3.	After a successful cancellation of the registration, the control point will not get any notifications.
+//! @SYMTestExpectedResults	If Cancellation of the registration is successful, then Control point should not get any event messages for SSDP: Alive and SSDP: Byebye.
+//! @SYMTestType 			CIT
+
+RUN_TEST_STEP 1000 test_synchronize_server TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini serverdata
+RUN_TEST_STEP 500  multiple_machines_server TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\register_0037.ini upnp_cancel_register_notify_0037_1_server
+
+END_TESTCASE	upnp_cancel_register_notify_0037_1

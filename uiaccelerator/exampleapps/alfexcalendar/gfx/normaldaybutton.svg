@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.74" height="24.74" viewBox="0 0 24.74 24.74">
+<rect fill="none" height="24.74" width="24.74"/>
+<linearGradient id="SVGID_1" gradientUnits="userSpaceOnUse" x1="12.37" y1="24.73" x2="12.37" y2="0.01">
+<stop stop-color="#929699" offset="0"/>
+<stop stop-color="#989C9F" offset="0.08"/>
+<stop stop-color="#C3C7CC" offset="0.69"/>
+<stop stop-color="#D3D8DD" offset="1"/>
+</linearGradient>
+<ellipse cx="12.37" cy="12.371" fill="url(#SVGID_1)" fill-opacity="0.6" rx="12.348" ry="12.357" />
+<linearGradient id="SVGID_2" gradientUnits="userSpaceOnUse" x1="12.34" y1="24.03" x2="12.34" y2="0.15">
+<stop stop-color="#999999" offset="0"/>
+<stop stop-color="#9D9D9D" offset="0.03"/>
+<stop stop-color="#C7C7C7" offset="0.33"/>
+<stop stop-color="#E6E6E6" offset="0.6"/>
+<stop stop-color="#F8F8F8" offset="0.84"/>
+<stop stop-color="#FFFFFF" offset="1"/>
+</linearGradient>
+<ellipse cx="12.337" cy="12.091" fill="url(#SVGID_2)" rx="11.932" ry="11.94"/>
+<path d="M24.253,12.195c0-0.035,0-0.072,0-0.104C24.197,5.544,18.878,0.254,12.322,0.254 c-6.592,0-11.932,5.345-11.932,11.941c0,0,9.291-1.537,23.642,0.03" fill="#FFFFFF" fill-opacity="0.52" />
+</svg>

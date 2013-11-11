@@ -1,0 +1,83 @@
+/*
+* Copyright (c) 2000-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file for project vpnapi
+
+*
+*/
+
+
+
+
+#include <platform_paths.hrh>
+
+
+
+TARGET          vpnapi.dll
+
+TARGETTYPE      dll
+
+UID             0x1000008d 0x101FD285
+
+
+
+CAPABILITY      ALL -Tcb
+
+VENDORID        VID_DEFAULT
+
+
+
+SOURCEPATH      ../src
+
+SOURCE          vpnapi.cpp
+
+
+
+SOURCEPATH      ../../vpnengine/vpncommon/src
+
+SOURCE          clistatic.cpp
+
+
+
+// The resource file containing IPSec VPN error messages,
+
+// generated for the system error resolver.
+
+SOURCEPATH      ../data
+
+START RESOURCE  vpnerr.rss
+
+TARGETPATH      /RESOURCE/ERRORS
+
+LANGUAGE_IDS
+
+END
+
+
+
+USERINCLUDE     ../inc
+
+USERINCLUDE     ../../vpnengine/vpnmanager/inc
+
+USERINCLUDE     ../../vpnengine/vpncommon/inc
+
+
+
+MW_LAYER_SYSTEMINCLUDE
+
+
+
+LIBRARY         euser.lib 
+
+
+

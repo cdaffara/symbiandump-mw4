@@ -1,0 +1,4 @@
+EXPORTS
+	NewLC__18CSenServiceManager @ 1 NONAME R3UNUSED ; CSenServiceManager::NewLC(void)
+	NewL__18CSenServiceManager @ 2 NONAME R3UNUSED ; CSenServiceManager::NewL(void)
+

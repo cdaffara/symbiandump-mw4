@@ -1,0 +1,12 @@
+EXPORTS
+	_ZN19CSenConnAgentServer4OpenEv @ 1 NONAME
+	_ZN19CSenConnAgentServer5CloseEv @ 2 NONAME
+	_ZTIN4Meta11TMetaVarLenI5RBuf8EE @ 3 NONAME ; #<TI>#
+	_ZTIN4Meta11TMetaVarLenI6RBuf16EE @ 4 NONAME ; #<TI>#
+	_ZTIN4Meta12TMetaVarLen8I5RBuf8EE @ 5 NONAME ; #<TI>#
+	_ZTIN4Meta13TMetaVarLen16I6RBuf16EE @ 6 NONAME ; #<TI>#
+	_ZTVN4Meta11TMetaVarLenI5RBuf8EE @ 7 NONAME ; #<VT>#
+	_ZTVN4Meta11TMetaVarLenI6RBuf16EE @ 8 NONAME ; #<VT>#
+	_ZTVN4Meta12TMetaVarLen8I5RBuf8EE @ 9 NONAME ; #<VT>#
+	_ZTVN4Meta13TMetaVarLen16I6RBuf16EE @ 10 NONAME ; #<VT>#
+

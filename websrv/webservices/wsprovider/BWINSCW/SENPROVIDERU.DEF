@@ -1,0 +1,20 @@
+EXPORTS
+	??1CSenHostletRequest@@UAE@XZ @ 1 NONAME ; CSenHostletRequest::~CSenHostletRequest(void)
+	??1CSenHostletResponse@@UAE@XZ @ 2 NONAME ; CSenHostletResponse::~CSenHostletResponse(void)
+	?ConsumerId@CSenHostletRequest@@UBE?AVTPtrC8@@XZ @ 3 NONAME ; class TPtrC8 CSenHostletRequest::ConsumerId(void) const
+	?ExtractResponseUtf8@CSenHostletResponse@@QAEPAVHBufC8@@XZ @ 4 NONAME ; class HBufC8 * CSenHostletResponse::ExtractResponseUtf8(void)
+	?NewL@CSenHostletRequest@@SAPAV1@HABVTDesC8@@VRThread@@ABVCSenIdentifier@@PAVCSenChunk@@@Z @ 5 NONAME ; class CSenHostletRequest * CSenHostletRequest::NewL(int, class TDesC8 const &, class RThread, class CSenIdentifier const &, class CSenChunk *)
+	?NewL@CSenHostletResponse@@SAPAV1@H@Z @ 6 NONAME ; class CSenHostletResponse * CSenHostletResponse::NewL(int)
+	?NewLC@CSenHostletRequest@@SAPAV1@HABVTDesC8@@VRThread@@ABVCSenIdentifier@@PAVCSenChunk@@@Z @ 7 NONAME ; class CSenHostletRequest * CSenHostletRequest::NewLC(int, class TDesC8 const &, class RThread, class CSenIdentifier const &, class CSenChunk *)
+	?NewLC@CSenHostletResponse@@SAPAV1@H@Z @ 8 NONAME ; class CSenHostletResponse * CSenHostletResponse::NewLC(int)
+	?Properties@CSenHostletRequest@@UBE?AVTPtrC8@@AAW4TSenPropertiesClassType@MSenProperties@@@Z @ 9 NONAME ; class TPtrC8 CSenHostletRequest::Properties(enum MSenProperties::TSenPropertiesClassType &) const
+	?RequestId@CSenHostletRequest@@UBEHXZ @ 10 NONAME ; int CSenHostletRequest::RequestId(void) const
+	?RequestId@CSenHostletResponse@@UBEHXZ @ 11 NONAME ; int CSenHostletResponse::RequestId(void) const
+	?RequestUtf8@CSenHostletRequest@@UBE?AVTPtrC8@@XZ @ 12 NONAME ; class TPtrC8 CSenHostletRequest::RequestUtf8(void) const
+	?ResponseCode@CSenHostletResponse@@UBEHXZ @ 13 NONAME ; int CSenHostletResponse::ResponseCode(void) const
+	?ResponseMessageL@CSenHostletResponse@@UAEPAVMSenMessage@@XZ @ 14 NONAME ; class MSenMessage * CSenHostletResponse::ResponseMessageL(void)
+	?ResponseProperties@CSenHostletResponse@@UAEPAVMSenProperties@@XZ @ 15 NONAME ; class MSenProperties * CSenHostletResponse::ResponseProperties(void)
+	?ResponseUtf8@CSenHostletResponse@@UAE?AVTPtrC8@@XZ @ 16 NONAME ; class TPtrC8 CSenHostletResponse::ResponseUtf8(void)
+	?SetResponseUtf8L@CSenHostletResponse@@UAEXABVTDesC8@@HPAVMSenProperties@@PAVMSenMessage@@@Z @ 17 NONAME ; void CSenHostletResponse::SetResponseUtf8L(class TDesC8 const &, int, class MSenProperties *, class MSenMessage *)
+	?ThreadId@CSenHostletRequest@@UBE?AVTPtrC16@@XZ @ 18 NONAME ; class TPtrC16 CSenHostletRequest::ThreadId(void) const
+

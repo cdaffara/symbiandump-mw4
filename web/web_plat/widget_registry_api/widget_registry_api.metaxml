@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="230604b53888dda807ba26f598cf4b19" dataversion="1.0">
+  <name>Widget Registry API</name>
+  <description>Widget Registry API</description>
+  <type>c++</type>
+  <subsystem>WebEngine</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="5.0"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

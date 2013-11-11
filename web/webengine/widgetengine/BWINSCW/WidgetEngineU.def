@@ -1,0 +1,4 @@
+EXPORTS
+	?CreateWidgetEngineBridge@@YAPAVMWidgetEngineBridge@@XZ @ 1 NONAME ; class MWidgetEngineBridge * CreateWidgetEngineBridge(void)
+	?getNumber@JSValue@KJS@@QBE_NAAN@Z @ 2 NONAME ; bool KJS::JSValue::getNumber(double &) const
+

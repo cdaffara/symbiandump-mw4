@@ -1,0 +1,8 @@
+EXPORTS
+	NewLC__21CSenServiceConnectionR19MSenServiceConsumerR18CSenServicePattern @ 1 NONAME R3UNUSED ; CSenServiceConnection::NewLC(MSenServiceConsumer &, CSenServicePattern &)
+	NewLC__21CSenServiceConnectionR19MSenServiceConsumerR22MSenServiceDescription @ 2 NONAME R3UNUSED ; CSenServiceConnection::NewLC(MSenServiceConsumer &, MSenServiceDescription &)
+	NewLC__21CSenServiceConnectionR19MSenServiceConsumerRC6TDesC8 @ 3 NONAME R3UNUSED ; CSenServiceConnection::NewLC(MSenServiceConsumer &, TDesC8 const &)
+	NewL__21CSenServiceConnectionR19MSenServiceConsumerR18CSenServicePattern @ 4 NONAME R3UNUSED ; CSenServiceConnection::NewL(MSenServiceConsumer &, CSenServicePattern &)
+	NewL__21CSenServiceConnectionR19MSenServiceConsumerR22MSenServiceDescription @ 5 NONAME R3UNUSED ; CSenServiceConnection::NewL(MSenServiceConsumer &, MSenServiceDescription &)
+	NewL__21CSenServiceConnectionR19MSenServiceConsumerRC6TDesC8 @ 6 NONAME R3UNUSED ; CSenServiceConnection::NewL(MSenServiceConsumer &, TDesC8 const &)
+

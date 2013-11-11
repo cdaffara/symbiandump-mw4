@@ -1,0 +1,49 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          RECENTURLSTORE.DLL
+TARGETTYPE      DLL
+UID             0x1000008d 0x10207290
+
+VENDORID  VID_DEFAULT
+CAPABILITY  CAP_GENERAL_DLL
+EPOCALLOWDLLDATA
+
+#if defined(ARMCC)
+    DEFFILE ../EABI/RecentUrlStore.def
+#elif defined( WINSCW )
+    DEFFILE ../BWINSCW/RecentUrlStore.def
+#endif
+
+#include <data_caging_paths.hrh>
+
+SOURCEPATH 	../RecentUrlSrc
+
+SOURCE  ../RecentUrlSrc/RecentUrlStore.cpp
+
+USERINCLUDE     ../RecentUrlInc 
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY    EUSER.LIB
+LIBRARY    edbms.lib bafl.lib efsrv.lib 
+
+// EOF
+

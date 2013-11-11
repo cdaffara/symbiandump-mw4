@@ -1,0 +1,42 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! @file
+//! @SYMTestSuiteName	multiple_machines_client 
+
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client 
+
+LOAD_SUITE multiple_machines_client
+
+//START_TESTCASE	UPnP_Describe_0001
+//! @file		
+//! @SYMTestCaseID	UPNP- POS - 0001	
+//! @SYMTestCaseDesc 	search for all UPnP enabled devices
+//! @SYMREQ		REQ8605,REQ8606,REQ8607
+//! @SYMTestStatus 	Implemented
+//! @SYMTestPriority 	High	
+//! @SYMTestActions 	Perform discovery with ST:ssdp:all
+//! @SYMTestExpectedResults Should get responses from all devices.	
+//! @SYMTestType 		CIT
+
+
+RUN_TEST_STEP 200 multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\describe0001.ini UPnP_Describe_0001
+END_TESTCASE	UPnP_Describe_0001
+
+
+PRINT Completed multiple_machines_client 
+

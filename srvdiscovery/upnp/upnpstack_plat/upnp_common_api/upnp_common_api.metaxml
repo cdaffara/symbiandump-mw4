@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="cc561e4a19c830fbee91d90de9d2e008" dataversion="1.0">
+  <name>UPnP Common API</name>
+  <description>UPnP Common API is used by developers of UPnP control points and UPnP devices. It contains functionality and definitions that are common to both control points and devices.</description>
+  <type>c++</type>
+  <subsystem>upnpstack</subsystem>
+  <libs>
+    <lib name="upnpserviceframework.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

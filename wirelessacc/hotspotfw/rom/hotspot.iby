@@ -1,0 +1,44 @@
+/*
+* Copyright (c) 2006-2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Image description file for project HotSpot FW
+*
+*/
+
+
+
+
+
+#ifndef HOTSPOT_IBY
+#define HOTSPOT_IBY
+
+#include <data_caging_paths_for_iby.hrh>
+#include <bldvariant.hrh>
+
+#ifdef __PROTOCOL_WLAN
+
+file=ABI_DIR\BUILD_DIR\hotspotclient.dll        SHARED_LIB_DIR\hotspotclient.dll
+file=ABI_DIR\BUILD_DIR\ictsclientinterface.dll  SHARED_LIB_DIR\ictsclientinterface.dll
+
+S60_APP_EXE( HotSpotServer )
+
+ECOM_PLUGIN( NetCfgExtnHotSpot.dll, 10282EC9.rss )
+ECOM_PLUGIN( HssMgmtImpl.dll, 10282ecc.rsc )
+ECOM_PLUGIN( wlanagthotspotimpl.dll, 1028309b.rss )
+
+data=ZPRIVATE\10282EC5\backup_registration.xml	private\10282EC5\backup_registration.xml
+data=DATAZ_\system\install\hotspotfwstub.sis  system\install\hotspotfwstub.sis
+data=DATAZ_\system\install\ictsstub.sis  system\install\ictsstub.sis
+
+#endif // __PROTOCOL_WLAN
+#endif // HOTSPOTS_IBY

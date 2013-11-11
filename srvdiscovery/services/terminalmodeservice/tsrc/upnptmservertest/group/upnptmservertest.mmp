@@ -1,0 +1,52 @@
+/**
+* Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: MMP file for STIF Test Framework's Hardcoded test module. 
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET          upnptmservertest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E7
+
+CAPABILITY      ALL -TCB
+
+//TARGETPATH      
+DEFFILE         upnptmservertest.def
+
+USERINCLUDE     ../inc 
+SYSTEMINCLUDE 	/epoc32/include/platform/mw
+
+OS_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH      ../src
+
+SOURCE          tmservertest.cpp
+SOURCE          tmservertestcases.cpp
+SOURCE          testtimer.cpp 
+SOURCE          discoverytesttimer.cpp
+
+LIBRARY         euser.lib
+LIBRARY         bafl.lib
+LIBRARY         stiftestinterface.lib
+LIBRARY         stiftestengine.lib
+LIBRARY         terminalmodeservice.lib
+LIBRARY         upnpcontrolpointbase.lib
+LIBRARY         upnpserviceframework.lib
+LIBRARY         ecom.lib
+
+LANG            SC
+
+

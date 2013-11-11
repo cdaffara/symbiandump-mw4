@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\CustomListWidget.o
+./debug\HomeView.o
+./debug\GridView.o
+./debug\ToolBar.o
+./debug\Documents.o
+./debug\and.o
+./debug\My.o
+./debug\GridView.o
+./debug\moc_mainwindow.o
+);

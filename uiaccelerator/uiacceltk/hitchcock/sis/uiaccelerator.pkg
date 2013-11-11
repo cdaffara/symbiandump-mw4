@@ -1,0 +1,38 @@
+;
+; Copyright (c) 2006-2007 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description:   Package file for UI Accelerator
+;
+
+&EN
+
+;Localized Vendor Name
+%{"Nokia-EN"}
+
+;Unique Vendor name
+:"Nokia"
+
+; NOTE! Be sure that version numbers in this file are same as in 
+; \s60\mw\uiaccelerator\uiaccelerator_dom\alf_visual_api\inc\alf\alfversion.h .
+; UID is from ALF Server core library
+#{"UI Accelerator Toolkit updater"},(0x10282848),1,1,22
+
+;Supports S60 3.0
+[0x101F7961], 0, 0, 0, {"S60ProductID"}
+
+; Check if stub.sis exists in rom and choose sis package based on that
+IF NOT exists("z:\system\install\uiaccelerator_stub.sis")
+@"uiaccelerator_base.sisx",(0x10282845)
+ELSE
+@"uiaccelerator_update.sisx",(0x10282845)
+endif

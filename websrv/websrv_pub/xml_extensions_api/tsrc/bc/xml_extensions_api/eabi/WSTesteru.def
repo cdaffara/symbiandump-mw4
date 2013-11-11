@@ -1,0 +1,7 @@
+EXPORTS
+	_Z9LibEntryLR13CTestModuleIf @ 1 NONAME
+	_ZTI10CSAXTester @ 2 NONAME ; #<TI>#
+	_ZTI9CWSTester @ 3 NONAME ; #<TI>#
+	_ZTV10CSAXTester @ 4 NONAME ; #<VT>#
+	_ZTV9CWSTester @ 5 NONAME ; #<VT>#
+

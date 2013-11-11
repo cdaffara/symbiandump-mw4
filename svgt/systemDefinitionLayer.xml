@@ -1,0 +1,7 @@
+<layer name="svgt">
+  <module name="group_svgt">
+    <component name="group_svgt">
+      <unit unitID="svgt" mrp="" bldFile="&layer_real_source_path;\group" name="svgt" />
+    </component>
+  </module>
+</layer>

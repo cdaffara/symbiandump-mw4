@@ -1,0 +1,15 @@
+EXPORTS
+        ?AddHeaderL@CHttpCacheManager@@QAEHABVTDesC8@@00@Z @ 1 NONAME ; int CHttpCacheManager::AddHeaderL(class TDesC8 const &, class TDesC8 const &, class TDesC8 const &)
+        ?Find@CHttpCacheManager@@QAEHABVTDesC8@@@Z @ 2 NONAME ; int CHttpCacheManager::Find(class TDesC8 const &)
+        ?NewL@CHttpCacheManager@@SAPAV1@XZ @ 3 NONAME ; class CHttpCacheManager * CHttpCacheManager::NewL(void)
+        ?ReceivedResponseBodyDataL@CHttpCacheManager@@QAEXAAVRHTTPTransaction@@AAVMHTTPDataSupplier@@AAVTHttpCacheEntry@@@Z @ 4 NONAME ; void CHttpCacheManager::ReceivedResponseBodyDataL(class RHTTPTransaction &, class MHTTPDataSupplier &, class THttpCacheEntry &)
+        ?ReceivedResponseHeadersL@CHttpCacheManager@@QAEXAAVRHTTPTransaction@@AAVTHttpCacheEntry@@@Z @ 5 NONAME ; void CHttpCacheManager::ReceivedResponseHeadersL(class RHTTPTransaction &, class THttpCacheEntry &)
+        ?RemoveAllL@CHttpCacheManager@@QAEHXZ @ 6 NONAME ; int CHttpCacheManager::RemoveAllL(void)
+        ?RemoveL@CHttpCacheManager@@QAEHABVTDesC8@@@Z @ 7 NONAME ; int CHttpCacheManager::RemoveL(class TDesC8 const &)
+        ?RequestClosed@CHttpCacheManager@@QAEXPAVRHTTPTransaction@@AAVTHttpCacheEntry@@@Z @ 8 NONAME ; void CHttpCacheManager::RequestClosed(class RHTTPTransaction *, class THttpCacheEntry &)
+        ?RequestHeadersL@CHttpCacheManager@@QAEHAAVRHTTPTransaction@@AAVTHttpCacheEntry@@@Z @ 9 NONAME ; int CHttpCacheManager::RequestHeadersL(class RHTTPTransaction &, class THttpCacheEntry &)
+        ?RequestL@CHttpCacheManager@@QAEHAAVRHTTPTransaction@@W4TBrCtlCacheMode@TBrCtlDefs@@AAVTHttpCacheEntry@@@Z @ 10 NONAME ; int CHttpCacheManager::RequestL(class RHTTPTransaction &, enum TBrCtlDefs::TBrCtlCacheMode, class THttpCacheEntry &)
+        ?RequestNextChunkL@CHttpCacheManager@@QAEPAVHBufC8@@AAVRHTTPTransaction@@AAHAAVTHttpCacheEntry@@@Z @ 11 NONAME ; class HBufC8 * CHttpCacheManager::RequestNextChunkL(class RHTTPTransaction &, int &, class THttpCacheEntry &)
+        ?ResponseComplete@CHttpCacheManager@@QAEXAAVRHTTPTransaction@@AAVTHttpCacheEntry@@@Z @ 12 NONAME ; void CHttpCacheManager::ResponseComplete(class RHTTPTransaction &, class THttpCacheEntry &)
+        ?SaveL@CHttpCacheManager@@QAEHABVTDesC8@@000@Z @ 13 NONAME ; int CHttpCacheManager::SaveL(class TDesC8 const &, class TDesC8 const &, class TDesC8 const &, class TDesC8 const &)
+

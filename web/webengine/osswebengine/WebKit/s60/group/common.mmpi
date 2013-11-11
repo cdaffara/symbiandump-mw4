@@ -1,0 +1,98 @@
+// *
+// * Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+// * All rights reserved.
+// * This component and the accompanying materials are made available
+// * under the terms of the License "Eclipse Public License v1.0"
+// * which accompanies this distribution, and is available
+// * at the URL "http://www.eclipse.org/legal/epl-v10.html".
+// *
+// * Initial Contributors:
+// * Nokia Corporation - initial contribution.
+// *
+// * Contributors:
+// *
+// * Description:  
+// *
+// 
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+SYSTEMINCLUDE ../../../WebCore/platform/symbian/Libxml2
+MW_LAYER_SYSTEMINCLUDE
+
+USERINCLUDE ../../../WebCore 
+USERINCLUDE ../../../WebCore/page
+USERINCLUDE ../../../WebCore/css
+USERINCLUDE ../../../WebCore/rendering
+USERINCLUDE ../../../WebCore/dom
+USERINCLUDE ../../../WebCore/html
+USERINCLUDE ../../../WebCore/xml
+USERINCLUDE ../../../WebCore/editing
+USERINCLUDE ../../../WebCore/bindings/js
+USERINCLUDE ../../../WebCore/page/symbian 
+USERINCLUDE ../../../WebCore/bridge
+USERINCLUDE ../../../WebCore/bridge/symbian 
+USERINCLUDE ../../../WebCore/platform
+USERINCLUDE ../../../WebCore/platform/symbian
+USERINCLUDE ../../../WebCore/platform/graphics/symbian
+USERINCLUDE ../../../WebCore/platform/symbian/bitmap
+USERINCLUDE ../../../WebCore/loader/Symbian
+USERINCLUDE ../../../WebCore/loader
+USERINCLUDE ../../../WebCore/loader/icon
+USERINCLUDE ../../../WebCore/loader/wml
+USERINCLUDE ../webview
+USERINCLUDE ../plugins
+USERINCLUDE ../webcoresupport
+USERINCLUDE ../formcontrols
+USERINCLUDE ../misc
+
+USERINCLUDE ../../../../../inc
+USERINCLUDE ../../../MemoryManager/Inc 
+USERINCLUDE ../../../DerivedSources/WebCore/
+
+SYSTEMINCLUDE ../../../DerivedSources/JavaScriptCore
+SYSTEMINCLUDE ../../../JavaScriptCore
+SYSTEMINCLUDE ../../../JavaScriptCore/kjs
+SYSTEMINCLUDE ../../../JavaScriptCore/pcre
+SYSTEMINCLUDE ../../../JavaScriptCore/bindings
+SYSTEMINCLUDE ../../../JavaScriptCore/bindings/c
+SYSTEMINCLUDE ../../../JavaScriptCore/wtf
+SYSTEMINCLUDE ../../../JavaScriptCore/wtf/unicode
+SYSTEMINCLUDE ../../../JavaScriptCore/wtf/unicode/symbian
+SYSTEMINCLUDE ../../../JavaScriptCore/wtf/symbian
+SYSTEMINCLUDE ../../../JavaScriptCore/icu
+SYSTEMINCLUDE ../../../JavaScriptCore/ForwardingHeaders
+SYSTEMINCLUDE ../../..
+
+SYSTEMINCLUDE ../../../WebCore/platform/symbian
+SYSTEMINCLUDE ../../../WebCore/platform
+SYSTEMINCLUDE ../../../WebCore/platform/network
+SYSTEMINCLUDE ../../../WebCore/platform/network/symbian
+SYSTEMINCLUDE ../../../WebCore/platform/graphics
+SYSTEMINCLUDE ../../../WebCore/history
+SYSTEMINCLUDE ../../../WebCore/icu
+SYSTEMINCLUDE ../../../WebCore/bindings/js
+
+MW_LAYER_ECOM_SYSTEMINCLUDE
+MW_LAYER_HTTP_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+MW_LAYER_STDAPIS_SYSTEMINCLUDE
+
+
+SYSTEMINCLUDE ../../../../pagescaler/inc
+SYSTEMINCLUDE ../../../../widgetengine/inc
+SYSTEMINCLUDE ../../../../device/inc
+SYSTEMINCLUDE ../../../../webkitutils/ToolBar
+SYSTEMINCLUDE ../../../../webkitutils/HistoryProvider
+SYSTEMINCLUDE ../../../../webkitutils/SqliteSymbian
+
+MACRO __S60__
+MACRO __OOM__
+MACRO arm
+MACRO ASSERT_DISABLED
+//MACRO PERF_REGRESSION_LOG
+
+OPTION ARMCC --diag_suppress 1134,111,1293,550,830,177
+OPTION CW -warn noempty,nounused,nounwanted,nopedantic

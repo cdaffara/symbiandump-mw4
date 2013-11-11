@@ -1,0 +1,1019 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// Script file for upnpdescription Test.
+// @internalAll
+// 
+//
+
+
+PRINT Running_Xml_Test
+
+// Load the test
+LOAD_SUITE testupnpdescriptionserver
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-001
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical service description file
+//! @SYMTestType 		                UT
+			
+START_TESTCASE	Xml_1
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_1
+END_TESTCASE 	Xml_1
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-002
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical device description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_2
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_2
+END_TESTCASE 	Xml_2
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-003
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical device description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_3
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_3
+END_TESTCASE 	Xml_3
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-001
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ						 	10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. Unknown tag in <device>
+//!
+//! @SYMTestExpectedResults     	
+//! @SYMTestType 		                UT
+
+//START_TESTCASE	Xml_4
+//RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_4
+//END_TESTCASE 	Xml_4
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-004
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical device description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_5
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_5
+END_TESTCASE 	Xml_5
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-005
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical device description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_6
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_6
+END_TESTCASE 	Xml_6
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-006
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical service description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_7
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_7
+END_TESTCASE 	Xml_7
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-007
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical service description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_8
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_8
+END_TESTCASE 	Xml_8
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-008
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical service description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_9
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_9
+END_TESTCASE 	Xml_9
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-002
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description. No service state table present
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_10
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_10
+END_TESTCASE 	Xml_10
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-003
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description. SendEvents attribute in StateTable empty
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+//START_TESTCASE	Xml_11
+//RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_11
+//END_TESTCASE 	Xml_11
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-004
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description. <name> tag in <action> empty
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_12
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_12
+END_TESTCASE 	Xml_12
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-005
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description. <name> tag in <action><argument> empty
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_13
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_13
+END_TESTCASE 	Xml_13
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-006
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description. <direction> tag in <action><argument> empty
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_14
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_14
+END_TESTCASE 	Xml_14
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-007
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.<relatedStateVariable> tag in <action><argument> empty
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_15
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_15
+END_TESTCASE 	Xml_15
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-008
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description. sendEvents attribute in stateTable missing
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+//START_TESTCASE	Xml_16
+//RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_16
+//END_TESTCASE 	Xml_16
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-009
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.duplicate allowedValueList entry
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_17
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_17
+END_TESTCASE 	Xml_17
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-010
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.<serviceStateTable><stateVariable> attribute is 1
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+//START_TESTCASE	Xml_18
+//RUN_TEST_STEP  100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_18
+//END_TESTCASE 	Xml_18
+
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-011
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_19
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_19
+END_TESTCASE 	Xml_19
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-012
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_20
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_20
+END_TESTCASE 	Xml_20
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-013
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_21
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_21
+END_TESTCASE 	Xml_21
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-014
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_22
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_22
+END_TESTCASE 	Xml_22
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-015
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_23
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_23
+END_TESTCASE 	Xml_23
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-016
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_24
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_24
+END_TESTCASE 	Xml_24
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-017
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_25
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_25
+END_TESTCASE 	Xml_25
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-018
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_26
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_26
+END_TESTCASE 	Xml_26
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-019
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_27
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_27
+END_TESTCASE 	Xml_27
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-020
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_28
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_28
+END_TESTCASE 	Xml_28
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-021
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_29
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_29
+END_TESTCASE 	Xml_29
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-022
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_30
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_30
+END_TESTCASE 	Xml_30
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-023
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_31
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_31
+END_TESTCASE 	Xml_31
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-024
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_32
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_32
+END_TESTCASE 	Xml_32
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-025
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+//! START_TESTCASE	Xml_33
+//! RUN_TEST_STEP 	!error=-130 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_33
+//! END_TESTCASE 	Xml_33
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Neg-026
+//! @SYMTestCaseDesc 	            Parsing service description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse service description.Unknown tag in <serviceStateTable><stateVariable><valueRange>
+//!				                    
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_34
+RUN_TEST_STEP 	!error=-993 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_34
+END_TESTCASE 	Xml_34
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0027
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_35
+RUN_TEST_STEP 	!error=-993 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_35
+END_TESTCASE 	Xml_35
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0028
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_36
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_36
+END_TESTCASE 	Xml_36
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0028
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_37
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_37
+END_TESTCASE 	Xml_37
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0030
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_38
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_38
+END_TESTCASE 	Xml_38
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0031
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_39
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_39
+END_TESTCASE 	Xml_39
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0032
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+//START_TESTCASE	Xml_40
+//RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_40
+//END_TESTCASE 	Xml_40
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0033
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_41
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_41
+END_TESTCASE 	Xml_41
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0034
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_42
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_42
+END_TESTCASE 	Xml_42
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0035
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_43
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_43
+END_TESTCASE 	Xml_43
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0036
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_44
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_44
+END_TESTCASE 	Xml_44
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0037
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_45
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_45
+END_TESTCASE 	Xml_45
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0038
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_46
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_46
+END_TESTCASE 	Xml_46
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0039
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_47
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_47
+END_TESTCASE 	Xml_47
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-040
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_48
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_48
+END_TESTCASE 	Xml_48
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0041
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+//START_TESTCASE	Xml_49
+//RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_49
+//END_TESTCASE 	Xml_49
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0042
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_50
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_50
+END_TESTCASE 	Xml_50
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0043
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_51
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_51
+END_TESTCASE 	Xml_51
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0044
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_52
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_52
+END_TESTCASE 	Xml_52
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0044
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_53
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_53
+END_TESTCASE 	Xml_53
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0044
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. Missing service list
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+//START_TESTCASE	Xml_54
+//RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_54
+//END_TESTCASE 	Xml_54
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0044
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_55
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_55
+END_TESTCASE 	Xml_55
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0044
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+//START_TESTCASE	Xml_56
+//RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_56
+//END_TESTCASE 	Xml_56
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0044
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. Invalid embedded device
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_57
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_57
+END_TESTCASE 	Xml_57
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0044
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_58
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_58
+END_TESTCASE 	Xml_58
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0027
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_59
+RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_59
+END_TESTCASE 	Xml_59
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0027
+//! @SYMTestCaseDesc 	            Parsing device description.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description. 
+//!
+//! @SYMTestExpectedResults     	The parser leaves with error code 20
+//! @SYMTestType 		                UT
+
+//START_TESTCASE	Xml_60
+//RUN_TEST_STEP 	!error=-20 100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_60
+//END_TESTCASE 	Xml_60
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0029
+//! @SYMTestCaseDesc 	            Parsing device description file with vendor tags.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Device description with vendor tags. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical device description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_61
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_61
+END_TESTCASE 	Xml_61
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0030
+//! @SYMTestCaseDesc 	            Parsing service description file with vendor tags.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Service description with vendor tags. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical service description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_62
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_62
+END_TESTCASE 	Xml_62
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0030
+//! @SYMTestCaseDesc 	            Parsing service description file with vendor tags.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Service description with vendor tags. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical service description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_63
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_63
+END_TESTCASE 	Xml_63
+
+//! @file			                
+//! @SYMTestCaseID		            UPnPDescription-Pos-0030
+//! @SYMTestCaseDesc 	            Parsing service description file with vendor tags.
+//! @SYMREQ							10846
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority	            Critical
+//! @SYMTestActions 				Parse Service description with vendor tags. 
+//!
+//! @SYMTestExpectedResults     	The parser successfully parses and composes an identical service description file
+//! @SYMTestType 		                UT
+
+START_TESTCASE	Xml_64
+RUN_TEST_STEP 	100 	testupnpdescriptionserver TestXmlServiceStep	z:\upnp\description\ini\testupnpdescriptionsuite.ini  Xml_64
+END_TESTCASE 	Xml_64
+

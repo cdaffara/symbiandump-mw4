@@ -1,0 +1,53 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project alfcommanddebug
+*
+*/
+
+// Uncomment in lines alfcommanddebug.dll and alfcommanddescriptions.rsg in alfred.iby when using this in rom image. 
+
+#include <data_caging_paths.hrh>
+#include <bldvariant.hrh>
+#include <platform_paths.hrh>
+
+TARGETTYPE DLL
+TARGET alfcommanddebug.dll
+
+UID 0 0x20022F32
+
+SYSTEMINCLUDE /epoc32/include 
+SYSTEMINCLUDE ../../CommonInc
+
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH ../src
+SOURCE alfcommanddebug.cpp
+
+CAPABILITY              CAP_GENERAL_DLL
+VENDORID                VID_DEFAULT
+
+SOURCEPATH      ../group
+START RESOURCE alfcommanddescriptions.rss
+HEADER
+TARGETPATH ECOM_RESOURCE_DIR
+END
+
+
+LIBRARY     euser.lib
+LIBRARY     bafl.lib
+LIBRARY     commonengine.lib        // Resource loader
+LIBRARY     efsrv.lib
+LIBRARY     flogger.lib
+LIBRARY     ws32.lib 
+

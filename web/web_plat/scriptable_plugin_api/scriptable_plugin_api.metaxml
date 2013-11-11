@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="51edad8d75530b3d44b68dda15670885" dataversion="1.0">
+  <name>Scriptable Plugin API</name>
+  <description>Scriptable Plugin API for control of Netscape plugins via JavaScript</description>
+  <type>c++</type>
+  <subsystem>WebEngine</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="5.0"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

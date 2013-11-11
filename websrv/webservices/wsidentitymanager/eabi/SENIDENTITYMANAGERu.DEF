@@ -1,0 +1,40 @@
+EXPORTS
+	_ZN16CSenBaseIdentity4NewLE6TPtrC8 @ 1 NONAME
+	_ZN16CSenBaseIdentity5NewLCE6TPtrC8 @ 2 NONAME
+	_ZN16CSenBaseIdentityD0Ev @ 3 NONAME
+	_ZN16CSenBaseIdentityD1Ev @ 4 NONAME
+	_ZN16CSenBaseIdentityD2Ev @ 5 NONAME
+	_ZN23CSenBaseIdentityManager13WriteDatabaseEv @ 6 NONAME
+	_ZN23CSenBaseIdentityManager22UpdateTouchIdentityDBLER22MSenServiceDescription @ 7 NONAME
+	_ZN23CSenBaseIdentityManager4NewLER22MSenCoreServiceManager @ 8 NONAME
+	_ZN23CSenBaseIdentityManager5NewLCER22MSenCoreServiceManager @ 9 NONAME
+	_ZN23CSenBaseIdentityManagerD0Ev @ 10 NONAME
+	_ZN23CSenBaseIdentityManagerD1Ev @ 11 NONAME
+	_ZN23CSenBaseIdentityManagerD2Ev @ 12 NONAME
+	_ZN24CSenWiseIdentityProvider4NewLE6TPtrC8RK6TDesC8S3_ @ 13 NONAME
+	_ZN24CSenWiseIdentityProvider5NewLCE6TPtrC8RK6TDesC8S3_ @ 14 NONAME
+	_ZN24CSenWiseIdentityProviderD0Ev @ 15 NONAME
+	_ZN24CSenWiseIdentityProviderD1Ev @ 16 NONAME
+	_ZN24CSenWiseIdentityProviderD2Ev @ 17 NONAME
+	_ZN28CSenMultiUserIdentityManager4NewLER22MSenCoreServiceManager @ 18 NONAME
+	_ZN28CSenMultiUserIdentityManager5NewLCER22MSenCoreServiceManager @ 19 NONAME
+	_ZN28CSenMultiUserIdentityManagerD0Ev @ 20 NONAME
+	_ZN28CSenMultiUserIdentityManagerD1Ev @ 21 NONAME
+	_ZN28CSenMultiUserIdentityManagerD2Ev @ 22 NONAME
+	_ZTI16CSenBaseIdentity @ 23 NONAME ; #<TI>#
+	_ZTI23CSenBaseIdentityManager @ 24 NONAME ; #<TI>#
+	_ZTI24CSenWiseIdentityProvider @ 25 NONAME ; #<TI>#
+	_ZTI28CSenMultiUserIdentityManager @ 26 NONAME ; #<TI>#
+	_ZTI32CSenSenSecurityMechanismObserver @ 27 NONAME ; #<TI>#
+	_ZTI8CSenUser @ 28 NONAME ; #<TI>#
+	_ZTV16CSenBaseIdentity @ 29 NONAME ; #<VT>#
+	_ZTV23CSenBaseIdentityManager @ 30 NONAME ; #<VT>#
+	_ZTV24CSenWiseIdentityProvider @ 31 NONAME ; #<VT>#
+	_ZTV28CSenMultiUserIdentityManager @ 32 NONAME ; #<VT>#
+	_ZTV32CSenSenSecurityMechanismObserver @ 33 NONAME ; #<VT>#
+	_ZTV8CSenUser @ 34 NONAME ; #<VT>#
+	_ZN8CSenUser9IdentitesEv @ 35 NONAME
+	_ZNK8CSenUser3PINEv @ 36 NONAME
+	_ZNK8CSenUser6ActiveEv @ 37 NONAME
+	_ZNK8CSenUser8UserNameEv @ 38 NONAME
+

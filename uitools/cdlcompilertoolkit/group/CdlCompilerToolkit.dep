@@ -1,0 +1,107 @@
+# Microsoft Developer Studio Generated Dependency File, included by CdlCompilerToolkit.mak
+
+..\src\CdlTkClientHeader.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkProcess.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkDll.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkInstance.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkInterface.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkPackage.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkParser.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkProcess.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkProcess.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkProcess.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkSourceFileWriter.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkProcess.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkSyntaxCheck.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkProcess.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkUtil.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkWriteCdlFile.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkProcess.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkWriteDll.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkProcess.h"\
+	"..\inc\CdlTkUtil.h"\
+	
+
+..\src\CdlTkWriteInstance.cpp : \
+	"..\..\inc\cdlver.h"\
+	"..\inc\CdlTkInstance.h"\
+	"..\inc\CdlTkInterface.h"\
+	"..\inc\CdlTkPriv.h"\
+	"..\inc\CdlTkProcess.h"\
+	"..\inc\CdlTkUtil.h"\
+	

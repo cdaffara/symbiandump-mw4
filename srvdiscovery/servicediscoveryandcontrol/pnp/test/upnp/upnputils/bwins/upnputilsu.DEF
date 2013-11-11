@@ -1,0 +1,67 @@
+EXPORTS
+	?GetAttribPtr@TSubsribeResponseInfo@@UBEPAEH@Z @ 1 NONAME ; unsigned char * TSubsribeResponseInfo::GetAttribPtr(int) const
+	?GetVDataTableStatic@TSigParamSetAny@@SAPBUSVDataTableEntry@Meta@@XZ @ 2 NONAME ; struct Meta::SVDataTableEntry const * TSigParamSetAny::GetVDataTableStatic(void)
+	?GetVDataTableStatic@TSubscribeRequestInfo@@SAPBUSVDataTableEntry@Meta@@XZ @ 3 NONAME ; struct Meta::SVDataTableEntry const * TSubscribeRequestInfo::GetVDataTableStatic(void)
+	?GetVDataTable@THttpServerFlowQuery@@UBEPBUSVDataTableEntry@Meta@@XZ @ 4 NONAME ; struct Meta::SVDataTableEntry const * THttpServerFlowQuery::GetVDataTable(void) const
+	?GetVDataTableStatic@TSubsribeResponseInfo@@SAPBUSVDataTableEntry@Meta@@XZ @ 5 NONAME ; struct Meta::SVDataTableEntry const * TSubsribeResponseInfo::GetVDataTableStatic(void)
+	?GetVDataTableStatic@THttpUdpFlowQuery@@SAPBUSVDataTableEntry@Meta@@XZ @ 6 NONAME ; struct Meta::SVDataTableEntry const * THttpUdpFlowQuery::GetVDataTableStatic(void)
+	?GetAttribPtr@TUPnPFlowQuery@@UBEPAEH@Z @ 7 NONAME ; unsigned char * TUPnPFlowQuery::GetAttribPtr(int) const
+	?GetVDataTable@TSigParamSet@@UBEPBUSVDataTableEntry@Meta@@XZ @ 8 NONAME ; struct Meta::SVDataTableEntry const * TSigParamSet::GetVDataTable(void) const
+	?GetVDataTable@TSigParamSetFlow@@UBEPBUSVDataTableEntry@Meta@@XZ @ 9 NONAME ; struct Meta::SVDataTableEntry const * TSigParamSetFlow::GetVDataTable(void) const
+	?GetVDataTableStatic@TSigParamSet@@SAPBUSVDataTableEntry@Meta@@XZ @ 10 NONAME ; struct Meta::SVDataTableEntry const * TSigParamSet::GetVDataTableStatic(void)
+	?GetVDataTableStatic@THttpClientFlowQuery@@SAPBUSVDataTableEntry@Meta@@XZ @ 11 NONAME ; struct Meta::SVDataTableEntry const * THttpClientFlowQuery::GetVDataTableStatic(void)
+	?GetAttribPtr@TSigNumberVersionBufChain@@UBEPAEH@Z @ 12 NONAME ABSENT ; unsigned char * TSigNumberVersionBufChain::GetAttribPtr(int) const
+	?GetVDataTable@TSigNumberBufChain@@UBEPBUSVDataTableEntry@Meta@@XZ @ 13 NONAME ABSENT ; struct Meta::SVDataTableEntry const * TSigNumberBufChain::GetVDataTable(void) const
+	?GetAttribPtr@TSigParamSet@@UBEPAEH@Z @ 14 NONAME ; unsigned char * TSigParamSet::GetAttribPtr(int) const
+	?GetAttribPtr@TSigParamSetFlow@@UBEPAEH@Z @ 15 NONAME ; unsigned char * TSigParamSetFlow::GetAttribPtr(int) const
+	?GetVDataTableStatic@TSigUPnPResponseInfo@@SAPBUSVDataTableEntry@Meta@@XZ @ 16 NONAME ; struct Meta::SVDataTableEntry const * TSigUPnPResponseInfo::GetVDataTableStatic(void)
+	?GetVDataTableStatic@TSigNumberBufChain@@SAPBUSVDataTableEntry@Meta@@XZ @ 17 NONAME ABSENT ; struct Meta::SVDataTableEntry const * TSigNumberBufChain::GetVDataTableStatic(void)
+	?GetVDataTable@TUPnPFlowQuery@@UBEPBUSVDataTableEntry@Meta@@XZ @ 18 NONAME ; struct Meta::SVDataTableEntry const * TUPnPFlowQuery::GetVDataTable(void) const
+	?LoadL@SMetaDataNetCtorExt@@SAPAVSMetaDataNetCtor@Meta@@AAVTPtrC8@@@Z @ 19 NONAME ; class Meta::SMetaDataNetCtor * SMetaDataNetCtorExt::LoadL(class TPtrC8 &)
+	?GetVDataTableStatic@TUPnPFlowQuery@@SAPBUSVDataTableEntry@Meta@@XZ @ 20 NONAME ; struct Meta::SVDataTableEntry const * TUPnPFlowQuery::GetVDataTableStatic(void)
+	?GetVDataTable@TSigRMBufChainFlow@@UBEPBUSVDataTableEntry@Meta@@XZ @ 21 NONAME ABSENT ; struct Meta::SVDataTableEntry const * TSigRMBufChainFlow::GetVDataTable(void) const
+	?GetVDataTable@THttpUdpFlowQuery@@UBEPBUSVDataTableEntry@Meta@@XZ @ 22 NONAME ; struct Meta::SVDataTableEntry const * THttpUdpFlowQuery::GetVDataTable(void) const
+	?GetVDataTable@THttpClientFlowQuery@@UBEPBUSVDataTableEntry@Meta@@XZ @ 23 NONAME ; struct Meta::SVDataTableEntry const * THttpClientFlowQuery::GetVDataTable(void) const
+	?GetVDataTableStatic@TSigNumberVersionBufChain@@SAPBUSVDataTableEntry@Meta@@XZ @ 24 NONAME ABSENT ; struct Meta::SVDataTableEntry const * TSigNumberVersionBufChain::GetVDataTableStatic(void)
+	?GetVDataTableStatic@TSigTUint8Size@@SAPBUSVDataTableEntry@Meta@@XZ @ 25 NONAME ; struct Meta::SVDataTableEntry const * TSigTUint8Size::GetVDataTableStatic(void)
+	?Match@TUPnPFlowQuery@@UAE?AW4TMatchResult@MFactoryQuery@Factories@@AAUTFactoryObjectInfo@4@@Z @ 26 NONAME ; enum Factories::MFactoryQuery::TMatchResult TUPnPFlowQuery::Match(struct Factories::TFactoryObjectInfo &)
+	?GetVDataTable@TSigSsdpInfo@@UBEPBUSVDataTableEntry@Meta@@XZ @ 27 NONAME ; struct Meta::SVDataTableEntry const * TSigSsdpInfo::GetVDataTable(void) const
+	?GetAttribPtr@THttpServerFlowQuery@@UBEPAEH@Z @ 28 NONAME ; unsigned char * THttpServerFlowQuery::GetAttribPtr(int) const
+	?GetAttribPtr@TSigUPnPResponseInfo@@UBEPAEH@Z @ 29 NONAME ; unsigned char * TSigUPnPResponseInfo::GetAttribPtr(int) const
+	?GetAttribPtr@TSigUPnPClientRequestInfo@@UBEPAEH@Z @ 30 NONAME ; unsigned char * TSigUPnPClientRequestInfo::GetAttribPtr(int) const
+	?GetAttribPtr@TSigNumberBufChain@@UBEPAEH@Z @ 31 NONAME ABSENT ; unsigned char * TSigNumberBufChain::GetAttribPtr(int) const
+	?GetAttribPtr@TSigTUint8Size@@UBEPAEH@Z @ 32 NONAME ; unsigned char * TSigTUint8Size::GetAttribPtr(int) const
+	?GetAttribPtr@TSubscribeRequestInfo@@UBEPAEH@Z @ 33 NONAME ; unsigned char * TSubscribeRequestInfo::GetAttribPtr(int) const
+	?GetVDataTableStatic@THttpServerFlowQuery@@SAPBUSVDataTableEntry@Meta@@XZ @ 34 NONAME ; struct Meta::SVDataTableEntry const * THttpServerFlowQuery::GetVDataTableStatic(void)
+	?GetAttribPtr@TEventNotifyRequestInfo@@UBEPAEH@Z @ 35 NONAME ; unsigned char * TEventNotifyRequestInfo::GetAttribPtr(int) const
+	?RegisterL@TUpnpMessage@@SAXPAVCCommonWorkerThread@Den@@@Z @ 36 NONAME ; void TUpnpMessage::RegisterL(class Den::CCommonWorkerThread *)
+	?GetVDataTableStatic@TSigRMBufChainFlow@@SAPBUSVDataTableEntry@Meta@@XZ @ 37 NONAME ABSENT ; struct Meta::SVDataTableEntry const * TSigRMBufChainFlow::GetVDataTableStatic(void)
+	?GetVDataTable@TSigUPnPResponseInfo@@UBEPBUSVDataTableEntry@Meta@@XZ @ 38 NONAME ; struct Meta::SVDataTableEntry const * TSigUPnPResponseInfo::GetVDataTable(void) const
+	?GetVDataTable@TSigTUint8Size@@UBEPBUSVDataTableEntry@Meta@@XZ @ 39 NONAME ; struct Meta::SVDataTableEntry const * TSigTUint8Size::GetVDataTable(void) const
+	?GetVDataTableStatic@TSigUPnPClientRequestInfo@@SAPBUSVDataTableEntry@Meta@@XZ @ 40 NONAME ; struct Meta::SVDataTableEntry const * TSigUPnPClientRequestInfo::GetVDataTableStatic(void)
+	?GetVDataTable@TSubscribeRequestInfo@@UBEPBUSVDataTableEntry@Meta@@XZ @ 41 NONAME ; struct Meta::SVDataTableEntry const * TSubscribeRequestInfo::GetVDataTable(void) const
+	?GetAttribPtr@TSigParamSetAny@@UBEPAEH@Z @ 42 NONAME ; unsigned char * TSigParamSetAny::GetAttribPtr(int) const
+	?GetAttribPtr@THttpUdpFlowQuery@@UBEPAEH@Z @ 43 NONAME ; unsigned char * THttpUdpFlowQuery::GetAttribPtr(int) const
+	?GetAttribPtr@TSigRMBufChainFlow@@UBEPAEH@Z @ 44 NONAME ABSENT ; unsigned char * TSigRMBufChainFlow::GetAttribPtr(int) const
+	?GetVDataTable@TSigParamSetAny@@UBEPBUSVDataTableEntry@Meta@@XZ @ 45 NONAME ; struct Meta::SVDataTableEntry const * TSigParamSetAny::GetVDataTable(void) const
+	?GetVDataTableStatic@TSigParamSetFlow@@SAPBUSVDataTableEntry@Meta@@XZ @ 46 NONAME ; struct Meta::SVDataTableEntry const * TSigParamSetFlow::GetVDataTableStatic(void)
+	?GetVDataTableStatic@TSigSsdpInfo@@SAPBUSVDataTableEntry@Meta@@XZ @ 47 NONAME ; struct Meta::SVDataTableEntry const * TSigSsdpInfo::GetVDataTableStatic(void)
+	?GetVDataTable@TSubsribeResponseInfo@@UBEPBUSVDataTableEntry@Meta@@XZ @ 48 NONAME ; struct Meta::SVDataTableEntry const * TSubsribeResponseInfo::GetVDataTable(void) const
+	?GetVDataTable@TEventNotifyRequestInfo@@UBEPBUSVDataTableEntry@Meta@@XZ @ 49 NONAME ; struct Meta::SVDataTableEntry const * TEventNotifyRequestInfo::GetVDataTable(void) const
+	?GetAttribPtr@TSigSsdpInfo@@UBEPAEH@Z @ 50 NONAME ; unsigned char * TSigSsdpInfo::GetAttribPtr(int) const
+	?GetAttribPtr@THttpClientFlowQuery@@UBEPAEH@Z @ 51 NONAME ; unsigned char * THttpClientFlowQuery::GetAttribPtr(int) const
+	?Table@TUPnPTable@@SAABUTStringTable@@XZ @ 52 NONAME ; struct TStringTable const & TUPnPTable::Table(void)
+	?GetVDataTable@TSigNumberVersionBufChain@@UBEPBUSVDataTableEntry@Meta@@XZ @ 53 NONAME ABSENT ; struct Meta::SVDataTableEntry const * TSigNumberVersionBufChain::GetVDataTable(void) const
+	?DeRegister@TUpnpMessage@@SAXXZ @ 54 NONAME ; void TUpnpMessage::DeRegister(void)
+	?GetVDataTable@TSigUPnPClientRequestInfo@@UBEPBUSVDataTableEntry@Meta@@XZ @ 55 NONAME ; struct Meta::SVDataTableEntry const * TSigUPnPClientRequestInfo::GetVDataTable(void) const
+	?GetVDataTableStatic@TEventNotifyRequestInfo@@SAPBUSVDataTableEntry@Meta@@XZ @ 56 NONAME ; struct Meta::SVDataTableEntry const * TEventNotifyRequestInfo::GetVDataTableStatic(void)
+	?GetVDataTable@TSigRMemChunkFlow@@UBEPBUSVDataTableEntry@Meta@@XZ @ 57 NONAME ; struct Meta::SVDataTableEntry const * TSigRMemChunkFlow::GetVDataTable(void) const
+	?GetAttribPtr@TSigNumberVersionMemChunk@@UBEPAEH@Z @ 58 NONAME ; unsigned char * TSigNumberVersionMemChunk::GetAttribPtr(int) const
+	?GetVDataTable@TSigNumberVersionMemChunk@@UBEPBUSVDataTableEntry@Meta@@XZ @ 59 NONAME ; struct Meta::SVDataTableEntry const * TSigNumberVersionMemChunk::GetVDataTable(void) const
+	?GetVDataTableStatic@TSigRMemChunkFlow@@SAPBUSVDataTableEntry@Meta@@XZ @ 60 NONAME ; struct Meta::SVDataTableEntry const * TSigRMemChunkFlow::GetVDataTableStatic(void)
+	?GetVDataTable@TSigNumberMemChunk@@UBEPBUSVDataTableEntry@Meta@@XZ @ 61 NONAME ; struct Meta::SVDataTableEntry const * TSigNumberMemChunk::GetVDataTable(void) const
+	?GetAttribPtr@TSigNumberMemChunk@@UBEPAEH@Z @ 62 NONAME ; unsigned char * TSigNumberMemChunk::GetAttribPtr(int) const
+	?GetVDataTableStatic@TSigNumberMemChunk@@SAPBUSVDataTableEntry@Meta@@XZ @ 63 NONAME ; struct Meta::SVDataTableEntry const * TSigNumberMemChunk::GetVDataTableStatic(void)
+	?GetVDataTableStatic@TSigNumberVersionMemChunk@@SAPBUSVDataTableEntry@Meta@@XZ @ 64 NONAME ; struct Meta::SVDataTableEntry const * TSigNumberVersionMemChunk::GetVDataTableStatic(void)
+	?GetAttribPtr@TSigRMemChunkFlow@@UBEPAEH@Z @ 65 NONAME ; unsigned char * TSigRMemChunkFlow::GetAttribPtr(int) const
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<service>
+  <name>wlanlogin</name>
+  <filepath>No path</filepath>
+  <description>WLAN Login</description>
+  <interface>
+    <name>com.nokia.symbian.IWlanLogin</name>
+    <version>1.0</version>
+    <description>WLAN login start</description>
+  </interface>
+</service>

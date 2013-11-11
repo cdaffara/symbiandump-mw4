@@ -1,0 +1,657 @@
+;
+; Copyright (c) 2009-2010 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description: Package file for project VPN Client. udeb
+;
+
+
+; LANGUAGES
+; - None (English only by default)
+&EN,FR,GE,SP,IT,SW,DA,NO,FI,AM,PO,TU,IC,RU,HU,DU,CS,SK,PL,SL,TC,HK,ZH,JA,TH,AR,TL,BG,HR,ET,FA,CF,EL,HE,IN,LV,LT,MS,BP,RO,SR,LS,UK,UR,VI,44,102,103
+
+; INSTALLATION HEADER 
+; UID of acuagentcrypto
+#{"Nokia VPN",
+  "Cl. VPN Nokia",
+  "Nokia VPN-Clnt.",
+  "Nokia VPN",
+  "Client Nokia VPN",
+  "Nokia VPN-klient",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Cli. VPN Nokia",
+  "Nokia VPN is.",
+  "Nokia VPN",
+  "Клиент Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN-cl.",
+  "Nokia VPN kl.",
+  "VPN Nokia",
+  "Klient Nokia VPN",
+  "Odj. NZO Nokia",
+  "諾基亞VPN用戶端",
+  "諾基亞VPN客戶端",
+  "诺基亚VPN客户端",
+  "Nokia VPN クライアント",
+  "Nokia VPN client",
+  "Nokia VPN",
+  "Nokia VPN client",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN klient",
+  "مشتري Nokia VPN",
+  "RPV Nokia",
+  "Πελάτης της Nokia VPN",
+  "לקוח Nokia VPN",
+  "Klien VPN Nokia",
+  "Nokia VPN",
+  "Nokia VPT kl.",
+  "Klien Nokia VPN",
+  "VPN Nokia",
+  "Client Nokia RVP",
+  "Nokia VPN klijent",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN client",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN"},
+(0x101F5147),32,08,0124, TYPE=SA, RU
+
+; Product / platform version compatibility - S60 5.1
+[0x10283160],0,0,0,{
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID"}
+
+; Product / platform version compatibility - S60 5.2
+[0x20022e6d],0,0,0,{
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID"}
+
+; List of localised vendor names - one per language.
+%{"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia"}
+
+; The non-localised, globally unique vendor name (mandatory)
+:"Nokia"
+
+; *"RDtest.key","RDtest.cer"
+; *"rd-key.pem","rd.cer"
+
+; LIST OF FILES
+
+;///////////////////////////////////////////////
+
+; ipsecpolparser; remove later
+"\epoc32\release\armv5\udeb\vpnipsecpolparser.dll"-"!:\sys\bin\vpnipsecpolparser.dll"
+
+; VPN Connection Agent
+"\epoc32\release\armv5\udeb\vpnconnagt.agt"-"!:\sys\bin\vpnconnagt.agt"
+
+;   VPN Policy Parser
+"\epoc32\release\armv5\udeb\ikepolparser.dll"-"!:\sys\bin\ikepolparser.dll"
+
+;   Symmetric crypto API wrapper
+"\epoc32\release\armv5\udeb\utlcrypto.dll"-"!:\sys\bin\utlcrypto.dll"
+
+;   Key Management Daemon
+"\epoc32\release\armv5\udeb\kmdserver.exe"-"!:\sys\bin\kmdserver.exe"
+
+;   Key Management Daemon API
+"\epoc32\release\armv5\udeb\kmdapi.dll"-"!:\sys\bin\kmdapi.dll"
+"\epoc32\release\armv5\udeb\ikecert.dll"-"!:\sys\bin\ikecert.dll"
+"\epoc32\release\armv5\udeb\ikev1lib.dll"-"!:\sys\bin\ikev1lib.dll"
+"\epoc32\release\armv5\udeb\ikev2lib.dll"-"!:\sys\bin\ikev2lib.dll"
+
+;   IKEUTILS library
+"\epoc32\release\armv5\udeb\ikeutils.dll"-"!:\sys\bin\ikeutils.dll"
+
+; IKE socket plugin
+"\epoc32\release\armv5\udeb\ikesocket.dll"-"!:\sys\bin\ikesocket.dll"
+
+; VPN DM
+"\epoc32\release\armv5\udeb\dmadengine.dll"-"!:\sys\bin\dmadengine.dll"
+"\epoc32\release\armv5\udeb\dmadipsecvpn.dll"-"!:\sys\bin\dmadipsecvpn.dll"
+"\epoc32\data\z\resource\plugins\dmadipsecvpn.rsc"-"!:\resource\plugins\dmadipsecvpn.rsc"
+"\epoc32\release\armv5\udeb\dmadpki.dll"-"!:\sys\bin\dmadpki.dll"
+"\epoc32\data\z\resource\plugins\dmadpki.rsc"-"!:\resource\plugins\dmadpki.rsc"
+
+
+; VPN API ( include by platform )
+;"\epoc32\release\armv5\udeb\vpnapi.dll"-"!:\sys\bin\vpnapi.dll"
+
+;"\epoc32\data\z\resource\errors\vpnerr.r01"-"!:\resource\Errors\vpnerr.r01"
+;"\epoc32\data\z\resource\errors\vpnerr.rsc"-"!:\resource\Errors\vpnerr.rsc"
+
+; VPN help resources
+; Localized help files are missing, thus use only EE 
+; Help resources should be already in ROM but content can be updated from SIS package
+;"\epoc32\data\Z\resource\xhtml\01\0x10200EC4\index.xml"-"!:\resource\xhtml\01\0x10200EC4\index.xml"
+;{
+;"\epoc32\data\z\resource\help\vpn.h01"
+;"\epoc32\data\z\resource\help\vpn.h02"
+;"\epoc32\data\z\resource\help\vpn.h03"
+;"\epoc32\data\z\resource\help\vpn.h04"
+;"\epoc32\data\z\resource\help\vpn.h05"
+;"\epoc32\data\z\resource\help\vpn.h06"
+;"\epoc32\data\z\resource\help\vpn.h07"
+;"\epoc32\data\z\resource\help\vpn.h08"
+;"\epoc32\data\z\resource\help\vpn.h09"
+;"\epoc32\data\z\resource\help\vpn.h10"
+;"\epoc32\data\z\resource\help\vpn.h13"
+;"\epoc32\data\z\resource\help\vpn.h14"
+;"\epoc32\data\z\resource\help\vpn.h15"
+;"\epoc32\data\z\resource\help\vpn.h16"
+;"\epoc32\data\z\resource\help\vpn.h17"
+;"\epoc32\data\z\resource\help\vpn.h18"
+;"\epoc32\data\z\resource\help\vpn.h25"
+;"\epoc32\data\z\resource\help\vpn.h26"
+;"\epoc32\data\z\resource\help\vpn.h27"
+;"\epoc32\data\z\resource\help\vpn.h28"
+;"\epoc32\data\z\resource\help\vpn.h29"
+;"\epoc32\data\z\resource\help\vpn.h30"
+;"\epoc32\data\z\resource\help\vpn.h31"
+;"\epoc32\data\z\resource\help\vpn.h32"
+;"\epoc32\data\z\resource\help\vpn.h33"
+;"\epoc32\data\z\resource\help\vpn.h37"
+;"\epoc32\data\z\resource\help\vpn.h39"
+;"\epoc32\data\z\resource\help\vpn.h42"
+;"\epoc32\data\z\resource\help\vpn.h45"
+;"\epoc32\data\z\resource\help\vpn.h49"
+;"\epoc32\data\z\resource\help\vpn.h01"
+;"\epoc32\data\z\resource\help\vpn.h51"
+;"\epoc32\data\z\resource\help\vpn.h54"
+;"\epoc32\data\z\resource\help\vpn.h57"
+;"\epoc32\data\z\resource\help\vpn.h01"
+;"\epoc32\data\z\resource\help\vpn.h59"
+;"\epoc32\data\z\resource\help\vpn.h67"
+;"\epoc32\data\z\resource\help\vpn.h68"
+;"\epoc32\data\z\resource\help\vpn.h70"
+;"\epoc32\data\z\resource\help\vpn.h76"
+;"\epoc32\data\z\resource\help\vpn.h78"
+;"\epoc32\data\z\resource\help\vpn.h79"
+;"\epoc32\data\z\resource\help\vpn.h83"
+;"\epoc32\data\z\resource\help\vpn.h93"
+;"\epoc32\data\z\resource\help\vpn.h01"
+;"\epoc32\data\z\resource\help\vpn.h01"
+;}-"!:\resource\help\vpn.hlp"
+
+; PKI Services Server
+"\epoc32\release\armv5\udeb\pkiservice.exe"-"!:\sys\bin\pkiservice.exe"
+
+; PKI Services API
+"\epoc32\release\armv5\udeb\pkiserviceapi.dll"-"!:\sys\bin\pkiserviceapi.dll"
+
+; PKCS#10 Module
+"\epoc32\release\armv5\udeb\utlpkcs10.dll"-"!:\sys\bin\utlpkcs10.dll"
+
+; PKCS#12 Module
+"\epoc32\release\armv5\udeb\utlpkcs12.dll"-"!:\sys\bin\utlpkcs12.dll"
+
+; Base64 Module
+"\epoc32\release\armv5\udeb\utlbase64.dll"-"!:\sys\bin\utlbase64.dll"
+
+; Socket Interaction Thread
+"\epoc32\release\armv5\udeb\eventmedsit.dll"-"!:\sys\bin\eventmedsit.dll"
+
+; Event Viewer
+"\epoc32\release\armv5\udeb\eventviewer.dll"-"!:\sys\bin\eventviewer.dll"
+
+"\epoc32\data\z\resource\vpnlogmessages.rsc"-"!:\resource\vpnlogmessages.rsc"
+
+; Terminal control stubs (for downwards compatibility)
+"\epoc32\release\armv5\udeb\vpntcwrapper.dll"-"!:\sys\bin\vpntcwrapper.dll"
+
+; VPN dialog manager
+"\epoc32\release\armv5\udeb\vpndialogmanager.dll"-"!:\sys\bin\vpndialogmanager.dll"
+
+; VPN ECOM Notifier plug-in
+"\epoc32\release\armv5\udeb\vpnecomnotifier.dll"-"!:\sys\bin\vpnecomnotifier.dll"
+
+"\epoc32\data\z\resource\plugins\vpnecomnotifier.rsc"-"!:\resource\plugins\vpnecomnotifier.rsc"
+
+{
+"\epoc32\data\z\resource\vpnecomnotifier.r01"
+"\epoc32\data\z\resource\vpnecomnotifier.r02"
+"\epoc32\data\z\resource\vpnecomnotifier.r03"
+"\epoc32\data\z\resource\vpnecomnotifier.r04"
+"\epoc32\data\z\resource\vpnecomnotifier.r05"
+"\epoc32\data\z\resource\vpnecomnotifier.r06"
+"\epoc32\data\z\resource\vpnecomnotifier.r07"
+"\epoc32\data\z\resource\vpnecomnotifier.r08"
+"\epoc32\data\z\resource\vpnecomnotifier.r09"
+"\epoc32\data\z\resource\vpnecomnotifier.r10"
+"\epoc32\data\z\resource\vpnecomnotifier.r13"
+"\epoc32\data\z\resource\vpnecomnotifier.r14"
+"\epoc32\data\z\resource\vpnecomnotifier.r15"
+"\epoc32\data\z\resource\vpnecomnotifier.r16"
+"\epoc32\data\z\resource\vpnecomnotifier.r17"
+"\epoc32\data\z\resource\vpnecomnotifier.r18"
+"\epoc32\data\z\resource\vpnecomnotifier.r25"
+"\epoc32\data\z\resource\vpnecomnotifier.r26"
+"\epoc32\data\z\resource\vpnecomnotifier.r27"
+"\epoc32\data\z\resource\vpnecomnotifier.r28"
+"\epoc32\data\z\resource\vpnecomnotifier.r29"
+"\epoc32\data\z\resource\vpnecomnotifier.r30"
+"\epoc32\data\z\resource\vpnecomnotifier.r31"
+"\epoc32\data\z\resource\vpnecomnotifier.r32"
+"\epoc32\data\z\resource\vpnecomnotifier.r33"
+"\epoc32\data\z\resource\vpnecomnotifier.r37"
+"\epoc32\data\z\resource\vpnecomnotifier.r39"
+"\epoc32\data\z\resource\vpnecomnotifier.r42"
+"\epoc32\data\z\resource\vpnecomnotifier.r45"
+"\epoc32\data\z\resource\vpnecomnotifier.r49"
+"\epoc32\data\z\resource\vpnecomnotifier.r50"
+"\epoc32\data\z\resource\vpnecomnotifier.r51"
+"\epoc32\data\z\resource\vpnecomnotifier.r54"
+"\epoc32\data\z\resource\vpnecomnotifier.r57"
+"\epoc32\data\z\resource\vpnecomnotifier.r59"
+"\epoc32\data\z\resource\vpnecomnotifier.r67"
+"\epoc32\data\z\resource\vpnecomnotifier.r68"
+"\epoc32\data\z\resource\vpnecomnotifier.r70"
+"\epoc32\data\z\resource\vpnecomnotifier.r76"
+"\epoc32\data\z\resource\vpnecomnotifier.r78"
+"\epoc32\data\z\resource\vpnecomnotifier.r79"
+"\epoc32\data\z\resource\vpnecomnotifier.r83"
+"\epoc32\data\z\resource\vpnecomnotifier.r93"
+"\epoc32\data\z\resource\vpnecomnotifier.r94"
+"\epoc32\data\z\resource\vpnecomnotifier.r96"
+"\epoc32\data\z\resource\vpnecomnotifier.r44"
+"\epoc32\data\z\resource\vpnecomnotifier.r102"
+"\epoc32\data\z\resource\vpnecomnotifier.r103"
+}-"!:\resource\vpnecomnotifier.rsc"
+
+; XML Parser
+"\epoc32\release\armv5\udeb\utlxml.dll"-"!:\sys\bin\utlxml.dll"
+
+; During installation check languages that HW supports 
+; and install resources only for them.
+; EN - 01 - English  
+IF EXISTS ("z:\resource\avkon.r01")
+"\epoc32\data\z\resource\vpnecomnotifier.r01"-"!:\resource\vpnecomnotifier.r01"
+IF NOT EXISTS ("z:\resource\xhtml\01\0x10200EC4\index.xml")
+"\epoc32\data\Z\resource\xhtml\01\0x10200EC4\index.xml"-"!:\resource\xhtml\01\0x10200EC4\index.xml"
+"\epoc32\data\Z\resource\xhtml\01\0x10200EC4\keywords.xml"-"!:\resource\xhtml\01\0x10200EC4\keywords.xml"
+"\epoc32\data\Z\resource\xhtml\01\0x10200EC4\meta.xml"-"!:\resource\xhtml\01\0x10200EC4\meta.xml"
+"\epoc32\data\Z\resource\xhtml\01\0x10200EC4\contents.zip"-"!:\resource\xhtml\01\0x10200EC4\contents.zip"
+ENDIF
+ENDIF
+; FR - 02 - French
+IF EXISTS ("z:\resource\avkon.r02")
+"\epoc32\data\z\resource\vpnecomnotifier.r02"-"!:\resource\vpnecomnotifier.r02"
+ENDIF
+; GE - 03 - German
+IF EXISTS ("z:\resource\avkon.r03")
+"\epoc32\data\z\resource\vpnecomnotifier.r03"-"!:\resource\vpnecomnotifier.r03"
+ENDIF
+; SP - 04 - Spanish
+IF EXISTS ("z:\resource\avkon.r04")
+"\epoc32\data\z\resource\vpnecomnotifier.r04"-"!:\resource\vpnecomnotifier.r04"
+ENDIF
+; IT - 05 - Italian
+IF EXISTS ("z:\resource\avkon.r05")
+"\epoc32\data\z\resource\vpnecomnotifier.r05"-"!:\resource\vpnecomnotifier.r05"
+ENDIF
+; SW - 06 - Swedish
+IF EXISTS ("z:\resource\avkon.r06")
+"\epoc32\data\z\resource\vpnecomnotifier.r06"-"!:\resource\vpnecomnotifier.r06"
+ENDIF
+; DA - 07 - Danish
+IF EXISTS ("z:\resource\avkon.r07")
+"\epoc32\data\z\resource\vpnecomnotifier.r07"-"!:\resource\vpnecomnotifier.r07"
+ENDIF
+; NO - 08 - Norwegian
+IF EXISTS ("z:\resource\avkon.r08")
+"\epoc32\data\z\resource\vpnecomnotifier.r08"-"!:\resource\vpnecomnotifier.r08"
+ENDIF
+; FI - 09 - Finnish
+IF EXISTS ("z:\resource\avkon.r09")
+"\epoc32\data\z\resource\vpnecomnotifier.r09"-"!:\resource\vpnecomnotifier.r09"
+ENDIF
+; AM - 10 - American
+IF EXISTS ("z:\resource\avkon.r10")
+"\epoc32\data\z\resource\vpnecomnotifier.r10"-"!:\resource\vpnecomnotifier.r10"
+ENDIF
+; PO - 13 - Portuguese
+IF EXISTS ("z:\resource\avkon.r13")
+"\epoc32\data\z\resource\vpnecomnotifier.r13"-"!:\resource\vpnecomnotifier.r13"
+ENDIF
+; TU - 14 - Turkish
+IF EXISTS ("z:\resource\avkon.r14")
+"\epoc32\data\z\resource\vpnecomnotifier.r14"-"!:\resource\vpnecomnotifier.r14"
+ENDIF
+; IC - 15 - Icelandic
+IF EXISTS ("z:\resource\avkon.r15")
+"\epoc32\data\z\resource\vpnecomnotifier.r15"-"!:\resource\vpnecomnotifier.r15"
+ENDIF
+; RU - 16 - Russian
+IF EXISTS ("z:\resource\avkon.r16")
+"\epoc32\data\z\resource\vpnecomnotifier.r16"-"!:\resource\vpnecomnotifier.r16"
+ENDIF
+; HU - 17 - Hungarian
+IF EXISTS ("z:\resource\avkon.r17")
+"\epoc32\data\z\resource\vpnecomnotifier.r17"-"!:\resource\vpnecomnotifier.r17"
+ENDIF
+; DU - 18 - Dutch
+IF EXISTS ("z:\resource\avkon.r18")
+"\epoc32\data\z\resource\vpnecomnotifier.r18"-"!:\resource\vpnecomnotifier.r18"
+ENDIF
+; CS - 25 - Czech
+IF EXISTS ("z:\resource\avkon.r25")
+"\epoc32\data\z\resource\vpnecomnotifier.r25"-"!:\resource\vpnecomnotifier.r25"
+ENDIF
+; SK - 26 - Slovak
+IF EXISTS ("z:\resource\avkon.r26")
+"\epoc32\data\z\resource\vpnecomnotifier.r26"-"!:\resource\vpnecomnotifier.r26"
+ENDIF
+; PL - 27 - Polish
+IF EXISTS ("z:\resource\avkon.r27")
+"\epoc32\data\z\resource\vpnecomnotifier.r27"-"!:\resource\vpnecomnotifier.r27"
+ENDIF
+; SL - 28 - Slovenian
+IF EXISTS ("z:\resource\avkon.r28")
+"\epoc32\data\z\resource\vpnecomnotifier.r28"-"!:\resource\vpnecomnotifier.r28"
+ENDIF
+; TC - 29 - TaiwanChinese
+IF EXISTS ("z:\resource\avkon.r29")
+"\epoc32\data\z\resource\vpnecomnotifier.r29"-"!:\resource\vpnecomnotifier.r29"
+ENDIF
+; HK - 30 - HongKongChinese
+IF EXISTS ("z:\resource\avkon.r30")
+"\epoc32\data\z\resource\vpnecomnotifier.r30"-"!:\resource\vpnecomnotifier.r30"
+ENDIF
+; ZH - 31 - PrcChinese
+IF EXISTS ("z:\resource\avkon.r31")
+"\epoc32\data\z\resource\vpnecomnotifier.r31"-"!:\resource\vpnecomnotifier.r31"
+ENDIF
+; JA - 32 - Japanese
+IF EXISTS ("z:\resource\avkon.r32")
+"\epoc32\data\z\resource\vpnecomnotifier.r32"-"!:\resource\vpnecomnotifier.r32"
+ENDIF
+; TH - 33 - Thai
+IF EXISTS ("z:\resource\avkon.r33")
+"\epoc32\data\z\resource\vpnecomnotifier.r33"-"!:\resource\vpnecomnotifier.r33"
+ENDIF
+; AR - 37 - Arabic
+IF EXISTS ("z:\resource\avkon.r37")
+"\epoc32\data\z\resource\vpnecomnotifier.r37"-"!:\resource\vpnecomnotifier.r37"
+ENDIF
+; TL - 39 - Tagalog
+IF EXISTS ("z:\resource\avkon.r39")
+"\epoc32\data\z\resource\vpnecomnotifier.r39"-"!:\resource\vpnecomnotifier.r39"
+ENDIF
+; BG - 42 - Bulgarian
+IF EXISTS ("z:\resource\avkon.r42")
+"\epoc32\data\z\resource\vpnecomnotifier.r42"-"!:\resource\vpnecomnotifier.r42"
+ENDIF
+; HR - 45 - Croatian
+IF EXISTS ("z:\resource\avkon.r45")
+"\epoc32\data\z\resource\vpnecomnotifier.r45"-"!:\resource\vpnecomnotifier.r45"
+ENDIF
+; ET - 49 - Estonian
+IF EXISTS ("z:\resource\avkon.r49")
+"\epoc32\data\z\resource\vpnecomnotifier.r49"-"!:\resource\vpnecomnotifier.r49"
+ENDIF
+; FA - 50 - Farsi
+IF EXISTS ("z:\resource\avkon.r50")
+"\epoc32\data\z\resource\vpnecomnotifier.r50"-"!:\resource\vpnecomnotifier.r50"
+ENDIF
+; CF - 51 - CanadianFrench
+IF EXISTS ("z:\resource\avkon.r51")
+"\epoc32\data\z\resource\vpnecomnotifier.r51"-"!:\resource\vpnecomnotifier.r51"
+ENDIF
+; EL - 54 - Greek
+IF EXISTS ("z:\resource\avkon.r54")
+"\epoc32\data\z\resource\vpnecomnotifier.r54"-"!:\resource\vpnecomnotifier.r54"
+ENDIF
+; HE - 57 - Hebrew
+IF EXISTS ("z:\resource\avkon.r57")
+"\epoc32\data\z\resource\vpnecomnotifier.r57"-"!:\resource\vpnecomnotifier.r57"
+ENDIF
+; IN - 59 - Indonesian
+IF EXISTS ("z:\resource\avkon.r59")
+"\epoc32\data\z\resource\vpnecomnotifier.r59"-"!:\resource\vpnecomnotifier.r59"
+ENDIF
+; LV - 67 - Latvian
+IF EXISTS ("z:\resource\avkon.r67")
+"\epoc32\data\z\resource\vpnecomnotifier.r67"-"!:\resource\vpnecomnotifier.r67"
+ENDIF
+; LT - 68 - Lithuanian
+IF EXISTS ("z:\resource\avkon.r68")
+"\epoc32\data\z\resource\vpnecomnotifier.r68"-"!:\resource\vpnecomnotifier.r68"
+ENDIF
+; MS - 70 - Malay
+IF EXISTS ("z:\resource\avkon.r70")
+"\epoc32\data\z\resource\vpnecomnotifier.r70"-"!:\resource\vpnecomnotifier.r70"
+ENDIF
+; BP - 76 - BrazilianPortuguese
+IF EXISTS ("z:\resource\avkon.r76")
+"\epoc32\data\z\resource\vpnecomnotifier.r76"-"!:\resource\vpnecomnotifier.r76"
+ENDIF
+; RO - 78 - Romanian
+IF EXISTS ("z:\resource\avkon.r78")
+"\epoc32\data\z\resource\vpnecomnotifier.r78"-"!:\resource\vpnecomnotifier.r78"
+ENDIF
+; SR - 79 - Serbian
+IF EXISTS ("z:\resource\avkon.r79")
+"\epoc32\data\z\resource\vpnecomnotifier.r79"-"!:\resource\vpnecomnotifier.r79"
+ENDIF
+; LS - 83 - LatinAmericanSpanish
+IF EXISTS ("z:\resource\avkon.r83")
+"\epoc32\data\z\resource\vpnecomnotifier.r83"-"!:\resource\vpnecomnotifier.r83"
+ENDIF
+; UK - 93 - Ukrainian
+IF EXISTS ("z:\resource\avkon.r93")
+"\epoc32\data\z\resource\vpnecomnotifier.r93"-"!:\resource\vpnecomnotifier.r93"
+ENDIF
+; UR - 94 - Urdu
+IF EXISTS ("z:\resource\avkon.r94")
+"\epoc32\data\z\resource\vpnecomnotifier.r94"-"!:\resource\vpnecomnotifier.r94"
+ENDIF
+; VI - 96 - Vietnamese
+IF EXISTS ("z:\resource\avkon.r96")
+"\epoc32\data\z\resource\vpnecomnotifier.r96"-"!:\resource\vpnecomnotifier.r96"
+ENDIF
+; - 44 - Catalan
+IF EXISTS ("z:\resource\avkon.r44")
+"\epoc32\data\z\resource\vpnecomnotifier.r44"-"!:\resource\vpnecomnotifier.r44"
+ENDIF
+; - 102 - Basque
+IF EXISTS ("z:\resource\avkon.r102")
+"\epoc32\data\z\resource\vpnecomnotifier.r102"-"!:\resource\vpnecomnotifier.r102"
+; Helps do not support language id 102 yet
+;IF NOT EXISTS ("z:\resource\xhtml\102\0x10200EC4\index.xml")
+;"\epoc32\data\Z\resource\xhtml\102\0x10200EC4\index.xml"-"!:\resource\xhtml\102\0x10200EC4\index.xml"
+;"\epoc32\data\Z\resource\xhtml\102\0x10200EC4\keywords.xml"-"!:\resource\xhtml\102\0x10200EC4\keywords.xml"
+;"\epoc32\data\Z\resource\xhtml\102\0x10200EC4\meta.xml"-"!:\resource\xhtml\102\0x10200EC4\meta.xml"
+;"\epoc32\data\Z\resource\xhtml\102\0x10200EC4\contents.zip"-"!:\resource\xhtml\102\0x10200EC4\contents.zip"
+;ENDIF
+ENDIF
+; - 103 - Galicia
+IF EXISTS ("z:\resource\avkon.r103")
+"\epoc32\data\z\resource\vpnecomnotifier.r103"-"!:\resource\vpnecomnotifier.r103"
+; Helps do not support language 103 yet
+;IF NOT EXISTS ("z:\resource\xhtml\103\0x10200EC4\index.xml")
+;"\epoc32\data\Z\resource\xhtml\103\0x10200EC4\index.xml"-"!:\resource\xhtml\103\0x10200EC4\index.xml"
+;"\epoc32\data\Z\resource\xhtml\103\0x10200EC4\keywords.xml"-"!:\resource\xhtml\103\0x10200EC4\keywords.xml"
+;"\epoc32\data\Z\resource\xhtml\103\0x10200EC4\meta.xml"-"!:\resource\xhtml\103\0x10200EC4\meta.xml"
+;"\epoc32\data\Z\resource\xhtml\103\0x10200EC4\contents.zip"-"!:\resource\xhtml\103\0x10200EC4\contents.zip"
+;ENDIF
+ENDIF
+
+"\epoc32\release\armv5\udeb\vpnpolicyrecognizer.dll"-"!:\sys\bin\vpnpolicyrecognizer.dll"
+"\epoc32\data\z\resource\plugins\vpnpolicyrecognizer.rsc"-"!:\resource\plugins\vpnpolicyrecognizer.rsc"
+
+"\epoc32\release\armv5\udeb\vpnpolins.exe"-"!:\sys\bin\vpnpolins.exe"
+"\epoc32\data\z\private\10003a3f\apps\vpnpolins_reg.rsc"-"!:\Private\10003a3f\import\apps\vpnpolins_reg.rsc"
+; Embedded VPN Policy Installer sis file
+@"mVPN_vpnpolins_armv5.sis",(0xA0000131)
+
+;
+; VPN Cleaner
+;
+"\epoc32\release\armv5\udeb\vpncleaner.exe"-"!:\sys\bin\vpncleaner.exe",FR,RR,RW
+;
+; The following modules must not be deleted before VPN Cleaner has been run:
+; VPN Manager
+"\epoc32\release\armv5\udeb\vpnmanager.exe"-"!:\sys\bin\vpnmanager.exe"
+; Event Mediator
+"\epoc32\release\armv5\udeb\eventmed.exe"-"!:\sys\bin\eventmed.exe"
+; "\epoc32\winscw\c\private\101FD288\backup_registration.xml"-"!:\Private\101FD288\backup_registration.xml"
+; Event Mediator API
+"\epoc32\release\armv5\udeb\eventmedapi.dll"-"!:\sys\bin\eventmedapi.dll"
+
+; VPN Installer
+; "101f877b.txt"-"c:\Private\10202be9\persists\101f877b.txt"
+"\epoc32\release\armv5\udeb\vpnins.exe"-"!:\sys\bin\vpnins.exe",FR,RI,RW

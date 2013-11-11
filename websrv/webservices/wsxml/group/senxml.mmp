@@ -1,0 +1,93 @@
+/*
+* Copyright (c) 2002-2005 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        S60 4.0 reference implementation
+*
+*/
+
+
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+TARGETTYPE      DLL
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET          SenXml.dll
+UID             0x1000008d 0x101F9704
+#else
+TARGET          wsxml.dll
+UID             0x1000008d 0x101F973B
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_GENERAL_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_GENERAL_DLL
+    #endif
+#endif
+
+SOURCEPATH      ../src
+
+SOURCE          senbaseattribute.cpp
+SOURCE          senbaseelement.cpp
+SOURCE          senbasefragment.cpp
+SOURCE          sendomfragment.cpp
+SOURCE          sennamespace.cpp
+SOURCE          senxmldll.cpp
+SOURCE          senxmlutils.cpp
+SOURCE          senxmlreader.cpp
+
+SOURCE          senxmlelement.cpp             // same, but also offers exports (requires freeze)
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wsutils/inc
+
+SYSTEMINCLUDE   /epoc32/include/libc
+
+LIBRARY         charconv.lib
+LIBRARY         estor.lib
+LIBRARY         euser.lib
+LIBRARY         bafl.lib    // RStringbase
+
+LIBRARY         XMLFRAMEWORK.lib
+
+#ifndef EKA2
+LIBRARY         efsrv.lib  // fileserver
+#endif // EKA2
+
+#if defined(ARMCC)
+  DEFFILE ../eabi/SENXML.DEF
+#elif defined(WINSCW)
+  DEFFILE ../BWINSCW/SENXML.DEF
+#elif defined(WINS)
+  DEFFILE ../BWINS/SENXML.DEF
+#else 
+  DEFFILE ../BMARM/SENXML.DEF
+#endif
+
+SMPSAFE
+

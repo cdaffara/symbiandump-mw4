@@ -1,0 +1,59 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Recognizer for the bowser supported MIME types.
+*
+*/
+#if defined(__BROWSER_SDK)
+TARGET          BrowserRec_sdk.DLL
+#else
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+TARGET          BrowserRec.DLL
+#endif
+
+TARGETTYPE      PLUGIN
+UID             0x10009D8D 0x01005A02
+
+CAPABILITY CAP_ECOM_PLUGIN 
+
+
+SOURCEPATH      ../data
+
+START RESOURCE  01005A02.rss
+#if defined(__BROWSER_SDK)
+TARGET          BrowserRec_sdk.rsc
+#else
+TARGET          BrowserRec.rsc
+#endif
+
+END
+
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE           BrowserRec.cpp
+
+USERINCLUDE     ../inc
+#ifndef __BROWSER_SDK
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_ECOM_SYSTEMINCLUDE
+#else
+SYSTEMINCLUDE   /Epoc32/include  /Epoc32/include/ecom
+#endif
+
+
+
+LIBRARY         EUSER.LIB 
+LIBRARY         APMIME.LIB
+

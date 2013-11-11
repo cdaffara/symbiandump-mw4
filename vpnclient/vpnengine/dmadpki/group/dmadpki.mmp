@@ -1,0 +1,88 @@
+/*
+* Copyright (c) 2000-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project dmadpki
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+TARGET          dmadpki.dll
+TARGETTYPE      PLUGIN
+UID             0x10009D8D 0x102069A5
+
+CAPABILITY      CAP_ECOM_PLUGIN
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          dmadadapter.cpp
+SOURCE          dmadcertparms.cpp
+SOURCE          dmadcertreqparms.cpp
+SOURCE          dmadcertutil.cpp
+SOURCE          dmadddf.cpp
+SOURCE          dmadprivkeyparms.cpp
+SOURCE          DmAdRtNodeData.cpp
+SOURCE          dmadrtnodedataapi.cpp
+SOURCE          DmAdStore.cpp
+SOURCE          dmadstorecert.cpp
+SOURCE          dmadstorecertreq.cpp
+SOURCE          dmadstoreprivkey.cpp
+SOURCE          dmadcertluidmappingelem.cpp
+SOURCE          dmadpkcs12parms.cpp
+SOURCE          dmadstorepkcs12.cpp
+
+START RESOURCE  ../data/102069a5.rss
+TARGET dmadpki.rsc
+END
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../vpnmanager/inc
+USERINCLUDE     ../../dmadengine/inc
+USERINCLUDE     ../../pkiserviceapi/inc
+USERINCLUDE     ../../utlbase64/inc
+USERINCLUDE     ../../utlpkcs10/inc
+USERINCLUDE     ../../utlcrypto/inc
+USERINCLUDE     ../../utlxml/inc
+USERINCLUDE     ../../eventmediatorapi/inc
+USERINCLUDE     ../../vpncommon/inc
+USERINCLUDE     ../../ikepolparser/inc
+USERINCLUDE     ../../utlpkcs12/inc
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   /epoc32/include/ecom
+
+LIBRARY         euser.lib 
+LIBRARY         ecom.lib
+LIBRARY         dmadengine.lib
+LIBRARY         pkiserviceapi.lib
+LIBRARY         eventmedapi.lib
+LIBRARY         utlbase64.lib
+LIBRARY         x509.lib
+LIBRARY         x500.lib
+LIBRARY         crypto.lib
+LIBRARY         utlcrypto.lib
+LIBRARY         cryptography.lib
+LIBRARY         asn1.lib    
+LIBRARY         charconv.lib
+LIBRARY         utlxml.lib
+LIBRARY         certstore.lib
+LIBRARY         efsrv.lib
+LIBRARY         ctframework.lib
+LIBRARY         bafl.lib
+LIBRARY         utlpkcs10.lib
+LIBRARY         utlpkcs12.lib
+DEBUGLIBRARY    flogger.lib
+
+MACRO           DMAD_ENGINE_EXPORT

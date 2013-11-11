@@ -1,0 +1,19 @@
+EXPORTS
+	?DeRegister@TAppProtIntfMessage@@SAXXZ @ 1 NONAME ; void TAppProtIntfMessage::DeRegister(void)
+	?GetAttribPtr@TSigIntSockMBufChain@@UBEPAEH@Z @ 2 NONAME ; unsigned char * TSigIntSockMBufChain::GetAttribPtr(int) const
+	?GetAttribPtr@TSigMBufChain@@UBEPAEH@Z @ 3 NONAME ; unsigned char * TSigMBufChain::GetAttribPtr(int) const
+	?GetAttribPtr@TSigSockAddr@@UBEPAEH@Z @ 4 NONAME ; unsigned char * TSigSockAddr::GetAttribPtr(int) const
+	?GetAttribPtr@TSigSockAddrMBufChain@@UBEPAEH@Z @ 5 NONAME ; unsigned char * TSigSockAddrMBufChain::GetAttribPtr(int) const
+	?GetVDataTable@TSigIntSockMBufChain@@UBEPBUSVDataTableEntry@Meta@@XZ @ 6 NONAME ; struct Meta::SVDataTableEntry const * TSigIntSockMBufChain::GetVDataTable(void) const
+	?GetVDataTable@TSigMBufChain@@UBEPBUSVDataTableEntry@Meta@@XZ @ 7 NONAME ; struct Meta::SVDataTableEntry const * TSigMBufChain::GetVDataTable(void) const
+	?GetVDataTable@TSigSockAddr@@UBEPBUSVDataTableEntry@Meta@@XZ @ 8 NONAME ; struct Meta::SVDataTableEntry const * TSigSockAddr::GetVDataTable(void) const
+	?GetVDataTable@TSigSockAddrMBufChain@@UBEPBUSVDataTableEntry@Meta@@XZ @ 9 NONAME ; struct Meta::SVDataTableEntry const * TSigSockAddrMBufChain::GetVDataTable(void) const
+	?GetVDataTableStatic@TSigIntSockMBufChain@@SAPBUSVDataTableEntry@Meta@@XZ @ 10 NONAME ; struct Meta::SVDataTableEntry const * TSigIntSockMBufChain::GetVDataTableStatic(void)
+	?GetVDataTableStatic@TSigMBufChain@@SAPBUSVDataTableEntry@Meta@@XZ @ 11 NONAME ; struct Meta::SVDataTableEntry const * TSigMBufChain::GetVDataTableStatic(void)
+	?GetVDataTableStatic@TSigSockAddr@@SAPBUSVDataTableEntry@Meta@@XZ @ 12 NONAME ; struct Meta::SVDataTableEntry const * TSigSockAddr::GetVDataTableStatic(void)
+	?GetVDataTableStatic@TSigSockAddrMBufChain@@SAPBUSVDataTableEntry@Meta@@XZ @ 13 NONAME ; struct Meta::SVDataTableEntry const * TSigSockAddrMBufChain::GetVDataTableStatic(void)
+	?RegisterL@TAppProtIntfMessage@@SAXXZ @ 14 NONAME ; void TAppProtIntfMessage::RegisterL(void)
+	?GetAttribPtr@TAppProtIntfQuery@@UBEPAEH@Z @ 15 NONAME ; unsigned char * TAppProtIntfQuery::GetAttribPtr(int) const
+	?GetVDataTable@TAppProtIntfQuery@@UBEPBUSVDataTableEntry@Meta@@XZ @ 16 NONAME ; struct Meta::SVDataTableEntry const * TAppProtIntfQuery::GetVDataTable(void) const
+	?GetVDataTableStatic@TAppProtIntfQuery@@SAPBUSVDataTableEntry@Meta@@XZ @ 17 NONAME ; struct Meta::SVDataTableEntry const * TAppProtIntfQuery::GetVDataTableStatic(void)
+	

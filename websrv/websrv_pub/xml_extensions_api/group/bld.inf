@@ -1,0 +1,47 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        File that exports the files belonging to 
+:                XML Extensions API
+*
+*/
+
+
+
+
+
+
+
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+../inc/SenBaseFragment.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenBaseFragment.h)
+../inc/MSenElement.h     MW_LAYER_PUBLIC_EXPORT_PATH(MSenElement.h)
+../inc/MSenContentHandlerClient.h     MW_LAYER_PUBLIC_EXPORT_PATH(MSenContentHandlerClient.h)
+../inc/SenXmlUtils.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenXmlUtils.h)
+../inc/SenBaseElement.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenBaseElement.h)
+../inc/SenElement.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenElement.h)
+../inc/SenFragment.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenFragment.h)
+../inc/SenDomFragment.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenDomFragment.h)
+../inc/MSenFragment.h     MW_LAYER_PUBLIC_EXPORT_PATH(MSenFragment.h)
+../inc/SenNameSpace.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenNameSpace.h)
+../inc/SenBaseAttribute.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenBaseAttribute.h)
+../inc/SenXmlReader.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenXmlReader.h)
+../inc/SenXmlConstants.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenXmlConstants.h)
+../inc/SenXmlElement.h     MW_LAYER_PUBLIC_EXPORT_PATH(SenXmlElement.h)
+

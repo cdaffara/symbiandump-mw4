@@ -1,0 +1,119 @@
+/*
+* Copyright (c) 2002-2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senmessages    
+*
+*/
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+TARGETTYPE      DLL
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET          SenMessages.DLL
+UID             0x1000008d 0x2000039B
+#else
+TARGET          wsmessages.DLL
+UID             0x1000008d 0x10282C40
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+VENDORID 0x101FB657
+    #else
+VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_GENERAL_DLL )
+CAPABILITY ALL -TCB
+    #else
+CAPABILITY CAP_GENERAL_DLL
+    #endif
+#endif
+
+SOURCEPATH      ../src
+
+//SOURCE          SenMessageContext.cpp
+SOURCE          sensoapenvelope2.cpp
+SOURCE          sensoapmessage2.cpp
+SOURCE          sensoapmessagedom2.cpp
+SOURCE          sensoapfault2.cpp
+SOURCE          senwssecurityheader2.cpp
+
+SOURCE          senmessagebase.cpp 
+SOURCE          senatomentry.cpp
+SOURCE			senatomfeed.cpp 
+SOURCE			senatommessage.cpp
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wsutils/inc
+USERINCLUDE     ../../wslogger/inc
+USERINCLUDE     ../../wsframework/inc // MessageContext
+USERINCLUDE     ../../wsfragment/inc
+
+SYSTEMINCLUDE   /epoc32/include/libc
+
+LIBRARY         charconv.lib
+LIBRARY         estor.lib
+LIBRARY         euser.lib
+LIBRARY         bafl.lib    // RStringbase
+// Symbian XML framework is used since S60 3rd edition (3.0)
+LIBRARY         XMLFRAMEWORK.lib
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY         SenFragment.lib
+LIBRARY         SenUtils.lib
+LIBRARY         SenFramework.lib // CSenMessageContext (temporary: create SenContext.lib!)
+
+LIBRARY         SenXml.lib // temporarily: when WSF is fully libxml2 based, XmlUtils:: -methods need to be refactored (moved to other lib)
+
+LIBRARY         SenLogger.lib
+#else
+LIBRARY         wsFragment.lib
+LIBRARY         wsUtils.lib
+LIBRARY         wsFramework.lib 
+LIBRARY         wsXml.lib 
+LIBRARY         wsLogger.lib
+#endif
+
+// LibXml2 libraries
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+LIBRARY         XmlEngineDOM.lib
+LIBRARY         XmlEngine.lib
+#else
+LIBRARY         WsStarXmlEngineDOM.lib
+LIBRARY         WsStarXmlEngine.lib
+#endif
+
+LIBRARY estlib.lib // strlen 
+
+#if defined(ARMCC)
+DEFFILE ../eabi/SenMessages.DEF
+#elif defined(WINSCW)
+DEFFILE ../BWINSCW/SenMessages.DEF
+#elif defined(WINS)
+DEFFILE ../BWINS/SenMessages.DEF
+#else 
+DEFFILE ../BMARM/SenMessages.DEF
+#endif
+
+SMPSAFE
+
+

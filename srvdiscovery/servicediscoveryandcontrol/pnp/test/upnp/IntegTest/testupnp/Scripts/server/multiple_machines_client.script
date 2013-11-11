@@ -1,0 +1,107 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//!
+//! Script file to launch all testupnp automated UPnP tests
+//!
+
+//! TestUPnP.script
+//! @SYMTestSuiteName	multiple_machines_client 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client
+
+LOAD_SUITE multiple_machines_client
+
+START_TESTCASE	UPNP-ALL-TESTS
+
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0001.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0002.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0003.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0004.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0005.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0006.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0007.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0008.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0009.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_discovery_0010.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_1.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_1_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_2.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_2_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_3.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_3_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_4.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_4_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_5.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_5_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_6.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_vendor_device_description_0029_6_rev.script
+DELAY 200
+
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_1.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_1_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_2.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_2_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_3.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_3_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_4.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_4_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_5.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_standard_service_description_0030_5_rev.script
+DELAY 200
+
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_register_state_change_services_0038_1.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_register_state_change_services_0038_1_rev.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_register_state_change_services_0038_2.script
+DELAY 200
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_register_state_change_services_0038_2_rev.script
+DELAY 200
+
+RUN_SCRIPT z:\upnp\testupnp\client\scripts\upnp_publish_regression.script
+
+END_TESTCASE	UPNP-ALL-TESTS

@@ -1,0 +1,28 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: Resource definitions for eventViewer.
+*
+*/
+
+
+
+
+/*
+rls_string STRING_No_Label1 "" // empty for non-file app's
+*/
+
+rls_string STRING_r_policy_import_ok "Policy import successful %U  %N OK"
+rls_string STRING_r_policy_import_failed "Policy import failed %U %N  "
+rls_string STRING_r_policy_export_failed "Policy file is lost %U %N 12345 "
+

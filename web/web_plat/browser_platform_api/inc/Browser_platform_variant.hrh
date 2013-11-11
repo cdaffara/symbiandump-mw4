@@ -1,0 +1,412 @@
+/*
+* Copyright (c) 2008 - 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Defines S60 platform variant for Browser
+*               Allows Browser to build on multiple S60 platform releases
+*
+*/
+
+/*
+*
+* NOTICE: Not for use outside of the Symbian Foundation packages 'web' and 'webuis'.
+*         This header may be changed or removed at any time without notice.
+*
+*/
+
+#ifndef BROWSER_PLATFORM_VARIANT_HRH
+#define BROWSER_PLATFORM_VARIANT_HRH
+
+/*
+* Establish which platform we are building on.
+* If required, un-comment correct platform macro as
+* described below  
+*
+*/
+/*
+* ===================
+*        S60 3.23 Gadget, etc..
+* ===================
+*/ 
+#if defined(__S60_32__)
+//
+// this is the only supported platform that comes with unambiguous platform version flag
+#define __PLATFORM_VERSION_32__
+
+/*
+* ===================
+*        S60 5.0 Tube, Alvin, Ivalo, Saga, etc.
+*        5.0/5250 platforms
+* ===================
+*/ 
+#elif defined(__S60_50__)
+// manually edit the following lines to enable definition for
+// whichever platform is in use
+// un-comment following line for 5.0/5250 platforms running on products similar on Tube and Alvin
+// #define __PLATFORM_VERSION_50_TUBE__
+
+// un-comment following line for 5.0/5250 platforms for Ivalo and Saga
+// #define __PLATFORM_VERSION_50__
+
+/*
+* ===================
+*        S60 5.1 Corolla, etc.
+* ===================
+*/ 
+// #elif defined(__S60_51__)
+// un-comment following line for 5.1/TB9.1 platforms
+// #define __PLATFORM_VERSION_51__
+
+/*
+* ===================
+*        S60 5.2 Vasco, etc.
+* ===================
+*/ 
+// #elif defined(__S60_52__)
+
+// un-comment following line for 5.2/TB9.2 platforms
+#define __PLATFORM_VERSION_52__
+//
+#endif
+
+/*
+*
+* Define Browser Version
+*
+*/
+
+#define BRDO_APP_VERSION_MAJOR 7
+#define BRDO_APP_VERSION_MINOR 2
+#define BRDO_APP_VERSION BRDO_APP_VERSION_MAJOR##_##BRDO_APP_VERSION_MINOR
+
+/*
+*
+* Define feature flags
+*
+* Format of browser domain feature flags:
+*
+*   "BRDO_" | feature/component name | "_FF"
+*
+* Define default value of the flag in section below, and then modify it
+* by platform as it varies from that default.
+*
+*/
+
+// Defines Language InterWork and SAPI availability
+#define BRDO_LIW_FF
+
+// Defines ASX parser availability
+#ifdef __WINDOWS_MEDIA
+#define BRDO_ASX_FF
+#endif
+
+/** #BRDO_WML_DISABLED_FF 
+Disable WML support using BRDO_WML_DISABLED_FF
+Default is WML support enabled 
+*/
+#define BRDO_WML_DISABLED_FF
+
+// Defines if SecurityManager component is present
+#define BRDO_WRT_SECURITY_MGR_FF
+
+// Defines touch screen capability
+#define BRDO_TOUCH_ENABLED_FF
+
+// Defines Avkon extended toolbar support
+#define BRDO_AVKON_EXT_TB_FF
+
+// Defines Direct File IO support in RFile ( EFileWriteDirectIO )
+#define BRDO_RFILE_WRITE_DIRECT_IO_FF
+
+// Defines use of GestureHelper library
+#define BRDO_USE_GESTURE_HELPER
+
+// Defines WRT widgets feature to publish on homescreen
+#define BRDO_WRT_HS_FF
+
+// Gallery App is not present
+#undef BRDO_APP_GALLERY_SUPPORTED_FF
+
+// Defines if MultipartParser should be built
+#define BRDO_MULTIPART_PARSER_FF
+
+// Additional export location - to adapt to new header export location
+#undef BRDO_ADDED_EXPORT_LOCATION
+
+// Platform contains new Symbian Libxml implementation
+#undef BRDO_SYMBIAN_LIBXML_FF
+
+// Enable/Disable compilation of some of Search Integration specific code 
+#define BRDO_SEARCH_INTEGRATION_FF
+
+// Defines whether SAPI Security Manager Prompt Enhancement is available
+#define BRDO_SEC_MGR_PROMPT_ENHANCEMENT_FF
+
+// Defines Symbian HTTP stack parameters specific for symbian 9.3 (e.g. EHttpEnableOptimalPipelining, EHttpOptimalPipelining)
+//Flag need to be removed after this fix is supplied to Symbian 9.4
+#define BRDO_HTTP_STACK_93
+/*
+* ===================
+*        S60 3.23
+* ===================
+*/ 
+#if defined(__PLATFORM_VERSION_32__)
+
+// Defines touch screen capability
+#undef BRDO_TOUCH_ENABLED_FF
+
+// Defines Avkon extended toolbar support
+#undef BRDO_AVKON_EXT_TB_FF
+
+// Defines Direct File IO support in RFile ( EFileWriteDirectIO )
+#undef BRDO_RFILE_WRITE_DIRECT_IO_FF
+
+// Defines use of GestureHelper library
+#undef BRDO_USE_GESTURE_HELPER
+
+// Defines WRT widgets feature to publish on homescreen
+#undef BRDO_WRT_HS_FF
+
+// Gallery App is present
+#define BRDO_APP_GALLERY_SUPPORTED_FF
+
+// Disable compilation of some of Search Integration specific code
+#undef BRDO_SEARCH_INTEGRATION_FF
+
+// Defines whether SAPI Security Manager Prompt Enhancement is available
+#undef BRDO_SEC_MGR_PROMPT_ENHANCEMENT_FF
+
+// Missing from 3.23 platform_paths.hrh
+
+// Location, where the middleware layer localization .loc file should be exported
+#if __GNUC__ >= 3
+#define MW_LAYER_LOC_EXPORT_PATH(exported) MW_LAYER_PUBLIC_EXPORT_PATH(exported)
+#else
+#define MW_LAYER_LOC_EXPORT_PATH(exported) MW_LAYER_PUBLIC_EXPORT_PATH(##exported)
+#endif
+
+// Location, where the middleware layer localization .loc file should be exported
+#if __GNUC__ >= 3
+#define APP_LAYER_LOC_EXPORT_PATH(exported) APP_LAYER_PUBLIC_EXPORT_PATH(exported)
+#else
+#define APP_LAYER_LOC_EXPORT_PATH(exported) APP_LAYER_PUBLIC_EXPORT_PATH(##exported)
+#endif
+
+#if __GNUC__ >= 3
+#define BRDO_ADDED_EXPORT_LOCATION(exported) MW_LAYER_DOMAIN_EXPORT_PATH(../platform/mw/exported)
+#else
+#define BRDO_ADDED_EXPORT_LOCATION(exported) MW_LAYER_DOMAIN_EXPORT_PATH(../platform/mw/##exported)
+#endif
+
+#define APP_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(libc)
+#define APP_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(ecom)
+#define APP_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(http)
+#define APP_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(connect)
+#define APP_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(swi)
+#define APP_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(kernel)
+#define APP_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(push)
+#define APP_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(stdapis)
+
+#define MW_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(libc)
+#define MW_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(ecom)
+#define MW_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(http)
+#define MW_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(connect)
+#define MW_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(swi)
+#define MW_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(kernel)
+#define MW_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(push)
+#define MW_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(stdapis)
+
+/*
+* ===================
+*        S60 5.0 PF5250 / Tube / Alvin
+* ===================
+*/ 
+#elif defined(__PLATFORM_VERSION_50_TUBE__)
+
+// Defines must accumulate versions. ie for 5.01 you must define BRDO_BROWSER_50_FF and BRDO_BROWSER_501_FF(To be reviewed)
+// The assumption is that anything that worked in 3.2 will work in 5.0 and 5.01.  For anything doesn't work
+// in 3.2 but works in 5.0 and above, that code should be behind the BRDO_BROWSER_50_FF flag.
+#define BRDO_BROWSER_50_FF
+
+// Defines WRT widgets feature to publish on homescreen
+#undef BRDO_WRT_HS_FF
+
+// Gallery App is present
+#define BRDO_APP_GALLERY_SUPPORTED_FF
+
+// Disable compilation of some of Search Integration specific code
+#undef BRDO_SEARCH_INTEGRATION_FF
+
+// Defines whether SAPI Security Manager Prompt Enhancement is available
+#undef BRDO_SEC_MGR_PROMPT_ENHANCEMENT_FF
+
+#if __GNUC__ >= 3
+#define BRDO_ADDED_EXPORT_LOCATION(exported) MW_LAYER_DOMAIN_EXPORT_PATH(../../platform/mw/exported)
+#else
+#define BRDO_ADDED_EXPORT_LOCATION(exported) MW_LAYER_DOMAIN_EXPORT_PATH(../../platform/mw/##exported)
+#endif
+
+#define APP_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../libc)
+#define APP_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../ecom)
+#define APP_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../http)
+#define APP_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../connect)
+#define APP_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../swi)
+#define APP_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../kernel)
+#define APP_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../push)
+#define APP_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../stdapis)
+
+#define MW_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../libc)
+#define MW_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../ecom)
+#define MW_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../http)
+#define MW_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../connect)
+#define MW_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../swi)
+#define MW_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../kernel)
+#define MW_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../push)
+#define MW_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../stdapis)
+
+// Defines Symbian HTTP stack parameters specific for symbian 9.3 (e.g. EHttpEnableOptimalPipelining, EHttpOptimalPipelining)
+//Flag need to be removed after this fix is supplied to Symbian 9.4
+#undef BRDO_HTTP_STACK_93
+/*
+* ===================
+*        S60 5.0 PF5250+ / Ivalo / Saga
+* ===================
+*/ 
+#elif defined(__PLATFORM_VERSION_50__)
+
+// Defines must accumulate versions. ie for 5.01 you must define BRDO_BROWSER_50_FF and BRDO_BROWSER_501_FF(To be reviewed)
+// The assumption is that anything that worked in 3.2 will work in 5.0 and 5.01.  For anything doesn't work
+// in 3.2 but works in 5.0 and above, that code should be behind the BRDO_BROWSER_50_FF flag.
+#define BRDO_BROWSER_50_FF
+
+#if __GNUC__ >= 3
+#define BRDO_ADDED_EXPORT_LOCATION(exported) MW_LAYER_DOMAIN_EXPORT_PATH(../../platform/mw/exported)
+#else
+#define BRDO_ADDED_EXPORT_LOCATION(exported) MW_LAYER_DOMAIN_EXPORT_PATH(../../platform/mw/##exported)
+#endif
+
+#define APP_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../libc)
+#define APP_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../ecom)
+#define APP_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../http)
+#define APP_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../connect)
+#define APP_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../swi)
+#define APP_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../kernel)
+#define APP_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../push)
+#define APP_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../stdapis)
+
+#define MW_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../libc)
+#define MW_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../ecom)
+#define MW_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../http)
+#define MW_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../connect)
+#define MW_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../swi)
+#define MW_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../kernel)
+#define MW_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../push)
+#define MW_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(../stdapis)
+
+// Defines Symbian HTTP stack parameters specific for symbian 9.3 (e.g. EHttpEnableOptimalPipelining, EHttpOptimalPipelining)
+//Flag need to be removed after this fix is supplied to Symbian 9.4
+#undef BRDO_HTTP_STACK_93
+/*
+* ===================
+*        S60 5.1
+* ===================
+*/ 
+#elif defined(__PLATFORM_VERSION_51__)
+
+// Defines whether SAPI Security Manager Prompt Enhancement is available
+#undef BRDO_SEC_MGR_PROMPT_ENHANCEMENT_FF
+
+#define BRDO_BROWSER_50_FF
+#define BRDO_BROWSER_51_FF
+
+#define APP_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(libc)
+#define APP_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(ecom)
+#define APP_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(http)
+#define APP_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(connect)
+#define APP_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(swi)
+#define APP_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(kernel)
+#define APP_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(push)
+#define APP_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(stdapis)
+
+#define MW_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(libc)
+#define MW_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(ecom)
+#define MW_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(http)
+#define MW_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(connect)
+#define MW_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(swi)
+#define MW_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(kernel)
+#define MW_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(push)
+#define MW_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(stdapis)
+
+// Defines Symbian HTTP stack parameters specific for symbian 9.3 (e.g. EHttpEnableOptimalPipelining, EHttpOptimalPipelining)
+//Flag need to be removed after this fix is supplied to Symbian 9.4
+#undef BRDO_HTTP_STACK_93
+/*
+* ===================
+*        S60 5.2
+* ===================
+*/ 
+#elif defined(__PLATFORM_VERSION_52__)
+
+// Defines whether SAPI Security Manager Prompt Enhancement is available
+#undef BRDO_SEC_MGR_PROMPT_ENHANCEMENT_FF
+
+#define BRDO_BROWSER_50_FF
+#define BRDO_BROWSER_51_FF
+#define BRDO_BROWSER_52_FF
+
+// BrDo MultipartParser not used from S60 5.2 onward
+// un-comment this line for week21 release
+#undef BRDO_MULTIPART_PARSER_FF
+
+// Defines Symbian HTTP stack parameters specific for symbian 9.3 (e.g. EHttpEnableOptimalPipelining, EHttpOptimalPipelining)
+//Flag need to be removed after this fix is supplied to Symbian 9.4
+#undef BRDO_HTTP_STACK_93
+
+#define APP_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(libc)
+#define APP_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(ecom)
+#define APP_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  MW_LAYER_PUBLIC_EXPORT_PATH(http)
+#define APP_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(connect)
+#define APP_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  MW_LAYER_PLATFORM_EXPORT_PATH(swi)  
+#define APP_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PLATFORM_EXPORT_PATH(kernel)  
+#define APP_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  MW_LAYER_PLATFORM_EXPORT_PATH(push)  
+
+#define APP_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(stdapis)
+
+#define MW_LAYER_LIBC_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(libc)
+#define MW_LAYER_ECOM_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(ecom)
+#define MW_LAYER_HTTP_SYSTEMINCLUDE SYSTEMINCLUDE  MW_LAYER_PUBLIC_EXPORT_PATH(http) 
+
+#define MW_LAYER_CONNECT_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(connect)
+#define MW_LAYER_SWI_SYSTEMINCLUDE SYSTEMINCLUDE  MW_LAYER_PLATFORM_EXPORT_PATH(swi)  
+#define MW_LAYER_OSKERNEL_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PLATFORM_EXPORT_PATH(kernel)  
+#define MW_LAYER_PUSH_SYSTEMINCLUDE SYSTEMINCLUDE  MW_LAYER_PLATFORM_EXPORT_PATH(push)  
+
+
+#define MW_LAYER_STDAPIS_SYSTEMINCLUDE SYSTEMINCLUDE  OS_LAYER_PUBLIC_EXPORT_PATH(stdapis)
+
+// Platform contains new Symbian Libxml implementation
+#define BRDO_SYMBIAN_LIBXML_FF
+
+#endif // PLATFORM VERSION ID's
+
+// Generic run-time definitions -- see WmlBrowserBuild.h for similar feature related definitions
+
+// Browser Update - Independent Application Delivery
+#if defined( KFeatureIdIAUpdate )
+// Defines flag for activating changes to update Browser application - from the Browser application
+#define BRDO_BROWSER_UPDATE_UI_FF FeatureManager::FeatureSupported( KFeatureIdIAUpdate )
+#else
+#define BRDO_BROWSER_UPDATE_UI_FF 0
+#endif // KFeatureIdIAUpdate
+
+
+#endif // BROWSER_PLATFORM_VARIANT_HRH

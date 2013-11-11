@@ -1,0 +1,85 @@
+/*
+* Copyright (c) 2003-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Test project definition file for project ikev2lib
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+TARGET          ikev2lib.dll
+TARGETTYPE      DLL
+UID             0x1000008d 0x10206993
+
+CAPABILITY      CAP_SERVER CommDD NetworkControl
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          ikev2plugin.cpp 
+SOURCE          ikev2negotiation.cpp 
+SOURCE          ikemsgrec.cpp 
+SOURCE          ikecrypto.cpp 
+SOURCE          ikev2retransmittimer.cpp 
+SOURCE          ikev2proposal.cpp 
+SOURCE          ikev2pfkey.cpp 
+SOURCE          ipsecproposal.cpp 
+SOURCE          ipsecselectors.cpp
+SOURCE          ikev2natt.cpp 
+SOURCE          ikev2config.cpp 
+SOURCE          ikev2eapinterface.cpp 
+SOURCE          ikev2mobike.cpp
+SOURCE		    ikev2keepalive.cpp
+SOURCE		    ikev2sa.cpp 
+SOURCE          ikev2pluginsession.cpp 
+SOURCE          ikev2sender.cpp 
+SOURCE          ikev2receiver.cpp 
+SOURCE          ikev2message.cpp
+SOURCE			ikev2identity.cpp
+SOURCE			ikev2trafficselector.cpp
+SOURCE			ikev2ipsecsarekeydata.cpp
+SOURCE          ikev2deactivationtimer.cpp
+SOURCE			ikev2ipsecsadata.cpp
+SOURCE			ikev2sadata.cpp
+SOURCE          ikev2acquire.cpp
+SOURCE          ikev2expire.cpp 
+SOURCE          ikev2messagesendqueue.cpp
+
+USERINCLUDE    ../inc
+USERINCLUDE    ../../kmdapi/inc 
+USERINCLUDE    ../../kmdserver/inc
+USERINCLUDE    ../../ikesocket/inc  
+USERINCLUDE    ../../eventmediatorapi/inc
+USERINCLUDE    ../../ikecert/inc 
+USERINCLUDE    ../../ikepolparser/inc 
+USERINCLUDE    ../../vpnmanager/inc
+USERINCLUDE    ../../utlcrypto/inc 
+USERINCLUDE    ../../pkiserviceapi/inc
+USERINCLUDE    ../../../vpnapiimpl/inc
+USERINCLUDE    ../../ikeutils/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY		ikelibs_proxy.lib
+LIBRARY     euser.lib 
+LIBRARY     ecom.lib
+LIBRARY     esock.lib 
+LIBRARY     insock.lib
+LIBRARY     ipsecpolapi.lib
+LIBRARY     utlcrypto.lib
+LIBRARY     ikecert.lib
+LIBRARY     random.lib
+LIBRARY     ikeutils.lib
+LIBRARY		ikepolparser.lib
+LIBRARY		bafl.lib 

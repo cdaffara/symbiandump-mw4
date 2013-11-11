@@ -1,0 +1,214 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+//  RESOURCE IDENTIFIER
+NAME    TMST // for Tempest
+
+#include <eikon.rh>
+#include "eikon.rsg"
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <CommonDialogs.rh>
+#include <Webkit.loc>
+
+RESOURCE RSS_SIGNATURE { }
+  
+RESOURCE TBUF { buf="OSS"; }
+
+// INCLUDES
+
+
+// ===================================================
+// File Upload Dialog
+// ===================================================
+RESOURCE MEMORYSELECTIONDIALOG r_memory_selection_dialog
+    {
+    locations =
+        {
+        LOCATION { root_path = "C:\\"; },
+        LOCATION { root_path = "E:\\"; }
+        };
+    }
+
+// ===================================================
+// File Upload Confirmations
+// ===================================================
+RESOURCE TBUF r_qtn_xhtml_query_file_missing    { buf=qtn_xhtml_query_file_missing; }
+RESOURCE TBUF r_qtn_xhtml_query_files_missing   { buf=qtn_xhtml_query_files_missing; }
+RESOURCE TBUF r_qtn_xhtml_query_file_restricted { buf=qtn_xhtml_query_file_restricted; }
+
+// ===================================================
+// Plugin API resources
+// ===================================================
+RESOURCE TBUF r_xhtml_object_select_to_download   { buf = qtn_xhtml_object_select_to_download; }
+RESOURCE TBUF r_xhtml_object_downloading      { buf = qtn_xhtml_object_downloading; }
+RESOURCE TBUF r_xhtml_object_unsupported      { buf = qtn_xhtml_object_unsupported; }
+RESOURCE TBUF r_xhtml_object_query_open_to      { buf = qtn_xhtml_object_query_open_to; }
+RESOURCE TBUF r_xhtml_object_query_open_to_on_page  { buf = qtn_xhtml_object_query_open_to_on_page; }
+RESOURCE TBUF r_xhtml_object_query_open_to_ext_viewer { buf = qtn_xhtml_object_query_open_to_ext_viewer; }
+RESOURCE TBUF r_browser_note_object_downloading   { buf = qtn_browser_note_object_downloading; }
+
+
+// ===================================================
+// WML Form controls
+// ===================================================
+RESOURCE TBUF r_kimono_form_button_submit     { buf = qtn_browser_form_submit; }
+RESOURCE TBUF r_kimono_form_button_reset      { buf = qtn_browser_form_reset; }
+RESOURCE TBUF r_kimono_form_option_select     { buf = qtn_browser_form_select; }
+RESOURCE TBUF r_kimono_softkey_back         { buf = text_softkey_back; }
+
+RESOURCE TBUF r_text_wml_list_open                  { buf = qtn_wml_list_open; }
+RESOURCE TBUF r_text_wml_list_call                  { buf = qtn_xhtml_list_call; }
+RESOURCE TBUF r_text_wml_add_to_contacts            { buf = qtn_wml_add_to_contacts; }
+RESOURCE TBUF r_text_wml_wall_use                   { buf = qtn_wall_list_browser_use; }
+RESOURCE TBUF r_text_wml_wall_close                 { buf = qtn_wall_list_browser_close; }
+RESOURCE TBUF r_text_wml_list_accept                { buf = qtn_browser_list_accept; }
+RESOURCE TBUF r_text_wml_list_open_to_viewer        { buf = qtn_browser_list_open_to_viewer; }
+RESOURCE TBUF r_text_wml_list_remove_file           { buf = qtn_browser_list_remove_file; }
+
+RESOURCE TBUF r_text_wml_dyn_label_uncheck          { buf = qtn_wml_dyn_label_uncheck; }
+RESOURCE TBUF r_text_wml_dyn_label_check            { buf = qtn_wml_dyn_label_check; }
+RESOURCE TBUF r_text_wml_dyn_label_select           { buf = qtn_wml_dyn_label_select; }
+RESOURCE TBUF r_text_wml_dyn_label_go               { buf = qtn_wml_dyn_go; }
+RESOURCE TBUF r_text_wml_dyn_label_edit             { buf = qtn_wml_dyn_label_edit; }
+RESOURCE TBUF r_text_wml_dyn_label_done             { buf = qtn_wml_dyn_label_done; }
+
+RESOURCE TBUF r_wml_options_button          { buf = qtn_text_softkey_option; }
+RESOURCE TBUF r_wml_cancel_button         { buf = qtn_text_softkey_cancel; }
+RESOURCE TBUF r_wml_ok_button           { buf = qtn_text_softkey_ok; }
+
+// ===================================================
+// BrCtl Dialog Provider 
+// ===================================================
+RESOURCE TBUF r_text_empty_title          { buf = qtn_text_empty_title; }
+RESOURCE TBUF r_text_softkey_yes          { buf = qtn_text_softkey_yes; }
+RESOURCE TBUF r_text_softkey_no           { buf = qtn_text_softkey_no; }
+RESOURCE TBUF r_text_softkey_continue       { buf = qtn_text_softkey_continue; }
+RESOURCE TBUF r_text_input_req            { buf = qtn_text_input_req; }
+RESOURCE TBUF r_text_more_input_req         { buf = qtn_text_more_input_req; }
+
+RESOURCE TBUF r_httpsec_enter_secure_site     { buf = qtn_httpsec_enter_secure_site; }
+RESOURCE TBUF r_httpsec_leave_secure_site     { buf = qtn_httpsec_leave_secure_site; }
+RESOURCE TBUF r_httpsec_some_items_not_secure   { buf = qtn_httpsec_items_not_secured; }
+RESOURCE TBUF r_httpsec_submitting_to_non_secure_page { buf = qtn_httpsec_submit_not_secure; }
+RESOURCE TBUF r_httpsec_submit_not_secure     { buf = qtn_httpsec_submit_not_secure; }
+RESOURCE TBUF r_http_repost_confirmation      { buf = qtn_http_repost_confirmation; }
+RESOURCE TBUF r_http_redirect_post_confirmation   { buf = qtn_http_redirect_post_confirmation; }
+RESOURCE TBUF r_browser_query_basic_authentication  { buf = qtn_browser_query_basic_authentication; }
+RESOURCE TBUF r_wml_auth_fail_retry_query           { buf = text_wml_auth_fail_retry_query; }
+//----------------------------------------------------
+//   
+//    r_DO_element_ ...
+//    DO element titles
+//
+//----------------------------------------------------
+//
+ RESOURCE TBUF r_DO_element_accept              { buf=text_wml_option_ok; }
+ RESOURCE TBUF r_DO_element_prev                { buf=text_wml_option_back; }
+ RESOURCE TBUF r_DO_element_help                { buf=text_wml_option_help; }
+ RESOURCE TBUF r_DO_element_reset               { buf=text_wml_option_reset; }
+ RESOURCE TBUF r_DO_element_options           { buf=text_wml_option_options; }
+ RESOURCE TBUF r_DO_element_delete              { buf=text_wml_option_erase; }
+ RESOURCE TBUF r_DO_element_unknown       { buf=text_wml_option_unknown; }
+
+// ===================================================
+// History popup heading pane aka history page title
+// ===================================================
+RESOURCE TBUF r_history_popup_heading_pane      { buf = qtn_wml_header_history; }
+
+// ===================================================
+// Form Fill Save Dialogs
+// ===================================================
+RESOURCE TBUF r_browser_form_autofill_save    { buf = qtn_browser_form_autofill_save; }
+RESOURCE TBUF r_browser_form_autofill_ask_later   { buf = qtn_browser_form_autofill_ask_later; }
+
+//----------------------------------------------------
+//  Browser fonts
+//
+//  Currently we're using fonts created both by
+//  the system and by us.
+//----------------------------------------------------
+#define KDefaultFontHeight 180
+RESOURCE ARRAY r_browser_fonts
+  {
+  items =
+    {
+    NAMED_FONT      // italic12
+      {
+      name = "Alpi12";
+      height = KDefaultFontHeight;
+      },
+    NAMED_FONT      // bold-italic12
+      {
+      name = "Albi12";
+      height = KDefaultFontHeight;
+      },
+    NAMED_FONT      // plain13
+      {
+      name = "Alp13";
+      height = KDefaultFontHeight;
+      },
+    NAMED_FONT      // italic13
+      {
+      name = "Alpi13";
+      height = KDefaultFontHeight;
+      },
+    NAMED_FONT      // bold-italic13
+      {
+      name = "Albi13";
+      height = KDefaultFontHeight;
+      },
+    NAMED_FONT      // plain17
+      {
+      name = "Alp17";
+      height = KDefaultFontHeight;
+      },
+    NAMED_FONT      // italic17
+      {
+      name = "Alpi17";
+      height = KDefaultFontHeight;
+      },
+    NAMED_FONT      // bold-italic17
+      {
+      name = "Albi17b";
+      height = KDefaultFontHeight;
+      }
+    };
+  }
+
+
+
+
+// ---------------------------------------------------------
+//   r_akntaeditor_view23_secret_editor
+//   Alpha numeric password editor control
+// ---------------------------------------------------------
+//
+RESOURCE SECRETED r_wmlbrowser_secret_editor
+    {
+
+    }
+
+//----------------------------------------------------
+//
+//  Script querys' header texts
+//
+//----------------------------------------------------
+RESOURCE TBUF r_qtn_browser_query_script_prompt { buf=qtn_browser_query_script_prompt; }
+RESOURCE TBUF r_qtn_browser_query_script_confirm { buf=qtn_browser_query_script_confirm; }
+RESOURCE TBUF r_qtn_browser_query_script_alert { buf=qtn_browser_query_script_alert; }
+RESOURCE TBUF r_qtn_browsers_browser_name_oss { buf=qtn_browsers_browser_name_oss; }
+

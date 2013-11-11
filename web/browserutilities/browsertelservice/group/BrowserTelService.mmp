@@ -1,0 +1,110 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*	  Makefile for browser telephony service dll.
+*
+*
+*/
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET		BrowserTelService.dll
+TARGETTYPE	dll
+UID		0x1000008d 0x101f4686
+
+VENDORID VID_DEFAULT
+CAPABILITY	CAP_GENERAL_DLL
+
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+
+START RESOURCE ../data/BrowserTelService.rss
+DEPENDS avkon.rsg
+HEADER
+TARGETPATH  RESOURCE_FILES_DIR
+END
+
+SOURCEPATH  ../src
+SOURCE      BrowserTelService.cpp
+SOURCE      BrowserTelServiceEtelWatcher.cpp
+SOURCE      BrowserTelServiceDlgs.cpp
+
+
+USERINCLUDE    ../inc
+USERINCLUDE    ../../inc
+
+//APP_LAYER_SYSTEMINCLUDE
+/* SF TODO: resolve APP LAYER DEPENDENCY: 
+    s60/app/contacts/contacts_sdk/phonebook_data_addedit_ui_api/inc/CPbkContactEditorDlg.h
+	s60/app/contacts/contacts_sdk/phonebook_data_management_api/inc/CPbkContactEngine.h
+	s60/app/contacts/contacts_sdk/phonebook_data_management_api/inc/CPbkContactItem.h
+	s60/app/contacts/contacts_sdk/phonebook_data_management_api/inc/CPbkFieldInfo.h
+	s60/app/contacts/contacts_sdk/phonebook_data_management_api/inc/CPbkFieldsInfo.h
+	s60/app/contacts/contacts_sdk/phonebook_data_management_api/inc/MPbkFieldData.h
+	s60/app/contacts/contacts_sdk/phonebook_data_management_api/inc/PbkFields.hrh
+	s60/app/contacts/contacts_sdk/phonebook_data_management_api/inc/PbkIconId.hrh
+	s60/app/contacts/contacts_sdk/phonebook_data_management_api/inc/TPbkContactItemField.h 
+	s60/app/contacts/contacts_sdk/phonebook_ui_utilities_api/inc/RPbkViewResourceFile.h
+	s60/app/messaging/msg_sdk/send_ui_api/inc/CMessageAddress.h
+	s60/app/messaging/msg_sdk/send_ui_api/inc/CMessageData.h
+	s60/app/messaging/msg_sdk/send_ui_api/inc/TSendingCapabilities.h
+	s60/app/messaging/msg_sdk/send_ui_api/inc/TSendingCapabilities.inl
+	s60/app/messaging/msg_sdk/send_ui_api/inc/SendUi.h
+	s60/app/messaging/msg_sdk/send_ui_api/inc/SendUiConsts.h
+	s60/app/messaging/msg_sdk/send_ui_api/inc/SenduiMtmUids.h
+*/
+MW_LAYER_SYSTEMINCLUDE
+
+
+SYSTEMINCLUDE	../../../inc
+
+LIBRARY		euser.lib 
+LIBRARY		etel.lib 
+LIBRARY		etelmm.lib 
+//LIBRARY		PbkEng.lib
+//LIBRARY		PbkView.lib
+LIBRARY		cntmodel.lib 
+LIBRARY		cone.lib
+LIBRARY		etext.lib
+LIBRARY		sendui.lib
+LIBRARY		bafl.lib
+LIBRARY		avkon.lib
+LIBRARY		commonengine.lib
+LIBRARY		apgrfx.lib
+LIBRARY		ESock.lib
+LIBRARY		ApEngine.lib
+LIBRARY		commdb.lib
+LIBRARY		efsrv.lib 
+LIBRARY     commonui.lib
+LIBRARY     featmgr.lib // feature mannger support
+LIBRARY     estor.lib  // RWriteStream, RFileBuf
+LIBRARY     Centralrepository.lib
+
+#if defined(ARMCC)
+    DEFFILE ../EABI/BROWSERTELSERVICEU_EKA2.def
+#elif defined( WINSCW )
+    DEFFILE ../BWinsCw/BROWSERTELSERVICEU_EKA2.def
+#endif
+
+MACRO __BROWSER_TEL_SERVICES_CALLUI__
+LIBRARY     ServiceHandler.lib
+LIBRARY			aiwdialdata.lib
+
+DEBUGLIBRARY    flogger.lib
+

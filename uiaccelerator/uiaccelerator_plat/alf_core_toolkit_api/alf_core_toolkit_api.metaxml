@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="dbd475fa276adcc2365cee618694e5c2" dataversion="1.0">
+  <name>ALF Core Toolkit API</name>
+  <description>Core toolkit library interface. Only applications running as ALF extensions are allowed to link into this interface directly.</description>
+  <type>c++</type>
+  <subsystem>uiacceltk</subsystem>
+  <libs>
+    <lib name="hitchcock.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

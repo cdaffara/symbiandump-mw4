@@ -1,0 +1,36 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Build information.
+*      
+*
+*/
+
+#include <platform_paths.hrh>
+//#include <data_caging_paths_strings.hrh>
+#include "../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+PRJ_EXPORTS
+../Loc/CodViewer.loc  				MW_LAYER_LOC_EXPORT_PATH(CodViewer.loc)
+../rom/CodHandler.iby				CORE_MW_LAYER_IBY_EXPORT_PATH(CodHandler.iby)
+../rom/CodHandlerResources.iby		LANGUAGE_MW_LAYER_IBY_EXPORT_PATH(CodHandlerResources.iby)
+
+#include "../codeng/group/bld.inf"
+#include "../codui/group/bld.inf"
+#include "../codrecog/group/bld.inf"
+#include "../codviewer/group/bld.inf"
+#include "../ddrecog/group/bld.inf"
+#include "../ddviewer/group/bld.inf"
+#include "../coddownload/group/bld.inf"
+#include "../roapapp/group/bld.inf"

@@ -1,0 +1,107 @@
+/*
+* Copyright (c) 1997-2001 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+
+#include "SchemeDefs.hrh"
+#include "registryinfo.rh"
+
+RESOURCE REGISTRY_INFO theInfo
+	{
+	dll_uid = SCHEME_DISPATCHER_UID;
+	interfaces = 
+		{
+		INTERFACE_INFO
+			{
+			interface_uid = SCHEME_INTERFACE_DEF;
+			implementations = 
+				{
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid = SCHEME_FILE_IMP;
+					version_no = 2;
+					display_name = "URL handler for file:// scheme";
+					default_data = "file";
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid = SCHEME_HTTP_IMP;
+					version_no = 2;
+					display_name = "URL handler for http:// scheme";
+					default_data = "http";
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid = SCHEME_HTTPS_IMP;
+					version_no = 2;
+					display_name = "URL handler for https:// scheme";
+					default_data = "https";
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid = SCHEME_RTSP_IMP;
+					version_no = 2;
+					display_name = "URL handler for rtsp:// scheme";
+					default_data = "rtsp";
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid = SCHEME_MAIL_TO_IMP;
+					version_no = 2;
+					display_name = "URL handler for mailto:// scheme";
+					default_data = "mailto";
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid = SCHEME_WTAI_IMP;
+					version_no = 2;
+					display_name = "URL handler for wtai:// scheme";
+					default_data = "wtai";
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid = SCHEME_TEL_IMP;
+					version_no = 2;
+					display_name = "URL handler for tel: scheme";
+					default_data = "tel||sip";
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid = SCHEME_CTI_IMP;
+					version_no = 2;
+					display_name = "URL handler for cti: scheme";
+					default_data = "cti";
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					implementation_uid = SCHEME_MMS_IMP;
+					version_no = 2;
+					display_name = "URL handler for mms:// scheme";
+					default_data = "mms";
+					opaque_data = "";
+					}
+				};
+			}
+		};
+	}

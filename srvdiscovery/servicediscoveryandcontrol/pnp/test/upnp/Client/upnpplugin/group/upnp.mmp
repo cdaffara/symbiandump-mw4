@@ -1,0 +1,66 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// UPnP specific dll that provides support for applications to create parameter bundles of
+// desired type for carrying out various UPnP operations like discovery,describe etc.
+// 
+//
+
+
+TARGET upnp.dll
+TARGETTYPE PLUGIN
+CAPABILITY ALL -TCB
+
+UID 0x10009D8D 0x2000D05D
+VENDORID 0x70000001
+
+SOURCEPATH ../src
+SOURCE  ecom_impl.cpp
+SOURCE  upnpparamsextfactory.cpp
+SOURCE  upnpsubconneventsfactory.cpp
+SOURCE 	cupnpsearch.cpp 
+SOURCE 	cupnpeventnotifier.cpp
+SOURCE 	cupnpdescribe.cpp 
+SOURCE	cupnpelement.cpp 
+SOURCE 	cupnpelementarray.cpp
+SOURCE	cupnpsubscribe.cpp 
+SOURCE	cupnpregisternotify.cpp 
+SOURCE  cupnppublisher.cpp 
+SOURCE  cupnpeventhandler.cpp 
+SOURCE  pnputils.cpp
+SOURCE  ccallbackargument.cpp 
+SOURCE 	cpnpservicediscovery.cpp
+SOURCE 	cpnpservicepublisher.cpp
+
+
+START RESOURCE 2000D05D.rss
+TARGET upnp.rsc
+END
+
+USERINCLUDE ../inc
+USERINCLUDE ../../../upnputils/inc
+
+SYSTEMINCLUDE /epoc32/include 
+SYSTEMINCLUDE /epoc32/include/upnp
+
+LIBRARY euser.lib 
+LIBRARY esock.lib 
+LIBRARY esocksvr.lib
+LIBRARY netmeta.lib
+LIBRARY insock.lib
+LIBRARY pnp.lib
+LIBRARY upnputils.lib
+LIBRARY inetprotutil.lib 
+LIBRARY nodemessages.lib
+
+SMPSAFE

@@ -1,0 +1,8 @@
+EXPORTS
+	_ZN18CSenServiceManager4NewLEv @ 1 NONAME
+	_ZN18CSenServiceManager5NewLCEv @ 2 NONAME
+	_ZTI22CSenServiceManagerImpl @ 3 NONAME ; #<TI>#
+	_ZTV22CSenServiceManagerImpl @ 4 NONAME ; #<VT>#
+	_ZN18CSenServiceManager4NewLER26MSenAuthenticationProvider @ 5 NONAME
+	_ZN18CSenServiceManager5NewLCER26MSenAuthenticationProvider @ 6 NONAME
+

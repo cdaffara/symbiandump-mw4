@@ -1,0 +1,44 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build information file for Active Space Operator Harvesting Plugin
+*
+*/
+
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+#ifdef BRDO_WRT_HS_FF
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+// export localization files
+../loc/wrtharvester.loc				MW_LAYER_LOC_EXPORT_PATH(wrtharvester.loc)
+../rom/wrtharvester.iby				CORE_MW_LAYER_IBY_EXPORT_PATH(wrtharvester.iby)
+../rom/wrtharvesterResources.iby	LANGUAGE_MW_LAYER_IBY_EXPORT_PATH(wrtharvesterResources.iby)
+
+PRJ_MMPFILES
+wrtharvester.mmp
+
+PRJ_TESTMMPFILES
+// None
+
+PRJ_TESTEXPORTS
+// None
+
+#endif
+
+//  End of File  
+

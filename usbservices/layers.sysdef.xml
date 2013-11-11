@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE SystemDefinition SYSTEM "sysdef_1_5_1.dtd" [
+  <!ENTITY layer_real_source_path "sf/mw/usbservices" >
+]>
+
+<SystemDefinition name="usbservices" schema="1.5.1">
+  <systemModel>
+    <layer name="mw_layer">
+      <module name="usbservices">
+        <unit unitID="lcdo.usbservices" mrp="" bldFile="&layer_real_source_path;/group" name="usbservices" />
+      </module>
+      <module name="non_sf_components">
+        <unit unitID="lcdo.usbservices.usbclasses.usbosdescriptorhandler" mrp="" bldFile="&layer_real_source_path;/usbclasses/usbosdescriptorhandler/group" filter="!sf_build" name="usbservices_usbclasses_usbosdescriptorhandler" />
+        <unit unitID="lcdo.usbservices.usbclasses.msmmplugin" mrp="" bldFile="&layer_real_source_path;/usbclasses/msmmplugin/group" filter="!sf_build" name="usbservices_usbclasses_msmmplugin" />
+        <unit unitID="lcdo.usbservices.usbclasses.usbhidclassdriver" mrp="" bldFile="&layer_real_source_path;/usbclasses/usbhidclassdriver/group" filter="!sf_build" name="usbservices_usbclasses_usbhidclassdriver" />
+      </module>
+      <module name="usbqtui">
+        <unit unitID="lcdo.usbservices.usbuis.usbsettingsapp" mrp="" bldFile="&layer_real_source_path;/usbuis/usbsettingsapp" name="usbservices_usbuis_usbsettingsapp" proFile="USBSettingsApp.pro" qmakeArgs="-r" />
+        <unit unitID="lcdo.usbservices.usbuis.usbindicatorplugin" mrp="" bldFile="&layer_real_source_path;/usbuis/usbindicatorplugin" name="usbservices_usbuis_usbindicatorplugin" proFile="usbindicatorplugin.pro" qmakeArgs="-r" />
+        <unit unitID="lcdo.usbservices.usbuis.usbuinotif" mrp="" bldFile="&layer_real_source_path;/usbuis/usbuinotif" name="usbservices_usbuis_usbuinotif" proFile="usbuinotif.pro" qmakeArgs="-r" />
+     </module>
+    </layer>
+    <layer name="api_test_layer">
+      <module name="usbservices_test">
+        <unit unitID="lcdo.usbservices_test" mrp="" bldFile="&layer_real_source_path;/tsrc/group" name="usbservices_test" />
+      </module>
+    </layer>    
+  </systemModel>
+</SystemDefinition>

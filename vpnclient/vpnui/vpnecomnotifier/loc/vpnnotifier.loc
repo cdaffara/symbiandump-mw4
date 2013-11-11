@@ -1,0 +1,223 @@
+/*
+* Copyright (c) 2002-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   This is a localisation file for pkinotifier/kmdnotifier/acunotifier.
+*
+*/
+
+// LOCALISATION STRINGS
+
+// **DATA QUERY PROMPTS
+
+//d:User name in VPN policy server user authentication
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_policy_server_username "Policy server user name:"
+
+//d:Password in VPN policy server user authentication
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_policy_server_password "Policy server password:"
+ 
+//d:Key store password creation
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_new_pki_password "New key store password:"
+
+//d:Key store password creation
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_verify_pki_password "Verify password:"
+
+//d:Key store password query
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_pki_password "Key store password:"
+
+//d:Key import password query
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_key_import_password "Key import password:"
+
+//d:User name in VPN gateway user authentication query
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_gw_username_legacy "VPN user name:"
+
+//d:Passcode in VPN gateway user authentication query
+//d:SecurID based authentication
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_gw_securid_passcode "VPN passcode:"
+
+//d:Next passcode in VPN gateway user authentication query
+//d:SecurID based authentication
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_next_passcode "Next passcode:"
+
+//d:Password in VPN gateway user authentication query
+//d:Other type of legacy authentication
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_gw_password_legacy "VPN password:"
+
+//d:User identity query presented to the user during VPN certificate enrollment (fetching)
+//d:%U is replaced during run-time with a domain name such as "company.com" or "OU=Unit, O=Company" 
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_user_identity "User identity for domain '%U':"
+
+//d:Prompting for PKCS12 policy/cert installation file password during manual policy installation
+//l:popup_query_data_window/opt5
+//
+#define qtn_vpn_prmpt_pkcs12_password "Password for PKCS#12 protected content:"
+
+
+// **CONFIRMATION QUERIES
+
+//d:Automatic policy update available
+//l:popup_note_window
+//
+#define qtn_vpn_quest_dl_policy_update "Update for the VPN policy in use is available. Update?"
+
+//d:Confirmation note text in case when user selects a VPN policy file to install
+//l:popup_note_window
+//
+#define qtn_vpn_quest_import_policy "Import VPN policy '%U'?"
+
+//d:Confirmation note text in case when user selects a VPN policy file to install, and the policy forces device lock parameter
+//l:popup_note_window
+//
+#define qtn_vpn_quest_import_policy_forcing_dev_lock "Import VPN policy ’%U’? Note: policy installation will force device lock."
+
+
+// **ERROR NOTES
+
+//d:Incorrect user name and/or password was entered
+//d:or given passcode was incorrect
+//l:popup_note_window
+//
+#define qtn_vpn_err_auth_failed "Authentication failed"
+
+//d:Incorrect characters were entered
+//l:popup_note_window
+//
+#define qtn_vpn_err_server_hash_error "Server identity code is incorrect"
+
+//d:User name was missing from VPN user identity dialog
+//l:popup_note_window
+//
+#define qtn_vpn_info_user_name_missing "User name missing"
+
+//d:The domain part was missing from a user identity in the VPN user identity dialog
+//d:User identity is of the format <username>@<domain>
+//l:popup_note_window
+//
+#define qtn_vpn_info_fqdn_missing "Domain part missing from the user identity"
+
+//d:Notification about incorrect pkcs#12 password during manual policy installation
+//l:popup_note_window
+//
+#define qtn_vpn_info_incorrect_pkcs12_password "Incorrect password"
+
+//d:Device lock error message during policy import via policy tool
+//l:popup_note_window
+//
+#define qtn_vpn_info_import_cannot_force_dev_lock "Unable to import policy. Device lock cannot be forced."
+
+
+
+// **INFORMATION NOTES
+
+//d:Information note text before server hash verification date query
+//l:popup_note_window
+//
+#define qtn_vpn_info_verify_hash "Please verify the server identity code by entering the missing characters"
+
+//d:Server certificate has expired in the policy server side
+//l:popup_note_window
+//
+#define qtn_vpn_info_server_cert_expired "Policy server logon failed. Delete and re-create the server definition."
+
+//d:Client certificate has expired
+//l:popup_note_window
+//
+#define qtn_vpn_info_client_cert_expired "Automatic policy server logon failed. Enter policy server user name and password to continue."
+
+//d:Policy update failed
+//l:popup_note_window
+//
+#define qtn_vpn_info_policy_dl_error "Policy update failed. See VPN log for details."
+
+//d:Given passwords do not match
+//l:popup_note_window
+//
+#define qtn_vpn_info_password_no_match "Passwords do not match"
+
+//d:Given passwords is less than six characters long
+//l:popup_note_window
+//
+#define qtn_vpn_info_password_too_short "Password has to be at least six characters long"
+
+//d:Given passwords is incorrect
+//l:popup_note_window
+//
+#define qtn_vpn_info_incorrect_password "Incorrect password"
+
+//d:Policy installation fails
+//l:popup_note_window
+//
+#define qtn_vpn_info_sis_definition_install_failed "Installation failed. See VPN log for details."
+
+//d:The policy in use has been deleted from server side and
+//d:the policy is deleted from the phone    
+//l:popup_note_window
+//
+#define qtn_vpn_info_policy_deleted "VPN policy in use has been deleted. Try reconfiguring the VPN access point."
+
+//d:The client/server certificate has expired or has been revoked
+//l:popup_note_window
+//
+#define qtn_vpn_info_client_or_serv_cert_expired "Policy server logon failed. See VPN log for details."
+
+//d:The PKI key store is empty and hence the key store password cannot be created or changed.
+//d:This note is shown to the user when the user chooses the "Change password" command in the UI
+//d:but the password cannot be set. Getting rid of the command in this case is not an option.
+//l:popup_note_window
+//
+#define qtn_vpn_info_cannot_set_key_store_password "Key store empty. The password cannot be set."
+
+
+// **WAIT NOTES (PROGRESS BAR NOTES)
+
+//d:Policy tool wait note, shown while policy installation is not completed
+//l:popup_note_window
+//
+#define qtn_vpn_wait_importing_policy "Importing policy"
+
+
+// **CONFIRMATION NOTES
+
+//d:Confirmation note text in case when policy install/update process completed
+//l:popup_note_window
+//
+#define qtn_vpn_conf_policy_update_complete "Policy update complete"
+
+//d:Policy installation with policy tool is complete
+//l:popup_note_window
+//
+#define qtn_vpn_conf_policy_import_complete "Policy import complete"
+
+
+// End of File

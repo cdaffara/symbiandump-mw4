@@ -1,0 +1,38 @@
+#
+# Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+# All rights reserved.
+# This component and the accompanying materials are made available
+# under the terms of "Eclipse Public License v1.0"
+# which accompanies this distribution, and is available
+# at the URL "http://www.eclipse.org/legal/epl-v10.html".
+#
+# Initial Contributors:
+# Nokia Corporation - initial contribution.
+#
+# Contributors:
+#
+# Description:
+#
+
+# ============================================================================
+# vpnclient_version_update.flm
+# This flm will update the version of vpnclient into generated version.h file.
+#
+# Version update Function Like Makefile (FLM)
+# The file destinations  relative to EPOCROOT
+# ============================================================================
+
+
+define updateversion
+$(GUARD):=1
+
+BITMAP:: $(EXTENSION_ROOT)/$(VU_TOOL)
+	$(call startrule,vpnclient_version_update,FORCESUCCESS) \
+	cd $(EXTENSION_ROOT) && $(PERL) $(VU_TOOL) \
+	$(call endrule,vpnclient_version_update)
+endef
+
+ifeq ($($(GUARD)),)
+$(eval -$(updateversion))
+endif
+

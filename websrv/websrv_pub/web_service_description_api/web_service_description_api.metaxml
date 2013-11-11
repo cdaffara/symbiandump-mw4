@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="7e9aa27ca837b119f5bca97fc3b240ea" dataversion="1.0">
+  <name>Web Service Description API</name>
+  <description>This API consists of a family of classes for describing services and service accesses, providing ways to manage information on different services and frameworks. The most important functionality provided is XML type service description.</description>
+  <type>c++</type>
+  <collection>webservices</collection>
+  <libs>
+    <lib name="SenServDesc.LIB" />
+  </libs>
+  <release category="public" sinceversion="3.0"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<hbdocument version="1.0">
+    <widget name="view" type="HbView">
+        <widget name="content" role="HbView:widget" type="HbWidget">
+            <widget name="container" type="HbWidget">
+                <widget name="startWizard" type="HbPushButton">
+                    <string name="text" value="Start wizard"/>
+                    <real name="z" value="1"/>
+                </widget>
+                <widget name="useConf" type="HbCheckBox">
+                    <string name="text" value="Use configurations"/>
+                    <real name="z" value="2"/>
+                </widget>
+                <widget name="networkMode" type="HbComboBox">
+                    <contentsmargins bottom="0un" left="5un" right="0un" top="0un"/>
+                    <container name="items" type="stringlist">
+                        <string value="Ad-hoc"/>
+                        <string value="Public"/>
+                        <string value="Invalid"/>
+                    </container>
+                </widget>
+                <widget name="securityMode" type="HbComboBox">
+                    <contentsmargins bottom="0un" left="5un" right="0un" top="0un"/>
+                    <container name="items" type="stringlist">
+                        <string value="Open"/>
+                        <string value="WEP"/>
+                        <string value="802.1x"/>
+                        <string value="WPA"/>
+                        <string value="WPA2"/>
+                        <string value="WAPI"/>
+                        <string value="Invalid"/>
+                    </container>
+                </widget>
+                <widget name="useWps" type="HbCheckBox">
+                    <string name="text" value="Wireless Protected Setup"/>
+                    <contentsmargins bottom="0un" left="5un" right="0un" top="0un"/>
+                </widget>
+                <widget name="label_1" type="HbLabel">
+                    <string name="plainText" value="Wizard status:"/>
+                </widget>
+                <widget name="labelWizardStatus" type="HbLabel">
+                    <contentsmargins bottom="0un" left="5un" right="0un" top="0un"/>
+                    <string name="plainText" value="NA"/>
+                </widget>
+                <widget name="useWpaPsk" type="HbCheckBox">
+                    <string name="text" value="WPA PSK"/>
+                    <contentsmargins bottom="0un" left="5un" right="0un" top="0un"/>
+                </widget>
+                <widget name="label" type="HbLabel">
+                    <contentsmargins bottom="0un" left="5un" right="0un" top="0un"/>
+                    <string name="plainText" value="SSID"/>
+                </widget>
+                <widget name="ssid" type="HbLineEdit">
+                    <string name="text"/>
+                    <contentsmargins bottom="0un" left="5un" right="0un" top="0un"/>
+                </widget>
+                <sizehint height="86.41791un" type="PREFERRED" width="53.73134un"/>
+                <real name="z" value="0"/>
+                <layout orientation="Vertical" type="linear">
+                    <linearitem itemname="startWizard"/>
+                    <linearitem itemname="useConf"/>
+                    <linearitem itemname="label"/>
+                    <linearitem itemname="ssid"/>
+                    <linearitem itemname="networkMode"/>
+                    <linearitem itemname="securityMode"/>
+                    <linearitem itemname="useWpaPsk"/>
+                    <linearitem itemname="useWps"/>
+                    <stretchitem stretchfactor="1"/>
+                    <linearitem itemname="label_1"/>
+                    <linearitem itemname="labelWizardStatus"/>
+                </layout>
+            </widget>
+            <layout type="anchor">
+                <anchoritem dst="container" dstEdge="LEFT" spacing="0un" src="" srcEdge="LEFT"/>
+                <anchoritem dst="container" dstEdge="TOP" spacing="-0.29851un" src="" srcEdge="TOP"/>
+            </layout>
+        </widget>
+        <string name="title" value="View"/>
+    </widget>
+    <metadata activeUIState="Common ui state" display="NHD portrait" unit="un">
+        <uistate name="Common ui state" sections="#common"/>
+    </metadata>
+</hbdocument>

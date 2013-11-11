@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="ba1c545f4b34b4bbedc56a071266f5c7" dataversion="1.0">
+  <name>ALF Extended Visual API</name>
+  <description>Domain interfaces of ALF which not to be shared in public sdk, e.g. layout compiler related classes.</description>
+  <type>c++</type>
+  <subsystem>uiacceltk</subsystem>
+  <libs>
+    <lib name="alfclient.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

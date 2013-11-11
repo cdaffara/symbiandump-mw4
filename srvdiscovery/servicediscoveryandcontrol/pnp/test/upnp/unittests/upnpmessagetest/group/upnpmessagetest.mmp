@@ -1,0 +1,55 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+
+#include <cflog.mmh>
+
+TARGET		  upnpmessagetest.exe
+TARGETTYPE	  exe
+UID			 0 0xA000930D
+
+USERINCLUDE	 	../../../../upnpmessage/inc
+USERINCLUDE	 	../inc
+SYSTEMINCLUDE		/epoc32/include
+SYSTEMINCLUDE		/epoc32/include/test
+
+SOURCEPATH	  	../src
+SOURCE		  	cupnpmessagetest.cpp
+SOURCE			cupnpresponseparsertest.cpp 
+SOURCE			cupnprequestparsertest.cpp 
+SOURCE			cupnpresponsecomposertest.cpp 
+SOURCE			cupnprequestcomposertest.cpp 
+SOURCE			ccodecdecodetest.cpp
+SOURCE			ccodecencodetest.cpp
+
+LIBRARY		 	euser.lib 
+LIBRARY			upnpmessage.lib 
+LIBRARY			inetprotutil.lib 
+LIBRARY			efsrv.lib 
+LIBRARY			charconv.lib 
+LIBRARY			bafl.lib 
+LIBRARY			http.lib
+//LIBRARY			mbufmgr.lib
+LIBRARY 	 	chunkmgr.lib
+LIBRARY			ecom.lib
+LIBRARY			upnputils.lib
+
+//For TEF
+LIBRARY			testexecuteutils.lib 
+LIBRARY			testexecutelogclient.lib
+
+
+
+
+SMPSAFE

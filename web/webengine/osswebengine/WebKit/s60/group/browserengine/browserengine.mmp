@@ -1,0 +1,146 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  WebKit
+*
+*/
+#include "../common.mmpi"
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          browserengine.dll
+TARGETTYPE      dll
+
+UID 0x1000008D  0x101F8712
+
+VENDORID  VID_DEFAULT
+CAPABILITY  CAP_GENERAL_DLL
+EPOCALLOWDLLDATA
+
+#if defined(WINSCW)
+deffile ../bwinscw/browserengine.def
+#elif defined(ARMCC)
+deffile ../eabi/browserengine.def
+#endif
+
+#include <data_caging_paths.hrh>
+
+MACRO NOKIA_MOBILE_BROWSER
+#define NOKIA_MOBILE_BROWSER
+
+SOURCEPATH      ../../webview
+SOURCE BrCtl.cpp
+
+STATICLIBRARY   WebKit.lib
+STATICLIBRARY   WebCoreDerivedSources.lib
+STATICLIBRARY   WebCorebindings.lib      
+STATICLIBRARY   WebCorecss.lib           
+STATICLIBRARY   WebCoredom.lib           
+STATICLIBRARY   WebCoreediting.lib       
+STATICLIBRARY   WebCorehistory.lib       
+STATICLIBRARY   WebCorehtml.lib          
+STATICLIBRARY   WebCoreloader.lib        
+STATICLIBRARY   WebCorepage.lib          
+STATICLIBRARY   WebCorerendering.lib     
+STATICLIBRARY   WebCorexml.lib           
+STATICLIBRARY   WebCorebridge.lib        
+STATICLIBRARY   WebCoreplatform.lib      
+STATICLIBRARY   webcore_xmlparser.lib
+
+// browser engine
+LIBRARY         WebKitUtils.lib
+LIBRARY         pagescaler.lib
+LIBRARY         MemMan.lib
+LIBRARY         JavaScriptCore.lib
+LIBRARY         BrowserCache.lib
+STATICLIBRARY   Plugins.lib
+
+// platform
+LIBRARY         BitmapTransforms.lib
+LIBRARY         ESTLIB.lib 
+LIBRARY         http.lib 
+LIBRARY         EFSRV.lib 
+LIBRARY         bafl.lib 
+LIBRARY         InetProtUtil.lib 
+LIBRARY         HttpFilterCommon.lib
+LIBRARY         ecom.lib 
+LIBRARY         CommonEngine.lib
+LIBRARY         flogger.lib
+LIBRARY         cone.lib
+LIBRARY         browserdialogsprovider.lib
+LIBRARY         avkon.lib
+LIBRARY         ConnectionManager.lib
+LIBRARY         CommonUI.LIB
+LIBRARY         fbscli.lib 
+LIBRARY         bitgdi.lib 
+LIBRARY         charconv.lib 
+LIBRARY         gdi.lib 
+LIBRARY         apparc.lib 
+LIBRARY         eikcore.lib 
+LIBRARY         eikcoctl.lib
+LIBRARY         egul.lib
+LIBRARY         fntstr.lib
+LIBRARY         ws32.lib
+LIBRARY         insock.lib
+LIBRARY         esock.lib
+LIBRARY         euser.lib 
+LIBRARY         ImageConversion.lib
+LIBRARY         edbms.lib
+LIBRARY         estor.lib
+LIBRARY         CookieManager.lib 
+LIBRARY         WebUtils.lib 
+LIBRARY         MultipartParser.lib
+LIBRARY         DownloadMgr.lib
+LIBRARY         DownloadMgrUiLib.lib
+LIBRARY         imut.lib
+LIBRARY         eikctl.lib 
+LIBRARY         form.lib 
+LIBRARY         etext.lib 
+LIBRARY         fepbase.lib 
+LIBRARY         sysutil.lib 
+LIBRARY         apgrfx.lib
+LIBRARY         apmime.lib
+LIBRARY         SysLangUtil.lib
+LIBRARY         centralrepository.lib
+LIBRARY         CenRepNotifHandler.lib
+LIBRARY         featmgr.lib
+LIBRARY         caf.lib
+#ifdef __USE_CCC_AUTO_FORM_FILL_POPUP
+LIBRARY         broaffpopup.lib
+#endif
+LIBRARY         AknSkins.lib 
+LIBRARY         aknicon.lib
+
+LIBRARY         ServiceHandler.lib
+//LIBRARY         PbkView.lib             
+//LIBRARY         PbkEng.lib              
+LIBRARY         sendui.lib              
+LIBRARY         aknpictograph.lib
+LIBRARY         pbe.lib
+LIBRARY         crypto.lib
+LIBRARY         libpthread.lib
+LIBRARY         WidgetRegistryClient.lib
+
+#ifdef BRDO_TOUCH_ENABLED_FF 
+LIBRARY         touchfeedback.lib
+#endif // BRDO_TOUCH_ENABLED_FF 
+
+#ifdef BRDO_USE_GESTURE_HELPER    
+LIBRARY         rt_gesturehelper.lib
+#endif // BRDO_USE_GESTURE_HELPER    
+#if defined(GCCE)
+STATICLIBRARY edllstub.lib
+#endif
+
+#ifdef __GCCE__
+STATICLIBRARY edllstub.lib
+#endif

@@ -1,0 +1,53 @@
+/*
+* Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project ikeutils
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET          ikeutils.dll
+TARGETTYPE      dll
+
+UID             0x1000008d 0x2001E609
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          ikesendqueueitem.cpp
+SOURCE          internaladdress.cpp
+SOURCE          ipsecpolicyutil.cpp
+SOURCE          ipsecsadata.cpp
+SOURCE          ipsecsalifetime.cpp
+SOURCE          ipsecsalist.cpp
+SOURCE          ipsecsaspiretriever.cpp
+SOURCE          pfkeyextdatautil.cpp
+SOURCE          pfkeymsg.cpp
+SOURCE          pfkeysocketif.cpp
+SOURCE          vpnaddrinfo.cpp
+
+USERINCLUDE     .
+USERINCLUDE     ../inc
+USERINCLUDE     ../../kmdserver/inc
+USERINCLUDE     ../../vpnmanager/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         esock.lib
+LIBRARY         euser.lib
+LIBRARY         insock.lib
+LIBRARY         ipsecpolapi.lib
+LIBRARY         lib_pfkey.lib
+LIBRARY         random.lib
+
+CAPABILITY ALL -Tcb

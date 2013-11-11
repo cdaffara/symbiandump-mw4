@@ -1,0 +1,135 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   File that exports the files belonging to 
+:                ALF Core Toolkit API
+*
+*/
+
+
+
+// The new Symbian Build System (SBS, Raptor) gives warnings from ##
+// concatenation. Use __GNUC__ >= 3 to check the SBS version!
+#ifndef __SERIES60_30__
+#include <platform_paths.hrh>
+#if __GNUC__ >= 3
+#define CORETOOLKIT_EXPORT_FOLDER(P) ../P
+#else
+#define CORETOOLKIT_EXPORT_FOLDER(P) ../##P
+#endif
+#else
+#if __GNUC__ >= 3
+#define MW_LAYER_PLATFORM_EXPORT_PATH(S) /epoc32/include/oem/S
+#define CORETOOLKIT_EXPORT_FOLDER(P) ../alf_core_toolkit_api/P
+#else
+#define MW_LAYER_PLATFORM_EXPORT_PATH(S) /epoc32/include/oem/##S
+#define CORETOOLKIT_EXPORT_FOLDER(P) ../alf_core_toolkit_api/##P
+#endif
+#endif
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTextureIf.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTextureIf.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiAnimatedTexture.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiAnimatedTexture.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiMappingFunctions.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiMappingFunctions.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTimedPoint.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTimedPoint.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiBorderBrush.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiBorderBrush.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTextureProcessor.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTextureProcessor.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiImageBrush.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiImageBrush.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiMaterial.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiMaterial.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiDisplay.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiDisplay.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTexture.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTexture.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiImage.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiImage.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiGc.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiGc.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiPanic.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiPanic.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiBrushArray.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiBrushArray.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huitk.hrh)     MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huitk.hrh)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiMesh.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiMesh.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huiframebrush.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huiframebrush.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huiproceduralmesh.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huiproceduralmesh.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiAnchorLayout.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiAnchorLayout.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiImageLoaderUtil.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiImageLoaderUtil.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huieventhandler.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huieventhandler.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huigifanimationtexture.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huigifanimationtexture.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huiskinanimationtexture.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huiskinanimationtexture.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiEnv.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiEnv.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiDropShadowBrush.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiDropShadowBrush.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiDisplayCoeControl.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiDisplayCoeControl.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiVisuals.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiVisuals.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiUtil.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiUtil.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huifixmath.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huifixmath.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTextVisual.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTextVisual.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTextStyleManager.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huitextstylemanager.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiControl.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiControl.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiLayout.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiLayout.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/hitchcock.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/hitchcock.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiFont.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiFont.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiBrushes.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiBrushes.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTextStyle.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huitextstyle.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huiviewportlayout.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huiviewportlayout.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huimetric.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huimetric.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTextureHandle.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTextureHandle.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiDeckLayout.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiDeckLayout.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiGradientBrush.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiGradientBrush.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiStatic.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiStatic.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiCurvePath.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiCurvePath.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiMeshVisual.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiMeshVisual.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiGridLayout.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiGridLayout.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiSegmentedTexture.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiSegmentedTexture.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiDrawing.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiDrawing.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiRealSize.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiRealSize.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTextureManager.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTextureManager.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiRealPoint.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiRealPoint.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiShadowedTexture.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiShadowedTexture.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huim3gmesh.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huim3gmesh.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiRoster.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiRoster.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huifontspecification.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huifontspecification.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiShadowBorderBrush.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiShadowBorderBrush.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiInteractionInterval.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiInteractionInterval.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiImageVisual.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiImageVisual.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTextMesh.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTextMesh.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiVisual.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiVisual.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiSessionObject.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiSessionObject.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTransformation.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTransformation.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTimedValue.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTimedValue.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiTimeObserver.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiTimeObserver.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiBrush.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiBrush.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiOwnedPointer.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiOwnedPointer.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiLayouts.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiLayouts.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiRealRect.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiRealRect.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiScheduler.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiScheduler.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiEvent.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiEvent.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiControlGroup.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiControlGroup.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiObserverArray.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiObserverArray.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiRenderer.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiRenderer.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiS60Skin.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiS60Skin.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiPlatform.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiPlatform.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huifontmanager.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huifontmanager.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huitk.rh)     MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huitk.rh)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiSkin.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiSkin.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiFlowLayout.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiFlowLayout.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiSoftKeyControl.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiSoftKeyControl.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiCurvePathLayout.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiCurvePathLayout.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiCommand.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiCommand.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiLineVisual.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiLineVisual.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiBitmapProvider.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiBitmapProvider.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiThemeManager.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiThemeManager.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huidisplaybackgrounditem.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huidisplaybackgrounditem.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huitextureautosizeparams.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huitextureautosizeparams.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huidropshadow.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huidropshadow.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiCanvasVisual.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiCanvasVisual.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/HuiCanvasCmdBufferReader.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/HuiCanvasCmdBufferReader.h)
+CORETOOLKIT_EXPORT_FOLDER(inc/uiacceltk/huilowmemoryobserver.h)    MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/huilowmemoryobserver.h)

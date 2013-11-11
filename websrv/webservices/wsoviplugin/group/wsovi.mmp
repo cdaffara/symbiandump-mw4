@@ -1,0 +1,123 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for wsovi    
+*
+*/
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+TARGETTYPE      PLUGIN
+
+TARGET          wsovi.dll
+UID             0x10009D8D 0x101F9759
+
+#if !defined ( VID_DEFAULT ) 
+    VENDORID 0x101FB657
+#else
+    VENDORID VID_DEFAULT
+#endif 
+  
+#if !defined ( CAP_ECOM_PLUGIN )
+    CAPABILITY ALL -TCB
+#else
+    CAPABILITY CAP_ECOM_PLUGIN
+#endif
+
+
+SOURCEPATH      ../src
+SOURCE          wsovihandlercontext.cpp
+SOURCE          wsovimessagecontext.cpp
+SOURCE          wsoviplugin.cpp
+SOURCE          wsoviproxy.cpp
+SOURCE          wsoviregisterhandler.cpp
+SOURCE          wsoviservicesession.cpp
+SOURCE          wsovisessionconsumer.cpp
+SOURCE          wsovisessioncontext.cpp
+SOURCE          wsovioauthclient.cpp
+SOURCE          wsovivalidatehandler.cpp
+SOURCE          wsovidevicehandler.cpp
+SOURCE          wsovisecurityhandler.cpp
+SOURCE          wsovicredentialcollectorhandler.cpp
+SOURCE          wsoviencoderhandler.cpp
+SOURCE          wsovitokencreationresponse.cpp
+SOURCE          wsovicredentialobserver.cpp
+SOURCE          wsoviutils.cpp
+SOURCE          wsoviserviceupdatehandler.cpp
+SOURCE 			wsovierrorresponse.cpp
+
+
+SOURCEPATH      ../data
+START RESOURCE    101F9759.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET wsovi.rsc
+#endif 
+END
+
+MW_LAYER_SYSTEMINCLUDE
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wscore/inc  // SenServiceManagerDefines.h  - IPC enumerations
+USERINCLUDE     ../../wsfragment/inc
+USERINCLUDE     ../../wsframework/inc
+USERINCLUDE     ../../wsmessages/inc
+USERINCLUDE     ../../wsidentitymanager/inc
+USERINCLUDE     ../../wscredentialmanager/inc
+USERINCLUDE     ../../wsdescription/inc
+USERINCLUDE     ../../wsutils/inc
+USERINCLUDE     ../../wslogger/inc
+
+
+// System libs
+LIBRARY bafl.lib
+LIBRARY charconv.lib
+LIBRARY ecom.lib
+LIBRARY efsrv.lib       //for saving dictionaries
+LIBRARY euser.lib 
+LIBRARY estor.lib 
+LIBRARY ezlib.lib
+LIBRARY flogger.lib
+LIBRARY sysutil.lib
+LIBRARY imut.lib 
+LIBRARY inetprotutil.lib
+LIBRARY hash.lib
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// SOA for S60 libraries
+LIBRARY SenLogger.lib // for TLS based logging
+LIBRARY SenFragment.lib
+LIBRARY SenMessages.lib
+LIBRARY SenXml.lib
+LIBRARY SenUtils.lib
+LIBRARY SenServDesc.lib
+LIBRARY SenServMgr.lib
+LIBRARY SenServConn.lib
+LIBRARY SenFramework.lib
+LIBRARY SenCredentialManager.lib
+#else
+LIBRARY wsLogger.lib // for TLS based logging
+LIBRARY wsFragment.lib
+LIBRARY wsMessages.lib
+LIBRARY wsXml.lib
+LIBRARY wsUtils.lib
+LIBRARY wsServDesc.lib
+LIBRARY wsServMgr.lib
+LIBRARY wsServConn.lib
+LIBRARY wsFramework.lib
+LIBRARY wsCredentialManager.lib
+#endif
+

@@ -1,0 +1,29 @@
+EXPORTS
+	??0RFastAllocator@@QAE@PAVCFastMemoryPool@@@Z @ 1 NONAME ; RFastAllocator::RFastAllocator(class CFastMemoryPool *)
+	??1RFastAllocator@@QAE@XZ @ 2 NONAME ; RFastAllocator::~RFastAllocator(void)
+	?AddCollector@MemoryManager@@SAXPAVMMemoryCollector@@@Z @ 3 NONAME ; void MemoryManager::AddCollector(class MMemoryCollector *)
+	?AddStopper@MemoryManager@@SAXPAVMOOMStopper@@@Z @ 4 NONAME ; void MemoryManager::AddStopper(class MOOMStopper *)
+	?Alloc@RFastAllocator@@UAEPAXH@Z @ 5 NONAME ; void * RFastAllocator::Alloc(int)
+	?AllocLen@RFastAllocator@@UBEHPBX@Z @ 6 NONAME ; int RFastAllocator::AllocLen(void const *) const
+	?AllocSize@RFastAllocator@@UBEHAAH@Z @ 7 NONAME ; int RFastAllocator::AllocSize(int &) const
+	?Available@RFastAllocator@@UBEHAAH@Z @ 8 NONAME ; int RFastAllocator::Available(int &) const
+	?CloseFastAllocator@MemoryManager@@SAXPAVRAllocator@@@Z @ 9 NONAME ; void MemoryManager::CloseFastAllocator(class RAllocator *)
+	?Compress@RFastAllocator@@UAEHXZ @ 10 NONAME ; int RFastAllocator::Compress(void)
+	?DebugFunction@RFastAllocator@@UAEHHPAX0@Z @ 11 NONAME ; int RFastAllocator::DebugFunction(int, void *, void *)
+	?Extension_@RFastAllocator@@UAEHIAAPAXPAX@Z @ 12 NONAME ; int RFastAllocator::Extension_(unsigned int, void * &, void *)
+	?Free@RFastAllocator@@UAEXPAX@Z @ 13 NONAME ; void RFastAllocator::Free(void *)
+	?FreeRam@MemoryManager@@SAXXZ @ 14 NONAME ; void MemoryManager::FreeRam(void)
+	?MemorySize@MemoryManager@@SAIPAX@Z @ 15 NONAME ; unsigned int MemoryManager::MemorySize(void *)
+	?PostCheck@MemoryManager@@SAIXZ @ 16 NONAME ; unsigned int MemoryManager::PostCheck(void)
+	?PreCheck@MemoryManager@@SAHIIABVTDesC8@@@Z @ 17 NONAME ; int MemoryManager::PreCheck(unsigned int, unsigned int, class TDesC8 const &)
+	?ReAlloc@RFastAllocator@@UAEPAXPAXHH@Z @ 18 NONAME ; void * RFastAllocator::ReAlloc(void *, int, int)
+	?RemoveCollector@MemoryManager@@SAXPAVMMemoryCollector@@@Z @ 19 NONAME ; void MemoryManager::RemoveCollector(class MMemoryCollector *)
+	?RemoveStopper@MemoryManager@@SAXPAVMOOMStopper@@@Z @ 20 NONAME ; void MemoryManager::RemoveStopper(class MOOMStopper *)
+	?Reset@RFastAllocator@@UAEXXZ @ 21 NONAME ; void RFastAllocator::Reset(void)
+	?RestoreCollectors@MemoryManager@@SAXXZ @ 22 NONAME ; void MemoryManager::RestoreCollectors(void)
+	?SetNotifier@MemoryManager@@SAXPAVMOOMNotifier@@@Z @ 23 NONAME ; void MemoryManager::SetNotifier(class MOOMNotifier *)
+	?SetRescueBufferSize@MemoryManager@@SAXH@Z @ 24 NONAME ; void MemoryManager::SetRescueBufferSize(int)
+	?SetStatus@MemoryManager@@SAXW4TOOMCheckResult@@@Z @ 25 NONAME ; void MemoryManager::SetStatus(enum TOOMCheckResult)
+	?Status@MemoryManager@@SAIXZ @ 26 NONAME ; unsigned int MemoryManager::Status(void)
+	?SwitchToFastAllocator@MemoryManager@@SAPAVRAllocator@@XZ @ 27 NONAME ; class RAllocator * MemoryManager::SwitchToFastAllocator(void)
+

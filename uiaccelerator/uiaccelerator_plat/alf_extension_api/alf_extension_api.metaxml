@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="ada4aeefe474b524d9f85b25048f3fb3" dataversion="1.0">
+  <name>ALF Extension API</name>
+  <description>Plugin interface for ALF extensions running inside alfred server. Only the components running inside server are allowed to access Core Toolkit Interface</description>
+  <type>c++</type>
+  <subsystem>uiacceltk</subsystem>
+  <libs>
+    <lib name="alfappservercore.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

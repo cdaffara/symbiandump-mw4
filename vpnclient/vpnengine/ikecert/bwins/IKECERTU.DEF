@@ -1,0 +1,40 @@
+EXPORTS
+	?Ikev2SignatureL@CIkeV2PkiService@@QAEHABVTDesC8@@ABUTOwnCertInfo@@0AAVTDes8@@E@Z @ 1 NONAME ; int CIkeV2PkiService::Ikev2SignatureL(class TDesC8 const &, struct TOwnCertInfo const &, class TDesC8 const &, class TDes8 &, unsigned char)
+	?VerifyIkev2SignatureL@IkePkiUtils@@SAHABVTDesC8@@0ABVCX509Certificate@@@Z @ 2 NONAME ; int IkePkiUtils::VerifyIkev2SignatureL(class TDesC8 const &, class TDesC8 const &, class CX509Certificate const &)
+	?CaList@CIkeV2PkiService@@QBEABVCIkeCaList@@XZ @ 3 NONAME ; class CIkeCaList const & CIkeV2PkiService::CaList(void) const
+	?NewL@CIkeV1PkiService@@SAPAV1@PAVCIkeData@@AAVMIkeDebug@@@Z @ 4 NONAME ; class CIkeV1PkiService * CIkeV1PkiService::NewL(class CIkeData *, class MIkeDebug &)
+	?NewL@CIkeCaElem@@SAPAV1@PAVHBufC8@@@Z @ 5 NONAME ; class CIkeCaElem * CIkeCaElem::NewL(class HBufC8 *)
+	??1CIkeV2PkiService@@UAE@XZ @ 6 NONAME ; CIkeV2PkiService::~CIkeV2PkiService(void)
+	?KeyHash@CIkeCaElem@@QBEABVTDesC8@@XZ @ 7 NONAME ; class TDesC8 const & CIkeCaElem::KeyHash(void) const
+	?Ikev1SignatureL@CIkeV1PkiService@@QAEHABVTDesC8@@PAVCIkeData@@0AAVTDes8@@@Z @ 8 NONAME ; int CIkeV1PkiService::Ikev1SignatureL(class TDesC8 const &, class CIkeData *, class TDesC8 const &, class TDes8 &)
+	?GetTrustedCA@CIkeV1PkiService@@QAEPAVHBufC8@@XZ @ 9 NONAME ; class HBufC8 * CIkeV1PkiService::GetTrustedCA(void)
+	?GetTrustedICA2@CIkeV1PkiService@@QAEPAVHBufC8@@XZ @ 10 NONAME ; class HBufC8 * CIkeV1PkiService::GetTrustedICA2(void)
+	?ReadChainL@CIkeV1PkiService@@QAEHPAVCIkeData@@PBVHBufC8@@@Z @ 11 NONAME ; int CIkeV1PkiService::ReadChainL(class CIkeData *, class HBufC8 const *)
+	?I1CertificateData@CIkeV2PkiService@@QBEABVTDesC8@@XZ @ 12 NONAME ; class TDesC8 const & CIkeV2PkiService::I1CertificateData(void) const
+	??0CIkeCaList@@QAE@H@Z @ 13 NONAME ; CIkeCaList::CIkeCaList(int)
+	??1CIkeV1PkiService@@UAE@XZ @ 14 NONAME ; CIkeV1PkiService::~CIkeV1PkiService(void)
+	?NewL@CIkeV2PkiService@@SAPAV1@AAVMIkeV2PkiServiceObserver@@AAVMIkeDebug@@@Z @ 15 NONAME ; class CIkeV2PkiService * CIkeV2PkiService::NewL(class MIkeV2PkiServiceObserver &, class MIkeDebug &)
+	?GetCertificateFieldDERL@IkeCert@@SAPAVHBufC8@@PBVCX509Certificate@@H@Z @ 16 NONAME ; class HBufC8 * IkeCert::GetCertificateFieldDERL(class CX509Certificate const *, int)
+	?UserCertificateData@CIkeV2PkiService@@QBEABVTDesC8@@XZ @ 17 NONAME ; class TDesC8 const & CIkeV2PkiService::UserCertificateData(void) const
+	?GetCertificate@CIkeV1PkiService@@QAEPAVHBufC8@@XZ @ 18 NONAME ; class HBufC8 * CIkeV1PkiService::GetCertificate(void)
+	?VerifyCertChainL@IkePkiUtils@@SAPAVCX509Certificate@@ABV?$CArrayFixFlat@PAVCX509Certificate@@@@AAPAV2@ABVCIkeCaList@@@Z @ 19 NONAME ; class CX509Certificate * IkePkiUtils::VerifyCertChainL(class CArrayFixFlat<class CX509Certificate *> const &, class CX509Certificate * &, class CIkeCaList const &)
+	?InitIkeV2PkiService@CIkeV2PkiService@@QAEXPBVCIkeData@@@Z @ 20 NONAME ; void CIkeV2PkiService::InitIkeV2PkiService(class CIkeData const *)
+	?Certificate@CIkeCaElem@@QBEPAVCX509Certificate@@XZ @ 21 NONAME ; class CX509Certificate * CIkeCaElem::Certificate(void) const
+	?CaList@CIkeV1PkiService@@QAEPAVCIkeCaList@@XZ @ 22 NONAME ; class CIkeCaList * CIkeV1PkiService::CaList(void)
+	?VerifyIkev1SignatureL@IkePkiUtils@@SAHABVTDesC8@@0ABVCX509Certificate@@@Z @ 23 NONAME ; int IkePkiUtils::VerifyIkev1SignatureL(class TDesC8 const &, class TDesC8 const &, class CX509Certificate const &)
+	?CertifyIdentityL@IkePkiUtils@@SAHPBVCX509Certificate@@AAVTDesC8@@H@Z @ 24 NONAME ; int IkePkiUtils::CertifyIdentityL(class CX509Certificate const *, class TDesC8 &, int)
+	?I2CertificateData@CIkeV2PkiService@@QBEABVTDesC8@@XZ @ 25 NONAME ; class TDesC8 const & CIkeV2PkiService::I2CertificateData(void) const
+	?ImportCACertsL@CIkeV1PkiService@@QAEHPAV?$CArrayFixFlat@PAUTCertInfo@@@@@Z @ 26 NONAME ; int CIkeV1PkiService::ImportCACertsL(class CArrayFixFlat<struct TCertInfo *> *)
+	?VerifyCertificateL@IkePkiUtils@@SAPAVCX509Certificate@@ABV?$CArrayFixFlat@PB$$CBVTCertificateISAKMP@@@@ABVCIkeCaList@@@Z @ 27 NONAME ; class CX509Certificate * IkePkiUtils::VerifyCertificateL(class CArrayFixFlat<class TCertificateISAKMP const *> const &, class CIkeCaList const &)
+	?GetCertificateFieldDERL@IkeCert@@SAPAVHBufC8@@PAV2@H@Z @ 28 NONAME ; class HBufC8 * IkeCert::GetCertificateFieldDERL(class HBufC8 *, int)
+	?ReadTrustedUserCertificateL@CIkeV2PkiService@@AAEXXZ @ 29 NONAME ; void CIkeV2PkiService::ReadTrustedUserCertificateL(void)
+	?GetTrustedICA1@CIkeV1PkiService@@QAEPAVHBufC8@@XZ @ 30 NONAME ; class HBufC8 * CIkeV1PkiService::GetTrustedICA1(void)
+	?GetCertSubjectNameDERL@IkePkiUtils@@SAHPBVCX509Certificate@@AAVTDes8@@@Z @ 31 NONAME ; int IkePkiUtils::GetCertSubjectNameDERL(class CX509Certificate const *, class TDes8 &)
+	?TrustedCaName@CIkeV2PkiService@@QBEABVTDesC8@@XZ @ 32 NONAME ; class TDesC8 const & CIkeV2PkiService::TrustedCaName(void) const
+	?GetSubjectAltNameDataL@IkeCert@@SAPAVHBufC8@@PBVCX509Certificate@@E@Z @ 33 NONAME ; class HBufC8 * IkeCert::GetSubjectAltNameDataL(class CX509Certificate const *, unsigned char)
+	?ReadUserCertWithNameL@CIkeV1PkiService@@QAEHABVTDesC8@@PAVCIkeData@@H@Z @ 34 NONAME ; int CIkeV1PkiService::ReadUserCertWithNameL(class TDesC8 const &, class CIkeData *, int)
+	??1CIkeCaElem@@UAE@XZ @ 35 NONAME ; CIkeCaElem::~CIkeCaElem(void)
+	?CastCertArray@IkePkiUtils@@CAPBV?$CArrayFixFlat@PAVTCertPayloadIkev2@@@@PBV?$CArrayFixFlat@PB$$CBVTCertificateISAKMP@@@@@Z @ 36 NONAME ; class CArrayFixFlat<class TCertPayloadIkev2 *> const * IkePkiUtils::CastCertArray(class CArrayFixFlat<class TCertificateISAKMP const *> const *)
+	?VerifyCertificateL@IkePkiUtils@@SAPAVCX509Certificate@@ABV?$CArrayFixFlat@PAVTCertPayloadIkev2@@@@ABVCIkeCaList@@@Z @ 37 NONAME ; class CX509Certificate * IkePkiUtils::VerifyCertificateL(class CArrayFixFlat<class TCertPayloadIkev2 *> const &, class CIkeCaList const &)
+	?GetIdentityFromCertL@IkePkiUtils@@SAPAVHBufC8@@EABVTDesC8@@@Z @ 38 NONAME ; class HBufC8 * IkePkiUtils::GetIdentityFromCertL(unsigned char, class TDesC8 const &)
+

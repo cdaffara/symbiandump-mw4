@@ -1,0 +1,70 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+
+
+TARGET		  upnpdescription.dll
+TARGETTYPE	  dll
+UID			 0x00000000 0x2000D058
+
+START STRINGTABLE ../StringDictionary/upnpdescriptionschema.st
+EXPORTPATH	/epoc32/include/upnp 
+END
+
+CAPABILITY       All -TCB
+
+USERINCLUDE	 ../inc
+
+SYSTEMINCLUDE   /epoc32/include
+SYSTEMINCLUDE   /epoc32/include/upnp
+
+
+sourcepath ../src
+
+SOURCE		cpnpserviceparam.cpp 
+SOURCE		cpnpdeviceparam.cpp 
+SOURCE 		cattribute.cpp
+SOURCE 		cupnpproperty.cpp 
+SOURCE 		tattributeiter.cpp
+SOURCE		cstringpoolmanager.cpp
+SOURCE		parsehandlerbase.cpp
+SOURCE		deviceiconparser.cpp
+SOURCE		deviceinfoparser.cpp
+SOURCE		specversionparser.cpp
+SOURCE		serviceinfoparser.cpp 
+SOURCE 		cactionparser.cpp 
+SOURCE 		cargumentparser.cpp 
+SOURCE 		cstatetableparser.cpp 
+SOURCE 		rootserviceparser.cpp
+SOURCE 		rootdeviceparser.cpp 
+SOURCE 		cupnpservicecomposer.cpp
+SOURCE 		cupnpdevicecomposer.cpp
+SOURCE		cupnpdescriptionparser.cpp 
+SOURCE 		cupnpdescriptioncomposer.cpp 
+
+LIBRARY		euser.lib 
+LIBRARY		efsrv.lib 
+LIBRARY		bafl.lib 
+LIBRARY		inetprotutil.lib 
+LIBRARY		xmlframework.lib
+LIBRARY		upnputils.lib
+
+
+
+
+
+
+
+
+SMPSAFE

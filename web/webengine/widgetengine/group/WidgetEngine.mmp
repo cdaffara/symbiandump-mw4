@@ -1,0 +1,146 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+TARGET          widgetengine.dll
+TARGETTYPE      dll
+UID 0x10000079  0x10281111
+
+#include <bldvariant.hrh>
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+MW_LAYER_SYSTEMINCLUDE
+USERINCLUDE ../../osswebengine/WebKit/s60/webview
+USERINCLUDE ../../osswebengine/WebKit/s60/plugins
+USERINCLUDE ../../osswebengine/WebKit/s60/webcoresupport
+USERINCLUDE ../../osswebengine/WebKit/s60/formcontrols
+USERINCLUDE ../../osswebengine/WebKit/s60/misc
+USERINCLUDE ../../osswebengine/cache/inc
+
+USERINCLUDE ../../osswebengine/WebCore
+
+SYSTEMINCLUDE ../../osswebengine/DerivedSources/JavaScriptCore
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/kjs
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/pcre
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/bindings
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/bindings/c
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/wtf
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/wtf/unicode
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/wtf/unicode/symbian
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/wtf/symbian
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/icu
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/ForwardingHeaders
+SYSTEMINCLUDE ../../../../../
+
+SYSTEMINCLUDE ../../osswebengine/WebCore/platform/symbian/Libxml2
+SYSTEMINCLUDE ../../osswebengine/WebCore/platform/symbian
+SYSTEMINCLUDE ../../osswebengine/WebCore/platform
+SYSTEMINCLUDE ../../osswebengine/WebCore/platform/network
+SYSTEMINCLUDE ../../osswebengine/WebCore/platform/network/symbian
+SYSTEMINCLUDE ../../osswebengine/WebCore/platform/graphics
+SYSTEMINCLUDE ../../osswebengine/WebCore/history
+SYSTEMINCLUDE ../../osswebengine/WebCore/icu
+SYSTEMINCLUDE ../../osswebengine/WebCore/bindings/js
+
+SYSTEMINCLUDE ../../pagescaler/inc
+SYSTEMINCLUDE ../inc
+SYSTEMINCLUDE ../../webkitutils/ToolBar
+SYSTEMINCLUDE ../../webkitutils/HistoryProvider
+
+MW_LAYER_ECOM_SYSTEMINCLUDE
+MW_LAYER_HTTP_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+MW_LAYER_SWI_SYSTEMINCLUDE
+#if defined(BRDO_BROWSER_50_FF)
+MW_LAYER_STDAPIS_SYSTEMINCLUDE
+#endif
+SYSTEMINCLUDE /epoc32/include/swi
+
+MACRO __S60__
+MACRO arm
+MACRO ASSERT_DISABLED
+
+OPTION ARMCC --diag_suppress 1134,111,1293,550,830,177
+OPTION CW -warn noempty,nounused,nounwanted,nopedantic
+
+VENDORID  VID_DEFAULT
+CAPABILITY  CAP_GENERAL_DLL
+EPOCALLOWDLLDATA
+
+#if defined(WINSCW)
+deffile ../BWINSCW/WidgetEngine.def
+#elif defined(ARMCC)
+deffile ../EABI/WidgetEngine.def
+#endif
+
+MACRO NOKIA_CHANGES
+MACRO __CPLUSPLUS
+
+
+USERINCLUDE     ../inc
+SOURCEPATH      ../src
+
+
+SOURCE      Widget.cpp
+SOURCE      WidgetFuncs.cpp
+SOURCE      WidgetEventHandler.cpp
+SOURCE		Menu.cpp
+SOURCE      MenuFuncs.cpp
+SOURCE		MenuItem.cpp
+SOURCE      MenuItemFuncs.cpp
+SOURCE      Wrt.cpp
+SOURCE      WrtPlatform.cpp
+
+SOURCE      Preferences.cpp
+SOURCE      Renderer.cpp
+
+SOURCE      WidgetClient.cpp
+SOURCE      MenuClient.cpp
+SOURCE      MenuItemClient.cpp
+SOURCE      WidgetEngineBridge.cpp
+
+START RESOURCE ../src/WidgetMenu.rss
+DEPENDS avkon.rsg
+HEADER
+TARGETPATH RESOURCE_FILES_DIR
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END
+
+LIBRARY         apgrfx.lib
+LIBRARY         avkon.lib
+LIBRARY         bitgdi.lib
+LIBRARY         cone.lib
+LIBRARY         eikcoctl.lib
+LIBRARY         eikcore.lib
+LIBRARY         efsrv.lib
+LIBRARY         estlib.lib
+LIBRARY         estor.lib
+LIBRARY         euser.lib
+LIBRARY         fbscli.lib
+LIBRARY         JavaScriptCore.lib
+LIBRARY         ContentListingFramework.lib
+LIBRARY         sisregistryclient.lib
+LIBRARY         sysutil.lib
+LIBRARY			etel.lib
+LIBRARY			etelmm.lib
+LIBRARY		  WebUtils.lib

@@ -1,0 +1,508 @@
+/*
+* Copyright (c) 2006, 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Resource definitions for project Image Print UI
+*
+*/
+
+
+NAME IMPR
+
+#include <eikon.rh>	
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.hrh>
+#include <avkon.mbg>
+#include <avkon.loc>
+#include <AvkonIcons.hrh>
+#include <appinfo.rh>
+#include <data_caging_paths_strings.hrh>
+#include <badef.rh>
+
+#include "imageprintui.hrh"
+#include <imageprintui.loc> // Localisation file
+
+
+RESOURCE BA_RSS_SIGNATURE { signature = 1; }
+RESOURCE TBUF { buf="IMAGEPRINTAPP"; }
+
+// ---------------------------------------------------------------------------
+// eik_app_info, standard resource for symbian application
+// This is empty when using avkon's view architecture
+// ---------------------------------------------------------------------------
+//
+
+RESOURCE EIK_APP_INFO
+    {
+    }
+
+// ---------------------------------------------------------------------------
+// r_empty_view
+// Empty view resource, shown when the application starts
+// ---------------------------------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_empty_view
+    {
+    menubar = R_AVKON_MENUPANE_EMPTY;
+    cba = R_AVKON_SOFTKEYS_EXIT;
+    }
+
+// ---------------------------------------------------------------------------
+// r_imageprint_softkeys_options_change_exit
+// Print preview view resource
+// ---------------------------------------------------------------------------
+//
+RESOURCE CBA r_imageprint_softkeys_options_change_exit
+    {
+    flags = 0;
+    buttons =
+        {
+        CBA_BUTTON {id=EAknSoftkeyOptions; txt = text_softkey_option;},
+        CBA_BUTTON {id=EAknSoftkeyExit; txt = text_softkey_exit;},
+        CBA_BUTTON {id=ECmdSettingsChange; txt = qtn_msk_change;}
+        };
+    }
+
+// ---------------------------------------------------------------------------
+// r_settings_view
+// settings view resource
+// ---------------------------------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_settings_view
+    {
+    menubar = r_settings_view_menubar;
+    cba = r_imageprint_softkeys_options_change_exit;
+    }
+
+// ---------------------------------------------------------------------------
+// r_settings_view_menubar
+// settings view menu bar
+// ---------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_settings_view_menubar
+    {
+    titles =
+        {
+        MENU_TITLE 
+            { 
+            menu_pane = r_settings_view_menu; 
+            txt = " ";  
+            }
+        };
+    }
+
+// ---------------------------------------------------------------------------
+// r_settings_view_menu
+// settings view menu pane
+// ---------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_settings_view_menu
+    {           
+    items =
+        {
+        MENU_ITEM
+	        {
+            command = ECmdSettingsChange;
+            txt = qtn_usb_opt_change;
+            },
+        MENU_ITEM
+            {
+            command = ECmdSettingsPrint; 
+            txt = qtn_usb_option_print;
+            },
+            
+        #ifdef __SERIES60_HELP  
+        MENU_ITEM
+            {
+            command = ECmdSettingsHelp;
+            txt = qtn_options_help;
+            },
+        #endif
+            
+				MENU_ITEM
+            {
+            command = EAknCmdExit;
+            txt = qtn_options_exit;
+            }
+        };
+    }
+    
+// ---------------------------------------------------------------------------
+// r_imageprintui_localisable_app_info
+// settings view menu pane
+// ---------------------------------------------------------------------------
+//    
+RESOURCE LOCALISABLE_APP_INFO r_imageprintui_localisable_app_info
+    {
+    short_caption = qtn_usb_title_image_print;
+    caption_and_icon =
+        CAPTION_AND_ICON_INFO
+            {
+            caption = qtn_usb_title_image_print;
+        	  #ifdef __SCALABLE_ICONS
+         	  number_of_icons = 1;
+            icon_file = APP_BITMAP_DIR"\\imageprintui_aif.mif";
+            #else
+            number_of_icons = 2; 
+            icon_file = APP_BITMAP_DIR"\\imageprintui_aif.mbm"; 
+        	  #endif // __SCALABLE_ICONS
+        };
+    }
+
+// ---------------------------------------------------------------------------
+// r_print_progress_note
+// Resource for print progress dialog
+// ---------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_print_progress_note
+    {
+    flags = EAknProgressNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EBitmapCtrl;
+            id = EBrandingBitmap;   
+            },      
+        DLG_LINE
+            {
+            type 	= EAknCtNote;
+            id 		= EAknNoteProgressBar;
+            control = AVKON_NOTE
+                {
+                layout = EProgressLayout;
+                singular_label = qtn_usb_wait_printing;
+                imageid = EMbmAvkonQgn_note_progress;
+                imagemask = EMbmAvkonQgn_note_progress_mask;
+                };
+            }
+        };
+    }
+
+// ---------------------------------------------------------------------------
+// r_connect_usb
+// Dialog resource for "Connect USB Printer" 
+// ---------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_connect_usb
+    {
+    flags = EAknWaitNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items = 
+        {
+        DLG_LINE
+            {
+            type    = EAknCtNote;
+            id      = EAknNoteProgressBar;
+            control = AVKON_NOTE
+                {
+                layout = EWaitLayout;
+								singular_label = qtn_usb_wait_connect_cable;     
+								animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+                };
+            }
+        };
+    }
+
+// ---------------------------------------------------------------------------
+// r_connect_usb
+// Dialog resource for "Connect USB Printer" 
+// ---------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_not_connect_printer
+    {
+    flags = EAknWaitNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items = 
+        {
+        DLG_LINE
+            {
+            type    = EAknCtNote;
+            id      = EAknNoteProgressBar;
+            control = AVKON_NOTE
+                {
+                layout = EWaitLayout;
+				singular_label = qtn_usb_wait_connect_cable_compatible;     
+				animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+                };
+            }
+        };
+    }
+
+// ---------------------------------------------------------------------------
+// r_cancel_printing_dialog
+// Dialog resource for "Cancel printing"
+// ---------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_cancel_printing_dialog
+	{
+	flags = EAknWaitNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_EMPTY;
+    items=
+		{
+		DLG_LINE
+			{
+			type = EAknCtNote;
+			id = EGeneralNote;
+			control= AVKON_NOTE 
+                { 
+				layout = EWaitLayout;
+				singular_label = qtn_usb_wait_cancelling; 
+				animation =R_QGN_GRAF_WAIT_BAR_ANIM;
+				};
+			}
+		};
+	}
+
+//
+RESOURCE LISTBOX r_usb_print_mode_setting_editor
+    {
+    flags = EEikListBoxMultipleSelection;
+    }
+
+//-----------------------------------------------------------------------------
+//
+// r_usb_print_mode_setting_page
+// Setting page for setting the USB mode
+//
+//-----------------------------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_usb_print_mode_setting_page
+	{
+	label              = "";
+    	hint_text          = " ";
+    	type               = EAknSetListBox;	
+	editor_resource_id = r_usb_print_mode_setting_editor;
+	}
+
+// ---------------------------------------------------------------------------
+// Layout strings
+// ---------------------------------------------------------------------------
+//
+RESOURCE TBUF r_usb_print_layout 
+{
+    buf = qtn_usb_print_layout;    
+}
+
+RESOURCE TBUF r_usb_print_layout_default 
+{
+    buf = qtn_usb_print_layout_default;    
+}
+
+RESOURCE TBUF r_usb_print_layout_1_up 
+{
+    buf = qtn_usb_print_layout_1_up;    
+}
+
+RESOURCE TBUF r_usb_print_layout_2_up 
+{
+    buf = qtn_usb_print_layout_2_up;    
+}
+
+RESOURCE TBUF r_usb_print_layout_4_up 
+{
+    buf = qtn_usb_print_layout_4_up;    
+}
+
+RESOURCE TBUF r_usb_print_layout_6_up 
+{
+    buf = qtn_usb_print_layout_6_up;    
+}
+
+RESOURCE TBUF r_usb_print_layout_9_up 
+{
+    buf = qtn_usb_print_layout_9_up;    
+}
+
+RESOURCE TBUF r_usb_print_layout_borderless 
+{
+    buf = qtn_usb_print_layout_borderless;    
+}
+
+// ---------------------------------------------------------------------------
+// Paper size strings
+// ---------------------------------------------------------------------------
+//
+
+RESOURCE TBUF r_usb_print_paper_size
+{
+    buf = qtn_usb_print_paper_size;    
+}
+
+RESOURCE TBUF r_usb_print_paper_size_automatic
+{
+    buf = qtn_usb_print_paper_size_automatic;  
+}
+
+RESOURCE TBUF r_usb_print_paper_size_a4
+{
+    buf = qtn_usb_print_paper_size_a4;  
+}
+
+RESOURCE TBUF r_usb_print_paper_size_a6
+{
+    buf = qtn_usb_print_paper_size_a6;  
+}
+
+RESOURCE TBUF r_usb_print_paper_size_inch
+{
+    buf = qtn_usb_print_paper_size_inch;  
+}
+
+RESOURCE TBUF r_usb_print_paper_size_card
+{
+    buf = qtn_usb_print_paper_size_card;  
+}
+
+RESOURCE TBUF r_usb_print_paper_size_letter
+{
+    buf = qtn_usb_print_paper_size_letter;  
+}
+
+// ---------------------------------------------------------------------------
+// Quality strings
+// ---------------------------------------------------------------------------
+//
+
+RESOURCE TBUF r_usb_print_quality
+{
+    buf = qtn_usb_print_quality;    
+}
+
+RESOURCE TBUF r_usb_print_quality_default
+{
+    buf = qtn_usb_print_quality_default;    
+}
+
+RESOURCE TBUF r_usb_print_quality_high
+{
+    buf = qtn_usb_print_quality_high;    
+}
+
+RESOURCE TBUF r_usb_print_quality_normal
+{
+    buf = qtn_usb_print_quality_normal;    
+}
+
+RESOURCE TBUF r_usb_print_quality_draft
+{
+    buf = qtn_usb_print_quality_draft;    
+}
+
+
+// ---------------------------------------------------------------------------
+// Printing Error strings
+// ---------------------------------------------------------------------------
+//
+
+RESOURCE TBUF r_error_unable_to_connect 
+                { 
+                buf = qtn_usb_error_unable_to_connect; 
+                }
+RESOURCE TBUF r_error_printer_busy 
+                { 
+                buf = qtn_usb_error_printer_busy; 
+                }
+RESOURCE TBUF r_error_connection_lost 
+                { 
+                buf = qtn_usb_error_connection_lost; 
+                } 
+RESOURCE TBUF r_error_general 
+                { 
+                buf = qtn_usb_error_in_printing; 
+                }
+RESOURCE TBUF   r_error_check_status 
+                { 
+                buf = qtn_usb_error_check_status; 
+                }
+RESOURCE TBUF r_error_out_of_paper 
+                { 
+                buf = qtn_usb_error_out_of_paper; 
+                }
+RESOURCE TBUF   r_error_out_of_ink 
+                { 
+                buf = qtn_usb_error_out_of_ink; 
+                }
+RESOURCE TBUF   r_error_ink_low 
+                { 
+                buf = qtn_usb_error_ink_low; 
+                }
+RESOURCE TBUF   r_error_paper_jam 
+                { 
+                buf = qtn_usb_error_paper_jam; 
+                }
+
+
+// ---------------------------------------------------------------------------
+// Other error strings
+// ---------------------------------------------------------------------------
+//
+
+RESOURCE TBUF r_error_file_not_supported 
+                { 
+                buf = qtn_usb_error_file_not_supported; 
+                }
+RESOURCE TBUF r_error_file_not_found 
+                { 
+                buf = qtn_usb_error_file_not_found; 
+                }
+
+RESOURCE TBUF r_error_unsupported_files_removed 
+                { 
+                buf = qtn_usb_error_unsupported_files_removed; 
+                }
+
+RESOURCE TBUF r_info__select_new_images 
+                { 
+                buf = qtn_usb_info_select_new_images; 
+                }
+RESOURCE TBUF r_info_app_in_use 
+                { 
+                buf = qtn_usb_info_app_in_use; 
+                }
+
+
+RESOURCE TBUF r_change_value {buf = qtn_usb_opt_change;}
+RESOURCE TBUF r_printing {buf = qtn_usb_option_print;}
+RESOURCE TBUF r_help  {buf = qtn_options_help;}
+RESOURCE TBUF r_qtn_print_progress_note_title { buf = qtn_usb_wait_printing; }
+
+
+// ---------------------------------------------------------------------------
+// Note resources
+// ---------------------------------------------------------------------------
+//
+
+// modified note resource
+RESOURCE DIALOG r_progress_note
+    {
+    flags = EAknProgressNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EAknCtNote;
+            control = AVERELL_NOTE
+                {
+                layout = EProgressLayout;
+		            singular_label = qtn_usb_wait_printing;
+                imagefile = AVKON_ICON_FILE;
+                imageid = EMbmAvkonQgn_note_progress;
+                imagemask = EMbmAvkonQgn_note_progress_mask;                
+                };
+            }
+        };
+    }

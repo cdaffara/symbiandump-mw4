@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="2740dbb00b193a75d436c2d4b97d4b19" dataversion="1.0">
+  <name>Scheme Handler Plugin API</name>
+  <description>Interface API that is implemented by plugins to the scheme handler framework.</description>
+  <type>c++</type>
+  <subsystem>BrowserUtilities</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="2.0"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

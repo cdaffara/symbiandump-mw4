@@ -1,0 +1,10 @@
+EXPORTS
+	_Z9LibEntryLv @ 1 NONAME
+	_Z15SetRequirementsRP16CTestModuleParamRm @ 2 NONAME
+	_ZTI15CTestXmlElement @ 3 NONAME ; #<TI>#
+	_ZTI16CTestBaseElement @ 4 NONAME ; #<TI>#
+	_ZTI17CTestBaseFragment @ 5 NONAME ; #<TI>#
+	_ZTV15CTestXmlElement @ 6 NONAME ; #<VT>#
+	_ZTV16CTestBaseElement @ 7 NONAME ; #<VT>#
+	_ZTV17CTestBaseFragment @ 8 NONAME ; #<VT>#
+

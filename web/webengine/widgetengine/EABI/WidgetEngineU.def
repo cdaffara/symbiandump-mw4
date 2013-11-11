@@ -1,0 +1,31 @@
+EXPORTS
+	_Z24CreateWidgetEngineBridgev @ 1 NONAME
+	_ZTI11CMenuClient @ 2 NONAME ; #<TI>#
+	_ZTI13CWidgetClient @ 3 NONAME ; #<TI>#
+	_ZTI9CMenuItem @ 4 NONAME ; #<TI>#
+	_ZTIN3KJS10JSMenuFuncE @ 5 NONAME ; #<TI>#
+	_ZTIN3KJS10JSMenuItemE @ 6 NONAME ; #<TI>#
+	_ZTIN3KJS12JSWidgetFuncE @ 7 NONAME ; #<TI>#
+	_ZTIN3KJS13JSWrtPlatformE @ 8 NONAME ; #<TI>#
+	_ZTIN3KJS14JSMenuItemFuncE @ 9 NONAME ; #<TI>#
+	_ZTIN3KJS18WidgetEventHandlerE @ 10 NONAME ; #<TI>#
+	_ZTIN3KJS21JSMenuItemConstructorE @ 11 NONAME ; #<TI>#
+	_ZTIN3KJS5JSWrtE @ 12 NONAME ; #<TI>#
+	_ZTIN3KJS6JSMenuE @ 13 NONAME ; #<TI>#
+	_ZTIN3KJS8JSWidgetE @ 14 NONAME ; #<TI>#
+	_ZTV11CMenuClient @ 15 NONAME ; #<VT>#
+	_ZTV13CWidgetClient @ 16 NONAME ; #<VT>#
+	_ZTV9CMenuItem @ 17 NONAME ; #<VT>#
+	_ZTVN3KJS10JSMenuFuncE @ 18 NONAME ; #<VT>#
+	_ZTVN3KJS10JSMenuItemE @ 19 NONAME ; #<VT>#
+	_ZTVN3KJS12JSWidgetFuncE @ 20 NONAME ; #<VT>#
+	_ZTVN3KJS13JSWrtPlatformE @ 21 NONAME ; #<VT>#
+	_ZTVN3KJS14JSMenuItemFuncE @ 22 NONAME ; #<VT>#
+	_ZTVN3KJS18WidgetEventHandlerE @ 23 NONAME ; #<VT>#
+	_ZTVN3KJS21JSMenuItemConstructorE @ 24 NONAME ; #<VT>#
+	_ZTVN3KJS5JSWrtE @ 25 NONAME ; #<VT>#
+	_ZTVN3KJS6JSMenuE @ 26 NONAME ; #<VT>#
+	_ZTVN3KJS8JSWidgetE @ 27 NONAME ; #<VT>#
+	_ZTI11PrefElement @ 28 NONAME ; #<TI>#
+	_ZTV11PrefElement @ 29 NONAME ; #<VT>#
+

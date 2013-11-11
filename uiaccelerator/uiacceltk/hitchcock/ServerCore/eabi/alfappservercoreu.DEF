@@ -1,0 +1,551 @@
+EXPORTS
+	_ZN13CAlfAppServer16HandleClientExitEi @ 1 NONAME
+	_ZN13CAlfAppServer16MetricsInterfaceEv @ 2 NONAME
+	_ZN13CAlfAppServer19SetMetricsInterfaceEP20MAlfMetricsInterface @ 3 NONAME
+	_ZN13CAlfAppServer24SetWindowChangeObserverLEP25MWindowVisibilityObserveri @ 4 NONAME
+	_ZN13CAlfAppServer26AdjustWindowGroupPositionLER12RWindowGroupiNS_13TAlfWGPostionE @ 5 NONAME
+	_ZN13CAlfAppServer5AppUiEv @ 6 NONAME
+	_ZN13CAlfAppServerC1Ev @ 7 NONAME ABSENT
+	_ZN13CAlfAppServer13NewAppServerLEv @ 8 NONAME
+	_ZN16CAlfBrushHandler10ConstructLEP9CHuiBrush @ 9 NONAME
+	_ZN16CAlfBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 10 NONAME
+	_ZN16CAlfBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 11 NONAME
+	_ZN16CAlfBrushHandler12SetOwnershipEi @ 12 NONAME
+	_ZN16CAlfBrushHandler7ReleaseEv @ 13 NONAME
+	_ZN16CAlfBrushHandlerC1ER21MAlfInterfaceProvider @ 14 NONAME
+	_ZN16CAlfBrushHandlerC2ER21MAlfInterfaceProvider @ 15 NONAME
+	_ZN16CAlfBrushHandlerD0Ev @ 16 NONAME
+	_ZN16CAlfBrushHandlerD1Ev @ 17 NONAME
+	_ZN16CAlfBrushHandlerD2Ev @ 18 NONAME
+	_ZN16CAlfSrvEffectEnv13ControlGroupLEi @ 19 NONAME
+	_ZN16CAlfSrvEffectEnv13DisplayCountLEv @ 20 NONAME
+	_ZN16CAlfSrvEffectEnv18ControlGroupCountLEv @ 21 NONAME
+	_ZN16CAlfSrvEffectEnv25VisibleControlGroupCountLEv @ 22 NONAME
+	_ZN16CAlfSrvEffectEnv8DisplayLEi @ 23 NONAME
+	_ZN16CAlfSrvEffectEnv9SharedEnvEv @ 24 NONAME
+	_ZN17CAlfLayoutHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 25 NONAME
+	_ZN17CAlfLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 26 NONAME
+	_ZN17CAlfLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 27 NONAME
+	_ZN17CAlfLayoutHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 28 NONAME
+	_ZN17CAlfLayoutHandler7ReleaseEv @ 29 NONAME
+	_ZN17CAlfLayoutHandlerC1ER21MAlfInterfaceProvider @ 30 NONAME
+	_ZN17CAlfLayoutHandlerC2ER21MAlfInterfaceProvider @ 31 NONAME
+	_ZN17CAlfLayoutHandlerD0Ev @ 32 NONAME
+	_ZN17CAlfLayoutHandlerD1Ev @ 33 NONAME
+	_ZN17CAlfLayoutHandlerD2Ev @ 34 NONAME
+	_ZN17CAlfVisualHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 35 NONAME
+	_ZN17CAlfVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 36 NONAME
+	_ZN17CAlfVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 37 NONAME
+	_ZN17CAlfVisualHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 38 NONAME
+	_ZN17CAlfVisualHandler7ReleaseEv @ 39 NONAME
+	_ZN17CAlfVisualHandlerC1ER21MAlfInterfaceProvider @ 40 NONAME
+	_ZN17CAlfVisualHandlerC2ER21MAlfInterfaceProvider @ 41 NONAME
+	_ZN17CAlfVisualHandlerD0Ev @ 42 NONAME
+	_ZN17CAlfVisualHandlerD1Ev @ 43 NONAME
+	_ZN17CAlfVisualHandlerD2Ev @ 44 NONAME
+	_ZN19AlfFileTokenUtility17OpenFileForTokenLER5RFileRK6TDesC8 @ 45 NONAME
+	_ZN20AlfTimedPointUtility14CopyTimedPointER14TAlfTimedPointR14THuiTimedPoint @ 46 NONAME
+	_ZN20AlfTimedPointUtility14CopyTimedPointER14TAlfTimedPointR14THuiTimedPointR21MAlfInterfaceProvider @ 47 NONAME
+	_ZN20AlfTimedPointUtility14CopyTimedPointER14THuiTimedPointR14TAlfTimedPoint @ 48 NONAME
+	_ZN20AlfTimedValueUtility14CopyTimedValueER14TAlfTimedValueR14THuiTimedValue @ 49 NONAME
+	_ZN20AlfTimedValueUtility14CopyTimedValueER14TAlfTimedValueR14THuiTimedValueR21MAlfInterfaceProvider @ 50 NONAME
+	_ZN20AlfTimedValueUtility14CopyTimedValueER14THuiTimedValueR14TAlfTimedValue @ 51 NONAME
+	_ZN21CAlfAppSrvSessionBase10FocusLostLEi @ 52 NONAME
+	_ZN21CAlfAppSrvSessionBase11CompleteCmdEii @ 53 NONAME
+	_ZN21CAlfAppSrvSessionBase12FocusGainedLEi @ 54 NONAME
+	_ZN21CAlfAppSrvSessionBase13GetInterfaceLERK20THuiInterfaceSupporti @ 55 NONAME
+	_ZN21CAlfAppSrvSessionBase14BaseConstructLEv @ 56 NONAME
+	_ZN21CAlfAppSrvSessionBase16FactoryDestroyedEi @ 57 NONAME
+	_ZN21CAlfAppSrvSessionBase19ExtensionInterfaceLE4TUidRPv @ 58 NONAME
+	_ZN21CAlfAppSrvSessionBase22GetHandleFromInterfaceERK20THuiInterfaceSupportPv @ 59 NONAME
+	_ZN21CAlfAppSrvSessionBase27HandleCurrentCommanndAsynchEv @ 60 NONAME
+	_ZN21CAlfAppSrvSessionBase8AlfAppUiEv @ 61 NONAME
+	_ZN21CAlfAppSrvSessionBase8ServiceLERK9RMessage2 @ 62 NONAME
+	_ZN21CAlfAppSrvSessionBase9AlfServerEv @ 63 NONAME
+	_ZN21CAlfAppSrvSessionBaseC2EPK13CAlfAppServer @ 64 NONAME
+	_ZN21CAlfAppSrvSessionBaseC2Ev @ 65 NONAME
+	_ZN21CAlfAppSrvSessionBaseD0Ev @ 66 NONAME
+	_ZN21CAlfAppSrvSessionBaseD1Ev @ 67 NONAME
+	_ZN21CAlfAppSrvSessionBaseD2Ev @ 68 NONAME
+	_ZN21CAlfDeckLayoutHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 69 NONAME
+	_ZN21CAlfDeckLayoutHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 70 NONAME
+	_ZN21CAlfDeckLayoutHandlerC1ER21MAlfInterfaceProvider @ 71 NONAME
+	_ZN21CAlfDeckLayoutHandlerC2ER21MAlfInterfaceProvider @ 72 NONAME
+	_ZN21CAlfDeckLayoutHandlerD0Ev @ 73 NONAME
+	_ZN21CAlfDeckLayoutHandlerD1Ev @ 74 NONAME
+	_ZN21CAlfDeckLayoutHandlerD2Ev @ 75 NONAME
+	_ZN21CAlfFlowLayoutHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 76 NONAME
+	_ZN21CAlfFlowLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 77 NONAME
+	_ZN21CAlfFlowLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 78 NONAME
+	_ZN21CAlfFlowLayoutHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 79 NONAME
+	_ZN21CAlfFlowLayoutHandler7ReleaseEv @ 80 NONAME
+	_ZN21CAlfFlowLayoutHandlerC1ER21MAlfInterfaceProvider @ 81 NONAME
+	_ZN21CAlfFlowLayoutHandlerC2ER21MAlfInterfaceProvider @ 82 NONAME
+	_ZN21CAlfFlowLayoutHandlerD0Ev @ 83 NONAME
+	_ZN21CAlfFlowLayoutHandlerD1Ev @ 84 NONAME
+	_ZN21CAlfFlowLayoutHandlerD2Ev @ 85 NONAME
+	_ZN21CAlfFrameBrushHandler10ConstructLEP9CHuiBrushRK11TAknsItemIDii @ 86 NONAME
+	_ZN21CAlfFrameBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 87 NONAME
+	_ZN21CAlfFrameBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 88 NONAME
+	_ZN21CAlfFrameBrushHandler4NewLER21MAlfInterfaceProviderRK11TAknsItemIDii @ 89 NONAME
+	_ZN21CAlfFrameBrushHandler7ReleaseEv @ 90 NONAME
+	_ZN21CAlfFrameBrushHandlerC1ER21MAlfInterfaceProvider @ 91 NONAME
+	_ZN21CAlfFrameBrushHandlerC2ER21MAlfInterfaceProvider @ 92 NONAME
+	_ZN21CAlfFrameBrushHandlerD0Ev @ 93 NONAME
+	_ZN21CAlfFrameBrushHandlerD1Ev @ 94 NONAME
+	_ZN21CAlfFrameBrushHandlerD2Ev @ 95 NONAME
+	_ZN21CAlfGridLayoutHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 96 NONAME
+	_ZN21CAlfGridLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 97 NONAME
+	_ZN21CAlfGridLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 98 NONAME
+	_ZN21CAlfGridLayoutHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 99 NONAME
+	_ZN21CAlfGridLayoutHandler7ReleaseEv @ 100 NONAME
+	_ZN21CAlfGridLayoutHandlerC1ER21MAlfInterfaceProvider @ 101 NONAME
+	_ZN21CAlfGridLayoutHandlerC2ER21MAlfInterfaceProvider @ 102 NONAME
+	_ZN21CAlfGridLayoutHandlerD0Ev @ 103 NONAME
+	_ZN21CAlfGridLayoutHandlerD1Ev @ 104 NONAME
+	_ZN21CAlfGridLayoutHandlerD2Ev @ 105 NONAME
+	_ZN21CAlfImageBrushHandler10ConstructLEP9CHuiBrush9THuiImage @ 106 NONAME
+	_ZN21CAlfImageBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 107 NONAME
+	_ZN21CAlfImageBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 108 NONAME
+	_ZN21CAlfImageBrushHandler4NewLER21MAlfInterfaceProvider9THuiImage @ 109 NONAME
+	_ZN21CAlfImageBrushHandler7ReleaseEv @ 110 NONAME
+	_ZN21CAlfImageBrushHandlerC1ER21MAlfInterfaceProvider @ 111 NONAME
+	_ZN21CAlfImageBrushHandlerC2ER21MAlfInterfaceProvider @ 112 NONAME
+	_ZN21CAlfImageBrushHandlerD0Ev @ 113 NONAME
+	_ZN21CAlfImageBrushHandlerD1Ev @ 114 NONAME
+	_ZN21CAlfImageBrushHandlerD2Ev @ 115 NONAME
+	_ZN21CAlfLineVisualHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 116 NONAME
+	_ZN21CAlfLineVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 117 NONAME
+	_ZN21CAlfLineVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 118 NONAME
+	_ZN21CAlfLineVisualHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 119 NONAME
+	_ZN21CAlfLineVisualHandler7ReleaseEv @ 120 NONAME
+	_ZN21CAlfLineVisualHandlerC1ER21MAlfInterfaceProvider @ 121 NONAME
+	_ZN21CAlfLineVisualHandlerC2ER21MAlfInterfaceProvider @ 122 NONAME
+	_ZN21CAlfLineVisualHandlerD0Ev @ 123 NONAME
+	_ZN21CAlfLineVisualHandlerD1Ev @ 124 NONAME
+	_ZN21CAlfLineVisualHandlerD2Ev @ 125 NONAME
+	_ZN21CAlfMeshVisualHandler10ConstructLEP10CHuiVisualR11CHuiControl12THuiMeshTypeP10CHuiLayout @ 126 NONAME
+	_ZN21CAlfMeshVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 127 NONAME
+	_ZN21CAlfMeshVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 128 NONAME
+	_ZN21CAlfMeshVisualHandler4NewLER21MAlfInterfaceProviderP11CHuiControl12THuiMeshTypeP10CHuiLayout @ 129 NONAME
+	_ZN21CAlfMeshVisualHandler7ReleaseEv @ 130 NONAME
+	_ZN21CAlfMeshVisualHandlerC1ER21MAlfInterfaceProvider @ 131 NONAME
+	_ZN21CAlfMeshVisualHandlerC2ER21MAlfInterfaceProvider @ 132 NONAME
+	_ZN21CAlfMeshVisualHandlerD0Ev @ 133 NONAME
+	_ZN21CAlfMeshVisualHandlerD1Ev @ 134 NONAME
+	_ZN21CAlfMeshVisualHandlerD2Ev @ 135 NONAME
+	_ZN21CAlfTextVisualHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 136 NONAME
+	_ZN21CAlfTextVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 137 NONAME
+	_ZN21CAlfTextVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 138 NONAME
+	_ZN21CAlfTextVisualHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 139 NONAME
+	_ZN21CAlfTextVisualHandler7ReleaseEv @ 140 NONAME
+	_ZN21CAlfTextVisualHandlerC1ER21MAlfInterfaceProvider @ 141 NONAME
+	_ZN21CAlfTextVisualHandlerC2ER21MAlfInterfaceProvider @ 142 NONAME
+	_ZN21CAlfTextVisualHandlerD0Ev @ 143 NONAME
+	_ZN21CAlfTextVisualHandlerD1Ev @ 144 NONAME
+	_ZN21CAlfTextVisualHandlerD2Ev @ 145 NONAME
+	_ZN22CAlfBorderBrushHandler10ConstructLEP9CHuiBrushiiii @ 146 NONAME
+	_ZN22CAlfBorderBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 147 NONAME
+	_ZN22CAlfBorderBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 148 NONAME
+	_ZN22CAlfBorderBrushHandler4NewLER21MAlfInterfaceProvideriiii @ 149 NONAME
+	_ZN22CAlfBorderBrushHandler7ReleaseEv @ 150 NONAME
+	_ZN22CAlfBorderBrushHandlerC1ER21MAlfInterfaceProvider @ 151 NONAME
+	_ZN22CAlfBorderBrushHandlerC2ER21MAlfInterfaceProvider @ 152 NONAME
+	_ZN22CAlfBorderBrushHandlerD0Ev @ 153 NONAME
+	_ZN22CAlfBorderBrushHandlerD1Ev @ 154 NONAME
+	_ZN22CAlfBorderBrushHandlerD2Ev @ 155 NONAME
+	_ZN22CAlfImageVisualHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 156 NONAME
+	_ZN22CAlfImageVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 157 NONAME
+	_ZN22CAlfImageVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 158 NONAME
+	_ZN22CAlfImageVisualHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 159 NONAME
+	_ZN22CAlfImageVisualHandler7ReleaseEv @ 160 NONAME
+	_ZN22CAlfImageVisualHandlerC1ER21MAlfInterfaceProvider @ 161 NONAME
+	_ZN22CAlfImageVisualHandlerC2ER21MAlfInterfaceProvider @ 162 NONAME
+	_ZN22CAlfImageVisualHandlerD0Ev @ 163 NONAME
+	_ZN22CAlfImageVisualHandlerD1Ev @ 164 NONAME
+	_ZN22CAlfImageVisualHandlerD2Ev @ 165 NONAME
+	_ZN23CAlfAnchorLayoutHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 166 NONAME
+	_ZN23CAlfAnchorLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 167 NONAME
+	_ZN23CAlfAnchorLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 168 NONAME
+	_ZN23CAlfAnchorLayoutHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 169 NONAME
+	_ZN23CAlfAnchorLayoutHandler7ReleaseEv @ 170 NONAME
+	_ZN23CAlfAnchorLayoutHandlerC1ER21MAlfInterfaceProvider @ 171 NONAME
+	_ZN23CAlfAnchorLayoutHandlerC2ER21MAlfInterfaceProvider @ 172 NONAME
+	_ZN23CAlfAnchorLayoutHandlerD0Ev @ 173 NONAME
+	_ZN23CAlfAnchorLayoutHandlerD1Ev @ 174 NONAME
+	_ZN23CAlfAnchorLayoutHandlerD2Ev @ 175 NONAME
+	_ZN24CAlfGradientBrushHandler10ConstructLEP9CHuiBrush @ 176 NONAME
+	_ZN24CAlfGradientBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 177 NONAME
+	_ZN24CAlfGradientBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 178 NONAME
+	_ZN24CAlfGradientBrushHandler4NewLER21MAlfInterfaceProvider @ 179 NONAME
+	_ZN24CAlfGradientBrushHandler7ReleaseEv @ 180 NONAME
+	_ZN24CAlfGradientBrushHandlerC1ER21MAlfInterfaceProvider @ 181 NONAME
+	_ZN24CAlfGradientBrushHandlerC2ER21MAlfInterfaceProvider @ 182 NONAME
+	_ZN24CAlfGradientBrushHandlerD0Ev @ 183 NONAME
+	_ZN24CAlfGradientBrushHandlerD1Ev @ 184 NONAME
+	_ZN24CAlfGradientBrushHandlerD2Ev @ 185 NONAME
+	_ZN24CAlfLCTGridLayoutHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 186 NONAME
+	_ZN24CAlfLCTGridLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 187 NONAME
+	_ZN24CAlfLCTGridLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 188 NONAME
+	_ZN24CAlfLCTGridLayoutHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 189 NONAME
+	_ZN24CAlfLCTGridLayoutHandler7ReleaseEv @ 190 NONAME
+	_ZN24CAlfLCTGridLayoutHandlerC1ER21MAlfInterfaceProvider @ 191 NONAME
+	_ZN24CAlfLCTGridLayoutHandlerC2ER21MAlfInterfaceProvider @ 192 NONAME
+	_ZN24CAlfLCTGridLayoutHandlerD0Ev @ 193 NONAME
+	_ZN24CAlfLCTGridLayoutHandlerD1Ev @ 194 NONAME
+	_ZN24CAlfLCTGridLayoutHandlerD2Ev @ 195 NONAME
+	_ZN24CAlfLCTTextVisualHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 196 NONAME
+	_ZN24CAlfLCTTextVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 197 NONAME
+	_ZN24CAlfLCTTextVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 198 NONAME
+	_ZN24CAlfLCTTextVisualHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 199 NONAME
+	_ZN24CAlfLCTTextVisualHandler7ReleaseEv @ 200 NONAME
+	_ZN24CAlfLCTTextVisualHandlerC1ER21MAlfInterfaceProvider @ 201 NONAME
+	_ZN24CAlfLCTTextVisualHandlerC2ER21MAlfInterfaceProvider @ 202 NONAME
+	_ZN24CAlfLCTTextVisualHandlerD0Ev @ 203 NONAME
+	_ZN24CAlfLCTTextVisualHandlerD1Ev @ 204 NONAME
+	_ZN24CAlfLCTTextVisualHandlerD2Ev @ 205 NONAME
+	_ZN25CAlfViewportLayoutHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 206 NONAME
+	_ZN25CAlfViewportLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 207 NONAME
+	_ZN25CAlfViewportLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 208 NONAME
+	_ZN25CAlfViewportLayoutHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 209 NONAME
+	_ZN25CAlfViewportLayoutHandler7ReleaseEv @ 210 NONAME
+	_ZN25CAlfViewportLayoutHandlerC1ER21MAlfInterfaceProvider @ 211 NONAME
+	_ZN25CAlfViewportLayoutHandlerC2ER21MAlfInterfaceProvider @ 212 NONAME
+	_ZN25CAlfViewportLayoutHandlerD0Ev @ 213 NONAME
+	_ZN25CAlfViewportLayoutHandlerD1Ev @ 214 NONAME
+	_ZN25CAlfViewportLayoutHandlerD2Ev @ 215 NONAME
+	_ZN26CAlfCurvePathLayoutHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 216 NONAME
+	_ZN26CAlfCurvePathLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 217 NONAME
+	_ZN26CAlfCurvePathLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 218 NONAME
+	_ZN26CAlfCurvePathLayoutHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 219 NONAME
+	_ZN26CAlfCurvePathLayoutHandler7ReleaseEv @ 220 NONAME
+	_ZN26CAlfCurvePathLayoutHandlerC1ER21MAlfInterfaceProvider @ 221 NONAME
+	_ZN26CAlfCurvePathLayoutHandlerC2ER21MAlfInterfaceProvider @ 222 NONAME
+	_ZN26CAlfCurvePathLayoutHandlerD0Ev @ 223 NONAME
+	_ZN26CAlfCurvePathLayoutHandlerD1Ev @ 224 NONAME
+	_ZN26CAlfCurvePathLayoutHandlerD2Ev @ 225 NONAME
+	_ZN26CAlfDropShadowBrushHandler10ConstructLEP9CHuiBrushi @ 226 NONAME
+	_ZN26CAlfDropShadowBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 227 NONAME
+	_ZN26CAlfDropShadowBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 228 NONAME
+	_ZN26CAlfDropShadowBrushHandler4NewLER21MAlfInterfaceProvideri @ 229 NONAME
+	_ZN26CAlfDropShadowBrushHandler7ReleaseEv @ 230 NONAME
+	_ZN26CAlfDropShadowBrushHandlerC1ER21MAlfInterfaceProvider @ 231 NONAME
+	_ZN26CAlfDropShadowBrushHandlerC2ER21MAlfInterfaceProvider @ 232 NONAME
+	_ZN26CAlfDropShadowBrushHandlerD0Ev @ 233 NONAME
+	_ZN26CAlfDropShadowBrushHandlerD1Ev @ 234 NONAME
+	_ZN26CAlfDropShadowBrushHandlerD2Ev @ 235 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 236 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 237 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 238 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 239 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandler7ReleaseEv @ 240 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandlerC1ER21MAlfInterfaceProvider @ 241 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandlerC2ER21MAlfInterfaceProvider @ 242 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandlerD0Ev @ 243 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandlerD1Ev @ 244 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandlerD2Ev @ 245 NONAME
+	_ZN28CAlfShadowBorderBrushHandler10ConstructLEP9CHuiBrushi @ 246 NONAME
+	_ZN28CAlfShadowBorderBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 247 NONAME
+	_ZN28CAlfShadowBorderBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 248 NONAME
+	_ZN28CAlfShadowBorderBrushHandler4NewLER21MAlfInterfaceProvideri @ 249 NONAME
+	_ZN28CAlfShadowBorderBrushHandler7ReleaseEv @ 250 NONAME
+	_ZN28CAlfShadowBorderBrushHandlerC1ER21MAlfInterfaceProvider @ 251 NONAME
+	_ZN28CAlfShadowBorderBrushHandlerC2ER21MAlfInterfaceProvider @ 252 NONAME
+	_ZN28CAlfShadowBorderBrushHandlerD0Ev @ 253 NONAME
+	_ZN28CAlfShadowBorderBrushHandlerD1Ev @ 254 NONAME
+	_ZN28CAlfShadowBorderBrushHandlerD2Ev @ 255 NONAME
+	_ZN9CAlfAppUi10ConstructLEv @ 256 NONAME
+	_ZN9CAlfAppUi14HandleCommandLEi @ 257 NONAME
+	_ZN9CAlfAppUi14HandleWsEventLERK8TWsEventP11CCoeControl @ 258 NONAME
+	_ZN9CAlfAppUi18HandleSystemEventLERK8TWsEvent @ 259 NONAME
+	_ZN9CAlfAppUi21HandleResourceChangeLEi @ 260 NONAME
+	_ZN9CAlfAppUi28AppendDisplayOnSharedWindowLER11CHuiDisplay @ 261 NONAME
+	_ZN9CAlfAppUi9ContainerEv @ 262 NONAME
+	_ZN9CAlfAppUiC1Ev @ 263 NONAME
+	_ZN9CAlfAppUiC2Ev @ 264 NONAME
+	_ZN9CAlfAppUiD0Ev @ 265 NONAME
+	_ZN9CAlfAppUiD1Ev @ 266 NONAME
+	_ZN9CAlfAppUiD2Ev @ 267 NONAME
+	_ZNK13CAlfAppServer16MetricsInterfaceEv @ 268 NONAME
+	_ZNK13CAlfAppServer9WsSessionEv @ 269 NONAME
+	_ZNK21CAlfAppSrvSessionBase12SharedHuiEnvEv @ 270 NONAME
+	_ZNK21CAlfAppSrvSessionBase13LayoutManagerEv @ 271 NONAME
+	_ZNK21CAlfAppSrvSessionBase17ClientDrawingAreaEv @ 272 NONAME
+	_ZNK21CAlfAppSrvSessionBase20PreferredRefreshModeEv @ 273 NONAME
+	_ZNK21CAlfAppSrvSessionBase28PreferredWindowGroupPositionEv @ 274 NONAME
+	_ZNK9CAlfAppUi24FrameworkCallsRendezvousEv @ 275 NONAME
+	_ZTI13CAlfAppServer @ 276 NONAME ABSENT
+	_ZTI16CAlfBrushHandler @ 277 NONAME ; #<TI>#
+	_ZTI16CAlfSrvEffectEnv @ 278 NONAME ABSENT
+	_ZTI17CAlfAppSrvSession @ 279 NONAME ABSENT
+	_ZTI17CAlfLayoutHandler @ 280 NONAME ; #<TI>#
+	_ZTI17CAlfVisualHandler @ 281 NONAME ; #<TI>#
+	_ZTI20TAlfTextStyleHandler @ 282 NONAME ABSENT
+	_ZTI21CAlfAppSrvSessionBase @ 283 NONAME ; #<TI>#
+	_ZTI21CAlfDeckLayoutHandler @ 284 NONAME ; #<TI>#
+	_ZTI21CAlfFlowLayoutHandler @ 285 NONAME ; #<TI>#
+	_ZTI21CAlfFrameBrushHandler @ 286 NONAME ; #<TI>#
+	_ZTI21CAlfGridLayoutHandler @ 287 NONAME ; #<TI>#
+	_ZTI21CAlfImageBrushHandler @ 288 NONAME ; #<TI>#
+	_ZTI21CAlfLineVisualHandler @ 289 NONAME ; #<TI>#
+	_ZTI21CAlfMeshVisualHandler @ 290 NONAME ; #<TI>#
+	_ZTI21CAlfSrvSubSessionBase @ 291 NONAME ABSENT
+	_ZTI21CAlfTextVisualHandler @ 292 NONAME ; #<TI>#
+	_ZTI22CAlfBorderBrushHandler @ 293 NONAME ; #<TI>#
+	_ZTI22CAlfImageVisualHandler @ 294 NONAME ; #<TI>#
+	_ZTI23CAlfAnchorLayoutHandler @ 295 NONAME ; #<TI>#
+	_ZTI24CAlfGradientBrushHandler @ 296 NONAME ; #<TI>#
+	_ZTI24CAlfLCTGridLayoutHandler @ 297 NONAME ; #<TI>#
+	_ZTI24CAlfLCTTextVisualHandler @ 298 NONAME ; #<TI>#
+	_ZTI24CAlfSrvDisplaySubSession @ 299 NONAME ABSENT
+	_ZTI24TAlfTableMappingFunction @ 300 NONAME ABSENT
+	_ZTI25CAlfViewportLayoutHandler @ 301 NONAME ; #<TI>#
+	_ZTI26CAlfCurvePathLayoutHandler @ 302 NONAME ; #<TI>#
+	_ZTI26CAlfDropShadowBrushHandler @ 303 NONAME ; #<TI>#
+	_ZTI26CAlfLCTAnchorLayoutHandler @ 304 NONAME ; #<TI>#
+	_ZTI28CAlfShadowBorderBrushHandler @ 305 NONAME ; #<TI>#
+	_ZTI29CAlfSrvControlGroupSubSession @ 306 NONAME ABSENT
+	_ZTI31CAlfSrvTransformationSubSession @ 307 NONAME ABSENT
+	_ZTI9CAlfAppUi @ 308 NONAME ABSENT
+	_ZTV13CAlfAppServer @ 309 NONAME ABSENT
+	_ZTV16CAlfBrushHandler @ 310 NONAME ; #<VT>#
+	_ZTV16CAlfSrvEffectEnv @ 311 NONAME ABSENT
+	_ZTV17CAlfAppSrvSession @ 312 NONAME ABSENT
+	_ZTV17CAlfLayoutHandler @ 313 NONAME ; #<VT>#
+	_ZTV17CAlfVisualHandler @ 314 NONAME ; #<VT>#
+	_ZTV20TAlfTextStyleHandler @ 315 NONAME ABSENT
+	_ZTV21CAlfAppSrvSessionBase @ 316 NONAME ; #<VT>#
+	_ZTV21CAlfDeckLayoutHandler @ 317 NONAME ; #<VT>#
+	_ZTV21CAlfFlowLayoutHandler @ 318 NONAME ; #<VT>#
+	_ZTV21CAlfFrameBrushHandler @ 319 NONAME ; #<VT>#
+	_ZTV21CAlfGridLayoutHandler @ 320 NONAME ; #<VT>#
+	_ZTV21CAlfImageBrushHandler @ 321 NONAME ; #<VT>#
+	_ZTV21CAlfLineVisualHandler @ 322 NONAME ; #<VT>#
+	_ZTV21CAlfMeshVisualHandler @ 323 NONAME ; #<VT>#
+	_ZTV21CAlfSrvSubSessionBase @ 324 NONAME ABSENT
+	_ZTV21CAlfTextVisualHandler @ 325 NONAME ; #<VT>#
+	_ZTV22CAlfBorderBrushHandler @ 326 NONAME ; #<VT>#
+	_ZTV22CAlfImageVisualHandler @ 327 NONAME ; #<VT>#
+	_ZTV23CAlfAnchorLayoutHandler @ 328 NONAME ; #<VT>#
+	_ZTV24CAlfGradientBrushHandler @ 329 NONAME ; #<VT>#
+	_ZTV24CAlfLCTGridLayoutHandler @ 330 NONAME ; #<VT>#
+	_ZTV24CAlfLCTTextVisualHandler @ 331 NONAME ; #<VT>#
+	_ZTV24CAlfSrvDisplaySubSession @ 332 NONAME ABSENT
+	_ZTV24TAlfTableMappingFunction @ 333 NONAME ABSENT
+	_ZTV25CAlfViewportLayoutHandler @ 334 NONAME ; #<VT>#
+	_ZTV26CAlfCurvePathLayoutHandler @ 335 NONAME ; #<VT>#
+	_ZTV26CAlfDropShadowBrushHandler @ 336 NONAME ; #<VT>#
+	_ZTV26CAlfLCTAnchorLayoutHandler @ 337 NONAME ; #<VT>#
+	_ZTV28CAlfShadowBorderBrushHandler @ 338 NONAME ; #<VT>#
+	_ZTV29CAlfSrvControlGroupSubSession @ 339 NONAME ABSENT
+	_ZTV31CAlfSrvTransformationSubSession @ 340 NONAME ABSENT
+	_ZTV9CAlfAppUi @ 341 NONAME ABSENT
+	_ZThn36_N21CAlfAppSrvSessionBase11CompleteCmdEii @ 342 NONAME ; #<thunk>#
+	_ZThn36_N21CAlfAppSrvSessionBase13GetInterfaceLERK20THuiInterfaceSupporti @ 343 NONAME ; #<thunk>#
+	_ZThn36_N21CAlfAppSrvSessionBase22GetHandleFromInterfaceERK20THuiInterfaceSupportPv @ 344 NONAME ; #<thunk>#
+	_ZThn36_N21CAlfAppSrvSessionBase27HandleCurrentCommanndAsynchEv @ 345 NONAME ; #<thunk>#
+	_ZThn36_NK21CAlfAppSrvSessionBase12SharedHuiEnvEv @ 346 NONAME ; #<thunk>#
+	_ZThn36_NK21CAlfAppSrvSessionBase13LayoutManagerEv @ 347 NONAME ; #<thunk>#
+	_ZThn4_N16CAlfBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 348 NONAME ; #<thunk>#
+	_ZThn4_N16CAlfBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 349 NONAME ; #<thunk>#
+	_ZThn4_N16CAlfBrushHandler7ReleaseEv @ 350 NONAME ; #<thunk>#
+	_ZThn4_N17CAlfLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 351 NONAME ; #<thunk>#
+	_ZThn4_N17CAlfLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 352 NONAME ; #<thunk>#
+	_ZThn4_N17CAlfLayoutHandler7ReleaseEv @ 353 NONAME ; #<thunk>#
+	_ZThn4_N17CAlfVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 354 NONAME ; #<thunk>#
+	_ZThn4_N17CAlfVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 355 NONAME ; #<thunk>#
+	_ZThn4_N17CAlfVisualHandler7ReleaseEv @ 356 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfFlowLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 357 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfFlowLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 358 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfFlowLayoutHandler7ReleaseEv @ 359 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfFrameBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 360 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfFrameBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 361 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfFrameBrushHandler7ReleaseEv @ 362 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfGridLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 363 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfGridLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 364 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfGridLayoutHandler7ReleaseEv @ 365 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfImageBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 366 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfImageBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 367 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfImageBrushHandler7ReleaseEv @ 368 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfLineVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 369 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfLineVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 370 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfLineVisualHandler7ReleaseEv @ 371 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfMeshVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 372 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfMeshVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 373 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfMeshVisualHandler7ReleaseEv @ 374 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfTextVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 375 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfTextVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 376 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfTextVisualHandler7ReleaseEv @ 377 NONAME ; #<thunk>#
+	_ZThn4_N22CAlfBorderBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 378 NONAME ; #<thunk>#
+	_ZThn4_N22CAlfBorderBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 379 NONAME ; #<thunk>#
+	_ZThn4_N22CAlfBorderBrushHandler7ReleaseEv @ 380 NONAME ; #<thunk>#
+	_ZThn4_N22CAlfImageVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 381 NONAME ; #<thunk>#
+	_ZThn4_N22CAlfImageVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 382 NONAME ; #<thunk>#
+	_ZThn4_N22CAlfImageVisualHandler7ReleaseEv @ 383 NONAME ; #<thunk>#
+	_ZThn4_N23CAlfAnchorLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 384 NONAME ; #<thunk>#
+	_ZThn4_N23CAlfAnchorLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 385 NONAME ; #<thunk>#
+	_ZThn4_N23CAlfAnchorLayoutHandler7ReleaseEv @ 386 NONAME ; #<thunk>#
+	_ZThn4_N24CAlfGradientBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 387 NONAME ; #<thunk>#
+	_ZThn4_N24CAlfGradientBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 388 NONAME ; #<thunk>#
+	_ZThn4_N24CAlfGradientBrushHandler7ReleaseEv @ 389 NONAME ; #<thunk>#
+	_ZThn4_N24CAlfLCTGridLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 390 NONAME ; #<thunk>#
+	_ZThn4_N24CAlfLCTGridLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 391 NONAME ; #<thunk>#
+	_ZThn4_N24CAlfLCTGridLayoutHandler7ReleaseEv @ 392 NONAME ; #<thunk>#
+	_ZThn4_N24CAlfLCTTextVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 393 NONAME ; #<thunk>#
+	_ZThn4_N24CAlfLCTTextVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 394 NONAME ; #<thunk>#
+	_ZThn4_N24CAlfLCTTextVisualHandler7ReleaseEv @ 395 NONAME ; #<thunk>#
+	_ZThn4_N25CAlfViewportLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 396 NONAME ; #<thunk>#
+	_ZThn4_N25CAlfViewportLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 397 NONAME ; #<thunk>#
+	_ZThn4_N25CAlfViewportLayoutHandler7ReleaseEv @ 398 NONAME ; #<thunk>#
+	_ZThn4_N26CAlfCurvePathLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 399 NONAME ; #<thunk>#
+	_ZThn4_N26CAlfCurvePathLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 400 NONAME ; #<thunk>#
+	_ZThn4_N26CAlfCurvePathLayoutHandler7ReleaseEv @ 401 NONAME ; #<thunk>#
+	_ZThn4_N26CAlfDropShadowBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 402 NONAME ; #<thunk>#
+	_ZThn4_N26CAlfDropShadowBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 403 NONAME ; #<thunk>#
+	_ZThn4_N26CAlfDropShadowBrushHandler7ReleaseEv @ 404 NONAME ; #<thunk>#
+	_ZThn4_N26CAlfLCTAnchorLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 405 NONAME ; #<thunk>#
+	_ZThn4_N26CAlfLCTAnchorLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 406 NONAME ; #<thunk>#
+	_ZThn4_N26CAlfLCTAnchorLayoutHandler7ReleaseEv @ 407 NONAME ; #<thunk>#
+	_ZThn4_N28CAlfShadowBorderBrushHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 408 NONAME ; #<thunk>#
+	_ZThn4_N28CAlfShadowBorderBrushHandler12GetInterfaceERK20THuiInterfaceSupport @ 409 NONAME ; #<thunk>#
+	_ZThn4_N28CAlfShadowBorderBrushHandler7ReleaseEv @ 410 NONAME ; #<thunk>#
+	_ZN21CAlfAppSrvSessionBase22SetClientWindowGroupIdEi @ 411 NONAME
+	_ZN16CAlfBrushHandler21BrushHandlerExtensionERK4TUidPPv @ 412 NONAME
+	_ZN21CAlfFrameBrushHandler21BrushHandlerExtensionERK4TUidPPv @ 413 NONAME
+	_ZN21CAlfImageBrushHandler21BrushHandlerExtensionERK4TUidPPv @ 414 NONAME
+	_ZN22CAlfBorderBrushHandler21BrushHandlerExtensionERK4TUidPPv @ 415 NONAME
+	_ZN24CAlfGradientBrushHandler21BrushHandlerExtensionERK4TUidPPv @ 416 NONAME
+	_ZN26CAlfDropShadowBrushHandler21BrushHandlerExtensionERK4TUidPPv @ 417 NONAME
+	_ZN28CAlfShadowBorderBrushHandler21BrushHandlerExtensionERK4TUidPPv @ 418 NONAME
+	_ZN17CAlfLayoutHandler22VisualHandlerExtensionERK4TUidPPv @ 419 NONAME
+	_ZN17CAlfVisualHandler22VisualHandlerExtensionERK4TUidPPv @ 420 NONAME
+	_ZN21CAlfDeckLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 421 NONAME
+	_ZN21CAlfDeckLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 422 NONAME
+	_ZN21CAlfDeckLayoutHandler22VisualHandlerExtensionERK4TUidPPv @ 423 NONAME
+	_ZN21CAlfDeckLayoutHandler7ReleaseEv @ 424 NONAME
+	_ZN21CAlfFlowLayoutHandler22VisualHandlerExtensionERK4TUidPPv @ 425 NONAME
+	_ZN21CAlfGridLayoutHandler22VisualHandlerExtensionERK4TUidPPv @ 426 NONAME
+	_ZN21CAlfLineVisualHandler22VisualHandlerExtensionERK4TUidPPv @ 427 NONAME
+	_ZN21CAlfMeshVisualHandler22VisualHandlerExtensionERK4TUidPPv @ 428 NONAME
+	_ZN21CAlfTextVisualHandler22VisualHandlerExtensionERK4TUidPPv @ 429 NONAME
+	_ZN22CAlfImageVisualHandler22VisualHandlerExtensionERK4TUidPPv @ 430 NONAME
+	_ZN23CAlfAnchorLayoutHandler22VisualHandlerExtensionERK4TUidPPv @ 431 NONAME
+	_ZN24CAlfLCTGridLayoutHandler22VisualHandlerExtensionERK4TUidPPv @ 432 NONAME
+	_ZN24CAlfLCTTextVisualHandler22VisualHandlerExtensionERK4TUidPPv @ 433 NONAME
+	_ZN25CAlfViewportLayoutHandler22VisualHandlerExtensionERK4TUidPPv @ 434 NONAME
+	_ZN26CAlfCurvePathLayoutHandler22VisualHandlerExtensionERK4TUidPPv @ 435 NONAME
+	_ZN26CAlfLCTAnchorLayoutHandler22VisualHandlerExtensionERK4TUidPPv @ 436 NONAME
+	_ZThn4_N21CAlfDeckLayoutHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 437 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfDeckLayoutHandler12GetInterfaceERK20THuiInterfaceSupport @ 438 NONAME ; #<thunk>#
+	_ZThn4_N21CAlfDeckLayoutHandler7ReleaseEv @ 439 NONAME ; #<thunk>#
+	_ZN21CAlfAppSrvSessionBase10DisconnectERK9RMessage2 @ 440 NONAME
+	_ZN21CAlfAppSrvSessionBase10Extension_EjRPvS0_ @ 441 NONAME
+	_ZN21CAlfAppSrvSessionBase12ServiceErrorERK9RMessage2i @ 442 NONAME
+	_ZN21CAlfAppSrvSessionBase14CountResourcesEv @ 443 NONAME
+	_ZN21CAlfAppSrvSessionBase29AlfInterfaceProviderExtensionERK4TUidPPv @ 444 NONAME
+	_ZThn36_N21CAlfAppSrvSessionBase29AlfInterfaceProviderExtensionERK4TUidPPv @ 445 NONAME ; #<thunk>#
+	_ZN21CAlfFrameBrushHandler10ConstructLEP9CHuiBrushRK11TAknsItemID12TAlfXYMetric @ 446 NONAME
+	_ZN21CAlfFrameBrushHandler4NewLER21MAlfInterfaceProviderRK11TAknsItemID12TAlfXYMetric @ 447 NONAME
+	_ZN22CAlfBorderBrushHandler10ConstructLEP9CHuiBrush12TAlfXYMetricS2_ @ 448 NONAME
+	_ZN22CAlfBorderBrushHandler4NewLER21MAlfInterfaceProvider12TAlfXYMetricS2_ @ 449 NONAME
+	_ZN26CAlfDropShadowBrushHandler10ConstructLEP9CHuiBrush10TAlfMetric @ 450 NONAME
+	_ZN26CAlfDropShadowBrushHandler4NewLER21MAlfInterfaceProvider10TAlfMetric @ 451 NONAME
+	_ZN28CAlfShadowBorderBrushHandler10ConstructLEP9CHuiBrush10TAlfMetric @ 452 NONAME
+	_ZN28CAlfShadowBorderBrushHandler4NewLER21MAlfInterfaceProvider10TAlfMetric @ 453 NONAME
+	_ZN16CAlfSrvEffectEnv20VisibleControlGroupLEi @ 454 NONAME
+	_ZN21CAlfFrameBrushHandler10ConstructLEP9CHuiBrushRK9THuiImage12TAlfXYMetric @ 455 NONAME
+	_ZN21CAlfFrameBrushHandler4NewLER21MAlfInterfaceProviderRK9THuiImage12TAlfXYMetric @ 456 NONAME
+	_ZN23CAlfCanvasVisualHandler10ConstructLEP10CHuiVisualR11CHuiControlP10CHuiLayout @ 457 NONAME
+	_ZN23CAlfCanvasVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 458 NONAME
+	_ZN23CAlfCanvasVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 459 NONAME
+	_ZN23CAlfCanvasVisualHandler22VisualHandlerExtensionERK4TUidPPv @ 460 NONAME
+	_ZN23CAlfCanvasVisualHandler4NewLER21MAlfInterfaceProviderP11CHuiControlP10CHuiLayout @ 461 NONAME
+	_ZN23CAlfCanvasVisualHandler7ReleaseEv @ 462 NONAME
+	_ZN23CAlfCanvasVisualHandlerC1ER21MAlfInterfaceProvider @ 463 NONAME
+	_ZN23CAlfCanvasVisualHandlerC2ER21MAlfInterfaceProvider @ 464 NONAME
+	_ZN23CAlfCanvasVisualHandlerD0Ev @ 465 NONAME
+	_ZN23CAlfCanvasVisualHandlerD1Ev @ 466 NONAME
+	_ZN23CAlfCanvasVisualHandlerD2Ev @ 467 NONAME
+	_ZTI23CAlfCanvasVisualHandler @ 468 NONAME ; #<TI>#
+	_ZTV23CAlfCanvasVisualHandler @ 469 NONAME ; #<VT>#
+	_ZThn4_N23CAlfCanvasVisualHandler10HandleCmdLEiRK6TDesC8R5TDes8 @ 470 NONAME ; #<thunk>#
+	_ZThn4_N23CAlfCanvasVisualHandler12GetInterfaceERK20THuiInterfaceSupport @ 471 NONAME ; #<thunk>#
+	_ZThn4_N23CAlfCanvasVisualHandler7ReleaseEv @ 472 NONAME ; #<thunk>#
+	_ZN10CAlfWindow10OutBufferLEi @ 473 NONAME
+	_ZN10CAlfWindow10SetOpacityEfj @ 474 NONAME
+	_ZN10CAlfWindow11SetRotationEfj @ 475 NONAME
+	_ZN10CAlfWindow12ContentReadyERK7TRegion @ 476 NONAME
+	_ZN10CAlfWindow16SetSurfaceExtentERK5TRect @ 477 NONAME
+	_ZN10CAlfWindow31EnableIndexChangedNotificationsEi @ 478 NONAME
+	_ZN10CAlfWindow4MoveEj @ 479 NONAME
+	_ZN10CAlfWindow6SetPosE6TPointj @ 480 NONAME
+	_ZN10CAlfWindow7SetSizeE5TSizej @ 481 NONAME
+	_ZN10CAlfWindow8InBufferEv @ 482 NONAME
+	_ZN10CAlfWindow9SetActiveEi @ 483 NONAME
+	_ZN16CAlfWindowBuffer4NewLERK5TSizeijPv @ 484 NONAME
+	_ZN16CAlfWindowBuffer7SetSizeERK5TSize @ 485 NONAME
+	_ZN16CAlfWindowBuffer9SetFormatEi @ 486 NONAME
+	_ZN16CAlfWindowBuffer9SetStrideEj @ 487 NONAME
+	_ZN16CAlfWindowBufferD0Ev @ 488 NONAME
+	_ZN16CAlfWindowBufferD1Ev @ 489 NONAME
+	_ZN16CAlfWindowBufferD2Ev @ 490 NONAME
+	_ZN17CAlfWindowManager13DestroyWindowER10CAlfWindow @ 491 NONAME
+	_ZN17CAlfWindowManager13GetWinIdListLEiR6RArrayI17TWindowIdentifierE @ 492 NONAME
+	_ZN17CAlfWindowManager15GetWinInfoListLEiiR6RArrayI13TAlfWServInfoE @ 493 NONAME
+	_ZN17CAlfWindowManager16CreateNewWindowLEjRK5TSize @ 494 NONAME
+	_ZN17CAlfWindowManager29EnableNewWindowNotificationsLER18CAlfWindowFxPlugini @ 495 NONAME
+	_ZN17CAlfWindowManager33EnableDestroyWindowNotificationsLER18CAlfWindowFxPlugini @ 496 NONAME
+	_ZN17CAlfWindowManager6BridgeEv @ 497 NONAME
+	_ZN17CAlfWindowManager6PostItERK15TAlfBridgerData @ 498 NONAME
+	_ZN17CAlfWindowManager7ReleaseER10CAlfWindowi @ 499 NONAME
+	_ZN17CAlfWindowManager8ReserveLERK17TWindowIdentifieri @ 500 NONAME
+	_ZN18CAlfStreamerBridge14AppendVarDataLEiRi @ 501 NONAME
+	_ZN18CAlfWindowFxPlugin10ConstructLERK17CAlfWindowManageri @ 502 NONAME
+	_ZN18CAlfWindowFxPlugin13CancelMessageEi @ 503 NONAME
+	_ZN18CAlfWindowFxPlugin13DestroyWindowERK17TWindowIdentifier @ 504 NONAME
+	_ZN18CAlfWindowFxPlugin13WindowManagerEv @ 505 NONAME
+	_ZN18CAlfWindowFxPlugin14HandleMessageLERK6TDesC8R5TPtr8 @ 506 NONAME
+	_ZN18CAlfWindowFxPlugin14HandleMessageLERK6TDesC8RK9RMessage2 @ 507 NONAME
+	_ZN18CAlfWindowFxPlugin9NewWindowERK17TWindowIdentifier @ 508 NONAME
+	_ZN18CAlfWindowFxPluginD0Ev @ 509 NONAME
+	_ZN18CAlfWindowFxPluginD1Ev @ 510 NONAME
+	_ZN18CAlfWindowFxPluginD2Ev @ 511 NONAME
+	_ZNK10CAlfWindow10IdentifierEv @ 512 NONAME
+	_ZNK10CAlfWindow13SurfaceExtentEv @ 513 NONAME
+	_ZNK10CAlfWindow4SizeEv @ 514 NONAME
+	_ZNK10CAlfWindow5IndexEv @ 515 NONAME
+	_ZNK10CAlfWindow6WsInfoEv @ 516 NONAME
+	_ZNK10CAlfWindow7OpacityEv @ 517 NONAME
+	_ZNK10CAlfWindow8IsActiveEv @ 518 NONAME
+	_ZNK10CAlfWindow8PositionEv @ 519 NONAME
+	_ZNK10CAlfWindow8RotationEv @ 520 NONAME
+	_ZNK16CAlfWindowBuffer12SetBufferPtrEPv @ 521 NONAME
+	_ZNK16CAlfWindowBuffer4SizeEv @ 522 NONAME
+	_ZNK16CAlfWindowBuffer6FormatEv @ 523 NONAME
+	_ZNK16CAlfWindowBuffer6StrideEv @ 524 NONAME
+	_ZNK16CAlfWindowBuffer9BufferPtrEv @ 525 NONAME
+	_ZNK17CAlfWindowManager8ScreenIdEv @ 526 NONAME
+	_ZTI12CAlfNodeAnim @ 527 NONAME ; #<TI>#
+	_ZTI12CAlfNodeRoot @ 528 NONAME ; #<TI>#
+	_ZTI13CAlfNodeGroup @ 529 NONAME ; #<TI>#
+	_ZTI14CAlfNodeSprite @ 530 NONAME ; #<TI>#
+	_ZTI14CAlfNodeVisual @ 531 NONAME ; #<TI>#
+	_ZTI14CAlfNodeWindow @ 532 NONAME ; #<TI>#
+	_ZTI18CAlfNodeTextCursor @ 533 NONAME ; #<TI>#
+	_ZTI18CAlfWindowFxPlugin @ 534 NONAME ; #<TI>#
+	_ZTI8CAlfNode @ 535 NONAME ; #<TI>#
+	_ZTV12CAlfNodeAnim @ 536 NONAME ; #<VT>#
+	_ZTV12CAlfNodeRoot @ 537 NONAME ; #<VT>#
+	_ZTV13CAlfNodeGroup @ 538 NONAME ; #<VT>#
+	_ZTV14CAlfNodeSprite @ 539 NONAME ; #<VT>#
+	_ZTV14CAlfNodeVisual @ 540 NONAME ; #<VT>#
+	_ZTV14CAlfNodeWindow @ 541 NONAME ; #<VT>#
+	_ZTV18CAlfNodeTextCursor @ 542 NONAME ; #<VT>#
+	_ZTV18CAlfWindowFxPlugin @ 543 NONAME ; #<VT>#
+	_ZTV8CAlfNode @ 544 NONAME ; #<VT>#
+	_ZN18CAlfStreamerBridge18AppendEffectsDataLEiRi @ 545 NONAME
+	_ZN18CAlfStreamerBridge15FindWgForAppUidE4TUid @ 546 NONAME
+	_ZN18CAlfStreamerBridge17FindAppUidForWgIdEi @ 547 NONAME
+	_ZN10CAlfWindow21SetLayerUsesAplhaFlagEi @ 548 NONAME
+	_ZN18CAlfWindowFxPlugin17ClientAboutToExitE9TThreadId @ 549 NONAME
+

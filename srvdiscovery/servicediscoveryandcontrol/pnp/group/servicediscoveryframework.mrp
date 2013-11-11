@@ -1,0 +1,12 @@
+component	servicediscoveryframework
+source	\sf\mw\srvdiscovery\servicediscoveryandcontrol\pnp
+binary	\sf\mw\srvdiscovery\servicediscoveryandcontrol\pnp\group	all
+exports	\sf\mw\srvdiscovery\servicediscoveryandcontrol\pnp\group
+
+notes_source	\component_defs\release.src
+
+
+
+ipr E 
+ipr T \sf\mw\srvdiscovery\servicediscoveryandcontrol\pnp\test
+

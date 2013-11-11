@@ -1,0 +1,45 @@
+/*
+* Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  MMP file for alf crp ECOM plugin
+*
+*/
+
+#include <platform_paths.hrh>
+#include <defaultcaps.hrh>
+
+TARGET          alfcrpplugin.dll
+TARGETTYPE      PLUGIN 
+UID             0x10009D8D 0x2002C358
+CAPABILITY      CAP_ECOM_PLUGIN
+VENDORID        VID_DEFAULT
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../../CommonInc
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH      ../src
+SOURCE          alfcrpplugin.cpp
+SOURCE          alfsynchronizer.cpp
+
+START RESOURCE  alfcrpplugin.rss
+TARGET          alfcrpplugin.rsc
+END
+
+LIBRARY         ecom.lib
+LIBRARY         euser.lib
+LIBRARY         wsgraphicdrawer.lib
+LIBRARY         fbscli.lib
+LIBRARY         estor.lib
+LIBRARY         gdi.lib
+

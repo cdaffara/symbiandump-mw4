@@ -1,0 +1,45 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        File that exports the files belonging to 
+:                Web Service Connection API
+*
+*/
+
+
+
+
+
+
+
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+../inc/RSenDocument.h      				MW_LAYER_PUBLIC_EXPORT_PATH(RSenDocument.h)
+../inc/SenDomFragmentBase.h				MW_LAYER_PUBLIC_EXPORT_PATH(SenDomFragmentBase.h)
+../inc/SenFragmentBase.h      		MW_LAYER_PUBLIC_EXPORT_PATH(SenFragmentBase.h)
+../inc/SenParser.h         				MW_LAYER_PUBLIC_EXPORT_PATH(SenParser.h)  
+
+
+
+
+
+
+
+
+

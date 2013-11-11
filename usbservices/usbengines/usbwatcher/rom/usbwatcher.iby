@@ -1,0 +1,29 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Image description file for project UsbWatcher
+*
+*/
+
+
+#ifndef USBWATCHER_IBY__
+#define USBWATCHER_IBY__
+
+#ifdef __USB
+file=ABI_DIR\BUILD_DIR\usbwatcher.exe		PROGRAMS_DIR\usbwatcher.exe
+file=ABI_DIR\BUILD_DIR\usbwatcher.dll		PROGRAMS_DIR\usbwatcher.dll
+file=ABI_DIR\BUILD_DIR\usbpersonality.dll		PROGRAMS_DIR\usbpersonality.dll
+data=DATAZ_\private\101F9696\backup_registration.xml	private\101F9696\backup_registration.xml
+#endif
+
+#endif

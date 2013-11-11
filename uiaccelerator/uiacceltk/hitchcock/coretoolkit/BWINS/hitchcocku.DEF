@@ -1,0 +1,1606 @@
+EXPORTS
+	??0CHuiAnimatedTexture@@IAE@AAVCHuiTextureManager@@@Z @ 1 NONAME ; CHuiAnimatedTexture::CHuiAnimatedTexture(class CHuiTextureManager &)
+	??0CHuiBrush@@IAE@XZ @ 2 NONAME ; CHuiBrush::CHuiBrush(void)
+	??0CHuiControl@@QAE@AAVCHuiEnv@@@Z @ 3 NONAME ; CHuiControl::CHuiControl(class CHuiEnv &)
+	??0CHuiDisplayCoeControl@@IAE@AAVCHuiEnv@@@Z @ 4 NONAME ; CHuiDisplayCoeControl::CHuiDisplayCoeControl(class CHuiEnv &)
+	??0CHuiGridLayout@@QAE@AAVMHuiVisualOwner@@@Z @ 5 NONAME ; CHuiGridLayout::CHuiGridLayout(class MHuiVisualOwner &)
+	??0CHuiImageLoaderUtil@@QAE@XZ @ 6 NONAME ; CHuiImageLoaderUtil::CHuiImageLoaderUtil(void)
+	??0CHuiLayout@@QAE@AAVMHuiVisualOwner@@@Z @ 7 NONAME ; CHuiLayout::CHuiLayout(class MHuiVisualOwner &)
+	??0CHuiS60Skin@@QAE@AAVCHuiEnv@@@Z @ 8 NONAME ; CHuiS60Skin::CHuiS60Skin(class CHuiEnv &)
+	??0CHuiVisual@@QAE@AAVMHuiVisualOwner@@@Z @ 9 NONAME ; CHuiVisual::CHuiVisual(class MHuiVisualOwner &)
+	??0THuiActionCommand@@QAE@H@Z @ 10 NONAME ; THuiActionCommand::THuiActionCommand(int)
+	??0THuiAverageMappingFunction@@QAE@PAVMHuiMappingFunction@@0@Z @ 11 NONAME ; THuiAverageMappingFunction::THuiAverageMappingFunction(class MHuiMappingFunction *, class MHuiMappingFunction *)
+	??0THuiBoxMetric@@QAE@ABUTHuiMetric@@000@Z @ 12 NONAME ; THuiBoxMetric::THuiBoxMetric(struct THuiMetric const &, struct THuiMetric const &, struct THuiMetric const &, struct THuiMetric const &)
+	??0THuiBoxMetric@@QAE@ABUTHuiMetric@@@Z @ 13 NONAME ; THuiBoxMetric::THuiBoxMetric(struct THuiMetric const &)
+	??0THuiBoxMetric@@QAE@ABUTHuiXYMetric@@0@Z @ 14 NONAME ; THuiBoxMetric::THuiBoxMetric(struct THuiXYMetric const &, struct THuiXYMetric const &)
+	??0THuiBoxMetric@@QAE@ABUTHuiXYMetric@@@Z @ 15 NONAME ; THuiBoxMetric::THuiBoxMetric(struct THuiXYMetric const &)
+	??0THuiBoxMetric@@QAE@XZ @ 16 NONAME ; THuiBoxMetric::THuiBoxMetric(void)
+	??0THuiCommand@@IAE@W4THuiCommandType@@@Z @ 17 NONAME ; THuiCommand::THuiCommand(enum THuiCommandType)
+	??0THuiConstantMappingFunction@@QAE@M@Z @ 18 NONAME ; THuiConstantMappingFunction::THuiConstantMappingFunction(float)
+	??0THuiControlCommand@@QAE@AAVCHuiControl@@W4THuiOp@@@Z @ 19 NONAME ; THuiControlCommand::THuiControlCommand(class CHuiControl &, enum THuiOp)
+	??0THuiCosineMappingFunction@@QAE@MM@Z @ 20 NONAME ; THuiCosineMappingFunction::THuiCosineMappingFunction(float, float)
+	??0THuiCustomEventCommand@@QAE@HPAVMHuiEventHandler@@@Z @ 21 NONAME ; THuiCustomEventCommand::THuiCustomEventCommand(int, class MHuiEventHandler *)
+	??0THuiEvent@@QAE@H@Z @ 22 NONAME ; THuiEvent::THuiEvent(int)
+	??0THuiEvent@@QAE@PAVCHuiDisplay@@ABUTPointerEvent@@@Z @ 23 NONAME ; THuiEvent::THuiEvent(class CHuiDisplay *, struct TPointerEvent const &)
+	??0THuiFont@@QAE@HABVTFontSpec@@@Z @ 24 NONAME ; THuiFont::THuiFont(int, class TFontSpec const &)
+	??0THuiFont@@QAE@XZ @ 25 NONAME ; THuiFont::THuiFont(void)
+	??0THuiGroupCommand@@QAE@AAVCHuiControlGroup@@W4THuiOp@@PAVCHuiDisplay@@@Z @ 26 NONAME ; THuiGroupCommand::THuiGroupCommand(class CHuiControlGroup &, enum THuiOp, class CHuiDisplay *)
+	??0THuiImage@@QAE@ABVMHuiTexture@@MMMM@Z @ 27 NONAME ; THuiImage::THuiImage(class MHuiTexture const &, float, float, float, float)
+	??0THuiImage@@QAE@XZ @ 28 NONAME ; THuiImage::THuiImage(void)
+	??0THuiImageCommand@@QAE@AAVCHuiImageVisual@@ABVTHuiImage@@W4THuiOp@@@Z @ 29 NONAME ; THuiImageCommand::THuiImageCommand(class CHuiImageVisual &, class THuiImage const &, enum THuiOp)
+	??0THuiInteractionInterval@@QAE@M@Z @ 30 NONAME ; THuiInteractionInterval::THuiInteractionInterval(float)
+	??0THuiLinearMappingFunction@@QAE@MM@Z @ 31 NONAME ; THuiLinearMappingFunction::THuiLinearMappingFunction(float, float)
+	??0THuiMarkerCommand@@QAE@H@Z @ 32 NONAME ; THuiMarkerCommand::THuiMarkerCommand(int)
+	??0THuiMaterial@@QAE@XZ @ 33 NONAME ; THuiMaterial::THuiMaterial(void)
+	??0THuiMetric@@QAE@H@Z @ 34 NONAME ; THuiMetric::THuiMetric(int)
+	??0THuiMetric@@QAE@MHH@Z @ 35 NONAME ; THuiMetric::THuiMetric(float, int, int)
+	??0THuiObjectCommand@@IAE@W4THuiCommandType@@PAXW4THuiOp@@@Z @ 36 NONAME ; THuiObjectCommand::THuiObjectCommand(enum THuiCommandType, void *, enum THuiOp)
+	??0THuiPointCommand@@QAE@PAXAAVTHuiTimedPoint@@VTHuiRealPoint@@H@Z @ 37 NONAME ; THuiPointCommand::THuiPointCommand(void *, class THuiTimedPoint &, class THuiRealPoint, int)
+	??0THuiPointCommand@@QAE@PAXAAVTHuiTimedPoint@@W4THuiOp@@@Z @ 38 NONAME ; THuiPointCommand::THuiPointCommand(void *, class THuiTimedPoint &, enum THuiOp)
+	??0THuiPointCommand@@QAE@PAXAAVTHuiTimedPoint@@W4THuiOp@@VTHuiRealPoint@@M@Z @ 39 NONAME ; THuiPointCommand::THuiPointCommand(void *, class THuiTimedPoint &, enum THuiOp, class THuiRealPoint, float)
+	??0THuiS60TextStyle@@QAE@HH@Z @ 40 NONAME ; THuiS60TextStyle::THuiS60TextStyle(int, int)
+	??0THuiSineMappingFunction@@QAE@MM@Z @ 41 NONAME ; THuiSineMappingFunction::THuiSineMappingFunction(float, float)
+	??0THuiTextCommand@@QAE@AAVCHuiTextVisual@@ABVTDesC16@@W4THuiOp@@@Z @ 42 NONAME ; THuiTextCommand::THuiTextCommand(class CHuiTextVisual &, class TDesC16 const &, enum THuiOp)
+	??0THuiTextStyle@@QAE@ABV0@@Z @ 43 NONAME ; THuiTextStyle::THuiTextStyle(class THuiTextStyle const &)
+	??0THuiTextureHandle@@QAE@IABVTSize@@0@Z @ 44 NONAME ; THuiTextureHandle::THuiTextureHandle(unsigned int, class TSize const &, class TSize const &)
+	??0THuiTextureHandle@@QAE@XZ @ 45 NONAME ; THuiTextureHandle::THuiTextureHandle(void)
+	??0THuiTimedPoint@@QAE@MM@Z @ 46 NONAME ; THuiTimedPoint::THuiTimedPoint(float, float)
+	??0THuiTimedPoint@@QAE@XZ @ 47 NONAME ; THuiTimedPoint::THuiTimedPoint(void)
+	??0THuiTimedValue@@QAE@MW4THuiInterpolationStyle@@@Z @ 48 NONAME ; THuiTimedValue::THuiTimedValue(float, enum THuiInterpolationStyle)
+	??0THuiTimedValue@@QAE@W4THuiInterpolationStyle@@@Z @ 49 NONAME ; THuiTimedValue::THuiTimedValue(enum THuiInterpolationStyle)
+	??0THuiTransformationCommand@@QAE@PAXAAVCHuiTransformation@@W4THuiOp@@H@Z @ 50 NONAME ; THuiTransformationCommand::THuiTransformationCommand(void *, class CHuiTransformation &, enum THuiOp, int)
+	??0THuiValueCommand@@QAE@PAXAAVTHuiTimedValue@@MH@Z @ 51 NONAME ; THuiValueCommand::THuiValueCommand(void *, class THuiTimedValue &, float, int)
+	??0THuiValueCommand@@QAE@PAXAAVTHuiTimedValue@@W4THuiOp@@MM@Z @ 52 NONAME ; THuiValueCommand::THuiValueCommand(void *, class THuiTimedValue &, enum THuiOp, float, float)
+	??0THuiVisualCommand@@QAE@AAVCHuiVisual@@W4THuiOp@@HH@Z @ 53 NONAME ; THuiVisualCommand::THuiVisualCommand(class CHuiVisual &, enum THuiOp, int, int)
+	??0THuiXYMetric@@QAE@ABUTHuiMetric@@0@Z @ 54 NONAME ; THuiXYMetric::THuiXYMetric(struct THuiMetric const &, struct THuiMetric const &)
+	??0THuiXYMetric@@QAE@ABUTHuiMetric@@@Z @ 55 NONAME ; THuiXYMetric::THuiXYMetric(struct THuiMetric const &)
+	??0THuiXYMetric@@QAE@XZ @ 56 NONAME ; THuiXYMetric::THuiXYMetric(void)
+	??1CHuiAnchorLayout@@UAE@XZ @ 57 NONAME ; CHuiAnchorLayout::~CHuiAnchorLayout(void)
+	??1CHuiAnimatedTexture@@UAE@XZ @ 58 NONAME ; CHuiAnimatedTexture::~CHuiAnimatedTexture(void)
+	??1CHuiBrush@@UAE@XZ @ 59 NONAME ; CHuiBrush::~CHuiBrush(void)
+	??1CHuiBrushArray@@UAE@XZ @ 60 NONAME ; CHuiBrushArray::~CHuiBrushArray(void)
+	??1CHuiControl@@UAE@XZ @ 61 NONAME ; CHuiControl::~CHuiControl(void)
+	??1CHuiCurvePath@@UAE@XZ @ 62 NONAME ; CHuiCurvePath::~CHuiCurvePath(void)
+	??1CHuiDeckLayout@@UAE@XZ @ 63 NONAME ; CHuiDeckLayout::~CHuiDeckLayout(void)
+	??1CHuiDisplay@@UAE@XZ @ 64 NONAME ; CHuiDisplay::~CHuiDisplay(void)
+	??1CHuiDisplayCoeControl@@UAE@XZ @ 65 NONAME ; CHuiDisplayCoeControl::~CHuiDisplayCoeControl(void)
+	??1CHuiFlowLayout@@UAE@XZ @ 66 NONAME ; CHuiFlowLayout::~CHuiFlowLayout(void)
+	??1CHuiGifAnimationTexture@@UAE@XZ @ 67 NONAME ; CHuiGifAnimationTexture::~CHuiGifAnimationTexture(void)
+	??1CHuiGridLayout@@UAE@XZ @ 68 NONAME ; CHuiGridLayout::~CHuiGridLayout(void)
+	??1CHuiImageBrush@@UAE@XZ @ 69 NONAME ; CHuiImageBrush::~CHuiImageBrush(void)
+	??1CHuiImageLoaderUtil@@UAE@XZ @ 70 NONAME ; CHuiImageLoaderUtil::~CHuiImageLoaderUtil(void)
+	??1CHuiLayout@@UAE@XZ @ 71 NONAME ; CHuiLayout::~CHuiLayout(void)
+	??1CHuiMesh@@UAE@XZ @ 72 NONAME ; CHuiMesh::~CHuiMesh(void)
+	??1CHuiProceduralMesh@@UAE@XZ @ 73 NONAME ; CHuiProceduralMesh::~CHuiProceduralMesh(void)
+	??1CHuiS60Skin@@UAE@XZ @ 74 NONAME ; CHuiS60Skin::~CHuiS60Skin(void)
+	??1CHuiSoftKeyControl@@UAE@XZ @ 75 NONAME ; CHuiSoftKeyControl::~CHuiSoftKeyControl(void)
+	??1CHuiTexture@@UAE@XZ @ 76 NONAME ; CHuiTexture::~CHuiTexture(void)
+	??1CHuiTransformation@@UAE@XZ @ 77 NONAME ; CHuiTransformation::~CHuiTransformation(void)
+	??1CHuiVisual@@UAE@XZ @ 78 NONAME ; CHuiVisual::~CHuiVisual(void)
+	??1MHuiBitmapProvider@@UAE@XZ @ 79 NONAME ; MHuiBitmapProvider::~MHuiBitmapProvider(void)
+	??1MHuiEventHandler@@UAE@XZ @ 80 NONAME ; MHuiEventHandler::~MHuiEventHandler(void)
+	??1MHuiSegmentedTexture@@UAE@XZ @ 81 NONAME ; MHuiSegmentedTexture::~MHuiSegmentedTexture(void)
+	??1MHuiTexture@@UAE@XZ @ 82 NONAME ; MHuiTexture::~MHuiTexture(void)
+	??1MHuiVisualOwner@@UAE@XZ @ 83 NONAME ; MHuiVisualOwner::~MHuiVisualOwner(void)
+	??1THuiCommand@@UAE@XZ @ 84 NONAME ; THuiCommand::~THuiCommand(void)
+	??1THuiFont@@QAE@XZ @ 85 NONAME ; THuiFont::~THuiFont(void)
+	??4THuiTimedValue@@QAEAAV0@ABV0@@Z @ 86 NONAME ; class THuiTimedValue & THuiTimedValue::operator=(class THuiTimedValue const &)
+	??ACHuiBrushArray@@QAEAAVCHuiBrush@@H@Z @ 87 NONAME ; class CHuiBrush & CHuiBrushArray::operator[](int)
+	??ACHuiTransformation@@QAEAAUTTransform@0@H@Z @ 88 NONAME ; struct CHuiTransformation::TTransform & CHuiTransformation::operator[](int)
+	?AcceptInput@CHuiControl@@QBEHXZ @ 89 NONAME ; int CHuiControl::AcceptInput(void) const
+	?AcceptInput@CHuiControlGroup@@QBEHXZ @ 90 NONAME ; int CHuiControlGroup::AcceptInput(void) const
+	?AcquireFocus@CHuiControl@@QAEXXZ @ 91 NONAME ; void CHuiControl::AcquireFocus(void)
+	?Activate@CHuiDisplay@@QAEXH@Z @ 92 NONAME ; void CHuiDisplay::Activate(int)
+	?ActivateL@CHuiDisplayCoeControl@@EAEXXZ @ 93 NONAME ; void CHuiDisplayCoeControl::ActivateL(void)
+	?Active@CHuiDisplay@@QBEHXZ @ 94 NONAME ; int CHuiDisplay::Active(void) const
+	?AddConnectionL@CHuiControl@@UAEXPAV1@H@Z @ 95 NONAME ; void CHuiControl::AddConnectionL(class CHuiControl *, int)
+	?AddNewL@CHuiAnchorLayout@@SAPAV1@AAVCHuiControl@@PAVCHuiLayout@@@Z @ 96 NONAME ; class CHuiAnchorLayout * CHuiAnchorLayout::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?AddNewL@CHuiCurvePathLayout@@SAPAV1@AAVCHuiControl@@PAVCHuiLayout@@@Z @ 97 NONAME ; class CHuiCurvePathLayout * CHuiCurvePathLayout::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?AddNewL@CHuiDeckLayout@@SAPAV1@AAVCHuiControl@@PAVCHuiLayout@@@Z @ 98 NONAME ; class CHuiDeckLayout * CHuiDeckLayout::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?AddNewL@CHuiFlowLayout@@SAPAV1@AAVCHuiControl@@W4TFlowDirection@1@PAVCHuiLayout@@@Z @ 99 NONAME ; class CHuiFlowLayout * CHuiFlowLayout::AddNewL(class CHuiControl &, enum CHuiFlowLayout::TFlowDirection, class CHuiLayout *)
+	?AddNewL@CHuiGridLayout@@SAPAV1@AAVCHuiControl@@HHPAVCHuiLayout@@@Z @ 100 NONAME ; class CHuiGridLayout * CHuiGridLayout::AddNewL(class CHuiControl &, int, int, class CHuiLayout *)
+	?AddNewL@CHuiImageVisual@@SAPAV1@AAVCHuiControl@@PAVCHuiLayout@@@Z @ 101 NONAME ; class CHuiImageVisual * CHuiImageVisual::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?AddNewL@CHuiLayout@@SAPAV1@AAVCHuiControl@@PAV1@@Z @ 102 NONAME ; class CHuiLayout * CHuiLayout::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?AddNewL@CHuiLineVisual@@SAPAV1@AAVCHuiControl@@PAVCHuiLayout@@@Z @ 103 NONAME ; class CHuiLineVisual * CHuiLineVisual::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?AddNewL@CHuiMeshVisual@@SAPAV1@AAVCHuiControl@@W4THuiMeshType@@PAVCHuiLayout@@@Z @ 104 NONAME ; class CHuiMeshVisual * CHuiMeshVisual::AddNewL(class CHuiControl &, enum THuiMeshType, class CHuiLayout *)
+	?AddNewL@CHuiTextVisual@@SAPAV1@AAVCHuiControl@@PAVCHuiLayout@@@Z @ 105 NONAME ; class CHuiTextVisual * CHuiTextVisual::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?AddNewL@CHuiViewportLayout@@SAPAV1@AAVCHuiControl@@PAVCHuiLayout@@@Z @ 106 NONAME ; class CHuiViewportLayout * CHuiViewportLayout::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?AddNewL@CHuiVisual@@SAPAV1@AAVCHuiControl@@PAVCHuiLayout@@@Z @ 107 NONAME ; class CHuiVisual * CHuiVisual::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?AlignByOrigin@CHuiVisual@@QBEXAAVTHuiRealPoint@@H@Z @ 108 NONAME ; void CHuiVisual::AlignByOrigin(class THuiRealPoint &, int) const
+	?AnimationControllerCount@CHuiMesh@@UBEHXZ @ 109 NONAME ; int CHuiMesh::AnimationControllerCount(void) const
+	?AppendAndPopL@CHuiControlGroup@@QAEXPAVCHuiControl@@@Z @ 110 NONAME ; void CHuiControlGroup::AppendAndPopL(class CHuiControl *)
+	?AppendArcL@CHuiCurvePath@@QAEXABVTPoint@@ABVTSize@@MMM@Z @ 111 NONAME ; void CHuiCurvePath::AppendArcL(class TPoint const &, class TSize const &, float, float, float)
+	?AppendColorL@CHuiGradientBrush@@UAEXMABVTRgb@@M@Z @ 112 NONAME ; void CHuiGradientBrush::AppendColorL(float, class TRgb const &, float)
+	?AppendL@CHuiBrushArray@@QAEXPAVCHuiBrush@@W4THuiOwnership@@@Z @ 113 NONAME ; void CHuiBrushArray::AppendL(class CHuiBrush *, enum THuiOwnership)
+	?AppendL@CHuiControl@@QAEXPAVCHuiVisual@@PAVCHuiLayout@@@Z @ 114 NONAME ; void CHuiControl::AppendL(class CHuiVisual *, class CHuiLayout *)
+	?AppendL@CHuiControl@@UAEXPAVCHuiVisual@@@Z @ 115 NONAME ; void CHuiControl::AppendL(class CHuiVisual *)
+	?AppendL@CHuiControlGroup@@QAEXPAVCHuiControl@@@Z @ 116 NONAME ; void CHuiControlGroup::AppendL(class CHuiControl *)
+	?AppendL@CHuiLayout@@QAEXPAVCHuiVisual@@H@Z @ 117 NONAME ; void CHuiLayout::AppendL(class CHuiVisual *, int)
+	?AppendLayoutL@CHuiControl@@QAEPAVCHuiLayout@@W4THuiLayoutType@@PAV2@@Z @ 118 NONAME ; class CHuiLayout * CHuiControl::AppendLayoutL(enum THuiLayoutType, class CHuiLayout *)
+	?AppendLineL@CHuiCurvePath@@QAEXABVTPoint@@0M@Z @ 119 NONAME ; void CHuiCurvePath::AppendLineL(class TPoint const &, class TPoint const &, float)
+	?AppendVisualL@CHuiControl@@QAEPAVCHuiVisual@@W4THuiVisualType@@PAVCHuiLayout@@@Z @ 120 NONAME ; class CHuiVisual * CHuiControl::AppendVisualL(enum THuiVisualType, class CHuiLayout *)
+	?AppendWeightL@CHuiGridLayout@@QAEXW4THuiGridDimension@@ABUTHuiMetric@@@Z @ 121 NONAME ; void CHuiGridLayout::AppendWeightL(enum THuiGridDimension, struct THuiMetric const &)
+	?At@CHuiBrushArray@@QAEAAVCHuiBrush@@H@Z @ 122 NONAME ; class CHuiBrush & CHuiBrushArray::At(int)
+	?Attach@CHuiAnchorLayout@@QAEHHABUTHuiBoxMetric@@W4THuiAnchorAttachmentOrigin@@H@Z @ 123 NONAME ; int CHuiAnchorLayout::Attach(int, struct THuiBoxMetric const &, enum THuiAnchorAttachmentOrigin, int)
+	?Attach@CHuiAnchorLayout@@QAEHHW4THuiAnchorType@@ABUTHuiMetric@@W4THuiAnchorAttachmentOrigin@@H@Z @ 124 NONAME ; int CHuiAnchorLayout::Attach(int, enum THuiAnchorType, struct THuiMetric const &, enum THuiAnchorAttachmentOrigin, int)
+	?Attach@CHuiAnchorLayout@@QAEHHW4THuiAnchorType@@ABUTHuiXYMetric@@W4THuiAnchorAttachmentOrigin@@H@Z @ 125 NONAME ; int CHuiAnchorLayout::Attach(int, enum THuiAnchorType, struct THuiXYMetric const &, enum THuiAnchorAttachmentOrigin, int)
+	?AverageFrameRate@CHuiStatic@@SAMXZ @ 126 NONAME ; float CHuiStatic::AverageFrameRate(void)
+	?BackgroundColor@THuiTextStyle@@QBE?AVTRgb@@XZ @ 127 NONAME ; class TRgb THuiTextStyle::BackgroundColor(void) const
+	?BackgroundType@CHuiTextVisual@@QBE?AW4THuiBackgroundType@@XZ @ 128 NONAME ; enum THuiBackgroundType CHuiTextVisual::BackgroundType(void) const
+	?BaseConstructL@CHuiAnimatedTexture@@IAEXXZ @ 129 NONAME ; void CHuiAnimatedTexture::BaseConstructL(void)
+	?BaseConstructL@CHuiControl@@MAEXXZ @ 130 NONAME ; void CHuiControl::BaseConstructL(void)
+	?BaseUnit@CHuiGridLayout@@UBE?AUTHuiXYMetric@@XZ @ 131 NONAME ; struct THuiXYMetric CHuiGridLayout::BaseUnit(void) const
+	?BaseUnit@CHuiLayout@@UBE?AUTHuiXYMetric@@XZ @ 132 NONAME ; struct THuiXYMetric CHuiLayout::BaseUnit(void) const
+	?BeginDraw@CHuiBrush@@UBEXAAVCHuiGc@@ABVMHuiBrushGuide@@@Z @ 133 NONAME ; void CHuiBrush::BeginDraw(class CHuiGc &, class MHuiBrushGuide const &) const
+	?Bind@MHuiSegmentedTexture@@QBEXHH@Z @ 134 NONAME ; void MHuiSegmentedTexture::Bind(int, int) const
+	?BindDisplay@CHuiControl@@QAEXAAVCHuiDisplay@@@Z @ 135 NONAME ; void CHuiControl::BindDisplay(class CHuiDisplay &)
+	?BlankTexture@CHuiTextureManager@@QAEAAVCHuiTexture@@XZ @ 136 NONAME ; class CHuiTexture & CHuiTextureManager::BlankTexture(void)
+	?BlankTexture@CHuiTextureManager@@QBEABVCHuiTexture@@XZ @ 137 NONAME ; class CHuiTexture const & CHuiTextureManager::BlankTexture(void) const
+	?BorderDrawingEnabled@CHuiImageBrush@@QBEHXZ @ 138 NONAME ; int CHuiImageBrush::BorderDrawingEnabled(void) const
+	?BottomRight@THuiImage@@QBE?AVTHuiRealPoint@@XZ @ 139 NONAME ; class THuiRealPoint THuiImage::BottomRight(void) const
+	?Bounds@CHuiControl@@QBE?AVTRect@@XZ @ 140 NONAME ; class TRect CHuiControl::Bounds(void) const
+	?BoxMetricToPixelRect@CHuiVisual@@QBEXABUTHuiBoxMetric@@AAVTHuiRealRect@@@Z @ 141 NONAME ; void CHuiVisual::BoxMetricToPixelRect(struct THuiBoxMetric const &, class THuiRealRect &) const
+	?BroadcastEventL@CHuiEnv@@QAEXABVTHuiEvent@@@Z @ 142 NONAME ; void CHuiEnv::BroadcastEventL(class THuiEvent const &)
+	?BrushExtension@CHuiBrush@@MAEXABVTUid@@PAPAX@Z @ 143 NONAME ; void CHuiBrush::BrushExtension(class TUid const &, void * *)
+	?BrushOpacity@CHuiLayout@@UBEMXZ @ 144 NONAME ; float CHuiLayout::BrushOpacity(void) const
+	?BrushOpacity@CHuiVisual@@UBEMXZ @ 145 NONAME ; float CHuiVisual::BrushOpacity(void) const
+	?BrushRect@CHuiLayout@@UBE?AVTHuiRealRect@@XZ @ 146 NONAME ; class THuiRealRect CHuiLayout::BrushRect(void) const
+	?BrushRect@CHuiVisual@@UBE?AVTHuiRealRect@@XZ @ 147 NONAME ; class THuiRealRect CHuiVisual::BrushRect(void) const
+	?BrushSkin@CHuiLayout@@UBEAAVCHuiSkin@@XZ @ 148 NONAME ; class CHuiSkin & CHuiLayout::BrushSkin(void) const
+	?BrushSkin@CHuiVisual@@UBEAAVCHuiSkin@@XZ @ 149 NONAME ; class CHuiSkin & CHuiVisual::BrushSkin(void) const
+	?Brushes@CHuiVisual@@QAEPAVCHuiBrushArray@@XZ @ 150 NONAME ; class CHuiBrushArray * CHuiVisual::Brushes(void)
+	?CancelAllCommands@CHuiControl@@QAEXXZ @ 151 NONAME ; void CHuiControl::CancelAllCommands(void)
+	?CancelCommands@CHuiEnv@@QAEXPAVMHuiEventHandler@@@Z @ 152 NONAME ; void CHuiEnv::CancelCommands(class MHuiEventHandler *)
+	?CancelCommands@CHuiEnv@@QAEXPAX@Z @ 153 NONAME ; void CHuiEnv::CancelCommands(void *)
+	?CancelCommands@CHuiEnv@@QAEXPAXW4THuiCommandType@@H@Z @ 154 NONAME ; void CHuiEnv::CancelCommands(void *, enum THuiCommandType, int)
+	?CancelCommands@CHuiEnv@@QAEXPAXW4THuiOp@@@Z @ 155 NONAME ; void CHuiEnv::CancelCommands(void *, enum THuiOp)
+	?CaptureLC@CHuiDisplay@@QBEPAEAAVTSize@@@Z @ 156 NONAME ; unsigned char * CHuiDisplay::CaptureLC(class TSize &) const
+	?Category@THuiFont@@QBE?AW4TAknFontCategory@@XZ @ 157 NONAME ; enum TAknFontCategory THuiFont::Category(void) const
+	?CenterDrawingEnabled@CHuiImageBrush@@QBEHXZ @ 158 NONAME ; int CHuiImageBrush::CenterDrawingEnabled(void) const
+	?Changed@CHuiBrush@@UBEHXZ @ 159 NONAME ; int CHuiBrush::Changed(void) const
+	?Changed@CHuiGridLayout@@UBEHXZ @ 160 NONAME ; int CHuiGridLayout::Changed(void) const
+	?Changed@CHuiLayout@@UBEHXZ @ 161 NONAME ; int CHuiLayout::Changed(void) const
+	?Changed@CHuiVisual@@UBEHXZ @ 162 NONAME ; int CHuiVisual::Changed(void) const
+	?Changed@THuiImage@@QBEHXZ @ 163 NONAME ; int THuiImage::Changed(void) const
+	?ChildOrdinal@CHuiGridLayout@@UAEHH@Z @ 164 NONAME ; int CHuiGridLayout::ChildOrdinal(int)
+	?ChildOrdinal@CHuiLayout@@UAEHH@Z @ 165 NONAME ; int CHuiLayout::ChildOrdinal(int)
+	?ChildPos@CHuiAnchorLayout@@UAEHHAAVTPoint@@@Z @ 166 NONAME ; int CHuiAnchorLayout::ChildPos(int, class TPoint &)
+	?ChildPos@CHuiFlowLayout@@UAEHHAAVTPoint@@@Z @ 167 NONAME ; int CHuiFlowLayout::ChildPos(int, class TPoint &)
+	?ChildPos@CHuiGridLayout@@UAEHHAAVTPoint@@@Z @ 168 NONAME ; int CHuiGridLayout::ChildPos(int, class TPoint &)
+	?ChildPos@CHuiLayout@@UAEHHAAVTPoint@@@Z @ 169 NONAME ; int CHuiLayout::ChildPos(int, class TPoint &)
+	?ChildRect@CHuiAnchorLayout@@UAEHHAAVTHuiRealRect@@@Z @ 170 NONAME ; int CHuiAnchorLayout::ChildRect(int, class THuiRealRect &)
+	?ChildRect@CHuiCurvePathLayout@@UAEHHAAVTHuiRealRect@@@Z @ 171 NONAME ; int CHuiCurvePathLayout::ChildRect(int, class THuiRealRect &)
+	?ChildRect@CHuiFlowLayout@@UAEHHAAVTHuiRealRect@@@Z @ 172 NONAME ; int CHuiFlowLayout::ChildRect(int, class THuiRealRect &)
+	?ChildRect@CHuiGridLayout@@UAEHHAAVTHuiRealRect@@@Z @ 173 NONAME ; int CHuiGridLayout::ChildRect(int, class THuiRealRect &)
+	?ChildRect@CHuiLayout@@UAEHHAAVTHuiRealRect@@@Z @ 174 NONAME ; int CHuiLayout::ChildRect(int, class THuiRealRect &)
+	?ChildRect@CHuiViewportLayout@@UAEHHAAVTHuiRealRect@@@Z @ 175 NONAME ; int CHuiViewportLayout::ChildRect(int, class THuiRealRect &)
+	?ChildSize@CHuiAnchorLayout@@UAEHHAAVTSize@@@Z @ 176 NONAME ; int CHuiAnchorLayout::ChildSize(int, class TSize &)
+	?ChildSize@CHuiFlowLayout@@UAEHHAAVTSize@@@Z @ 177 NONAME ; int CHuiFlowLayout::ChildSize(int, class TSize &)
+	?ChildSize@CHuiGridLayout@@UAEHHAAVTSize@@@Z @ 178 NONAME ; int CHuiGridLayout::ChildSize(int, class TSize &)
+	?ChildSize@CHuiLayout@@UAEHHAAVTSize@@@Z @ 179 NONAME ; int CHuiLayout::ChildSize(int, class TSize &)
+	?ClearChanged@CHuiBrush@@UAEXXZ @ 180 NONAME ; void CHuiBrush::ClearChanged(void)
+	?ClearChanged@CHuiGridLayout@@UAEXXZ @ 181 NONAME ; void CHuiGridLayout::ClearChanged(void)
+	?ClearChanged@CHuiLayout@@UAEXXZ @ 182 NONAME ; void CHuiLayout::ClearChanged(void)
+	?ClearChanged@CHuiVisual@@UAEXXZ @ 183 NONAME ; void CHuiVisual::ClearChanged(void)
+	?ClearChanged@THuiImage@@QAEXXZ @ 184 NONAME ; void THuiImage::ClearChanged(void)
+	?ClearChanged@THuiTimedValue@@QAEXXZ @ 185 NONAME ; void THuiTimedValue::ClearChanged(void)
+	?ClearFlag@CHuiVisual@@QAEXW4THuiVisualFlags@@@Z @ 186 NONAME ; void CHuiVisual::ClearFlag(enum THuiVisualFlags)
+	?ClearFlags@CHuiVisual@@QAEXH@Z @ 187 NONAME ; void CHuiVisual::ClearFlags(int)
+	?ClearL@CHuiTexture@@QAEHABVTSize@@ABVTRgb@@@Z @ 188 NONAME ; int CHuiTexture::ClearL(class TSize const &, class TRgb const &)
+	?ClearWithAlphaL@CHuiTexture@@QAEHABVTSize@@ABVTRgb@@E@Z @ 189 NONAME ; int CHuiTexture::ClearWithAlphaL(class TSize const &, class TRgb const &, unsigned char)
+	?ClipToVisual@CHuiBrush@@QBEHXZ @ 190 NONAME ; int CHuiBrush::ClipToVisual(void) const
+	?Clipping@CHuiVisual@@QBEHXZ @ 191 NONAME ; int CHuiVisual::Clipping(void) const
+	?Color@CHuiGradientBrush@@UBE?AVTRgb@@H@Z @ 192 NONAME ; class TRgb CHuiGradientBrush::Color(int) const
+	?ColorLightness@HuiUtil@@SAMABVTRgb@@@Z @ 193 NONAME ; float HuiUtil::ColorLightness(class TRgb const &)
+	?ColumnCount@CHuiGridLayout@@QBEHXZ @ 194 NONAME ; int CHuiGridLayout::ColumnCount(void) const
+	?CombineMaskFbsBitmapL@HuiUtil@@SAXABVCFbsBitmap@@0AAV2@@Z @ 195 NONAME ; void HuiUtil::CombineMaskFbsBitmapL(class CFbsBitmap const &, class CFbsBitmap const &, class CFbsBitmap &)
+	?CommandExtension@THuiActionCommand@@MAEXABVTUid@@PAPAX@Z @ 196 NONAME ; void THuiActionCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiCommand@@MAEXABVTUid@@PAPAX@Z @ 197 NONAME ; void THuiCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiControlCommand@@MAEXABVTUid@@PAPAX@Z @ 198 NONAME ; void THuiControlCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiCustomEventCommand@@MAEXABVTUid@@PAPAX@Z @ 199 NONAME ; void THuiCustomEventCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiGroupCommand@@MAEXABVTUid@@PAPAX@Z @ 200 NONAME ; void THuiGroupCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiImageCommand@@MAEXABVTUid@@PAPAX@Z @ 201 NONAME ; void THuiImageCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiMarkerCommand@@MAEXABVTUid@@PAPAX@Z @ 202 NONAME ; void THuiMarkerCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiObjectCommand@@MAEXABVTUid@@PAPAX@Z @ 203 NONAME ; void THuiObjectCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiPointCommand@@MAEXABVTUid@@PAPAX@Z @ 204 NONAME ; void THuiPointCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiTextCommand@@MAEXABVTUid@@PAPAX@Z @ 205 NONAME ; void THuiTextCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiTransformationCommand@@MAEXABVTUid@@PAPAX@Z @ 206 NONAME ; void THuiTransformationCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiValueCommand@@MAEXABVTUid@@PAPAX@Z @ 207 NONAME ; void THuiValueCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@THuiVisualCommand@@MAEXABVTUid@@PAPAX@Z @ 208 NONAME ; void THuiVisualCommand::CommandExtension(class TUid const &, void * *)
+	?ComponentControl@CHuiDisplayCoeControl@@EBEPAVCCoeControl@@H@Z @ 209 NONAME ; class CCoeControl * CHuiDisplayCoeControl::ComponentControl(int) const
+	?Connection@CHuiControl@@QBEAAV1@H@Z @ 210 NONAME ; class CHuiControl & CHuiControl::Connection(int) const
+	?ConnectionAddedL@CHuiControl@@MAEXPAV1@H@Z @ 211 NONAME ; void CHuiControl::ConnectionAddedL(class CHuiControl *, int)
+	?ConnectionByOrdinal@CHuiControl@@QBEAAV1@H@Z @ 212 NONAME ; class CHuiControl & CHuiControl::ConnectionByOrdinal(int) const
+	?ConnectionCount@CHuiControl@@QBEHXZ @ 213 NONAME ; int CHuiControl::ConnectionCount(void) const
+	?ConnectionOrdinal@CHuiControl@@QBEHH@Z @ 214 NONAME ; int CHuiControl::ConnectionOrdinal(int) const
+	?ConnectionRemoved@CHuiControl@@MAEXPAV1@H@Z @ 215 NONAME ; void CHuiControl::ConnectionRemoved(class CHuiControl *, int)
+	?ConnectionRole@CHuiControl@@QBEHH@Z @ 216 NONAME ; int CHuiControl::ConnectionRole(int) const
+	?ConstructFromResourceL@CHuiDisplayCoeControl@@EAEXAAVTResourceReader@@@Z @ 217 NONAME ; void CHuiDisplayCoeControl::ConstructFromResourceL(class TResourceReader &)
+	?ConstructL@CHuiDisplayCoeControl@@MAEXABVTRect@@H@Z @ 218 NONAME ; void CHuiDisplayCoeControl::ConstructL(class TRect const &, int)
+	?ConstructL@CHuiGridLayout@@UAEXXZ @ 219 NONAME ; void CHuiGridLayout::ConstructL(void)
+	?ConstructL@CHuiLayout@@UAEXXZ @ 220 NONAME ; void CHuiLayout::ConstructL(void)
+	?ConstructL@CHuiS60Skin@@UAEXXZ @ 221 NONAME ; void CHuiS60Skin::ConstructL(void)
+	?ConstructL@CHuiVisual@@UAEXXZ @ 222 NONAME ; void CHuiVisual::ConstructL(void)
+	?ContainerLayout@CHuiControl@@UBEPAVCHuiLayout@@PBV1@@Z @ 223 NONAME ; class CHuiLayout * CHuiControl::ContainerLayout(class CHuiControl const *) const
+	?Context@CHuiS60Skin@@UBEAAVCHuiGc@@XZ @ 224 NONAME ; class CHuiGc & CHuiS60Skin::Context(void) const
+	?Context@CHuiSkin@@UBEAAVCHuiGc@@XZ @ 225 NONAME ; class CHuiGc & CHuiSkin::Context(void) const
+	?ContinueRefresh@CHuiEnv@@QAEXXZ @ 226 NONAME ; void CHuiEnv::ContinueRefresh(void)
+	?ContinueTime@CHuiStatic@@SAXXZ @ 227 NONAME ; void CHuiStatic::ContinueTime(void)
+	?Control@CHuiControlGroup@@QBEAAVCHuiControl@@H@Z @ 228 NONAME ; class CHuiControl & CHuiControlGroup::Control(int) const
+	?Control@THuiControlCommand@@QBEAAVCHuiControl@@XZ @ 229 NONAME ; class CHuiControl & THuiControlCommand::Control(void) const
+	?ControlExtension@CHuiControl@@MAEXABVTUid@@PAPAX@Z @ 230 NONAME ; void CHuiControl::ControlExtension(class TUid const &, void * *)
+	?ControlGroup@CHuiControl@@UBEPAVCHuiControlGroup@@XZ @ 231 NONAME ; class CHuiControlGroup * CHuiControl::ControlGroup(void) const
+	?ControlGroup@CHuiEnv@@QAEAAVCHuiControlGroup@@H@Z @ 232 NONAME ; class CHuiControlGroup & CHuiEnv::ControlGroup(int)
+	?ControlGroup@THuiGroupCommand@@QBEAAVCHuiControlGroup@@XZ @ 233 NONAME ; class CHuiControlGroup & THuiGroupCommand::ControlGroup(void) const
+	?ConvertBitmapToDisplayModeLC@HuiUtil@@SAPAVCFbsBitmap@@ABV2@ABW4TDisplayMode@@@Z @ 234 NONAME ; class CFbsBitmap * HuiUtil::ConvertBitmapToDisplayModeLC(class CFbsBitmap const &, enum TDisplayMode const &)
+	?CopyTextStyleL@CHuiTextStyleManager@@QAEHH@Z @ 235 NONAME ; int CHuiTextStyleManager::CopyTextStyleL(int)
+	?Count@CHuiBrushArray@@QBEHXZ @ 236 NONAME ; int CHuiBrushArray::Count(void) const
+	?Count@CHuiControlGroup@@QBEHXZ @ 237 NONAME ; int CHuiControlGroup::Count(void) const
+	?Count@CHuiGridLayout@@UBEHXZ @ 238 NONAME ; int CHuiGridLayout::Count(void) const
+	?Count@CHuiLayout@@UBEHXZ @ 239 NONAME ; int CHuiLayout::Count(void) const
+	?Count@CHuiTransformation@@QBEHXZ @ 240 NONAME ; int CHuiTransformation::Count(void) const
+	?Count@CHuiVisual@@UBEHXZ @ 241 NONAME ; int CHuiVisual::Count(void) const
+	?CountComponentControls@CHuiDisplayCoeControl@@EBEHXZ @ 242 NONAME ; int CHuiDisplayCoeControl::CountComponentControls(void) const
+	?CreateFontL@THuiFontManager@@QAEHABVTHuiFontSpecification@@@Z @ 243 NONAME ; int THuiFontManager::CreateFontL(class THuiFontSpecification const &)
+	?CreateImageLoaderL@CHuiImageLoaderUtil@@QAEPAVMHuiBitmapProvider@@ABVTAknsItemID@@ABVTDesC16@@HH@Z @ 244 NONAME ; class MHuiBitmapProvider * CHuiImageLoaderUtil::CreateImageLoaderL(class TAknsItemID const &, class TDesC16 const &, int, int)
+	?CreateImageLoaderL@CHuiImageLoaderUtil@@QAEPAVMHuiBitmapProvider@@VTUid@@W4TAknsAppIconType@@@Z @ 245 NONAME ; class MHuiBitmapProvider * CHuiImageLoaderUtil::CreateImageLoaderL(class TUid, enum TAknsAppIconType)
+	?CreateMeshL@CHuiMeshVisual@@QAEXW4THuiMeshType@@@Z @ 246 NONAME ; void CHuiMeshVisual::CreateMeshL(enum THuiMeshType)
+	?CreatePlatformTextStyleL@CHuiTextStyleManager@@QAEHHH@Z @ 247 NONAME ; int CHuiTextStyleManager::CreatePlatformTextStyleL(int, int)
+	?CreateTextureL@CHuiTextureManager@@QAEAAVCHuiTexture@@HPAVMHuiBitmapProvider@@W4THuiTextureUploadFlags@@@Z @ 248 NONAME ; class CHuiTexture & CHuiTextureManager::CreateTextureL(int, class MHuiBitmapProvider *, enum THuiTextureUploadFlags)
+	?CropFbsBitmapL@HuiUtil@@SAXABVCFbsBitmap@@AAV2@VTPoint@@@Z @ 249 NONAME ; void HuiUtil::CropFbsBitmapL(class CFbsBitmap const &, class CFbsBitmap &, class TPoint)
+	?CropImage@HuiUtil@@SAXHABVTSize@@PBEABVTPoint@@0PAE@Z @ 250 NONAME ; void HuiUtil::CropImage(int, class TSize const &, unsigned char const *, class TPoint const &, class TSize const &, unsigned char *)
+	?CrossProduct@HuiUtil@@SAXQBM0QAM@Z @ 251 NONAME ; void HuiUtil::CrossProduct(float const * const, float const * const, float * const)
+	?CurvePath@CHuiCurvePathLayout@@QAEAAVCHuiCurvePath@@XZ @ 252 NONAME ; class CHuiCurvePath & CHuiCurvePathLayout::CurvePath(void)
+	?Data@CHuiStatic@@CAPAUTTlsData@@XZ @ 253 NONAME ; struct TTlsData * CHuiStatic::Data(void)
+	?DefineFileNameL@CHuiTextureManager@@QAEXHABVTDesC16@@@Z @ 254 NONAME ; void CHuiTextureManager::DefineFileNameL(int, class TDesC16 const &)
+	?DeleteControlGroup@CHuiEnv@@QAEHH@Z @ 255 NONAME ; int CHuiEnv::DeleteControlGroup(int)
+	?Detach@CHuiAnchorLayout@@QAEXH@Z @ 256 NONAME ; void CHuiAnchorLayout::Detach(int)
+	?Detach@CHuiAnchorLayout@@QAEXHW4THuiAnchorType@@@Z @ 257 NONAME ; void CHuiAnchorLayout::Detach(int, enum THuiAnchorType)
+	?DimensionCount@CHuiGridLayout@@QBEHW4THuiGridDimension@@@Z @ 258 NONAME ; int CHuiGridLayout::DimensionCount(enum THuiGridDimension) const
+	?Display@CHuiControl@@QBEPAVCHuiDisplay@@XZ @ 259 NONAME ; class CHuiDisplay * CHuiControl::Display(void) const
+	?Display@CHuiDisplayCoeControl@@QAEAAVCHuiDisplay@@XZ @ 260 NONAME ; class CHuiDisplay & CHuiDisplayCoeControl::Display(void)
+	?Display@CHuiVisual@@QBEPAVCHuiDisplay@@XZ @ 261 NONAME ; class CHuiDisplay * CHuiVisual::Display(void) const
+	?Display@THuiEvent@@QBEAAVCHuiDisplay@@XZ @ 262 NONAME ; class CHuiDisplay & THuiEvent::Display(void) const
+	?Display@THuiGroupCommand@@QBEPAVCHuiDisplay@@XZ @ 263 NONAME ; class CHuiDisplay * THuiGroupCommand::Display(void) const
+	?DisplayArea@CHuiControl@@QBE?AVTRect@@XZ @ 264 NONAME ; class TRect CHuiControl::DisplayArea(void) const
+	?DisplayCenter@CHuiControl@@QBE?AVTHuiRealPoint@@XZ @ 265 NONAME ; class THuiRealPoint CHuiControl::DisplayCenter(void) const
+	?DisplayCoeCntrlExtension@CHuiDisplayCoeControl@@MAEXABVTUid@@PAPAX@Z @ 266 NONAME ; void CHuiDisplayCoeControl::DisplayCoeCntrlExtension(class TUid const &, void * *)
+	?DisplayCount@CHuiEnv@@QBEHXZ @ 267 NONAME ; int CHuiEnv::DisplayCount(void) const
+	?DisplayRect@CHuiVisual@@QBE?AVTHuiRealRect@@XZ @ 268 NONAME ; class THuiRealRect CHuiVisual::DisplayRect(void) const
+	?DisplayRectTarget@CHuiVisual@@QBE?AVTHuiRealRect@@XZ @ 269 NONAME ; class THuiRealRect CHuiVisual::DisplayRectTarget(void) const
+	?DisplayToHost@CHuiControl@@QBE?AVTPoint@@ABV2@@Z @ 270 NONAME ; class TPoint CHuiControl::DisplayToHost(class TPoint const &) const
+	?DisplayToLocal@CHuiVisual@@QBE?AVTHuiRealPoint@@ABV2@@Z @ 271 NONAME ; class THuiRealPoint CHuiVisual::DisplayToLocal(class THuiRealPoint const &) const
+	?DisplayToLocal@CHuiVisual@@QBE?AVTPoint@@ABV2@@Z @ 272 NONAME ; class TPoint CHuiVisual::DisplayToLocal(class TPoint const &) const
+	?Draw@CHuiBrush@@UBEXAAVCHuiGc@@ABVMHuiBrushGuide@@@Z @ 273 NONAME ; void CHuiBrush::Draw(class CHuiGc &, class MHuiBrushGuide const &) const
+	?Draw@CHuiBrushArray@@QBEXW4THuiBrushLayer@@AAVCHuiGc@@ABVMHuiBrushGuide@@@Z @ 274 NONAME ; void CHuiBrushArray::Draw(enum THuiBrushLayer, class CHuiGc &, class MHuiBrushGuide const &) const
+	?Draw@CHuiDisplayCoeControl@@EBEXABVTRect@@@Z @ 275 NONAME ; void CHuiDisplayCoeControl::Draw(class TRect const &) const
+	?Draw@CHuiGridLayout@@UBEXAAVCHuiGc@@@Z @ 276 NONAME ; void CHuiGridLayout::Draw(class CHuiGc &) const
+	?Draw@CHuiImageBrush@@UBEXAAVCHuiGc@@ABVMHuiBrushGuide@@@Z @ 277 NONAME ; void CHuiImageBrush::Draw(class CHuiGc &, class MHuiBrushGuide const &) const
+	?Draw@CHuiLayout@@UBEXAAVCHuiGc@@@Z @ 278 NONAME ; void CHuiLayout::Draw(class CHuiGc &) const
+	?Draw@CHuiVisual@@UBEXAAVCHuiGc@@@Z @ 279 NONAME ; void CHuiVisual::Draw(class CHuiGc &) const
+	?DrawBrushes@CHuiVisual@@QBEXAAVCHuiGc@@W4THuiBrushLayer@@@Z @ 280 NONAME ; void CHuiVisual::DrawBrushes(class CHuiGc &, enum THuiBrushLayer) const
+	?DrawImage@CHuiGc@@UAEXABVTHuiImage@@ABVTHuiRealPoint@@ABVTHuiRealSize@@@Z @ 281 NONAME ; void CHuiGc::DrawImage(class THuiImage const &, class THuiRealPoint const &, class THuiRealSize const &)
+	?DrawImage@CHuiGc@@UAEXABVTHuiImage@@ABVTHuiRealRect@@@Z @ 282 NONAME ; void CHuiGc::DrawImage(class THuiImage const &, class THuiRealRect const &)
+	?DrawImage@CHuiGc@@UAEXABVTHuiImage@@ABVTHuiRealSize@@ABVTHuiRealRect@@@Z @ 283 NONAME ; void CHuiGc::DrawImage(class THuiImage const &, class THuiRealSize const &, class THuiRealRect const &)
+	?DrawImages@CHuiGc@@UAEXABVTHuiImage@@0ABVTHuiRealPoint@@ABVTHuiRealSize@@@Z @ 284 NONAME ; void CHuiGc::DrawImages(class THuiImage const &, class THuiImage const &, class THuiRealPoint const &, class THuiRealSize const &)
+	?DrawImages@CHuiGc@@UAEXABVTHuiImage@@0ABVTHuiRealSize@@ABVTHuiRealRect@@@Z @ 285 NONAME ; void CHuiGc::DrawImages(class THuiImage const &, class THuiImage const &, class THuiRealSize const &, class THuiRealRect const &)
+	?DrawSelf@CHuiGridLayout@@UBEXAAVCHuiGc@@ABVTRect@@@Z @ 286 NONAME ; void CHuiGridLayout::DrawSelf(class CHuiGc &, class TRect const &) const
+	?DrawSelf@CHuiLayout@@MBEXAAVCHuiGc@@ABVTRect@@@Z @ 287 NONAME ; void CHuiLayout::DrawSelf(class CHuiGc &, class TRect const &) const
+	?DrawSelf@CHuiVisual@@UBEXAAVCHuiGc@@ABVTRect@@@Z @ 288 NONAME ; void CHuiVisual::DrawSelf(class CHuiGc &, class TRect const &) const
+	?DumpTree@CHuiGridLayout@@UBEXXZ @ 289 NONAME ; void CHuiGridLayout::DumpTree(void) const
+	?DumpTree@CHuiLayout@@UBEXXZ @ 290 NONAME ; void CHuiLayout::DumpTree(void) const
+	?DumpTree@CHuiVisual@@UBEXXZ @ 291 NONAME ; void CHuiVisual::DumpTree(void) const
+	?EffectiveLayoutOrdinal@CHuiLayout@@QBEHABVCHuiVisual@@@Z @ 292 NONAME ; int CHuiLayout::EffectiveLayoutOrdinal(class CHuiVisual const &) const
+	?EffectiveOpacity@CHuiVisual@@QBEMXZ @ 293 NONAME ; float CHuiVisual::EffectiveOpacity(void) const
+	?ElapsedSeconds@CHuiStatic@@SAMXZ @ 294 NONAME ; float CHuiStatic::ElapsedSeconds(void)
+	?EnableBrushesL@CHuiVisual@@QAEXH@Z @ 295 NONAME ; void CHuiVisual::EnableBrushesL(int)
+	?EnableClock@THuiTimedValue@@QAEXH@Z @ 296 NONAME ; void THuiTimedValue::EnableClock(int)
+	?EnableLogging@CHuiStatic@@SAXH@Z @ 297 NONAME ; void CHuiStatic::EnableLogging(int)
+	?EnableLoop@CHuiCurvePath@@QAEXH@Z @ 298 NONAME ; void CHuiCurvePath::EnableLoop(int)
+	?EnableScrollingL@CHuiLayout@@QAEXH@Z @ 299 NONAME ; void CHuiLayout::EnableScrollingL(int)
+	?EnableShadow@CHuiTextVisual@@QAEXH@Z @ 300 NONAME ; void CHuiTextVisual::EnableShadow(int)
+	?EnableShadow@CHuiTexture@@UAEXH@Z @ 301 NONAME ; void CHuiTexture::EnableShadow(int)
+	?EnableTransformationL@CHuiControlGroup@@QAEXH@Z @ 302 NONAME ; void CHuiControlGroup::EnableTransformationL(int)
+	?EnableTransformationL@CHuiVisual@@QAEXH@Z @ 303 NONAME ; void CHuiVisual::EnableTransformationL(int)
+	?EndDraw@CHuiBrush@@UBEXAAVCHuiGc@@ABVMHuiBrushGuide@@@Z @ 304 NONAME ; void CHuiBrush::EndDraw(class CHuiGc &, class MHuiBrushGuide const &) const
+	?EnterLocalProjection@CHuiVisual@@QBEXAAVCHuiGc@@HMPBVTHuiRealRect@@@Z @ 305 NONAME ; void CHuiVisual::EnterLocalProjection(class CHuiGc &, int, float, class THuiRealRect const *) const
+	?EnterView@CHuiSoftKeyControl@@QAEXI@Z @ 306 NONAME ; void CHuiSoftKeyControl::EnterView(unsigned int)
+	?EnumerateFontsL@THuiFontManager@@QBEXAAV?$RArray@VTHuiFontSpecification@@@@@Z @ 307 NONAME ; void THuiFontManager::EnumerateFontsL(class RArray<class THuiFontSpecification> &) const
+	?Env@CHuiControl@@UBEAAVCHuiEnv@@XZ @ 308 NONAME ; class CHuiEnv & CHuiControl::Env(void) const
+	?Env@CHuiDisplay@@QAEAAVCHuiEnv@@XZ @ 309 NONAME ; class CHuiEnv & CHuiDisplay::Env(void)
+	?Env@CHuiDisplayCoeControl@@QAEAAVCHuiEnv@@XZ @ 310 NONAME ; class CHuiEnv & CHuiDisplayCoeControl::Env(void)
+	?Env@CHuiStatic@@SAAAVCHuiEnv@@XZ @ 311 NONAME ; class CHuiEnv & CHuiStatic::Env(void)
+	?Env@CHuiTextureManager@@QAEAAVCHuiEnv@@XZ @ 312 NONAME ; class CHuiEnv & CHuiTextureManager::Env(void)
+	?Env@CHuiVisual@@QBEAAVCHuiEnv@@XZ @ 313 NONAME ; class CHuiEnv & CHuiVisual::Env(void) const
+	?Evaluate@CHuiCurvePath@@QBEXMAAVTHuiRealPoint@@@Z @ 314 NONAME ; void CHuiCurvePath::Evaluate(float, class THuiRealPoint &) const
+	?EventHandler@CHuiControl@@UAEPAVMHuiEventHandler@@XZ @ 315 NONAME ; class MHuiEventHandler * CHuiControl::EventHandler(void)
+	?Execute@CHuiTransformation@@QBEXW4THuiGcMatrix@@AAVCHuiGc@@@Z @ 316 NONAME ; void CHuiTransformation::Execute(enum THuiGcMatrix, class CHuiGc &) const
+	?ExecuteL@THuiActionCommand@@UBEXAAVCHuiEnv@@@Z @ 317 NONAME ; void THuiActionCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiControlCommand@@UBEXAAVCHuiEnv@@@Z @ 318 NONAME ; void THuiControlCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiCustomEventCommand@@UBEXAAVCHuiEnv@@@Z @ 319 NONAME ; void THuiCustomEventCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiGroupCommand@@UBEXAAVCHuiEnv@@@Z @ 320 NONAME ; void THuiGroupCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiImageCommand@@UBEXAAVCHuiEnv@@@Z @ 321 NONAME ; void THuiImageCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiMarkerCommand@@UBEXAAVCHuiEnv@@@Z @ 322 NONAME ; void THuiMarkerCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiObjectCommand@@UBEXAAVCHuiEnv@@@Z @ 323 NONAME ; void THuiObjectCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiPointCommand@@UBEXAAVCHuiEnv@@@Z @ 324 NONAME ; void THuiPointCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiTextCommand@@UBEXAAVCHuiEnv@@@Z @ 325 NONAME ; void THuiTextCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiTransformationCommand@@UBEXAAVCHuiEnv@@@Z @ 326 NONAME ; void THuiTransformationCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiValueCommand@@UBEXAAVCHuiEnv@@@Z @ 327 NONAME ; void THuiValueCommand::ExecuteL(class CHuiEnv &) const
+	?ExecuteL@THuiVisualCommand@@UBEXAAVCHuiEnv@@@Z @ 328 NONAME ; void THuiVisualCommand::ExecuteL(class CHuiEnv &) const
+	?ExitView@CHuiSoftKeyControl@@QAEXI@Z @ 329 NONAME ; void CHuiSoftKeyControl::ExitView(unsigned int)
+	?ExpandRectWithContent@CHuiGridLayout@@UBEXAAVTRect@@@Z @ 330 NONAME ; void CHuiGridLayout::ExpandRectWithContent(class TRect &) const
+	?ExpandRectWithContent@CHuiLayout@@MBEXAAVTRect@@@Z @ 331 NONAME ; void CHuiLayout::ExpandRectWithContent(class TRect &) const
+	?ExpandRectWithContent@CHuiVisual@@MBEXAAVTRect@@@Z @ 332 NONAME ; void CHuiVisual::ExpandRectWithContent(class TRect &) const
+	?ExpandVisualRect@CHuiBrush@@UBEXAAVTRect@@@Z @ 333 NONAME ; void CHuiBrush::ExpandVisualRect(class TRect &) const
+	?ExpandVisualRect@CHuiImageBrush@@UBEXAAVTRect@@@Z @ 334 NONAME ; void CHuiImageBrush::ExpandVisualRect(class TRect &) const
+	?FarClipDistance@CHuiGc@@QBEMXZ @ 335 NONAME ; float CHuiGc::FarClipDistance(void) const
+	?FillWeightsL@CHuiGridLayout@@QAEXW4THuiGridDimension@@HABUTHuiMetric@@@Z @ 336 NONAME ; void CHuiGridLayout::FillWeightsL(enum THuiGridDimension, int, struct THuiMetric const &)
+	?FindConnection@CHuiControl@@QBEHPBV1@@Z @ 337 NONAME ; int CHuiControl::FindConnection(class CHuiControl const *) const
+	?FindControl@CHuiControlGroup@@QBEPAVCHuiControl@@H@Z @ 338 NONAME ; class CHuiControl * CHuiControlGroup::FindControl(int) const
+	?FindControl@CHuiEnv@@QBEPAVCHuiControl@@H@Z @ 339 NONAME ; class CHuiControl * CHuiEnv::FindControl(int) const
+	?FindTag@CHuiControl@@QBEPAVCHuiVisual@@ABVTDesC8@@@Z @ 340 NONAME ; class CHuiVisual * CHuiControl::FindTag(class TDesC8 const &) const
+	?FindTag@CHuiGridLayout@@UAEPAVCHuiVisual@@ABVTDesC8@@@Z @ 341 NONAME ; class CHuiVisual * CHuiGridLayout::FindTag(class TDesC8 const &)
+	?FindTag@CHuiLayout@@UAEPAVCHuiVisual@@ABVTDesC8@@@Z @ 342 NONAME ; class CHuiVisual * CHuiLayout::FindTag(class TDesC8 const &)
+	?FindTag@CHuiVisual@@UAEPAV1@ABVTDesC8@@@Z @ 343 NONAME ; class CHuiVisual * CHuiVisual::FindTag(class TDesC8 const &)
+	?FindVisual@CHuiLayout@@QBEHPBVCHuiVisual@@@Z @ 344 NONAME ; int CHuiLayout::FindVisual(class CHuiVisual const *) const
+	?Finish@THuiTimedPoint@@QAEXXZ @ 345 NONAME ; void THuiTimedPoint::Finish(void)
+	?Finish@THuiTimedValue@@QAEXXZ @ 346 NONAME ; void THuiTimedValue::Finish(void)
+	?FixCos@HuiFixMath@@SAHH@Z @ 347 NONAME ; int HuiFixMath::FixCos(int)
+	?FixHypot@HuiFixMath@@SAIHH@Z @ 348 NONAME ; unsigned int HuiFixMath::FixHypot(int, int)
+	?FixSin@HuiFixMath@@SAHH@Z @ 349 NONAME ; int HuiFixMath::FixSin(int)
+	?FlagsToClear@THuiVisualCommand@@QBEHXZ @ 350 NONAME ; int THuiVisualCommand::FlagsToClear(void) const
+	?FlagsToSet@THuiVisualCommand@@QBEHXZ @ 351 NONAME ; int THuiVisualCommand::FlagsToSet(void) const
+	?Focus@CHuiControl@@QBEHXZ @ 352 NONAME ; int CHuiControl::Focus(void) const
+	?FocusChanged@CHuiControl@@UAEXAAVCHuiDisplay@@H@Z @ 353 NONAME ; void CHuiControl::FocusChanged(class CHuiDisplay &, int)
+	?FocusChanged@CHuiDisplayCoeControl@@EAEXW4TDrawNow@@@Z @ 354 NONAME ; void CHuiDisplayCoeControl::FocusChanged(enum TDrawNow)
+	?Font@CHuiGc@@QAEPAVTHuiFont@@XZ @ 355 NONAME ; class THuiFont * CHuiGc::Font(void)
+	?Font@THuiTextStyle@@QAEAAVTHuiFont@@XZ @ 356 NONAME ; class THuiFont & THuiTextStyle::Font(void)
+	?Font@THuiTextStyle@@QBEABVTHuiFont@@XZ @ 357 NONAME ; class THuiFont const & THuiTextStyle::Font(void) const
+	?FontManager@CHuiEnv@@QBEAAVTHuiFontManager@@XZ @ 358 NONAME ; class THuiFontManager & CHuiEnv::FontManager(void) const
+	?FontSpec@THuiFont@@QBE?AVTFontSpec@@PAVMGraphicsDeviceMap@@@Z @ 359 NONAME ; class TFontSpec THuiFont::FontSpec(class MGraphicsDeviceMap *) const
+	?FontStyleId@THuiTextStyle@@QBEHXZ @ 360 NONAME ; int THuiTextStyle::FontStyleId(void) const
+	?FovFactor@CHuiGc@@QBEMXZ @ 361 NONAME ; float CHuiGc::FovFactor(void) const
+	?FrameCount@CHuiStatic@@SAIXZ @ 362 NONAME ; unsigned int CHuiStatic::FrameCount(void)
+	?FrameRate@CHuiStatic@@SAMXZ @ 363 NONAME ; float CHuiStatic::FrameRate(void)
+	?FreeMemory@HuiUtil@@SAIPAI@Z @ 364 NONAME ; unsigned int HuiUtil::FreeMemory(unsigned int *)
+	?FsSession@CHuiStatic@@SAAAVRFs@@XZ @ 365 NONAME ; class RFs & CHuiStatic::FsSession(void)
+	?GetClassName@CHuiGridLayout@@UBEXAAVTDes16@@@Z @ 366 NONAME ; void CHuiGridLayout::GetClassName(class TDes16 &) const
+	?GetClassName@CHuiLayout@@UBEXAAVTDes16@@@Z @ 367 NONAME ; void CHuiLayout::GetClassName(class TDes16 &) const
+	?GetClassName@CHuiVisual@@UBEXAAVTDes16@@@Z @ 368 NONAME ; void CHuiVisual::GetClassName(class TDes16 &) const
+	?GetInstanceName@CHuiGridLayout@@UBEXAAVTDes16@@@Z @ 369 NONAME ; void CHuiGridLayout::GetInstanceName(class TDes16 &) const
+	?GetInstanceName@CHuiLayout@@UBEXAAVTDes16@@@Z @ 370 NONAME ; void CHuiLayout::GetInstanceName(class TDes16 &) const
+	?GetInstanceName@CHuiVisual@@UBEXAAVTDes16@@@Z @ 371 NONAME ; void CHuiVisual::GetInstanceName(class TDes16 &) const
+	?GetTexCoords@THuiImage@@QBEXPAMH@Z @ 372 NONAME ; void THuiImage::GetTexCoords(float *, int) const
+	?GetTexture@CHuiS60Skin@@UAEHHAAPBVCHuiTexture@@@Z @ 373 NONAME ; int CHuiS60Skin::GetTexture(int, class CHuiTexture const * &)
+	?GetTexture@CHuiSkin@@UAEHHAAPBVCHuiTexture@@@Z @ 374 NONAME ; int CHuiSkin::GetTexture(int, class CHuiTexture const * &)
+	?GetTypeface@THuiTextStyle@@QBEXAAVTTypeface@@@Z @ 375 NONAME ; void THuiTextStyle::GetTypeface(class TTypeface &) const
+	?GetVertexCoords@THuiImage@@QBEXPAFH@Z @ 376 NONAME ; void THuiImage::GetVertexCoords(short *, int) const
+	?Handle@MHuiSegmentedTexture@@QBE?AVTHuiTextureHandle@@H@Z @ 377 NONAME ; class THuiTextureHandle MHuiSegmentedTexture::Handle(int) const
+	?HandleControlEventL@CHuiDisplayCoeControl@@EAEXPAVCCoeControl@@W4TCoeEvent@MCoeControlObserver@@@Z @ 378 NONAME ; void CHuiDisplayCoeControl::HandleControlEventL(class CCoeControl *, enum MCoeControlObserver::TCoeEvent)
+	?HandleKeyEventL@CHuiEnv@@QAEHABUTKeyEvent@@W4TEventCode@@PAVCHuiDisplay@@@Z @ 379 NONAME ; int CHuiEnv::HandleKeyEventL(struct TKeyEvent const &, enum TEventCode, class CHuiDisplay *)
+	?HandlePointerEventL@CHuiDisplayCoeControl@@MAEXABUTPointerEvent@@@Z @ 380 NONAME ; void CHuiDisplayCoeControl::HandlePointerEventL(struct TPointerEvent const &)
+	?HandleResourceChange@CHuiDisplayCoeControl@@EAEXH@Z @ 381 NONAME ; void CHuiDisplayCoeControl::HandleResourceChange(int)
+	?HasContent@CHuiAnimatedTexture@@UBEHXZ @ 382 NONAME ; int CHuiAnimatedTexture::HasContent(void) const
+	?HasContent@CHuiTexture@@UBEHXZ @ 383 NONAME ; int CHuiTexture::HasContent(void) const
+	?HasContent@THuiTextureHandle@@UBEHXZ @ 384 NONAME ; int THuiTextureHandle::HasContent(void) const
+	?HasShadow@THuiImage@@QBEHXZ @ 385 NONAME ; int THuiImage::HasShadow(void) const
+	?HasTexture@THuiImage@@QBEHXZ @ 386 NONAME ; int THuiImage::HasTexture(void) const
+	?HitTest@CHuiControl@@QBEHABVTPoint@@@Z @ 387 NONAME ; int CHuiControl::HitTest(class TPoint const &) const
+	?HorizontalInnerPadding@CHuiLayout@@QBEHXZ @ 388 NONAME ; int CHuiLayout::HorizontalInnerPadding(void) const
+	?HorizontalOrigin@CHuiVisual@@QBE?AW4THuiVisualHOrigin@@XZ @ 389 NONAME ; enum THuiVisualHOrigin CHuiVisual::HorizontalOrigin(void) const
+	?Host@CHuiControl@@QBEPAV1@XZ @ 390 NONAME ; class CHuiControl * CHuiControl::Host(void) const
+	?HostChangingL@CHuiControl@@MAEXPAV1@@Z @ 391 NONAME ; void CHuiControl::HostChangingL(class CHuiControl *)
+	?HostId@CHuiControl@@QBEHXZ @ 392 NONAME ; int CHuiControl::HostId(void) const
+	?HostToDisplay@CHuiControl@@QBE?AVTPoint@@ABV2@@Z @ 393 NONAME ; class TPoint CHuiControl::HostToDisplay(class TPoint const &) const
+	?Id@CHuiControl@@QBEHXZ @ 394 NONAME ; int CHuiControl::Id(void) const
+	?Id@CHuiGifAnimationTexture@@QAEHXZ @ 395 NONAME ; int CHuiGifAnimationTexture::Id(void)
+	?Id@THuiActionCommand@@QBEHXZ @ 396 NONAME ; int THuiActionCommand::Id(void) const
+	?Id@THuiFont@@QBEHXZ @ 397 NONAME ; int THuiFont::Id(void) const
+	?Id@THuiMarkerCommand@@QBEHXZ @ 398 NONAME ; int THuiMarkerCommand::Id(void) const
+	?Id@THuiTextStyle@@QBEHXZ @ 399 NONAME ; int THuiTextStyle::Id(void) const
+	?Image@CHuiGradientBrush@@UBEABVTHuiImage@@XZ @ 400 NONAME ; class THuiImage const & CHuiGradientBrush::Image(void) const
+	?Image@CHuiImageVisual@@QBEABVTHuiImage@@XZ @ 401 NONAME ; class THuiImage const & CHuiImageVisual::Image(void) const
+	?Image@THuiImageCommand@@QBEABVTHuiImage@@XZ @ 402 NONAME ; class THuiImage const & THuiImageCommand::Image(void) const
+	?ImageFileName@CHuiTexture@@QBEABVTDesC16@@XZ @ 403 NONAME ; class TDesC16 const & CHuiTexture::ImageFileName(void) const
+	?ImageLoaderExtension@CHuiImageLoaderUtil@@UAEXABVTUid@@PAPAX@Z @ 404 NONAME ; void CHuiImageLoaderUtil::ImageLoaderExtension(class TUid const &, void * *)
+	?ImagePath@CHuiTextureManager@@QBEABVTDesC16@@XZ @ 405 NONAME ; class TDesC16 const & CHuiTextureManager::ImagePath(void) const
+	?ImageVisual@THuiImageCommand@@QBEAAVCHuiImageVisual@@XZ @ 406 NONAME ; class CHuiImageVisual & THuiImageCommand::ImageVisual(void) const
+	?InnerPadding@CHuiLayout@@QBEABUTHuiXYMetric@@XZ @ 407 NONAME ; struct THuiXYMetric const & CHuiLayout::InnerPadding(void) const
+	?InnerPaddingInBaseUnits@CHuiLayout@@QBE?AVTHuiRealPoint@@XZ @ 408 NONAME ; class THuiRealPoint CHuiLayout::InnerPaddingInBaseUnits(void) const
+	?InnerSize@CHuiLayout@@QBE?AVTHuiRealSize@@XZ @ 409 NONAME ; class THuiRealSize CHuiLayout::InnerSize(void) const
+	?InnerTopLeft@CHuiLayout@@QBE?AVTHuiRealPoint@@XZ @ 410 NONAME ; class THuiRealPoint CHuiLayout::InnerTopLeft(void) const
+	?InputCapabilities@CHuiDisplayCoeControl@@EBE?AVTCoeInputCapabilities@@XZ @ 411 NONAME ; class TCoeInputCapabilities CHuiDisplayCoeControl::InputCapabilities(void) const
+	?InsertL@CHuiBrushArray@@QAEXHPAVCHuiBrush@@W4THuiOwnership@@@Z @ 412 NONAME ; void CHuiBrushArray::InsertL(int, class CHuiBrush *, enum THuiOwnership)
+	?InsertL@CHuiLayout@@QAEXPAVCHuiVisual@@HH@Z @ 413 NONAME ; void CHuiLayout::InsertL(class CHuiVisual *, int, int)
+	?InsertWeightL@CHuiGridLayout@@QAEXW4THuiGridDimension@@ABUTHuiMetric@@H@Z @ 414 NONAME ; void CHuiGridLayout::InsertWeightL(enum THuiGridDimension, struct THuiMetric const &, int)
+	?Interpolate@HuiUtil@@SAMMMM@Z @ 415 NONAME ; float HuiUtil::Interpolate(float, float, float)
+	?Interval@THuiInteractionInterval@@QAEHH@Z @ 416 NONAME ; int THuiInteractionInterval::Interval(int)
+	?IsCustomEvent@THuiEvent@@QBEHXZ @ 417 NONAME ; int THuiEvent::IsCustomEvent(void) const
+	?IsFocusing@CHuiControl@@UBEHXZ @ 418 NONAME ; int CHuiControl::IsFocusing(void) const
+	?IsKeyEvent@THuiEvent@@QBEHXZ @ 419 NONAME ; int THuiEvent::IsKeyEvent(void) const
+	?IsLoaded@CHuiTextureManager@@QBEHABVTDesC16@@H@Z @ 420 NONAME ; int CHuiTextureManager::IsLoaded(class TDesC16 const &, int) const
+	?IsLoaded@CHuiTextureManager@@QBEHH@Z @ 421 NONAME ; int CHuiTextureManager::IsLoaded(int) const
+	?IsLoaded@CHuiTextureManager@@QBEHPBVCHuiTexture@@@Z @ 422 NONAME ; int CHuiTextureManager::IsLoaded(class CHuiTexture const *) const
+	?IsNull@THuiTextureHandle@@QBEHXZ @ 423 NONAME ; int THuiTextureHandle::IsNull(void) const
+	?IsPointerEvent@THuiEvent@@QBEHXZ @ 424 NONAME ; int THuiEvent::IsPointerEvent(void) const
+	?IsShadowEnabled@CHuiTexture@@UBEHXZ @ 425 NONAME ; int CHuiTexture::IsShadowEnabled(void) const
+	?IsSkinContent@CHuiTexture@@UBEHXZ @ 426 NONAME ; int CHuiTexture::IsSkinContent(void) const
+	?IsTagged@CHuiVisual@@QBEHXZ @ 427 NONAME ; int CHuiVisual::IsTagged(void) const
+	?IsTransformed@CHuiControlGroup@@QBEHXZ @ 428 NONAME ; int CHuiControlGroup::IsTransformed(void) const
+	?Layer@CHuiBrush@@QBE?AW4THuiBrushLayer@@XZ @ 429 NONAME ; enum THuiBrushLayer CHuiBrush::Layer(void) const
+	?LayerBrushCount@CHuiBrushArray@@QBEHW4THuiBrushLayer@@@Z @ 430 NONAME ; int CHuiBrushArray::LayerBrushCount(enum THuiBrushLayer) const
+	?Layout@CHuiVisual@@QBEPAVCHuiLayout@@XZ @ 431 NONAME ; class CHuiLayout * CHuiVisual::Layout(void) const
+	?LayoutTransitionTime@CHuiStatic@@SAHXZ @ 432 NONAME ; int CHuiStatic::LayoutTransitionTime(void)
+	?Length@CHuiCurvePath@@QBEMXZ @ 433 NONAME ; float CHuiCurvePath::Length(void) const
+	?LengthUnit@HuiUtil@@SAMXZ @ 434 NONAME ; float HuiUtil::LengthUnit(void)
+	?LoadBitmapsL@CHuiEnv@@QAEXH@Z @ 435 NONAME ; void CHuiEnv::LoadBitmapsL(int)
+	?LoadControlGroupL@CHuiEnv@@QAEAAVCHuiControlGroup@@H@Z @ 436 NONAME ; class CHuiControlGroup & CHuiEnv::LoadControlGroupL(int)
+	?LoadIdentity@CHuiTransformation@@QAEXXZ @ 437 NONAME ; void CHuiTransformation::LoadIdentity(void)
+	?LoadQueueCount@CHuiTextureManager@@QBEHXZ @ 438 NONAME ; int CHuiTextureManager::LoadQueueCount(void) const
+	?LoadSceneL@CHuiM3GMesh@@UAEXABVTDesC16@@@Z @ 439 NONAME ; void CHuiM3GMesh::LoadSceneL(class TDesC16 const &)
+	?LoadTextureL@CHuiTextureManager@@QAEAAVCHuiTexture@@ABVTDesC16@@ABVTSize@@W4THuiTextureUploadFlags@@HH@Z @ 440 NONAME ; class CHuiTexture & CHuiTextureManager::LoadTextureL(class TDesC16 const &, class TSize const &, enum THuiTextureUploadFlags, int, int)
+	?LoadTextureL@CHuiTextureManager@@QAEAAVCHuiTexture@@ABVTDesC16@@W4THuiTextureUploadFlags@@HH@Z @ 441 NONAME ; class CHuiTexture & CHuiTextureManager::LoadTextureL(class TDesC16 const &, enum THuiTextureUploadFlags, int, int)
+	?LoadTextureL@CHuiTextureManager@@QAEAAVCHuiTexture@@HABVTSize@@W4THuiTextureUploadFlags@@@Z @ 442 NONAME ; class CHuiTexture & CHuiTextureManager::LoadTextureL(int, class TSize const &, enum THuiTextureUploadFlags)
+	?LocalBaseUnit@CHuiVisual@@QBE?AUTHuiXYMetric@@XZ @ 443 NONAME ; struct THuiXYMetric CHuiVisual::LocalBaseUnit(void) const
+	?LocalPointInPixels@CHuiVisual@@QBE?AVTHuiRealPoint@@ABV2@@Z @ 444 NONAME ; class THuiRealPoint CHuiVisual::LocalPointInPixels(class THuiRealPoint const &) const
+	?LocalToDisplay@CHuiVisual@@QBE?AVTHuiRealPoint@@ABV2@@Z @ 445 NONAME ; class THuiRealPoint CHuiVisual::LocalToDisplay(class THuiRealPoint const &) const
+	?LocalToDisplay@CHuiVisual@@QBE?AVTPoint@@ABV2@@Z @ 446 NONAME ; class TPoint CHuiVisual::LocalToDisplay(class TPoint const &) const
+	?LocaleTextAlignment@CHuiGc@@SA?AW4THuiAlignHorizontal@@XZ @ 447 NONAME ; enum THuiAlignHorizontal CHuiGc::LocaleTextAlignment(void)
+	?Location@CHuiS60Skin@@UAE?AW4THuiSkinLocation@@W4THuiSkinElement@@@Z @ 448 NONAME ; enum THuiSkinLocation CHuiS60Skin::Location(enum THuiSkinElement)
+	?Location@CHuiSkin@@UAE?AW4THuiSkinLocation@@W4THuiSkinElement@@@Z @ 449 NONAME ; enum THuiSkinLocation CHuiSkin::Location(enum THuiSkinElement)
+	?Logging@CHuiStatic@@SAHXZ @ 450 NONAME ; int CHuiStatic::Logging(void)
+	?Loop@CHuiCurvePath@@QBEHXZ @ 451 NONAME ; int CHuiCurvePath::Loop(void) const
+	?M3GMesh@CHuiMeshVisual@@QBEPAVCHuiM3GMesh@@XZ @ 452 NONAME ; class CHuiM3GMesh * CHuiMeshVisual::M3GMesh(void) const
+	?MakeCubeL@CHuiProceduralMesh@@UAEXMMMM@Z @ 453 NONAME ; void CHuiProceduralMesh::MakeCubeL(float, float, float, float)
+	?MakeSphereL@CHuiProceduralMesh@@UAEXMHH@Z @ 454 NONAME ; void CHuiProceduralMesh::MakeSphereL(float, int, int)
+	?MakeTorusL@CHuiProceduralMesh@@UAEXMMHHM@Z @ 455 NONAME ; void CHuiProceduralMesh::MakeTorusL(float, float, int, int, float)
+	?MakeVisible@CHuiDisplayCoeControl@@EAEXH@Z @ 456 NONAME ; void CHuiDisplayCoeControl::MakeVisible(int)
+	?MapValue@THuiAverageMappingFunction@@UBEMMH@Z @ 457 NONAME ; float THuiAverageMappingFunction::MapValue(float, int) const
+	?MapValue@THuiConstantMappingFunction@@UBEMMH@Z @ 458 NONAME ; float THuiConstantMappingFunction::MapValue(float, int) const
+	?MapValue@THuiCosineMappingFunction@@UBEMMH@Z @ 459 NONAME ; float THuiCosineMappingFunction::MapValue(float, int) const
+	?MapValue@THuiLinearMappingFunction@@UBEMMH@Z @ 460 NONAME ; float THuiLinearMappingFunction::MapValue(float, int) const
+	?MapValue@THuiSineMappingFunction@@UBEMMH@Z @ 461 NONAME ; float THuiSineMappingFunction::MapValue(float, int) const
+	?MappingFunctionChanged@MHuiMappingFunction@@UBEHXZ @ 462 NONAME ; int MHuiMappingFunction::MappingFunctionChanged(void) const
+	?MappingFunctionChanged@THuiAverageMappingFunction@@UBEHXZ @ 463 NONAME ; int THuiAverageMappingFunction::MappingFunctionChanged(void) const
+	?MappingFunctionClearChanged@MHuiMappingFunction@@UAEXXZ @ 464 NONAME ; void MHuiMappingFunction::MappingFunctionClearChanged(void)
+	?MappingFunctionClearChanged@THuiAverageMappingFunction@@UAEXXZ @ 465 NONAME ; void THuiAverageMappingFunction::MappingFunctionClearChanged(void)
+	?MaxLineCount@CHuiTextVisual@@QBEHXZ @ 466 NONAME ; int CHuiTextVisual::MaxLineCount(void) const
+	?MaxSize@CHuiVisual@@QBE?AVTSize@@XZ @ 467 NONAME ; class TSize CHuiVisual::MaxSize(void) const
+	?Mesh@CHuiMeshVisual@@QAEAAVCHuiMesh@@XZ @ 468 NONAME ; class CHuiMesh & CHuiMeshVisual::Mesh(void)
+	?MeshType@CHuiMesh@@QBE?AW4THuiMeshType@@XZ @ 469 NONAME ; enum THuiMeshType CHuiMesh::MeshType(void) const
+	?MetricReferenceForLayoutInPixels@CHuiLayout@@IBE?AVTHuiRealPoint@@PBV1@ABUTHuiXYMetric@@@Z @ 470 NONAME ; class THuiRealPoint CHuiLayout::MetricReferenceForLayoutInPixels(class CHuiLayout const *, struct THuiXYMetric const &) const
+	?MetricReferenceInPixels@CHuiVisual@@QBE?AVTHuiRealPoint@@ABUTHuiXYMetric@@@Z @ 471 NONAME ; class THuiRealPoint CHuiVisual::MetricReferenceInPixels(struct THuiXYMetric const &) const
+	?MetricToPixels@CHuiVisual@@QBE?AVTHuiRealPoint@@ABUTHuiXYMetric@@@Z @ 472 NONAME ; class THuiRealPoint CHuiVisual::MetricToPixels(struct THuiXYMetric const &) const
+	?MilliSecondsSinceStart@CHuiStatic@@SAKXZ @ 473 NONAME ; unsigned long CHuiStatic::MilliSecondsSinceStart(void)
+	?Mimic@CHuiVisual@@QAEXABV1@H@Z @ 474 NONAME ; void CHuiVisual::Mimic(class CHuiVisual const &, int)
+	?MinSize@CHuiVisual@@QBE?AVTSize@@XZ @ 475 NONAME ; class TSize CHuiVisual::MinSize(void) const
+	?Mode@CHuiFlowLayout@@QBEHXZ @ 476 NONAME ; int CHuiFlowLayout::Mode(void) const
+	?Move@CHuiVisual@@QAEXABVTPoint@@H@Z @ 477 NONAME ; void CHuiVisual::Move(class TPoint const &, int)
+	?MoveToFront@CHuiVisual@@QAEXH@Z @ 478 NONAME ; void CHuiVisual::MoveToFront(int)
+	?MoveVisualToBack@CHuiLayout@@QAEXAAVCHuiVisual@@H@Z @ 479 NONAME ; void CHuiLayout::MoveVisualToBack(class CHuiVisual &, int)
+	?MoveVisualToFront@CHuiLayout@@QAEXAAVCHuiVisual@@H@Z @ 480 NONAME ; void CHuiLayout::MoveVisualToFront(class CHuiVisual &, int)
+	?Name@THuiTextureHandle@@QBEIXZ @ 481 NONAME ; unsigned int THuiTextureHandle::Name(void) const
+	?NearClipDistance@CHuiGc@@QBEMXZ @ 482 NONAME ; float CHuiGc::NearClipDistance(void) const
+	?NewControlGroupL@CHuiEnv@@QAEAAVCHuiControlGroup@@H@Z @ 483 NONAME ; class CHuiControlGroup & CHuiEnv::NewControlGroupL(int)
+	?NewDisplayL@CHuiEnv@@QAEAAVCHuiDisplay@@ABVTRect@@PAVCCoeControl@@HPAV2@H@Z @ 484 NONAME ; class CHuiDisplay & CHuiEnv::NewDisplayL(class TRect const &, class CCoeControl *, int, class CHuiDisplay *, int)
+	?NewL@CHuiBorderBrush@@SAPAV1@HHHH@Z @ 485 NONAME ; class CHuiBorderBrush * CHuiBorderBrush::NewL(int, int, int, int)
+	?NewL@CHuiBrushArray@@SAPAV1@XZ @ 486 NONAME ; class CHuiBrushArray * CHuiBrushArray::NewL(void)
+	?NewL@CHuiCurvePath@@SAPAV1@XZ @ 487 NONAME ; class CHuiCurvePath * CHuiCurvePath::NewL(void)
+	?NewL@CHuiDisplayCoeControl@@SAPAV1@AAVCHuiEnv@@ABVTRect@@H@Z @ 488 NONAME ; class CHuiDisplayCoeControl * CHuiDisplayCoeControl::NewL(class CHuiEnv &, class TRect const &, int)
+	?NewL@CHuiDropShadowBrush@@SAPAV1@H@Z @ 489 NONAME ; class CHuiDropShadowBrush * CHuiDropShadowBrush::NewL(int)
+	?NewL@CHuiEnv@@SAPAV1@W4THuiRenderer@@PAVMHuiEnvObserver@@@Z @ 490 NONAME ; class CHuiEnv * CHuiEnv::NewL(enum THuiRenderer, class MHuiEnvObserver *)
+	?NewL@CHuiFrameBrush@@SAPAV1@ABVTAknsItemID@@HH@Z @ 491 NONAME ; class CHuiFrameBrush * CHuiFrameBrush::NewL(class TAknsItemID const &, int, int)
+	?NewL@CHuiGifAnimationTexture@@SAPAV1@ABVTDesC16@@AAVCHuiTextureManager@@HW4THuiTextureUploadFlags@@@Z @ 492 NONAME ; class CHuiGifAnimationTexture * CHuiGifAnimationTexture::NewL(class TDesC16 const &, class CHuiTextureManager &, int, enum THuiTextureUploadFlags)
+	?NewL@CHuiGradientBrush@@SAPAV1@XZ @ 493 NONAME ; class CHuiGradientBrush * CHuiGradientBrush::NewL(void)
+	?NewL@CHuiImageBrush@@SAPAV1@ABVTHuiImage@@@Z @ 494 NONAME ; class CHuiImageBrush * CHuiImageBrush::NewL(class THuiImage const &)
+	?NewL@CHuiMesh@@SAPAV1@W4THuiMeshType@@@Z @ 495 NONAME ; class CHuiMesh * CHuiMesh::NewL(enum THuiMeshType)
+	?NewL@CHuiShadowBorderBrush@@SAPAV1@H@Z @ 496 NONAME ; class CHuiShadowBorderBrush * CHuiShadowBorderBrush::NewL(int)
+	?NewL@CHuiSoftKeyControl@@SAPAV1@AAVCHuiEnv@@@Z @ 497 NONAME ; class CHuiSoftKeyControl * CHuiSoftKeyControl::NewL(class CHuiEnv &)
+	?NewL@CHuiTexture@@SAPAV1@PBVTHuiTextureHandle@@@Z @ 498 NONAME ; class CHuiTexture * CHuiTexture::NewL(class THuiTextureHandle const *)
+	?NewL@CHuiTransformation@@SAPAV1@XZ @ 499 NONAME ; class CHuiTransformation * CHuiTransformation::NewL(void)
+	?NewLC@CHuiBorderBrush@@SAPAV1@HHHH@Z @ 500 NONAME ; class CHuiBorderBrush * CHuiBorderBrush::NewLC(int, int, int, int)
+	?NewLC@CHuiBrushArray@@SAPAV1@XZ @ 501 NONAME ; class CHuiBrushArray * CHuiBrushArray::NewLC(void)
+	?NewLC@CHuiCurvePath@@SAPAV1@XZ @ 502 NONAME ; class CHuiCurvePath * CHuiCurvePath::NewLC(void)
+	?NewLC@CHuiDisplayCoeControl@@SAPAV1@AAVCHuiEnv@@ABVTRect@@H@Z @ 503 NONAME ; class CHuiDisplayCoeControl * CHuiDisplayCoeControl::NewLC(class CHuiEnv &, class TRect const &, int)
+	?NewLC@CHuiDropShadowBrush@@SAPAV1@H@Z @ 504 NONAME ; class CHuiDropShadowBrush * CHuiDropShadowBrush::NewLC(int)
+	?NewLC@CHuiEnv@@SAPAV1@W4THuiRenderer@@PAVMHuiEnvObserver@@@Z @ 505 NONAME ; class CHuiEnv * CHuiEnv::NewLC(enum THuiRenderer, class MHuiEnvObserver *)
+	?NewLC@CHuiFrameBrush@@SAPAV1@ABVTAknsItemID@@HH@Z @ 506 NONAME ; class CHuiFrameBrush * CHuiFrameBrush::NewLC(class TAknsItemID const &, int, int)
+	?NewLC@CHuiGradientBrush@@SAPAV1@XZ @ 507 NONAME ; class CHuiGradientBrush * CHuiGradientBrush::NewLC(void)
+	?NewLC@CHuiImageBrush@@SAPAV1@ABVTHuiImage@@@Z @ 508 NONAME ; class CHuiImageBrush * CHuiImageBrush::NewLC(class THuiImage const &)
+	?NewLC@CHuiMesh@@SAPAV1@W4THuiMeshType@@@Z @ 509 NONAME ; class CHuiMesh * CHuiMesh::NewLC(enum THuiMeshType)
+	?NewLC@CHuiShadowBorderBrush@@SAPAV1@H@Z @ 510 NONAME ; class CHuiShadowBorderBrush * CHuiShadowBorderBrush::NewLC(int)
+	?NewLC@CHuiSoftKeyControl@@SAPAV1@AAVCHuiEnv@@@Z @ 511 NONAME ; class CHuiSoftKeyControl * CHuiSoftKeyControl::NewLC(class CHuiEnv &)
+	?NewLC@CHuiTexture@@SAPAV1@PBVTHuiTextureHandle@@@Z @ 512 NONAME ; class CHuiTexture * CHuiTexture::NewLC(class THuiTextureHandle const *)
+	?NewLC@CHuiTransformation@@SAPAV1@XZ @ 513 NONAME ; class CHuiTransformation * CHuiTransformation::NewLC(void)
+	?NonIdentityCount@CHuiTransformation@@QBEHXZ @ 514 NONAME ; int CHuiTransformation::NonIdentityCount(void) const
+	?NormalFromPoints@HuiUtil@@SAXQAY02MQAM@Z @ 515 NONAME ; void HuiUtil::NormalFromPoints(float [3] * const, float * const)
+	?NotifyControlVisibility@CHuiControl@@MAEXHAAVCHuiDisplay@@@Z @ 516 NONAME ; void CHuiControl::NotifyControlVisibility(int, class CHuiDisplay &)
+	?NotifyDisplaySizeChangedL@CHuiS60Skin@@UAEXXZ @ 517 NONAME ; void CHuiS60Skin::NotifyDisplaySizeChangedL(void)
+	?NotifyDisplaySizeChangedL@CHuiSkin@@UAEXXZ @ 518 NONAME ; void CHuiSkin::NotifyDisplaySizeChangedL(void)
+	?NotifySkinChangedL@CHuiEnv@@QAEXXZ @ 519 NONAME ; void CHuiEnv::NotifySkinChangedL(void)
+	?NotifySkinChangedL@CHuiGridLayout@@UAEXXZ @ 520 NONAME ; void CHuiGridLayout::NotifySkinChangedL(void)
+	?NotifySkinChangedL@CHuiLayout@@UAEXXZ @ 521 NONAME ; void CHuiLayout::NotifySkinChangedL(void)
+	?NotifySkinChangedL@CHuiVisual@@UAEXXZ @ 522 NONAME ; void CHuiVisual::NotifySkinChangedL(void)
+	?Now@THuiTimedPoint@@QBE?AVTPoint@@XZ @ 523 NONAME ; class TPoint THuiTimedPoint::Now(void) const
+	?Now@THuiTimedValue@@QBEMXZ @ 524 NONAME ; float THuiTimedValue::Now(void) const
+	?Object@THuiObjectCommand@@QBEPAXXZ @ 525 NONAME ; void * THuiObjectCommand::Object(void) const
+	?ObjectCommand@THuiCommand@@UBEPBVTHuiObjectCommand@@XZ @ 526 NONAME ; class THuiObjectCommand const * THuiCommand::ObjectCommand(void) const
+	?ObjectCommand@THuiObjectCommand@@UBEPBV1@XZ @ 527 NONAME ; class THuiObjectCommand const * THuiObjectCommand::ObjectCommand(void) const
+	?OfferEventL@CHuiControl@@UAEHABVTHuiEvent@@@Z @ 528 NONAME ; int CHuiControl::OfferEventL(class THuiEvent const &)
+	?OfferKeyEventL@CHuiDisplayCoeControl@@EAE?AW4TKeyResponse@@ABUTKeyEvent@@W4TEventCode@@@Z @ 529 NONAME ; enum TKeyResponse CHuiDisplayCoeControl::OfferKeyEventL(struct TKeyEvent const &, enum TEventCode)
+	?Offset2D@CHuiGc@@QBEMXZ @ 530 NONAME ; float CHuiGc::Offset2D(void) const
+	?Opacity@CHuiGradientBrush@@UBEMH@Z @ 531 NONAME ; float CHuiGradientBrush::Opacity(int) const
+	?Operation@THuiObjectCommand@@QBE?AW4THuiOp@@XZ @ 532 NONAME ; enum THuiOp THuiObjectCommand::Operation(void) const
+	?OrdinalToBlock@CHuiGridLayout@@QBE?AVTPoint@@H@Z @ 533 NONAME ; class TPoint CHuiGridLayout::OrdinalToBlock(int) const
+	?Orientation@CHuiDisplay@@QBE?AW4TOrientation@CHuiGc@@XZ @ 534 NONAME ; enum CHuiGc::TOrientation CHuiDisplay::Orientation(void) const
+	?Orientation@CHuiS60Skin@@UBE?AW4THuiSkinOrientation@@XZ @ 535 NONAME ; enum THuiSkinOrientation CHuiS60Skin::Orientation(void) const
+	?Orientation@CHuiSkin@@UBE?AW4THuiSkinOrientation@@XZ @ 536 NONAME ; enum THuiSkinOrientation CHuiSkin::Orientation(void) const
+	?Owner@CHuiVisual@@QBEAAVMHuiVisualOwner@@XZ @ 537 NONAME ; class MHuiVisualOwner & CHuiVisual::Owner(void) const
+	?Padding@CHuiVisual@@QBEABUTHuiBoxMetric@@XZ @ 538 NONAME ; struct THuiBoxMetric const & CHuiVisual::Padding(void) const
+	?PaddingInPixels@CHuiVisual@@QBE?AVTHuiRealRect@@XZ @ 539 NONAME ; class THuiRealRect CHuiVisual::PaddingInPixels(void) const
+	?Panic@THuiPanic@@SAXW4TReason@1@@Z @ 540 NONAME ; void THuiPanic::Panic(enum THuiPanic::TReason)
+	?Param@THuiCustomEventCommand@@QBEHXZ @ 541 NONAME ; int THuiCustomEventCommand::Param(void) const
+	?ParentId@THuiTextStyle@@QBEHXZ @ 542 NONAME ; int THuiTextStyle::ParentId(void) const
+	?Path@CHuiLineVisual@@QAEAAVCHuiCurvePath@@XZ @ 543 NONAME ; class CHuiCurvePath & CHuiLineVisual::Path(void)
+	?PauseRefresh@CHuiEnv@@QAEXXZ @ 544 NONAME ; void CHuiEnv::PauseRefresh(void)
+	?PauseTime@CHuiStatic@@SAXXZ @ 545 NONAME ; void CHuiStatic::PauseTime(void)
+	?PixelPointInLocal@CHuiVisual@@QBE?AVTHuiRealPoint@@ABV2@@Z @ 546 NONAME ; class THuiRealPoint CHuiVisual::PixelPointInLocal(class THuiRealPoint const &) const
+	?PixelsToMetric@CHuiVisual@@QBEXABVTHuiRealPoint@@AAUTHuiXYMetric@@@Z @ 547 NONAME ; void CHuiVisual::PixelsToMetric(class THuiRealPoint const &, struct THuiXYMetric &) const
+	?PointerDown@THuiEvent@@QBEHXZ @ 548 NONAME ; int THuiEvent::PointerDown(void) const
+	?PointerLongTap@THuiEvent@@QBEHXZ @ 549 NONAME ; int THuiEvent::PointerLongTap(void) const
+	?PointerUp@THuiEvent@@QBEHXZ @ 550 NONAME ; int THuiEvent::PointerUp(void) const
+	?Pos@CHuiVisual@@QBEABVTHuiTimedPoint@@XZ @ 551 NONAME ; class THuiTimedPoint const & CHuiVisual::Pos(void) const
+	?PositionChanged@CHuiDisplayCoeControl@@EAEXXZ @ 552 NONAME ; void CHuiDisplayCoeControl::PositionChanged(void)
+	?Posture@THuiTextStyle@@QAEHXZ @ 553 NONAME ; int THuiTextStyle::Posture(void)
+	?Power2@HuiUtil@@SAHH@Z @ 554 NONAME ; int HuiUtil::Power2(int)
+	?Power2RoundDown@HuiUtil@@SAHH@Z @ 555 NONAME ; int HuiUtil::Power2RoundDown(int)
+	?PrepareDrawL@CHuiGridLayout@@UAEHXZ @ 556 NONAME ; int CHuiGridLayout::PrepareDrawL(void)
+	?PrepareDrawL@CHuiLayout@@UAEHXZ @ 557 NONAME ; int CHuiLayout::PrepareDrawL(void)
+	?PrepareDrawL@CHuiTextVisual@@UAEHXZ @ 558 NONAME ; int CHuiTextVisual::PrepareDrawL(void)
+	?PrepareDrawL@CHuiVisual@@UAEHXZ @ 559 NONAME ; int CHuiVisual::PrepareDrawL(void)
+	?PrepareForFocusGainL@CHuiDisplayCoeControl@@EAEXXZ @ 560 NONAME ; void CHuiDisplayCoeControl::PrepareForFocusGainL(void)
+	?PrepareForFocusLossL@CHuiDisplayCoeControl@@EAEXXZ @ 561 NONAME ; void CHuiDisplayCoeControl::PrepareForFocusLossL(void)
+	?PrependImagePath@CHuiTextureManager@@QBEXAAVTDes16@@@Z @ 562 NONAME ; void CHuiTextureManager::PrependImagePath(class TDes16 &) const
+	?PrimaryDisplay@CHuiEnv@@QBEAAVCHuiDisplay@@XZ @ 563 NONAME ; class CHuiDisplay & CHuiEnv::PrimaryDisplay(void) const
+	?Printf@CHuiStatic@@SAXV?$TRefByValue@$$CBVTDesC16@@@@ZZ @ 564 NONAME ; void CHuiStatic::Printf(class TRefByValue<class TDesC16 const >, ...)
+	?Printf@CHuiStatic@@SAXV?$TRefByValue@$$CBVTDesC8@@@@ZZ @ 565 NONAME ; void CHuiStatic::Printf(class TRefByValue<class TDesC8 const >, ...)
+	?Priority@CHuiTexture@@QBEHXZ @ 566 NONAME ; int CHuiTexture::Priority(void) const
+	?ProceduralMesh@CHuiMeshVisual@@QBEPAVCHuiProceduralMesh@@XZ @ 567 NONAME ; class CHuiProceduralMesh * CHuiMeshVisual::ProceduralMesh(void) const
+	?Processor@CHuiTextureManager@@QAEAAVCHuiTextureProcessor@@XZ @ 568 NONAME ; class CHuiTextureProcessor & CHuiTextureManager::Processor(void)
+	?Quality@CHuiDisplay@@QBE?AW4THuiQuality@@XZ @ 569 NONAME ; enum THuiQuality CHuiDisplay::Quality(void) const
+	?QuickLength@HuiUtil@@SAMAAVTHuiRealPoint@@@Z @ 570 NONAME ; float HuiUtil::QuickLength(class THuiRealPoint &)
+	?QuickLength@HuiUtil@@SAMMM@Z @ 571 NONAME ; float HuiUtil::QuickLength(float, float)
+	?QuickNormalize@HuiUtil@@SAXAAVTHuiRealPoint@@@Z @ 572 NONAME ; void HuiUtil::QuickNormalize(class THuiRealPoint &)
+	?QuickNormalize@HuiUtil@@SAXQAM@Z @ 573 NONAME ; void HuiUtil::QuickNormalize(float * const)
+	?RandomInt@HuiUtil@@SAHHH@Z @ 574 NONAME ; int HuiUtil::RandomInt(int, int)
+	?RandomReal@HuiUtil@@SAMMM@Z @ 575 NONAME ; float HuiUtil::RandomReal(float, float)
+	?RealNow@THuiTimedPoint@@QBE?AVTHuiRealPoint@@XZ @ 576 NONAME ; class THuiRealPoint THuiTimedPoint::RealNow(void) const
+	?RealTarget@THuiTimedPoint@@QBE?AVTHuiRealPoint@@XZ @ 577 NONAME ; class THuiRealPoint THuiTimedPoint::RealTarget(void) const
+	?Recipient@THuiCustomEventCommand@@QBEPAVMHuiEventHandler@@XZ @ 578 NONAME ; class MHuiEventHandler * THuiCustomEventCommand::Recipient(void) const
+	?RefreshCallBack@CHuiEnv@@SAHPAX@Z @ 579 NONAME ; int CHuiEnv::RefreshCallBack(void *)
+	?RefreshMode@CHuiEnv@@QBE?AW4THuiRefreshMode@@XZ @ 580 NONAME ; enum THuiRefreshMode CHuiEnv::RefreshMode(void) const
+	?Release@CHuiDisplay@@QAEXXZ @ 581 NONAME ; void CHuiDisplay::Release(void)
+	?Release@CHuiEnv@@QAEXXZ @ 582 NONAME ; void CHuiEnv::Release(void)
+	?Release@THuiTextureHandle@@QAEXXZ @ 583 NONAME ; void THuiTextureHandle::Release(void)
+	?ReleaseTexture@CHuiS60Skin@@UAEXH@Z @ 584 NONAME ; void CHuiS60Skin::ReleaseTexture(int)
+	?ReleaseTexture@CHuiSkin@@UAEXH@Z @ 585 NONAME ; void CHuiSkin::ReleaseTexture(int)
+	?RemainingTime@THuiTimedValue@@QBEHXZ @ 586 NONAME ; int THuiTimedValue::RemainingTime(void) const
+	?Remove@CHuiBrushArray@@QAEXH@Z @ 587 NONAME ; void CHuiBrushArray::Remove(int)
+	?Remove@CHuiControl@@UAEXPAVCHuiVisual@@@Z @ 588 NONAME ; void CHuiControl::Remove(class CHuiVisual *)
+	?Remove@CHuiControlGroup@@QAEHPAVCHuiControl@@@Z @ 589 NONAME ; int CHuiControlGroup::Remove(class CHuiControl *)
+	?Remove@CHuiLayout@@QAEXPAVCHuiVisual@@H@Z @ 590 NONAME ; void CHuiLayout::Remove(class CHuiVisual *, int)
+	?RemoveAnchor@CHuiAnchorLayout@@QAEXW4THuiAnchor@@H@Z @ 591 NONAME ; void CHuiAnchorLayout::RemoveAnchor(enum THuiAnchor, int)
+	?RemoveAndDestroyAllD@CHuiGridLayout@@UAEXXZ @ 592 NONAME ; void CHuiGridLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CHuiLayout@@UAEXXZ @ 593 NONAME ; void CHuiLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CHuiVisual@@UAEXXZ @ 594 NONAME ; void CHuiVisual::RemoveAndDestroyAllD(void)
+	?RemoveConnection@CHuiControl@@QAEXPAV1@@Z @ 595 NONAME ; void CHuiControl::RemoveConnection(class CHuiControl *)
+	?RemoveWeightL@CHuiGridLayout@@QAEXW4THuiGridDimension@@H@Z @ 596 NONAME ; void CHuiGridLayout::RemoveWeightL(enum THuiGridDimension, int)
+	?Renderer@CHuiEnv@@QBE?AW4THuiRenderer@@XZ @ 597 NONAME ; enum THuiRenderer CHuiEnv::Renderer(void) const
+	?Reorder@CHuiLayout@@QAEXAAVCHuiVisual@@HH@Z @ 598 NONAME ; void CHuiLayout::Reorder(class CHuiVisual &, int, int)
+	?ReplaceWeightL@CHuiGridLayout@@QAEXW4THuiGridDimension@@ABUTHuiMetric@@H@Z @ 599 NONAME ; void CHuiGridLayout::ReplaceWeightL(enum THuiGridDimension, struct THuiMetric const &, int)
+	?ReportChanged@CHuiGridLayout@@UAEXXZ @ 600 NONAME ; void CHuiGridLayout::ReportChanged(void)
+	?ReportChanged@CHuiLayout@@UAEXXZ @ 601 NONAME ; void CHuiLayout::ReportChanged(void)
+	?ReportChanged@CHuiVisual@@UAEXXZ @ 602 NONAME ; void CHuiVisual::ReportChanged(void)
+	?Reset@CHuiAnchorLayout@@QAEXXZ @ 603 NONAME ; void CHuiAnchorLayout::Reset(void)
+	?Reset@CHuiBrushArray@@QAEXXZ @ 604 NONAME ; void CHuiBrushArray::Reset(void)
+	?Reset@CHuiCurvePath@@UAEXXZ @ 605 NONAME ; void CHuiCurvePath::Reset(void)
+	?Reset@CHuiMesh@@UAEXXZ @ 606 NONAME ; void CHuiMesh::Reset(void)
+	?Reset@CHuiProceduralMesh@@UAEXXZ @ 607 NONAME ; void CHuiProceduralMesh::Reset(void)
+	?RestoreL@CHuiDisplay@@QAEXXZ @ 608 NONAME ; void CHuiDisplay::RestoreL(void)
+	?RestoreL@CHuiEnv@@QAEXXZ @ 609 NONAME ; void CHuiEnv::RestoreL(void)
+	?RestoreTextureContentL@CHuiS60Skin@@UAEXAAVCHuiTexture@@@Z @ 610 NONAME ; void CHuiS60Skin::RestoreTextureContentL(class CHuiTexture &)
+	?RestoreTextureContentL@CHuiSkin@@UAEXAAVCHuiTexture@@@Z @ 611 NONAME ; void CHuiSkin::RestoreTextureContentL(class CHuiTexture &)
+	?Role@CHuiControl@@QBEHXZ @ 612 NONAME ; int CHuiControl::Role(void) const
+	?Roster@CHuiDisplay@@QAEAAVCHuiRoster@@XZ @ 613 NONAME ; class CHuiRoster & CHuiDisplay::Roster(void)
+	?Roster@CHuiDisplay@@QBEABVCHuiRoster@@XZ @ 614 NONAME ; class CHuiRoster const & CHuiDisplay::Roster(void) const
+	?Rotate@CHuiTransformation@@QAEXABVTHuiTimedValue@@@Z @ 615 NONAME ; void CHuiTransformation::Rotate(class THuiTimedValue const &)
+	?Rotate@CHuiTransformation@@QAEXABVTHuiTimedValue@@MMM@Z @ 616 NONAME ; void CHuiTransformation::Rotate(class THuiTimedValue const &, float, float, float)
+	?Rotate@CHuiTransformation@@QAEXM@Z @ 617 NONAME ; void CHuiTransformation::Rotate(float)
+	?Rotate@CHuiTransformation@@QAEXMMMM@Z @ 618 NONAME ; void CHuiTransformation::Rotate(float, float, float, float)
+	?RowCount@CHuiGridLayout@@QBEHXZ @ 619 NONAME ; int CHuiGridLayout::RowCount(void) const
+	?Scalar@THuiInteractionInterval@@QBEMXZ @ 620 NONAME ; float THuiInteractionInterval::Scalar(void) const
+	?Scale@CHuiTransformation@@QAEXABVTHuiTimedValue@@00@Z @ 621 NONAME ; void CHuiTransformation::Scale(class THuiTimedValue const &, class THuiTimedValue const &, class THuiTimedValue const &)
+	?Scale@CHuiTransformation@@QAEXABVTHuiTimedValue@@0@Z @ 622 NONAME ; void CHuiTransformation::Scale(class THuiTimedValue const &, class THuiTimedValue const &)
+	?Scale@CHuiTransformation@@QAEXMM@Z @ 623 NONAME ; void CHuiTransformation::Scale(float, float)
+	?Scale@CHuiTransformation@@QAEXMMM@Z @ 624 NONAME ; void CHuiTransformation::Scale(float, float, float)
+	?Scale@THuiImage@@QAEXMMH@Z @ 625 NONAME ; void THuiImage::Scale(float, float, int)
+	?ScaleFbsBitmapL@HuiUtil@@SAXABVCFbsBitmap@@AAV2@@Z @ 626 NONAME ; void HuiUtil::ScaleFbsBitmapL(class CFbsBitmap const &, class CFbsBitmap &)
+	?ScaleImage@HuiUtil@@SAXHABVTSize@@PBE0PAE@Z @ 627 NONAME ; void HuiUtil::ScaleImage(int, class TSize const &, unsigned char const *, class TSize const &, unsigned char *)
+	?ScaleUniformly@CHuiMesh@@UAEXMMM@Z @ 628 NONAME ; void CHuiMesh::ScaleUniformly(float, float, float)
+	?ScaleUniformly@CHuiProceduralMesh@@UAEXMMM@Z @ 629 NONAME ; void CHuiProceduralMesh::ScaleUniformly(float, float, float)
+	?ScreenSize@HuiUtil@@SA?AVTSize@@XZ @ 630 NONAME ; class TSize HuiUtil::ScreenSize(void)
+	?ScrollOffset@CHuiLayout@@QAEAAVTHuiTimedPoint@@XZ @ 631 NONAME ; class THuiTimedPoint & CHuiLayout::ScrollOffset(void)
+	?ScrollOffset@CHuiLayout@@QBEABVTHuiTimedPoint@@XZ @ 632 NONAME ; class THuiTimedPoint const & CHuiLayout::ScrollOffset(void) const
+	?Scrolling@CHuiLayout@@QBEHXZ @ 633 NONAME ; int CHuiLayout::Scrolling(void) const
+	?SecondsSinceStart@CHuiStatic@@SAMXZ @ 634 NONAME ; float CHuiStatic::SecondsSinceStart(void)
+	?SegmentCount@CHuiAnimatedTexture@@UBEHXZ @ 635 NONAME ; int CHuiAnimatedTexture::SegmentCount(void) const
+	?SegmentCount@CHuiTexture@@UBEHXZ @ 636 NONAME ; int CHuiTexture::SegmentCount(void) const
+	?SegmentCount@THuiImage@@QBEHXZ @ 637 NONAME ; int THuiImage::SegmentCount(void) const
+	?SegmentCount@THuiTextureHandle@@UBEHXZ @ 638 NONAME ; int THuiTextureHandle::SegmentCount(void) const
+	?SegmentName@CHuiAnimatedTexture@@UBEIH@Z @ 639 NONAME ; unsigned int CHuiAnimatedTexture::SegmentName(int) const
+	?SegmentName@CHuiTexture@@UBEIH@Z @ 640 NONAME ; unsigned int CHuiTexture::SegmentName(int) const
+	?SegmentName@THuiTextureHandle@@UBEIH@Z @ 641 NONAME ; unsigned int THuiTextureHandle::SegmentName(int) const
+	?SegmentOffset@CHuiAnimatedTexture@@UBE?AVTPoint@@H@Z @ 642 NONAME ; class TPoint CHuiAnimatedTexture::SegmentOffset(int) const
+	?SegmentOffset@CHuiTexture@@UBE?AVTPoint@@H@Z @ 643 NONAME ; class TPoint CHuiTexture::SegmentOffset(int) const
+	?SegmentOffset@THuiTextureHandle@@UBE?AVTPoint@@H@Z @ 644 NONAME ; class TPoint THuiTextureHandle::SegmentOffset(int) const
+	?SegmentSize@CHuiAnimatedTexture@@UBE?AVTSize@@H@Z @ 645 NONAME ; class TSize CHuiAnimatedTexture::SegmentSize(int) const
+	?SegmentSize@CHuiTexture@@UBE?AVTSize@@H@Z @ 646 NONAME ; class TSize CHuiTexture::SegmentSize(int) const
+	?SegmentSize@THuiTextureHandle@@UBE?AVTSize@@H@Z @ 647 NONAME ; class TSize THuiTextureHandle::SegmentSize(int) const
+	?SegmentTextureSize@CHuiAnimatedTexture@@UBE?AVTSize@@H@Z @ 648 NONAME ; class TSize CHuiAnimatedTexture::SegmentTextureSize(int) const
+	?SegmentTextureSize@CHuiTexture@@UBE?AVTSize@@H@Z @ 649 NONAME ; class TSize CHuiTexture::SegmentTextureSize(int) const
+	?SegmentTextureSize@THuiTextureHandle@@UBE?AVTSize@@H@Z @ 650 NONAME ; class TSize THuiTextureHandle::SegmentTextureSize(int) const
+	?SegmentedTexture@CHuiAnimatedTexture@@UAEPAVMHuiSegmentedTexture@@XZ @ 651 NONAME ; class MHuiSegmentedTexture * CHuiAnimatedTexture::SegmentedTexture(void)
+	?SegmentedTexture@CHuiAnimatedTexture@@UBEPBVMHuiSegmentedTexture@@XZ @ 652 NONAME ; class MHuiSegmentedTexture const * CHuiAnimatedTexture::SegmentedTexture(void) const
+	?SegmentedTexture@CHuiTexture@@UAEPAVMHuiSegmentedTexture@@XZ @ 653 NONAME ; class MHuiSegmentedTexture * CHuiTexture::SegmentedTexture(void)
+	?SegmentedTexture@CHuiTexture@@UBEPBVMHuiSegmentedTexture@@XZ @ 654 NONAME ; class MHuiSegmentedTexture const * CHuiTexture::SegmentedTexture(void) const
+	?SegmentedTexture@THuiTextureHandle@@UAEPAVMHuiSegmentedTexture@@XZ @ 655 NONAME ; class MHuiSegmentedTexture * THuiTextureHandle::SegmentedTexture(void)
+	?SegmentedTexture@THuiTextureHandle@@UBEPBVMHuiSegmentedTexture@@XZ @ 656 NONAME ; class MHuiSegmentedTexture const * THuiTextureHandle::SegmentedTexture(void) const
+	?Send@CHuiEnv@@QAEHABVTHuiCommand@@H@Z @ 657 NONAME ; int CHuiEnv::Send(class THuiCommand const &, int)
+	?SendL@CHuiEnv@@QAEXABVTHuiCommand@@H@Z @ 658 NONAME ; void CHuiEnv::SendL(class THuiCommand const &, int)
+	?Sender@THuiCommand@@QBEPAXXZ @ 659 NONAME ; void * THuiCommand::Sender(void) const
+	?SenderControl@THuiCommand@@QBEPAVCHuiControl@@XZ @ 660 NONAME ; class CHuiControl * THuiCommand::SenderControl(void) const
+	?SenderControlGroup@THuiCommand@@QBEPAVCHuiControlGroup@@XZ @ 661 NONAME ; class CHuiControlGroup * THuiCommand::SenderControlGroup(void) const
+	?SenderType@THuiCommand@@QBE?AW4THuiCommandObjectType@@XZ @ 662 NONAME ; enum THuiCommandObjectType THuiCommand::SenderType(void) const
+	?SenderVisual@THuiCommand@@QBEPAVCHuiVisual@@XZ @ 663 NONAME ; class CHuiVisual * THuiCommand::SenderVisual(void) const
+	?SessionId@CHuiBrush@@UBEHXZ @ 664 NONAME ; int CHuiBrush::SessionId(void) const
+	?SessionId@CHuiControl@@MBEHXZ @ 665 NONAME ; int CHuiControl::SessionId(void) const
+	?SessionId@CHuiControlGroup@@UBEHXZ @ 666 NONAME ; int CHuiControlGroup::SessionId(void) const
+	?SessionId@CHuiGridLayout@@UBEHXZ @ 667 NONAME ; int CHuiGridLayout::SessionId(void) const
+	?SessionId@CHuiLayout@@UBEHXZ @ 668 NONAME ; int CHuiLayout::SessionId(void) const
+	?SessionId@CHuiMesh@@UBEHXZ @ 669 NONAME ; int CHuiMesh::SessionId(void) const
+	?SessionId@CHuiTexture@@UBEHXZ @ 670 NONAME ; int CHuiTexture::SessionId(void) const
+	?SessionId@CHuiVisual@@UBEHXZ @ 671 NONAME ; int CHuiVisual::SessionId(void) const
+	?Set@THuiTextureHandle@@QAEXIABVTSize@@0@Z @ 672 NONAME ; void THuiTextureHandle::Set(unsigned int, class TSize const &, class TSize const &)
+	?Set@THuiTimedPoint@@QAEXABVTHuiRealPoint@@H@Z @ 673 NONAME ; void THuiTimedPoint::Set(class THuiRealPoint const &, int)
+	?Set@THuiTimedPoint@@QAEXMH@Z @ 674 NONAME ; void THuiTimedPoint::Set(float, int)
+	?Set@THuiTimedValue@@QAEXM@Z @ 675 NONAME ; void THuiTimedValue::Set(float)
+	?Set@THuiTimedValue@@QAEXMH@Z @ 676 NONAME ; void THuiTimedValue::Set(float, int)
+	?SetAcceptInput@CHuiControlGroup@@QAEXH@Z @ 677 NONAME ; void CHuiControlGroup::SetAcceptInput(int)
+	?SetAlign@CHuiTextVisual@@QAEXW4THuiAlignHorizontal@@W4THuiAlignVertical@@@Z @ 678 NONAME ; void CHuiTextVisual::SetAlign(enum THuiAlignHorizontal, enum THuiAlignVertical)
+	?SetAlphaFunction@CHuiLineVisual@@QAEXPAVMHuiMappingFunction@@@Z @ 679 NONAME ; void CHuiLineVisual::SetAlphaFunction(class MHuiMappingFunction *)
+	?SetAnchor@CHuiAnchorLayout@@QAEHW4THuiAnchor@@HW4THuiAnchorOrigin@@1W4THuiAnchorMetric@@2ABVTHuiTimedPoint@@@Z @ 680 NONAME ; int CHuiAnchorLayout::SetAnchor(enum THuiAnchor, int, enum THuiAnchorOrigin, enum THuiAnchorOrigin, enum THuiAnchorMetric, enum THuiAnchorMetric, class THuiTimedPoint const &)
+	?SetAngle@THuiTransformationCommand@@QAEXABVTHuiTimedValue@@@Z @ 681 NONAME ; void THuiTransformationCommand::SetAngle(class THuiTimedValue const &)
+	?SetAnimationPosition@CHuiM3GMesh@@UAEXHMH@Z @ 682 NONAME ; void CHuiM3GMesh::SetAnimationPosition(int, float, int)
+	?SetAnimationPosition@CHuiMesh@@UAEXHMH@Z @ 683 NONAME ; void CHuiMesh::SetAnimationPosition(int, float, int)
+	?SetAnimationTimes@CHuiSoftKeyControl@@QAEXII@Z @ 684 NONAME ; void CHuiSoftKeyControl::SetAnimationTimes(unsigned int, unsigned int)
+	?SetBackgroundColor@CHuiDisplay@@QAEXABVTRgb@@@Z @ 685 NONAME ; void CHuiDisplay::SetBackgroundColor(class TRgb const &)
+	?SetBackgroundColor@THuiTextStyle@@QAEXABVTRgb@@@Z @ 686 NONAME ; void THuiTextStyle::SetBackgroundColor(class TRgb const &)
+	?SetBackgroundL@CHuiSoftKeyControl@@QAEXVTHuiImage@@HH@Z @ 687 NONAME ; void CHuiSoftKeyControl::SetBackgroundL(class THuiImage, int, int)
+	?SetBackgroundType@CHuiSoftKeyControl@@QAEXW4THuiBackgroundType@@@Z @ 688 NONAME ; void CHuiSoftKeyControl::SetBackgroundType(enum THuiBackgroundType)
+	?SetBaseUnit@CHuiLayout@@QAEXABUTHuiMetric@@@Z @ 689 NONAME ; void CHuiLayout::SetBaseUnit(struct THuiMetric const &)
+	?SetBaseUnit@CHuiLayout@@QAEXABUTHuiXYMetric@@@Z @ 690 NONAME ; void CHuiLayout::SetBaseUnit(struct THuiXYMetric const &)
+	?SetBorders@CHuiImageBrush@@QAEXHHHH@Z @ 691 NONAME ; void CHuiImageBrush::SetBorders(int, int, int, int)
+	?SetCenteredPosAndSize@CHuiVisual@@QAEXABVTPoint@@ABVTSize@@H@Z @ 692 NONAME ; void CHuiVisual::SetCenteredPosAndSize(class TPoint const &, class TSize const &, int)
+	?SetCentering@CHuiFlowLayout@@QAEXH@Z @ 693 NONAME ; void CHuiFlowLayout::SetCentering(int)
+	?SetChanged@CHuiBrush@@QAEXXZ @ 694 NONAME ; void CHuiBrush::SetChanged(void)
+	?SetChanged@CHuiVisual@@UAEXXZ @ 695 NONAME ; void CHuiVisual::SetChanged(void)
+	?SetClearBackgroundL@CHuiDisplay@@QAEXW4TClearMode@1@@Z @ 696 NONAME ; void CHuiDisplay::SetClearBackgroundL(enum CHuiDisplay::TClearMode)
+	?SetClipToVisual@CHuiBrush@@QAEXH@Z @ 697 NONAME ; void CHuiBrush::SetClipToVisual(int)
+	?SetClipping@CHuiVisual@@QAEXH@Z @ 698 NONAME ; void CHuiVisual::SetClipping(int)
+	?SetColor@CHuiBorderBrush@@QAEXABVTRgb@@@Z @ 699 NONAME ; void CHuiBorderBrush::SetColor(class TRgb const &)
+	?SetColor@CHuiGradientBrush@@UAEXABVTRgb@@M@Z @ 700 NONAME ; void CHuiGradientBrush::SetColor(class TRgb const &, float)
+	?SetColor@CHuiImageVisual@@QAEXABVTRgb@@@Z @ 701 NONAME ; void CHuiImageVisual::SetColor(class TRgb const &)
+	?SetColor@CHuiTextVisual@@QAEXABVTAknsItemID@@H@Z @ 702 NONAME ; void CHuiTextVisual::SetColor(class TAknsItemID const &, int)
+	?SetColor@CHuiTextVisual@@QAEXABVTRgb@@@Z @ 703 NONAME ; void CHuiTextVisual::SetColor(class TRgb const &)
+	?SetColorMode@CHuiImageVisual@@QAEXW4TColorMode@1@M@Z @ 704 NONAME ; void CHuiImageVisual::SetColorMode(enum CHuiImageVisual::TColorMode, float)
+	?SetColumnsL@CHuiGridLayout@@QAEXABV?$RArray@H@@@Z @ 705 NONAME ; void CHuiGridLayout::SetColumnsL(class RArray<int> const &)
+	?SetColumnsL@CHuiGridLayout@@QAEXH@Z @ 706 NONAME ; void CHuiGridLayout::SetColumnsL(int)
+	?SetContainerWindowL@CHuiDisplayCoeControl@@EAEXABVCCoeControl@@@Z @ 707 NONAME ; void CHuiDisplayCoeControl::SetContainerWindowL(class CCoeControl const &)
+	?SetContext@CHuiS60Skin@@UAEXAAVCHuiGc@@@Z @ 708 NONAME ; void CHuiS60Skin::SetContext(class CHuiGc &)
+	?SetContext@CHuiSkin@@UAEXAAVCHuiGc@@@Z @ 709 NONAME ; void CHuiSkin::SetContext(class CHuiGc &)
+	?SetDimmed@CHuiDisplayCoeControl@@EAEXH@Z @ 710 NONAME ; void CHuiDisplayCoeControl::SetDimmed(int)
+	?SetDirection@CHuiGradientBrush@@QAEXW4TDirection@1@@Z @ 711 NONAME ; void CHuiGradientBrush::SetDirection(enum CHuiGradientBrush::TDirection)
+	?SetDirty@CHuiDisplay@@QAEXXZ @ 712 NONAME ; void CHuiDisplay::SetDirty(void)
+	?SetDropShadow@CHuiImageVisual@@QAEXH@Z @ 713 NONAME ; void CHuiImageVisual::SetDropShadow(int)
+	?SetExpanding@CHuiGridLayout@@QAEXH@Z @ 714 NONAME ; void CHuiGridLayout::SetExpanding(int)
+	?SetFlag@CHuiVisual@@QAEXW4THuiVisualFlags@@@Z @ 715 NONAME ; void CHuiVisual::SetFlag(enum THuiVisualFlags)
+	?SetFlags@CHuiVisual@@QAEXH@Z @ 716 NONAME ; void CHuiVisual::SetFlags(int)
+	?SetFlowDirection@CHuiFlowLayout@@QAEXW4TFlowDirection@1@@Z @ 717 NONAME ; void CHuiFlowLayout::SetFlowDirection(enum CHuiFlowLayout::TFlowDirection)
+	?SetFont@THuiTextStyle@@UAEXVTHuiFont@@@Z @ 718 NONAME ; void THuiTextStyle::SetFont(class THuiFont)
+	?SetFrameRectsL@CHuiFrameBrush@@QAEXABVTRect@@0@Z @ 719 NONAME ; void CHuiFrameBrush::SetFrameRectsL(class TRect const &, class TRect const &)
+	?SetFunction@THuiTimedPoint@@QAEXPAVMHuiMappingFunction@@@Z @ 720 NONAME ; void THuiTimedPoint::SetFunction(class MHuiMappingFunction *)
+	?SetFunction@THuiTimedValue@@QAEXPAVMHuiMappingFunction@@@Z @ 721 NONAME ; void THuiTimedValue::SetFunction(class MHuiMappingFunction *)
+	?SetHost@CHuiControl@@QAEXPAV1@@Z @ 722 NONAME ; void CHuiControl::SetHost(class CHuiControl *)
+	?SetHostId@CHuiControl@@QAEXH@Z @ 723 NONAME ; void CHuiControl::SetHostId(int)
+	?SetId@CHuiControl@@QAEXH@Z @ 724 NONAME ; void CHuiControl::SetId(int)
+	?SetIdleThreshold@CHuiEnv@@QAEXH@Z @ 725 NONAME ; void CHuiEnv::SetIdleThreshold(int)
+	?SetImage@CHuiBorderBrush@@QAEXABVTHuiImage@@@Z @ 726 NONAME ; void CHuiBorderBrush::SetImage(class THuiImage const &)
+	?SetImage@CHuiGradientBrush@@UAEXABVTHuiImage@@@Z @ 727 NONAME ; void CHuiGradientBrush::SetImage(class THuiImage const &)
+	?SetImage@CHuiImageBrush@@QAEXABVTHuiImage@@@Z @ 728 NONAME ; void CHuiImageBrush::SetImage(class THuiImage const &)
+	?SetImage@CHuiImageVisual@@QAEXABVTHuiImage@@@Z @ 729 NONAME ; void CHuiImageVisual::SetImage(class THuiImage const &)
+	?SetImage@CHuiLineVisual@@QAEXABVTHuiImage@@@Z @ 730 NONAME ; void CHuiLineVisual::SetImage(class THuiImage const &)
+	?SetImage@CHuiMeshVisual@@QAEXABVTHuiImage@@@Z @ 731 NONAME ; void CHuiMeshVisual::SetImage(class THuiImage const &)
+	?SetImagePathL@CHuiTextureManager@@QAEXABVTDesC16@@@Z @ 732 NONAME ; void CHuiTextureManager::SetImagePathL(class TDesC16 const &)
+	?SetInnerPadding@CHuiLayout@@QAEXABUTHuiXYMetric@@@Z @ 733 NONAME ; void CHuiLayout::SetInnerPadding(struct THuiXYMetric const &)
+	?SetInnerPadding@CHuiLayout@@QAEXABVTPoint@@@Z @ 734 NONAME ; void CHuiLayout::SetInnerPadding(class TPoint const &)
+	?SetLabelL@CHuiSoftKeyControl@@QAEXW4THuiSoftKeyPosition@@ABVTDesC16@@H@Z @ 735 NONAME ; void CHuiSoftKeyControl::SetLabelL(enum THuiSoftKeyPosition, class TDesC16 const &, int)
+	?SetLayer@CHuiBrush@@QAEXW4THuiBrushLayer@@@Z @ 736 NONAME ; void CHuiBrush::SetLayer(enum THuiBrushLayer)
+	?SetLayoutTransitionTime@CHuiStatic@@SAXH@Z @ 737 NONAME ; void CHuiStatic::SetLayoutTransitionTime(int)
+	?SetLineSpacing@CHuiTextVisual@@QAEXHW4TLineSpacingUnits@1@@Z @ 738 NONAME ; void CHuiTextVisual::SetLineSpacing(int, enum CHuiTextVisual::TLineSpacingUnits)
+	?SetMappingMode@THuiTimedValue@@QAEXH@Z @ 739 NONAME ; void THuiTimedValue::SetMappingMode(int)
+	?SetMaxCpuTime@CHuiEnv@@QAEXI@Z @ 740 NONAME ; void CHuiEnv::SetMaxCpuTime(unsigned int)
+	?SetMaxFrameRate@CHuiEnv@@QAEXM@Z @ 741 NONAME ; void CHuiEnv::SetMaxFrameRate(float)
+	?SetMaxLineCount@CHuiTextVisual@@QAEXH@Z @ 742 NONAME ; void CHuiTextVisual::SetMaxLineCount(int)
+	?SetMaxSize@CHuiVisual@@QAEXABVTSize@@@Z @ 743 NONAME ; void CHuiVisual::SetMaxSize(class TSize const &)
+	?SetMinSize@CHuiVisual@@QAEXABVTSize@@@Z @ 744 NONAME ; void CHuiVisual::SetMinSize(class TSize const &)
+	?SetMode@CHuiFlowLayout@@QAEXH@Z @ 745 NONAME ; void CHuiFlowLayout::SetMode(int)
+	?SetName@THuiTextureHandle@@QAEXI@Z @ 746 NONAME ; void THuiTextureHandle::SetName(unsigned int)
+	?SetOrientation@CHuiDisplay@@QAEXW4TOrientation@CHuiGc@@@Z @ 747 NONAME ; void CHuiDisplay::SetOrientation(enum CHuiGc::TOrientation)
+	?SetOrigin@CHuiCurvePath@@QAEXM@Z @ 748 NONAME ; void CHuiCurvePath::SetOrigin(float)
+	?SetOrigin@CHuiVisual@@QAEXW4THuiVisualHOrigin@@W4THuiVisualVOrigin@@@Z @ 749 NONAME ; void CHuiVisual::SetOrigin(enum THuiVisualHOrigin, enum THuiVisualVOrigin)
+	?SetOwner@CHuiVisual@@QAEXAAVMHuiVisualOwner@@@Z @ 750 NONAME ; void CHuiVisual::SetOwner(class MHuiVisualOwner &)
+	?SetPadding@CHuiVisual@@QAEXABUTHuiBoxMetric@@@Z @ 751 NONAME ; void CHuiVisual::SetPadding(struct THuiBoxMetric const &)
+	?SetPadding@CHuiVisual@@QAEXABVTPoint@@@Z @ 752 NONAME ; void CHuiVisual::SetPadding(class TPoint const &)
+	?SetPadding@CHuiVisual@@QAEXH@Z @ 753 NONAME ; void CHuiVisual::SetPadding(int)
+	?SetParentId@THuiTextStyle@@QAEXH@Z @ 754 NONAME ; void THuiTextStyle::SetParentId(int)
+	?SetPath@CHuiLineVisual@@QAEXPAVCHuiCurvePath@@W4THuiOwnership@@@Z @ 755 NONAME ; void CHuiLineVisual::SetPath(class CHuiCurvePath *, enum THuiOwnership)
+	?SetPos@CHuiGridLayout@@UAEXABVTHuiRealPoint@@H@Z @ 756 NONAME ; void CHuiGridLayout::SetPos(class THuiRealPoint const &, int)
+	?SetPos@CHuiLayout@@UAEXABVTHuiRealPoint@@H@Z @ 757 NONAME ; void CHuiLayout::SetPos(class THuiRealPoint const &, int)
+	?SetPos@CHuiVisual@@UAEXABVTHuiRealPoint@@H@Z @ 758 NONAME ; void CHuiVisual::SetPos(class THuiRealPoint const &, int)
+	?SetPosture@THuiTextStyle@@QAEXH@Z @ 759 NONAME ; void THuiTextStyle::SetPosture(int)
+	?SetPriority@CHuiTexture@@QAEXH@Z @ 760 NONAME ; void CHuiTexture::SetPriority(int)
+	?SetProbe@CHuiStatic@@SAXPAVMHuiProbe@@@Z @ 761 NONAME ; void CHuiStatic::SetProbe(class MHuiProbe *)
+	?SetQuality@CHuiDisplay@@QAEXW4THuiQuality@@@Z @ 762 NONAME ; void CHuiDisplay::SetQuality(enum THuiQuality)
+	?SetRect@CHuiVisual@@QAEXABVTHuiRealRect@@H@Z @ 763 NONAME ; void CHuiVisual::SetRect(class THuiRealRect const &, int)
+	?SetRefreshMode@CHuiEnv@@QAEXW4THuiRefreshMode@@@Z @ 764 NONAME ; void CHuiEnv::SetRefreshMode(enum THuiRefreshMode)
+	?SetRelativeAnchorRect@CHuiAnchorLayout@@QAEHHW4THuiAnchorOrigin@@0ABVTHuiRealPoint@@001@Z @ 765 NONAME ; int CHuiAnchorLayout::SetRelativeAnchorRect(int, enum THuiAnchorOrigin, enum THuiAnchorOrigin, class THuiRealPoint const &, enum THuiAnchorOrigin, enum THuiAnchorOrigin, class THuiRealPoint const &)
+	?SetRole@CHuiControl@@QAEXH@Z @ 766 NONAME ; void CHuiControl::SetRole(int)
+	?SetRowsL@CHuiGridLayout@@QAEXABV?$RArray@H@@@Z @ 767 NONAME ; void CHuiGridLayout::SetRowsL(class RArray<int> const &)
+	?SetRowsL@CHuiGridLayout@@QAEXH@Z @ 768 NONAME ; void CHuiGridLayout::SetRowsL(int)
+	?SetScalar@THuiInteractionInterval@@QAEXM@Z @ 769 NONAME ; void THuiInteractionInterval::SetScalar(float)
+	?SetScaleMode@CHuiImageBrush@@QAEXW4TScaleMode@CHuiImageVisual@@@Z @ 770 NONAME ; void CHuiImageBrush::SetScaleMode(enum CHuiImageVisual::TScaleMode)
+	?SetScaleMode@CHuiImageVisual@@QAEXW4TScaleMode@1@@Z @ 771 NONAME ; void CHuiImageVisual::SetScaleMode(enum CHuiImageVisual::TScaleMode)
+	?SetSecondaryImage@CHuiImageVisual@@QAEXABVTHuiImage@@@Z @ 772 NONAME ; void CHuiImageVisual::SetSecondaryImage(class THuiImage const &)
+	?SetSecondaryImage@CHuiMeshVisual@@QAEXABVTHuiImage@@@Z @ 773 NONAME ; void CHuiMeshVisual::SetSecondaryImage(class THuiImage const &)
+	?SetSegmentCountL@CHuiTexture@@UAEXH@Z @ 774 NONAME ; void CHuiTexture::SetSegmentCountL(int)
+	?SetSegmentName@CHuiTexture@@UAEXHI@Z @ 775 NONAME ; void CHuiTexture::SetSegmentName(int, unsigned int)
+	?SetSegmentOffset@CHuiTexture@@UAEXHABVTPoint@@@Z @ 776 NONAME ; void CHuiTexture::SetSegmentOffset(int, class TPoint const &)
+	?SetSegmentSize@CHuiTexture@@UAEXHABVTSize@@@Z @ 777 NONAME ; void CHuiTexture::SetSegmentSize(int, class TSize const &)
+	?SetSegmentTextureSize@CHuiTexture@@UAEXHABVTSize@@@Z @ 778 NONAME ; void CHuiTexture::SetSegmentTextureSize(int, class TSize const &)
+	?SetSender@THuiCommand@@QAEXW4THuiCommandObjectType@@PAX@Z @ 779 NONAME ; void THuiCommand::SetSender(enum THuiCommandObjectType, void *)
+	?SetSessionId@CHuiBrush@@UAEXH@Z @ 780 NONAME ; void CHuiBrush::SetSessionId(int)
+	?SetSessionId@CHuiControl@@MAEXH@Z @ 781 NONAME ; void CHuiControl::SetSessionId(int)
+	?SetSessionId@CHuiControlGroup@@UAEXH@Z @ 782 NONAME ; void CHuiControlGroup::SetSessionId(int)
+	?SetSessionId@CHuiGridLayout@@UAEXH@Z @ 783 NONAME ; void CHuiGridLayout::SetSessionId(int)
+	?SetSessionId@CHuiLayout@@UAEXH@Z @ 784 NONAME ; void CHuiLayout::SetSessionId(int)
+	?SetSessionId@CHuiMesh@@UAEXH@Z @ 785 NONAME ; void CHuiMesh::SetSessionId(int)
+	?SetSessionId@CHuiTexture@@UAEXH@Z @ 786 NONAME ; void CHuiTexture::SetSessionId(int)
+	?SetSessionId@CHuiVisual@@UAEXH@Z @ 787 NONAME ; void CHuiVisual::SetSessionId(int)
+	?SetShadowStyle@CHuiTexture@@UAEXW4THuiShadowStyle@@@Z @ 788 NONAME ; void CHuiTexture::SetShadowStyle(enum THuiShadowStyle)
+	?SetSize@CHuiAnchorLayout@@UAEXABVTHuiRealSize@@H@Z @ 789 NONAME ; void CHuiAnchorLayout::SetSize(class THuiRealSize const &, int)
+	?SetSize@CHuiFlowLayout@@UAEXABVTHuiRealSize@@H@Z @ 790 NONAME ; void CHuiFlowLayout::SetSize(class THuiRealSize const &, int)
+	?SetSize@CHuiGridLayout@@UAEXABVTHuiRealSize@@H@Z @ 791 NONAME ; void CHuiGridLayout::SetSize(class THuiRealSize const &, int)
+	?SetSize@CHuiImageLoaderUtil@@QAEXVTSize@@W4TScaleMode@@@Z @ 792 NONAME ; void CHuiImageLoaderUtil::SetSize(class TSize, enum TScaleMode)
+	?SetSize@CHuiLayout@@UAEXABVTHuiRealSize@@H@Z @ 793 NONAME ; void CHuiLayout::SetSize(class THuiRealSize const &, int)
+	?SetSize@CHuiTexture@@UAEXABVTSize@@@Z @ 794 NONAME ; void CHuiTexture::SetSize(class TSize const &)
+	?SetSize@CHuiVisual@@UAEXABVTHuiRealSize@@H@Z @ 795 NONAME ; void CHuiVisual::SetSize(class THuiRealSize const &, int)
+	?SetSize@THuiTextureHandle@@QAEXABVTSize@@@Z @ 796 NONAME ; void THuiTextureHandle::SetSize(class TSize const &)
+	?SetSizeL@CHuiDisplay@@QAEXABVTSize@@@Z @ 797 NONAME ; void CHuiDisplay::SetSizeL(class TSize const &)
+	?SetSkinContent@CHuiTexture@@UAEXH@Z @ 798 NONAME ; void CHuiTexture::SetSkinContent(int)
+	?SetSkinInstance@CHuiImageLoaderUtil@@QAEXPAVMAknsSkinInstance@@@Z @ 799 NONAME ; void CHuiImageLoaderUtil::SetSkinInstance(class MAknsSkinInstance *)
+	?SetSpecularImage@CHuiMeshVisual@@QAEXABVTHuiImage@@@Z @ 800 NONAME ; void CHuiMeshVisual::SetSpecularImage(class THuiImage const &)
+	?SetStretch@CHuiImageVisual@@QAEXHH@Z @ 801 NONAME ; void CHuiImageVisual::SetStretch(int, int)
+	?SetStretchMode@CHuiImageVisual@@QAEXW4TStretchMode@CHuiGc@@@Z @ 802 NONAME ; void CHuiImageVisual::SetStretchMode(enum CHuiGc::TStretchMode)
+	?SetStrikeThrough@THuiTextStyle@@QAEXH@Z @ 803 NONAME ; void THuiTextStyle::SetStrikeThrough(int)
+	?SetStrokeWeight@THuiTextStyle@@QAEXH@Z @ 804 NONAME ; void THuiTextStyle::SetStrokeWeight(int)
+	?SetStyle@CHuiTextVisual@@QAEXW4THuiPreconfiguredTextStyle@@W4THuiBackgroundType@@@Z @ 805 NONAME ; void CHuiTextVisual::SetStyle(enum THuiPreconfiguredTextStyle, enum THuiBackgroundType)
+	?SetStyle@THuiTimedPoint@@QAEXW4THuiInterpolationStyle@@@Z @ 806 NONAME ; void THuiTimedPoint::SetStyle(enum THuiInterpolationStyle)
+	?SetStyle@THuiTimedValue@@QAEXW4THuiInterpolationStyle@@@Z @ 807 NONAME ; void THuiTimedValue::SetStyle(enum THuiInterpolationStyle)
+	?SetTagL@CHuiVisual@@QAEXABVTDesC8@@@Z @ 808 NONAME ; void CHuiVisual::SetTagL(class TDesC8 const &)
+	?SetTexCoords@THuiImage@@QAEXMMMMH@Z @ 809 NONAME ; void THuiImage::SetTexCoords(float, float, float, float, int)
+	?SetTextColor@THuiTextStyle@@QAEXABVTRgb@@@Z @ 810 NONAME ; void THuiTextStyle::SetTextColor(class TRgb const &)
+	?SetTextL@CHuiTextVisual@@QAEXABVTDesC16@@@Z @ 811 NONAME ; void CHuiTextVisual::SetTextL(class TDesC16 const &)
+	?SetTextSizeInPixels@THuiTextStyle@@QAEXHH@Z @ 812 NONAME ; void THuiTextStyle::SetTextSizeInPixels(int, int)
+	?SetTextSizeInTwips@THuiTextStyle@@QAEXHH@Z @ 813 NONAME ; void THuiTextStyle::SetTextSizeInTwips(int, int)
+	?SetTextStyle@CHuiTextVisual@@QAEXH@Z @ 814 NONAME ; void CHuiTextVisual::SetTextStyle(int)
+	?SetTexture@THuiImage@@QAEXABVMHuiTexture@@@Z @ 815 NONAME ; void THuiImage::SetTexture(class MHuiTexture const &)
+	?SetTextureId@CHuiTextureManager@@QAEHPAVCHuiTexture@@H@Z @ 816 NONAME ; int CHuiTextureManager::SetTextureId(class CHuiTexture *, int)
+	?SetTextureSize@THuiTextureHandle@@QAEXABVTSize@@@Z @ 817 NONAME ; void THuiTextureHandle::SetTextureSize(class TSize const &)
+	?SetTimeFactor@CHuiStatic@@SAXM@Z @ 818 NONAME ; void CHuiStatic::SetTimeFactor(float)
+	?SetTransitionTime@CHuiLayout@@QAEXH@Z @ 819 NONAME ; void CHuiLayout::SetTransitionTime(int)
+	?SetUnderline@THuiTextStyle@@QAEXH@Z @ 820 NONAME ; void THuiTextStyle::SetUnderline(int)
+	?SetUsageL@CHuiDisplay@@QAEXI@Z @ 821 NONAME ; void CHuiDisplay::SetUsageL(unsigned int)
+	?SetUseDepth@CHuiDisplay@@QAEXH@Z @ 822 NONAME ; void CHuiDisplay::SetUseDepth(int)
+	?SetViewportPos@CHuiViewportLayout@@QAEXABVTHuiRealPoint@@H@Z @ 823 NONAME ; void CHuiViewportLayout::SetViewportPos(class THuiRealPoint const &, int)
+	?SetViewportSize@CHuiViewportLayout@@QAEXABVTHuiRealSize@@H@Z @ 824 NONAME ; void CHuiViewportLayout::SetViewportSize(class THuiRealSize const &, int)
+	?SetVirtualSize@CHuiViewportLayout@@QAEXABVTHuiRealSize@@H@Z @ 825 NONAME ; void CHuiViewportLayout::SetVirtualSize(class THuiRealSize const &, int)
+	?SetVisibleArea@CHuiDisplay@@QAEXABVTRect@@@Z @ 826 NONAME ; void CHuiDisplay::SetVisibleArea(class TRect const &)
+	?SetVisual@THuiEvent@@QAEXPAVCHuiVisual@@@Z @ 827 NONAME ; void THuiEvent::SetVisual(class CHuiVisual *)
+	?SetWidthFunction@CHuiLineVisual@@QAEXPAVMHuiMappingFunction@@@Z @ 828 NONAME ; void CHuiLineVisual::SetWidthFunction(class MHuiMappingFunction *)
+	?SetWindowTransformation@CHuiGc@@QAEXPAVCHuiTransformation@@@Z @ 829 NONAME ; void CHuiGc::SetWindowTransformation(class CHuiTransformation *)
+	?SetWithSpeed@THuiTimedPoint@@QAEXABVTHuiRealPoint@@M@Z @ 830 NONAME ; void THuiTimedPoint::SetWithSpeed(class THuiRealPoint const &, float)
+	?SetWithSpeed@THuiTimedPoint@@QAEXMM@Z @ 831 NONAME ; void THuiTimedPoint::SetWithSpeed(float, float)
+	?SetWithSpeed@THuiTimedValue@@QAEXMM@Z @ 832 NONAME ; void THuiTimedValue::SetWithSpeed(float, float)
+	?SetWrapping@CHuiTextVisual@@QAEXW4TLineWrap@1@@Z @ 833 NONAME ; void CHuiTextVisual::SetWrapping(enum CHuiTextVisual::TLineWrap)
+	?SetX@THuiTransformationCommand@@QAEXABVTHuiTimedValue@@@Z @ 834 NONAME ; void THuiTransformationCommand::SetX(class THuiTimedValue const &)
+	?SetY@THuiTransformationCommand@@QAEXABVTHuiTimedValue@@@Z @ 835 NONAME ; void THuiTransformationCommand::SetY(class THuiTimedValue const &)
+	?SetZ@THuiTransformationCommand@@QAEXABVTHuiTimedValue@@@Z @ 836 NONAME ; void THuiTransformationCommand::SetZ(class THuiTimedValue const &)
+	?ShadowMatrix@HuiUtil@@SAXQBM00QAM@Z @ 837 NONAME ; void HuiUtil::ShadowMatrix(float const * const, float const * const, float const * const, float * const)
+	?ShadowStyle@CHuiTexture@@QBE?AW4THuiShadowStyle@@XZ @ 838 NONAME ; enum THuiShadowStyle CHuiTexture::ShadowStyle(void) const
+	?ShadowTexture@THuiImage@@QBE?AVTHuiTextureHandle@@XZ @ 839 NONAME ; class THuiTextureHandle THuiImage::ShadowTexture(void) const
+	?ShadowedTexture@CHuiAnimatedTexture@@UAEPAVMHuiShadowedTexture@@XZ @ 840 NONAME ; class MHuiShadowedTexture * CHuiAnimatedTexture::ShadowedTexture(void)
+	?ShadowedTexture@CHuiAnimatedTexture@@UBEPBVMHuiShadowedTexture@@XZ @ 841 NONAME ; class MHuiShadowedTexture const * CHuiAnimatedTexture::ShadowedTexture(void) const
+	?ShadowedTexture@CHuiTexture@@UAEPAVMHuiShadowedTexture@@XZ @ 842 NONAME ; class MHuiShadowedTexture * CHuiTexture::ShadowedTexture(void)
+	?ShadowedTexture@CHuiTexture@@UBEPBVMHuiShadowedTexture@@XZ @ 843 NONAME ; class MHuiShadowedTexture const * CHuiTexture::ShadowedTexture(void) const
+	?ShadowedTexture@THuiTextureHandle@@UAEPAVMHuiShadowedTexture@@XZ @ 844 NONAME ; class MHuiShadowedTexture * THuiTextureHandle::ShadowedTexture(void)
+	?ShadowedTexture@THuiTextureHandle@@UBEPBVMHuiShadowedTexture@@XZ @ 845 NONAME ; class MHuiShadowedTexture const * THuiTextureHandle::ShadowedTexture(void) const
+	?Show@CHuiDisplay@@QAEXH@Z @ 846 NONAME ; void CHuiDisplay::Show(int)
+	?Size@CHuiAnimatedTexture@@UBE?AVTSize@@XZ @ 847 NONAME ; class TSize CHuiAnimatedTexture::Size(void) const
+	?Size@CHuiDisplay@@QBE?AVTSize@@XZ @ 848 NONAME ; class TSize CHuiDisplay::Size(void) const
+	?Size@CHuiTexture@@UBE?AVTSize@@XZ @ 849 NONAME ; class TSize CHuiTexture::Size(void) const
+	?Size@CHuiVisual@@QBEABVTHuiTimedPoint@@XZ @ 850 NONAME ; class THuiTimedPoint const & CHuiVisual::Size(void) const
+	?Size@THuiActionCommand@@UBEHXZ @ 851 NONAME ; int THuiActionCommand::Size(void) const
+	?Size@THuiControlCommand@@UBEHXZ @ 852 NONAME ; int THuiControlCommand::Size(void) const
+	?Size@THuiCustomEventCommand@@UBEHXZ @ 853 NONAME ; int THuiCustomEventCommand::Size(void) const
+	?Size@THuiGroupCommand@@UBEHXZ @ 854 NONAME ; int THuiGroupCommand::Size(void) const
+	?Size@THuiImageCommand@@UBEHXZ @ 855 NONAME ; int THuiImageCommand::Size(void) const
+	?Size@THuiMarkerCommand@@UBEHXZ @ 856 NONAME ; int THuiMarkerCommand::Size(void) const
+	?Size@THuiObjectCommand@@UBEHXZ @ 857 NONAME ; int THuiObjectCommand::Size(void) const
+	?Size@THuiPointCommand@@UBEHXZ @ 858 NONAME ; int THuiPointCommand::Size(void) const
+	?Size@THuiTextCommand@@UBEHXZ @ 859 NONAME ; int THuiTextCommand::Size(void) const
+	?Size@THuiTextureHandle@@UBE?AVTSize@@XZ @ 860 NONAME ; class TSize THuiTextureHandle::Size(void) const
+	?Size@THuiTransformationCommand@@UBEHXZ @ 861 NONAME ; int THuiTransformationCommand::Size(void) const
+	?Size@THuiValueCommand@@UBEHXZ @ 862 NONAME ; int THuiValueCommand::Size(void) const
+	?Size@THuiVisualCommand@@UBEHXZ @ 863 NONAME ; int THuiVisualCommand::Size(void) const
+	?SizeChanged@CHuiDisplayCoeControl@@EAEXXZ @ 864 NONAME ; void CHuiDisplayCoeControl::SizeChanged(void)
+	?Skin@CHuiEnv@@QBEAAVCHuiSkin@@XZ @ 865 NONAME ; class CHuiSkin & CHuiEnv::Skin(void) const
+	?Skin@CHuiVisual@@QBEAAVCHuiSkin@@XZ @ 866 NONAME ; class CHuiSkin & CHuiVisual::Skin(void) const
+	?SkinExtension@CHuiS60Skin@@MAEXABVTUid@@PAPAX@Z @ 867 NONAME ; void CHuiS60Skin::SkinExtension(class TUid const &, void * *)
+	?Speed@THuiPointCommand@@QBEMXZ @ 868 NONAME ; float THuiPointCommand::Speed(void) const
+	?Speed@THuiValueCommand@@QBEMXZ @ 869 NONAME ; float THuiValueCommand::Speed(void) const
+	?Start@CHuiGifAnimationTexture@@QAEXXZ @ 870 NONAME ; void CHuiGifAnimationTexture::Start(void)
+	?StartAnimationController@CHuiM3GMesh@@UAEXH@Z @ 871 NONAME ; void CHuiM3GMesh::StartAnimationController(int)
+	?StartAnimationController@CHuiMesh@@UAEXH@Z @ 872 NONAME ; void CHuiMesh::StartAnimationController(int)
+	?StartRefresh@CHuiEnv@@QAEXH@Z @ 873 NONAME ; void CHuiEnv::StartRefresh(int)
+	?Static@CHuiEnv@@SAPAV1@XZ @ 874 NONAME ; class CHuiEnv * CHuiEnv::Static(void)
+	?Step@CHuiTransformation@@QAEAAUTTransform@1@H@Z @ 875 NONAME ; struct CHuiTransformation::TTransform & CHuiTransformation::Step(int)
+	?Step@THuiTransformationCommand@@QBEHXZ @ 876 NONAME ; int THuiTransformationCommand::Step(void) const
+	?Stop@CHuiGifAnimationTexture@@QAEXXZ @ 877 NONAME ; void CHuiGifAnimationTexture::Stop(void)
+	?StopAnimationController@CHuiM3GMesh@@UAEXH@Z @ 878 NONAME ; void CHuiM3GMesh::StopAnimationController(int)
+	?StopAnimationController@CHuiMesh@@UAEXH@Z @ 879 NONAME ; void CHuiMesh::StopAnimationController(int)
+	?StretchUniformly@CHuiMesh@@UAEXMMMMMM@Z @ 880 NONAME ; void CHuiMesh::StretchUniformly(float, float, float, float, float, float)
+	?StretchUniformly@CHuiProceduralMesh@@UAEXMMMMMM@Z @ 881 NONAME ; void CHuiProceduralMesh::StretchUniformly(float, float, float, float, float, float)
+	?StrikeThrough@THuiTextStyle@@QBEHXZ @ 882 NONAME ; int THuiTextStyle::StrikeThrough(void) const
+	?StrokeWeight@THuiTextStyle@@QAEHXZ @ 883 NONAME ; int THuiTextStyle::StrokeWeight(void)
+	?Style@CHuiTextVisual@@QBE?AW4THuiPreconfiguredTextStyle@@XZ @ 884 NONAME ; enum THuiPreconfiguredTextStyle CHuiTextVisual::Style(void) const
+	?Style@THuiTimedValue@@QBE?AW4THuiInterpolationStyle@@XZ @ 885 NONAME ; enum THuiInterpolationStyle THuiTimedValue::Style(void) const
+	?StyleTextColor@CHuiS60Skin@@UBE?AVTRgb@@W4THuiPreconfiguredTextStyle@@W4THuiBackgroundType@@@Z @ 886 NONAME ; class TRgb CHuiS60Skin::StyleTextColor(enum THuiPreconfiguredTextStyle, enum THuiBackgroundType) const
+	?SubstringExtents@CHuiTextVisual@@QBE?AVTRect@@II@Z @ 887 NONAME ; class TRect CHuiTextVisual::SubstringExtents(unsigned int, unsigned int) const
+	?Suspend@THuiTimedValue@@QAEXH@Z @ 888 NONAME ; void THuiTimedValue::Suspend(int)
+	?Tag@CHuiVisual@@QBEABVTDesC8@@XZ @ 889 NONAME ; class TDesC8 const & CHuiVisual::Tag(void) const
+	?TagMatches@HuiUtil@@SAHABVTDesC8@@0@Z @ 890 NONAME ; int HuiUtil::TagMatches(class TDesC8 const &, class TDesC8 const &)
+	?Target@THuiPointCommand@@QBE?AVTHuiRealPoint@@XZ @ 891 NONAME ; class THuiRealPoint THuiPointCommand::Target(void) const
+	?Target@THuiTimedPoint@@QBE?AVTPoint@@XZ @ 892 NONAME ; class TPoint THuiTimedPoint::Target(void) const
+	?Target@THuiTimedValue@@QBEMXZ @ 893 NONAME ; float THuiTimedValue::Target(void) const
+	?Target@THuiValueCommand@@QBEMXZ @ 894 NONAME ; float THuiValueCommand::Target(void) const
+	?Text@CHuiTextVisual@@QBEABVTDesC16@@XZ @ 895 NONAME ; class TDesC16 const & CHuiTextVisual::Text(void) const
+	?Text@THuiTextCommand@@QBEABVTDesC16@@XZ @ 896 NONAME ; class TDesC16 const & THuiTextCommand::Text(void) const
+	?TextColor@THuiTextStyle@@QBE?AVTRgb@@XZ @ 897 NONAME ; class TRgb THuiTextStyle::TextColor(void) const
+	?TextExtents@CHuiTextVisual@@QBE?AVTSize@@XZ @ 898 NONAME ; class TSize CHuiTextVisual::TextExtents(void) const
+	?TextSizeInPixels@THuiTextStyle@@QAEHH@Z @ 899 NONAME ; int THuiTextStyle::TextSizeInPixels(int)
+	?TextSizeInTwips@THuiTextStyle@@QAEHH@Z @ 900 NONAME ; int THuiTextStyle::TextSizeInTwips(int)
+	?TextStyle@CHuiTextStyleManager@@QAEPAVTHuiTextStyle@@H@Z @ 901 NONAME ; class THuiTextStyle * CHuiTextStyleManager::TextStyle(int)
+	?TextStyleManager@CHuiEnv@@QBEAAVCHuiTextStyleManager@@XZ @ 902 NONAME ; class CHuiTextStyleManager & CHuiEnv::TextStyleManager(void) const
+	?TextVisual@THuiTextCommand@@QBEAAVCHuiTextVisual@@XZ @ 903 NONAME ; class CHuiTextVisual & THuiTextCommand::TextVisual(void) const
+	?Texture@CHuiAnimatedTexture@@QAEAAVCHuiTexture@@XZ @ 904 NONAME ; class CHuiTexture & CHuiAnimatedTexture::Texture(void)
+	?Texture@CHuiTextureManager@@QAEPAVCHuiTexture@@H@Z @ 905 NONAME ; class CHuiTexture * CHuiTextureManager::Texture(int)
+	?Texture@CHuiTextureManager@@QBEPBVCHuiTexture@@H@Z @ 906 NONAME ; class CHuiTexture const * CHuiTextureManager::Texture(int) const
+	?Texture@THuiImage@@QBEABVMHuiSegmentedTexture@@XZ @ 907 NONAME ; class MHuiSegmentedTexture const & THuiImage::Texture(void) const
+	?TextureChanged@CHuiAnimatedTexture@@UBEHXZ @ 908 NONAME ; int CHuiAnimatedTexture::TextureChanged(void) const
+	?TextureChanged@CHuiTexture@@UBEHXZ @ 909 NONAME ; int CHuiTexture::TextureChanged(void) const
+	?TextureChanged@THuiTextureHandle@@UBEHXZ @ 910 NONAME ; int THuiTextureHandle::TextureChanged(void) const
+	?TextureClearChanged@CHuiAnimatedTexture@@UBEXXZ @ 911 NONAME ; void CHuiAnimatedTexture::TextureClearChanged(void) const
+	?TextureClearChanged@CHuiTexture@@UBEXXZ @ 912 NONAME ; void CHuiTexture::TextureClearChanged(void) const
+	?TextureClearChanged@THuiTextureHandle@@UBEXXZ @ 913 NONAME ; void THuiTextureHandle::TextureClearChanged(void) const
+	?TextureContentReleased@CHuiSkin@@UAEXAAVCHuiTexture@@@Z @ 914 NONAME ; void CHuiSkin::TextureContentReleased(class CHuiTexture &)
+	?TextureContentUploaded@CHuiSkin@@UAEXAAVCHuiTexture@@@Z @ 915 NONAME ; void CHuiSkin::TextureContentUploaded(class CHuiTexture &)
+	?TextureExtension@CHuiAnimatedTexture@@MAEXABVTUid@@PAPAX@Z @ 916 NONAME ; void CHuiAnimatedTexture::TextureExtension(class TUid const &, void * *)
+	?TextureExtension@THuiTextureHandle@@MAEXABVTUid@@PAPAX@Z @ 917 NONAME ; void THuiTextureHandle::TextureExtension(class TUid const &, void * *)
+	?TextureIf@THuiImage@@QBEABVMHuiTexture@@XZ @ 918 NONAME ; class MHuiTexture const & THuiImage::TextureIf(void) const
+	?TextureL@CHuiS60Skin@@UAEABVCHuiTexture@@H@Z @ 919 NONAME ; class CHuiTexture const & CHuiS60Skin::TextureL(int)
+	?TextureL@CHuiSkin@@UAEABVCHuiTexture@@H@Z @ 920 NONAME ; class CHuiTexture const & CHuiSkin::TextureL(int)
+	?TextureL@CHuiTextureManager@@QAEPAVCHuiTexture@@H@Z @ 921 NONAME ; class CHuiTexture * CHuiTextureManager::TextureL(int)
+	?TextureManager@CHuiControl@@QBEAAVCHuiTextureManager@@XZ @ 922 NONAME ; class CHuiTextureManager & CHuiControl::TextureManager(void) const
+	?TextureManager@CHuiEnv@@QBEAAVCHuiTextureManager@@XZ @ 923 NONAME ; class CHuiTextureManager & CHuiEnv::TextureManager(void) const
+	?Tic@CHuiStatic@@SAXH@Z @ 924 NONAME ; void CHuiStatic::Tic(int)
+	?Time@CHuiStatic@@SAABVTTime@@XZ @ 925 NONAME ; class TTime const & CHuiStatic::Time(void)
+	?TimeFactor@CHuiStatic@@SAMXZ @ 926 NONAME ; float CHuiStatic::TimeFactor(void)
+	?TimePaused@CHuiStatic@@SAHXZ @ 927 NONAME ; int CHuiStatic::TimePaused(void)
+	?TimeUntilCommand@CHuiEnv@@QAEHPAXW4THuiCommandType@@@Z @ 928 NONAME ; int CHuiEnv::TimeUntilCommand(void *, enum THuiCommandType)
+	?TimedPoint@THuiPointCommand@@QBEAAVTHuiTimedPoint@@XZ @ 929 NONAME ; class THuiTimedPoint & THuiPointCommand::TimedPoint(void) const
+	?TimedValue@THuiValueCommand@@QBEAAVTHuiTimedValue@@XZ @ 930 NONAME ; class THuiTimedValue & THuiValueCommand::TimedValue(void) const
+	?Toc@CHuiStatic@@SAMH@Z @ 931 NONAME ; float CHuiStatic::Toc(int)
+	?TopLeft@THuiImage@@QBE?AVTHuiRealPoint@@XZ @ 932 NONAME ; class THuiRealPoint THuiImage::TopLeft(void) const
+	?Transform@CHuiVisual@@IBEXAAVCHuiGc@@HPBVTHuiRealRect@@@Z @ 933 NONAME ; void CHuiVisual::Transform(class CHuiGc &, int, class THuiRealRect const *) const
+	?Transformation@CHuiControlGroup@@QAEAAVCHuiTransformation@@XZ @ 934 NONAME ; class CHuiTransformation & CHuiControlGroup::Transformation(void)
+	?Transformation@CHuiDisplay@@QBEAAVCHuiTransformation@@XZ @ 935 NONAME ; class CHuiTransformation & CHuiDisplay::Transformation(void) const
+	?Transformation@CHuiVisual@@QAEAAVCHuiTransformation@@XZ @ 936 NONAME ; class CHuiTransformation & CHuiVisual::Transformation(void)
+	?Transformation@THuiTransformationCommand@@QBEAAVCHuiTransformation@@XZ @ 937 NONAME ; class CHuiTransformation & THuiTransformationCommand::Transformation(void) const
+	?TransitionTime@CHuiLayout@@QBEHXZ @ 938 NONAME ; int CHuiLayout::TransitionTime(void) const
+	?TransitionTime@THuiPointCommand@@QBEHXZ @ 939 NONAME ; int THuiPointCommand::TransitionTime(void) const
+	?TransitionTime@THuiValueCommand@@QBEHXZ @ 940 NONAME ; int THuiValueCommand::TransitionTime(void) const
+	?Translate@CHuiTransformation@@QAEXABVTHuiTimedValue@@0@Z @ 941 NONAME ; void CHuiTransformation::Translate(class THuiTimedValue const &, class THuiTimedValue const &)
+	?Translate@CHuiTransformation@@QAEXMM@Z @ 942 NONAME ; void CHuiTransformation::Translate(float, float)
+	?Translate@THuiImage@@QAEXMMH@Z @ 943 NONAME ; void THuiImage::Translate(float, float, int)
+	?Type@CHuiBrush@@UBE?AW4TType@MHuiSessionObject@@XZ @ 944 NONAME ; enum MHuiSessionObject::TType CHuiBrush::Type(void) const
+	?Type@CHuiControl@@MBE?AW4TType@MHuiSessionObject@@XZ @ 945 NONAME ; enum MHuiSessionObject::TType CHuiControl::Type(void) const
+	?Type@CHuiControlGroup@@UBE?AW4TType@MHuiSessionObject@@XZ @ 946 NONAME ; enum MHuiSessionObject::TType CHuiControlGroup::Type(void) const
+	?Type@CHuiGridLayout@@UBE?AW4TType@MHuiSessionObject@@XZ @ 947 NONAME ; enum MHuiSessionObject::TType CHuiGridLayout::Type(void) const
+	?Type@CHuiLayout@@UBE?AW4TType@MHuiSessionObject@@XZ @ 948 NONAME ; enum MHuiSessionObject::TType CHuiLayout::Type(void) const
+	?Type@CHuiMesh@@UBE?AW4TType@MHuiSessionObject@@XZ @ 949 NONAME ; enum MHuiSessionObject::TType CHuiMesh::Type(void) const
+	?Type@CHuiTexture@@UBE?AW4TType@MHuiSessionObject@@XZ @ 950 NONAME ; enum MHuiSessionObject::TType CHuiTexture::Type(void) const
+	?Type@CHuiVisual@@UBE?AW4TType@MHuiSessionObject@@XZ @ 951 NONAME ; enum MHuiSessionObject::TType CHuiVisual::Type(void) const
+	?Type@THuiCommand@@QBE?AW4THuiCommandType@@XZ @ 952 NONAME ; enum THuiCommandType THuiCommand::Type(void) const
+	?Type@THuiEvent@@QBE?AW4TType@1@XZ @ 953 NONAME ; enum THuiEvent::TType THuiEvent::Type(void) const
+	?Underline@THuiTextStyle@@QBEHXZ @ 954 NONAME ; int THuiTextStyle::Underline(void) const
+	?UnloadTexture@CHuiTextureManager@@QAEXABVTDesC16@@H@Z @ 955 NONAME ; void CHuiTextureManager::UnloadTexture(class TDesC16 const &, int)
+	?UnloadTexture@CHuiTextureManager@@QAEXH@Z @ 956 NONAME ; void CHuiTextureManager::UnloadTexture(int)
+	?UnmappedNow@THuiTimedValue@@QBEMXZ @ 957 NONAME ; float THuiTimedValue::UnmappedNow(void) const
+	?UpdateChildLayout@CHuiLayout@@UAEXHH@Z @ 958 NONAME ; void CHuiLayout::UpdateChildLayout(int, int)
+	?UpdateChildrenLayout@CHuiGridLayout@@UAEXH@Z @ 959 NONAME ; void CHuiGridLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CHuiLayout@@UAEXH@Z @ 960 NONAME ; void CHuiLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CHuiVisual@@UAEXH@Z @ 961 NONAME ; void CHuiVisual::UpdateChildrenLayout(int)
+	?VerticalInnerPadding@CHuiLayout@@QBEHXZ @ 962 NONAME ; int CHuiLayout::VerticalInnerPadding(void) const
+	?VerticalOrigin@CHuiVisual@@QBE?AW4THuiVisualVOrigin@@XZ @ 963 NONAME ; enum THuiVisualVOrigin CHuiVisual::VerticalOrigin(void) const
+	?VirtualSize@CHuiLayout@@QBE?AVTSize@@XZ @ 964 NONAME ; class TSize CHuiLayout::VirtualSize(void) const
+	?VisibleArea@CHuiDisplay@@QBE?AVTRect@@XZ @ 965 NONAME ; class TRect CHuiDisplay::VisibleArea(void) const
+	?Visual@CHuiControl@@QBEAAVCHuiVisual@@H@Z @ 966 NONAME ; class CHuiVisual & CHuiControl::Visual(int) const
+	?Visual@CHuiGridLayout@@UBEAAVCHuiVisual@@H@Z @ 967 NONAME ; class CHuiVisual & CHuiGridLayout::Visual(int) const
+	?Visual@CHuiLayout@@UBEAAVCHuiVisual@@H@Z @ 968 NONAME ; class CHuiVisual & CHuiLayout::Visual(int) const
+	?Visual@CHuiVisual@@UBEAAV1@H@Z @ 969 NONAME ; class CHuiVisual & CHuiVisual::Visual(int) const
+	?Visual@THuiEvent@@QBEPAVCHuiVisual@@XZ @ 970 NONAME ; class CHuiVisual * THuiEvent::Visual(void) const
+	?Visual@THuiVisualCommand@@QBEAAVCHuiVisual@@XZ @ 971 NONAME ; class CHuiVisual & THuiVisualCommand::Visual(void) const
+	?VisualAddedL@CHuiControl@@MAEXPAVCHuiVisual@@@Z @ 972 NONAME ; void CHuiControl::VisualAddedL(class CHuiVisual *)
+	?VisualCount@CHuiControl@@QBEHXZ @ 973 NONAME ; int CHuiControl::VisualCount(void) const
+	?VisualDestroyed@CHuiControl@@UAEXAAVCHuiVisual@@@Z @ 974 NONAME ; void CHuiControl::VisualDestroyed(class CHuiVisual &)
+	?VisualExtension@CHuiGridLayout@@UAEXABVTUid@@PAPAX@Z @ 975 NONAME ; void CHuiGridLayout::VisualExtension(class TUid const &, void * *)
+	?VisualExtension@CHuiLayout@@MAEXABVTUid@@PAPAX@Z @ 976 NONAME ; void CHuiLayout::VisualExtension(class TUid const &, void * *)
+	?VisualExtension@CHuiVisual@@MAEXABVTUid@@PAPAX@Z @ 977 NONAME ; void CHuiVisual::VisualExtension(class TUid const &, void * *)
+	?VisualFactory@CHuiEnv@@QBEAAVCHuiVisualFactory@@XZ @ 978 NONAME ; class CHuiVisualFactory & CHuiEnv::VisualFactory(void) const
+	?VisualLayoutUpdated@CHuiControl@@UAEXAAVCHuiVisual@@@Z @ 979 NONAME ; void CHuiControl::VisualLayoutUpdated(class CHuiVisual &)
+	?VisualPrepareDrawFailed@CHuiControl@@UAEXAAVCHuiVisual@@H@Z @ 980 NONAME ; void CHuiControl::VisualPrepareDrawFailed(class CHuiVisual &, int)
+	?VisualRemoved@CHuiControl@@MAEXPAVCHuiVisual@@@Z @ 981 NONAME ; void CHuiControl::VisualRemoved(class CHuiVisual *)
+	?Weight@CHuiGridLayout@@QBE?AUTHuiMetric@@W4THuiGridDimension@@H@Z @ 982 NONAME ; struct THuiMetric CHuiGridLayout::Weight(enum THuiGridDimension, int) const
+	?WrapValue@HuiUtil@@SAXAAMMM@Z @ 983 NONAME ; void HuiUtil::WrapValue(float &, float, float)
+	?Wrapping@CHuiTextVisual@@QBE?AW4TLineWrap@1@XZ @ 984 NONAME ; enum CHuiTextVisual::TLineWrap CHuiTextVisual::Wrapping(void) const
+	?BoxMetricToPixelRect@CHuiVisual@@QBEXABUTHuiBoxMetric@@AAVTHuiRealRect@@W4THuiReferenceState@@@Z @ 985 NONAME ; void CHuiVisual::BoxMetricToPixelRect(struct THuiBoxMetric const &, class THuiRealRect &, enum THuiReferenceState) const
+	?LocalPointInPixels@CHuiVisual@@QBE?AVTHuiRealPoint@@ABV2@W4THuiReferenceState@@@Z @ 986 NONAME ; class THuiRealPoint CHuiVisual::LocalPointInPixels(class THuiRealPoint const &, enum THuiReferenceState) const
+	?MetricReferenceInPixels@CHuiVisual@@QBE?AVTHuiRealPoint@@ABUTHuiXYMetric@@W4THuiReferenceState@@@Z @ 987 NONAME ; class THuiRealPoint CHuiVisual::MetricReferenceInPixels(struct THuiXYMetric const &, enum THuiReferenceState) const
+	?MetricToPixels@CHuiVisual@@QBE?AVTHuiRealPoint@@ABUTHuiXYMetric@@W4THuiReferenceState@@@Z @ 988 NONAME ; class THuiRealPoint CHuiVisual::MetricToPixels(struct THuiXYMetric const &, enum THuiReferenceState) const
+	?PaddingInPixels@CHuiVisual@@QBE?AVTHuiRealRect@@W4THuiReferenceState@@@Z @ 989 NONAME ; class THuiRealRect CHuiVisual::PaddingInPixels(enum THuiReferenceState) const
+	?PixelPointInLocal@CHuiVisual@@QBE?AVTHuiRealPoint@@ABV2@W4THuiReferenceState@@@Z @ 990 NONAME ; class THuiRealPoint CHuiVisual::PixelPointInLocal(class THuiRealPoint const &, enum THuiReferenceState) const
+	?PixelsToMetric@CHuiVisual@@QBEXABVTHuiRealPoint@@AAUTHuiXYMetric@@W4THuiReferenceState@@@Z @ 991 NONAME ; void CHuiVisual::PixelsToMetric(class THuiRealPoint const &, struct THuiXYMetric &, enum THuiReferenceState) const
+	?UpdateSiblingLayout@CHuiVisual@@QAEXH@Z @ 992 NONAME ; void CHuiVisual::UpdateSiblingLayout(int)
+	?SetColor@CHuiLineVisual@@QAEXABVTRgb@@@Z @ 993 NONAME ; void CHuiLineVisual::SetColor(class TRgb const &)
+	?MetricReferenceForLayoutInPixels@CHuiLayout@@IBE?AVTHuiRealPoint@@ABUTHuiXYMetric@@@Z @ 994 NONAME ; class THuiRealPoint CHuiLayout::MetricReferenceForLayoutInPixels(struct THuiXYMetric const &) const
+	?AppendArcL@CHuiCurvePath@@QAEXABVTHuiRealPoint@@ABVTHuiRealSize@@MMM@Z @ 995 NONAME ; void CHuiCurvePath::AppendArcL(class THuiRealPoint const &, class THuiRealSize const &, float, float, float)
+	?AppendLineL@CHuiCurvePath@@QAEXABVTHuiRealPoint@@0M@Z @ 996 NONAME ; void CHuiCurvePath::AppendLineL(class THuiRealPoint const &, class THuiRealPoint const &, float)
+	?SetDropShadow@CHuiImageVisual@@QAEXABUTHuiMetric@@@Z @ 997 NONAME ; void CHuiImageVisual::SetDropShadow(struct THuiMetric const &)
+	?SetDropShadow@CHuiImageVisual@@QAEXABUTHuiXYMetric@@@Z @ 998 NONAME ; void CHuiImageVisual::SetDropShadow(struct THuiXYMetric const &)
+	?NewL@CHuiBorderBrush@@SAPAV1@ABUTHuiXYMetric@@0@Z @ 999 NONAME ; class CHuiBorderBrush * CHuiBorderBrush::NewL(struct THuiXYMetric const &, struct THuiXYMetric const &)
+	?NewL@CHuiDropShadowBrush@@SAPAV1@ABUTHuiMetric@@@Z @ 1000 NONAME ; class CHuiDropShadowBrush * CHuiDropShadowBrush::NewL(struct THuiMetric const &)
+	?NewL@CHuiFrameBrush@@SAPAV1@ABVTAknsItemID@@ABUTHuiXYMetric@@@Z @ 1001 NONAME ; class CHuiFrameBrush * CHuiFrameBrush::NewL(class TAknsItemID const &, struct THuiXYMetric const &)
+	?NewL@CHuiShadowBorderBrush@@SAPAV1@ABUTHuiMetric@@@Z @ 1002 NONAME ; class CHuiShadowBorderBrush * CHuiShadowBorderBrush::NewL(struct THuiMetric const &)
+	?NewLC@CHuiBorderBrush@@SAPAV1@ABUTHuiXYMetric@@0@Z @ 1003 NONAME ; class CHuiBorderBrush * CHuiBorderBrush::NewLC(struct THuiXYMetric const &, struct THuiXYMetric const &)
+	?NewLC@CHuiDropShadowBrush@@SAPAV1@ABUTHuiMetric@@@Z @ 1004 NONAME ; class CHuiDropShadowBrush * CHuiDropShadowBrush::NewLC(struct THuiMetric const &)
+	?NewLC@CHuiFrameBrush@@SAPAV1@ABVTAknsItemID@@ABUTHuiXYMetric@@@Z @ 1005 NONAME ; class CHuiFrameBrush * CHuiFrameBrush::NewLC(class TAknsItemID const &, struct THuiXYMetric const &)
+	?NewLC@CHuiShadowBorderBrush@@SAPAV1@ABUTHuiMetric@@@Z @ 1006 NONAME ; class CHuiShadowBorderBrush * CHuiShadowBorderBrush::NewLC(struct THuiMetric const &)
+	?SetColor@CHuiDropShadowBrush@@QAEXABVTRgb@@@Z @ 1007 NONAME ; void CHuiDropShadowBrush::SetColor(class TRgb const &)
+	?SetDepth@CHuiDropShadowBrush@@QAEXABUTHuiMetric@@@Z @ 1008 NONAME ; void CHuiDropShadowBrush::SetDepth(struct THuiMetric const &)
+	?SetEdgeOffset@CHuiBorderBrush@@QAEXABUTHuiXYMetric@@@Z @ 1009 NONAME ; void CHuiBorderBrush::SetEdgeOffset(struct THuiXYMetric const &)
+	?SetEdgeOffset@CHuiFrameBrush@@QAEXABUTHuiXYMetric@@@Z @ 1010 NONAME ; void CHuiFrameBrush::SetEdgeOffset(struct THuiXYMetric const &)
+	?SetImageOffset@CHuiBorderBrush@@QAEXABUTHuiXYMetric@@@Z @ 1011 NONAME ; void CHuiBorderBrush::SetImageOffset(struct THuiXYMetric const &)
+	?SetSoftness@CHuiDropShadowBrush@@QAEXABUTHuiMetric@@@Z @ 1012 NONAME ; void CHuiDropShadowBrush::SetSoftness(struct THuiMetric const &)
+	?SetThickness@CHuiBorderBrush@@QAEXABUTHuiXYMetric@@@Z @ 1013 NONAME ; void CHuiBorderBrush::SetThickness(struct THuiXYMetric const &)
+	?SetWidth@CHuiShadowBorderBrush@@QAEXABUTHuiMetric@@@Z @ 1014 NONAME ; void CHuiShadowBorderBrush::SetWidth(struct THuiMetric const &)
+	??1CHuiSkinAnimationTexture@@UAE@XZ @ 1015 NONAME ; CHuiSkinAnimationTexture::~CHuiSkinAnimationTexture(void)
+	?Id@CHuiSkinAnimationTexture@@QAEHXZ @ 1016 NONAME ; int CHuiSkinAnimationTexture::Id(void)
+	?NewL@CHuiSkinAnimationTexture@@SAPAV1@ABVTDesC16@@AAVCHuiTextureManager@@HW4THuiTextureUploadFlags@@@Z @ 1017 NONAME ; class CHuiSkinAnimationTexture * CHuiSkinAnimationTexture::NewL(class TDesC16 const &, class CHuiTextureManager &, int, enum THuiTextureUploadFlags)
+	?Start@CHuiSkinAnimationTexture@@QAEXXZ @ 1018 NONAME ; void CHuiSkinAnimationTexture::Start(void)
+	?Stop@CHuiSkinAnimationTexture@@QAEXXZ @ 1019 NONAME ; void CHuiSkinAnimationTexture::Stop(void)
+	?SetScrollOffsetInBaseUnits@CHuiLayout@@QAEXABVTHuiRealPoint@@H@Z @ 1020 NONAME ; void CHuiLayout::SetScrollOffsetInBaseUnits(class THuiRealPoint const &, int)
+	?MaxSizeInBaseUnits@CHuiVisual@@QBE?AVTHuiRealSize@@XZ @ 1021 NONAME ; class THuiRealSize CHuiVisual::MaxSizeInBaseUnits(void) const
+	?MinSizeInBaseUnits@CHuiVisual@@QBE?AVTHuiRealSize@@XZ @ 1022 NONAME ; class THuiRealSize CHuiVisual::MinSizeInBaseUnits(void) const
+	?Move@CHuiVisual@@QAEXABVTHuiRealPoint@@H@Z @ 1023 NONAME ; void CHuiVisual::Move(class THuiRealPoint const &, int)
+	?SetCenteredPosAndSize@CHuiVisual@@QAEXABVTHuiRealPoint@@ABVTHuiRealSize@@H@Z @ 1024 NONAME ; void CHuiVisual::SetCenteredPosAndSize(class THuiRealPoint const &, class THuiRealSize const &, int)
+	?SetMaxSize@CHuiVisual@@QAEXABVTHuiRealSize@@@Z @ 1025 NONAME ; void CHuiVisual::SetMaxSize(class THuiRealSize const &)
+	?SetMinSize@CHuiVisual@@QAEXABVTHuiRealSize@@@Z @ 1026 NONAME ; void CHuiVisual::SetMinSize(class THuiRealSize const &)
+	?HasTactileFeedback@CHuiVisual@@QBEHH@Z @ 1027 NONAME ; int CHuiVisual::HasTactileFeedback(int) const
+	?RemoveTactileFeedback@CHuiVisual@@QAEXH@Z @ 1028 NONAME ; void CHuiVisual::RemoveTactileFeedback(int)
+	?SetTactileFeedbackL@CHuiVisual@@QAEXHH@Z @ 1029 NONAME ; void CHuiVisual::SetTactileFeedbackL(int, int)
+	?ClearLayoutModeFlags@CHuiGridLayout@@QAEXW4THuiGridDimension@@I@Z @ 1030 NONAME ; void CHuiGridLayout::ClearLayoutModeFlags(enum THuiGridDimension, unsigned int)
+	?LayoutModeFlags@CHuiGridLayout@@QAEIW4THuiGridDimension@@@Z @ 1031 NONAME ; unsigned int CHuiGridLayout::LayoutModeFlags(enum THuiGridDimension)
+	?SetLayoutModeFlags@CHuiGridLayout@@QAEXW4THuiGridDimension@@I@Z @ 1032 NONAME ; void CHuiGridLayout::SetLayoutModeFlags(enum THuiGridDimension, unsigned int)
+	?ConstructL@CHuiThemeManager@@QAEXXZ @ 1033 NONAME ; void CHuiThemeManager::ConstructL(void)
+	?GetItemID@CHuiThemeManager@@QAEXABVTDesC16@@AAVTAknsItemID@@@Z @ 1034 NONAME ; void CHuiThemeManager::GetItemID(class TDesC16 const &, class TAknsItemID &)
+	?GetSkinImageParams@CHuiThemeManager@@QAE?AUTHuiThemeImageparams@@ABVTDesC16@@@Z @ 1035 NONAME ; struct THuiThemeImageparams CHuiThemeManager::GetSkinImageParams(class TDesC16 const &)
+	?ThemeManager@CHuiEnv@@QBEAAVCHuiThemeManager@@XZ @ 1036 NONAME ; class CHuiThemeManager & CHuiEnv::ThemeManager(void) const
+	?AddScreenBufferObserverL@CHuiDisplay@@QAEXPAVMHuiScreenBufferObserver@@@Z @ 1037 NONAME ; void CHuiDisplay::AddScreenBufferObserverL(class MHuiScreenBufferObserver *)
+	?Display@CHuiEnv@@QBEAAVCHuiDisplay@@H@Z @ 1038 NONAME ; class CHuiDisplay & CHuiEnv::Display(int) const
+	?DisplayType@CHuiDisplay@@QAEHXZ @ 1039 NONAME ; int CHuiDisplay::DisplayType(void)
+	?GetDrawingInterface@CHuiDisplay@@QAEPAVMHuiBufferDrawer@@ABVTUid@@@Z @ 1040 NONAME ; class MHuiBufferDrawer * CHuiDisplay::GetDrawingInterface(class TUid const &)
+	?GetGraphicsContext@CHuiDisplay@@QAEPAVMHuiGc@@ABVTUid@@@Z @ 1041 NONAME ; class MHuiGc * CHuiDisplay::GetGraphicsContext(class TUid const &)
+	?IsScreenBufferLocked@CHuiDisplay@@QBEHXZ @ 1042 NONAME ; int CHuiDisplay::IsScreenBufferLocked(void) const
+	?NewDisplayL@CHuiEnv@@QAEAAVCHuiDisplay@@ABVTRect@@PAVCCoeControl@@HPAV2@HVTUid@@@Z @ 1043 NONAME ; class CHuiDisplay & CHuiEnv::NewDisplayL(class TRect const &, class CCoeControl *, int, class CHuiDisplay *, int, class TUid)
+	?RemoveScreenBufferObserver@CHuiDisplay@@QAEXXZ @ 1044 NONAME ; void CHuiDisplay::RemoveScreenBufferObserver(void)
+	?ScreenBufferUid@CHuiDisplay@@QAE?AVTUid@@XZ @ 1045 NONAME ; class TUid CHuiDisplay::ScreenBufferUid(void)
+	?SetScreenBufferLock@CHuiDisplay@@QAEXH@Z @ 1046 NONAME ; void CHuiDisplay::SetScreenBufferLock(int)
+	?GetItemIdL@CHuiThemeManager@@QAEXABVTDesC16@@AAVTAknsItemID@@@Z @ 1047 NONAME ; void CHuiThemeManager::GetItemIdL(class TDesC16 const &, class TAknsItemID &)
+	?GetSkinImageParamsL@CHuiThemeManager@@QAE?AUTHuiThemeImageparams@@ABVTDesC16@@@Z @ 1048 NONAME ; struct THuiThemeImageparams CHuiThemeManager::GetSkinImageParamsL(class TDesC16 const &)
+	?DeleteTextStyle@CHuiTextStyleManager@@QAEHH@Z @ 1049 NONAME ; int CHuiTextStyleManager::DeleteTextStyle(int)
+	?SetFPSCounterThreshold@CHuiEnv@@QAEXI@Z @ 1050 NONAME ; void CHuiEnv::SetFPSCounterThreshold(unsigned int)
+	?ShowDirtyRegions@CHuiDisplay@@QAEXH@Z @ 1051 NONAME ; void CHuiDisplay::ShowDirtyRegions(int)
+	??0THuiDisplayBackgroundItem@@QAE@ABVTRect@@@Z @ 1052 NONAME ; THuiDisplayBackgroundItem::THuiDisplayBackgroundItem(class TRect const &)
+	??0THuiDisplayBackgroundItem@@QAE@ABVTRect@@ABVTAknsItemID@@@Z @ 1053 NONAME ; THuiDisplayBackgroundItem::THuiDisplayBackgroundItem(class TRect const &, class TAknsItemID const &)
+	??0THuiDisplayBackgroundItem@@QAE@ABVTRect@@ABVTAknsItemID@@H@Z @ 1054 NONAME ; THuiDisplayBackgroundItem::THuiDisplayBackgroundItem(class TRect const &, class TAknsItemID const &, int)
+	??0THuiDisplayBackgroundItem@@QAE@ABVTRect@@ABVTRgb@@@Z @ 1055 NONAME ; THuiDisplayBackgroundItem::THuiDisplayBackgroundItem(class TRect const &, class TRgb const &)
+	??0THuiDisplayBackgroundItem@@QAE@XZ @ 1056 NONAME ; THuiDisplayBackgroundItem::THuiDisplayBackgroundItem(void)
+	?SetBackgroundItemsL@CHuiDisplay@@QAEXABV?$RArray@VTHuiDisplayBackgroundItem@@@@@Z @ 1057 NONAME ; void CHuiDisplay::SetBackgroundItemsL(class RArray<class THuiDisplayBackgroundItem> const &)
+	?SetColor@THuiDisplayBackgroundItem@@QAEXABVTAknsItemID@@H@Z @ 1058 NONAME ; void THuiDisplayBackgroundItem::SetColor(class TAknsItemID const &, int)
+	?SetColor@THuiDisplayBackgroundItem@@QAEXABVTRgb@@@Z @ 1059 NONAME ; void THuiDisplayBackgroundItem::SetColor(class TRgb const &)
+	?SetRect@THuiDisplayBackgroundItem@@QAEXABVTRect@@@Z @ 1060 NONAME ; void THuiDisplayBackgroundItem::SetRect(class TRect const &)
+	?SetSkinBackground@THuiDisplayBackgroundItem@@QAEXABVTAknsItemID@@@Z @ 1061 NONAME ; void THuiDisplayBackgroundItem::SetSkinBackground(class TAknsItemID const &)
+	?GetPreferredTextureFormats@CHuiDisplay@@QAEHAAV?$RPointerArray@VCTextureBitmapFormat@CHuiDisplay@@@@@Z @ 1062 NONAME ; int CHuiDisplay::GetPreferredTextureFormats(class RPointerArray<class CHuiDisplay::CTextureBitmapFormat> &)
+	?UpdateTextureFromBitmapL@CHuiTextureManager@@QAEXHPAVMHuiBitmapProvider@@@Z @ 1063 NONAME ; void CHuiTextureManager::UpdateTextureFromBitmapL(int, class MHuiBitmapProvider *)
+	?SetTextPaneHeightInPixels@THuiTextStyle@@QAEXHH@Z @ 1064 NONAME ; void THuiTextStyle::SetTextPaneHeightInPixels(int, int)
+	?TextStyle@CHuiTextVisual@@QBEHXZ @ 1065 NONAME ; int CHuiTextVisual::TextStyle(void) const
+	??0THuiFont@@QAE@ABV0@@Z @ 1066 NONAME ; THuiFont::THuiFont(class THuiFont const &)
+	??4THuiFont@@QAEAAV0@ABV0@@Z @ 1067 NONAME ; class THuiFont & THuiFont::operator=(class THuiFont const &)
+	??0THuiTextureAutoSizeParams@@QAE@XZ @ 1068 NONAME ; THuiTextureAutoSizeParams::THuiTextureAutoSizeParams(void)
+	?AutoSizeParams@CHuiTexture@@QBE?AVTHuiTextureAutoSizeParams@@XZ @ 1069 NONAME ; class THuiTextureAutoSizeParams CHuiTexture::AutoSizeParams(void) const
+	?DownsizeSettleThreshold@THuiTextureAutoSizeParams@@QBEHXZ @ 1070 NONAME ; int THuiTextureAutoSizeParams::DownsizeSettleThreshold(void) const
+	?EnableAutoSizeCalculation@CHuiTexture@@QAEXH@Z @ 1071 NONAME ; void CHuiTexture::EnableAutoSizeCalculation(int)
+	?MinSizeChange@THuiTextureAutoSizeParams@@QBEHXZ @ 1072 NONAME ; int THuiTextureAutoSizeParams::MinSizeChange(void) const
+	?PreferredSizeChanged@CHuiAutoSizeImageLoaderUtil@@EAEHABVCHuiTexture@@HABVTHuiRealSize@@@Z @ 1073 NONAME ; int CHuiAutoSizeImageLoaderUtil::PreferredSizeChanged(class CHuiTexture const &, int, class THuiRealSize const &)
+	?PreferredSizeReportCompleted@CHuiAutoSizeImageLoaderUtil@@EAEXXZ @ 1074 NONAME ; void CHuiAutoSizeImageLoaderUtil::PreferredSizeReportCompleted(void)
+	?SetAutoSizeParams@CHuiTexture@@QAEXABVTHuiTextureAutoSizeParams@@@Z @ 1075 NONAME ; void CHuiTexture::SetAutoSizeParams(class THuiTextureAutoSizeParams const &)
+	?SetDownsizeSettleThreshold@THuiTextureAutoSizeParams@@QAEXH@Z @ 1076 NONAME ; void THuiTextureAutoSizeParams::SetDownsizeSettleThreshold(int)
+	?SetMinSizeChange@THuiTextureAutoSizeParams@@QAEXH@Z @ 1077 NONAME ; void THuiTextureAutoSizeParams::SetMinSizeChange(int)
+	?SetSizeLowerThreshold@THuiTextureAutoSizeParams@@QAEXH@Z @ 1078 NONAME ; void THuiTextureAutoSizeParams::SetSizeLowerThreshold(int)
+	?SetSizeUpperThreshold@THuiTextureAutoSizeParams@@QAEXH@Z @ 1079 NONAME ; void THuiTextureAutoSizeParams::SetSizeUpperThreshold(int)
+	?SizeLowerThreshold@THuiTextureAutoSizeParams@@QBEHXZ @ 1080 NONAME ; int THuiTextureAutoSizeParams::SizeLowerThreshold(void) const
+	?SizeUpperThreshold@THuiTextureAutoSizeParams@@QBEHXZ @ 1081 NONAME ; int THuiTextureAutoSizeParams::SizeUpperThreshold(void) const
+	?ScreenBufferObserver@CHuiDisplay@@QAEPAVMHuiScreenBufferObserver@@XZ @ 1082 NONAME ; class MHuiScreenBufferObserver * CHuiDisplay::ScreenBufferObserver(void)
+	?ChangeRefreshLoopPriority@CHuiEnv@@QAEXW4TPriority@CActive@@@Z @ 1083 NONAME ; void CHuiEnv::ChangeRefreshLoopPriority(enum CActive::TPriority)
+	?NewL@CHuiFrameBrush@@SAPAV1@ABVTHuiImage@@ABUTHuiXYMetric@@@Z @ 1084 NONAME ; class CHuiFrameBrush * CHuiFrameBrush::NewL(class THuiImage const &, struct THuiXYMetric const &)
+	?NewLC@CHuiFrameBrush@@SAPAV1@ABVTHuiImage@@ABUTHuiXYMetric@@@Z @ 1085 NONAME ; class CHuiFrameBrush * CHuiFrameBrush::NewLC(class THuiImage const &, struct THuiXYMetric const &)
+	?SetImage@CHuiFrameBrush@@QAEXABVTHuiImage@@@Z @ 1086 NONAME ; void CHuiFrameBrush::SetImage(class THuiImage const &)
+	?SetImage@CHuiFrameBrush@@QAEXW4TFrameParts@1@ABVTHuiImage@@@Z @ 1087 NONAME ; void CHuiFrameBrush::SetImage(enum CHuiFrameBrush::TFrameParts, class THuiImage const &)
+	?DrawScreenBuffer@CHuiDisplay@@QAEXXZ @ 1088 NONAME ; void CHuiDisplay::DrawScreenBuffer(void)
+	?DropShadowHandler@CHuiVisual@@QBEPAVCHuiDropShadow@@XZ @ 1089 NONAME ; class CHuiDropShadow * CHuiVisual::DropShadowHandler(void) const
+	?EnableDropShadowL@CHuiVisual@@QAEXH@Z @ 1090 NONAME ; void CHuiVisual::EnableDropShadowL(int)
+	?SetColor@CHuiDropShadow@@QAEXABVTAknsItemID@@HH@Z @ 1091 NONAME ; void CHuiDropShadow::SetColor(class TAknsItemID const &, int, int)
+	?SetColor@CHuiDropShadow@@QAEXABVTRgb@@H@Z @ 1092 NONAME ; void CHuiDropShadow::SetColor(class TRgb const &, int)
+	?SetOffset@CHuiDropShadow@@QAEXMUTHuiMetric@@H@Z @ 1093 NONAME ; void CHuiDropShadow::SetOffset(float, struct THuiMetric, int)
+	?EnableAnimation@CHuiGifAnimationTexture@@QAEXH@Z @ 1094 NONAME ; void CHuiGifAnimationTexture::EnableAnimation(int)
+	?SetVisibleAreaClippingRect@CHuiDisplay@@QAEXABVTRect@@@Z @ 1095 NONAME ; void CHuiDisplay::SetVisibleAreaClippingRect(class TRect const &)
+	?SetDrawVisualOutline@CHuiDisplay@@QAEXI@Z @ 1096 NONAME ; void CHuiDisplay::SetDrawVisualOutline(unsigned int)
+	?SetHighlightRange@CHuiTextVisual@@QAEXHHAAVTRgb@@0@Z @ 1097 NONAME ; void CHuiTextVisual::SetHighlightRange(int, int, class TRgb &, class TRgb &)
+	??0CHuiGc@@IAE@XZ @ 1098 NONAME ; CHuiGc::CHuiGc(void)
+	??0CHuiM3GMesh@@QAE@XZ @ 1099 NONAME ; CHuiM3GMesh::CHuiM3GMesh(void)
+	??0CHuiProceduralMesh@@QAE@XZ @ 1100 NONAME ; CHuiProceduralMesh::CHuiProceduralMesh(void)
+	??0CHuiTexture@@IAE@XZ @ 1101 NONAME ; CHuiTexture::CHuiTexture(void)
+	??0CHuiTextureManager@@IAE@AAVCHuiEnv@@@Z @ 1102 NONAME ; CHuiTextureManager::CHuiTextureManager(class CHuiEnv &)
+	??0CHuiTextureProcessor@@IAE@AAVCHuiEnv@@@Z @ 1103 NONAME ; CHuiTextureProcessor::CHuiTextureProcessor(class CHuiEnv &)
+	??0THuiFontManager@@QAE@XZ @ 1104 NONAME ; THuiFontManager::THuiFontManager(void)
+	??0TMatrix@CHuiMatrixStack@@QAE@XZ @ 1105 NONAME ; CHuiMatrixStack::TMatrix::TMatrix(void)
+	??1CHuiGc@@UAE@XZ @ 1106 NONAME ; CHuiGc::~CHuiGc(void)
+	??1CHuiM3GMesh@@UAE@XZ @ 1107 NONAME ; CHuiM3GMesh::~CHuiM3GMesh(void)
+	??1CHuiTextureManager@@UAE@XZ @ 1108 NONAME ; CHuiTextureManager::~CHuiTextureManager(void)
+	??1CHuiTextureProcessor@@UAE@XZ @ 1109 NONAME ; CHuiTextureProcessor::~CHuiTextureProcessor(void)
+	??1MHuiRenderSurface@@UAE@XZ @ 1110 NONAME ; MHuiRenderSurface::~MHuiRenderSurface(void)
+	??1THuiFontManager@@UAE@XZ @ 1111 NONAME ; THuiFontManager::~THuiFontManager(void)
+	?AnimateControllers@CHuiM3GMesh@@UAEXXZ @ 1112 NONAME ; void CHuiM3GMesh::AnimateControllers(void)
+	?AnimationControllerCount@CHuiM3GMesh@@UBEHXZ @ 1113 NONAME ; int CHuiM3GMesh::AnimationControllerCount(void) const
+	?AppendTextureL@CHuiTextureManager@@UAEXPAVCHuiTexture@@H@Z @ 1114 NONAME ; void CHuiTextureManager::AppendTextureL(class CHuiTexture *, int)
+	?Assert@HuiUtil@@SAXH@Z @ 1115 NONAME ; void HuiUtil::Assert(int)
+	?BaseConstructL@CHuiTexture@@IAEXXZ @ 1116 NONAME ; void CHuiTexture::BaseConstructL(void)
+	?BaseConstructL@CHuiTextureManager@@IAEXXZ @ 1117 NONAME ; void CHuiTextureManager::BaseConstructL(void)
+	?BitgdiRenderer@CHuiStatic@@SAAAVCHuiBitgdiRenderPlugin@@XZ @ 1118 NONAME ; class CHuiBitgdiRenderPlugin & CHuiStatic::BitgdiRenderer(void)
+	?Clip@CHuiGc@@UAEXABVTRect@@@Z @ 1119 NONAME ; void CHuiGc::Clip(class TRect const &)
+	?ClipRect@CHuiGc@@QBE?AVTRect@@XZ @ 1120 NONAME ; class TRect CHuiGc::ClipRect(void) const
+	?ConstructL@CHuiM3GMesh@@MAEXXZ @ 1121 NONAME ; void CHuiM3GMesh::ConstructL(void)
+	?ContinueRefresh@CHuiStatic@@SAXXZ @ 1122 NONAME ; void CHuiStatic::ContinueRefresh(void)
+	?CopyBitmapL@HuiUtil@@SAPAVCFbsBitmap@@ABV2@@Z @ 1123 NONAME ; class CFbsBitmap * HuiUtil::CopyBitmapL(class CFbsBitmap const &)
+	?CreateTextureL@CHuiTextureManager@@EAEAAVCHuiTexture@@AAVCFbsBitmap@@PBV3@W4THuiTextureUploadFlags@@H@Z @ 1124 NONAME ; class CHuiTexture & CHuiTextureManager::CreateTextureL(class CFbsBitmap &, class CFbsBitmap const *, enum THuiTextureUploadFlags, int)
+	?Current@CHuiMatrixStack@@QAEAAUTMatrix@1@XZ @ 1125 NONAME ; struct CHuiMatrixStack::TMatrix & CHuiMatrixStack::Current(void)
+	?CurrentRenderSurface@CHuiStatic@@SAPAVMHuiRenderSurface@@XZ @ 1126 NONAME ; class MHuiRenderSurface * CHuiStatic::CurrentRenderSurface(void)
+	?Disable@CHuiGc@@UAEXW4TFeature@1@@Z @ 1127 NONAME ; void CHuiGc::Disable(enum CHuiGc::TFeature)
+	?DisplayArea@CHuiGc@@QBE?AVTRect@@XZ @ 1128 NONAME ; class TRect CHuiGc::DisplayArea(void) const
+	?DoCancel@CHuiTextureManager@@EAEXXZ @ 1129 NONAME ; void CHuiTextureManager::DoCancel(void)
+	?DrawStretchImage@CHuiGc@@UAEXW4TStretchMode@1@ABVTHuiImage@@ABVTHuiRealRect@@HH@Z @ 1130 NONAME ; void CHuiGc::DrawStretchImage(enum CHuiGc::TStretchMode, class THuiImage const &, class THuiRealRect const &, int, int)
+	?DrawText@CHuiGc@@UAEXABVCHuiTextMesh@@ABVTHuiRealRect@@M@Z @ 1131 NONAME ; void CHuiGc::DrawText(class CHuiTextMesh const &, class THuiRealRect const &, float)
+	?DrawTextL@CHuiGc@@UAEXABVTDesC16@@ABVTHuiRealRect@@M@Z @ 1132 NONAME ; void CHuiGc::DrawTextL(class TDesC16 const &, class THuiRealRect const &, float)
+	?EvaluateSegment@CHuiCurvePath@@IBEXMABUTSegment@1@AAVTHuiRealPoint@@PAV3@@Z @ 1133 NONAME ; void CHuiCurvePath::EvaluateSegment(float, struct CHuiCurvePath::TSegment const &, class THuiRealPoint &, class THuiRealPoint *) const
+	?FrustumOffset@CHuiGc@@QBE?AVTHuiRealPoint@@XZ @ 1134 NONAME ; class THuiRealPoint CHuiGc::FrustumOffset(void) const
+	?GetDualAlpha@CHuiVisual@@SAXMMAAH0@Z @ 1135 NONAME ; void CHuiVisual::GetDualAlpha(float, float, int &, int &)
+	?GetShadowTexture@CHuiTexture@@UBEHAAVTHuiTextureHandle@@@Z @ 1136 NONAME ; int CHuiTexture::GetShadowTexture(class THuiTextureHandle &) const
+	?GetVisual@CHuiCurvePath@@QBEPBVCHuiVisual@@XZ @ 1137 NONAME ; class CHuiVisual const * CHuiCurvePath::GetVisual(void) const
+	?Gles10Renderer@CHuiStatic@@SAAAVCHuiGles10RenderPlugin@@XZ @ 1138 NONAME ; class CHuiGles10RenderPlugin & CHuiStatic::Gles10Renderer(void)
+	?GlesRefCounter@CHuiEnv@@QAEAAHXZ @ 1139 NONAME ; int & CHuiEnv::GlesRefCounter(void)
+	?IsDisplayTypeTvOut@CHuiDisplay@@QBEHXZ @ 1140 NONAME ; int CHuiDisplay::IsDisplayTypeTvOut(void) const
+	?LoadIdentity@CHuiMatrixStack@@QAEXXZ @ 1141 NONAME ; void CHuiMatrixStack::LoadIdentity(void)
+	?LoadSceneL@CHuiM3GMesh@@IAEXABVTDesC16@@PAUM3GInterfaceImpl@@@Z @ 1142 NONAME ; void CHuiM3GMesh::LoadSceneL(class TDesC16 const &, struct M3GInterfaceImpl *)
+	?MapValue@CHuiCurvePath@@UBEMMH@Z @ 1143 NONAME ; float CHuiCurvePath::MapValue(float, int) const
+	?MappingFunctionChanged@CHuiCurvePath@@UBEHXZ @ 1144 NONAME ; int CHuiCurvePath::MappingFunctionChanged(void) const
+	?MappingFunctionClearChanged@CHuiCurvePath@@UAEXXZ @ 1145 NONAME ; void CHuiCurvePath::MappingFunctionClearChanged(void)
+	?Multiply@CHuiMatrixStack@@QAEXABUTMatrix@1@@Z @ 1146 NONAME ; void CHuiMatrixStack::Multiply(struct CHuiMatrixStack::TMatrix const &)
+	?Multiply@TMatrix@CHuiMatrixStack@@QBEXAAVTHuiRealPoint@@@Z @ 1147 NONAME ; void CHuiMatrixStack::TMatrix::Multiply(class THuiRealPoint &) const
+	?NativeControl@CHuiDisplay@@QAEPAVCCoeControl@@XZ @ 1148 NONAME ; class CCoeControl * CHuiDisplay::NativeControl(void)
+	?NativeWindow@CHuiDisplay@@QAEPAVRDrawableWindow@@XZ @ 1149 NONAME ; class RDrawableWindow * CHuiDisplay::NativeWindow(void)
+	?NeedUpdate@CHuiCurvePath@@QBEHXZ @ 1150 NONAME ; int CHuiCurvePath::NeedUpdate(void) const
+	?NewL@CHuiMatrixStack@@SAPAV1@XZ @ 1151 NONAME ; class CHuiMatrixStack * CHuiMatrixStack::NewL(void)
+	?NewL@CHuiRasterizedTextMesh@@SAPAV1@XZ @ 1152 NONAME ; class CHuiRasterizedTextMesh * CHuiRasterizedTextMesh::NewL(void)
+	?Orientation@CHuiGc@@QBE?AW4TOrientation@1@XZ @ 1153 NONAME ; enum CHuiGc::TOrientation CHuiGc::Orientation(void) const
+	?PenAlpha@CHuiGc@@QBEHXZ @ 1154 NONAME ; int CHuiGc::PenAlpha(void) const
+	?PenColor@CHuiGc@@QBE?AVTRgb@@XZ @ 1155 NONAME ; class TRgb CHuiGc::PenColor(void) const
+	?PenColorAlpha@CHuiGc@@QBE?AVTRgb@@XZ @ 1156 NONAME ; class TRgb CHuiGc::PenColorAlpha(void) const
+	?Pop@CHuiMatrixStack@@QAEXXZ @ 1157 NONAME ; void CHuiMatrixStack::Pop(void)
+	?PopClip@CHuiGc@@UAEXXZ @ 1158 NONAME ; void CHuiGc::PopClip(void)
+	?Projection@CHuiGc@@QBE?AW4TProjection@1@XZ @ 1159 NONAME ; enum CHuiGc::TProjection CHuiGc::Projection(void) const
+	?ProjectionViewport@CHuiGc@@IBE?AVTRect@@XZ @ 1160 NONAME ; class TRect CHuiGc::ProjectionViewport(void) const
+	?Push@CHuiMatrixStack@@QAEHXZ @ 1161 NONAME ; int CHuiMatrixStack::Push(void)
+	?PushClip@CHuiGc@@UAEXXZ @ 1162 NONAME ; void CHuiGc::PushClip(void)
+	?Quality@CHuiGc@@QBE?AW4THuiQuality@@XZ @ 1163 NONAME ; enum THuiQuality CHuiGc::Quality(void) const
+	?RawDisplayArea@CHuiGc@@IBE?AVTRect@@XZ @ 1164 NONAME ; class TRect CHuiGc::RawDisplayArea(void) const
+	?RealCompare@HuiUtil@@SAHMMM@Z @ 1165 NONAME ; int HuiUtil::RealCompare(float, float, float)
+	?Release@CHuiTexture@@UAEXXZ @ 1166 NONAME ; void CHuiTexture::Release(void)
+	?Release@CHuiTextureManager@@UAEHXZ @ 1167 NONAME ; int CHuiTextureManager::Release(void)
+	?Release@CHuiTextureProcessor@@UAEXXZ @ 1168 NONAME ; void CHuiTextureProcessor::Release(void)
+	?ReleaseScene@CHuiM3GMesh@@MAEXXZ @ 1169 NONAME ; void CHuiM3GMesh::ReleaseScene(void)
+	?RemoveTexture@CHuiTextureManager@@UAEXAAVCHuiTexture@@@Z @ 1170 NONAME ; void CHuiTextureManager::RemoveTexture(class CHuiTexture &)
+	?RenderSurface@CHuiDisplay@@QBEAAVMHuiRenderSurface@@XZ @ 1171 NONAME ; class MHuiRenderSurface & CHuiDisplay::RenderSurface(void) const
+	?Renderer@CHuiStatic@@SAAAVCHuiRenderPlugin@@XZ @ 1172 NONAME ; class CHuiRenderPlugin & CHuiStatic::Renderer(void)
+	?Reset@CHuiTexture@@UAEXXZ @ 1173 NONAME ; void CHuiTexture::Reset(void)
+	?ResetShadows@CHuiTexture@@QAEXXZ @ 1174 NONAME ; void CHuiTexture::ResetShadows(void)
+	?RestoreCamera@CHuiM3GMesh@@UAEXXZ @ 1175 NONAME ; void CHuiM3GMesh::RestoreCamera(void)
+	?RestoreL@CHuiTexture@@UAEXXZ @ 1176 NONAME ; void CHuiTexture::RestoreL(void)
+	?RestoreL@CHuiTextureManager@@UAEXXZ @ 1177 NONAME ; void CHuiTextureManager::RestoreL(void)
+	?RestoreL@CHuiTextureProcessor@@UAEXXZ @ 1178 NONAME ; void CHuiTextureProcessor::RestoreL(void)
+	?RotatePitch@CHuiM3GMesh@@UAEXM@Z @ 1179 NONAME ; void CHuiM3GMesh::RotatePitch(float)
+	?RotateYaw@CHuiM3GMesh@@UAEXM@Z @ 1180 NONAME ; void CHuiM3GMesh::RotateYaw(float)
+	?RunError@CHuiTextureManager@@EAEHH@Z @ 1181 NONAME ; int CHuiTextureManager::RunError(int)
+	?RunL@CHuiTextureManager@@EAEXXZ @ 1182 NONAME ; void CHuiTextureManager::RunL(void)
+	?Segment@CHuiCurvePath@@IBE?AUTSegment@1@H@Z @ 1183 NONAME ; struct CHuiCurvePath::TSegment CHuiCurvePath::Segment(int) const
+	?SegmentCount@CHuiCurvePath@@IBEHXZ @ 1184 NONAME ; int CHuiCurvePath::SegmentCount(void) const
+	?SetClip@CHuiGc@@UAEXABVTRect@@@Z @ 1185 NONAME ; void CHuiGc::SetClip(class TRect const &)
+	?SetCurrentRenderSurface@CHuiStatic@@SAXPAVMHuiRenderSurface@@@Z @ 1186 NONAME ; void CHuiStatic::SetCurrentRenderSurface(class MHuiRenderSurface *)
+	?SetPenColor@CHuiGc@@QAEXABVTRgb@@@Z @ 1187 NONAME ; void CHuiGc::SetPenColor(class TRgb const &)
+	?SetProcessor@CHuiTextureManager@@IAEXPAVCHuiTextureProcessor@@@Z @ 1188 NONAME ; void CHuiTextureManager::SetProcessor(class CHuiTextureProcessor *)
+	?SetQuality@CHuiGc@@UAEXW4THuiQuality@@@Z @ 1189 NONAME ; void CHuiGc::SetQuality(enum THuiQuality)
+	?SetSegment@CHuiTexture@@MAEXHABVTSize@@ABVTPoint@@0@Z @ 1190 NONAME ; void CHuiTexture::SetSegment(int, class TSize const &, class TPoint const &, class TSize const &)
+	?SetTextureChanged@CHuiTexture@@QAEXH@Z @ 1191 NONAME ; void CHuiTexture::SetTextureChanged(int)
+	?SetViewportRect@CHuiM3GMesh@@UAEXABVTHuiRealRect@@@Z @ 1192 NONAME ; void CHuiM3GMesh::SetViewportRect(class THuiRealRect const &)
+	?StoreCamera@CHuiM3GMesh@@UAEXXZ @ 1193 NONAME ; void CHuiM3GMesh::StoreCamera(void)
+	?TextureExtension@CHuiTexture@@MAEXABVTUid@@PAPAX@Z @ 1194 NONAME ; void CHuiTexture::TextureExtension(class TUid const &, void * *)
+	?UnOrientRect@CHuiGc@@IBE?AVTRect@@ABV2@@Z @ 1195 NONAME ; class TRect CHuiGc::UnOrientRect(class TRect const &) const
+	?Update@CHuiCurvePath@@UAEXMMMPAVMHuiMappingFunction@@0@Z @ 1196 NONAME ; void CHuiCurvePath::Update(float, float, float, class MHuiMappingFunction *, class MHuiMappingFunction *)
+	?WindowTransformation@CHuiGc@@IBEPBVCHuiTransformation@@XZ @ 1197 NONAME ; class CHuiTransformation const * CHuiGc::WindowTransformation(void) const
+	?Gles20Renderer@CHuiStatic@@SAAAVCHuiGles20RenderPlugin@@XZ @ 1198 NONAME ; class CHuiGles20RenderPlugin & CHuiStatic::Gles20Renderer(void)
+	?Gles11Renderer@CHuiStatic@@SAAAVCHuiGles11RenderPlugin@@XZ @ 1199 NONAME ; class CHuiGles11RenderPlugin & CHuiStatic::Gles11Renderer(void)
+	?Usage@CHuiDisplay@@QBEIXZ @ 1200 NONAME ; unsigned int CHuiDisplay::Usage(void) const
+	?Vg10Renderer@CHuiStatic@@SAAAVCHuiVg10RenderPlugin@@XZ @ 1201 NONAME ; class CHuiVg10RenderPlugin & CHuiStatic::Vg10Renderer(void)
+	?EnableDebugFlag@CHuiEnv@@QAEXI@Z @ 1202 NONAME ; void CHuiEnv::EnableDebugFlag(unsigned int)
+	??1CTextureEntry@CHuiTextureManager@@UAE@XZ @ 1203 NONAME ; CHuiTextureManager::CTextureEntry::~CTextureEntry(void)
+	?AddAnimatedTextureGroupL@CHuiTextureManager@@QAEHABV?$RArray@H@@@Z @ 1204 NONAME ; int CHuiTextureManager::AddAnimatedTextureGroupL(class RArray<int> const &)
+	?AdvanceTime@CHuiTextureManager@@QBEXM@Z @ 1205 NONAME ; void CHuiTextureManager::AdvanceTime(float) const
+	?AlignHorizontal@CHuiGc@@QBE?AW4THuiAlignHorizontal@@XZ @ 1206 NONAME ; enum THuiAlignHorizontal CHuiGc::AlignHorizontal(void) const
+	?AlignOffset@CHuiGc@@IBE?AVTPoint@@ABVTSize@@@Z @ 1207 NONAME ; class TPoint CHuiGc::AlignOffset(class TSize const &) const
+	?AlignVertical@CHuiGc@@QBE?AW4THuiAlignVertical@@XZ @ 1208 NONAME ; enum THuiAlignVertical CHuiGc::AlignVertical(void) const
+	?CalculateLength@CHuiCurvePath@@IBEMXZ @ 1209 NONAME ; float CHuiCurvePath::CalculateLength(void) const
+	?CheckTexture@CHuiTextureManager@@IBEHABVTDesC16@@H@Z @ 1210 NONAME ; int CHuiTextureManager::CheckTexture(class TDesC16 const &, int) const
+	?CheckTexture@CHuiTextureManager@@IBEHH@Z @ 1211 NONAME ; int CHuiTextureManager::CheckTexture(int) const
+	?ClearChangedTextures@CHuiTextureManager@@QAEXXZ @ 1212 NONAME ; void CHuiTextureManager::ClearChangedTextures(void)
+	?ClipStackCount@CHuiGc@@QBEHXZ @ 1213 NONAME ; int CHuiGc::ClipStackCount(void) const
+	?Draw@CHuiCurvePath@@UBEXABVTPoint@@PAVCHuiGc@@@Z @ 1214 NONAME ; void CHuiCurvePath::Draw(class TPoint const &, class CHuiGc *) const
+	?Draw@CHuiM3GMesh@@UBEXAAVCHuiGc@@PBVTHuiImage@@1M@Z @ 1215 NONAME ; void CHuiM3GMesh::Draw(class CHuiGc &, class THuiImage const *, class THuiImage const *, float) const
+	?Draw@CHuiProceduralMesh@@UBEXAAVCHuiGc@@PBVTHuiImage@@1M@Z @ 1216 NONAME ; void CHuiProceduralMesh::Draw(class CHuiGc &, class THuiImage const *, class THuiImage const *, float) const
+	?EnableTexMemoryCalculation@CHuiTextureManager@@QAEXH@Z @ 1217 NONAME ; void CHuiTextureManager::EnableTexMemoryCalculation(int)
+	?Env@CHuiTextureProcessor@@QAEAAVCHuiEnv@@XZ @ 1218 NONAME ; class CHuiEnv & CHuiTextureProcessor::Env(void)
+	?IsLegacyApiUsed@CHuiCurvePath@@QBEHXZ @ 1219 NONAME ; int CHuiCurvePath::IsLegacyApiUsed(void) const
+	?NotifyImagePreferredSize@CHuiGc@@QAEXABVTHuiImage@@VTHuiRealRect@@@Z @ 1220 NONAME ; void CHuiGc::NotifyImagePreferredSize(class THuiImage const &, class THuiRealRect)
+	?NotifySkinChangedL@CHuiTextureManager@@QAEXXZ @ 1221 NONAME ; void CHuiTextureManager::NotifySkinChangedL(void)
+	?NotifyTextureLoaded@CHuiTextureManager@@IBEXAAVCHuiTexture@@HH@Z @ 1222 NONAME ; void CHuiTextureManager::NotifyTextureLoaded(class CHuiTexture &, int, int) const
+	?RemoveAnimatedTextureGroup@CHuiTextureManager@@QAEXH@Z @ 1223 NONAME ; void CHuiTextureManager::RemoveAnimatedTextureGroup(int)
+	?SetAlign@CHuiGc@@QAEXW4THuiAlignHorizontal@@W4THuiAlignVertical@@@Z @ 1224 NONAME ; void CHuiGc::SetAlign(enum THuiAlignHorizontal, enum THuiAlignVertical)
+	?SetDisplayArea@CHuiGc@@QAEXABVTRect@@@Z @ 1225 NONAME ; void CHuiGc::SetDisplayArea(class TRect const &)
+	?SetFont@CHuiGc@@QAEXAAVTHuiFont@@@Z @ 1226 NONAME ; void CHuiGc::SetFont(class THuiFont &)
+	?SetFrustumOffset@CHuiGc@@QAEXABVTHuiRealPoint@@@Z @ 1227 NONAME ; void CHuiGc::SetFrustumOffset(class THuiRealPoint const &)
+	?SetHasChangedTextures@CHuiTextureManager@@QAEXXZ @ 1228 NONAME ; void CHuiTextureManager::SetHasChangedTextures(void)
+	?SetNeedsUpdate@CHuiCurvePath@@QAEXXZ @ 1229 NONAME ; void CHuiCurvePath::SetNeedsUpdate(void)
+	?SetOrientation@CHuiGc@@QAEXW4TOrientation@1@@Z @ 1230 NONAME ; void CHuiGc::SetOrientation(enum CHuiGc::TOrientation)
+	?SetPenAlpha@CHuiGc@@QAEXH@Z @ 1231 NONAME ; void CHuiGc::SetPenAlpha(int)
+	?SetPenColorAlpha@CHuiGc@@QAEXABVTRgb@@@Z @ 1232 NONAME ; void CHuiGc::SetPenColorAlpha(class TRgb const &)
+	?SetProjection@CHuiGc@@QAEXW4TProjection@1@@Z @ 1233 NONAME ; void CHuiGc::SetProjection(enum CHuiGc::TProjection)
+	?SetProjection@CHuiGc@@QAEXW4TProjection@1@ABVTRect@@@Z @ 1234 NONAME ; void CHuiGc::SetProjection(enum CHuiGc::TProjection, class TRect const &)
+	?SetVisual@CHuiCurvePath@@QBEXPBVCHuiVisual@@@Z @ 1235 NONAME ; void CHuiCurvePath::SetVisual(class CHuiVisual const *) const
+	?TextureEntry@CHuiTextureManager@@IAEPAVCTextureEntry@1@H@Z @ 1236 NONAME ; class CHuiTextureManager::CTextureEntry * CHuiTextureManager::TextureEntry(int)
+	?TextureEntryCount@CHuiTextureManager@@IBEHXZ @ 1237 NONAME ; int CHuiTextureManager::TextureEntryCount(void) const
+	?UpdateSurface@CHuiProceduralMesh@@UAEXMM@Z @ 1238 NONAME ; void CHuiProceduralMesh::UpdateSurface(float, float)
+	??0CHuiRenderPlugin@@IAE@W4THuiRenderPluginId@@@Z @ 1239 NONAME ; CHuiRenderPlugin::CHuiRenderPlugin(enum THuiRenderPluginId)
+	??1CHuiRenderPlugin@@UAE@XZ @ 1240 NONAME ; CHuiRenderPlugin::~CHuiRenderPlugin(void)
+	?Allows@CHuiRenderPlugin@@UBEHW4THuiRenderPluginAllow@@@Z @ 1241 NONAME ; int CHuiRenderPlugin::Allows(enum THuiRenderPluginAllow) const
+	?CreateCurvePathL@CHuiRenderPlugin@@UAEPAVCHuiCurvePath@@XZ @ 1242 NONAME ; class CHuiCurvePath * CHuiRenderPlugin::CreateCurvePathL(void)
+	?CreateFontManagerL@CHuiRenderPlugin@@UBEPAVTHuiFontManager@@XZ @ 1243 NONAME ; class THuiFontManager * CHuiRenderPlugin::CreateFontManagerL(void) const
+	?CreateGcL@CHuiRenderPlugin@@UAEPAVCHuiGc@@XZ @ 1244 NONAME ; class CHuiGc * CHuiRenderPlugin::CreateGcL(void)
+	?CreateMeshL@CHuiRenderPlugin@@UAEPAVCHuiMesh@@W4THuiMeshType@@@Z @ 1245 NONAME ; class CHuiMesh * CHuiRenderPlugin::CreateMeshL(enum THuiMeshType)
+	?CreateRenderSurfaceL@CHuiRenderPlugin@@UAEPAVMHuiRenderSurface@@AAVCHuiDisplay@@@Z @ 1246 NONAME ; class MHuiRenderSurface * CHuiRenderPlugin::CreateRenderSurfaceL(class CHuiDisplay &)
+	?CreateTextureL@CHuiRenderPlugin@@UAEPAVCHuiTexture@@PBVTHuiTextureHandle@@@Z @ 1247 NONAME ; class CHuiTexture * CHuiRenderPlugin::CreateTextureL(class THuiTextureHandle const *)
+	?CreateTextureLC@CHuiRenderPlugin@@UAEPAVCHuiTexture@@PBVTHuiTextureHandle@@@Z @ 1248 NONAME ; class CHuiTexture * CHuiRenderPlugin::CreateTextureLC(class THuiTextureHandle const *)
+	?CreateTextureManagerL@CHuiRenderPlugin@@UAEPAVCHuiTextureManager@@AAVCHuiEnv@@@Z @ 1249 NONAME ; class CHuiTextureManager * CHuiRenderPlugin::CreateTextureManagerL(class CHuiEnv &)
+	?DeleteNamedTexture@CHuiRenderPlugin@@UAEXI@Z @ 1250 NONAME ; void CHuiRenderPlugin::DeleteNamedTexture(unsigned int)
+	?DisableOffScreenBitmap@CHuiRenderPlugin@@UAEXXZ @ 1251 NONAME ; void CHuiRenderPlugin::DisableOffScreenBitmap(void)
+	?DrawOffScreenBitmapToWindowL@CHuiRenderPlugin@@UAEXAAVCHuiDisplay@@@Z @ 1252 NONAME ; void CHuiRenderPlugin::DrawOffScreenBitmapToWindowL(class CHuiDisplay &)
+	?EnableOffScreenBitmapL@CHuiRenderPlugin@@UAEXH@Z @ 1253 NONAME ; void CHuiRenderPlugin::EnableOffScreenBitmapL(int)
+	?Id@CHuiRenderPlugin@@QBE?AW4THuiRenderPluginId@@XZ @ 1254 NONAME ; enum THuiRenderPluginId CHuiRenderPlugin::Id(void) const
+	?NotifyDisplayCountL@CHuiRenderPlugin@@UAEXI@Z @ 1255 NONAME ; void CHuiRenderPlugin::NotifyDisplayCountL(unsigned int)
+	?OffScreenBitmap@CHuiRenderPlugin@@UBEPAVCFbsBitmap@@XZ @ 1256 NONAME ; class CFbsBitmap * CHuiRenderPlugin::OffScreenBitmap(void) const
+	?Release@CHuiRenderPlugin@@UAEXXZ @ 1257 NONAME ; void CHuiRenderPlugin::Release(void)
+	?RestoreL@CHuiRenderPlugin@@UAEXXZ @ 1258 NONAME ; void CHuiRenderPlugin::RestoreL(void)
+	?UpdateOffScreenBitmapL@CHuiRenderPlugin@@UAEXAAVCHuiDisplay@@@Z @ 1259 NONAME ; void CHuiRenderPlugin::UpdateOffScreenBitmapL(class CHuiDisplay &)
+	?EnableTransformedClippingRects@CHuiGc@@UAEXH@Z @ 1260 NONAME ; void CHuiGc::EnableTransformedClippingRects(int)
+	?SetClip@CHuiGc@@UAEXABVTRect@@H@Z @ 1261 NONAME ; void CHuiGc::SetClip(class TRect const &, int)
+	?TransformDirtyRect@CHuiGc@@UAEXAAVTHuiRealRect@@@Z @ 1262 NONAME ; void CHuiGc::TransformDirtyRect(class THuiRealRect &)
+	?CurvePathExtension@CHuiCurvePath@@MAEXABVTUid@@PAPAX@Z @ 1263 NONAME ; void CHuiCurvePath::CurvePathExtension(class TUid const &, void * *)
+	?GcExtension@CHuiGc@@MAEXABVTUid@@PAPAX@Z @ 1264 NONAME ; void CHuiGc::GcExtension(class TUid const &, void * *)
+	?M3GMeshExtension@CHuiM3GMesh@@MAEXABVTUid@@PAPAX@Z @ 1265 NONAME ; void CHuiM3GMesh::M3GMeshExtension(class TUid const &, void * *)
+	?ProceduralMeshExtension@CHuiProceduralMesh@@MAEXABVTUid@@PAPAX@Z @ 1266 NONAME ; void CHuiProceduralMesh::ProceduralMeshExtension(class TUid const &, void * *)
+	?TextureManagerExtension@CHuiTextureManager@@MAEXABVTUid@@PAPAX@Z @ 1267 NONAME ; void CHuiTextureManager::TextureManagerExtension(class TUid const &, void * *)
+	?TextureProcessorExtension@CHuiTextureProcessor@@MAEXABVTUid@@PAPAX@Z @ 1268 NONAME ; void CHuiTextureProcessor::TextureProcessorExtension(class TUid const &, void * *)
+	?RenderPluginExtension@CHuiRenderPlugin@@MAEXABVTUid@@PAPAX@Z @ 1269 NONAME ; void CHuiRenderPlugin::RenderPluginExtension(class TUid const &, void * *)
+	?Count@CHuiMatrixStack@@QBEHXZ @ 1270 NONAME ; int CHuiMatrixStack::Count(void) const
+	??0CHuiCanvasGc@@QAE@XZ @ 1271 NONAME ; CHuiCanvasGc::CHuiCanvasGc(void)
+	??1CHuiCanvasGc@@UAE@XZ @ 1272 NONAME ; CHuiCanvasGc::~CHuiCanvasGc(void)
+	?AddNewL@CHuiCanvasVisual@@SAPAV1@AAVCHuiControl@@PAVCHuiLayout@@@Z @ 1273 NONAME ; class CHuiCanvasVisual * CHuiCanvasVisual::AddNewL(class CHuiControl &, class CHuiLayout *)
+	?CreateCanvasGcL@CHuiRenderPlugin@@UAEPAVCHuiCanvasGc@@XZ @ 1274 NONAME ; class CHuiCanvasGc * CHuiRenderPlugin::CreateCanvasGcL(void)
+	?DrawEllipse@CHuiCanvasGc@@UAEXABVTHuiRealRect@@@Z @ 1275 NONAME ; void CHuiCanvasGc::DrawEllipse(class THuiRealRect const &)
+	?DrawImage@CHuiCanvasGc@@UAEXABVCHuiTexture@@ABVTHuiRealRect@@1@Z @ 1276 NONAME ; void CHuiCanvasGc::DrawImage(class CHuiTexture const &, class THuiRealRect const &)
+	?DrawLines@CHuiCanvasGc@@UAEXAAV?$RArray@UTHuiRealLine@@@@@Z @ 1277 NONAME ; void CHuiCanvasGc::DrawLines(class RArray<struct THuiRealLine>)
+	?DrawPoints@CHuiCanvasGc@@UAEXAAV?$RArray@VTHuiRealPoint@@@@@Z @ 1278 NONAME ; void CHuiCanvasGc::DrawPoints(class RArray<class THuiRealPoint>)
+	?DrawPolygon@CHuiCanvasGc@@UAEXAAV?$RArray@VTHuiRealPoint@@@@@Z @ 1279 NONAME ; void CHuiCanvasGc::DrawPolygon(class RArray<class THuiRealPoint>)
+	?DrawRects@CHuiCanvasGc@@UAEXAAV?$RArray@VTHuiRealRect@@@@@Z @ 1280 NONAME ; void CHuiCanvasGc::DrawRects(class RArray<class THuiRealRect>)
+	?DrawText@CHuiCanvasGc@@UAEXABVCHuiTextMesh@@ABVTHuiRealRect@@@Z @ 1281 NONAME ; void CHuiCanvasGc::DrawText(class CHuiTextMesh const &, class THuiRealRect const &)
+	?LoadIdentity@CHuiCanvasGc@@UAEXXZ @ 1282 NONAME ; void CHuiCanvasGc::LoadIdentity(void)
+	?PenWidth@CHuiCanvasGc@@UBEMXZ @ 1283 NONAME ; float CHuiCanvasGc::PenWidth(void) const
+	?Rotate@CHuiCanvasGc@@UAEXABM000@Z @ 1284 NONAME ; void CHuiCanvasGc::Rotate(float const &, float const &, float const &, float const &)
+	?Scale@CHuiCanvasGc@@UAEXABM00@Z @ 1285 NONAME ; void CHuiCanvasGc::Scale(float const &, float const &, float const &)
+	?SetCommandSetL@CHuiCanvasVisual@@QAEXABVTDesC8@@@Z @ 1286 NONAME ; void CHuiCanvasVisual::SetCommandSetL(class TDesC8 const &)
+	?SetDefaults@CHuiCanvasGc@@UAEXXZ @ 1287 NONAME ; void CHuiCanvasGc::SetDefaults(void)
+	?SetGc@CHuiCanvasGc@@UAEXAAVCHuiGc@@@Z @ 1288 NONAME ; void CHuiCanvasGc::SetGc(class CHuiGc &)
+	?SetOpacity@CHuiCanvasGc@@UAEXABM@Z @ 1289 NONAME ; void CHuiCanvasGc::SetOpacity(float const &)
+	?SetPenColor@CHuiCanvasGc@@UAEXABVTRgb@@@Z @ 1290 NONAME ; void CHuiCanvasGc::SetPenColor(class TRgb const &)
+	?SetPenWidth@CHuiCanvasGc@@UAEXABM@Z @ 1291 NONAME ; void CHuiCanvasGc::SetPenWidth(float const &)
+	?SetPolygonDrawMode@CHuiCanvasGc@@UAEXW4THuiFillMode@@@Z @ 1292 NONAME ; void CHuiCanvasGc::SetPolygonDrawMode(enum THuiFillMode)
+	?SetTextAlign@CHuiCanvasGc@@UAEXW4THuiAlignHorizontal@@W4THuiAlignVertical@@@Z @ 1293 NONAME ; void CHuiCanvasGc::SetTextAlign(enum THuiAlignHorizontal, enum THuiAlignVertical)
+	?SetTextStyle@CHuiCanvasGc@@UAEXH@Z @ 1294 NONAME ; void CHuiCanvasGc::SetTextStyle(int)
+	?SetVisual@CHuiCanvasGc@@UAEXABVCHuiCanvasVisual@@@Z @ 1295 NONAME ; void CHuiCanvasGc::SetVisual(class CHuiCanvasVisual const &)
+	?TextHorizontalAlign@CHuiCanvasGc@@UBEHXZ @ 1296 NONAME ; int CHuiCanvasGc::TextHorizontalAlign(void) const
+	?TextStyle@CHuiCanvasGc@@UBEHXZ @ 1297 NONAME ; int CHuiCanvasGc::TextStyle(void) const
+	?TextVerticalAlign@CHuiCanvasGc@@UBEHXZ @ 1298 NONAME ; int CHuiCanvasGc::TextVerticalAlign(void) const
+	?Translate@CHuiCanvasGc@@UAEXABM00@Z @ 1299 NONAME ; void CHuiCanvasGc::Translate(float const &, float const &, float const &)
+	??0CHuiCurvePath@@QAE@XZ @ 1300 NONAME ; CHuiCurvePath::CHuiCurvePath(void)
+	?AddCommandSetL@CHuiCanvasVisual@@QAEXABVTDesC8@@@Z @ 1301 NONAME ; void CHuiCanvasVisual::AddCommandSetL(class TDesC8 const &)
+	?ClearCache@CHuiCanvasVisual@@QAEXXZ @ 1302 NONAME ; void CHuiCanvasVisual::ClearCache(void)
+	?ClearCommandSet@CHuiCanvasVisual@@QAEXXZ @ 1303 NONAME ; void CHuiCanvasVisual::ClearCommandSet(void)
+	?DrawImage@CHuiCanvasGc@@UAEXABVCHuiTexture@@ABVTHuiRealRect@@1W4TStretchMode@CHuiGc@@@Z @ 1304 NONAME ; void CHuiCanvasGc::DrawImage(class CHuiTexture const &, class THuiRealRect const &, class THuiRealRect const &)
+	?PolygonDrawMode@CHuiCanvasGc@@UBE?AW4THuiFillMode@@XZ @ 1305 NONAME ; enum THuiFillMode CHuiCanvasGc::PolygonDrawMode(void) const
+	?SetCommandType@CHuiCanvasVisual@@QAEXH@Z @ 1306 NONAME ; void CHuiCanvasVisual::SetCommandType(int)
+	?DrawImage@CHuiCanvasGc@@UAEXABVCHuiTexture@@ABVTHuiRealRect@@@Z @ 1307 NONAME ; void CHuiCanvasGc::DrawImage(class CHuiTexture const &, class THuiRealRect const &, class THuiRealRect const &, enum CHuiGc::TStretchMode)
+	?GetValueFromCentralRepository@HuiUtil@@SAHKAAH@Z @ 1308 NONAME ; int HuiUtil::GetValueFromCentralRepository(unsigned long, int &)
+	?AddPartialCommandSetL@CHuiCanvasVisual@@QAEXABVTDesC8@@H@Z @ 1309 NONAME ; void CHuiCanvasVisual::AddPartialCommandSetL(class TDesC8 const &, int)
+	?Clip@CHuiCanvasGc@@QAEXABVTRect@@@Z @ 1310 NONAME ; void CHuiCanvasGc::Clip(class TRect const &)
+	?Clear@CHuiCanvasGc@@UAEXABVTHuiRealRect@@@Z @ 1311 NONAME ; void CHuiCanvasGc::Clear(class THuiRealRect const &)
+	?ClearWithBackgroundItems@CHuiCanvasGc@@UAEXABVTHuiRealRect@@ABV?$RArray@VTHuiDisplayBackgroundItem@@@@@Z @ 1312 NONAME ; void CHuiCanvasGc::ClearWithBackgroundItems(class THuiRealRect const &, class RArray<class THuiDisplayBackgroundItem> const &)
+	?ClearWithSkinBackground@CHuiCanvasGc@@UAEXABVTHuiRealRect@@@Z @ 1313 NONAME ; void CHuiCanvasGc::ClearWithSkinBackground(class THuiRealRect const &)
+	?SetBackgroundColor@CHuiCanvasVisual@@QAEXABVTRgb@@@Z @ 1314 NONAME ; void CHuiCanvasVisual::SetBackgroundColor(class TRgb const &)
+	?SetClearBackground@CHuiCanvasVisual@@QAEXW4TClearMode@CHuiDisplay@@@Z @ 1315 NONAME ; void CHuiCanvasVisual::SetClearBackground(enum CHuiDisplay::TClearMode)
+	?EnableBlendingIfNeeded@CHuiCanvasGc@@QAEXPBVCHuiTexture@@@Z @ 1316 NONAME ; void CHuiCanvasGc::EnableBlendingIfNeeded(class CHuiTexture const *)
+	?SetBackgroundItems@CHuiCanvasVisual@@QAEXABV?$RArray@VTHuiDisplayBackgroundItem@@@@@Z @ 1317 NONAME ; void CHuiCanvasVisual::SetBackgroundItems(class RArray<class THuiDisplayBackgroundItem> const &)
+	?ClearMode@THuiDisplayBackgroundItem@@QBEHXZ @ 1318 NONAME ; int THuiDisplayBackgroundItem::ClearMode(void) const
+	?Color@THuiDisplayBackgroundItem@@QBE?AVTRgb@@XZ @ 1319 NONAME ; class TRgb THuiDisplayBackgroundItem::Color(void) const
+	?Rect@THuiDisplayBackgroundItem@@QBE?AVTRect@@XZ @ 1320 NONAME ; class TRect THuiDisplayBackgroundItem::Rect(void) const
+	?SkinBackground@THuiDisplayBackgroundItem@@QBE?AVTAknsItemID@@XZ @ 1321 NONAME ; class TAknsItemID THuiDisplayBackgroundItem::SkinBackground(void) const
+	?GetRectForItem@@YAXABVTAknsItemID@@AAVTRect@@1@Z @ 1322 NONAME ; void GetRectForItem(class TAknsItemID const &, class TRect &, class TRect &)
+	?BackgroundTexture@CHuiS60Skin@@QAEPAVCHuiTexture@@ABVTAknsItemID@@@Z @ 1323 NONAME ; class CHuiTexture * CHuiS60Skin::BackgroundTexture(class TAknsItemID const &)
+	?PrepareCache@CHuiCanvasVisual@@QAEXXZ @ 1324 NONAME ; void CHuiCanvasVisual::PrepareCache(void)
+	?ResourceId@CHuiControlGroup@@QBEHXZ @ 1325 NONAME ; int CHuiControlGroup::ResourceId(void) const
+	?DrawArc@CHuiCanvasGc@@UAEXABVTHuiRealRect@@ABVTHuiRealPoint@@1@Z @ 1326 NONAME ; void CHuiCanvasGc::DrawArc(class THuiRealRect const &, class THuiRealPoint const &, class THuiRealPoint const &)
+	?DrawPie@CHuiCanvasGc@@UAEXABVTHuiRealRect@@ABVTHuiRealPoint@@1@Z @ 1327 NONAME ; void CHuiCanvasGc::DrawPie(class THuiRealRect const &, class THuiRealPoint const &, class THuiRealPoint const &)
+	?DrawRoundRect@CHuiCanvasGc@@UAEXABVTHuiRealRect@@ABVTHuiRealSize@@@Z @ 1328 NONAME ; void CHuiCanvasGc::DrawRoundRect(class THuiRealRect const &, class THuiRealSize const &)
+	?CreateEffectsEngineL@CHuiRenderPlugin@@UAEPAVCHuiFxEngine@@XZ @ 1329 NONAME ; class CHuiFxEngine * CHuiRenderPlugin::CreateEffectsEngineL(void)
+	?CancelClipping@CHuiGc@@UAEXXZ @ 1330 NONAME ; void CHuiGc::CancelClipping(void)
+	?ClipRegion@CHuiCanvasGc@@QAEXABVTRegion@@@Z @ 1331 NONAME ; void CHuiCanvasGc::ClipRegion(class TRegion const &)
+	?SetClipRegion@CHuiGc@@UAEXABVTRegion@@@Z @ 1332 NONAME ; void CHuiGc::SetClipRegion(class TRegion const &)
+	?CancelClipping@CHuiCanvasGc@@QAEXXZ @ 1333 NONAME ; void CHuiCanvasGc::CancelClipping(void)
+	?PaintedArea@CHuiCanvasVisual@@QAE?AUTHuiCanvasPaintedArea@@H@Z @ 1334 NONAME ; struct THuiCanvasPaintedArea CHuiCanvasVisual::PaintedArea(int)
+	?PaintedAreaCount@CHuiCanvasVisual@@QBEHXZ @ 1335 NONAME ; int CHuiCanvasVisual::PaintedAreaCount(void) const
+	?Image@CHuiImageBrush@@QBEABVTHuiImage@@XZ @ 1336 NONAME ; class THuiImage const & CHuiImageBrush::Image(void) const
+	?SetCanvasFlags@CHuiCanvasVisual@@QAEXH@Z @ 1337 NONAME ; void CHuiCanvasVisual::SetCanvasFlags(int)
+	?SetCapturingBufferL@CHuiCanvasVisual@@QAEHPAVCFbsBitmap@@@Z @ 1338 NONAME ; int CHuiCanvasVisual::SetCapturingBufferL(class CFbsBitmap *)
+	?ClearCanvasFlags@CHuiCanvasVisual@@QAEXH@Z @ 1339 NONAME ; void CHuiCanvasVisual::ClearCanvasFlags(int)
+	?Cleanup@CHuiCanvasGc@@IAEXXZ @ 1340 NONAME ; void CHuiCanvasGc::Cleanup(void)
+	?ClipNext@CHuiCanvasGc@@IAEHXZ @ 1341 NONAME ; int CHuiCanvasGc::ClipNext(void)
+	?DisableDelayedClippingIfNeeded@CHuiCanvasGc@@IAEXXZ @ 1342 NONAME ; void CHuiCanvasGc::DisableDelayedClippingIfNeeded(void)
+	?EnableDelayedClippingIfNeeded@CHuiCanvasGc@@IAE?AW4TClipRectVisibility@1@ABV?$RArray@UTHuiRealLine@@@@@Z @ 1343 NONAME ; enum CHuiCanvasGc::TClipRectVisibility CHuiCanvasGc::EnableDelayedClippingIfNeeded(class RArray<struct THuiRealLine> const &)
+	?EnableDelayedClippingIfNeeded@CHuiCanvasGc@@IAE?AW4TClipRectVisibility@1@ABV?$RArray@VTHuiRealPoint@@@@@Z @ 1344 NONAME ; enum CHuiCanvasGc::TClipRectVisibility CHuiCanvasGc::EnableDelayedClippingIfNeeded(class RArray<class THuiRealPoint> const &)
+	?EnableDelayedClippingIfNeeded@CHuiCanvasGc@@IAE?AW4TClipRectVisibility@1@ABV?$RArray@VTHuiRealRect@@@@@Z @ 1345 NONAME ; enum CHuiCanvasGc::TClipRectVisibility CHuiCanvasGc::EnableDelayedClippingIfNeeded(class RArray<class THuiRealRect> const &)
+	?EnableDelayedClippingIfNeeded@CHuiCanvasGc@@IAE?AW4TClipRectVisibility@1@ABVTHuiRealRect@@@Z @ 1346 NONAME ; enum CHuiCanvasGc::TClipRectVisibility CHuiCanvasGc::EnableDelayedClippingIfNeeded(class THuiRealRect const &)
+	?SetClippingMode@CHuiCanvasGc@@QAEXW4THuiCanvasClipMode@@@Z @ 1347 NONAME ; void CHuiCanvasGc::SetClippingMode(enum THuiCanvasClipMode)
+	?Setup@CHuiCanvasGc@@IAEXXZ @ 1348 NONAME ; void CHuiCanvasGc::Setup(void)
+	?MaxNumberOfClipRects@CHuiCanvasGc@@MBEHXZ @ 1349 NONAME ; int CHuiCanvasGc::MaxNumberOfClipRects(void) const
+	?Clip@CHuiGc@@UAEXABVTRegion@@@Z @ 1350 NONAME ; void CHuiGc::Clip(class TRegion const &)
+	?IsClipped@CHuiCanvasGc@@IBE?AW4TClipRectVisibility@1@ABVTPoint@@@Z @ 1351 NONAME ; enum CHuiCanvasGc::TClipRectVisibility CHuiCanvasGc::IsClipped(class TPoint const &) const
+	?IsClipped@CHuiCanvasGc@@IBE?AW4TClipRectVisibility@1@ABVTRect@@@Z @ 1352 NONAME ; enum CHuiCanvasGc::TClipRectVisibility CHuiCanvasGc::IsClipped(class TRect const &) const
+	?DoDrawArc@CHuiCanvasGc@@MAEXABVTHuiRealRect@@ABVTHuiRealPoint@@1@Z @ 1353 NONAME ; void CHuiCanvasGc::DoDrawArc(class THuiRealRect const &, class THuiRealPoint const &, class THuiRealPoint const &)
+	?DoDrawLines@CHuiCanvasGc@@MAEXAAV?$RArray@UTHuiRealLine@@@@@Z @ 1354 NONAME ; void CHuiCanvasGc::DoDrawLines(class RArray<struct THuiRealLine> &)
+	?DoDrawPoints@CHuiCanvasGc@@MAEXAAV?$RArray@VTHuiRealPoint@@@@@Z @ 1355 NONAME ; void CHuiCanvasGc::DoDrawPoints(class RArray<class THuiRealPoint> &)
+	?DoDrawPolygon@CHuiCanvasGc@@MAEXAAV?$RArray@VTHuiRealPoint@@@@@Z @ 1356 NONAME ; void CHuiCanvasGc::DoDrawPolygon(class RArray<class THuiRealPoint> &)
+	?DoDrawRects@CHuiCanvasGc@@MAEXAAV?$RArray@VTHuiRealRect@@@@@Z @ 1357 NONAME ; void CHuiCanvasGc::DoDrawRects(class RArray<class THuiRealRect> &)
+	?DoDrawRoundRect@CHuiCanvasGc@@MAEXABVTHuiRealRect@@ABVTHuiRealSize@@@Z @ 1358 NONAME ; void CHuiCanvasGc::DoDrawRoundRect(class THuiRealRect const &, class THuiRealSize const &)
+	?DoDrawPie@CHuiCanvasGc@@MAEXABVTHuiRealRect@@ABVTHuiRealPoint@@1@Z @ 1359 NONAME ; void CHuiCanvasGc::DoDrawPie(class THuiRealRect const &, class THuiRealPoint const &, class THuiRealPoint const &)
+	?UnOrientRegion@CHuiGc@@IBEXAAVTRegion@@@Z @ 1360 NONAME ; void CHuiGc::UnOrientRegion(class TRegion &) const
+	?IsNvgContent@CHuiTexture@@QBEHXZ @ 1361 NONAME ; int CHuiTexture::IsNvgContent(void) const
+	?SetNvgContent@CHuiTexture@@QAEXH@Z @ 1362 NONAME ; void CHuiTexture::SetNvgContent(int)
+	??0THuiImage@@QAE@ABVCHuiTexture@@MMMM@Z @ 1363 NONAME ; THuiImage::THuiImage(class CHuiTexture const &, float, float, float, float)
+	?SetTexture@THuiImage@@QAEXABVCHuiTexture@@@Z @ 1364 NONAME ; void THuiImage::SetTexture(class CHuiTexture const &)
+	?SetExternalContentL@CHuiCanvasVisual@@QAEXPAVCHuiVisual@@@Z @ 1365 NONAME ; void CHuiCanvasVisual::SetExternalContentL(class CHuiVisual *)
+	?ExternalContent@CHuiCanvasVisual@@QAEPAVCHuiVisual@@XZ @ 1366 NONAME ; class CHuiVisual * CHuiCanvasVisual::ExternalContent(void)
+	?WsSession@CHuiStatic@@SAAAVRWsSession@@XZ @ 1367 NONAME ; class RWsSession & CHuiStatic::WsSession(void)
+	?ScreenDevice@CHuiStatic@@SAPAVCWsScreenDevice@@H@Z @ 1368 NONAME ; class CWsScreenDevice * CHuiStatic::ScreenDevice(int)
+	?RootWin@CHuiStatic@@SAPAVRWindowGroup@@H@Z @ 1369 NONAME ; class RWindowGroup * CHuiStatic::RootWin(int)
+	?NewDisplayL@CHuiEnv@@QAEAAVCHuiDisplay@@PAVRWindow@@HPAV2@HVTUid@@@Z @ 1370 NONAME ; class CHuiDisplay & CHuiEnv::NewDisplayL(class RWindow *, int, class CHuiDisplay *, int, class TUid)
+	?SetChanged@CHuiCanvasVisual@@UAEXXZ @ 1371 NONAME ; void CHuiCanvasVisual::SetChanged(void)
+	?ClearChanged@CHuiCanvasVisual@@UAEXXZ @ 1372 NONAME ; void CHuiCanvasVisual::ClearChanged(void)
+	?SetFreeForm@CHuiFxFilter@@QAEXH@Z @ 1373 NONAME ; void CHuiFxFilter::SetFreeForm(int)
+	?Changed@CHuiFxVisualLayer@@UBEHXZ @ 1374 NONAME ; int CHuiFxVisualLayer::Changed(void) const
+	?PrepareDrawL@CHuiFxLayer@@UAEHAAVCHuiFxEngine@@@Z @ 1375 NONAME ; int CHuiFxLayer::PrepareDrawL(class CHuiFxEngine &)
+	?Margin@CHuiFxFilter@@QBEABVTSize@@XZ @ 1376 NONAME ; class TSize const & CHuiFxFilter::Margin(void) const
+	?EngineType@CHuiFxEngine@@QAE?AW4THuiFxEngineType@@XZ @ 1377 NONAME ; enum THuiFxEngineType CHuiFxEngine::EngineType(void)
+	??1CHuiFxFilterLayer@@UAE@XZ @ 1378 NONAME ; CHuiFxFilterLayer::~CHuiFxFilterLayer(void)
+	?AdvanceTime@CHuiFxFilterLayer@@UAEXM@Z @ 1379 NONAME ; void CHuiFxFilterLayer::AdvanceTime(float)
+	?VisualArea@CHuiFxVisualLayer@@UAEHAAVTRect@@@Z @ 1380 NONAME ; int CHuiFxVisualLayer::VisualArea(class TRect &)
+	?Release@CHuiFxEngine@@UAEXXZ @ 1381 NONAME ; void CHuiFxEngine::Release(void)
+	?AdvanceTime@CHuiFxFilter@@QAEXM@Z @ 1382 NONAME ; void CHuiFxFilter::AdvanceTime(float)
+	?Changed@CHuiFxEffect@@QAEHXZ @ 1383 NONAME ; int CHuiFxEffect::Changed(void)
+	?ConstructL@CHuiFxEngine@@IAEXW4THuiFxEngineType@@@Z @ 1384 NONAME ; void CHuiFxEngine::ConstructL(enum THuiFxEngineType)
+	?NewL@CHuiFxFilterLayer@@SAPAV1@PAVCHuiFxFilter@@@Z @ 1385 NONAME ; class CHuiFxFilterLayer * CHuiFxFilterLayer::NewL(class CHuiFxFilter *)
+	?Type@CHuiFxLayer@@QAE?AW4THuiFxLayerType@@XZ @ 1386 NONAME ; enum THuiFxLayerType CHuiFxLayer::Type(void)
+	?VisualArea@CHuiFxLayer@@UAEHAAVTRect@@@Z @ 1387 NONAME ; int CHuiFxLayer::VisualArea(class TRect &)
+	?Size@CHuiFxRenderbuffer@@QBEABVTSize@@XZ @ 1388 NONAME ; class TSize const & CHuiFxRenderbuffer::Size(void) const
+	??1CHuiFxEngine@@UAE@XZ @ 1389 NONAME ; CHuiFxEngine::~CHuiFxEngine(void)
+	?RegisterParameterL@CHuiFxVisualLayer@@IAEXABVTDesC16@@PAM@Z @ 1390 NONAME ; void CHuiFxVisualLayer::RegisterParameterL(class TDesC16 const &, float *)
+	?NewL@CHuiFxEffect@@SAPAV1@AAVCHuiFxEngine@@@Z @ 1391 NONAME ; class CHuiFxEffect * CHuiFxEffect::NewL(class CHuiFxEngine &)
+	?ConstructL@CHuiFxVisualLayer@@IAEXPAVMHuiEffectable@@@Z @ 1392 NONAME ; void CHuiFxVisualLayer::ConstructL(class MHuiEffectable *)
+	?Draw@CHuiFxEffect@@QAEHAAVCHuiGc@@ABVTRect@@H@Z @ 1393 NONAME ; int CHuiFxEffect::Draw(class CHuiGc &, class TRect const &)
+	?TargetRect@CHuiFxLayer@@QBEABVTRect@@XZ @ 1394 NONAME ; class TRect const & CHuiFxLayer::TargetRect(void) const
+	?AdvanceTime@CHuiFxVisualLayer@@UAEXM@Z @ 1395 NONAME ; void CHuiFxVisualLayer::AdvanceTime(float)
+	?Filter@CHuiFxFilterLayer@@QBEAAVCHuiFxFilter@@XZ @ 1396 NONAME ; class CHuiFxFilter & CHuiFxFilterLayer::Filter(void) const
+	?IsFreeForm@CHuiFxFilter@@QBEHXZ @ 1397 NONAME ; int CHuiFxFilter::IsFreeForm(void) const
+	?Draw@CHuiFxFilterLayer@@UAEXAAVCHuiFxEngine@@AAVCHuiGc@@AAVCHuiFxRenderbuffer@@2H@Z @ 1398 NONAME ; void CHuiFxFilterLayer::Draw(class CHuiFxEngine &, class CHuiGc &, class CHuiFxRenderbuffer &, class CHuiFxRenderbuffer &)
+	?SetSourceRect@CHuiFxLayer@@QAEXABVTRect@@@Z @ 1399 NONAME ; void CHuiFxLayer::SetSourceRect(class TRect const &)
+	??1CHuiFxRenderbuffer@@UAE@XZ @ 1400 NONAME ; CHuiFxRenderbuffer::~CHuiFxRenderbuffer(void)
+	?SetBlendingMode@CHuiFxLayer@@QAEXW4THuiFxBlendingMode@@@Z @ 1401 NONAME ; void CHuiFxLayer::SetBlendingMode(enum THuiFxBlendingMode)
+	?Changed@CHuiFxFilter@@QBEHXZ @ 1402 NONAME ; int CHuiFxFilter::Changed(void) const
+	?ConstructL@CHuiFxFilterLayer@@IAEXPAVCHuiFxFilter@@@Z @ 1403 NONAME ; void CHuiFxFilterLayer::ConstructL(class CHuiFxFilter *)
+	??1CHuiFxGroupLayer@@UAE@XZ @ 1404 NONAME ; CHuiFxGroupLayer::~CHuiFxGroupLayer(void)
+	?AcquireRenderbuffer@CHuiFxEngine@@UAEPAVCHuiFxRenderbuffer@@ABVTSize@@@Z @ 1405 NONAME ; class CHuiFxRenderbuffer * CHuiFxEngine::AcquireRenderbuffer(class TSize const &)
+	?GetReferenceValue@CHuiFxEngine@@QAEMW4THuiFxReferencePoint@@@Z @ 1406 NONAME ; float CHuiFxEngine::GetReferenceValue(enum THuiFxReferencePoint)
+	?VisualArea@CHuiFxEffect@@QBEHAAVTRect@@@Z @ 1407 NONAME ; int CHuiFxEffect::VisualArea(class TRect &) const
+	?PrepareDrawL@CHuiFxGroupLayer@@UAEHAAVCHuiFxEngine@@@Z @ 1408 NONAME ; int CHuiFxGroupLayer::PrepareDrawL(class CHuiFxEngine &)
+	?ConstructL@CHuiFxRenderbuffer@@IAEXABVTSize@@W4TRenderBufferType@@@Z @ 1409 NONAME ; void CHuiFxRenderbuffer::ConstructL(class TSize const &, enum TRenderBufferType)
+	?VisualRect@CHuiFxLayer@@QBEABVTRect@@XZ @ 1410 NONAME ; class TRect const & CHuiFxLayer::VisualRect(void) const
+	?SetTargetRect@CHuiFxLayer@@QAEXABVTRect@@@Z @ 1411 NONAME ; void CHuiFxLayer::SetTargetRect(class TRect const &)
+	??1CHuiFxLayer@@UAE@XZ @ 1412 NONAME ; CHuiFxLayer::~CHuiFxLayer(void)
+	?AdvanceTime@CHuiFxEffect@@QAEXM@Z @ 1413 NONAME ; void CHuiFxEffect::AdvanceTime(float)
+	?PrepareDrawL@CHuiFxFilter@@UAEHAAVCHuiFxEngine@@@Z @ 1414 NONAME ; int CHuiFxFilter::PrepareDrawL(class CHuiFxEngine &)
+	?Changed@CHuiFxFilterLayer@@UBEHXZ @ 1415 NONAME ; int CHuiFxFilterLayer::Changed(void) const
+	?AddLayerL@CHuiFxEffect@@QAEXPBVCHuiFxLayer@@@Z @ 1416 NONAME ; void CHuiFxEffect::AddLayerL(class CHuiFxLayer const *)
+	?EffectsEngine@CHuiEnv@@QBEPAVCHuiFxEngine@@XZ @ 1417 NONAME ; class CHuiFxEngine * CHuiEnv::EffectsEngine(void) const
+	?Draw@CHuiFxGroupLayer@@UAEXAAVCHuiFxEngine@@AAVCHuiGc@@AAVCHuiFxRenderbuffer@@2H@Z @ 1418 NONAME ; void CHuiFxGroupLayer::Draw(class CHuiFxEngine &, class CHuiGc &, class CHuiFxRenderbuffer &, class CHuiFxRenderbuffer &)
+	??0CHuiFxRenderbuffer@@IAE@XZ @ 1419 NONAME ; CHuiFxRenderbuffer::CHuiFxRenderbuffer(void)
+	?AddEffectL@CHuiFxEngine@@IAEXPAVCHuiFxEffect@@@Z @ 1420 NONAME ; void CHuiFxEngine::AddEffectL(class CHuiFxEffect *)
+	?Engine@CHuiFxEffect@@QBEAAVCHuiFxEngine@@XZ @ 1421 NONAME ; class CHuiFxEngine & CHuiFxEffect::Engine(void) const
+	?BlendingMode@CHuiFxLayer@@QBE?AW4THuiFxBlendingMode@@XZ @ 1422 NONAME ; enum THuiFxBlendingMode CHuiFxLayer::BlendingMode(void) const
+	?ReleaseRenderbuffer@CHuiFxEngine@@UAEXPAVCHuiFxRenderbuffer@@@Z @ 1423 NONAME ; void CHuiFxEngine::ReleaseRenderbuffer(class CHuiFxRenderbuffer *)
+	?SourceRect@CHuiFxLayer@@QBEABVTRect@@XZ @ 1424 NONAME ; class TRect const & CHuiFxLayer::SourceRect(void) const
+	?AddLayerL@CHuiFxGroupLayer@@QAEXPBVCHuiFxLayer@@@Z @ 1425 NONAME ; void CHuiFxGroupLayer::AddLayerL(class CHuiFxLayer const *)
+	?ConstructL@CHuiFxGroupLayer@@IAEXH@Z @ 1426 NONAME ; void CHuiFxGroupLayer::ConstructL(int)
+	?AdvanceTime@CHuiFxLayer@@UAEXM@Z @ 1427 NONAME ; void CHuiFxLayer::AdvanceTime(float)
+	?SetEffectEndObserver@CHuiFxEffect@@QAEXPAVMAlfGfxEffectObserver@@H@Z @ 1428 NONAME ; void CHuiFxEffect::SetEffectEndObserver(class MAlfGfxEffectObserver *, int)
+	?BufferType@CHuiFxRenderbuffer@@QBEABW4TRenderBufferType@@XZ @ 1429 NONAME ; enum TRenderBufferType const & CHuiFxRenderbuffer::BufferType(void) const
+	?NewL@CHuiFxVisualLayer@@SAPAV1@PAVMHuiEffectable@@@Z @ 1430 NONAME ; class CHuiFxVisualLayer * CHuiFxVisualLayer::NewL(class MHuiEffectable *)
+	?RegisterParameterL@CHuiFxVisualLayer@@IAEXABVTDesC16@@PAVTRgb@@@Z @ 1431 NONAME ; void CHuiFxVisualLayer::RegisterParameterL(class TDesC16 const &, class TRgb *)
+	?SetVisualRect@CHuiFxLayer@@QAEXABVTRect@@@Z @ 1432 NONAME ; void CHuiFxLayer::SetVisualRect(class TRect const &)
+	?SetVisualRect@CHuiFxFilter@@QAEXABVTRect@@@Z @ 1433 NONAME ; void CHuiFxFilter::SetVisualRect(class TRect const &)
+	??1CHuiFxEffect@@UAE@XZ @ 1434 NONAME ; CHuiFxEffect::~CHuiFxEffect(void)
+	??0CHuiFxLayer@@IAE@XZ @ 1435 NONAME ; CHuiFxLayer::CHuiFxLayer(void)
+	?VisualRect@CHuiFxFilter@@QBEABVTRect@@XZ @ 1436 NONAME ; class TRect const & CHuiFxFilter::VisualRect(void) const
+	??1CHuiFxVisualLayer@@UAE@XZ @ 1437 NONAME ; CHuiFxVisualLayer::~CHuiFxVisualLayer(void)
+	?Effect@CHuiVisual@@QBEPAVCHuiFxEffect@@XZ @ 1438 NONAME ; class CHuiFxEffect * CHuiVisual::Effect(void) const
+	?Changed@CHuiFxLayer@@UBEHXZ @ 1439 NONAME ; int CHuiFxLayer::Changed(void) const
+	?LoadEffectL@CHuiFxEngine@@QAEXABVTDesC16@@AAPAVCHuiFxEffect@@PAVMHuiEffectable@@PAVTRect@@PAVMAlfGfxEffectObserver@@HH@Z @ 1440 NONAME ; void CHuiFxEngine::LoadEffectL(class TDesC16 const &, class CHuiFxEffect * &, class CHuiVisual *, class TRect *, class MAlfGfxEffectObserver *, int, int)		
+	?AdvanceTime@CHuiFxGroupLayer@@UAEXM@Z @ 1441 NONAME ; void CHuiFxGroupLayer::AdvanceTime(float)
+	?RemoveEffect@CHuiFxEngine@@IAEXPAVCHuiFxEffect@@@Z @ 1442 NONAME ; void CHuiFxEngine::RemoveEffect(class CHuiFxEffect *)
+	?AdvanceTime@CHuiFxEngine@@QAEXM@Z @ 1443 NONAME ; void CHuiFxEngine::AdvanceTime(float)
+	?RegisterParameterL@CHuiFxFilter@@IAEXABVTDesC16@@PAM@Z @ 1444 NONAME ; void CHuiFxFilter::RegisterParameterL(class TDesC16 const &, float *)
+	?PrepareDrawL@CHuiFxVisualLayer@@UAEHAAVCHuiFxEngine@@@Z @ 1445 NONAME ; int CHuiFxVisualLayer::PrepareDrawL(class CHuiFxEngine &)
+	?ConstructL@CHuiFxLayer@@IAEXW4THuiFxLayerType@@@Z @ 1446 NONAME ; void CHuiFxLayer::ConstructL(enum THuiFxLayerType)
+	??1CHuiFxFilter@@UAE@XZ @ 1447 NONAME ; CHuiFxFilter::~CHuiFxFilter(void)
+	?RestoreL@CHuiFxEngine@@UAEXXZ @ 1448 NONAME ; void CHuiFxEngine::RestoreL(void)
+	?Parameter@CHuiFxFilter@@UAEPAVMHuiFxParameter@@ABVTDesC16@@@Z @ 1449 NONAME ; class MHuiFxParameter * CHuiFxFilter::Parameter(class TDesC16 const &)
+	?ParameterChanged@CHuiFxFilter@@IAEHXZ @ 1450 NONAME ; int CHuiFxFilter::ParameterChanged(void)
+	?Changed@CHuiFxGroupLayer@@UBEHXZ @ 1451 NONAME ; int CHuiFxGroupLayer::Changed(void) const
+	?ConstructL@CHuiFxEffect@@IAEXXZ @ 1452 NONAME ; void CHuiFxEffect::ConstructL(void)
+	?RegisterParameterL@CHuiFxFilter@@IAEXABVTDesC16@@PAVTRgb@@@Z @ 1453 NONAME ; void CHuiFxFilter::RegisterParameterL(class TDesC16 const &, class TRgb *)
+	?NewL@CHuiFxGroupLayer@@SAPAV1@H@Z @ 1454 NONAME ; class CHuiFxGroupLayer * CHuiFxGroupLayer::NewL(int)
+	??0CHuiFxGroupLayer@@IAE@XZ @ 1455 NONAME ; CHuiFxGroupLayer::CHuiFxGroupLayer(void)
+	?Parameter@CHuiFxVisualLayer@@QAEPAVMHuiFxParameter@@ABVTDesC16@@@Z @ 1456 NONAME ; class MHuiFxParameter * CHuiFxVisualLayer::Parameter(class TDesC16 const &)
+	?VisualArea@CHuiFxGroupLayer@@UAEHAAVTRect@@@Z @ 1457 NONAME ; int CHuiFxGroupLayer::VisualArea(class TRect &)
+	?ConstructL@CHuiFxFilter@@IAEXXZ @ 1458 NONAME ; void CHuiFxFilter::ConstructL(void)
+	?SetEffect@CHuiVisual@@QAEXPAVCHuiFxEffect@@@Z @ 1459 NONAME ; void CHuiVisual::SetEffect(class CHuiFxEffect *)
+	?SetMargin@CHuiFxFilter@@QAEXABVTSize@@@Z @ 1460 NONAME ; void CHuiFxFilter::SetMargin(class TSize const &)
+	?PrepareDrawL@CHuiFxFilterLayer@@UAEHAAVCHuiFxEngine@@@Z @ 1461 NONAME ; int CHuiFxFilterLayer::PrepareDrawL(class CHuiFxEngine &)
+	?Draw@CHuiFxVisualLayer@@UAEXAAVCHuiFxEngine@@AAVCHuiGc@@AAVCHuiFxRenderbuffer@@2H@Z @ 1462 NONAME ; void CHuiFxVisualLayer::Draw(class CHuiFxEngine &, class CHuiGc &, class CHuiFxRenderbuffer &, class CHuiFxRenderbuffer &)
+	?SkinInstance@CHuiStatic@@SAPAVMAknsSkinInstance@@XZ @ 1463 NONAME ; class MAknsSkinInstance * CHuiStatic::SkinInstance(void)
+	?SetTrackCommandSet@CHuiCanvasVisual@@QAEXAAV?$TBuf@$0BAA@@@H@Z @ 1464 NONAME ; void CHuiCanvasVisual::SetTrackCommandSet(class TBuf<256> &, int)
+	?PopTransformationMatrix@CHuiCanvasGc@@UAEXXZ @ 1465 NONAME ; void CHuiCanvasGc::PopTransformationMatrix(void)
+	?PushTransformationMatrix@CHuiCanvasGc@@UAEXXZ @ 1466 NONAME ; void CHuiCanvasGc::PushTransformationMatrix(void)
+	?UnBind@CHuiCanvasRenderBuffer@@UAEXXZ @ 1467 NONAME ; void CHuiCanvasRenderBuffer::UnBind(void)
+	?DrawImage@CHuiCanvasGc@@UAEXABVCHuiCanvasRenderBuffer@@ABVTHuiRealPoint@@@Z @ 1468 NONAME ; void CHuiCanvasGc::DrawImage(class CHuiCanvasRenderBuffer const &, class THuiRealPoint const &)
+	?Bind@CHuiCanvasRenderBuffer@@UAEXXZ @ 1469 NONAME ; void CHuiCanvasRenderBuffer::Bind(void)
+	??1CHuiCanvasRenderBuffer@@UAE@XZ @ 1470 NONAME ; CHuiCanvasRenderBuffer::~CHuiCanvasRenderBuffer(void)
+	?CreateRenderBufferL@CHuiCanvasGc@@UAEPAVCHuiCanvasRenderBuffer@@ABVTSize@@@Z @ 1471 NONAME ; class CHuiCanvasRenderBuffer * CHuiCanvasGc::CreateRenderBufferL(class TSize const &)
+	?DoDrawRenderBuffer@CHuiCanvasGc@@MAEXABVCHuiCanvasRenderBuffer@@ABVTHuiRealPoint@@@Z @ 1472 NONAME ; void CHuiCanvasGc::DoDrawRenderBuffer(class CHuiCanvasRenderBuffer const &, class THuiRealPoint const &)
+	?UnInitialize@CHuiCanvasRenderBuffer@@UAEXXZ @ 1473 NONAME ; void CHuiCanvasRenderBuffer::UnInitialize(void)
+	??0CHuiCanvasRenderBuffer@@QAE@XZ @ 1474 NONAME ; CHuiCanvasRenderBuffer::CHuiCanvasRenderBuffer(void)
+	?InitializeL@CHuiCanvasRenderBuffer@@UAEXABVTSize@@@Z @ 1475 NONAME ; void CHuiCanvasRenderBuffer::InitializeL(class TSize const &)
+	?SetDrawMode@CHuiCanvasGc@@UAEXW4THuiCanvasDrawMode@@@Z @ 1476 NONAME ; void CHuiCanvasGc::SetDrawMode(enum THuiCanvasDrawMode)
+	?SetTextPaneHeight@THuiFont@@QAEXH@Z @ 1477 NONAME ; void THuiFont::SetTextPaneHeight(int)
+	?TextPaneHeight@THuiFont@@QBEHXZ @ 1478 NONAME ; int THuiFont::TextPaneHeight(void) const
+	?LineExtentsL@THuiFont@@QAE?AVTSize@@ABVTDesC16@@@Z @ 1479 NONAME ; class TSize THuiFont::LineExtentsL(class TDesC16 const &)
+	?SetCategory@THuiFont@@QAEXW4TAknFontCategory@@@Z @ 1480 NONAME ; void THuiFont::SetCategory(enum TAknFontCategory)
+	?ReleaseFont@THuiFont@@QAEXXZ @ 1481 NONAME ; void THuiFont::ReleaseFont(void)
+	?NearestFontL@THuiFont@@QAEPAVCFont@@M@Z @ 1482 NONAME ; class CFont * THuiFont::NearestFontL(float)
+	?RasterizeLineL@THuiFont@@QAEXABVTDesC16@@AAVCFbsBitGc@@@Z @ 1483 NONAME ; void THuiFont::RasterizeLineL(class TDesC16 const &, class CFbsBitGc &)
+	?SetFontSpec@THuiFont@@QAEXABVTFontSpec@@@Z @ 1484 NONAME ; void THuiFont::SetFontSpec(class TFontSpec const &)
+	?UpdateMeshL@CHuiTextVisual@@QAEXABVTDesC8@@@Z @ 1485 NONAME ; void CHuiTextVisual::UpdateMeshL(class TDesC8 const &)
+	?AddRestoreStateFlags@CHuiRenderPlugin@@UAEXH@Z @ 1486 NONAME ; void CHuiRenderPlugin::AddRestoreStateFlags(int)
+	?GetRestoreStateFlags@CHuiRenderPlugin@@UAEHXZ @ 1487 NONAME ; int CHuiRenderPlugin::GetRestoreStateFlags(void)
+	?ClearRestoreStateFlags@CHuiRenderPlugin@@UAEXXZ @ 1488 NONAME ; void CHuiRenderPlugin::ClearRestoreStateFlags(void)
+	?EffectFlags@CHuiFxEffect@@QAEHXZ @ 1489 NONAME ; int CHuiFxEffect::EffectFlags(void)
+	?SetEffectFlags@CHuiFxEffect@@QAEXH@Z @ 1490 NONAME ; void CHuiFxEffect::SetEffectFlags(int)
+	?AddLowMemoryObserver@CHuiEnv@@QAEXPAVMHuiLowMemoryObserver@@@Z @ 1491 NONAME ; void CHuiEnv::AddLowMemoryObserver(class MHuiLowMemoryObserver *)
+	?NotifyLowMemory@CHuiEnv@@QAEXH@Z @ 1492 NONAME ; void CHuiEnv::NotifyLowMemory(int)
+	?RemoveLowMemoryObserver@CHuiEnv@@QAEXPAVMHuiLowMemoryObserver@@@Z @ 1493 NONAME ; void CHuiEnv::RemoveLowMemoryObserver(class MHuiLowMemoryObserver *)
+	?EnableLowMemoryState@CHuiFxEngine@@UAEXH@Z @ 1494 NONAME ; void CHuiFxEngine::EnableLowMemoryState(int)
+	?Margin@CHuiFxLayer@@UAEHAAVTMargins@@@Z @ 1495 NONAME ; int CHuiFxLayer::Margin(class TMargins &)
+	?Margin@CHuiFxGroupLayer@@UAEHAAVTMargins@@@Z @ 1496 NONAME ; int CHuiFxGroupLayer::Margin(class TMargins &)
+	?CalculateMargin@CHuiFxFilter@@UBEXAAVTMargins@@@Z @ 1497 NONAME ; void CHuiFxFilter::CalculateMargin(class TMargins &) const
+	?Margin2@CHuiFxFilter@@QBEABVTMargins@@XZ @ 1498 NONAME ; class TMargins const & CHuiFxFilter::Margin2(void) const
+	?Margin@CHuiFxFilterLayer@@UAEHAAVTMargins@@@Z @ 1499 NONAME ; int CHuiFxFilterLayer::Margin(class TMargins &)
+	?ApplyMargin@CHuiFxGroupLayer@@QAEXAAVTRect@@@Z @ 1500 NONAME ; void CHuiFxGroupLayer::ApplyMargin(class TRect &)
+	?Margin@CHuiFxVisualLayer@@UAEHAAVTMargins@@@Z @ 1501 NONAME ; int CHuiFxVisualLayer::Margin(class TMargins &)
+	?SetVisual@CHuiFxGroupLayer@@UAEXPAVCHuiVisual@@@Z @ 1502 NONAME ; void CHuiFxGroupLayer::SetVisual(class CHuiVisual *)
+	?SetVisual@CHuiFxVisualLayer@@UAEXPAVCHuiVisual@@@Z @ 1503 NONAME ; void CHuiFxVisualLayer::SetVisual(class CHuiVisual *)
+	?SetVisual@CHuiFxEffect@@QAEXPAVCHuiVisual@@@Z @ 1504 NONAME ; void CHuiFxEffect::SetVisual(class CHuiVisual *)
+	?SetExtRect@CHuiFxFilterLayer@@UAEXPAVTRect@@@Z @ 1505 NONAME ; void CHuiFxFilterLayer::SetExtRect(class TRect *)
+	?CloneL@CHuiFxFilterLayer@@UBEPAV1@XZ @ 1506 NONAME ; class CHuiFxFilterLayer * CHuiFxFilterLayer::CloneL(void) const
+	?SetEngine@CHuiFxEffect@@QAEXPAVCHuiFxEngine@@@Z @ 1507 NONAME ; void CHuiFxEffect::SetEngine(class CHuiFxEngine *)
+	?SetExtRect@CHuiFxVisualLayer@@UAEXPAVTRect@@@Z @ 1508 NONAME ; void CHuiFxVisualLayer::SetExtRect(class TRect *)
+	?SetExtRect@CHuiFxGroupLayer@@UAEXPAVTRect@@@Z @ 1509 NONAME ; void CHuiFxGroupLayer::SetExtRect(class TRect *)
+	??0CHuiFxEffectCacheEffectNode@@QAE@ABVTDesC16@@AAPAVCHuiFxEffect@@PAVMHuiEffectable@@PAVTRect@@PAVCHuiFxEngine@@@Z @ 1510 NONAME ABSENT; CHuiFxEffectCacheEffectNode::CHuiFxEffectCacheEffectNode(class TDesC16 const &, class CHuiFxEffect * &, class CHuiVisual *, class TRect *, class CHuiFxEngine *)
+	?SetExtRect@CHuiFxEffect@@QAEXPAVTRect@@@Z @ 1511 NONAME ; void CHuiFxEffect::SetExtRect(class TRect *)
+	?CopyParameterL@CHuiFxFilter@@IAEXABVTDesC16@@PAMPBV1@@Z @ 1512 NONAME ; void CHuiFxFilter::CopyParameterL(class TDesC16 const &, float *, class CHuiFxFilter const *)
+	?CopyParameterL@CHuiFxFilter@@IAEXABVTDesC16@@PAVTRgb@@PBV1@@Z @ 1513 NONAME ; void CHuiFxFilter::CopyParameterL(class TDesC16 const &, class TRgb *, class CHuiFxFilter const *)
+	?CloneL@CHuiFxVisualLayer@@UBEPAV1@XZ @ 1514 NONAME ; class CHuiFxVisualLayer * CHuiFxVisualLayer::CloneL(void) const
+	?CloneL@CHuiFxGroupLayer@@UBEPAV1@XZ @ 1515 NONAME ; class CHuiFxGroupLayer * CHuiFxGroupLayer::CloneL(void) const
+	?FindOrCreateL@CHuiFxEffectCache@@QAEXPAVMHuiFxEffectCacheNode@@@Z @ 1516 NONAME ; void CHuiFxEffectCache::FindOrCreateL(class MHuiFxEffectCacheNode *)
+	?CloneL@CHuiFxEffect@@QBEPAV1@XZ @ 1517 NONAME ; class CHuiFxEffect * CHuiFxEffect::CloneL(void) const
+	?CopyFromL@CHuiFxFilter@@IAEXPBV1@@Z @ 1518 NONAME ; void CHuiFxFilter::CopyFromL(class CHuiFxFilter const *)
+	?SetVisual@CHuiFxFilterLayer@@UAEXPAVCHuiVisual@@@Z @ 1519 NONAME ; void CHuiFxFilterLayer::SetVisual(class CHuiVisual *)
+	?NewL@CHuiFxEffectCache@@SAPAV1@XZ @ 1520 NONAME ; class CHuiFxEffectCache * CHuiFxEffectCache::NewL(void)
+	?UnUse@CHuiFxEffectCache@@QAEXPAVMHuiFxEffectCacheNode@@@Z @ 1521 NONAME ; void CHuiFxEffectCache::UnUse(class MHuiFxEffectCacheNode *)
+	??1CHuiFxEffectCache@@UAE@XZ @ 1522 NONAME ; CHuiFxEffectCache::~CHuiFxEffectCache(void)
+	??1CHuiFxEffectCacheEffectNode@@UAE@XZ @ 1523 NONAME ; CHuiFxEffectCacheEffectNode::~CHuiFxEffectCacheEffectNode(void)
+	?CopyFromL@CHuiFxLayer@@QAEXPBV1@@Z @ 1524 NONAME ; void CHuiFxLayer::CopyFromL(class CHuiFxLayer const *)
+	?UnRegisterEffectL@CHuiFxEngine@@QAEXABVTDesC16@@@Z @ 1525 NONAME ; void CHuiFxEngine::UnRegisterEffectL(class TDesC16 const &)
+	?RegisterEffectL@CHuiFxEngine@@QAEXABVTDesC16@@@Z @ 1526 NONAME ; void CHuiFxEngine::RegisterEffectL(class TDesC16 const &)
+	?SetDisplayArea@CHuiFxLayer@@QAEXABVTRect@@@Z @ 1527 NONAME ; void CHuiFxLayer::SetDisplayArea(class TRect const &)
+	?Composite@CHuiFxEngine@@UAEXAAVCHuiGc@@AAVCHuiFxRenderbuffer@@ABVTPoint@@HH@Z @ 1528 NONAME ; void CHuiFxEngine::Composite(class CHuiGc &, class CHuiFxRenderbuffer &, class TPoint const &, int, int)
+	?Position@CHuiFxRenderbuffer@@QBEABVTPoint@@XZ @ 1529 NONAME ; class TPoint const & CHuiFxRenderbuffer::Position(void) const
+	?SetPosition@CHuiFxRenderbuffer@@QAEXVTPoint@@@Z @ 1530 NONAME ; void CHuiFxRenderbuffer::SetPosition(class TPoint)
+	?IsTransformed@CHuiFxEffect@@QBEHXZ @ 1531 NONAME ; int CHuiFxEffect::IsTransformed(void) const
+	?IsAnimated@CHuiFxEffect@@QBEHXZ @ 1532 NONAME ; int CHuiFxEffect::IsAnimated(void) const
+	?CanvasFlags@CHuiCanvasVisual@@QAEHXZ @ 1533 NONAME ; int CHuiCanvasVisual::CanvasFlags(void)
+	?RestoreFlaggedState@CHuiCanvasGc@@UBEXXZ @ 1534 NONAME ; void CHuiCanvasGc::RestoreFlaggedState(void) const
+	?SetParentCanvas@CHuiCanvasVisual@@QAEXPAV1@@Z @ 1535 NONAME ; void CHuiCanvasVisual::SetParentCanvas(class CHuiCanvasVisual *)
+	?EnableBackground@CHuiFxRenderbuffer@@QAEXH@Z @ 1536 NONAME ; void CHuiFxRenderbuffer::EnableBackground(int)
+	?ClearRenderBuffer@CHuiCanvasGc@@UAEXAAVCHuiCanvasRenderBuffer@@ABVTRect@@@Z @ 1537 NONAME ; void CHuiCanvasGc::ClearRenderBuffer(class CHuiCanvasRenderBuffer &, class TRect const &)
+	?DoClearRenderBuffer@CHuiCanvasGc@@MAEXAAVCHuiCanvasRenderBuffer@@ABVTRect@@@Z @ 1538 NONAME ; void CHuiCanvasGc::DoClearRenderBuffer(class CHuiCanvasRenderBuffer &, class TRect const &)
+	?BrushWithTypeAt@CHuiBrushArray@@QAEPAVCHuiBrush@@HH@Z @ 1539 NONAME ; class CHuiBrush * CHuiBrushArray::BrushWithTypeAt(int, int)
+	?BrushWithTypeCount@CHuiBrushArray@@QBEHH@Z @ 1540 NONAME ; int CHuiBrushArray::BrushWithTypeCount(int) const
+	?Effectable@CHuiVisual@@QBEPAVMHuiEffectable@@XZ @ 1541 NONAME ; class MHuiEffectable * CHuiVisual::Effectable(void) const
+	?SetVisual@CHuiFxEffect@@QAEXPAVMHuiEffectable@@@Z @ 1542 NONAME ; void CHuiFxEffect::SetVisual(class MHuiEffectable *)
+	?SetVisual@CHuiFxFilterLayer@@UAEXPAVMHuiEffectable@@@Z @ 1543 NONAME ; void CHuiFxFilterLayer::SetVisual(class MHuiEffectable *)
+	?SetVisual@CHuiFxGroupLayer@@UAEXPAVMHuiEffectable@@@Z @ 1544 NONAME ; void CHuiFxGroupLayer::SetVisual(class MHuiEffectable *)
+	?SetVisual@CHuiFxVisualLayer@@UAEXPAVMHuiEffectable@@@Z @ 1545 NONAME ; void CHuiFxVisualLayer::SetVisual(class MHuiEffectable *)
+	?IsBackgroundDrawingEnabled@CHuiCanvasVisual@@QBEHXZ @ 1546 NONAME ; int CHuiCanvasVisual::IsBackgroundDrawingEnabled(void) const
+	?Size@CHuiCanvasRenderBuffer@@QBE?AVTSize@@XZ @ 1547 NONAME ; class TSize CHuiCanvasRenderBuffer::Size(void) const
+	?Copy@CHuiCanvasRenderBuffer@@UAEXABV1@@Z @ 1548 NONAME ; void CHuiCanvasRenderBuffer::Copy(class CHuiCanvasRenderBuffer const &)
+	?IsInitialized@CHuiCanvasRenderBuffer@@QBEHXZ @ 1549 NONAME ; int CHuiCanvasRenderBuffer::IsInitialized(void) const
+	?StoreRenderBufferL@CHuiCanvasVisual@@QAEXXZ @ 1550 NONAME ; void CHuiCanvasVisual::StoreRenderBufferL(void)
+	?FreeRenderBuffer@CHuiCanvasVisual@@QAEXXZ @ 1551 NONAME ; void CHuiCanvasVisual::FreeRenderBuffer(void)
+	?FxmlUsesInput1@CHuiFxEngine@@QAEHABVTDesC16@@@Z @ 1552 NONAME ; int CHuiFxEngine::FxmlUsesInput1(class TDesC16 const &)
+	?LayerUsesAlphaFlag@CHuiCanvasVisual@@QAEHXZ @ 1553 NONAME ; int CHuiCanvasVisual::LayerUsesAlphaFlag(void)
+	?SetLayerExtent@CHuiCanvasVisual@@QAEXAAVTRect@@@Z @ 1554 NONAME ; void CHuiCanvasVisual::SetLayerExtent(class TRect &)
+	?LayerExtent@CHuiCanvasVisual@@QAEAAVTRect@@XZ @ 1555 NONAME ; class TRect & CHuiCanvasVisual::LayerExtent(void)
+	?SetLayerUsesAlphaFlag@CHuiCanvasVisual@@QAEXH@Z @ 1556 NONAME ; void CHuiCanvasVisual::SetLayerUsesAlphaFlag(int)
+	?SetStoredRenderBuffer@CHuiVisual@@QAEXPAVCHuiCanvasRenderBuffer@@@Z @ 1557 NONAME ; void CHuiVisual::SetStoredRenderBuffer(class CHuiCanvasRenderBuffer *)
+	?StoredRenderBuffer@CHuiVisual@@QBEPAVCHuiCanvasRenderBuffer@@XZ @ 1558 NONAME ; class CHuiCanvasRenderBuffer * CHuiVisual::StoredRenderBuffer(void) const
+	?Copy@CHuiCanvasRenderBuffer@@UAEXVTPoint@@@Z @ 1559 NONAME ; void CHuiCanvasRenderBuffer::Copy(class TPoint)
+	?SetStoredRenderBufferModificationsEnabled@CHuiVisual@@QAEXH@Z @ 1560 NONAME ; void CHuiVisual::SetStoredRenderBufferModificationsEnabled(int)
+	?SetFreezeState@CHuiVisual@@QAEXH@Z @ 1561 NONAME ; void CHuiVisual::SetFreezeState(int)
+	?Freezed@CHuiVisual@@QBEHXZ @ 1562 NONAME ; int CHuiVisual::Freezed(void) const
+	?SetPolygonFillTexture@CHuiCanvasGc@@UAEXPAVCHuiTexture@@@Z @ 1563 NONAME ; void CHuiCanvasGc::SetPolygonFillTexture(class CHuiTexture *)
+	?PolygonFillTexture@CHuiCanvasGc@@UBEPAVCHuiTexture@@XZ @ 1564 NONAME ; class CHuiTexture * CHuiCanvasGc::PolygonFillTexture(void) const
+	?SetPolygonFillTextureOrigin@CHuiCanvasGc@@UAEXABVTPoint@@@Z @ 1565 NONAME ; void CHuiCanvasGc::SetPolygonFillTextureOrigin(class TPoint const &)
+	?PolygonFillTextureOrigin@CHuiCanvasGc@@UBE?AVTPoint@@XZ @ 1566 NONAME ; class TPoint CHuiCanvasGc::PolygonFillTextureOrigin(void) const
+	?NotifyMemoryLevel@CHuiEnv@@QAEXW4THuiMemoryLevel@@@Z @ 1567 NONAME ; void CHuiEnv::NotifyMemoryLevel(enum THuiMemoryLevel)
+	?AddMemoryLevelObserver@CHuiEnv@@QAEXPAVMHuiMemoryLevelObserver@@@Z @ 1568 NONAME ; void CHuiEnv::AddMemoryLevelObserver(class MHuiMemoryLevelObserver *)
+	?RemoveMemoryLevelObserver@CHuiEnv@@QAEXPAVMHuiMemoryLevelObserver@@@Z @ 1569 NONAME ; void CHuiEnv::RemoveMemoryLevelObserver(class MHuiMemoryLevelObserver *)
+	?MemoryLevel@CHuiEnv@@QAE?AW4THuiMemoryLevel@@XZ @ 1570 NONAME ; enum THuiMemoryLevel CHuiEnv::MemoryLevel(void)
+	?SetForegroundTexture@CHuiDisplay@@QAEXPAVCHuiTexture@@@Z @ 1571 NONAME ; void CHuiDisplay::SetForegroundTexture(class CHuiTexture *)
+	?ForegroundTexture@CHuiDisplay@@QBEPAVCHuiTexture@@XZ @ 1572 NONAME ; class CHuiTexture * CHuiDisplay::ForegroundTexture(void) const
+	?ActiveGroupEffect@CHuiFxEngine@@QAEHXZ @ 1573 NONAME ; int CHuiFxEngine::ActiveGroupEffect(void)
+	?StartGroupEffect@CHuiFxEngine@@QAEXH@Z @ 1574 NONAME ; void CHuiFxEngine::StartGroupEffect(int)
+	?SetEffectGroup@CHuiFxEffect@@QAEXH@Z @ 1575 NONAME ; void CHuiFxEffect::SetEffectGroup(int)
+	?LoadGroupEffectL@CHuiFxEngine@@QAEXABVTDesC16@@AAPAVCHuiFxEffect@@PAVMHuiEffectable@@HPAVTRect@@PAVMAlfGfxEffectObserver@@HH@Z @ 1576 NONAME ; void CHuiFxEngine::LoadGroupEffectL(class TDesC16 const &, class CHuiFxEffect * &, class MHuiEffectable *, int, class TRect *, class MAlfGfxEffectObserver *, int, int)
+	?BeginGroupEffect@CHuiFxEngine@@QAEXH@Z @ 1577 NONAME ; void CHuiFxEngine::BeginGroupEffect(int)
+	?GroupId@CHuiFxEffect@@QAEHXZ @ 1578 NONAME ; int CHuiFxEffect::GroupId(void)
+	?SetMemoryLevel@CHuiFxEngine@@UAEXW4THuiMemoryLevel@@@Z @ 1579 NONAME ; void CHuiFxEngine::SetMemoryLevel(enum THuiMemoryLevel)
+	?SetForegroundBitmapL@CHuiDisplay@@QAEXPAVCFbsBitmap@@@Z @ 1580 NONAME ; void CHuiDisplay::SetForegroundBitmapL(class CFbsBitmap *)
+	?ForegroundBitmap@CHuiDisplay@@QBEPAVCFbsBitmap@@XZ @ 1581 NONAME ; class CFbsBitmap * CHuiDisplay::ForegroundBitmap(void) const
+	?HasCommandBuffers@CHuiCanvasVisual@@QBEHH@Z @ 1582 NONAME ; int CHuiCanvasVisual::HasCommandBuffers(int) const
+	?SkinContentChanged@CHuiS60Skin@@UAEXXZ @ 1583 NONAME ; void CHuiS60Skin::SkinContentChanged(void)
+	?SkinPackageChanged@CHuiS60Skin@@UAEXW4TAknsSkinStatusPackageChangeReason@@@Z @ 1584 NONAME ; void CHuiS60Skin::SkinPackageChanged(enum TAknsSkinStatusPackageChangeReason)
+	?SkinConfigurationChanged@CHuiS60Skin@@UAEXW4TAknsSkinStatusConfigurationChangeReason@@@Z @ 1585 NONAME ; void CHuiS60Skin::SkinConfigurationChanged(enum TAknsSkinStatusConfigurationChangeReason)
+	?Synchronize@CHuiEnv@@QAEXHPAVMHuiSynchronizationObserver@@@Z @ 1586 NONAME ; void CHuiEnv::Synchronize(int, class MHuiSynchronizationObserver *)
+	?SetForegroundTextureOptions@CHuiDisplay@@QAEXH@Z @ 1587 NONAME ; void CHuiDisplay::SetForegroundTextureOptions(int)
+	?ShapeOrigin@CHuiCanvasVisual@@QBE?AVTPoint@@XZ @ 1588 NONAME ; class TPoint CHuiCanvasVisual::ShapeOrigin(void) const
+	?HasCustomShape@CHuiCanvasVisual@@QBEHXZ @ 1589 NONAME ; int CHuiCanvasVisual::HasCustomShape(void) const
+	?ShapeRegion@CHuiCanvasVisual@@QBEABVTRegion@@XZ @ 1590 NONAME ; class TRegion const & CHuiCanvasVisual::ShapeRegion(void) const
+	?SetShape@CHuiCanvasVisual@@QAEXABVTPoint@@ABVTRegion@@@Z @ 1591 NONAME ; void CHuiCanvasVisual::SetShape(class TPoint const &, class TRegion const &)
+	?CommandBufferCoverage@CHuiCanvasVisual@@QAE?AVTRect@@H@Z @ 1592 NONAME ; class TRect CHuiCanvasVisual::CommandBufferCoverage(int)
+	?CopyScreenToBitmapL@CHuiDisplay@@QAEXPAVCFbsBitmap@@@Z @ 1593 NONAME ; void CHuiDisplay::CopyScreenToBitmapL(class CFbsBitmap *)
+	?SecureId@CHuiControlGroup@@QAEHXZ @ 1594 NONAME ; int CHuiControlGroup::SecureId(void)
+	?SetSecureId@CHuiControlGroup@@QAEXH@Z @ 1595 NONAME ; void CHuiControlGroup::SetSecureId(int)
+	?HasTransParentClear@CHuiCanvasVisual@@QBEHXZ @ 1596 NONAME ; int CHuiCanvasVisual::HasTransParentClear(void) const
+	?AddEffectToGroup@CHuiFxEngine@@QAEHH@Z @ 1597 NONAME ; int CHuiFxEngine::AddEffectToGroup(int)
+	?FxmlUsesOpaqueHint@CHuiFxEngine@@QAEHABVTDesC16@@@Z @ 1598 NONAME ; int CHuiFxEngine::FxmlUsesOpaqueHint(class TDesC16 const &)
+	?InitializeL@CHuiCanvasRenderBuffer@@UAEXABVTSize@@H@Z @ 1599 NONAME ; void CHuiCanvasRenderBuffer::InitializeL(class TSize const &, int)
+	?Clear@CAppIconCache@@QAEXXZ @ 1600 NONAME ; void CAppIconCache::Clear(void)
+	?Insert@CAppIconCache@@QAEHAAUTRasterizedBitmap@@@Z @ 1601 NONAME ; int CAppIconCache::Insert(struct TRasterizedBitmap &)
+	?AppIconCache@CHuiEnv@@QBEAAVCAppIconCache@@XZ @ 1602 NONAME ; class CAppIconCache & CHuiEnv::AppIconCache(void) const
+	?Find@CAppIconCache@@QAEPAVCFbsBitmap@@_JVTSize@@@Z @ 1603 NONAME ; class CFbsBitmap * CAppIconCache::Find(long long)
+	?SetSkinSizeChangePending@CHuiDisplay@@QAEXXZ @ 1604 NONAME ; void CHuiDisplay::SetSkinSizeChangePending(void)	
+

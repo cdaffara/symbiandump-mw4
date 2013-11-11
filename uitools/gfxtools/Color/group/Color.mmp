@@ -1,0 +1,57 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*       
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET                  series60color.exe
+TARGETTYPE              EXE
+
+USERINCLUDE             .
+USERINCLUDE             ../inc
+USERINCLUDE			../../../inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+
+SOURCEPATH              ../src
+source                  Main.cpp
+source                  Color.cpp
+source                  NokiaBlue.cpp
+source                  NokiaGreen.cpp
+source                  NokiaPurple.cpp
+source                  NokiaGrey.cpp
+source                  SchemeRed.cpp
+source                  SchemePink.cpp
+source                  SchemeOrange.cpp
+source                  Palette1.cpp
+source                  Palette2.cpp
+source                  Palette3.cpp
+source                  Palette4.cpp
+source                  Palette5.cpp
+source                  Palette6.cpp
+source                  Palette7.cpp
+source                  Palette8.cpp
+source                  Palette9.cpp
+source                  Palette10.cpp
+source                  Palette11.cpp
+source                  Palette12.cpp
+source                  Palette13.cpp
+source                  strings.cpp
+source                  RGB.CPP
+
+// End of File

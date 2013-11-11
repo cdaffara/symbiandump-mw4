@@ -1,0 +1,260 @@
+/*
+* Copyright (c) 2002-2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  resources used by aiw browser plugin
+*
+*/
+
+
+//  RESOURCE IDENTIFIER
+NAME    AWBP  // AIW Browser Provider
+
+// INCLUDES
+#include <eikon.rh>
+#include <avkon.rh>
+#include <bldvariant.hrh>
+#include <avkon.rsg>
+#include <avkon.rsg>
+#include <avkon.hrh>
+#include <avkon.mbg>
+#include <avkon.loc>
+#include <avkonsct.loc>
+
+#include "AiwBrowserCommands.hrh"
+#include <AiwBrowserProvider.loc>
+//  RESOURCE DEFINITIONS 
+// -----------------------------------------------------------------------------
+//   
+// Standard resource signature
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE { }
+
+// -----------------------------------------------------------------------------
+//   
+// r_aiw_browser_provider_save_url_menu
+// menu item for saving url
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE MENU_PANE r_aiw_browser_provider_save_url_menu
+    {
+    items=
+        {
+        MENU_ITEM
+           {
+           command = EBrowserAiwCmdSaveUrl;
+           txt = qtn_browser_aiw_add_bookmark;
+           }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//   
+// r_aiw_browser_provider_open_url_menu
+// menut item for opening url
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE MENU_PANE r_aiw_browser_provider_open_url_menu
+    {
+    items=
+        {
+        MENU_ITEM
+           {
+            command = EBrowserAiwCmdOpenUrl;
+            txt = qtn_browser_aiw_open_url;
+           }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//   
+// r_browser_ok_note
+// ok dialog
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE DIALOG r_browser_ok_note
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar |
+            EEikDialogFlagCbaButtons | EEikDialogFlagWait;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE 
+                { 
+                layout = EGeneralLayout;
+                singular_label = "";
+                plural_label = "";
+                animation = R_QGN_NOTE_OK_ANIM;
+                };
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//   
+// r_browser_info_note
+// info note
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE DIALOG r_browser_info_note
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar |
+            EEikDialogFlagCbaButtons | EEikDialogFlagWait;
+    buttons = R_AVKON_SOFTKEYS_EMPTY;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE 
+                { 
+                layout = EGeneralLayout;
+                singular_label = "";
+                plural_label = "";
+                animation = R_QGN_NOTE_INFO_ANIM;
+                };
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//   
+// r_wb_script_prompt_lowercase
+// prompt lowercase dialog
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE DIALOG r_wb_script_prompt_lowercase
+	{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EGeneralQuery;
+			control = AVKON_DATA_QUERY
+				{ 
+				layout = EDataLayout;
+                control = EDWIN
+                    {
+                    width = 20;
+                    maxlength = 128;
+					default_case = EAknEditorLowerCase;
+					allowed_case_modes = EAknEditorLowerCase | EAknEditorUpperCase;
+					default_input_mode = EAknEditorTextInputMode;
+					allowed_input_modes = EAknEditorTextInputMode | EAknEditorNumericInputMode;
+                    };
+				};
+			}
+		};
+
+	}
+
+// -----------------------------------------------------------------------------
+//   
+// r_wb_script_prompt_lines
+// prompt dialog 
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE DIALOG r_wb_script_prompt_lines
+	{
+	flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_OK_CANCEL__OK;
+    items =
+		{
+		DLG_LINE
+			{
+			type=EAknCtQuery;
+			id=EGeneralQuery;
+			control= AVKON_DATA_QUERY
+				{ 
+				layout=EDataLayout;
+                control = EDWIN
+                    {
+                    width = 20;
+                    maxlength = 128;
+					default_case = EAknEditorLowerCase;
+					allowed_case_modes = EAknEditorLowerCase | EAknEditorUpperCase;
+					default_input_mode = EAknEditorTextInputMode;
+					allowed_input_modes = EAknEditorTextInputMode | EAknEditorNumericInputMode;
+                    };
+				};
+			}
+		};
+
+	}
+
+
+// -----------------------------------------------------------------------------
+//   
+// r_aiw_browser_bookmarks_text_bm_not_saved
+// test showing bookmark not saved
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE TBUF r_aiw_browser_bookmarks_text_bm_not_saved
+                { buf = qtn_wmlbm_bm_not_saved; }
+
+// -----------------------------------------------------------------------------
+//   
+// r_aiw_wml_name_already_in_use
+// text showing allready in use
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE TBUF r_aiw_wml_name_already_in_use	
+                { buf = qtn_wmlbm_name_already_used; }
+
+// -----------------------------------------------------------------------------
+//   
+// r_aiw_browser_bookmarks_text_bm_saved
+// saved note
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE TBUF r_aiw_browser_bookmarks_text_bm_saved
+                { buf = text_wml_bm_saved; }
+
+// -----------------------------------------------------------------------------
+//   
+// r_aiw_wml_enter_bookmark_name
+// bookmark name title
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE TBUF r_aiw_wml_enter_bookmark_name
+            	{ buf = qtn_wml_query_bookmark_title;}
+
+// End of File

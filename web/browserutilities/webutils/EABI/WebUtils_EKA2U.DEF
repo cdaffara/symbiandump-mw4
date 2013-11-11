@@ -1,0 +1,27 @@
+EXPORTS
+	_ZN10CUserAgent10UserAgentLEv @ 1 NONAME
+	_ZN10CUserAgent11AppNameMMSLEv @ 2 NONAME ABSENT
+	_ZN10CUserAgent11AppVersionLEv @ 3 NONAME ABSENT
+	_ZN10CUserAgent12AddFragmentLERK5TDes818TUserAgentFragmenti @ 4 NONAME ABSENT
+	_ZN10CUserAgent12SubfragmentLE18TUserAgentFragmentj @ 5 NONAME ABSENT
+	_ZN10CUserAgent13FragmentCountEv @ 6 NONAME ABSENT
+	_ZN10CUserAgent13MMSUserAgentLEv @ 7 NONAME
+	_ZN10CUserAgent14RemoveFragmentE18TUserAgentFragment @ 8 NONAME ABSENT
+	_ZN10CUserAgent14ResetFragmentLE18TUserAgentFragment @ 9 NONAME ABSENT
+	_ZN10CUserAgent15AddSubfragmentLERK5TDes818TUserAgentFragmentji @ 10 NONAME ABSENT
+	_ZN10CUserAgent16SubfragmentCountE18TUserAgentFragment @ 11 NONAME ABSENT
+	_ZN10CUserAgent17RemoveSubfragmentE18TUserAgentFragmentj @ 12 NONAME ABSENT
+	_ZN10CUserAgent19AddImeiToUserAgentLERK6TDesC8i @ 13 NONAME ABSENT
+	_ZN10CUserAgent21ResetUserAgentStringLEv @ 14 NONAME ABSENT	
+	_ZN10CUserAgent4NewLEv @ 15 NONAME
+	_ZN10CUserAgent8AppNameLEv @ 16 NONAME ABSENT
+	_ZN10CUserAgent9FragmentLE18TUserAgentFragment @ 17 NONAME ABSENT
+	_ZTI10CUserAgent @ 18 NONAME ; #<TI>#
+	_ZTI13CFragmentData @ 19 NONAME ABSENT ; #<TI>#
+	_ZTIN13CFragmentData16CSubFragmentDataE @ 20 NONAME ABSENT ; #<TI>#
+	_ZTV10CUserAgent @ 21 NONAME ; #<VT>#
+	_ZTV13CFragmentData @ 22 NONAME ABSENT ; #<VT>#
+	_ZTVN13CFragmentData16CSubFragmentDataE @ 23 NONAME ABSENT ; #<VT>#
+	_ZN10CUserAgent22URLToUserAgentProfileLER5TDes8S1_ @ 24 NONAME
+	_ZN10CUserAgent15BrowserVersionLEv @ 25 NONAME
+	_ZN10CUserAgent22BrowserNameAndVersionLEv @ 26 NONAME

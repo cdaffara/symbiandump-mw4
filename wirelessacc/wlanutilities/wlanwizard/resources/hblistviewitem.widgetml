@@ -1,0 +1,51 @@
+<hbwidget version="0.1" type="HbListViewItem">
+
+<!-- wlanwizardsummaryitem-portrait -->
+    <!--
+        Custom list view item layout for wizard summary items in portrait mode.
+    
+        Required items: 
+            text-1 text-2
+            
+        Items from left to right:
+            <- text-1 ->
+               text-2 ->
+    -->
+    <layout name="wlanwizardsummaryitem-portrait" type="mesh">
+     
+      <meshitem src="text-1" srcEdge="LEFT" dst="" dstEdge="LEFT" spacing="-var(hb-param-margin-gene-left)" />
+      <meshitem src="text-1" srcEdge="TOP" dst="" dstEdge="TOP" spacing="-var(hb-param-margin-gene-middle-vertical)"/>
+      <meshitem src="text-1" srcEdge="RIGHT" dst="" dstEdge="RIGHT" spacing="var(hb-param-margin-gene-right)" />
+      
+      <meshitem src="text-1" srcEdge="BOTTOM" dst="text-2" dstEdge="TOP" spacing="var(hb-param-margin-gene-middle-vertical)" />
+      
+      <meshitem src="text-2" srcEdge="LEFT" dst="text-1" dstEdge="LEFT" />
+      <meshitem src="text-2" srcEdge="RIGHT" dst="text-1" dstEdge="RIGHT" />
+      <meshitem src="text-2" srcEdge="BOTTOM" dst="" dstEdge="BOTTOM" spacing="var(hb-param-margin-gene-middle-vertical)" />
+      
+    </layout>
+
+<!-- wlanwizardsummaryitem-landscape -->
+    <!--
+        Custom list view item layout for wizard summary items in landscape mode.
+    
+        Required items: 
+            text-1 text-2
+            
+        Items from left to right:
+            <- text-1 -> text-2 ->
+    -->
+    
+    <layout name="wlanwizardsummaryitem-landscape" type="mesh">
+     
+      <meshitem src="text-1" srcEdge="LEFT" dst="" dstEdge="LEFT" spacing="-var(hb-param-margin-gene-left)" />
+      <meshitem src="text-1" srcEdge="TOP" dst="" dstEdge="TOP" spacing="-var(hb-param-margin-gene-middle-horizontal)"/>
+      <meshitem src="text-1" srcEdge="BOTTOM" dst="" dstEdge="BOTTOM" spacing="var(hb-param-margin-gene-middle-horizontal)" />
+      
+      <meshitem src="text-2" srcEdge="LEFT" dst="text-1" dstEdge="RIGHT" spacing="-var(hb-param-margin-gene-middle-horizontal)"/>
+      <meshitem src="text-2" srcEdge="TOP" dst="text-1" dstEdge="TOP" />
+      
+      <meshitem src="text-2" srcEdge="RIGHT" dst="" dstEdge="RIGHT" spacing="var(hb-param-margin-gene-right)" />
+      
+    </layout>
+</hbwidget>

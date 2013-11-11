@@ -1,0 +1,10 @@
+EXPORTS
+	??0CSit@@QAE@PAVMSitDeathListener@@@Z @ 1 NONAME ; public: __thiscall CSit::CSit(class MSitDeathListener *)
+	??1CSit@@UAE@XZ @ 2 NONAME ; public: virtual __thiscall CSit::~CSit(void)
+	?EventRequiresSit@CSit@@SAHW4TEventType@@@Z @ 3 NONAME ; public: static int __cdecl CSit::EventRequiresSit(enum TEventType)
+	?FindCancelEventType@CSit@@SA?AW4TEventType@@W42@@Z @ 4 NONAME ; public: static enum TEventType  __cdecl CSit::FindCancelEventType(enum TEventType)
+	?FindTaskRequestEventType@CSit@@SA?AW4TEventType@@W42@@Z @ 5 NONAME ; public: static enum TEventType  __cdecl CSit::FindTaskRequestEventType(enum TEventType)
+	?IsTaskCancellationObservationRequest@CSit@@SAHW4TEventType@@@Z @ 6 NONAME ; public: static int __cdecl CSit::IsTaskCancellationObservationRequest(enum TEventType)
+	?StartL@CSit@@QAEXXZ @ 7 NONAME ; public: void __thiscall CSit::StartL(void)
+	?ThreadId@CSit@@QAE?AVTThreadId@@XZ @ 8 NONAME ; public: class TThreadId  __thiscall CSit::ThreadId(void)
+

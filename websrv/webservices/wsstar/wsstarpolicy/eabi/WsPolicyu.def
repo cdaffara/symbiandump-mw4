@@ -1,0 +1,149 @@
+EXPORTS
+	_ZN14CExpiredPolicy12SetContentsLERK6TDesC8 @ 1 NONAME
+	_ZN14CExpiredPolicy3UriEv @ 2 NONAME
+	_ZN14CExpiredPolicy4NewLERK6TDesC8S2_S2_S2_ @ 3 NONAME
+	_ZN14CExpiredPolicy5NewLCERK6TDesC8S2_S2_S2_ @ 4 NONAME
+	_ZN14CExpiredPolicy8ContentsEv @ 5 NONAME
+	_ZN14CExpiredPolicy8ContractEv @ 6 NONAME
+	_ZN14CExpiredPolicy8EndpointEv @ 7 NONAME
+	_ZN14CExpiredPolicyD0Ev @ 8 NONAME
+	_ZN14CExpiredPolicyD1Ev @ 9 NONAME
+	_ZN14CExpiredPolicyD2Ev @ 10 NONAME
+	_ZN14CWSPolicyUtils10PolicyUriLEP11CSenElement @ 11 NONAME
+	_ZN14CWSPolicyUtils11PolicyNameLEP11CSenElement @ 12 NONAME
+	_ZN14CWSPolicyUtils16IsExpiredPolicyLEP11CSenElement @ 13 NONAME
+	_ZN14CWSPolicyUtils9PolicyIdLEP11CSenElement @ 14 NONAME
+	_ZN15CPolicyRegistry12LookupPolicyERK6TPtrC8 @ 15 NONAME
+	_ZN15CPolicyRegistry13ResetRegistryEv @ 16 NONAME
+	_ZN15CPolicyRegistry14RegisterPolicyER6TDesC8P11CSenElement @ 17 NONAME
+	_ZN15CPolicyRegistry16UnregisterPolicyERK6TPtrC8 @ 18 NONAME
+	_ZN15CPolicyRegistry17PopulateRegistryLEP11CSenElement @ 19 NONAME
+	_ZN15CPolicyRegistry19LookupPolicyByNameLERK6TPtrC8 @ 20 NONAME
+	_ZN15CPolicyRegistry4NewLEv @ 21 NONAME
+	_ZN15CPolicyRegistry5NewLCEv @ 22 NONAME
+	_ZN15CPolicyRegistry6ParentEv @ 23 NONAME
+	_ZN15CPolicyRegistry9SetParentEPS_ @ 24 NONAME
+	_ZN19CSenWSPolicyManager12AddWsPolicyLEP17CSenWSDescriptionRK6TDesC8S4_Ri @ 25 NONAME
+	_ZN19CSenWSPolicyManager15RemoveWsPolicyLEP17CSenWSDescriptionRK6TDesC8Ri @ 26 NONAME
+	_ZN19CSenWSPolicyManager16ExpiredPoliciesLER13RPointerArrayI14CExpiredPolicyERi @ 27 NONAME
+	_ZN19CSenWSPolicyManager17RegisterWsPolicyLEP17CSenWSDescriptionRi @ 28 NONAME
+	_ZN19CSenWSPolicyManager18AddPolicyConsumerLERK6TDesC8S2_ @ 29 NONAME
+	_ZN19CSenWSPolicyManager19UnRegisterWsPolicyLEP17CSenWSDescriptionRi @ 30 NONAME
+	_ZN19CSenWSPolicyManager21RemovePolicyConsumerLERK6TDesC8S2_ @ 31 NONAME
+	_ZN19CSenWSPolicyManager4NewLER22MSenCoreServiceManager @ 32 NONAME
+	_ZN19CSenWSPolicyManager5NewLCER22MSenCoreServiceManager @ 33 NONAME
+	_ZN19CSenWSPolicyManager9WsPolicyLEP17CSenWSDescriptionRK6TDesC8Ri @ 34 NONAME
+	_ZN19CSenWSPolicyManagerD0Ev @ 35 NONAME
+	_ZN19CSenWSPolicyManagerD1Ev @ 36 NONAME
+	_ZN19CSenWSPolicyManagerD2Ev @ 37 NONAME
+	_ZN9CWSPolicy10ConstructLEv @ 38 NONAME
+	_ZN9CWSPolicy10NormalizedEv @ 39 NONAME
+	_ZN9CWSPolicy10SetPolicyLER6TDesC8S1_ @ 40 NONAME
+	_ZN9CWSPolicy12MergePolicyLEPS_ @ 41 NONAME
+	_ZN9CWSPolicy12PolicyAsXmlLEv @ 42 NONAME
+	_ZN9CWSPolicy16IntersectPolicyLEPS_ @ 43 NONAME
+	_ZN9CWSPolicy16IsExpiredPolicyLEv @ 44 NONAME
+	_ZN9CWSPolicy16NormalizePolicyLEP15CPolicyRegistry @ 45 NONAME
+	_ZN9CWSPolicy20NonNormalizedPolicyLEv @ 46 NONAME
+	_ZN9CWSPolicy4NewLEP11CSenElement @ 47 NONAME
+	_ZN9CWSPolicy4NewLER6TDesC8S1_ @ 48 NONAME
+	_ZN9CWSPolicy4NewLEv @ 49 NONAME
+	_ZN9CWSPolicy5NewLCEP11CSenElement @ 50 NONAME
+	_ZN9CWSPolicy5NewLCER6TDesC8S1_ @ 51 NONAME
+	_ZN9CWSPolicy5NewLCEv @ 52 NONAME
+	_ZN9CWSPolicy7PolicyLEv @ 53 NONAME
+	_ZN9CWSPolicyC1Ev @ 54 NONAME
+	_ZN9CWSPolicyC2Ev @ 55 NONAME
+	_ZTI10CAssertion @ 56 NONAME ; #<TI>#
+	_ZTI14CExpiredPolicy @ 57 NONAME ; #<TI>#
+	_ZTI15CPolicyRegistry @ 58 NONAME ; #<TI>#
+	_ZTI15CWSPolicyReader @ 59 NONAME ; #<TI>#
+	_ZTI15CWSPolicyWriter @ 60 NONAME ; #<TI>#
+	_ZTI16CPolicyAssertion @ 61 NONAME ; #<TI>#
+	_ZTI18CConsumerContainer @ 62 NONAME ; #<TI>#
+	_ZTI18CSenWSPolicyLoader @ 63 NONAME ; #<TI>#
+	_ZTI19CPrimitiveAssertion @ 64 NONAME ; #<TI>#
+	_ZTI19CSenWSPolicyManager @ 65 NONAME ; #<TI>#
+	_ZTI20CSenInternalWsPolicy @ 66 NONAME ; #<TI>#
+	_ZTI22CAndCompositeAssertion @ 67 NONAME ; #<TI>#
+	_ZTI22CSenWSPolicyIdentifier @ 68 NONAME ; #<TI>#
+	_ZTI22CSenWSPolicyProperties @ 69 NONAME ; #<TI>#
+	_ZTI22CXorCompositeAssertion @ 70 NONAME ; #<TI>#
+	_ZTI25CPolicyReferenceAssertion @ 71 NONAME ; #<TI>#
+	_ZTI26CNormalizedPolicyConatiner @ 72 NONAME ; #<TI>#
+	_ZTI6CMyXml @ 73 NONAME ; #<TI>#
+	_ZTI6CQName @ 74 NONAME ; #<TI>#
+	_ZTI9CWSPolicy @ 75 NONAME ; #<TI>#
+	_ZTV10CAssertion @ 76 NONAME ; #<VT>#
+	_ZTV14CExpiredPolicy @ 77 NONAME ; #<VT>#
+	_ZTV15CPolicyRegistry @ 78 NONAME ; #<VT>#
+	_ZTV15CWSPolicyReader @ 79 NONAME ; #<VT>#
+	_ZTV15CWSPolicyWriter @ 80 NONAME ; #<VT>#
+	_ZTV16CPolicyAssertion @ 81 NONAME ; #<VT>#
+	_ZTV18CConsumerContainer @ 82 NONAME ; #<VT>#
+	_ZTV18CSenWSPolicyLoader @ 83 NONAME ; #<VT>#
+	_ZTV19CPrimitiveAssertion @ 84 NONAME ; #<VT>#
+	_ZTV19CSenWSPolicyManager @ 85 NONAME ; #<VT>#
+	_ZTV20CSenInternalWsPolicy @ 86 NONAME ; #<VT>#
+	_ZTV22CAndCompositeAssertion @ 87 NONAME ; #<VT>#
+	_ZTV22CSenWSPolicyIdentifier @ 88 NONAME ; #<VT>#
+	_ZTV22CSenWSPolicyProperties @ 89 NONAME ; #<VT>#
+	_ZTV22CXorCompositeAssertion @ 90 NONAME ; #<VT>#
+	_ZTV25CPolicyReferenceAssertion @ 91 NONAME ; #<VT>#
+	_ZTV26CNormalizedPolicyConatiner @ 92 NONAME ; #<VT>#
+	_ZTV6CMyXml @ 93 NONAME ; #<VT>#
+	_ZTV6CQName @ 94 NONAME ; #<VT>#
+	_ZTV9CWSPolicy @ 95 NONAME ; #<VT>#
+	_ZN21CWsdlPolicyAttachment24GetEffectiveFaultPolicyLERK6TDesC8S2_ @ 96 NONAME
+	_ZN21CWsdlPolicyAttachment24GetEffectiveInputPolicyLERK6TDesC8S2_S2_ @ 97 NONAME
+	_ZN21CWsdlPolicyAttachment25GetEffectiveOutputPolicyLERK6TDesC8S2_S2_ @ 98 NONAME
+	_ZN21CWsdlPolicyAttachment26GetEffectiveServicePolicyLERK6TDesC8 @ 99 NONAME
+	_ZN21CWsdlPolicyAttachment27GetEffectiveEndpointPolicyLERK6TDesC8S2_ @ 100 NONAME
+	_ZN21CWsdlPolicyAttachment28GetEffectiveOperationPolicyLERK6TDesC8S2_S2_ @ 101 NONAME
+	_ZN21CWsdlPolicyAttachment4NewLERK6TDesC8 @ 102 NONAME
+	_ZN21CWsdlPolicyAttachment5NewLCERK6TDesC8 @ 103 NONAME
+	_ZTI10CSamlToken @ 104 NONAME ; #<TI>#
+	_ZTI10CWsTrust10 @ 105 NONAME ; #<TI>#
+	_ZTI11CHttpsToken @ 106 NONAME ; #<TI>#
+	_ZTI12CIssuedToken @ 107 NONAME ; #<TI>#
+	_ZTI12CTokenHolder @ 108 NONAME ; #<TI>#
+	_ZTI14CUsernameToken @ 109 NONAME ; #<TI>#
+	_ZTI15CAlgorithmSuite @ 110 NONAME ; #<TI>#
+	_ZTI16CTranportBinding @ 111 NONAME ; #<TI>#
+	_ZTI17CSymmAsymmBinding @ 112 NONAME ; #<TI>#
+	_ZTI17CSymmetricBinding @ 113 NONAME ; #<TI>#
+	_ZTI17CWsSecurityPolicy @ 114 NONAME ; #<TI>#
+	_ZTI18CAsymmetricBinding @ 115 NONAME ; #<TI>#
+	_ZTI21CEncryptedSignedParts @ 116 NONAME ; #<TI>#
+	_ZTI21CWsdlPolicyAttachment @ 117 NONAME ; #<TI>#
+	_ZTI24CEncryptedSignedElements @ 118 NONAME ; #<TI>#
+	_ZTI24CSecureConversationToken @ 119 NONAME ; #<TI>#
+	_ZTI29CRequestSecurityTokenTemplate @ 120 NONAME ; #<TI>#
+	_ZTI6CToken @ 121 NONAME ; #<TI>#
+	_ZTI6CWss10 @ 122 NONAME ; #<TI>#
+	_ZTI6CWss11 @ 123 NONAME ; #<TI>#
+	_ZTI7CLayout @ 124 NONAME ; #<TI>#
+	_ZTI8CBinding @ 125 NONAME ; #<TI>#
+	_ZTV10CSamlToken @ 126 NONAME ; #<VT>#
+	_ZTV10CWsTrust10 @ 127 NONAME ; #<VT>#
+	_ZTV11CHttpsToken @ 128 NONAME ; #<VT>#
+	_ZTV12CIssuedToken @ 129 NONAME ; #<VT>#
+	_ZTV12CTokenHolder @ 130 NONAME ; #<VT>#
+	_ZTV14CUsernameToken @ 131 NONAME ; #<VT>#
+	_ZTV15CAlgorithmSuite @ 132 NONAME ; #<VT>#
+	_ZTV16CTranportBinding @ 133 NONAME ; #<VT>#
+	_ZTV17CSymmAsymmBinding @ 134 NONAME ; #<VT>#
+	_ZTV17CSymmetricBinding @ 135 NONAME ; #<VT>#
+	_ZTV17CWsSecurityPolicy @ 136 NONAME ; #<VT>#
+	_ZTV18CAsymmetricBinding @ 137 NONAME ; #<VT>#
+	_ZTV21CEncryptedSignedParts @ 138 NONAME ; #<VT>#
+	_ZTV21CWsdlPolicyAttachment @ 139 NONAME ; #<VT>#
+	_ZTV24CEncryptedSignedElements @ 140 NONAME ; #<VT>#
+	_ZTV24CSecureConversationToken @ 141 NONAME ; #<VT>#
+	_ZTV29CRequestSecurityTokenTemplate @ 142 NONAME ; #<VT>#
+	_ZTV6CToken @ 143 NONAME ; #<VT>#
+	_ZTV6CWss10 @ 144 NONAME ; #<VT>#
+	_ZTV6CWss11 @ 145 NONAME ; #<VT>#
+	_ZTV7CLayout @ 146 NONAME ; #<VT>#
+	_ZTV8CBinding @ 147 NONAME ; #<VT>#
+

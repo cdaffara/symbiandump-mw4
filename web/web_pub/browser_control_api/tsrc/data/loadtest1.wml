@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.3//EN" "http://www.wapforum.org/DTD/wml13.dtd">
+<wml>
+<template>
+	<do type="accept" name="gh" label="* Help?"><go href="#H1"/></do>
+	<do type="prev"   name="gb" label="* Back!"><prev/></do>
+	<do type="accept" name="PostResults" label="PostResults"><go href="../WMLBrowserPost.asp"/></do>
+</template>
+
+<card id="C1" title="nbsp_01v00">
+	<p>40.07.01</p>
+	<p>
+	Non-breaking space in a table cell.
+        <table title="T2" columns="2">
+           <tr>
+               <td>
+               R1-C1
+               First&#160;SecondVeryVeryLongWordSecondVeryVeryLongWordSecondVeryVeryLongWord
+               </td>
+               <td>
+               R1-C2
+               </td>
+           </tr>
+           <tr>
+               <td>
+               R2-C1
+               </td>
+               <td>
+               R2-C2
+               </td>
+           </tr>
+        </table>
+        </p>     
+<p><a title="Go" href="nbsp_02v00.wml">Next</a>
+	</p>
+</card>
+
+<card id="H1" title="Help">
+	<p>
+	In the first cell R1-C1 there is a non-breaking space between the words 'First' and 'SecondVeryVeryLongWordSecondVeryVeryLongWordSecondVeryVeryLongWord'. 
+	</p>
+</card>
+</wml>

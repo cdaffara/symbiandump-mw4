@@ -1,0 +1,88 @@
+/** @file
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*     This is the project specification file for UpnpUtils.
+*
+*/
+
+
+#include "../../../inc/upnpcompvariant.hrh"
+
+TARGETTYPE      DLL
+
+#if defined(__HN_31__) || defined(__HN_32__)
+TARGET          hnipserversutils.dll
+UID             0x1000008D 0x2000F886
+#else
+TARGET          upnpipserversutils.dll
+UID             0x1000008D 0x2001B2B9
+#endif
+
+CAPABILITY      CAP_GENERAL_DLL
+VENDORID        VID_DEFAULT
+
+VERSION 10.1
+paged
+
+SOURCEPATH      ../src
+SOURCE          upnpdominterface.cpp
+SOURCE          upnpstring.cpp
+SOURCE          upnpfileutils.cpp
+SOURCE          upnphttpheader.cpp
+SOURCE          upnphttpmessage.cpp
+SOURCE          upnphttpmessagefactory.cpp
+SOURCE          upnpipaddressutils.cpp
+SOURCE          upnpnotifytimer.cpp
+SOURCE          upnpmsearchtimer.cpp
+SOURCE          upnpdevicelibrary.cpp
+SOURCE          upnpdevicelibraryelement.cpp
+SOURCE          upnptimeoutelement.cpp
+SOURCE          upnpssdpmessage.cpp
+SOURCE          upnpssdpmessagefactory.cpp
+SOURCE          upnplist.cpp
+SOURCE          upnpsessionbase.cpp
+SOURCE          upnpsymbianserverbase.cpp
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../../inc
+SYSTEMINCLUDE   ../../inc
+USERINCLUDE     ../inc
+
+LIBRARY         euser.lib
+LIBRARY         estlib.lib
+LIBRARY         efsrv.lib
+LIBRARY         estor.lib
+LIBRARY         ecom.lib
+LIBRARY         insock.lib
+LIBRARY         esock.lib
+LIBRARY         flogger.lib
+LIBRARY         apmime.lib
+LIBRARY         apgrfx.lib
+#if defined(__HN_31__)
+LIBRARY         wsstarxmlenginedom.lib
+LIBRARY         wsstarxmlengineutils.lib
+#else
+LIBRARY         xmlenginedom.lib
+LIBRARY         xmlengineutils.lib
+#endif
+
+LIBRARY         inetprotutil.lib
+LIBRARY         commdb.lib
+LIBRARY         sysutil.lib
+LIBRARY         bafl.lib
+
+DEFFILE         upnpipserversutils
+
+SMPSAFE
+// End of file

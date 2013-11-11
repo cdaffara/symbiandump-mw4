@@ -1,0 +1,99 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for idwsfsecuritymechanism    
+*
+*/
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+SMPSAFE
+
+#ifdef SYMBIAN_SECURE_ECOM 
+    TARGETTYPE PLUGIN
+#else
+    TARGETTYPE ECOMIIC
+#endif
+
+// ECOM DLL recognition UID followed by the unique UID for this dll
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET SenIdWsfSecMech.dll
+UID 0x10009D8D 0x101F96FB
+#else
+TARGET wsIdWsfSecMech.dll
+UID 0x10009D8D 0x101F9732
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_ECOM_PLUGIN )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_ECOM_PLUGIN
+    #endif
+#endif
+
+SOURCEPATH      ../src
+SOURCE          senidwsfsecmechmain.cpp
+SOURCE          senidwsfsecmechproxy.cpp
+
+SOURCE          senidwsfanonymoussaslmechanism.cpp
+SOURCE          senidwsfplainsaslmechanism.cpp
+SOURCE          senidwsfcrammd5saslmechanism.cpp
+
+SOURCEPATH      ../data
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+START RESOURCE  101f96fb.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET SenIdWsfSecMech.rsc
+#endif 
+
+#else
+START RESOURCE  101F9732.RSS
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET wsIdWsfSecMech.rsc
+#endif 
+
+#endif
+
+END
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wscore/inc
+USERINCLUDE     ../../wsframework/inc
+USERINCLUDE     ../../wsutils/inc
+USERINCLUDE     ../../wsidentitymanager/inc
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+
+
+LIBRARY ECom.lib
+LIBRARY euser.lib 
+LIBRARY flogger.lib
+LIBRARY hash.lib
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY SenFramework.lib // CSaslMechanism
+LIBRARY SenXml.lib
+#else
+LIBRARY wsFramework.lib // CSaslMechanism
+LIBRARY wsXml.lib
+#endif

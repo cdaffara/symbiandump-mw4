@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="f0ebf932171e4cbcb9af80cb8384f345" dataversion="2.0">
+  <name>PTP Transport API</name>
+  <description>Defines interface for transport plug-ins</description>
+  <type>c++</type>
+  <collection>usbclasses</collection>
+  <libs>
+    <lib name="ptptransport.lib" />
+  </libs>
+  <release category="platform"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

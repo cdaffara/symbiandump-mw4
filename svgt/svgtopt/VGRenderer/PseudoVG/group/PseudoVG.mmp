@@ -1,0 +1,55 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET		  PseudoVG.dll
+TARGETTYPE	  dll
+UID			 0x1000008d 0x06D64B59
+VENDORID      VID_DEFAULT
+
+USERINCLUDE	 ../inc ../../inc
+SYSTEMINCLUDE   /epoc32/include /epoc32/include/VG 
+
+SOURCEPATH	  ../src
+
+SOURCE		  PseudoVGDllMain.cpp PseodoVGRendererImpl.cpp PseudoVGSurfaceImpl.cpp 
+//PTFloatFixPt.cpp
+
+//By default, the build tools look for the WINSCW def file in a BWINS directory
+//(at the same level as the directory containing the mmp file), 
+//the GCC ARM def file in a BMARM directory, and the ARMV5 def file in a EABI directory. 
+//If def files are stored in these locations, the project files does not need to specify
+//the location of the def files explicitly. If you want to store the def files in some other 
+//location, you will need to specify in the project file where the .def files are using 
+//the deffile keyword.
+
+//The following commented out code shows how the build system uses the implicit
+// location for defiles. To create the DEF files Choose Project > Freeze Exports from Carbide
+// or run 'abld freeze' from the command-line
+
+MW_LAYER_SYSTEMINCLUDE
+
+nostrictdef
+
+LIBRARY		 euser.lib
+LIBRARY		 estor.lib efsrv.lib fbscli.lib flogger.lib
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+
+CAPABILITY CAP_GENERAL_DLL DRM

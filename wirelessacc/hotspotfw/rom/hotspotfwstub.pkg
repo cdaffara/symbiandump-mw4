@@ -1,0 +1,50 @@
+;
+; Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description:  This is the stub package file for Hotspot Framework
+;
+
+;Languages
+; - None (English only by default)
+
+;Header
+#{"Hotspot Framework"},(0x10282ECB),1,0,0,TYPE=SA
+
+; Product / platform version compatibility - S60 5.2
+[0x20022e6d],0,0,0,{"Series60ProductID"}
+
+; Localised Vendor Name
+%{"Nokia"}
+
+;Unique Vendor Name
+:"Nokia"
+
+; Server stub
+""-"z:\sys\bin\HotSpotServer.exe"
+
+; Client stub
+""-"z:\sys\bin\hotspotclient.dll"
+
+; Hotspot daemon plugin stub
+""-"z:\sys\bin\NetCfgExtnHotSpot.dll"
+""-"z:\resource\plugins\NetCfgExtnHotSpot.RSC"
+
+; Hotspot Management API stub
+""-"z:\sys\bin\hssmgmtimpl.dll"
+""-"z:\resource\plugins\HssMgmtImpl.rsc"
+
+; Plugin interface for WLAN Agent stub
+""-"z:\sys\bin\wlanagthotspotimpl.dll"
+""-"z:\resource\plugins\WlanAgtHotSpotImpl.RSC"
+
+

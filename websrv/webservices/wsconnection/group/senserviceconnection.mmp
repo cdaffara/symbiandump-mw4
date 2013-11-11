@@ -1,0 +1,128 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senserviceconnection    
+*
+*/
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+TARGETTYPE      DLL
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET          SenServConn.dll
+  #ifdef RD_SEN_USE_CLASHING_UIDS_FOR_TESTING
+    // UID 0x101F9707 is reserved for legacy (S60 3.0) PasswordTransforms ECOM interface!!
+    UID             0x1000008d 0x101F9707
+  #else
+    // This is the "new" ROM UID
+    UID             0x1000008d 0x101F9700
+  #endif  
+#else
+TARGET          wsservconn.dll
+  // This is the new RAM (.SIS target) UID:
+  UID             0x1000008d 0x101F9737
+#endif
+
+#ifdef EKA2
+    #if defined ( RD_SEN_ENABLE_USE_OF_WSD_IN_SC_FOR_ARMV5_TARGET )
+		// use WSD only in hardware builds, since in emulator environment, only a single process can use WSD(!)
+		    EPOCALLOWDLLDATA
+	#endif // _WINS 
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_CLIENT_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_CLIENT_DLL
+    #endif
+#endif
+
+
+
+SOURCEPATH      ../src
+SOURCE          senserviceconnectionimpl.cpp
+SOURCE          rsenserviceconnection.cpp
+SOURCE          senserviceconnectiondll.cpp
+SOURCE          senservicedispatcher.cpp
+SOURCE          senregistrationtimer.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wsutils/inc // SenDebug.h - filelogging macros
+USERINCLUDE     ../../wscore/inc  // SenServiceManagerDefines.h  - IPC enumerations
+USERINCLUDE     ../../wsmessages/inc
+USERINCLUDE     ../../wslogger/inc // SenLogger.h - filelogging macros
+USERINCLUDE 		../../wsxml/inc								//senxmldebug.h
+USERINCLUDE     ../../wsconnectionagent/inc
+
+//USERINCLUDE     ../../ServiceDescription/inc  // SD headers now system included
+//USERINCLUDE     ../../XML/inc          // SenXmlUtils.h  is now system included
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+
+SYSTEMINCLUDE   /epoc32/include/libc
+
+// System libs:
+LIBRARY         euser.lib
+LIBRARY         flogger.lib
+LIBRARY         efsrv.lib
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// SOA for S60 libs:
+LIBRARY         wsconnagent.lib
+LIBRARY         SenServDesc.lib
+LIBRARY         SenFragment.lib // CSenParser
+LIBRARY         SenMessages.lib
+LIBRARY         SenXml.lib
+LIBRARY         SenUtils.lib
+LIBRARY         SenLogger.lib    // for TLS based file logging
+#else
+LIBRARY         senconnagent.lib
+LIBRARY         wsServDesc.lib
+LIBRARY         wsFragment.lib // CSenParser
+LIBRARY         wsMessages.lib
+LIBRARY         wsXml.lib
+LIBRARY         wsUtils.lib
+LIBRARY         wsLogger.lib    // for TLS based file logging
+#endif
+// LibXml2 libraries
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    LIBRARY         XmlEngineDOM.lib
+    LIBRARY         XmlEngineSerializer.lib
+#else
+    LIBRARY         WsStarXmlEngineDOM.lib
+    LIBRARY         WsStarXmlEngineSerializer.lib
+#endif
+
+LANG        SC
+#if defined(ARMCC)
+  DEFFILE ../eabi/SENSERVCONN.DEF
+#elif defined(WINSCW)
+  DEFFILE ../BWINSCW/SENSERVCONN.DEF
+#elif defined(WINS)
+  DEFFILE ../BWINS/SENSERVCONN.DEF
+#else 
+  DEFFILE ../BMARM/SENSERVCONN.DEF
+#endif
+
+SMPSAFE
+

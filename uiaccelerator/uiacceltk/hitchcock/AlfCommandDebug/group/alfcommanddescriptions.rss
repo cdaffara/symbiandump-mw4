@@ -1,0 +1,774 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Resource definitions for project ?myapp
+ *
+*/
+
+
+
+NAME ALFR
+
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <huiwscanvascommands.h>
+#include <alfbridgecommands.h>
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=""; }
+
+// ---------------------------------------------------------------------------
+// ?resource_name
+// ?description
+// ---------------------------------------------------------------------------
+//
+STRUCT ALF_COMMAND_DESCRIPTIONS_ARRAY
+    {
+    STRUCT alf_command_description[];
+    }
+
+// ---------------------------------------------------------------------------
+// ?resource_name
+// ?description
+// ---------------------------------------------------------------------------
+//
+STRUCT ALF_COMMAND_DESCRIPTION
+    {
+    BYTE command = 0;
+    LTEXT description;
+    }
+
+// ---------------------------------------------------------------------------
+// r_alf_command_description_array
+// Contains names enums in TSgcCanvasCommands (huiwscanvascommands.h)
+// ---------------------------------------------------------------------------
+//
+RESOURCE ALF_COMMAND_DESCRIPTIONS_ARRAY r_alf_command_description_array
+    {
+    alf_command_description = 
+    {
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSendSyncDataBlock;
+                description = "EAlfSendSyncDataBlock";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawCommandsStart;
+                description = "EAlfDrawCommandsStart";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfCommandEndMarker;
+                description = "EAlfCommandEndMarker";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSendEndMarker;
+                description = "EAlfSendEndMarker";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfBitBlt;
+                description = "EAlfBitBlt";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfBitBltRect;
+                description = "EAlfBitBltRect";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfBitBltMasked;
+                description = "EAlfBitBltMasked";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfBitBltMaskedPoint;
+                description = "EAlfBitBltMaskedPoint";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfCombinedBitBlitMasked;
+                description = "EAlfCombinedBitBlitMasked";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfResetClippingRegion;
+                description = "EAlfResetClippingRegion";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfClear;
+                description = "EAlfClear";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfClearRect;
+                description = "EAlfClearRect";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfResetBrushPattern;
+                description = "EAlfResetBrushPattern";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfResetFont;
+                description = "EAlfResetFont";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawArc;
+                description = "EAlfDrawArc";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawPie;
+                description = "EAlfDrawPie";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawBitmap1;
+                description = "EAlfDrawBitmap1";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawBitmap2;
+                description = "EAlfDrawBitmap2";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawBitmap3;
+                description = "EAlfDrawBitmap3";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawBitmapMasked;
+                description = "EAlfDrawBitmapMasked";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawRoundRect;
+                description = "EAlfDrawRoundRect";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawPolyLine;
+                description = "EAlfDrawPolyLine";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawPolyLineNoEndPoint;
+                description = "EAlfDrawPolyLineNoEndPoint";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawPolygon;
+                description = "EAlfDrawPolygon";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawEllipse;
+                description = "EAlfDrawEllipse";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawLine;
+                description = "EAlfDrawLine";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawLineTo;
+                description = "EAlfDrawLineTo";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawLineBy;
+                description = "EAlfDrawLineBy";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawRect;
+                description = "EAlfDrawRect";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawText1;
+                description = "EAlfDrawText1";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawText2;
+                description = "EAlfDrawText2";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawText3;
+                description = "EAlfDrawText3";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawText4;
+                description = "EAlfDrawText4";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawText5;
+                description = "EAlfDrawText5";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawTextVertical1;
+                description = "EAlfDrawTextVertical1";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawTextVertical2;
+                description = "EAlfDrawTextVertical2";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawTextVertical3;
+                description = "EAlfDrawTextVertical3";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawTextVertical4;
+                description = "EAlfDrawTextVertical4";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawTextVertical5;
+                description = "EAlfDrawTextVertical5";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfMoveTo;
+                description = "EAlfMoveTo";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfMoveBy;
+                description = "EAlfMoveBy";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfPlot;
+                description = "EAlfPlot";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfReset;
+                description = "EAlfReset";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetBrushColor;
+                description = "EAlfSetBrushColor";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetBrushOrigin;
+                description = "EAlfSetBrushOrigin";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetBrushStyle;
+                description = "EAlfSetBrushStyle";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetClippingRegion;
+                description = "EAlfSetClippingRegion";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetDrawMode;
+                description = "EAlfSetDrawMode";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetOrigin;
+                description = "EAlfSetOrigin";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetPenColor;
+                description = "EAlfSetPenColor";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetPenStyle;
+                description = "EAlfSetPenStyle";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetPenSize;
+                description = "EAlfSetPenSize";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetTextShadowColor;
+                description = "EAlfSetTextShadowColor";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetCharJustification;
+                description = "EAlfSetCharJustification";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetWordJustification;
+                description = "EAlfSetWordJustification";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetUnderlineStyle;
+                description = "EAlfSetUnderlineStyle";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetStrikethroughStyle;
+                description = "EAlfSetStrikethroughStyle";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetBrushPattern;
+                description = "EAlfSetBrushPattern";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetBrushPattern2;
+                description = "EAlfSetBrushPattern2";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetFont;
+                description = "EAlfSetFont";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfCopyRect;
+                description = "EAlfCopyRect";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfUpdateJustification;
+                description = "EAlfUpdateJustification";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfUpdateJustificationVertical;
+                description = "EAlfUpdateJustificationVertical";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetFontNoDuplicate;
+                description = "EAlfSetFontNoDuplicate";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfHasBrushPattern;
+                description = "EAlfHasBrushPattern";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfHasFont;
+                description = "EAlfHasFont";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfBrushColor;
+                description = "EAlfBrushColor";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfPenColor;
+                description = "EAlfPenColor";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfTextShadowColor;
+                description = "EAlfTextShadowColor";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfCopySettings;
+                description = "EAlfCopySettings";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetClippingRect;
+                description = "EAlfSetClippingRect";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfCancelClippingRect;
+                description = "EAlfCancelClippingRect";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetFaded;
+                description = "EAlfSetFaded";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetFadingParameters;
+                description = "EAlfSetFadingParameters";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfFadeArea;
+                description = "EAlfFadeArea";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfMapColors;
+                description = "EAlfMapColors";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetUserDisplayMode;
+                description = "EAlfSetUserDisplayMode";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfUseFont;
+                description = "EAlfUseFont";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetUpdateRegion;
+                description = "EAlfSetUpdateRegion";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfPacketReady;
+                description = "EAlfPacketReady";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfPacketNotReady;
+                description = "EAlfPacketNotReady";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfPacketPadding;
+                description = "EAlfPacketPadding";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDrawCommandsEnd;
+                description = "EAlfDrawCommandsEnd";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetWindowId;
+                description = "EAlfSetWindowId";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfWindowInactivateWindow;
+                description = "EAlfWindowInactivateWindow";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfWrap;
+                description = "EAlfWrap";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetShapeRegion;
+                description = "EAlfSetShapeRegion";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfSetExtent;
+                description = "EAlfSetExtent";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeCreated;
+                description = "EAlfNodeCreated";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeReleased;
+                description = "EAlfNodeReleased";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeActivated;
+                description = "EAlfNodeActivated";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeExtentChanged;
+                description = "EAlfNodeExtentChanged";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeSiblingOrderChanged;
+                description = "EAlfNodeSiblingOrderChanged";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeFlagChanged;
+                description = "EAlfNodeFlagChanged";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeAttributeChanged;
+                description = "EAlfNodeAttributeChanged";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeFadeCountChanged;
+                description = "EAlfNodeFadeCountChanged";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeTransparentRegionChanged;
+                description = "EAlfNodeTransparentRegionChanged";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeLayerAdded;
+                description = "EAlfNodeLayerAdded";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeMovedToWindowGroup;
+                description = "EAlfNodeMovedToWindowGroup";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeWindowGroupChained;
+                description = "EAlfNodeWindowGroupChained";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeWindowGroupChainBrokenAfter;
+                description = "EAlfNodeWindowGroupChainBrokenAfter";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfCommandNotInitialized;
+                description = "EAlfCommandNotInitialized";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfCommitBatch;
+                description = "EAlfCommitBatch";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfFrameContainsUnsupportedCommands;
+                description = "EAlfFrameContainsUnsupportedCommands";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDebugTrackNode;
+                description = "EAlfDebugTrackNode";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfNodeLayerExtentChanged;
+                description = "EAlfNodeLayerExtentChanged";
+                }    
+     };
+    }
+
+// ---------------------------------------------------------------------------
+// r_alf_bridge_command_description_array
+// Contains names enums in TAlfDecoderServerBindings (alfbridgecommands.h)
+// ---------------------------------------------------------------------------
+//    
+RESOURCE ALF_COMMAND_DESCRIPTIONS_ARRAY r_alf_bridge_command_description_array
+    {
+    alf_command_description = 
+            {
+            
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSNewWindow;
+                description = "EAlfDSNewWindow";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSDestroyWindow;
+                description = "EAlfDSDestroyWindow";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetWindowPos;
+                description = "EAlfDSSetWindowPos";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetWindowSize;
+                description = "EAlfDSSetWindowSize";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetWindowRotation;
+                description = "EAlfDSSetWindowRotation";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetWindowOpacity;
+                description = "EAlfDSSetWindowOpacity";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSRefreshCallback;
+                description = "EAlfDSRefreshCallback";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDsUpdateTexture;
+                description = "EAlfDsUpdateTexture";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSReorder;
+                description = "EAlfDSReorder";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetWindowActive;
+                description = "EAlfDSSetWindowActive";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSPostCanvasBuffer;
+                description = "EAlfDSPostCanvasBuffer";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetCursorData;
+                description = "EAlfDSSetCursorData";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetSurfaceExtent;
+                description = "EAlfDSSetSurfaceExtent";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSGroupChained;
+                description = "EAlfDSGroupChained";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSGroupChainBroken;
+                description = "EAlfDSGroupChainBroken";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSMoveWindowToNewGroup;
+                description = "EAlfDSMoveWindowToNewGroup";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSCreateNewDisplay;
+                description = "EAlfDSCreateNewDisplay";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSDestroyDisplay;
+                description = "EAlfDSDestroyDisplay";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSRequestCommandsStart;
+                description = "EAlfDSRequestCommandsStart";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfRequestWrap;
+                description = "EAlfRequestWrap";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetNodeTracking;
+                description = "EAlfDSSetNodeTracking";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfRequestCommitBatch;
+                description = "EAlfRequestCommitBatch";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfRequestCommandReadNotification;
+                description = "EAlfRequestCommandReadNotification";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSRequestCommandsEnd;
+                description = "EAlfDSRequestCommandsEnd";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSGetAlfNativeWindowData;
+                description = "EAlfDSGetAlfNativeWindowData";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSGetCommandsEnd;
+                description = "EAlfDSGetCommandsEnd";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfEffectFx;
+                description = "EAlfEffectFx";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfStopEffectFx;
+                description = "EAlfStopEffectFx";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfControlEffectFx;
+                description = "EAlfControlEffectFx";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetCapturingBitmap;
+                description = "EAlfDSSetCapturingBitmap";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfDSSetCoveringBitmap;
+                description = "EAlfDSSetCoveringBitmap";
+                },
+            ALF_COMMAND_DESCRIPTION
+                {
+                command = EAlfReleaseTemporaryChunk;
+                description = "EAlfReleaseTemporaryChunk";
+                },
+	        ALF_COMMAND_DESCRIPTION
+                {
+                command = KUnInitialized;
+                description = "KUnInitialized";
+                }
+           };
+    }
+        
+
+    

@@ -1,0 +1,4 @@
+EXPORTS
+	_ZN19CSenConnAgentServer4OpenEv @ 1 NONAME
+	_ZN19CSenConnAgentServer5CloseEv @ 2 NONAME
+

@@ -1,0 +1,15 @@
+EXPORTS
+	?URLList@SmfCredMgrClient@@QBE?AV?$QList@VQUrl@@@@VQString@@@Z @ 1 NONAME ; class QList<class QUrl> SmfCredMgrClient::URLList(class QString) const
+	?StoreRSAKeys@SmfCredMgrClient@@QAE?AVQString@@V2@0VQDateTime@@@Z @ 2 NONAME ; class QString SmfCredMgrClient::StoreRSAKeys(class QString, class QString, class QDateTime)
+	?DeleteRSAKey@SmfCredMgrClient@@QAEXVQString@@@Z @ 3 NONAME ; void SmfCredMgrClient::DeleteRSAKey(class QString)
+	?CheckPluginAuthentication@SmfCredMgrClient@@QBE_NVQString@@@Z @ 4 NONAME ; bool SmfCredMgrClient::CheckPluginAuthentication(class QString) const
+	??_ESmfCredMgrClient@@UAE@I@Z @ 5 NONAME ; SmfCredMgrClient::~SmfCredMgrClient(unsigned int)
+	?SignMessage@SmfCredMgrClient@@QAE?AW4SMFCredMgrErrorCode@@VQString@@0AAV3@W4SmfSignatureMethod@@@Z @ 6 NONAME ; enum SMFCredMgrErrorCode SmfCredMgrClient::SignMessage(class QString, class QString, class QString &, enum SmfSignatureMethod)
+	?AuthenticatedPluginList@SmfCredMgrClient@@QBE?AVQStringList@@VQString@@@Z @ 7 NONAME ; class QStringList SmfCredMgrClient::AuthenticatedPluginList(class QString) const
+	?AuthDataSet@SmfCredMgrClient@@QBE_NVQString@@VQDateTime@@AAV?$QMap@VQByteArray@@V1@@@@Z @ 8 NONAME ; bool SmfCredMgrClient::AuthDataSet(class QString, class QDateTime, class QMap<class QByteArray, class QByteArray> &) const
+	??1SmfCredMgrClient@@UAE@XZ @ 9 NONAME ; SmfCredMgrClient::~SmfCredMgrClient(void)
+	?ChangePluginIDList@SmfCredMgrClient@@QAEXVQString@@_N0@Z @ 10 NONAME ; void SmfCredMgrClient::ChangePluginIDList(class QString, bool, class QString)
+	?StoreAuthData@SmfCredMgrClient@@QAE?AVQString@@V?$QMap@VQByteArray@@V1@@@VQDateTime@@V?$QList@VQUrl@@@@VQStringList@@V2@_N@Z @ 11 NONAME ; class QString SmfCredMgrClient::StoreAuthData(class QMap<class QByteArray, class QByteArray>, class QDateTime, class QList<class QUrl>, class QStringList, class QString, bool)
+	??0SmfCredMgrClient@@QAE@PAVQObject@@@Z @ 12 NONAME ; SmfCredMgrClient::SmfCredMgrClient(class QObject *)
+	?GenerateNONCE@SmfCredMgrClient@@QAE?AVQString@@_J@Z @ 13 NONAME ; class QString SmfCredMgrClient::GenerateNONCE(long long)
+

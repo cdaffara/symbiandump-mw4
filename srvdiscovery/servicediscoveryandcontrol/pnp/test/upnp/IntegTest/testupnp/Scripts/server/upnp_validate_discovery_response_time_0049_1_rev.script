@@ -1,0 +1,43 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_validate_discovery_response_time_0049_1.script
+//! @SYMTestSuiteName	multiple_machines_server 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_server 
+
+LOAD_SUITE multiple_machines_server
+LOAD_SUITE test_synchronize_server
+
+START_TESTCASE	upnp_validate_discovery_response_time_0049_1
+//! @file					
+//! @SYMTestCaseID			UPNP - POS – 0049
+//! @SYMTestCaseDesc 		Service Point must wait for a random period of time between 0 seconds and the number of seconds specified in the MX ( <= 120 ) 
+//! 						header before sending response for a discovery request.
+//! @SYMREQ 				REQ8614 REQ8615
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Start one service point in UPnP enabled network.
+//! 						2.	Join a control point in the UPnP enabled network and issue a discovery request with ST:ssdp:root 
+//! 						3.	Service Point must wait for a random period of time between 0 seconds and the number of seconds specified in the MX (<= 120) header before sending response
+//! 						4.	MX header value must be less than or equal to 120. If it exceeds 120 seconds then Service point chooses to wait between 0 to 120 seconds before responding.
+//! @SYMTestExpectedResults		Service Point must wait for a random period of time between 0 seconds and the number of seconds specified in the MX (<=120) header before sending response.
+//! @SYMTestType 			CIT
+
+RUN_TEST_STEP 1000 test_synchronize_server TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini serverdata
+RUN_TEST_STEP 500  multiple_machines_server TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\discovery_0049_rev.ini upnp_validate_discovery_response_time_0049_1_rev_server
+
+END_TESTCASE	upnp_validate_discovery_response_time_0049_1

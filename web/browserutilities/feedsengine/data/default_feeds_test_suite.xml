@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <body>
+  <outline text="Top 40">
+   <outline text="Slashdot" xmlUrl="http://rss.slashdot.org/Slashdot/slashdot"/>
+   <outline text="Moreover - moreover..." xmlUrl="http://p.moreover.com/cgi-local/page?index_bookreviews+rss"/>
+   <outline text="Wired News" xmlUrl="http://www.wired.com/news_drop/netcenter/netcenter.rdf"/>
+   <outline text="Boing Boing Blog" xmlUrl="http://boingboing.net/rss.xml"/>
+   <outline text="The Register" xmlUrl="http://www.theregister.co.uk/tonys/slashdot.rdf"/>
+   <outline text="Le Monde : Aujourd hui" xmlUrl="http://www.lemonde.fr/rss/sequence/0,2-3244,1-0,0.xml"/>
+   <outline text="kuro5hin.org" xmlUrl="http://www.kuro5hin.org/backend.rdf"/>
+   <outline text="Yenra News" xmlUrl="http://www.yenra.com/headlines.xml"/>
+   <outline text="Poker" xmlUrl="http://www.gambling-poker.com/blog_site_feed.xml"/>
+   <outline text="MrSwing's Free Daily Swing and Day Trading Education" xmlUrl="http://www.mrswing.com/articles.xml"/>
+   <outline text="Scitech Daily, Analysis and Opinions" xmlUrl="http://aurig.us/scitechdaily_analysis.rss"/>
+   <outline text="Slashdot:" xmlUrl="http://slashdot.org/slashdot.rss"/>
+   <outline text="CNN Top News:" xmlUrl="http://rss.cnn.com/rss/cnn_tech.rss"/>
+   <outline text="Poker Gazette" xmlUrl="http://www.pokergazette.com/simpnews/rss_news.php?category=1"/>
+   <outline text="Moreover - Newsweek" xmlUrl="http://p.moreover.com/cgi-local/page?o=rss&amp;s=Newsweek"/>
+   <outline text="ShoppingBlog.com" xmlUrl="http://www.shoppingblog.com/rss.xml"/>
+   <outline text="vim at Yahoo! Groups" xmlUrl="http://rss.groups.yahoo.com/group/vim/rss"/>
+   <outline text="Google sports" xmlUrl="http://news.google.com/nwshp?tab=wn&amp;ned=us&amp;topic=s&amp;output=rss"/>
+   <outline text="Google news/world" xmlUrl="http://news.google.com/nwshp?tab=wn&amp;ned=us&amp;topic=w&amp;output=rss"/>   
+   <outline text="Stephen Hebditch &gt; Blog" xmlUrl="http://www.hebditch.org/index.rdf"/>
+   <outline text="feedburner ATOM" xmlUrl="http://feeds.feedburner.com/APrGurusMusings"/>
+   <outline text="Chordata ATOM" xmlUrl="http://atompub.org/blog/index.atom"/>
+   <outline text="Atomenable ATOM" xmlUrl="http://www.atomenabled.org/atom.xml"/>
+   <outline text="Aspectwear ATOM" xmlUrl="http://www.aspectwear.co.uk/atom.xml"/>
+   <outline text="Roller Blogger ATOM" xmlUrl="http://rollerweblogger.org/flavor/roller?flavor=atom"/>
+   <outline text="Interwingly ATOM" xmlUrl="http://www.intertwingly.net/blog/index.atom"/>
+   <outline text="Sixlegs ATOM" xmlUrl="http://sixlegs.com/blog/atom.xml"/>
+   <outline text="JPN ATOM" xmlUrl="http://jpn.icicom.up.pt/xml/noticias.xml"/>
+   <outline text="Sigmon ATOM" xmlUrl="http://www.simongbrown.com/blog/atom.xml"/>
+   <outline text="Google Technology ATOM" xmlUrl="http://news.google.com/?ned=us&amp;topic=t&amp;output=atom"/>
+   <outline text="Google Sports ATOM" xmlUrl="http://news.google.com/?ned=us&amp;topic=m&amp;output=atom"/>
+   <outline text="Google Business ATOM" xmlUrl="http://news.google.com/?ned=us&amp;topic=b&amp;output=atom"/>
+   <outline text="Google Groups ATOM" xmlUrl="http://groups.google.com/group/atom-owl/feed/atom_v1_0_topics.xml"/>
+   <outline text="Drinka ATOM" xmlUrl="http://www.drinkatwork.com/ml_atom.xml"/>
+   <outline text="SportsStock ATOM" xmlUrl="http://sportsstock.blogspot.com/atom.xml"/>
+   <outline text="BlogSpot Atom" xmlUrl="http://other-eighty.blogspot.com/atom.xml"/>
+   <outline text="Blog Spot 2 ATOM " xmlUrl="http://medianation.blogspot.com/atom.xml"/>
+   <outline text="UK Airport-Parking ATOM" xmlUrl="http://www.airport-parking-guide.co.uk/parkingnews/atom.xml"/>
+   <outline text="Satire IR ATOM" xmlUrl="http://satireireland.blogspot.com/atom.xml"/>
+   <outline text="Sloantech ATOM" xmlUrl="http://sloantech.blogspot.com/atom.xml"/>
+  </outline>
+  <outline text="RSS Functional">
+   <outline text="RSS 2.0">
+    <outline text="only rss element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/onlyrss.xml"/>
+    <outline text="rss and channel elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_channel.xml"/>
+    <outline text="rss and channel elements with title element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_title.xml"/>
+    <outline text="rss version element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_version.xml"/>
+    <outline text="rss link element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_link.xml"/>
+    <outline text="rss description element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_desc.xml"/>
+    <outline text="rss copyright and language elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_copyrightlang.xml"/>
+    <outline text="rss image element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_image.xml"/>
+    <outline text="rss empty item element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemempty.xml"/>
+    <outline text="rss item title element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemtitle.xml"/>
+    <outline text="rss item and link elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemlink.xml"/>
+    <outline text="rss item, link, and description elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemdescription.xml"/>
+    <outline text="rss item element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_item.xml"/>
+    <outline text="rss multiple items" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemmulti.xml"/>
+    <outline text="rss nested items" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemnested.xml"/>
+    <outline text="rss nested items2" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemnested2.xml"/>
+    <outline text="rss nested items3" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemnested3.xml"/>
+    <outline text="rss item element only" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemonly.xml"/>
+    <outline text="rss item element no channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_itemnochannel.xml"/>
+    <outline text="rss dc module" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_dc.xml"/>
+    <outline text="rss desc html" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_desc_html.xml"/>
+    <outline text="rss desc cdata" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_cdata.xml"/>
+    <outline text="rss utf8" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_utf8_encoded.xml"/>
+    <outline text="rss Unicode bigendian" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_cyrillic_encoded.xml"/>
+    <outline text="rss character entity amp" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_entity_amp.xml"/>
+    <outline text="rss character entity lessthan" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_entity_lt.xml"/>
+    <outline text="rss character entity greaterthan" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_entity_gt.xml"/>
+    <outline text="rss character entity quot" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_entity_quot.xml"/>
+    <outline text="rss character entity reference" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_entity_ref.xml"/>
+    <outline text="rss character entity uppercase" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/rss_entity_case.xml"/>
+    <outline text="rss enclosure" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/enclosure_rss.xml"/>
+    <outline text="pubDate" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_2.0/pubDate_rss.xml"/>
+   </outline>
+
+   <outline text="RSS 1.0">
+    <outline text="only rdf element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/rdf_only.xml"/>
+    <outline text="channel element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/channel.xml"/>
+    <outline text="channel element with no sub elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/channel_empty.xml"/>
+    <outline text="channel element with no title" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/channel_no_title.xml"/>
+    <outline text="channel element with no link" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/channel_no_link.xml"/>
+    <outline text="channel element with no description" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/channel_no_description.xml"/>
+    <outline text="rdf element with items" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/rdf_item.xml"/>
+    <outline text="item element with no sub elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/item_empty.xml"/>
+    <outline text="item reference is not in channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/item_not_in_channel.xml"/>
+    <outline text="character entities when doctype exists" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/character_entities_with_doctype.xml"/>
+    <outline text="character entities when doctype does not exists" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/character_entities_without_doctype.xml"/>
+    <outline text="channel url is not unique in the document" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/channel_url_not_unique.xml"/>
+    <outline text="image element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/rdf_image.xml"/>
+    <outline text="image element without title" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/image_no_title.xml"/>
+    <outline text="image element without url" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/image_no_url.xml"/>
+    <outline text="image element without link" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/image_no_link.xml"/>
+    <outline text="image is not in channel element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/image_not_in_channel.xml"/>
+    <outline text="document with no xml header" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/no_xml_header.xml"/>
+    <outline text="document with doctype" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/doctype.xml"/>
+    <outline text="item element without title" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/item_no_title.xml"/>
+    <outline text="item element without link" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/item_no_link.xml"/>
+    <outline text="items with same uri" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/items_with_same_item_uri.xml"/>
+    <outline text="multiple item elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/item_multiple.xml"/>
+    <outline text="file extension rdf" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/file_extension_rdf.rdf"/>
+    <outline text="encoding usascii" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/encoding_usascii.xml"/>
+    <outline text="encoding utf8" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/encoding_utf8.xml"/>
+    <outline text="https scheme link element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/https_link.xml"/>
+    <outline text="https scheme url element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/https_url.xml"/>
+    <outline text="rdf with no item element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/rdf_no_item.xml"/>
+    <outline text="textinput element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/textinput.xml"/>
+    <outline text="whitespace before link" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/whitespace_before_link.xml"/>
+    <outline text="whitespace before url" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/whitespace_before_url.xml"/>
+    <outline text="dc title with channel element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/title_with_channel.xml"/>
+    <outline text="dc creator with channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/creator_with_channel.xml"/>
+    <outline text="dc description with channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/description_with_channel.xml"/>
+    <outline text="dc publisher with channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/publisher_with_channel.xml"/>
+    <outline text="dc date with channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/date_with_channel.xml"/>
+    <outline text="dc type with channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/type_with_channel.xml"/>
+    <outline text="dc format with channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/format_with_channel.xml"/>
+    <outline text="dc language with channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/language_with_channel.xml"/>
+    <outline text="dc rights with channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/rights_with_channel.xml"/>
+    <outline text="multiple dc items with channel" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/multiple_with_channel.xml"/>
+    <outline text="multiple dc items with item" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_1.0/dc/multiple_with_item.xml"/>
+   </outline>
+   <outline text="RSS 0.92">
+    <outline text="document with rss version 0.92" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/rss_version_92.xml"/>
+   </outline>
+   <outline text="RSS 0.91">
+    <outline text="channel element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/channel_91.xml"/>
+    <outline text="channel element without link" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/channel_no_link_91.xml"/>
+    <outline text="channel element with image" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/channel_image_91.xml"/>
+    <outline text="image element with description" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/channel_image_description_91.xml"/>
+    <outline text="image element with size" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/channel_image_size_91.xml"/>
+    <outline text="item element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/item_91.xml"/>
+    <outline text="item without title" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/item_no_title_91.xml"/>
+    <outline text="rss with multiple item elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/rss_multiple_91.xml"/>
+    <outline text="https with link element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/https_link_91.xml"/>
+    <outline text="https with url element" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/https_url_91.xml"/>
+   </outline>
+   <outline text="RSS 0.90">
+    <outline text="document with rss version 0.90" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_rss_others/rss_version_90.rdf"/>
+   </outline>
+  </outline>
+  <outline text="Atom Functional">
+   <outline text="1.1_basic" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/1.1/basic_feed.xml"/>
+   <outline text="1.1_extensive_no_errors" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/1.1/extensive_no_errors.xml"/>
+   <outline text="1.1_extensive_no_warnings" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/1.1/extensive_no_warnings.xml"/>
+   <outline text="1.2_incorrect_namespace" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/1.2/incorrect_namespace.xml"/>
+   <outline text="1.2_no_namespace" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/1.2/no_namespace.xml"/>
+   <outline text="2.0_xml_lang" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/2.0/xml_lang.xml"/>
+   <outline text="2.0_invalid_xml_lang" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/2.0/invalid_xml_lang.xml"/>
+   <outline text="2.0_xml_base" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/2.0/xml_base.xml"/>
+   <outline text="2.0_invalid_xml_base" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/2.0/invalid_xml_base.xml"/>
+   <outline text="2.0_entry_with_no_feed" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/2.0/entry_with_no_feed.xml"/>
+   <outline text="3.1_summary_with_escapedHtml" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/3.1/summary_with_escapedHtml.xml"/>
+   <outline text="3.1_summary_with_unsupported_type" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/3.1/summary_with_unsupported_type.xml"/>
+   <outline text="3.3_Date_test_1" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/3.3/Date_test_1.xml"/>
+   <outline text="3.3_Date_test_2" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/3.3/Date_test_2.xml"/>
+   <outline text="3.3_Date_test_3" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/3.3/Date_test_3.xml"/>
+   <outline text="3.3_Date_test_4" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/3.3/Date_test_4.xml"/>
+   <outline text="3.3_Date_test_5" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/3.3/Date_test_5.xml"/>
+   <outline text="3.3/Same_Time_Stamps" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/3.3/Same_Time_Stamps.xml"/>
+   <outline text="4.1.1_author_at_feed_only" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/author_at_feed_only.xml"/>
+   <outline text="4.1.1_author_at_entry_only" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/author_at_entry_only.xml"/>
+   <outline text="4.1.1_author_at_feed_and_entry" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/author_at_feed_and_entry.xml"/>
+   <outline text="4.1.1_multiple_categories" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_categories.xml"/>
+   <outline text="4.1.1_multiple_contributors" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_contributors.xml"/>
+   <outline text="4.1.1_multiple_generators" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_generators.xml"/>
+   <outline text="4.1.1_multiple_icons" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_icons.xml"/>
+   <outline text="4.1.1_multiple_logos" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_logos.xml"/>
+   <outline text="4.1.1_multiple_ids" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_ids.xml"/>
+   <outline text="4.1.1_link_with_self" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/link_with_self.xml"/>
+   <outline text="4.1.1_link_with_same_type_hreflang" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/link_with_same_type_hreflang.xml"/>
+   <outline text="4.1.1_multiple_link_elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_link_elements.xml"/>
+   <outline text="4.1.1_multiple_rights" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_rights.xml"/>
+   <outline text="4.1.1_multiple_subtitles" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_subtitles.xml"/>
+   <outline text="4.1.1_no_title" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/no_title.xml"/>
+   <outline text="4.1.1_multiple_titles.xml" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_titles.xml"/>
+   <outline text="4.1.1_multiple_updated" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/multiple_updated.xml"/>
+   <outline text="4.1.1_duplicate_entries" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1/duplicate_entries.xml"/>
+   <outline text="4.1.1.1_empty_content" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1.1/empty_content.xml"/>
+   <outline text="4.1.1.1_empty_title" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1.1/empty_title.xml"/>
+   <outline text="4.1.1.1_no_summary_no_content" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.1.1/no_summary_no_content.xml"/>
+   <outline text="4.1.2_entry_source_author" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/entry_source_author.xml"/>
+   <outline text="4.1.2_multiple_category" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_category.xml"/>
+   <outline text="4.1.2_multiple_content" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_content.xml"/>
+   <outline text="4.1.2_multiple_contributors" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_contributors.xml"/>
+   <outline text="4.1.2_multiple_ids" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_ids.xml"/>
+   <outline text="4.1.2_no_content_with_link" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/no_content_with_link.xml"/>
+   <outline text="4.1.2_link_same_type_hreflang" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/link_same_type_hreflang.xml"/>
+   <outline text="4.1.2_multiple_link_elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_link_elements.xml"/>
+   <outline text="4.1.2_multiple_published" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_published.xml"/>
+   <outline text="4.1.2_multiple_rights" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_rights.xml"/>
+   <outline text="4.1.2_multiple_source" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_source.xml"/>
+   <outline text="4.1.2_content_with_src" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/content_with_src.xml"/>
+   <outline text="4.1.2_content_with_src_no_summary" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/content_with_src_no_summary.xml"/>
+   <outline text="4.1.2_multiple_summary" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_summary.xml"/>
+   <outline text="4.1.2_no_title_entry" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/no_title_entry.xml"/>
+   <outline text="4.1.2_multiple_titles" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_titles.xml"/>
+   <outline text="4.1.2_multiple_updated" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.2/multiple_updated.xml"/>
+   <outline text="4.1.3.1_type_html" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.1/type_html.xml"/>
+   <outline text="4.1.3.1_type_text" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.1/type_text.xml"/>
+   <outline text="4.1.3.1_type_xhtml.xml" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.1/type_xhtml.xml"/>
+   <outline text="4.1.3.1_type_xml" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.1/type_xml.xml"/>
+   <outline text="4.1.3.1_type_text_html" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.1/type_text_html.xml"/>
+   <outline text="4.1.3.1_type_multipart_alternative" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.1/type_multipart_alternative.xml"/>
+   <outline text="4.1.3.2_content_src_invalid_iri" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.2/content_src_invalid_iri.xml"/>
+   <outline text="4.1.3.2_content_src_no_type" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.2/content_src_no_type.xml"/>
+   <outline text="4.1.3.2_content_src_type_html" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.2/content_src_type_html.xml"/>
+   <outline text="4.1.3.2_content_src_type_text" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.2/content_src_type_text.xml"/>
+   <outline text="4.1.3.2_content_src_type_xhtml" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.2/content_src_type_xhtml.xml"/>
+   <outline text="4.1.3.3_content_html_with_children" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.3/content_html_with_children.xml"/>
+   <outline text="4.1.3.3_content_no_type_escaped_html" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.3/content_no_type_escaped_html.xml"/>
+   <outline text="4.1.3.3_content_no_type_with_children" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.3/content_no_type_with_children.xml"/>
+   <outline text="4.1.3.3_content_text_with_children" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.3/content_text_with_children.xml"/>
+   <outline text="4.1.3.3_content_xhtml_no_xhtml_div" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.3/content_xhtml_no_xhtml_div.xml"/>
+   <outline text="4.1.3.3_content_xhtml_text_children" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/4.1.3.3/content_xhtml_text_children.xml"/>
+   <outline text="atom_table_in_content" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/html_in_Feeds_View/atom_table_in_content.xml"/>
+   <outline text="atom_image_in_content" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/html_in_Feeds_View/atom_image_in_content.xml"/>
+   <outline text="atom_form_elements" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/html_in_Feeds_View/atom_form_elements.xml"/>
+   <outline text="atom_headings_in_content" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/html_in_Feeds_View/atom_headings_in_content.xml"/>
+   <outline text="atom_css_internal" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/html_in_Feeds_View/atom_css_internal.xml"/>
+   <outline text="atom_css_external" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/html_in_Feeds_View/atom_css_external.xml"/>
+   <outline text="enclosure_single" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/enclosure/enclosure_single.xml"/>
+   <outline text="enclosure_multiple" xmlUrl="http://waplabdc.nokia-boston.com/browser/users/rss/feeds_atom_1.0/enclosure/enclosure_multiple.xml"/>
+  </outline>
+ </body>
+</opml>

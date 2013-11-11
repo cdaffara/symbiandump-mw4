@@ -1,0 +1,29 @@
+/*
+* =============================================================================
+*  Name        : wrtharvesterResources.iby
+*  Part of     :  
+*  Description : The resource iby file contains resource that needs to be  
+*                localized for wrtharvester
+*  Version     : %version: 1 % 
+*
+*  Copyright (c) 2009 Nokia.  All rights reserved.
+*  This material, including documentation and any related computer
+*  programs, is protected by copyright controlled by Nokia.  All
+*  rights are reserved.  Copying, including reproducing, storing,
+*  adapting or translating, any or all of this material requires the
+*  prior written consent of Nokia.  This material also contains
+*  confidential information which may not be disclosed to others
+*  without the prior written consent of Nokia.
+* ============================================================================
+*/
+
+#ifndef WRTHARVESTERRESOURCES_IBY
+#define WRTHARVESTERRESOURCES_IBY
+
+#include <platform/mw/Browser_platform_variant.hrh>
+
+#ifdef BRDO_WRT_HS_FF
+data=ZRESOURCE\wrtharvester.rsc		RESOURCE_FILES_DIR\wrtharvester.rsc
+#endif
+
+#endif // WRTHARVESTERRESOURCES_IBY

@@ -1,0 +1,36 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Highlevel bld.inf 
+*
+*/
+
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+/*
+*   Order is important
+*/
+
+#ifdef BRDO_LIW_FF
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../rom/Device.iby               CORE_MW_LAYER_IBY_EXPORT_PATH(Device.iby)
+
+PRJ_MMPFILES
+Device.mmp
+
+PRJ_TESTMMPFILES
+#endif

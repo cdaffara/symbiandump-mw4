@@ -1,0 +1,65 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+OPTION_REPLACE  ARMCC --arm -O3 -Otime --cpu 6
+#include <platform_paths.hrh>
+
+#include "NVGDecoder.mmh"
+
+TARGET			NVGDecoder_SW.dll
+TARGETTYPE		dll
+MACRO __MIRROR_
+UID				0x1000008D 0x101FF572
+
+VENDORID    VID_DEFAULT
+CAPABILITY  CAP_GENERAL_DLL
+
+LANG            SC
+
+
+USERINCLUDE		../inc
+USERINCLUDE		../../VGRenderer/PseudoVG/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+SYSTEMINCLUDE /epoc32/include/libc
+SYSTEMINCLUDE /epoc32/include/VG
+SYSTEMINCLUDE /epoc32/include/platform/mw
+SYSTEMINCLUDE /epoc32/include/platform/vg
+
+LIBRARY		   euser.lib
+LIBRARY 	   fbscli.lib
+LIBRARY 	   libopenvg_SW.lib libopenvgu_SW.lib
+LIBRARY		   efsrv.lib 
+LIBRARY		   estor.lib
+LIBRARY        aknnotify.lib
+LIBRARY        libc.lib libm.lib
+LIBRARY 	   flogger.lib
+
+
+SOURCEPATH ../src
+SOURCE  NVGIconData.cpp 
+SOURCE  NVGCSIcon.cpp
+SOURCE  NVGTLVIcon.cpp
+SOURCE	nvg.cpp
+SOURCE  nvgfittoviewbox.cpp
+SOURCE  OpenVGHandleStore.cpp
+SOURCE  FloatFixPt.cpp
+SOURCE  TLVRenderer.cpp 
+SOURCE  TLVIconCreator.cpp 
+SOURCE  TLVIconRenderer.cpp 
+SOURCE  NVGIcon.cpp

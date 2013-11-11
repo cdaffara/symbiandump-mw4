@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="30af62d3676a09e6f1176b4318c6b02d" dataversion="2.0">
+  <name>PictBridge API</name>
+  <description>Offers methods to print using PictBridge</description>
+  <type>c++</type>
+  <collection>usbclasses</collection>
+  <libs>
+    <lib name="pictbridge.lib" />
+  </libs>
+  <release category="platform"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

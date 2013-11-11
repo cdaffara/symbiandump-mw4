@@ -1,0 +1,97 @@
+<layer name="uitools">
+  <module name="group_uitools">
+    <component name="group_uitools">
+      <unit unitID="uitools" mrp="" bldFile="&layer_real_source_path;\group" name="uitools" />
+    </component>
+  </module>
+  <module name="AknLayoutCompiler">
+    <component name="AknLayoutCompiler">
+      <unit unitID="uitools_AknLayoutCompiler" mrp="" filter="not_build" bldFile="&layer_real_source_path;\AknLayoutCompiler\group" name="AknLayoutCompiler" />
+    </component>
+  </module>
+  <module name="cdlcompiler">
+    <component name="cdlcompiler">
+      <unit unitID="uitools_cdlcompiler" mrp="" filter="not_build" bldFile="&layer_real_source_path;\cdlcompiler\group" name="cdlcompiler" />
+    </component>
+  </module>
+  <module name="cdlcompilertoolkit">
+    <component name="cdlcompilertoolkit">
+      <unit unitID="uitools_cdlcompilertoolkit" mrp="" filter="not_build" bldFile="&layer_real_source_path;\cdlcompilertoolkit\group" name="cdlcompilertoolkit" />
+    </component>
+  </module>
+  <module name="gfxtools">
+    <component name="gfxtools">
+      <unit unitID="uitools_gfxtools" mrp="" filter="not_build" bldFile="&layer_real_source_path;\gfxtools\group" name="gfxtools" />
+    </component>
+  </module>
+  <module name="Color">
+    <component name="Color">
+      <unit unitID="uitools_gfxtools_Color" mrp="" filter="not_build" bldFile="&layer_real_source_path;\gfxtools\Color\group" name="Color" />
+    </component>
+  </module>
+  <module name="gditools">
+    <component name="gditools">
+      <unit unitID="uitools_gfxtools_gditools" mrp="" filter="not_build" bldFile="&layer_real_source_path;\gfxtools\gditools\group" name="gditools" />
+    </component>
+  </module>
+  <module name="reszip">
+    <component name="reszip">
+      <unit unitID="uitools_reszip" mrp="" filter="not_build" bldFile="&layer_real_source_path;\reszip\group" name="reszip" />
+    </component>
+  </module>
+  <module name="skincompiler">
+    <component name="skincompiler">
+      <unit unitID="uitools_skincompiler" mrp="" filter="not_build" bldFile="&layer_real_source_path;\skincompiler\group" name="skincompiler" />
+    </component>
+  </module>
+  <module name="AknSkinDescCompiler">
+    <component name="AknSkinDescCompiler">
+      <unit unitID="uitools_skincompiler_AknSkinDescCompiler" mrp="" filter="not_build" bldFile="&layer_real_source_path;\skincompiler\AknSkinDescCompiler\group" name="AknSkinDescCompiler" />
+    </component>
+  </module>
+  <module name="toollibraries">
+    <component name="toollibraries">
+      <unit unitID="uitools_toollibraries" mrp="" filter="not_build" bldFile="&layer_real_source_path;\toollibraries\group" name="toollibraries" />
+    </component>
+  </module>
+  <module name="Arabica">
+    <component name="Arabica">
+      <unit unitID="uitools_toollibraries_Arabica" mrp="" filter="not_build" bldFile="&layer_real_source_path;\toollibraries\Arabica\group" name="Arabica" priority="150"/>
+    </component>
+  </module>
+  <module name="XercesC">
+    <component name="XercesC">
+      <unit unitID="uitools_toollibraries_XercesC" mrp="" filter="not_build" bldFile="&layer_real_source_path;\toollibraries\XercesC\group" name="XercesC" priority="150"/>
+    </component>
+  </module>
+  <module name="uitools_dom">
+    <component name="uitools_dom">
+      <unit unitID="uitools_uitools_dom" mrp="" filter="not_build" bldFile="&layer_real_source_path;\uitools_dom\group" name="uitools_dom" />
+    </component>
+  </module>
+  <module name="cdl_api">
+    <component name="cdl_api">
+      <unit unitID="uitools_uitools_dom_cdl_api" mrp="" filter="not_build" bldFile="&layer_real_source_path;\uitools_dom\cdl_api\group" name="cdl_api" />
+    </component>
+  </module>
+  <module name="layout_data_api">
+    <component name="layout_data_api">
+      <unit unitID="uitools_uitools_dom_layout_data_api" mrp="" filter="not_build" bldFile="&layer_real_source_path;\uitools_dom\layout_data_api\group" name="layout_data_api" />
+    </component>
+  </module>
+  <module name="layout_system_private_api">
+    <component name="layout_system_private_api">
+      <unit unitID="uitools_uitools_dom_layout_system_private_api" mrp="" filter="not_build" bldFile="&layer_real_source_path;\uitools_dom\layout_system_private_api\group" name="layout_system_private_api" />
+    </component>
+  </module>
+  <module name="uitools_sdk">
+    <component name="uitools_sdk">
+      <unit unitID="uitools_uitools_sdk" mrp="" filter="not_build" bldFile="&layer_real_source_path;\uitools_sdk\group" name="uitools_sdk" />
+    </component>
+  </module>
+  <module name="third_party_bitmap_palette_api">
+    <component name="third_party_bitmap_palette_api">
+      <unit unitID="uitools_uitools_sdk_third_party_bitmap_palette_api" mrp="" filter="not_build" bldFile="&layer_real_source_path;\uitools_sdk\third_party_bitmap_palette_api\group" name="third_party_bitmap_palette_api" />
+    </component>
+  </module>
+</layer>

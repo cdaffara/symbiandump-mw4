@@ -1,0 +1,98 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Project description file for the Favourites Engine
+*
+*
+*/
+
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          FavouritesEngine.dll
+TARGETTYPE      dll
+UID             0x1000008d 0x10008D38
+CAPABILITY	    CAP_GENERAL_DLL
+VENDORID        VID_DEFAULT
+
+
+// Common code
+SOURCEPATH      ../src
+SOURCE          FavouritesItem.cpp
+SOURCE          FavouritesItemImpl.cpp
+SOURCE          FavouritesWapAp.cpp
+SOURCE          FavouritesItemList.cpp
+SOURCE          FavouritesPanic.cpp
+SOURCE          FavouritesUtil.cpp
+SOURCE          UidMap.cpp
+SOURCE          DllEntryPoint.cpp
+
+// Server code
+SOURCEPATH      ../srvsrc
+SOURCE          FavouritesSrv.cpp
+SOURCE          FavouritesSrvSession.cpp
+SOURCE          FavouritesSrvSessionEntry.cpp
+SOURCE          FavouritesSrvDb.cpp
+SOURCE          FavouritesSrvDbIncremental.cpp
+SOURCE          FavouritesSrvDbNotifier.cpp
+SOURCE          FavouritesSrvFile.cpp
+SOURCE          FavouritesSrvTable.cpp
+SOURCE          FavouritesSrvStream.cpp
+SOURCE          FavouritesSrvBuf.cpp
+SOURCE          FavouritesItemImplList.cpp
+SOURCE          FavouritesLogger.cpp
+SOURCE          Timeout.cpp
+SOURCE			BackupObserver.cpp
+SOURCE		FavouritesFolderUtils.cpp
+// Server code changes for creating bookmarks db on phone
+SOURCEPATH  ../utilsrc
+SOURCE      UnicodeFile.cpp
+USERINCLUDE     ../utilinc
+
+// Client code
+SOURCEPATH      ../src
+SOURCE          FavouritesDb.cpp
+SOURCE          FavouritesDbIncremental.cpp
+SOURCE          FavouritesDbNotifier.cpp
+SOURCE          FavouritesFile.cpp
+SOURCE          FavouritesSession.cpp
+SOURCE          FavouritesHandle.cpp
+SOURCE          FavouritesBuf.cpp
+SOURCE          ActiveFavouritesDbNotifier.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../srvinc
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         euser.lib
+LIBRARY         estor.lib
+LIBRARY         edbms.lib
+LIBRARY         efsrv.lib
+LIBRARY         commdb.lib
+LIBRARY         charconv.lib
+
+DEBUGLIBRARY    flogger.lib
+
+#if defined(ARMCC)
+    DEFFILE ../EABI/FavouritesEngine.DEF
+#elif defined( WINSCW )
+    DEFFILE ../BWinsCw/FAVOURITESENGINE.def
+#elif defined( WINS )
+    DEFFILE ../BWins/FAVOURITESENGINE.def
+#else
+    DEFFILE ../BMarm/FAVOURITESENGINE.def
+#endif
+
+//  End of File  

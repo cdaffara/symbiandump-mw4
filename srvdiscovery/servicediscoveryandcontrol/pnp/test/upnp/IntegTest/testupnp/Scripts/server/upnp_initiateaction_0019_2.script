@@ -1,0 +1,41 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! @file
+//! @SYMTestSuiteName	multiple_machines_server 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_server 
+
+LOAD_SUITE multiple_machines_server
+LOAD_SUITE test_synchronize_server
+
+START_TESTCASE	UPnP_InitiateAction_0019
+//! @file		
+//! @SYMTestCaseID	upnp-pos-0009
+//! @SYMTestCaseDesc 	Search for UPnP Device based on its UUID second version
+//! @SYMREQ		REQ8605,REQ8606,REQ8607
+//! @SYMTestStatus 	Implemented
+//! @SYMTestPriority 	High
+//! @SYMTestActions 	Search for UPnP Device based on its UUID second version
+//! @SYMTestExpectedResults Should get response from the desired UUID only	
+//! @SYMTestType 		CIT
+
+RUN_TEST_STEP 1000 test_synchronize_server TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini serverdata
+RUN_TEST_STEP 500 multiple_machines_server TestRControlChannel z:\upnp\testupnp\client\testdata\ini_files\initiateaction_0019.ini initiateaction_0019_2_server
+END_TESTCASE	UPnP_InitiateAction_0019
+
+
+PRINT Completed multiple_machines_server

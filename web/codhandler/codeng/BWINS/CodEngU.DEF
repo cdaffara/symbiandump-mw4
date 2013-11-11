@@ -1,0 +1,86 @@
+EXPORTS
+	??1CCodData@@UAE@XZ @ 1 NONAME ; CCodData::~CCodData(void)
+	??1CCodEng@@UAE@XZ @ 2 NONAME ; CCodEng::~CCodEng(void)
+	??1CCodEngBase@@UAE@XZ @ 3 NONAME ; CCodEngBase::~CCodEngBase(void)
+	??1CDdEng@@UAE@XZ @ 4 NONAME ; CDdEng::~CDdEng(void)
+	?AbsoluteUrlLC@CodUtil@@SAPAVHBufC8@@ABVTDesC8@@0@Z @ 5 NONAME ; class HBufC8 * CodUtil::AbsoluteUrlLC(class TDesC8 const &, class TDesC8 const &)
+	?Accept@CCodEngBase@@QAEXPAVTRequestStatus@@@Z @ 6 NONAME ; void CCodEngBase::Accept(class TRequestStatus *)
+	?ConvertL@CodUtil@@SAPAVHBufC16@@ABVTDesC8@@@Z @ 7 NONAME ; class HBufC16 * CodUtil::ConvertL(class TDesC8 const &)
+	?ConvertL@CodUtil@@SAPAVHBufC8@@ABVTDesC16@@@Z @ 8 NONAME ; class HBufC8 * CodUtil::ConvertL(class TDesC16 const &)
+	?ConvertLC@CodUtil@@SAPAVHBufC16@@ABVTDesC8@@@Z @ 9 NONAME ; class HBufC16 * CodUtil::ConvertLC(class TDesC8 const &)
+	?ConvertLC@CodUtil@@SAPAVHBufC8@@ABVTDesC16@@@Z @ 10 NONAME ; class HBufC8 * CodUtil::ConvertLC(class TDesC16 const &)
+	?Data@CCodEngBase@@QBEABVCCodData@@XZ @ 11 NONAME ; class CCodData const & CCodEngBase::Data(void) const
+	?Description@CCodData@@QBE?AVTPtrC16@@XZ @ 12 NONAME ; class TPtrC16 CCodData::Description(void) const
+	?GetBoolParam@CodUtil@@SAXAAHHABVCAiwGenericParamList@@@Z @ 13 NONAME ; void CodUtil::GetBoolParam(int &, int, class CAiwGenericParamList const &)
+	?GetDesParamLC@CodUtil@@SAXAAVTPtrC8@@HABVCAiwGenericParamList@@@Z @ 14 NONAME ; void CodUtil::GetDesParamLC(class TPtrC8 &, int, class CAiwGenericParamList const &)
+	?GetHandler@CCodEngBase@@QBE?AVTUid@@XZ @ 15 NONAME ; class TUid CCodEngBase::GetHandler(void) const
+	?GetIntParam@CodUtil@@SAXAAHHABVCAiwGenericParamList@@@Z @ 16 NONAME ; void CodUtil::GetIntParam(int &, int, class CAiwGenericParamList const &)
+	?GetPath@CCodEngBase@@QBE?AVTPtrC16@@XZ @ 17 NONAME ; class TPtrC16 CCodEngBase::GetPath(void) const
+	?GetRoapData@CCodEngBase@@QBEPBVCRoapData@@XZ @ 18 NONAME ; class CRoapData const * CCodEngBase::GetRoapData(void) const
+	?GetStatusCode@CCodEngBase@@QBEHXZ @ 19 NONAME ; int CCodEngBase::GetStatusCode(void) const
+	?GetType@CCodEngBase@@QBEABVTDataType@@XZ @ 20 NONAME ; class TDataType const & CCodEngBase::GetType(void) const
+	?GetUint32Param@CodUtil@@SAXAAKHABVCAiwGenericParamList@@@Z @ 21 NONAME ; void CodUtil::GetUint32Param(unsigned long &, int, class CAiwGenericParamList const &)
+	?Icon@CCodData@@QBE?AVTPtrC8@@XZ @ 22 NONAME ; class TPtrC8 CCodData::Icon(void) const
+	?InfoUrl@CCodData@@QBE?AVTPtrC8@@XZ @ 23 NONAME ; class TPtrC8 CCodData::InfoUrl(void) const
+	?InstallNotify@CCodData@@QBE?AVTPtrC8@@XZ @ 24 NONAME ; class TPtrC8 CCodData::InstallNotify(void) const
+	?IsValid@CCodData@@QBEHXZ @ 25 NONAME ; int CCodData::IsValid(void) const
+	?Name@CCodData@@QBE?AVTPtrC16@@XZ @ 26 NONAME ; class TPtrC16 CCodData::Name(void) const
+	?NewL@CCodData@@SAPAV1@XZ @ 27 NONAME ; class CCodData * CCodData::NewL(void)
+	?NewL@CCodEng@@SAPAV1@PAVCEikProcess@@PAVMCodLoadObserver@@@Z @ 28 NONAME ; class CCodEng * CCodEng::NewL(class CEikProcess *, class MCodLoadObserver *)
+	?NewL@CDdEng@@SAPAV1@PAVCEikProcess@@PAVMCodLoadObserver@@@Z @ 29 NONAME ; class CDdEng * CDdEng::NewL(class CEikProcess *, class MCodLoadObserver *)
+	?NextUrl@CCodData@@QBE?AVTPtrC8@@XZ @ 30 NONAME ; class TPtrC8 CCodData::NextUrl(void) const
+	?NextUrlAtError@CCodData@@QBE?AVTPtrC8@@XZ @ 31 NONAME ; class TPtrC8 CCodData::NextUrlAtError(void) const
+	?Price@CCodData@@QBE?AVTPtrC16@@XZ @ 32 NONAME ; class TPtrC16 CCodData::Price(void) const
+	?Reject@CCodEngBase@@QAEXPAVTRequestStatus@@@Z @ 33 NONAME ; void CCodEngBase::Reject(class TRequestStatus *)
+	?Reset@CCodData@@QAEXXZ @ 34 NONAME ; void CCodData::Reset(void)
+	?SetL@CCodEngBase@@QAEXABVTDesC8@@PAVTRequestStatus@@PBVCAiwGenericParamList@@PBV?$RPointerArray@VCBodyPart@@@@@Z @ 35 NONAME ; void CCodEngBase::SetL(class TDesC8 const &, class TRequestStatus *, class CAiwGenericParamList const *, class RPointerArray<class CBodyPart> const *)
+	?SetObserver@CCodEngBase@@QAEXPAVMCodLoadObserver@@@Z @ 36 NONAME ; void CCodEngBase::SetObserver(class MCodLoadObserver *)
+	?Size@CCodData@@QBEHXZ @ 37 NONAME ; int CCodData::Size(void) const
+	?SourceUri@CCodData@@QBE?AVTPtrC8@@XZ @ 38 NONAME ; class TPtrC8 CCodData::SourceUri(void) const
+	?Stop@CCodEngBase@@QAEXXZ @ 39 NONAME ; void CCodEngBase::Stop(void)
+	?Type@CCodData@@QBE?AVTPtrC8@@XZ @ 40 NONAME ABSENT ; class TPtrC8 CCodData::Type(void) const
+	?Types@CCodData@@QBEABVMDesC8Array@@XZ @ 41 NONAME ABSENT ; class MDesC8Array const & CCodData::Types(void) const
+	?Url@CCodData@@QBE?AVTPtrC8@@XZ @ 42 NONAME ABSENT ; class TPtrC8 CCodData::Url(void) const
+	?Vendor@CCodData@@QBE?AVTPtrC16@@XZ @ 43 NONAME ; class TPtrC16 CCodData::Vendor(void) const
+	?Version@CCodData@@QBE?AVTPtrC16@@XZ @ 44 NONAME ; class TPtrC16 CCodData::Version(void) const
+	?CanOpenL@CodUtil@@SAHABVTDesC16@@@Z @ 45 NONAME ; int CodUtil::CanOpenL(class TDesC16 const &)
+	?RemovableMedia@CCodEngBase@@QBEHXZ @ 46 NONAME ; int CCodEngBase::RemovableMedia(void) const
+	?GetDesParam@CodUtil@@SAXAAVTPtrC16@@HABVCAiwGenericParamList@@@Z @ 47 NONAME ; void CodUtil::GetDesParam(class TPtrC16 &, int, class CAiwGenericParamList const &)
+	?CanOpenL@CodUtil@@SAHAAVRFile@@@Z @ 48 NONAME ; int CodUtil::CanOpenL(class RFile &)
+	?IsPostOrder@CCodData@@QBEHXZ @ 49 NONAME ; int CCodData::IsPostOrder(void) const
+	?ProgressiveDownload@CCodData@@QBEHXZ @ 50 NONAME ABSENT ; int CCodData::ProgressiveDownload(void) const
+	?SetCodDlAttached@CCodEngBase@@QAEXH@Z @ 51 NONAME ; void CCodEngBase::SetCodDlAttached(int)
+	?SuppressConfirm@CCodData@@QBEHXZ @ 52 NONAME ; int CCodData::SuppressConfirm(void) const
+	?UpdatedDDUriL@CCodData@@QBE?AVTPtrC8@@XZ @ 53 NONAME ; class TPtrC8 CCodData::UpdatedDDUriL(void) const
+	?Pause@CCodEngBase@@QAEXXZ @ 54 NONAME ; void CCodEngBase::Pause(void)
+	?Pausable@CCodEngBase@@QAEHXZ @ 55 NONAME ; int CCodEngBase::Pausable(void)
+	??1CMediaObjectData@@UAE@XZ @ 56 NONAME ; CMediaObjectData::~CMediaObjectData(void)
+	??ACCodData@@QAEPAVCMediaObjectData@@H@Z @ 57 NONAME ; class CMediaObjectData * CCodData::operator[](int)
+	??ACCodData@@QBEPAVCMediaObjectData@@H@Z @ 58 NONAME ; class CMediaObjectData * CCodData::operator[](int) const
+	?ActiveDownload@CCodData@@QBEHXZ @ 59 NONAME ; int CCodData::ActiveDownload(void) const
+	?ActiveDownload@CCodEngBase@@QAEHXZ @ 60 NONAME ; int CCodEngBase::ActiveDownload(void)
+	?Description@CMediaObjectData@@QBE?AVTPtrC16@@XZ @ 61 NONAME ; class TPtrC16 CMediaObjectData::Description(void) const
+	?DownloadedSize@CMediaObjectData@@QBEHXZ @ 62 NONAME ; int CMediaObjectData::DownloadedSize(void) const
+	?GetDestFilePath@CCodEngBase@@QBE?AVTPtrC16@@H@Z @ 63 NONAME ; class TPtrC16 CCodEngBase::GetDestFilePath(int) const
+	?GetProductStatusCode@CCodEngBase@@QBE?AW4TState@TCodDownloadProgress@@XZ @ 64 NONAME ; enum TCodDownloadProgress::TState CCodEngBase::GetProductStatusCode(void) const
+	?Icon@CMediaObjectData@@QBE?AVTPtrC8@@XZ @ 65 NONAME ; class TPtrC8 CMediaObjectData::Icon(void) const
+	?InfoUrl@CMediaObjectData@@QBE?AVTPtrC8@@XZ @ 66 NONAME ; class TPtrC8 CMediaObjectData::InfoUrl(void) const
+	?InstallNotify@CMediaObjectData@@QBE?AVTPtrC8@@XZ @ 67 NONAME ; class TPtrC8 CMediaObjectData::InstallNotify(void) const
+	?IsPostOrder@CMediaObjectData@@QBEHXZ @ 68 NONAME ; int CMediaObjectData::IsPostOrder(void) const
+	?IsValid@CMediaObjectData@@QBEHXZ @ 69 NONAME ; int CMediaObjectData::IsValid(void) const
+	?Name@CMediaObjectData@@QBE?AVTPtrC16@@XZ @ 70 NONAME ; class TPtrC16 CMediaObjectData::Name(void) const
+	?NewL@CMediaObjectData@@SAPAV1@XZ @ 71 NONAME ; class CMediaObjectData * CMediaObjectData::NewL(void)
+	?Price@CMediaObjectData@@QBE?AVTPtrC16@@XZ @ 72 NONAME ; class TPtrC16 CMediaObjectData::Price(void) const
+	?ProgressiveDownload@CMediaObjectData@@QBEHXZ @ 73 NONAME ; int CMediaObjectData::ProgressiveDownload(void) const
+	?Reset@CMediaObjectData@@QAEXXZ @ 74 NONAME ; void CMediaObjectData::Reset(void)
+	?SetL@CCodEngBase@@QAEXHVTUid@@PBV?$RPointerArray@VCBodyPart@@@@@Z @ 75 NONAME ; void CCodEngBase::SetL(int, class TUid, class RPointerArray<class CBodyPart> const *)
+	?Size@CMediaObjectData@@QBEHXZ @ 76 NONAME ; int CMediaObjectData::Size(void) const
+	?SourceUri@CMediaObjectData@@QBE?AVTPtrC8@@XZ @ 77 NONAME ; class TPtrC8 CMediaObjectData::SourceUri(void) const
+	?Start@CCodEngBase@@QAEXPBVCAiwGenericParamList@@PAVTRequestStatus@@@Z @ 78 NONAME ; void CCodEngBase::Start(class CAiwGenericParamList const *, class TRequestStatus *)
+	?State@CMediaObjectData@@QBE?AW4TMediaObjectState@@XZ @ 79 NONAME ; enum TMediaObjectState CMediaObjectData::State(void) const
+	?Type@CMediaObjectData@@QBE?AVTPtrC8@@XZ @ 80 NONAME ; class TPtrC8 CMediaObjectData::Type(void) const
+	?Types@CMediaObjectData@@QBEABVMDesC8Array@@XZ @ 81 NONAME ; class MDesC8Array const & CMediaObjectData::Types(void) const
+	?UpdatedDownloadDataL@CCodEngBase@@QAEPAVHBufC8@@XZ @ 82 NONAME ; class HBufC8 * CCodEngBase::UpdatedDownloadDataL(void)
+	?UpdatedTrackDataL@CCodEngBase@@QAEPAVHBufC8@@AAH@Z @ 83 NONAME ; class HBufC8 * CCodEngBase::UpdatedTrackDataL(int &)
+	?Url@CMediaObjectData@@QBE?AVTPtrC8@@XZ @ 84 NONAME ; class TPtrC8 CMediaObjectData::Url(void) const
+

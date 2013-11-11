@@ -1,0 +1,97 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+#ifndef __UPNPDESCRIPTIONTEST_IBY__
+#define __UPNPDESCRIPTIONTEST_IBY__
+
+#include <testexecute.iby>
+
+file=ABI_DIR\BUILD_DIR\testupnpdescriptionserver.exe	 System\Programs\testupnpdescriptionserver.exe
+
+// The ini files for the system
+data=EPOCROOT##epoc32\data\z\upnp\description\ini\testupnpdescriptionsuite.ini	upnp\description\ini\testupnpdescriptionsuite.ini
+
+//The script files for the system
+data=EPOCROOT##epoc32\data\z\upnp\description\scripts\testupnpdescriptionsuite.script upnp\description\scripts\testupnpdescriptionsuite.script
+
+//XML files
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_input1.xml		upnp\description\xml\devicedesc_input1.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_input2.xml		upnp\description\xml\devicedesc_input2.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_input3.xml		upnp\description\xml\devicedesc_input3.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_input4.xml		upnp\description\xml\devicedesc_input4.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_input5.xml		upnp\description\xml\devicedesc_input5.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_input6.xml		upnp\description\xml\devicedesc_input6.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_input1.xml		upnp\description\xml\servicedesc_input1.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_input2.xml		upnp\description\xml\servicedesc_input2.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_input3.xml		upnp\description\xml\servicedesc_input3.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_input4.xml		upnp\description\xml\servicedesc_input4.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_input5.xml		upnp\description\xml\servicedesc_input5.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg1.xml	upnp\description\xml\servicedesc_inputneg1.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg2.xml	upnp\description\xml\servicedesc_inputneg2.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg3.xml	upnp\description\xml\servicedesc_inputneg3.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg4.xml	upnp\description\xml\servicedesc_inputneg4.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg5.xml	upnp\description\xml\servicedesc_inputneg5.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg6.xml	upnp\description\xml\servicedesc_inputneg6.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg7.xml	upnp\description\xml\servicedesc_inputneg7.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg8.xml	upnp\description\xml\servicedesc_inputneg8.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg9.xml	upnp\description\xml\servicedesc_inputneg9.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg10.xml	upnp\description\xml\servicedesc_inputneg10.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg11.xml	upnp\description\xml\servicedesc_inputneg11.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg12.xml	upnp\description\xml\servicedesc_inputneg12.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg13.xml	upnp\description\xml\servicedesc_inputneg13.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg14.xml	upnp\description\xml\servicedesc_inputneg14.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg15.xml	upnp\description\xml\servicedesc_inputneg15.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg16.xml	upnp\description\xml\servicedesc_inputneg16.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg17.xml	upnp\description\xml\servicedesc_inputneg17.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg18.xml	upnp\description\xml\servicedesc_inputneg18.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg19.xml	upnp\description\xml\servicedesc_inputneg19.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg20.xml	upnp\description\xml\servicedesc_inputneg20.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg21.xml	upnp\description\xml\servicedesc_inputneg21.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg22.xml	upnp\description\xml\servicedesc_inputneg22.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg23.xml	upnp\description\xml\servicedesc_inputneg23.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg24.xml	upnp\description\xml\servicedesc_inputneg24.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg25.xml	upnp\description\xml\servicedesc_inputneg25.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg26.xml	upnp\description\xml\servicedesc_inputneg26.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_inputneg27.xml	upnp\description\xml\servicedesc_inputneg27.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg1.xml	upnp\description\xml\devicedesc_inputneg1.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg2.xml	upnp\description\xml\devicedesc_inputneg2.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg3.xml	upnp\description\xml\devicedesc_inputneg3.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg4.xml	upnp\description\xml\devicedesc_inputneg4.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg5.xml	upnp\description\xml\devicedesc_inputneg5.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg6.xml	upnp\description\xml\devicedesc_inputneg6.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg7.xml	upnp\description\xml\devicedesc_inputneg7.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg8.xml	upnp\description\xml\devicedesc_inputneg8.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg9.xml	upnp\description\xml\devicedesc_inputneg9.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg10.xml	upnp\description\xml\devicedesc_inputneg10.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg11.xml	upnp\description\xml\devicedesc_inputneg11.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg12.xml	upnp\description\xml\devicedesc_inputneg12.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg13.xml	upnp\description\xml\devicedesc_inputneg13.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg14.xml	upnp\description\xml\devicedesc_inputneg14.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg15.xml	upnp\description\xml\devicedesc_inputneg15.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg16.xml	upnp\description\xml\devicedesc_inputneg16.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg17.xml	upnp\description\xml\devicedesc_inputneg17.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg18.xml	upnp\description\xml\devicedesc_inputneg18.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg19.xml	upnp\description\xml\devicedesc_inputneg19.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg20.xml	upnp\description\xml\devicedesc_inputneg20.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg21.xml	upnp\description\xml\devicedesc_inputneg21.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg22.xml	upnp\description\xml\devicedesc_inputneg22.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg23.xml	upnp\description\xml\devicedesc_inputneg23.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_inputneg24.xml	upnp\description\xml\devicedesc_inputneg24.xml
+
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\devicedesc_DEF126707.xml	upnp\description\xml\devicedesc_DEF126707.xml
+data=EPOCROOT##epoc32\data\z\upnp\description\xml\servicedesc_DEF126707.xml	upnp\description\xml\servicedesc_DEF126707.xml
+#endif

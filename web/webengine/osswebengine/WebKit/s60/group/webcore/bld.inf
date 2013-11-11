@@ -1,0 +1,39 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include "../../../../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+DEFAULT 
+
+PRJ_EXPORTS
+
+PRJ_MMPFILES
+#include "DerivedSources/bld.inf"
+#include "bindings/bld.inf"
+#include "webcorecss/bld.inf"
+#include "dom/bld.inf"
+#include "editing/bld.inf"
+#include "history/bld.inf"
+#include "html/bld.inf"
+#include "loader/bld.inf"
+#include "page/bld.inf"
+#include "rendering/bld.inf"
+#include "xml/bld.inf"
+#include "bridge/bld.inf"
+#include "platform/bld.inf"

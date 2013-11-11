@@ -1,0 +1,135 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Module description file
+*
+*/
+
+
+#include <defaultcaps.hrh>
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          DownloadMgrUiLib.dll
+TARGETTYPE      dll
+
+CAPABILITY      CAP_GENERAL_DLL
+VENDORID       VID_DEFAULT
+
+// uncomment to enable logs
+//MACRO _DEBUG
+//#define _DEBUG
+
+START RESOURCE  ../Data/DownloadMgrUiLib.rss
+DEPENDS avkon.rsg
+HEADER
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+TARGETPATH      RESOURCE_FILES_DIR
+END // RESOURCE
+
+
+#if defined(ARMCC)
+    DEFFILE ../EABI/DOWNLOADMGRUILIBU_EKA2.def
+#elif defined( WINSCW )
+    DEFFILE ../BWinsCw/DOWNLOADMGRUILIBU_EKA2.def
+#endif
+
+// uncomment to enable Progressive Download Test Harness.
+// MACRO __DMGR_PD_TESTHARNESS_MMP
+// #define __DMGR_PD_TESTHARNESS_MMP
+
+#if defined( __DMGR_PD_TESTHARNESS_MMP )
+    MACRO __DMGR_PD_TESTHARNESS
+	#define __DMGR_PD_TESTHARNESS
+#endif // __DMGR_PD_TESTHARNESS_MMP
+
+USERINCLUDE     ../Inc
+USERINCLUDE     ../../DownloadMgrClntSrv/inc
+
+//APP_LAYER_SYSTEMINCLUDE
+/* SF TODO: resolve APP LAYER DEPENDENCY: 
+	s60/app/gallery/gallery_dom/media_file_api/inc/CMGXFileManager.h
+	s60/app/gallery/gallery_dom/media_file_api/inc/MGXFileManagerFactory.h
+*/
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH      ../Src
+SOURCE          AsyncEventHandlerArray.cpp
+SOURCE          AsyncEventHandlerBase.cpp
+SOURCE          CDownloadsListDlg.cpp
+SOURCE          CDownloadMgrUiBase.cpp
+SOURCE          CDownloadMgrUiDownloadMenu.cpp
+SOURCE          CDownloadMgrUiDownloadsList.cpp
+SOURCE          CDownloadMgrUiLibRegistry.cpp
+SOURCE          CDownloadMgrUiUserInteractions.cpp
+SOURCE          CDownloadsListArray.cpp
+SOURCE          CUserInteractionsUtils.cpp
+SOURCE          CDownloadUtils.cpp 
+SOURCE          DMgrUiLibPanic.cpp
+SOURCE          ProgressInfoCreator.cpp
+SOURCE          UserInteractionsEventHandler.cpp
+
+LIBRARY         AKNNOTIFY.lib
+LIBRARY         AknNotifyPlugin.lib
+LIBRARY         AknSkins.lib
+LIBRARY         apgrfx.lib
+LIBRARY         apmime.lib
+LIBRARY         apparc.lib
+LIBRARY         avkon.lib
+LIBRARY         bafl.lib
+LIBRARY         BrowserDialogsProvider.lib
+#if defined( WINS )
+LIBRARY         commdb.lib
+#endif
+LIBRARY         CommonDialogs.lib
+LIBRARY         CommonEngine.lib
+LIBRARY         commonui.lib
+LIBRARY         cone.lib
+LIBRARY         DownloadMgr.lib
+LIBRARY         efsrv.lib
+LIBRARY         egul.lib
+LIBRARY         eikcoctl.lib
+LIBRARY         EIKCORE.lib
+LIBRARY         EIKDLG.lib
+LIBRARY         euser.lib
+#if defined( _DEBUG )
+	LIBRARY    flogger.lib
+#else
+	DEBUGLIBRARY    flogger.lib
+#endif
+LIBRARY         InetProtUtil.lib 
+LIBRARY         ServiceHandler.lib
+LIBRARY         sysutil.lib
+LIBRARY         PlatformEnv.lib
+LIBRARY         connmon.lib
+LIBRARY         estor.lib
+LIBRARY         ws32.lib
+LIBRARY         etelmm.lib
+LIBRARY         etel.lib
+LIBRARY         DRMCommon.lib
+LIBRARY         DrmRights.lib
+LIBRARY         DrmServerInterfaces.lib
+
+#ifdef BRDO_APP_GALLERY_SUPPORTED_FF
+LIBRARY			MGXMediaFileAPI.lib
+#endif
+
+LIBRARY			DcfRep.lib
+LIBRARY         centralrepository.lib 
+LIBRARY         caf.lib
+LIBRARY         charconv.lib

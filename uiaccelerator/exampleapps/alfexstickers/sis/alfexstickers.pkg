@@ -1,0 +1,40 @@
+;
+; Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description: 
+;
+&EN
+
+; standard SIS file header
+#{"AlfExStickers"},(0x20012480),1,0,0
+
+;Supports Series 60 v 3.0
+(0x101F7961), 0, 0, 0, {"Series60ProductID"}
+
+;Localized Vendor Name
+%{"My Test EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+; Files to copy
+"\epoc32\release\armv5\udeb\AlfExStickers.exe"-"!:\sys\bin\AlfExStickers.exe"
+"\epoc32\data\z\private\10003a3f\apps\AlfExStickers_reg.rsc"-"!:\private\10003a3f\import\apps\AlfExStickers_reg.rsc"
+"\epoc32\data\z\resource\apps\AlfExStickers_loc.Rsc"-"!:\resource\apps\AlfExStickers_loc.Rsc"
+"\epoc32\data\z\resource\apps\AlfExStickers.Rsc"-"!:\resource\apps\AlfExStickers.Rsc"
+"..\gfx\photo\application_bg.svg"-"c:\Private\20012480\application_bg.svg"
+"..\gfx\photo\sticker_blue.svg"-"c:\Private\20012480\sticker_blue.svg"
+"..\gfx\photo\sticker_green.svg"-"c:\Private\20012480\sticker_green.svg"
+"..\gfx\photo\sticker_pink.svg"-"c:\Private\20012480\sticker_pink.svg"
+"..\gfx\photo\sticker_yellow.svg"-"c:\Private\20012480\sticker_yellow.svg"
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0">
+ <package id="videoutils" name="Video Utils" levels="eng util if">
+  <collection id="videoutils_plat" name="Video Utils Platform Interfaces" level="if">
+   <component id="videoplayer_constants_api" name="Videoplayer Constants API" class="api" filter="s60">
+    <meta rel="Api" href="videoutils_plat/videoplayer_constants_api/videoplayer_constants_api.metaxml"/>
+    <unit bldFile="videoutils_plat/videoplayer_constants_api/group"/>
+   </component>
+  </collection>
+ </package>
+</SystemDefinition>

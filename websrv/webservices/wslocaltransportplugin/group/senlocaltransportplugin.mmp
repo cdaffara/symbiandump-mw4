@@ -1,0 +1,114 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senlocaltransport plugin  
+*
+*/
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+#ifdef SYMBIAN_SECURE_ECOM 
+    TARGETTYPE PLUGIN
+#else
+    TARGETTYPE ECOMIIC
+#endif
+
+// ECom Dll recognition UID followed by the unique UID for this dll
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET  SenLocalTransportPlugin.DLL
+UID 0x10009D8D 0x10274C75
+#else
+TARGET  wsLocalTransportPlugin.DLL
+UID 0x10009D8D 0x101F974E
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_ECOM_PLUGIN )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_ECOM_PLUGIN
+    #endif
+#endif
+
+SOURCEPATH      ../data
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+START RESOURCE  10274c75.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET SenLocalTransportPlugin.rsc
+#endif
+
+#else
+START RESOURCE  101F974E.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET wsLocalTransportPlugin.rsc
+#endif
+
+#endif
+
+END
+
+SOURCEPATH      ../src
+SOURCE          senlocaltransportpluginmain.cpp
+SOURCE          senlocaltransportpluginproxy.cpp
+SOURCE          senlocaltransportplugin.cpp
+
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wsframework/inc         // internal: MSenTransport.h, SenProvider.h, SenProvider.inl
+USERINCLUDE     ../../wsprovider/inc          // internal: MSenHostletRequest.h, MSenHostletResponse.h
+USERINCLUDE     ../../wsutils/inc             // internal: SenDebug.h
+USERINCLUDE     ../../wsidentitymanager/inc   // MSenIdentityManager.h
+USERINCLUDE     ../../wslogger/inc // for TLS based logging
+
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+
+
+LANG            SC
+
+SYSTEMINCLUDE   /epoc32/include/ecom
+SYSTEMINCLUDE   /epoc32/include/libc
+
+LIBRARY         ecom.lib
+LIBRARY         euser.lib
+LIBRARY         flogger.lib
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY         SenProvider.lib
+LIBRARY         SenUtils.lib     // CSenIdentifier
+LIBRARY         SenServDesc.lib  // CSenFacet
+LIBRARY         SenFramework.lib // CSenSyncRequester
+LIBRARY         SenFragment.lib
+LIBRARY         SenLogger.lib // for TLS based logging
+#else
+LIBRARY         wsProvider.lib
+LIBRARY         wsUtils.lib     // CSenIdentifier
+LIBRARY         wsServDesc.lib  // CSenFacet
+LIBRARY         wsFramework.lib // CSenSyncRequester
+LIBRARY         wsFragment.lib
+LIBRARY         wslogger.lib // for TLS based logging
+#endif
+
+SMPSAFE
+

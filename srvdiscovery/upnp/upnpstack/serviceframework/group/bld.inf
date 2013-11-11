@@ -1,0 +1,49 @@
+/** @file
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build info for the ServiceFramework component
+*  Version     : %version: bh1mrt#37 %
+*
+*/
+
+#include "../../upnputils/inc/upnpcompvariant.hrh"
+
+PRJ_EXPORTS
+
+../inc/upnphttpclientengine.h               |../../inc/upnphttpclientengine.h
+../inc/upnphttpmessagesenderowner.h         |../../inc/upnphttpmessagesenderowner.h
+../inc/upnphttptransaction.h                |../../inc/upnphttptransaction.h
+../inc/upnpsoapmessagefactory.h             |../../../inc/upnpsoapmessagefactory.h
+../inc/upnpsoapmessage.h                    |../../inc/upnpsoapmessage.h
+../inc/upnpgenamessage.h                    |../../inc/upnpgenamessage.h
+../inc/upnpgenamessagefactory.h             |../../inc/upnpgenamessagefactory.h
+../inc/upnpdevicecontenthandler.h           |../../inc/upnpdevicecontenthandler.h
+../inc/upnpcontenthandlerscontroller.h      |../../inc/upnpcontenthandlerscontroller.h
+../inc/upnpsoapparser.h                     |../../inc/upnpsoapparser.h
+../inc/upnpsilentdeviceimplementation.h     |../../inc/upnpsilentdeviceimplementation.h
+
+#if defined(__HN_31__) || defined(__HN_32__)
+../data/2000f881.cre             /epoc32/winscw/c/private/10202be9/persists/2000f881.cre
+../data/backup_registration.xml  /epoc32/data/z/private/2000F883/backup_registration.xml
+../data/backup_registration.xml  /epoc32/release/winscw/udeb/z/private/2000F883/backup_registration.xml
+../data/backup_registration.xml  /epoc32/release/winscw/urel/z/private/2000F883/backup_registration.xml
+#else
+../data/backup_registration.xml  /epoc32/data/z/private/10204162/backup_registration.xml
+../data/backup_registration.xml  /epoc32/release/winscw/udeb/z/private/10204162/backup_registration.xml
+../data/backup_registration.xml  /epoc32/release/winscw/urel/z/private/10204162/backup_registration.xml
+#endif
+
+PRJ_MMPFILES
+upnpserviceframework.mmp
+
+//end of file

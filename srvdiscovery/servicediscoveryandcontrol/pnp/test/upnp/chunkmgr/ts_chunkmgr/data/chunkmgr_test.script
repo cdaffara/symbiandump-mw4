@@ -1,0 +1,97 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! @file
+//! @SYMTestSuiteName TS_ChunkManager
+//! @SYMScriptTestEnvironment Standard Symbian HRP or emulator environment
+
+PRINT TS_ChunkManager: Group test 
+PRINT ------------------------------
+PRINT
+
+LOAD_SUITE ts_chunkmgr
+PRINT ------------------------------
+PRINT
+
+START_TESTCASE			CHUNKMGR-0008
+//! @SYMTestCaseID		CHUNKMGR-0008
+PRINT Test 08: memory allocation using chunkmanager in multiple threads
+RUN_TEST_STEP 	500	ts_chunkmgr	ChunkMgrTest08
+PRINT ------------------------------
+END_TESTCASE			CHUNKMGR-0008
+PRINT
+
+
+START_TESTCASE			CHUNKMGR-0007
+//! @SYMTestCaseID		CHUNKMGR-0007
+PRINT Test 07: memory allocation, check pools exhausted with allcoation algorithm
+RUN_TEST_STEP 	500	ts_chunkmgr	ChunkMgrTest07
+PRINT ------------------------------
+END_TESTCASE			CHUNKMGR-0007
+PRINT
+
+
+START_TESTCASE			CHUNKMGR-0006
+//! @SYMTestCaseID		CHUNKMGR-0006
+PRINT Test 06: memory allocation, check expected block size
+RUN_TEST_STEP 	500	ts_chunkmgr	ChunkMgrTest06
+PRINT ------------------------------
+END_TESTCASE			CHUNKMGR-0006
+PRINT
+
+
+START_TESTCASE			CHUNKMGR-0005
+//! @SYMTestCaseID		CHUNKMGR-0005
+PRINT Test 05: memory allocation, deallocation performance measure test
+RUN_TEST_STEP 	500	ts_chunkmgr	ChunkMgrTest05
+PRINT ------------------------------
+END_TESTCASE			CHUNKMGR-0005
+PRINT
+
+
+START_TESTCASE			CHUNKMGR-0004
+//! @SYMTestCaseID		CHUNKMGR-0004
+PRINT Test 04: default heap, memory allocation failure
+RUN_TEST_STEP 	500	ts_chunkmgr	ChunkMgrTest04
+PRINT ------------------------------
+END_TESTCASE			CHUNKMGR-0004
+PRINT
+
+
+START_TESTCASE			CHUNKMGR-0003
+//! @SYMTestCaseID		CHUNKMGR-0003
+PRINT Test 03: Alloc/Free RMemChunk beyond heap bounds, expected KErrNoMemory
+RUN_TEST_STEP 	500	ts_chunkmgr	ChunkMgrTest03
+PRINT ------------------------------
+END_TESTCASE			CHUNKMGR-0003
+PRINT
+
+
+START_TESTCASE			CHUNKMGR-0002
+//! @SYMTestCaseID		CHUNKMGR-0002
+PRINT Test 02: Alloc/Free RMemChunk within heap bounds
+RUN_TEST_STEP 	500	ts_chunkmgr	ChunkMgrTest02
+PRINT ------------------------------
+END_TESTCASE			CHUNKMGR-0002
+PRINT
+
+
+START_TESTCASE			CHUNKMGR-0001
+//! @SYMTestCaseID		CHUNKMGR-0001
+PRINT Test 01: Create/Delete ChunkMgr
+RUN_TEST_STEP 	500	ts_chunkmgr	ChunkMgrTest01
+PRINT ------------------------------
+END_TESTCASE			CHUNKMGR-0001
+PRINT

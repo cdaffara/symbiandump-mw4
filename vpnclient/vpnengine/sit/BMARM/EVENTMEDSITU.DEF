@@ -1,0 +1,10 @@
+EXPORTS
+	__4CSitP17MSitDeathListener @ 1 NONAME R3UNUSED ; CSit::CSit(MSitDeathListener *)
+	FindCancelEventType__4CSit10TEventType @ 2 NONAME R3UNUSED ; CSit::FindCancelEventType(TEventType)
+	FindTaskRequestEventType__4CSit10TEventType @ 3 NONAME R3UNUSED ; CSit::FindTaskRequestEventType(TEventType)
+	IsTaskCancellationObservationRequest__4CSit10TEventType @ 4 NONAME R3UNUSED ; CSit::IsTaskCancellationObservationRequest(TEventType)
+	StartL__4CSit @ 5 NONAME R3UNUSED ; CSit::StartL(void)
+	ThreadId__4CSit @ 6 NONAME R3UNUSED ; CSit::ThreadId(void)
+	"_._4CSit" @ 7 NONAME R3UNUSED ; CSit::~CSit(void)
+	EventRequiresSit__4CSit10TEventType @ 8 NONAME R3UNUSED ; CSit::EventRequiresSit(TEventType)
+

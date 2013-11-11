@@ -1,0 +1,69 @@
+/*
+* Copyright (c) 2002-2005 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        
+*
+*/
+
+
+
+
+
+
+
+
+// LOCALISATION STRINGS
+
+//d:Title pane text in Web sevices username/password dialog.
+//l:title_pane_1
+//w:
+//r:3.0
+//
+//#define qtn_sen_notdlg_auth_title		"Web services"
+
+//d:Prompt text for username in Web sevices username/password dialog.
+//l:popup_query_data_window
+//w:
+//r:3.0
+//
+#define qtn_sen_notdlg_auth_username		"WS Username"
+
+//d:Prompt text for password in Web sevices username/password dialog.
+//l:popup_query_data_window
+//w:
+//r:3.0
+//
+#define qtn_sen_notdlg_auth_password		"WS Password"
+
+//d:Query text for confirmation query dialog.
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_sen_notdlg_ask_save			"Save password?"
+
+//d:Query text for confirmation query dialog.
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_sen_notdlg_allow_register		"Allow this application to register a web service?"
+
+//d:Query text for confirmation query dialog.
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_sen_notdlg_allow_unregister		"Allow this application to unregister a web service?"
+
+// End of File

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="58a0cf0f3647a20fd2da825e22b7718d" dataversion="1.0">
+  <name>COD Handler API</name>
+  <description>COD Handler</description>
+  <type>c++</type>
+  <subsystem>WebUI</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="3.1"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

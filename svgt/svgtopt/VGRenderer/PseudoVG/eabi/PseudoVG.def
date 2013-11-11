@@ -1,0 +1,7 @@
+EXPORTS
+	_Z21CreateVGRendererImplLv @ 1 NONAME
+	_ZTI20CPseudoVGSurfaceImpl @ 2 NONAME ; #<TI>#
+	_ZTI21CPseodoVGRendererImpl @ 3 NONAME ; #<TI>#
+	_ZTV20CPseudoVGSurfaceImpl @ 4 NONAME ; #<VT>#
+	_ZTV21CPseodoVGRendererImpl @ 5 NONAME ; #<VT>#
+

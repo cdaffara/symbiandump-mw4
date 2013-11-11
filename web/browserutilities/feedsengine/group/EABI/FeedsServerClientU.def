@@ -1,0 +1,119 @@
+EXPORTS
+	_ZN11CFolderItem11AddMiniItemEP9CItemMini @ 1 NONAME
+	_ZN11CFolderItem14SetUnreadCountEi @ 2 NONAME
+	_ZN11CFolderItemD0Ev @ 3 NONAME
+	_ZN11CFolderItemD1Ev @ 4 NONAME
+	_ZN11CFolderItemD2Ev @ 5 NONAME
+	_ZN11RFolderItem10UpdateAllLEv @ 6 NONAME
+	_ZN11RFolderItem11ImportOPMLLERK7TDesC16i @ 7 NONAME
+	_ZN11RFolderItem14AddFolderItemLERK7TDesC16S2_iRK11CFolderItem @ 8 NONAME
+	_ZN11RFolderItem16MoveFolderItemsLER13RPointerArrayIK11CFolderItemEi @ 9 NONAME
+	_ZN11RFolderItem16WatchFolderListLEv @ 10 NONAME
+	_ZN11RFolderItem17ChangeFolderItemLERK11CFolderItemRK7TDesC16S5_ @ 11 NONAME
+	_ZN11RFolderItem18DeleteFolderItemsLER13RPointerArrayIK11CFolderItemE @ 12 NONAME
+	_ZN11RFolderItem18MoveFolderItemsToLER13RPointerArrayIK11CFolderItemERS2_ @ 13 NONAME
+	_ZN11RFolderItem18UpdateFolderItemsLERK13RPointerArrayIK11CFolderItemE @ 14 NONAME
+	_ZN11RFolderItem20FetchRootFolderItemLEv @ 15 NONAME
+	_ZN11RFolderItem4OpenER12RFeedsServer @ 16 NONAME
+	_ZN11RFolderItem5CloseEv @ 17 NONAME
+	_ZN11RFolderItemC1ER19MFolderItemObserverii @ 18 NONAME
+	_ZN11RFolderItemC2ER19MFolderItemObserverii @ 19 NONAME
+	_ZN12RFeedsServer10CancelAllLEv @ 20 NONAME
+	_ZN12RFeedsServer14WatchSettingsLEv @ 21 NONAME
+	_ZN12RFeedsServer15UpdateSettingsLERK20TFeedsServerSettings @ 22 NONAME
+	_ZN12RFeedsServer17DebugPrintTablesLEv @ 23 NONAME
+	_ZN12RFeedsServer20FetchServerSettingsLEv @ 24 NONAME
+	_ZN12RFeedsServer33DisconnectManualUpdateConnectionLEv @ 25 NONAME
+	_ZN12RFeedsServer5CloseEv @ 26 NONAME
+	_ZN12RFeedsServer7ConnectEv @ 27 NONAME
+	_ZN12RFeedsServerC1ER20MFeedsServerObserveri @ 28 NONAME
+	_ZN12RFeedsServerC2ER20MFeedsServerObserveri @ 29 NONAME
+	_ZN5RFeed10FetchFeedLERK7TDesC16iii @ 30 NONAME
+	_ZN5RFeed10FetchFeedLEiii @ 31 NONAME
+	_ZN5RFeed21UpdateFeedItemStatusLERK6RArrayIiERKS0_I11TItemStatusEi @ 32 NONAME
+	_ZN5RFeed4OpenER12RFeedsServer @ 33 NONAME
+	_ZN5RFeed5CloseEv @ 34 NONAME
+	_ZN5RFeedC1ER13MFeedObserver @ 35 NONAME
+	_ZN5RFeedC2ER13MFeedObserver @ 36 NONAME
+	_ZNK10CEnclosure11ContentTypeEv @ 37 NONAME
+	_ZNK10CEnclosure11Debug_PrintEv @ 38 NONAME
+	_ZNK10CEnclosure3UrlEv @ 39 NONAME
+	_ZNK10CEnclosure4SizeEv @ 40 NONAME
+	_ZNK11CFolderItem10MiniItemAtEi @ 41 NONAME
+	_ZNK11CFolderItem11UnreadCountEv @ 42 NONAME
+	_ZNK11CFolderItem12FolderItemAtEi @ 43 NONAME
+	_ZNK11CFolderItem12FolderListIdEv @ 44 NONAME
+	_ZNK11CFolderItem14MiniItemsCountEv @ 45 NONAME
+	_ZNK11CFolderItem15FolderItemCountEv @ 46 NONAME
+	_ZNK11CFolderItem2IdEv @ 47 NONAME
+	_ZNK11CFolderItem4NameEv @ 48 NONAME
+	_ZNK11CFolderItem5IndexERKS_ @ 49 NONAME
+	_ZNK11CFolderItem6FeedIdEv @ 50 NONAME
+	_ZNK11CFolderItem6ParentEv @ 51 NONAME
+	_ZNK11CFolderItem6SearchERK7TDesC16 @ 52 NONAME
+	_ZNK11CFolderItem6SearchEi @ 53 NONAME
+	_ZNK11CFolderItem8IsFolderEv @ 54 NONAME
+	_ZNK11CFolderItem9SourceUrlEv @ 55 NONAME
+	_ZNK11CFolderItem9TimestampEv @ 56 NONAME
+	_ZNK11RFolderItem14RootFolderItemEv @ 57 NONAME
+	_ZNK11RFolderItem17HasRootFolderItemEv @ 58 NONAME
+	_ZNK12RFeedsServer24FetchServerSettingsSyncLEv @ 59 NONAME
+	_ZNK12RFeedsServer7VersionEv @ 60 NONAME
+	_ZNK12RFeedsServer8SettingsEv @ 61 NONAME
+	_ZNK5CFeed11Debug_PrintEv @ 62 NONAME
+	_ZNK5CFeed11DescriptionEv @ 63 NONAME
+	_ZNK5CFeed11ItemStatusLER6RArrayIiERS0_I11TItemStatusE @ 64 NONAME
+	_ZNK5CFeed15Debug_PrintInfoERK7TDesC16R5RFile @ 65 NONAME
+	_ZNK5CFeed2IdEv @ 66 NONAME
+	_ZNK5CFeed3UrlEv @ 67 NONAME
+	_ZNK5CFeed4DateEv @ 68 NONAME
+	_ZNK5CFeed5TitleEv @ 69 NONAME
+	_ZNK5CFeed6ItemAtEi @ 70 NONAME
+	_ZNK5CFeed9ItemCountEv @ 71 NONAME
+	_ZNK5CItem10ItemStatusEv @ 72 NONAME
+	_ZNK5CItem11Debug_PrintEv @ 73 NONAME
+	_ZNK5CItem11DescriptionEv @ 74 NONAME
+	_ZNK5CItem11EnclosureAtEi @ 75 NONAME
+	_ZNK5CItem14EnclosureCountEv @ 76 NONAME
+	_ZNK5CItem2IdEv @ 77 NONAME
+	_ZNK5CItem3UrlEv @ 78 NONAME
+	_ZNK5CItem5TitleEv @ 79 NONAME
+	_ZNK5CItem9TimestampEv @ 80 NONAME
+	_ZNK5RFeed14HasCurrentFeedEv @ 81 NONAME
+	_ZNK5RFeed4FeedEv @ 82 NONAME
+	_ZNK9CItemMini2IdEv @ 83 NONAME
+	_ZNK9CItemMini5TitleEv @ 84 NONAME
+	_ZTI10CEnclosure @ 85 NONAME ; #<TI>#
+	_ZTI11CFolderItem @ 86 NONAME ; #<TI>#
+	_ZTI11CPackedFeed @ 87 NONAME ; #<TI>#
+	_ZTI11RFolderItem @ 88 NONAME ; #<TI>#
+	_ZTI12RFeedsServer @ 89 NONAME ; #<TI>#
+	_ZTI13CPackedFolder @ 90 NONAME ; #<TI>#
+	_ZTI15CRequestHandler @ 91 NONAME ; #<TI>#
+	_ZTI19CFeedRequestHandler @ 92 NONAME ; #<TI>#
+	_ZTI21CClientRequestHandler @ 93 NONAME ; #<TI>#
+	_ZTI25CFolderItemRequestHandler @ 94 NONAME ; #<TI>#
+	_ZTI5CFeed @ 95 NONAME ; #<TI>#
+	_ZTI5CItem @ 96 NONAME ; #<TI>#
+	_ZTI5RFeed @ 97 NONAME ; #<TI>#
+	_ZTI7CPacked @ 98 NONAME ; #<TI>#
+	_ZTI9CItemMini @ 99 NONAME ; #<TI>#
+	_ZTV10CEnclosure @ 100 NONAME ; #<VT>#
+	_ZTV11CFolderItem @ 101 NONAME ; #<VT>#
+	_ZTV11CPackedFeed @ 102 NONAME ; #<VT>#
+	_ZTV11RFolderItem @ 103 NONAME ; #<VT>#
+	_ZTV12RFeedsServer @ 104 NONAME ; #<VT>#
+	_ZTV13CPackedFolder @ 105 NONAME ; #<VT>#
+	_ZTV15CRequestHandler @ 106 NONAME ; #<VT>#
+	_ZTV19CFeedRequestHandler @ 107 NONAME ; #<VT>#
+	_ZTV21CClientRequestHandler @ 108 NONAME ; #<VT>#
+	_ZTV25CFolderItemRequestHandler @ 109 NONAME ; #<VT>#
+	_ZTV5CFeed @ 110 NONAME ; #<VT>#
+	_ZTV5CItem @ 111 NONAME ; #<VT>#
+	_ZTV5RFeed @ 112 NONAME ; #<VT>#
+	_ZTV7CPacked @ 113 NONAME ; #<VT>#
+	_ZTV9CItemMini @ 114 NONAME ; #<VT>#
+	_ZN11RFolderItem18ExportFolderItemsLER13RPointerArrayIK11CFolderItemERK7TDesC16 @ 115 NONAME
+	_ZNK11CFolderItem24UnreadFeedCountRecursiveEv @ 116 NONAME
+	_ZNK11CFolderItem25UnreadTopicCountRecursiveEv @ 117 NONAME
+	_ZNK11CFolderItem6StatusEv @ 118 NONAME

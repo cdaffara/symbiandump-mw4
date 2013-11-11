@@ -1,0 +1,43 @@
+/*
+* Copyright (c) 2003-2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project vpncleaner
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+TARGET         vpncleaner.exe
+TARGETTYPE     exe
+UID            0x1000008d 0x101FAE02
+
+CAPABILITY	   WriteDeviceData ReadDeviceData ReadUserData
+VENDORID       VID_DEFAULT
+
+SOURCEPATH     ../src
+SOURCE         vpncleanerexe.cpp 
+SOURCE         vpncleaner.cpp
+
+USERINCLUDE    ../inc
+USERINCLUDE     ../../vpncommon/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY    euser.lib 
+LIBRARY    cmmanager.lib
+LIBRARY	   rfs.lib
+LIBRARY	   efsrv.lib
+
+DEBUGLIBRARY    flogger.lib

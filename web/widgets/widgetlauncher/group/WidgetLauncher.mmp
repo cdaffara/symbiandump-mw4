@@ -1,0 +1,46 @@
+/*
+* Copyright (c) 2006, 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     mmp file for widgetlauncher app
+*
+*
+*/
+
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+target widgetlauncher.exe
+targettype exe
+uid 0 0x10282821
+
+//SwEvent needed for TApaTask
+CAPABILITY SwEvent WriteDeviceData
+VENDORID    VID_DEFAULT
+
+MW_LAYER_SYSTEMINCLUDE
+
+userinclude ../inc
+userinclude     ../../widgetapp/inc
+
+sourcepath ../src
+
+source WidgetLauncher.cpp
+
+library euser.lib
+library estor.lib
+library apparc.lib
+library apgrfx.lib
+library ws32.lib
+library oommonitor.lib

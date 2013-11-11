@@ -1,0 +1,51 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  ?Description
+*
+*/
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          DownloadMgrClientApiTest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E7
+
+#if defined(EKA2)
+CAPABILITY      ALL -TCB
+VENDORID        0
+#endif
+
+DEFFILE         DownloadMgrClientApiTest.def
+
+SOURCEPATH      ../src
+SOURCE          DownloadMgrClientApiTest.cpp
+SOURCE          RHttpDownloadTestCases.cpp
+SOURCE          RHttpDownloadMgrTestCases.cpp
+
+USERINCLUDE     ../inc 
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc 
+SYSTEMINCLUDE   ../../../download_mgr_ui_api/inc 
+
+LIBRARY         euser.lib efsrv.lib downloadmgr.lib esock.lib
+LIBRARY         stiftestinterface.lib
+
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+
+// End of File

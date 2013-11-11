@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hbdocument version="1.1">
+    <object name="actionCancel" type="HbAction">
+        <icon iconName="qtg_mono_exit" name="icon"/>
+    </object>
+    <object name="actionPrevious" type="HbAction">
+        <icon iconName="qtg_mono_arrow_left" name="icon"/>
+    </object>
+    <object name="actionNext" type="HbAction">
+        <icon iconName="qtg_mono_arrow_right" name="icon"/>
+    </object>
+    <object name="actionFinish" type="HbAction">
+        <icon iconName="qtg_mono_tick" name="icon"/>
+    </object>
+    <widget name="dialog" type="HbDialog">
+        <bool name="backgroundFaded" value="TRUE"/>
+        <bool name="dismissOnAction" value="FALSE"/>
+        <integer name="timeout" value="0"/>
+        <enums name="frameType" value="Strong"/>
+        <enums name="dismissPolicy" value="NoDismiss"/>
+        <!-- layout id: qtl_fullscreen_dialog_heading_pri -->
+        <widget name="title" role="HbDialog:headingWidget" type="HbLabel"/>
+        <widget name="stackedWidget" role="HbDialog:contentWidget" type="HbStackedWidget"/>
+    </widget>
+    <metadata activeUIState="Common ui state" display="NHD-3.2-inch_portrait" unit="un">
+        <uistate name="Common ui state" sections="#common"/>
+    </metadata>
+</hbdocument>

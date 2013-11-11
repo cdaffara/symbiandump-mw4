@@ -1,0 +1,52 @@
+EXPORTS
+	_ZN10TIkeParser10MainParseLEP13CIkeDataArray @ 1 NONAME
+	_ZN10TIkeParser12BufferAppendERP6HBufC8RK6TDesC8 @ 2 NONAME
+	_ZN10TIkeParser16GeneralInfoWriteEmmiRP6HBufC8 @ 3 NONAME
+	_ZN10TIkeParser16GeneralInfoWriteEmmiiRP6HBufC8 @ 4 NONAME
+	_ZN10TIkeParser17ParseIKESectionsLEP13CIkeDataArray @ 5 NONAME
+	_ZN10TIkeParser5WriteEP8CIkeDataRP6HBufC8 @ 6 NONAME
+	_ZN10TIkeParser6ParseLEP8CIkeData @ 7 NONAME
+	_ZN10TIkeParser9MainWriteEP8CIkeDataRP6HBufC8 @ 8 NONAME
+	_ZN10TIkeParserC1ERK7TDesC16i @ 9 NONAME
+	_ZN10TIkeParserC1Ev @ 10 NONAME
+	_ZN10TIkeParserC2ERK7TDesC16i @ 11 NONAME
+	_ZN10TIkeParserC2Ev @ 12 NONAME
+	_ZN10TSecParser16ParseGeneralDataEP12CGeneralData @ 13 NONAME
+	_ZN10TSecParser5WriteEP14CSecurityPieceRP6HBufC8 @ 14 NONAME
+	_ZN12CGeneralDataC1EPS_ @ 15 NONAME
+	_ZN12CGeneralDataC1Ev @ 16 NONAME
+	_ZN12CGeneralDataC2EPS_ @ 17 NONAME
+	_ZN12CGeneralDataC2Ev @ 18 NONAME
+	_ZN13CIkeDataArray10ConstructLEPS_ @ 19 NONAME
+	_ZN13CIkeDataArray4NewLEPS_ @ 20 NONAME
+	_ZN13CIkeDataArray4NewLEi @ 21 NONAME
+	_ZN13CIkeDataArray5CopyLEPS_ @ 22 NONAME
+	_ZN13CIkeDataArray5EmptyEv @ 23 NONAME
+	_ZN13CIkeDataArrayD0Ev @ 24 NONAME
+	_ZN13CIkeDataArrayD1Ev @ 25 NONAME
+	_ZN13CIkeDataArrayD2Ev @ 26 NONAME
+	_ZN14CSecurityPiece10ConstructLEi @ 27 NONAME
+	_ZN14CSecurityPiece8SetInfoLERK7TDesC16 @ 28 NONAME
+	_ZN14CSecurityPieceD0Ev @ 29 NONAME
+	_ZN14CSecurityPieceD1Ev @ 30 NONAME
+	_ZN14CSecurityPieceD2Ev @ 31 NONAME
+	_ZN14TGeneralParser5ParseEP12CGeneralData @ 32 NONAME
+	_ZN14TGeneralParserC1ERK7TDesC16 @ 33 NONAME
+	_ZN14TGeneralParserC2ERK7TDesC16 @ 34 NONAME
+	_ZN8CIkeData10ConstructLEPKS_ @ 35 NONAME
+	_ZN8CIkeData4NewLEPKS_ @ 36 NONAME
+	_ZN8CIkeData4NewLEv @ 37 NONAME
+	_ZN8CIkeData5CopyLEPKS_ @ 38 NONAME
+	_ZN8CIkeDataD0Ev @ 39 NONAME
+	_ZN8CIkeDataD1Ev @ 40 NONAME
+	_ZN8CIkeDataD2Ev @ 41 NONAME
+	_ZN9IkeParser15GetApplUidListLERK7TDesC16 @ 42 NONAME
+	_ZN9IkeParser15TextToHexOctetsERK7TDesC16R5TDes8 @ 43 NONAME
+	_ZN9IkeParser16TextToHexOctetsLERK7TDesC16 @ 44 NONAME
+	_ZTI13CIkeDataArray @ 45 NONAME ; #<TI>#
+	_ZTI14CSecurityPiece @ 46 NONAME ; #<TI>#
+	_ZTI8CIkeData @ 47 NONAME ; #<TI>#
+	_ZTV13CIkeDataArray @ 48 NONAME ; #<VT>#
+	_ZTV14CSecurityPiece @ 49 NONAME ; #<VT>#
+	_ZTV8CIkeData @ 50 NONAME ; #<VT>#
+

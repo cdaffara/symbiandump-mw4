@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+   <specVersion>
+      <major>1</major>
+      <minor>0</minor>
+   </specVersion>
+   <device>
+      <deviceType>urn:schemas-upnp-org:device:BinaryLight:1</deviceType>
+      <presentationURL>/</presentationURL>
+      <friendlyName>Light (BAN-KIRANP01)</friendlyName>
+      <manufacturer>Intel Corporation</manufacturer>
+      <manufacturerURL>http://www.intel.com</manufacturerURL>
+      <modelDescription>Software Emulated Light Bulb</modelDescription>
+      <modelName>Intel CLR Emulated Light Bulb</modelName>
+      <modelNumber>XPC-L1</modelNumber>
+      <modelURL>http://www.intel.com/xpc</modelURL>
+      <kiran>Something goes here</kiran>
+      <UDN>uuid:6a87ea9b-5821-4cef-9447-a1b67074b157</UDN>
+      <iconList>
+         <icon>
+            <mimetype>image/png</mimetype>
+            <width>32</width>
+            <height>32</height>
+            <depth>32</depth>
+            <url>/icon.png</url>
+         </icon>
+      </iconList>
+      <serviceList>
+         <service>
+            <serviceType>urn:schemas-upnp-org:service:DimmingService:1</serviceType>
+            <serviceId>urn:upnp-org:serviceId:DimmingService.0001</serviceId>
+            <SCPDURL>_urn:upnp-org:serviceId:DimmingService.0001_scpd.xml</SCPDURL>
+            <controlURL>_urn:upnp-org:serviceId:DimmingService.0001_control</controlURL>
+            <eventSubURL>_urn:upnp-org:serviceId:DimmingService.0001_event</eventSubURL>
+         </service>
+         <service>
+            <serviceType>urn:schemas-upnp-org:service:SwitchPower:1</serviceType>
+            <serviceId>urn:upnp-org:serviceId:SwitchPower.0001</serviceId>
+            <SCPDURL>_urn:upnp-org:serviceId:SwitchPower.0001_scpd.xml</SCPDURL>
+            <controlURL>_urn:upnp-org:serviceId:SwitchPower.0001_control</controlURL>
+            <eventSubURL>_urn:upnp-org:serviceId:SwitchPower.0001_event</eventSubURL>
+         </service>
+      </serviceList>
+      <deviceList>
+         <device>
+            <friendlyName>Intel's Media Server (BAN-KIRANP01)</friendlyName>
+            <manufacturer>Intel Corporation</manufacturer>
+            <manufacturerURL>http://www.intel.com</manufacturerURL>
+            <modelDescription>Provides content through UPnP ContentDirectory service</modelDescription>
+            <modelName>XPC Media Server</modelName>
+            <modelNumber>0.765</modelNumber>
+            <modelURL>http://www.intel.com/upnp/MediaServerDevice</modelURL>
+            <UDN>uuid:e2310f07-7dcf-4047-b236-ab1141ae5252</UDN>
+            <serviceList>
+               <service>
+                  <serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+                  <serviceId>urn:schemas-upnp-org:service:ConnectionManager</serviceId>
+                  <SCPDURL>_urn:schemas-upnp-org:service:ConnectionManager_scpd.xml</SCPDURL>
+                  <controlURL>_urn:schemas-upnp-org:service:ConnectionManager_control</controlURL>
+                  <eventSubURL>_urn:schemas-upnp-org:service:ConnectionManager_event</eventSubURL>
+               </service>
+               <service>
+                  <serviceType>urn:schemas-upnp-org:service:ContentDirectory:1</serviceType>
+                  <serviceId>urn:schemas-upnp-org:service:ContentDirectory</serviceId>
+                  <SCPDURL>_urn:schemas-upnp-org:service:ContentDirectory_scpd.xml</SCPDURL>
+                  <controlURL>_urn:schemas-upnp-org:service:ContentDirectory_control</controlURL>
+                  <eventSubURL>_urn:schemas-upnp-org:service:ContentDirectory_event</eventSubURL>
+               </service>
+            </serviceList>
+         </device>
+      </deviceList>
+   </device>
+</root>

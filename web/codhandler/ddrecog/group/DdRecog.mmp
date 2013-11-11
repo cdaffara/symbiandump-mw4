@@ -1,0 +1,48 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Project specification for DD Recognizer.   
+*      
+*
+*/
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          DdRecog.dll
+TARGETTYPE      PLUGIN
+UID             0x10009d8d 0x10008d55
+
+SOURCEPATH      ../src
+
+START RESOURCE 10008d55.rss
+TARGET          DdRecog.rsc
+END
+
+CAPABILITY      CAP_RECOGNISER
+VENDORID        VID_DEFAULT
+
+SOURCE          DdRecog.cpp
+
+USERINCLUDE     ../inc
+
+SYSTEMINCLUDE   ../../codeng/inc
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_ECOM_SYSTEMINCLUDE
+
+LIBRARY         euser.lib
+LIBRARY         efsrv.lib
+LIBRARY         ApMime.lib
+
+DEBUGLIBRARY    flogger.lib

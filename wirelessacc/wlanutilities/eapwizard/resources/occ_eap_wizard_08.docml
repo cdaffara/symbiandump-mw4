@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hbdocument version="1.2">
+    <widget name="view" type="HbWidget">
+        <!-- layout id: txt_occ_dialog_insert_the_name_of_the_new_wlan_net -->
+        <widget name="setlabel_59" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <string locid="txt_occ_setlabel_eap_pac_store_password" name="plainText" value="PAC store password"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+            <integer name="maximumLines" value="4"/>
+        </widget>
+        <widget name="lineEditPasswordConfirm" type="HbLineEdit"/>
+        <!-- layout id: qtl_dialog_pri3 -->
+        <widget name="labelError" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+            <integer name="maximumLines" value="3"/>
+        </widget>
+        <sizepolicy horizontalPolicy="Expanding" horizontalStretch="0" verticalPolicy="Expanding" verticalStretch="0"/>
+        <layout type="anchor"/>
+    </widget>
+    <section name="portrait_section">
+        <widget name="view" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="setlabel_59" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_59" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="setlabel_59" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditPasswordConfirm" dstEdge="LEFT" src="setlabel_59" srcEdge="LEFT"/>
+                <anchoritem dst="lineEditPasswordConfirm" dstEdge="TOP" prefLength="var(hb-param-margin-gene-middle-vertical)" src="setlabel_59" srcEdge="BOTTOM"/>
+                <anchoritem dst="lineEditPasswordConfirm" dstEdge="RIGHT" src="setlabel_59" srcEdge="RIGHT"/>
+                <anchoritem dst="labelError" dstEdge="LEFT" src="setlabel_59" srcEdge="LEFT"/>
+                <anchoritem dst="labelError" dstEdge="TOP" prefLength="var(hb-param-margin-gene-bottom)" src="lineEditPasswordConfirm" srcEdge="BOTTOM"/>
+                <anchoritem dst="labelError" dstEdge="RIGHT" src="setlabel_59" srcEdge="RIGHT"/>
+            </layout>
+        </widget>
+    </section>
+    <section name="landscape_section">
+        <widget name="view" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="setlabel_59" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_59" dstEdge="TOP" src="" srcEdge="TOP"/>
+                <anchoritem dst="setlabel_59" dstEdge="BOTTOM" prefLength="var(hb-param-margin-gene-bottom)" src="lineEditPasswordConfirm" srcEdge="BOTTOM"/>
+                <anchoritem direction="NEGATIVE" dst="setlabel_59" dstEdge="RIGHT" prefLength="expr(var(hb-param-margin-gene-middle-horizontal) / 2)" src="" srcEdge="CENTERH"/>
+                <anchoritem dst="lineEditPasswordConfirm" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-middle-horizontal)" src="setlabel_59" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditPasswordConfirm" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="lineEditPasswordConfirm" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="labelError" dstEdge="LEFT" src="setlabel_59" srcEdge="LEFT"/>
+                <anchoritem dst="labelError" dstEdge="TOP" prefLength="var(hb-param-margin-gene-bottom)" src="lineEditPasswordConfirm" srcEdge="BOTTOM"/>
+                <anchoritem dst="labelError" dstEdge="RIGHT" src="lineEditPasswordConfirm" srcEdge="RIGHT"/>
+            </layout>
+        </widget>
+    </section>
+    <metadata activeUIState="landscape" display="NHD-3.2-inch_landscape" unit="un">
+        <uistate name="Common ui state" sections="#common"/>
+        <uistate name="portrait" sections="#common portrait_section"/>
+        <uistate name="landscape" sections="#common landscape_section"/>
+    </metadata>
+</hbdocument>

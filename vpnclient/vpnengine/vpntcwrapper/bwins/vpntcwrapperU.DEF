@@ -1,0 +1,3 @@
+EXPORTS
+	?NewTcStubL@@YAPAVCVpnTcStub@@XZ @ 1 NONAME ; class CVpnTcStub * NewTcStubL(void)
+

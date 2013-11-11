@@ -1,0 +1,45 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  loc file for WidgetUI
+*
+*/
+
+#define qtn_widgetui_network_access "Allow network access?"
+
+//d: Command text associated to a softkey.
+//l: control_pane_t1/opt7
+//r: 3.2
+#define qtn_widgetui_softkey_yes              "Yes"
+
+//d: Command text associated to a softkey.
+//l: control_pane_t1/opt7
+//r: 3.2
+#define qtn_widgetui_softkey_no               "No"
+
+// d: Pop up to notify user that installed widget can't run in strict mode.
+// l: popup_note_window
+// r: 3.2
+#define qtn_widgetui_strict_mode_access "The widget is not compatible."
+
+// d: Pop up to notify user that OOM event occurred.
+// l: popup_note_window
+// r: 3.2
+#define qtn_widgetui_oom_event "Out of Memory! Closing all widgets."
+
+// d: Pop up to grant access to phone information and network
+// l: popup_note_window
+// r: 5.0
+#define qtn_widgetui_blanketpermission_prompt "Do you want to allow the widget to access information on your phone and connect to the network? "
+
+// End of File

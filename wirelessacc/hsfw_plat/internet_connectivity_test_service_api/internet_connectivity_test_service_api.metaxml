@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="0332a21d51eb6f5acb21eedb11878734" dataversion="1.0">
+  <name>Internet Connectivity Test Service API</name>
+  <description>An API for requesting connectivity test services from Internet Connectivity Test Service.</description>
+  <type>c++</type>
+  <subsystem>hotspotfw</subsystem>
+  <libs>
+    <lib name="ictsclientinterface.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

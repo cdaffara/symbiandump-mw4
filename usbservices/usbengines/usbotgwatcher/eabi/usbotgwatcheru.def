@@ -1,0 +1,10 @@
+EXPORTS
+	_ZN14CUsbOtgWatcher4NewLER4RUsb @ 1 NONAME
+	_ZN14CUsbOtgWatcher9IsDeviceAEv @ 2 NONAME
+	_ZTI14CUsbOtgWatcher @ 3 NONAME ; #<TI>#
+	_ZTI16CUsbNotifManager @ 4 NONAME ; #<TI>#
+	_ZTIN16CUsbNoteNotifier15CNotifierActiveE @ 5 NONAME ; #<TI>#
+	_ZTV14CUsbOtgWatcher @ 6 NONAME ; #<VT>#
+	_ZTV16CUsbNotifManager @ 7 NONAME ; #<VT>#
+	_ZTVN16CUsbNoteNotifier15CNotifierActiveE @ 8 NONAME ; #<VT>#
+

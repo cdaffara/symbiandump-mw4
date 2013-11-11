@@ -1,0 +1,6 @@
+EXPORTS
+	_Z24ImplementationGroupProxyRi @ 1 NONAME
+	_Z13NotifierArrayv @ 2 NONAME
+	_ZTI20CSenNotPluginDlgImpl @ 3 NONAME ; #<TI>#
+	_ZTV20CSenNotPluginDlgImpl @ 4 NONAME ; #<VT>#
+

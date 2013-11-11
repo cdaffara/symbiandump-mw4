@@ -1,0 +1,122 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: This file contains all the resources for the VPNcleaner.
+*
+*/
+
+
+//  RESOURCE IDENTIFIER
+NAME    AWIZ // 4 letter ID
+
+//  INCLUDES
+
+#include <eikon.rh>
+//#include <avkon.rsg>
+//#include <avkon.rh>
+//#include <avkon.mbg>
+#include "vpncleaner.hrh"
+#include "vpncleaner.loc"
+
+
+//  CONSTANTS  
+//#define ?constant   ?value
+
+
+//  MACROS  
+//#define ?macro
+
+
+//  RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf="VPNcleaner"; }
+
+RESOURCE EIK_APP_INFO
+    {
+    /*
+    hotkeys=r_vpncleaner_hotkeys;
+    menubar=r_vpncleaner_menubar;
+    cba=R_AVKON_SOFTKEYS_OPTIONS_BACK;     
+    */
+    }
+
+//----------------------------------------------------
+//   
+//    r_vpncleaner_hotkeys
+//    ?description
+//
+//----------------------------------------------------
+//
+/*
+RESOURCE HOTKEYS r_vpncleaner_hotkeys
+    {
+    control=
+        {
+        HOTKEY { command=EAknCmdExit; key='e'; }
+        };
+    }
+*/
+//----------------------------------------------------
+//   
+//    r_vpncleaner_menubar
+//    ?description
+//
+//----------------------------------------------------
+//
+
+/*
+RESOURCE MENU_BAR r_vpncleaner_menubar
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane=r_vpncleaner_menu; txt="File"; }
+        };
+    }
+*/
+//----------------------------------------------------
+//   
+//    r_vpncleaner_menu
+//    ?description
+//
+//----------------------------------------------------
+//
+
+/*
+RESOURCE MENU_PANE r_vpncleaner_menu
+    {
+    items=
+        {
+        MENU_ITEM { command=EAknCmdExit; txt="Exit"; }
+        };
+    }
+*/
+//----------------------------------------------------
+//   
+//    r_vpncleaner_app_menu
+//    ?description
+//
+//----------------------------------------------------
+//
+/*
+RESOURCE MENU_PANE r_vpncleaner_app_menu
+    {
+    items=
+        {
+        MENU_ITEM { command=EAknCmdExit; txt="Exit"; }
+        };
+    }
+*/
+
+// End of File

@@ -1,0 +1,67 @@
+/*
+* Copyright (c) 2003-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project eventmedsit
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET          eventmedsit.dll
+TARGETTYPE      dll
+UID             0x1000008d 0x101FD28D
+
+CAPABILITY      ProtServ NetworkControl NetworkServices
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          sit.cpp
+SOURCE          sitdeathobserver.cpp
+SOURCE          taskarrivalobserver.cpp
+SOURCE          taskhandler.cpp
+SOURCE          taskhandlercreator.cpp
+SOURCE          protocolversiongetter.cpp
+SOURCE          vpnconnstarter.cpp 
+SOURCE          realiapconnobserver.cpp
+SOURCE          vpnconncloser.cpp
+SOURCE          eventlogger.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../../vpnapiimpl/inc
+USERINCLUDE     ../../kmdapi/inc
+USERINCLUDE     ../../ikepolparser/inc
+USERINCLUDE     ../../vpnipsecpolparser/inc
+USERINCLUDE     ../../eventmediatorapi/inc
+USERINCLUDE     ../../vpnmanager/inc
+USERINCLUDE     ../../vpncommon/inc
+USERINCLUDE     ../../eventviewer/inc
+USERINCLUDE     ../../pkiserviceapi/inc
+USERINCLUDE     ../../../vpnui/vpnecomnotifier/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         euser.lib 
+LIBRARY         esock.lib 
+LIBRARY         insock.lib
+LIBRARY         commdb.lib
+LIBRARY         eventmedapi.lib
+LIBRARY         vpnapi.lib
+LIBRARY         kmdapi.lib
+LIBRARY         ipsecpolapi.lib
+LIBRARY         ikepolparser.lib 
+LIBRARY         vpnipsecpolparser.lib
+LIBRARY         eventviewer.lib
+LIBRARY         featmgr.lib
+LIBRARY         cmmanager.lib
+
+DEBUGLIBRARY    flogger.lib

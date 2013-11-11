@@ -1,0 +1,51 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  ECOM Resource file for ALF OOGM Framework Plugin
+*
+*/
+
+#include <ecom/registryinfov2.rh>
+#include <goommonitorplugin.hrh>
+
+
+
+
+// ---------------------------------------------------------------------------
+// Registration info for ECOM framework.
+// ---------------------------------------------------------------------------
+//
+RESOURCE REGISTRY_INFO theInfo
+    {
+    resource_format_version = RESOURCE_FORMAT_VERSION_2; 
+    dll_uid = 0xE4B6C988;
+    interfaces = 
+        {
+        INTERFACE_INFO
+            {
+            interface_uid = KGOomPluginInterfaceUidValue;
+            implementations = 
+                {
+                IMPLEMENTATION_INFO
+                    {
+                    implementation_uid = 0xE4B6C988;
+                    version_no = 1;
+                    display_name = "AlfOogmPlugin";
+                    default_data = "";
+                    opaque_data = "";
+                    }
+                };
+                        
+            }
+        };
+    }

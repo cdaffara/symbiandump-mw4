@@ -1,0 +1,153 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:       Project specification file for senhttpchanneltransportpugin    
+*
+*/
+
+
+
+
+
+
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+#ifdef SYMBIAN_SECURE_ECOM 
+TARGETTYPE PLUGIN
+#else
+TARGETTYPE ECOMIIC
+#endif
+
+// ECom Dll recognition UID followed by the unique UID for this dll
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET SenHttpChannelTransport.dll
+UID 0x10009D8D 0x10274C73
+#else
+TARGET wshttpchanneltransport.dll
+UID 0x10009D8D 0x101F974D
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+VENDORID 0x101FB657
+    #else
+VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_ECOM_PLUGIN )
+CAPABILITY ALL -TCB
+    #else
+CAPABILITY CAP_ECOM_PLUGIN
+    #endif
+#endif
+SOURCEPATH      ../src
+SOURCE          senhttpchanneltransportpluginmain.cpp
+SOURCE          senhttpchanneltransportpluginproxy.cpp
+SOURCE          senhttpchanneltransportplugin.cpp
+SOURCE          senhttpchannelimpl.cpp
+SOURCE          senhttpeventhandler.cpp
+SOURCE          sentxnstate.cpp
+SOURCE          senhttpsyncrequester.cpp
+SOURCE          senmultiparttxnstate.cpp
+SOURCE          senmtomtxnstate.cpp
+SOURCE          senatomtxnstate.cpp
+SOURCE          senasynctimeout.cpp
+SOURCE          senrfiletxnstate.cpp
+SOURCEPATH      ../data
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+START RESOURCE  10274c73.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET SenHttpChannelTransport.rsc
+#endif 
+
+#else
+START RESOURCE  101F974D.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET wshttpchanneltransport.rsc
+#endif 
+
+#endif
+
+
+END
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wscore/inc
+USERINCLUDE     ../../wsframework/inc
+USERINCLUDE     ../../wsutils/inc
+USERINCLUDE     ../../wsidentitymanager/inc
+USERINCLUDE     ../../wsfragment/inc
+USERINCLUDE     ../../wsmessages/inc
+USERINCLUDE     ../../wslogger/inc ../../inc // for TLS based logging
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+
+SYSTEMINCLUDE   /epoc32/include/ecom
+SYSTEMINCLUDE   /epoc32/include/libc
+
+LIBRARY         bafl.lib
+LIBRARY         commdb.lib // for forcing IAP ID
+LIBRARY         ecom.lib
+LIBRARY         efsrv.lib 
+LIBRARY         esock.lib
+LIBRARY         estor.lib
+LIBRARY         euser.lib
+LIBRARY         flogger.lib
+LIBRARY         http.lib
+LIBRARY         inetprotutil.lib
+LIBRARY         HttpFilterCommon.lib
+LIBRARY         netmeta.lib
+
+#ifndef __ENABLE_ALR__
+LIBRARY  		platformver.lib //extendedconnpref.h
+LIBRARY  		extendedconnpref.lib //extendedconnpref.h
+#endif
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// WSF libraries:
+LIBRARY         SenServDesc.lib
+LIBRARY         SenFramework.lib // CSenHttpTransportProperties
+LIBRARY         SenUtils.lib
+LIBRARY         SenFragment.lib
+LIBRARY         SenMessages.lib
+LIBRARY         SenXml.lib
+LIBRARY         SenLogger.lib // for TLS based logging
+
+#else
+LIBRARY         wsServDesc.lib
+LIBRARY         wsFramework.lib // CSenHttpTransportProperties
+LIBRARY         wsUtils.lib
+LIBRARY         wsFragment.lib
+LIBRARY         wsMessages.lib
+LIBRARY         wsXml.lib
+LIBRARY         wslogger.lib // for TLS based logging
+
+#endif
+// libxml2parser libs:
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+LIBRARY         XmlEngineDOM.lib
+LIBRARY         XmlEngineSerializer.lib
+#else
+LIBRARY         WsStarXmlEngineDOM.lib
+LIBRARY         WsStarXmlEngineSerializer.lib
+#endif
+
+SMPSAFE
+

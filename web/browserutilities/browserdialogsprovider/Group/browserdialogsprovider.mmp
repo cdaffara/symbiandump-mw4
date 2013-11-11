@@ -1,0 +1,82 @@
+/*
+* Copyright (c) 1997-2001 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          browserdialogsprovider.dll
+EPOCSTACKSIZE   0x5000
+TARGETTYPE      dll
+UID				0x1000008d 0x10008D63
+CAPABILITY		CAP_GENERAL_DLL
+
+SOURCEPATH      ../Src
+
+START RESOURCE	../SrcData/BrowserDialogsProvider.rss
+DEPENDS avkon.rsg
+HEADER
+TARGETPATH   RESOURCE_FILES_DIR
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END
+
+USERINCLUDE		../Inc
+USERINCLUDE		../SrcData
+
+MW_LAYER_SYSTEMINCLUDE
+
+
+SOURCE ../Src/BrowserDialogsProvider.cpp
+SOURCE ../Src/BrowserAuthenticationDialog.cpp
+SOURCE ../Src/BrowserScriptPromptDialog.cpp
+SOURCE ../Src/BrowserViewImagesPopup.cpp
+SOURCE ../Src/BrowserViewImagesListBox.cpp
+SOURCE ../Src/BrowserSelectElementDlg.cpp
+SOURCE ../Src/BrowserSelectElementListBox.cpp
+SOURCE ../Src/BrowserSelectElementModel.cpp
+SOURCE ../Src/BrowserSelectElementItemDrawer.cpp
+SOURCE ../Src/PhotoOperationWait.cpp
+SOURCE ../Src/BrowserDialogsProviderAsyncExit.cpp
+SOURCE ../Src/BrowserUploadProgressNote.cpp
+
+
+LIBRARY euser.lib apparc.lib cone.lib eikcore.lib egul.lib
+LIBRARY eikcoctl.lib avkon.lib eikdlg.lib bitgdi.lib
+LIBRARY eikctl.lib fbscli.lib bafl.lib MediaClientImage.lib
+LIBRARY CommonEngine.lib
+LIBRARY CommonUI.LIB
+LIBRARY CommonDialogs.lib
+LIBRARY AknSkins.lib
+LIBRARY inetprotutil.lib 
+LIBRARY apmime.lib 
+LIBRARY efsrv.lib 
+LIBRARY aknicon.lib 
+LIBRARY ServiceHandler.lib
+LIBRARY caf.lib 
+LIBRARY cafutils.lib
+LIBRARY featmgr.lib // Feature manager
+
+LIBRARY MGFetch.lib
+
+#ifdef RD_MULTIPLE_DRIVE
+LIBRARY PlatformEnv.lib
+#endif

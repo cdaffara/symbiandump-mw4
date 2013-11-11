@@ -1,0 +1,10 @@
+EXPORTS
+	_ZN4RKMD17StopVpnConnectionEmN18TKmdStopConnection5TTypeE @ 1 NONAME
+	_ZN4RKMD7ConnectEv @ 2 NONAME
+	_ZNK4RKMD13CancelResolveEv @ 3 NONAME
+	_ZNK4RKMD14CancelActivateEv @ 4 NONAME
+	_ZNK4RKMD14ResolveAddressEmRK7TDesC16R8TPckgBufI11TNameRecordER14TRequestStatus @ 5 NONAME
+	_ZNK4RKMD19StartRealConnectionEmR5TPckgI24TVpnRealConnectionParamsER14TRequestStatus @ 6 NONAME
+	_ZNK4RKMD25CancelStartRealConnectionEv @ 7 NONAME
+	_ZNK4RKMD8ActivateEmRK7TDesC16RK6TDesC8R5TPckgI11TVPNAddressER14TRequestStatus @ 8 NONAME
+

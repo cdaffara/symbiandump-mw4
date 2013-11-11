@@ -1,0 +1,132 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Defines the Feeds commands.
+*
+*/
+
+        
+        
+#ifndef FEEDS_APP_HRH
+#define FEEDS_APP_HRH
+
+// Feeds enumerate command codes
+enum TFeedsCommandIds
+    {
+    // Debug sub-menu commands
+    EFeedsDebug = 0x6000,
+    EFeedsAppCmd0,
+    EFeedsAppCmd1,
+    EFeedsAppCmd2,
+    EFeedsAppCmd3,
+    EFeedsAppCmd4,
+    EFeedsAppCmd5,
+    EFeedsAppCmd6,
+    EFeedsAppCmd7,
+    EFeedsAppCmd8,
+    EFeedsAppCmd9,
+    EFeedsAppCmd10,
+    EFeedsAppCmd11,
+    EFeedsAppCmd12,
+    EFeedsAppCmd13,
+    EFeedsAppCmd14,
+    EFeedsAppCmd15,
+    EFeedsAppCmd16,
+    EFeedsAppCmd17,
+    EFeedsAppCmd18,
+    EFeedsAppCmd19,
+    EFeedsAppCmd20,
+    EFeedsAppCmd21,
+	EFeedsAppCmd22,
+	EFeedsAppCmd23,
+    
+    EShowFolderView,
+    EShowTestHarnessView,
+    ESubscribeTo
+    };
+
+
+enum TFeedsAppViewIds
+	{
+	EFeedsTestHarnessViewUid = 0
+    };
+
+
+// Feeds enumerate command codes
+enum TOldFeedsCommandIds
+    {
+    // Option menu commands
+    EFeedsActivate = 0x6000,
+    EFeedsSeeFullStory,
+    EFeedsUpdate,
+    EFeedsUpdateAll,
+    EFeedsBackToPage,
+    EFeedsWebMenu,
+    EFeedsManage,
+    EFeedsMarkUnMark,
+    EFeedsNavigation,
+    EFeedsTools,
+    EFeedsAdvanced,
+    EFeedsSend,
+    EFeedsInfo,
+    EFeedsSettings,
+
+    // Manage sub-menu commands
+    EFeedsMove,
+    EFeedsMoveToFolder,
+    EFeedsNewFolder,
+    EFeedsNewFeed,
+    EFeedsRename,
+    EFeedsEdit,
+    EFeedsDelete,
+
+    // Navigation sub-menu commands
+    EFeedsGotoAddress,
+    EFeedsHome,
+    EFeedsSearch,
+
+    // Tools sub-menu commands
+    EFeedsFindFeed,
+    EFeedsDownloads,    
+
+    // Advanced sub-menu commands
+    EFeedsChangeConnection,
+    EFeedsDisconnect,
+
+    // Send sub-menu commands
+
+    // Info sub-menu commands
+    EFeedsSession,
+    EFeedsAbout
+    };
+
+
+enum TFeedsResourceIds
+	{
+	EFeedsWaitNoteDlgId = 1,
+	EFeedsProgressDlgId,
+    EFeedsEditFeedDialogId,
+    EFeedsEditDialogNameId,
+    EFeedsEditDialogUrlId
+	};
+
+// CRichTextEditor
+#define KNumberOfLinesInRichTextEditor  7
+
+
+// CEditFeedDialog
+#define KMaxFeedNameLength  50
+#define KMaxFeedUrlLength   1000
+
+
+#endif  // FEEDS_VIEW_MGR_HRH

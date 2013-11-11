@@ -1,0 +1,30 @@
+/*
+* Copyright (c) 2006-2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  The localization file for user interface in Image Print UI provider
+*
+*/
+
+
+//Release 3 Localisation
+//Localisation strings
+
+// d:Options menu item to launch Image Print UI application from the AIW 
+// d:consumer application e.g. from Media Gallery.
+// l:list_single_pane_t1_cp2
+// r: 5.0
+#define qtn_usb_option_printing "Printing"
+
+// d:Application launch problem
+//l:popup_note_window
+#define qtn_usb_info_app_in_use "Application already in use"

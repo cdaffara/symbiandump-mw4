@@ -1,0 +1,334 @@
+EXPORTS
+	_ZN11CUpnpAction11ServiceTypeEv @ 1 NONAME
+	_ZN11CUpnpAction12ArgumentListEv @ 2 NONAME
+	_ZN11CUpnpAction12ArgumentTypeERK6TDesC8 @ 3 NONAME
+	_ZN11CUpnpAction12SetArgumentLERK6TDesC8S2_ @ 4 NONAME
+	_ZN11CUpnpAction13ArgumentValueERK6TDesC8 @ 5 NONAME
+	_ZN11CUpnpAction15DestinationPathEv @ 6 NONAME
+	_ZN11CUpnpAction18SetDestinationAddrERK9TInetAddr @ 7 NONAME
+	_ZN11CUpnpAction19SetDestinationPathLERK6TDesC8 @ 8 NONAME
+	_ZN11CUpnpAction4NameEv @ 9 NONAME
+	_ZN11CUpnpAction4NewLERK6TDesC8 @ 10 NONAME
+	_ZN11CUpnpAction5NewLCERS_R12CUpnpService @ 11 NONAME
+	_ZN11CUpnpAction6SenderEv @ 12 NONAME
+	_ZN11CUpnpAction7ServiceEv @ 13 NONAME
+	_ZN11CUpnpAction8ArgumentERK6TDesC8 @ 14 NONAME
+	_ZN11CUpnpAction8SetErrorEi @ 15 NONAME
+	_ZN11CUpnpAction8SetLocalEi @ 16 NONAME
+	_ZN11CUpnpAction9SetSenderERK9TInetAddr @ 17 NONAME
+	_ZN11CUpnpActionD0Ev @ 18 NONAME
+	_ZN11CUpnpActionD1Ev @ 19 NONAME
+	_ZN11CUpnpActionD2Ev @ 20 NONAME
+	_ZN11CUpnpDevice10DeviceListEv @ 21 NONAME
+	_ZN11CUpnpDevice10DeviceTypeEv @ 22 NONAME
+	_ZN11CUpnpDevice10ServiceIdLEv @ 23 NONAME
+	_ZN11CUpnpDevice10SetAddressERK9TInetAddr @ 24 NONAME
+	_ZN11CUpnpDevice10SetExpiredEi @ 25 NONAME
+	_ZN11CUpnpDevice11AddServiceLEiP12CUpnpService @ 26 NONAME
+	_ZN11CUpnpDevice11GetPropertyERK6TDesC8 @ 27 NONAME
+	_ZN11CUpnpDevice11ServiceListEv @ 28 NONAME
+	_ZN11CUpnpDevice11SetUrlBaseLERK6TDesC8 @ 29 NONAME
+	_ZN11CUpnpDevice13GetAllDevicesER13RPointerArrayIS_E @ 30 NONAME
+	_ZN11CUpnpDevice13ServiceTypesLEv @ 31 NONAME
+	_ZN11CUpnpDevice14IsEmbeddDeviceEv @ 32 NONAME
+	_ZN11CUpnpDevice15PresentationUrlEv @ 33 NONAME
+	_ZN11CUpnpDevice16SetDeviceNetworkENS_18TUpnpDeviceNetworkE @ 34 NONAME
+	_ZN11CUpnpDevice18ConcatWithUrlBaseLERK6TDesC8 @ 35 NONAME
+	_ZN11CUpnpDevice19DescriptionPropertyERK6TDesC8 @ 36 NONAME
+	_ZN11CUpnpDevice21ServiceDescriptionUrlERK6TDesC8 @ 37 NONAME
+	_ZN11CUpnpDevice23WaitServiceDescriptionLEi @ 38 NONAME
+	_ZN11CUpnpDevice27WaitServiceDescriptionCountEv @ 39 NONAME
+	_ZN11CUpnpDevice31WaitServiceDescriptionSessionIdEi @ 40 NONAME
+	_ZN11CUpnpDevice37WaitServiceDescriptionRemoveSessionIdEi @ 41 NONAME
+	_ZN11CUpnpDevice4NewLEPK11TUpnpDeviceRK13RPointerArrayI12TUpnpServiceE @ 42 NONAME
+	_ZN11CUpnpDevice4UuidEv @ 43 NONAME
+	_ZN11CUpnpDevice5IconsEv @ 44 NONAME
+	_ZN11CUpnpDevice6CloneLEv @ 45 NONAME
+	_ZN11CUpnpDevice7AddIconEi @ 46 NONAME
+	_ZN11CUpnpDevice7AddressEv @ 47 NONAME
+	_ZN11CUpnpDevice7UrlBaseEv @ 48 NONAME
+	_ZN11CUpnpDevice8AddIconLEP9CUpnpIcon @ 49 NONAME
+	_ZN11CUpnpDevice8SetAliveEi @ 50 NONAME
+	_ZN11CUpnpDevice8SetLocalEi @ 51 NONAME
+	_ZN11CUpnpDevice9ServiceIdERK6TDesC8 @ 52 NONAME
+	_ZN11CUpnpDevice9WaitIconLEi @ 53 NONAME
+	_ZN12CUpnpService10ConstructLERK6TDesC8S2_ @ 54 NONAME
+	_ZN12CUpnpService10ControlUrlEv @ 55 NONAME
+	_ZN12CUpnpService11ServiceTypeEv @ 56 NONAME
+	_ZN12CUpnpService13GetActionListER13RPointerArrayI11CUpnpActionE @ 57 NONAME
+	_ZN12CUpnpService13SetControlUrlEP6HBufC8 @ 58 NONAME
+	_ZN12CUpnpService13StateVariableERK6TDesC8 @ 59 NONAME
+	_ZN12CUpnpService14CreateActionLCERK6TDesC8 @ 60 NONAME
+	_ZN12CUpnpService15SubscriptionUrlEv @ 61 NONAME
+	_ZN12CUpnpService17AddStateVariableLEP18CUpnpStateVariable @ 62 NONAME
+	_ZN12CUpnpService17SetStateVariableLERK6TDesC8S2_ @ 63 NONAME
+	_ZN12CUpnpService18SetSubscriptionUrlEP6HBufC8 @ 64 NONAME
+	_ZN12CUpnpService21ServiceDescriptionUrlEv @ 65 NONAME
+	_ZN12CUpnpService24SetServiceDescriptionUrlEP6HBufC8 @ 66 NONAME
+	_ZN12CUpnpService4NewLERK6TDesC8S2_R11CUpnpDevice @ 67 NONAME
+	_ZN12CUpnpService4PathEv @ 68 NONAME
+	_ZN12CUpnpService6DeviceEv @ 69 NONAME
+	_ZN12CUpnpService7AddressEv @ 70 NONAME
+	_ZN12CUpnpService7IsAddedEv @ 71 NONAME
+	_ZN12CUpnpService9GetActionERP11CUpnpActionRK6TDesC8 @ 72 NONAME
+	_ZN12CUpnpServiceC1ER11CUpnpDevice @ 73 NONAME
+	_ZN12CUpnpServiceC2ER11CUpnpDevice @ 74 NONAME
+	_ZN12CUpnpServiceD0Ev @ 75 NONAME
+	_ZN12CUpnpServiceD1Ev @ 76 NONAME
+	_ZN12CUpnpServiceD2Ev @ 77 NONAME
+	_ZN13CUpnpArgument20RelatedStateVariableEv @ 78 NONAME
+	_ZN13CUpnpArgument4NameEv @ 79 NONAME
+	_ZN13CUpnpArgument4TypeEv @ 80 NONAME
+	_ZN13CUpnpArgument5ValueEv @ 81 NONAME
+	_ZN13CUpnpArgument9SetValueLERK6TDesC8 @ 82 NONAME
+	_ZN13CUpnpSettings13GetUserAgentLEv @ 83 NONAME
+	_ZN13CUpnpSettings16GetServerHeaderLEv @ 84 NONAME
+	_ZN13CUpnpSettings18GetFileBufferSizeLEv @ 85 NONAME
+	_ZN13CUpnpSettings3GetEjR6TDes16 @ 86 NONAME
+	_ZN13CUpnpSettings3GetEjRi @ 87 NONAME
+	_ZN13CUpnpSettings3SetEjRK7TDesC16 @ 88 NONAME
+	_ZN13CUpnpSettings3SetEjRi @ 89 NONAME
+	_ZN13CUpnpSettings4GetLEj @ 90 NONAME
+	_ZN13CUpnpSettings4NewLE4TUid @ 91 NONAME
+	_ZN13CUpnpSettings4SetLEjRK6TDesC8 @ 92 NONAME
+	_ZN13CUpnpSettings7GetIapLEv @ 93 NONAME
+	_ZN15CUpnpDispatcher11AddCustomerERK23MUpnpDispatcherCustomer @ 94 NONAME
+	_ZN15CUpnpDispatcher12AddCustomerLERK23MUpnpDispatcherCustomeri @ 95 NONAME
+	_ZN15CUpnpDispatcher12SendMessageLEP16CUpnpHttpMessageR23MUpnpDispatcherCustomeri @ 96 NONAME
+	_ZN15CUpnpDispatcher14RemoveCustomerERK23MUpnpDispatcherCustomer @ 97 NONAME
+	_ZN15CUpnpDispatcher14RemoveCustomerERK23MUpnpDispatcherCustomeri @ 98 NONAME
+	_ZN15CUpnpDispatcher14StopFilteringLERK6TDesC8 @ 99 NONAME
+	_ZN15CUpnpDispatcher14StopHttpServerEv @ 100 NONAME
+	_ZN15CUpnpDispatcher14UpdateDevicesLEi @ 101 NONAME
+	_ZN15CUpnpDispatcher15AddLocalDeviceLERK6TDesC8S2_S2_RK11CDesC8Arrayi @ 102 NONAME
+	_ZN15CUpnpDispatcher15StopIPFilteringEv @ 103 NONAME
+	_ZN15CUpnpDispatcher16StartHttpServerLEii @ 104 NONAME
+	_ZN15CUpnpDispatcher17HttpServerAddressEv @ 105 NONAME
+	_ZN15CUpnpDispatcher17StartIPFilteringLEv @ 106 NONAME
+	_ZN15CUpnpDispatcher4NewLEP22MUpnpDiscoveryObserver @ 107 NONAME
+	_ZN15CUpnpDispatcher5NewLCEP22MUpnpDiscoveryObserver @ 108 NONAME
+	_ZN15CUpnpDispatcher7SearchLERK6TDesC8 @ 109 NONAME
+	_ZN15CUpnpDispatcher7SearchLERK7TDesC16 @ 110 NONAME
+	_ZN15CUpnpDispatcherD0Ev @ 111 NONAME
+	_ZN15CUpnpDispatcherD1Ev @ 112 NONAME
+	_ZN15CUpnpDispatcherD2Ev @ 113 NONAME
+	_ZN16CUpnpGenaMessage2NtEv @ 114 NONAME
+	_ZN16CUpnpGenaMessage3NtsEv @ 115 NONAME
+	_ZN16CUpnpGenaMessage3SeqEv @ 116 NONAME
+	_ZN16CUpnpGenaMessage3SidEv @ 117 NONAME
+	_ZN16CUpnpGenaMessage4NewLERK9TInetAddr @ 118 NONAME
+	_ZN16CUpnpGenaMessage5NewLCERK9TInetAddr @ 119 NONAME
+	_ZN16CUpnpGenaMessage7TimeoutEv @ 120 NONAME
+	_ZN16CUpnpGenaMessage8CallbackEv @ 121 NONAME
+	_ZN16CUpnpGenaMessageC1Ev @ 122 NONAME
+	_ZN16CUpnpGenaMessageC2Ev @ 123 NONAME
+	_ZN16CUpnpGenaMessageD0Ev @ 124 NONAME
+	_ZN16CUpnpGenaMessageD1Ev @ 125 NONAME
+	_ZN16CUpnpGenaMessageD2Ev @ 126 NONAME
+	_ZN16CUpnpSoapMessage10ActionNameEv @ 127 NONAME
+	_ZN16CUpnpSoapMessage10SoapActionEv @ 128 NONAME
+	_ZN16CUpnpSoapMessage11ServiceTypeEv @ 129 NONAME
+	_ZN16CUpnpSoapMessage4NewLER6TDesC8RK9TInetAddr @ 130 NONAME
+	_ZN16CUpnpSoapMessageD0Ev @ 131 NONAME
+	_ZN16CUpnpSoapMessageD1Ev @ 132 NONAME
+	_ZN16CUpnpSoapMessageD2Ev @ 133 NONAME
+	_ZN18CUpnpStateVariable12DefaultValueEv @ 134 NONAME
+	_ZN18CUpnpStateVariable13SetEventableLERK6TDesC8 @ 135 NONAME
+	_ZN18CUpnpStateVariable15AllowedValuesLCEv @ 136 NONAME
+	_ZN18CUpnpStateVariable15GetDefaultValueERi @ 137 NONAME
+	_ZN18CUpnpStateVariable16AddAllowedValueLERK6TDesC8 @ 138 NONAME
+	_ZN18CUpnpStateVariable4NameEv @ 139 NONAME
+	_ZN18CUpnpStateVariable4StepEv @ 140 NONAME
+	_ZN18CUpnpStateVariable4TypeEv @ 141 NONAME
+	_ZN18CUpnpStateVariable5ValueEv @ 142 NONAME
+	_ZN18CUpnpStateVariable8MaxValueEv @ 143 NONAME
+	_ZN18CUpnpStateVariable8MinValueEv @ 144 NONAME
+	_ZN18CUpnpStateVariable8SetNameLERK6TDesC8 @ 145 NONAME
+	_ZN18CUpnpStateVariable8SetTypeLERK6TDesC8 @ 146 NONAME
+	_ZN18CUpnpStateVariable9EventableEv @ 147 NONAME
+	_ZN18CUpnpStateVariable9SetValueLERK6TDesC8i @ 148 NONAME
+	_ZN18CUpnpStateVariable9SetValueLEii @ 149 NONAME
+	_ZN20CUpnpHttpTransaction14BaseConstructLEv @ 150 NONAME
+	_ZN20CUpnpHttpTransaction7RequestEv @ 151 NONAME
+	_ZN20CUpnpHttpTransaction8ResponseEv @ 152 NONAME
+	_ZN20CUpnpHttpTransactionC2EP16CUpnpHttpMessage @ 153 NONAME
+	_ZN20CUpnpHttpTransactionD0Ev @ 154 NONAME
+	_ZN20CUpnpHttpTransactionD1Ev @ 155 NONAME
+	_ZN20CUpnpHttpTransactionD2Ev @ 156 NONAME
+	_ZN21CUpnpHttpClientEngine4NewLER23MUpnpHttpClientObserveri @ 157 NONAME
+	_ZN21CUpnpHttpClientEngine5NewLCER23MUpnpHttpClientObserveri @ 158 NONAME
+	_ZN21CUpnpHttpClientEngine5SendLER20CUpnpHttpTransaction @ 159 NONAME
+	_ZN23RUpnpGenaMessageFactory10EventingLCERK6TDesC8R9TInetAddrS2_m @ 160 NONAME
+	_ZN23RUpnpGenaMessageFactory10SubscribeLERK6TDesC8R9TInetAddrS2_ @ 161 NONAME
+	_ZN23RUpnpGenaMessageFactory10SubscribeLERK6TDesC8R9TInetAddrS2_S2_ @ 162 NONAME
+	_ZN23RUpnpGenaMessageFactory12ResubscribeLERK6TDesC8R9TInetAddrS2_ @ 163 NONAME
+	_ZN23RUpnpGenaMessageFactory12ResubscribeLERK6TDesC8R9TInetAddrS2_S2_ @ 164 NONAME
+	_ZN23RUpnpGenaMessageFactory12UnsubscribeLERK6TDesC8R9TInetAddrS2_ @ 165 NONAME
+	_ZN23RUpnpGenaMessageFactory18SubscribeResponseLEiRK9TInetAddrRK6TDesC8S5_ @ 166 NONAME
+	_ZN23RUpnpGenaMessageFactory18SubscribeResponseLEiRK9TInetAddriRK6TDesC8S5_ @ 167 NONAME
+	_ZN23RUpnpGenaMessageFactory20UnsubscribeResponseLEiRK9TInetAddr @ 168 NONAME
+	_ZN23RUpnpSoapMessageFactory12SoapRequestLEP11CUpnpAction @ 169 NONAME
+	_ZN23RUpnpSoapMessageFactory13SoapResponseLEP11CUpnpAction @ 170 NONAME
+	_ZN23RUpnpSoapMessageFactory13SoapResponseLEP11CUpnpAction14TUpnpErrorCode @ 171 NONAME
+	_ZN23RUpnpSoapMessageFactory13SoapResponseLEP11CUpnpAction14TUpnpErrorCodeRK6TDesC8 @ 172 NONAME
+	_ZN23RUpnpSoapMessageFactory13SoapResponseLEP16CUpnpSoapMessage14TUpnpErrorCode @ 173 NONAME
+	_ZN25CUpnpDeviceImplementation4NewLERK6TDesC8R27CUpnpDeviceDescriptionStoreR30MUpnpDeviceDescriptionProvider @ 174 NONAME
+	_ZN25CUpnpDeviceImplementation5StopLENS_9TStopModeE @ 175 NONAME
+	_ZN25CUpnpDeviceImplementation5StopLEv @ 176 NONAME
+	_ZN25CUpnpDeviceImplementation6StartLEi @ 177 NONAME
+	_ZN25CUpnpDeviceImplementationD0Ev @ 178 NONAME
+	_ZN25CUpnpDeviceImplementationD1Ev @ 179 NONAME
+	_ZN25CUpnpDeviceImplementationD2Ev @ 180 NONAME
+	_ZN26CUpnpServiceImplementation13SetDispatcherEP15CUpnpDispatcher @ 181 NONAME
+	_ZN26CUpnpServiceImplementation13StateVariableERK6TDesC8 @ 182 NONAME
+	_ZN26CUpnpServiceImplementation14BaseConstructLERK7TDesC16RK6TDesC8 @ 183 NONAME
+	_ZN26CUpnpServiceImplementation16AddEventVariableERK18CUpnpStateVariablei @ 184 NONAME
+	_ZN26CUpnpServiceImplementation16SubcribersAmountEv @ 185 NONAME
+	_ZN26CUpnpServiceImplementation17MessageReceivedLDEP16CUpnpHttpMessage @ 186 NONAME
+	_ZN26CUpnpServiceImplementation17SetStateVariableLERK6TDesC8S2_i @ 187 NONAME
+	_ZN26CUpnpServiceImplementation18StateVariableValueERK6TDesC8 @ 188 NONAME
+	_ZN26CUpnpServiceImplementation20StateVariableEventedERK6TDesC8 @ 189 NONAME
+	_ZN26CUpnpServiceImplementation21EventedStateVariablesEv @ 190 NONAME
+	_ZN26CUpnpServiceImplementation23SetVariableMaxEventRateERK6TDesC8i @ 191 NONAME
+	_ZN26CUpnpServiceImplementation4PathEv @ 192 NONAME
+	_ZN26CUpnpServiceImplementation5SendLEP11CUpnpAction14TUpnpErrorCode @ 193 NONAME
+	_ZN26CUpnpServiceImplementation5SendLEP16CUpnpHttpMessage @ 194 NONAME
+	_ZN26CUpnpServiceImplementation5SendLEP16CUpnpSoapMessage14TUpnpErrorCode @ 195 NONAME
+	_ZN26CUpnpServiceImplementationC2ER11CUpnpDevice @ 196 NONAME
+	_ZN26CUpnpServiceImplementationD0Ev @ 197 NONAME
+	_ZN26CUpnpServiceImplementationD1Ev @ 198 NONAME
+	_ZN26CUpnpServiceImplementationD2Ev @ 199 NONAME
+	_ZN27CUpnpDeviceDescriptionStore10RemoveTagLERK6TDesC8 @ 200 NONAME
+	_ZN27CUpnpDeviceDescriptionStore11RemoveIconLERK6TDesC8 @ 201 NONAME
+	_ZN27CUpnpDeviceDescriptionStore11UpdateIconLERK9CUpnpIcon @ 202 NONAME
+	_ZN27CUpnpDeviceDescriptionStore12RemoveIconsLEv @ 203 NONAME
+	_ZN27CUpnpDeviceDescriptionStore12SetPropertyLERK6TDesC8S2_ @ 204 NONAME
+	_ZN27CUpnpDeviceDescriptionStore12SetPropertyLERK6TDesC8S2_S2_ @ 205 NONAME
+	_ZN27CUpnpDeviceDescriptionStore15DescriptionFileEv @ 206 NONAME
+	_ZN27CUpnpDeviceDescriptionStore19GetIconlistElementLEv @ 207 NONAME
+	_ZN27CUpnpDeviceDescriptionStore4NewLERK7TDesC16 @ 208 NONAME
+	_ZN27CUpnpDeviceDescriptionStore5NewLCERK7TDesC16 @ 209 NONAME
+	_ZN27CUpnpDeviceDescriptionStore5SaveLEv @ 210 NONAME
+	_ZN27CUpnpDeviceDescriptionStore7AddTagLERK6TDesC8 @ 211 NONAME
+	_ZN27CUpnpDeviceDescriptionStore8AddIconLERK9CUpnpIcon @ 212 NONAME
+	_ZN27CUpnpDeviceDescriptionStore8PropertyERK6TDesC8 @ 213 NONAME
+	_ZN27CUpnpDeviceDescriptionStore8PropertyERK6TDesC8S2_ @ 214 NONAME
+	_ZN27CUpnpDeviceDescriptionStore9IconListLEv @ 215 NONAME
+	_ZN29CUpnpDeviceDescriptionRequest11InetAddressER9TInetAddr @ 216 NONAME
+	_ZN29CUpnpDeviceDescriptionRequest3UriEv @ 217 NONAME
+	_ZN29CUpnpDeviceImplementationBase11RemoveIconLERK6TDesC8 @ 218 NONAME
+	_ZN29CUpnpDeviceImplementationBase11UpdateIconLERK9CUpnpIcon @ 219 NONAME
+	_ZN29CUpnpDeviceImplementationBase12RemoveIconsLEv @ 220 NONAME
+	_ZN29CUpnpDeviceImplementationBase15StopIPFilteringEv @ 221 NONAME
+	_ZN29CUpnpDeviceImplementationBase17StartIPFilteringLEv @ 222 NONAME
+	_ZN29CUpnpDeviceImplementationBase23SetDescriptionPropertyLERK6TDesC8S2_ @ 223 NONAME
+	_ZN29CUpnpDeviceImplementationBase26RemoveDescriptionPropertyLERK6TDesC8 @ 224 NONAME
+	_ZN29CUpnpDeviceImplementationBase7AddressEv @ 225 NONAME
+	_ZN29CUpnpDeviceImplementationBase8AddIconLERK9CUpnpIcon @ 226 NONAME
+	_ZN29CUpnpDeviceImplementationBaseD0Ev @ 227 NONAME
+	_ZN29CUpnpDeviceImplementationBaseD1Ev @ 228 NONAME
+	_ZN29CUpnpDeviceImplementationBaseD2Ev @ 229 NONAME
+	_ZN30CUpnpContentHandlersController12ParseDeviceLERK6TDesC8 @ 230 NONAME
+	_ZN30CUpnpContentHandlersController12ParseDeviceLERK6TDesC8P11CUpnpDevice @ 231 NONAME
+	_ZN30CUpnpContentHandlersController13ParseServiceLERK6TDesC8P11CUpnpDevice @ 232 NONAME
+	_ZN30CUpnpContentHandlersController13ParseServiceLERK6TDesC8P12CUpnpService @ 233 NONAME
+	_ZN30CUpnpContentHandlersController16ParseDeviceImplLERK6TDesC8 @ 234 NONAME
+	_ZN30CUpnpContentHandlersController16ParseDeviceImplLERK6TDesC8P25CUpnpDeviceImplementation @ 235 NONAME
+	_ZN30CUpnpContentHandlersController22ParseSilentDeviceImplLERK6TDesC8 @ 236 NONAME
+	_ZN30CUpnpContentHandlersController22ParseSilentDeviceImplLERK6TDesC8P31CUpnpSilentDeviceImplementation @ 237 NONAME
+	_ZN30CUpnpContentHandlersController27UpdateActionWithOKResponseLEP16CUpnpSoapMessageP11CUpnpAction @ 238 NONAME
+	_ZN30CUpnpContentHandlersController30UpdateActionWithErrorResponseLEP16CUpnpSoapMessageP11CUpnpAction @ 239 NONAME
+	_ZN30CUpnpContentHandlersController4NewLEv @ 240 NONAME
+	_ZN30CUpnpContentHandlersController5NewLCEv @ 241 NONAME
+	_ZN30CUpnpContentHandlersController7AttachLERK6TDesC8R12CUpnpService @ 242 NONAME
+	_ZN31CUpnpSilentDeviceImplementation4NewLERK6TDesC8R27CUpnpDeviceDescriptionStoreR30MUpnpDeviceDescriptionProvider @ 243 NONAME
+	_ZN31CUpnpSilentDeviceImplementation5StopLEv @ 244 NONAME
+	_ZN31CUpnpSilentDeviceImplementation6StartLEi @ 245 NONAME
+	_ZN31CUpnpSilentDeviceImplementationD0Ev @ 246 NONAME
+	_ZN31CUpnpSilentDeviceImplementationD1Ev @ 247 NONAME
+	_ZN31CUpnpSilentDeviceImplementationD2Ev @ 248 NONAME
+	_ZN9CUpnpIcon12InternalizeLER11RReadStream @ 249 NONAME
+	_ZN9CUpnpIcon17SetBitmapFilenameERK7TDesC16 @ 250 NONAME
+	_ZN9CUpnpIcon4NewLERK7TDesC16RK6TDesC8iiiS5_ @ 251 NONAME
+	_ZN9CUpnpIcon4NewLERK7TDesC16iiiRK6TDesC8 @ 252 NONAME
+	_ZN9CUpnpIcon4NewLEv @ 253 NONAME
+	_ZN9CUpnpIcon7SetUrlLERK6TDesC8 @ 254 NONAME
+	_ZN9CUpnpIconD0Ev @ 255 NONAME
+	_ZN9CUpnpIconD1Ev @ 256 NONAME
+	_ZN9CUpnpIconD2Ev @ 257 NONAME
+	_ZNK11CUpnpAction15DestinationAddrEv @ 258 NONAME
+	_ZNK11CUpnpAction5ErrorEv @ 259 NONAME
+	_ZNK11CUpnpAction5LocalEv @ 260 NONAME
+	_ZNK11CUpnpAction9SessionIdEv @ 261 NONAME
+	_ZNK11CUpnpDevice13DeviceNetworkEv @ 262 NONAME
+	_ZNK11CUpnpDevice14DescriptionUrlEv @ 263 NONAME
+	_ZNK11CUpnpDevice18DescriptionUrlPathEv @ 264 NONAME
+	_ZNK11CUpnpDevice18DescriptionUrlPortEv @ 265 NONAME
+	_ZNK11CUpnpDevice22DescriptionUrlAddressLEv @ 266 NONAME
+	_ZNK11CUpnpDevice5AliveEv @ 267 NONAME
+	_ZNK11CUpnpDevice5LocalEv @ 268 NONAME
+	_ZNK11CUpnpDevice6RemoteEv @ 269 NONAME
+	_ZNK11CUpnpDevice7ExpiredEv @ 270 NONAME
+	_ZNK12CUpnpService17StateVariableListEv @ 271 NONAME
+	_ZNK13CUpnpArgument9DirectionEv @ 272 NONAME
+	_ZNK9CUpnpIcon14BitmapFilenameEv @ 273 NONAME
+	_ZNK9CUpnpIcon16GetIconBufferPtrEv @ 274 NONAME
+	_ZNK9CUpnpIcon3UrlEv @ 275 NONAME
+	_ZNK9CUpnpIcon5DepthEv @ 276 NONAME
+	_ZNK9CUpnpIcon5WidthEv @ 277 NONAME
+	_ZNK9CUpnpIcon6HeightEv @ 278 NONAME
+	_ZNK9CUpnpIcon7ToDes8LEv @ 279 NONAME
+	_ZNK9CUpnpIcon8MimeTypeEv @ 280 NONAME
+	_ZTI11CUpnpAction @ 281 NONAME ; #<TI>#
+	_ZTI11CUpnpDevice @ 282 NONAME ; #<TI>#
+	_ZTI12CUpnpService @ 283 NONAME ; #<TI>#
+	_ZTI13CUpnpArgument @ 284 NONAME ; #<TI>#
+	_ZTI13CUpnpSettings @ 285 NONAME ; #<TI>#
+	_ZTI15CUpnpDispatcher @ 286 NONAME ; #<TI>#
+	_ZTI16CUpnpGenaMessage @ 287 NONAME ; #<TI>#
+	_ZTI16CUpnpSoapMessage @ 288 NONAME ; #<TI>#
+	_ZTI18CUpnpStateVariable @ 289 NONAME ; #<TI>#
+	_ZTI20CUpnpHttpTransaction @ 290 NONAME ; #<TI>#
+	_ZTI21CUpnpDispatcherEngine @ 291 NONAME ; #<TI>#
+	_ZTI22CUpnpDispatcherRequest @ 292 NONAME ; #<TI>#
+	_ZTI22CUpnpSubscriberLibrary @ 293 NONAME ; #<TI>#
+	_ZTI24CUpnpDescriptionProperty @ 294 NONAME ; #<TI>#
+	_ZTI25CUpnpDeviceImplementation @ 295 NONAME ; #<TI>#
+	_ZTI26CUpnpServiceImplementation @ 296 NONAME ; #<TI>#
+	_ZTI27CUpnpDeviceDescriptionStore @ 297 NONAME ; #<TI>#
+	_ZTI29CUpnpDeviceImplementationBase @ 298 NONAME ; #<TI>#
+	_ZTI29CUpnpSubscriberLibraryElement @ 299 NONAME ; #<TI>#
+	_ZTI31CUpnpSilentDeviceImplementation @ 300 NONAME ; #<TI>#
+	_ZTI9CUpnpIcon @ 301 NONAME ; #<TI>#
+	_ZTV11CUpnpAction @ 302 NONAME ; #<VT>#
+	_ZTV11CUpnpDevice @ 303 NONAME ; #<VT>#
+	_ZTV12CUpnpService @ 304 NONAME ; #<VT>#
+	_ZTV13CUpnpArgument @ 305 NONAME ; #<VT>#
+	_ZTV13CUpnpSettings @ 306 NONAME ; #<VT>#
+	_ZTV15CUpnpDispatcher @ 307 NONAME ; #<VT>#
+	_ZTV16CUpnpGenaMessage @ 308 NONAME ; #<VT>#
+	_ZTV16CUpnpSoapMessage @ 309 NONAME ; #<VT>#
+	_ZTV18CUpnpStateVariable @ 310 NONAME ; #<VT>#
+	_ZTV20CUpnpHttpTransaction @ 311 NONAME ; #<VT>#
+	_ZTV21CUpnpDispatcherEngine @ 312 NONAME ; #<VT>#
+	_ZTV22CUpnpDispatcherRequest @ 313 NONAME ; #<VT>#
+	_ZTV22CUpnpSubscriberLibrary @ 314 NONAME ; #<VT>#
+	_ZTV24CUpnpDescriptionProperty @ 315 NONAME ; #<VT>#
+	_ZTV25CUpnpDeviceImplementation @ 316 NONAME ; #<VT>#
+	_ZTV26CUpnpServiceImplementation @ 317 NONAME ; #<VT>#
+	_ZTV27CUpnpDeviceDescriptionStore @ 318 NONAME ; #<VT>#
+	_ZTV29CUpnpDeviceImplementationBase @ 319 NONAME ; #<VT>#
+	_ZTV29CUpnpSubscriberLibraryElement @ 320 NONAME ; #<VT>#
+	_ZTV31CUpnpSilentDeviceImplementation @ 321 NONAME ; #<VT>#
+	_ZTV9CUpnpIcon @ 322 NONAME ; #<VT>#
+	_ZThn84_N26CUpnpServiceImplementation17MessageReceivedLDEP16CUpnpHttpMessage @ 323 NONAME ; #<thunk>#
+	_ZThn84_N26CUpnpServiceImplementation4PathEv @ 324 NONAME ; #<thunk>#
+	_ZN22CUpnpDeviceDescription18SetDescriptionUrlLERK6TDesC8 @ 325 NONAME
+	_ZN22CUpnpDeviceDescriptionC1Ev @ 326 NONAME
+	_ZN22CUpnpDeviceDescriptionC2Ev @ 327 NONAME
+	_ZN22CUpnpDeviceDescriptionD0Ev @ 328 NONAME
+	_ZN22CUpnpDeviceDescriptionD1Ev @ 329 NONAME
+	_ZN22CUpnpDeviceDescriptionD2Ev @ 330 NONAME
+	_ZTI22CUpnpDeviceDescription @ 331 NONAME ; #<TI>#
+	_ZTV22CUpnpDeviceDescription @ 332 NONAME ; #<VT>#
+

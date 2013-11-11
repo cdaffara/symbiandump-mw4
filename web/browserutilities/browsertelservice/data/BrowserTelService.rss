@@ -1,0 +1,172 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*	  Resource file for browser telephony service dll.
+*
+*
+*/
+
+
+NAME BTEL
+
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <avkon.mbg>
+#include <avkon.hrh>
+
+#include <AiwCommon.hrh>
+#include <AiwCommon.rh>
+
+#include <BrowserTelService.loc>
+#include "BrowserTelService.hrh"
+
+//***************************************************************************************
+//
+// COMMON
+//
+//***************************************************************************************
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=""; }
+
+
+//***************************************************************************************
+//
+// DIALOGS
+//
+//***************************************************************************************
+
+////////////////////////////////////////////
+// Confirmation
+////////////////////////////////////////////
+
+RESOURCE DIALOG r_confirmation_dialog
+	{
+	// Stolen from aknnotpi.rss, added EEikDialogFlagWait
+	flags = EEikDialogFlagWait | EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar | EEikDialogFlagCbaButtons | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow | EEikDialogFlagNotifyEsc;
+	buttons = R_AVKON_SOFTKEYS_YES_NO__YES;
+    	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtQuery;
+			id = EGeneralQuery;
+			control= AVKON_CONFIRMATION_QUERY 
+				{ 
+				layout = EConfirmationLayout;
+				animation = R_QGN_NOTE_QUERY_ANIM;
+				};
+			}
+		};	
+	}
+
+////////////////////////////////////////////
+// Send DTMF
+////////////////////////////////////////////
+
+RESOURCE DIALOG r_senddtmf_dialog
+	{
+	flags = EAknWaitNoteFlags;
+	buttons = R_AVKON_SOFTKEYS_CANCEL;
+	items=
+		{
+		DLG_LINE
+		    {
+		    type = EAknCtNote;
+		    id = E_Send_Dtmf;
+		    control = AVERELL_NOTE 
+			{ 
+			layout = EWaitLayout;
+			animation =R_QGN_GRAF_WAIT_BAR_ANIM;
+			};
+		    }
+		};
+	}
+
+////////////////////////////////////////////
+// Add to Contacts
+////////////////////////////////////////////
+RESOURCE AVKON_LIST_QUERY r_add_to_contacts_dialog
+	{
+	flags = EGeneralQueryFlags;
+	softkeys = R_AVKON_SOFTKEYS_SELECT_CANCEL__SELECT;
+	items=
+		{
+		AVKON_LIST_QUERY_DLG_LINE
+		    {
+		    control = AVKON_LIST_QUERY_CONTROL
+				{ 
+				listtype = EAknCtSinglePopupMenuListBox;
+				listbox = AVKON_LIST_QUERY_LIST
+					{
+					array_id = r_listbox_item_list_array;
+					};
+				};
+		    }
+		};
+	}
+
+RESOURCE ARRAY r_listbox_item_list_array
+	{
+	items =
+		{
+		LBUF {txt = qtn_options_contacts_new; },
+		LBUF {txt = qtn_options_contacts_update; }
+		};
+	}
+
+RESOURCE AIW_INTEREST r_browsertelservices_menu_aiw_interests
+    {
+    items=
+        {
+        AIW_CRITERIA_ITEM      
+            {
+            id              = 0;         // dummy id
+            serviceCmd      = KAiwCmdCall;
+            serviceClass    = KAiwClassMenu;
+            contentType     = "*";
+            defaultProvider = 0x101F868E; // remove hard coding
+            maxProviders    = 1;
+            }
+        };
+    }
+
+//***************************************************************************************
+//
+// STRINGS
+//
+//***************************************************************************************
+
+//RESOURCE TBUF	r_call							{ buf=CALL; }
+RESOURCE TBUF	r_qtn_wml_wtai_call_no			{ buf=qtn_wml_wtai_call_no; }
+
+//RESOURCE TBUF	r_call_not_allowed				{ buf=CALL_NOT_ALLOWED; }
+RESOURCE TBUF	r_text_call_not_allowed			{ buf=text_call_not_allowed; }
+
+//RESOURCE TBUF	r_send_dtmf_number				{ buf=SEND_DTMF_NUMBER; }
+RESOURCE TBUF	r_qtn_wml_wtai_send_dtmf		{ buf=qtn_wml_wtai_send_dtmf; }
+
+//RESOURCE TBUF	r_sending_dtmf					{ buf=SENDING_DTMF; }
+RESOURCE TBUF	r_qtn_dtmf_sending_wait_note	{ buf=qtn_dtmf_sending_wait_note; }
+
+//RESOURCE TBUF	r_create_new_pb_entry			{ buf=CREATE_NEW; }
+RESOURCE TBUF	r_qtn_options_contacts_new		{ buf=qtn_options_contacts_new; }
+
+//RESOURCE TBUF	r_update_existing_pb_entry		{ buf=UPDATE_EXISTING; }
+RESOURCE TBUF	r_qtn_options_contacts_update	{ buf=qtn_options_contacts_update; }
+
+

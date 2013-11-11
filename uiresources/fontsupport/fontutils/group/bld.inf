@@ -1,0 +1,139 @@
+/*
+* Copyright (c) 2002-2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Bldmake component description file for the fontutils component
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+PRJ_EXPORTS
+
+
+// Select correct font source directory
+#ifndef RD_KANNADA_FONTS
+	#define FONT_SRC_DIR(fontfile) ../Vectorfonts/##fontfile
+#else
+	#define FONT_SRC_DIR(fontfile) ../Vectorfonts/kannada/##fontfile
+#endif
+
+// Copy fonts
+
+FONT_SRC_DIR(S60SNR.ttf)                          /epoc32/release/winscw/udeb/z/resource/Fonts/S60SNR.ttf
+FONT_SRC_DIR(S60SNR.ttf)                          /epoc32/release/winscw/urel/z/resource/Fonts/S60SNR.ttf
+FONT_SRC_DIR(S60SNR.ttf)                          /epoc32/release/armv5/udeb/S60SNR.ttf
+FONT_SRC_DIR(S60SNR.ttf)                          /epoc32/release/armv5/urel/S60SNR.ttf
+
+FONT_SRC_DIR(S60SSB.ttf)                          /epoc32/release/winscw/udeb/z/resource/Fonts/S60SSB.ttf
+FONT_SRC_DIR(S60SSB.ttf)                          /epoc32/release/winscw/urel/z/resource/Fonts/S60SSB.ttf
+FONT_SRC_DIR(S60SSB.ttf)                          /epoc32/release/armv5/udeb/S60SSB.ttf
+FONT_SRC_DIR(S60SSB.ttf)                          /epoc32/release/armv5/urel/S60SSB.ttf
+
+FONT_SRC_DIR(S60TSB.ttf)                          /epoc32/release/winscw/udeb/z/resource/Fonts/S60TSB.ttf
+FONT_SRC_DIR(S60TSB.ttf)                          /epoc32/release/winscw/urel/z/resource/Fonts/S60TSB.ttf
+FONT_SRC_DIR(S60TSB.ttf)                          /epoc32/release/armv5/udeb/S60TSB.ttf
+FONT_SRC_DIR(S60TSB.ttf)                          /epoc32/release/armv5/urel/S60TSB.ttf
+
+../Vectorfonts/S60SC.ccc                          /epoc32/release/winscw/udeb/z/resource/Fonts/S60SC.ccc
+../Vectorfonts/S60SC.ccc                          /epoc32/release/winscw/urel/z/resource/Fonts/S60SC.ccc
+../Vectorfonts/S60SC.ccc                          /epoc32/release/armv5/udeb/S60SC.ccc
+../Vectorfonts/S60SC.ccc                          /epoc32/release/armv5/urel/S60SC.ccc
+
+../Vectorfonts/S60TCHK.ccc                        /epoc32/release/winscw/udeb/z/resource/Fonts/S60TCHK.ccc
+../Vectorfonts/S60TCHK.ccc                        /epoc32/release/winscw/urel/z/resource/Fonts/S60TCHK.ccc
+../Vectorfonts/S60TCHK.ccc                        /epoc32/release/armv5/udeb/S60TCHK.ccc
+../Vectorfonts/S60TCHK.ccc                        /epoc32/release/armv5/urel/S60TCHK.ccc
+
+../Vectorfonts/HeiseiGothS60.ttf                  /epoc32/release/winscw/udeb/z/resource/Fonts/HeiseiGothS60.ttf
+../Vectorfonts/HeiseiGothS60.ttf                  /epoc32/release/winscw/urel/z/resource/Fonts/HeiseiGothS60.ttf
+../Vectorfonts/HeiseiGothS60.ttf                  /epoc32/release/armv5/udeb/HeiseiGothS60.ttf
+../Vectorfonts/HeiseiGothS60.ttf                  /epoc32/release/armv5/urel/HeiseiGothS60.ttf
+
+../Vectorfonts/S60ZDIGI.TTF                       /epoc32/release/winscw/udeb/z/resource/Fonts/S60ZDIGI.ttf
+../Vectorfonts/S60ZDIGI.TTF                       /epoc32/release/winscw/urel/z/resource/Fonts/S60ZDIGI.ttf
+../Vectorfonts/S60ZDIGI.TTF                       /epoc32/release/armv5/udeb/S60ZDIGI.ttf
+../Vectorfonts/S60ZDIGI.TTF                       /epoc32/release/armv5/urel/S60ZDIGI.ttf
+
+// Export Chinese truetype fonts
+
+../Vectorfonts/S60SC_C.ttf							/epoc32/release/winscw/udeb/z/resource/Fonts/S60SC_C.ttf
+../Vectorfonts/S60SC_C.ttf							/epoc32/release/winscw/urel/z/resource/Fonts/S60SC_C.ttf
+../Vectorfonts/S60SC_C.ttf							/epoc32/release/armv5/udeb/S60SC_C.ttf
+../Vectorfonts/S60SC_C.ttf							/epoc32/release/armv5/urel/S60SC_C.ttf
+
+../Vectorfonts/S60TCHK_C.ttf                        /epoc32/release/winscw/udeb/z/resource/Fonts/S60TCHK_C.ttf
+../Vectorfonts/S60TCHK_C.ttf                        /epoc32/release/winscw/urel/z/resource/Fonts/S60TCHK_C.ttf
+../Vectorfonts/S60TCHK_C.ttf                        /epoc32/release/armv5/udeb/S60TCHK_C.ttf
+../Vectorfonts/S60TCHK_C.ttf                        /epoc32/release/armv5/urel/S60TCHK_C.ttf
+
+// Export Korean truetype fonts
+
+../Vectorfonts/Series60Korean.ttf                        /epoc32/release/winscw/udeb/z/resource/Fonts/Series60Korean.ttf
+../Vectorfonts/Series60Korean.ttf                        /epoc32/release/winscw/urel/z/resource/Fonts/Series60Korean.ttf
+../Vectorfonts/Series60Korean.ttf                        /epoc32/release/armv5/udeb/Series60Korean.ttf
+../Vectorfonts/Series60Korean.ttf                        /epoc32/release/armv5/urel/Series60Korean.ttf
+
+// Export typeface xml files
+typefaces_s60_English.xml                    /epoc32/release/winscw/udeb/z/resource/Fonts/typefaces.xml
+typefaces_s60_English.xml                    /epoc32/release/winscw/urel/z/resource/Fonts/typefaces.xml
+
+typefaces_s60_English.xml                    /epoc32/release/winscw/udeb/z/resource/Fonts/typefaces_s60_English.xml
+typefaces_s60_English.xml                    /epoc32/release/winscw/urel/z/resource/Fonts/typefaces_s60_English.xml
+typefaces_s60_English.xml                    /epoc32/release/armv5/udeb/typefaces_s60_English.xml
+typefaces_s60_English.xml                    /epoc32/release/armv5/urel/typefaces_s60_English.xml
+
+typefaces_s60_Japanese.xml                    /epoc32/release/winscw/udeb/z/resource/Fonts/typefaces_s60_Japanese.xml
+typefaces_s60_Japanese.xml                    /epoc32/release/winscw/urel/z/resource/Fonts/typefaces_s60_Japanese.xml
+typefaces_s60_Japanese.xml                    /epoc32/release/armv5/udeb/typefaces_s60_Japanese.xml
+typefaces_s60_Japanese.xml                    /epoc32/release/armv5/urel/typefaces_s60_Japanese.xml
+
+typefaces_s60_Korean.xml                    /epoc32/release/winscw/udeb/z/resource/Fonts/typefaces_s60_Korean.xml
+typefaces_s60_Korean.xml                    /epoc32/release/winscw/urel/z/resource/Fonts/typefaces_s60_Korean.xml
+typefaces_s60_Korean.xml                    /epoc32/release/armv5/udeb/typefaces_s60_Korean.xml
+typefaces_s60_Korean.xml                    /epoc32/release/armv5/urel/typefaces_s60_Korean.xml
+
+typefaces_s60_Simplified_Chinese.xml                    /epoc32/release/winscw/udeb/z/resource/Fonts/typefaces_s60_Simplified_Chinese.xml
+typefaces_s60_Simplified_Chinese.xml                    /epoc32/release/winscw/urel/z/resource/Fonts/typefaces_s60_Simplified_Chinese.xml
+typefaces_s60_Simplified_Chinese.xml                    /epoc32/release/armv5/udeb/typefaces_s60_Simplified_Chinese.xml
+typefaces_s60_Simplified_Chinese.xml                    /epoc32/release/armv5/urel/typefaces_s60_Simplified_Chinese.xml
+
+typefaces_s60_Simplified_Traditional.xml                    /epoc32/release/winscw/udeb/z/resource/Fonts/typefaces_s60_Simplified_Traditional.xml
+typefaces_s60_Simplified_Traditional.xml                    /epoc32/release/winscw/urel/z/resource/Fonts/typefaces_s60_Simplified_Traditional.xml
+typefaces_s60_Simplified_Traditional.xml                    /epoc32/release/armv5/udeb/typefaces_s60_Simplified_Traditional.xml
+typefaces_s60_Simplified_Traditional.xml                    /epoc32/release/armv5/urel/typefaces_s60_Simplified_Traditional.xml
+
+typefaces_s60_Traditional_Chinese.xml                    /epoc32/release/winscw/udeb/z/resource/Fonts/typefaces_s60_Traditional_Chinese.xml
+typefaces_s60_Traditional_Chinese.xml                    /epoc32/release/winscw/urel/z/resource/Fonts/typefaces_s60_Traditional_Chinese.xml
+typefaces_s60_Traditional_Chinese.xml                    /epoc32/release/armv5/udeb/typefaces_s60_Traditional_Chinese.xml
+typefaces_s60_Traditional_Chinese.xml                    /epoc32/release/armv5/urel/typefaces_s60_Traditional_Chinese.xml
+		
+
+
+./removegtfiles.meta                             /epoc32/tools/makefile_templates/s60/removegtfiles.meta
+./removegtfiles.flm                              /epoc32/tools/makefile_templates/s60/removegtfiles.flm
+
+PRJ_EXTENSIONS
+#if defined(SBSV2) && !defined(TOOLS)
+start extension s60/removegtfiles
+end
+#endif
+
+PRJ_MMPFILES
+#ifndef TOOLS
+    // Remove Symbian fonts
+    #ifndef SBSV2
+      gnumakefile removegtfiles.mk
+    #endif
+#endif
+// End of File

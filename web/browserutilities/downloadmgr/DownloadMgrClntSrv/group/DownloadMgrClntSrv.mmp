@@ -1,0 +1,79 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This file contains all the resources of Download Mgr Server.
+*
+*/
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET      DownloadMgr.dll
+TARGETTYPE  DLL
+UID         0x1000008d 0x10008D5F
+
+// uncomment to enable logs
+//MACRO _DEBUG
+//#define _DEBUG
+
+#if defined(ARMCC)
+  DEFFILE ../EABI/DOWNLOADMGRU_EKA2.def
+#else
+  DEFFILE ../BWinsCw/DOWNLOADMGRU_EKA2.def
+#endif
+
+
+SOURCEPATH ../src
+SOURCE  DownloadMgrClntSession.cpp
+SOURCE  DownloadMgrClntSubSession.cpp
+SOURCE  DownloadMgrServer.cpp
+SOURCE  DownloadMgrSrvSession.cpp
+SOURCE  DownloadMgrSrvObject.cpp
+SOURCE  DownloadMgrEventQueue.cpp
+SOURCE  DownloadMgrHandler.cpp
+SOURCE  DownloadMgrDefAttrib.cpp
+SOURCE  DownloadMgrTransObserver.cpp
+SOURCE  DownloadMgrCod.cpp
+SOURCE  DownloadMgrLogger.cpp
+SOURCE  DownloadMgrClientApiExt.cpp
+SOURCE  ../../DownloadMgrServEng/Src/DownloadDataServ.cpp
+
+USERINCLUDE	    ../inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+SYSTEMINCLUDE	../../DownloadMgrServEng/Inc
+
+LIBRARY euser.lib
+LIBRARY HttpDMServEng.lib
+LIBRARY efsrv.lib
+LIBRARY apgrfx.lib
+LIBRARY http.lib
+LIBRARY bafl.lib
+LIBRARY CodDownload.lib
+LIBRARY ServiceHandler.lib
+LIBRARY eikcore.lib
+LIBRARY cone.lib
+LIBRARY HttpFilterCommon.lib
+LIBRARY InetProtUtil.lib
+LIBRARY hash.lib    // for MD5
+LIBRARY Centralrepository.lib
+LIBRARY flogger.lib
+LIBRARY estor.lib
+
+CAPABILITY CAP_GENERAL_DLL
+
+VENDORID VID_DEFAULT
+
+// End of File

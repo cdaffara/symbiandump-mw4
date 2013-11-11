@@ -1,0 +1,74 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This is project specification file for the WebUtils.
+*
+*/
+
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+// Build target
+TARGET		webutils.dll
+TARGETTYPE	DLL
+UID		0x1000008d 0x101FD652
+CAPABILITY      CAP_GENERAL_DLL
+VENDORID        VID_DEFAULT
+
+// Source files location
+SOURCEPATH		../src 
+
+// Source files 
+SOURCE			CUserAgent.cpp
+
+
+// Include paths
+USERINCLUDE     . ../inc 
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+
+
+// Dependencies
+LIBRARY			euser.lib
+LIBRARY         Centralrepository.lib
+LIBRARY         sysversioninfo.lib
+LIBRARY         platformver.lib
+LIBRARY         efsrv.lib
+LIBRARY         cone.lib
+
+// Turn logging on/off
+//MACRO _WEBUTILS_LOG_
+//#define _WEBUTILS_LOG_
+
+
+#ifdef _WEBUTILS_LOG_
+LIBRARY flogger.lib
+#else
+DEBUGLIBRARY flogger.lib
+#endif
+
+
+#if defined(ARMCC)
+        DEFFILE ../EABI/WebUtils_EKA2.DEF 
+#elif defined( WINSCW )
+        DEFFILE ../BWINSCW/WEBUTILS_EKA2.DEF
+#elif defined( WINS )
+        DEFFILE ../BWINS/WEBUTILS_EKA2.DEF
+#else
+        DEFFILE ../BMARM/WEBUTILS_EKA2.DEF 
+#endif
+
+

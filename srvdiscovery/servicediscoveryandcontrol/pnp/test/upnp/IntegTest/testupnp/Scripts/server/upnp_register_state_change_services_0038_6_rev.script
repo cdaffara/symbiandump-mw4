@@ -1,0 +1,39 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_register_state_change_services_0038_6_rev.script
+//! @SYMTestSuiteName	testupnp 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_server 
+LOAD_SUITE multiple_machines_server
+LOAD_SUITE test_synchronize_server
+
+START_TESTCASE	upnp_register_state_change_services_0038_6_rev
+//! @file					
+//! @SYMTestCaseID			UPNP - POS - 0038
+//! @SYMTestCaseDesc 		Control point registers for state changes in services.
+//! @SYMREQ					REQ8634, REQ10588, REQ10589,REQ4877, REQ8617,REQ8618, REQ8626, REQ8624
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Control point issues GENA’s SUBSCRIBE request to an event with NT and CALLBACK headers 
+//! 						2.	If requested subscription is approved then Service point must acknowledge with SID and TIMEOUT, else with appropriate error message. 
+//! @SYMTestExpectedResults	If subscription is approved then control point gets an SID else an appropriate error message.
+//! @SYMTestType 			CIT
+
+RUN_TEST_STEP 1000 test_synchronize_server TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini serverdata
+RUN_TEST_STEP 500 multiple_machines_server TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\subscribe_0038_rev.ini  UPnP_Subscribe_0006_rev_server
+
+END_TESTCASE	upnp_register_state_change_services_0038_6_rev

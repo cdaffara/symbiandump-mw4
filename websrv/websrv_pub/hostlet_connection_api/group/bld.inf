@@ -1,0 +1,46 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        File that exports the files belonging to 
+:                Web Service Hostlet Connection API
+*
+*/
+
+
+
+
+
+
+
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+
+PRJ_EXPORTS
+
+../inc/SenHostletConnection.h   	MW_LAYER_PUBLIC_EXPORT_PATH(SenHostletConnection.h)  
+../inc/MSenHostlet.h            	MW_LAYER_PUBLIC_EXPORT_PATH(MSenHostlet.h)
+../inc/MSenHostletRequest.h     	MW_LAYER_PUBLIC_EXPORT_PATH(MSenHostletRequest.h)
+../inc/MSenHostletResponse.h    	MW_LAYER_PUBLIC_EXPORT_PATH(MSenHostletResponse.h)    
+
+
+
+
+
+
+
+
+

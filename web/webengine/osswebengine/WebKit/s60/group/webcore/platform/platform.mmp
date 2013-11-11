@@ -1,0 +1,204 @@
+// *
+// * Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// * All rights reserved.
+// * This component and the accompanying materials are made available
+// * under the terms of the License "Eclipse Public License v1.0"
+// * which accompanies this distribution, and is available
+// * at the URL "http://www.eclipse.org/legal/epl-v10.html".
+// *
+// * Initial Contributors:
+// * Nokia Corporation - initial contribution.
+// *
+// * Contributors:
+// *
+// * Description:  This is the project specification file for WebCore.
+// *
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include "../../common.mmpi"
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET  WebCoreplatform.lib
+
+TARGETTYPE  lib
+
+VENDORID    VID_DEFAULT
+
+START RESOURCE ../../../data/Webkit.rss
+DEPENDS avkon.rsg
+DEPENDS eikon.rsg
+HEADER
+TARGETPATH      RESOURCE_FILES_DIR
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END
+
+START BITMAP webkit.mbm
+	SOURCEPATH ../../../../../../../../../..
+	HEADER     
+	TARGETPATH APP_BITMAP_DIR
+	
+	
+	SOURCEPATH .
+	SOURCE c8 	../../../data/SelectMulti.bmp
+	
+	// Masks 
+	SOURCEPATH .
+	SOURCE 1 	../../../data/SelectMultiMask.bmp
+END
+
+
+//OPTION CW -prefix pragmas.pref
+
+SOURCEPATH ../../../../../WebCore/platform
+SOURCE Arena.cpp
+SOURCE ArrayImpl.cpp
+SOURCE AtomicString.cpp
+SOURCE Base64.cpp
+SOURCE BidiContext.cpp
+SOURCE ContextMenu.cpp
+SOURCE CString.cpp
+SOURCE DeprecatedCString.cpp
+SOURCE DeprecatedPtrListImpl.cpp
+SOURCE DeprecatedString.cpp
+SOURCE DeprecatedStringList.cpp
+SOURCE DeprecatedValueListImpl.cpp
+SOURCE DragImage.cpp
+SOURCE FileChooser.cpp
+SOURCE Font.cpp
+SOURCE FontCache.cpp
+SOURCE FontData.cpp
+SOURCE FontFallbackList.cpp
+SOURCE FontFamily.cpp
+SOURCE GlyphPageTreeNode.cpp
+SOURCE GlyphWidthMap.cpp
+SOURCE KURL.cpp
+SOURCE Logging.cpp
+SOURCE MimeTypeRegistry.cpp
+SOURCE RegularExpression.cpp
+SOURCE ScrollBar.cpp
+SOURCE SegmentedString.cpp
+SOURCE SharedBuffer.cpp
+SOURCE String.cpp
+SOURCE StringImpl.cpp
+SOURCE TextCodec.cpp
+SOURCE TextCodecLatin1.cpp
+SOURCE TextCodecUTF16.cpp
+SOURCE TextDecoder.cpp
+SOURCE TextEncoding.cpp
+SOURCE TextEncodingRegistry.cpp
+SOURCE TextStream.cpp
+SOURCE Timer.cpp
+SOURCE Widget.cpp
+SOURCE SecurityOrigin.cpp
+SOURCE graphics/AffineTransform.cpp
+SOURCE graphics/Color.cpp
+SOURCE graphics/FloatPoint.cpp
+SOURCE graphics/FloatRect.cpp
+SOURCE graphics/FloatSize.cpp
+SOURCE graphics/GraphicsContext.cpp
+SOURCE graphics/GraphicsTypes.cpp
+SOURCE graphics/Image.cpp
+SOURCE graphics/IntRect.cpp
+SOURCE graphics/Path.cpp
+SOURCE graphics/PathTraversalState.cpp
+SOURCE graphics/Pen.cpp
+SOURCE network/AuthenticationChallenge.cpp
+SOURCE network/Credential.cpp
+SOURCE network/FormData.cpp
+SOURCE network/HTTPParsers.cpp
+SOURCE network/ProtectionSpace.cpp
+SOURCE network/ResourceHandle.cpp
+SOURCE network/ResourceRequestBase.cpp
+SOURCE network/ResourceResponse.cpp
+
+SOURCEPATH ../../../../../WebCore/platform/graphics/symbian
+
+SOURCE FloatPointSymbian.cpp
+SOURCE FloatRectSymbian.cpp
+SOURCE GraphicsContextSymbian.cpp
+SOURCE ImageSourceSymbian.cpp
+SOURCE ImageSymbian.cpp
+SOURCE IntPointSymbian.cpp
+SOURCE IntRectSymbian.cpp
+SOURCE IntSizeSymbian.cpp
+
+SOURCEPATH ../../../../../WebCore/platform/symbian
+SOURCE CookieJarSymbian.cpp
+SOURCE CursorSymbian.cpp
+SOURCE DeprecatedStringSymbian.cpp
+SOURCE FileChooserSymbian.cpp
+SOURCE FileStreamSymbian.cpp
+SOURCE FileSystemSymbian.cpp
+SOURCE FontCacheSymbian.cpp
+SOURCE FontDataSymbian.cpp
+SOURCE FontSymbian.cpp
+SOURCE FormDataStore.cpp
+SOURCE FormFillController.cpp
+SOURCE FormLoginStore.cpp
+SOURCE GlyphPageTreeNodeSymbian.cpp
+SOURCE ICUSymbian.cpp
+SOURCE KURLSymbian.cpp
+SOURCE MimeTypeRegistrySymbian.cpp
+SOURCE OOMHandler.cpp
+SOURCE OOMStopper.cpp
+SOURCE PasteboardSymbian.cpp
+SOURCE PathSymbian.cpp
+SOURCE PictographSymbian.cpp
+SOURCE PlatformKeyEventSymbian.cpp
+SOURCE PlatformMouseEventSymbian.cpp
+SOURCE PlatformScrollbarSymbian.cpp
+SOURCE PluginInfoStoreSymbian.cpp
+SOURCE PopupMenuSymbian.cpp
+SOURCE RenderThemeSymbian.cpp
+SOURCE ScreenSymbian.cpp
+SOURCE ScrollViewSymbian.cpp
+SOURCE SearchPopupMenuSymbian.cpp
+SOURCE SharedTimerSymbian.cpp
+SOURCE StaticObjectsContainer.cpp
+SOURCE StreamingTextCodecSymbian.cpp
+SOURCE StringImplSymbian.cpp
+SOURCE StringSymbian.cpp
+SOURCE SystemTimeSymbian.cpp
+SOURCE TemporaryLinkStubsSymbian.cpp
+SOURCE TextBreakIteratorSymbian.cpp
+SOURCE WidgetSymbian.cpp
+
+SOURCEPATH ../../../../../WebCore/platform/symbian/bitmap
+SOURCE AnimationDecoder.cpp
+SOURCE AnimationDecoderWrapped.cpp
+SOURCE BitmapTiler.cpp
+SOURCE MaskedBitmap.cpp
+SOURCE SyncDecodeThread.cpp
+
+SOURCEPATH ../../../../../WebCore/platform/network/symbian
+SOURCE ResourceHandleManagerSymbian.cpp
+SOURCE ResourceHandleSymbian.cpp
+SOURCE ResourceLoaderDelegate.cpp
+SOURCE FileReader.cpp
+SOURCE FileConnection.cpp
+SOURCE DataConnection.cpp
+SOURCE HttpCacheDataSupplier.cpp
+SOURCE HttpCacheSupply.cpp
+SOURCE HttpCallbacks.cpp
+SOURCE HttpConnection.cpp
+SOURCE HttpConnectionConfig.cpp
+SOURCE HttpPostDataSupplier.cpp
+SOURCE HttpSessionManager.cpp
+SOURCE HttpDownload.cpp
+SOURCE HttpDlConnection.cpp
+SOURCE HttpUiCallbacks.cpp
+SOURCE PostDataItem.cpp
+SOURCE CookieHandler.cpp
+SOURCE HttpRequestHeaderManager.cpp
+SOURCE HttpConnUtils.cpp
+SOURCE ResolvedConnection.cpp
+SOURCE SelfDownloadContentHandler.cpp
+SOURCE MultipartContentHandler.cpp
+SOURCE UnknownContentHandler.cpp
+SOURCE SynchLoader.cpp
+SOURCE SynchRequest.cpp

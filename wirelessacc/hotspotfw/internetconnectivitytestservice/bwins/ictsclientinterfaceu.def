@@ -1,0 +1,7 @@
+EXPORTS
+	?StopPolling@CIctsClientInterface@@QAEXXZ @ 1 NONAME ; void CIctsClientInterface::StopPolling(void)
+	?StartPolling@CIctsClientInterface@@QAEXHH@Z @ 2 NONAME ; void CIctsClientInterface::StartPolling(int, int)
+	?CancelStartL@CIctsClientInterface@@QAEXXZ @ 3 NONAME ; void CIctsClientInterface::CancelStartL(void)
+	?NewL@CIctsClientInterface@@SAPAV1@KKAAVMIctsObserver@@@Z @ 4 NONAME ; class CIctsClientInterface * CIctsClientInterface::NewL(unsigned long, unsigned long, class MIctsObserver &)
+	?StartL@CIctsClientInterface@@QAEXXZ @ 5 NONAME ; void CIctsClientInterface::StartL(void)
+

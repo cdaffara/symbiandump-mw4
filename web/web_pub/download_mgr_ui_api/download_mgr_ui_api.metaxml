@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<api id="13760805057f069df47c49d9b9983499" dataversion="1.0">
+  <name>Download Manager UI Library API</name>
+  <description>API for download manager UI services. Used by applications to manage and display download lists, handle user interaction, insert a download list item in the application menu, etc.</description>
+  <type>c++</type>
+  <subsystem>BrowserUtilities</subsystem>
+  <libs>
+    <lib name="DownloadMgrUiLib.lib" />
+  </libs>
+  <release category="sdk" sinceversion="2.8"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

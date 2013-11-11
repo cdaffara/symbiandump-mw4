@@ -1,0 +1,41 @@
+EXPORTS
+	_ZN13MemoryManager10AddStopperEP11MOOMStopper @ 1 NONAME
+	_ZN13MemoryManager10MemorySizeEPv @ 2 NONAME
+	_ZN13MemoryManager11SetNotifierEP12MOOMNotifier @ 3 NONAME
+	_ZN13MemoryManager12AddCollectorEP16MMemoryCollector @ 4 NONAME
+	_ZN13MemoryManager13RemoveStopperEP11MOOMStopper @ 5 NONAME
+	_ZN13MemoryManager15RemoveCollectorEP16MMemoryCollector @ 6 NONAME
+	_ZN13MemoryManager17RestoreCollectorsEv @ 7 NONAME
+	_ZN13MemoryManager18CloseFastAllocatorEP10RAllocator @ 8 NONAME
+	_ZN13MemoryManager19SetRescueBufferSizeEi @ 9 NONAME
+	_ZN13MemoryManager21SwitchToFastAllocatorEv @ 10 NONAME
+	_ZN13MemoryManager6StatusEv @ 11 NONAME
+	_ZN13MemoryManager7FreeRamEv @ 12 NONAME
+	_ZN13MemoryManager8PreCheckEjjRK6TDesC8 @ 13 NONAME
+	_ZN13MemoryManager9PostCheckEv @ 14 NONAME
+	_ZN13MemoryManager9SetStatusE15TOOMCheckResult @ 15 NONAME
+	_ZN14RFastAllocator10Extension_EjRPvS0_ @ 16 NONAME
+	_ZN14RFastAllocator13DebugFunctionEiPvS0_ @ 17 NONAME
+	_ZN14RFastAllocator4FreeEPv @ 18 NONAME
+	_ZN14RFastAllocator5AllocEi @ 19 NONAME
+	_ZN14RFastAllocator5ResetEv @ 20 NONAME
+	_ZN14RFastAllocator7ReAllocEPvii @ 21 NONAME
+	_ZN14RFastAllocator8CompressEv @ 22 NONAME
+	_ZN14RFastAllocatorC1EP15CFastMemoryPool @ 23 NONAME
+	_ZN14RFastAllocatorC2EP15CFastMemoryPool @ 24 NONAME
+	_ZN14RFastAllocatorD1Ev @ 25 NONAME
+	_ZN14RFastAllocatorD2Ev @ 26 NONAME
+	_ZNK14RFastAllocator8AllocLenEPKv @ 27 NONAME
+	_ZNK14RFastAllocator9AllocSizeERi @ 28 NONAME
+	_ZNK14RFastAllocator9AvailableERi @ 29 NONAME
+	_ZTI11CMemoryPool @ 30 NONAME ; #<TI>#
+	_ZTI14CStopScheduler @ 31 NONAME ; #<TI>#
+	_ZTI14RFastAllocator @ 32 NONAME ; #<TI>#
+	_ZTI15CFastMemoryPool @ 33 NONAME ; #<TI>#
+	_ZTI18CDefaultMemoryPool @ 34 NONAME ; #<TI>#
+	_ZTV11CMemoryPool @ 35 NONAME ; #<VT>#
+	_ZTV14CStopScheduler @ 36 NONAME ; #<VT>#
+	_ZTV14RFastAllocator @ 37 NONAME ; #<VT>#
+	_ZTV15CFastMemoryPool @ 38 NONAME ; #<VT>#
+	_ZTV18CDefaultMemoryPool @ 39 NONAME ; #<VT>#
+

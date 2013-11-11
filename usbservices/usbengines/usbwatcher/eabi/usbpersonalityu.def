@@ -1,0 +1,34 @@
+EXPORTS
+	_ZN15CUsbPersonality21ShowUsbConnectionNoteEv @ 1 NONAME
+	_ZN15CUsbPersonalityC2ER21TUsbPersonalityParams @ 2 NONAME
+	_ZN21CUsbPersonalityPlugin4NewLER21TUsbPersonalityParams4TUid @ 3 NONAME
+	_ZN21CUsbPersonalityPluginC2ER21TUsbPersonalityParams @ 4 NONAME
+	_ZN21CUsbPersonalityPluginD0Ev @ 5 NONAME
+	_ZN21CUsbPersonalityPluginD1Ev @ 6 NONAME
+	_ZN21CUsbPersonalityPluginD2Ev @ 7 NONAME
+	_ZN21TUsbPersonalityParams16SetPersonalityIdEi @ 8 NONAME
+	_ZN21TUsbPersonalityParamsC1ER4RUsbR23CUsbPersonalityNotifier @ 9 NONAME
+	_ZN21TUsbPersonalityParamsC2ER4RUsbR23CUsbPersonalityNotifier @ 10 NONAME
+	_ZN21TUsbPersonalityParamsD1Ev @ 11 NONAME
+	_ZN21TUsbPersonalityParamsD2Ev @ 12 NONAME
+	_ZN23CUsbPersonalityNotifier10DoShowNoteE4TUidRK6TDesC8R5TDes8 @ 13 NONAME ABSENT
+	_ZN23CUsbPersonalityNotifier11CancelQueryE4TUid @ 14 NONAME
+	_ZN23CUsbPersonalityNotifier4NewLEv @ 15 NONAME
+	_ZN23CUsbPersonalityNotifier8ShowNoteE4TUidRK6TDesC8R5TDes8 @ 16 NONAME
+	_ZN23CUsbPersonalityNotifier9CancelAllEv @ 17 NONAME
+	_ZN23CUsbPersonalityNotifier9ShowQueryE4TUidRK6TDesC8R5TDes8P20MUsbNotifierCallBackP14TRequestStatus @ 18 NONAME
+	_ZN23CUsbPersonalityNotifierC1Ev @ 19 NONAME ABSENT
+	_ZN23CUsbPersonalityNotifierC2Ev @ 20 NONAME ABSENT
+	_ZN23CUsbPersonalityNotifierD0Ev @ 21 NONAME
+	_ZN23CUsbPersonalityNotifierD1Ev @ 22 NONAME
+	_ZN23CUsbPersonalityNotifierD2Ev @ 23 NONAME
+	_ZNK21TUsbPersonalityParams13PersonalityIdEv @ 24 NONAME
+	_ZNK21TUsbPersonalityParams19PersonalityNotifierEv @ 25 NONAME
+	_ZNK21TUsbPersonalityParams6UsbManEv @ 26 NONAME
+	_ZTI15CUsbPersonality @ 27 NONAME ; #<TI>#
+	_ZTI21CUsbPersonalityPlugin @ 28 NONAME ; #<TI>#
+	_ZTV15CUsbPersonality @ 29 NONAME ; #<VT>#
+	_ZTV21CUsbPersonalityPlugin @ 30 NONAME ; #<VT>#
+	_ZN23CUsbPersonalityNotifier19CancelAllButCurrentEv @ 31 NONAME
+	_ZN23CUsbPersonalityNotifier9IsShowingE4TUid @ 32 NONAME
+

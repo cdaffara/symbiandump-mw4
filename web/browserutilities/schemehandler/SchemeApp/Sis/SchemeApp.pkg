@@ -1,0 +1,25 @@
+;
+; Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of the License "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description: 
+;
+;Header
+#{"SchemeApp"}, (0x101f8532), 0, 2, 0
+
+;Entries
+"\epoc32\release\thumb\urel\SchemeApp.app"-"!:\System\Apps\SchemeApp\SchemeApp.app"
+"\epoc32\data\z\system\apps\SchemeApp\SchemeApp.rsc"-"!:\System\Apps\SchemeApp\SchemeApp.rsc"
+"\epoc32\data\z\system\apps\SchemeApp\SchemeApp.aif"-"!:\System\Apps\SchemeApp\SchemeApp.aif"
+
+;Dependency: installs only on Nokia Series60
+(0x101F6F88), 0, 0, 0, {"Series60ProductID"}

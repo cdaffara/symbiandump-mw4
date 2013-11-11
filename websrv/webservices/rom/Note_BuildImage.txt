@@ -1,0 +1,2 @@
+1. Copy WebServices.iby to \epoc32\rom\include path
+2. Comment all WS related iby files in S60.iby and include WebServices.iby at the same place. 

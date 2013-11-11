@@ -1,0 +1,43 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Highlevel bld.inf
+*
+*/
+
+#include <platform_paths.hrh>
+#include "../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+#ifdef  __WEB_WIDGETS
+#include "../widgetrecognizer/group/bld.inf"
+#include "../widgetinstaller/group/bld.inf"
+#include "../widgetlauncher/group/bld.inf"
+#include "../widgetapp/group/bld.inf"
+#ifdef RD_WIDGET_PREINSTALLER
+#include "../widgetpreinstaller/group/bld.inf"
+#include "../widgetstartup/group/bld.inf"
+#endif // RD_WIDGET_PREINSTALLER
+#endif // __WEB_WIDGETS
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+#ifdef  __WEB_WIDGETS
+../Rom/Widgets.iby                CORE_MW_LAYER_IBY_EXPORT_PATH(Widgets.iby)
+../Rom/WidgetsResources.iby       LANGUAGE_MW_LAYER_IBY_EXPORT_PATH(WidgetsResources.iby)
+#endif // __WEB_WIDGETS
+
+PRJ_MMPFILES
+
+PRJ_TESTMMPFILES

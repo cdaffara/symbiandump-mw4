@@ -1,0 +1,6 @@
+EXPORTS
+	_ZTI25CSenHostletConnectionImpl @ 1 NONAME ; #<TI>#
+	_ZTV25CSenHostletConnectionImpl @ 2 NONAME ; #<VT>#
+	_ZN21CSenHostletConnection4NewLER11MSenHostlet @ 3 NONAME
+	_ZN21CSenHostletConnection5NewLCER11MSenHostlet @ 4 NONAME
+

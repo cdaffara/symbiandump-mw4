@@ -1,0 +1,143 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:      Project specification file for wsframework
+*
+*/
+
+
+
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+TARGETTYPE    DLL
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET        SenFramework.DLL
+UID           0x1000008d 0x101F96F5
+#else
+TARGET        wsframework.dll
+UID           0x1000008d 0x101F972D
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_GENERAL_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_GENERAL_DLL
+    #endif
+#endif
+
+SOURCEPATH ../src
+SOURCE senwspattern.cpp
+SOURCE senwsdescription.cpp
+SOURCE senframeworkdll.cpp
+SOURCE senservicesession.cpp
+SOURCE senwebservicesession.cpp
+SOURCE seninternalserviceconsumer.cpp
+SOURCE saslmechanism.cpp
+SOURCE senlayeredxmlproperties.cpp
+SOURCE senlayeredtransportproperties.cpp
+SOURCE senlayeredhttptransportproperties.cpp
+SOURCE senlayeredvtcptransportproperties.cpp
+SOURCE sencontextitem.cpp
+SOURCE sencontext.cpp
+SOURCE senmessagecontext.cpp
+SOURCE sentransportcontext.cpp
+
+SOURCE senhandlerbase.cpp
+SOURCE sensyncrequester.cpp
+SOURCE senmultipartutils.cpp
+SOURCE senmtomutils.cpp
+
+SOURCE senservercontext.cpp
+SOURCE senapplicationcontext.cpp
+SOURCE senclientcontext.cpp
+SOURCE sensessioncontext.cpp
+
+USERINCLUDE ../inc 
+USERINCLUDE ../../wscore/inc
+USERINCLUDE ../../wsutils/inc // SenDebug.h - filelogging MACROs
+USERINCLUDE ../../wsidentitymanager/inc // MSenIdentityManager.h
+USERINCLUDE ../../wscredentialmanager/inc
+USERINCLUDE ../../wsdescription/inc // MSenPolicy.h (bc)
+USERINCLUDE ../../wsmessages/inc
+USERINCLUDE ../../wsxml/inc								//senxmldebug.h
+USERINCLUDE ../../wslogger/inc		
+USERINCLUDE   ../../wshostletconnection/inc // MSenHostlet.h, MSenHostletRequest.h, MSenHostletResponse.h
+
+SYSTEMINCLUDE   ../../inc
+SYSTEMINCLUDE /epoc32/include/libc
+MW_LAYER_SYSTEMINCLUDE
+
+// System libs
+LIBRARY euser.lib 
+LIBRARY flogger.lib
+LIBRARY estor.lib 
+LIBRARY ecom.lib
+LIBRARY efsrv.lib
+LIBRARY	inetprotutil.lib // for base64 encoding
+
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// Serene libs
+LIBRARY senlogger.lib   // for TLS based logging
+LIBRARY SenUtils.lib
+LIBRARY SenServDesc.lib
+LIBRARY SenXml.lib
+LIBRARY SenMessages.lib
+LIBRARY SenFragment.lib
+LIBRARY SenCredentialManager.lib
+#else
+// Serene libs
+LIBRARY wslogger.lib   // for TLS based logging
+LIBRARY wsUtils.lib
+LIBRARY wsServDesc.lib
+LIBRARY wsXml.lib
+LIBRARY wsMessages.lib
+LIBRARY wsFragment.lib
+LIBRARY wsCredentialManager.lib
+#endif
+
+// Libxml2 libs
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    LIBRARY         XmlEngineDOM.lib
+    LIBRARY         XmlEngineUtils.lib
+    LIBRARY         XmlEngineSerializer.lib
+#else
+    LIBRARY         WsStarXmlEngine.lib
+    LIBRARY         WsStarXmlEngineDOM.lib
+    LIBRARY         WsStarXmlEngineSerializer.lib
+#endif
+
+#if defined(ARMCC)
+    DEFFILE     ../eabi/SENFRAMEWORK.DEF
+#elif defined(WINSCW)
+    DEFFILE     ../BWINSCW/SENFRAMEWORK.DEF
+#elif defined(WINS)
+    DEFFILE     ../BWINS/SENFRAMEWORK.DEF
+#else 
+    DEFFILE     ../BMARM/SENFRAMEWORK.DEF
+#endif
+
+SMPSAFE
+

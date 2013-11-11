@@ -1,0 +1,43 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This file contains all the resources of Download Mgr Server.
+*
+*/
+
+#include <defaultcaps.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET			DownloadMgrServer.exe
+TARGETTYPE		exe
+
+UID    0x1000008c 0x10008D60
+
+EPOCHEAPSIZE 0x2000 0x300000
+MW_LAYER_SYSTEMINCLUDE
+
+USERINCLUDE	    ../inc
+
+SOURCEPATH	../src
+SOURCE		DownloadMgrMain.cpp 
+
+
+LIBRARY euser.lib
+
+LIBRARY DownloadMgr.lib                      
+
+CAPABILITY CAP_SERVER -SwEvent -Location -LocalServices -UserEnvironment -ReadUserData -WriteUserData NetworkControl
+
+VENDORID VID_DEFAULT

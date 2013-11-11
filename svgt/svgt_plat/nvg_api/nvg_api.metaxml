@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="037d9b8e29b74ec87f232a218c4522b9" dataversion="2.0">
+<name>NVG API</name>
+<description>This API is used to decode the NVG icons.</description>
+<type>c++</type>
+<collection>svgtopt</collection>
+<libs><lib name="nvgdecoder.lib"/>
+</libs>
+<release category="platform" sinceversion=""/>
+<attributes>
+<htmldocprovided>no</htmldocprovided>
+<adaptation>no</adaptation>
+</attributes>
+</api>

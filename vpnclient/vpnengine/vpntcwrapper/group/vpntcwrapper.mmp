@@ -1,0 +1,50 @@
+/*
+* Copyright (c) 2007-2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Wrapper class for dynamic, terminal-dependent device lock access
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+TARGET      vpntcwrapper.dll
+TARGETTYPE  dll
+
+
+UID     0x1000008d 0x101F6D3F
+VENDORID    VID_DEFAULT
+
+SOURCEPATH  ../src
+
+SOURCE      vpntcwrapper.cpp
+
+USERINCLUDE ../inc
+USERINCLUDE ../../vpncommon/inc
+USERINCLUDE ../../../vpnui/vpnpolins/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY     euser.lib utlbase64.lib
+LIBRARY     utlcrypto.lib asn1.lib
+LIBRARY     crpkcs12.lib
+LIBRARY     pkiserviceapi.lib
+LIBRARY     crypto.lib
+LIBRARY     efsrv.lib
+LIBRARY     sysutil.lib
+LIBRARY     terminalcontrol.lib
+
+DEBUGLIBRARY     flogger.lib
+
+CAPABILITY ALL -Tcb

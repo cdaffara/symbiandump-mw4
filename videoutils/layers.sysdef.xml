@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE SystemDefinition SYSTEM "sysdef_1_5_1.dtd" [
+  <!ENTITY layer_real_source_path "sf/mw/videoutils" >
+]>
+
+<SystemDefinition name="videoutils" schema="1.5.1">
+  <systemModel>
+    <layer name="mw_layer">
+      <module name="videoutils">
+        <unit unitID="vado.videoutils" mrp="" bldFile="&layer_real_source_path;" name="videoutils" proFile="videoutils.pro" qmakeArgs="-r" />
+      </module>
+    </layer>
+
+	<layer name="api_test_layer">
+	</layer>    
+    
+  </systemModel>
+</SystemDefinition>

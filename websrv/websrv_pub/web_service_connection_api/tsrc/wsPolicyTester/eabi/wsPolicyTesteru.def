@@ -1,0 +1,35 @@
+EXPORTS
+	_Z9LibEntryLR13CTestModuleIf @ 1 NONAME
+	_ZN14CWSPolicyUtils10PolicyUriLEP11CSenElement @ 2 NONAME
+	_ZN14CWSPolicyUtils11PolicyNameLEP11CSenElement @ 3 NONAME
+	_ZN14CWSPolicyUtils16IsExpiredPolicyLEP11CSenElement @ 4 NONAME
+	_ZN14CWSPolicyUtils9PolicyIdLEP11CSenElement @ 5 NONAME
+	_ZTI10CAssertion @ 6 NONAME ; #<TI>#
+	_ZTI15CWSPolicyReader @ 7 NONAME ; #<TI>#
+	_ZTI15CWSPolicyWriter @ 8 NONAME ; #<TI>#
+	_ZTI16CPolicyAssertion @ 9 NONAME ; #<TI>#
+	_ZTI19CPrimitiveAssertion @ 10 NONAME ; #<TI>#
+	_ZTI20CSenInternalWsPolicy @ 11 NONAME ; #<TI>#
+	_ZTI21CTestInternalWSPolicy @ 12 NONAME ; #<TI>#
+	_ZTI22CAndCompositeAssertion @ 13 NONAME ; #<TI>#
+	_ZTI22CSenWSPolicyIdentifier @ 14 NONAME ; #<TI>#
+	_ZTI22CSenWSPolicyProperties @ 15 NONAME ; #<TI>#
+	_ZTI22CXorCompositeAssertion @ 16 NONAME ; #<TI>#
+	_ZTI25CPolicyReferenceAssertion @ 17 NONAME ; #<TI>#
+	_ZTI6CQName @ 18 NONAME ; #<TI>#
+	_ZTI9CMyXmlEle @ 19 NONAME ; #<TI>#
+	_ZTV10CAssertion @ 20 NONAME ; #<VT>#
+	_ZTV15CWSPolicyReader @ 21 NONAME ; #<VT>#
+	_ZTV15CWSPolicyWriter @ 22 NONAME ; #<VT>#
+	_ZTV16CPolicyAssertion @ 23 NONAME ; #<VT>#
+	_ZTV19CPrimitiveAssertion @ 24 NONAME ; #<VT>#
+	_ZTV20CSenInternalWsPolicy @ 25 NONAME ; #<VT>#
+	_ZTV21CTestInternalWSPolicy @ 26 NONAME ; #<VT>#
+	_ZTV22CAndCompositeAssertion @ 27 NONAME ; #<VT>#
+	_ZTV22CSenWSPolicyIdentifier @ 28 NONAME ; #<VT>#
+	_ZTV22CSenWSPolicyProperties @ 29 NONAME ; #<VT>#
+	_ZTV22CXorCompositeAssertion @ 30 NONAME ; #<VT>#
+	_ZTV25CPolicyReferenceAssertion @ 31 NONAME ; #<VT>#
+	_ZTV6CQName @ 32 NONAME ; #<VT>#
+	_ZTV9CMyXmlEle @ 33 NONAME ; #<VT>#
+

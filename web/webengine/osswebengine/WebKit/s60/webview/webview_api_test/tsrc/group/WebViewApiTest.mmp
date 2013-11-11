@@ -1,0 +1,240 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  ?Description
+*
+*/
+
+#include <domain/osextensions/platform_paths.hrh>
+#include <data_caging_paths.hrh>
+//#include "/../../../../WebEngine/OssWebEngine/WebKit/s60/group/common.mmpi"
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          WebViewApiTest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E3
+
+CAPABILITY      ALL -TCB
+/* Remove comments and replace 0x00000000 with correct vendor id */
+// VENDORID     0x00000000
+/* Remove comments and replace 0x00000000 with correct secure id */
+// SECUREID     0x00000000
+
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+
+DEFFILE         WebViewApiTest.def
+
+//
+MW_LAYER_SYSTEMINCLUDE
+USERINCLUDE ../inc
+USERINCLUDE ../../inc
+USERINCLUDE ../mock/inc
+USERINCLUDE /S60/mw/web/inc
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/ 
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/page
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/css
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/rendering
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/dom
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/html
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/xml
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/editing
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/bindings/js
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/page/symbian 
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/bridge
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/bridge/symbian 
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/platform
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/platform/symbian
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/platform/symbian/bitmap
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/loader/symbian
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/loader
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/loader/icon
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/loader/wml
+
+//
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebKit/S60/Plugins
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebKit/S60/WebCoreSupport
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebKit/S60/FormControls
+USERINCLUDE ../../../../WebEngine/OssWebEngine/WebKit/S60/Misc
+USERINCLUDE ../../../../WebEngine/OssWebEngine/MemoryManager/Inc 
+USERINCLUDE ../../../../WebEngine/OssWebEngine/DerivedSources/WebCore
+
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebKit/S60/Plugins
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebKit/S60/webview
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/DerivedSources/JavaScriptCore
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore/kjs
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore/pcre
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore/bindings
+
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore/wtf
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore/wtf/unicode
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore/wtf/unicode/symbian
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore/wtf/symbian
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore/icu
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/JavaScriptCore/ForwardingHeaders
+
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/platform
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/platform/network
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/platform/symbian
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/platform/network/symbian
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/platform/graphics
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/history
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/icu
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/bindings/js
+
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/loader
+SYSTEMINCLUDE ../../../../WebEngine/OssWebEngine/WebCore/loader/icon
+
+SYSTEMINCLUDE /epoc32/include/ecom
+SYSTEMINCLUDE /epoc32/include/http
+SYSTEMINCLUDE /epoc32/include/libc
+SYSTEMINCLUDE /epoc32/include/libc/sys
+SYSTEMINCLUDE /epoc32/include/stdapis
+
+SYSTEMINCLUDE ../../../../WebEngine/PageScaler/inc
+SYSTEMINCLUDE ../../../../WebEngine/WidgetEngine/inc
+SYSTEMINCLUDE ../../../../WebEngine/device/inc
+SYSTEMINCLUDE ../../../../WebEngine/WebKitUtils/ToolBar
+SYSTEMINCLUDE ../../../../WebEngine/WebKitUtils/HistoryProvider
+SYSTEMINCLUDE ../../../../WebEngine/WebKitUtils/SqliteSymbian
+
+MACRO __S60__
+MACRO __OOM__
+MACRO arm
+MACRO ASSERT_DISABLED
+
+OPTION ARMCC --diag_suppress 1134,111,1293,550,830,177
+OPTION CW -warn noempty,nounused,nounwanted,nopedantic
+//
+
+SOURCEPATH      ../src
+SOURCE          WebViewApiTest.cpp WebViewApiTestBlocks.cpp WebViewApiTestContainer.cpp
+SOURCE		BrCtlApiTestDialogsProvider.cpp BrCtlApiTestObserver.cpp
+
+SOURCEPATH      ../mock/src
+SOURCE		BrCtl.cpp
+
+LIBRARY         eikdlg.lib
+LIBRARY			aknnotify.lib
+
+STATICLIBRARY   WebKit.lib
+STATICLIBRARY   WebCoreDerivedSources.lib
+STATICLIBRARY   WebCorebindings.lib      
+STATICLIBRARY   WebCorecss.lib           
+STATICLIBRARY   WebCoredom.lib           
+STATICLIBRARY   WebCoreediting.lib       
+STATICLIBRARY   WebCorehistory.lib       
+STATICLIBRARY   WebCorehtml.lib          
+STATICLIBRARY   WebCoreloader.lib        
+STATICLIBRARY   WebCorepage.lib          
+STATICLIBRARY   WebCorerendering.lib     
+STATICLIBRARY   WebCorexml.lib           
+STATICLIBRARY   WebCorebridge.lib        
+STATICLIBRARY   WebCoreplatform.lib      
+STATICLIBRARY   webcore_xmlparser.lib
+
+// browser engine
+LIBRARY         WebKitUtils.lib
+LIBRARY         pagescaler.lib
+LIBRARY         MemMan.lib
+LIBRARY         JavaScriptCore.lib
+LIBRARY         BrowserCache.lib
+STATICLIBRARY   Plugins.lib
+
+// platform
+LIBRARY         BitmapTransforms.lib
+LIBRARY         ESTLIB.lib 
+LIBRARY         http.lib 
+LIBRARY         EFSRV.lib 
+LIBRARY         bafl.lib 
+LIBRARY         InetProtUtil.lib 
+LIBRARY         HttpFilterCommon.lib
+LIBRARY         ecom.lib 
+LIBRARY         CommonEngine.lib
+LIBRARY         flogger.lib
+LIBRARY         cone.lib
+LIBRARY         browserdialogsprovider.lib
+LIBRARY         avkon.lib
+LIBRARY         ConnectionManager.lib
+LIBRARY         CommonUI.LIB
+LIBRARY         fbscli.lib 
+LIBRARY         bitgdi.lib 
+LIBRARY         charconv.lib 
+LIBRARY         gdi.lib 
+LIBRARY         apparc.lib 
+LIBRARY         eikcore.lib 
+LIBRARY         eikcoctl.lib
+LIBRARY         egul.lib
+LIBRARY         fntstr.lib
+LIBRARY         ws32.lib
+LIBRARY         insock.lib
+LIBRARY         esock.lib
+LIBRARY         euser.lib 
+LIBRARY         ImageConversion.lib
+LIBRARY         edbms.lib
+LIBRARY         estor.lib
+LIBRARY         CookieManager.lib 
+LIBRARY         WebUtils.lib 
+LIBRARY         MultipartParser.lib
+LIBRARY         DownloadMgr.lib
+LIBRARY         DownloadMgrUiLib.lib
+LIBRARY         imut.lib
+LIBRARY         eikctl.lib 
+LIBRARY         form.lib 
+LIBRARY         etext.lib 
+LIBRARY         fepbase.lib 
+LIBRARY         sysutil.lib 
+LIBRARY         apgrfx.lib
+LIBRARY         apmime.lib
+LIBRARY         SysLangUtil.lib
+LIBRARY         centralrepository.lib
+LIBRARY         CenRepNotifHandler.lib
+LIBRARY         featmgr.lib
+LIBRARY         AknSkins.lib 
+LIBRARY         aknicon.lib
+LIBRARY         ServiceHandler.lib
+//LIBRARY         PbkView.lib             
+//LIBRARY         PbkEng.lib              
+LIBRARY         sendui.lib              
+LIBRARY         aknpictograph.lib
+LIBRARY         pbe.lib
+LIBRARY         crypto.lib
+LIBRARY         libpthread.lib
+
+#ifdef __USE_CCC_AUTO_FORM_FILL_POPUP
+LIBRARY         broaffpopup.lib
+#endif
+
+//#ifdef BRDO_TOUCH_ENABLED_FF 
+LIBRARY         touchfeedback.lib
+//#endif
+
+#if defined(GCCE)
+STATICLIBRARY   edllstub.lib
+#endif
+
+#ifdef __GCCE__
+STATICLIBRARY   edllstub.lib
+#endif
+
+// stif framework
+LIBRARY         stiftestinterface.lib stiftestengine.lib
+
+// component under test
+LIBRARY         browserengine.lib
+
+// End of File

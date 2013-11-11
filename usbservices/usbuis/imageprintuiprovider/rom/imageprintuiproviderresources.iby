@@ -1,0 +1,27 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Language  description file for project imageprintuiprovider
+*
+*/
+
+
+#ifndef __IMAGEPRINTUIPROVIDERRESOURCES_IBY__
+#define __IMAGEPRINTUIPROVIDERRESOURCES_IBY__
+#ifdef __USB_PICTBRIDGE_UI
+#include <data_caging_paths_for_iby.hrh>
+
+DATA=DATAZ_\RESOURCE_FILES_DIR\imageprintuiprovider.rsc		RESOURCE_FILES_DIR\imageprintuiprovider.rsc
+
+#endif // #ifdef __USB_PICTBRIDGE_UI
+#endif // __IMAGEPRINTUIPROVIDERRESOURCES_IBY__

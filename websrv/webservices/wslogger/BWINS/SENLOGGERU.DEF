@@ -1,0 +1,13 @@
+EXPORTS
+	?CreateL@CSenLogger@@SAHHHABVTDesC16@@0@Z @ 1 NONAME ; public: static int __cdecl CSenLogger::CreateL(int,int,class TDesC16 const &,class TDesC16 const &)
+	?Destroy@CSenLogger@@SAXH@Z @ 2 NONAME ; public: static void __cdecl CSenLogger::Destroy(int)
+	?Write@CSenLogger@@SAXHHABVTDesC16@@@Z @ 3 NONAME ; public: static void __cdecl CSenLogger::Write(int,int,class TDesC16 const &)
+	?Write@CSenLogger@@SAXHHABVTDesC8@@@Z @ 4 NONAME ; public: static void __cdecl CSenLogger::Write(int,int,class TDesC8 const &)
+	?WriteAll@CSenLogger@@SAXHHABVTDesC16@@@Z @ 5 NONAME ; public: static void __cdecl CSenLogger::WriteAll(int,int,class TDesC16 const &)
+	?WriteAll@CSenLogger@@SAXHHABVTDesC8@@@Z @ 6 NONAME ; public: static void __cdecl CSenLogger::WriteAll(int,int,class TDesC8 const &)
+	?WriteFormat@CSenLogger@@SAXHHV?$TRefByValue@$$CBVTDesC16@@@@AAY00PAC@Z @ 7 NONAME ; public: static void __cdecl CSenLogger::WriteFormat(int,int,class TRefByValue<class TDesC16 const >,signed char * (&)[1])
+	?WriteFormat@CSenLogger@@SAXHHV?$TRefByValue@$$CBVTDesC16@@@@ZZ @ 8 NONAME ; public: static void __cdecl CSenLogger::WriteFormat(int,int,class TRefByValue<class TDesC16 const >,...)
+	?WriteFormat@CSenLogger@@SAXHHV?$TRefByValue@$$CBVTDesC8@@@@AAY00PAC@Z @ 9 NONAME ; public: static void __cdecl CSenLogger::WriteFormat(int,int,class TRefByValue<class TDesC8 const >,signed char * (&)[1])
+	?WriteFormat@CSenLogger@@SAXHHV?$TRefByValue@$$CBVTDesC8@@@@ZZ @ 10 NONAME ; public: static void __cdecl CSenLogger::WriteFormat(int,int,class TRefByValue<class TDesC8 const >,...)
+	??0CSenLogger@@AAE@XZ @ 11 NONAME ; private: __thiscall CSenLogger::CSenLogger(void)
+

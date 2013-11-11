@@ -1,0 +1,42 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+PRJ_PLATFORMS
+default
+
+PRJ_EXPORTS
+../inc/pnp.h                          SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/pnp.h)
+../inc/mpnpobserver.h 		     SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/mpnpobserver.h)
+../inc/pnpparameterbundle.h	    SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/pnpparameterbundle.h)	
+../inc/rpnpservicediscovery.h	  SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/rpnpservicediscovery.h)	
+../inc/rpnpservicepublisher.h	  SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/rpnpservicepublisher.h)	
+../inc/rcontrolchannel.h	  SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/rcontrolchannel.h)	
+../inc/cpnpservicediscoverybase.h SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/cpnpservicediscoverybase.h)
+../inc/cpnpservicepublisherbase.h SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/cpnpservicepublisherbase.h)
+../inc/ccontrolchannelbase.h	  SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/ccontrolchannelbase.h)
+../inc/pnpconstants.h			  SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(pnp/pnpconstants.h)
+
+
+rpnp.iby	/epoc32/rom/include/rpnp.iby
+
+PRJ_MMPFILES
+rpnp.mmp
+
+PRJ_TESTMMPFILES
+#include "../test/testplugin/group/bld.inf"
+#include "../test/integtest/group/bld.inf"
+

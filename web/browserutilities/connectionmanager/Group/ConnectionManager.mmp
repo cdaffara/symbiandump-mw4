@@ -1,0 +1,90 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This is project specification file for the ConnectionManager.
+*
+*
+*/
+
+
+#include <data_caging_paths.hrh>
+#include <bldvariant.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET  ConnectionManager.dll
+TARGETTYPE  dll
+UID  0x1000008d 0x10008D3F
+SOURCEPATH ../Src
+
+VENDORID VID_DEFAULT
+CAPABILITY	CAP_GENERAL_DLL
+
+USERINCLUDE ../Inc
+USERINCLUDE ../../inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+START RESOURCE ../Data/connectionmanager.rss
+DEPENDS avkon.rsg
+HEADER
+TARGETPATH  RESOURCE_FILES_DIR
+END
+
+SOURCE Idpair.cpp
+SOURCE InternetConnectionManager.cpp
+SOURCE ConnectionObservers.cpp
+SOURCE ConnManActiveConnector.cpp
+SOURCE ConnManKeyAbsorber.cpp
+SOURCE ConnManLogger.cpp
+
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+
+LIBRARY     ESock.lib
+LIBRARY     AknNotify.lib
+LIBRARY     Avkon.lib
+LIBRARY     APEngine.lib
+LIBRARY     Euser.lib
+LIBRARY     CommDb.lib
+LIBRARY     Cone.lib	//to get CCoeEnv
+LIBRARY     Bafl.lib //determining language
+LIBRARY     commonengine.lib//string loader
+LIBRARY     commonui.lib //Error note
+LIBRARY     efsrv.lib //resource reading
+LIBRARY     etel.lib
+LIBRARY     etelmm.lib
+LIBRARY     AknSkins.lib // Skins support
+LIBRARY     eikcoctl.lib    // AP selection dialog
+// This will have to be changed to ConnectionUiUtils
+LIBRARY     agentdialog.lib
+LIBRARY     ConnectionUiUtilities.lib
+
+LIBRARY     centralrepository.lib
+LIBRARY     featmgr.lib
+LIBRARY     cmmanager.lib
+DEBUGLIBRARY    flogger.lib
+
+#if defined(ARMCC)
+    DEFFILE ../EABI/CONNECTIONMANAGERU_EKA2.def
+#else
+    DEFFILE ../BWinsCw/CONNECTIONMANAGERU_EKA2.def
+#endif
+
+//SRCDBG
+
+// End of File

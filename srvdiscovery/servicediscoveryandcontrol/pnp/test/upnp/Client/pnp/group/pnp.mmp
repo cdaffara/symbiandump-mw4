@@ -1,0 +1,47 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// Generic purpose DLL that provides support for applications to discover services/devices or 
+// to publish its services
+// 
+//
+
+
+TARGET pnp.dll
+TARGETTYPE dll
+CAPABILITY ALL -TCB
+
+UID  0x1000008D 0x2000D054
+VENDORID 0x70000001
+
+SOURCEPATH ../src
+SOURCE 	rpnpservicediscovery.cpp
+SOURCE 	rpnpservicepublisher.cpp
+SOURCE 	pnpparameterbundle.cpp 
+SOURCE	rcontrolchannel.cpp 
+SOURCE  ccontrolchannel.cpp cpnpservicediscoverybase.cpp cpnpservicepublisherbase.cpp
+
+USERINCLUDE ../inc
+
+SYSTEMINCLUDE /epoc32/include 
+SYSTEMINCLUDE /epoc32/include/upnp
+
+LIBRARY euser.lib 
+LIBRARY esock.lib 
+LIBRARY upnputils.lib
+LIBRARY netmeta.lib
+LIBRARY nodemessages.lib
+LIBRARY ecom.lib
+
+
+SMPSAFE

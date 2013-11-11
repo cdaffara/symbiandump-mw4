@@ -1,0 +1,37 @@
+/**
+* Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+
+PRJ_TESTEXPORTS
+../data/TestFramework.ini               /epoc32/winscw/c/TestFramework/TestFramework.ini
+../data/gallery.svg                     /epoc32/winscw/c/upnptmserver/icons/gallery.svg   
+../data/homemedia.svg                   /epoc32/winscw/c/upnptmserver/icons/homemedia.svg
+../data/maps.svg                        /epoc32/winscw/c/upnptmserver/icons/maps.svg  
+../data/music_launched.svg              /epoc32/winscw/c/upnptmserver/icons/music_launched.svg   
+../data/music_unlaunched.svg            /epoc32/winscw/c/upnptmserver/icons/music_unlaunched.svg
+../data/videos.svg                      /epoc32/winscw/c/upnptmserver/icons/videos.svg  
+../data/s60_device.svg                  /epoc32/winscw/c/upnptmserver/icons/s60_device.svg  
+
+PRJ_TESTMMPFILES
+upnptmservertest.mmp
+
+

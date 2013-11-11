@@ -1,0 +1,77 @@
+/**
+* Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: This is the project specification file for Terminal Mode Service.
+*
+*/
+
+
+TARGET		       terminalmodeservice.dll
+TARGETTYPE	       dll
+UID			       0x1000008d 0x2002D1B8
+
+CAPABILITY         CAP_GENERAL_DLL
+
+USERINCLUDE	       ../inc 
+USERINCLUDE	       ../traces
+
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH	       ../src
+
+SOURCE		       upnptmserver.cpp
+SOURCE		       upnptmserverimpl.cpp
+SOURCE             upnptmserverdeviceinfo.cpp
+SOURCE             upnpremotableapp.cpp
+SOURCE             upnptminfoelement.cpp
+SOURCE             upnptmserverdescriptionprovider.cpp  
+SOURCE             upnpterminalmodeicon.cpp 
+SOURCE             upnptmclienticonpref.cpp
+SOURCE             upnptmserverdevice.cpp 
+SOURCE             upnptmserverdevicexmlparser.cpp
+SOURCE             upnptmappserverservice.cpp
+SOURCE             upnptmclientprofileservice.cpp
+SOURCE             upnpremotableappstore.cpp
+SOURCE             upnptmfilteredapplist.cpp
+SOURCE             upnptmiconmapping.cpp
+SOURCE             upnpappfilterinfo.cpp 
+SOURCE             upnpiconfileservetransaction.cpp
+SOURCE             upnpsvgimageconverter.cpp
+SOURCE             upnpiconconversionactive.cpp 
+
+LIBRARY            upnpserviceframework.lib
+LIBRARY		       dlnawebserver.lib
+LIBRARY            upnpipserversutils.lib
+LIBRARY            upnpconnectionmanagersession.lib
+LIBRARY            insock.lib
+LIBRARY		       euser.lib
+LIBRARY		       efsrv.lib
+LIBRARY            xmlframework.lib
+LIBRARY            charconv.lib
+LIBRARY            bafl.lib
+LIBRARY            etelmm.lib
+LIBRARY            etel.lib
+LIBRARY            esock.lib 
+LIBRARY            svgengine.lib
+LIBRARY            imageconversion.lib
+LIBRARY            fbscli.lib 
+LIBRARY            gdi.lib
+
+DEFFILE            terminalmodeservice.def
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SMPSAFE
+

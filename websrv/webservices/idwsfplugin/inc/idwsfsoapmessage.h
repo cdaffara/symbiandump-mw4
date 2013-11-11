@@ -1,0 +1,62 @@
+/*
+* Copyright (c) 2002-2005 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: Header declaration
+*
+*/
+
+
+
+
+
+
+
+
+#ifndef SEN_IDWSF_SOAP_MESSAGE_H
+#define SEN_IDWSF_SOAP_MESSAGE_H
+
+// INCLUDES
+#include "idwsfsecurityheader.h"
+#include "SenSoapMessage.h"
+
+// CLASS DECLARATION
+class CIdWsfSoapMessage : public CSenSoapMessage
+    {
+    
+    public: // Constructors and destructor
+    
+        static CIdWsfSoapMessage* NewL();
+        virtual ~CIdWsfSoapMessage();
+        
+        // New functions
+        
+        virtual void SetSecurityMechanism(HBufC8* apSecurityMechanismURI);
+
+    protected:
+    
+        /**
+        * C++ default constructor.
+        */
+        CIdWsfSoapMessage();
+        
+        void BaseConstructL();
+        virtual CSenWsSecurityHeader* NewSecurityHeaderLC(
+                                                    const TDesC8* aData=NULL);
+
+    private: // Data
+        HBufC8* ipSecurityMechanismURI; // not owned
+    };
+
+#endif // SEN_IDWSF_SOAP_MESSAGE_H
+
+// End of File

@@ -1,0 +1,49 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project alfappserver
+*
+*/
+
+
+
+
+#include "../../commoninc/alfuids.h"
+#include <data_caging_paths.hrh>
+#include <bldvariant.hrh>
+
+EPOCSTACKSIZE 0x5000
+EPOCHEAPSIZE 0x1000 0x989680
+
+TARGET                  alfserver.exe
+TARGETTYPE              exe
+UID 0x100039CE  0xdabadaba
+VERSION                 10.0
+
+CAPABILITY              SwEvent
+VENDORID                VID_DEFAULT
+
+SOURCEPATH              ../src
+SOURCE                  alfserver.cpp
+
+USERINCLUDE             ../../commoninc
+
+#include <platform_paths.hrh>
+MW_LAYER_SYSTEMINCLUDE
+
+
+SYSTEMINCLUDE           ../../../../inc
+
+
+LIBRARY                 alfappservercore.lib
+LIBRARY                 euser.lib

@@ -1,0 +1,50 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build information for the Favourites Engine
+*
+*/
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+// Common code
+../inc/favouritesdb.h               MW_LAYER_PUBLIC_EXPORT_PATH(favouritesdb.h)
+../inc/favouritesfile.h             MW_LAYER_PUBLIC_EXPORT_PATH(favouritesfile.h)
+../inc/favouritesfile.inl            MW_LAYER_PUBLIC_EXPORT_PATH(favouritesfile.inl )
+../inc/favouritesdbIncremental.h    MW_LAYER_PUBLIC_EXPORT_PATH(favouritesdbIncremental.h)
+../inc/favouritesdbnotifier.h       MW_LAYER_PUBLIC_EXPORT_PATH(favouritesdbnotifier.h)
+../inc/favouritesdbobserver.h       MW_LAYER_PUBLIC_EXPORT_PATH(favouritesdbobserver.h)
+../inc/activefavouritesdbnotifier.h  MW_LAYER_PUBLIC_EXPORT_PATH(activefavouritesdbnotifier.h )
+../inc/favouritesitem.h             MW_LAYER_PUBLIC_EXPORT_PATH(favouritesitem.h)
+../inc/favouriteslimits.h           MW_LAYER_PUBLIC_EXPORT_PATH(favouriteslimits.h)
+../inc/favouriteswapap.h            MW_LAYER_PUBLIC_EXPORT_PATH(favouriteswapap.h)
+../inc/favouritesitemlist.h         MW_LAYER_PUBLIC_EXPORT_PATH(favouritesitemlist.h)
+../inc/favouritesitemdata.h         MW_LAYER_PUBLIC_EXPORT_PATH(favouritesitemdata.h)
+../inc/favouritessession.h          MW_LAYER_PUBLIC_EXPORT_PATH(favouritessession.h)
+../inc/favouritessession.inl        MW_LAYER_PUBLIC_EXPORT_PATH(favouritessession.inl)
+../inc/favouriteshandle.h           MW_LAYER_PUBLIC_EXPORT_PATH(favouriteshandle.h)
+../inc/favouriteshandle.inl         MW_LAYER_PUBLIC_EXPORT_PATH(favouriteshandle.inl)
+
+
+
+PRJ_MMPFILES
+
+
+PRJ_TESTMMPFILES
+
+

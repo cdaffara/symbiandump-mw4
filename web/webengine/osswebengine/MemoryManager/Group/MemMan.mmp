@@ -1,0 +1,68 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Memory Manager build file
+*
+*/
+
+#if defined(__BROWSER_SDK)
+TARGET          MemMan_sdk.dll
+#else
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+TARGET          MemMan.dll
+#endif
+
+TARGETTYPE      dll
+
+OPTION ARMCC -O3 -Otime
+UID 0x1000008D  0x10281B6D
+
+//MACRO OOM_LOGGING
+//MACRO DL_CHUNK_MEM_DEBUG
+
+MACRO USE_FAST_MALLOC
+MACRO NOKIA_CHANGES
+MACRO __NEW_ALLOCATOR__
+//MACRO TRACE_CHUNK_USAGE
+
+CAPABILITY CAP_GENERAL_DLL
+VENDORID    VID_DEFAULT
+EPOCALLOWDLLDATA
+#ifndef __BROWSER_SDK
+MW_LAYER_SYSTEMINCLUDE
+//MW_LAYER_LIBC_SYSTEMINCLUDE
+#else
+SYSTEMINCLUDE   /Epoc32/include
+#endif
+SYSTEMINCLUDE   /epoc32/include/libc
+//#endif
+
+USERINCLUDE     ../Inc
+
+SOURCEPATH  ../Src
+SOURCE MemoryManager.cpp
+SOURCE MemoryPool.cpp
+SOURCE StopScheduler.cpp
+SOURCE fast_malloc.cpp
+SOURCE FastAllocator.cpp
+SOURCE heap.cpp
+SOURCE SymbianDLAllocatorWrapper.cpp
+
+LIBRARY euser.lib
+DEBUGLIBRARY flogger.lib
+LIBRARY avkon.lib
+LIBRARY estlib.lib
+LIBRARY hal.lib
+
+LIBRARY   oommonitor.lib

@@ -1,0 +1,72 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   For including std libs
+*
+*/
+
+#ifndef __ALF_STD_INC__
+#define __ALF_STD_INC__
+
+
+// Turn this flag on if you need to compile ecosystem on top of W02 or pre W02 release
+//#define CONFIGURE_FOR_OPENC_STD
+#undef CONFIGURE_FOR_OPENC_STD
+
+#ifndef CONFIGURE_FOR_OPENC_STD
+OS_LAYER_LIBC_SYSTEMINCLUDE
+#else
+OS_LAYER_LIBC_SYSTEMINCLUDE 
+#endif
+
+#ifndef ALF_NO_LIBC_INCLUDES
+OS_LAYER_LIBC_SYSTEMINCLUDE
+#endif
+
+#ifdef CONFIGURE_FOR_OPENC_STD
+OS_LAYER_LIBC_SYSTEMINCLUDE 
+#endif
+
+OS_LAYER_STDCPP_SYSTEMINCLUDE
+OS_LAYER_GLIB_SYSTEMINCLUDE
+
+#ifndef ALF_NO_WCHAR_MACRO
+  OPTION CW -wchar_t on
+  MACRO _WCHAR_T_DECLARED
+#endif
+
+#ifdef ALF_LINK_STDCPP_DLL
+  #ifdef EPOC32
+    LIBRARY libstdcpp.lib 
+  #else
+// if you want to use codewarrior for compiling, use
+// FIRSTLIB libstdcpp.lib
+// instead 
+    FIRSTLIB ../udeb/libstdcpp.lib 
+    STATICLIBRARY edll.lib
+  #endif 
+#endif
+
+#ifdef ALF_LINK_STDCPP_EXE
+  #ifdef EPOC32
+    LIBRARY libstdcpp.lib
+  #else
+// if you want to use codewarrior for compiling, use
+// FIRSTLIB libstdcpp.lib
+// instead 
+    FIRSTLIB ../udeb/libstdcpp.lib 
+    STATICLIBRARY eexe.lib
+  #endif
+#endif
+
+#endif // __ALF_STD_INC__

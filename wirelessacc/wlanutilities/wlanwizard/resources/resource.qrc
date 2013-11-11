@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/docml">
+        <file alias="occ_wlan_wizard_main.docml">occ_wlan_wizard_main.docml.bin</file>
+        <file alias="occ_add_wlan_05.docml">occ_add_wlan_05.docml.bin</file>
+        <file alias="occ_add_wlan_06.docml">occ_add_wlan_06.docml.bin</file>
+        <file alias="occ_add_wlan_02_03.docml">occ_add_wlan_02_03.docml.bin</file>
+        <file alias="occ_add_wlan_01_04.docml">occ_add_wlan_01_04.docml.bin</file>
+        <file alias="occ_add_wlan_error.docml">occ_add_wlan_error.docml.bin</file>
+    </qresource>
+    <qresource prefix="/css" >
+    	<file>custom.css</file>
+	</qresource>
+    <qresource prefix="/wizardsummarylayout" >
+        <file>hblistviewitem.css</file>
+        <file>hblistviewitem.widgetml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0">
+ <package id="srvdiscovery" name="Service Discovery and Usage" levels="plugin framework server generic specific">
+  <collection id="upnpstack_plat" name="UPnP Stack Platform Interfaces" level="specific">
+   <component id="upnp_device_api" name="UPnP Device API" purpose="optional" introduced="^3" class="api" filter="s60">
+    <meta rel="Api" href="upnp/upnpstack_plat/upnp_device_api/upnp_device_api.metaxml"/>
+    <unit bldFile="upnp/upnpstack_plat/upnp_device_api/group"/>
+   </component>
+   <component id="upnp_common_api" name="UPnP Common API" purpose="optional" introduced="^3" class="api" filter="s60">
+    <meta rel="Api" href="upnp/upnpstack_plat/upnp_common_api/upnp_common_api.metaxml"/>
+    <unit bldFile="upnp/upnpstack_plat/upnp_common_api/group"/>
+   </component>
+   <component id="upnp_utils_api" name="UPnP Utils API" purpose="optional" introduced="^3" class="api" filter="s60">
+    <meta rel="Api" href="upnp/upnpstack_plat/upnp_utils_api/upnp_utils_api.metaxml"/>
+    <unit bldFile="upnp/upnpstack_plat/upnp_utils_api/group"/>
+   </component>
+   <component id="upnp_control_point_api" name="UPnP Control Point API" purpose="optional" introduced="^3" class="api" filter="s60">
+    <meta rel="Api" href="upnp/upnpstack_plat/upnp_control_point_api/upnp_control_point_api.metaxml"/>
+    <unit bldFile="upnp/upnpstack_plat/upnp_control_point_api/group"/>
+   </component>
+   <component id="upnp_httpserver_api" name="UPnP HTTP Server API" purpose="optional" introduced="^3" class="api" filter="s60">
+    <meta rel="Api" href="upnp/upnpstack_plat/upnp_httpserver_api/upnp_httpserver_api.metaxml"/>
+    <unit bldFile="upnp/upnpstack_plat/upnp_httpserver_api/group"/>
+   </component>
+   <component id="upnp_http_transfer_api" name="UPnP HTTP Transfer API" purpose="optional" introduced="^3" class="api" filter="s60">
+    <meta rel="Api" href="upnp/upnpstack_plat/upnp_http_transfer_api/upnp_http_transfer_api.metaxml"/>
+    <unit bldFile="upnp/upnpstack_plat/upnp_http_transfer_api/group"/>
+   </component>
+  </collection>
+  <collection id="servicediscoveryandcontrol" name="Service Discovery and Control" level="framework">
+      <component id="servicediscoveryfw" name="Service Discovery Framework" introduced="^3" purpose="optional" filter="s60">
+    <unit bldFile="servicediscoveryandcontrol/pnp/group" mrp="servicediscoveryandcontrol/pnp/group/servicediscoveryframework.mrp"/>
+   </component>
+  </collection>
+  <collection id="upnp" name="UPnP" level="server">
+      <component id="upnpstack" name="UPnP Stack" introduced="^3" purpose="optional" filter="s60">
+    <unit bldFile="upnp/upnpstack/group"/>
+   </component>
+  </collection>
+  <collection id="srvdiscovery_info" name="Service Discovery and Usage Info" level="specific">
+      <component id="srvdiscovery_metadata" name="Service Discovery and Usage Metadata" class="config" introduced="^2" purpose="development" target="desktop" filter="s60">
+    <unit mrp="srvdiscovery_info/srvdiscovery_metadata/srvdiscovery_metadata.mrp"/>
+   </component>
+  </collection>
+ </package>
+</SystemDefinition>

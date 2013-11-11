@@ -1,0 +1,41 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET		  VGRenderer.dll
+TARGETTYPE	  dll
+
+VENDORID      VID_DEFAULT
+
+UID 0x1000008D 0x0152D27E
+
+USERINCLUDE	 ../inc
+SYSTEMINCLUDE   /epoc32/include
+
+SOURCEPATH	  ../src
+LIBRARY		 euser.lib
+
+MW_LAYER_SYSTEMINCLUDE
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+SOURCE VGRenderer.cpp VGSurface.cpp
+
+CAPABILITY  CAP_GENERAL_DLL DRM

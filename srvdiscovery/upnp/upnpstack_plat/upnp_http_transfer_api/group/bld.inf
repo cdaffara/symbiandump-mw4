@@ -1,0 +1,31 @@
+/** @file
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  File that exports the files belonging to 
+:                UPnP Device API
+*
+*/
+
+
+#include "../../../group/upnpplatformvar.hrh"
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../inc/httptransferobserver.h MW_LAYER_PLATFORM_EXPORT_PATH(httptransferobserver.h)
+../inc/httptransferbase.h MW_LAYER_PLATFORM_EXPORT_PATH(httptransferbase.h)
+../inc/httpworkerobserver.h MW_LAYER_PLATFORM_EXPORT_PATH(httpworkerobserver.h)
+../inc/httpdownloader.h MW_LAYER_PLATFORM_EXPORT_PATH(httpdownloader.h)
+../inc/httpuploader.h MW_LAYER_PLATFORM_EXPORT_PATH(httpuploader.h)
+

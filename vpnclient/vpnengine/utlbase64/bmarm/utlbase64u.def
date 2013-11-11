@@ -1,0 +1,7 @@
+EXPORTS
+	Base64DecodeLC__12TBase64CodecRC6TDesC8 @ 1 NONAME ; TBase64Codec::Base64DecodeLC(TDesC8 const &)
+	Base64Decode__12TBase64CodecRC6TDesC8RC5TDes8 @ 2 NONAME ; TBase64Codec::Base64Decode(TDesC8 const &, TDes8 const &)
+	Base64EncodeLC__12TBase64CodecRC6TDesC8 @ 3 NONAME ; TBase64Codec::Base64EncodeLC(TDesC8 const &)
+	Base64Encode__12TBase64CodecRC6TDesC8RC5TDes8 @ 4 NONAME ; TBase64Codec::Base64Encode(TDesC8 const &, TDes8 const &)
+	__12TBase64Codec @ 5 NONAME ; TBase64Codec::TBase64Codec(void)
+

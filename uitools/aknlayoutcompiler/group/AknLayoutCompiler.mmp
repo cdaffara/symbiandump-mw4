@@ -1,0 +1,113 @@
+/*
+* Copyright (c) 2002-2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET      AknLayoutCompiler.exe
+TARGETTYPE  EXE
+
+SYSTEMINCLUDE     .
+SYSTEMINCLUDE     ../inc
+SYSTEMINCLUDE   ../../inc
+
+SYSTEMINCLUDE   ../../toollibraries/arabica/include
+SYSTEMINCLUDE   ../../toollibraries/xerces-c/include
+
+MW_LAYER_SYSTEMINCLUDE
+
+// These options enable exception handling and set the warning level to 3 for command
+// line builds. STL code generates too many warnings at level 4, but is clean at
+// level 3. Also require RTTI.
+option MSVC /GX /W3 /GR
+option GCC -DXML_LIBRARY
+
+SOURCEPATH      ../src
+
+source          CppWriter.cpp
+source          Extract.cpp
+source          HtmlParse.cpp
+source          Layout.cpp
+source          AknLayoutCompiler.cpp
+source          LayoutCompilerErr.cpp
+source          LayoutParse.cpp
+source          LayoutWriter.cpp
+source          WriterBase.cpp
+source          Lay2Cdl.cpp
+source          Cdl2Lag.cpp
+source          LayCdl2Inst.cpp
+source          LayCdlCheck.cpp
+source          LayoutPack.cpp
+source          LayCdl2InstO.cpp
+source          MakeLayConvTest.cpp
+source          LayScale.cpp
+source          AdaptationLayerTemplate.cpp
+source          Lay2LayPerf.cpp
+source          LayPerfWriter.cpp
+source			coreparser.cpp
+source			formulaparser.cpp
+source			formulatree.cpp
+
+#ifdef RD_XML_PARSER_TOOLCHAIN
+source          SaxErrorHandler.cpp
+source          MLCompData.cpp
+source          MLCompDataParse.cpp
+source          MLCompData2Cdl.cpp
+source          MLCompCdl2InstO.cpp
+source          MLAttributes.cpp
+source          MLAttributesParse.cpp
+source          MLCompData2LayPerf.cpp
+source          MLCompDataLayPerfWriter.cpp
+source          MLEqCompData.cpp
+source          MLEqCompDataParse.cpp
+source          MLEqCompData2DHuiML.cpp
+#endif
+
+source          ZoomLevelNames.cpp
+source          MasterLayoutPack.cpp
+
+// #ifndef SBSV2
+//   start CW32
+//     win32_library /epoc32/release/cwtools/rel/CdlCompilerToolkit.lib
+//   end
+
+//   start VC32
+//     win32_library /epoc32/release/tools/rel/CdlCompilerToolkit.lib
+//   end
+// #else 
+//   START TOOLS
+//     #if defined(CW32) 
+//       win32_library /epoc32/release/cwtools/rel/CdlCompilerToolkit.lib
+//     #elif defined(VC32)
+//       win32_library /epoc32/release/tools/rel/CdlCompilerToolkit.lib
+//     #endif
+//   END
+// #endif
+
+// start TOOLS
+// #ifdef RD_XML_PARSER_TOOLCHAIN
+// win32_library /epoc32/release/tools/rel/Arabica.lib
+// win32_library /epoc32/release/tools/rel/xerces-c_2.lib
+// #endif
+// win32_library Advapi32.lib 
+// end
+
+staticlibrary CdlCompilerToolkit
+staticlibrary arabica
+staticlibrary xerces-c
+
+
+// End of File

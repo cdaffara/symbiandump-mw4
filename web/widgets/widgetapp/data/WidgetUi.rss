@@ -1,0 +1,176 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Main rss file for WidgetUI
+*
+*/
+
+NAME    WidU // 4 letter ID
+
+//  INCLUDE FILES
+#include <bldvariant.hrh>
+#include <eikon.rh>
+#include "WidgetUi.hrh"
+#include <WidgetUi.loc>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <avkon.loc>
+#include <data_caging_paths_strings.hrh>
+#include <appinfo.rh>
+
+//  RESOURCE DEFINITIONS
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf = "WidgetUi"; }
+
+RESOURCE EIK_APP_INFO
+    {
+    cba = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+    }
+
+RESOURCE AVKON_VIEW r_widgetui_window_view
+    {
+    hotkeys = r_widgetui_hotkeys;
+    menubar = r_widgetui_menubar;
+    //cba=r_widgetui_window_view_softkeys;
+    }
+
+
+RESOURCE LOCALISABLE_APP_INFO r_widgetui_localisable_app_info
+    {
+    short_caption = "WidgetUI";
+    caption_and_icon =
+    CAPTION_AND_ICON_INFO
+        {
+        caption = "WidgetUI";
+        };
+    }
+
+RESOURCE CBA r_widgetui_window_view_softkeys
+    {
+      flags = EAknCBAFlagRespondWhenInvisible;
+	    buttons = 
+          {
+          CBA_BUTTON {id=EAknSoftkeyOptions; txt=text_softkey_option;},
+          CBA_BUTTON {id=EAknSoftkeyExit; txt=text_softkey_exit;},
+          CBA_BUTTON {id=EAknSoftkeyForwardKeyEvent; txt=text_softkey_empty;}
+          };
+    }
+
+RESOURCE CBA_BUTTON r_widgetui_window_view_softkeys_cancel 
+    {
+    id=EAknSoftkeyCancel; 
+    txt=text_softkey_cancel;
+    }
+
+RESOURCE CBA_BUTTON r_widgetui_window_view_softkeys_done 
+    {
+    id=EAknSoftkeyDone; 
+    txt=text_softkey_done;
+    }
+
+
+// ============================================================================
+//
+//    r_widgetui_hotkeys
+//    Hot keys defined for widget UI.
+//
+// ============================================================================
+//
+RESOURCE HOTKEYS r_widgetui_hotkeys
+    {
+    control=
+        {
+        HOTKEY { command = EAknCmdExit; key = 'e'; }
+        };
+    }
+
+// ============================================================================
+//
+//    r_widgetui_menubar
+//    menu bar
+//
+// ============================================================================
+//
+RESOURCE MENU_BAR r_widgetui_menubar
+    {
+    titles=
+        {
+        MENU_TITLE { menu_pane = r_widgetui_menu; }
+        };
+    }
+
+// ============================================================================
+//
+//    r_widgetui_menu
+//    widget menu items
+//
+// ============================================================================
+//
+RESOURCE MENU_PANE r_widgetui_menu
+    {
+    items=
+        {
+	MENU_ITEM { command = EEikCmdExit; txt = text_softkey_exit; }
+        };
+    }
+
+RESOURCE DIALOG r_widgetui_ok_note
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar |
+            EEikDialogFlagCbaButtons | EEikDialogFlagWait;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE 
+                { 
+                layout = EGeneralLayout;
+                singular_label = "";
+                plural_label = "";
+                animation = R_QGN_NOTE_OK_ANIM;
+                };
+            }
+        };
+    }
+
+// ================== STRING RESOURCES ========================================
+
+// query to grant network access
+RESOURCE TBUF r_widgetui_network_access { buf = qtn_widgetui_network_access; }
+
+// softkey response text
+RESOURCE TBUF r_widgetui_softkey_yes { buf = qtn_widgetui_softkey_yes; }
+
+// softkey response text
+RESOURCE TBUF r_widgetui_softkey_no { buf = qtn_widgetui_softkey_no; }
+
+// non mobile widget note
+RESOURCE TBUF r_widgetui_strict_mode_access { buf = qtn_widgetui_strict_mode_access; }
+
+// out of memory note
+RESOURCE TBUF r_widgetui_oom_event { buf = qtn_widgetui_oom_event; }
+
+// Softkey Exit
+RESOURCE TBUF r_widgetui_softkey_exit { buf = text_softkey_exit; }
+
+
+// LSK Option
+RESOURCE TBUF r_widgetui_softkey_option { buf = text_softkey_option; }
+
+
+// End of File

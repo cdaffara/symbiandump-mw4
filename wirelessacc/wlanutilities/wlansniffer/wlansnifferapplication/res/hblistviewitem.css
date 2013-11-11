@@ -1,0 +1,26 @@
+
+HbListViewItem[layoutName="wlanlistitem"]{
+	layout:wlanlistitem;
+}
+
+HbListViewItem::icon-1[layoutName="wlanlistitem"]{
+	fixed-height: var(hb-param-graphic-size-primary-small);
+	fixed-width: var(hb-param-graphic-size-primary-small);
+}
+
+HbListViewItem::text-1[layoutName="wlanlistitem"]{
+	text-height: var(hb-param-text-height-primary);
+	font-variant: primary;
+	pref-width:-1;
+	text-align: left;
+}
+
+HbListViewItem::icon-2[layoutName="wlanlistitem"]{
+	fixed-height: var(hb-param-graphic-size-secondary);
+	fixed-width: var(hb-param-graphic-size-secondary);
+}
+
+HbListViewItem::icon-3[layoutName="wlanlistitem"]{
+	fixed-height: var(hb-param-graphic-size-secondary);
+	fixed-width: var(hb-param-graphic-size-secondary);
+}

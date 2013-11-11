@@ -1,0 +1,88 @@
+/*
+* Copyright (c) 2006-2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Resource definitions for project alfrenderstageplugin
+ *
+*/
+
+
+
+NAME ALFR
+
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <huiwscanvascommands.h>
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=""; }
+
+// ---------------------------------------------------------------------------
+// NON_SUPPORTED_COMMAND_ARRAY
+// 
+// ---------------------------------------------------------------------------
+//
+STRUCT NON_SUPPORTED_COMMAND_ARRAY
+    {
+    STRUCT non_supported_command[];
+    }
+
+// ---------------------------------------------------------------------------
+// SUPPORTED_PARAMETER
+// 
+// ---------------------------------------------------------------------------
+//
+STRUCT SUPPORTED_PARAMETER
+    {
+    BYTE value = 0;
+    BYTE bitgdi  = 0;  
+    BYTE vg10    = 0;
+    BYTE gles10  = 0;
+    BYTE gles11  = 0;
+    BYTE gles11DSA = 0;
+    BYTE gles20 = 0;
+    }
+// ---------------------------------------------------------------------------
+// NON_SUPPORTED_COMMAND
+// 
+// ---------------------------------------------------------------------------
+//
+STRUCT NON_SUPPORTED_COMMAND
+    {
+    BYTE command = 0;
+    BYTE bitgdi  = 1;  
+    BYTE vg10    = 1;
+    BYTE gles10  = 1;
+    BYTE gles11  = 1;
+    BYTE gles11DSA = 1;
+    BYTE gles20 = 1;
+    BYTE possible_performance_problem_in_window = 0;
+    STRUCT supported_parameter[];
+    }
+
+// ---------------------------------------------------------------------------
+// r_alf_non_supported_commands_array
+// Contains non supported commands. Non supported commands can be defined by
+// renderer. AlfRenderStage will mark frames, that contain unsupported
+// commands for renderer in use.
+// ---------------------------------------------------------------------------
+//
+RESOURCE NON_SUPPORTED_COMMAND_ARRAY r_alf_non_supported_commands_array
+    {
+    non_supported_command = 
+    {
+    // This is deprecated. Supported commands are hardcoded to CAlfRsGc
+    };
+    }
+

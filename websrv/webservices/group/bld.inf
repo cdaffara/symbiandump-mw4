@@ -1,0 +1,93 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Build information file for webservices
+*
+*/
+
+
+#include "../inc/webservices.hrh"
+
+// S60 5.x edition, or newer:
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+//../internal/secpol.xml                                      /epoc32/winscw/c/secpol.xml
+//../internal/WLMServiceCodePages.xml                         /Epoc32/winscw/c/Data/WindowsLive/WLMServiceCodePages.xml
+
+//Backup registration file
+backup_registration.xml                                     /epoc32/data/z/private/101F96F4/backup_registration.xml
+backup_registration.xml                                     /epoc32/release/winscw/udeb/z/private/101F96F4/backup_registration.xml
+backup_registration.xml                                     /epoc32/release/winscw/urel/z/private/101F96F4/backup_registration.xml
+
+PRJ_MMPFILES
+
+#include "../wsnotifierplugins/group/bld.inf"		//SenNotPluginDlgClient.inf
+#include "../wslogger/group/bld.inf"   //SenLogger.inf
+#include "../wsxml/group/bld.inf"   //SenXml.inf
+#include "../wsutils/group/bld.inf"   //SenUtils.inf
+#include "../wsfragment/group/bld.inf"   //SenFragment.inf 
+
+#include "../wsdescription/group/bld.inf"   //SenServiceDescription.inf
+
+#include "../wsconnection/group/bld.inf"   //SenServiceConnection.inf
+
+#include "../wsmessages/group/bld.inf"	//SenMessages.inf
+#include "../wscredentialmanager/group/bld.inf"   //SenCredentialManager.inf
+#include "../wsframework/group/bld.inf"   //SenFramework.inf
+#include "../wshttpchanneltransportplugin/group/bld.inf"   //SenHttpChannelTransportPlugin.inf
+#include "../wsconnectionagent/group/bld.inf"
+// Web Service Provider utility (Hostlet request & response) library:
+#include "../wsprovider/group/bld.inf"   //SenProvider.inf
+#include "../wshostletconnection/group/bld.inf"   //SenHostletConnection.inf
+
+
+#include "../wsmanager/group/bld.inf"   //SenServiceManager.inf
+#include "../wsidentitymanager/group/bld.inf"   //SenIdentityManager.inf
+
+
+#include "../idwsfplugin/group/bld.inf"   //SenIdWsfPlugin.inf
+#include "../wsibasicplugin/group/bld.inf"   //SenWsiBasicPlugin.inf
+#include "../wsrestplugin/group/bld.inf"   //SenRestPlugin.inf
+#include "../idwsfsecuritymechanism/group/bld.inf"   //SenIdWsfSecurityMechanism.inf
+#include "../wspasswordtransforms/group/bld.inf"   //SenPasswordTransforms.inf
+
+// Core Service Manager (Symbian server):
+#include "../wscore/group/bld.inf"   //SenCore.inf
+
+
+
+// Local Transport plug-in (proxy for Local Providers)
+#include "../wslocaltransportplugin/group/bld.inf"   //SenLocalTransportPlugin.inf
+
+#include "../wshostlettransportplugin/group/bld.inf"   //SenHostletTransportPlugin.inf
+
+// WS Star components
+#include "../wsstar/wsstarpolicy/group/bld.inf"   //WSPolicy.inf
+#include "../wsstar/wsstarplugin/group/bld.inf"   //WSStarPlugin.inf
+#include "../wsstar/wsstarmessagehandlers/group/bld.inf"   //WSStarMessageHandlers.inf
+
+//NCIM Components
+#include "../wsoviplugin/group/bld.inf"
+
+#ifdef __BUILD_VTCP_
+	#include "../internal/v2tomcl/wsvtcp/vtcp/group/bld.inf" //vtcp.inf
+	#include "../internal/v2tomcl/wsvtcp/vtcpchanneltransport/group/bld.inf" //vtcpchanneltransport.inf
+#endif //__BUILD_VTCP_
+
+// ATOM-PUB 
+//#include "../wsatompubplugin/group/bld.inf"
+// End of File

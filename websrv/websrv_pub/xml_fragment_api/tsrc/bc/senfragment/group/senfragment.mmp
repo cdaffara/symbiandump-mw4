@@ -1,0 +1,79 @@
+/*
+* Copyright (c) 2002-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senfragment
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET          SenFragmentBCTest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E7
+
+#if defined(EKA2)
+CAPABILITY      ALL -TCB
+/* Remove comments and replace 0x00000000 with correct vendor id */
+VENDORID        VID_DEFAULT
+/* Remove comments and replace 0x00000000 with correct secure id */
+// SECUREID     0x00000000
+#endif
+
+//TARGETPATH      ?target_path
+DEFFILE         senfragmentbctest.def
+
+SOURCEPATH      ../src
+SOURCE          senfragment.cpp
+SOURCE          senfragmentcases.cpp
+SOURCE          mainfragment.cpp
+SOURCE          delegatefragment.cpp
+SOURCE          maindomfragment.cpp
+SOURCE          delegatedomfragment.cpp
+SOURCE 					TestFragment.cpp
+
+
+//RESOURCE        resource_file
+//RESOURCE        resource_file2
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../../../../../webservices/wsfragment/inc
+
+SYSTEMINCLUDE   /epoc32/include/libc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         bafl.lib
+LIBRARY         charconv.lib
+LIBRARY         euser.lib
+LIBRARY         estor.lib
+LIBRARY         efsrv.lib
+LIBRARY         stiftestinterface.lib
+LIBRARY         SenFragment.lib
+LIBRARY         SenXml.lib
+LIBRARY		    	SenServDesc.lib
+LIBRARY         XMLFRAMEWORK.lib
+
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    //LIBRARY                 XmlEngine.lib
+    LIBRARY                 XmlEngineDOM.lib
+    //LIBRARY                 XmlEngineUtils.lib
+#else
+    LIBRARY         WsStarXmlEngine.lib
+    LIBRARY         WsStarXmlEngineDOM.lib
+    LIBRARY         WsStarXmlEngineUtils.lib
+#endif
+
+LANG            SC
+
+// AIF ?filename// End of File

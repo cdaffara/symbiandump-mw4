@@ -1,0 +1,124 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:       Project specification file for senservicedescription    
+*
+*/
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+
+TARGETTYPE      DLL
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET          SenServDesc.DLL
+UID             0x1000008d 0x101F9701
+#else
+TARGET          wsservdesc.DLL
+UID             0x1000008d 0x101F9738
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_GENERAL_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_GENERAL_DLL
+    #endif
+#endif
+
+SOURCEPATH      ../src
+SOURCE          senservdescdll.cpp
+SOURCE          senxmlservicedescription.cpp
+SOURCE          sencredential.cpp
+SOURCE          senfacet.cpp
+SOURCE          senidentityprovider.cpp
+SOURCE          senidentityprovideridarray8.cpp
+SOURCE          senpolicy.cpp
+SOURCE          senproviderpolicy.cpp
+SOURCE          senconsumerpolicy.cpp
+SOURCE          senservicepattern.cpp
+SOURCE          senservicepolicy.cpp
+SOURCE          servicepolicy.cpp
+SOURCE          sencredential2.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wsutils/inc
+USERINCLUDE     ../../wslogger/inc
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+
+SYSTEMINCLUDE   /epoc32/include/libc
+
+LANG            SC
+
+LIBRARY         bafl.lib
+LIBRARY         estor.lib 
+LIBRARY         euser.lib
+LIBRARY         flogger.lib
+
+// SOA for S60 libraries
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY         SenXml.lib
+LIBRARY         SenUtils.lib
+LIBRARY         SenFragment.lib
+LIBRARY         SenLogger.lib
+#else
+LIBRARY         wsxml.lib
+LIBRARY         wsutils.lib
+LIBRARY         wsfragment.lib
+LIBRARY         wsLogger.lib
+#endif
+
+// LibXml2 libraries
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    LIBRARY         XmlEngineDOM.lib
+#else
+    LIBRARY         WsStarXmlEngineDOM.lib
+#endif
+
+#ifdef SYMBIAN_SECURE_ECOM // for 2.8, 3.0 or newer:
+    LIBRARY         xmlframework.lib
+#endif // otherwise cXMLreader is used
+
+#if defined(ARMCC)
+	#if defined (RD_SEN_COMPILE_SIS_PACKAGE_FILES)
+		DEFFILE ../EABI/SENSERVDESC_V2.DEF
+	#else
+  	DEFFILE ../eabi/SenServDesc.DEF
+	#endif//RD_SEN_COMPILE_SIS_PACKAGE_FILES
+#elif defined(WINSCW)
+	#if defined (RD_SEN_COMPILE_SIS_PACKAGE_FILES)
+		DEFFILE ../BWINSCW/SENSERVDESC_V2.DEF
+	#else
+  	DEFFILE ../BWINSCW/SenServDesc.DEF
+	#endif//RD_SEN_COMPILE_SIS_PACKAGE_FILES
+#elif defined(WINS)
+    DEFFILE ../BWINS/SENSERVDESC.DEF
+#else 
+    DEFFILE ../BMARM/SENSERVDESC.DEF
+#endif
+
+SMPSAFE
+

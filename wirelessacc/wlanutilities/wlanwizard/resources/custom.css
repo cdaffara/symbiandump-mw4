@@ -1,0 +1,19 @@
+HbDialog#dialog:content
+{
+    left:0un;
+    right:0un;
+    top:0un;
+    bottom:0un;
+}
+
+HbDialog#dialog:portrait
+{
+    pref-width: var(hb-param-screen-width);
+    pref-height: var(hb-param-screen-height);
+}
+
+HbDialog#dialog:landscape
+{
+    pref-width: var(hb-param-screen-width);
+    pref-height: var(hb-param-screen-height);
+}

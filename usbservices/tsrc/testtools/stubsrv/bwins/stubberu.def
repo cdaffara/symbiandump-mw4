@@ -1,0 +1,9 @@
+EXPORTS
+	?InvokeApiCancel@CStubber@@QAEXXZ @ 1 NONAME ; void CStubber::InvokeApiCancel(void)
+	?DeleteBehaviors@CStubber@@QAEXII@Z @ 2 NONAME ; void CStubber::DeleteBehaviors(unsigned int, unsigned int)
+	?NewL@CStubber@@SAPAV1@XZ @ 3 NONAME ; class CStubber * CStubber::NewL(void)
+	?InvokeApi@CStubber@@QAEXAAVTApiBehavior@@W4TApiInvokeMode@@@Z @ 4 NONAME ; void CStubber::InvokeApi(class TApiBehavior &, enum TApiInvokeMode)
+	??1CStubber@@UAE@XZ @ 5 NONAME ; CStubber::~CStubber(void)
+	?InvokeApiL@CStubber@@QAEXAAVMApiInvoker@@IIW4TApiInvokeMode@@@Z @ 6 NONAME ; void CStubber::InvokeApiL(class MApiInvoker &, unsigned int, unsigned int, enum TApiInvokeMode)
+	?EnqueBehavior@CStubber@@QAEXABVTApiBehavior@@H@Z @ 7 NONAME ; void CStubber::EnqueBehavior(class TApiBehavior const &, int)
+

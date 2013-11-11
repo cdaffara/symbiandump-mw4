@@ -1,0 +1,12 @@
+EXPORTS
+	SetFeature__10RXMLReader11TXMLFeaturei @ 1 NONAME R3UNUSED ; RXMLReader::SetFeature(TXMLFeature, int)
+	CreateL__10RXMLReader @ 2 NONAME R3UNUSED ; RXMLReader::CreateL(void)
+	Destroy__10RXMLReader @ 3 NONAME R3UNUSED ; RXMLReader::Destroy(void)
+	GetFeature__10RXMLReader11TXMLFeatureRi @ 4 NONAME R3UNUSED ; RXMLReader::GetFeature(TXMLFeature, int &)
+	ParseL__10RXMLReaderR3RFsRC7TDesC16 @ 5 NONAME R3UNUSED ; RXMLReader::ParseL(RFs &, TDesC16 const &)
+	ParseL__10RXMLReaderR5RFile @ 6 NONAME R3UNUSED ; RXMLReader::ParseL(RFile &)
+	ParseL__10RXMLReaderRC6TDesC8 @ 7 NONAME R3UNUSED ; RXMLReader::ParseL(TDesC8 const &)
+	SetContentHandler__10RXMLReaderP18MXMLContentHandler @ 8 NONAME R3UNUSED ; RXMLReader::SetContentHandler(MXMLContentHandler *)
+	SetContentHandler__10RXMLReaderP20MWBXMLContentHandler @ 9 NONAME R3UNUSED ; RXMLReader::SetContentHandler(MWBXMLContentHandler *)
+	Close__10RXMLReader @ 10 NONAME R3UNUSED ; RXMLReader::Close(void)
+

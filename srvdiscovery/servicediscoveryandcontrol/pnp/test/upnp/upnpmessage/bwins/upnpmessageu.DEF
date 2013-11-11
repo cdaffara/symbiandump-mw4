@@ -1,0 +1,96 @@
+EXPORTS
+	?SetBody@RUPnPMessage@@QAEXAAVMHTTPDataSupplier@@@Z @ 1 NONAME ; void RUPnPMessage::SetBody(class MHTTPDataSupplier &)
+	?SetVersion@RRequest@@QAEXVTVersion@@@Z @ 2 NONAME ; void RRequest::SetVersion(class TVersion)
+	?Fields@RHTTPHeaders@@QBE?AVTHTTPHdrFieldIter@@XZ @ 3 NONAME ; class THTTPHdrFieldIter RHTTPHeaders::Fields(void) const
+	?First@THeaderFieldPartIter@@QAEXXZ @ 4 NONAME ; void THeaderFieldPartIter::First(void)
+	??1THTTPHdrFieldIter@@QAE@XZ @ 5 NONAME ; THTTPHdrFieldIter::~THTTPHdrFieldIter(void)
+	?SetInt@THTTPHdrVal@@QAEXH@Z @ 6 NONAME ; void THTTPHdrVal::SetInt(int)
+	?Parameters@CHeaderFieldPart@@QBE?AVTHeaderFieldParamIter@@XZ @ 7 NONAME ; class THeaderFieldParamIter CHeaderFieldPart::Parameters(void) const
+	?AtEnd@THTTPHdrFieldIter@@QBEHXZ @ 8 NONAME ; int THTTPHdrFieldIter::AtEnd(void) const
+	?Body@RUPnPMessage@@QBEPAVMHTTPDataSupplier@@XZ @ 9 NONAME ; class MHTTPDataSupplier * RUPnPMessage::Body(void) const
+	??1CResponse@@UAE@XZ @ 10 NONAME ; CResponse::~CResponse(void)
+	??ETHeaderFieldParamIter@@QAEXXZ @ 11 NONAME ; void THeaderFieldParamIter::operator++(void)
+	?GetRawField@RHTTPHeaders@@QBEHVRStringF@@AAVTPtrC8@@@Z @ 12 NONAME ; int RHTTPHeaders::GetRawField(class RStringF, class TPtrC8 &) const
+	?SetStrF@THTTPHdrVal@@QAEXVRStringF@@@Z @ 13 NONAME ; void THTTPHdrVal::SetStrF(class RStringF)
+	?NumParameters@CHeaderFieldPart@@QBEHXZ @ 14 NONAME ; int CHeaderFieldPart::NumParameters(void) const
+	??1CUpnpRequestParser@@UAE@XZ @ 15 NONAME ; CUpnpRequestParser::~CUpnpRequestParser(void)
+	?Method@RRequest@@QBE?AVRStringF@@XZ @ 16 NONAME ; class RStringF RRequest::Method(void) const
+	?GetHeaderCollection@RUPnPMessage@@QAE?AVRHTTPHeaders@@XZ @ 17 NONAME ; class RHTTPHeaders RUPnPMessage::GetHeaderCollection(void)
+	?Type@THTTPHdrVal@@QBE?AW4THTTPValType@1@XZ @ 18 NONAME ; enum THTTPHdrVal::THTTPValType THTTPHdrVal::Type(void) const
+	?ResetParser@CUpnpRequestParser@@QAEXXZ @ 19 NONAME ; void CUpnpRequestParser::ResetParser(void)
+	?First@THTTPHdrFieldIter@@QAEXXZ @ 20 NONAME ; void THTTPHdrFieldIter::First(void)
+	?ParseResponse@CUpnpResponseParser@@QAEXAAVRMBufChain@@PAVCResponse@@@Z @ 21 NONAME ABSENT ; void CUpnpResponseParser::ParseResponse(class RMBufChain &, class CResponse *)
+	?IsHTTP10@RResponse@@QBEHXZ @ 22 NONAME ; int RResponse::IsHTTP10(void) const
+	?AtEnd@THeaderFieldParamIter@@QAEHXZ @ 23 NONAME ; int THeaderFieldParamIter::AtEnd(void)
+	??0THTTPHdrVal@@QAE@VTDateTime@@@Z @ 24 NONAME ; THTTPHdrVal::THTTPHdrVal(class TDateTime)
+	??9THTTPHdrVal@@QBEHV0@@Z @ 25 NONAME ; int THTTPHdrVal::operator!=(class THTTPHdrVal) const
+	?SetURIL@RRequest@@QAEXABVTUriC8@@@Z @ 26 NONAME ; void RRequest::SetURIL(class TUriC8 const &)
+	?GetField@RHTTPHeaders@@QBEHVRStringF@@HAAVTHTTPHdrVal@@@Z @ 27 NONAME ; int RHTTPHeaders::GetField(class RStringF, int, class THTTPHdrVal &) const
+	?URI@RRequest@@QBEABVTUriC8@@XZ @ 28 NONAME ; class TUriC8 const & RRequest::URI(void) const
+	?RemoveField@RHTTPHeaders@@QAEHVRStringF@@@Z @ 29 NONAME ; int RHTTPHeaders::RemoveField(class RStringF)
+	??0THTTPHdrVal@@QAE@H@Z @ 30 NONAME ; THTTPHdrVal::THTTPHdrVal(int)
+	?SetStatusText@RResponse@@QAEXVRStringF@@@Z @ 31 NONAME ; void RResponse::SetStatusText(class RStringF)
+	?FieldPartsL@RHTTPHeaders@@QBEHVRStringF@@@Z @ 32 NONAME ; int RHTTPHeaders::FieldPartsL(class RStringF) const
+	??RTHTTPHdrFieldIter@@QAE?AVRStringTokenF@@XZ @ 33 NONAME ; class RStringTokenF THTTPHdrFieldIter::operator()(void)
+	?ComposeRequest@CUpnpRequestComposer@@QAEXPAVCRequest@@@Z @ 34 NONAME ; void CUpnpRequestComposer::ComposeRequest(class CRequest *)
+	?Copy@THTTPHdrVal@@QBE?AV1@XZ @ 35 NONAME ; class THTTPHdrVal THTTPHdrVal::Copy(void) const
+	?RequestDataSent@CUpnpRequestComposer@@QAEXXZ @ 36 NONAME ; void CUpnpRequestComposer::RequestDataSent(void)
+	?NewL@CUpnpResponseParser@@SAPAV1@AAVMParserObserver@@@Z @ 37 NONAME ; class CUpnpResponseParser * CUpnpResponseParser::NewL(class MParserObserver &)
+	?SetVersion@RResponse@@QAEXVTVersion@@@Z @ 38 NONAME ; void RResponse::SetVersion(class TVersion)
+	?RawDataL@CHeaderField@@QAEXAAVTPtrC8@@@Z @ 39 NONAME ; void CHeaderField::RawDataL(class TPtrC8 &)
+	?AtEnd@THeaderFieldPartIter@@QAEHXZ @ 40 NONAME ; int THeaderFieldPartIter::AtEnd(void)
+	?ComposeResponse@CUpnpResponseComposer@@QAEXPAVCResponse@@@Z @ 41 NONAME ; void CUpnpResponseComposer::ComposeResponse(class CResponse *)
+	?ResetParser@CUpnpResponseParser@@QAEXXZ @ 42 NONAME ; void CUpnpResponseParser::ResetParser(void)
+	?NewL@CUpnpResponseComposer@@SAPAV1@AAVMComposerObserver@@@Z @ 43 NONAME ; class CUpnpResponseComposer * CUpnpResponseComposer::NewL(class MComposerObserver &)
+	?SetStatusCode@RResponse@@QAEXH@Z @ 44 NONAME ; void RResponse::SetStatusCode(int)
+	?Value@CHeaderFieldPart@@QBE?AVTHTTPHdrVal@@XZ @ 45 NONAME ; class THTTPHdrVal CHeaderFieldPart::Value(void) const
+	??1CUpnpRequestComposer@@UAE@XZ @ 46 NONAME ; CUpnpRequestComposer::~CUpnpRequestComposer(void)
+	?StatusCode@RResponse@@QBEHXZ @ 47 NONAME ; int RResponse::StatusCode(void) const
+	?RemoveBody@RUPnPMessage@@QAEXXZ @ 48 NONAME ; void RUPnPMessage::RemoveBody(void)
+	?NewL@CHeaderFieldPart@@SAPAV1@VTHTTPHdrVal@@@Z @ 49 NONAME ; class CHeaderFieldPart * CHeaderFieldPart::NewL(class THTTPHdrVal)
+	?ParseRequest@CUpnpRequestParser@@QAEXAAVRMBufChain@@PAVCRequest@@@Z @ 50 NONAME ABSENT ; void CUpnpRequestParser::ParseRequest(class RMBufChain &, class CRequest *)
+	?Str@THTTPHdrVal@@QBE?AVRString@@XZ @ 51 NONAME ; class RString THTTPHdrVal::Str(void) const
+	?SetRawFieldL@RHTTPHeaders@@QAEXVRStringF@@ABVTDesC8@@1@Z @ 52 NONAME ; void RHTTPHeaders::SetRawFieldL(class RStringF, class TDesC8 const &, class TDesC8 const &)
+	?Name@CHeaderFieldParam@@QBE?AVRStringF@@XZ @ 53 NONAME ; class RStringF CHeaderFieldParam::Name(void) const
+	?StatusText@RResponse@@QBE?AVRStringF@@XZ @ 54 NONAME ; class RStringF RResponse::StatusText(void) const
+	?ResponseDataSent@CUpnpResponseComposer@@QAEXXZ @ 55 NONAME ; void CUpnpResponseComposer::ResponseDataSent(void)
+	?RemoveAllFields@RHTTPHeaders@@QAEXXZ @ 56 NONAME ; void RHTTPHeaders::RemoveAllFields(void)
+	??RTHeaderFieldParamIter@@QAEPBVCHeaderFieldParam@@XZ @ 57 NONAME ; class CHeaderFieldParam const * THeaderFieldParamIter::operator()(void)
+	??RTHeaderFieldPartIter@@QAEPBVCHeaderFieldPart@@XZ @ 58 NONAME ; class CHeaderFieldPart const * THeaderFieldPartIter::operator()(void)
+	?SetFieldL@RHTTPHeaders@@QAEXVRStringF@@VTHTTPHdrVal@@@Z @ 59 NONAME ; void RHTTPHeaders::SetFieldL(class RStringF, class THTTPHdrVal)
+	?NewL@CUpnpRequestComposer@@SAPAV1@AAVMComposerObserver@@@Z @ 60 NONAME ; class CUpnpRequestComposer * CUpnpRequestComposer::NewL(class MComposerObserver &)
+	?NewL@CHeaderFieldParam@@SAPAV1@VRStringF@@VTHTTPHdrVal@@@Z @ 61 NONAME ; class CHeaderFieldParam * CHeaderFieldParam::NewL(class RStringF, class THTTPHdrVal)
+	??1CRequest@@UAE@XZ @ 62 NONAME ; CRequest::~CRequest(void)
+	?NotifyNewBodyData@CUPnPMessageComposer@@QAEXXZ @ 63 NONAME ; void CUPnPMessageComposer::NotifyNewBodyData(void)
+	??ETHeaderFieldPartIter@@QAEXXZ @ 64 NONAME ; void THeaderFieldPartIter::operator++(void)
+	?SetFieldL@RHTTPHeaders@@QAEXVRStringF@@VTHTTPHdrVal@@01@Z @ 65 NONAME ; void RHTTPHeaders::SetFieldL(class RStringF, class THTTPHdrVal, class RStringF, class THTTPHdrVal)
+	?ResetComposer@CUpnpResponseComposer@@QAEXXZ @ 66 NONAME ; void CUpnpResponseComposer::ResetComposer(void)
+	??ETHTTPHdrFieldIter@@QAEXXZ @ 67 NONAME ; void THTTPHdrFieldIter::operator++(void)
+	??0THTTPHdrVal@@QAE@VRStringF@@@Z @ 68 NONAME ; THTTPHdrVal::THTTPHdrVal(class RStringF)
+	?NewL@CUpnpRequestParser@@SAPAV1@AAVMParserObserver@@@Z @ 69 NONAME ; class CUpnpRequestParser * CUpnpRequestParser::NewL(class MParserObserver &)
+	?AddParamL@CHeaderFieldPart@@QAEXPAVCHeaderFieldParam@@@Z @ 70 NONAME ; void CHeaderFieldPart::AddParamL(class CHeaderFieldParam *)
+	?Value@CHeaderFieldParam@@QBE?AVTHTTPHdrVal@@XZ @ 71 NONAME ; class THTTPHdrVal CHeaderFieldParam::Value(void) const
+	?HasBody@RUPnPMessage@@QBEHXZ @ 72 NONAME ; int RUPnPMessage::HasBody(void) const
+	?IsHTTP10@RRequest@@QBEHXZ @ 73 NONAME ; int RRequest::IsHTTP10(void) const
+	?SetStr@THTTPHdrVal@@QAEXVRString@@@Z @ 74 NONAME ; void THTTPHdrVal::SetStr(class RString)
+	?First@THeaderFieldParamIter@@QAEXXZ @ 75 NONAME ; void THeaderFieldParamIter::First(void)
+	?Int@THTTPHdrVal@@QBEHXZ @ 76 NONAME ; int THTTPHdrVal::Int(void) const
+	?RemoveFieldPart@RHTTPHeaders@@QAEHVRStringF@@H@Z @ 77 NONAME ; int RHTTPHeaders::RemoveFieldPart(class RStringF, int)
+	??0THTTPHdrVal@@QAE@XZ @ 78 NONAME ; THTTPHdrVal::THTTPHdrVal(void)
+	?SetMethod@RRequest@@QAEXVRStringF@@@Z @ 79 NONAME ; void RRequest::SetMethod(class RStringF)
+	??8THTTPHdrVal@@QBEHV0@@Z @ 80 NONAME ; int THTTPHdrVal::operator==(class THTTPHdrVal) const
+	?ResetComposer@CUpnpRequestComposer@@QAEXXZ @ 81 NONAME ; void CUpnpRequestComposer::ResetComposer(void)
+	?DateTime@THTTPHdrVal@@QBE?AVTDateTime@@XZ @ 82 NONAME ; class TDateTime THTTPHdrVal::DateTime(void) const
+	?StrF@THTTPHdrVal@@QBE?AVRStringF@@XZ @ 83 NONAME ; class RStringF THTTPHdrVal::StrF(void) const
+	??1CUpnpResponseComposer@@UAE@XZ @ 84 NONAME ; CUpnpResponseComposer::~CUpnpResponseComposer(void)
+	??1THeaderFieldParamIter@@QAE@XZ @ 85 NONAME ; THeaderFieldParamIter::~THeaderFieldParamIter(void)
+	?NewL@CResponse@@SAPAV1@AAVCHeaderCodec@@AAVRStringPool@@@Z @ 86 NONAME ; class CResponse * CResponse::NewL(class CHeaderCodec &, class RStringPool &)
+	?SetDateTime@THTTPHdrVal@@QAEXVTDateTime@@@Z @ 87 NONAME ; void THTTPHdrVal::SetDateTime(class TDateTime)
+	?SetParamL@RHTTPHeaders@@QAEXVRStringF@@0VTHTTPHdrVal@@H@Z @ 88 NONAME ; void RHTTPHeaders::SetParamL(class RStringF, class RStringF, class THTTPHdrVal, int)
+	?NewL@CRequest@@SAPAV1@AAVCHeaderCodec@@AAVRStringPool@@@Z @ 89 NONAME ; class CRequest * CRequest::NewL(class CHeaderCodec &, class RStringPool &)
+	??1CUpnpResponseParser@@UAE@XZ @ 90 NONAME ; CUpnpResponseParser::~CUpnpResponseParser(void)
+	??0THTTPHdrVal@@QAE@VRString@@@Z @ 91 NONAME ; THTTPHdrVal::THTTPHdrVal(class RString)
+	?GetParam@RHTTPHeaders@@QBEHVRStringF@@0AAVTHTTPHdrVal@@H@Z @ 92 NONAME ; int RHTTPHeaders::GetParam(class RStringF, class RStringF, class THTTPHdrVal &, int) const
+	?ParseResponse@CUpnpResponseParser@@QAEXAAVRMemChunk@@PAVCResponse@@@Z @ 93 NONAME ; void CUpnpResponseParser::ParseResponse(class RMemChunk &, class CResponse *)
+	?ParseRequest@CUpnpRequestParser@@QAEXAAVRMemChunk@@PAVCRequest@@@Z @ 94 NONAME ; void CUpnpRequestParser::ParseRequest(class RMemChunk &, class CRequest *)
+

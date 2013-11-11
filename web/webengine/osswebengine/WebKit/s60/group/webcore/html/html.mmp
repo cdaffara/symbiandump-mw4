@@ -1,0 +1,113 @@
+// *
+// * Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// * All rights reserved.
+// * This component and the accompanying materials are made available
+// * under the terms of the License "Eclipse Public License v1.0"
+// * which accompanies this distribution, and is available
+// * at the URL "http://www.eclipse.org/legal/epl-v10.html".
+// *
+// * Initial Contributors:
+// * Nokia Corporation - initial contribution.
+// *
+// * Contributors:
+// *
+// * Description:  This is the project specification file for WebCore.
+// *
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#include "../../common.mmpi"
+
+TARGET  WebCorehtml.lib
+
+TARGETTYPE  lib
+
+VENDORID    VID_DEFAULT
+
+//OPTION CW -prefix pragmas.pref
+
+SOURCEPATH ../../../../../WebCore/html
+
+SOURCE CanvasGradient.cpp
+SOURCE CanvasPattern.cpp
+SOURCE CanvasRenderingContext2D.cpp
+SOURCE CanvasStyle.cpp
+SOURCE FormDataList.cpp
+SOURCE HTMLAnchorElement.cpp
+SOURCE HTMLAppletElement.cpp
+SOURCE HTMLAreaElement.cpp
+SOURCE HTMLBaseElement.cpp
+SOURCE HTMLBaseFontElement.cpp
+SOURCE HTMLBgsoundElement.cpp
+SOURCE HTMLBlockquoteElement.cpp
+SOURCE HTMLBodyElement.cpp
+SOURCE HTMLBRElement.cpp
+SOURCE HTMLButtonElement.cpp
+SOURCE HTMLCanvasElement.cpp
+SOURCE HTMLCollection.cpp
+SOURCE HTMLDirectoryElement.cpp
+SOURCE HTMLDivElement.cpp
+SOURCE HTMLDListElement.cpp
+SOURCE HTMLDocument.cpp
+SOURCE HTMLElement.cpp
+SOURCE HTMLElementFactory.cpp
+SOURCE HTMLEmbedElement.cpp
+SOURCE HTMLFieldSetElement.cpp
+SOURCE HTMLFontElement.cpp
+SOURCE HTMLFormCollection.cpp
+SOURCE HTMLFormElement.cpp
+SOURCE HTMLFrameElement.cpp
+SOURCE HTMLFrameElementBase.cpp
+SOURCE HTMLFrameOwnerElement.cpp
+SOURCE HTMLFrameSetElement.cpp
+SOURCE HTMLGenericFormElement.cpp
+SOURCE HTMLHeadElement.cpp
+SOURCE HTMLHeadingElement.cpp
+SOURCE HTMLHRElement.cpp
+SOURCE HTMLHtmlElement.cpp
+SOURCE HTMLIFrameElement.cpp
+SOURCE HTMLImageElement.cpp
+SOURCE HTMLImageLoader.cpp
+SOURCE HTMLInputElement.cpp
+SOURCE HTMLIsIndexElement.cpp
+SOURCE HTMLKeygenElement.cpp
+SOURCE HTMLLabelElement.cpp
+SOURCE HTMLLegendElement.cpp
+SOURCE HTMLLIElement.cpp
+SOURCE HTMLLinkElement.cpp
+SOURCE HTMLMapElement.cpp
+SOURCE HTMLMarqueeElement.cpp
+SOURCE HTMLMenuElement.cpp
+SOURCE HTMLMetaElement.cpp
+SOURCE HTMLModElement.cpp
+SOURCE HTMLNameCollection.cpp
+SOURCE HTMLObjectElement.cpp
+SOURCE HTMLOListElement.cpp
+SOURCE HTMLOptGroupElement.cpp
+SOURCE HTMLOptionElement.cpp
+SOURCE HTMLOptionsCollection.cpp
+SOURCE HTMLParagraphElement.cpp
+SOURCE HTMLParamElement.cpp
+SOURCE HTMLParser.cpp
+SOURCE HTMLParserErrorCodes.cpp
+SOURCE HTMLPlugInElement.cpp
+SOURCE HTMLPreElement.cpp
+SOURCE HTMLQuoteElement.cpp
+SOURCE HTMLScriptElement.cpp
+SOURCE HTMLSelectElement.cpp
+SOURCE HTMLStyleElement.cpp
+SOURCE HTMLTableCaptionElement.cpp
+SOURCE HTMLTableCellElement.cpp
+SOURCE HTMLTableColElement.cpp
+SOURCE HTMLTableElement.cpp
+SOURCE HTMLTablePartElement.cpp
+SOURCE HTMLTableRowElement.cpp
+SOURCE HTMLTableSectionElement.cpp
+SOURCE HTMLTextAreaElement.cpp
+SOURCE HTMLTextFieldInnerElement.cpp
+SOURCE HTMLTitleElement.cpp
+SOURCE HTMLTokenizer.cpp
+SOURCE HTMLUListElement.cpp
+SOURCE HTMLViewSourceDocument.cpp
+SOURCE PreloadScanner.cpp

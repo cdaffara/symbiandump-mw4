@@ -1,0 +1,42 @@
+/** @file
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Here are the flags that allows to compile code
+*
+*/
+
+#ifndef upnpcompvariant_HRH
+#define upnpcompvariant_HRH
+#include <platform_paths.hrh>
+#include <bldvariant.hrh>
+
+//#define RD_UPNP_REMOTE_ACCESS
+
+#if defined (__SERIES60_31__)
+
+//Flag for 3.1 HN
+#ifndef __HN_31__
+    #define __HN_31__
+#endif
+
+//#elif defined (__SERIES60_32__)
+
+//Flag for 3.2 HN
+//    #define __HN_32__
+//#endif
+
+//#else // no __HN_31__, no __HN_32__
+
+#endif // __HN_31__
+
+#endif // upnpcompvariant_HRH

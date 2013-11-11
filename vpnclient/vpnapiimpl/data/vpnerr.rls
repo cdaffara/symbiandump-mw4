@@ -1,0 +1,117 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: Resource definitions for VPN API.
+*
+*/
+
+// IPSec Policy API errors
+
+rls_string STRING_r_error_EOpenSocketError                  "IPSec policy loading failed (socket open failed)"
+rls_string STRING_r_error_EBindSocketError                  "IPSec policy loading failed (socket bind failed)"
+rls_string STRING_r_error_EOpenAlgorithmsFileError          "IPSec policy loading failed (algorithms configuration file not found)"
+rls_string STRING_r_error_ESecpolSocketSetOptError          "IPSec policy loading failed (socket options could not be set)"
+rls_string STRING_r_error_EUnknownPolicyHandle              "Unknown IPSec policy handle"
+rls_string STRING_r_error_EParsingError                     "IPSec policy loading failed (invalid policy)"
+rls_string STRING_r_error_EWriteSocketError                 "IPSec policy loading failed (socket write failed)"
+rls_string STRING_r_error_ESecpolReaderError                "IPSec event logging failed (socket error)"
+rls_string STRING_r_error_ENoSelectorFound                  "No matching IPSec policy selector found"
+rls_string STRING_r_error_ENoMemory                         "IPSec policy handling failed (no memory)"
+rls_string STRING_r_error_EInboundOutboundConflict          "IPSec policy loading failed (conflicting policy already active)"
+rls_string STRING_r_error_ESelectorConflict                 "IPSec policy loading failed (conflicting policy already active)"
+rls_string STRING_r_error_ENoConflictInfoFound              "IPSec policy conflict information not found"
+
+// VPN API errors
+
+rls_string  STRING_r_error_KVpnErrNoPolicyFile              "VPN policy file not found"
+rls_string  STRING_r_error_KVpnErrNoPolicyInfoFile          "VPN policy information file not found"
+rls_string  STRING_r_error_KVpnErrInvalidPolicyFile         "Invalid VPN policy file"
+rls_string  STRING_r_error_KVpnErrPolicyNotFound            "VPN policy not found"
+rls_string  STRING_r_error_KVpnErrInvalidCaCertFile         "VPN CA certificate file not found or file is corrupted"
+rls_string  STRING_r_error_KVpnErrPeerCertFileMissing       "VPN gateway certificate file not found"
+rls_string  STRING_r_error_KVpnErrInvalidUserCertFile       "VPN user certificate file not found or file is corrupted"
+rls_string  STRING_r_error_KVpnErrInvalidUserPrivKeyFile    "VPN user private key file not found, file is corrupted or wrong password used"
+rls_string  STRING_r_error_KVpnErrImportOngoing             "VPN policy import already in progress"
+rls_string  STRING_r_error_KVpnErrPwdChangeOngoing          "Password change already in progress"
+rls_string  STRING_r_error_KVpnErrPolicyCountChanged        "VPN policy count has changed"
+
+// PKI Service API errors
+
+rls_string STRING_r_error_KPKIErrWrongObjectType            "Wrong PKI object (key or certificate) type"
+rls_string STRING_r_error_KPKIErrObjectUninitialized        "PKI object (key or certificate) uninitialized"
+rls_string STRING_r_error_KPKIErrPassword                   "PKI key store password error"
+rls_string STRING_r_error_KPKIErrServiceBusy                "PKI service is busy"
+rls_string STRING_r_error_KPKIErrCancel                     "PKI service request cancelled"
+rls_string STRING_r_error_KPKIErrBufferTooShort             "Not enough space reserved for a PKI object (key or certificate)"
+rls_string STRING_r_error_KPKIErrCertRequestParam           "Parameter error in certificate request"
+rls_string STRING_r_error_KPKIErrCertRequest                "Generating certificate request failed"
+rls_string STRING_r_error_KPKIErrNotFound                   "Key or certificate not found"
+rls_string STRING_r_error_KPKIErrAmbiguous                  "Key or certificate selection was ambiguous"
+rls_string STRING_r_error_KPKIErrNotSupported               "Function not supported"
+rls_string STRING_r_error_KPKIErrUnexpectedState            "Unexpected state encountered"
+rls_string STRING_r_error_KPKIErrKeyStoreEmpty              "Logon or ChangePassword is impossible because the key store is empty"
+
+// IKE policy parser errors
+
+rls_string STRING_r_error_KSecParserErrMode                 "Invalid VPN policy (invalid IKE mode value)"
+rls_string STRING_r_error_KSecParserErrNotify               "Invalid VPN policy (invalid IKE notify value)"
+rls_string STRING_r_error_KSecParserErrCommit               "Invalid VPN policy (invalid IKE commit value)"
+rls_string STRING_r_error_KSecParserErrIpsecExpire          "Invalid VPN policy (invalid IKE expire value)"
+rls_string STRING_r_error_KSecParserErrSendCert             "Invalid VPN policy (invalid IKE send certificate value)"
+rls_string STRING_r_error_KSecParserErrInitialContact       "Invalid VPN policy (invalid IKE initial contact value)"
+rls_string STRING_r_error_KSecParserErrResponderLifetime    "Invalid VPN policy (invalid IKE responder lifetime value)"
+rls_string STRING_r_error_KSecParserErrReplayStatus         "Invalid VPN policy (invalid IKE replay status value)"
+rls_string STRING_r_error_KSecParserErrGroupDesc_II         "Invalid VPN policy (invalid IKE group description II value)"
+rls_string STRING_r_error_KSecParserErrProposal             "Invalid VPN policy (invalid IKE proposal)"
+rls_string STRING_r_error_KSecParserErrEncrAlg              "Invalid VPN policy (invalid IKE encryption algorithm value)"
+rls_string STRING_r_error_KSecParserErrAuthMethod           "Invalid VPN policy (invalid IKE authentication method value)"
+rls_string STRING_r_error_KSecParserErrHashAlg              "Invalid VPN policy (invalid IKE hash algorithm value)"
+rls_string STRING_r_error_KSecParserErrGroupDesc            "Invalid VPN policy (invalid IKE group description value)"
+rls_string STRING_r_error_KSecParserErrGroupType            "Invalid VPN policy (invalid IKE group type value)"
+rls_string STRING_r_error_KSecParserErrLifeBytes            "Invalid VPN policy (invalid IKE lifetime bytes value)"
+rls_string STRING_r_error_KSecParserErrLifeSecs             "Invalid VPN policy (invalid IKE lifetime seconds value)"
+rls_string STRING_r_error_KSecParserErrPRF                  "Invalid VPN policy (invalid IKE PRF value)"
+rls_string STRING_r_error_KSecParserErrPreKey               "Invalid VPN policy (invalid IKE preshared key value)"
+rls_string STRING_r_error_KSecParserErrPreFormat            "Invalid VPN policy (invalid IKE preshared key format value)"
+rls_string STRING_r_error_KSecParserErrCA                   "Invalid VPN policy (invalid IKE CA value)"
+rls_string STRING_r_error_KSecParserErrOwnCerts             "Invalid VPN policy (invalid IKE own certificate value)"
+rls_string STRING_r_error_KSecParserErrOwnName              "Invalid VPN policy (invalid IKE own name value)"
+rls_string STRING_r_error_KSecParserErrOwnKey               "Invalid VPN policy (invalid IKE own key value)"
+rls_string STRING_r_error_KSecParserErrPeerCerts            "Invalid VPN policy (invalid IKE peer certificate value)"
+rls_string STRING_r_error_KSecParserErrPeerAddr             "Invalid VPN policy (invalid IKE peer address value)"
+rls_string STRING_r_error_KSecParserErrPeerMask             "Invalid VPN policy (invalid IKE peer mask value)"
+rls_string STRING_r_error_KSecParserErrMaxLifetimeSec       "Invalid VPN policy (invalid IKE max. lifetime seconds value)"
+rls_string STRING_r_error_KSecParserErrMaxLifetimeKB        "Invalid VPN policy (invalid IKE max. lifetime kilobytes value)"
+rls_string STRING_r_error_KSecParserErrMaxRetrans           "Invalid VPN policy (invalid IKE max. retransmissions value)"
+rls_string STRING_r_error_KSecParserErrNoSeparator          "Invalid VPN policy (no separator)"
+rls_string STRING_r_error_KSecParserErrCRACKLAMType         "Invalid VPN policy (invalid IKE CRACK LAM type value)"
+rls_string STRING_r_error_KSecParserErrUseIntAddr           "Invalid VPN policy (invalid IKE use internal addressing value)"
+rls_string STRING_r_error_KSecParserErrUseNATProbe          "Invalid VPN policy (invalid IKE use NAT probe value)"
+rls_string STRING_r_error_KSecParserErrUnknown              "Invalid VPN policy (unknown error)"
+
+// KMD API errors
+
+rls_string  STRING_r_error_KKmdTooWeakCryptoLib             "Crypto library is too weak"
+rls_string  STRING_r_error_KKmdNoAlgorithmsFile             "VPN Configuration error (Algorithms.conf cannot be found)"
+rls_string  STRING_r_error_KKmdIkePolicyFileErr             "VPN Configuration error (Error in IKE configuration)"
+rls_string  STRING_r_error_KKmdIkeNegotFailed               "IKE Phase 1 negotiation failed"
+rls_string  STRING_r_error_KKmdIkeNoResponse                "IKE Phase 1 negotiation failed (no proper response from peer)"
+rls_string  STRING_r_error_KKmdIkeNoProposalErr             "IKE Phase 1 negotiation failed (no proposal chosen by peer)"
+rls_string  STRING_r_error_KKmdIkeAuthFailedErr             "IKE Phase 1 negotiation failed (local end authentication failed)"
+rls_string  STRING_r_error_KKmdIkePeerAuthFailed            "IKE Phase 1 negotiation failed (peer authentication failed)"
+rls_string  STRING_r_error_KKmdIkeNoCertFoundErr            "IKE Phase 1 negotiation failed (proper certificate not found)"
+rls_string  STRING_r_error_KKmdIkeNoPolicyErr               "IKE Phase 1 negotiation failed (no IKE policy section found"
+
+// VPN API errors 2
+
+rls_string  STRING_r_error_KVpnErrPolicySizeChanged         "VPN policy size has changed"

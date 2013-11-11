@@ -1,0 +1,173 @@
+EXPORTS
+	_ZN10CSenParser4NewLEPN3Xml7CParserE @ 1 NONAME
+	_ZN10CSenParser4NewLERK6TDesC8 @ 2 NONAME
+	_ZN10CSenParser4NewLEv @ 3 NONAME
+	_ZN10CSenParser5NewLCEPN3Xml7CParserE @ 4 NONAME
+	_ZN10CSenParser5NewLCERK6TDesC8 @ 5 NONAME
+	_ZN10CSenParser5NewLCEv @ 6 NONAME
+	_ZN12RSenDocument4CopyEv @ 7 NONAME
+	_ZN12RSenDocument4NewLEPv @ 8 NONAME
+	_ZN12RSenDocument4NewLEv @ 9 NONAME
+	_ZN12RSenDocument5CloseEv @ 10 NONAME
+	_ZN12RSenDocument5NewLCEPv @ 11 NONAME
+	_ZN12RSenDocument5NewLCEv @ 12 NONAME
+	_ZN12RSenDocument7DestroyEv @ 13 NONAME
+	_ZN16CSenFragmentBase10AsElementLEv @ 14 NONAME
+	_ZN16CSenFragmentBase10OnContentLERK6TDesC8i @ 15 NONAME
+	_ZN16CSenFragmentBase11AddContentLERK6TDesC8 @ 16 NONAME
+	_ZN16CSenFragmentBase11AsDocumentLEv @ 17 NONAME
+	_ZN16CSenFragmentBase11ConsistsOfLER14TXmlEngElementS1_ @ 18 NONAME
+	_ZN16CSenFragmentBase11ConsistsOfLERS_ @ 19 NONAME
+	_ZN16CSenFragmentBase11SetContentLERK6TDesC8 @ 20 NONAME
+	_ZN16CSenFragmentBase11SetDocumentER12RSenDocument @ 21 NONAME
+	_ZN16CSenFragmentBase13AsXmlUnicodeLEv @ 22 NONAME
+	_ZN16CSenFragmentBase13OnEndElementLERKN3Xml8RTagInfoEi @ 23 NONAME
+	_ZN16CSenFragmentBase13ResetContentLEv @ 24 NONAME
+	_ZN16CSenFragmentBase13SetContentOfLERK6TDesC8S2_ @ 25 NONAME
+	_ZN16CSenFragmentBase13WriteAsXMLToLER12RWriteStream @ 26 NONAME
+	_ZN16CSenFragmentBase14AddAttributesLERK6RArrayIN3Xml10RAttributeEE @ 27 NONAME
+	_ZN16CSenFragmentBase14AddNamespacesLEv @ 28 NONAME
+	_ZN16CSenFragmentBase14BaseConstructLER14TXmlEngElementR12RSenDocument @ 29 NONAME
+	_ZN16CSenFragmentBase14BaseConstructLERK14TXmlEngElement @ 30 NONAME
+	_ZN16CSenFragmentBase14BaseConstructLERK6TDesC8 @ 31 NONAME
+	_ZN16CSenFragmentBase14BaseConstructLERK6TDesC8S2_ @ 32 NONAME
+	_ZN16CSenFragmentBase14BaseConstructLERK6TDesC8S2_S2_ @ 33 NONAME
+	_ZN16CSenFragmentBase14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 34 NONAME
+	_ZN16CSenFragmentBase14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElement @ 35 NONAME
+	_ZN16CSenFragmentBase14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 36 NONAME
+	_ZN16CSenFragmentBase14ExtractElementEv @ 37 NONAME
+	_ZN16CSenFragmentBase14OnEndDocumentLEi @ 38 NONAME
+	_ZN16CSenFragmentBase15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 39 NONAME
+	_ZN16CSenFragmentBase16OnSkippedEntityLERK7RStringi @ 40 NONAME
+	_ZN16CSenFragmentBase16OnStartDocumentLERKN3Xml19RDocumentParametersEi @ 41 NONAME
+	_ZN16CSenFragmentBase17SetContentHandlerERS_ @ 42 NONAME
+	_ZN16CSenFragmentBase18OnDelegateParsingLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 43 NONAME
+	_ZN16CSenFragmentBase18OnDelegateParsingLERS_ @ 44 NONAME
+	_ZN16CSenFragmentBase18OnWriteEndElementLERKN3Xml8RTagInfoE @ 45 NONAME
+	_ZN16CSenFragmentBase18StartSavingContentEv @ 46 NONAME
+	_ZN16CSenFragmentBase19OnEndPrefixMappingLERK7RStringi @ 47 NONAME
+	_ZN16CSenFragmentBase20GetExtendedInterfaceEl @ 48 NONAME
+	_ZN16CSenFragmentBase20OnResumeParsingFromLERKN3Xml8RTagInfoEi @ 49 NONAME
+	_ZN16CSenFragmentBase20OnWriteStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEE @ 50 NONAME
+	_ZN16CSenFragmentBase21OnStartPrefixMappingLERK7RStringS2_i @ 51 NONAME
+	_ZN16CSenFragmentBase22OnIgnorableWhiteSpaceLERK6TDesC8i @ 52 NONAME
+	_ZN16CSenFragmentBase23AddAttributesToElementLE14TXmlEngElementRK6RArrayIN3Xml10RAttributeEE @ 53 NONAME
+	_ZN16CSenFragmentBase24OnProcessingInstructionLERK6TDesC8S2_i @ 54 NONAME
+	_ZN16CSenFragmentBase4NewLER14TXmlEngElementR12RSenDocument @ 55 NONAME
+	_ZN16CSenFragmentBase4NewLERK14TXmlEngElement @ 56 NONAME
+	_ZN16CSenFragmentBase4NewLERK6TDesC8 @ 57 NONAME
+	_ZN16CSenFragmentBase4NewLERK6TDesC8S2_ @ 58 NONAME
+	_ZN16CSenFragmentBase4NewLERK6TDesC8S2_S2_ @ 59 NONAME
+	_ZN16CSenFragmentBase4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 60 NONAME
+	_ZN16CSenFragmentBase4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElement @ 61 NONAME
+	_ZN16CSenFragmentBase4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 62 NONAME
+	_ZN16CSenFragmentBase6AsXmlLEv @ 63 NONAME
+	_ZN16CSenFragmentBase7OnErrorEi @ 64 NONAME
+	_ZN16CSenFragmentBase8ContentLEv @ 65 NONAME
+	_ZN16CSenFragmentBase8SetOwnerERS_ @ 66 NONAME
+	_ZN16CSenFragmentBase9ContentOfERK6TDesC8 @ 67 NONAME
+	_ZN16CSenFragmentBase9NamespaceERK6TDesC8 @ 68 NONAME
+	_ZN16CSenFragmentBase9SetParserER10CSenParser @ 69 NONAME
+	_ZN16CSenFragmentBaseC1Ev @ 70 NONAME
+	_ZN16CSenFragmentBaseC2Ev @ 71 NONAME
+	_ZN16CSenFragmentBaseD0Ev @ 72 NONAME
+	_ZN16CSenFragmentBaseD1Ev @ 73 NONAME
+	_ZN16CSenFragmentBaseD2Ev @ 74 NONAME
+	_ZN19CSenDomFragmentBase10AsElementLEv @ 75 NONAME
+	_ZN19CSenDomFragmentBase10OnContentLERK6TDesC8i @ 76 NONAME
+	_ZN19CSenDomFragmentBase11AsDocumentLEv @ 77 NONAME
+	_ZN19CSenDomFragmentBase11ConsistsOfLER14TXmlEngElementS1_ @ 78 NONAME
+	_ZN19CSenDomFragmentBase11ConsistsOfLER16CSenFragmentBase @ 79 NONAME
+	_ZN19CSenDomFragmentBase13AsXmlUnicodeLEv @ 80 NONAME
+	_ZN19CSenDomFragmentBase13OnEndElementLERKN3Xml8RTagInfoEi @ 81 NONAME
+	_ZN19CSenDomFragmentBase13ResetContentLEv @ 82 NONAME
+	_ZN19CSenDomFragmentBase13SetContentOfLERK6TDesC8S2_ @ 83 NONAME
+	_ZN19CSenDomFragmentBase13WriteAsXMLToLER12RWriteStream @ 84 NONAME
+	_ZN19CSenDomFragmentBase14AddAttributesLERK6RArrayIN3Xml10RAttributeEE @ 85 NONAME
+	_ZN19CSenDomFragmentBase14AddNamespacesLEv @ 86 NONAME
+	_ZN19CSenDomFragmentBase14BaseConstructLERK14TXmlEngElement @ 87 NONAME
+	_ZN19CSenDomFragmentBase14BaseConstructLERK6TDesC8 @ 88 NONAME
+	_ZN19CSenDomFragmentBase14BaseConstructLERK6TDesC8S2_ @ 89 NONAME
+	_ZN19CSenDomFragmentBase14BaseConstructLERK6TDesC8S2_S2_ @ 90 NONAME
+	_ZN19CSenDomFragmentBase14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 91 NONAME
+	_ZN19CSenDomFragmentBase14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElement @ 92 NONAME
+	_ZN19CSenDomFragmentBase14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 93 NONAME
+	_ZN19CSenDomFragmentBase14BaseConstructLEv @ 94 NONAME
+	_ZN19CSenDomFragmentBase14ExtractElementEv @ 95 NONAME
+	_ZN19CSenDomFragmentBase14OnEndDocumentLEi @ 96 NONAME
+	_ZN19CSenDomFragmentBase15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 97 NONAME
+	_ZN19CSenDomFragmentBase16OnSkippedEntityLERK7RStringi @ 98 NONAME
+	_ZN19CSenDomFragmentBase16OnStartDocumentLERKN3Xml19RDocumentParametersEi @ 99 NONAME
+	_ZN19CSenDomFragmentBase17SetContentHandlerER16CSenFragmentBase @ 100 NONAME
+	_ZN19CSenDomFragmentBase18OnDelegateParsingLER16CSenFragmentBase @ 101 NONAME
+	_ZN19CSenDomFragmentBase18OnDelegateParsingLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 102 NONAME
+	_ZN19CSenDomFragmentBase18OnWriteEndElementLERKN3Xml8RTagInfoE @ 103 NONAME
+	_ZN19CSenDomFragmentBase19OnEndPrefixMappingLERK7RStringi @ 104 NONAME
+	_ZN19CSenDomFragmentBase20GetExtendedInterfaceEl @ 105 NONAME
+	_ZN19CSenDomFragmentBase20OnResumeParsingFromLERKN3Xml8RTagInfoEi @ 106 NONAME
+	_ZN19CSenDomFragmentBase20OnWriteStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEE @ 107 NONAME
+	_ZN19CSenDomFragmentBase21OnStartPrefixMappingLERK7RStringS2_i @ 108 NONAME
+	_ZN19CSenDomFragmentBase22OnIgnorableWhiteSpaceLERK6TDesC8i @ 109 NONAME
+	_ZN19CSenDomFragmentBase24OnProcessingInstructionLERK6TDesC8S2_i @ 110 NONAME
+	_ZN19CSenDomFragmentBase4NewLERK14TXmlEngElement @ 111 NONAME
+	_ZN19CSenDomFragmentBase4NewLERK6TDesC8 @ 112 NONAME
+	_ZN19CSenDomFragmentBase4NewLERK6TDesC8S2_ @ 113 NONAME
+	_ZN19CSenDomFragmentBase4NewLERK6TDesC8S2_S2_ @ 114 NONAME
+	_ZN19CSenDomFragmentBase4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 115 NONAME
+	_ZN19CSenDomFragmentBase4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElement @ 116 NONAME
+	_ZN19CSenDomFragmentBase4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 117 NONAME
+	_ZN19CSenDomFragmentBase4NewLEv @ 118 NONAME
+	_ZN19CSenDomFragmentBase6AsXmlLEv @ 119 NONAME
+	_ZN19CSenDomFragmentBase7ExpandLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 120 NONAME
+	_ZN19CSenDomFragmentBase7OnErrorEi @ 121 NONAME
+	_ZN19CSenDomFragmentBase8ContentLEv @ 122 NONAME
+	_ZN19CSenDomFragmentBase8SetOwnerER16CSenFragmentBase @ 123 NONAME
+	_ZN19CSenDomFragmentBase9ContentOfERK6TDesC8 @ 124 NONAME
+	_ZN19CSenDomFragmentBase9NamespaceERK6TDesC8 @ 125 NONAME
+	_ZN19CSenDomFragmentBaseC1Ev @ 126 NONAME
+	_ZN19CSenDomFragmentBaseC2Ev @ 127 NONAME
+	_ZN19CSenDomFragmentBaseD0Ev @ 128 NONAME
+	_ZN19CSenDomFragmentBaseD1Ev @ 129 NONAME
+	_ZN19CSenDomFragmentBaseD2Ev @ 130 NONAME
+	_ZNK16CSenFragmentBase5NsUriEv @ 131 NONAME
+	_ZNK16CSenFragmentBase8NsPrefixEv @ 132 NONAME
+	_ZNK16CSenFragmentBase9LocalNameEv @ 133 NONAME
+	_ZNK19CSenDomFragmentBase5NsUriEv @ 134 NONAME
+	_ZNK19CSenDomFragmentBase8NsPrefixEv @ 135 NONAME
+	_ZNK19CSenDomFragmentBase9LocalNameEv @ 136 NONAME
+	_ZTI14CSenParserImpl @ 137 NONAME ; #<TI>#
+	_ZTI16CSenFragmentBase @ 138 NONAME ; #<TI>#
+	_ZTI17CSenNamespaceData @ 139 NONAME ; #<TI>#
+	_ZTI19CSenDomFragmentBase @ 140 NONAME ; #<TI>#
+	_ZTV14CSenParserImpl @ 141 NONAME ; #<VT>#
+	_ZTV16CSenFragmentBase @ 142 NONAME ; #<VT>#
+	_ZTV17CSenNamespaceData @ 143 NONAME ; #<VT>#
+	_ZTV19CSenDomFragmentBase @ 144 NONAME ; #<VT>#
+	_ZThn4_N16CSenFragmentBase10OnContentLERK6TDesC8i @ 145 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase13OnEndElementLERKN3Xml8RTagInfoEi @ 146 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase14OnEndDocumentLEi @ 147 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 148 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase16OnSkippedEntityLERK7RStringi @ 149 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase16OnStartDocumentLERKN3Xml19RDocumentParametersEi @ 150 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase19OnEndPrefixMappingLERK7RStringi @ 151 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase20GetExtendedInterfaceEl @ 152 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase21OnStartPrefixMappingLERK7RStringS2_i @ 153 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase22OnIgnorableWhiteSpaceLERK6TDesC8i @ 154 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase24OnProcessingInstructionLERK6TDesC8S2_i @ 155 NONAME ; #<thunk>#
+	_ZThn4_N16CSenFragmentBase7OnErrorEi @ 156 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase10OnContentLERK6TDesC8i @ 157 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase13OnEndElementLERKN3Xml8RTagInfoEi @ 158 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase14OnEndDocumentLEi @ 159 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase15OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 160 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase16OnSkippedEntityLERK7RStringi @ 161 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase16OnStartDocumentLERKN3Xml19RDocumentParametersEi @ 162 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase19OnEndPrefixMappingLERK7RStringi @ 163 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase20GetExtendedInterfaceEl @ 164 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase21OnStartPrefixMappingLERK7RStringS2_i @ 165 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase22OnIgnorableWhiteSpaceLERK6TDesC8i @ 166 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase24OnProcessingInstructionLERK6TDesC8S2_i @ 167 NONAME ; #<thunk>#
+	_ZThn4_N19CSenDomFragmentBase7OnErrorEi @ 168 NONAME ; #<thunk>#
+	_ZN12RSenDocument25ManualXmlEngineTlsAttachLEv @ 169 NONAME
+	_ZN12RSenDocument25ManualXmlEngineTlsCleanupEv @ 170 NONAME
+	_ZN10WsXmlUtils20XmlEngRenameElementLE14TXmlEngElementRK6TDesC8S3_S3_ @ 171 NONAME
+

@@ -1,0 +1,4 @@
+EXPORTS
+	?NewL@CSenHostletConnection@@SAPAV1@AAVMSenHostlet@@@Z @ 1 NONAME ; class CSenHostletConnection * CSenHostletConnection::NewL(class MSenHostlet &)
+	?NewLC@CSenHostletConnection@@SAPAV1@AAVMSenHostlet@@@Z @ 2 NONAME ; class CSenHostletConnection * CSenHostletConnection::NewLC(class MSenHostlet &)
+

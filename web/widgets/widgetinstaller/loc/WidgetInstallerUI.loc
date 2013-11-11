@@ -1,0 +1,103 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This files contains localised strings for widget installer.
+*
+*/
+
+#define qtn_swins_widget_prepare "Preparing installation"
+
+// d: Text in confirmation query in widget installer.
+// d: Asks for the permission from the user to continue installation of the application in question (=%U).
+// l: popup_note_window
+// r: 3.2
+#define qtn_swins_widget_install_prompt "Install\n%U?"
+
+// d: Text in confirmation query widget installer.
+// d: Asks for the permission from the user to continue uninstallation of the widget in question (=%U).
+// l: popup_note_window
+// r: 3.2
+#define qtn_swins_widget_uninstall_promp "Uninstall\n%U?"
+
+// d: Indicates uninstallation in progress after user confirms uninstallation.
+// l: popup_note_wait_window
+// r: 5.0
+#define qtn_swins_widget_uninstall_progress  "Uninstalling"
+
+// d: Text to show downloading progress in WidgetInstaller.
+// d: Shows the installation progress by size of downloaded content (=%0N) versus entire content (=%1N).
+// l: popup_note_wait_window
+// r: 3.2
+#define qtn_swins_widget_progress "Installing\n%0N kB / %1N kB"
+
+// d: Text in confirmation query in widget installer.
+// d: Asks for the permission from the user to continue installation of the application in question (=%U).
+// l: popup_note_window
+// r: 3.2
+#define qtn_swins_widget_overwrite_ask "Overwrite\n%U?"
+
+// d: Text in error note query in widget installer for unsupported feature
+// l: popup_snote_single_graphic_window
+// r: 3.2
+#define qtn_swins_widget_note_unsupported "Unable to install mobile widget. Feature is unsupported"
+
+// d: Text for error condition in widget installer due to file corruption
+// l: popup_snote_single_graphic_window
+// r: 3.2
+#define qtn_swins_widget_note_file_corrupt "File corrupted"
+
+// d: Text in error condition in widget installer due to unexpected error.
+// l: popup_snote_single_graphic_window
+// r: 3.2
+#define qtn_swins_widget_note_other_error "Unable to install mobile widget. Unexpected error encounted"
+
+// d: Text in error condition in widget installer due to low memory.
+// l: popup_snote_single_graphic_window
+// r: 3.2
+#define qtn_swins_widget_note_no_memory "Unable to install mobile widget Insufficient memory. Free some memory and try again"
+
+// d: Text in error condition in widget installer due to unexpected error.
+// l: popup_snote_single_graphic_window
+// r: 3.2
+#define qtn_swins_widget_note_inuse_error "Mobile Widget in use. Please close the widget first"
+
+// d: Text in widget installer when install completes
+// l: popup_snote_single_graphic_window
+// r: 3.2
+#define qtn_swins_widget_install_done "Installation completed."
+
+// d: Text in widget installer when uninstall completes
+// l: popup_snote_single_graphic_window
+// r: 3.2
+#define qtn_swins_widget_uninstall_done "Uninstallation completed."
+
+// d: Text in widget installer when install is canceled by user
+// l: popup_snote_single_graphic_window
+// r: 3.2
+#define qtn_swins_widget_install_cancel "Installation canceled."
+
+// d: Text in widget installer when uninstall is canceled
+// l: popup_snote_single_graphic_window
+// r: 3.2
+#define qtn_swins_widget_uninst_cancel "Uninstallation canceled."
+
+// d: Text in widget installer finalizing installation
+// l: popup_note_wait_window
+// r: 3.2
+#define qtn_swins_widget_finalize_install "Finalizing installation"
+
+// d: Text in confirmation query in widget installer.
+// d: Asks for the permission from the user to continue uninstallation of the widget in question (=%U).
+// l: popup_note_window
+// r: 3.2
+#define qtn_swins_widget_uninstall_hs_prompt "Removing %U will clear it from both the system and the homeScreen.Continue?"

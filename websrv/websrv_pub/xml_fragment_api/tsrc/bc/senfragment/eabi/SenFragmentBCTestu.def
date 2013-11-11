@@ -1,0 +1,18 @@
+EXPORTS
+	_Z9LibEntryLv @ 1 NONAME
+	_Z15SetRequirementsRP16CTestModuleParamRm @ 2 NONAME
+	_ZN17CTestFragmentBase11AddContentLERK6TDesC8 @ 3 NONAME
+	_ZN17CTestFragmentBase11SetContentLERK6TDesC8 @ 4 NONAME
+	_ZN20CTestDomFragmentBase13SetContentOfLERK6TDesC8S2_ @ 5 NONAME
+	_ZN20CTestDomFragmentBase9ContentOfERK6TDesC8 @ 6 NONAME
+	_ZTI13CMainFragment @ 7 NONAME ; #<TI>#
+	_ZTI16CMainDomFragment @ 8 NONAME ; #<TI>#
+	_ZTI17CDelegateFragment @ 9 NONAME ; #<TI>#
+	_ZTI17CTestFragmentBase @ 10 NONAME ; #<TI>#
+	_ZTI20CDelegateDomFragment @ 11 NONAME ; #<TI>#
+	_ZTV13CMainFragment @ 12 NONAME ; #<VT>#
+	_ZTV16CMainDomFragment @ 13 NONAME ; #<VT>#
+	_ZTV17CDelegateFragment @ 14 NONAME ; #<VT>#
+	_ZTV17CTestFragmentBase @ 15 NONAME ; #<VT>#
+	_ZTV20CDelegateDomFragment @ 16 NONAME ; #<VT>#
+

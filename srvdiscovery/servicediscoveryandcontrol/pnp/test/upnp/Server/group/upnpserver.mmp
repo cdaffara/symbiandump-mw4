@@ -1,0 +1,152 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// @file
+// @SYMPurpose UPnPServer.mmp HTTP UPnP Server plugin dll
+// 
+//
+
+TARGET          upnpserver.dll
+TARGETTYPE      PLUGIN
+
+UID             0x10009D8D 0x2000D053
+VENDORID        0x70000001
+
+USERINCLUDE     ../ControlPoint/inc
+USERINCLUDE     ../ServicePoint/inc
+USERINCLUDE     ../Flow/inc
+USERINCLUDE     ../../upnpmessage/inc
+USERINCLUDE     ../../upnpdescription/inc
+USERINCLUDE     ../../upnputils/inc
+USERINCLUDE     ../../Client/upnpplugin/inc
+USERINCLUDE     ../AppProtIntf/inc
+USERINCLUDE 	../../SocketHandler/inc
+
+SYSTEMINCLUDE   /epoc32/include
+SYSTEMINCLUDE	/epoc32/include/comms-infras
+SYSTEMINCLUDE   /epoc32/include/upnp
+
+
+SOURCEPATH  ../ControlPoint/src
+SOURCE		ecom_impl.cpp
+SOURCE		upnpctrlcpr.cpp
+SOURCE		upnpctrlcpractivities.cpp
+SOURCE		upnpctrlcprfactory.cpp
+SOURCE		upnpmcpr.cpp
+SOURCE		upnpmcpractivities.cpp
+SOURCE		upnpmcprfactory.cpp
+SOURCE		upnpctrlscpr.cpp
+SOURCE		upnpctrlscpractivities.cpp
+SOURCE		upnpctrlscprstates.cpp
+SOURCE		upnpctrldeftscpr.cpp
+SOURCE		upnpctrldeftscpractivities.cpp
+SOURCE		upnpctrlscprfactory.cpp
+SOURCE		upnptiermanager.cpp
+SOURCE		upnptiermanageractivities.cpp
+SOURCE		upnptiermanagerfactory.cpp
+SOURCE		upnptiermanagerselector.cpp
+SOURCE 		upnpstatemachine.cpp
+SOURCE 		upnpcpr.cpp
+SOURCE 		upnpscpr.cpp
+
+SOURCEPATH  ../ServicePoint/src
+SOURCE		upnpservicecpr.cpp
+SOURCE		upnpservicecpractivities.cpp
+SOURCE		upnpservicecprfactory.cpp
+SOURCE		upnpservicecprstates.cpp
+SOURCE		upnpservicedeftscpr.cpp
+SOURCE		upnpservicedeftscpractivities.cpp
+SOURCE		upnpservicedeftscprstates.cpp
+SOURCE		upnpservicescpr.cpp
+SOURCE		upnpservicescpractivities.cpp
+SOURCE		upnpservicescprfactory.cpp
+SOURCE		upnpservicescprstates.cpp 
+SOURCE		upnpsppublishinfocontainer.cpp
+SOURCE		upnpuuid.cpp
+
+SOURCEPATH  ../Flow/src
+SOURCE		upnpflowfactory.cpp
+SOURCE		upnpflowbase.cpp
+SOURCE		httpclientflow.cpp
+SOURCE		httpudpflow.cpp
+SOURCE		upnppintfactory.cpp
+SOURCE		upnppint.cpp
+SOURCE		httpserverflow.cpp
+SOURCE		ctransaction.cpp
+SOURCE		cprotocolhandler.cpp
+SOURCE		chttpclienthandler.cpp
+SOURCE		httpmudpflow.cpp
+SOURCE		httpserver.cpp
+SOURCE		httpserverhandler.cpp
+SOURCE		csoapparser.cpp
+SOURCE		genericcontainer.cpp
+SOURCE 		cupnptimer.cpp
+SOURCE 		upnpmemoryutils.cpp
+
+SOURCEPATH      ../AppProtIntf/src
+//SOURCE app_protintf.cpp
+SOURCE app_protintf_base.cpp
+SOURCE app_protintf_fact.cpp
+SOURCE app_protintf_tcp.cpp
+SOURCE app_protintf_udp.cpp
+
+SOURCEPATH      ../group
+START RESOURCE 2000D053.rss
+TARGET upnpserver.rsc
+END
+
+LIBRARY	euser.lib
+LIBRARY esocksvr.lib
+LIBRARY esock.lib
+LIBRARY netmeta.lib
+LIBRARY netsm.lib
+LIBRARY commsfw.lib
+LIBRARY coreproviders.lib
+LIBRARY mobilitycoreproviders.lib
+LIBRARY esock_api_ext.lib
+LIBRARY commsdat.lib
+LIBRARY simpleselectorbase.lib
+LIBRARY insock.lib 
+LIBRARY mbufmgr.lib
+LIBRARY sockethandler.lib
+LIBRARY http.lib
+LIBRARY bafl.lib
+LIBRARY inetprotutil.lib
+LIBRARY appprotinfmsgs.lib
+LIBRARY upnpdescription.lib
+LIBRARY efsrv.lib 
+LIBRARY upnputils.lib
+LIBRARY upnpmessage.lib
+LIBRARY charconv.lib
+LIBRARY random.lib
+LIBRARY xmlframework.lib
+LIBRARY	ecom.lib
+LIBRARY nodemessages.lib
+LIBRARY meshmachine.lib
+LIBRARY netinterfaces.lib
+LIBRARY factories.lib
+LIBRARY serverden.lib
+LIBRARY chunkmgr.lib
+
+//#include <comms-infras/esockdebug.mmh>
+#include <comms-infras/commsdebugutility.mmh>
+#include <cflog.mmh>
+#include <elements/sd_mintercept.mmh>
+
+CAPABILITY CommDD PowerMgmt ReadDeviceData WriteDeviceData TrustedUI ProtServ NetworkControl NetworkServices LocalServices ReadUserData WriteUserData
+
+
+
+
+SMPSAFE
+

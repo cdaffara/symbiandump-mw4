@@ -1,0 +1,87 @@
+/** @file
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This is the project specification file for Upnp.
+*
+*/
+
+#include "../../../inc/upnpcompvariant.hrh"
+
+TARGETTYPE        exe
+
+#if defined(__HN_31__) || defined(__HN_32__)
+TARGET             hnmessagehandler.exe
+UID                0x1000008d 0x2000F881
+#else
+TARGET             messagehandler.exe
+UID                0x1000008d 0x10005BCD
+#endif
+
+CAPABILITY        CAP_SERVER NetworkControl
+VENDORID          VID_DEFAULT
+
+SOURCEPATH        ../src
+SOURCE            upnpmessagehandlerengine.cpp
+SOURCE            upnpmessagehandlersession.cpp
+SOURCE            upnpmessagehandler.cpp
+
+#ifdef RD_UPNP_REMOTE_ACCESS
+SOURCE            upnpipfiltering.cpp
+SOURCE            upnpipfilteringdnsquery.cpp
+#endif
+
+SOURCE            upnpssdphandlerbase.cpp
+SOURCE            upnpssdphandlerdown.cpp
+SOURCE            upnpssdphandlerup.cpp
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../../inc
+SYSTEMINCLUDE   ../../inc
+USERINCLUDE     ../inc
+
+LIBRARY                euser.lib
+LIBRARY                insock.lib
+LIBRARY                esock.lib
+
+#if defined(__HN_31__) || defined(__HN_32__)
+LIBRARY                hnipserversutils.lib
+LIBRARY                hnssdpserver.lib
+#else
+LIBRARY                upnpipserversutils.lib
+LIBRARY                ssdpserver.lib
+LIBRARY                upnpconnectionmanagersession.lib
+#endif
+
+// for the IAP query
+LIBRARY                commdb.lib
+// for logging
+LIBRARY                flogger.lib
+// for CDesCArrayFlat
+LIBRARY                bafl.lib
+//
+LIBRARY     ecom.lib
+LIBRARY     efsrv.lib
+
+//***IPFILTERING*/
+#ifdef RD_UPNP_REMOTE_ACCESS
+LIBRARY                estor.lib
+LIBRARY                upnpconnectionmanagersession.lib
+#endif
+//end of file
+
+VERSION 10.1
+
+paged
+
+SMPSAFE

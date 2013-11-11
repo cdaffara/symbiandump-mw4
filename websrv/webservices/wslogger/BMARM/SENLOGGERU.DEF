@@ -1,0 +1,13 @@
+EXPORTS
+	Write__10CSenLoggeriiRC7TDesC16 @ 1 NONAME R3UNUSED ; CSenLogger::Write(int, int, TDesC16 const &)
+	Destroy__10CSenLoggeri @ 2 NONAME R3UNUSED ; CSenLogger::Destroy(int)
+	WriteAll__10CSenLoggeriiRC6TDesC8 @ 3 NONAME R3UNUSED ; CSenLogger::WriteAll(int, int, TDesC8 const &)
+	WriteAll__10CSenLoggeriiRC7TDesC16 @ 4 NONAME R3UNUSED ; CSenLogger::WriteAll(int, int, TDesC16 const &)
+	WriteFormat__10CSenLoggeriiGt11TRefByValue1ZC6TDesC8RA0_PSc @ 5 NONAME ; CSenLogger::WriteFormat(int, int, TRefByValue<TDesC8 const>, signed char *(&)[0])
+	WriteFormat__10CSenLoggeriiGt11TRefByValue1ZC6TDesC8e @ 6 NONAME ; CSenLogger::WriteFormat(int, int, TRefByValue<TDesC8 const>,...)
+	WriteFormat__10CSenLoggeriiGt11TRefByValue1ZC7TDesC16RA0_PSc @ 7 NONAME ; CSenLogger::WriteFormat(int, int, TRefByValue<TDesC16 const>, signed char *(&)[0])
+	WriteFormat__10CSenLoggeriiGt11TRefByValue1ZC7TDesC16e @ 8 NONAME ; CSenLogger::WriteFormat(int, int, TRefByValue<TDesC16 const>,...)
+	Write__10CSenLoggeriiRC6TDesC8 @ 9 NONAME R3UNUSED ; CSenLogger::Write(int, int, TDesC8 const &)
+	CreateL__10CSenLoggeriiRC7TDesC16T3 @ 10 NONAME ; CSenLogger::CreateL(int, int, TDesC16 const &, TDesC16 const &)
+	__10CSenLogger @ 11 NONAME R3UNUSED ; CSenLogger::CSenLogger(void)
+

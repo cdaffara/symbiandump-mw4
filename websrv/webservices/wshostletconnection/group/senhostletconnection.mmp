@@ -1,0 +1,114 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:           Component providing (local) service provider functionality
+*
+*/
+
+
+
+
+
+
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+TARGETTYPE      DLL
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET          SenHostConn.dll
+UID             0x1000008d 0x20000398
+#else
+TARGET          wshostconn.dll
+UID             0x1000008d 0x101F9748
+#endif
+
+MACRO _FORCE_DESCRIBED_MSW_2005_08_CONTRACT_TO_2006_10
+#define _FORCE_DESCRIBED_MSW_2005_08_CONTRACT_TO_2006_10 1
+
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_CLIENT_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_CLIENT_DLL
+    #endif
+#endif
+
+SOURCEPATH      ../src
+SOURCE          senhostletconnectionimpl.cpp
+SOURCE          rsenhostletconnection.cpp
+SOURCE          senhostletconnectiondll.cpp
+SOURCE          senregistrationtimer.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wsutils/inc // SenDebug.h - debugging definitions, SenChunk.h
+USERINCLUDE     ../../wslogger/inc // SenLogger.h - filelogging macros
+USERINCLUDE     ../../wsprovider/inc  // SenServiceManagerDefines.h
+USERINCLUDE     ../../wsframework/inc  // MSenMessageContext.h 
+USERINCLUDE     ../../wscore/inc  // SenServiceManagerDefines.h  - IPC enumerations
+USERINCLUDE     ../../wsconnectionagent/inc
+
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+
+SYSTEMINCLUDE   /epoc32/include/libc
+
+// System libs
+LIBRARY         euser.lib
+LIBRARY         flogger.lib
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// SOA for S60 libs:
+LIBRARY         wsconnagent.lib
+LIBRARY         SenUtils.lib     // for debugging macros
+LIBRARY         SenLogger.lib    // for TLS based file logging
+LIBRARY         SenProvider.lib  // for CSenHostletRequest and CSenHostletResponse
+LIBRARY         SenServDesc.lib  // for CSenXmlServiceDescription
+LIBRARY         SenXml.lib       // for CSenParser
+LIBRARY         SenMessages.lib
+#else
+// SOA for S60 libs:
+LIBRARY         senconnagent.lib
+LIBRARY         wsUtils.lib     // for debugging macros
+LIBRARY         wsLogger.lib    // for TLS based file logging
+LIBRARY         wsProvider.lib  // for CSenHostletRequest and CSenHostletResponse
+LIBRARY         wsServDesc.lib  // for CSenXmlServiceDescription
+LIBRARY         wsxml.lib       // for CSenParser
+LIBRARY         wsMessages.lib
+#endif
+
+LANG        SC
+#if defined(ARMCC)
+  DEFFILE ../eabi/SENHOSTCONN.DEF
+#elif defined(WINSCW)
+  DEFFILE ../BWINSCW/SENHOSTCONN.DEF
+#elif defined(WINS)
+  DEFFILE ../BWINS/SENHOSTCONN.DEF
+#else 
+  DEFFILE ../BMARM/SENHOSTCONN.DEF
+#endif
+
+SMPSAFE
+

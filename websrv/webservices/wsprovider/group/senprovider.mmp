@@ -1,0 +1,88 @@
+/*
+* Copyright (c) 2002-2005 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senprovider    
+*
+*/
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET          SenProvider.DLL
+TARGETTYPE      dll
+UID             0x1000008d 0x2000038D
+#else
+TARGET          wsprovider.DLL
+TARGETTYPE      dll
+UID             0x1000008d 0x10282C42
+#endif
+
+
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_GENERAL_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_GENERAL_DLL
+    #endif
+#endif
+
+#if defined(ARMCC)
+  DEFFILE     ../eabi/SENPROVIDER.DEF
+#elif defined(WINSCW)
+  DEFFILE     ../BWINSCW/SENPROVIDER.DEF
+#elif defined(WINS)
+  DEFFILE     ../BWINS/SENPROVIDER.DEF
+#else 
+  DEFFILE     ../BMARM/SENPROVIDER.DEF
+#endif
+
+SOURCEPATH      ../src
+SOURCE          senproviderdll.cpp
+SOURCE          senhostletrequest.cpp
+SOURCE          senhostletresponse.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wshostletconnection/inc
+USERINCLUDE     ../../wsutils/inc // SenIdentifier.h
+USERINCLUDE     ../../wsmessages/inc 
+USERINCLUDE     ../../wsframework/inc
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+SYSTEMINCLUDE   /epoc32/include/libc
+
+LANG    SC
+
+LIBRARY         euser.lib
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY         SenUtils.lib
+LIBRARY         SenMessages.lib
+LIBRARY         SenFramework.lib
+#else
+LIBRARY         wsUtils.lib
+LIBRARY         wsMessages.lib
+LIBRARY         wsFramework.lib
+#endif
+
+SMPSAFE

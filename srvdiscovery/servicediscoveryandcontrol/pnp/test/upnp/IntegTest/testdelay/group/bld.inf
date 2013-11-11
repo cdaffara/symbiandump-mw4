@@ -1,0 +1,28 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+
+PRJ_EXPORTS
+
+PRJ_TESTEXPORTS
+../Scripts/testdelay.script		z:/upnp/testupnp/client/scripts/testdelay.script
+testdelay.iby 					/epoc32/rom/include/testdelay.iby
+
+PRJ_MMPFILES
+
+PRJ_TESTMMPFILES
+testdelay.mmp
+
+PRJ_PLATFORMS
+winscw armv5

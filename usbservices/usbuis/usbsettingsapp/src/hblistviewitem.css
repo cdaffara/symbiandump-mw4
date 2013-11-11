@@ -1,0 +1,121 @@
+
+/*
+    Layout selection
+*/
+
+HbListViewItem[layoutName="usb"]{
+	layout:usb-1;
+}
+
+/*
+    Standard primitive properties
+*/
+
+HbListViewItem::selection-icon{
+	fixed-height: var(hb-param-graphic-size-primary-small);
+	fixed-width: var(hb-param-graphic-size-primary-small);
+}
+
+HbListViewItem::selection-icon[graphicsSize="Image"][!selectionMode][icon-1]{
+        left: 0;
+}
+
+HbListViewItem::multiselection-toucharea{
+	fixed-width: 6.0un;
+}
+
+HbListViewItem::icon-1{
+	fixed-height: var(hb-param-graphic-size-primary-medium);
+	fixed-width: var(hb-param-graphic-size-primary-medium);
+}
+
+HbListViewItem::icon-1[graphicsSize="SmallIcon"]{
+	fixed-height: var(hb-param-graphic-size-primary-small);
+	fixed-width: var(hb-param-graphic-size-primary-small);
+}
+
+HbListViewItem::icon-1[graphicsSize="LargeIcon"]{
+	fixed-height: var(hb-param-graphic-size-primary-large);
+	fixed-width: var(hb-param-graphic-size-primary-large);
+}
+
+HbListViewItem::icon-1[graphicsSize="Image"]:portrait{
+	fixed-height: var(hb-param-graphic-size-image-portrait);
+	fixed-width: var(hb-param-graphic-size-image-portrait);
+}
+
+HbListViewItem::icon-1[graphicsSize="Image"]:landscape{
+	fixed-height: var(hb-param-graphic-size-image-landscape);
+	fixed-width: var(hb-param-graphic-size-image-landscape);
+}
+
+HbListViewItem::text-1{
+	text-height: var(hb-param-text-height-primary);
+	font-variant: primary;
+	pref-width:-1;
+	text-align: left;
+}
+
+HbListViewItem::text-1[modelItemType="StandardItem"][stretchingStyle="StretchLandscape"]:landscape{
+	pref-width: 30.0un;
+}
+
+HbListViewItem::text-1[modelItemType="SeparatorItem"]{
+	text-height: var(hb-param-text-height-secondary);
+	font-variant: secondary;
+	text-align: right;
+}
+
+HbListViewItem::text-2{
+	text-height: var(hb-param-text-height-secondary);
+	font-variant: secondary;
+	pref-width:-1;
+	text-align: left top;
+}
+
+ HbListViewItem::text-2[stretchingStyle="StretchLandscape"]:landscape{
+ 	pref-width: 30.0un;
+ }
+
+HbListViewItem::text-3{
+	text-height: var(hb-param-text-height-secondary);
+	fixed-width: 18.0un;
+	font-variant: secondary;
+	text-align: right;
+}
+
+HbListViewItem::frame{
+	border-width: var(hb-param-background-list-main);
+}
+
+HbListViewItem::frame[insidePopup]{
+	border-width: var(hb-param-background-list-popup);
+}
+
+HbListViewItem::text-2[modelItemType="SeparatorItem"]{
+	minimum-height: 0.0un;
+	minimum-width: 0.0un;
+	fixed-height: 0.0un;
+	fixed-width: 0.0un;
+}
+
+HbListViewItem::text-3[modelItemType="SeparatorItem"]{
+	minimum-height: 0.0un;
+	minimum-width: 0.0un;
+	fixed-height: 0.0un;
+	fixed-width: 0.0un;
+}
+
+HbListViewItem::icon-1[modelItemType="SeparatorItem"]{
+	minimum-height: 0.0un;
+	minimum-width: 0.0un;
+	fixed-height: 0.0un;
+	fixed-width: 0.0un;
+}
+
+HbListViewItem::icon-2[modelItemType="SeparatorItem"]{
+	minimum-height: 0.0un;
+	minimum-width: 0.0un;
+	fixed-height: 0.0un;
+	fixed-width: 0.0un;
+}

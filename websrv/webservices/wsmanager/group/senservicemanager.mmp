@@ -1,0 +1,99 @@
+/*
+* Copyright (c) 2002-2005 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        Project definition file
+*
+*/
+
+
+
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+TARGETTYPE      DLL
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET          SenServMgr.dll
+UID             0x1000008d 0x101F9702
+#else
+TARGET          wsservmgr.dll
+UID             0x1000008d 0x101F9739
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_CLIENT_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_CLIENT_DLL
+    #endif
+#endif
+
+#if defined(ARMCC)
+DEFFILE ../eabi/SENSERVMGR.DEF
+#elif defined(WINSCW)
+DEFFILE ../BWINSCW/SENSERVMGR.DEF
+#elif defined(WINS)
+  DEFFILE    ../BWINS/SENSERVMGR.DEF
+#else 
+  DEFFILE     ../BMARM/SENSERVMGR.DEF
+#endif
+
+SOURCEPATH      ../src
+SOURCE          senservicemanagerimpl.cpp
+SOURCE          rsenservicemanager.cpp
+SOURCE          senservicemanagerdll.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wsutils/inc // SenDebug.h - filelogging macros
+USERINCLUDE     ../../wslogger/inc // SenLogger.h - TLS based file logging
+USERINCLUDE     ../../wscore/inc  // SenServiceManagerDefines.h  - IPC enumerations
+USERINCLUDE 		../../wsxml/inc								//senxmldebug.h
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+
+SYSTEMINCLUDE   /epoc32/include/libc
+
+LANG        SC
+
+LIBRARY     euser.lib
+LIBRARY     flogger.lib
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY     SenServDesc.lib
+LIBRARY     SenXml.lib
+LIBRARY     SenUtils.lib
+LIBRARY     SenFragment.lib
+LIBRARY     SenLogger.lib
+
+#else
+LIBRARY     wsServDesc.lib
+LIBRARY     wsXml.lib
+LIBRARY     wsUtils.lib
+LIBRARY     wsFragment.lib
+LIBRARY     wsLogger.lib
+
+#endif
+
+SMPSAFE
+

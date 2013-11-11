@@ -1,0 +1,8 @@
+EXPORTS
+	?NewL@CSenServiceConnection@@SAPAV1@AAVMSenServiceConsumer@@AAVCSenServicePattern@@@Z @ 1 NONAME ; public: static class CSenServiceConnection * __cdecl CSenServiceConnection::NewL(class MSenServiceConsumer &,class CSenServicePattern &)
+	?NewL@CSenServiceConnection@@SAPAV1@AAVMSenServiceConsumer@@AAVMSenServiceDescription@@@Z @ 2 NONAME ; public: static class CSenServiceConnection * __cdecl CSenServiceConnection::NewL(class MSenServiceConsumer &,class MSenServiceDescription &)
+	?NewL@CSenServiceConnection@@SAPAV1@AAVMSenServiceConsumer@@ABVTDesC8@@@Z @ 3 NONAME ; public: static class CSenServiceConnection * __cdecl CSenServiceConnection::NewL(class MSenServiceConsumer &,class TDesC8 const &)
+	?NewLC@CSenServiceConnection@@SAPAV1@AAVMSenServiceConsumer@@AAVCSenServicePattern@@@Z @ 4 NONAME ; public: static class CSenServiceConnection * __cdecl CSenServiceConnection::NewLC(class MSenServiceConsumer &,class CSenServicePattern &)
+	?NewLC@CSenServiceConnection@@SAPAV1@AAVMSenServiceConsumer@@AAVMSenServiceDescription@@@Z @ 5 NONAME ; public: static class CSenServiceConnection * __cdecl CSenServiceConnection::NewLC(class MSenServiceConsumer &,class MSenServiceDescription &)
+	?NewLC@CSenServiceConnection@@SAPAV1@AAVMSenServiceConsumer@@ABVTDesC8@@@Z @ 6 NONAME ; public: static class CSenServiceConnection * __cdecl CSenServiceConnection::NewLC(class MSenServiceConsumer &,class TDesC8 const &)
+

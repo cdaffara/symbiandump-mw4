@@ -1,0 +1,117 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senutilstestcases 
+*
+*/
+
+#if defined(__S60_)
+        #include <platform_paths.hrh>
+#endif
+
+TARGET          senutilsTestCases.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E3
+
+CAPABILITY      ALL -TCB
+/* Remove comments and replace 0x00000000 with correct vendor id */
+// VENDORID     0x00000000
+/* Remove comments and replace 0x00000000 with correct secure id */
+// SECUREID     0x00000000
+
+//TARGETPATH      ?target_path
+DEFFILE         senutilsTestCases.def
+
+#ifdef SBSV2
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#else // SBSV2 not defined
+	USERINCLUDE     ../inc 
+
+	SOURCEPATH      ../src
+#endif // SBSV2
+
+SOURCE          senutilsTestCases.cpp
+SOURCE          senutilsTestCasesBlocks.cpp
+
+//RESOURCE        resource_file
+//RESOURCE        resource_file2
+
+MW_LAYER_SYSTEMINCLUDE //SYSTEMINCLUDE
+SYSTEMINCLUDE   /epoc32/include/xml
+SYSTEMINCLUDE   /epoc32/include/libc
+
+LIBRARY     euser.lib
+LIBRARY     stiftestinterface.lib
+LIBRARY		efsrv.lib
+LIBRARY		imut.lib // base64 enc/dec
+LIBRARY		estor.lib
+LIBRARY		XMLFRAMEWORK.lib
+LIBRARY 	bafl.lib
+LIBRARY 	commdb.lib
+LIBRARY 	flogger.lib
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY   SENSERVCONN.lib
+LIBRARY		SENSERVDESC.LIB
+LIBRARY		SenXml.lib
+LIBRARY		SenServMgr.lib
+//LIBRARY		SenXmlInterface.lib // after Symbian XML integration it has to be removed
+LIBRARY		SenUtils.lib
+LIBRARY		SenMessages.lib
+LIBRARY 	SenHostConn.lib
+LIBRARY 	SenFragment.lib
+#else
+LIBRARY   wsservconn.lib
+LIBRARY		wsservdesc.lib
+LIBRARY		wsxml.lib
+LIBRARY		wsservmgr.lib
+//LIBRARY		SenXmlInterface.lib // after Symbian XML integration it has to be removed
+LIBRARY		wsutils.lib
+LIBRARY		wsmessages.lib
+LIBRARY 	wshostconn.lib
+LIBRARY 	wsfragment.lib
+#endif
+LIBRARY         stiftestengine.lib
+
+LANG            SC
+
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+LIBRARY                 XmlEngine.lib
+LIBRARY                 XmlEngineDOM.lib
+LIBRARY                 XmlEngineUtils.lib
+#else
+LIBRARY         WsStarXmlEngine.lib
+LIBRARY         WsStarXmlEngineDOM.lib
+LIBRARY         WsStarXmlEngineUtils.lib
+#endif
+/*
+START WINS      
+?wins_specific_information
+END
+
+START MARM
+?marm_specific_information
+END
+*/
+// Other possible keywords:
+ 
+// DOCUMENT     ?file, that is not compiled, but added to MSVC project workspace (i.e. release notes)
+
+// End of File

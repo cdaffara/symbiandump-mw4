@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<api id="f3e7a19b52969b3e33a9f4d99913ae35" dataversion="2.0">
+  <name>USB Device Control Plug-in API</name>
+  <description>Defines interface for USB Device Control Plug-ins. The plug-ins handle a specific set of class specific USB control transfers that are directed to the device (not to endpoint or interface).</description>
+  <type>c++</type>
+  <collection>usbengines</collection>
+  <libs>
+  </libs>
+  <release category="platform"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

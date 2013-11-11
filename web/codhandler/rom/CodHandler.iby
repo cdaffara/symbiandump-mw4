@@ -1,0 +1,39 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  IBY file
+*
+*/
+
+
+#ifndef __CODHANDLER_IBY__
+#define __CODHANDLER_IBY__
+
+file=ABI_DIR\BUILD_DIR\CodEng.dll  SHARED_LIB_DIR\CodEng.dll
+file=ABI_DIR\BUILD_DIR\CodUi.dll  SHARED_LIB_DIR\CodUi.dll
+ECOM_PLUGIN(CodRecog.dll, 10008d49.rsc)
+S60_APP_EXE(CodViewer)
+S60_UPGRADABLE_APP_REG_RSC(CodViewer)
+ECOM_PLUGIN(DdRecog.dll, 10008d55.rsc)
+S60_APP_EXE(DdViewer)
+S60_UPGRADABLE_APP_REG_RSC(DdViewer)
+file=ABI_DIR\BUILD_DIR\CodDownload.dll  SHARED_LIB_DIR\CodDownload.dll
+
+#ifdef __DRM_OMA2
+S60_APP_EXE(RoapApp)
+S60_UPGRADABLE_APP_REG_RSC(RoapApp)
+#endif /*def __DRM_OMA2*/
+
+#endif __CODHANDLER_IBY__
+
+//End of file

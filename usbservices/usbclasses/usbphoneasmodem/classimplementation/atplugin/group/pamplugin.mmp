@@ -1,0 +1,60 @@
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// class definition for phone as modem at extension plugin
+// 
+//
+
+#include <platform_paths.hrh>
+#include "../inc/pampluginprjconfig.h"
+
+CAPABILITY 	CAP_ECOM_PLUGIN
+
+VENDORID VID_DEFAULT
+
+TARGET      usbpamatplugin.dll
+TARGETTYPE	PLUGIN
+UID         0x10009D8D 0x20026F61
+
+
+APP_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH  ../src
+SOURCE      main.cpp
+SOURCE      pamplugin.cpp
+SOURCE      pamengine.cpp
+
+
+USERINCLUDE ../inc
+
+SYSTEMINCLUDE   /epoc32/include/ecom
+
+START RESOURCE  ../data/20026f61.rss
+TARGET usbpamatplugin.rsc
+END
+
+LIBRARY     ecom.lib
+LIBRARY     euser.lib
+LIBRARY     atextpluginbase.lib
+
+LIBRARY     charconv.lib
+LIBRARY	    bafl.lib
+LIBRARY     etel3rdparty.lib
+LIBRARY     etel.lib
+LIBRARY     etelmm.lib
+LIBRARY     cmmanager.lib
+
+DEBUGLIBRARY flogger.lib
+
+
+// End of File

@@ -1,0 +1,191 @@
+/*
+* Copyright (c) 2006-2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  The Toolbar localization file
+*
+*/
+
+
+//  LOCALISATION STRINGS
+
+// Toolbar Tooltips
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_recent_urls                 "Recent URLs"
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 3.2
+#define qtn_browser_tooltip_frequently_used_urls                        "Frequently used URLs"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 3.2
+#define qtn_browser_tooltip_list_miniature_show         "Show Miniature"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 3.2
+#define qtn_browser_tooltip_reload                      "Reload"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_find_keyword                "Find Keyword"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_subscribe_to_feeds          "Subscribe to Feeds"
+//d: Tooltip text for display when hovering over a toolbar button
+//l: popup_preview_text_window_t1
+//w:
+//r: 3.2
+#define qtn_browser_tooltip_find                                        "Find In Page"
+
+//d: Tooltip text for display when hovering over a toolbar button
+//l: popup_preview_text_window_t1
+//w:
+//r: 3.2
+#define qtn_browser_tootip_list_subscribe_to                            "Subscribe To"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_go_to_web_address           "Go to Web Address"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_list_bookmarks              "Bookmarks"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_save_as_bookmark            "Save as bookmark"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_previous_page               "Back One Page"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_go_to_hompage               "Go to Homepage"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_zoom_in                     "Zoom In"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_zoom_out                    "Zoom Out"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_zoom_mode                   "Zoom Mode"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_settings                    "Settings"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_rotate_screen               "Rotate Screen"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_manage_bookmarks            "Manage Bookmarks"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_visual_history              "History"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_view_images                 "View Images"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_save_page                   "Save Page"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_switch_window               "Switch Window"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_show_help                   "Help"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_show_keymap                 "Display Key Map"
+
+//d: Hide the toolbar
+//l: control_pane_t1/opt7
+//w:
+//r:3.2
+//
+#define qtn_browser_toolbar_hide                         "Hide"
+
+//d: Hide the toolbar
+//l: control_pane_t1/opt7
+//w:
+//r:5.0
+//
+#define qtn_browser_toolbar_settings                     "Configure"
+
+//d: Tooltip text for display when hovering over a toolbar button.
+//l: popup_preview_text_window_t1
+//w:
+//r: 5.0
+#define qtn_browser_tooltip_full_screen                  "Full Screen"
+
+// End of File

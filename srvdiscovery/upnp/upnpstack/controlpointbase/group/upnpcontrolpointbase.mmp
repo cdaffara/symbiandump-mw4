@@ -1,0 +1,105 @@
+/** @file
+* Copyright (c) 2002-2007 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This is the project specification file for Upnp.
+*
+*/
+
+#include "../../../inc/upnpcompvariant.hrh"
+#include <data_caging_paths.hrh>
+
+TARGETTYPE      dll
+
+#if defined(__HN_31__) || defined(__HN_32__)
+TARGET          hncontrolpointbase.dll
+UID             0x1000008d 0x2000F882
+#else
+TARGET          upnpcontrolpointbase.dll
+UID             0x1000008d 0x2001B2BA
+#endif
+
+CAPABILITY      CAP_GENERAL_DLL
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          upnpserviceinfo.cpp
+SOURCE          upnpcontrolpoint.cpp
+
+// Device container and list utils
+SOURCE          upnpcpbdevicelistutils.cpp
+SOURCE          upnpcpbdevicerepository.cpp
+
+// Discovery phase
+SOURCE          upnpcpbdiscoveryagent.cpp
+
+// Description phase
+SOURCE          upnpcpbdescriptionagent.cpp
+SOURCE          upnpcpbdevicedescription.cpp
+SOURCE          upnpcpbsimpledevicedescription.cpp
+SOURCE          upnpcpbembeddeddevicedescription.cpp
+
+SOURCE          upnpcpbcurrenthttpclient.cpp
+SOURCE          upnpdevicedescriptionhttptransaction.cpp
+SOURCE          upnpservicedescriptionhttptransaction.cpp
+SOURCE          upnpcpstackrequestorimpl.cpp
+SOURCE          upnpcpstackrequestorimplbase.cpp
+SOURCE          upnpcphttprequestorimpl.cpp
+SOURCE          upnpcphttprequestorimplbase.cpp
+SOURCE          upnpsoapactionhttptransaction.cpp
+SOURCE          upnpservicesubscriptionhttptransaction.cpp 
+SOURCE          upnpserviceunsubscriptionhttptransaction.cpp
+SOURCE          upnpfilesender.cpp 
+SOURCE          upnpcpbinitialeventretry.cpp
+SOURCE          upnpcpbinitialeventretryhandler.cpp
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../../inc
+SYSTEMINCLUDE   ../../inc
+USERINCLUDE     ../inc
+
+LIBRARY         euser.lib
+LIBRARY         esock.lib
+LIBRARY         bafl.lib
+LIBRARY         efsrv.lib
+LIBRARY         flogger.lib
+LIBRARY         insock.lib
+
+// UPnP
+#if defined(__HN_31__) || defined(__HN_32__)
+LIBRARY         hnipserversutils.lib
+LIBRARY         hnserviceframework.lib
+#ifdef RD_UPNP_REMOTE_ACCESS
+LIBRARY         hnradaclient.lib
+#endif
+#else
+LIBRARY         upnpipserversutils.lib
+LIBRARY         upnpserviceframework.lib
+LIBRARY         upnpconnectionmanagersession.lib
+#ifdef RD_UPNP_REMOTE_ACCESS
+LIBRARY         radaclient.lib
+#endif
+#endif
+
+LIBRARY         httptransfer.lib
+
+DEFFILE         UpnpControlPointBase
+
+
+//end of file
+
+VERSION 10.1
+
+paged
+
+SMPSAFE

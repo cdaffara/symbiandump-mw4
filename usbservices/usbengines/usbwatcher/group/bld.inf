@@ -1,0 +1,42 @@
+/*
+* Copyright (c) 2006-2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build information file for project UsbWatcher
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_MMPFILES
+../group/usbpersonality.mmp
+../group/usbwatcher.mmp
+../group/usbwatcherserver.mmp
+
+PRJ_TESTMMPFILES
+
+PRJ_EXPORTS
+backup_registration.xml  /epoc32/data/z/private/101F9696/backup_registration.xml
+backup_registration.xml  /epoc32/release/winscw/udeb/z/private/101F9696/backup_registration.xml
+backup_registration.xml  /epoc32/release/winscw/urel/z/private/101F9696/backup_registration.xml
+
+../rom/usbwatcher.iby CORE_MW_LAYER_IBY_EXPORT_PATH(usbwatcher.iby)
+
+../conf/usbwatcher.confml MW_LAYER_CONFML(usbwatcher.confml)
+../conf/usbwatcher_101F8801.crml MW_LAYER_CRML(usbwatcher_101F8801.crml)
+
+// End of file
+

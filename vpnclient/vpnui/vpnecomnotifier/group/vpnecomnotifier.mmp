@@ -1,0 +1,72 @@
+/*
+* Copyright (c) 2007-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project vpnecomnotifier
+*
+*/
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+
+TARGET          vpnecomnotifier.dll
+TARGETTYPE      PLUGIN
+
+//UID     0x1000008d 0x101F6D3F
+// This module is an ECOM plugin
+// Using old acunotifier's UID
+UID             0x10009D8D 0x101F6EB7  // First uid=notifier uid, second UID pkinotifier DLL UID
+
+CAPABILITY      ALL -Tcb
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          vpndialogmanagerecomstub.cpp
+SOURCE          vpnecomnotifier.cpp
+
+//
+// ECOM plugin resource file
+//
+start resource ../data/101f6eb7.rss
+target vpnecomnotifier.rsc
+end
+
+//
+// UI resource file
+//
+START RESOURCE  ../data/vpnecomnotifier.rss
+TARGETPATH  resource
+HEADER
+LANGUAGE_IDS
+END
+
+USERINCLUDE     ../inc 
+USERINCLUDE     ../data
+USERINCLUDE     ../../../vpnengine/vpncommon/inc
+USERINCLUDE     ../../../vpnapiimpl/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         eiksrv.lib  
+LIBRARY         euser.lib
+LIBRARY         cone.lib 
+LIBRARY         avkon.lib
+LIBRARY         eikdlg.lib //ws32.lib
+LIBRARY         bafl.lib
+LIBRARY         eikcoctl.lib
+LIBRARY         eikcore.lib // For Infowin
+LIBRARY         eiksrvui.lib // Eikon server ui (for suppressing app -key)
+LIBRARY         efsrv.lib
+LIBRARY         commonengine.lib
+LIBRARY         cdlengine.lib
+
+DEBUGLIBRARY    flogger.lib

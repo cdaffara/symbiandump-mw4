@@ -1,0 +1,33 @@
+EXPORTS
+	??1CDownloadMgrUiLibRegistry@@UAE@XZ @ 1 NONAME ; CDownloadMgrUiLibRegistry::~CDownloadMgrUiLibRegistry(void)
+	?AddMenuL@CDownloadMgrUiDownloadMenu@@QAEXHAAVCEikMenuPane@@H@Z @ 2 NONAME ; void CDownloadMgrUiDownloadMenu::AddMenuL(int, class CEikMenuPane &, int)
+	?CancelDisplayingDownloadsList@CDownloadMgrUiDownloadsList@@QAEXXZ @ 3 NONAME ; void CDownloadMgrUiDownloadsList::CancelDisplayingDownloadsList(void)
+	?Count@CDownloadMgrUiDownloadsList@@QBEHXZ @ 4 NONAME ; int CDownloadMgrUiDownloadsList::Count(void) const
+	?DisplayDownloadsListL@CDownloadMgrUiDownloadsList@@QAEXXZ @ 5 NONAME ; void CDownloadMgrUiDownloadsList::DisplayDownloadsListL(void)
+	?DownloadMenu@CDownloadMgrUiDownloadsList@@QBEAAVCDownloadMgrUiDownloadMenu@@XZ @ 6 NONAME ; class CDownloadMgrUiDownloadMenu & CDownloadMgrUiDownloadsList::DownloadMenu(void) const
+	?GetBoolAttributeL@CDownloadMgrUiDownloadsList@@UAEXIAAH@Z @ 7 NONAME ; void CDownloadMgrUiDownloadsList::GetBoolAttributeL(unsigned int, int &)
+	?GetBoolAttributeL@CDownloadMgrUiUserInteractions@@UAEXIAAH@Z @ 8 NONAME ; void CDownloadMgrUiUserInteractions::GetBoolAttributeL(unsigned int, int &)
+	?GetIntAttributeL@CDownloadMgrUiDownloadsList@@UAEXIAAJ@Z @ 9 NONAME ; void CDownloadMgrUiDownloadsList::GetIntAttributeL(unsigned int, long &)
+	?GetIntAttributeL@CDownloadMgrUiUserInteractions@@UAEXIAAJ@Z @ 10 NONAME ; void CDownloadMgrUiUserInteractions::GetIntAttributeL(unsigned int, long &)
+	?GetStringAttributeL@CDownloadMgrUiDownloadsList@@UAEXIAAVTDes16@@@Z @ 11 NONAME ; void CDownloadMgrUiDownloadsList::GetStringAttributeL(unsigned int, class TDes16 &)
+	?GetStringAttributeL@CDownloadMgrUiDownloadsList@@UAEXIAAVTDes8@@@Z @ 12 NONAME ; void CDownloadMgrUiDownloadsList::GetStringAttributeL(unsigned int, class TDes8 &)
+	?GetStringAttributeL@CDownloadMgrUiUserInteractions@@UAEXIAAVTDes16@@@Z @ 13 NONAME ; void CDownloadMgrUiUserInteractions::GetStringAttributeL(unsigned int, class TDes16 &)
+	?GetStringAttributeL@CDownloadMgrUiUserInteractions@@UAEXIAAVTDes8@@@Z @ 14 NONAME ; void CDownloadMgrUiUserInteractions::GetStringAttributeL(unsigned int, class TDes8 &)
+	?HandleDownloadL@CDownloadMgrUiUserInteractions@@QAEXAAVRHttpDownload@@@Z @ 15 NONAME ; void CDownloadMgrUiUserInteractions::HandleDownloadL(class RHttpDownload &)
+	?IsVisible@CDownloadMgrUiDownloadsList@@QBEHXZ @ 16 NONAME ; int CDownloadMgrUiDownloadsList::IsVisible(void) const
+	?NewL@CDownloadMgrUiLibRegistry@@SAPAV1@AAVRHttpDownloadMgr@@@Z @ 17 NONAME ; class CDownloadMgrUiLibRegistry * CDownloadMgrUiLibRegistry::NewL(class RHttpDownloadMgr &)
+	?OkToExitL@CDownloadMgrUiUserInteractions@@QAEHXZ @ 18 NONAME ; int CDownloadMgrUiUserInteractions::OkToExitL(void)
+	?PrepareToExit@CDownloadMgrUiUserInteractions@@QAEHAAVCEikAppUi@@W4TClientAppExitType@@VTVwsViewId@@VTUid@@ABVTDesC8@@@Z @ 19 NONAME ; int CDownloadMgrUiUserInteractions::PrepareToExit(class CEikAppUi &, enum TClientAppExitType, class TVwsViewId, class TUid, class TDesC8 const &)
+	?RegisterDownloadsListL@CDownloadMgrUiLibRegistry@@QAEAAVCDownloadMgrUiDownloadsList@@XZ @ 20 NONAME ; class CDownloadMgrUiDownloadsList & CDownloadMgrUiLibRegistry::RegisterDownloadsListL(void)
+	?RegisterUserInteractionsL@CDownloadMgrUiLibRegistry@@QAEAAVCDownloadMgrUiUserInteractions@@XZ @ 21 NONAME ; class CDownloadMgrUiUserInteractions & CDownloadMgrUiLibRegistry::RegisterUserInteractionsL(void)
+	?SetBoolAttributeL@CDownloadMgrUiDownloadsList@@UAEXIH@Z @ 22 NONAME ; void CDownloadMgrUiDownloadsList::SetBoolAttributeL(unsigned int, int)
+	?SetBoolAttributeL@CDownloadMgrUiUserInteractions@@UAEXIH@Z @ 23 NONAME ; void CDownloadMgrUiUserInteractions::SetBoolAttributeL(unsigned int, int)
+	?SetIntAttributeL@CDownloadMgrUiDownloadsList@@UAEXIJ@Z @ 24 NONAME ; void CDownloadMgrUiDownloadsList::SetIntAttributeL(unsigned int, long)
+	?SetIntAttributeL@CDownloadMgrUiUserInteractions@@UAEXIJ@Z @ 25 NONAME ; void CDownloadMgrUiUserInteractions::SetIntAttributeL(unsigned int, long)
+	?SetServerAppExitObserver@CDownloadMgrUiBase@@QAEXPAVMAknServerAppExitObserver@@@Z @ 26 NONAME ; void CDownloadMgrUiBase::SetServerAppExitObserver(class MAknServerAppExitObserver *)
+	?SetStringAttributeL@CDownloadMgrUiDownloadsList@@UAEXIABVTDesC16@@@Z @ 27 NONAME ; void CDownloadMgrUiDownloadsList::SetStringAttributeL(unsigned int, class TDesC16 const &)
+	?SetStringAttributeL@CDownloadMgrUiDownloadsList@@UAEXIABVTDesC8@@@Z @ 28 NONAME ; void CDownloadMgrUiDownloadsList::SetStringAttributeL(unsigned int, class TDesC8 const &)
+	?SetStringAttributeL@CDownloadMgrUiUserInteractions@@UAEXIABVTDesC16@@@Z @ 29 NONAME ; void CDownloadMgrUiUserInteractions::SetStringAttributeL(unsigned int, class TDesC16 const &)
+	?SetStringAttributeL@CDownloadMgrUiUserInteractions@@UAEXIABVTDesC8@@@Z @ 30 NONAME ; void CDownloadMgrUiUserInteractions::SetStringAttributeL(unsigned int, class TDesC8 const &)
+	?PrepareToExit@CDownloadMgrUiUserInteractions@@QAEHKKK@Z @ 31 NONAME ; int CDownloadMgrUiUserInteractions::PrepareToExit(unsigned long, unsigned long, unsigned long)
+

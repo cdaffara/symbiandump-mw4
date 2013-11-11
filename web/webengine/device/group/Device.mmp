@@ -1,0 +1,86 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+
+TARGET          jsdevice.dll
+TARGETTYPE      dll
+ /* TBD get real UID */
+UID 0x10000079  0xa0281418
+ 
+#include <bldvariant.hrh>
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+MACRO __S60__
+MACRO arm
+MACRO ASSERT_DISABLED
+MACRO NOKIA_CHANGES
+MACRO __CPLUSPLUS
+
+OPTION CW -warn noempty,nounused,nounwanted,nopedantic
+OPTION ARMCC --diag_suppress 111,177,1293,1,1299,830,550,427 --fpmode fast
+
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+
+VENDORID  VID_DEFAULT
+CAPABILITY  CAP_GENERAL_DLL
+EPOCALLOWDLLDATA
+
+#if defined(WINSCW)
+deffile ../BWINSCW/Device.def
+#elif defined(ARMCC)
+deffile ../EABI/Device.def
+#endif
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/kjs
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/bindings
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/wtf
+SYSTEMINCLUDE ../../osswebengine/JavaScriptCore/wtf/symbian
+SYSTEMINCLUDE ../../../../../
+MW_LAYER_ECOM_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+SYSTEMINCLUDE ../../../inc
+
+USERINCLUDE     ../inc
+SOURCEPATH      ../src 
+
+
+SOURCE          Device.cpp
+SOURCE          DeviceBridge.cpp
+SOURCE          ServiceEventHandler.cpp
+SOURCE          ServiceObject.cpp
+SOURCE          DeviceLiwInterface.cpp
+SOURCE          DeviceLiwBinding.cpp
+SOURCE          DeviceLiwPeer.cpp
+SOURCE          DeviceLiwMap.cpp
+SOURCE          DeviceLiwIterable.cpp
+SOURCE          DeviceLiwResult.cpp
+
+LIBRARY         euser.lib 
+LIBRARY         JavaScriptCore.lib
+LIBRARY         ContentListingFramework.lib
+LIBRARY         liwServiceHandler.lib 
+LIBRARY         estlib.lib
+LIBRARY         RTSecMgrClient.lib  
+LIBRARY         RTSecMgrUtil.lib 
+LIBRARY         WidgetRegistryClient.lib
+LIBRARY         efsrv.lib 

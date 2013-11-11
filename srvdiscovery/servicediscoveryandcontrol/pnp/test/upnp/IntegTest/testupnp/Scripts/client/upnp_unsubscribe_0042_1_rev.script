@@ -1,0 +1,43 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_unsubscribe_0042_1_rev.script
+//! @SYMTestSuiteName	testupnp 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client 
+
+LOAD_SUITE multiple_machines_client
+LOAD_SUITE test_synchronize_client
+LOAD_SUITE testdelay
+
+START_TESTCASE	upnp_unsubscribe_0042_1_rev
+//! @file					
+//! @SYMTestCaseID			UPNP - POS - 0042
+//! @SYMTestCaseDesc 		Control point unsubscribe for state change in services.
+//! @SYMREQ				REQ8634, REQ8627, REQ8629,REQ8605, REQ8606, REQ8607, REQ8611, REQ8681, REQ10588, REQ10589, REQ4877, REQ8617,REQ8618, REQ8626
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Control point subscribes for state changes in services.
+//! 						2.	Control point unsubscribe for the state change using UNSUBSCRIBE method using the SID.
+//! 						3.	If requested UNSUBSCRIBE is approved then Service point may acknowledge with HTTP/1.1 200 OK within 30 sec, else with appropriate error messages. (may be like Incompatible headers, Invalid SID, or Missing SID)
+//! @SYMTestExpectedResults	The control point must not receive any state change events from the device.
+//! @SYMTestType 			CIT
+RUN_TEST_STEP 1000 testdelay TestUPnPManager  
+RUN_TEST_STEP 1000 testdelay TestUPnPManager
+RUN_TEST_STEP 1000 test_synchronize_client TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini clientdata
+RUN_TEST_STEP 500  multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\subscribe_0042_rev.ini upnp_unsubscribe_0042_1_rev
+
+END_TESTCASE	upnp_unsubscribe_0042_1_rev

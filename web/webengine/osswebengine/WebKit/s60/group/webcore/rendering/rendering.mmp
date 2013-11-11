@@ -1,0 +1,101 @@
+// *
+// * Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// * All rights reserved.
+// * This component and the accompanying materials are made available
+// * under the terms of the License "Eclipse Public License v1.0"
+// * which accompanies this distribution, and is available
+// * at the URL "http://www.eclipse.org/legal/epl-v10.html".
+// *
+// * Initial Contributors:
+// * Nokia Corporation - initial contribution.
+// *
+// * Contributors:
+// *
+// * Description:  This is the project specification file for WebCore.
+// *
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#include "../../common.mmpi"
+
+TARGET  WebCorerendering.lib
+
+TARGETTYPE  lib
+
+VENDORID    VID_DEFAULT
+
+//OPTION CW -prefix pragmas.pref
+
+SOURCEPATH ../../../../../WebCore/rendering
+
+SOURCE AutoTableLayout.cpp
+SOURCE bidi.cpp
+SOURCE break_lines.cpp
+SOURCE CounterNode.cpp
+SOURCE EllipsisBox.cpp
+SOURCE FixedTableLayout.cpp
+SOURCE HitTestResult.cpp
+SOURCE InlineBox.cpp
+SOURCE InlineFlowBox.cpp
+SOURCE InlineTextBox.cpp
+SOURCE LayoutState.cpp
+SOURCE ListMarkerBox.cpp
+SOURCE RenderApplet.cpp
+SOURCE RenderArena.cpp
+SOURCE RenderBlock.cpp
+SOURCE RenderBox.cpp
+SOURCE RenderBR.cpp
+SOURCE RenderButton.cpp
+SOURCE RenderContainer.cpp
+SOURCE RenderCounter.cpp
+SOURCE RenderFieldset.cpp
+SOURCE RenderFileUploadControl.cpp
+SOURCE RenderFlexibleBox.cpp
+SOURCE RenderFlow.cpp
+SOURCE RenderForeignObject.cpp
+SOURCE RenderFrame.cpp
+SOURCE RenderFrameSet.cpp
+SOURCE RenderHTMLCanvas.cpp
+SOURCE RenderImage.cpp
+SOURCE RenderInline.cpp
+SOURCE RenderLayer.cpp
+SOURCE RenderLegend.cpp
+SOURCE RenderListBox.cpp
+SOURCE RenderListItem.cpp
+SOURCE RenderListMarker.cpp
+SOURCE RenderMenuList.cpp
+SOURCE RenderObject.cpp
+SOURCE RenderPart.cpp
+SOURCE RenderPartObject.cpp
+SOURCE RenderPath.cpp
+SOURCE RenderReplaced.cpp
+SOURCE RenderSlider.cpp
+SOURCE RenderStyle.cpp
+SOURCE RenderSVGBlock.cpp
+SOURCE RenderSVGContainer.cpp
+SOURCE RenderSVGGradientStop.cpp
+SOURCE RenderSVGHiddenContainer.cpp
+SOURCE RenderSVGImage.cpp
+SOURCE RenderSVGInline.cpp
+SOURCE RenderSVGInlineText.cpp
+SOURCE RenderSVGText.cpp
+SOURCE RenderSVGTSpan.cpp
+SOURCE RenderTable.cpp
+SOURCE RenderTableCell.cpp
+SOURCE RenderTableCol.cpp
+SOURCE RenderTableRow.cpp
+SOURCE RenderTableSection.cpp
+SOURCE RenderText.cpp
+SOURCE RenderTextControl.cpp
+SOURCE RenderTextFragment.cpp
+SOURCE RenderTheme.cpp
+SOURCE RenderTreeAsText.cpp
+SOURCE RenderView.cpp
+SOURCE RenderWidget.cpp
+SOURCE RenderWordBreak.cpp
+SOURCE RootInlineBox.cpp
+SOURCE SVGInlineFlowBox.cpp
+SOURCE SVGInlineTextBox.cpp
+SOURCE SVGRenderTreeAsText.cpp
+SOURCE SVGRootInlineBox.cpp

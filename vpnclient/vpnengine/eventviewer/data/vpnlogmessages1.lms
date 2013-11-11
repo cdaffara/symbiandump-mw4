@@ -1,0 +1,302 @@
+/*
+* Copyright (c) 2003-2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: VPN log messages
+*
+*/
+
+
+/*
+* Syntax of a logical name entry in this file is the following:
+*
+* // d:context description (line 1)
+* // d:context description (line N)
+* // l:P_No
+* //
+* #define qtn_?feature/?module_name_?freetext "?text"
+* #define text_?feature/?module_name_?freetext "?text"
+*
+*   where
+*         "qtn_" or "text_" starts a logical name, which does not
+*          contain dots.
+*         "d:" starts description line(s), which
+*              clarify entry's context with information like:
+*              1. Is a word a verb in imperative or is it a noun ?
+*                   - what does text "Set" mean ?
+*              2. What will replace %U (unicode text parameter) or
+*                 %A (8-bit text parameter) or
+*                 %N (number parameter) included in texts ?
+*                   - is it phone number or email address ?
+*         "l:" starts a layout information (one line).
+*              "P" and "No" are symbols in LAF's information table
+*                 - "P" is parent pane or current pane
+*                 - "No" is reference number in table
+*
+* ==============================================================================
+*/
+
+
+// LOCALISATION STRINGS
+
+// **VPN LOG MESSAGES
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_created_server          "Created policy server '%U'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_deleted_server          "Deleted policy server '%U'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_updated_server          "Updated policy server '%U'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_installed_policy_file   "Installed policy '%A' from file"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_installed_policy_server "Installed policy '%1A' from server '%2U'"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_policy_install_fail     "Failed to install policy '%A', reason code %N"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_policy_update_fail      "Failed to update policy '%A', reason code %N"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_deleted_policy          "Deleted policy '%A'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_updated_policy          "Updated policy '%1A' from server '%2A'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_installed_enrollment_service   "Installed enrollment service configuration for certification authority '%1A' from server '%2U'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_updated_enrollment_service   "Updated enrollment service configuration for certification authority '%1A' from server '%2A'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_deleted_enrollment_service   "Deleted enrollment service configuration for certification authority '%1A'"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_serv_identity_verify_fail "Failed to verify identity of server '%U', reason code %N"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_policy_serv_auth_fail   "Failed to authenticate to policy server '%U', reason code %N"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_serv_auth_fail_client_cert_exp   "Failed to authenticate to policy server '%U', client certificate expired/revoked, server synchronisation required"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_serv_auth_fail_serv_cert_exp   "Failed to authenticate to policy server '%U', server certificate expired, server definition must be deleted and re-created"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_policy_serv_conn_fail   "Failed to connect to policy server '%1U', reason code %2N, state code %3N"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_serv_err_resp_received  "Received error response from server '%1U', error code %2N, state code %3N"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_enroll_cert_policy_serv "Enrolled client certificate for accessing policy server '%1U', user identity '%2A'"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_pol_serv_cert_enr_fail  "Failed to enroll client certificate for accessing policy server '%1U', reason code %2N, user identity '%3A'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_cert_installed          "Installed certificate: %A"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_cert_install_failed      "Failed to install certificate. Reason code %N, certificate: %A"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_created_vpn_access_point_with_ap   "Created VPN access point '%1A', policy '%2A', Internet access point '%3A'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_created_vpn_access_point_with_snap "Created VPN access point '%1A', policy '%2A', Internet destination '%3A'"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_unspecified_error   "Unspecified error, source '%1A', error code %2N, state code %3N"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_iap_activated   "Activated VPN access point '%1A', IP address %2A"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_iap_act_failed      "Failed to activate VPN access point '%A', reason code %N"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_iap_act_failed_cert_not_valid "Failed to activate VPN access point '%A', client certificate not yet valid"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_iap_act_failed_cert_exp_miss "Failed to activate VPN access point '%A', client certificate expired or missing"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_real_iap_act_failed     "Failed to create Internet connection via Internet access point '%1A', VPN access point '%2A', reason code %3N"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_gw_no_resp          "Received no response from VPN gateway %1A, VPN access point %2A"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_gw_auth_ok          "Authenticated to VPN gateway '%1A', VPN access point %2A"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_gw_auth_fail        "Failed to authenticate to VPN gateway '%1A', VPN access point '%2A'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_iap_deact           "Deactivated VPN access point '%A'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_real_iap_deact          "Closed Internet connection established via Internet access point '%1A', VPN access point '%2A'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_iap_deact_timeout   "Deactivated VPN access point %A', VPN policy timed out"
+
+//d:Detail's message in message query.
+//d:Error
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_gw_err_resp_received "Received an error response from VPN gateway '%1A', VPN access point %2A, error code %3N "
+
+//d:Detail's message in message query.
+//d:Warning
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_data_dropped_due_policy "Dropped data due to VPN policy, source address '%A', reason code %N"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_vpn_iap_deact_real_iap_terminated "Deactivated VPN access point %1A', Internet connection via Internet access point '%2A' was terminated"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_real_iap_reactivated    "Reopened Internet connection via Internet access point '%1A', VPN access point '%2A'"
+
+//d:Detail's message in message query.
+//d:Information
+//l:popup_query_sat_info_window_1
+//
+#define qtn_vpn_msg_sent_error_response    "Sent an error response to VPN gateway '%1A', VPN access point '%2A', error code %3N"
+#define qtn_vpn_msg_addr_info_for_vpn_ap   "Address info for VPN access point '%1A': virtual IP '%2A', local IP '%3A', NAT status code %4N"
+#define qtn_vpn_msg_cert_error             "Certificate error. Possible reason: subject or issuer name of certificate contains unsupported attribute. "
+
+
+// End of File

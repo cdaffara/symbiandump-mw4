@@ -1,0 +1,35 @@
+
+HbListViewItem[layoutName="wlanwizardsummaryitem"]{
+	layout:wlanwizardsummaryitem-portrait;
+}
+
+HbListViewItem[layoutName="wlanwizardsummaryitem"]:landscape{
+	layout:wlanwizardsummaryitem-landscape;
+}
+
+HbListViewItem::text-1[layoutName="wlanwizardsummaryitem"]{
+	text-height: var(hb-param-text-height-secondary);
+	font-variant: primary;
+	text-align: left;
+	size-policy-horizontal: preferred;
+	pref-width:-1;
+	text-line-count-min:1;
+	text-line-count-max:1;
+}
+
+HbListViewItem::text-1[layoutName="wlanwizardsummaryitem"]:landscape{
+	text-height: var(hb-param-text-height-secondary);
+	font-variant: primary;
+	text-align: left;
+	size-policy-horizontal: fixed;
+	fixed-width: expr((var(hb-param-screen-width) - var(hb-param-margin-gene-middle-horizontal))  / 2  - var(hb-param-margin-gene-screen) - var(hb-param-margin-gene-popup));
+}
+
+HbListViewItem::text-2[layoutName="wlanwizardsummaryitem"]{
+	text-height: var(hb-param-text-height-tiny);
+	font-variant: secondary;
+	pref-width:-1;
+	text-align: left;
+	text-line-count-min:1;
+	text-line-count-max:1;
+}

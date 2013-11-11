@@ -1,0 +1,136 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project alfappservercore
+*
+*/
+
+
+
+
+#include "../../CommonInc/alfuids.h"
+#include <data_caging_paths.hrh>
+#include <bldvariant.hrh>
+
+
+MACRO ALF_USE_CANVAS
+MACRO ALF_DRAW_FRAME_BEFORE_END_CALLBACK
+#define ALF_USE_CANVAS
+
+// Enable this to add GetWinIdListL method to CAlfWindowManager API.
+// That is needed by test effect plugin.
+//MACRO RND_FXPLUGIN_FIX 
+
+// Enable or disable to allow huicanvas visual tracking in debugger
+// MACRO ALF_DEBUG_TRACK_DRAWING
+// MACRO HUI_DEBUG_TRACK_DRAWING
+// #define HUI_DEBUG_TRACK_DRAWING
+
+// MACRO ALF_DEBUG_PRINT_NODE_INFO
+
+
+TARGET                  alfappservercore.dll
+TARGETTYPE              dll
+UID                     0x1000008d KAlfAppServerCoreUid3
+VERSION                 10.0
+
+CAPABILITY              CAP_GENERAL_DLL
+VENDORID                VID_DEFAULT
+
+SOURCEPATH              ../Src
+SOURCE                  alfappui.cpp
+SOURCE                  alfappserver.cpp
+SOURCE                  alfappsrvsessionBase.cpp
+SOURCE                  alfappsrvsession.cpp
+SOURCE                  alfsrvsubsessionbase.cpp
+SOURCE                  alfsrvdisplaysubsession.cpp
+SOURCE                  alfsrvcontrolgroupsubsession.cpp
+SOURCE                  alfsrvtransformationsubsession.cpp
+SOURCE                  alfstaticfactory.cpp
+SOURCE                  alfvisualhandlers.cpp
+SOURCE                  alflayouthandlers.cpp
+SOURCE                  alfbrushhandlers.cpp
+SOURCE                  alfmappingfunctionhandlers.cpp
+SOURCE					alftextstylehandlers.cpp
+SOURCE                  alfserverutils.cpp
+SOURCE                  alfsrvvisualowner.cpp
+SOURCE                  alfsrvresourcemanager.cpp
+SOURCE                  alfsrvsettingshandler.cpp
+SOURCE                  alfsrveffectenv.cpp
+SOURCE                  alfsrvtranseffect.cpp
+SOURCE                  alfsrvtexturemanager.cpp
+SOURCE                  alfsrvscreenbuffermanager.cpp
+SOURCE                  alfsrvdropshadowhandler.cpp
+SOURCE                  alfshareddisplaycoecontrol.cpp
+#ifdef SYMBIAN_BUILD_GCE
+SOURCE                  alfstreamerserver.cpp
+SOURCE                  alfwindow.cpp
+SOURCE                  alfwindowbuffer.cpp
+SOURCE                  alfwindowfxplugin.cpp
+SOURCE                  alfwindowmanager.cpp
+SOURCE                  alfhierarchymodel.cpp
+SOURCE                  alfstreamerbridge.cpp
+SOURCE                  alfnodes.cpp
+SOURCE                  alfbridge.cpp
+SOURCE                  alfscreen.cpp
+SOURCE                  alfeffectutils.cpp
+#endif
+
+SOURCE themerepositorylistener.cpp
+
+USERINCLUDE             ../Inc
+USERINCLUDE				../../coretoolkit/inc
+SYSTEMINCLUDE           ../../CommonInc
+
+#include <platform_paths.hrh>
+MW_LAYER_SYSTEMINCLUDE
+
+
+SYSTEMINCLUDE           /epoc32/include/ecom
+SYSTEMINCLUDE           ../../../../inc
+SYSTEMINCLUDE           /epoc32/include/stdapis
+
+LIBRARY                 apfile.lib 
+LIBRARY                 apgrfx.lib
+LIBRARY                 apparc.lib 
+LIBRARY                 avkon.lib
+LIBRARY                 cone.lib 
+LIBRARY                 ecom.lib
+LIBRARY                 eikcore.lib 
+LIBRARY                 eiksrv.lib
+LIBRARY                 eiksrvc.lib
+LIBRARY                 euser.lib
+LIBRARY                 flogger.lib
+LIBRARY                 hitchcock.lib
+LIBRARY                 ws32.lib 
+LIBRARY                 fbscli.lib
+LIBRARY                 alfclient.lib // for alftimedvalue
+LIBRARY                 ftokenclient.lib 
+LIBRARY                 aknlayout2scalable.lib
+LIBRARY                 hwrmlightclient.lib
+LIBRARY                 centralrepository.lib
+LIBRARY                 gdi.lib
+LIBRARY                 efsrv.lib
+LIBRARY                 aknskins.lib
+LIBRARY                 aknlayout2hierarchy.lib
+LIBRARY                 akntransitionutils.lib
+#ifdef SYMBIAN_BUILD_GCE
+LIBRARY                 alfdecoderserverclient.lib
+LIBRARY                 estor.lib  // used by AlfRenderStage
+LIBRARY                 bitgdi.lib
+LIBRARY                 bafl.lib
+#endif // #ifdef SYMBIAN_BUILD_GCE
+
+#ifdef HUI_DEBUG_TRACK_DRAWING
+LIBRARY					alfcommanddebug.lib
+#endif

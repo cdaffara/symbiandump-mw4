@@ -1,0 +1,62 @@
+/*
+* Copyright (c) 2002-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senservicemanger 
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+
+TARGET          SenServiceManagerBCTest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E7
+
+CAPABILITY      ALL -TCB
+/* Remove comments and replace 0x00000000 with correct vendor id */
+VENDORID        VID_DEFAULT
+// VENDORID     0x00000000
+/* Remove comments and replace 0x00000000 with correct secure id */
+// SECUREID     0x00000000
+
+//TARGETPATH      ?target_path
+DEFFILE         senservicemanagerbctest.def
+
+SOURCEPATH      ../src
+SOURCE          senservicemanager.cpp
+SOURCE          senservicemanagercases.cpp
+
+//RESOURCE        resource_file
+//RESOURCE        resource_file2
+
+USERINCLUDE     ../inc 
+
+SYSTEMINCLUDE   /epoc32/include/libc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         euser.lib
+LIBRARY         stiftestinterface.lib
+LIBRARY         bafl.lib
+LIBRARY         flogger.lib
+LIBRARY         SenServDesc.lib
+LIBRARY         SenXml.lib
+LIBRARY					efsrv.lib
+LIBRARY					SenServMgr.lib
+LIBRARY					XMLFRAMEWORK.lib
+library					ecom.lib
+LIBRARY					avkon.lib 
+LANG            SC
+
+// End of File

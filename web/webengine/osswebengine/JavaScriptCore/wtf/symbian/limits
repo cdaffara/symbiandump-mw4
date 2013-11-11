@@ -1,0 +1,73 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+
+#ifndef __LIMITS_HEADER
+#define __LIMITS_HEADER 1
+
+#include <e32math.h>
+
+namespace std 
+{
+    template<typename _Tp> struct numeric_limits;
+
+    template<>
+    struct numeric_limits<size_t>
+    {
+        static size_t max() { return 0xffffffffu; }
+        static const bool is_signed = false;
+    };
+
+    template<>
+    struct numeric_limits<double>
+    {
+        static double max() { return 1.7976931348623157E+308; }
+        static double infinity() { TRealX r; r.SetInfinite(0); return r; }
+    };
+
+    template<>
+    struct numeric_limits<short>
+    {
+        static short min()  { return -32768; }
+        static short max()  { return 32767; }
+        static const bool is_signed = true;
+    };
+
+    template<>
+    struct numeric_limits<int>
+    {
+        static int min()  { return -2147483647; }
+        static int max()  { return 2147483647; }
+        static const bool is_signed = true;
+    };
+
+    template<>
+    struct numeric_limits<long long>
+    {
+        static long long min()  { return -9223372036854775807; }
+        static long long max()  { return 9223372036854775807; }
+        static const bool is_signed = true;
+    };
+
+    template<>
+    struct numeric_limits<unsigned long long>
+    {
+        static unsigned  long long max()  { return 18446744073709551615; }
+        static const bool is_signed = false;
+    };
+}
+
+#endif

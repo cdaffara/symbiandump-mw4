@@ -1,0 +1,38 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*     This file contains the localised strings for the AlfExStickers
+*
+*/
+
+
+
+//  LOCALISATION STRINGS
+
+/////////////////////////////////////////////////
+// Option-menu commands
+
+//d:Command in options-menu
+//d:Launches Sms Editor for replying the original message
+//l:list_single_pane_t1_cp2/opt3
+//
+#define alfexstickers_board_texture                   "application_bg.svg"
+#define alfexstickers_default_text 					  "Demoing: SVG used for the sticker and application backgrounds."
+#define alfexstickers_sticker_texture_blue            "sticker_blue.svg"
+#define alfexstickers_sticker_texture_green           "sticker_green.svg"
+#define alfexstickers_sticker_texture_pink            "sticker_pink.svg"
+#define alfexstickers_sticker_texture_yellow          "sticker_yellow.svg"
+
+
+// End of File

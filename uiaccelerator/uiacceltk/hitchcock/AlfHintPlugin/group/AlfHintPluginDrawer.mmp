@@ -1,0 +1,48 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project alfappservercore
+*
+*/
+
+
+
+
+#include <data_caging_paths.hrh>
+#include <bldvariant.hrh>
+#include <platform_paths.hrh>
+
+TARGETTYPE PLUGIN
+TARGET alfhintplugindrawer.dll
+
+UID			0x10009D8D 0x200242A2
+CAPABILITY      CAP_ECOM_PLUGIN
+VENDORID        VID_DEFAULT 
+
+SYSTEMINCLUDE /epoc32/include 
+SYSTEMINCLUDE ../../CommonInc
+USERINCLUDE	../inc
+SOURCEPATH ../src
+
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCE alfhintplugindrawer.cpp
+
+SOURCEPATH .
+START RESOURCE	alfhintplugindrawer.rss
+TARGET alfhintplugindrawer.rsc
+END
+
+LIBRARY		estor.lib 
+LIBRARY		euser.lib
+LIBRARY		wsgraphicdrawer.lib 

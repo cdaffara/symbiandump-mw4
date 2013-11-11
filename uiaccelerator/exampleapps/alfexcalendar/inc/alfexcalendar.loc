@@ -1,0 +1,50 @@
+/*
+* Copyright (c)  Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Resource headers for project ?myapp
+*
+*/
+
+
+
+
+// OPTIONS MENU COMMANDS
+//
+// d: Options menu item
+// l:  
+// r:3.2
+//
+#define qtn_alf_cal_help "Help"
+
+// d: Options menu item
+// l:  
+// r:3.2
+//
+#define qtn_alf_cal_exit "Exit"
+
+
+// Hardcoded Calendar events
+//
+// d: Calendar events
+// l:  
+// r:3.2
+//
+#define qtn_alf_cal_event1 " 10:00 - 11:00 Meeting with the boss"
+#define qtn_alf_cal_event2 " 21:45 - 23:30 Football match on tv"
+#define qtn_alf_cal_event3 " 11:00 working luch"
+#define qtn_alf_cal_event4 " Whole day brainstorm"
+#define qtn_alf_cal_event5 " 06:45 flight to Bangalore"
+#define qtn_alf_cal_event6 " Remember this and that"
+#define qtn_alf_cal_event7 " 10:00 - 10:15 Scrum meeting"
+
+// End of File

@@ -1,0 +1,38 @@
+EXPORTS
+	?ActiveDownloads@CHttpDownloadManagerServerEngine@@QBEHXZ @ 1 NONAME ; int CHttpDownloadManagerServerEngine::ActiveDownloads(void) const
+	?AppUid@CHttpClientAppInstance@@QBEKXZ @ 2 NONAME ; unsigned long CHttpClientAppInstance::AppUid(void) const
+	?ClientAppInstance@CHttpDownload@@QBEPAVCHttpClientAppInstance@@XZ @ 3 NONAME ; class CHttpClientAppInstance * CHttpDownload::ClientAppInstance(void) const
+	?CloseClientInstance@CHttpDownloadManagerServerEngine@@QAEXPAVCHttpClientAppInstance@@@Z @ 4 NONAME ; void CHttpDownloadManagerServerEngine::CloseClientInstance(class CHttpClientAppInstance *)
+	?CloseEngine@CHttpDownloadManagerServerEngine@@QAEXH@Z @ 5 NONAME ; void CHttpDownloadManagerServerEngine::CloseEngine(int)
+	?CreateNewClientAppInstanceL@CHttpDownloadManagerServerEngine@@QAEPAVCHttpClientAppInstance@@KPAVMDownloadStateObserver@@H@Z @ 6 NONAME ; class CHttpClientAppInstance * CHttpDownloadManagerServerEngine::CreateNewClientAppInstanceL(unsigned long, class MDownloadStateObserver *, int)
+	?CreateNewDownloadL@CHttpClientAppInstance@@QAEPAVCHttpDownload@@ABVTDesC8@@@Z @ 7 NONAME ; class CHttpDownload * CHttpClientAppInstance::CreateNewDownloadL(class TDesC8 const &)
+	?Delete@CHttpDownload@@QAEXXZ @ 8 NONAME ; void CHttpDownload::Delete(void)
+	?Disconnect@CHttpClientAppInstance@@QAEXXZ @ 9 NONAME ; void CHttpClientAppInstance::Disconnect(void)
+	?DownloadsL@CHttpClientAppInstance@@QBEPAV?$CArrayPtrFlat@VCHttpDownload@@@@XZ @ 10 NONAME ; class CArrayPtrFlat<class CHttpDownload> * CHttpClientAppInstance::DownloadsL(void) const
+	?GetBoolAttributeL@CHttpClientAppInstance@@QAEXW4THttpDownloadMgrAttrib@@AAH@Z @ 11 NONAME ; void CHttpClientAppInstance::GetBoolAttributeL(enum THttpDownloadMgrAttrib, int &)
+	?GetBoolAttributeL@CHttpDownload@@QAEXW4THttpDownloadAttrib@@AAH@Z @ 12 NONAME ; void CHttpDownload::GetBoolAttributeL(enum THttpDownloadAttrib, int &)
+	?GetFileHandleAttributeL@CHttpDownload@@QAEPAVRFile@@XZ @ 13 NONAME ; class RFile * CHttpDownload::GetFileHandleAttributeL(void)
+	?GetIntAttributeL@CHttpClientAppInstance@@QAEXW4THttpDownloadMgrAttrib@@AAJ@Z @ 14 NONAME ; void CHttpClientAppInstance::GetIntAttributeL(enum THttpDownloadMgrAttrib, long &)
+	?GetIntAttributeL@CHttpDownload@@QAEXW4THttpDownloadAttrib@@AAJ@Z @ 15 NONAME ; void CHttpDownload::GetIntAttributeL(enum THttpDownloadAttrib, long &)
+	?GetString8AttributeL@CHttpClientAppInstance@@QAEPAVHBufC8@@W4THttpDownloadMgrAttrib@@AAH@Z @ 16 NONAME ; class HBufC8 * CHttpClientAppInstance::GetString8AttributeL(enum THttpDownloadMgrAttrib, int &)
+	?GetString8AttributeL@CHttpDownload@@QAEPAVHBufC8@@W4THttpDownloadAttrib@@AAH@Z @ 17 NONAME ; class HBufC8 * CHttpDownload::GetString8AttributeL(enum THttpDownloadAttrib, int &)
+	?GetStringAttributeL@CHttpClientAppInstance@@QAEPAVHBufC16@@W4THttpDownloadMgrAttrib@@AAH@Z @ 18 NONAME ; class HBufC16 * CHttpClientAppInstance::GetStringAttributeL(enum THttpDownloadMgrAttrib, int &)
+	?GetStringAttributeL@CHttpDownload@@QAEPAVHBufC16@@W4THttpDownloadAttrib@@AAH@Z @ 19 NONAME ; class HBufC16 * CHttpDownload::GetStringAttributeL(enum THttpDownloadAttrib, int &)
+	?MoveL@CHttpDownload@@QAEXXZ @ 20 NONAME ; void CHttpDownload::MoveL(void)
+	?NewL@CHttpDownloadManagerServerEngine@@SAPAV1@XZ @ 21 NONAME ; class CHttpDownloadManagerServerEngine * CHttpDownloadManagerServerEngine::NewL(void)
+	?OnError@CHttpDownload@@QAEXHW4THttpDownloadMgrError@@@Z @ 22 NONAME ; void CHttpDownload::OnError(int, enum THttpDownloadMgrError)
+	?PauseL@CHttpDownload@@QAEXH@Z @ 23 NONAME ; void CHttpDownload::PauseL(int)
+	?Reset@CHttpDownload@@QAEXXZ @ 24 NONAME ; void CHttpDownload::Reset(void)
+	?SearchDownloadWithUrl@CHttpClientAppInstance@@QAEPAVCHttpDownload@@ABVTDesC8@@@Z @ 25 NONAME ; class CHttpDownload * CHttpClientAppInstance::SearchDownloadWithUrl(class TDesC8 const &)
+	?SetBoolAttributeL@CHttpClientAppInstance@@QAEXW4THttpDownloadMgrAttrib@@H@Z @ 26 NONAME ; void CHttpClientAppInstance::SetBoolAttributeL(enum THttpDownloadMgrAttrib, int)
+	?SetBoolAttributeL@CHttpDownload@@QAEXW4THttpDownloadAttrib@@H@Z @ 27 NONAME ; void CHttpDownload::SetBoolAttributeL(enum THttpDownloadAttrib, int)
+	?SetFileHandleAttributeL@CHttpDownload@@QAEXPAVRFile@@@Z @ 28 NONAME ; void CHttpDownload::SetFileHandleAttributeL(class RFile *)
+	?SetIntAttributeL@CHttpClientAppInstance@@QAEXW4THttpDownloadMgrAttrib@@J@Z @ 29 NONAME ; void CHttpClientAppInstance::SetIntAttributeL(enum THttpDownloadMgrAttrib, long)
+	?SetIntAttributeL@CHttpDownload@@QAEXW4THttpDownloadAttrib@@J@Z @ 30 NONAME ; void CHttpDownload::SetIntAttributeL(enum THttpDownloadAttrib, long)
+	?SetObserver@CHttpClientAppInstance@@QAEXPAVMDownloadStateObserver@@@Z @ 31 NONAME ; void CHttpClientAppInstance::SetObserver(class MDownloadStateObserver *)
+	?SetStringAttributeL@CHttpClientAppInstance@@QAEXW4THttpDownloadMgrAttrib@@ABVTDesC16@@@Z @ 32 NONAME ; void CHttpClientAppInstance::SetStringAttributeL(enum THttpDownloadMgrAttrib, class TDesC16 const &)
+	?SetStringAttributeL@CHttpClientAppInstance@@QAEXW4THttpDownloadMgrAttrib@@ABVTDesC8@@@Z @ 33 NONAME ; void CHttpClientAppInstance::SetStringAttributeL(enum THttpDownloadMgrAttrib, class TDesC8 const &)
+	?SetStringAttributeL@CHttpDownload@@QAEXW4THttpDownloadAttrib@@ABVTDesC16@@@Z @ 34 NONAME ; void CHttpDownload::SetStringAttributeL(enum THttpDownloadAttrib, class TDesC16 const &)
+	?SetStringAttributeL@CHttpDownload@@QAEXW4THttpDownloadAttrib@@ABVTDesC8@@@Z @ 35 NONAME ; void CHttpDownload::SetStringAttributeL(enum THttpDownloadAttrib, class TDesC8 const &)
+	?StartL@CHttpDownload@@QAEXXZ @ 36 NONAME ; void CHttpDownload::StartL(void)
+

@@ -1,0 +1,78 @@
+/** @file
+* Copyright (c) 2008-2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Implements transactions for initial events
+*
+*/
+
+
+#include "upnphttpinitialeventtransaction.h"
+
+// -----------------------------------------------------------------------------
+// CUpnpHttpInitialEventTransaction::CUpnpHttpInitialEventTransaction
+// -----------------------------------------------------------------------------
+//
+CUpnpHttpInitialEventTransaction::CUpnpHttpInitialEventTransaction( 
+                                                    CUpnpHttpMessage* aRequest )
+    : CUpnpHttpTransaction( aRequest )
+    {
+    // No implementation required
+    }
+
+// -----------------------------------------------------------------------------
+// CUpnpHttpInitialEventTransaction::~CUpnpHttpInitialEventTransaction
+// -----------------------------------------------------------------------------
+//
+CUpnpHttpInitialEventTransaction::~CUpnpHttpInitialEventTransaction()
+    {
+    }
+
+// -----------------------------------------------------------------------------
+// CUpnpHttpInitialEventTransaction::NewLC
+// -----------------------------------------------------------------------------
+//
+CUpnpHttpInitialEventTransaction* CUpnpHttpInitialEventTransaction::NewLC( 
+                                                    CUpnpHttpMessage* aRequest )
+    {
+    CleanupStack::PushL( aRequest );
+    CUpnpHttpInitialEventTransaction* self = 
+                      new (ELeave) CUpnpHttpInitialEventTransaction( aRequest );
+    CleanupStack::Pop( aRequest );
+    CleanupStack::PushL( self );
+    self->BaseConstructL();
+    return self;
+    }
+
+// -----------------------------------------------------------------------------
+// CUpnpHttpInitialEventTransaction::NewL
+// -----------------------------------------------------------------------------
+//
+CUpnpHttpInitialEventTransaction* CUpnpHttpInitialEventTransaction::NewL( 
+                                                    CUpnpHttpMessage* aRequest )
+    {
+    CUpnpHttpInitialEventTransaction* self=
+            CUpnpHttpInitialEventTransaction::NewLC( aRequest );
+    CleanupStack::Pop( self );
+    return self;
+    }
+
+// -----------------------------------------------------------------------------
+// CUpnpHttpInitialEventTransaction::ProcessResponseL
+// -----------------------------------------------------------------------------
+//
+void CUpnpHttpInitialEventTransaction::ProcessResponseL()
+    {
+    //we don't care about the initial event response - at least for now
+    }
+
+//end of file

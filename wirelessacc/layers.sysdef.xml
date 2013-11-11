@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE SystemDefinition SYSTEM "sysdef_1_5_1.dtd" [
+  <!ENTITY layer_real_source_path "sf/mw/wirelessacc" >
+]>
+
+<SystemDefinition name="wirelessacc" schema="1.5.1">
+  <systemModel>
+    <layer name="mw_layer">
+      <module name="wirelessacc">
+        <unit unitID="netdo.wirelessaccqt" mrp="" bldFile="&layer_real_source_path;" name="wirelessaccqt" proFile="wirelessacc.pro" qmakeArgs="-r"/>
+      </module>
+    </layer>
+  </systemModel>
+</SystemDefinition>

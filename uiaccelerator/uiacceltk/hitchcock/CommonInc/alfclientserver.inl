@@ -1,0 +1,47 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Inline methods related to client server communication
+*
+*/
+
+
+
+// -----------------------------------------------------------------------------
+// Calculates padded length of descriptor
+// -----------------------------------------------------------------------------
+//
+inline TInt AlfPaddedLength( TInt aLength )
+    {
+    const TInt remainder = aLength % KAlfClientServerRoundToBoundary;
+    
+    if ( remainder )
+        {
+        // First round to previous multiple of KAlfClientServerRoundToBoundary
+        // and then go to next
+        aLength -= remainder;
+        aLength += KAlfClientServerRoundToBoundary;
+        }
+    
+    return aLength;
+    }
+
+// -----------------------------------------------------------------------------
+// Just panic
+// -----------------------------------------------------------------------------
+//
+inline void AlfPanicClient( const RMessage2& aMessage, TAlfPanicSrv aReason )
+    {
+    _LIT( KAlfPanicClientCategory, "Alf Toolkit" );
+    aMessage.Panic( KAlfPanicClientCategory, aReason );
+    }

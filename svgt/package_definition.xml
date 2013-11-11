@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0">
+ <package id="svgt" name="SVG Tiny" levels="util ui">
+  <collection id="svgt_plat" name="SVG Tiny Platform Interfaces" level="ui">
+   <component id="svgt_api" name="SVGT API" introduced="9.2" class="api" filter="s60">
+    <meta rel="Api" href="svgt_plat/svgt_api/svgt_api.metaxml"/>
+    <unit bldFile="svgt_plat/svgt_api/group"/>
+   </component>
+   <component id="nvg_api" name="NVG API" introduced="9.2" class="api" filter="s60">
+    <meta rel="Api" href="svgt_plat/nvg_api/nvg_api.metaxml"/>
+    <unit bldFile="svgt_plat/nvg_api/group"/>
+   </component>
+  </collection>
+  <collection id="svgtopt" name="SVG-T Engine" level="util">
+   <component id="svgtopt_build" filter="s60" name="SVG Engine" introduced="9.2">
+    <!-- component is at collection level. Needs to be moved down a directory -->
+    <unit bldFile="svgtopt/group"/>
+   </component>
+  </collection>
+ </package>
+</SystemDefinition>

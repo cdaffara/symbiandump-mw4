@@ -1,0 +1,83 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  BrowserCache
+*
+*/
+#if defined(__BROWSER_SDK)
+TARGET          BrowserCache_sdk.dll
+#else
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+TARGET          BrowserCache.dll
+#endif
+TARGETTYPE      dll
+
+UID 0x1000008D  0x10282353
+
+VENDORID  VID_DEFAULT
+CAPABILITY  CAP_GENERAL_DLL
+EPOCALLOWDLLDATA
+//MACRO HTTP_CACHE_LOGGING
+
+
+#if defined(WINSCW)
+deffile Bwinscw/BrowserCache.def
+#elif defined(ARMCC)
+deffile EABI/BrowserCache.def
+#endif
+
+
+SOURCEPATH    ../src
+
+SOURCE        HttpCacheManager.cpp
+SOURCE        HttpCacheEntry.cpp
+SOURCE        HttpCacheEvictionHandler.cpp
+SOURCE        HttpCacheHandler.cpp
+SOURCE        HttpCacheObserver.cpp
+SOURCE        HttpCacheLookupTable.cpp
+SOURCE        HttpCacheStreamHandler.cpp
+SOURCE        HttpCacheUtil.cpp
+SOURCE        HttpCacheFileWriteHandler.cpp
+SOURCE        HttpCachePostponeWriteUtilities.cpp
+
+
+USERINCLUDE    ../inc
+
+//--
+
+#ifndef __BROWSER_SDK
+MW_LAYER_SYSTEMINCLUDE
+#else
+SYSTEMINCLUDE   /epoc32/include  /epoc32/include/oem
+#endif
+SYSTEMINCLUDE /Epoc32/include/http
+SYSTEMINCLUDE /epoc32/include/libc
+
+
+
+LIBRARY     ESTLIB.lib
+LIBRARY     http.lib
+LIBRARY     EFSRV.lib
+LIBRARY     bafl.lib
+LIBRARY     InetProtUtil.lib
+LIBRARY     HttpFilterCommon.lib
+LIBRARY     euser.lib
+LIBRARY     estor.lib
+LIBRARY     centralrepository.lib
+LIBRARY     CenRepNotifHandler.lib
+LIBRARY     featmgr.lib
+LIBRARY     hal.lib
+LIBRARY     memman.lib
+LIBRARY     cone.lib                // CoeControl
+DEBUGLIBRARY flogger.lib

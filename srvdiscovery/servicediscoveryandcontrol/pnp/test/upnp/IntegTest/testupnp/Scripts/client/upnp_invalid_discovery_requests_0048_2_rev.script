@@ -1,0 +1,42 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_invalid_discovery_requests_0048_2_rev.script
+//! @SYMTestSuiteName	testupnp 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client
+
+LOAD_SUITE multiple_machines_client
+LOAD_SUITE test_synchronize_client
+LOAD_SUITE testdelay
+
+START_TESTCASE	upnp_invalid_discovery_requests_0048_2_rev
+//! @file					
+//! @SYMTestCaseID			UPNP - POS - 0048
+//! @SYMTestCaseDesc 		Service point must ignore an invalid discovery requests
+//! @SYMREQ 				REQ8613, REQ8645
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Join a control point in UPnP enabled network and discover a service using the UPnP control point with a search request of malformed content (Like Invalid value in MAN header, a missing MX header, or other malformed content).
+//! 						2.	Service point must ignore the search request of malformed content by not sending any response to it.
+//! @SYMTestExpectedResults	Such a malformed request should not get any response and receiving devices simply discard that request.
+//! @SYMTestType 			CIT
+RUN_TEST_STEP 1000 testdelay TestUPnPManager  
+RUN_TEST_STEP 1000 testdelay TestUPnPManager
+RUN_TEST_STEP 1000 test_synchronize_client TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini clientdata
+RUN_TEST_STEP 500  multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\discovery_0048_rev.ini upnp_invalid_discovery_requests_0048_2_rev
+
+END_TESTCASE	upnp_invalid_discovery_requests_0048_2_rev

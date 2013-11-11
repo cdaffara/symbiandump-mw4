@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0" xmlns:qt="http://www.nokia.com/qt">
+ <package id="wirelessacc" name="Wireless Access" levels="framework generic ui">
+  <collection id="hsfw_plat" name="HotSpot Framework Platform Interfaces" level="ui">
+   <component id="hotspot_framework_client_api" name="HotSpot Framework Client API" class="api" filter="s60">
+    <meta rel="Api" href="hsfw_plat/hotspot_framework_client_api/hotspot_framework_client_api.metaxml"/>
+    <unit bldFile="hsfw_plat/hotspot_framework_client_api/group"/>
+   </component>
+   <component id="internet_connectivity_test_service_api" name="Internet Connectivity Test Service API" class="api" filter="s60">
+    <meta rel="Api" href="hsfw_plat/internet_connectivity_test_service_api/internet_connectivity_test_service_api.metaxml"/>
+    <unit bldFile="hsfw_plat/internet_connectivity_test_service_api/group"/>
+   </component>
+   <component id="internet_connectivity_test_service_settings_api" name="Internet Connectivity Test Service Settings API" class="api" filter="s60">
+    <meta rel="Api" href="hsfw_plat/internet_connectivity_test_service_settings_api/internet_connectivity_test_service_settings_api.metaxml"/>
+    <unit bldFile="hsfw_plat/internet_connectivity_test_service_settings_api/group"/>
+   </component>
+   <component id="hotspot_framework_client_plugin_api" name="HotSpot Framework Client Plugin API" class="api" filter="s60">
+    <meta rel="Api" href="hsfw_plat/hotspot_framework_client_plugin_api/hotspot_framework_client_plugin_api.metaxml"/>
+    <unit bldFile="hsfw_plat/hotspot_framework_client_plugin_api/group"/>
+   </component>
+  </collection>
+  <collection id="hotspotfw" name="HotSpot Framework" level="framework">
+	<!-- collection is really a component. Needs to move down a dir -->
+   <component id="hotspotfw_build" filter="s60" name="HotSpot Framework Build">
+    <unit bldFile="hotspotfw/group"/>
+   </component>
+  </collection>
+  <collection id="wlanutilities" name="WLAN Utilities" level="generic">
+   <component id="wlanqtutilities" filter="s60" name="WLAN Qt Utilities" introduced="^4">
+    <unit bldFile="wlanutilities/wlanqtutilities" qt:proFile="wlanqtutilities.pro"/>
+   </component>
+   <component id="eapwizard " filter="s60" name="EAP Wizard" introduced="^4">
+    <unit bldFile="wlanutilities/eapwizard" qt:proFile="eapwizard.pro"/>
+   </component>
+   <component id="wpswizard " filter="s60" name="WPS Wizard" introduced="^4">
+    <unit bldFile="wlanutilities/wpswizard" qt:proFile="wpswizard.pro"/>
+   </component>
+   <component id="wlanwizard " filter="s60" name="WLAN Wizard" introduced="^4">
+    <unit bldFile="wlanutilities/wlanwizard" qt:proFile="wlanwizard.pro"/>
+   </component>
+   <component id="wlansniffer" filter="s60" name="WLAN Sniffer">
+    <unit bldFile="wlanutilities/wlansniffer" qt:proFile="wlansniffer.pro"/>
+   </component>
+   <component id="wlanentryplugin" filter="s60" name="WLAN Entry Plugin" class="plugin">
+    <unit bldFile="wlanutilities/wlanentryplugin" qt:proFile="wlanentryplugin.pro"/>
+   </component>
+   <component id="wlanindicatorplugin" filter="s60" name="WLAN Indicator Plugin" class="plugin">
+    <unit bldFile="wlanutilities/wlanindicatorplugin" qt:proFile="wlanindicatorplugin.pro"/>
+   </component>
+   <component id="cpwlansettingsplugin" filter="s60" name="WLAN Settings Control Panel Plugin" class="plugin"  introduced="^4">
+    <unit bldFile="wlanutilities/cpwlansettingsplugin" qt:proFile="cpwlansettingsplugin.pro"/>
+   </component>
+   <component id="wlanlogin" filter="s60" name="WLAN Login" introduced="^4">
+    <unit bldFile="wlanutilities/wlanlogin" qt:proFile="wlanlogin.pro"/>
+   </component>
+  </collection>
+ </package>
+</SystemDefinition>

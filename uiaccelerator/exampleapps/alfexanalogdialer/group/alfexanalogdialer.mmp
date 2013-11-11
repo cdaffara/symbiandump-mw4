@@ -1,0 +1,88 @@
+/*
+* Copyright (c) 2008-2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project Analog Dialer
+*
+*/
+
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+
+CAPABILITY None
+
+#ifdef __UI_FRAMEWORKS_V2__
+TARGETPATH	/sys/bin
+#if defined(EKA2) || !defined(WINS)
+TARGET          alfexanalogdialer.exe
+TARGETTYPE exe
+#else // EKA1 WINS
+TARGET          alfexanalogdialer.app
+TARGETTYPE exedll
+deffile /epoc32/release/wins/alfexanalogdialer.def
+#endif
+#else // __UI_FRAMEWORKS_V2__
+TARGET          alfexanalogdialer.app
+TARGETPATH      /system/apps/alfexanalogdialer
+TARGETTYPE app
+#endif
+
+UID             0x100039CE 0x2001247F 
+
+LANG            SC
+
+SOURCEPATH      ../src
+SOURCE          alfexanalogdialer.cpp
+SOURCE          alfexanalogdialerapplication.cpp 
+SOURCE          alfexanalogdialerappUi.cpp
+SOURCE          alfexanalogdialerdocument.cpp 
+SOURCE          alfexanalogdialercontrol.cpp 
+SOURCE          alfexanalogdialerfeedback.cpp 
+
+SOURCEPATH      ../group
+
+USERINCLUDE       ../inc 
+
+APP_LAYER_SYSTEMINCLUDE
+
+LIBRARY         euser.lib
+LIBRARY         apparc.lib
+LIBRARY         cone.lib 
+LIBRARY         eikcore.lib  
+LIBRARY         avkon.lib  
+LIBRARY         gdi.lib  
+LIBRARY         efsrv.lib       // RFs
+
+LIBRARY         alfclient.lib
+
+LIBRARY         touchfeedback.lib
+
+#ifdef __UI_FRAMEWORKS_V2__
+START RESOURCE 	alfexanalogdialer.rss
+HEADER
+TARGETPATH      /resource/apps
+LANG		    SC 
+END
+#else
+RESOURCE        alfexanalogdialer.rss
+#endif
+
+#ifdef __UI_FRAMEWORKS_V2__
+START RESOURCE	alfexanalogdialer_reg.rss
+// Do not change the UID 10003a3f below.
+TARGETPATH      /private/10003a3f/apps
+END
+   
+SOURCEPATH      ../group
+DOCUMENT        alfexanalogdialer.loc
+#endif

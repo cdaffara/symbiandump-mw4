@@ -1,0 +1,65 @@
+/** @file
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This is the project specification file for Upnp.
+*
+*/
+
+#include "../../../inc/upnpcompvariant.hrh"
+
+TARGETTYPE             exe
+
+TARGET                 upnpconnmanager.exe
+UID 0 0x2001B2BB
+
+CAPABILITY             CAP_SERVER
+ 
+VENDORID               VID_DEFAULT
+VERSION 10.1
+PAGED
+
+SOURCEPATH             ../src
+SOURCE                 upnpipeventnotifier.cpp 			
+SOURCE                 upnpconnmanagerengine.cpp
+SOURCE                 upnpconnmanagersession.cpp
+SOURCE                 upnpconnmanager.cpp
+SOURCE                 upnpconninterfacewatcher.cpp
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE          ../../../inc
+SYSTEMINCLUDE          ../../inc
+USERINCLUDE            ../inc
+
+#if defined(__HN_31__) || defined(__HN_32__)
+LIBRARY                hnipserversutils.lib
+LIBRARY                hnserviceframework.lib
+#else
+LIBRARY                upnpipserversutils.lib
+LIBRARY                upnpserviceframework.lib
+LIBRARY                upnpconnectionmanagersession.lib
+#endif
+
+LIBRARY                euser.lib
+LIBRARY                esock.lib
+LIBRARY                insock.lib 
+LIBRARY                ecom.lib 
+
+// for the IAP query
+LIBRARY                commdb.lib
+// for logging
+LIBRARY                flogger.lib
+
+SMPSAFE
+//end of file
+

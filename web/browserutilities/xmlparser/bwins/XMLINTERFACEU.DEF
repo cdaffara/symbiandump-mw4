@@ -1,0 +1,12 @@
+EXPORTS
+	?Close@RXMLReader@@QAEXXZ @ 1 NONAME ; public: void __thiscall RXMLReader::Close(void)
+	?CreateL@RXMLReader@@QAEXXZ @ 2 NONAME ; public: void __thiscall RXMLReader::CreateL(void)
+	?Destroy@RXMLReader@@QAEXXZ @ 3 NONAME ; public: void __thiscall RXMLReader::Destroy(void)
+	?GetFeature@RXMLReader@@QAEHW4TXMLFeature@@AAH@Z @ 4 NONAME ; public: int __thiscall RXMLReader::GetFeature(enum TXMLFeature,int &)
+	?ParseL@RXMLReader@@QAEXAAVRFile@@@Z @ 5 NONAME ; public: void __thiscall RXMLReader::ParseL(class RFile &)
+	?ParseL@RXMLReader@@QAEXAAVRFs@@ABVTDesC16@@@Z @ 6 NONAME ; public: void __thiscall RXMLReader::ParseL(class RFs &,class TDesC16 const &)
+	?ParseL@RXMLReader@@QAEXABVTDesC8@@@Z @ 7 NONAME ; public: void __thiscall RXMLReader::ParseL(class TDesC8 const &)
+	?SetContentHandler@RXMLReader@@QAEHPAVMWBXMLContentHandler@@@Z @ 8 NONAME ; public: int __thiscall RXMLReader::SetContentHandler(class MWBXMLContentHandler *)
+	?SetContentHandler@RXMLReader@@QAEHPAVMXMLContentHandler@@@Z @ 9 NONAME ; public: int __thiscall RXMLReader::SetContentHandler(class MXMLContentHandler *)
+	?SetFeature@RXMLReader@@QAEHW4TXMLFeature@@H@Z @ 10 NONAME ; public: int __thiscall RXMLReader::SetFeature(enum TXMLFeature,int)
+

@@ -1,0 +1,63 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Resource headers for project Image Print UI
+*
+*/
+
+
+
+#ifndef IMAGEPRINTUI_HRH
+#define IMAGEPRINTUI_HRH
+
+enum TCustomControlsIDs
+    {
+    EPrintProgressNote = 0x2000,
+    EPrintWaitNote,
+    ENoPrintersConfirmation,
+    EBitmapCtrl,
+    EBrandingBitmap
+    };
+
+
+/** Commands in settings view */
+enum TImagePrintSettingsCommands
+    {
+    ECmdSettingsChange = 0x6100,
+    ECmdSettingsPrint,
+    ECmdSettingsHelp
+    
+    };
+
+enum TImagePrintSettingsListItemIndexes
+    {
+    ESettingsListItemLayout = 0,
+    ESettingsListItemPaperSize,
+    ESettingsListItemPrintQuality
+    };
+
+/* note enums */
+enum 
+	{
+	EProgressNoteId = 0
+	};
+
+
+#define KImagePrintComponentCount 1
+
+
+#define KNumberOfSettingsViewItems 3
+
+
+
+#endif // IMAGEPRINTUI_HRH

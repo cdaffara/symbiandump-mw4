@@ -1,0 +1,72 @@
+EXPORTS
+	??0TIdPair@@QAE@KK@Z @ 1 NONAME ; TIdPair::TIdPair(unsigned long, unsigned long)
+	??0TIdPair@@QAE@XZ @ 2 NONAME ; TIdPair::TIdPair(void)
+	??1CConnectionStageNotifierWCB@@UAE@XZ @ 3 NONAME ; CConnectionStageNotifierWCB::~CConnectionStageNotifierWCB(void)
+	??1CWapConnectionManager@@UAE@XZ @ 4 NONAME ; CWapConnectionManager::~CWapConnectionManager(void)
+	?AccessPoint@CWapConnectionManager@@QBEPBVCApAccessPointItem@@XZ @ 5 NONAME ; class CApAccessPointItem const * CWapConnectionManager::AccessPoint(void) const
+	?ConnectL@CInternetConnectionManager@@QAEHK@Z @ 6 NONAME ; int CInternetConnectionManager::ConnectL(unsigned long)
+	?ConnectL@CInternetConnectionManager@@QAEHKK@Z @ 7 NONAME ; int CInternetConnectionManager::ConnectL(unsigned long, unsigned long)
+	?Connected@CInternetConnectionManager@@UAEHXZ @ 8 NONAME ; int CInternetConnectionManager::Connected(void)
+	?Connected@CWapConnectionManager@@UAEHXZ @ 9 NONAME ; int CWapConnectionManager::Connected(void)
+	?Connection@CInternetConnectionManager@@UAEAAVRConnection@@XZ @ 10 NONAME ; class RConnection & CInternetConnectionManager::Connection(void)
+	?Connection@CWapConnectionManager@@UAEAAVRConnection@@XZ @ 11 NONAME ; class RConnection & CWapConnectionManager::Connection(void)
+	?ConnectionNameL@CInternetConnectionManager@@UAEPAV?$TBuf@$0IA@@@XZ @ 12 NONAME ; class TBuf<128> * CInternetConnectionManager::ConnectionNameL(void)
+	?ConnectionNameL@CWapConnectionManager@@UAEPAV?$TBuf@$0IA@@@XZ @ 13 NONAME ; class TBuf<128> * CWapConnectionManager::ConnectionNameL(void)
+	?CurrentAP@CInternetConnectionManager@@QAEPAVCApAccessPointItem@@XZ @ 14 NONAME ; class CApAccessPointItem * CInternetConnectionManager::CurrentAP(void)
+	?CurrentAPId@CInternetConnectionManager@@UBEKXZ @ 15 NONAME ; unsigned long CInternetConnectionManager::CurrentAPId(void) const
+	?CurrentAPId@CWapConnectionManager@@UBEKXZ @ 16 NONAME ; unsigned long CWapConnectionManager::CurrentAPId(void) const
+	?CurrentAccessPoint@CInternetConnectionManager@@UBEPBVCApAccessPointItem@@XZ @ 17 NONAME ; class CApAccessPointItem const * CInternetConnectionManager::CurrentAccessPoint(void) const
+	?CurrentAccessPoint@CWapConnectionManager@@UBEPBVCApAccessPointItem@@XZ @ 18 NONAME ; class CApAccessPointItem const * CWapConnectionManager::CurrentAccessPoint(void) const
+	?CurrentApExists@CWapConnectionManager@@QBEHXZ @ 19 NONAME ; int CWapConnectionManager::CurrentApExists(void) const
+	?CurrentApNameLC@CInternetConnectionManager@@UBEPAVHBufC16@@XZ @ 20 NONAME ; class HBufC16 * CInternetConnectionManager::CurrentApNameLC(void) const
+	?CurrentApNameLC@CWapConnectionManager@@UBEPAVHBufC16@@XZ @ 21 NONAME ; class HBufC16 * CWapConnectionManager::CurrentApNameLC(void) const
+	?CurrentBearerTypeL@CInternetConnectionManager@@UBE?AW4TApBearerType@@XZ @ 22 NONAME ; enum TApBearerType CInternetConnectionManager::CurrentBearerTypeL(void) const
+	?CurrentBearerTypeL@CWapConnectionManager@@UBE?AW4TApBearerType@@XZ @ 23 NONAME ; enum TApBearerType CWapConnectionManager::CurrentBearerTypeL(void) const
+	?CurrentConnectionSpeed@CInternetConnectionManager@@UBE?AW4TApCallSpeed@@XZ @ 24 NONAME ; enum TApCallSpeed CInternetConnectionManager::CurrentConnectionSpeed(void) const
+	?CurrentConnectionSpeed@CWapConnectionManager@@UBE?AW4TApCallSpeed@@XZ @ 25 NONAME ; enum TApCallSpeed CWapConnectionManager::CurrentConnectionSpeed(void) const
+	?CurrentGatewayLC@CInternetConnectionManager@@UBEPAVHBufC16@@XZ @ 26 NONAME ; class HBufC16 * CInternetConnectionManager::CurrentGatewayLC(void) const
+	?CurrentGatewayLC@CWapConnectionManager@@UBEPAVHBufC16@@XZ @ 27 NONAME ; class HBufC16 * CWapConnectionManager::CurrentGatewayLC(void) const
+	?CurrentSessionConnectionOriented@CInternetConnectionManager@@UBEHXZ @ 28 NONAME ; int CInternetConnectionManager::CurrentSessionConnectionOriented(void) const
+	?CurrentSessionConnectionOriented@CWapConnectionManager@@UBEHXZ @ 29 NONAME ; int CWapConnectionManager::CurrentSessionConnectionOriented(void) const
+	?CurrentSessionSecure@CInternetConnectionManager@@UBEHXZ @ 30 NONAME ; int CInternetConnectionManager::CurrentSessionSecure(void) const
+	?CurrentSessionSecure@CWapConnectionManager@@UBEHXZ @ 31 NONAME ; int CWapConnectionManager::CurrentSessionSecure(void) const
+	?CurrentStartPageLC@CInternetConnectionManager@@UBEPAVHBufC16@@XZ @ 32 NONAME ; class HBufC16 * CInternetConnectionManager::CurrentStartPageLC(void) const
+	?CurrentStartPageLC@CWapConnectionManager@@UBEPAVHBufC16@@XZ @ 33 NONAME ; class HBufC16 * CWapConnectionManager::CurrentStartPageLC(void) const
+	?Disconnect@CInternetConnectionManager@@UAEXXZ @ 34 NONAME ; void CInternetConnectionManager::Disconnect(void)
+	?Disconnect@CWapConnectionManager@@UAEXXZ @ 35 NONAME ; void CWapConnectionManager::Disconnect(void)
+	?E32Dll@@YAHW4TDllReason@@@Z @ 36 NONAME ; int E32Dll(enum TDllReason)
+	?GoOffLine@CWapConnectionManager@@QAEXXZ @ 37 NONAME ; void CWapConnectionManager::GoOffLine(void)
+	?IsThereActiveHSCSDConnectionL@CInternetConnectionManager@@QAEHXZ @ 38 NONAME ; int CInternetConnectionManager::IsThereActiveHSCSDConnectionL(void)
+	?IsThereActiveHSCSDConnectionL@CWapConnectionManager@@QAEHXZ @ 39 NONAME ; int CWapConnectionManager::IsThereActiveHSCSDConnectionL(void)
+	?NewConnectionEstablished@CInternetConnectionManager@@UBEHXZ @ 40 NONAME ; int CInternetConnectionManager::NewConnectionEstablished(void) const
+	?NewConnectionEstablished@CWapConnectionManager@@UBEHXZ @ 41 NONAME ; int CWapConnectionManager::NewConnectionEstablished(void) const
+	?NewL@CConnectionStageNotifierWCB@@SAPAV1@H@Z @ 42 NONAME ; class CConnectionStageNotifierWCB * CConnectionStageNotifierWCB::NewL(int)
+	?NewL@CInternetConnectionManager@@SAPAV1@H@Z @ 43 NONAME ; class CInternetConnectionManager * CInternetConnectionManager::NewL(int)
+	?NewL@CInternetConnectionManager@@SAPAV1@PAVCCommsDatabase@@H@Z @ 44 NONAME ; class CInternetConnectionManager * CInternetConnectionManager::NewL(class CCommsDatabase *, int)
+	?NewL@CWapConnectionManager@@SAPAV1@HH@Z @ 45 NONAME ; class CWapConnectionManager * CWapConnectionManager::NewL(int, int)
+	?NewL@CWapConnectionManager@@SAPAV1@PAVCCommsDatabase@@HH@Z @ 46 NONAME ; class CWapConnectionManager * CWapConnectionManager::NewL(class CCommsDatabase *, int, int)
+	?NewLC@CConnectionStageNotifierWCB@@SAPAV1@H@Z @ 47 NONAME ; class CConnectionStageNotifierWCB * CConnectionStageNotifierWCB::NewLC(int)
+	?NewLC@CInternetConnectionManager@@SAPAV1@H@Z @ 48 NONAME ; class CInternetConnectionManager * CInternetConnectionManager::NewLC(int)
+	?NewLC@CInternetConnectionManager@@SAPAV1@PAVCCommsDatabase@@H@Z @ 49 NONAME ; class CInternetConnectionManager * CInternetConnectionManager::NewLC(class CCommsDatabase *, int)
+	?RequestedAPValidityL@CInternetConnectionManager@@UAE?AW4TAPValidity@@XZ @ 50 NONAME ; enum TAPValidity CInternetConnectionManager::RequestedAPValidityL(void)
+	?RequestedAPValidityL@CWapConnectionManager@@UAE?AW4TAPValidity@@XZ @ 51 NONAME ; enum TAPValidity CWapConnectionManager::RequestedAPValidityL(void)
+	?SetApChangeObserver@CInternetConnectionManager@@UAEXAAVMApChangeObserver@@@Z @ 52 NONAME ; void CInternetConnectionManager::SetApChangeObserver(class MApChangeObserver &)
+	?SetApChangeObserver@CWapConnectionManager@@UAEXAAVMApChangeObserver@@@Z @ 53 NONAME ; void CWapConnectionManager::SetApChangeObserver(class MApChangeObserver &)
+	?SetRequestedAP@CInternetConnectionManager@@UAEXKH@Z @ 54 NONAME ; void CInternetConnectionManager::SetRequestedAP(unsigned long, int)
+	?SetRequestedAP@CWapConnectionManager@@UAEXKH@Z @ 55 NONAME ; void CWapConnectionManager::SetRequestedAP(unsigned long, int)
+	?SetRequestedAPs@CInternetConnectionManager@@UAEXVTIdPair@@@Z @ 56 NONAME ; void CInternetConnectionManager::SetRequestedAPs(class TIdPair)
+	?SetRequestedAPs@CWapConnectionManager@@UAEXVTIdPair@@@Z @ 57 NONAME ; void CWapConnectionManager::SetRequestedAPs(class TIdPair)
+	?ShowGeneralConnectionErrorL@CInternetConnectionManager@@QAEXXZ @ 58 NONAME ; void CInternetConnectionManager::ShowGeneralConnectionErrorL(void)
+	?SocketServer@CInternetConnectionManager@@UAEAAVRSocketServ@@XZ @ 59 NONAME ; class RSocketServ & CInternetConnectionManager::SocketServer(void)
+	?SocketServer@CWapConnectionManager@@UAEAAVRSocketServ@@XZ @ 60 NONAME ; class RSocketServ & CWapConnectionManager::SocketServer(void)
+	?StartConnectionL@CInternetConnectionManager@@UAEHHH@Z @ 61 NONAME ; int CInternetConnectionManager::StartConnectionL(int, int)
+	?StartConnectionL@CWapConnectionManager@@UAEHHH@Z @ 62 NONAME ; int CWapConnectionManager::StartConnectionL(int, int)
+	?StartNotificationL@CConnectionStageNotifierWCB@@QAEXHPAVMConnectionStageObserver@@H@Z @ 63 NONAME ; void CConnectionStageNotifierWCB::StartNotificationL(int, class MConnectionStageObserver *, int)
+	?StartNotificationL@CConnectionStageNotifierWCB@@QAEXPAV?$TBuf@$0IA@@@HPAVMConnectionStageObserver@@H@Z @ 64 NONAME ; void CConnectionStageNotifierWCB::StartNotificationL(class TBuf<128> *, int, class MConnectionStageObserver *, int)
+	?StartNotificationL@CConnectionStageNotifierWCB@@QAEXPAV?$TBuf@$0IA@@@PAHHPAVMConnectionMultiStageObserver@@H@Z @ 65 NONAME ; void CConnectionStageNotifierWCB::StartNotificationL(class TBuf<128> *, int *, int, class MConnectionMultiStageObserver *, int)
+	?StopConnectionL@CInternetConnectionManager@@QAEXXZ @ 66 NONAME ; void CInternetConnectionManager::StopConnectionL(void)
+	?UnsetApChangeObserver@CInternetConnectionManager@@UAEXXZ @ 67 NONAME ; void CInternetConnectionManager::UnsetApChangeObserver(void)
+	?UnsetApChangeObserver@CWapConnectionManager@@UAEXXZ @ 68 NONAME ; void CWapConnectionManager::UnsetApChangeObserver(void)
+	?AskIap@CInternetConnectionManager@@UAEHAAK@Z @ 69 NONAME ; int CInternetConnectionManager::AskIap(unsigned long &)
+	?ChangeIapL@CInternetConnectionManager@@UAEXAAW4TConManChangeConn@@AAK@Z @ 70 NONAME ; void CInternetConnectionManager::ChangeIapL(enum TConManChangeConn &, unsigned long &)
+

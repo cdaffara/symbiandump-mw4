@@ -1,0 +1,46 @@
+/*
+* Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+* Project definition file for Wlan Sniffer Keepalive process.
+*/
+
+TARGET        wlansnifferkeepalive.exe
+TARGETTYPE    exe
+UID           0x100039CE 0x2002FF5F
+
+USERINCLUDE  ../inc 
+USERINCLUDE  ../traces
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH   ../src
+SOURCE       main.cpp
+SOURCE       wsfkeepalive.cpp
+SOURCE       wsfkeepalivecmm.cpp
+SOURCE       wsfkeepaliveconnmon.cpp
+SOURCE       wsfkeepaliveconnmondisc.cpp
+SOURCE       wsfkeepaliveesock.cpp
+SOURCE       wsfkeepalivetimer.cpp
+
+LIBRARY      euser.lib
+LIBRARY      connmon.lib
+LIBRARY      esock.lib
+LIBRARY      extendedconnpref.lib
+LIBRARY      netmeta.lib
+LIBRARY		 cmmanager.lib
+
+CAPABILITY   CAP_APPLICATION NetworkControl
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif

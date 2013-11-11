@@ -1,0 +1,396 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+
+
+//  LOCALISATION STRINGS
+
+//d: Label for an object when downloading
+//d: of an object is not in progress
+//l: none
+//w:
+//r: 3.0
+#define qtn_xhtml_object_select_to_download       "Select to download"
+
+//d: Default label for an object standby text when
+//d: downloading of an object is in progress
+//l: none
+//w:
+//r: 3.0
+#define qtn_xhtml_object_downloading          "Downloading data"
+
+//d: Label for an object in case downloading was tried
+//d: but server returned data type that is not supported
+//l: none
+//w:
+//r: 3.0
+#define qtn_xhtml_object_unsupported          "Unsupported"
+
+//d: Confirmation prompt displayed when a selected
+//d; file is missing. %U is replaced with the name
+//d: of the missing file, truncated if necessary.
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_xhtml_query_file_missing          "File missing:\n %U\n Continue?"
+
+//d: Confirmation prompt displayed when more than
+//d; one selected files are missing. %N is 
+//d: replaced with the number of missing files.
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_xhtml_query_files_missing         "Files missing:\n %N files\n Continue?"
+
+
+//d: Confirmation prompt displayed when a selected
+//d: file is restricted (i.e., closed-content).
+//d: %U is replaced with the name of the restricted
+//d: file, truncated if necessary.
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_xhtml_query_file_restricted         "File restricted:\n %U\n Continue?"
+
+
+//d: Header text for the pop up window
+//l: popup_list_heading_pane_1
+//w:
+//r: 3.0
+#define qtn_xhtml_object_query_open_to          "Open to:"
+
+//d: Open the object on page
+//l: popup_list_heading_pane_1
+//w:
+//r: 3.0
+#define qtn_xhtml_object_query_open_to_on_page      "On page"
+
+//d: Open the object to viewer application
+//l: popup_list_heading_pane_1
+//w:
+//r: 3.0
+#define qtn_xhtml_object_query_open_to_ext_viewer   "Viewer application"
+
+//d: Download already in progress
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_browser_note_object_downloading       "Downloading"
+
+
+//d: Default label for form submit button when
+//d: there is no label specified by the content author
+//l: none
+//w:
+//r: 3.0
+#define qtn_browser_form_submit             "Submit"
+  
+//d: Default label for form reset button when there
+//d: is no label specified by the content author
+//l: none
+//w:
+//r: 3.0
+#define qtn_browser_form_reset              "Reset"
+
+//d: Default title  for form option selection when
+//d: there is no title specified by the content author
+//l: popup_list_heading_pane_1
+//w:
+//r: 3.0
+#define qtn_browser_form_select             "Select"
+
+//d: Command text associated to a softkey .
+//l: control_pane_1
+//w:
+//r: 3.0
+#define text_softkey_back               "Back"
+
+//d: Open selected deck
+//d: Open focused anchor node.
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_wml_list_open               "Open"
+
+//d: Make phone call
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_xhtml_list_call               "Call now"
+
+//d: Store phone nr and/or e-mail address to the phonebook
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_wml_add_to_contacts             "Add to Contacts"
+
+//d: Display wallet application
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_wall_list_browser_use           "Use wallet"
+
+//d: Display wallet application
+//l: list_single_popup_menu_pane_1
+#define qtn_wall_list_browser_close           "Close wallet"
+
+//d: Accept entry of input element
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_browser_list_accept             "Accept"
+
+//d: Menu item to open a plugin into external viewer
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_browser_list_open_to_viewer         "Open to viewer"
+
+//d: Removes a file when focus on a selection box
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_browser_list_remove_file          "Remove file"
+
+//d: Check unchecked checkbox.
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_wml_dyn_label_check             "Check"
+
+//d:Uncheck checked checkbox.
+//l:list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_wml_dyn_label_uncheck           "Uncheck"
+
+//d: Select radio button or drop down menu.
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_wml_dyn_label_select            "Select"
+
+//d: Select action button or link
+//d: Open focused anchor node.
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_wml_dyn_go                  "Go"
+
+//d: Edit text field.
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_wml_dyn_label_edit              "Edit"
+
+//d: Indicate done when focus is within a text field
+//l: list_single_popup_menu_pane_1
+//w:
+//r: 3.0
+#define qtn_wml_dyn_label_done              "Done"
+
+//d: Command text associated to a softkey in the control pane.
+//d: Options.
+//l: control_pane_1
+//w:
+//r: 3.0
+#define qtn_text_softkey_option             "Options"
+
+//d: Command text associated to a softkey in the control pane.
+//d: Cancel.
+//l: control_pane_1
+//w:
+//r: 3.0
+#define qtn_text_softkey_cancel             "Cancel"
+
+//d: Command text associated to a softkey in the control pane.
+//d: Ok.
+//l: control_pane_1
+//w:
+//r: 3.0
+#define qtn_text_softkey_ok               "Ok"
+
+//d: Text used by BrCtlDialogsProvider for dialogs without a title.
+//l: control_pane_1
+//w:
+//r: 3.0
+#define qtn_text_empty_title              ""
+
+//d: Command text associated to a softkey .
+//l: control_pane_1
+//w:
+//r: 3.0
+#define qtn_text_softkey_yes              "Yes"
+
+//d: Command text associated to a softkey .
+//l: control_pane_1
+//w:
+//r: 3.0
+#define qtn_text_softkey_no               "No"
+
+//d: Command text associated to a softkey .
+//l: control_pane_1
+//w:
+//r: 3.0
+#define qtn_text_softkey_continue           "Continue"
+
+//d: Note shown when the user is browsing a "normal"
+//d: (HTTP) site and enters a secure (HTTPS) site 
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_httpsec_enter_secure_site         "You are about to view pages over a secured connection; any information you share with the site cannot be viewed by anyone else."
+
+//d: Note shown when the user is browsing a secure
+//d: (HTTPS) site and enters a normal (HTTP) site
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_httpsec_leave_secure_site         "You are about to leave secured connection. Do you want to continue?"
+
+//d: Note shown when the secure site contains unsecure items e.g. images.
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_httpsec_items_not_secured         "This site contains unsecure items. Load items?"
+
+//d: Note shown when user is browsing in secure site
+//d: and he/she is about to submit a form to the unsecure site.
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_httpsec_submit_not_secure         "Form will be submitted using unsecure connection. Continue?"
+
+//d: popup query string for repost confirmation
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_http_repost_confirmation          "Form will be re-submitted.Accept resending information again?"
+
+//d: popup query string for repost confirmation
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_http_redirect_post_confirmation       "You are being redirected to another site. Continue?"
+
+//d: Confirmation query prompt when user confirmation
+//d: during login over unsecure connection.
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_browser_query_basic_authentication      "Authentication data will be sent as plain text. Continue?"
+
+//d: Authentication of the WML card failed.
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define text_wml_auth_fail_retry_query          "Authorisation failed. Try again?"
+
+//d: input element's message
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_text_input_req                "Some text must\nbe entered"
+
+//d: input element's message
+//l: popup_note_window_1
+//w:
+//r: 3.0
+#define qtn_text_more_input_req             "At least %U\ncharacters\nmust be entered"
+
+//d: Header text for the pop up window
+//l: popup_list_heading_pane_1
+//w:
+//r: 3.0
+#define qtn_wml_header_history              "History:"
+
+
+//d: header text in data query in script prompt function
+//l:popup_list_heading_pane_1
+//w:
+//r: 3.0
+#define qtn_browser_query_script_prompt     "Script Prompt:"
+
+//d: header text in message query in script confirm function
+//l:popup_list_heading_pane_1
+//w:
+//r: 3.0
+#define qtn_browser_query_script_confirm    "Script Confirmation:"
+
+//d: header text in message query in script alert function
+//l:popup_list_heading_pane_1
+//w:
+//r: 3.0
+#define qtn_browser_query_script_alert      "Script Alert:"
+
+//d: Confirmation prompt displayed when a username/password
+//d; can be saved for future form filling
+//l: popup_note_window_1
+//w:
+//r: 3.1
+#define qtn_browser_form_autofill_save      "Save login information for this page?"
+
+//d: Confirmation prompt displayed when No is selected for qtn_browser_form_autofill_save
+//d; allowing the user to choose to never save username/password for this page
+//l: popup_note_window_1
+//w:
+//r: 3.1
+#define qtn_browser_form_autofill_ask_later   "Ask later for this page?"
+
+//d: Browser name
+//l: popup_info_list_pane_t1
+//w:
+//r: 3.0
+#define qtn_browsers_browser_name_oss                         "Web Browser for S60"
+
+//d:DO element menu item
+//l:list_single_popup_submenu_pane_1
+//
+#define text_wml_option_ok                "Ok"
+
+//d:DO element menu item
+//l:list_single_popup_submenu_pane_1
+//
+#define text_wml_option_back              "Back"
+
+//d:DO element menu item
+//l:list_single_popup_submenu_pane_1
+//
+#define text_wml_option_reset             "Reset"
+
+//d:DO element menu item
+//l:list_single_popup_submenu_pane_1
+//
+#define text_wml_option_options           "Options"
+
+//d:DO element menu item
+//l:list_single_popup_submenu_pane_1
+//
+#define text_wml_option_erase             "Erase"
+
+//d:DO element menu item
+//l:list_single_popup_submenu_pane_1
+//
+#define text_wml_option_unknown           "Unknown"
+
+//d:Browser main menu
+//l:list_single_popup_menu_pane_1
+//
+#define text_wml_option_help              "Help"
+
+
+// End of File
+

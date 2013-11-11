@@ -1,0 +1,103 @@
+﻿/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+; ============================================================================
+;  Name        : alfperfapp.iby
+;  Part of     : t_alfperfapp      
+;  Description : Rom image description file for project t_alfperfapp
+;  Version     : %version: 7.1.1 %
+;
+;  Copyright © 2007, 2008 Nokia.  All rights reserved.
+;  This material, including documentation and any related computer
+;  programs, is protected by copyright controlled by Nokia.  All
+;  rights are reserved.  Copying, including reproducing, storing,
+;  adapting or translating, any or all of this material requires the
+;  prior written consent of Nokia.  This material also contains
+;  confidential information which may not be disclosed to others
+;  without the prior written consent of Nokia.
+; ============================================================================
+;
+
+#ifndef ALFPERFAPP_IBY
+#define ALFPERFAPP_IBY
+
+#include <bldvariant.hrh>
+#include <data_caging_paths_for_iby.hrh>
+
+; Files to copy
+
+; AlfPerfApp Application
+file=\epoc32\release\armv5\urel\alfperfapp.exe                               PROGRAMS_DIR\alfperfapp.exe
+data=\epoc32\data\z\private\10003a3f\apps\alfperfapp_reg.rsc                 \private\10003a3f\import\apps\alfperfapp_reg.rsc
+data=\epoc32\data\z\resource\apps\alfperfapp.rsc                             APP_RESOURCE_DIR\alfperfapp.rsc
+data=\epoc32\data\z\resource\apps\alfperfapp_imagetest.mif                   APP_RESOURCE_DIR\alfperfapp_imagetest.mif
+
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfperfapp_imagetest.gif \private\20016B8D\alfperfapp_imagetest.gif
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfperfapp_imagetest.png \private\20016B8D\alfperfapp_imagetest.png
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfperfapp_imagetest.svg \private\20016B8D\alfperfapp_imagetest.svg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfperfapp_imagetest_NVGCS.mif APP_RESOURCE_DIR\alfperfapp_imagetest_NVGCS.mif
+data=\epoc32\RELEASE\winscw\urel\Z\resource\apps\icons_mif_new2.mif          APP_RESOURCE_DIR\icons_mif_new2.mif
+; Special place for NVG-TLV icons, they won't load correctly otherwise
+data=\epoc32\RELEASE\winscw\urel\Z\data\nvg_mif\3musk.mif                    \data\nvg_mif\3musk.mif
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfperfapp_test1.mbm     \private\20016B8D\alfperfapp_test1.mbm
+
+; Image creation fails because of exceeded memory size?
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos1.jpg    \private\20016B8D\alfphotos1.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos2.jpg    \private\20016B8D\alfphotos2.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos3.jpg    \private\20016B8D\alfphotos3.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos4.jpg    \private\20016B8D\alfphotos4.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos5.jpg    \private\20016B8D\alfphotos5.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos6.jpg    \private\20016B8D\alfphotos6.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos7.jpg    \private\20016B8D\alfphotos7.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos8.jpg    \private\20016B8D\alfphotos8.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos9.jpg    \private\20016B8D\alfphotos9.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\jpg_sun.jpg       \private\20016B8D\jpg_sun.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_2mpx.jpg \private\20016B8D\alfphotos_2mpx.jpg
+; data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_vga.jpg \private\20016B8D\alfphotos_vga.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_5mpx.jpg  \private\20016B8D\alfphotos_5mpx.jpg
+
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_small1.jpg \private\20016B8D\alfphotos_small1.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_small2.jpg \private\20016B8D\alfphotos_small2.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_small3.jpg \private\20016B8D\alfphotos_small3.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_small4.jpg \private\20016B8D\alfphotos_small4.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_small5.jpg \private\20016B8D\alfphotos_small5.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_small6.jpg \private\20016B8D\alfphotos_small6.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_small7.jpg \private\20016B8D\alfphotos_small7.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_small8.jpg \private\20016B8D\alfphotos_small8.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\alfphotos_small9.jpg \private\20016B8D\alfphotos_small9.jpg
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\jpg_sun_small.jpg    \private\20016B8D\jpg_sun_small.jpg
+
+; App suite images
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\people.png          \private\20016B8D\people.png
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\jim.png             \private\20016B8D\jim.png
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\mtv3.png            \private\20016B8D\mtv3.png
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\mtv3_scifi.png      \private\20016B8D\mtv3_scifi.png
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\nelonen.png         \private\20016B8D\nelonen.png
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\discoveryhd.png     \private\20016B8D\discoveryhd.png
+data=\epoc32\RELEASE\winscw\urel\Z\private\20016B8D\nationalgeographic.jpg  \private\20016B8D\nationalgeographic.jpg
+
+; AlfPerfAppDaemon - Daemon for AlfPerfApp
+file=\epoc32\release\armv5\urel\alfperfappdaemon.exe                    PROGRAMS_DIR\alfperfappdaemon.exe
+data=\epoc32\data\z\private\10003a3f\apps\alfperfappdaemon_reg.rsc      \private\10003a3f\import\apps\alfperfappdaemon_reg.rsc
+data=\epoc32\data\z\resource\apps\alfperfappdaemon.rsc                  APP_RESOURCE_DIR\alfperfappdaemon.rsc
+
+; AlfDebugExtension
+file=\epoc32\release\armv5\urel\alfdebug.dll                            SHARED_LIB_DIR\alfdebug.dll
+ECOM_PLUGIN(alfdebugserver.dll, alfdebugserver.rsc)
+//file=\epoc32\release\armv5\urel\alfdebugserver.dll                    \sys\bin\alfdebugserver.dll
+//data=\epoc32\data\z\resource\plugins\alfdebugserver.rsc               \resource\plugins\alfdebugserver.rsc
+
+#endif

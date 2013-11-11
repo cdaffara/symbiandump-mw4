@@ -1,0 +1,30 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   (ROM) Image description file for Hello World Example
+*
+*/
+
+
+
+#ifndef ANALOGDIALER_IBY
+#define ANALOGDIALER_IBY
+
+#include <data_caging_paths_for_iby.hrh>
+
+file=\epoc32\release\armv5\urel\analogdialer.exe sys\bin\alfexanalogdialer.exe
+data=\epoc32\data\z\private\10003a3f\apps\analogdialer_reg.rsc private\10003a3f\apps\alfexanalogdialer_reg.rsc
+data=\epoc32\data\z\resource\apps\analogdialer_loc.rsc resource\apps\alfexanalogdialer_loc.rsc
+data=\epoc32\data\z\resource\apps\analogdialer.rsc resource\apps\alfexanalogdialer.rsc
+
+#endif // T_ALFANCHOR_IBY

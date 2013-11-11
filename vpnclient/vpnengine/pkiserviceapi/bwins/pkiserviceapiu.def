@@ -1,0 +1,44 @@
+EXPORTS
+	??0RPKIServiceAPI@@QAE@XZ @ 1 NONAME ; RPKIServiceAPI::RPKIServiceAPI(void)
+	?ApplicationsL@RPKIServiceAPI@@QBEXABVTDesC8@@0AAV?$RArray@VTUid@@@@@Z @ 2 NONAME ; void RPKIServiceAPI::ApplicationsL(class TDesC8 const &, class TDesC8 const &, class RArray<class TUid> &) const
+	?AttachCertificate@RPKIServiceAPI@@QBEHABV?$TBuf8@$0BE@@@ABHIW4TPKIKeyAlgorithm@@ABVTDesC8@@@Z @ 3 NONAME ; int RPKIServiceAPI::AttachCertificate(class TBuf8<20> const &, int const &, unsigned int, enum TPKIKeyAlgorithm, class TDesC8 const &) const
+	?AttachCertificateL@RPKIServiceAPI@@QAEXABV?$TBuf8@$0BE@@@IW4TPKIKeyAlgorithm@@ABVTDesC8@@PAPAXAAVTRequestStatus@@@Z @ 4 NONAME ; void RPKIServiceAPI::AttachCertificateL(class TBuf8<20> const &, unsigned int, enum TPKIKeyAlgorithm, class TDesC8 const &, void * *, class TRequestStatus &)
+	?CancelPendingOperation@RPKIServiceAPI@@QAEHXZ @ 5 NONAME ; int RPKIServiceAPI::CancelPendingOperation(void)
+	?CertStoreType@RPKIServiceAPI@@QBEHAAW4TPkiServiceStoreType@@@Z @ 6 NONAME ; int RPKIServiceAPI::CertStoreType(enum TPkiServiceStoreType &) const
+	?CertificateDetails@RPKIServiceAPI@@QBEHABVTDesC8@@0AAVTCertificateListEntry@@@Z @ 7 NONAME ; int RPKIServiceAPI::CertificateDetails(class TDesC8 const &, class TDesC8 const &, class TCertificateListEntry &) const
+	?ChangePassword@RPKIServiceAPI@@QAEXAAVTRequestStatus@@@Z @ 8 NONAME ; void RPKIServiceAPI::ChangePassword(class TRequestStatus &)
+	?Close@RPKIServiceAPI@@QAEXXZ @ 9 NONAME ; void RPKIServiceAPI::Close(void)
+	?Connect@RPKIServiceAPI@@QAEHXZ @ 10 NONAME ; int RPKIServiceAPI::Connect(void)
+	?CreateAndSaveCertificateRequestL@RPKIServiceAPI@@QAEXABV?$TBuf8@$0BE@@@ABVTDesC8@@111AAVTDes16@@AAH@Z @ 11 NONAME ; void RPKIServiceAPI::CreateAndSaveCertificateRequestL(class TBuf8<20> const &, class TDesC8 const &, class TDesC8 const &, class TDesC8 const &, class TDesC8 const &, class TDes16 &, int &)
+	?Decrypt@RPKIServiceAPI@@QBEHABV?$TBuf8@$0BE@@@ABVTDesC8@@AAVTDes8@@@Z @ 12 NONAME ; int RPKIServiceAPI::Decrypt(class TBuf8<20> const &, class TDesC8 const &, class TDes8 &) const
+	?DeleteCertificateRequest@RPKIServiceAPI@@QBEHABVTDesC16@@@Z @ 13 NONAME ; int RPKIServiceAPI::DeleteCertificateRequest(class TDesC16 const &) const
+	?Finalize@RPKIServiceAPI@@QAEXPAX@Z @ 14 NONAME ; void RPKIServiceAPI::Finalize(void *)
+	?GenerateKeypair@RPKIServiceAPI@@QAEXAAV?$TBuf8@$0BE@@@IW4TPKIKeyAlgorithm@@AAVTRequestStatus@@@Z @ 15 NONAME ; void RPKIServiceAPI::GenerateKeypair(class TBuf8<20> &, unsigned int, enum TPKIKeyAlgorithm, class TRequestStatus &)
+	?GetRequiredBufferSize@RPKIServiceAPI@@QAEHAAH@Z @ 16 NONAME ; int RPKIServiceAPI::GetRequiredBufferSize(int &)
+	?KeyDetails@RPKIServiceAPI@@QBEHABV?$TBuf8@$0BE@@@AAVTKeyListEntry@@@Z @ 17 NONAME ; int RPKIServiceAPI::KeyDetails(class TBuf8<20> const &, class TKeyListEntry &) const
+	?KeyStoreType@RPKIServiceAPI@@QBEHAAW4TPkiServiceStoreType@@@Z @ 18 NONAME ; int RPKIServiceAPI::KeyStoreType(enum TPkiServiceStoreType &) const
+	?ListApplicableCertificatesL@RPKIServiceAPI@@QAEXABV?$RArray@VTUid@@@@AAPAV?$CArrayFix@VTCertificateListEntry@@@@@Z @ 19 NONAME ; void RPKIServiceAPI::ListApplicableCertificatesL(class RArray<class TUid> const &, class CArrayFix<class TCertificateListEntry> * &)
+	?ListCertificateRequestsL@RPKIServiceAPI@@QBEXAAPAV?$CArrayFix@VTCertificateRequestListEntry@@@@@Z @ 20 NONAME ; void RPKIServiceAPI::ListCertificateRequestsL(class CArrayFix<class TCertificateRequestListEntry> * &) const
+	?ListCertificatesL@RPKIServiceAPI@@QAEXAAPAV?$CArrayFix@VTCertificateListEntry@@@@@Z @ 21 NONAME ; void RPKIServiceAPI::ListCertificatesL(class CArrayFix<class TCertificateListEntry> * &)
+	?ListKeysL@RPKIServiceAPI@@QAEXAAPAV?$CArrayFix@VTKeyListEntry@@@@@Z @ 22 NONAME ; void RPKIServiceAPI::ListKeysL(class CArrayFix<class TKeyListEntry> * &)
+	?Logoff@RPKIServiceAPI@@QAEXAAVTRequestStatus@@@Z @ 23 NONAME ; void RPKIServiceAPI::Logoff(class TRequestStatus &)
+	?Logon@RPKIServiceAPI@@QAEXAAVTRequestStatus@@@Z @ 24 NONAME ; void RPKIServiceAPI::Logon(class TRequestStatus &)
+	?ReadCertificate@RPKIServiceAPI@@QAEHABVTDesC8@@0AAVTDes8@@@Z @ 25 NONAME ; int RPKIServiceAPI::ReadCertificate(class TDesC8 const &, class TDesC8 const &, class TDes8 &)
+	?ReadCertificateL@RPKIServiceAPI@@QAEXABV?$TBuf8@$0BE@@@AAVTDes8@@PAPAXAAVTRequestStatus@@@Z @ 26 NONAME ; void RPKIServiceAPI::ReadCertificateL(class TBuf8<20> const &, class TDes8 &, void * *, class TRequestStatus &)
+	?ReadCertificateL@RPKIServiceAPI@@QAEXABVTDesC8@@00W4TPKICertificateOwnerType@@IW4TPKIKeyAlgorithm@@AAVTDes8@@PAPAXAAVTRequestStatus@@@Z @ 27 NONAME ; void RPKIServiceAPI::ReadCertificateL(class TDesC8 const &, class TDesC8 const &, class TDesC8 const &, enum TPKICertificateOwnerType, unsigned int, enum TPKIKeyAlgorithm, class TDes8 &, void * *, class TRequestStatus &)
+	?ReadCertificateRequest@RPKIServiceAPI@@QBEHABVTDesC16@@AAVTDes8@@@Z @ 28 NONAME ; int RPKIServiceAPI::ReadCertificateRequest(class TDesC16 const &, class TDes8 &) const
+	?ReadPublicKey@RPKIServiceAPI@@QBEHABV?$TBuf8@$0BE@@@AAVTDes8@@@Z @ 29 NONAME ; int RPKIServiceAPI::ReadPublicKey(class TBuf8<20> const &, class TDes8 &) const
+	?RemoveCertificate@RPKIServiceAPI@@QBEHABVTDesC8@@0@Z @ 30 NONAME ; int RPKIServiceAPI::RemoveCertificate(class TDesC8 const &, class TDesC8 const &) const
+	?RemoveKeypair@RPKIServiceAPI@@QBEHABV?$TBuf8@$0BE@@@@Z @ 31 NONAME ; int RPKIServiceAPI::RemoveKeypair(class TBuf8<20> const &) const
+	?SetApplicabilityL@RPKIServiceAPI@@QBEXABVTDesC8@@0ABV?$RArray@VTUid@@@@@Z @ 32 NONAME ; void RPKIServiceAPI::SetApplicabilityL(class TDesC8 const &, class TDesC8 const &, class RArray<class TUid> const &) const
+	?SetInformational@RPKIServiceAPI@@QAEXH@Z @ 33 NONAME ; void RPKIServiceAPI::SetInformational(int)
+	?SetStoreType@RPKIServiceAPI@@QBEHHW4TPkiServiceStoreType@@@Z @ 34 NONAME ; int RPKIServiceAPI::SetStoreType(int, enum TPkiServiceStoreType) const
+	?SetStoreType@RPKIServiceAPI@@QBEHW4TPkiServiceStoreType@@@Z @ 35 NONAME ; int RPKIServiceAPI::SetStoreType(enum TPkiServiceStoreType) const
+	?SetTrust@RPKIServiceAPI@@QBEHABVTDesC8@@0ABH@Z @ 36 NONAME ; int RPKIServiceAPI::SetTrust(class TDesC8 const &, class TDesC8 const &, int const &) const
+	?Sign@RPKIServiceAPI@@QBEHABV?$TBuf8@$0BE@@@ABVTDesC8@@AAVTDes8@@@Z @ 37 NONAME ; int RPKIServiceAPI::Sign(class TBuf8<20> const &, class TDesC8 const &, class TDes8 &) const
+	?Sign@RPKIServiceAPI@@QBEHABVTDesC8@@00W4TX509KeyUsage@@IW4TPKIKeyAlgorithm@@0AAVTDes8@@@Z @ 38 NONAME ; int RPKIServiceAPI::Sign(class TDesC8 const &, class TDesC8 const &, class TDesC8 const &, enum TX509KeyUsage, unsigned int, enum TPKIKeyAlgorithm, class TDesC8 const &, class TDes8 &) const
+	?StoreCertificate@RPKIServiceAPI@@QBEHW4TPKICertificateOwnerType@@ABHIW4TPKIKeyAlgorithm@@ABVTDesC8@@@Z @ 39 NONAME ; int RPKIServiceAPI::StoreCertificate(enum TPKICertificateOwnerType, int const &, unsigned int, enum TPKIKeyAlgorithm, class TDesC8 const &) const
+	?StoreCertificateL@RPKIServiceAPI@@QAEXW4TPKICertificateOwnerType@@IW4TPKIKeyAlgorithm@@ABVTDesC8@@PAPAXAAVTRequestStatus@@@Z @ 40 NONAME ; void RPKIServiceAPI::StoreCertificateL(enum TPKICertificateOwnerType, unsigned int, enum TPKIKeyAlgorithm, class TDesC8 const &, void * *, class TRequestStatus &)
+	?StoreKeypair@RPKIServiceAPI@@QAEXAAV?$TBuf8@$0BE@@@ABVTDesC8@@AAVTRequestStatus@@@Z @ 41 NONAME ; void RPKIServiceAPI::StoreKeypair(class TBuf8<20> &, class TDesC8 const &, class TRequestStatus &)
+	?Trusted@RPKIServiceAPI@@QBEHABVTDesC8@@0AAH@Z @ 42 NONAME ; int RPKIServiceAPI::Trusted(class TDesC8 const &, class TDesC8 const &, int &) const
+

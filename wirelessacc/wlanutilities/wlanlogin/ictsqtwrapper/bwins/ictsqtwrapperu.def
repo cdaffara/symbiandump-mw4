@@ -1,0 +1,20 @@
+EXPORTS
+	?trUtf8@IctsWrapper@@SA?AVQString@@PBD0H@Z @ 1 NONAME ; class QString IctsWrapper::trUtf8(char const *, char const *, int)
+	?isPolling@IctsWrapper@@QBE_NXZ @ 2 NONAME ; bool IctsWrapper::isPolling(void) const
+	??_EIctsWrapper@@UAE@I@Z @ 3 NONAME ; IctsWrapper::~IctsWrapper(unsigned int)
+	?emitConnectivityTestResult@IctsWrapper@@QAEXW4ConnectivityTestResult@1@VQUrl@@@Z @ 4 NONAME ; void IctsWrapper::emitConnectivityTestResult(enum IctsWrapper::ConnectivityTestResult, class QUrl)
+	?stopPolling@IctsWrapper@@QAEXXZ @ 5 NONAME ; void IctsWrapper::stopPolling(void)
+	?connectivityTestResult@IctsWrapper@@IAEXW4ConnectivityTestResult@1@VQUrl@@@Z @ 6 NONAME ; void IctsWrapper::connectivityTestResult(enum IctsWrapper::ConnectivityTestResult, class QUrl)
+	?tr@IctsWrapper@@SA?AVQString@@PBD0@Z @ 7 NONAME ; class QString IctsWrapper::tr(char const *, char const *)
+	?trUtf8@IctsWrapper@@SA?AVQString@@PBD0@Z @ 8 NONAME ; class QString IctsWrapper::trUtf8(char const *, char const *)
+	??0IctsWrapper@@QAE@HHPAVQObject@@@Z @ 9 NONAME ; IctsWrapper::IctsWrapper(int, int, class QObject *)
+	?getStaticMetaObject@IctsWrapper@@SAABUQMetaObject@@XZ @ 10 NONAME ; struct QMetaObject const & IctsWrapper::getStaticMetaObject(void)
+	?startPolling@IctsWrapper@@QAEXHH@Z @ 11 NONAME ; void IctsWrapper::startPolling(int, int)
+	??1IctsWrapper@@UAE@XZ @ 12 NONAME ; IctsWrapper::~IctsWrapper(void)
+	?metaObject@IctsWrapper@@UBEPBUQMetaObject@@XZ @ 13 NONAME ; struct QMetaObject const * IctsWrapper::metaObject(void) const
+	?qt_metacall@IctsWrapper@@UAEHW4Call@QMetaObject@@HPAPAX@Z @ 14 NONAME ; int IctsWrapper::qt_metacall(enum QMetaObject::Call, int, void * *)
+	?qt_metacast@IctsWrapper@@UAEPAXPBD@Z @ 15 NONAME ; void * IctsWrapper::qt_metacast(char const *)
+	?staticMetaObject@IctsWrapper@@2UQMetaObject@@B @ 16 NONAME ; struct QMetaObject const IctsWrapper::staticMetaObject
+	?tr@IctsWrapper@@SA?AVQString@@PBD0H@Z @ 17 NONAME ; class QString IctsWrapper::tr(char const *, char const *, int)
+	?startConnectivityTest@IctsWrapper@@QAEXXZ @ 18 NONAME ; void IctsWrapper::startConnectivityTest(void)
+

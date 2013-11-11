@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="37c791931f218868786f420ebd756b9a" dataversion="1.0">
+  <name>Download Manager Client API Extension</name>
+  <description>Provides the interfcae for progressive players for attaching to an ongoing download.</description>
+  <type>c++</type>
+  <subsystem>browserutilities</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="2.8"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

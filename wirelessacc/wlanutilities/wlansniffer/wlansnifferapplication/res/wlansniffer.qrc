@@ -1,0 +1,11 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/docml" >
+        <file alias="wlansnifferlistview.docml">wlansnifferlistview.docml.bin</file>
+    </qresource>
+
+    <qresource prefix="/wlansnifferlayout" >
+        <file>hblistviewitem.css</file>
+        <file>hblistviewitem.widgetml</file>
+    </qresource>
+</RCC>

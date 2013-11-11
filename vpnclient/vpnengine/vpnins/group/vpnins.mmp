@@ -1,0 +1,37 @@
+/*
+* Copyright (c) 2003-2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project vpnins
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+TARGET         vpnins.exe
+TARGETTYPE     exe
+UID            0x1000008d 0x101FD28E
+
+CAPABILITY      WriteDeviceData
+VENDORID       VID_DEFAULT
+
+SOURCEPATH     ../src
+SOURCE         vpninsexe.cpp 
+
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         euser.lib 
+LIBRARY         certstore.lib
+LIBRARY         ctframework.lib

@@ -1,0 +1,41 @@
+/*
+* Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+
+#if defined(__S60_)
+        #include <platform_paths.hrh>
+#endif
+
+TARGET          UsbOtgWatcherTest.exe
+TARGETTYPE      exe
+UID		0 0xEF4892C6
+
+CAPABILITY CommDD NetworkControl WriteDeviceData NetworkServices LocalServices ProtServ
+VENDORID                VID_DEFAULT
+
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH      ../src
+
+SOURCE          UsbOtgWatcherTest_exe.cpp
+
+LIBRARY         euser.lib
+LIBRARY         StifTestInterface.lib
+
+EPOCSTACKSIZE   40960
+
+// End of File

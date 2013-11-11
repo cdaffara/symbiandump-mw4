@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<api id="b58cff43d08f84258c164158ea3aabf3" dataversion="1.0">
+  <name>Multipart Parser API</name>
+  <description>API to parse multipart mime content.</description>
+  <type>c++</type>
+  <subsystem>BrowserUtilities</subsystem>
+  <libs>
+    <lib name="MultipartParser.lib" />
+  </libs>
+  <release category="domain" sinceversion="3.0"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

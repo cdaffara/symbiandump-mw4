@@ -1,0 +1,53 @@
+/*
+* Copyright (c) 2006-2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file for project UsbMscPersonality
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+target usbmscpersonality.dll
+UID              	0x10009d8d 0x10274798
+VENDORID      VID_DEFAULT
+
+CAPABILITY    LocalServices ReadDeviceData NetworkControl WriteDeviceData DiskAdmin ReadUserData WriteUserData ProtServ
+targettype plugin
+
+SOURCEPATH ../src
+
+SOURCE CUsbActiveMscHandlerMdrv.cpp
+SOURCE UsbActiveMscHandlerImp.cpp
+SOURCE CUsbMscPersonalityTimer.cpp
+
+USERINCLUDE ../inc
+
+systeminclude ../../../inc
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE /epoc32/include/ecom
+
+start resource 10274798.rss
+target usbmscpersonality.rsc
+end
+
+LIBRARY euser.lib
+LIBRARY usbpersonality.lib
+LIBRARY usbman.lib
+LIBRARY       centralrepository.lib // Central Repository (USB Personality API)
+LIBRARY       efsrv.lib             // File Server Client Side API
+LIBRARY       ProfileEng.lib        // Profiles Engine API
+LIBRARY       msgs.lib              // Messaging API
+LIBRARY       featmgr.lib           // Feature Manager API
+
+DEBUGLIBRARY  flogger.lib            // File logging

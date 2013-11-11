@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="0659b9993700c2c727e9f2468d836adf" dataversion="1.0">
+  <name>XML Extensions API</name>
+  <description>API to Web Services Framework specific adaptations to standard XML APIs.</description>
+  <type>c++</type>
+  <collection>webservices</collection>
+  <libs>
+    <lib name="SenXml.LIB" />
+  </libs>
+  <release category="public" sinceversion="3.0"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

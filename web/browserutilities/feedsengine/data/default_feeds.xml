@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <body>
+  <outline text="Top 40">
+   <outline text="Slashdot" xmlUrl="http://rss.slashdot.org/Slashdot/slashdot"/>
+   <outline text="Moreover - moreover..." xmlUrl="http://p.moreover.com/cgi-local/page?index_bookreviews+rss"/>
+   <outline text="Wired News" xmlUrl="http://www.wired.com/news_drop/netcenter/netcenter.rdf"/>
+   <outline text="Boing Boing Blog" xmlUrl="http://boingboing.net/rss.xml"/>
+   <outline text="The Register" xmlUrl="http://www.theregister.co.uk/tonys/slashdot.rdf"/>
+   <outline text="Le Monde : Aujourd hui" xmlUrl="http://www.lemonde.fr/rss/sequence/0,2-3244,1-0,0.xml"/>
+   <outline text="kuro5hin.org" xmlUrl="http://www.kuro5hin.org/backend.rdf"/>
+   <outline text="Yenra News" xmlUrl="http://www.yenra.com/headlines.xml"/>
+   <outline text="Poker" xmlUrl="http://www.gambling-poker.com/blog_site_feed.xml"/>
+   <outline text="MrSwing's Free Daily Swing and Day Trading Education" xmlUrl="http://www.mrswing.com/articles.xml"/>
+   <outline text="Scitech Daily, Analysis and Opinions" xmlUrl="http://aurig.us/scitechdaily_analysis.rss"/>
+   <outline text="Slashdot:" xmlUrl="http://slashdot.org/slashdot.rss"/>
+   <outline text="CNN Top News:" xmlUrl="http://rss.cnn.com/rss/cnn_tech.rss"/>
+   <outline text="Poker Gazette" xmlUrl="http://www.pokergazette.com/simpnews/rss_news.php?category=1"/>
+   <outline text="Moreover - Newsweek" xmlUrl="http://p.moreover.com/cgi-local/page?o=rss&amp;s=Newsweek"/>
+   <outline text="ShoppingBlog.com" xmlUrl="http://www.shoppingblog.com/rss.xml"/>
+   <outline text="vim at Yahoo! Groups" xmlUrl="http://rss.groups.yahoo.com/group/vim/rss"/>
+   <outline text="Google sports" xmlUrl="http://news.google.com/nwshp?tab=wn&amp;ned=us&amp;topic=s&amp;output=rss"/>
+   <outline text="Google news/world" xmlUrl="http://news.google.com/nwshp?tab=wn&amp;ned=us&amp;topic=w&amp;output=rss"/>   
+   <outline text="Stephen Hebditch &gt; Blog" xmlUrl="http://www.hebditch.org/index.rdf"/>
+   <outline text="feedburner ATOM" xmlUrl="http://feeds.feedburner.com/APrGurusMusings"/>
+   <outline text="Chordata ATOM" xmlUrl="http://atompub.org/blog/index.atom"/>
+   <outline text="Atomenable ATOM" xmlUrl="http://www.atomenabled.org/atom.xml"/>
+   <outline text="Aspectwear ATOM" xmlUrl="http://www.aspectwear.co.uk/atom.xml"/>
+   <outline text="Roller Blogger ATOM" xmlUrl="http://rollerweblogger.org/flavor/roller?flavor=atom"/>
+   <outline text="Interwingly ATOM" xmlUrl="http://www.intertwingly.net/blog/index.atom"/>
+   <outline text="Sixlegs ATOM" xmlUrl="http://sixlegs.com/blog/atom.xml"/>
+   <outline text="JPN ATOM" xmlUrl="http://jpn.icicom.up.pt/xml/noticias.xml"/>
+   <outline text="Sigmon ATOM" xmlUrl="http://www.simongbrown.com/blog/atom.xml"/>
+   <outline text="Google Technology ATOM" xmlUrl="http://news.google.com/?ned=us&amp;topic=t&amp;output=atom"/>
+   <outline text="Google Sports ATOM" xmlUrl="http://news.google.com/?ned=us&amp;topic=m&amp;output=atom"/>
+   <outline text="Google Business ATOM" xmlUrl="http://news.google.com/?ned=us&amp;topic=b&amp;output=atom"/>
+   <outline text="Google Groups ATOM" xmlUrl="http://groups.google.com/group/atom-owl/feed/atom_v1_0_topics.xml"/>
+   <outline text="Drinka ATOM" xmlUrl="http://www.drinkatwork.com/ml_atom.xml"/>
+   <outline text="SportsStock ATOM" xmlUrl="http://sportsstock.blogspot.com/atom.xml"/>
+   <outline text="BlogSpot Atom" xmlUrl="http://other-eighty.blogspot.com/atom.xml"/>
+   <outline text="Blog Spot 2 ATOM " xmlUrl="http://medianation.blogspot.com/atom.xml"/>
+   <outline text="UK Airport-Parking ATOM" xmlUrl="http://www.airport-parking-guide.co.uk/parkingnews/atom.xml"/>
+   <outline text="Satire IR ATOM" xmlUrl="http://satireireland.blogspot.com/atom.xml"/>
+   <outline text="Sloantech ATOM" xmlUrl="http://sloantech.blogspot.com/atom.xml"/>
+  </outline>
+  <outline text="Podcasts">
+   <outline text="NOVA | PBS" xmlUrl="http://broadband.wgbh.org/nova/rss/nova-podcast-pb.xml"/>   
+   <outline text="NOVA Vodcast | PBS" xmlUrl="http://broadband.wgbh.org/nova/rss/nova-vodcast-pb.xml"/>
+   <outline text="NOVA scienceNOW" xmlUrl="http://www.pbs.org/wgbh/nova/sciencenow/rss/nsn-podcast-pb.xml"/>
+   <outline text="Family News in Focus" xmlUrl="http://rss.salemweb.net/oneplace/ministries/podcasting/135.xml"/>
+   <outline text="Photoshop TV" xmlUrl="http://feeds.feedburner.com/photoshoptv/ "/>
+   <outline text="The Kojo Nnamdi Show" xmlUrl="http://www.npr.org/rss/podcast.php?id=510025"/>
+  </outline>
+ </body>
+</opml>

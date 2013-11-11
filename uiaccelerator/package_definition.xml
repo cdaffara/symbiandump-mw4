@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0">
+ <package id="uiaccelerator" name="UI Accelerator" levels="plugin framework server ex if">
+  <collection id="uiaccelerator_plat" name="UI Accelerator Platform Interfaces" level="if">
+   <component id="alf_core_toolkit_api" name="ALF Core Toolkit API" class="api" filter="s60">
+    <meta rel="Api" href="uiaccelerator_plat/alf_core_toolkit_api/alf_core_toolkit_api.metaxml"/>
+    <unit bldFile="uiaccelerator_plat/alf_core_toolkit_api/group" filter="!test"/>
+      <unit bldFile="uiaccelerator_plat/alf_core_toolkit_api/tsrc/group" filter="test,unit_test"/>
+   </component>
+   <component id="alf_visual_api" name="ALF Visual API" class="api" filter="s60">
+    <meta rel="Api" href="uiaccelerator_plat/alf_visual_api/alf_visual_api.metaxml"/>
+    <unit bldFile="uiaccelerator_plat/alf_visual_api/group" filter="!test"/>
+      <unit bldFile="uiaccelerator_plat/alf_visual_api/tsrc/group" filter="test,unit_test"/>
+   </component>
+   <component id="alf_extended_visual_api" name="ALF Extended Visual API" class="api" filter="s60">
+    <meta rel="Api" href="uiaccelerator_plat/alf_extended_visual_api/alf_extended_visual_api.metaxml"/>
+    <unit bldFile="uiaccelerator_plat/alf_extended_visual_api/group" filter="!test"/>
+      <unit bldFile="uiaccelerator_plat/alf_extended_visual_api/tsrc/group" filter="test,unit_test"/>
+   </component>
+   <component id="alf_extension_api" name="ALF Extension API" class="api" filter="s60">
+    <meta rel="Api" href="uiaccelerator_plat/alf_extension_api/alf_extension_api.metaxml"/>
+    <unit bldFile="uiaccelerator_plat/alf_extension_api/group"/>
+   </component>
+   <component id="alf_tracing_api" name="ALF Tracing API" class="api" filter="s60">
+    <meta rel="Api" href="uiaccelerator_plat/alf_tracing_api/alf_tracing_api.metaxml"/>
+    <unit bldFile="uiaccelerator_plat/alf_tracing_api/group"/>
+   </component>
+   <component id="alf_client_server_api" name="ALF Client Server API" class="api" filter="s60">
+    <meta rel="Api" href="uiaccelerator_plat/alf_client_server_api/alf_client_server_api.metaxml"/>
+    <unit bldFile="uiaccelerator_plat/alf_client_server_api/group"/>
+   </component>
+  </collection>
+  <collection id="uiacceltk" name="UI Accelerator Toolkit" level="framework">
+   <component id="hitchcock" filter="s60" name="Hitchcock">
+    <unit bldFile="uiacceltk/hitchcock/group"/>
+   </component>
+   <component id="uiacceltk_rom" filter="s60" name="UI Accelerator Toolkit ROM">
+    <unit bldFile="uiacceltk/rom"/>
+   </component>
+  </collection>
+ </package>
+</SystemDefinition>

@@ -1,0 +1,52 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*    Icon convert to convert icon for png to mbm format
+*
+*
+*/
+
+
+NAME WTUI
+
+// INCLUDE FILES
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <avkon.loc>
+#include <swinstcommonui.rsg>
+#include <WidgetInstallerUI.loc>
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf = ""; }
+
+RESOURCE TBUF r_widgetui_install_prompt     { buf = qtn_swins_widget_install_prompt; }
+RESOURCE TBUF r_widgetui_overwrite_prompt   { buf = qtn_swins_widget_overwrite_ask; }
+RESOURCE TBUF r_widgetui_uninstall_prompt   { buf = qtn_swins_widget_uninstall_promp; }
+RESOURCE TBUF r_widgetui_uninstall_progress { buf = qtn_swins_widget_uninstall_progress; }
+RESOURCE TBUF r_widgetui_prepare            { buf = qtn_swins_widget_prepare; }
+RESOURCE TBUF r_widgetui_progress           { buf = qtn_swins_widget_progress; }
+RESOURCE TBUF r_widgetui_unsupported        { buf = qtn_swins_widget_note_unsupported; }
+RESOURCE TBUF r_widgetui_corrupted          { buf = qtn_swins_widget_note_file_corrupt; }
+RESOURCE TBUF r_widgetui_err_general        { buf = qtn_swins_widget_note_other_error; }
+RESOURCE TBUF r_widgetui_err_inuse          { buf = qtn_swins_widget_note_inuse_error; }
+RESOURCE TBUF r_widgetui_install_completed  { buf = qtn_swins_widget_install_done; }
+RESOURCE TBUF r_widgetui_uninstall_completed { buf = qtn_swins_widget_uninstall_done; }
+RESOURCE TBUF r_widgetui_no_memory          { buf = qtn_swins_widget_note_no_memory; }
+RESOURCE TBUF r_widgetui_uninstall_canceled { buf = qtn_swins_widget_uninst_cancel; }
+RESOURCE TBUF r_widgetui_install_canceled   { buf = qtn_swins_widget_install_cancel; }
+RESOURCE TBUF r_widgetui_finalize_install   { buf = qtn_swins_widget_finalize_install; }
+RESOURCE TBUF r_widgetui_uninstall_hs_prompt { buf = qtn_swins_widget_uninstall_hs_prompt; }

@@ -1,0 +1,38 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+
+TARGET		  chunkmgr.dll
+TARGETTYPE	  dll
+UID			 0x1000008d 0x2000D05A // TODO new UID3
+CAPABILITY	 CommDD PowerMgmt ReadDeviceData WriteDeviceData TrustedUI ProtServ NetworkControl NetworkServices LocalServices ReadUserData WriteUserData
+
+USERINCLUDE	 ../inc
+SYSTEMINCLUDE   /epoc32/include
+
+SOURCEPATH ../src
+SOURCE	cchunkallocator.cpp
+SOURCE	cchunkmanager.cpp
+SOURCE	cmemchunk.cpp
+SOURCE	rchunkpool.cpp
+SOURCE	rmemcell.cpp
+SOURCE	rmemchunk.cpp
+
+
+LIBRARY		 euser.lib
+
+SMPSAFE

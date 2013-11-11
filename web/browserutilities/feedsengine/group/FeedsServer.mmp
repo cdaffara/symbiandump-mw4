@@ -1,0 +1,136 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Feeds server
+*
+*/
+
+
+#include <bldvariant.hrh>
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+
+TARGET          FeedsServer.exe
+TARGETTYPE      exe
+EPOCSTACKSIZE   0x5000
+EPOCHEAPSIZE    0x5000 0x1000000
+
+UID             0x1000008d 0x1020728E
+
+VENDORID        VID_DEFAULT
+CAPABILITY      CAP_SERVER NetworkControl -Location
+
+// uncomment to enable logs
+//MACRO _DEBUG
+//#define _DEBUG
+
+#ifdef RD_SECURE_RES_BIN
+TARGETPATH      /sys/bin
+#else
+TARGETPATH      /System/Programs
+#endif
+
+
+// FeedsServer/Server sources
+SOURCEPATH        ../FeedsServer/Server/src
+SOURCE            FeedsDatabase.cpp
+SOURCE            FeedsServer.cpp
+SOURCE            FeedsServerMain.cpp
+SOURCE            FeedsServerSession.cpp
+SOURCE            Task.cpp
+SOURCE            UpdateFeedTask.cpp
+SOURCE            UpdateAllFeedsTask.cpp
+SOURCE            ImportFeedsTask.cpp
+SOURCE            BackRestoreHandler.cpp
+SOURCE            UpdateManager.cpp  
+SOURCE            UpdateQueue.cpp        
+
+
+// FeedsServer/FeedHandler sources
+SOURCEPATH        ../FeedsServer/FeedHandler/src
+SOURCE            AtomFeedParser.cpp
+SOURCE            FeedHandler.cpp
+SOURCE            FeedParser.cpp
+SOURCE            RssFeedParser.cpp
+
+// FeedsServer/FolderHandler sources
+SOURCEPATH        ../FeedsServer/FolderHandler/src
+SOURCE            OpmlParser.cpp
+SOURCE            OpmlWriter.cpp
+
+SOURCEPATH        ../FeedsServer/UrlHandler/src
+SOURCE            FileHandler.cpp
+SOURCE            HttpConnection.cpp
+SOURCE            ServerHttpConnection.cpp
+SOURCE            SessionHttpConnection.cpp
+SOURCE            HttpHandler.cpp
+SOURCE            UrlHandlerFactory.cpp
+
+SOURCEPATH        ../FeedsServer/XmlUtils/src
+SOURCE            CleanupLibXml2.cpp
+SOURCE            XmlEncoding.cpp
+SOURCE            XmlEntity.cpp
+SOURCE            XmlUtils.cpp
+
+
+// Utils sources
+SOURCEPATH        ../FeedsServer/Common/src
+SOURCE            LeakTracker.cpp
+SOURCE            Packed.cpp
+SOURCE            PackedFeed.cpp
+SOURCE            PackedFolder.cpp
+
+// Include paths
+USERINCLUDE       ../FeedsServer/Server/inc
+USERINCLUDE       ../FeedsServer/Common/inc
+USERINCLUDE       ../FeedsServer/FeedHandler/inc
+USERINCLUDE       ../FeedsServer/FolderHandler/inc
+USERINCLUDE       ../FeedsServer/UrlHandler/inc
+USERINCLUDE       ../FeedsServer/XmlUtils/inc
+USERINCLUDE       ../../inc
+
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+
+// Libraries
+LIBRARY             euser.lib
+#ifdef _DEBUG
+	LIBRARY    flogger.lib
+#else
+	DEBUGLIBRARY    flogger.lib
+#endif
+LIBRARY             bafl.lib
+LIBRARY             InetProtUtil.lib
+LIBRARY             http.lib
+LIBRARY             efsrv.lib
+LIBRARY             XmlEngine.lib
+LIBRARY             XmlEngineDOM.lib
+LIBRARY             XmlEngineUtils.Lib
+LIBRARY             estlib.lib
+LIBRARY             HttpFilterCommon.lib
+LIBRARY             connectionmanager.lib
+LIBRARY             ecom.lib
+LIBRARY             commdb.lib
+LIBRARY             charconv.lib
+LIBRARY             edbms.lib
+LIBRARY             estor.lib
+LIBRARY             centralrepository.lib
+LIBRARY				apengine.lib
+LIBRARY			    ESock.lib
+LIBRARY				Avkon.lib
+LIBRARY				etel3rdparty.lib 
+LIBRARY				webutils.lib
+LIBRARY             sysutil.lib

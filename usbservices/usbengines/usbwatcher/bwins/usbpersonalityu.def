@@ -1,0 +1,23 @@
+EXPORTS
+	??0CUsbPersonality@@IAE@AAVTUsbPersonalityParams@@@Z @ 1 NONAME ; CUsbPersonality::CUsbPersonality(class TUsbPersonalityParams &)
+	??0CUsbPersonalityNotifier@@AAE@XZ @ 2 NONAME ABSENT ; CUsbPersonalityNotifier::CUsbPersonalityNotifier(void)
+	??0CUsbPersonalityPlugin@@IAE@AAVTUsbPersonalityParams@@@Z @ 3 NONAME ; CUsbPersonalityPlugin::CUsbPersonalityPlugin(class TUsbPersonalityParams &)
+	??0TUsbPersonalityParams@@QAE@AAVRUsb@@AAVCUsbPersonalityNotifier@@@Z @ 4 NONAME ; TUsbPersonalityParams::TUsbPersonalityParams(class RUsb &, class CUsbPersonalityNotifier &)
+	??1CUsbPersonalityNotifier@@UAE@XZ @ 5 NONAME ; CUsbPersonalityNotifier::~CUsbPersonalityNotifier(void)
+	??1CUsbPersonalityPlugin@@UAE@XZ @ 6 NONAME ; CUsbPersonalityPlugin::~CUsbPersonalityPlugin(void)
+	?CancelAll@CUsbPersonalityNotifier@@QAEXXZ @ 7 NONAME ; void CUsbPersonalityNotifier::CancelAll(void)
+	?CancelQuery@CUsbPersonalityNotifier@@QAEXVTUid@@@Z @ 8 NONAME ; void CUsbPersonalityNotifier::CancelQuery(class TUid)
+	?DoShowNote@CUsbPersonalityNotifier@@AAEHVTUid@@ABVTDesC8@@AAVTDes8@@@Z @ 9 NONAME ABSENT ; int CUsbPersonalityNotifier::DoShowNote(class TUid, class TDesC8 const &, class TDes8 &)
+	?NewL@CUsbPersonalityNotifier@@SAPAV1@XZ @ 10 NONAME ; class CUsbPersonalityNotifier * CUsbPersonalityNotifier::NewL(void)
+	?NewL@CUsbPersonalityPlugin@@SAPAV1@AAVTUsbPersonalityParams@@VTUid@@@Z @ 11 NONAME ; class CUsbPersonalityPlugin * CUsbPersonalityPlugin::NewL(class TUsbPersonalityParams &, class TUid)
+	?PersonalityId@TUsbPersonalityParams@@QBEHXZ @ 12 NONAME ; int TUsbPersonalityParams::PersonalityId(void) const
+	?PersonalityNotifier@TUsbPersonalityParams@@QBEAAVCUsbPersonalityNotifier@@XZ @ 13 NONAME ; class CUsbPersonalityNotifier & TUsbPersonalityParams::PersonalityNotifier(void) const
+	?SetPersonalityId@TUsbPersonalityParams@@QAEXH@Z @ 14 NONAME ; void TUsbPersonalityParams::SetPersonalityId(int)
+	?ShowNote@CUsbPersonalityNotifier@@QAEHVTUid@@ABVTDesC8@@AAVTDes8@@@Z @ 15 NONAME ; int CUsbPersonalityNotifier::ShowNote(class TUid, class TDesC8 const &, class TDes8 &)
+	?ShowQuery@CUsbPersonalityNotifier@@QAEHVTUid@@ABVTDesC8@@AAVTDes8@@PAVMUsbNotifierCallBack@@PAVTRequestStatus@@@Z @ 16 NONAME ; int CUsbPersonalityNotifier::ShowQuery(class TUid, class TDesC8 const &, class TDes8 &, class MUsbNotifierCallBack *, class TRequestStatus *)
+	?ShowUsbConnectionNote@CUsbPersonality@@UAEXXZ @ 17 NONAME ; void CUsbPersonality::ShowUsbConnectionNote(void)
+	?UsbMan@TUsbPersonalityParams@@QBEAAVRUsb@@XZ @ 18 NONAME ; class RUsb & TUsbPersonalityParams::UsbMan(void) const
+	??1TUsbPersonalityParams@@QAE@XZ @ 19 NONAME ; TUsbPersonalityParams::~TUsbPersonalityParams(void)
+	?CancelAllButCurrent@CUsbPersonalityNotifier@@QAEXXZ @ 20 NONAME ; void CUsbPersonalityNotifier::CancelAllButCurrent(void)
+	?IsShowing@CUsbPersonalityNotifier@@QAEHVTUid@@@Z @ 21 NONAME ; int CUsbPersonalityNotifier::IsShowing(class TUid)
+

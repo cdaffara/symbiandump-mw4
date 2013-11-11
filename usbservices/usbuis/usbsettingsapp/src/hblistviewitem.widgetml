@@ -1,0 +1,55 @@
+<hbwidget version="0.1" type="HbListViewItem">
+
+<!-- usb-1 -->
+    <!--
+        Required items: 
+            text-1
+            
+        Items from left to right:
+            <- icon-1 <- text-1 -> selection icon ->
+                         text-2 ->
+                                         
+        Other:
+            icon-1: TOP aligned with item TOP
+            selection icon: connected from TOP to item TOP
+            
+            text-1: connected from TOP to item TOP and BOTTOM to text-2 TOP
+            text-2: connected BOTTOM to BOTTOM
+    -->
+    <layout name="usb-1" type="mesh">
+      <meshitem src="icon-1" srcEdge="LEFT" dst="" dstEdge="LEFT" spacing="-var(hb-param-margin-gene-left)" />
+      <meshitem src="icon-1" srcEdge="TOP" dst="" dstEdge="TOP" spacing="-var(hb-param-margin-gene-top)" />
+      
+      <meshitem src="text-1" srcEdge="LEFT" dst="icon-1" dstEdge="RIGHT" spacing="-2.0un" />
+      <meshitem src="text-1" srcEdge="TOP" dst="" dstEdge="TOP" spacing="-var(hb-param-margin-gene-top)"/>
+      <meshitem src="text-1" srcEdge="RIGHT" dst="selection-icon" dstEdge="LEFT" spacing="var(hb-param-margin-gene-middle-horizontal)" />
+      <meshitem src="text-1" srcEdge="BOTTOM" dst="text-2" dstEdge="TOP" spacing="var(hb-param-margin-gene-middle-vertical)" />
+      
+      <meshitem src="text-2" srcEdge="LEFT" dst="text-1" dstEdge="LEFT" />
+      <meshitem src="text-2" srcEdge="RIGHT" dst="" dstEdge="RIGHT" spacing="var(hb-param-margin-gene-right)" />
+      <meshitem src="text-2" srcEdge="BOTTOM" dst="" dstEdge="BOTTOM" spacing="var(hb-param-margin-gene-middle-vertical)" />
+      
+      <meshitem src="selection-icon" srcEdge="RIGHT" dst="" dstEdge="RIGHT" spacing="var(hb-param-margin-gene-right)" />
+      <meshitem src="selection-icon" srcEdge="TOP" dst="" dstEdge="TOP" spacing="-var(hb-param-margin-gene-top)" />
+    
+      <meshitem src="background" srcEdge="LEFT" dst="" dstEdge="LEFT" />
+      <meshitem src="background" srcEdge="TOP" dst="" dstEdge="TOP" />
+      <meshitem src="background" srcEdge="RIGHT" dst="" dstEdge="RIGHT" />
+      <meshitem src="background" srcEdge="BOTTOM" dst="" dstEdge="BOTTOM" />
+  
+      <meshitem src="frame" srcEdge="LEFT" dst="" dstEdge="LEFT" />
+      <meshitem src="frame" srcEdge="TOP" dst="" dstEdge="TOP" />
+      <meshitem src="frame" srcEdge="RIGHT" dst="" dstEdge="RIGHT" />
+      <meshitem src="frame" srcEdge="BOTTOM" dst="" dstEdge="BOTTOM" />
+      
+      <meshitem src="focus-indicator" srcEdge="LEFT" dst="" dstEdge="LEFT" />
+      <meshitem src="focus-indicator" srcEdge="TOP" dst="" dstEdge="TOP" />
+      <meshitem src="focus-indicator" srcEdge="RIGHT" dst="" dstEdge="RIGHT" />
+      <meshitem src="focus-indicator" srcEdge="BOTTOM" dst="" dstEdge="BOTTOM" />
+
+      <meshitem src="multiselection-toucharea" srcEdge="CENTERH" dst="selection-icon" dstEdge="CENTERH" />
+      <meshitem src="multiselection-toucharea" srcEdge="TOP" dst="" dstEdge="TOP" />
+      <meshitem src="multiselection-toucharea" srcEdge="BOTTOM" dst="" dstEdge="BOTTOM" />
+    </layout>
+        
+</hbwidget>

@@ -1,0 +1,405 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Localized strings for the UI Lib
+*
+*/
+
+
+// LOCALISATION STRINGS
+
+//d:Options menu item for the Client App to open Downloads List.
+//l:list_single_pane_t1_cp2
+//w:
+//r:2.8
+//
+#define qtn_browser_list_downloads "Downloads"
+
+
+//d:Downloads List header.
+//l:heading_pane_t1
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_header "Downloads:"
+
+
+//d:Shown for completed download in Downloads List.
+//l:list_double_large_graphic_pane_t2_cp2
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_complete "Complete"
+
+
+//d:Shown for completed download in Downloads List for which content was moved to Gallery.
+//l:list_double_large_graphic_pane_t2_cp2
+//w:
+//r:3.2
+//
+#define qtn_browser_downloads_content_saved_to_gallery "Saved To Gallery"
+
+
+
+//d:Shown for completed download in Downloads List for which content was moved to download folder.
+//l:none
+//w:
+//r:3.2
+//
+#define qtn_dl_saved_to_folder "Saved To Downloads Folder"
+
+
+//d:Right softkey for Downloads List.
+//l:control_pane_t1/opt7
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_hide "Hide"
+
+
+//d:Options menu item for Downloads List.
+//l:list_single_pane_t1_cp2 
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_open "Open"
+
+//d:Options menu item for Downloads List.
+//l:list_single_pane_t1_cp2/opt3
+//w:
+//r:3.2
+//
+#define qtn_browser_downloads_use_as "Use Download"
+
+//d:Options menu item for Progressive Download.
+//l:list_single_pane_t1_cp2
+//w:
+//r:3.2
+//
+#define qtn_browser_downloads_play "Play"
+
+//d: Middle Soft key shown for Progressive Download.
+//l: control_pane_t1/opt7
+//w:
+//r:3.2
+//
+#define qtn_browser_downloads_play_msk "Play"
+
+//d:Options menu item for Downloads List.
+//l:list_single_pane_t1_cp2
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_save "Save"
+
+
+
+
+//d:Options menu item for Downloads List.
+//l:list_single_pane_t1_cp2
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_delete "Delete"
+
+
+//d:Options menu item for launching Media Gallery application.
+//d:Visible in Options-menu for Downloads List.
+//l:list_single_pane_t1_cp2
+//w:
+//r:3.2
+//
+#define qtn_browser_downloads_gallery "Go to Gallery"
+
+
+//d:Options menu item for Downloads List.
+//l:list_single_pane_t1_cp2
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_pause "Pause"
+
+
+//d:Options menu item for Downloads List.
+//l:list_single_pane_t1_cp2
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_resume "Resume"
+
+
+//d:Options menu item for Downloads List.
+//l:list_single_pane_t1_cp2
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_resume_all "Resume All"
+
+
+//d:Options menu item for Downloads List.
+//l:list_single_pane_t1_cp2
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_cancel_download "Cancel Download"
+
+
+//d:Confirmation text when cancelling a download. 
+//d:%U is filename/download name.
+//l:popup_note_window
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_query_cancel "Cancel downloading of %U?"
+
+
+//d:Shown on the download start confirmation when there is no space 
+//d:left for the download.
+//l:list_double_pane_t1_cp2
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_note_not_enough_memory "Not enough memory available"
+
+
+//d:Shown on the download finished confirmation. %U is the filename.
+//l:popup_note_window
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_query_downloaded "%U downloaded"
+
+
+//d:Left softkey shown on the download finished confirmation.
+//l:control_pane_t1/opt7
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_query_sk_open "Open"
+
+
+//d:Left softkey shown on the download finished confirmation.
+//l:control_pane_t1/opt7
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_query_sk_save "Save"
+
+
+//d:Right softkey shown on the download finished confirmation.
+//l:control_pane_t1/opt7
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_query_sk_later "Later"
+
+
+//d:Text shown on the confirmation when user closes the client application.
+//l:popup_note_window
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_query_download_active "Cancel ongoing download?"
+
+
+//d:Text shown on the confirmation when uset closes the client application (plural). 
+//l:popup_note_window
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_query_downloads_active "Cancel ongoing downloads?"
+
+
+//d:Text shown on GSN when the stand-alone instance inherits downloads. 
+//l:popup_snote_single_text_window
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_query_moved "Some downloads were moved. View them?"
+
+
+//d:Text shown on GSN when the stand-alone instance has downloads when is terminated.
+//l:popup_snote_single_text_window
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_query_incomplete "View interrupted downloads?"
+
+
+//d:Text shown on information note when the user removes external memory 
+//d:containing downloads.
+//l:popup_note_window
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_note_ext_memory_removed "External memory removed, insert it to see downloads stored on it."
+
+
+//d:If there is an error that makes it impossible to continue download 
+//d:(server crashes etc.), and that download cannot be paused (it does 
+//d:not have information that would enable restarting new download from 
+//d:the middle of the file), that download is then removed from the list 
+//d:of downloads. This way the list of downloads only contains valid downloads.
+//d:%U is the filename/download name.
+//l:popup_note_window
+//w:
+//r:2.8
+//
+#define qtn_browser_downloads_note_cancelled "Downloading of %U had to be cancelled."
+
+
+//d:if content was downloaded, moved to gallery, user switched to gallery application
+//d:and deleted the content file, if user tries to open the download from Download List,
+//d:they will receive this info note and downloaded will be delete from Download List.
+//l:popup_note_window
+//w:
+//r:3.2
+//
+#define qtn_browser_error_file_not_found "File not found."
+
+
+//d:Download already in progress info note.
+//l:heading_pane_t1
+//w:
+//r:3.0
+//
+#define qtn_browser_downloads_downloading "Downloading"
+
+//d:Header in a dialog show download information
+//l:heading_pane_t1
+//w:
+//r:3.0
+//
+#define qtn_browser_query_object_info_header "Download"
+
+//d:Name in a dialog show download information
+//l:list_double_pane_t1_cp2
+//w:
+//r:3.1
+//
+#define qtn_browser_query_object_info_name "Name"
+
+//d:Size of the downloadable object
+//l:list_double_pane_t1_cp2
+//w:
+//r:3.0
+//
+#define qtn_browser_query_object_info_filesize "Size:"
+
+//d:The application which will be used to open the object
+//l:list_double_pane_t1_cp2
+//w:
+//r:3.0
+//
+#define qtn_browser_query_object_info_openwith "Open with:"
+
+//d:The MIME type of the downloadable object
+//l:list_double_pane_t1_cp2
+//w:
+//r:3.0
+//
+#define qtn_browser_query_object_info_filetype "Type:"
+
+//d:Shown, when there is no application which supports the object
+//l:list_double_pane_t1_cp2
+//w:
+//r:3.0
+//
+#define qtn_browser_query_object_info_notsupported "Not Supported"
+
+//d:Used when Size and/or MIME Type is unknown
+//l:list_double_pane_t2_cp2
+//w:
+//r:3.0
+//
+#define qtn_browser_query_object_unknown "Unknown"
+
+//d:Confirmation query prompt when user confirmation during login over unsecure connection.
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_browser_query_basic_authentication "Authentication data will be sent as plain text. Continue?"
+
+//d:Percentage of the data loaded at the moment. 
+//d:%N is replaced by the actual percentage number.
+//l:None
+//w:
+//r:3.0
+//
+#define qtn_wml_unit_percent      "%N %"
+
+//d:Size of data in kilo bytes
+//d:Text is used by progress indication
+//l:list_double_pane_t2_cp2
+//w:
+//r:3.0
+//
+#define qtn_wml_unit_kb		"%N kB"		
+
+//d:Size of data in mega bytes
+//d:Text is used by progress indication
+//l:list_double_pane_t2_cp2
+//w:
+//r:3.0
+//
+#define qtn_wml_unit_mb		"%U MB"
+
+//d:Resuming progressive download failed.
+//d:Text shown on error note when downloading can be continued only from the beginning (0%)
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_browser_downloads_note_from_beginning "Downloading can be continued only from the beginning!"
+
+//d:Info note text: corrupted file (DRM DCF)
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_cd_info_syntax_err   "File corrupted"
+
+
+
+//d:Options menu item for launching File Manager
+//d:Visible in Options-menu for Downloads List.
+//l:list_single_pane_t1_cp2
+//w:
+//r:3.2
+//
+#define qtn_browser_downloads_open_file_manager  "Open File Manager"
+
+
+//d:Options menu item for Downloads List to cancel all downloads.
+//l:list_single_pane_t1_cp2
+//w:
+//r:7.1
+//
+#define qtn_browser_downloads_cancel_all "Cancel All"
+
+//d:Shown for completed downloads in Downloads List, if gallery is not supported
+//l:list_double_large_graphic_pane_t2_cp2
+//w:
+//r:7.1
+//
+#define qtn_browser_downloads_file_saved "File Saved"
+
+//d:Shown for completed downloads in Downloads List for Album download(more than one media object), if gallery is not supported
+//l:list_double_large_graphic_pane_t2_cp2
+//w:
+//r:7.1
+//
+#define qtn_browser_downloads_files_saved "Files Saved"
+
+// End of File

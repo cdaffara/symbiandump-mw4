@@ -1,0 +1,72 @@
+/*
+* Copyright (c) 2002-2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: Resource definitions for Event viewer.
+*
+*/
+
+
+
+NAME EVVI
+   
+#include <eikon.rh>
+#include <eikon.rsg>
+#include "vpnlogmessages1.lms"
+
+RESOURCE RSS_SIGNATURE { }
+RESOURCE TBUF r_vpn_msg_created_server                        { buf=qtn_vpn_msg_created_server; }
+RESOURCE TBUF r_vpn_msg_deleted_server                        { buf=qtn_vpn_msg_deleted_server; }
+RESOURCE TBUF r_vpn_msg_updated_server                        { buf=qtn_vpn_msg_updated_server; }
+RESOURCE TBUF r_vpn_msg_installed_policy_file                 { buf=qtn_vpn_msg_installed_policy_file; }
+RESOURCE TBUF r_vpn_msg_installed_policy_server               { buf=qtn_vpn_msg_installed_policy_server; }
+RESOURCE TBUF r_vpn_msg_policy_install_fail                   { buf=qtn_vpn_msg_policy_install_fail; }
+RESOURCE TBUF r_vpn_msg_policy_update_fail                    { buf=qtn_vpn_msg_policy_update_fail; }
+RESOURCE TBUF r_vpn_msg_deleted_policy                        { buf=qtn_vpn_msg_deleted_policy; }
+RESOURCE TBUF r_vpn_msg_updated_policy                        { buf=qtn_vpn_msg_updated_policy; }
+RESOURCE TBUF r_vpn_msg_serv_identity_verify_fail             { buf=qtn_vpn_msg_serv_identity_verify_fail; }
+RESOURCE TBUF r_vpn_msg_updated_enrollment_service            { buf=qtn_vpn_msg_updated_enrollment_service; }
+RESOURCE TBUF r_vpn_msg_deleted_enrollment_service            { buf=qtn_vpn_msg_deleted_enrollment_service; }
+RESOURCE TBUF r_vpn_msg_installed_enrollment_service          { buf=qtn_vpn_msg_installed_enrollment_service; }
+
+RESOURCE TBUF r_vpn_msg_policy_serv_auth_fail                 { buf=qtn_vpn_msg_policy_serv_auth_fail; }
+RESOURCE TBUF r_vpn_msg_serv_auth_fail_client_cert_exp        { buf=qtn_vpn_msg_serv_auth_fail_client_cert_exp; }
+RESOURCE TBUF r_vpn_msg_serv_auth_fail_serv_cert_exp          { buf=qtn_vpn_msg_serv_auth_fail_serv_cert_exp; }
+RESOURCE TBUF r_vpn_msg_policy_serv_conn_fail                 { buf=qtn_vpn_msg_policy_serv_conn_fail; }
+RESOURCE TBUF r_vpn_msg_serv_err_resp_received                { buf=qtn_vpn_msg_serv_err_resp_received; }
+RESOURCE TBUF r_vpn_msg_enroll_cert_policy_serv               { buf=qtn_vpn_msg_enroll_cert_policy_serv; }
+RESOURCE TBUF r_vpn_msg_pol_serv_cert_enr_fail                { buf=qtn_vpn_msg_pol_serv_cert_enr_fail; }
+RESOURCE TBUF r_vpn_msg_cert_installed                        { buf=qtn_vpn_msg_cert_installed; }
+RESOURCE TBUF r_vpn_msg_cert_install_failed                   { buf=qtn_vpn_msg_cert_install_failed; }
+
+RESOURCE TBUF r_vpn_msg_created_vpn_access_point_with_ap      { buf=qtn_vpn_msg_created_vpn_access_point_with_ap; }
+RESOURCE TBUF r_vpn_msg_created_vpn_access_point_with_snap    { buf=qtn_vpn_msg_created_vpn_access_point_with_snap; }
+RESOURCE TBUF r_vpn_msg_unspecified_error                     { buf=qtn_vpn_msg_unspecified_error; } 
+RESOURCE TBUF r_vpn_msg_vpn_iap_activated                     { buf=qtn_vpn_msg_vpn_iap_activated; }
+RESOURCE TBUF r_vpn_msg_vpn_iap_act_failed                    { buf=qtn_vpn_msg_vpn_iap_act_failed; }
+
+RESOURCE TBUF r_vpn_msg_vpn_iap_act_failed_cert_not_valid     { buf=qtn_vpn_msg_vpn_iap_act_failed_cert_not_valid; }
+RESOURCE TBUF r_vpn_msg_vpn_iap_act_failed_cert_exp_miss      { buf=qtn_vpn_msg_vpn_iap_act_failed_cert_exp_miss; }
+RESOURCE TBUF r_vpn_msg_real_iap_act_failed                   { buf=qtn_vpn_msg_real_iap_act_failed; }
+RESOURCE TBUF r_vpn_msg_vpn_gw_no_resp                        { buf=qtn_vpn_msg_vpn_gw_no_resp; }
+RESOURCE TBUF r_vpn_msg_vpn_gw_auth_ok                        { buf=qtn_vpn_msg_vpn_gw_auth_ok; }
+RESOURCE TBUF r_vpn_msg_vpn_gw_auth_fail                      { buf=qtn_vpn_msg_vpn_gw_auth_fail; }
+RESOURCE TBUF r_vpn_msg_vpn_iap_deact                         { buf=qtn_vpn_msg_vpn_iap_deact; }
+RESOURCE TBUF r_vpn_msg_real_iap_deact                        { buf=qtn_vpn_msg_real_iap_deact; }
+RESOURCE TBUF r_vpn_msg_vpn_iap_deact_timeout                 { buf=qtn_vpn_msg_vpn_iap_deact_timeout; }
+RESOURCE TBUF r_vpn_msg_vpn_gw_err_resp_received              { buf=qtn_vpn_msg_vpn_gw_err_resp_received; }
+RESOURCE TBUF r_vpn_msg_data_dropped_due_policy               { buf=qtn_vpn_msg_data_dropped_due_policy; }
+RESOURCE TBUF r_vpn_msg_vpn_iap_deact_real_iap_terminated     { buf=qtn_vpn_msg_vpn_iap_deact_real_iap_terminated; }
+RESOURCE TBUF r_vpn_msg_real_iap_reactivated                  { buf=qtn_vpn_msg_real_iap_reactivated; }
+RESOURCE TBUF r_vpn_msg_sent_error_response                   { buf=qtn_vpn_msg_sent_error_response; }
+RESOURCE TBUF r_vpn_msg_addr_info_for_vpn_ap                  { buf=qtn_vpn_msg_addr_info_for_vpn_ap; }
+RESOURCE TBUF r_vpn_msg_cert_error                            { buf=qtn_vpn_msg_cert_error; }

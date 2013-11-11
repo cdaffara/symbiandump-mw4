@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<api id="7d5da4099c34b731a4e024b24a1130fc" dataversion="1.0">
+  <name>ALF Visual API</name>
+  <description>ALF graphical user interface. Provides means for generating components and effects with strong visual appeal.</description>
+  <type>c++</type>
+  <subsystem>uiacceltk</subsystem>
+  <libs>
+    <lib name="alfclient.lib" />
+    <lib name="goommonitor.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

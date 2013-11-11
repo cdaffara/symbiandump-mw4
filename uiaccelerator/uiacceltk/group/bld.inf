@@ -1,0 +1,29 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Build information file for UI Accelerator Toolkit 
+*
+*/
+
+
+#include <bldvariant.hrh>
+#include <platform_paths.hrh>
+
+#include "../hitchcock/group/bld.inf"
+
+PRJ_EXPORTS
+../hitchcock/sis/uiaccelerator_stub.sis    /epoc32/release/armv5/urel/uiaccelerator_stub.sis
+../../rom/alfred.iby   CORE_MW_LAYER_IBY_EXPORT_PATH(alfred.iby)
+#ifndef SYMBIAN_GRAPHICS_WSERV_QT_EFFECTS
+../../rom/alftranseffectplugin.iby   CORE_MW_LAYER_IBY_EXPORT_PATH(alftranseffectplugin.iby)
+#endif // #ifndef SYMBIAN_GRAPHICS_WSERV_QT_EFFECTS

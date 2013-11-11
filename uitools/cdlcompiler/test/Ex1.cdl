@@ -1,0 +1,40 @@
+// The CDL header
+
+Name: Avkon LAF
+Version: 1.0
+UID: 0x1f123456
+
+
+%% C++
+
+// The C++ section
+
+struct TWindowLine
+	{
+	TInt16 t;
+	TInt16 l;
+	TInt16 r;
+	TInt16 b;
+	TInt16 w;
+	TInt16 h;
+	};
+
+
+%% Translation
+
+// The data type translation section. Format is:
+// <type> # <initialisation syntax> # <pointer reference syntax>
+
+TWindowLine # const TWindowLine aName = {0,0,0,0,0,0} # &aName
+
+
+%% API		// The API section
+
+// See C++ section for TWindowLine
+// it's a simple structure
+TWindowLine control_pane;			// example of data API
+
+TDesC introduction	;				// example of special type handling system
+
+TCdlArray<TInt> 
+	array_test;

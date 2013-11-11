@@ -1,0 +1,126 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Project specification for COD Engine.   
+*      
+*
+*/
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#include    "../inc/CodDefs.h"
+
+TARGET      CodEng.dll
+TARGETTYPE  dll
+UID         0x1000008d COD_ENGINE_UID
+CAPABILITY  CAP_GENERAL_DLL
+VENDORID    VID_DEFAULT
+
+
+//MACRO _DEBUG
+//#define _DEBUG
+  
+  
+SOURCEPATH  ../src
+
+SOURCE      CodEngBase.cpp
+SOURCE      CodLogger.cpp
+SOURCE      CodPanic.cpp
+SOURCE      CodUtil.cpp
+SOURCE      CodEng.cpp
+SOURCE      DdEng.cpp
+SOURCE      CodData.cpp
+SOURCE      CodParser.cpp
+SOURCE      DdParser.cpp
+SOURCE      Connection.cpp
+SOURCE      HttpLoader.cpp
+SOURCE      HttpSessionBase.cpp
+SOURCE      HttpTcpSession.cpp
+SOURCE      HttpWapSession.cpp
+SOURCE      Timeout.cpp
+SOURCE      NwUtil.cpp
+SOURCE      DdDummyDict.c
+SOURCE      RoapData.cpp
+SOURCE      CodProgress.cpp
+SOURCE      RFeatMgr.cpp
+SOURCE      DrmHandler.cpp
+SOURCE      CodSaver.cpp
+SOURCE      FileSaver.cpp
+SOURCE      RoapSaver.cpp
+SOURCE      FileExt.cpp
+SOURCE      HeaderField.cpp
+SOURCE		CodBuffStorage.cpp
+ 
+SOURCE      MediaObject.cpp 
+SOURCE      DownloadDataClient.cpp
+
+#ifdef __SYNCML_DM_FOTA
+SOURCE      FotaSaver.cpp
+LIBRARY     fotaengine.lib
+#endif /* def __SYNCML_DM_FOTA */
+
+USERINCLUDE     ../inc
+
+//APP_LAYER_SYSTEMINCLUDE
+/* SF TODO: resolve APP LAYER DEPENDENCY: 
+	s60/app/gallery/gallery_dom/media_file_api/inc/CMGXFileManager.h
+	s60/app/gallery/gallery_dom/media_file_api/inc/MGXFileManagerFactory.h
+*/
+MW_LAYER_SYSTEMINCLUDE
+
+MW_LAYER_LIBC_SYSTEMINCLUDE
+MW_LAYER_ECOM_SYSTEMINCLUDE
+
+LIBRARY     euser.lib
+LIBRARY     efsrv.lib
+LIBRARY     commdb.lib
+LIBRARY     CommonUi.lib
+LIBRARY     ServiceHandler.lib
+LIBRARY     ApMime.lib
+LIBRARY     SysUtil.lib
+LIBRARY     CharConv.lib
+LIBRARY     bafl.lib
+LIBRARY     esock.lib
+LIBRARY     ApEngine.lib
+LIBRARY     http.lib
+LIBRARY     httpfiltercommon.lib
+LIBRARY     inetprotutil.lib
+LIBRARY     ecom.lib
+LIBRARY     FeatMgr.lib
+LIBRARY     cXmlParser.lib
+LIBRARY     estlib.lib
+LIBRARY     PlatformEnv.lib
+LIBRARY     ROAPHandler.lib
+LIBRARY     MultipartParser.lib
+LIBRARY     caf.lib
+LIBRARY     cafutils.lib
+LIBRARY     DrmServerInterfaces.lib
+LIBRARY     DRMCommon.lib
+LIBRARY     avkon.lib 
+LIBRARY     commonengine.lib
+LIBRARY     cone.lib 
+
+#ifdef BRDO_APP_GALLERY_SUPPORTED_FF
+LIBRARY     MGXMediaFileAPI.lib
+#endif
+
+LIBRARY     DcfRep.lib
+LIBRARY     estor.lib
+
+#ifdef RD_MULTIPLE_DRIVE
+LIBRARY     CentralRepository.lib
+#endif
+
+DEBUGLIBRARY    flogger.lib
+//LIBRARY    flogger.lib

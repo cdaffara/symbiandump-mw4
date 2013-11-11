@@ -1,0 +1,127 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        ID-WSF Service Invocation ECOM plugin
+*
+*/
+
+
+#include "../../inc/webservices.hrh"
+
+SMPSAFE
+
+#ifdef SYMBIAN_SECURE_ECOM 
+TARGETTYPE PLUGIN
+#else
+TARGETTYPE ECOMIIC
+#endif
+
+// ECom Dll recognition UID followed by the unique UID for this dll
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET SenIDWSFplugin.dll
+UID 0x10009D8D 0x101F96F8
+#else
+TARGET wsIDWSFplugin.dll
+UID 0x10009D8D 0x101F972F
+#endif
+
+PAGEDDATA
+PAGEDCODE
+//For enabling bytepair compression for code paging
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+VENDORID 0x101FB657
+    #else
+VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_ECOM_PLUGIN )
+CAPABILITY ALL -TCB
+    #else
+CAPABILITY CAP_ECOM_PLUGIN
+    #endif
+#endif
+
+SOURCEPATH          ../src
+SOURCE          senidwsfpluginmain.cpp
+SOURCE          senidwsfpluginproxy.cpp
+SOURCE          senidwsfplugin.cpp
+SOURCE          idwsfsaslmessage.cpp
+SOURCE          idwsfresourceoffering.cpp
+SOURCE          idwsfdsqueryresponse.cpp
+SOURCE          idwsfsiuheader.cpp
+SOURCE          idwsfcorrelationheader.cpp
+SOURCE          idwsfmessage.cpp
+SOURCE          idwsfserviceprovider.cpp
+SOURCE          idwsfsessionconsumer.cpp
+SOURCE          idwsfserviceinstance.cpp
+SOURCE          idwsfcoreserviceconsumer.cpp
+SOURCE          idwsfservicesession.cpp
+SOURCE          idwsfauthenticationserviceclient.cpp
+SOURCE          idwsfdiscoveryserviceclient.cpp
+
+SOURCE          idwsfsecurityheader.cpp
+SOURCE          idwsfsoapmessage.cpp
+                
+SOURCEPATH      ../data
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+START RESOURCE  101f96f8.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET SenIDWSFplugin.rsc
+#endif 
+
+#else
+START RESOURCE  101F972F.RSS
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET wsIDWSFplugin.rsc
+#endif 
+
+#endif
+END
+
+USERINCLUDE         ../inc
+USERINCLUDE     ../../wscore/inc
+USERINCLUDE     ../../wsframework/inc     // internal headers
+USERINCLUDE     ../../wsutils/inc                 // SenDebug.h
+USERINCLUDE     ../../wsidentitymanager/inc
+USERINCLUDE     ../../wscredentialmanager/inc   // SenInternalCredential.h
+USERINCLUDE     ../../wslogger/inc 
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+SYSTEMINCLUDE   /epoc32/include/libc
+
+// System libs
+LIBRARY ecom.lib
+LIBRARY euser.lib 
+LIBRARY estor.lib 
+LIBRARY bafl.lib    // CDesC8Array
+LIBRARY flogger.lib // RFileLogger
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// Web Service libs
+LIBRARY senlogger.lib   // for TLS based logging
+LIBRARY SenFramework.lib
+LIBRARY SenServDesc.lib
+LIBRARY SenXml.lib
+LIBRARY SenUtils.lib
+LIBRARY SenCredentialManager.lib
+#else
+LIBRARY wslogger.lib   // for TLS based logging
+LIBRARY wsFramework.lib
+LIBRARY wsServDesc.lib
+LIBRARY wsXml.lib
+LIBRARY wsUtils.lib
+LIBRARY wsCredentialManager.lib
+#endif

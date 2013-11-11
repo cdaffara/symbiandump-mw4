@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="070c17dd2f853bdd42e9fd549ccb4de9" dataversion="1.0">
+<name>Hostlet Connection API</name>
+<description>API for applications to provide locally invocable services to service consumers. Any service provided by a hostlet is identified by unique endpoint and/or contract URI.</description>
+<type>c++</type>
+<collection>webservices</collection>
+<libs><lib name="senhostconn.lib"/>
+</libs>
+<release category="public" sinceversion="5.0"/>
+<attributes>
+<htmldocprovided>no</htmldocprovided>
+<adaptation>no</adaptation>
+</attributes>
+</api>

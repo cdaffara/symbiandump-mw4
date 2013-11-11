@@ -1,0 +1,490 @@
+/*
+* Copyright (c) 2003-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: Resource definitions for VPN API.
+*
+*/
+
+
+/* IPSec Policy API errors */
+
+RESOURCE ARRAY r_error_array_ipsecpolapi_errors
+	{
+    items=
+		{
+		SINGLE_ERROR
+			{
+			text=r_error_EOpenSocketError;          /* -5135 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_EBindSocketError;          /* -5136 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_EOpenAlgorithmsFileError;  /* -5137 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_ESecpolSocketSetOptError;  /* -5138 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_EUnknownPolicyHandle;      /* -5139 */
+			},
+        SINGLE_ERROR
+			{
+			text=r_error_EParsingError;             /* -5140 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_EWriteSocketError;         /* -5141 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_ESecpolReaderError;        /* -5142 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_ENoSelectorFound;          /* -5143 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_ENoMemory;                 /* -5144 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_EInboundOutboundConflict;  /* -5145 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_ESelectorConflict;         /* -5146 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_ENoConflictInfoFound;      /* -5147 */
+			}
+		};
+	}
+
+RESOURCE TBUF r_error_EOpenSocketError { buf=STRING_r_error_EOpenSocketError; }
+RESOURCE TBUF r_error_EBindSocketError { buf=STRING_r_error_EBindSocketError; }
+RESOURCE TBUF r_error_EOpenAlgorithmsFileError { buf=STRING_r_error_EOpenAlgorithmsFileError; }
+RESOURCE TBUF r_error_ESecpolSocketSetOptError { buf=STRING_r_error_ESecpolSocketSetOptError; }
+RESOURCE TBUF r_error_EUnknownPolicyHandle { buf=STRING_r_error_EUnknownPolicyHandle; }
+RESOURCE TBUF r_error_EParsingError { buf=STRING_r_error_EParsingError; }
+RESOURCE TBUF r_error_EWriteSocketError { buf=STRING_r_error_EWriteSocketError; }
+RESOURCE TBUF r_error_ESecpolReaderError { buf=STRING_r_error_ESecpolReaderError; }
+RESOURCE TBUF r_error_ENoSelectorFound { buf=STRING_r_error_ENoSelectorFound; }
+RESOURCE TBUF r_error_ENoMemory { buf=STRING_r_error_ENoMemory; }
+RESOURCE TBUF r_error_EInboundOutboundConflict { buf=STRING_r_error_EInboundOutboundConflict; }
+RESOURCE TBUF r_error_ESelectorConflict { buf=STRING_r_error_ESelectorConflict; }
+RESOURCE TBUF r_error_ENoConflictInfoFound { buf=STRING_r_error_ENoConflictInfoFound; }
+
+/* VPN API errors */
+
+RESOURCE ARRAY r_error_array_vpnapi_errors
+	{
+    items=
+		{
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrNoPolicyFile;           /* -5229 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrNoPolicyInfoFile;       /* -5230 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrInvalidPolicyFile;      /* -5231 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrPolicyNotFound;         /* -5232 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrInvalidCaCertFile;      /* -5233 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrPeerCertFileMissing;    /* -5234 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrInvalidUserCertFile;    /* -5235 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrInvalidUserPrivKeyFile; /* -5236 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrImportOngoing;          /* -5237 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrPwdChangeOngoing;       /* -5238 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrPolicyCountChanged;     /* -5239 */
+			}
+		};
+	}
+
+RESOURCE TBUF r_error_KVpnErrNoPolicyFile { buf=STRING_r_error_KVpnErrNoPolicyFile; }
+RESOURCE TBUF r_error_KVpnErrNoPolicyInfoFile { buf=STRING_r_error_KVpnErrNoPolicyInfoFile; }
+RESOURCE TBUF r_error_KVpnErrInvalidPolicyFile { buf=STRING_r_error_KVpnErrInvalidPolicyFile; }
+RESOURCE TBUF r_error_KVpnErrPolicyNotFound { buf=STRING_r_error_KVpnErrPolicyNotFound; }
+RESOURCE TBUF r_error_KVpnErrInvalidCaCertFile { buf=STRING_r_error_KVpnErrInvalidCaCertFile; }
+RESOURCE TBUF r_error_KVpnErrPeerCertFileMissing { buf=STRING_r_error_KVpnErrPeerCertFileMissing; }
+RESOURCE TBUF r_error_KVpnErrInvalidUserCertFile { buf=STRING_r_error_KVpnErrInvalidUserCertFile; }
+RESOURCE TBUF r_error_KVpnErrInvalidUserPrivKeyFile { buf=STRING_r_error_KVpnErrInvalidUserPrivKeyFile; }
+RESOURCE TBUF r_error_KVpnErrImportOngoing { buf=STRING_r_error_KVpnErrImportOngoing; }
+RESOURCE TBUF r_error_KVpnErrPwdChangeOngoing { buf=STRING_r_error_KVpnErrPwdChangeOngoing; }
+RESOURCE TBUF r_error_KVpnErrPolicyCountChanged { buf=STRING_r_error_KVpnErrPolicyCountChanged; }
+
+/* PKI Service API errors */
+
+RESOURCE ARRAY r_error_array_pkiserviceapi_errors
+	{
+    items=
+		{
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrWrongObjectType;        /* -5240 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrObjectUninitialized;    /* -5241 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrPassword;               /* -5242 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrServiceBusy;            /* -5243 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrCancel;                 /* -5244 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrBufferTooShort;         /* -5245 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrCertRequestParam;       /* -5246 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrCertRequest;            /*  -5247 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrNotFound;               /* -5248 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrAmbiguous;              /* -5249 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrNotSupported;           /* -5250 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrUnexpectedState;        /* -5251 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KPKIErrKeyStoreEmpty;          /* -5252 */
+			}
+        };
+    }
+
+RESOURCE TBUF r_error_KPKIErrWrongObjectType { buf=STRING_r_error_KPKIErrWrongObjectType; }
+RESOURCE TBUF r_error_KPKIErrObjectUninitialized { buf=STRING_r_error_KPKIErrObjectUninitialized; }
+RESOURCE TBUF r_error_KPKIErrPassword { buf=STRING_r_error_KPKIErrPassword; }
+RESOURCE TBUF r_error_KPKIErrServiceBusy { buf=STRING_r_error_KPKIErrServiceBusy; }
+RESOURCE TBUF r_error_KPKIErrCancel { buf=STRING_r_error_KPKIErrCancel; }
+RESOURCE TBUF r_error_KPKIErrBufferTooShort { buf=STRING_r_error_KPKIErrBufferTooShort; }
+RESOURCE TBUF r_error_KPKIErrCertRequestParam { buf=STRING_r_error_KPKIErrCertRequestParam; }
+RESOURCE TBUF r_error_KPKIErrCertRequest { buf=STRING_r_error_KPKIErrCertRequest; }
+RESOURCE TBUF r_error_KPKIErrNotFound { buf=STRING_r_error_KPKIErrNotFound; }
+RESOURCE TBUF r_error_KPKIErrAmbiguous { buf=STRING_r_error_KPKIErrAmbiguous; }
+RESOURCE TBUF r_error_KPKIErrNotSupported { buf=STRING_r_error_KPKIErrNotSupported; }
+RESOURCE TBUF r_error_KPKIErrUnexpectedState { buf=STRING_r_error_KPKIErrUnexpectedState; }
+RESOURCE TBUF r_error_KPKIErrKeyStoreEmpty { buf=STRING_r_error_KPKIErrKeyStoreEmpty; }
+
+/* KMD API errors */
+
+RESOURCE ARRAY r_error_array_kmdapi_errors
+	{
+    items=
+		{
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdTooWeakCryptoLib;          /* -5253 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdNoAlgorithmsFile;          /* -5254 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdIkePolicyFileErr;          /* -5255 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdIkeNegotFailed;            /* -5256 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdIkeNoResponse;             /* -5257 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdIkeNoProposalErr;          /* -5258 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdIkeAuthFailedErr;          /* -5259 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdIkePeerAuthFailed;         /* -5260 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdIkeNoCertFoundErr;         /* -5261 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KKmdIkeNoPolicyErr;            /* -5262 */
+			}
+		};
+	}
+
+RESOURCE TBUF r_error_KKmdTooWeakCryptoLib { buf=STRING_r_error_KKmdTooWeakCryptoLib; }
+RESOURCE TBUF r_error_KKmdNoAlgorithmsFile { buf=STRING_r_error_KKmdNoAlgorithmsFile; }
+RESOURCE TBUF r_error_KKmdIkePolicyFileErr { buf=STRING_r_error_KKmdIkePolicyFileErr; }
+RESOURCE TBUF r_error_KKmdIkeNegotFailed { buf=STRING_r_error_KKmdIkeNegotFailed; }
+RESOURCE TBUF r_error_KKmdIkeNoResponse { buf=STRING_r_error_KKmdIkeNoResponse; }
+RESOURCE TBUF r_error_KKmdIkeNoProposalErr { buf=STRING_r_error_KKmdIkeNoProposalErr; }
+RESOURCE TBUF r_error_KKmdIkeAuthFailedErr { buf=STRING_r_error_KKmdIkeAuthFailedErr; }
+RESOURCE TBUF r_error_KKmdIkePeerAuthFailed { buf=STRING_r_error_KKmdIkePeerAuthFailed; }
+RESOURCE TBUF r_error_KKmdIkeNoCertFoundErr { buf=STRING_r_error_KKmdIkeNoCertFoundErr; }
+RESOURCE TBUF r_error_KKmdIkeNoPolicyErr { buf=STRING_r_error_KKmdIkeNoPolicyErr; }
+
+/* IKE policy parser errors */
+
+RESOURCE ARRAY r_error_array_ikepolparser_errors
+	{
+    items=
+		{
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrMode;             /* -5263 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrNotify;           /* -5264 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrCommit;           /* -5265 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrIpsecExpire;      /* -5266 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrSendCert;         /* -5267 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrInitialContact;   /* -5268 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrResponderLifetime;/* -5269 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrReplayStatus;     /* -5270 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrGroupDesc_II;     /* -5271 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrProposal;         /* -5272 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrEncrAlg;          /* -5273 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrAuthMethod;       /* -5274 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrHashAlg;          /* -5275 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrGroupDesc;        /* -5276 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrGroupType;        /* -5277 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrLifeBytes;        /* -5278 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrLifeSecs;         /* -5279 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrPRF;              /* -5280 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrPreKey;           /* -5281 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrPreFormat;        /* -5282 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrCA;               /* -5283 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrOwnCerts;         /* -5284 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrOwnName;          /* -5285 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrOwnKey;           /* -5286 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrPeerCerts;        /* -5287 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrPeerAddr;         /* -5288 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrPeerMask;         /* -5289 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrMaxLifetimeSec;   /* -5290 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrMaxLifetimeKB;    /* -5291 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrMaxRetrans;       /* -5292 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrNoSeparator;      /* -5293 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrCRACKLAMType;     /* -5294 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrUseIntAddr;       /* -5295 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrUseNATProbe;      /* -5296 */
+			},
+		SINGLE_ERROR
+			{
+			text=r_error_KSecParserErrUnknown;          /* -5297 */
+			}
+        };
+    }
+
+RESOURCE TBUF r_error_KSecParserErrMode { buf=STRING_r_error_KSecParserErrMode; }
+RESOURCE TBUF r_error_KSecParserErrNotify { buf=STRING_r_error_KSecParserErrNotify; }
+RESOURCE TBUF r_error_KSecParserErrCommit { buf=STRING_r_error_KSecParserErrCommit; }
+RESOURCE TBUF r_error_KSecParserErrIpsecExpire { buf=STRING_r_error_KSecParserErrIpsecExpire; }
+RESOURCE TBUF r_error_KSecParserErrSendCert { buf=STRING_r_error_KSecParserErrSendCert; }
+RESOURCE TBUF r_error_KSecParserErrInitialContact { buf=STRING_r_error_KSecParserErrInitialContact; }
+RESOURCE TBUF r_error_KSecParserErrResponderLifetime { buf=STRING_r_error_KSecParserErrResponderLifetime; }
+RESOURCE TBUF r_error_KSecParserErrReplayStatus { buf=STRING_r_error_KSecParserErrReplayStatus; }
+RESOURCE TBUF r_error_KSecParserErrGroupDesc_II { buf=STRING_r_error_KSecParserErrGroupDesc_II; }
+RESOURCE TBUF r_error_KSecParserErrProposal { buf=STRING_r_error_KSecParserErrProposal; }
+RESOURCE TBUF r_error_KSecParserErrEncrAlg { buf=STRING_r_error_KSecParserErrEncrAlg; }
+RESOURCE TBUF r_error_KSecParserErrAuthMethod { buf=STRING_r_error_KSecParserErrAuthMethod; }
+RESOURCE TBUF r_error_KSecParserErrHashAlg { buf=STRING_r_error_KSecParserErrHashAlg; }
+RESOURCE TBUF r_error_KSecParserErrGroupDesc { buf=STRING_r_error_KSecParserErrGroupDesc; }
+RESOURCE TBUF r_error_KSecParserErrGroupType { buf=STRING_r_error_KSecParserErrGroupType; }
+RESOURCE TBUF r_error_KSecParserErrLifeBytes { buf=STRING_r_error_KSecParserErrLifeBytes; }
+RESOURCE TBUF r_error_KSecParserErrLifeSecs { buf=STRING_r_error_KSecParserErrLifeSecs; }
+RESOURCE TBUF r_error_KSecParserErrPRF { buf=STRING_r_error_KSecParserErrPRF; }
+RESOURCE TBUF r_error_KSecParserErrPreKey { buf=STRING_r_error_KSecParserErrPreKey; }
+RESOURCE TBUF r_error_KSecParserErrPreFormat { buf=STRING_r_error_KSecParserErrPreFormat; }
+RESOURCE TBUF r_error_KSecParserErrCA { buf=STRING_r_error_KSecParserErrCA; }
+RESOURCE TBUF r_error_KSecParserErrOwnCerts { buf=STRING_r_error_KSecParserErrOwnCerts; }
+RESOURCE TBUF r_error_KSecParserErrOwnName { buf=STRING_r_error_KSecParserErrOwnName; }
+RESOURCE TBUF r_error_KSecParserErrOwnKey { buf=STRING_r_error_KSecParserErrOwnKey; }
+RESOURCE TBUF r_error_KSecParserErrPeerCerts { buf=STRING_r_error_KSecParserErrPeerCerts; }
+RESOURCE TBUF r_error_KSecParserErrPeerAddr { buf=STRING_r_error_KSecParserErrPeerAddr; }
+RESOURCE TBUF r_error_KSecParserErrPeerMask { buf=STRING_r_error_KSecParserErrPeerMask; }
+RESOURCE TBUF r_error_KSecParserErrMaxLifetimeSec { buf=STRING_r_error_KSecParserErrMaxLifetimeSec; }
+RESOURCE TBUF r_error_KSecParserErrMaxLifetimeKB { buf=STRING_r_error_KSecParserErrMaxLifetimeKB; }
+RESOURCE TBUF r_error_KSecParserErrMaxRetrans { buf=STRING_r_error_KSecParserErrMaxRetrans; }
+RESOURCE TBUF r_error_KSecParserErrNoSeparator { buf=STRING_r_error_KSecParserErrNoSeparator; }
+RESOURCE TBUF r_error_KSecParserErrCRACKLAMType { buf=STRING_r_error_KSecParserErrCRACKLAMType; }
+RESOURCE TBUF r_error_KSecParserErrUseIntAddr { buf=STRING_r_error_KSecParserErrUseIntAddr; }
+RESOURCE TBUF r_error_KSecParserErrUseNATProbe { buf=STRING_r_error_KSecParserErrUseNATProbe; }
+RESOURCE TBUF r_error_KSecParserErrUnknown { buf=STRING_r_error_KSecParserErrUnknown; }
+
+RESOURCE ARRAY r_error_array_vpnapi_errors_2
+	{
+    items=
+		{
+		SINGLE_ERROR
+			{
+			text=r_error_KVpnErrPolicySizeChanged;           /* -5298 */
+			}
+        };
+    }
+
+RESOURCE TBUF r_error_KVpnErrPolicySizeChanged { buf=STRING_r_error_KVpnErrPolicySizeChanged; }

@@ -1,0 +1,41 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file for project UsbDevCon
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+target			usbdevcon.exe
+CAPABILITY 		LocalServices CommDD
+targettype		exe
+
+uid			0 0x10282F31
+VENDORID VID_DEFAULT
+
+sourcepath		../src
+
+source			cusbdevcon.cpp
+source			cep0reader.cpp cep0writer.cpp
+source			crequestshandler.cpp
+source			cstatemachine.cpp
+source			cusbstatewatcher.cpp
+
+userinclude		../inc
+MW_LAYER_SYSTEMINCLUDE
+
+library			euser.lib usbman.lib usbwatcher.lib ecom.lib
+DEBUGLIBRARY  	flogger.lib            // File logging
+

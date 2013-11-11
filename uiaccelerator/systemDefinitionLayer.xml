@@ -1,0 +1,68 @@
+<layer name="uiaccelerator">
+  
+  <module name="uiaccelerator">
+    <component name="uiaccelerator">
+      <unit unitID="uiaccelerator" mrp="" filter="not_build" bldFile="&layer_real_source_path;\group" name="uiaccelerator" />
+    </component>
+  </module>
+  
+  <module name="uiaccelerator_dom">
+    <component name="uiaccelerator_dom">
+      <unit unitID="uiaccelerator_dom" mrp="" bldFile="&layer_real_source_path;\uiaccelerator_dom\group" name="uiaccelerator_dom" />
+    </component>
+  </module>
+  <module name="uiaccel_inc">
+    <component name="uiaccel_inc">
+      <unit unitID="uiaccel_inc" mrp="" filter="S60_5_0" bldFile="&layer_real_source_path;\inc\group" name="uiaccel_inc" />
+    </component>
+  </module>
+
+ <module name="osncore">
+    <component name="osncore">
+      <unit unitID="osncore" mrp="" filter="S60_5_0" bldFile="&layer_real_source_path;\osncore\group" name="osncore" />
+    </component>
+  </module>
+
+ <module name="uimodel">
+    <component name="uimodel">
+      <unit unitID="uimodel" mrp="" filter="S60_5_0" bldFile="&layer_real_source_path;\uimodel\group" name="uimodel" />
+    </component>
+  </module>
+  
+  <module name="lctmanagement">
+    <component name="lctmanagement">
+      <unit unitID="lctmanagement" mrp="" filter="S60_5_0" bldFile="&layer_real_source_path;\lctmanagement\group" name="lctmanagement" />
+    </component>
+  </module>
+
+ <module name="uiacceltk">
+    <component name="uiacceltk">
+      <unit unitID="uiacceltk" mrp="" bldFile="&layer_real_source_path;\uiacceltk\group" name="uiacceltk" />
+    </component>
+  </module>
+
+ <module name="alfwidgets">
+    <component name="alfwidgets">
+      <unit unitID="alfwidgets" mrp="" filter="S60_5_0" bldFile="&layer_real_source_path;\alfwidgets\group" name="alfwidgets" />
+    </component>
+  </module>
+
+ <module name="thememanagement">
+    <component name="thememanagement">
+      <unit unitID="thememanagement" mrp="" filter="S60_5_0" bldFile="&layer_real_source_path;\thememanagement\group" name="thememanagement" />
+    </component>
+  </module>
+
+ <module name="declarativeui">
+    <component name="declarativeui">
+      <unit unitID="declarativeui" mrp="" filter="S60_5_0" bldFile="&layer_real_source_path;\declarativeui\group" name="declarativeui" />
+    </component>
+  </module>
+  
+  <module name="configchanges">
+    <component name="configchanges">
+      <unit unitID="configchanges" mrp="" bldFile="&layer_real_source_path;\internal\configchanges\group" name="configchanges" />
+    </component>
+  </module>
+  
+</layer>

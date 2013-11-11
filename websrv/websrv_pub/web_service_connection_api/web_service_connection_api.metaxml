@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<api id="7fb19ae8c3c54334b8a015d954c209bc" dataversion="1.0">
+  <name>Web Service Connection API</name>
+  <description>This API offers ways to establish new web service connections and to send messages using an established connection.</description>
+  <type>c++</type>
+  <collection>webservices</collection>
+  <libs>
+    <lib name="SenServConn.LIB" />
+    <lib name="SenUtils.LIB" />
+  </libs>
+  <release category="public" sinceversion="3.0"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="5fba3408ef1074b5d8181495e5429c66" dataversion="1.0">
+  <name>CDL API</name>
+  <description>Provides CdlCompilerToolkit functionality.</description>
+  <type>c++</type>
+  <subsystem>uitools</subsystem>
+  <libs>
+  	<lib name="CdlCompilerToolkit.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

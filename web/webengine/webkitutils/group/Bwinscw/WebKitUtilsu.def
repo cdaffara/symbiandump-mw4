@@ -1,0 +1,40 @@
+EXPORTS
+	?AnimateToolBarClosing@CToolBar@@QAEXH@Z @ 1 NONAME ; void CToolBar::AnimateToolBarClosing(int)
+	?Draw@CToolBar@@QBEXXZ @ 2 NONAME ; void CToolBar::Draw(void) const
+	?HandleOfferKeyEventL@CToolBar@@QAE?AW4TKeyResponse@@ABUTKeyEvent@@W4TEventCode@@@Z @ 3 NONAME ; enum TKeyResponse CToolBar::HandleOfferKeyEventL(struct TKeyEvent const &, enum TEventCode)
+	?HandlePointerEventL@CToolBar@@QAEXABUTPointerEvent@@@Z @ 4 NONAME ; void CToolBar::HandlePointerEventL(struct TPointerEvent const &)
+	?NewL@CToolBar@@SAPAV1@AAVMToolBarCallback@@@Z @ 5 NONAME ; class CToolBar * CToolBar::NewL(class MToolBarCallback &)
+	?initWithCallback@HistoryController@@SAPAVHistoryControllerInterface@@PAVHistoryCallback@@_N1@Z @ 6 NONAME ; class HistoryControllerInterface * HistoryController::initWithCallback(class HistoryCallback *, bool, bool)
+	?sqlite3SymbianFs@@YAAAVRFs@@XZ @ 7 NONAME ; class RFs & sqlite3SymbianFs(void)
+	?sqlite3SymbianLastOsError@@YAHXZ @ 8 NONAME ; int sqlite3SymbianLastOsError(void)
+	?sqlite3SymbianLibFinalize@@YAXXZ @ 9 NONAME ; void sqlite3SymbianLibFinalize(void)
+	?sqlite3SymbianLibInit@@YAHXZ @ 10 NONAME ; int sqlite3SymbianLibInit(void)
+	sqlite3_close @ 11 NONAME
+	sqlite3_errcode @ 12 NONAME
+	sqlite3_last_insert_rowid @ 13 NONAME
+	sqlite3_open16 @ 14 NONAME
+	sqlite3_bind_blob @ 15 NONAME
+	sqlite3_bind_int64 @ 16 NONAME
+	sqlite3_bind_null @ 17 NONAME
+	sqlite3_bind_text16 @ 18 NONAME
+	sqlite3_column_blob @ 19 NONAME
+	sqlite3_column_bytes @ 20 NONAME
+	sqlite3_column_int @ 21 NONAME
+	sqlite3_column_int64 @ 22 NONAME
+	sqlite3_column_text16 @ 23 NONAME
+	sqlite3_data_count @ 24 NONAME
+	sqlite3_expired @ 25 NONAME
+	sqlite3_finalize @ 26 NONAME
+	sqlite3_prepare16 @ 27 NONAME
+	sqlite3_reset @ 28 NONAME
+	sqlite3_step @ 29 NONAME
+	sqlite3_bind_text @ 30 NONAME
+	sqlite3_busy_handler @ 31 NONAME
+	sqlite3_busy_timeout @ 32 NONAME
+	sqlite3_changes @ 33 NONAME
+	sqlite3_column_double @ 34 NONAME
+	sqlite3_column_name @ 35 NONAME
+	sqlite3_column_name16 @ 36 NONAME
+	sqlite3_column_text @ 37 NONAME
+	sqlite3_errmsg @ 38 NONAME
+

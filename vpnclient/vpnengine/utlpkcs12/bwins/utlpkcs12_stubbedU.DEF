@@ -1,0 +1,11 @@
+EXPORTS
+	??1CPKCS12Handler@@UAE@XZ @ 1 NONAME ; CPKCS12Handler::~CPKCS12Handler(void)
+	?NewL@CPKCS12Handler@@SAPAV1@AAVRPKIServiceAPI@@@Z @ 2 NONAME ; class CPKCS12Handler * CPKCS12Handler::NewL(class RPKIServiceAPI &)
+	?NewL@CPKCS12Handler@@SAPAV1@XZ @ 3 NONAME ; class CPKCS12Handler * CPKCS12Handler::NewL(void)
+	?NewLC@CPKCS12Handler@@SAPAV1@AAVRPKIServiceAPI@@@Z @ 4 NONAME ; class CPKCS12Handler * CPKCS12Handler::NewLC(class RPKIServiceAPI &)
+	?NewLC@CPKCS12Handler@@SAPAV1@XZ @ 5 NONAME ; class CPKCS12Handler * CPKCS12Handler::NewLC(void)
+	?SaveSecurityObjectsToDiskL@CPKCS12Handler@@QAEXABVTDesC8@@ABVTDesC16@@1@Z @ 6 NONAME ; void CPKCS12Handler::SaveSecurityObjectsToDiskL(class TDesC8 const &, class TDesC16 const &, class TDesC16 const &)
+	?SetApplicability@CPKCS12Handler@@QAEXABV?$RArray@VTUid@@@@@Z @ 7 NONAME ; void CPKCS12Handler::SetApplicability(class RArray<class TUid> const &)
+	?SetDeletable@CPKCS12Handler@@QAEXH@Z @ 8 NONAME ; void CPKCS12Handler::SetDeletable(int)
+	?StorePKCS12ObjectL@CPKCS12Handler@@QAEXABVTDesC8@@ABVTDesC16@@@Z @ 9 NONAME ; void CPKCS12Handler::StorePKCS12ObjectL(class TDesC8 const &, class TDesC16 const &)
+

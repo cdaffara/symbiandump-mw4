@@ -1,0 +1,3 @@
+EXPORTS
+	?StartTest@TDmAdStartTest@@SAXXZ @ 1 NONAME ; public: static void __cdecl TDmAdStartTest::StartTest(void)
+

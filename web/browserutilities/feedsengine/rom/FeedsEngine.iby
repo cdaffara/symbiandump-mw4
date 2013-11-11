@@ -1,0 +1,45 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  IBY file for FeedsServer
+*
+*/
+
+
+#ifndef __FEEDS_ENGINE_IBY__
+#define __FEEDS_ENGINE_IBY__
+
+#ifdef __RSS_FEEDS
+
+// Exes and dlls.
+S60_APP_EXE(FeedsServer)
+file=ABI_DIR\BUILD_DIR\FeedsServerApi.dll    SHARED_LIB_DIR\FeedsServerApi.dll
+file=ABI_DIR\BUILD_DIR\FeedsServerClient.dll    SHARED_LIB_DIR\FeedsServerClient.dll
+
+// Exe and Resource for Test App
+// S60_APP_EXE(FeedsApp)
+// data=\epoc32\data\z\private\10003a3f\apps\FeedsApp_reg.rsc    	\private\10003a3f\apps\FeedsApp_reg.rsc
+
+// Data
+data=EPOCROOT##epoc32\data\z\private\1020728E\default_feeds.xml  private\1020728E\default_feeds.xml
+
+// Feedsengine database security policy file
+data=DATAZ_\private\100012a5\policy\10281F95.SPD	private\100012a5\policy\10281F95.SPD	
+
+// Secure Backup registration file
+data=DATAZ_\private\1020728E\backup_registration.xml	private\1020728E\backup_registration.xml
+
+#endif
+#endif // __FEEDS_ENGINE_IBY__
+
+//  End of File

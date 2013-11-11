@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<api id="cfa6ced861c42751dd3c0e14f042b7b5" dataversion="2.0">
+  <name>SVGT API</name>
+  <description>Prrovides for parsing, decoding, manipulating, and managing of SVG content.</description>
+  <type>c++</type>
+  <collection>domain</collection>
+  <libs>
+    <lib name="SVGEngine.lib" />
+    <lib name="SVGEngineJI.lib" />
+  </libs>
+  <release category="platform"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

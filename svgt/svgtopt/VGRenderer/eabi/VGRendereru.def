@@ -1,0 +1,7 @@
+EXPORTS
+	_ZTI10CVGSurface @ 1 NONAME ; #<TI>#
+	_ZTI11CVGRenderer @ 2 NONAME ; #<TI>#
+	_ZTV10CVGSurface @ 3 NONAME ; #<VT>#
+	_ZTV11CVGRenderer @ 4 NONAME ; #<VT>#
+	_ZN11CVGRenderer4NewLE13SVGRendererIdi @ 5 NONAME
+

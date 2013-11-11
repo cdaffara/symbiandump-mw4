@@ -1,0 +1,95 @@
+/*
+* ==============================================================================
+*  Name        : MemManTest.mmp
+*  Part of     : MemMan tool
+*  Description : Project specification file
+*  Version     : 
+*
+*    Copyright (c) 2006, Nokia Corporation
+*    All rights reserved.
+*  
+*  	Redistribution and use in source and binary forms, with or without
+*  	modification, are permitted provided that the following conditions
+*  	are met:
+*  
+*      * Redistributions of source code must retain the above copyright
+*        notice, this list of conditions and the following disclaimer.
+*      * Redistributions in binary form must reproduce the above copyright
+*        notice, this list of conditions and the following disclaimer in
+*        the documentation and/or other materials provided with the
+*        distribution.
+*      * Neither the name of the Nokia Corporation nor the names of its
+*        contributors may be used to endorse or promote products derived
+*        from this software without specific prior written permission.
+*  
+*  	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+*  	"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+*  	LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+*  	A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+*  	OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+*  	SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+*  	LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+*  	DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+*  	THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+*  	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+*  	USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+*  	DAMAGE.
+*  
+*
+* ==============================================================================
+*/
+#ifndef __BROWSER_SDK
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#endif
+TARGET		MemManTest.exe
+TARGETTYPE  	exe
+UID         	0x01000007
+
+MACRO NDEBUG
+MACRO APPLE_CHANGES
+MACRO NOKIA_CHANGES
+MACRO __CPLUSPLUS
+MACRO KHTML_NO_XBL
+MACRO KHTML_NO_EXCEPTIONS
+MACRO KHTML_NO_SCRIPTING
+
+EPOCHEAPSIZE 524288 8388608
+#ifndef __BROWSER_SDK
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+#else
+SYSTEMINCLUDE 	/epoc32/include /epoc32/include/libc
+#endif
+
+USERINCLUDE 	../../WEBCORE/bridge ../../WEBCORE/kwq
+USERINCLUDE 	../Inc
+USERINCLUDE 	../tsrc
+
+SOURCEPATH	../tsrc
+SOURCE	        MemManUnit.cpp	
+SOURCE		MemManUTConsole.cpp
+SOURCE		MemManUTContainer.cpp
+
+
+LIBRARY		ResLoader.lib
+#if defined(__BROWSER_SDK)
+LIBRARY   MemMan_sdk.lib
+#else
+LIBRARY         memman.lib
+#endif
+LIBRARY		ESTLIB.lib 
+LIBRARY		euser.lib 
+LIBRARY		EFSRV.lib 
+LIBRARY		bafl.lib
+LIBRARY		fbscli.lib
+LIBRARY		charconv.lib
+LIBRARY		hal.lib
+STATICLIBRARY		kwq.lib KHTML.lib
+
+
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif

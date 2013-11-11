@@ -1,0 +1,16 @@
+[database]
+
+read
+capability =  ProtServ
+SID = 10008D38
+
+write
+capability = ProtServ
+SID = 10008D38
+
+schema
+capability = ProtServ
+SID = 10008D38
+
+[backup]
+SID = 10008D38

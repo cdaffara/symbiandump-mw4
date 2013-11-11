@@ -1,0 +1,26 @@
+EXPORTS
+	??0TAllowRegisterDlgRequest@@QAE@XZ @ 1 NONAME ; TAllowRegisterDlgRequest::TAllowRegisterDlgRequest(void)
+	??0TAllowRegisterDlgResponse@@QAE@XZ @ 2 NONAME ; TAllowRegisterDlgResponse::TAllowRegisterDlgResponse(void)
+	??0TAllowUnRegisterDlgRequest@@QAE@XZ @ 3 NONAME ; TAllowUnRegisterDlgRequest::TAllowUnRegisterDlgRequest(void)
+	??0TAllowUnRegisterDlgResponse@@QAE@XZ @ 4 NONAME ; TAllowUnRegisterDlgResponse::TAllowUnRegisterDlgResponse(void)
+	??0TAskSaveDlgRequest@@QAE@XZ @ 5 NONAME ; TAskSaveDlgRequest::TAskSaveDlgRequest(void)
+	??0TAskSaveDlgResponse@@QAE@XZ @ 6 NONAME ; TAskSaveDlgResponse::TAskSaveDlgResponse(void)
+	??0TAuthenticationDlgRequest@@QAE@XZ @ 7 NONAME ; TAuthenticationDlgRequest::TAuthenticationDlgRequest(void)
+	??0TAuthenticationDlgResponse@@QAE@XZ @ 8 NONAME ; TAuthenticationDlgResponse::TAuthenticationDlgResponse(void)
+	??0TSenNotPluginRequest@@QAE@H@Z @ 9 NONAME ; TSenNotPluginRequest::TSenNotPluginRequest(int)
+	??0TSenNotPluginRequest@@QAE@XZ @ 10 NONAME ; TSenNotPluginRequest::TSenNotPluginRequest(void)
+	?Method@TSenNotPluginRequest@@QAEHXZ @ 11 NONAME ; int TSenNotPluginRequest::Method(void)
+	?OkButtonPressed@TAllowRegisterDlgResponse@@QBEHXZ @ 12 NONAME ; int TAllowRegisterDlgResponse::OkButtonPressed(void) const
+	?OkButtonPressed@TAllowUnRegisterDlgResponse@@QBEHXZ @ 13 NONAME ; int TAllowUnRegisterDlgResponse::OkButtonPressed(void) const
+	?OkButtonPressed@TAskSaveDlgResponse@@QBEHXZ @ 14 NONAME ; int TAskSaveDlgResponse::OkButtonPressed(void) const
+	?OkButtonPressed@TAuthenticationDlgResponse@@QBEHXZ @ 15 NONAME ; int TAuthenticationDlgResponse::OkButtonPressed(void) const
+	?Password@TAuthenticationDlgRequest@@QBE?AVTPtrC16@@XZ @ 16 NONAME ; class TPtrC16 TAuthenticationDlgRequest::Password(void) const
+	?Password@TAuthenticationDlgResponse@@QBE?AVTPtrC16@@XZ @ 17 NONAME ; class TPtrC16 TAuthenticationDlgResponse::Password(void) const
+	?SetData@TAuthenticationDlgRequest@@QAEHABVTDesC16@@0@Z @ 18 NONAME ; int TAuthenticationDlgRequest::SetData(class TDesC16 const &, class TDesC16 const &)
+	?SetData@TAuthenticationDlgResponse@@QAEHABVTDesC16@@0H@Z @ 19 NONAME ; int TAuthenticationDlgResponse::SetData(class TDesC16 const &, class TDesC16 const &, int)
+	?SetOkButton@TAllowRegisterDlgResponse@@QAEXH@Z @ 20 NONAME ; void TAllowRegisterDlgResponse::SetOkButton(int)
+	?SetOkButton@TAllowUnRegisterDlgResponse@@QAEXH@Z @ 21 NONAME ; void TAllowUnRegisterDlgResponse::SetOkButton(int)
+	?SetOkButton@TAskSaveDlgResponse@@QAEXH@Z @ 22 NONAME ; void TAskSaveDlgResponse::SetOkButton(int)
+	?Username@TAuthenticationDlgRequest@@QBE?AVTPtrC16@@XZ @ 23 NONAME ; class TPtrC16 TAuthenticationDlgRequest::Username(void) const
+	?Username@TAuthenticationDlgResponse@@QBE?AVTPtrC16@@XZ @ 24 NONAME ; class TPtrC16 TAuthenticationDlgResponse::Username(void) const
+

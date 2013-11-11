@@ -1,0 +1,505 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+
+PRJ_PLATFORMS
+
+DEFAULT
+
+PRJ_TESTEXPORTS
+
+multiple_machines_client.iby  /epoc32/rom/include/multiple_machines_client.iby
+multiple_machines_server.iby  /epoc32/rom/include/multiple_machines_server.iby
+
+//Client scripts
+../Scripts/client/UPnP_Discovery_0001.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0001.script
+../Scripts/client/UPnP_Discovery_0002.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0002.script
+../Scripts/client/UPnP_Discovery_0003.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0003.script
+../Scripts/client/UPnP_Discovery_0004.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0004.script
+../Scripts/client/UPnP_Discovery_0005.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0005.script
+../Scripts/client/UPnP_Discovery_0006.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0006.script
+../Scripts/client/UPnP_Discovery_0007.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0007.script
+../Scripts/client/UPnP_Discovery_0008.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0008.script
+../Scripts/client/UPnP_Discovery_0009.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0009.script
+../Scripts/client/UPnP_Discovery_0010.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0010.script
+../Scripts/client/UPnP_Discovery_0011.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0011.script
+../Scripts/client/UPnP_Discovery_0012.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0012.script
+../Scripts/client/UPnP_Discovery_0013.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0013.script
+../Scripts/client/UPnP_Discovery_0014.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0014.script
+../Scripts/client/UPnP_Discovery_0015.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0015.script
+../Scripts/client/UPnP_Discovery_0016.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0016.script
+../Scripts/client/UPnP_Discovery_0017.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0017.script
+../Scripts/client/UPnP_Discovery_0018.script		z:/upnp/testupnp/client/scripts/upnp_discovery_0018.script
+../Scripts/client/upnp_open_discovery_001.script	z:/upnp/testupnp/client/scripts/upnp_open_discovery_001.script
+../Scripts/client/upnp_open_discovery_001_rev.script z:/upnp/testupnp/client/scripts/upnp_open_discovery_001_rev.script
+../Scripts/client/upnp_initiateaction_0019.script	z:/upnp/testupnp/client/scripts/upnp_initiateaction_0019.script
+../Scripts/client/upnp_initiateaction_0019_rev.script	z:/upnp/testupnp/client/scripts/upnp_initiateaction_0019_rev.script
+../Scripts/client/upnp_cancel_discovery_0001.script		z:/upnp/testupnp/client/scripts/upnp_cancel_discovery_0001.script
+../Scripts/client/upnp_cancel_discovery_0001_rev.script	z:/upnp/testupnp/client/scripts/upnp_cancel_discovery_0001_rev.script
+../Scripts/client/upnp_cancel_discovery.script		z:/upnp/testupnp/client/scripts/upnp_cancel_discovery.script
+../Scripts/client/upnp_cancel_discovery_rev.script	z:/upnp/testupnp/client/scripts/upnp_cancel_discovery_rev.script
+../Scripts/client/upnp_publish_regression.script									       z:/upnp/testupnp/client/scripts/upnp_publish_regression.script
+../Scripts/client/upnp_vendor_service_description_0031.script                             z:/upnp/testupnp/client/scripts/upnp_vendor_service_description_0031.script
+../Scripts/client/upnp_register_notify_0036.script	                                       z:/upnp/testupnp/client/scripts/upnp_register_notify_0036.script	
+../Scripts/client/upnp_validate_discovery_response_time_0049_1.script                     z:/upnp/testupnp/client/scripts/upnp_validate_discovery_response_time_0049_1.script
+../Scripts/client/upnp_validate_discovery_response_time_0049_1_rev.script                     z:/upnp/testupnp/client/scripts/upnp_validate_discovery_response_time_0049_1_rev.script
+../Scripts/client/upnp_validate_3+2d+k_advertisements_0051.script                         z:/upnp/testupnp/client/scripts/upnp_validate_3+2d+k_advertisements_0051.script
+../Scripts/client/upnp_vendor_device_description_0029_1.script		                       z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_1.script
+../Scripts/client/upnp_vendor_device_description_0029_1_rev.script 					   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_1_rev.script
+../Scripts/client/upnp_vendor_device_description_0029_2.script						       z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_2.script
+../Scripts/client/upnp_vendor_device_description_0029_2_rev.script 					   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_2_rev.script
+../Scripts/client/upnp_vendor_device_description_0029_3.script 					   	   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_3.script
+../Scripts/client/upnp_vendor_device_description_0029_3_rev.script						   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_3_rev.script
+../Scripts/client/upnp_vendor_device_description_0029_4.script 					   	   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_4.script
+../Scripts/client/upnp_vendor_device_description_0029_4_rev.script						   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_4_rev.script
+../Scripts/client/upnp_vendor_device_description_0029_5.script 					   	   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_5.script
+../Scripts/client/upnp_vendor_device_description_0029_5_rev.script 					   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_5_rev.script
+../Scripts/client/upnp_vendor_device_description_0029_6.script 					   	   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_6.script
+../Scripts/client/upnp_vendor_device_description_0029_6_rev.script						   z:/upnp/testupnp/client/scripts/upnp_vendor_device_description_0029_6_rev.script
+../Scripts/client/upnp_standard_service_description_0030_1.script                          z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_1.script
+../Scripts/client/upnp_standard_service_description_0030_1_rev.script                      z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_1_rev.script
+../Scripts/client/upnp_standard_service_description_0030_2.script                          z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_2.script
+../Scripts/client/upnp_standard_service_description_0030_2_rev.script                      z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_2_rev.script
+../Scripts/client/upnp_standard_service_description_0030_3.script                          z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_3.script
+../Scripts/client/upnp_standard_service_description_0030_3_rev.script                      z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_3_rev.script
+../Scripts/client/upnp_standard_service_description_0030_4.script                          z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_4.script
+../Scripts/client/upnp_standard_service_description_0030_4_rev.script                      z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_4_rev.script
+../Scripts/client/upnp_standard_service_description_0030_5.script                          z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_5.script
+../Scripts/client/upnp_standard_service_description_0030_5_rev.script                      z:/upnp/testupnp/client/scripts/upnp_standard_service_description_0030_5_rev.script
+../Scripts/client/upnp_register_notify_0036_1.script	                                   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_1.script	
+../Scripts/client/upnp_register_notify_0036_1_rev.script	                               z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_1_rev.script	
+../Scripts/client/upnp_register_notify_0036_2.script                                   	   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_2.script
+../Scripts/client/upnp_register_notify_0036_2_rev.script	                       		   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_2_rev.script
+../Scripts/client/upnp_register_notify_0036_3.script                                   	   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_3.script
+../Scripts/client/upnp_register_notify_0036_3_rev.script	                       		   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_3_rev.script
+../Scripts/client/upnp_register_notify_0036_4.script                                   	   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_4.script
+../Scripts/client/upnp_register_notify_0036_4_rev.script	                       		   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_4_rev.script
+../Scripts/client/upnp_register_notify_0036_5.script                                   	   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_5.script
+../Scripts/client/upnp_register_notify_0036_5_rev.script	                       		   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_5_rev.script
+../Scripts/client/upnp_register_notify_0036_6.script                                   	   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_6.script
+../Scripts/client/upnp_register_notify_0036_6_rev.script	                       		   z:/upnp/testupnp/client/scripts/upnp_register_notify_0036_6_rev.script
+
+../Scripts/client/upnp_cancel_register_notify_0037_1.script	                                z:/upnp/testupnp/client/scripts/upnp_cancel_register_notify_0037_1.script
+../Scripts/client/upnp_cancel_register_notify_0037_1_rev.script                             z:/upnp/testupnp/client/scripts/upnp_cancel_register_notify_0037_1_rev.script
+../Scripts/client/upnp_register_state_change_services_0038_1.script                         z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_1.script
+../Scripts/client/upnp_register_state_change_services_0038_1_rev.script                     z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_1_rev.script
+../Scripts/client/upnp_register_state_change_services_0038_2.script                         z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_2.script
+../Scripts/client/upnp_register_state_change_services_0038_2_rev.script                     z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_2_rev.script
+../Scripts/client/upnp_renew_subscription_0039_1.script										z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_1.script
+../Scripts/client/upnp_renew_subscription_0039_1_rev.script									z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_1_rev.script
+../Scripts/client/upnp_renew_subscription_0039_2.script										z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_2.script
+../Scripts/client/upnp_renew_subscription_0039_2_rev.script									z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_2_rev.script
+../Scripts/client/upnp_unsubscribe_0042_1.script                                            z:/upnp/testupnp/client/scripts/upnp_unsubscribe_0042_1.script
+../Scripts/client/upnp_unsubscribe_0042_1_rev.script   										z:/upnp/testupnp/client/scripts/upnp_unsubscribe_0042_1_rev.script                                 
+../Scripts/client/upnp_unsubscribe_0042_2.script                                            z:/upnp/testupnp/client/scripts/upnp_unsubscribe_0042_2.script
+../Scripts/client/upnp_unsubscribe_0042_2_rev.script   										z:/upnp/testupnp/client/scripts/upnp_unsubscribe_0042_2_rev.script 
+../Scripts/client/upnp_send_notify_1.script                                            		z:/upnp/testupnp/client/scripts/upnp_send_notify_1.script
+../Scripts/client/upnp_send_notify_1_rev.script   											z:/upnp/testupnp/client/scripts/upnp_send_notify_1_rev.script 
+../Scripts/client/upnp_validate_root_0001_1.script                                          z:/upnp/testupnp/client/scripts/upnp_validate_root_0001_1.script
+../Scripts/client/upnp_validate_root_0001_1_rev.script   									z:/upnp/testupnp/client/scripts/upnp_validate_root_0001_1_rev.script
+../Scripts/client/upnp_invalid_discovery_requests_0048_1.script                       	    z:/upnp/testupnp/client/scripts/upnp_invalid_discovery_requests_0048_1.script
+../Scripts/client/upnp_invalid_discovery_requests_0048_2.script                       	    z:/upnp/testupnp/client/scripts/upnp_invalid_discovery_requests_0048_2.script
+../Scripts/client/upnp_invalid_discovery_requests_0048_3.script                             z:/upnp/testupnp/client/scripts/upnp_invalid_discovery_requests_0048_3.script
+../Scripts/client/upnp_invalid_discovery_requests_0048_1_rev.script                       	z:/upnp/testupnp/client/scripts/upnp_invalid_discovery_requests_0048_1_rev.script
+../Scripts/client/upnp_invalid_discovery_requests_0048_2_rev.script                       	z:/upnp/testupnp/client/scripts/upnp_invalid_discovery_requests_0048_2_rev.script
+../Scripts/client/upnp_invalid_discovery_requests_0048_3_rev.script                         z:/upnp/testupnp/client/scripts/upnp_invalid_discovery_requests_0048_3_rev.script
+../Scripts/client/upnp_validate_describe_requests_headers_0060_1.script                     z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_1.script  
+../Scripts/client/upnp_validate_describe_requests_headers_0060_1_rev.script                 z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_1_rev.script  
+../Scripts/client/upnp_validate_describe_requests_headers_0060_2.script                     z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_2.script  
+../Scripts/client/upnp_validate_describe_requests_headers_0060_2_rev.script                 z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_2_rev.script  
+../Scripts/client/upnp_validate_describe_requests_headers_0060_3.script                     z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_3.script  
+../Scripts/client/upnp_validate_describe_requests_headers_0060_3_rev.script                 z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_3_rev.script  
+../Scripts/client/upnp_validate_describe_requests_headers_0060_4.script                     z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_4.script  
+../Scripts/client/upnp_validate_describe_requests_headers_0060_4_rev.script                 z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_4_rev.script  
+../Scripts/client/upnp_validate_describe_requests_headers_0060_5.script                     z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_5.script  
+../Scripts/client/upnp_validate_describe_requests_headers_0060_5_rev.script                 z:/upnp/testupnp/client/scripts/upnp_validate_describe_requests_headers_0060_5_rev.script  
+
+../Scripts/client/upnp_validate_device_registration_0061_1.script			z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_1.script
+../Scripts/client/upnp_validate_device_registration_0061_2.script           z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_2.script
+../Scripts/client/upnp_validate_device_registration_0061_3.script           z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_3.script
+../Scripts/client/upnp_validate_device_registration_0061_4.script           z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_4.script
+../Scripts/client/upnp_validate_device_registration_0061_5.script           z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_5.script
+../Scripts/client/upnp_validate_device_registration_0061_6.script           z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_6.script
+../Scripts/client/upnp_validate_device_registration_0061_7.script           z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_7.script
+../Scripts/client/upnp_validate_device_registration_0061_8.script           z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_8.script
+../Scripts/client/upnp_validate_device_registration_0061_9.script           z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_9.script
+../Scripts/client/upnp_validate_device_registration_0061_10.script          z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_10.script
+../Scripts/client/upnp_validate_device_registration_0061_11.script          z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_11.script
+../Scripts/client/upnp_validate_device_registration_0061_12.script          z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_12.script
+../Scripts/client/upnp_validate_device_registration_0061_13.script          z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_13.script
+../Scripts/client/upnp_validate_device_registration_0061_14.script          z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_14.script
+../Scripts/client/upnp_validate_device_registration_0061_15.script          z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_15.script
+../Scripts/client/upnp_validate_device_registration_0061_16.script          z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_16.script
+../Scripts/client/upnp_validate_device_registration_0062_1.script           z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0062_1.script
+
+../Scripts/client/upnp_validate_device_registration_0062_1_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0062_1_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_1_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_1_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_2_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_2_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_3_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_3_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_4_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_4_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_5_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_5_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_6_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_6_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_7_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_7_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_8_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_8_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_9_rev.script       z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_9_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_10_rev.script      z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_10_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_11_rev.script      z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_11_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_12_rev.script      z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_12_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_13_rev.script      z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_13_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_14_rev.script      z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_14_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_15_rev.script      z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_15_rev.script
+../Scripts/client/upnp_validate_device_registration_0061_16_rev.script      z:/upnp/testupnp/client/scripts/upnp_validate_device_registration_0061_16_rev.script
+
+../Scripts/client/upnp_register_state_change_services_0038_3.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_3.script
+../Scripts/client/upnp_register_state_change_services_0038_4.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_4.script
+../Scripts/client/upnp_register_state_change_services_0038_5.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_5.script
+../Scripts/client/upnp_register_state_change_services_0038_6.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_6.script
+../Scripts/client/upnp_register_state_change_services_0038_7.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_7.script
+../Scripts/client/upnp_register_state_change_services_0038_8.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_8.script
+../Scripts/client/upnp_register_state_change_services_0038_9.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_9.script
+../Scripts/client/upnp_register_state_change_services_0038_10.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_10.script
+../Scripts/client/upnp_register_state_change_services_0038_11.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_11.script
+../Scripts/client/upnp_register_state_change_services_0038_12.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_12.script
+../Scripts/client/upnp_register_state_change_services_0038_13.script      	z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_13.script
+../Scripts/client/upnp_abruptclose_discovery_43_1.script			      	z:/upnp/testupnp/client/scripts/upnp_abruptclose_discovery_43_1.script
+../Scripts/client/upnp_abruptclose_describe_44_1.script			      		z:/upnp/testupnp/client/scripts/upnp_abruptclose_describe_44_1.script
+../Scripts/client/upnp_renew_subscription_0039_3.script						z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_3.script
+../Scripts/client/upnp_renew_subscription_0039_4.script						z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_4.script
+../Scripts/client/upnp_renew_subscription_0039_5.script						z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_5.script
+../Scripts/client/upnp_renew_subscription_0039_6.script						z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_6.script
+../Scripts/client/upnp_renew_subscription_0039_7.script						z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_7.script
+../Scripts/client/upnp_renew_subscription_0039_8.script						z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_8.script
+../Scripts/client/upnp_renew_subscription_0039_9.script						z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_9.script
+../Scripts/client/upnp_renew_subscription_0039_10.script					z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_10.script
+
+
+../Scripts/client/upnp_register_state_change_services_0038_3_rev.script                     z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_3_rev.script 
+../Scripts/client/upnp_register_state_change_services_0038_4_rev.script                     z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_4_rev.script 
+../Scripts/client/upnp_register_state_change_services_0038_5_rev.script                     z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_5_rev.script 
+../Scripts/client/upnp_register_state_change_services_0038_6_rev.script                     z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_6_rev.script 
+../Scripts/client/upnp_register_state_change_services_0038_7_rev.script                     z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_7_rev.script 
+../Scripts/client/upnp_register_state_change_services_0038_8_rev.script                     z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_8_rev.script 
+../Scripts/client/upnp_register_state_change_services_0038_9_rev.script                     z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_9_rev.script 
+../Scripts/client/upnp_register_state_change_services_0038_10_rev.script                    z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_10_rev.script
+../Scripts/client/upnp_register_state_change_services_0038_11_rev.script                    z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_11_rev.script
+../Scripts/client/upnp_register_state_change_services_0038_12_rev.script                    z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_12_rev.script
+../Scripts/client/upnp_register_state_change_services_0038_13_rev.script                    z:/upnp/testupnp/client/scripts/upnp_register_state_change_services_0038_13_rev.script
+../Scripts/client/upnp_abruptclose_discovery_43_1_rev.script			      				z:/upnp/testupnp/client/scripts/upnp_abruptclose_discovery_43_1_rev.script
+../Scripts/client/upnp_abruptclose_describe_44_1_rev.script			      					z:/upnp/testupnp/client/scripts/upnp_abruptclose_describe_44_1_rev.script
+../Scripts/client/upnp_renew_subscription_0039_3_rev.script									z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_3_rev.script
+../Scripts/client/upnp_renew_subscription_0039_4_rev.script									z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_4_rev.script
+../Scripts/client/upnp_renew_subscription_0039_5_rev.script									z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_5_rev.script
+../Scripts/client/upnp_renew_subscription_0039_6_rev.script									z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_6_rev.script
+../Scripts/client/upnp_renew_subscription_0039_7_rev.script									z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_7_rev.script
+../Scripts/client/upnp_renew_subscription_0039_8_rev.script									z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_8_rev.script
+../Scripts/client/upnp_renew_subscription_0039_9_rev.script									z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_9_rev.script
+../Scripts/client/upnp_renew_subscription_0039_10_rev.script								z:/upnp/testupnp/client/scripts/upnp_renew_subscription_0039_10_rev.script
+../Scripts/client/upnp_initiateaction_0019_2.script											z:/upnp/testupnp/client/scripts/upnp_initiateaction_0019_2.script
+../Scripts/client/upnp_refresh_advertisement_0045_1.script									z:/upnp/testupnp/client/scripts/upnp_refresh_advertisement_0045_1.script
+../Scripts/client/upnp_refresh_advertisement_0045_2.script									z:/upnp/testupnp/client/scripts/upnp_refresh_advertisement_0045_2.script
+../Scripts/client/upnp_initiateaction_0019_2_rev.script										z:/upnp/testupnp/client/scripts/upnp_initiateaction_0019_2_rev.script
+../Scripts/client/upnp_refresh_advertisement_0045_1_rev.script								z:/upnp/testupnp/client/scripts/upnp_refresh_advertisement_0045_1_rev.script
+../Scripts/client/upnp_refresh_advertisement_0045_2_rev.script								z:/upnp/testupnp/client/scripts/upnp_refresh_advertisement_0045_2_rev.script
+
+//Server scripts
+../Scripts/server/UPnP_Discovery_0001.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0001.script
+../Scripts/server/UPnP_Discovery_0002.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0002.script
+../Scripts/server/UPnP_Discovery_0003.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0003.script
+../Scripts/server/UPnP_Discovery_0004.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0004.script
+../Scripts/server/UPnP_Discovery_0005.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0005.script
+../Scripts/server/UPnP_Discovery_0006.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0006.script
+../Scripts/server/UPnP_Discovery_0007.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0007.script
+../Scripts/server/UPnP_Discovery_0008.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0008.script
+../Scripts/server/UPnP_Discovery_0009.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0009.script
+../Scripts/server/UPnP_Discovery_0010.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0010.script
+../Scripts/server/UPnP_Discovery_0011.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0011.script
+../Scripts/server/UPnP_Discovery_0012.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0012.script
+../Scripts/server/UPnP_Discovery_0013.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0013.script
+../Scripts/server/UPnP_Discovery_0014.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0014.script
+../Scripts/server/UPnP_Discovery_0015.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0015.script
+../Scripts/server/UPnP_Discovery_0016.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0016.script
+../Scripts/server/UPnP_Discovery_0017.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0017.script
+../Scripts/server/UPnP_Discovery_0018.script		z:/upnp/testupnp/server/scripts/upnp_discovery_0018.script
+
+../Scripts/server/upnp_open_discovery_001.script	z:/upnp/testupnp/server/scripts/upnp_open_discovery_001.script
+../Scripts/server/upnp_open_discovery_001_rev.script z:/upnp/testupnp/server/scripts/upnp_open_discovery_001_rev.script
+../Scripts/server/upnp_initiateaction_0019.script	z:/upnp/testupnp/server/scripts/upnp_initiateaction_0019.script
+../Scripts/server/upnp_initiateaction_0019_rev.script	z:/upnp/testupnp/server/scripts/upnp_initiateaction_0019_rev.script
+../Scripts/server/upnp_cancel_discovery.script		z:/upnp/testupnp/server/scripts/upnp_cancel_discovery.script
+../Scripts/server/upnp_cancel_discovery_rev.script	z:/upnp/testupnp/server/scripts/upnp_cancel_discovery_rev.script
+../Scripts/server/upnp_cancel_discovery_0001.script		z:/upnp/testupnp/server/scripts/upnp_cancel_discovery_0001.script
+../Scripts/server/upnp_cancel_discovery_0001_rev.script	z:/upnp/testupnp/server/scripts/upnp_cancel_discovery_0001_rev.script
+../Scripts/server/upnp_publish_regression.script									       z:/upnp/testupnp/server/scripts/upnp_publish_regression.script
+../Scripts/server/upnp_vendor_service_description_0031.script                             z:/upnp/testupnp/server/scripts/upnp_vendor_service_description_0031.script
+../Scripts/server/upnp_register_notify_0036.script	                                       z:/upnp/testupnp/server/scripts/upnp_register_notify_0036.script	
+../Scripts/server/upnp_validate_discovery_response_time_0049_1.script                  	  z:/upnp/testupnp/server/scripts/upnp_validate_discovery_response_time_0049_1.script
+../Scripts/server/upnp_validate_discovery_response_time_0049_1_rev.script                  	  z:/upnp/testupnp/server/scripts/upnp_validate_discovery_response_time_0049_1_rev.script
+../Scripts/server/upnp_vendor_device_description_0029_1.script		                       z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_1.script
+../Scripts/server/upnp_vendor_device_description_0029_1_rev.script 					   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_1_rev.script
+../Scripts/server/upnp_vendor_device_description_0029_2.script						       z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_2.script
+../Scripts/server/upnp_vendor_device_description_0029_2_rev.script 					   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_2_rev.script
+../Scripts/server/upnp_vendor_device_description_0029_3.script 					   	   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_3.script
+../Scripts/server/upnp_vendor_device_description_0029_3_rev.script						   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_3_rev.script
+../Scripts/server/upnp_vendor_device_description_0029_4.script 					   	   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_4.script
+../Scripts/server/upnp_vendor_device_description_0029_4_rev.script						   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_4_rev.script
+../Scripts/server/upnp_vendor_device_description_0029_5.script 					   	   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_5.script
+../Scripts/server/upnp_vendor_device_description_0029_5_rev.script 					   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_5_rev.script
+../Scripts/server/upnp_vendor_device_description_0029_6.script 					   	   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_6.script
+../Scripts/server/upnp_vendor_device_description_0029_6_rev.script						   z:/upnp/testupnp/server/scripts/upnp_vendor_device_description_0029_6_rev.script
+../Scripts/server/upnp_standard_service_description_0030_1.script                          z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_1.script
+../Scripts/server/upnp_standard_service_description_0030_1_rev.script                      z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_1_rev.script
+../Scripts/server/upnp_standard_service_description_0030_2.script                          z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_2.script
+../Scripts/server/upnp_standard_service_description_0030_2_rev.script                      z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_2_rev.script
+../Scripts/server/upnp_standard_service_description_0030_3.script                          z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_3.script
+../Scripts/server/upnp_standard_service_description_0030_3_rev.script                      z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_3_rev.script
+../Scripts/server/upnp_standard_service_description_0030_4.script                          z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_4.script
+../Scripts/server/upnp_standard_service_description_0030_4_rev.script                      z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_4_rev.script
+../Scripts/server/upnp_standard_service_description_0030_5.script                          z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_5.script
+../Scripts/server/upnp_standard_service_description_0030_5_rev.script                      z:/upnp/testupnp/server/scripts/upnp_standard_service_description_0030_5_rev.script
+../Scripts/server/upnp_register_notify_0036_1.script                                   	   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_1.script
+../Scripts/server/upnp_register_notify_0036_1_rev.script	                       		   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_1_rev.script
+../Scripts/server/upnp_register_notify_0036_2.script                                   	   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_2.script
+../Scripts/server/upnp_register_notify_0036_2_rev.script	                       		   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_2_rev.script
+../Scripts/server/upnp_register_notify_0036_3.script                                   	   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_3.script
+../Scripts/server/upnp_register_notify_0036_3_rev.script	                       		   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_3_rev.script
+../Scripts/server/upnp_register_notify_0036_4.script                                   	   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_4.script
+../Scripts/server/upnp_register_notify_0036_4_rev.script	                       		   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_4_rev.script
+../Scripts/server/upnp_register_notify_0036_5.script                                   	   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_5.script
+../Scripts/server/upnp_register_notify_0036_5_rev.script	                       		   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_5_rev.script
+../Scripts/server/upnp_register_notify_0036_6.script                                   	   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_6.script
+../Scripts/server/upnp_register_notify_0036_6_rev.script	                       		   z:/upnp/testupnp/server/scripts/upnp_register_notify_0036_6_rev.script
+../Scripts/server/upnp_cancel_register_notify_0037_1.script	                                z:/upnp/testupnp/server/scripts/upnp_cancel_register_notify_0037_1.script
+../Scripts/server/upnp_cancel_register_notify_0037_1_rev.script                             z:/upnp/testupnp/server/scripts/upnp_cancel_register_notify_0037_1_rev.script
+../Scripts/server/upnp_register_state_change_services_0038_1.script                         z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_1.script
+../Scripts/server/upnp_register_state_change_services_0038_1_rev.script                     z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_1_rev.script
+../Scripts/server/upnp_register_state_change_services_0038_2.script                         z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_2.script
+../Scripts/server/upnp_register_state_change_services_0038_2_rev.script                     z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_2_rev.script
+../Scripts/server/upnp_renew_subscription_0039_1.script										z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_1.script
+../Scripts/server/upnp_renew_subscription_0039_1_rev.script									z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_1_rev.script
+../Scripts/server/upnp_renew_subscription_0039_2.script										z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_2.script
+../Scripts/server/upnp_renew_subscription_0039_2_rev.script									z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_2_rev.script
+../Scripts/server/upnp_unsubscribe_0042_1.script                                            z:/upnp/testupnp/server/scripts/upnp_unsubscribe_0042_1.script
+../Scripts/server/upnp_unsubscribe_0042_1_rev.script   										z:/upnp/testupnp/server/scripts/upnp_unsubscribe_0042_1_rev.script                                 
+../Scripts/server/upnp_unsubscribe_0042_2.script                                            z:/upnp/testupnp/server/scripts/upnp_unsubscribe_0042_2.script
+../Scripts/server/upnp_unsubscribe_0042_2_rev.script   										z:/upnp/testupnp/server/scripts/upnp_unsubscribe_0042_2_rev.script 
+../Scripts/server/upnp_send_notify_1.script                                            		z:/upnp/testupnp/server/scripts/upnp_send_notify_1.script
+../Scripts/server/upnp_send_notify_1_rev.script   											z:/upnp/testupnp/server/scripts/upnp_send_notify_1_rev.script 
+../Scripts/server/upnp_validate_root_0001_1.script                                          z:/upnp/testupnp/server/scripts/upnp_validate_root_0001_1.script
+../Scripts/server/upnp_validate_root_0001_1_rev.script   									z:/upnp/testupnp/server/scripts/upnp_validate_root_0001_1_rev.script
+../Scripts/server/upnp_invalid_discovery_requests_0048_1.script                       	    z:/upnp/testupnp/server/scripts/upnp_invalid_discovery_requests_0048_1.script
+../Scripts/server/upnp_invalid_discovery_requests_0048_2.script                       	    z:/upnp/testupnp/server/scripts/upnp_invalid_discovery_requests_0048_2.script
+../Scripts/server/upnp_invalid_discovery_requests_0048_3.script                             z:/upnp/testupnp/server/scripts/upnp_invalid_discovery_requests_0048_3.script
+../Scripts/server/upnp_invalid_discovery_requests_0048_1_rev.script                       	z:/upnp/testupnp/server/scripts/upnp_invalid_discovery_requests_0048_1_rev.script
+../Scripts/server/upnp_invalid_discovery_requests_0048_2_rev.script                       	z:/upnp/testupnp/server/scripts/upnp_invalid_discovery_requests_0048_2_rev.script
+../Scripts/server/upnp_invalid_discovery_requests_0048_3_rev.script                         z:/upnp/testupnp/server/scripts/upnp_invalid_discovery_requests_0048_3_rev.script
+../Scripts/server/upnp_validate_describe_requests_headers_0060_1.script                     z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_1.script  
+../Scripts/server/upnp_validate_describe_requests_headers_0060_1_rev.script                 z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_1_rev.script  
+../Scripts/server/upnp_validate_describe_requests_headers_0060_2.script                     z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_2.script  
+../Scripts/server/upnp_validate_describe_requests_headers_0060_2_rev.script                 z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_2_rev.script  
+../Scripts/server/upnp_validate_describe_requests_headers_0060_3.script                     z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_3.script  
+../Scripts/server/upnp_validate_describe_requests_headers_0060_3_rev.script                 z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_3_rev.script  
+../Scripts/server/upnp_validate_describe_requests_headers_0060_4.script                     z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_4.script  
+../Scripts/server/upnp_validate_describe_requests_headers_0060_4_rev.script                 z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_4_rev.script  
+../Scripts/server/upnp_validate_describe_requests_headers_0060_5.script                     z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_5.script  
+../Scripts/server/upnp_validate_describe_requests_headers_0060_5_rev.script                 z:/upnp/testupnp/server/scripts/upnp_validate_describe_requests_headers_0060_5_rev.script  
+
+../Scripts/server/upnp_validate_device_registration_0061_1.script			z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_1.script
+../Scripts/server/upnp_validate_device_registration_0061_2.script           z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_2.script
+../Scripts/server/upnp_validate_device_registration_0061_3.script           z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_3.script
+../Scripts/server/upnp_validate_device_registration_0061_4.script           z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_4.script
+../Scripts/server/upnp_validate_device_registration_0061_5.script           z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_5.script
+../Scripts/server/upnp_validate_device_registration_0061_6.script           z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_6.script
+../Scripts/server/upnp_validate_device_registration_0061_7.script           z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_7.script
+../Scripts/server/upnp_validate_device_registration_0061_8.script           z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_8.script
+../Scripts/server/upnp_validate_device_registration_0061_9.script           z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_9.script
+../Scripts/server/upnp_validate_device_registration_0061_10.script          z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_10.script
+../Scripts/server/upnp_validate_device_registration_0061_11.script          z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_11.script
+../Scripts/server/upnp_validate_device_registration_0061_12.script          z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_12.script
+../Scripts/server/upnp_validate_device_registration_0061_13.script          z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_13.script
+../Scripts/server/upnp_validate_device_registration_0061_14.script          z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_14.script
+../Scripts/server/upnp_validate_device_registration_0061_15.script          z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_15.script
+../Scripts/server/upnp_validate_device_registration_0061_16.script          z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_16.script
+../Scripts/server/upnp_validate_device_registration_0062_1.script           z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0062_1.script
+
+../Scripts/server/upnp_validate_device_registration_0062_1_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0062_1_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_1_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_1_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_2_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_2_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_3_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_3_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_4_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_4_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_5_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_5_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_6_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_6_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_7_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_7_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_8_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_8_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_9_rev.script       z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_9_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_10_rev.script      z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_10_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_11_rev.script      z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_11_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_12_rev.script      z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_12_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_13_rev.script      z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_13_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_14_rev.script      z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_14_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_15_rev.script      z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_15_rev.script
+../Scripts/server/upnp_validate_device_registration_0061_16_rev.script      z:/upnp/testupnp/server/scripts/upnp_validate_device_registration_0061_16_rev.script
+
+../Scripts/server/upnp_register_state_change_services_0038_3.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_3.script
+../Scripts/server/upnp_register_state_change_services_0038_4.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_4.script
+../Scripts/server/upnp_register_state_change_services_0038_5.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_5.script
+../Scripts/server/upnp_register_state_change_services_0038_6.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_6.script
+../Scripts/server/upnp_register_state_change_services_0038_7.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_7.script
+../Scripts/server/upnp_register_state_change_services_0038_8.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_8.script
+../Scripts/server/upnp_register_state_change_services_0038_9.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_9.script
+../Scripts/server/upnp_register_state_change_services_0038_10.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_10.script
+../Scripts/server/upnp_register_state_change_services_0038_11.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_11.script
+../Scripts/server/upnp_register_state_change_services_0038_12.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_12.script
+../Scripts/server/upnp_register_state_change_services_0038_13.script      	z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_13.script
+
+../Scripts/server/upnp_abruptclose_discovery_43_1.script			      					z:/upnp/testupnp/server/scripts/upnp_abruptclose_discovery_43_1.script
+../Scripts/server/upnp_abruptclose_describe_44_1.script			      						z:/upnp/testupnp/server/scripts/upnp_abruptclose_describe_44_1.script
+../Scripts/server/upnp_renew_subscription_0039_3.script						z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_3.script
+../Scripts/server/upnp_renew_subscription_0039_4.script						z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_4.script
+../Scripts/server/upnp_renew_subscription_0039_5.script						z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_5.script
+../Scripts/server/upnp_renew_subscription_0039_6.script						z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_6.script
+../Scripts/server/upnp_renew_subscription_0039_7.script						z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_7.script
+../Scripts/server/upnp_renew_subscription_0039_8.script						z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_8.script
+../Scripts/server/upnp_renew_subscription_0039_9.script						z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_9.script
+../Scripts/server/upnp_renew_subscription_0039_10.script					z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_10.script
+
+
+../Scripts/server/upnp_register_state_change_services_0038_3_rev.script                     z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_3_rev.script 
+../Scripts/server/upnp_register_state_change_services_0038_4_rev.script                     z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_4_rev.script 
+../Scripts/server/upnp_register_state_change_services_0038_5_rev.script                     z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_5_rev.script 
+../Scripts/server/upnp_register_state_change_services_0038_6_rev.script                     z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_6_rev.script 
+../Scripts/server/upnp_register_state_change_services_0038_7_rev.script                     z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_7_rev.script 
+../Scripts/server/upnp_register_state_change_services_0038_8_rev.script                     z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_8_rev.script 
+../Scripts/server/upnp_register_state_change_services_0038_9_rev.script                     z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_9_rev.script 
+../Scripts/server/upnp_register_state_change_services_0038_10_rev.script                    z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_10_rev.script
+../Scripts/server/upnp_register_state_change_services_0038_11_rev.script                    z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_11_rev.script
+../Scripts/server/upnp_register_state_change_services_0038_12_rev.script                    z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_12_rev.script
+../Scripts/server/upnp_register_state_change_services_0038_13_rev.script                    z:/upnp/testupnp/server/scripts/upnp_register_state_change_services_0038_13_rev.script
+../Scripts/server/upnp_abruptclose_discovery_43_1_rev.script			      				z:/upnp/testupnp/server/scripts/upnp_abruptclose_discovery_43_1_rev.script
+../Scripts/server/upnp_abruptclose_describe_44_1_rev.script			      					z:/upnp/testupnp/server/scripts/upnp_abruptclose_describe_44_1_rev.script
+../Scripts/server/upnp_renew_subscription_0039_3_rev.script									z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_3_rev.script
+../Scripts/server/upnp_renew_subscription_0039_4_rev.script									z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_4_rev.script
+../Scripts/server/upnp_renew_subscription_0039_5_rev.script									z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_5_rev.script
+../Scripts/server/upnp_renew_subscription_0039_6_rev.script									z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_6_rev.script
+../Scripts/server/upnp_renew_subscription_0039_7_rev.script									z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_7_rev.script
+../Scripts/server/upnp_renew_subscription_0039_8_rev.script									z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_8_rev.script
+../Scripts/server/upnp_renew_subscription_0039_9_rev.script									z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_9_rev.script
+../Scripts/server/upnp_renew_subscription_0039_10_rev.script								z:/upnp/testupnp/server/scripts/upnp_renew_subscription_0039_10_rev.script
+../Scripts/server/upnp_initiateaction_0019_2.script											z:/upnp/testupnp/server/scripts/upnp_initiateaction_0019_2.script
+../Scripts/server/upnp_refresh_advertisement_0045_1.script									z:/upnp/testupnp/server/scripts/upnp_refresh_advertisement_0045_1.script
+../Scripts/server/upnp_refresh_advertisement_0045_2.script									z:/upnp/testupnp/server/scripts/upnp_refresh_advertisement_0045_2.script
+../Scripts/server/upnp_initiateaction_0019_2_rev.script										z:/upnp/testupnp/server/scripts/upnp_initiateaction_0019_2_rev.script
+../Scripts/server/upnp_refresh_advertisement_0045_1_rev.script								z:/upnp/testupnp/server/scripts/upnp_refresh_advertisement_0045_1_rev.script
+../Scripts/server/upnp_refresh_advertisement_0045_2_rev.script								z:/upnp/testupnp/server/scripts/upnp_refresh_advertisement_0045_2_rev.script
+../Scripts/client/discover_low_ver.script 													z:/upnp/testupnp/client/scripts/discover_low_ver.script
+../Scripts/client/discover_low_ver_1.script 												z:/upnp/testupnp/client/scripts/discover_low_ver_1.script
+../Scripts/client/discover_low_ver_2.script 												z:/upnp/testupnp/client/scripts/discover_low_ver_2.script
+../Scripts/server/discover_low_ver.script 													z:/upnp/testupnp/server/scripts/discover_low_ver.script
+../Scripts/server/discover_low_ver_1.script 												z:/upnp/testupnp/server/scripts/discover_low_ver_1.script
+../Scripts/server/discover_low_ver_2.script 												z:/upnp/testupnp/server/scripts/discover_low_ver_2.script
+
+
+
+//ini files
+../TestData/Ini_Files/discovery0001.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0001.ini
+../TestData/Ini_Files/discovery0002.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0002.ini
+../TestData/Ini_Files/discovery0003.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0003.ini
+../TestData/Ini_Files/discovery0004.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0004.ini
+../TestData/Ini_Files/discovery0005.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0005.ini
+../TestData/Ini_Files/discovery0006.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0006.ini
+../TestData/Ini_Files/discovery0007.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0007.ini
+../TestData/Ini_Files/discovery0008.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0008.ini
+../TestData/Ini_Files/discovery0009.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0009.ini
+../TestData/Ini_Files/discovery0010.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0010.ini
+../TestData/Ini_Files/discovery0011.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0011.ini
+../TestData/Ini_Files/discovery0012.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0012.ini
+../TestData/Ini_Files/discovery0013.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0013.ini
+../TestData/Ini_Files/discovery0014.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0014.ini
+../TestData/Ini_Files/discovery0015.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0015.ini
+../TestData/Ini_Files/discovery0016.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0016.ini
+../TestData/Ini_Files/discovery0017.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0017.ini
+../TestData/Ini_Files/discovery0018.ini				z:/upnp/testupnp/client/testdata/ini_files/discovery0018.ini
+../TestData/Ini_Files/opendiscovery_001.ini			z:/upnp/testupnp/client/testdata/ini_files/opendiscovery_001.ini
+../TestData/Ini_Files/opendiscovery_001_rev.ini 	z:/upnp/testupnp/client/testdata/ini_files/opendiscovery_001_rev.ini
+../TestData/Ini_Files/describe.ini					z:/upnp/testupnp/client/testdata/ini_files/describe.ini
+../TestData/Ini_Files/initiateaction_0019.ini   	z:/upnp/testupnp/client/testdata/ini_files/initiateaction_0019.ini
+../TestData/Ini_Files/initiateaction_0019_rev.ini   z:/upnp/testupnp/client/testdata/ini_files/initiateaction_0019_rev.ini
+
+../TestData/Ini_Files/canceldiscovery.ini			z:/upnp/testupnp/client/testdata/ini_files/canceldiscovery.ini
+../TestData/Ini_Files/canceldiscovery_rev.ini		z:/upnp/testupnp/client/testdata/ini_files/canceldiscovery_rev.ini
+
+../TestData/Ini_Files/publish.ini					z:/upnp/testupnp/client/testdata/ini_files/publish.ini
+../TestData/Ini_Files/describe_0029.ini				z:/upnp/testupnp/client/testdata/ini_files/describe_0029.ini
+../TestData/Ini_Files/describe_0029_rev.ini			z:/upnp/testupnp/client/testdata/ini_files/describe_0029_rev.ini
+../TestData/Ini_Files/describe_0030.ini				z:/upnp/testupnp/client/testdata/ini_files/describe_0030.ini
+../TestData/Ini_Files/describe_0030_rev.ini			z:/upnp/testupnp/client/testdata/ini_files/describe_0030_rev.ini
+../TestData/Ini_Files/register_0036.ini				z:/upnp/testupnp/client/testdata/ini_files/register_0036.ini
+../TestData/Ini_Files/register_0036_rev.ini			z:/upnp/testupnp/client/testdata/ini_files/register_0036_rev.ini
+../TestData/Ini_Files/register_0037.ini				z:/upnp/testupnp/client/testdata/ini_files/register_0037.ini
+../TestData/Ini_Files/register_0037_rev.ini			z:/upnp/testupnp/client/testdata/ini_files/register_0037_rev.ini
+../TestData/Ini_Files/subscribe_0038.ini			z:/upnp/testupnp/client/testdata/ini_files/subscribe_0038.ini
+../TestData/Ini_Files/subscribe_0038_rev.ini 		z:/upnp/testupnp/client/testdata/ini_files/subscribe_0038_rev.ini
+../TestData/Ini_Files/subscribe_0039.ini	 		z:/upnp/testupnp/client/testdata/ini_files/subscribe_0039.ini
+../TestData/Ini_Files/subscribe_0039_rev.ini 		z:/upnp/testupnp/client/testdata/ini_files/subscribe_0039_rev.ini
+../TestData/Ini_Files/subscribe_0042.ini	 		z:/upnp/testupnp/client/testdata/ini_files/subscribe_0042.ini
+../TestData/Ini_Files/subscribe_0042_rev.ini 		z:/upnp/testupnp/client/testdata/ini_files/subscribe_0042_rev.ini
+../TestData/Ini_Files/sendnotify.ini		 		z:/upnp/testupnp/client/testdata/ini_files/sendnotify.ini
+../TestData/Ini_Files/sendnotify_rev.ini	 		z:/upnp/testupnp/client/testdata/ini_files/sendnotify_rev.ini
+../TestData/Ini_Files/publish_0001.ini		 		z:/upnp/testupnp/client/testdata/ini_files/publish_0001.ini
+../TestData/Ini_Files/publish_0001_rev.ini	 		z:/upnp/testupnp/client/testdata/ini_files/publish_0001_rev.ini
+../TestData/Ini_Files/discovery_0048.ini	 		z:/upnp/testupnp/client/testdata/ini_files/discovery_0048.ini
+../TestData/Ini_Files/discovery_0048_rev.ini		z:/upnp/testupnp/client/testdata/ini_files/discovery_0048_rev.ini
+../TestData/Ini_Files/discovery_0049.ini	 		z:/upnp/testupnp/client/testdata/ini_files/discovery_0049.ini
+../TestData/Ini_Files/discovery_0049_rev.ini	 	z:/upnp/testupnp/client/testdata/ini_files/discovery_0049_rev.ini
+../TestData/Ini_Files/describe_0060.ini				z:/upnp/testupnp/client/testdata/ini_files/describe_0060.ini
+../TestData/Ini_Files/describe_0060_rev.ini			z:/upnp/testupnp/client/testdata/ini_files/describe_0060_rev.ini
+../TestData/Ini_Files/multiplemachines.ini			z:/upnp/testupnp/server/testdata/ini_files/multiplemachines.ini
+
+../TestData/Ini_Files/upnp_abruptclosecp.ini        z:/upnp/testupnp/client/testdata/ini_files/upnp_abruptclosecp.ini 
+../TestData/Ini_Files/publish_0061.ini				z:/upnp/testupnp/client/testdata/ini_files/publish_0061.ini		
+../TestData/Ini_Files/publish_0061_rev.ini          z:/upnp/testupnp/client/testdata/ini_files/publish_0061_rev.ini  
+../TestData/Ini_Files/publish_0062.ini              z:/upnp/testupnp/client/testdata/ini_files/publish_0062.ini      
+../TestData/Ini_Files/publish_0062_rev.ini          z:/upnp/testupnp/client/testdata/ini_files/publish_0062_rev.ini 
+../TestData/Ini_Files/upnp_abruptclosecp_rev.ini    z:/upnp/testupnp/client/testdata/ini_files/upnp_abruptclosecp_rev.ini 
+../TestData/Ini_Files/refresh_adv_0045.ini    		z:/upnp/testupnp/client/testdata/ini_files/refresh_adv_0045.ini 
+../TestData/Ini_Files/refresh_adv_0045_rev.ini   	z:/upnp/testupnp/client/testdata/ini_files/refresh_adv_0045_rev.ini 
+
+../TestData/Data_Files/xmldatafiles/service/AVTransport2.xml			z:/upnp/testupnp/client/testdata/service/avtransport2.xml
+../TestData/Data_Files/xmldatafiles/service/ConnectionManager2.xml		z:/upnp/testupnp/client/testdata/service/connectionmanager2.xml
+../TestData/Data_Files/xmldatafiles/service/ContentDirectory2.xml		z:/upnp/testupnp/client/testdata/service/contentdirectory2.xml
+../TestData/Data_Files/xmldatafiles/service/RenderingControl2.xml		z:/upnp/testupnp/client/testdata/service/renderingcontrol2.xml
+../TestData/Data_Files/xmldatafiles/service/ScheduledRecording1.xml		z:/upnp/testupnp/client/testdata/service/scheduledrecording1.xml
+../TestData/Data_Files/xmldatafiles/service/RenderingControl1.xml		z:/upnp/testupnp/client/testdata/service/renderingcontrol1.xml
+../TestData/Data_Files/xmldatafiles/service/Scan1.xml					z:/upnp/testupnp/client/testdata/service/scan1.xml
+../TestData/Data_Files/xmldatafiles/service/Feeder1.xml					z:/upnp/testupnp/client/testdata/service/feeder1.xml
+../TestData/Data_Files/xmldatafiles/action.xml							z:/upnp/testupnp/client/testdata/action.xml
+../TestData/Data_Files/xmldatafiles/actionresponse.xml					z:/upnp/testupnp/client/testdata/actionresponse.xml
+
+../TestData/Data_Files/xmldatafiles/service/AVTransport1.xml			z:/upnp/testupnp/client/testdata/service/avtransport1.xml		
+../TestData/Data_Files/xmldatafiles/service/ContentDirectory1.xml       z:/upnp/testupnp/client/testdata/service/contentdirectory1.xml 
+../TestData/Data_Files/xmldatafiles/service/ConnectionManager1.xml      z:/upnp/testupnp/client/testdata/service/connectionmanager1.xml
+
+../TestData/Ini_Files/discover_low_ver.ini 								z:/upnp/testupnp/client/testdata/ini_files/discover_low_ver.ini
+
+../TestData/Data_Files/iconfiles/playstation1.png      z:/resource/upnp/icons/playstation1.png
+../TestData/Data_Files/iconfiles/playstation2.png      z:/resource/upnp/icons/playstation2.png
+../TestData/Data_Files/iconfiles/playstation3.png      z:/resource/upnp/icons/playstation3.png
+../TestData/Data_Files/iconfiles/playstation4.png      z:/resource/upnp/icons/playstation4.png
+
+
+PRJ_TESTMMPFILES
+multiple_machines_client.mmp
+multiple_machines_server.mmp
+single_machine.mmp
+
+

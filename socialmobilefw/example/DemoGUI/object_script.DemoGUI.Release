@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\CustomListWidget.o
+./release\HomeView.o
+./release\GridView.o
+./release\ToolBar.o
+./release\Documents.o
+./release\and.o
+./release\My.o
+./release\GridView.o
+./release\moc_mainwindow.o
+);

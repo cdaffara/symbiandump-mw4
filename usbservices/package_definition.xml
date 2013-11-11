@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0" xmlns:qt="http://www.nokia.com/qt">
+ <package id="usbservices" name="USB Services" levels="framework server generic specific plugin">
+  <collection id="usbservices_plat" name="USB Services Platform Interfaces" level="plugin">
+   <component id="pictbridge_api" name="PictBridge API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/pictbridge_api/pictbridge_api.metaxml"/>
+    <unit bldFile="usbservices_plat/pictbridge_api/group"/>
+   </component>
+   <component id="ptp_responder_api" name="PTP Responder API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/ptp_responder_api/ptp_responder_api.metaxml"/>
+    <unit bldFile="usbservices_plat/ptp_responder_api/group"/>
+   </component>
+   <component id="ptp_transport_api" name="PTP Transport API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/ptp_transport_api/ptp_transport_api.metaxml"/>
+    <unit bldFile="usbservices_plat/ptp_transport_api/group"/>
+   </component>
+   <component id="usb_device_control_plugin_api" name="USB Device Control Plug-in API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/usb_device_control_plugin_api/usb_device_control_plugin_api.metaxml"/>
+    <unit bldFile="usbservices_plat/usb_device_control_plugin_api/group"/>
+   </component>
+   <component id="usb_notifier_api" name="USB Notifier API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/usb_notifier_api/usb_notifier_api.metaxml"/>
+    <unit bldFile="usbservices_plat/usb_notifier_api/group"/>
+   </component>
+   <component id="usb_personality_api_header" name="USB Personality API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/usb_personality_api_header/usb_personality_api_header.metaxml"/>
+    <unit bldFile="usbservices_plat/usb_personality_api_header/group"/>
+   </component>
+   <component id="usb_personality_plugin_api" name="USB Personality Plug-in API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/usb_personality_plugin_api/usb_personality_plugin_api.metaxml"/>
+    <unit bldFile="usbservices_plat/usb_personality_plugin_api/group"/>
+   </component>
+   <component id="usb_secondary_display_api" name="USB Secondary Display API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/usb_secondary_display_api/usb_secondary_display_api.metaxml"/>
+    <unit bldFile="usbservices_plat/usb_secondary_display_api/group"/>
+   </component>
+   <component id="usb_watcher_api" name="USB Watcher API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/usb_watcher_api/usb_watcher_api.metaxml"/>
+    <unit bldFile="usbservices_plat/usb_watcher_api/group"/>
+   </component>
+   <component id="usb_watcher_info_api_header" name="USB Watcher Info API" class="api" filter="s60">
+    <meta rel="Api" href="usbservices_plat/usb_watcher_info_api_header/usb_watcher_info_api_header.metaxml"/>
+    <unit bldFile="usbservices_plat/usb_watcher_info_api_header/group"/>
+   </component>
+  </collection>
+  <collection id="usbengines" name="USB Engines" level="generic">
+   <component id="usbotgwatcher" filter="s60" name="USB OTG Watcher">
+    <unit bldFile="usbengines/usbotgwatcher/group" filter="!test"/>
+    <unit bldFile="usbengines/usbotgwatcher/tsrc/UsbOtgWatcherTest/group" filter="test,api_test"/>
+   </component>
+   <component id="usbwatcher" filter="s60" name="USB Watcher">
+    <unit bldFile="usbengines/usbwatcher/group"/>
+   </component>
+   <component id="usblocodplugin" filter="s60" name="USB Local Connectivity Domain Plugin" class="plugin">
+    <unit bldFile="usbengines/usblocodplugin/group"/>
+   </component>
+   <component id="usbdevcon" filter="s60" name="USB Device Control">
+    <unit bldFile="usbengines/usbdevcon/group"/>
+   </component>
+   <component id="usbremotepersonality" filter="s60" name="USB Remote Personality">
+    <unit bldFile="usbengines/usbremotepersonality/group"/>
+   </component>
+  </collection>
+  <collection id="usbclasses" name="USB Classes" level="framework">
+   <component id="usbobexclasscontroller" filter="s60" name="USB OBEX Class Controller" class="plugin">
+    <unit bldFile="usbclasses/usbobexclasscontroller/group"/>
+   </component>
+   <component id="usbbasicpersonality" filter="s60" name="USB Basic Personality" class="plugin">
+    <unit bldFile="usbclasses/usbbasicpersonality/group"/>
+   </component>
+   <component id="usbmscpersonality" filter="s60" name="USB MSC Personality" class="plugin">
+    <unit bldFile="usbclasses/usbmscpersonality/group"/>
+   </component>
+   <component id="usbphoneasmodem" filter="s60" name="USB Phone as Modem" introduced="^3">
+    <unit bldFile="usbclasses/usbphoneasmodem/group"/>
+   </component>
+  </collection>
+  <collection id="usbuis" name="USB UIs" level="specific">
+   <component id="usbuinotif" filter="s60" name="USB UI Notifiers">
+    <unit bldFile="usbuis/usbuinotif" qt:proFile="usbuinotif.pro" filter="!test"/>
+    <unit bldFile="usbuis/usbuinotif/tsrc/usbuinotifapitest/group" filter="test,api_test" />
+   </component>
+   <component id="imageprintuiprovider" filter="s60" name="ImagePrint UI Provider" class="plugin">
+    <unit bldFile="usbuis/imageprintuiprovider/group"/>
+   </component>
+   <component id="usbimageprintui" filter="s60" name="ImagePrint UI">
+    <unit bldFile="usbuis/imageprintui/group"/>
+   </component>
+   <component id="usbsettingsapp" name="USB Settings Application" introduced="^4" filter="s60">
+      <unit bldFile="usbuis/usbsettingsapp" qt:proFile="USBSettingsApp.pro"/>
+    </component>
+   <component id="usbindicatorplugin" name="USB Indicator Plugin" introduced="^4" filter="s60" class="plugin">
+      <unit bldFile="usbuis/usbindicatorplugin" qt:proFile="usbindicatorplugin.pro"/>
+    </component>
+  </collection>
+  <collection id="usb_testtools" name="USB Test Tools" level="server">
+   <component id="usb_stubsrv" name="USB Stub Server" introduced="^4" filter="s60">
+      <unit bldFile="tsrc/testtools/stubsrv/group"/>
+    </component>
+  </collection>
+ </package>
+</SystemDefinition>
+

@@ -1,0 +1,32 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Multipart Parser API
+*
+*/
+
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+#ifdef BRDO_MULTIPART_PARSER_FF
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../inc/BodyPart.h           MW_LAYER_PLATFORM_EXPORT_PATH(BodyPart.h)
+../inc/MultipartParser.h    MW_LAYER_PLATFORM_EXPORT_PATH(MultipartParser.h)
+
+PRJ_MMPFILES
+
+#endif

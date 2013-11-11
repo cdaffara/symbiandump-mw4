@@ -1,0 +1,51 @@
+/*
+* Copyright (c) 2006-2007 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Build information file for project Hitchcock Core DLL
+*
+*/
+
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+
+#ifndef MW_LAYER_PLATFORM_EXPORT_PATH_ACCTK
+#define MW_LAYER_PLATFORM_EXPORT_PATH_ACCTK(exported) /epoc32/include/uiacceltk/##exported
+#endif
+
+PRJ_EXPORTS
+// coretoolkit exported API headers
+#include "../../group/core_exports.inc"
+
+PRJ_MMPFILES
+// This is the mmp for internal SDKs
+coretoolkit.mmp
+../renderbitgdi/group/huirenderbitgdi.mmp
+../rendergles/group/huirendergles.mmp
+../rendervg10/group/huirendervg10.mmp
+// the next two are new plugins, not in official builds yet
+// as some needed libraries and headers may be missing.
+// Before you uncomment these you must extract the libraries and headers
+// 
+// Emulator versions shoul compile but will not work because of lack of
+// proper libraries.
+#ifdef MARM
+//../rendergles20/group/huirendergles20.mmp
+../rendervg10/group/huirendervg10.mmp
+#endif
+
+// Tests & Test resources
+// @todo Migrated code no longer contains tests.
+//#include "bld_testfiles.inc"

@@ -1,0 +1,66 @@
+;
+; Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description: Installation file for upnptmserver test module
+;
+
+; Languages
+&EN
+
+; Provide value for uid
+#{"STIF"},(0x00000000),1,1,0,TYPE=SA
+
+; Series60 product id for S60 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+; Localised Vendor name
+%{"Nokia"}
+
+; Unique Vendor name
+:"Nokia"
+
+; Logo
+; None
+
+; Package signature - Optional
+; None
+
+; Start of Package body
+
+; Condition blocks
+; None
+
+; Options list
+; None
+
+; Install files
+"\epoc32\winscw\c\upnptmserver\icons\gallery.svg " - "c:\upnptmserver\icons\gallery.svg"
+"\epoc32\winscw\c\upnptmserver\icons\homemedia.svg " - "c:\upnptmserver\icons\homemedia.svg"
+"\epoc32\winscw\c\upnptmserver\icons\maps.svg " -    "c:\upnptmserver\icons\maps.svg"
+"\epoc32\winscw\c\upnptmserver\icons\music_launched.svg " - "c:\upnptmserver\icons\music_launched.svg"
+"\epoc32\winscw\c\upnptmserver\icons\music_unlaunched.svg " - "c:\upnptmserver\icons\music_unlaunched.svg"
+"\epoc32\winscw\c\upnptmserver\icons\videos.svg " - "c:\upnptmserver\icons\videos.svg"
+"\epoc32\winscw\c\upnptmserver\icons\s60_device.svg " - "c:\upnptmserver\icons\s60_device.svg "
+"\epoc32\winscw\c\TestFramework\TestFramework.ini" - "c:\TestFramework\TestFramework.ini"
+"\epoc32\release\armv5\urel\upnptmservertest.dll"   -   "c:\Sys\Bin\upnptmservertest.dll"
+  
+; Embedded SIS 
+; None
+
+; End of Package body
+
+; PKG dependencies
+; None
+
+; PKG capabilities
+; None

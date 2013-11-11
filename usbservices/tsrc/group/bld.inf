@@ -1,0 +1,38 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build information file for project 
+*
+*/
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+//build files for Stub Framework
+#include "../testtools/stubsrv/group/bld.inf"
+//build files for usb
+#include "../../usbclasses/msmmplugin/tsrc/MsmmPluginTest/group/bld.inf"
+#include "../../usbuis/usbuinotif/tsrc/USBUiNotifApiTest/group/bld.inf"
+#include "../../usbclasses/usbhidclassdriver/tsrc/UsbHidClassDriverTest/group/bld.inf"
+#include "../../usbengines/usbotgwatcher/tsrc/UsbOtgWatcherTest/group/bld.inf"
+
+
+PRJ_EXPORTS
+
+
+PRJ_MMPFILES
+
+PRJ_TESTMMPFILES
+
+PRJ_TESTEXPORTS

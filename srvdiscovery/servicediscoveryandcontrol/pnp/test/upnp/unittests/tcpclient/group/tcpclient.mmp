@@ -1,0 +1,92 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+TARGET			tcpclient.prt
+TARGETTYPE		DLL
+UID      0x10003d38
+VENDORID 0x70000001
+
+DEFFILE		tcpclient.def
+
+
+SOURCEPATH		../src
+SOURCE			protocolfamily.cpp
+SOURCE			proxyprotocol.cpp
+SOURCE			testtcpserver.cpp
+SOURCE			ctestserversockethandler.cpp
+
+SOURCE			ptcpclienttests.cpp ctcpclienttestupnp1.cpp ctcpclienttestupnp2.cpp ctcpclienttestupnp3.cpp ctcpclienttestupnp4.cpp ctcpclienttestupnp5.cpp
+
+
+USERINCLUDE		../inc
+USERINCLUDE		../../../server/flow/inc
+USERINCLUDE		../../../upnputils/inc
+USERINCLUDE		../../../upnpmessage/inc
+
+SOURCEPATH		../../../server/flow/src
+SOURCE			csoapparser.cpp
+SOURCE			chttpclienthandler.cpp
+SOURCE			upnpmemoryutils.cpp
+SOURCE			cprotocolhandler.cpp
+SOURCE			cupnptimer.cpp
+SOURCE			ctransaction.cpp
+
+SYSTEMINCLUDE	/epoc32/include
+SYSTEMINCLUDE	/epoc32/include/comms-infras
+SYSTEMINCLUDE   /epoc32/include/test
+
+LIBRARY		euser.lib     
+LIBRARY		esock.lib
+LIBRARY		esocksvr.lib
+LIBRARY		mbufmgr.lib
+LIBRARY		testexecutelogclient.lib
+LIBRARY		efsrv.lib
+LIBRARY		cinidata.lib
+LIBRARY 	bafl.lib
+LIBRARY 	xmlframework.lib
+LIBRARY     nifman.lib
+LIBRARY		commsfw.lib
+LIBRARY		testexecuteutils.lib
+LIBRARY		rfileloggerclient.lib
+LIBRARY     netmeta.lib		// for the ABIv2
+LIBRARY		insock.lib 
+LIBRARY		sockethandler.lib
+LIBRARY 	upnputils.lib
+LIBRARY		nodemessages.lib
+LIBRARY 	netinterfaces.lib
+LIBRARY		factories.lib
+LIBRARY		http.lib
+LIBRARY		upnpmessage.lib
+LIBRARY 	inetprotutil.lib
+LIBRARY 	chunkmgr.lib
+
+START WINS
+BASEADDRESS		0x59000000
+END
+
+#include <comms-infras/commsdebugutility.mmh>
+#include <cflog.mmh>
+
+
+CAPABILITY CommDD PowerMgmt ReadDeviceData WriteDeviceData TrustedUI ProtServ NetworkControl NetworkServices LocalServices ReadUserData WriteUserData
+
+UNPAGED
+
+SOURCEPATH ..\src
+SOURCE ctcpclienttestupnp6.cpp ctcpclienttestupnp7.cpp ctcpclienttestupnp8.cpp ctcpclienttestupnp9.cpp ctcpclienttestupnp10.cpp ctcpclienttestupnp11.cpp ctcpclienttestupnp12.cpp ctcpclienttestupnp13.cpp ctcpclienttestupnp14.cpp
+
+SMPSAFE

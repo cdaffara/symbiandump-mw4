@@ -1,0 +1,12 @@
+component	application-protocols_upnp
+source	\sf\mw\srvdiscovery\servicediscoveryandcontrol\upnp
+binary	\sf\mw\srvdiscovery\servicediscoveryandcontrol\upnp\group	all
+exports	\sf\mw\srvdiscovery\servicediscoveryandcontrol\upnp\group
+
+notes_source	\component_defs\release.src
+
+
+
+ipr E 
+ipr T \sf\mw\srvdiscovery\servicediscoveryandcontrol\upnp\test
+

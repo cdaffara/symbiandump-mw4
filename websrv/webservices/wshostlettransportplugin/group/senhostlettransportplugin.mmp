@@ -1,0 +1,117 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senhostlettransportplugin    
+*
+*/
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET SenHostletTransportPlugin.DLL
+UID 0x10009D8D 0x2000039E
+#else
+TARGET wsHostletTransportPlugin.DLL
+UID 0x10009D8D 0x101F974C
+#endif
+
+#ifdef SYMBIAN_SECURE_ECOM 
+    TARGETTYPE PLUGIN
+#else
+    TARGETTYPE ECOMIIC
+#endif
+// ECom Dll recognition UID followed by the unique UID for this dll
+
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_ECOM_PLUGIN )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_ECOM_PLUGIN
+    #endif
+#endif
+
+SOURCEPATH      ../data
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+START RESOURCE  2000039e.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET SenHostletTransportPlugin.rsc
+#endif
+
+#else
+START RESOURCE  101F974C.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET wsHostletTransportPlugin.rsc
+#endif
+
+#endif
+END
+
+SOURCEPATH      ../src
+SOURCE          senhostlettransportpluginmain.cpp
+SOURCE          senhostlettransportpluginproxy.cpp
+SOURCE          senhostlettransportplugin.cpp
+
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wsframework/inc         // internal: MSenTransport.h, SenProvider.h, SenProvider.inl
+USERINCLUDE     ../../wsprovider/inc          // internal: MSenHostletRequest.h, MSenHostletResponse.h
+USERINCLUDE     ../../wsutils/inc             // internal: SenDebug.h
+USERINCLUDE     ../../wslogger/inc            // internal: SenLogger.h
+USERINCLUDE     ../../wsidentitymanager/inc   // MSenIdentityManager.h
+
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+
+
+LANG            SC
+
+SYSTEMINCLUDE   /epoc32/include/ecom
+SYSTEMINCLUDE   /epoc32/include/libc
+
+LIBRARY         ecom.lib
+LIBRARY         euser.lib
+// LIBRARY         SenProvider.lib
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY         SenUtils.lib     // CSenIdentifier
+LIBRARY         SenLogger.lib  
+LIBRARY         SenFramework.lib // CSenSyncRequester
+
+#ifdef EABI
+    LIBRARY         SenServDesc.lib // for some reason WINSCW, and other compilers do not requires this lib
+#endif // EABI
+#else
+LIBRARY         wsUtils.lib     // CSenIdentifier
+LIBRARY         wsLogger.lib  
+LIBRARY         wsFramework.lib // CSenSyncRequester
+
+#ifdef EABI
+    LIBRARY         wsservDesc.lib // for some reason WINSCW, and other compilers do not requires this lib
+#endif // EABI
+
+#endif
+
+SMPSAFE
+

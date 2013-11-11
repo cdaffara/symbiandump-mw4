@@ -1,0 +1,3 @@
+EXPORTS
+	ParseL__15MultipartParserRC6TDesC8N21RC7TDesC16Rt13RPointerArray1Z9CBodyParti @ 1 NONAME ; MultipartParser::ParseL(TDesC8 const &, TDesC8 const &, TDesC8 const &, TDesC16 const &, RPointerArray<CBodyPart> &, int)
+

@@ -1,0 +1,3 @@
+EXPORTS
+	?NewL@CIkeConnectionInterface@@SAPAV1@AAVMIkeDebug@@@Z @ 1 NONAME ; class CIkeConnectionInterface * CIkeConnectionInterface::NewL(class MIkeDebug &)
+

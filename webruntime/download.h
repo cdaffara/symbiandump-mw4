@@ -1,0 +1,3 @@
+namespace WRT {
+    class Download;
+}

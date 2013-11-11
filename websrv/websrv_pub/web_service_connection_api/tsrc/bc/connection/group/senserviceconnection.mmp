@@ -1,0 +1,110 @@
+/*
+* Copyright (c) 2002-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senserviceconnection
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET          CSenServiceConnectionBCTest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E7
+
+CAPABILITY              ALL -TCB
+VENDORID        VID_DEFAULT        
+//VENDORID 0x70000001 
+// Enables Nokia intra hosted AB service endpoint to be used:
+MACRO           VALIMO_ADDRESSBOOK_SERVICE 
+
+// Activates Radio@AOL ID-WSF service endpoint to be used:
+//MACRO        AOL_RADIO_SERVICE 
+
+
+// Enables usage of old namespaces 
+// => Needed when WBXML Compression is used.
+//MACRO           OLD_MSN_NAMESPACE_2005_08
+
+SOURCEPATH      ../src
+SOURCE          senserviceconnectioncases.cpp
+SOURCE          senserviceconnection.cpp
+SOURCE          TestConnection.cpp
+SOURCE          testproperty.cpp
+SOURCE          testprovider.cpp
+SOURCE          testfileobserver.cpp
+SOURCE          testconsumer.cpp
+
+
+       //TARGETPATH      ?target_path
+DEFFILE         SenServiceConnectionBCTest.def
+
+USERINCLUDE     ../inc
+
+
+MW_LAYER_SYSTEMINCLUDE // SRC-HRCHY-CHANGES
+
+SYSTEMINCLUDE   /epoc32/include/libc
+SYSTEMINCLUDE   /epoc32/include/libc/sys
+SYSTEMINCLUDE   /epoc32/include/ecom
+
+LIBRARY         stiftestinterface.lib
+LIBRARY         euser.lib
+LIBRARY         flogger.lib
+LIBRARY         apparc.lib 
+LIBRARY         cone.lib 
+LIBRARY         eikcore.lib 
+LIBRARY         eikcoctl.lib 
+LIBRARY         avkon.lib 
+LIBRARY         bafl.lib 
+LIBRARY         eikctl.lib
+LIBRARY         egul.lib 
+LIBRARY         fbscli.lib 
+LIBRARY         cntmodel.lib 
+LIBRARY         aknskins.lib //for skin sbackground
+LIBRARY         gdi.lib
+
+LIBRARY         ecom.lib
+LIBRARY         commdb.lib
+LIBRARY         efsrv.lib
+LIBRARY         estor.lib
+
+LIBRARY         XMLFRAMEWORK.lib
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY         SenServConn.lib
+LIBRARY         SenServMgr.lib
+LIBRARY         SenServDesc.lib
+LIBRARY         SenXml.lib
+LIBRARY         SenUtils.lib
+LIBRARY         SenMessages.lib
+#else 
+// for .SIS target
+LIBRARY         wsServConn.lib
+LIBRARY         wsServMgr.lib
+LIBRARY         wsServDesc.lib
+LIBRARY         wsXml.lib
+LIBRARY         wsUtils.lib
+LIBRARY         wsMessages.lib
+#endif
+
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+LIBRARY                 XmlEngineDOM.lib
+LIBRARY                 XmlEngineUtils.lib
+#else
+    LIBRARY         WsStarXmlEngineDOM.lib
+    LIBRARY         WsStarXmlEngineUtils.lib
+#endif
+
+
+// End of file

@@ -1,0 +1,99 @@
+/** @file
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This is the project specification file for Upnp.
+*
+*/
+
+#include "../../../inc/upnpcompvariant.hrh"
+#include <data_caging_paths.hrh>
+
+TARGETTYPE          DLL
+
+#if defined(__HN_31__) || defined(__HN_32__)
+TARGET                  hndlnawebserver.dll
+UID                     0x1000008d 0x2000F884
+#else
+TARGET                  dlnawebserver.dll
+UID                     0x1000008d 0x10204165
+#endif
+
+LANG                    SC
+CAPABILITY              CAP_GENERAL_DLL
+VENDORID                VID_DEFAULT
+
+
+SOURCEPATH          ../src
+SOURCE              upnphttpbuffer.cpp
+SOURCE              upnphttpsession.cpp
+SOURCE              upnphttpserver.cpp
+SOURCE              upnptcpserver.cpp
+SOURCE              upnptcpsession.cpp
+SOURCE              upnptcpsessionreader.cpp
+SOURCE              upnptcpsessionwriter.cpp
+SOURCE              upnphttpfiletransferwriter.cpp
+SOURCE              upnphttpfileaccess.cpp
+SOURCE              upnphttpfiletransferreader.cpp
+SOURCE              upnphttpchunkfiletransferreader.cpp
+SOURCE              upnphttpchunkparser.cpp
+SOURCE              upnpretrywrite.cpp
+SOURCE              upnpsocketshutdown.cpp
+SOURCE              upnprangeheaderparser.cpp
+SOURCE              upnphttpservertransaction.cpp 
+SOURCE              upnphttpserversession.cpp 
+SOURCE              upnphttpserverruntime.cpp
+
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../../inc
+SYSTEMINCLUDE   ../../inc
+USERINCLUDE     ../inc
+
+
+LIBRARY                    euser.lib 
+LIBRARY                    esock.lib
+LIBRARY                    insock.lib
+LIBRARY                    commdb.lib 
+LIBRARY                    efsrv.lib 
+LIBRARY                    bafl.lib 
+LIBRARY                    apgrfx.lib
+LIBRARY                    apmime.lib
+#if defined(__HN_31__) || defined(__HN_32__)
+LIBRARY                    hnipserversutils.lib
+LIBRARY                    hnserviceframework.lib
+#ifdef RD_UPNP_REMOTE_ACCESS 
+LIBRARY                    hnradaclient.lib
+#endif
+#else
+LIBRARY                    upnpipserversutils.lib
+LIBRARY                    upnpserviceframework.lib
+LIBRARY                    upnpconnectionmanagersession.lib
+
+#ifdef RD_UPNP_REMOTE_ACCESS 
+LIBRARY                    radaclient.lib
+#endif
+#endif
+
+
+//Max file size related libs
+
+LIBRARY                    flogger.lib
+DEFFILE                    DLNAwebserver
+//end of file
+
+VERSION 10.1
+
+paged
+
+SMPSAFE

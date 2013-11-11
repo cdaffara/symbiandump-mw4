@@ -1,0 +1,67 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET      SWVG.dll
+TARGETTYPE  dll
+UID         0x1000008d 0x03EAEF3D
+VENDORID    VID_DEFAULT
+CAPABILITY CAP_GENERAL_DLL
+
+USERINCLUDE	 ../inc ../../inc ../../OpenVGRenderer/inc
+SYSTEMINCLUDE   /epoc32/include /epoc32/include/VG 
+
+SOURCEPATH ../src 
+SOURCE  SWVGDllMain.cpp
+SOURCE  SWOpenVGRendererImpl.cpp 
+SOURCE  SWVGSurfaceImpl.cpp 
+
+SOURCEPATH ../../OpenVGRenderer/src
+SOURCE ../../SWVG/src/swopenvgtargetsurfaceimpl.cpp OpenVGRenderer.cpp
+
+
+//By default, the build tools look for the WINSCW def file in a BWINS directory
+//(at the same level as the directory containing the mmp file), 
+//the GCC ARM def file in a BMARM directory, and the ARMV5 def file in a EABI directory. 
+//If def files are stored in these locations, the project files does not need to specify
+//the location of the def files explicitly. If you want to store the def files in some other 
+//location, you will need to specify in the project file where the .def files are using 
+//the deffile keyword.
+
+//The following commented out code shows how the build system uses the implicit
+// location for defiles. To create the DEF files Choose Project > Freeze Exports from Carbide
+// or run 'abld freeze' from the command-line
+#if defined (WINS)
+  DEFFILE ../bwins/SWVG.def
+#elif defined (GCC32)
+  DEFFILE ../bmarm/SWVG.def
+#else 
+  DEFFILE ../eabi/SWVG.def
+#endif
+MW_LAYER_SYSTEMINCLUDE
+
+nostrictdef
+
+LIBRARY		 euser.lib
+LIBRARY		 libopenvgu_SW.lib libopenvg_SW.lib fbscli.lib libvgi.lib
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE
+#endif
+
+//EXPORTUNFROZEN

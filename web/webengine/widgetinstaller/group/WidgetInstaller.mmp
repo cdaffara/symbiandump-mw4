@@ -1,0 +1,72 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*    mmp file for WidgetInstaller component
+*
+*
+*/
+
+TARGET          WidgetInstaller.dll
+TARGETTYPE      dll
+UID             0x1000008d 0x200100B8
+
+//  INCLUDES
+#include <bldvariant.hrh>
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+
+// Capability assignment.
+CAPABILITY      CAP_GENERAL_DLL
+VENDORID        VID_DEFAULT
+
+
+// Sources
+SOURCEPATH      .
+SOURCEPATH      ../Src
+
+SOURCE          WidgetInstaller.cpp
+SOURCE          WidgetConfigHandler.cpp
+SOURCE          WidgetRegistrationManager.cpp
+SOURCE          Iconconverter.cpp
+SOURCE          WidgetBackupRegistryXml.cpp
+
+// Includes
+USERINCLUDE     . ../Inc/
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+MW_LAYER_CONNECT_SYSTEMINCLUDE
+
+// Libraries
+LIBRARY         euser.lib
+LIBRARY         bafl.lib
+LIBRARY         centralrepository.lib
+LIBRARY         XmlEngineUtils.lib 
+LIBRARY         XMLEngine.lib
+LIBRARY         XmlEngineDOM.lib
+LIBRARY         apgrfx.lib
+LIBRARY         estor.lib
+LIBRARY         efsrv.lib 
+LIBRARY         charconv.lib 
+LIBRARY         WidgetRegistryClient.lib
+// images
+LIBRARY         imageconversion.lib fbscli.lib bitgdi.lib bitmaptransforms.lib 
+
+//#ifdef _DEBUG
+LIBRARY		    flogger.lib
+//#endif
+
+// End of file

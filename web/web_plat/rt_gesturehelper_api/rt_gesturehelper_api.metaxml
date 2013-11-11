@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="32779a8096ddc71728a395da6c5caf1d" dataversion="1.0">
+  <name>RT Gesture Helper API</name>
+  <description>Interface to the RT GestureHelper library.</description>
+  <type>c++</type>
+  <subsystem>WebKitUtils</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="7.0"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

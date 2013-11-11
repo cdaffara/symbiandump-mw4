@@ -1,0 +1,247 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// Script file for HTTP Integration Test.
+// @internalAll
+// 
+//
+
+PRINT UPNP_MESSAGE_TESTS
+
+// Load the test
+LOAD_SUITE upnpmessagetest
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_1
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-23
+//! @SYMTestCaseDesc 	            Parsing a simple GET request.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple GET request.
+//!				                                •	Request has no excess data.
+//!				                                •	No request entity body.
+//!                                                •	Request data appears in a single chunk.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the request.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_1
+END_TESTCASE 	REQUEST_PARSER_TEST_1
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_2
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-24
+//! @SYMTestCaseDesc 	            Parsing a simple GET request.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple GET request.
+//!				                                •	Request has excess data which is not parsed.
+//!				                                •	No request entity body.
+//!                                                •	Request data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the request and returns the excess data.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_2
+END_TESTCASE 	REQUEST_PARSER_TEST_2
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_3
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-25
+//! @SYMTestCaseDesc 	            Parsing 2 requests.
+//! @SYMREQ			   			REQ10743, REQ10744 
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 requests, the 1st being GET and 2nd being POST.
+//!				                                •	2nd request appears as excess data of the 1st request.
+//!				                                •	2nd request has a body.
+//!                                                •	Request data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the requests.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_3
+END_TESTCASE 	REQUEST_PARSER_TEST_3
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_4
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-26
+//! @SYMTestCaseDesc 	            Parsing a POST request that has a chunked body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a POST request.
+//!				                                •	Request has excess data which is not parsed.
+//!				                                •	Request has a body.
+//!                                                •	Request data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the request and returns the excess data.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_4
+END_TESTCASE 	REQUEST_PARSER_TEST_4
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_5
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-NEG-27
+//! @SYMTestCaseDesc 	            Parsing a GET request that has a body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a GET request.
+//!				                                •	Request has excess data which is not parsed.
+//!				                                •	Request has a chunked body.
+//!                                                •	Request data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     Since its invalid for a GET request to have a body, the parser returns with KErrCorrupt.   
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_5
+END_TESTCASE 	REQUEST_PARSER_TEST_5
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_6
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-NEG-28
+//! @SYMTestCaseDesc 	            Parsing a GET request that has a body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a GET request.
+//!				                                •	Request has excess data which is not parsed.
+//!				                                •	Request has a Content-Length header.
+//!                                                •	Request has a body.
+//!                                                •	Request data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     Since its invalid for a GET request to have a body, the parser returns with KErrCorrupt.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_6
+END_TESTCASE 	REQUEST_PARSER_TEST_6
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_7
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-NEG-29
+//! @SYMTestCaseDesc 	            Parsing 2 GET requests one of which has a body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 GET requests.
+//!				                                •	2nd request appears as excess data of the 1st.
+//!				                                •	1st request has a body.
+//!                                                •	1st request has a Content-Length header.
+//!                                                •	Request data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     Since its invalid for a GET request to have a body, the parser returns with KErrCorrupt while parsing the 1st request 
+//!                                                but completes successfully for the 2nd valid request.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_7
+END_TESTCASE 	REQUEST_PARSER_TEST_7
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_8
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-NEG-30
+//! @SYMTestCaseDesc 	            Parsing 2 GET requests one of which has a body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 GET requests.
+//!				                                •	2nd request appears as excess data of the 1st.
+//!				                                •	1st request has a chunked body.
+//!                                                •	Request data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     Since its invalid for a GET request to have a body, the parser returns with KErrCorrupt 
+//!                                                while parsing the 1st request but completes successfully for the 2nd valid request.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_8
+END_TESTCASE 	REQUEST_PARSER_TEST_8
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_9
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-NEG-31
+//! @SYMTestCaseDesc 	            Parsing 2 GET requests both of which have a body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 GET requests.
+//!				                                •	2nd request appears as excess data of the 1st.
+//!				                                •	1st request has a chunked body.
+//!                                                •	2nd request has the Content-Length header.
+//!                                                •	Request data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     Since its invalid for a GET request to have a body, the parser returns with KErrCorrupt while parsing both the requests.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_9
+END_TESTCASE 	REQUEST_PARSER_TEST_9
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_10
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-NEG-32
+//! @SYMTestCaseDesc 	            Parsing 2 GET requests both of which have a body.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing 2 GET requests. 
+//!				                                •	2nd request appears as excess data of the 1st.
+//!				                                •	1st request has the Content-Length header.
+//!                                                •	2nd request has a chunked body.
+//!                                                •	Request data appears in multiple chunks.
+//!
+//! @SYMTestExpectedResults     Since its invalid for a GET request to have a body, the parser returns with KErrCorrupt while parsing both the requests.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_10
+END_TESTCASE 	REQUEST_PARSER_TEST_10
+
+
+
+START_TESTCASE	REQUEST_PARSER_TEST_11
+//! @file			                            
+//! @SYMTestCaseID		            UPnPMessage-POS-33
+//! @SYMTestCaseDesc 	            Parsing a simple M-SEARCH request.
+//! @SYMREQ						REQ10743, REQ10744
+//! @SYMTestStatus 		            Implemented
+//! @SYMTestPriority 		            Critical
+//! @SYMTestActions 		
+//!				                                •	Parsing a simple M-SEARCH request.
+//!				                                •	Request has no excess data.
+//!				                                •	No request entity body.
+//!                                                •	Request data appears in a single chunk.
+//!
+//! @SYMTestExpectedResults     The parser successfully parses the request.
+//! @SYMTestType 		                UT
+RUN_TEST_STEP 	100 	upnpmessagetest RequestParserTest z:\upnp\upnpmessagetest\ini\upnpmessagetest.ini  REQUEST_PARSER_TEST_11
+END_TESTCASE 	REQUEST_PARSER_TEST_11

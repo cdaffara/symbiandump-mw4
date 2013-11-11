@@ -1,0 +1,7 @@
+EXPORTS
+	?ClearData@CRecentUrlStore@@QAEXXZ @ 1 NONAME ; void CRecentUrlStore::ClearData(void)
+	?DeleteData@CRecentUrlStore@@QAEXABVTDesC16@@@Z @ 2 NONAME ; void CRecentUrlStore::DeleteData(class TDesC16 const &)
+	?GetData@CRecentUrlStore@@QAEHAAVCDesC16Array@@0ABVTDesC16@@@Z @ 3 NONAME ; int CRecentUrlStore::GetData(class CDesC16Array &, class CDesC16Array &, class TDesC16 const &)
+	?NewL@CRecentUrlStore@@SAPAV1@XZ @ 4 NONAME ; class CRecentUrlStore * CRecentUrlStore::NewL(void)
+	?SaveDataL@CRecentUrlStore@@QAEXABVTDesC16@@0@Z @ 5 NONAME ; void CRecentUrlStore::SaveData(class TDesC16 const &, class TDesC16 const &)
+

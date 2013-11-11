@@ -1,0 +1,151 @@
+;
+; Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description: 
+;
+; Languages
+&EN
+
+; Header
+#{"testplatalfvisual"}, (0x2001CB80), 1, 0, 0, TYPE=SA
+
+; Localised Vendor name
+%{"Nokia"}
+
+; Unique Vendor name
+:"Nokia"
+
+
+;Copying ordinary file (not language dependent) to fixed drive drive.
+
+"..\init\testplatalfvisual.ini"-"c:\Testframework\testplatalfvisual.ini", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualvisual.cfg"-"c:\Testframework\tctestplatalfvisualvisual.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualvisual.cfg"-"c:\Testframework\ui_testplatalfvisualvisual.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualanchorlayout.cfg"-"c:\Testframework\tctestplatalfvisualanchorlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualanchorlayout.cfg"-"c:\Testframework\ui_testplatalfvisualanchorlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualbatchbuffer.cfg"-"c:\Testframework\tctestplatalfvisualbatchbuffer.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualbatchbuffer.cfg"-"c:\Testframework\ui_testplatalfvisualbatchbuffer.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualvisualfactory.cfg"-"c:\Testframework\tctestplatalfvisualvisualfactory.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualvisualfactory.cfg"-"c:\Testframework\ui_testplatalfvisualvisualfactory.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualborderbrush.cfg"-"c:\Testframework\tctestplatalfvisualborderbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualborderbrush.cfg"-"c:\Testframework\ui_testplatalfvisualborderbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualcontrol.cfg"-"c:\Testframework\tctestplatalfvisualcontrol.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualcontrol.cfg"-"c:\Testframework\ui_testplatalfvisualcontrol.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualcontrolgroup.cfg"-"c:\Testframework\tctestplatalfvisualcontrolgroup.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualcontrolgroup.cfg"-"c:\Testframework\ui_testplatalfvisualcontrolgroup.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualviewportlayout.cfg"-"c:\Testframework\tctestplatalfvisualviewportlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualviewportlayout.cfg"-"c:\Testframework\ui_testplatalfvisualviewportlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualcurvepath.cfg"-"c:\Testframework\tctestplatalfvisualcurvepath.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualcurvepath.cfg"-"c:\Testframework\ui_testplatalfvisualcurvepath.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualutil.cfg"-"c:\Testframework\tctestplatalfvisualutil.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualutil.cfg"-"c:\Testframework\ui_testplatalfvisualutil.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualcurvepathlayout.cfg"-"c:\Testframework\tctestplatalfvisualcurvepathlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualcurvepathlayout.cfg"-"c:\Testframework\ui_testplatalfvisualcurvepathlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtransformation.cfg"-"c:\Testframework\tctestplatalfvisualtransformation.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtransformation.cfg"-"c:\Testframework\ui_testplatalfvisualtransformation.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtimedvalue.cfg"-"c:\Testframework\tctestplatalfvisualtimedvalue.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtimedvalue.cfg"-"c:\Testframework\ui_testplatalfvisualtimedvalue.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtextvisual.cfg"-"c:\Testframework\tctestplatalfvisualtextvisual.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtextvisual.cfg"-"c:\Testframework\ui_testplatalfvisualtextvisual.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtextureprocessor.cfg"-"c:\Testframework\tctestplatalfvisualtextureprocessor.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtextureprocessor.cfg"-"c:\Testframework\ui_testplatalfvisualtextureprocessor.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtexturegroup.cfg"-"c:\Testframework\tctestplatalfvisualtexturegroup.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtexturegroup.cfg"-"c:\Testframework\ui_testplatalfvisualtexturegroup.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtexturemanager.cfg"-"c:\Testframework\tctestplatalfvisualtexturemanager.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtexturemanager.cfg"-"c:\Testframework\ui_testplatalfvisualtexturemanager.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualstatic.cfg"-"c:\Testframework\tctestplatalfvisualstatic.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualstatic.cfg"-"c:\Testframework\ui_testplatalfvisualstatic.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualsymbiansbdrawer.cfg"-"c:\Testframework\tctestplatalfvisualsymbiansbdrawer.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualsymbiansbdrawer.cfg"-"c:\Testframework\ui_testplatalfvisualsymbiansbdrawer.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtextstylemanager.cfg"-"c:\Testframework\tctestplatalfvisualtextstylemanager.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtextstylemanager.cfg"-"c:\Testframework\ui_testplatalfvisualtextstylemanager.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtextstyle.cfg"-"c:\Testframework\tctestplatalfvisualtextstyle.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtextstyle.cfg"-"c:\Testframework\ui_testplatalfvisualtextstyle.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtexture.cfg"-"c:\Testframework\tctestplatalfvisualtexture.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtexture.cfg"-"c:\Testframework\ui_testplatalfvisualtexture.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualtextureautosize.cfg"-"c:\Testframework\tctestplatalfvisualtextureautosize.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualtextureautosize.cfg"-"c:\Testframework\ui_testplatalfvisualtextureautosize.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualshadowborderbrush.cfg"-"c:\Testframework\tctestplatalfvisualshadowborderbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualshadowborderbrush.cfg"-"c:\Testframework\ui_testplatalfvisualshadowborderbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualpropertyowner.cfg"-"c:\Testframework\tctestplatalfvisualpropertyowner.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualpropertyowner.cfg"-"c:\Testframework\ui_testplatalfvisualpropertyowner.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualroster.cfg"-"c:\Testframework\tctestplatalfvisualroster.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualroster.cfg"-"c:\Testframework\ui_testplatalfvisualroster.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualscreenbuffer.cfg"-"c:\Testframework\tctestplatalfvisualscreenbuffer.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualscreenbuffer.cfg"-"c:\Testframework\ui_testplatalfvisualscreenbuffer.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualscrollerevent.cfg"-"c:\Testframework\tctestplatalfvisualscrollerevent.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualscrollerevent.cfg"-"c:\Testframework\ui_testplatalfvisualscrollerevent.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualdecklayout.cfg"-"c:\Testframework\tctestplatalfvisualdecklayout.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualdecklayout.cfg"-"c:\Testframework\ui_testplatalfvisualdecklayout.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualdisplay.cfg"-"c:\Testframework\tctestplatalfvisualdisplay.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualdisplay.cfg"-"c:\Testframework\ui_testplatalfvisualdisplay.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualdisplaybgitem.cfg"-"c:\Testframework\tctestplatalfvisualdisplaybgitem.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualdisplaybgitem.cfg"-"c:\Testframework\ui_testplatalfvisualdisplaybgitem.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualdropsshadow.cfg"-"c:\Testframework\tctestplatalfvisualdropsshadow.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualdropsshadow.cfg"-"c:\Testframework\ui_testplatalfvisualdropsshadow.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualdropsshadowbrush.cfg"-"c:\Testframework\tctestplatalfvisualdropsshadowbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualdropsshadowbrush.cfg"-"c:\Testframework\ui_testplatalfvisualdropsshadowbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualenv.cfg"-"c:\Testframework\tctestplatalfvisualenv.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualenv.cfg"-"c:\Testframework\ui_testplatalfvisualenv.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualevent.cfg"-"c:\Testframework\tctestplatalfvisualevent.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualevent.cfg"-"c:\Testframework\ui_testplatalfvisualevent.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualflowlayout.cfg"-"c:\Testframework\tctestplatalfvisualflowlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualflowlayout.cfg"-"c:\Testframework\ui_testplatalfvisualflowlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualframebrush.cfg"-"c:\Testframework\tctestplatalfvisualframebrush.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualframebrush.cfg"-"c:\Testframework\ui_testplatalfvisualframebrush.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualgencomponent.cfg"-"c:\Testframework\tctestplatalfvisualgencomponent.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualgencomponent.cfg"-"c:\Testframework\ui_testplatalfvisualgencomponent.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualgradientbrush.cfg"-"c:\Testframework\tctestplatalfvisualgradientbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualgradientbrush.cfg"-"c:\Testframework\ui_testplatalfvisualgradientbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualgridlayout.cfg"-"c:\Testframework\tctestplatalfvisualgridlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualgridlayout.cfg"-"c:\Testframework\ui_testplatalfvisualgridlayout.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualimage.cfg"-"c:\Testframework\tctestplatalfvisualimage.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualimage.cfg"-"c:\Testframework\ui_testplatalfvisualimage.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualimagebrush.cfg"-"c:\Testframework\tctestplatalfvisualimagebrush.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualimagebrush.cfg"-"c:\Testframework\ui_testplatalfvisualimagebrush.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualimageloaderutil.cfg"-"c:\Testframework\tctestplatalfvisualimageloaderutil.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualimageloaderutil.cfg"-"c:\Testframework\ui_testplatalfvisualimageloaderutil.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisuallayout.cfg"-"c:\Testframework\tctestplatalfvisuallayout.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisuallayout.cfg"-"c:\Testframework\ui_testplatalfvisuallayout.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisuallinevisual.cfg"-"c:\Testframework\tctestplatalfvisuallinevisual.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisuallinevisual.cfg"-"c:\Testframework\ui_testplatalfvisuallinevisual.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualmeshvisual.cfg"-"c:\Testframework\tctestplatalfvisualmeshvisual.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualmeshvisual.cfg"-"c:\Testframework\ui_testplatalfvisualmeshvisual.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualmetric.cfg"-"c:\Testframework\tctestplatalfvisualmetric.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualmetric.cfg"-"c:\Testframework\ui_testplatalfvisualmetric.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualproceduralmesh.cfg"-"c:\Testframework\tctestplatalfvisualproceduralmesh.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualproceduralmesh.cfg"-"c:\Testframework\ui_testplatalfvisualproceduralmesh.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualmesh.cfg"-"c:\Testframework\ui_testplatalfvisualmesh.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualmesh.cfg"-"c:\Testframework\tctestplatalfvisualmesh.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualmaterial.cfg"-"c:\Testframework\ui_testplatalfvisualmaterial.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualmaterial.cfg"-"c:\Testframework\tctestplatalfvisualmaterial.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualmapfunc.cfg"-"c:\Testframework\ui_testplatalfvisualmapfunc.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualmapfunc.cfg"-"c:\Testframework\tctestplatalfvisualmapfunc.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualm3gmesh.cfg"-"c:\Testframework\ui_testplatalfvisualm3gmesh.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualm3gmesh.cfg"-"c:\Testframework\tctestplatalfvisualm3gmesh.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualcommand.cfg"-"c:\Testframework\ui_testplatalfvisualcommand.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualcommand.cfg"-"c:\Testframework\tctestplatalfvisualcommand.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualbrush.cfg"-"c:\Testframework\ui_testplatalfvisualbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualbrush.cfg"-"c:\Testframework\tctestplatalfvisualbrush.cfg", FF   ; FF stands for Normal file
+"..\conf\ui_testplatalfvisualbrusharray.cfg"-"c:\Testframework\ui_testplatalfvisualbrusharray.cfg", FF   ; FF stands for Normal file
+"..\conf\tctestplatalfvisualbrusharray.cfg"-"c:\Testframework\tctestplatalfvisualbrusharray.cfg", FF   ; FF stands for Normal file
+
+"\epoc32\RELEASE\ARMV5\urel\alfbatchextplugin.dll"-"c:\sys\bin\alfbatchextplugin.dll", FF
+"\epoc32\RELEASE\ARMV5\urel\testplatalfvisual.dll"-"c:\sys\bin\testplatalfvisual.dll", FF
+
+"\epoc32\data\Z\resource\plugins\alfbatchextplugin.rsc"-"c:\resource\plugins\alfbatchextplugin.rsc", FF
+
+
+; Trim For Mms
+; ------------
+; to be added later

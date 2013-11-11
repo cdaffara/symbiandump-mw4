@@ -1,0 +1,76 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Feeds server
+*
+*/
+
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+CAPABILITY        CAP_CLIENT_DLL 
+VENDORID          VID_DEFAULT
+
+TARGET            FeedsServerApi.dll
+TARGETTYPE        DLL
+UID               0x1000008d 0x2001F46B                             
+
+#if defined(WINSCW)
+deffile Bwinscw/FeedsServerApi.def
+#elif defined(ARMCC)
+deffile EABI/FeedsServerApi.def
+#endif
+
+// uncomment to enable logs
+//MACRO _LOG
+//#define _LOG
+
+SOURCEPATH        ../src
+SOURCE            FeedsInterface.cpp
+SOURCE            Transaction.cpp
+
+SOURCE            FeedsEntity.cpp
+SOURCE            FeedsMap.cpp
+SOURCE 						Waiter.cpp
+
+// Utils sources
+SOURCEPATH        ../../Common/src
+SOURCE            LeakTracker.cpp
+SOURCE            Packed.cpp
+SOURCE            PackedFolder.cpp
+SOURCE            PackedFeed.cpp
+
+SOURCEPATH        ../../XmlUtils/src
+SOURCE            XmlEncoding.cpp
+
+USERINCLUDE       ../inc
+USERINCLUDE       ../../Common/inc
+USERINCLUDE       ../../XmlUtils/inc
+USERINCLUDE       ../../../../inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+
+// Libraries
+LIBRARY           euser.lib
+#if defined( _LOG )
+LIBRARY		  flogger.lib
+#else
+DEBUGLIBRARY  flogger.lib
+#endif
+LIBRARY           efsrv.lib
+LIBRARY           estor.lib
+LIBRARY           esock.lib
+LIBRARY           charconv.lib

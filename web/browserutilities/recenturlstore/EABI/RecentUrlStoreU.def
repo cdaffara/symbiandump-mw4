@@ -1,0 +1,9 @@
+EXPORTS
+	_ZN15CRecentUrlStore10DeleteDataERK7TDesC16 @ 1 NONAME
+	_ZN15CRecentUrlStore4NewLEv @ 2 NONAME
+	_ZN15CRecentUrlStore7GetDataER12CDesC16ArrayS1_RK7TDesC16 @ 3 NONAME
+	_ZN15CRecentUrlStore9SaveDataLERK7TDesC16S2_ @ 4 NONAME
+	_ZN15CRecentUrlStore9ClearDataEv @ 5 NONAME
+	_ZTI15CRecentUrlStore @ 6 NONAME ; #<TI>#
+	_ZTV15CRecentUrlStore @ 7 NONAME ; #<VT>#
+

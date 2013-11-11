@@ -1,0 +1,110 @@
+﻿;
+; Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description:
+;
+; ============================================================================
+;  Name        : t_alfperfapp.pkg
+;  Part of     : t_alfperfapp      
+;  Description : Package file for project t_alfperfapp
+;  Version     : %version: %
+;
+;  Copyright © 2007, 2008 Nokia.  All rights reserved.
+;  This material, including documentation and any related computer
+;  programs, is protected by copyright controlled by Nokia.  All
+;  rights are reserved.  Copying, including reproducing, storing,
+;  adapting or translating, any or all of this material requires the
+;  prior written consent of Nokia.  This material also contains
+;  confidential information which may not be disclosed to others
+;  without the prior written consent of Nokia.
+; ============================================================================
+;
+
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"AlfPerfApp"},(0x20016B8D),1,0,0
+
+;Supports Series 60 v 3.0
+(0x101F7961), 0, 0, 0, {"Series60ProductID"}
+
+;Localized Vendor Name
+%{"My Test EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+; Files to copy
+
+; alfperfapp application
+"\epoc32\release\armv5\urel\alfperfapp.exe"-"!:\sys\bin\alfperfapp.exe"
+"\epoc32\data\z\private\10003a3f\apps\alfperfapp_reg.rsc"-"!:\private\10003a3f\import\apps\alfperfapp_reg.rsc"
+"\epoc32\data\z\resource\apps\alfperfapp.rsc"-"!:\resource\apps\alfperfapp.rsc"
+
+; Test case images
+"\epoc32\data\z\resource\apps\alfperfapp_imagetest.mif"-"!:\resource\apps\alfperfapp_imagetest.mif"
+"..\gfx\alfperfapp_imagetest.gif"-"!:\private\20016B8D\alfperfapp_imagetest.gif"
+"..\gfx\alfperfapp_imagetest.png"-"!:\private\20016B8D\alfperfapp_imagetest.png"
+"..\gfx\alfperfapp_imagetest.svg"-"!:\private\20016B8D\alfperfapp_imagetest.svg"
+; Mif files can't go to apps private dir, since they have to be loaded by AknIconSrv
+"..\gfx\alfperfapp_imagetest_NVGCS.mif"-"!:\resource\apps\alfperfapp_imagetest_NVGCS.mif"
+"..\gfx\icons_mif_new2.mif"-"!:\resource\apps\icons_mif_new2.mif"
+; Special place for NVG-TLV icons, they won't load correctly otherwise
+"..\gfx\3musk.mif"-"!:\data\nvg_mif\3musk.mif"
+"..\gfx\alfperfapp_test1.mbm"-"!:\private\20016B8D\alfperfapp_test1.mbm"
+
+"..\gfx\alfphotos1.jpg"-"!:\private\20016B8D\alfphotos1.jpg"
+"..\gfx\alfphotos2.jpg"-"!:\private\20016B8D\alfphotos2.jpg"
+"..\gfx\alfphotos3.jpg"-"!:\private\20016B8D\alfphotos3.jpg"
+"..\gfx\alfphotos4.jpg"-"!:\private\20016B8D\alfphotos4.jpg"
+"..\gfx\alfphotos5.jpg"-"!:\private\20016B8D\alfphotos5.jpg"
+"..\gfx\alfphotos6.jpg"-"!:\private\20016B8D\alfphotos6.jpg"
+"..\gfx\alfphotos7.jpg"-"!:\private\20016B8D\alfphotos7.jpg"
+"..\gfx\alfphotos8.jpg"-"!:\private\20016B8D\alfphotos8.jpg"
+"..\gfx\alfphotos9.jpg"-"!:\private\20016B8D\alfphotos9.jpg"
+"..\gfx\alfphotos_5mpx.jpg"-"!:\private\20016B8D\alfphotos_5mpx.jpg"
+"..\gfx\alfphotos_2mpx.jpg"-"!:\private\20016B8D\alfphotos_2mpx.jpg"
+"..\gfx\alfphotos_vga.jpg"-"!:\private\20016B8D\alfphotos_vga.jpg"
+"..\gfx\jpg_sun.jpg"-"!:\private\20016B8D\jpg_sun.jpg"
+
+; Small images for Open VG for multiple image test cases
+"..\gfx\alfphotos_small1.jpg"-"!:\private\20016B8D\alfphotos_small1.jpg"
+"..\gfx\alfphotos_small2.jpg"-"!:\private\20016B8D\alfphotos_small2.jpg"
+"..\gfx\alfphotos_small3.jpg"-"!:\private\20016B8D\alfphotos_small3.jpg"
+"..\gfx\alfphotos_small4.jpg"-"!:\private\20016B8D\alfphotos_small4.jpg"
+"..\gfx\alfphotos_small5.jpg"-"!:\private\20016B8D\alfphotos_small5.jpg"
+"..\gfx\alfphotos_small6.jpg"-"!:\private\20016B8D\alfphotos_small6.jpg"
+"..\gfx\alfphotos_small7.jpg"-"!:\private\20016B8D\alfphotos_small7.jpg"
+"..\gfx\alfphotos_small8.jpg"-"!:\private\20016B8D\alfphotos_small8.jpg"
+"..\gfx\alfphotos_small9.jpg"-"!:\private\20016B8D\alfphotos_small9.jpg"
+"..\gfx\jpg_sun_small.jpg"-"!:\private\20016B8D\jpg_sun_small.jpg"
+
+; app suite images
+"..\gfx\people.png"                       -"!:\private\20016B8D\people.png"
+"..\gfx\jim.png"                          -"!:\private\20016B8D\jim.png"
+"..\gfx\mtv3.png"                         -"!:\private\20016B8D\mtv3.png"
+"..\gfx\mtv3_scifi.png"                   -"!:\private\20016B8D\mtv3_scifi.png"
+"..\gfx\nelonen.png"                      -"!:\private\20016B8D\nelonen.png"
+"..\gfx\discoveryhd.png"                  -"!:\private\20016B8D\discoveryhd.png"
+"..\gfx\nationalgeographic.jpg"           -"!:\private\20016B8D\nationalgeographic.jpg"
+
+; alfperfappdaemon - daemon for alfperfapp
+"\epoc32\release\armv5\urel\alfperfappdaemon.exe"-"!:\sys\bin\alfperfappdaemon.exe"
+"\epoc32\data\z\private\10003a3f\apps\alfperfappdaemon_reg.rsc"-"!:\private\10003a3f\import\apps\alfperfappdaemon_reg.rsc"
+"\epoc32\data\z\resource\apps\alfperfappdaemon.rsc"-"!:\resource\apps\alfperfappdaemon.rsc"
+
+; alfdebugextension
+"\epoc32\release\armv5\urel\alfdebug.dll"-"!:\sys\bin\alfdebug.dll"
+"\epoc32\release\armv5\urel\alfdebugserver.dll"-"!:\sys\bin\alfdebugserver.dll"
+"\epoc32\data\z\resource\plugins\alfdebugserver.rsc"-"!:\resource\plugins\alfdebugserver.rsc"

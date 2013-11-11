@@ -1,0 +1,59 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+
+/**
+@file
+*/
+
+
+PRJ_PLATFORMS
+
+DEFAULT
+
+PRJ_TESTEXPORTS
+
+../inc/es_dummy.h SYMBIAN_MW_LAYER_PLATFORM_EXPORT_PATH(es_dummy.h)
+../group/te_serverbase.iby	/epoc32/rom/include/te_serverbase.iby
+
+../scriptfiles/te_upnp_test_copy_config_files.script	z:/upnp/servertests/scripts/te_upnp_test_copy_config_files.script
+../scriptfiles/te_upnp_test_remove_config_files.script  z:/upnp/servertests/scripts/te_upnp_test_remove_config_files.script
+
+//Config for UPnP_One  Thread
+../data/ip.proxy.udpclient.esk      z:/upnp/servertests/configs/esock/ip.proxy.udpclient.esk
+../data/ip.proxy.udpserver.esk      z:/upnp/servertests/configs/esock/ip.proxy.udpserver.esk
+../data/ip.proxy.tcpserver.esk      z:/upnp/servertests/configs/esock/ip.proxy.tcpserver.esk
+../data/ip.proxy.tcpclient.esk      z:/upnp/servertests/configs/esock/ip.proxy.tcpclient.esk
+
+// unit tests scripts files are added here
+../scriptfiles/te_upnp_udpclient_test_with_config.script	z:/upnp/servertests/scripts/te_upnp_udpclient_test_with_config.script
+../scriptfiles/te_upnp_udpclient.script 					z:/upnp/servertests/scripts/te_upnp_udpclient.script
+
+../scriptfiles/te_upnp_udpserver_test_with_config.script	z:/upnp/servertests/scripts/te_upnp_udpserver_test_with_config.script
+../scriptfiles/te_upnp_udpserver.script 					z:/upnp/servertests/scripts/te_upnp_udpserver.script
+
+../scriptfiles/te_upnp_tcpserver_test_with_config.script	z:/upnp/servertests/scripts/te_upnp_tcpserver_test_with_config.script
+../scriptfiles/te_upnp_tcpserver.script 					z:/upnp/servertests/scripts/te_upnp_tcpserver.script
+
+../scriptfiles/te_upnp_tcpclient_test_with_config.script	z:/upnp/servertests/scripts/te_upnp_tcpclient_test_with_config.script
+../scriptfiles/te_upnp_tcpclient.script 					z:/upnp/servertests/scripts/te_upnp_tcpclient.script
+../scriptfiles/dummy.ini 									z:/upnp/servertests/scripts/dummy.ini
+
+
+PRJ_TESTMMPFILES
+
+./te_serverbase.mmp

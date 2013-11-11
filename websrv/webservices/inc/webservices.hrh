@@ -1,0 +1,187 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:           
+*
+*/
+
+
+#ifndef WEBSERVICES_VARIANT_HRH
+#define WEBSERVICES_VARIANT_HRH
+
+#include <platform_paths.hrh>
+
+// Disable UHEAP mark start / end in (ws)sen.exe process main thread(!):
+#ifndef _DEBUG
+MACRO _RD_SEN_DO_NOT_USE_UHEAP_MARKING
+ #if !defined( _RD_SEN_DO_NOT_USE_UHEAP_MARKING )
+	#define _RD_SEN_DO_NOT_USE_UHEAP_MARKING 1
+ #endif 
+#endif 
+
+
+
+#if !defined( WINS )
+macro RD_SEN_ENABLE_USE_OF_WSD_IN_SC_FOR_HW_TARGET
+    #if !defined ( RD_SEN_ENABLE_USE_OF_WSD_IN_SC_FOR_ARMV5_TARGET )
+    	#define RD_SEN_ENABLE_USE_OF_WSD_IN_SC_FOR_ARMV5_TARGET 1
+    #endif
+#endif    
+
+macro RD_SEN_SC_MSG_DISPATCHER_ENABLED
+ #if !defined ( RD_SEN_SC_MSG_DISPATCHER_ENABLED )
+   #define RD_SEN_SC_MSG_DISPATCHER_ENABLED 1
+#endif
+
+//macro RD_SEN_SC_PROXY_ENABLED_BY_DEFAULT
+//#if !defined ( RD_SEN_SC_PROXY_ENABLED_BY_DEFAULT )
+//    #define RD_SEN_SC_PROXY_ENABLED_BY_DEFAULT 1
+//#endif
+//macro RD_SEN_USE_PUBSUB_FOR_OUTGOING_FILE_PROGRESS
+//#if !defined ( RD_SEN_USE_PUBSUB_FOR_OUTGOING_FILE_PROGRESS )
+//    #define RD_SEN_USE_PUBSUB_FOR_OUTGOING_FILE_PROGRESS 1
+//#endif
+#if defined ( RD_SEN_USE_PUBSUB_FOR_OUTGOING_FILE_PROGRESS )
+macro RD_SEN_USE_CONNAGENT_FOR_SOAP_PROGRESS
+    #if !defined ( RD_SEN_USE_CONNAGENT_FOR_SOAP_PROGRESS )
+        #define RD_SEN_USE_CONNAGENT_FOR_SOAP_PROGRESS 1
+    #endif
+#endif // 
+
+macro RD_SEN_DISABLE_TRANSFER_PROGRESS_FOR_HC
+#if !defined ( RD_SEN_DISABLE_TRANSFER_PROGRESS_FOR_HC )
+    #define RD_SEN_DISABLE_TRANSFER_PROGRESS_FOR_HC 1
+#endif
+
+/*
+macro RD_SEN_FORCE_LIBXML_SAX_PLUGIN_MIMETYPE
+#if !defined ( RD_SEN_FORCE_LIBXML_SAX_PLUGIN_MIMETYPE )
+	#define RD_SEN_FORCE_LIBXML_SAX_PLUGIN_MIMETYPE 1
+#endif
+*/
+/*
+macro RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES
+#if !defined ( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+	#define RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES 1
+#endif
+*/
+//macro RD_SEN_DISABLE_TRANSPORT_STATUS_CODE_CALLBACK
+//#if !defined ( RD_SEN_DISABLE_TRANSPORT_STATUS_CODE_CALLBACK )
+//	#define RD_SEN_DISABLE_TRANSPORT_STATUS_CODE_CALLBACK 1
+//#endif
+
+// By defult should be turned off for platform release. For automated testing just enable this flag 
+macro RD_SEN_DISABLE_USER_PERMISSION_DIALOGS
+#if !defined ( RD_SEN_DISABLE_USER_PERMISSION_DIALOGS )
+	#define RD_SEN_DISABLE_USER_PERMISSION_DIALOGS 1
+#endif
+
+//macro RD_SEN_USE_NEW_SYSTEM_INCLUDE_DIR_FOR_WSSTAR_XML_ENG
+//#if !defined ( RD_SEN_USE_NEW_SYSTEM_INCLUDE_DIR_FOR_WSSTAR_XML_ENG )
+//	#define RD_SEN_USE_NEW_SYSTEM_INCLUDE_DIR_FOR_WSSTAR_XML_ENG 1
+//#endif
+
+/*
+macro RD_SEN_COMPILE_SIS_PACKAGE_FILES
+#if !defined ( RD_SEN_COMPILE_SIS_PACKAGE_FILES )
+	#define RD_SEN_COMPILE_SIS_PACKAGE_FILES 1
+#endif
+*/
+// -------------------------------------
+// --- WS-* dedicated MACROS *START* ---
+// -------------------------------------
+
+// IF BELOW "do not prompt authinfo" MACRO IS DEFINED: attribute has to exist, otherwise logic defaults to: DO NOT PROMPT
+//MACRO _RD_SEN_WS_STAR_DO_NOT_PROMPT_AUTHINFO_BY_DEFAULT
+//#if !defined ( _RD_SEN_WS_STAR_DO_NOT_PROMPT_AUTHINFO_BY_DEFAULT )
+//    #define _RD_SEN_WS_STAR_DO_NOT_PROMPT_AUTHINFO_BY_DEFAULT 1
+//#endif    
+// ELSE: even when attribute does NOT exist, or when it does and has any other value but "false", default to: PROMPT
+
+//MACRO RD_SEN_WS_STAR_DISABLE_POLICY_HTTP_GET
+//#if !defined( RD_SEN_WS_STAR_DISABLE_POLICY_HTTP_GET )
+//	#define RD_SEN_WS_STAR_DISABLE_POLICY_HTTP_GET 1
+//#endif    
+
+MACRO RD_SEN_WS_STAR_DISABLE_DICTIONARY_FETCHING
+#if !defined( RD_SEN_WS_STAR_DISABLE_DICTIONARY_FETCHING )
+	#define RD_SEN_WS_STAR_DISABLE_DICTIONARY_FETCHING 1
+#endif    
+
+// **** RD_SEN_WS_STAR__WBXML -- START --
+// * Comment OUT these lines IF NOT USING WBXML Compression(!) 
+//MACRO RD_SEN_WS_STAR__WBXML 
+//#if !defined( RD_SEN_WS_STAR__WBXML )
+//    #define RD_SEN_WS_STAR__WBXML 1
+//#endif    
+// **** RD_SEN_WS_STAR__WBXML -- END --
+
+
+// **** RD_SEN_VTCP_SUPPORT -- START --
+// * Comment OUT these lines IF NOT USING VTCP
+MACRO RD_SEN_VTCP_SUPPORT
+#if !defined(RD_SEN_VTCP_SUPPORT )
+    #define RD_SEN_VTCP_SUPPORT 1
+#endif    
+
+// * Comment OUT these lines IF NOT USING VTCP
+MACRO RD_SEN_ENABLE_VTCP_BY_TRANSPORTPROPERTIES
+#if !defined(RD_SEN_ENABLE_VTCP_BY_TRANSPORTPROPERTIES )
+    #define RD_SEN_ENABLE_VTCP_BY_TRANSPORTPROPERTIES 1
+#endif  
+
+//**** RD_SEN_VTCP_SUPPORT -- END --
+
+// -----------------------------------
+// --- WS-* dedicated MACROS *END* ---
+// -----------------------------------
+
+
+
+
+// For Enabling ALR Feature in 3.2 and above SDK
+//Note: Must Disable for other SDK
+//macro __ENABLE_ALR__ 
+//#if !defined ( __ENABLE_ALR__ )
+//	#define __ENABLE_ALR__ 1
+//#endif
+
+
+//macro __TEST_RETRY_TTL //LongLived Retry logic
+//#if !defined ( __TEST_RETRY_TTL )
+//	#define __TEST_RETRY_TTL
+//#endif
+/*
+//To build vtcp and vtcp channel transport plugin
+macro __BUILD_VTCP_
+#if !defined ( __BUILD_VTCP_ )
+	#define __BUILD_VTCP_
+#endif
+*/
+
+// To Encrypt/Decrypt the password
+// This macro will be enabled once adaptation API exposed to MW
+//macro __CRYPTO_HW__ 
+//#if !defined ( __CRYPTO_HW__ )
+//	#define __CRYPTO_HW__ 1
+//#endif
+
+//By default this macro will be enabled for TB 9.2 and more. 
+//It has to be disabled for other platforms
+macro __SINGLE_CLICK_CONNECTIVITY_ENABLED__ 
+#if !defined ( __SINGLE_CLICK_CONNECTIVITY_ENABLED__ )
+	#define __SINGLE_CLICK_CONNECTIVITY_ENABLED__ 1
+#endif
+
+
+#endif//WEBSERVICES_VARIANT_HRH

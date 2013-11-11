@@ -1,0 +1,95 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   
+*
+*/
+
+#include <platform_paths.hrh> 
+
+CAPABILITY None
+
+#ifdef __UI_FRAMEWORKS_V2__
+TARGETPATH	/sys/bin
+#if defined(EKA2) || !defined(WINS)
+TARGET          alfexcalendar.exe
+TARGETTYPE exe
+#else // EKA1 WINS
+TARGET          alfexcalendar.app
+TARGETTYPE exedll
+deffile /epoc32/release/wins/alfexcalendar.def
+#endif
+#else // __UI_FRAMEWORKS_V2__
+TARGET          alfexcalendar.app
+TARGETPATH      /system/apps/alfexcalendar
+TARGETTYPE app
+#endif
+
+UID               0x100039CE 0x0FCD4AC7
+
+LANG              SC
+
+SOURCEPATH        ../src
+SOURCE            alfexcalendar.cpp
+SOURCE            alfexcalendarapplication.cpp 
+SOURCE            alfexcalendarappui.cpp
+SOURCE            alfexcalendardocument.cpp 
+SOURCE            alfexcalendarmonth.cpp
+SOURCE            alfexcalendarengine.cpp
+SOURCE            alfexcalendarengineeventtimer.cpp
+SOURCE            alfexcalendardeckcontrol.cpp
+
+SOURCEPATH        ../group
+
+USERINCLUDE       ../inc 
+USERINCLUDE       ../sis 
+
+APP_LAYER_SYSTEMINCLUDE
+
+LIBRARY           euser.lib
+LIBRARY           apparc.lib
+LIBRARY           cone.lib 
+LIBRARY           eikcore.lib eikcoctl.lib
+LIBRARY           avkon.lib  
+LIBRARY           gdi.lib  
+
+LIBRARY           alfclient.lib
+LIBRARY           bafl.lib
+
+
+#ifdef __UI_FRAMEWORKS_V2__
+START RESOURCE	alfexcalendar.rss
+HEADER
+targetpath	/resource/apps
+lang		sc
+end
+#else
+RESOURCE        alfexcalendar.rss
+#endif
+
+#ifdef __UI_FRAMEWORKS_V2__
+sourcepath		.
+START RESOURCE	alfexcalendar_reg.rss
+#ifdef WINSCW
+TARGETPATH	/private/10003a3f/apps
+#else
+TARGETPATH	/private/10003a3f/import/apps
+#endif
+END
+   
+start resource alfexcalendar_loc.rss
+targetpath /resource/apps
+lang sc
+end
+#endif
+

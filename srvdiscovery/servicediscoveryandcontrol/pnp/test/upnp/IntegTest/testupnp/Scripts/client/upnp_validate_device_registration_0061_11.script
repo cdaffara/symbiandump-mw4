@@ -1,0 +1,41 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_validate_device_registration_0061_11.script
+//! @SYMTestSuiteName	multiple_machines_client 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client 
+
+LOAD_SUITE multiple_machines_client
+LOAD_SUITE test_synchronize_client
+LOAD_SUITE testdelay
+
+START_TESTCASE	upnp_validate_device_registration_0061_11
+//! @file					
+//! @SYMTestCaseID			
+//! @SYMTestCaseDesc 		
+//! @SYMREQ 				REQ8672,REQ8605,REQ8606,REQ8607				
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		
+//! @SYMTestExpectedResults	
+//! @SYMTestType 			CIT
+
+RUN_TEST_STEP 1000 testdelay TestUPnPManager  
+RUN_TEST_STEP 1000 testdelay TestUPnPManager
+RUN_TEST_STEP 1000 test_synchronize_client TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini clientdata
+RUN_TEST_STEP !Result=Fail 500 multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\publish_0061.ini upnp_validate_device_registration_0061_11
+END_TESTCASE	upnp_validate_device_registration_0061_11

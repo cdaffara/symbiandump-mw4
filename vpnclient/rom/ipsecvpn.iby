@@ -1,0 +1,34 @@
+/*
+* Copyright (c) 2009-2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Image description file for project
+*                vpnclient
+*
+*/
+
+
+#ifndef __IPSECVPN_IBY__
+#define __IPSECVPN_IBY__
+
+#ifdef FF_VPN_CLIENT
+
+#ifndef FF_GENERIC_ACCESS_NETWORK // UMA not supported
+
+data=ZSYSTEM\install\ipsecvpn.sis               system\install\ipsecvpn.sis
+data=ZSYSTEM\install\ipsecvpn_vpnpolins.sis     system\install\ipsecvpn_vpnpolins.sis
+
+#endif
+
+#endif // FF_VPN_CLIENT
+
+#endif // __IPSECVPN_IBY__

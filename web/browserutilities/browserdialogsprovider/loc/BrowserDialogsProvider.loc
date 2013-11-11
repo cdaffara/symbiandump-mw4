@@ -1,0 +1,124 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This is a localisation file.
+*     A .loc file is the one and only place where the logical strings
+*     to be localised are defined.
+*
+*
+*/
+
+
+//  LOCALISATION STRINGS
+
+//d: header text in data query in script prompt function
+//l:heading_pane_t1
+#define qtn_browser_dlgprov_query_script_prompt     "Script Prompt:"
+
+//d: header text in message query in script alert function
+//l:heading_pane_t1
+#define qtn_browser_dlgprov_query_script_alert      "Script Alert:"
+
+//d:Header in a dialog show download information
+//l:heading_pane_t1
+#define qtn_browser_dlgprov_query_object_info_header        "Download"
+
+//d:There is no application which supports the object
+//l:list_double_pane_t1_cp2
+#define qtn_browser_dlgprov_query_object_info_notsupported "Not Supported"
+
+//d:Size of the downloadable object
+//l:list_double_pane_t1_cp2
+#define qtn_browser_dlgprov_query_object_info_filesize      "Size:"
+
+//d: Size of data in kilo bytes
+//d: text used by progress bar
+//l: ai_message_heading_pane_t1
+#define qtn_browser_dlgprov_unit_kb     "%N kB"
+
+//d: Size of data in mega bytes
+//d: text used by progress bar
+//l: ai_message_heading_pane_t1
+#define qtn_browser_dlgprov_unit_mb     "%U MB"
+
+//d:Used when Size and/or MIME Type is unknown
+//l:list_double_pane_t2_cp2
+#define qtn_browser_dlgprov_query_object_unknown    "Unknown"
+
+//d:The application which will be used to open the object
+//l:list_double_pane_t1_cp2
+#define qtn_browser_dlgprov_query_object_info_openwith  "Open with:"
+
+//d:The MIME type of the downloadable object
+//l:list_double_pane_t1_cp2
+#define qtn_browser_dlgprov_query_object_info_filetype  "Type:"
+
+//d:Confirmation query prompt when user confirmation during login over unsecure connection.
+//l:popup_note_window
+#define qtn_browser_dlgprov_query_basic_authentication  "Authentication data will be sent as plain text. Continue?"
+
+//d:Authentication of the WML card failed.
+//l:popup_note_window
+#define text_wml_auth_fail_retry_query  "Authorisation failed. Try again?"
+
+//d:label for user name in authentication dialog
+//l:popup_query_data_window
+//
+#define text_wml_username_query     "User name:"
+
+//d:label for user's password in authentication dialog
+//l:popup_query_data_window
+//
+#define text_wml_passwd_query     "Password:"
+
+//d:View images popup title
+//l:heading_pane_t1
+//
+#define qtn_browser_query_select_image  "Select image"
+
+//d: message for unresolved hostname. The host name could not be resolved by Domain Name Server lookup
+//l: opup_note_window
+#define qtn_browser_not_valid_dns_name  "Unresolved server name"
+
+//-----------------------------------------------------------------------------
+//
+//   Upload progress note strings
+//
+//-----------------------------------------------------------------------------
+//
+
+//d:Text in upload progress note.
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_browser_upload_progressnote_uploaded "Uploaded:\n%0U / %1U "
+
+//d:Unit in upload progress note.
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_browser_upload_progressnote_unit_kbyte "kB"
+
+//d:Unit in upload progress note.
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_browser_upload_progressnote_unit_mb "MB"
+
+// End of File
+
+

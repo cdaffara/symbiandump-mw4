@@ -1,0 +1,128 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Build information file for project alfappserver
+*  Version     : %version: tr1sido#128.1.12 %
+*
+*/
+
+#ifndef ALF_USE_OPENWF_COMPOSITION
+#ifdef SYMBIAN_GRAPHICS_BUILD_OPENWF_WSERV
+#define ALF_USE_OPENWF_COMPOSITION
+#endif
+#endif
+
+PRJ_PLATFORMS
+DEFAULT
+
+#include <bldvariant.hrh>
+
+// use platform macros with subfolder
+#include <platform_paths.hrh>
+#define MW_LAYER_PLATFORM_EXPORT_PATH_ACCTK(exported) MW_LAYER_PLATFORM_EXPORT_PATH(uiacceltk/##exported)
+#define MW_LAYER_PLATFORM_EXPORT_PATH_ALF(exported) MW_LAYER_PLATFORM_EXPORT_PATH(alf/##exported)
+
+#include "../goommonitor/group/bld.inf"
+
+PRJ_EXPORTS
+#include "core_exports.inc"
+#include "alf_exports.inc"
+
+// example effects are no longer exported.
+// To make testing easier we now always export the default skin .sel file that contains
+// separate keyword definitions for appear and disappera effects for control transitions.
+// After effect system is complete and aknskins has taken over the correct 101f84b9.sel file
+// and manifest.mf file, we should no longer export these files.
+#ifndef SYMBIAN_GRAPHICS_WSERV_QT_EFFECTS
+#ifndef ALF_USE_OPENWF_COMPOSITION
+../coretoolkit/data/101f84b9.sel /epoc32/data/z/resource/skins/101f84b9/101f84b9.sel
+../coretoolkit/data/101f84b9.sel /epoc32/release/winscw/udeb/z/resource/skins/101f84b9/101f84b9.sel
+../coretoolkit/data/101f84b9.sel /epoc32/release/winscw/urel/z/resource/skins/101f84b9/101f84b9.sel
+
+../coretoolkit/data/manifest.mf /epoc32/data/z/resource/effects/manifest.mf
+../coretoolkit/data/manifest.mf /epoc32/release/winscw/udeb/z/resource/effects/manifest.mf
+../coretoolkit/data/manifest.mf /epoc32/release/winscw/urel/z/resource/effects/manifest.mf
+
+// Any effect files that you want to use in the emulator can be copied to
+// /epoc32/release/winscw/udeb/z/resource/effects/ directory
+// or /epoc32/winscw/c/resource/effects
+
+// Test effects are not included in ROM by default.
+// For testing effects in ROM you must either modify some iby file to get the files onto rom
+// to directory /resource/effects/
+
+// For easier testing you can also copy the effect files onto a memory card into
+// /resource/effects/ directory.
+// These files can be changed any time and reregistered by changing the skin
+#endif // #ifndef ALF_USE_OPENWF_COMPOSITION
+#endif // #ifndef SYMBIAN_GRAPHICS_WSERV_QT_EFFECTS
+
+// backround animation shaders
+../backgroundanim/refplugin/data/refvertexshader.vsh /epoc32/data/z/private/200286D3/refvertexshader.vsh
+../backgroundanim/refplugin/data/reffragmentshader.fsh /epoc32/data/z/private/200286D3/reffragmentshader.fsh
+
+// Generic configuration interface for component cenrep settings
+../conf/s60uiacceltk.confml                  APP_LAYER_CONFML(s60uiacceltk.confml)
+../conf/s60uiacceltk_10283344.crml           APP_LAYER_CRML(s60uiacceltk_10283344.crml)
+
+PRJ_MMPFILES
+
+../TokenServer/SrvSrc/ftokenserver.mmp
+../TokenServer/ClientSrc/ftokenclient.mmp
+../coretoolkit/group/coretoolkit.mmp
+../coretoolkit/rendervg10/group/huirendervg10.mmp
+
+../Client/src/alfclient.mmp
+../AlfDecoderServerClient/src/alfdecoderserverclient.mmp
+../ServerCore/Src/alfappservercore.mmp
+../ServerInterface/src/alfredserver.mmp
+../ServerStub/Proxy_src/alfappfwproxy.mmp
+../AlfCommandDebug/group/alfcommanddebug.mmp
+../AlfHintPlugin/group/AlfHintPlugin.mmp
+../AlfHintPlugin/group/AlfHintPluginDrawer.mmp
+
+#ifndef SYMBIAN_GRAPHICS_WSERV_QT_EFFECTS
+../plugins/alftranseffect/alftranseffectplugin/group/alftranseffectplugin.mmp
+../plugins/alftranseffect/alftfxserverplugin/group/AlfTfxSrvPlugin.mmp
+../plugins/alftranseffect/alfgfxtransadapter/group/gfxtransenginetfx.mmp
+#endif // #ifndef SYMBIAN_GRAPHICS_WSERV_QT_EFFECTS
+
+../plugins/alfoogmplugin/group/alfoogmplugin.mmp
+../plugins/alfcrpplugin/group/alfcrpplugin.mmp
+
+// background animation host+reference plugin
+../backgroundanim/group/bganimhost.mmp
+../backgroundanim/refplugin/group/refplugin.mmp
+
+#ifdef ALF_USE_SINGLE_RENDERSTAGE
+  #include "../closedrs/group/bld.inf"
+#else
+  ../AlfRenderStage/group/alfrenderstageplugin.mmp
+  #ifdef ALF_USE_OPENWF_COMPOSITION
+    #include "../plugins/openwfcrs/group/bld.inf"
+  #else
+    #include "../plugins/closedrs/group/bld.inf"
+  #endif
+#endif
+
+#ifdef VSW_IVE3_ENABLED
+// NCP specific plugins
+#include "../plugins/videopolicyoogmplugin/group/bld.inf"
+
+// waves plugin is not part of foundation content (differentiating SW)
+#include "../backgroundanim/wavesplugin/group/bld.inf"
+
+#include "../plugins/mmfmediaclientplugin/group/bld.inf"
+#endif
+
+PRJ_TESTMMPFILES

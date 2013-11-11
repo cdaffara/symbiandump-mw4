@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0">
+ <package id="vpnclient" name="VPN Client" levels="engine ui api">
+  <collection id="vpnc_plat" name="VPN Client Platform Interfaces" level="api">
+      <component id="vpnapi" filter="s60" class="api" name="VPN API">
+		<meta rel="Api" href="vpnc_plat/vpnapi/vpn_api.metaxml"/>
+        <unit bldFile="vpnc_plat/vpnapi/group"/>
+      </component>
+  </collection>
+  <collection id="vpnapiimpl" name="VPN API Implementation" level="engine">
+   <component id="vpnapi_impl" filter="s60" name="VPN Implementation">
+    <unit bldFile="vpnapiimpl/group"/>
+   </component>
+  </collection>
+ </package>
+</SystemDefinition>

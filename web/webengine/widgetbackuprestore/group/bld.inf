@@ -1,0 +1,30 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  BLD for WidgetBackupRestore
+*
+*/
+
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+DEFAULT GCCE
+
+PRJ_EXPORTS
+backup_registration.xml 	        /epoc32/winscw/c/private/2000B4D8/backup_registration.xml
+backup_registration.xml 	        /epoc32/data/z/private/2000B4D8/backup_registration.xml
+../Rom/WidgetBackupRestore.iby    CORE_MW_LAYER_IBY_EXPORT_PATH(WidgetBackupRestore.iby)
+
+PRJ_MMPFILES
+WidgetBackupRestore.mmp

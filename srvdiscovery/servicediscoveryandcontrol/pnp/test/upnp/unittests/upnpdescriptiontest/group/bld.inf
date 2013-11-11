@@ -1,0 +1,99 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+
+PRJ_TESTMMPFILES
+
+testupnpdescriptionserver.mmp
+
+PRJ_TESTEXPORTS
+
+// Script file for testing the functionality.
+../script/testupnpdescriptionsuite.script			z:/upnp/description/scripts/testupnpdescriptionsuite.script
+
+// Ini file
+../ini/testupnpdescriptionsuite.ini	            z:/upnp/description/ini/testupnpdescriptionsuite.ini
+
+// Xml input files
+../xml_input_files/devicedesc_input1.xml			z:/upnp/description/xml/devicedesc_input1.xml
+../xml_input_files/devicedesc_input2.xml			z:/upnp/description/xml/devicedesc_input2.xml
+../xml_input_files/devicedesc_input3.xml			z:/upnp/description/xml/devicedesc_input3.xml
+../xml_input_files/devicedesc_input4.xml			z:/upnp/description/xml/devicedesc_input4.xml
+../xml_input_files/devicedesc_input5.xml			z:/upnp/description/xml/devicedesc_input5.xml
+../xml_input_files/devicedesc_input6.xml			z:/upnp/description/xml/devicedesc_input6.xml
+
+
+../xml_input_files/devicedesc_inputneg1.xml			z:/upnp/description/xml/devicedesc_inputneg1.xml
+../xml_input_files/devicedesc_inputneg2.xml			z:/upnp/description/xml/devicedesc_inputneg2.xml
+../xml_input_files/devicedesc_inputneg3.xml			z:/upnp/description/xml/devicedesc_inputneg3.xml
+../xml_input_files/devicedesc_inputneg4.xml			z:/upnp/description/xml/devicedesc_inputneg4.xml
+../xml_input_files/devicedesc_inputneg5.xml			z:/upnp/description/xml/devicedesc_inputneg5.xml
+../xml_input_files/devicedesc_inputneg6.xml			z:/upnp/description/xml/devicedesc_inputneg6.xml
+../xml_input_files/devicedesc_inputneg7.xml			z:/upnp/description/xml/devicedesc_inputneg7.xml
+../xml_input_files/devicedesc_inputneg8.xml			z:/upnp/description/xml/devicedesc_inputneg8.xml
+../xml_input_files/devicedesc_inputneg9.xml			z:/upnp/description/xml/devicedesc_inputneg9.xml
+../xml_input_files/devicedesc_inputneg10.xml			z:/upnp/description/xml/devicedesc_inputneg10.xml
+../xml_input_files/devicedesc_inputneg11.xml			z:/upnp/description/xml/devicedesc_inputneg11.xml
+../xml_input_files/devicedesc_inputneg12.xml			z:/upnp/description/xml/devicedesc_inputneg12.xml
+../xml_input_files/devicedesc_inputneg13.xml			z:/upnp/description/xml/devicedesc_inputneg13.xml
+../xml_input_files/devicedesc_inputneg14.xml			z:/upnp/description/xml/devicedesc_inputneg14.xml
+../xml_input_files/devicedesc_inputneg15.xml			z:/upnp/description/xml/devicedesc_inputneg15.xml
+../xml_input_files/devicedesc_inputneg16.xml			z:/upnp/description/xml/devicedesc_inputneg16.xml
+../xml_input_files/devicedesc_inputneg17.xml			z:/upnp/description/xml/devicedesc_inputneg17.xml
+../xml_input_files/devicedesc_inputneg18.xml			z:/upnp/description/xml/devicedesc_inputneg18.xml
+../xml_input_files/devicedesc_inputneg19.xml			z:/upnp/description/xml/devicedesc_inputneg19.xml
+../xml_input_files/devicedesc_inputneg20.xml			z:/upnp/description/xml/devicedesc_inputneg20.xml
+../xml_input_files/devicedesc_inputneg21.xml			z:/upnp/description/xml/devicedesc_inputneg21.xml
+../xml_input_files/devicedesc_inputneg22.xml			z:/upnp/description/xml/devicedesc_inputneg22.xml
+../xml_input_files/devicedesc_inputneg23.xml			z:/upnp/description/xml/devicedesc_inputneg23.xml
+../xml_input_files/devicedesc_inputneg24.xml			z:/upnp/description/xml/devicedesc_inputneg24.xml
+
+
+../xml_input_files/servicedesc_input1.xml			z:/upnp/description/xml/servicedesc_input1.xml
+../xml_input_files/servicedesc_input2.xml			z:/upnp/description/xml/servicedesc_input2.xml
+../xml_input_files/servicedesc_input3.xml			z:/upnp/description/xml/servicedesc_input3.xml
+../xml_input_files/servicedesc_input4.xml			z:/upnp/description/xml/servicedesc_input4.xml
+../xml_input_files/servicedesc_input5.xml			z:/upnp/description/xml/servicedesc_input5.xml
+
+../xml_input_files/servicedesc_inputneg1.xml			z:/upnp/description/xml/servicedesc_inputneg1.xml
+../xml_input_files/servicedesc_inputneg2.xml			z:/upnp/description/xml/servicedesc_inputneg2.xml
+../xml_input_files/servicedesc_inputneg3.xml			z:/upnp/description/xml/servicedesc_inputneg3.xml
+../xml_input_files/servicedesc_inputneg4.xml			z:/upnp/description/xml/servicedesc_inputneg4.xml
+../xml_input_files/servicedesc_inputneg5.xml			z:/upnp/description/xml/servicedesc_inputneg5.xml
+../xml_input_files/servicedesc_inputneg6.xml			z:/upnp/description/xml/servicedesc_inputneg6.xml
+../xml_input_files/servicedesc_inputneg7.xml			z:/upnp/description/xml/servicedesc_inputneg7.xml
+../xml_input_files/servicedesc_inputneg8.xml			z:/upnp/description/xml/servicedesc_inputneg8.xml
+../xml_input_files/servicedesc_inputneg9.xml			z:/upnp/description/xml/servicedesc_inputneg9.xml
+../xml_input_files/servicedesc_inputneg10.xml			z:/upnp/description/xml/servicedesc_inputneg10.xml
+../xml_input_files/servicedesc_inputneg11.xml			z:/upnp/description/xml/servicedesc_inputneg11.xml
+../xml_input_files/servicedesc_inputneg12.xml			z:/upnp/description/xml/servicedesc_inputneg12.xml
+../xml_input_files/servicedesc_inputneg13.xml			z:/upnp/description/xml/servicedesc_inputneg13.xml
+../xml_input_files/servicedesc_inputneg14.xml			z:/upnp/description/xml/servicedesc_inputneg14.xml
+../xml_input_files/servicedesc_inputneg15.xml			z:/upnp/description/xml/servicedesc_inputneg15.xml
+../xml_input_files/servicedesc_inputneg16.xml			z:/upnp/description/xml/servicedesc_inputneg16.xml
+../xml_input_files/servicedesc_inputneg17.xml			z:/upnp/description/xml/servicedesc_inputneg17.xml
+../xml_input_files/servicedesc_inputneg18.xml			z:/upnp/description/xml/servicedesc_inputneg18.xml
+../xml_input_files/servicedesc_inputneg19.xml			z:/upnp/description/xml/servicedesc_inputneg19.xml
+../xml_input_files/servicedesc_inputneg20.xml			z:/upnp/description/xml/servicedesc_inputneg20.xml
+../xml_input_files/servicedesc_inputneg21.xml			z:/upnp/description/xml/servicedesc_inputneg21.xml
+../xml_input_files/servicedesc_inputneg22.xml			z:/upnp/description/xml/servicedesc_inputneg22.xml
+../xml_input_files/servicedesc_inputneg23.xml			z:/upnp/description/xml/servicedesc_inputneg23.xml
+../xml_input_files/servicedesc_inputneg24.xml			z:/upnp/description/xml/servicedesc_inputneg24.xml
+../xml_input_files/servicedesc_inputneg25.xml			z:/upnp/description/xml/servicedesc_inputneg25.xml
+../xml_input_files/servicedesc_inputneg26.xml			z:/upnp/description/xml/servicedesc_inputneg26.xml
+../xml_input_files/servicedesc_inputneg27.xml			z:/upnp/description/xml/servicedesc_inputneg27.xml
+
+upnpdescriptiontest.iby								/epoc32/rom/include/upnpdescriptiontest.iby
+..\xml_input_files\devicedesc_DEF126707.xml z:\upnp\description\xml\devicedesc_DEF126707.xml
+..\xml_input_files\servicedesc_DEF126707.xml z:\upnp\description\xml\servicedesc_DEF126707.xml

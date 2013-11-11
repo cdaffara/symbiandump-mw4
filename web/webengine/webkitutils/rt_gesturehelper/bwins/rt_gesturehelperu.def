@@ -1,0 +1,10 @@
+EXPORTS
+	??1CGestureHelper@RT_GestureHelper@@UAE@XZ @ 1 NONAME ; RT_GestureHelper::CGestureHelper::~CGestureHelper(void)
+	?Cancel@CGestureHelper@RT_GestureHelper@@QAEXXZ @ 2 NONAME ; void RT_GestureHelper::CGestureHelper::Cancel(void)
+	?HandlePointerEventL@CGestureHelper@RT_GestureHelper@@QAEHABUTPointerEvent@@@Z @ 3 NONAME ; int RT_GestureHelper::CGestureHelper::HandlePointerEventL(struct TPointerEvent const &)
+	?IsDoubleTapEnabled@CGestureHelper@RT_GestureHelper@@QBEHXZ @ 4 NONAME ; int RT_GestureHelper::CGestureHelper::IsDoubleTapEnabled(void) const
+	?IsHoldingEnabled@CGestureHelper@RT_GestureHelper@@QBEHXZ @ 5 NONAME ; int RT_GestureHelper::CGestureHelper::IsHoldingEnabled(void) const
+	?NewL@CGestureHelper@RT_GestureHelper@@SAPAV12@AAVMGestureObserver@2@@Z @ 6 NONAME ; class RT_GestureHelper::CGestureHelper * RT_GestureHelper::CGestureHelper::NewL(class RT_GestureHelper::MGestureObserver &)
+	?SetDoubleTapEnabled@CGestureHelper@RT_GestureHelper@@QAEXH@Z @ 7 NONAME ; void RT_GestureHelper::CGestureHelper::SetDoubleTapEnabled(int)
+	?SetHoldingEnabled@CGestureHelper@RT_GestureHelper@@QAEXH@Z @ 8 NONAME ; void RT_GestureHelper::CGestureHelper::SetHoldingEnabled(int)
+

@@ -1,0 +1,2007 @@
+EXPORTS
+	_ZN10CHuiLayout10ConstructLEv @ 1 NONAME
+	_ZN10CHuiLayout11SetBaseUnitERK10THuiMetric @ 2 NONAME
+	_ZN10CHuiLayout11SetBaseUnitERK12THuiXYMetric @ 3 NONAME
+	_ZN10CHuiLayout12ChildOrdinalEi @ 4 NONAME
+	_ZN10CHuiLayout12ClearChangedEv @ 5 NONAME
+	_ZN10CHuiLayout12PrepareDrawLEv @ 6 NONAME
+	_ZN10CHuiLayout12ScrollOffsetEv @ 7 NONAME
+	_ZN10CHuiLayout12SetSessionIdEi @ 8 NONAME
+	_ZN10CHuiLayout13ReportChangedEv @ 9 NONAME
+	_ZN10CHuiLayout15SetInnerPaddingERK12THuiXYMetric @ 10 NONAME
+	_ZN10CHuiLayout15SetInnerPaddingERK6TPoint @ 11 NONAME
+	_ZN10CHuiLayout15VisualExtensionERK4TUidPPv @ 12 NONAME
+	_ZN10CHuiLayout16EnableScrollingLEi @ 13 NONAME
+	_ZN10CHuiLayout16MoveVisualToBackER10CHuiVisuali @ 14 NONAME
+	_ZN10CHuiLayout17MoveVisualToFrontER10CHuiVisuali @ 15 NONAME
+	_ZN10CHuiLayout17SetTransitionTimeEi @ 16 NONAME
+	_ZN10CHuiLayout17UpdateChildLayoutEii @ 17 NONAME
+	_ZN10CHuiLayout18NotifySkinChangedLEv @ 18 NONAME
+	_ZN10CHuiLayout20RemoveAndDestroyAllDEv @ 19 NONAME
+	_ZN10CHuiLayout20UpdateChildrenLayoutEi @ 20 NONAME
+	_ZN10CHuiLayout6RemoveEP10CHuiVisuali @ 21 NONAME
+	_ZN10CHuiLayout6SetPosERK13THuiRealPointi @ 22 NONAME
+	_ZN10CHuiLayout7AddNewLER11CHuiControlPS_ @ 23 NONAME
+	_ZN10CHuiLayout7AppendLEP10CHuiVisuali @ 24 NONAME
+	_ZN10CHuiLayout7FindTagERK6TDesC8 @ 25 NONAME
+	_ZN10CHuiLayout7InsertLEP10CHuiVisualii @ 26 NONAME
+	_ZN10CHuiLayout7ReorderER10CHuiVisualii @ 27 NONAME
+	_ZN10CHuiLayout7SetSizeERK12THuiRealSizei @ 28 NONAME
+	_ZN10CHuiLayout8ChildPosEiR6TPoint @ 29 NONAME
+	_ZN10CHuiLayout9ChildRectEiR12THuiRealRect @ 30 NONAME
+	_ZN10CHuiLayout9ChildSizeEiR5TSize @ 31 NONAME
+	_ZN10CHuiLayoutC1ER15MHuiVisualOwner @ 32 NONAME
+	_ZN10CHuiLayoutC2ER15MHuiVisualOwner @ 33 NONAME
+	_ZN10CHuiLayoutD0Ev @ 34 NONAME
+	_ZN10CHuiLayoutD1Ev @ 35 NONAME
+	_ZN10CHuiLayoutD2Ev @ 36 NONAME
+	_ZN10CHuiStatic10FrameCountEv @ 37 NONAME
+	_ZN10CHuiStatic10TimeFactorEv @ 38 NONAME
+	_ZN10CHuiStatic10TimePausedEv @ 39 NONAME
+	_ZN10CHuiStatic12ContinueTimeEv @ 40 NONAME
+	_ZN10CHuiStatic13EnableLoggingEi @ 41 NONAME
+	_ZN10CHuiStatic13SetTimeFactorEf @ 42 NONAME
+	_ZN10CHuiStatic14ElapsedSecondsEv @ 43 NONAME
+	_ZN10CHuiStatic16AverageFrameRateEv @ 44 NONAME
+	_ZN10CHuiStatic17SecondsSinceStartEv @ 45 NONAME
+	_ZN10CHuiStatic20LayoutTransitionTimeEv @ 46 NONAME
+	_ZN10CHuiStatic22MilliSecondsSinceStartEv @ 47 NONAME
+	_ZN10CHuiStatic23SetLayoutTransitionTimeEi @ 48 NONAME
+	_ZN10CHuiStatic3EnvEv @ 49 NONAME
+	_ZN10CHuiStatic3TicEi @ 50 NONAME
+	_ZN10CHuiStatic3TocEi @ 51 NONAME
+	_ZN10CHuiStatic4DataEv @ 52 NONAME
+	_ZN10CHuiStatic4TimeEv @ 53 NONAME
+	_ZN10CHuiStatic6PrintfE11TRefByValueIK6TDesC8Ez @ 54 NONAME
+	_ZN10CHuiStatic6PrintfE11TRefByValueIK7TDesC16Ez @ 55 NONAME
+	_ZN10CHuiStatic7LoggingEv @ 56 NONAME
+	_ZN10CHuiStatic8SetProbeEP9MHuiProbe @ 57 NONAME
+	_ZN10CHuiStatic9FrameRateEv @ 58 NONAME
+	_ZN10CHuiStatic9FsSessionEv @ 59 NONAME
+	_ZN10CHuiStatic9PauseTimeEv @ 60 NONAME
+	_ZN10CHuiVisual10ClearFlagsEi @ 61 NONAME
+	_ZN10CHuiVisual10ConstructLEv @ 62 NONAME
+	_ZN10CHuiVisual10SetChangedEv @ 63 NONAME
+	_ZN10CHuiVisual10SetMaxSizeERK5TSize @ 64 NONAME
+	_ZN10CHuiVisual10SetMinSizeERK5TSize @ 65 NONAME
+	_ZN10CHuiVisual10SetPaddingERK13THuiBoxMetric @ 66 NONAME
+	_ZN10CHuiVisual10SetPaddingERK6TPoint @ 67 NONAME
+	_ZN10CHuiVisual10SetPaddingEi @ 68 NONAME
+	_ZN10CHuiVisual11MoveToFrontEi @ 69 NONAME
+	_ZN10CHuiVisual11SetClippingEi @ 70 NONAME
+	_ZN10CHuiVisual12ClearChangedEv @ 71 NONAME
+	_ZN10CHuiVisual12PrepareDrawLEv @ 72 NONAME
+	_ZN10CHuiVisual12SetSessionIdEi @ 73 NONAME
+	_ZN10CHuiVisual13ReportChangedEv @ 74 NONAME
+	_ZN10CHuiVisual14EnableBrushesLEi @ 75 NONAME
+	_ZN10CHuiVisual14TransformationEv @ 76 NONAME
+	_ZN10CHuiVisual15VisualExtensionERK4TUidPPv @ 77 NONAME
+	_ZN10CHuiVisual18NotifySkinChangedLEv @ 78 NONAME
+	_ZN10CHuiVisual20RemoveAndDestroyAllDEv @ 79 NONAME
+	_ZN10CHuiVisual20UpdateChildrenLayoutEi @ 80 NONAME
+	_ZN10CHuiVisual21EnableTransformationLEi @ 81 NONAME
+	_ZN10CHuiVisual21SetCenteredPosAndSizeERK6TPointRK5TSizei @ 82 NONAME
+	_ZN10CHuiVisual4MoveERK6TPointi @ 83 NONAME
+	_ZN10CHuiVisual5MimicERKS_i @ 84 NONAME
+	_ZN10CHuiVisual6SetPosERK13THuiRealPointi @ 85 NONAME
+	_ZN10CHuiVisual7AddNewLER11CHuiControlP10CHuiLayout @ 86 NONAME
+	_ZN10CHuiVisual7BrushesEv @ 87 NONAME
+	_ZN10CHuiVisual7FindTagERK6TDesC8 @ 88 NONAME
+	_ZN10CHuiVisual7SetFlagE15THuiVisualFlags @ 89 NONAME
+	_ZN10CHuiVisual7SetRectERK12THuiRealRecti @ 90 NONAME
+	_ZN10CHuiVisual7SetSizeERK12THuiRealSizei @ 91 NONAME
+	_ZN10CHuiVisual7SetTagLERK6TDesC8 @ 92 NONAME
+	_ZN10CHuiVisual8SetFlagsEi @ 93 NONAME
+	_ZN10CHuiVisual8SetOwnerER15MHuiVisualOwner @ 94 NONAME
+	_ZN10CHuiVisual9ClearFlagE15THuiVisualFlags @ 95 NONAME
+	_ZN10CHuiVisual9SetOriginE17THuiVisualHOrigin17THuiVisualVOrigin @ 96 NONAME
+	_ZN10CHuiVisualC1ER15MHuiVisualOwner @ 97 NONAME
+	_ZN10CHuiVisualC2ER15MHuiVisualOwner @ 98 NONAME
+	_ZN10CHuiVisualD0Ev @ 99 NONAME
+	_ZN10CHuiVisualD1Ev @ 100 NONAME
+	_ZN10CHuiVisualD2Ev @ 101 NONAME
+	_ZN10HuiFixMath6FixCosEi @ 102 NONAME
+	_ZN10HuiFixMath6FixSinEi @ 103 NONAME
+	_ZN10HuiFixMath8FixHypotEii @ 104 NONAME
+	_ZN10THuiMetricC1Efii @ 105 NONAME
+	_ZN10THuiMetricC1Ei @ 106 NONAME
+	_ZN10THuiMetricC2Efii @ 107 NONAME
+	_ZN10THuiMetricC2Ei @ 108 NONAME
+	_ZN11CHuiControl11BindDisplayER11CHuiDisplay @ 109 NONAME
+	_ZN11CHuiControl11OfferEventLERK9THuiEvent @ 110 NONAME
+	_ZN11CHuiControl12AcquireFocusEv @ 111 NONAME
+	_ZN11CHuiControl12EventHandlerEv @ 112 NONAME
+	_ZN11CHuiControl12FocusChangedER11CHuiDisplayi @ 113 NONAME
+	_ZN11CHuiControl12SetSessionIdEi @ 114 NONAME
+	_ZN11CHuiControl12VisualAddedLEP10CHuiVisual @ 115 NONAME
+	_ZN11CHuiControl13AppendLayoutLE14THuiLayoutTypeP10CHuiLayout @ 116 NONAME
+	_ZN11CHuiControl13AppendVisualLE14THuiVisualTypeP10CHuiLayout @ 117 NONAME
+	_ZN11CHuiControl13HostChangingLEPS_ @ 118 NONAME
+	_ZN11CHuiControl13VisualRemovedEP10CHuiVisual @ 119 NONAME
+	_ZN11CHuiControl14AddConnectionLEPS_i @ 120 NONAME
+	_ZN11CHuiControl14BaseConstructLEv @ 121 NONAME
+	_ZN11CHuiControl15VisualDestroyedER10CHuiVisual @ 122 NONAME
+	_ZN11CHuiControl16ConnectionAddedLEPS_i @ 123 NONAME
+	_ZN11CHuiControl16ControlExtensionERK4TUidPPv @ 124 NONAME
+	_ZN11CHuiControl16RemoveConnectionEPS_ @ 125 NONAME
+	_ZN11CHuiControl17CancelAllCommandsEv @ 126 NONAME
+	_ZN11CHuiControl17ConnectionRemovedEPS_i @ 127 NONAME
+	_ZN11CHuiControl19VisualLayoutUpdatedER10CHuiVisual @ 128 NONAME
+	_ZN11CHuiControl23NotifyControlVisibilityEiR11CHuiDisplay @ 129 NONAME
+	_ZN11CHuiControl23VisualPrepareDrawFailedER10CHuiVisuali @ 130 NONAME
+	_ZN11CHuiControl5SetIdEi @ 131 NONAME
+	_ZN11CHuiControl6RemoveEP10CHuiVisual @ 132 NONAME
+	_ZN11CHuiControl7AppendLEP10CHuiVisual @ 133 NONAME
+	_ZN11CHuiControl7AppendLEP10CHuiVisualP10CHuiLayout @ 134 NONAME
+	_ZN11CHuiControl7SetHostEPS_ @ 135 NONAME
+	_ZN11CHuiControl7SetRoleEi @ 136 NONAME
+	_ZN11CHuiControl9SetHostIdEi @ 137 NONAME
+	_ZN11CHuiControlC1ER7CHuiEnv @ 138 NONAME
+	_ZN11CHuiControlC2ER7CHuiEnv @ 139 NONAME
+	_ZN11CHuiControlD0Ev @ 140 NONAME
+	_ZN11CHuiControlD1Ev @ 141 NONAME
+	_ZN11CHuiControlD2Ev @ 142 NONAME
+	_ZN11CHuiDisplay10SetQualityE11THuiQuality @ 143 NONAME
+	_ZN11CHuiDisplay11SetUseDepthEi @ 144 NONAME
+	_ZN11CHuiDisplay14SetOrientationEN6CHuiGc12TOrientationE @ 145 NONAME
+	_ZN11CHuiDisplay14SetVisibleAreaERK5TRect @ 146 NONAME
+	_ZN11CHuiDisplay18SetBackgroundColorERK4TRgb @ 147 NONAME
+	_ZN11CHuiDisplay19SetClearBackgroundLENS_10TClearModeE @ 148 NONAME
+	_ZN11CHuiDisplay3EnvEv @ 149 NONAME
+	_ZN11CHuiDisplay4ShowEi @ 150 NONAME
+	_ZN11CHuiDisplay6RosterEv @ 151 NONAME
+	_ZN11CHuiDisplay7ReleaseEv @ 152 NONAME
+	_ZN11CHuiDisplay8ActivateEi @ 153 NONAME
+	_ZN11CHuiDisplay8RestoreLEv @ 154 NONAME
+	_ZN11CHuiDisplay8SetDirtyEv @ 155 NONAME
+	_ZN11CHuiDisplay8SetSizeLERK5TSize @ 156 NONAME
+	_ZN11CHuiDisplay9SetUsageLEj @ 157 NONAME
+	_ZN11CHuiDisplayD0Ev @ 158 NONAME
+	_ZN11CHuiDisplayD1Ev @ 159 NONAME
+	_ZN11CHuiDisplayD2Ev @ 160 NONAME
+	_ZN11CHuiS60Skin10ConstructLEv @ 161 NONAME
+	_ZN11CHuiS60Skin10GetTextureEiRPK11CHuiTexture @ 162 NONAME
+	_ZN11CHuiS60Skin10SetContextER6CHuiGc @ 163 NONAME
+	_ZN11CHuiS60Skin13SkinExtensionERK4TUidPPv @ 164 NONAME
+	_ZN11CHuiS60Skin14ReleaseTextureEi @ 165 NONAME
+	_ZN11CHuiS60Skin22RestoreTextureContentLER11CHuiTexture @ 166 NONAME
+	_ZN11CHuiS60Skin25NotifyDisplaySizeChangedLEv @ 167 NONAME
+	_ZN11CHuiS60Skin8LocationE15THuiSkinElement @ 168 NONAME
+	_ZN11CHuiS60Skin8TextureLEi @ 169 NONAME
+	_ZN11CHuiS60SkinC1ER7CHuiEnv @ 170 NONAME
+	_ZN11CHuiS60SkinC2ER7CHuiEnv @ 171 NONAME
+	_ZN11CHuiS60SkinD0Ev @ 172 NONAME
+	_ZN11CHuiS60SkinD1Ev @ 173 NONAME
+	_ZN11CHuiS60SkinD2Ev @ 174 NONAME
+	_ZN11CHuiTexture11SetPriorityEi @ 175 NONAME
+	_ZN11CHuiTexture12EnableShadowEi @ 176 NONAME
+	_ZN11CHuiTexture12SetSessionIdEi @ 177 NONAME
+	_ZN11CHuiTexture14SetSegmentNameEij @ 178 NONAME
+	_ZN11CHuiTexture14SetSegmentSizeEiRK5TSize @ 179 NONAME
+	_ZN11CHuiTexture14SetShadowStyleE15THuiShadowStyle @ 180 NONAME
+	_ZN11CHuiTexture14SetSkinContentEi @ 181 NONAME
+	_ZN11CHuiTexture15ClearWithAlphaLERK5TSizeRK4TRgbh @ 182 NONAME
+	_ZN11CHuiTexture15ShadowedTextureEv @ 183 NONAME
+	_ZN11CHuiTexture16SegmentedTextureEv @ 184 NONAME
+	_ZN11CHuiTexture16SetSegmentCountLEi @ 185 NONAME
+	_ZN11CHuiTexture16SetSegmentOffsetEiRK6TPoint @ 186 NONAME
+	_ZN11CHuiTexture21SetSegmentTextureSizeEiRK5TSize @ 187 NONAME
+	_ZN11CHuiTexture4NewLEPK17THuiTextureHandle @ 188 NONAME
+	_ZN11CHuiTexture5NewLCEPK17THuiTextureHandle @ 189 NONAME
+	_ZN11CHuiTexture6ClearLERK5TSizeRK4TRgb @ 190 NONAME
+	_ZN11CHuiTexture7SetSizeERK5TSize @ 191 NONAME
+	_ZN11CHuiTextureD0Ev @ 192 NONAME
+	_ZN11CHuiTextureD1Ev @ 193 NONAME
+	_ZN11CHuiTextureD2Ev @ 194 NONAME
+	_ZN11MHuiTextureD0Ev @ 195 NONAME
+	_ZN11MHuiTextureD1Ev @ 196 NONAME
+	_ZN11MHuiTextureD2Ev @ 197 NONAME
+	_ZN11THuiCommand16CommandExtensionERK4TUidPPv @ 198 NONAME
+	_ZN11THuiCommand9SetSenderE21THuiCommandObjectTypePv @ 199 NONAME
+	_ZN11THuiCommandD0Ev @ 200 NONAME
+	_ZN11THuiCommandD1Ev @ 201 NONAME
+	_ZN11THuiCommandD2Ev @ 202 NONAME
+	_ZN12THuiMaterialC1Ev @ 203 NONAME
+	_ZN12THuiMaterialC2Ev @ 204 NONAME
+	_ZN12THuiXYMetricC1ERK10THuiMetric @ 205 NONAME
+	_ZN12THuiXYMetricC1ERK10THuiMetricS2_ @ 206 NONAME
+	_ZN12THuiXYMetricC1Ev @ 207 NONAME
+	_ZN12THuiXYMetricC2ERK10THuiMetric @ 208 NONAME
+	_ZN12THuiXYMetricC2ERK10THuiMetricS2_ @ 209 NONAME
+	_ZN12THuiXYMetricC2Ev @ 210 NONAME
+	_ZN13CHuiCurvePath10AppendArcLERK6TPointRK5TSizefff @ 211 NONAME
+	_ZN13CHuiCurvePath10EnableLoopEi @ 212 NONAME
+	_ZN13CHuiCurvePath11AppendLineLERK6TPointS2_f @ 213 NONAME
+	_ZN13CHuiCurvePath4NewLEv @ 214 NONAME
+	_ZN13CHuiCurvePath5NewLCEv @ 215 NONAME
+	_ZN13CHuiCurvePath5ResetEv @ 216 NONAME
+	_ZN13CHuiCurvePath9SetOriginEf @ 217 NONAME
+	_ZN13CHuiCurvePathD0Ev @ 218 NONAME
+	_ZN13CHuiCurvePathD1Ev @ 219 NONAME
+	_ZN13CHuiCurvePathD2Ev @ 220 NONAME
+	_ZN13THuiBoxMetricC1ERK10THuiMetric @ 221 NONAME
+	_ZN13THuiBoxMetricC1ERK10THuiMetricS2_S2_S2_ @ 222 NONAME
+	_ZN13THuiBoxMetricC1ERK12THuiXYMetric @ 223 NONAME
+	_ZN13THuiBoxMetricC1ERK12THuiXYMetricS2_ @ 224 NONAME
+	_ZN13THuiBoxMetricC1Ev @ 225 NONAME
+	_ZN13THuiBoxMetricC2ERK10THuiMetric @ 226 NONAME
+	_ZN13THuiBoxMetricC2ERK10THuiMetricS2_S2_S2_ @ 227 NONAME
+	_ZN13THuiBoxMetricC2ERK12THuiXYMetric @ 228 NONAME
+	_ZN13THuiBoxMetricC2ERK12THuiXYMetricS2_ @ 229 NONAME
+	_ZN13THuiBoxMetricC2Ev @ 230 NONAME
+	_ZN13THuiTextStyle10SetPostureEi @ 231 NONAME
+	_ZN13THuiTextStyle11SetParentIdEi @ 232 NONAME
+	_ZN13THuiTextStyle12SetTextColorERK4TRgb @ 233 NONAME
+	_ZN13THuiTextStyle12SetUnderlineEi @ 234 NONAME
+	_ZN13THuiTextStyle12StrokeWeightEv @ 235 NONAME
+	_ZN13THuiTextStyle15SetStrokeWeightEi @ 236 NONAME
+	_ZN13THuiTextStyle15TextSizeInTwipsEi @ 237 NONAME
+	_ZN13THuiTextStyle16SetStrikeThroughEi @ 238 NONAME
+	_ZN13THuiTextStyle16TextSizeInPixelsEi @ 239 NONAME
+	_ZN13THuiTextStyle18SetBackgroundColorERK4TRgb @ 240 NONAME
+	_ZN13THuiTextStyle18SetTextSizeInTwipsEii @ 241 NONAME
+	_ZN13THuiTextStyle19SetTextSizeInPixelsEii @ 242 NONAME
+	_ZN13THuiTextStyle4FontEv @ 243 NONAME
+	_ZN13THuiTextStyle7PostureEv @ 244 NONAME
+	_ZN13THuiTextStyle7SetFontE8THuiFont @ 245 NONAME
+	_ZN13THuiTextStyleC1ERKS_ @ 246 NONAME
+	_ZN13THuiTextStyleC2ERKS_ @ 247 NONAME
+	_ZN14CHuiBrushArray2AtEi @ 248 NONAME
+	_ZN14CHuiBrushArray4NewLEv @ 249 NONAME
+	_ZN14CHuiBrushArray5NewLCEv @ 250 NONAME
+	_ZN14CHuiBrushArray5ResetEv @ 251 NONAME
+	_ZN14CHuiBrushArray6RemoveEi @ 252 NONAME
+	_ZN14CHuiBrushArray7AppendLEP9CHuiBrush13THuiOwnership @ 253 NONAME
+	_ZN14CHuiBrushArray7InsertLEiP9CHuiBrush13THuiOwnership @ 254 NONAME
+	_ZN14CHuiBrushArrayD0Ev @ 255 NONAME
+	_ZN14CHuiBrushArrayD1Ev @ 256 NONAME
+	_ZN14CHuiBrushArrayD2Ev @ 257 NONAME
+	_ZN14CHuiBrushArrayixEi @ 258 NONAME
+	_ZN14CHuiDeckLayout7AddNewLER11CHuiControlP10CHuiLayout @ 259 NONAME
+	_ZN14CHuiDeckLayoutD0Ev @ 260 NONAME
+	_ZN14CHuiDeckLayoutD1Ev @ 261 NONAME
+	_ZN14CHuiDeckLayoutD2Ev @ 262 NONAME
+	_ZN14CHuiFlowLayout12SetCenteringEi @ 263 NONAME
+	_ZN14CHuiFlowLayout16SetFlowDirectionENS_14TFlowDirectionE @ 264 NONAME
+	_ZN14CHuiFlowLayout7AddNewLER11CHuiControlNS_14TFlowDirectionEP10CHuiLayout @ 265 NONAME
+	_ZN14CHuiFlowLayout7SetModeEi @ 266 NONAME
+	_ZN14CHuiFlowLayout7SetSizeERK12THuiRealSizei @ 267 NONAME
+	_ZN14CHuiFlowLayout8ChildPosEiR6TPoint @ 268 NONAME
+	_ZN14CHuiFlowLayout9ChildRectEiR12THuiRealRect @ 269 NONAME
+	_ZN14CHuiFlowLayout9ChildSizeEiR5TSize @ 270 NONAME
+	_ZN14CHuiFlowLayoutD0Ev @ 271 NONAME
+	_ZN14CHuiFlowLayoutD1Ev @ 272 NONAME
+	_ZN14CHuiFlowLayoutD2Ev @ 273 NONAME
+	_ZN14CHuiFrameBrush14SetFrameRectsLERK5TRectS2_ @ 274 NONAME
+	_ZN14CHuiFrameBrush4NewLERK11TAknsItemIDii @ 275 NONAME
+	_ZN14CHuiFrameBrush5NewLCERK11TAknsItemIDii @ 276 NONAME
+	_ZN14CHuiGridLayout10ConstructLEv @ 277 NONAME
+	_ZN14CHuiGridLayout11SetColumnsLERK6RArrayIiE @ 278 NONAME
+	_ZN14CHuiGridLayout11SetColumnsLEi @ 279 NONAME
+	_ZN14CHuiGridLayout12ChildOrdinalEi @ 280 NONAME
+	_ZN14CHuiGridLayout12ClearChangedEv @ 281 NONAME
+	_ZN14CHuiGridLayout12FillWeightsLE17THuiGridDimensioniRK10THuiMetric @ 282 NONAME
+	_ZN14CHuiGridLayout12PrepareDrawLEv @ 283 NONAME
+	_ZN14CHuiGridLayout12SetExpandingEi @ 284 NONAME
+	_ZN14CHuiGridLayout12SetSessionIdEi @ 285 NONAME
+	_ZN14CHuiGridLayout13AppendWeightLE17THuiGridDimensionRK10THuiMetric @ 286 NONAME
+	_ZN14CHuiGridLayout13InsertWeightLE17THuiGridDimensionRK10THuiMetrici @ 287 NONAME
+	_ZN14CHuiGridLayout13RemoveWeightLE17THuiGridDimensioni @ 288 NONAME
+	_ZN14CHuiGridLayout13ReportChangedEv @ 289 NONAME
+	_ZN14CHuiGridLayout14ReplaceWeightLE17THuiGridDimensionRK10THuiMetrici @ 290 NONAME
+	_ZN14CHuiGridLayout15VisualExtensionERK4TUidPPv @ 291 NONAME
+	_ZN14CHuiGridLayout18NotifySkinChangedLEv @ 292 NONAME
+	_ZN14CHuiGridLayout20RemoveAndDestroyAllDEv @ 293 NONAME
+	_ZN14CHuiGridLayout20UpdateChildrenLayoutEi @ 294 NONAME
+	_ZN14CHuiGridLayout6SetPosERK13THuiRealPointi @ 295 NONAME
+	_ZN14CHuiGridLayout7AddNewLER11CHuiControliiP10CHuiLayout @ 296 NONAME
+	_ZN14CHuiGridLayout7FindTagERK6TDesC8 @ 297 NONAME
+	_ZN14CHuiGridLayout7SetSizeERK12THuiRealSizei @ 298 NONAME
+	_ZN14CHuiGridLayout8ChildPosEiR6TPoint @ 299 NONAME
+	_ZN14CHuiGridLayout8SetRowsLERK6RArrayIiE @ 300 NONAME
+	_ZN14CHuiGridLayout8SetRowsLEi @ 301 NONAME
+	_ZN14CHuiGridLayout9ChildRectEiR12THuiRealRect @ 302 NONAME
+	_ZN14CHuiGridLayout9ChildSizeEiR5TSize @ 303 NONAME
+	_ZN14CHuiGridLayoutC1ER15MHuiVisualOwner @ 304 NONAME
+	_ZN14CHuiGridLayoutC2ER15MHuiVisualOwner @ 305 NONAME
+	_ZN14CHuiGridLayoutD0Ev @ 306 NONAME
+	_ZN14CHuiGridLayoutD1Ev @ 307 NONAME
+	_ZN14CHuiGridLayoutD2Ev @ 308 NONAME
+	_ZN14CHuiImageBrush10SetBordersEiiii @ 309 NONAME
+	_ZN14CHuiImageBrush12SetScaleModeEN15CHuiImageVisual10TScaleModeE @ 310 NONAME
+	_ZN14CHuiImageBrush4NewLERK9THuiImage @ 311 NONAME
+	_ZN14CHuiImageBrush5NewLCERK9THuiImage @ 312 NONAME
+	_ZN14CHuiImageBrush8SetImageERK9THuiImage @ 313 NONAME
+	_ZN14CHuiImageBrushD0Ev @ 314 NONAME
+	_ZN14CHuiImageBrushD1Ev @ 315 NONAME
+	_ZN14CHuiImageBrushD2Ev @ 316 NONAME
+	_ZN14CHuiLineVisual16SetAlphaFunctionEP19MHuiMappingFunction @ 317 NONAME
+	_ZN14CHuiLineVisual16SetWidthFunctionEP19MHuiMappingFunction @ 318 NONAME
+	_ZN14CHuiLineVisual4PathEv @ 319 NONAME
+	_ZN14CHuiLineVisual7AddNewLER11CHuiControlP10CHuiLayout @ 320 NONAME
+	_ZN14CHuiLineVisual7SetPathEP13CHuiCurvePath13THuiOwnership @ 321 NONAME
+	_ZN14CHuiLineVisual8SetImageERK9THuiImage @ 322 NONAME
+	_ZN14CHuiMeshVisual11CreateMeshLE12THuiMeshType @ 323 NONAME
+	_ZN14CHuiMeshVisual16SetSpecularImageERK9THuiImage @ 324 NONAME
+	_ZN14CHuiMeshVisual17SetSecondaryImageERK9THuiImage @ 325 NONAME
+	_ZN14CHuiMeshVisual4MeshEv @ 326 NONAME
+	_ZN14CHuiMeshVisual7AddNewLER11CHuiControl12THuiMeshTypeP10CHuiLayout @ 327 NONAME
+	_ZN14CHuiMeshVisual8SetImageERK9THuiImage @ 328 NONAME
+	_ZN14CHuiTextVisual11SetWrappingENS_9TLineWrapE @ 329 NONAME
+	_ZN14CHuiTextVisual12EnableShadowEi @ 330 NONAME
+	_ZN14CHuiTextVisual12SetTextStyleEi @ 331 NONAME
+	_ZN14CHuiTextVisual14SetLineSpacingEiNS_17TLineSpacingUnitsE @ 332 NONAME
+	_ZN14CHuiTextVisual15SetMaxLineCountEi @ 333 NONAME
+	_ZN14CHuiTextVisual7AddNewLER11CHuiControlP10CHuiLayout @ 334 NONAME
+	_ZN14CHuiTextVisual8SetAlignE19THuiAlignHorizontal17THuiAlignVertical @ 335 NONAME
+	_ZN14CHuiTextVisual8SetColorERK11TAknsItemIDi @ 336 NONAME
+	_ZN14CHuiTextVisual8SetColorERK4TRgb @ 337 NONAME
+	_ZN14CHuiTextVisual8SetStyleE26THuiPreconfiguredTextStyle18THuiBackgroundType @ 338 NONAME
+	_ZN14CHuiTextVisual8SetTextLERK7TDesC16 @ 339 NONAME
+	_ZN14THuiTimedPoint11SetFunctionEP19MHuiMappingFunction @ 340 NONAME
+	_ZN14THuiTimedPoint12SetWithSpeedERK13THuiRealPointf @ 341 NONAME
+	_ZN14THuiTimedPoint12SetWithSpeedEff @ 342 NONAME
+	_ZN14THuiTimedPoint3SetERK13THuiRealPointi @ 343 NONAME
+	_ZN14THuiTimedPoint3SetEfi @ 344 NONAME
+	_ZN14THuiTimedPoint6FinishEv @ 345 NONAME
+	_ZN14THuiTimedPoint8SetStyleE22THuiInterpolationStyle @ 346 NONAME
+	_ZN14THuiTimedPointC1Eff @ 347 NONAME
+	_ZN14THuiTimedPointC1Ev @ 348 NONAME
+	_ZN14THuiTimedPointC2Eff @ 349 NONAME
+	_ZN14THuiTimedPointC2Ev @ 350 NONAME
+	_ZN14THuiTimedValue11EnableClockEi @ 351 NONAME
+	_ZN14THuiTimedValue11SetFunctionEP19MHuiMappingFunction @ 352 NONAME
+	_ZN14THuiTimedValue12ClearChangedEv @ 353 NONAME
+	_ZN14THuiTimedValue12SetWithSpeedEff @ 354 NONAME
+	_ZN14THuiTimedValue14SetMappingModeEi @ 355 NONAME
+	_ZN14THuiTimedValue3SetEf @ 356 NONAME
+	_ZN14THuiTimedValue3SetEfi @ 357 NONAME
+	_ZN14THuiTimedValue6FinishEv @ 358 NONAME
+	_ZN14THuiTimedValue7SuspendEi @ 359 NONAME
+	_ZN14THuiTimedValue8SetStyleE22THuiInterpolationStyle @ 360 NONAME
+	_ZN14THuiTimedValueC1E22THuiInterpolationStyle @ 361 NONAME
+	_ZN14THuiTimedValueC1Ef22THuiInterpolationStyle @ 362 NONAME
+	_ZN14THuiTimedValueC2E22THuiInterpolationStyle @ 363 NONAME
+	_ZN14THuiTimedValueC2Ef22THuiInterpolationStyle @ 364 NONAME
+	_ZN14THuiTimedValueaSERKS_ @ 365 NONAME
+	_ZN15CHuiBorderBrush4NewLEiiii @ 366 NONAME
+	_ZN15CHuiBorderBrush5NewLCEiiii @ 367 NONAME
+	_ZN15CHuiBorderBrush8SetColorERK4TRgb @ 368 NONAME
+	_ZN15CHuiBorderBrush8SetImageERK9THuiImage @ 369 NONAME
+	_ZN15CHuiImageVisual10SetStretchEii @ 370 NONAME
+	_ZN15CHuiImageVisual12SetColorModeENS_10TColorModeEf @ 371 NONAME
+	_ZN15CHuiImageVisual12SetScaleModeENS_10TScaleModeE @ 372 NONAME
+	_ZN15CHuiImageVisual13SetDropShadowEi @ 373 NONAME
+	_ZN15CHuiImageVisual14SetStretchModeEN6CHuiGc12TStretchModeE @ 374 NONAME
+	_ZN15CHuiImageVisual17SetSecondaryImageERK9THuiImage @ 375 NONAME
+	_ZN15CHuiImageVisual7AddNewLER11CHuiControlP10CHuiLayout @ 376 NONAME
+	_ZN15CHuiImageVisual8SetColorERK4TRgb @ 377 NONAME
+	_ZN15CHuiImageVisual8SetImageERK9THuiImage @ 378 NONAME
+	_ZN15MHuiVisualOwnerD0Ev @ 379 NONAME
+	_ZN15MHuiVisualOwnerD1Ev @ 380 NONAME
+	_ZN15MHuiVisualOwnerD2Ev @ 381 NONAME
+	_ZN15THuiFontManager11CreateFontLERK21THuiFontSpecification @ 382 NONAME
+	_ZN15THuiTextCommand16CommandExtensionERK4TUidPPv @ 383 NONAME
+	_ZN15THuiTextCommandC1ER14CHuiTextVisualRK7TDesC166THuiOp @ 384 NONAME
+	_ZN15THuiTextCommandC2ER14CHuiTextVisualRK7TDesC166THuiOp @ 385 NONAME
+	_ZN16CHuiAnchorLayout12RemoveAnchorE10THuiAnchori @ 386 NONAME
+	_ZN16CHuiAnchorLayout21SetRelativeAnchorRectEi16THuiAnchorOriginS0_RK13THuiRealPointS0_S0_S3_ @ 387 NONAME
+	_ZN16CHuiAnchorLayout5ResetEv @ 388 NONAME
+	_ZN16CHuiAnchorLayout6AttachEi14THuiAnchorTypeRK10THuiMetric26THuiAnchorAttachmentOrigini @ 389 NONAME
+	_ZN16CHuiAnchorLayout6AttachEi14THuiAnchorTypeRK12THuiXYMetric26THuiAnchorAttachmentOrigini @ 390 NONAME
+	_ZN16CHuiAnchorLayout6AttachEiRK13THuiBoxMetric26THuiAnchorAttachmentOrigini @ 391 NONAME
+	_ZN16CHuiAnchorLayout6DetachEi @ 392 NONAME
+	_ZN16CHuiAnchorLayout6DetachEi14THuiAnchorType @ 393 NONAME
+	_ZN16CHuiAnchorLayout7AddNewLER11CHuiControlP10CHuiLayout @ 394 NONAME
+	_ZN16CHuiAnchorLayout7SetSizeERK12THuiRealSizei @ 395 NONAME
+	_ZN16CHuiAnchorLayout8ChildPosEiR6TPoint @ 396 NONAME
+	_ZN16CHuiAnchorLayout9ChildRectEiR12THuiRealRect @ 397 NONAME
+	_ZN16CHuiAnchorLayout9ChildSizeEiR5TSize @ 398 NONAME
+	_ZN16CHuiAnchorLayout9SetAnchorE10THuiAnchori16THuiAnchorOriginS1_16THuiAnchorMetricS2_RK14THuiTimedPoint @ 399 NONAME
+	_ZN16CHuiAnchorLayoutD0Ev @ 400 NONAME
+	_ZN16CHuiAnchorLayoutD1Ev @ 401 NONAME
+	_ZN16CHuiAnchorLayoutD2Ev @ 402 NONAME
+	_ZN16CHuiControlGroup12SetSessionIdEi @ 403 NONAME
+	_ZN16CHuiControlGroup13AppendAndPopLEP11CHuiControl @ 404 NONAME
+	_ZN16CHuiControlGroup14SetAcceptInputEi @ 405 NONAME
+	_ZN16CHuiControlGroup14TransformationEv @ 406 NONAME
+	_ZN16CHuiControlGroup21EnableTransformationLEi @ 407 NONAME
+	_ZN16CHuiControlGroup6RemoveEP11CHuiControl @ 408 NONAME
+	_ZN16CHuiControlGroup7AppendLEP11CHuiControl @ 409 NONAME
+	_ZN16MHuiEventHandlerD0Ev @ 410 NONAME
+	_ZN16MHuiEventHandlerD1Ev @ 411 NONAME
+	_ZN16MHuiEventHandlerD2Ev @ 412 NONAME
+	_ZN16THuiGroupCommand16CommandExtensionERK4TUidPPv @ 413 NONAME
+	_ZN16THuiGroupCommandC1ER16CHuiControlGroup6THuiOpP11CHuiDisplay @ 414 NONAME
+	_ZN16THuiGroupCommandC2ER16CHuiControlGroup6THuiOpP11CHuiDisplay @ 415 NONAME
+	_ZN16THuiImageCommand16CommandExtensionERK4TUidPPv @ 416 NONAME
+	_ZN16THuiImageCommandC1ER15CHuiImageVisualRK9THuiImage6THuiOp @ 417 NONAME
+	_ZN16THuiImageCommandC2ER15CHuiImageVisualRK9THuiImage6THuiOp @ 418 NONAME
+	_ZN16THuiPointCommand16CommandExtensionERK4TUidPPv @ 419 NONAME
+	_ZN16THuiPointCommandC1EPvR14THuiTimedPoint13THuiRealPointi @ 420 NONAME
+	_ZN16THuiPointCommandC1EPvR14THuiTimedPoint6THuiOp @ 421 NONAME
+	_ZN16THuiPointCommandC1EPvR14THuiTimedPoint6THuiOp13THuiRealPointf @ 422 NONAME
+	_ZN16THuiPointCommandC2EPvR14THuiTimedPoint13THuiRealPointi @ 423 NONAME
+	_ZN16THuiPointCommandC2EPvR14THuiTimedPoint6THuiOp @ 424 NONAME
+	_ZN16THuiPointCommandC2EPvR14THuiTimedPoint6THuiOp13THuiRealPointf @ 425 NONAME
+	_ZN16THuiS60TextStyleC1Eii @ 426 NONAME
+	_ZN16THuiS60TextStyleC2Eii @ 427 NONAME
+	_ZN16THuiValueCommand16CommandExtensionERK4TUidPPv @ 428 NONAME
+	_ZN16THuiValueCommandC1EPvR14THuiTimedValue6THuiOpff @ 429 NONAME
+	_ZN16THuiValueCommandC1EPvR14THuiTimedValuefi @ 430 NONAME
+	_ZN16THuiValueCommandC2EPvR14THuiTimedValue6THuiOpff @ 431 NONAME
+	_ZN16THuiValueCommandC2EPvR14THuiTimedValuefi @ 432 NONAME
+	_ZN17CHuiGradientBrush12AppendColorLEfRK4TRgbf @ 433 NONAME
+	_ZN17CHuiGradientBrush12SetDirectionENS_10TDirectionE @ 434 NONAME
+	_ZN17CHuiGradientBrush4NewLEv @ 435 NONAME
+	_ZN17CHuiGradientBrush5NewLCEv @ 436 NONAME
+	_ZN17CHuiGradientBrush8SetColorERK4TRgbf @ 437 NONAME
+	_ZN17CHuiGradientBrush8SetImageERK9THuiImage @ 438 NONAME
+	_ZN17THuiActionCommand16CommandExtensionERK4TUidPPv @ 439 NONAME
+	_ZN17THuiActionCommandC1Ei @ 440 NONAME
+	_ZN17THuiActionCommandC2Ei @ 441 NONAME
+	_ZN17THuiMarkerCommand16CommandExtensionERK4TUidPPv @ 442 NONAME
+	_ZN17THuiMarkerCommandC1Ei @ 443 NONAME
+	_ZN17THuiMarkerCommandC2Ei @ 444 NONAME
+	_ZN17THuiObjectCommand16CommandExtensionERK4TUidPPv @ 445 NONAME
+	_ZN17THuiTextureHandle14SetTextureSizeERK5TSize @ 446 NONAME
+	_ZN17THuiTextureHandle15ShadowedTextureEv @ 447 NONAME
+	_ZN17THuiTextureHandle16SegmentedTextureEv @ 448 NONAME
+	_ZN17THuiTextureHandle16TextureExtensionERK4TUidPPv @ 449 NONAME
+	_ZN17THuiTextureHandle3SetEjRK5TSizeS2_ @ 450 NONAME
+	_ZN17THuiTextureHandle7ReleaseEv @ 451 NONAME
+	_ZN17THuiTextureHandle7SetNameEj @ 452 NONAME
+	_ZN17THuiTextureHandle7SetSizeERK5TSize @ 453 NONAME
+	_ZN17THuiTextureHandleC1EjRK5TSizeS2_ @ 454 NONAME
+	_ZN17THuiTextureHandleC1Ev @ 455 NONAME
+	_ZN17THuiTextureHandleC2EjRK5TSizeS2_ @ 456 NONAME
+	_ZN17THuiTextureHandleC2Ev @ 457 NONAME
+	_ZN17THuiVisualCommand16CommandExtensionERK4TUidPPv @ 458 NONAME
+	_ZN17THuiVisualCommandC1ER10CHuiVisual6THuiOpii @ 459 NONAME
+	_ZN17THuiVisualCommandC2ER10CHuiVisual6THuiOpii @ 460 NONAME
+	_ZN18CHuiProceduralMesh10MakeTorusLEffiif @ 461 NONAME
+	_ZN18CHuiProceduralMesh11MakeSphereLEfii @ 462 NONAME
+	_ZN18CHuiProceduralMesh14ScaleUniformlyEfff @ 463 NONAME
+	_ZN18CHuiProceduralMesh16StretchUniformlyEffffff @ 464 NONAME
+	_ZN18CHuiProceduralMesh5ResetEv @ 465 NONAME
+	_ZN18CHuiProceduralMesh9MakeCubeLEffff @ 466 NONAME
+	_ZN18CHuiProceduralMeshD0Ev @ 467 NONAME
+	_ZN18CHuiProceduralMeshD1Ev @ 468 NONAME
+	_ZN18CHuiProceduralMeshD2Ev @ 469 NONAME
+	_ZN18CHuiSoftKeyControl14SetBackgroundLE9THuiImageii @ 470 NONAME
+	_ZN18CHuiSoftKeyControl17SetAnimationTimesEjj @ 471 NONAME
+	_ZN18CHuiSoftKeyControl17SetBackgroundTypeE18THuiBackgroundType @ 472 NONAME
+	_ZN18CHuiSoftKeyControl4NewLER7CHuiEnv @ 473 NONAME
+	_ZN18CHuiSoftKeyControl5NewLCER7CHuiEnv @ 474 NONAME
+	_ZN18CHuiSoftKeyControl8ExitViewEj @ 475 NONAME
+	_ZN18CHuiSoftKeyControl9EnterViewEj @ 476 NONAME
+	_ZN18CHuiSoftKeyControl9SetLabelLE19THuiSoftKeyPositionRK7TDesC16i @ 477 NONAME
+	_ZN18CHuiTextureManager12BlankTextureEv @ 478 NONAME
+	_ZN18CHuiTextureManager12LoadTextureLERK7TDesC1622THuiTextureUploadFlagsii @ 479 NONAME
+	_ZN18CHuiTextureManager12LoadTextureLERK7TDesC16RK5TSize22THuiTextureUploadFlagsii @ 480 NONAME
+	_ZN18CHuiTextureManager12LoadTextureLEiRK5TSize22THuiTextureUploadFlags @ 481 NONAME
+	_ZN18CHuiTextureManager12SetTextureIdEP11CHuiTexturei @ 482 NONAME
+	_ZN18CHuiTextureManager13SetImagePathLERK7TDesC16 @ 483 NONAME
+	_ZN18CHuiTextureManager13UnloadTextureERK7TDesC16i @ 484 NONAME
+	_ZN18CHuiTextureManager13UnloadTextureEi @ 485 NONAME
+	_ZN18CHuiTextureManager14CreateTextureLEiP18MHuiBitmapProvider22THuiTextureUploadFlags @ 486 NONAME
+	_ZN18CHuiTextureManager15DefineFileNameLEiRK7TDesC16 @ 487 NONAME
+	_ZN18CHuiTextureManager3EnvEv @ 488 NONAME
+	_ZN18CHuiTextureManager7TextureEi @ 489 NONAME
+	_ZN18CHuiTextureManager8TextureLEi @ 490 NONAME
+	_ZN18CHuiTextureManager9ProcessorEv @ 491 NONAME
+	_ZN18CHuiTransformation12LoadIdentityEv @ 492 NONAME
+	_ZN18CHuiTransformation4NewLEv @ 493 NONAME
+	_ZN18CHuiTransformation4StepEi @ 494 NONAME
+	_ZN18CHuiTransformation5NewLCEv @ 495 NONAME
+	_ZN18CHuiTransformation5ScaleERK14THuiTimedValueS2_ @ 496 NONAME
+	_ZN18CHuiTransformation5ScaleERK14THuiTimedValueS2_S2_ @ 497 NONAME
+	_ZN18CHuiTransformation5ScaleEff @ 498 NONAME
+	_ZN18CHuiTransformation5ScaleEfff @ 499 NONAME
+	_ZN18CHuiTransformation6RotateERK14THuiTimedValue @ 500 NONAME
+	_ZN18CHuiTransformation6RotateERK14THuiTimedValuefff @ 501 NONAME
+	_ZN18CHuiTransformation6RotateEf @ 502 NONAME
+	_ZN18CHuiTransformation6RotateEffff @ 503 NONAME
+	_ZN18CHuiTransformation9TranslateERK14THuiTimedValueS2_ @ 504 NONAME
+	_ZN18CHuiTransformation9TranslateEff @ 505 NONAME
+	_ZN18CHuiTransformationD0Ev @ 506 NONAME
+	_ZN18CHuiTransformationD1Ev @ 507 NONAME
+	_ZN18CHuiTransformationD2Ev @ 508 NONAME
+	_ZN18CHuiTransformationixEi @ 509 NONAME
+	_ZN18CHuiViewportLayout14SetViewportPosERK13THuiRealPointi @ 510 NONAME
+	_ZN18CHuiViewportLayout14SetVirtualSizeERK12THuiRealSizei @ 511 NONAME
+	_ZN18CHuiViewportLayout15SetViewportSizeERK12THuiRealSizei @ 512 NONAME
+	_ZN18CHuiViewportLayout7AddNewLER11CHuiControlP10CHuiLayout @ 513 NONAME
+	_ZN18CHuiViewportLayout9ChildRectEiR12THuiRealRect @ 514 NONAME
+	_ZN18MHuiBitmapProviderD0Ev @ 515 NONAME
+	_ZN18MHuiBitmapProviderD1Ev @ 516 NONAME
+	_ZN18MHuiBitmapProviderD2Ev @ 517 NONAME
+	_ZN18THuiControlCommand16CommandExtensionERK4TUidPPv @ 518 NONAME
+	_ZN18THuiControlCommandC1ER11CHuiControl6THuiOp @ 519 NONAME
+	_ZN18THuiControlCommandC2ER11CHuiControl6THuiOp @ 520 NONAME
+	_ZN19CHuiAnimatedTexture14BaseConstructLEv @ 521 NONAME
+	_ZN19CHuiAnimatedTexture15ShadowedTextureEv @ 522 NONAME
+	_ZN19CHuiAnimatedTexture16SegmentedTextureEv @ 523 NONAME
+	_ZN19CHuiAnimatedTexture16TextureExtensionERK4TUidPPv @ 524 NONAME
+	_ZN19CHuiAnimatedTexture7TextureEv @ 525 NONAME
+	_ZN19CHuiAnimatedTextureC2ER18CHuiTextureManager @ 526 NONAME
+	_ZN19CHuiAnimatedTextureD0Ev @ 527 NONAME
+	_ZN19CHuiAnimatedTextureD1Ev @ 528 NONAME
+	_ZN19CHuiAnimatedTextureD2Ev @ 529 NONAME
+	_ZN19CHuiCurvePathLayout7AddNewLER11CHuiControlP10CHuiLayout @ 530 NONAME
+	_ZN19CHuiCurvePathLayout9ChildRectEiR12THuiRealRect @ 531 NONAME
+	_ZN19CHuiCurvePathLayout9CurvePathEv @ 532 NONAME
+	_ZN19CHuiDropShadowBrush4NewLEi @ 533 NONAME
+	_ZN19CHuiDropShadowBrush5NewLCEi @ 534 NONAME
+	_ZN19CHuiImageLoaderUtil15SetSkinInstanceEP17MAknsSkinInstance @ 535 NONAME
+	_ZN19CHuiImageLoaderUtil18CreateImageLoaderLE4TUid16TAknsAppIconType @ 536 NONAME
+	_ZN19CHuiImageLoaderUtil18CreateImageLoaderLERK11TAknsItemIDRK7TDesC16ii @ 537 NONAME
+	_ZN19CHuiImageLoaderUtil20ImageLoaderExtensionERK4TUidPPv @ 538 NONAME
+	_ZN19CHuiImageLoaderUtil7SetSizeE5TSize10TScaleMode @ 539 NONAME
+	_ZN19CHuiImageLoaderUtilC1Ev @ 540 NONAME
+	_ZN19CHuiImageLoaderUtilC2Ev @ 541 NONAME
+	_ZN19CHuiImageLoaderUtilD0Ev @ 542 NONAME
+	_ZN19CHuiImageLoaderUtilD1Ev @ 543 NONAME
+	_ZN19CHuiImageLoaderUtilD2Ev @ 544 NONAME
+	_ZN19MHuiMappingFunction27MappingFunctionClearChangedEv @ 545 NONAME
+	_ZN20CHuiTextStyleManager14CopyTextStyleLEi @ 546 NONAME
+	_ZN20CHuiTextStyleManager24CreatePlatformTextStyleLEii @ 547 NONAME
+	_ZN20CHuiTextStyleManager9TextStyleEi @ 548 NONAME
+	_ZN20MHuiSegmentedTextureD0Ev @ 549 NONAME
+	_ZN20MHuiSegmentedTextureD1Ev @ 550 NONAME
+	_ZN20MHuiSegmentedTextureD2Ev @ 551 NONAME
+	_ZN21CHuiDisplayCoeControl10ConstructLERK5TRecti @ 552 NONAME
+	_ZN21CHuiDisplayCoeControl11MakeVisibleEi @ 553 NONAME
+	_ZN21CHuiDisplayCoeControl11SizeChangedEv @ 554 NONAME
+	_ZN21CHuiDisplayCoeControl12FocusChangedE8TDrawNow @ 555 NONAME
+	_ZN21CHuiDisplayCoeControl14OfferKeyEventLERK9TKeyEvent10TEventCode @ 556 NONAME
+	_ZN21CHuiDisplayCoeControl15PositionChangedEv @ 557 NONAME
+	_ZN21CHuiDisplayCoeControl19HandleControlEventLEP11CCoeControlN19MCoeControlObserver9TCoeEventE @ 558 NONAME
+	_ZN21CHuiDisplayCoeControl19HandlePointerEventLERK13TPointerEvent @ 559 NONAME
+	_ZN21CHuiDisplayCoeControl19SetContainerWindowLERK11CCoeControl @ 560 NONAME
+	_ZN21CHuiDisplayCoeControl20HandleResourceChangeEi @ 561 NONAME
+	_ZN21CHuiDisplayCoeControl20PrepareForFocusGainLEv @ 562 NONAME
+	_ZN21CHuiDisplayCoeControl20PrepareForFocusLossLEv @ 563 NONAME
+	_ZN21CHuiDisplayCoeControl22ConstructFromResourceLER15TResourceReader @ 564 NONAME
+	_ZN21CHuiDisplayCoeControl24DisplayCoeCntrlExtensionERK4TUidPPv @ 565 NONAME
+	_ZN21CHuiDisplayCoeControl3EnvEv @ 566 NONAME
+	_ZN21CHuiDisplayCoeControl4NewLER7CHuiEnvRK5TRecti @ 567 NONAME
+	_ZN21CHuiDisplayCoeControl5NewLCER7CHuiEnvRK5TRecti @ 568 NONAME
+	_ZN21CHuiDisplayCoeControl7DisplayEv @ 569 NONAME
+	_ZN21CHuiDisplayCoeControl9ActivateLEv @ 570 NONAME
+	_ZN21CHuiDisplayCoeControl9SetDimmedEi @ 571 NONAME
+	_ZN21CHuiDisplayCoeControlC1ER7CHuiEnv @ 572 NONAME
+	_ZN21CHuiDisplayCoeControlC2ER7CHuiEnv @ 573 NONAME
+	_ZN21CHuiDisplayCoeControlD0Ev @ 574 NONAME
+	_ZN21CHuiDisplayCoeControlD1Ev @ 575 NONAME
+	_ZN21CHuiDisplayCoeControlD2Ev @ 576 NONAME
+	_ZN21CHuiShadowBorderBrush4NewLEi @ 577 NONAME
+	_ZN21CHuiShadowBorderBrush5NewLCEi @ 578 NONAME
+	_ZN22THuiCustomEventCommand16CommandExtensionERK4TUidPPv @ 579 NONAME
+	_ZN22THuiCustomEventCommandC1EiP16MHuiEventHandler @ 580 NONAME
+	_ZN22THuiCustomEventCommandC2EiP16MHuiEventHandler @ 581 NONAME
+	_ZN23CHuiGifAnimationTexture2IdEv @ 582 NONAME
+	_ZN23CHuiGifAnimationTexture4NewLERK7TDesC16R18CHuiTextureManageri22THuiTextureUploadFlags @ 583 NONAME
+	_ZN23CHuiGifAnimationTexture4StopEv @ 584 NONAME
+	_ZN23CHuiGifAnimationTexture5StartEv @ 585 NONAME
+	_ZN23CHuiGifAnimationTextureD0Ev @ 586 NONAME
+	_ZN23CHuiGifAnimationTextureD1Ev @ 587 NONAME
+	_ZN23CHuiGifAnimationTextureD2Ev @ 588 NONAME
+	_ZN23THuiInteractionInterval8IntervalEi @ 589 NONAME
+	_ZN23THuiInteractionInterval9SetScalarEf @ 590 NONAME
+	_ZN23THuiInteractionIntervalC1Ef @ 591 NONAME
+	_ZN23THuiInteractionIntervalC2Ef @ 592 NONAME
+	_ZN23THuiSineMappingFunctionC1Eff @ 593 NONAME
+	_ZN23THuiSineMappingFunctionC2Eff @ 594 NONAME
+	_ZN25THuiCosineMappingFunctionC1Eff @ 595 NONAME
+	_ZN25THuiCosineMappingFunctionC2Eff @ 596 NONAME
+	_ZN25THuiLinearMappingFunctionC1Eff @ 597 NONAME
+	_ZN25THuiLinearMappingFunctionC2Eff @ 598 NONAME
+	_ZN25THuiTransformationCommand16CommandExtensionERK4TUidPPv @ 599 NONAME
+	_ZN25THuiTransformationCommand4SetXERK14THuiTimedValue @ 600 NONAME
+	_ZN25THuiTransformationCommand4SetYERK14THuiTimedValue @ 601 NONAME
+	_ZN25THuiTransformationCommand4SetZERK14THuiTimedValue @ 602 NONAME
+	_ZN25THuiTransformationCommand8SetAngleERK14THuiTimedValue @ 603 NONAME
+	_ZN25THuiTransformationCommandC1EPvR18CHuiTransformation6THuiOpi @ 604 NONAME
+	_ZN25THuiTransformationCommandC2EPvR18CHuiTransformation6THuiOpi @ 605 NONAME
+	_ZN26THuiAverageMappingFunction27MappingFunctionClearChangedEv @ 606 NONAME
+	_ZN26THuiAverageMappingFunctionC1EP19MHuiMappingFunctionS1_ @ 607 NONAME
+	_ZN26THuiAverageMappingFunctionC2EP19MHuiMappingFunctionS1_ @ 608 NONAME
+	_ZN27THuiConstantMappingFunctionC1Ef @ 609 NONAME
+	_ZN27THuiConstantMappingFunctionC2Ef @ 610 NONAME
+	_ZN7CHuiEnv11NewDisplayLERK5TRectP11CCoeControliP11CHuiDisplayi @ 611 NONAME
+	_ZN7CHuiEnv12ControlGroupEi @ 612 NONAME
+	_ZN7CHuiEnv12LoadBitmapsLEi @ 613 NONAME
+	_ZN7CHuiEnv12PauseRefreshEv @ 614 NONAME
+	_ZN7CHuiEnv12StartRefreshEi @ 615 NONAME
+	_ZN7CHuiEnv13SetMaxCpuTimeEj @ 616 NONAME
+	_ZN7CHuiEnv14CancelCommandsEP16MHuiEventHandler @ 617 NONAME
+	_ZN7CHuiEnv14CancelCommandsEPv @ 618 NONAME
+	_ZN7CHuiEnv14CancelCommandsEPv15THuiCommandTypei @ 619 NONAME
+	_ZN7CHuiEnv14CancelCommandsEPv6THuiOp @ 620 NONAME
+	_ZN7CHuiEnv14SetRefreshModeE15THuiRefreshMode @ 621 NONAME
+	_ZN7CHuiEnv15BroadcastEventLERK9THuiEvent @ 622 NONAME
+	_ZN7CHuiEnv15ContinueRefreshEv @ 623 NONAME
+	_ZN7CHuiEnv15HandleKeyEventLERK9TKeyEvent10TEventCodeP11CHuiDisplay @ 624 NONAME
+	_ZN7CHuiEnv15RefreshCallBackEPv @ 625 NONAME
+	_ZN7CHuiEnv15SetMaxFrameRateEf @ 626 NONAME
+	_ZN7CHuiEnv16NewControlGroupLEi @ 627 NONAME
+	_ZN7CHuiEnv16SetIdleThresholdEi @ 628 NONAME
+	_ZN7CHuiEnv16TimeUntilCommandEPv15THuiCommandType @ 629 NONAME
+	_ZN7CHuiEnv17LoadControlGroupLEi @ 630 NONAME
+	_ZN7CHuiEnv18DeleteControlGroupEi @ 631 NONAME
+	_ZN7CHuiEnv18NotifySkinChangedLEv @ 632 NONAME
+	_ZN7CHuiEnv4NewLE12THuiRendererP15MHuiEnvObserver @ 633 NONAME
+	_ZN7CHuiEnv4SendERK11THuiCommandi @ 634 NONAME
+	_ZN7CHuiEnv5NewLCE12THuiRendererP15MHuiEnvObserver @ 635 NONAME
+	_ZN7CHuiEnv5SendLERK11THuiCommandi @ 636 NONAME
+	_ZN7CHuiEnv6StaticEv @ 637 NONAME
+	_ZN7CHuiEnv7ReleaseEv @ 638 NONAME
+	_ZN7CHuiEnv8RestoreLEv @ 639 NONAME
+	_ZN7HuiUtil10FreeMemoryEPj @ 640 NONAME
+	_ZN7HuiUtil10LengthUnitEv @ 641 NONAME
+	_ZN7HuiUtil10RandomRealEff @ 642 NONAME
+	_ZN7HuiUtil10ScaleImageEiRK5TSizePKhS2_Ph @ 643 NONAME
+	_ZN7HuiUtil10ScreenSizeEv @ 644 NONAME
+	_ZN7HuiUtil10TagMatchesERK6TDesC8S2_ @ 645 NONAME
+	_ZN7HuiUtil11InterpolateEfff @ 646 NONAME
+	_ZN7HuiUtil11QuickLengthER13THuiRealPoint @ 647 NONAME
+	_ZN7HuiUtil11QuickLengthEff @ 648 NONAME
+	_ZN7HuiUtil12CrossProductEPKfS1_Pf @ 649 NONAME
+	_ZN7HuiUtil12ShadowMatrixEPKfS1_S1_Pf @ 650 NONAME
+	_ZN7HuiUtil14ColorLightnessERK4TRgb @ 651 NONAME
+	_ZN7HuiUtil14CropFbsBitmapLERK10CFbsBitmapRS0_6TPoint @ 652 NONAME
+	_ZN7HuiUtil14QuickNormalizeEPf @ 653 NONAME
+	_ZN7HuiUtil14QuickNormalizeER13THuiRealPoint @ 654 NONAME
+	_ZN7HuiUtil15Power2RoundDownEi @ 655 NONAME
+	_ZN7HuiUtil15ScaleFbsBitmapLERK10CFbsBitmapRS0_ @ 656 NONAME
+	_ZN7HuiUtil16NormalFromPointsEPA3_KfPf @ 657 NONAME
+	_ZN7HuiUtil21CombineMaskFbsBitmapLERK10CFbsBitmapS2_RS0_ @ 658 NONAME
+	_ZN7HuiUtil28ConvertBitmapToDisplayModeLCERK10CFbsBitmapRK12TDisplayMode @ 659 NONAME
+	_ZN7HuiUtil6Power2Ei @ 660 NONAME
+	_ZN7HuiUtil9CropImageEiRK5TSizePKhRK6TPointS2_Ph @ 661 NONAME
+	_ZN7HuiUtil9RandomIntEii @ 662 NONAME
+	_ZN7HuiUtil9WrapValueERfff @ 663 NONAME
+	_ZN8CHuiMesh12SetSessionIdEi @ 664 NONAME
+	_ZN8CHuiMesh14ScaleUniformlyEfff @ 665 NONAME
+	_ZN8CHuiMesh16StretchUniformlyEffffff @ 666 NONAME
+	_ZN8CHuiMesh20SetAnimationPositionEifi @ 667 NONAME
+	_ZN8CHuiMesh4NewLE12THuiMeshType @ 668 NONAME
+	_ZN8CHuiMesh5NewLCE12THuiMeshType @ 669 NONAME
+	_ZN8CHuiMesh5ResetEv @ 670 NONAME
+	_ZN8CHuiMeshD0Ev @ 671 NONAME
+	_ZN8CHuiMeshD1Ev @ 672 NONAME
+	_ZN8CHuiMeshD2Ev @ 673 NONAME
+	_ZN8CHuiSkin10GetTextureEiRPK11CHuiTexture @ 674 NONAME
+	_ZN8CHuiSkin10SetContextER6CHuiGc @ 675 NONAME
+	_ZN8CHuiSkin14ReleaseTextureEi @ 676 NONAME
+	_ZN8CHuiSkin22RestoreTextureContentLER11CHuiTexture @ 677 NONAME
+	_ZN8CHuiSkin22TextureContentReleasedER11CHuiTexture @ 678 NONAME
+	_ZN8CHuiSkin22TextureContentUploadedER11CHuiTexture @ 679 NONAME
+	_ZN8CHuiSkin25NotifyDisplaySizeChangedLEv @ 680 NONAME
+	_ZN8CHuiSkin8LocationE15THuiSkinElement @ 681 NONAME
+	_ZN8CHuiSkin8TextureLEi @ 682 NONAME
+	_ZN8THuiFontC1EiRK9TFontSpec @ 683 NONAME
+	_ZN8THuiFontC1Ev @ 684 NONAME
+	_ZN8THuiFontC2EiRK9TFontSpec @ 685 NONAME
+	_ZN8THuiFontC2Ev @ 686 NONAME
+	_ZN8THuiFontD1Ev @ 687 NONAME
+	_ZN8THuiFontD2Ev @ 688 NONAME
+	_ZN9CHuiBrush10SetChangedEv @ 689 NONAME
+	_ZN9CHuiBrush12ClearChangedEv @ 690 NONAME
+	_ZN9CHuiBrush12SetSessionIdEi @ 691 NONAME
+	_ZN9CHuiBrush14BrushExtensionERK4TUidPPv @ 692 NONAME
+	_ZN9CHuiBrush15SetClipToVisualEi @ 693 NONAME
+	_ZN9CHuiBrush8SetLayerE14THuiBrushLayer @ 694 NONAME
+	_ZN9CHuiBrushC1Ev @ 695 NONAME
+	_ZN9CHuiBrushC2Ev @ 696 NONAME
+	_ZN9CHuiBrushD0Ev @ 697 NONAME
+	_ZN9CHuiBrushD1Ev @ 698 NONAME
+	_ZN9CHuiBrushD2Ev @ 699 NONAME
+	_ZN9THuiEvent9SetVisualEP10CHuiVisual @ 700 NONAME
+	_ZN9THuiEventC1EP11CHuiDisplayRK13TPointerEvent @ 701 NONAME
+	_ZN9THuiEventC1Ei @ 702 NONAME
+	_ZN9THuiEventC2EP11CHuiDisplayRK13TPointerEvent @ 703 NONAME
+	_ZN9THuiEventC2Ei @ 704 NONAME
+	_ZN9THuiImage10SetTextureERK11MHuiTexture @ 705 NONAME
+	_ZN9THuiImage12SetTexCoordsEffffi @ 706 NONAME
+	_ZN9THuiImage5ScaleEffi @ 707 NONAME
+	_ZN9THuiImage9TranslateEffi @ 708 NONAME
+	_ZN9THuiImageC1ERK11MHuiTextureffff @ 709 NONAME
+	_ZN9THuiImageC1Ev @ 710 NONAME
+	_ZN9THuiImageC2ERK11MHuiTextureffff @ 711 NONAME
+	_ZN9THuiImageC2Ev @ 712 NONAME
+	_ZN9THuiPanic5PanicENS_7TReasonE @ 713 NONAME
+	_ZNK10CHuiLayout10FindVisualEPK10CHuiVisual @ 714 NONAME
+	_ZNK10CHuiLayout11VirtualSizeEv @ 715 NONAME
+	_ZNK10CHuiLayout12BrushOpacityEv @ 716 NONAME
+	_ZNK10CHuiLayout12GetClassNameER6TDes16 @ 717 NONAME
+	_ZNK10CHuiLayout12InnerPaddingEv @ 718 NONAME
+	_ZNK10CHuiLayout12InnerTopLeftEv @ 719 NONAME
+	_ZNK10CHuiLayout12ScrollOffsetEv @ 720 NONAME
+	_ZNK10CHuiLayout14TransitionTimeEv @ 721 NONAME
+	_ZNK10CHuiLayout15GetInstanceNameER6TDes16 @ 722 NONAME
+	_ZNK10CHuiLayout20VerticalInnerPaddingEv @ 723 NONAME
+	_ZNK10CHuiLayout21ExpandRectWithContentER5TRect @ 724 NONAME
+	_ZNK10CHuiLayout22EffectiveLayoutOrdinalERK10CHuiVisual @ 725 NONAME
+	_ZNK10CHuiLayout22HorizontalInnerPaddingEv @ 726 NONAME
+	_ZNK10CHuiLayout23InnerPaddingInBaseUnitsEv @ 727 NONAME
+	_ZNK10CHuiLayout32MetricReferenceForLayoutInPixelsEPKS_RK12THuiXYMetric @ 728 NONAME
+	_ZNK10CHuiLayout4DrawER6CHuiGc @ 729 NONAME
+	_ZNK10CHuiLayout4TypeEv @ 730 NONAME
+	_ZNK10CHuiLayout5CountEv @ 731 NONAME
+	_ZNK10CHuiLayout6VisualEi @ 732 NONAME
+	_ZNK10CHuiLayout7ChangedEv @ 733 NONAME
+	_ZNK10CHuiLayout8BaseUnitEv @ 734 NONAME
+	_ZNK10CHuiLayout8DrawSelfER6CHuiGcRK5TRect @ 735 NONAME
+	_ZNK10CHuiLayout8DumpTreeEv @ 736 NONAME
+	_ZNK10CHuiLayout9BrushRectEv @ 737 NONAME
+	_ZNK10CHuiLayout9BrushSkinEv @ 738 NONAME
+	_ZNK10CHuiLayout9InnerSizeEv @ 739 NONAME
+	_ZNK10CHuiLayout9ScrollingEv @ 740 NONAME
+	_ZNK10CHuiLayout9SessionIdEv @ 741 NONAME
+	_ZNK10CHuiVisual11DisplayRectEv @ 742 NONAME
+	_ZNK10CHuiVisual11DrawBrushesER6CHuiGc14THuiBrushLayer @ 743 NONAME
+	_ZNK10CHuiVisual12BrushOpacityEv @ 744 NONAME
+	_ZNK10CHuiVisual12GetClassNameER6TDes16 @ 745 NONAME
+	_ZNK10CHuiVisual13AlignByOriginER13THuiRealPointi @ 746 NONAME
+	_ZNK10CHuiVisual13LocalBaseUnitEv @ 747 NONAME
+	_ZNK10CHuiVisual14DisplayToLocalERK13THuiRealPoint @ 748 NONAME
+	_ZNK10CHuiVisual14DisplayToLocalERK6TPoint @ 749 NONAME
+	_ZNK10CHuiVisual14LocalToDisplayERK13THuiRealPoint @ 750 NONAME
+	_ZNK10CHuiVisual14LocalToDisplayERK6TPoint @ 751 NONAME
+	_ZNK10CHuiVisual14MetricToPixelsERK12THuiXYMetric @ 752 NONAME
+	_ZNK10CHuiVisual14PixelsToMetricERK13THuiRealPointR12THuiXYMetric @ 753 NONAME
+	_ZNK10CHuiVisual14VerticalOriginEv @ 754 NONAME
+	_ZNK10CHuiVisual15GetInstanceNameER6TDes16 @ 755 NONAME
+	_ZNK10CHuiVisual15PaddingInPixelsEv @ 756 NONAME
+	_ZNK10CHuiVisual16EffectiveOpacityEv @ 757 NONAME
+	_ZNK10CHuiVisual16HorizontalOriginEv @ 758 NONAME
+	_ZNK10CHuiVisual17DisplayRectTargetEv @ 759 NONAME
+	_ZNK10CHuiVisual17PixelPointInLocalERK13THuiRealPoint @ 760 NONAME
+	_ZNK10CHuiVisual18LocalPointInPixelsERK13THuiRealPoint @ 761 NONAME
+	_ZNK10CHuiVisual20BoxMetricToPixelRectERK13THuiBoxMetricR12THuiRealRect @ 762 NONAME
+	_ZNK10CHuiVisual20EnterLocalProjectionER6CHuiGcifPK12THuiRealRect @ 763 NONAME
+	_ZNK10CHuiVisual21ExpandRectWithContentER5TRect @ 764 NONAME
+	_ZNK10CHuiVisual23MetricReferenceInPixelsERK12THuiXYMetric @ 765 NONAME
+	_ZNK10CHuiVisual3EnvEv @ 766 NONAME
+	_ZNK10CHuiVisual3PosEv @ 767 NONAME
+	_ZNK10CHuiVisual3TagEv @ 768 NONAME
+	_ZNK10CHuiVisual4DrawER6CHuiGc @ 769 NONAME
+	_ZNK10CHuiVisual4SizeEv @ 770 NONAME
+	_ZNK10CHuiVisual4SkinEv @ 771 NONAME
+	_ZNK10CHuiVisual4TypeEv @ 772 NONAME
+	_ZNK10CHuiVisual5CountEv @ 773 NONAME
+	_ZNK10CHuiVisual5OwnerEv @ 774 NONAME
+	_ZNK10CHuiVisual6LayoutEv @ 775 NONAME
+	_ZNK10CHuiVisual6VisualEi @ 776 NONAME
+	_ZNK10CHuiVisual7ChangedEv @ 777 NONAME
+	_ZNK10CHuiVisual7DisplayEv @ 778 NONAME
+	_ZNK10CHuiVisual7MaxSizeEv @ 779 NONAME
+	_ZNK10CHuiVisual7MinSizeEv @ 780 NONAME
+	_ZNK10CHuiVisual7PaddingEv @ 781 NONAME
+	_ZNK10CHuiVisual8ClippingEv @ 782 NONAME
+	_ZNK10CHuiVisual8DrawSelfER6CHuiGcRK5TRect @ 783 NONAME
+	_ZNK10CHuiVisual8DumpTreeEv @ 784 NONAME
+	_ZNK10CHuiVisual8IsTaggedEv @ 785 NONAME
+	_ZNK10CHuiVisual9BrushRectEv @ 786 NONAME
+	_ZNK10CHuiVisual9BrushSkinEv @ 787 NONAME
+	_ZNK10CHuiVisual9SessionIdEv @ 788 NONAME
+	_ZNK10CHuiVisual9TransformER6CHuiGciPK12THuiRealRect @ 789 NONAME
+	_ZNK11CHuiControl10ConnectionEi @ 790 NONAME
+	_ZNK11CHuiControl10IsFocusingEv @ 791 NONAME
+	_ZNK11CHuiControl11AcceptInputEv @ 792 NONAME
+	_ZNK11CHuiControl11DisplayAreaEv @ 793 NONAME
+	_ZNK11CHuiControl11VisualCountEv @ 794 NONAME
+	_ZNK11CHuiControl12ControlGroupEv @ 795 NONAME
+	_ZNK11CHuiControl13DisplayCenterEv @ 796 NONAME
+	_ZNK11CHuiControl13DisplayToHostERK6TPoint @ 797 NONAME
+	_ZNK11CHuiControl13HostToDisplayERK6TPoint @ 798 NONAME
+	_ZNK11CHuiControl14ConnectionRoleEi @ 799 NONAME
+	_ZNK11CHuiControl14FindConnectionEPKS_ @ 800 NONAME
+	_ZNK11CHuiControl14TextureManagerEv @ 801 NONAME
+	_ZNK11CHuiControl15ConnectionCountEv @ 802 NONAME
+	_ZNK11CHuiControl15ContainerLayoutEPKS_ @ 803 NONAME
+	_ZNK11CHuiControl17ConnectionOrdinalEi @ 804 NONAME
+	_ZNK11CHuiControl19ConnectionByOrdinalEi @ 805 NONAME
+	_ZNK11CHuiControl2IdEv @ 806 NONAME
+	_ZNK11CHuiControl3EnvEv @ 807 NONAME
+	_ZNK11CHuiControl4HostEv @ 808 NONAME
+	_ZNK11CHuiControl4RoleEv @ 809 NONAME
+	_ZNK11CHuiControl4TypeEv @ 810 NONAME
+	_ZNK11CHuiControl5FocusEv @ 811 NONAME
+	_ZNK11CHuiControl6BoundsEv @ 812 NONAME
+	_ZNK11CHuiControl6HostIdEv @ 813 NONAME
+	_ZNK11CHuiControl6VisualEi @ 814 NONAME
+	_ZNK11CHuiControl7DisplayEv @ 815 NONAME
+	_ZNK11CHuiControl7FindTagERK6TDesC8 @ 816 NONAME
+	_ZNK11CHuiControl7HitTestERK6TPoint @ 817 NONAME
+	_ZNK11CHuiControl9SessionIdEv @ 818 NONAME
+	_ZNK11CHuiDisplay11OrientationEv @ 819 NONAME
+	_ZNK11CHuiDisplay11VisibleAreaEv @ 820 NONAME
+	_ZNK11CHuiDisplay14TransformationEv @ 821 NONAME
+	_ZNK11CHuiDisplay4SizeEv @ 822 NONAME
+	_ZNK11CHuiDisplay6ActiveEv @ 823 NONAME
+	_ZNK11CHuiDisplay6RosterEv @ 824 NONAME
+	_ZNK11CHuiDisplay7QualityEv @ 825 NONAME
+	_ZNK11CHuiDisplay9CaptureLCER5TSize @ 826 NONAME
+	_ZNK11CHuiS60Skin11OrientationEv @ 827 NONAME
+	_ZNK11CHuiS60Skin14StyleTextColorE26THuiPreconfiguredTextStyle18THuiBackgroundType @ 828 NONAME
+	_ZNK11CHuiS60Skin7ContextEv @ 829 NONAME
+	_ZNK11CHuiTexture10HasContentEv @ 830 NONAME
+	_ZNK11CHuiTexture11SegmentNameEi @ 831 NONAME
+	_ZNK11CHuiTexture11SegmentSizeEi @ 832 NONAME
+	_ZNK11CHuiTexture11ShadowStyleEv @ 833 NONAME
+	_ZNK11CHuiTexture12SegmentCountEv @ 834 NONAME
+	_ZNK11CHuiTexture13ImageFileNameEv @ 835 NONAME
+	_ZNK11CHuiTexture13IsSkinContentEv @ 836 NONAME
+	_ZNK11CHuiTexture14TextureChangedEv @ 837 NONAME
+	_ZNK11CHuiTexture15IsShadowEnabledEv @ 838 NONAME
+	_ZNK11CHuiTexture15ShadowedTextureEv @ 839 NONAME
+	_ZNK11CHuiTexture16SegmentedTextureEv @ 840 NONAME
+	_ZNK11CHuiTexture18SegmentTextureSizeEi @ 841 NONAME
+	_ZNK11CHuiTexture19TextureClearChangedEv @ 842 NONAME
+	_ZNK11CHuiTexture4SizeEv @ 843 NONAME
+	_ZNK11CHuiTexture4TypeEv @ 844 NONAME
+	_ZNK11CHuiTexture8PriorityEv @ 845 NONAME
+	_ZNK11CHuiTexture9SessionIdEv @ 846 NONAME
+	_ZNK11THuiCommand10SenderTypeEv @ 847 NONAME
+	_ZNK11THuiCommand12SenderVisualEv @ 848 NONAME
+	_ZNK11THuiCommand13ObjectCommandEv @ 849 NONAME
+	_ZNK11THuiCommand13SenderControlEv @ 850 NONAME
+	_ZNK11THuiCommand18SenderControlGroupEv @ 851 NONAME
+	_ZNK11THuiCommand4TypeEv @ 852 NONAME
+	_ZNK11THuiCommand6SenderEv @ 853 NONAME
+	_ZNK13CHuiCurvePath4LoopEv @ 854 NONAME
+	_ZNK13CHuiCurvePath6LengthEv @ 855 NONAME
+	_ZNK13CHuiCurvePath8EvaluateEfR13THuiRealPoint @ 856 NONAME
+	_ZNK13THuiTextStyle11FontStyleIdEv @ 857 NONAME
+	_ZNK13THuiTextStyle11GetTypefaceER9TTypeface @ 858 NONAME
+	_ZNK13THuiTextStyle13StrikeThroughEv @ 859 NONAME
+	_ZNK13THuiTextStyle15BackgroundColorEv @ 860 NONAME
+	_ZNK13THuiTextStyle2IdEv @ 861 NONAME
+	_ZNK13THuiTextStyle4FontEv @ 862 NONAME
+	_ZNK13THuiTextStyle8ParentIdEv @ 863 NONAME
+	_ZNK13THuiTextStyle9TextColorEv @ 864 NONAME
+	_ZNK13THuiTextStyle9UnderlineEv @ 865 NONAME
+	_ZNK14CHuiBrushArray15LayerBrushCountE14THuiBrushLayer @ 866 NONAME
+	_ZNK14CHuiBrushArray4DrawE14THuiBrushLayerR6CHuiGcRK14MHuiBrushGuide @ 867 NONAME
+	_ZNK14CHuiBrushArray5CountEv @ 868 NONAME
+	_ZNK14CHuiFlowLayout4ModeEv @ 869 NONAME
+	_ZNK14CHuiGridLayout11ColumnCountEv @ 870 NONAME
+	_ZNK14CHuiGridLayout12GetClassNameER6TDes16 @ 871 NONAME
+	_ZNK14CHuiGridLayout14DimensionCountE17THuiGridDimension @ 872 NONAME
+	_ZNK14CHuiGridLayout14OrdinalToBlockEi @ 873 NONAME
+	_ZNK14CHuiGridLayout15GetInstanceNameER6TDes16 @ 874 NONAME
+	_ZNK14CHuiGridLayout21ExpandRectWithContentER5TRect @ 875 NONAME
+	_ZNK14CHuiGridLayout4DrawER6CHuiGc @ 876 NONAME
+	_ZNK14CHuiGridLayout4TypeEv @ 877 NONAME
+	_ZNK14CHuiGridLayout5CountEv @ 878 NONAME
+	_ZNK14CHuiGridLayout6VisualEi @ 879 NONAME
+	_ZNK14CHuiGridLayout6WeightE17THuiGridDimensioni @ 880 NONAME
+	_ZNK14CHuiGridLayout7ChangedEv @ 881 NONAME
+	_ZNK14CHuiGridLayout8BaseUnitEv @ 882 NONAME
+	_ZNK14CHuiGridLayout8DrawSelfER6CHuiGcRK5TRect @ 883 NONAME
+	_ZNK14CHuiGridLayout8DumpTreeEv @ 884 NONAME
+	_ZNK14CHuiGridLayout8RowCountEv @ 885 NONAME
+	_ZNK14CHuiGridLayout9SessionIdEv @ 886 NONAME
+	_ZNK14CHuiImageBrush16ExpandVisualRectER5TRect @ 887 NONAME
+	_ZNK14CHuiImageBrush20BorderDrawingEnabledEv @ 888 NONAME
+	_ZNK14CHuiImageBrush20CenterDrawingEnabledEv @ 889 NONAME
+	_ZNK14CHuiImageBrush4DrawER6CHuiGcRK14MHuiBrushGuide @ 890 NONAME
+	_ZNK14CHuiMeshVisual14ProceduralMeshEv @ 891 NONAME
+	_ZNK14CHuiMeshVisual7M3GMeshEv @ 892 NONAME
+	_ZNK14CHuiTextVisual11TextExtentsEv @ 893 NONAME
+	_ZNK14CHuiTextVisual12MaxLineCountEv @ 894 NONAME
+	_ZNK14CHuiTextVisual14BackgroundTypeEv @ 895 NONAME
+	_ZNK14CHuiTextVisual16SubstringExtentsEjj @ 896 NONAME
+	_ZNK14CHuiTextVisual4TextEv @ 897 NONAME
+	_ZNK14CHuiTextVisual5StyleEv @ 898 NONAME
+	_ZNK14CHuiTextVisual8WrappingEv @ 899 NONAME
+	_ZNK14THuiTimedPoint10RealTargetEv @ 900 NONAME
+	_ZNK14THuiTimedPoint3NowEv @ 901 NONAME
+	_ZNK14THuiTimedPoint6TargetEv @ 902 NONAME
+	_ZNK14THuiTimedPoint7RealNowEv @ 903 NONAME
+	_ZNK14THuiTimedValue11UnmappedNowEv @ 904 NONAME
+	_ZNK14THuiTimedValue13RemainingTimeEv @ 905 NONAME
+	_ZNK14THuiTimedValue3NowEv @ 906 NONAME
+	_ZNK14THuiTimedValue5StyleEv @ 907 NONAME
+	_ZNK14THuiTimedValue6TargetEv @ 908 NONAME
+	_ZNK15CHuiImageVisual5ImageEv @ 909 NONAME
+	_ZNK15THuiFontManager15EnumerateFontsLER6RArrayI21THuiFontSpecificationE @ 910 NONAME
+	_ZNK15THuiTextCommand10TextVisualEv @ 911 NONAME
+	_ZNK15THuiTextCommand4SizeEv @ 912 NONAME
+	_ZNK15THuiTextCommand4TextEv @ 913 NONAME
+	_ZNK15THuiTextCommand8ExecuteLER7CHuiEnv @ 914 NONAME
+	_ZNK16CHuiControlGroup11AcceptInputEv @ 915 NONAME
+	_ZNK16CHuiControlGroup11FindControlEi @ 916 NONAME
+	_ZNK16CHuiControlGroup13IsTransformedEv @ 917 NONAME
+	_ZNK16CHuiControlGroup4TypeEv @ 918 NONAME
+	_ZNK16CHuiControlGroup5CountEv @ 919 NONAME
+	_ZNK16CHuiControlGroup7ControlEi @ 920 NONAME
+	_ZNK16CHuiControlGroup9SessionIdEv @ 921 NONAME
+	_ZNK16THuiGroupCommand12ControlGroupEv @ 922 NONAME
+	_ZNK16THuiGroupCommand4SizeEv @ 923 NONAME
+	_ZNK16THuiGroupCommand7DisplayEv @ 924 NONAME
+	_ZNK16THuiGroupCommand8ExecuteLER7CHuiEnv @ 925 NONAME
+	_ZNK16THuiImageCommand11ImageVisualEv @ 926 NONAME
+	_ZNK16THuiImageCommand4SizeEv @ 927 NONAME
+	_ZNK16THuiImageCommand5ImageEv @ 928 NONAME
+	_ZNK16THuiImageCommand8ExecuteLER7CHuiEnv @ 929 NONAME
+	_ZNK16THuiPointCommand10TimedPointEv @ 930 NONAME
+	_ZNK16THuiPointCommand14TransitionTimeEv @ 931 NONAME
+	_ZNK16THuiPointCommand4SizeEv @ 932 NONAME
+	_ZNK16THuiPointCommand5SpeedEv @ 933 NONAME
+	_ZNK16THuiPointCommand6TargetEv @ 934 NONAME
+	_ZNK16THuiPointCommand8ExecuteLER7CHuiEnv @ 935 NONAME
+	_ZNK16THuiValueCommand10TimedValueEv @ 936 NONAME
+	_ZNK16THuiValueCommand14TransitionTimeEv @ 937 NONAME
+	_ZNK16THuiValueCommand4SizeEv @ 938 NONAME
+	_ZNK16THuiValueCommand5SpeedEv @ 939 NONAME
+	_ZNK16THuiValueCommand6TargetEv @ 940 NONAME
+	_ZNK16THuiValueCommand8ExecuteLER7CHuiEnv @ 941 NONAME
+	_ZNK17CHuiGradientBrush5ColorEi @ 942 NONAME
+	_ZNK17CHuiGradientBrush5ImageEv @ 943 NONAME
+	_ZNK17CHuiGradientBrush7OpacityEi @ 944 NONAME
+	_ZNK17THuiActionCommand2IdEv @ 945 NONAME
+	_ZNK17THuiActionCommand4SizeEv @ 946 NONAME
+	_ZNK17THuiActionCommand8ExecuteLER7CHuiEnv @ 947 NONAME
+	_ZNK17THuiMarkerCommand2IdEv @ 948 NONAME
+	_ZNK17THuiMarkerCommand4SizeEv @ 949 NONAME
+	_ZNK17THuiMarkerCommand8ExecuteLER7CHuiEnv @ 950 NONAME
+	_ZNK17THuiObjectCommand13ObjectCommandEv @ 951 NONAME
+	_ZNK17THuiObjectCommand4SizeEv @ 952 NONAME
+	_ZNK17THuiObjectCommand6ObjectEv @ 953 NONAME
+	_ZNK17THuiObjectCommand8ExecuteLER7CHuiEnv @ 954 NONAME
+	_ZNK17THuiObjectCommand9OperationEv @ 955 NONAME
+	_ZNK17THuiTextureHandle10HasContentEv @ 956 NONAME
+	_ZNK17THuiTextureHandle11SegmentNameEi @ 957 NONAME
+	_ZNK17THuiTextureHandle11SegmentSizeEi @ 958 NONAME
+	_ZNK17THuiTextureHandle12SegmentCountEv @ 959 NONAME
+	_ZNK17THuiTextureHandle13SegmentOffsetEi @ 960 NONAME
+	_ZNK17THuiTextureHandle14TextureChangedEv @ 961 NONAME
+	_ZNK17THuiTextureHandle15ShadowedTextureEv @ 962 NONAME
+	_ZNK17THuiTextureHandle16SegmentedTextureEv @ 963 NONAME
+	_ZNK17THuiTextureHandle18SegmentTextureSizeEi @ 964 NONAME
+	_ZNK17THuiTextureHandle19TextureClearChangedEv @ 965 NONAME
+	_ZNK17THuiTextureHandle4NameEv @ 966 NONAME
+	_ZNK17THuiTextureHandle4SizeEv @ 967 NONAME
+	_ZNK17THuiTextureHandle6IsNullEv @ 968 NONAME
+	_ZNK17THuiVisualCommand10FlagsToSetEv @ 969 NONAME
+	_ZNK17THuiVisualCommand12FlagsToClearEv @ 970 NONAME
+	_ZNK17THuiVisualCommand4SizeEv @ 971 NONAME
+	_ZNK17THuiVisualCommand6VisualEv @ 972 NONAME
+	_ZNK17THuiVisualCommand8ExecuteLER7CHuiEnv @ 973 NONAME
+	_ZNK18CHuiTextureManager12BlankTextureEv @ 974 NONAME
+	_ZNK18CHuiTextureManager14LoadQueueCountEv @ 975 NONAME
+	_ZNK18CHuiTextureManager16PrependImagePathER6TDes16 @ 976 NONAME
+	_ZNK18CHuiTextureManager7TextureEi @ 977 NONAME
+	_ZNK18CHuiTextureManager8IsLoadedEPK11CHuiTexture @ 978 NONAME
+	_ZNK18CHuiTextureManager8IsLoadedERK7TDesC16i @ 979 NONAME
+	_ZNK18CHuiTextureManager8IsLoadedEi @ 980 NONAME
+	_ZNK18CHuiTextureManager9ImagePathEv @ 981 NONAME
+	_ZNK18CHuiTransformation16NonIdentityCountEv @ 982 NONAME
+	_ZNK18CHuiTransformation5CountEv @ 983 NONAME
+	_ZNK18CHuiTransformation7ExecuteE12THuiGcMatrixR6CHuiGc @ 984 NONAME
+	_ZNK18THuiControlCommand4SizeEv @ 985 NONAME
+	_ZNK18THuiControlCommand7ControlEv @ 986 NONAME
+	_ZNK18THuiControlCommand8ExecuteLER7CHuiEnv @ 987 NONAME
+	_ZNK19CHuiAnimatedTexture10HasContentEv @ 988 NONAME
+	_ZNK19CHuiAnimatedTexture11SegmentNameEi @ 989 NONAME
+	_ZNK19CHuiAnimatedTexture11SegmentSizeEi @ 990 NONAME
+	_ZNK19CHuiAnimatedTexture12SegmentCountEv @ 991 NONAME
+	_ZNK19CHuiAnimatedTexture13SegmentOffsetEi @ 992 NONAME
+	_ZNK19CHuiAnimatedTexture14TextureChangedEv @ 993 NONAME
+	_ZNK19CHuiAnimatedTexture15ShadowedTextureEv @ 994 NONAME
+	_ZNK19CHuiAnimatedTexture16SegmentedTextureEv @ 995 NONAME
+	_ZNK19CHuiAnimatedTexture18SegmentTextureSizeEi @ 996 NONAME
+	_ZNK19CHuiAnimatedTexture19TextureClearChangedEv @ 997 NONAME
+	_ZNK19CHuiAnimatedTexture4SizeEv @ 998 NONAME
+	_ZNK19MHuiMappingFunction22MappingFunctionChangedEv @ 999 NONAME
+	_ZNK20MHuiSegmentedTexture4BindEii @ 1000 NONAME
+	_ZNK20MHuiSegmentedTexture6HandleEi @ 1001 NONAME
+	_ZNK21CHuiDisplayCoeControl16ComponentControlEi @ 1002 NONAME
+	_ZNK21CHuiDisplayCoeControl17InputCapabilitiesEv @ 1003 NONAME
+	_ZNK21CHuiDisplayCoeControl22CountComponentControlsEv @ 1004 NONAME
+	_ZNK21CHuiDisplayCoeControl4DrawERK5TRect @ 1005 NONAME
+	_ZNK22THuiCustomEventCommand4SizeEv @ 1006 NONAME
+	_ZNK22THuiCustomEventCommand5ParamEv @ 1007 NONAME
+	_ZNK22THuiCustomEventCommand8ExecuteLER7CHuiEnv @ 1008 NONAME
+	_ZNK22THuiCustomEventCommand9RecipientEv @ 1009 NONAME
+	_ZNK23THuiInteractionInterval6ScalarEv @ 1010 NONAME
+	_ZNK23THuiSineMappingFunction8MapValueEfi @ 1011 NONAME
+	_ZNK25THuiCosineMappingFunction8MapValueEfi @ 1012 NONAME
+	_ZNK25THuiLinearMappingFunction8MapValueEfi @ 1013 NONAME
+	_ZNK25THuiTransformationCommand14TransformationEv @ 1014 NONAME
+	_ZNK25THuiTransformationCommand4SizeEv @ 1015 NONAME
+	_ZNK25THuiTransformationCommand4StepEv @ 1016 NONAME
+	_ZNK25THuiTransformationCommand8ExecuteLER7CHuiEnv @ 1017 NONAME
+	_ZNK26THuiAverageMappingFunction22MappingFunctionChangedEv @ 1018 NONAME
+	_ZNK26THuiAverageMappingFunction8MapValueEfi @ 1019 NONAME
+	_ZNK27THuiConstantMappingFunction8MapValueEfi @ 1020 NONAME
+	_ZNK7CHuiEnv11FindControlEi @ 1021 NONAME
+	_ZNK7CHuiEnv11FontManagerEv @ 1022 NONAME
+	_ZNK7CHuiEnv11RefreshModeEv @ 1023 NONAME
+	_ZNK7CHuiEnv12DisplayCountEv @ 1024 NONAME
+	_ZNK7CHuiEnv13VisualFactoryEv @ 1025 NONAME
+	_ZNK7CHuiEnv14PrimaryDisplayEv @ 1026 NONAME
+	_ZNK7CHuiEnv14TextureManagerEv @ 1027 NONAME
+	_ZNK7CHuiEnv16TextStyleManagerEv @ 1028 NONAME
+	_ZNK7CHuiEnv4SkinEv @ 1029 NONAME
+	_ZNK7CHuiEnv8RendererEv @ 1030 NONAME
+	_ZNK8CHuiMesh24AnimationControllerCountEv @ 1031 NONAME
+	_ZNK8CHuiMesh4TypeEv @ 1032 NONAME
+	_ZNK8CHuiMesh8MeshTypeEv @ 1033 NONAME
+	_ZNK8CHuiMesh9SessionIdEv @ 1034 NONAME
+	_ZNK8CHuiSkin11OrientationEv @ 1035 NONAME
+	_ZNK8CHuiSkin7ContextEv @ 1036 NONAME
+	_ZNK8THuiFont2IdEv @ 1037 NONAME
+	_ZNK8THuiFont8CategoryEv @ 1038 NONAME
+	_ZNK8THuiFont8FontSpecEP18MGraphicsDeviceMap @ 1039 NONAME
+	_ZNK9CHuiBrush12ClipToVisualEv @ 1040 NONAME
+	_ZNK9CHuiBrush16ExpandVisualRectER5TRect @ 1041 NONAME
+	_ZNK9CHuiBrush4DrawER6CHuiGcRK14MHuiBrushGuide @ 1042 NONAME
+	_ZNK9CHuiBrush4TypeEv @ 1043 NONAME
+	_ZNK9CHuiBrush5LayerEv @ 1044 NONAME
+	_ZNK9CHuiBrush7ChangedEv @ 1045 NONAME
+	_ZNK9CHuiBrush7EndDrawER6CHuiGcRK14MHuiBrushGuide @ 1046 NONAME
+	_ZNK9CHuiBrush9BeginDrawER6CHuiGcRK14MHuiBrushGuide @ 1047 NONAME
+	_ZNK9CHuiBrush9SessionIdEv @ 1048 NONAME
+	_ZNK9THuiEvent10IsKeyEventEv @ 1049 NONAME
+	_ZNK9THuiEvent11PointerDownEv @ 1050 NONAME
+	_ZNK9THuiEvent13IsCustomEventEv @ 1051 NONAME
+	_ZNK9THuiEvent14IsPointerEventEv @ 1052 NONAME
+	_ZNK9THuiEvent14PointerLongTapEv @ 1053 NONAME
+	_ZNK9THuiEvent4TypeEv @ 1054 NONAME
+	_ZNK9THuiEvent6VisualEv @ 1055 NONAME
+	_ZNK9THuiEvent7DisplayEv @ 1056 NONAME
+	_ZNK9THuiEvent9PointerUpEv @ 1057 NONAME
+	_ZNK9THuiImage10HasTextureEv @ 1058 NONAME
+	_ZNK9THuiImage11BottomRightEv @ 1059 NONAME
+	_ZNK9THuiImage12GetTexCoordsEPfi @ 1060 NONAME
+	_ZNK9THuiImage12SegmentCountEv @ 1061 NONAME
+	_ZNK9THuiImage13ShadowTextureEv @ 1062 NONAME
+	_ZNK9THuiImage15GetVertexCoordsEPsi @ 1063 NONAME
+	_ZNK9THuiImage7TextureEv @ 1064 NONAME
+	_ZNK9THuiImage7TopLeftEv @ 1065 NONAME
+	_ZNK9THuiImage9HasShadowEv @ 1066 NONAME
+	_ZNK9THuiImage9TextureIfEv @ 1067 NONAME
+	_ZTI10CHuiLayout @ 1068 NONAME ; #<TI>#
+	_ZTI10CHuiVisual @ 1069 NONAME ; #<TI>#
+	_ZTI11CHuiControl @ 1070 NONAME ; #<TI>#
+	_ZTI11CHuiS60Skin @ 1071 NONAME ; #<TI>#
+	_ZTI11CHuiTexture @ 1072 NONAME ; #<TI>#
+	_ZTI11MHuiTexture @ 1073 NONAME ; #<TI>#
+	_ZTI11THuiCommand @ 1074 NONAME ; #<TI>#
+	_ZTI13THuiTextStyle @ 1075 NONAME ; #<TI>#
+	_ZTI14CHuiGridLayout @ 1076 NONAME ; #<TI>#
+	_ZTI15MHuiVisualOwner @ 1077 NONAME ; #<TI>#
+	_ZTI15THuiTextCommand @ 1078 NONAME ; #<TI>#
+	_ZTI16MHuiEventHandler @ 1079 NONAME ; #<TI>#
+	_ZTI16THuiGroupCommand @ 1080 NONAME ; #<TI>#
+	_ZTI16THuiImageCommand @ 1081 NONAME ; #<TI>#
+	_ZTI16THuiPointCommand @ 1082 NONAME ; #<TI>#
+	_ZTI16THuiValueCommand @ 1083 NONAME ; #<TI>#
+	_ZTI17THuiActionCommand @ 1084 NONAME ; #<TI>#
+	_ZTI17THuiMarkerCommand @ 1085 NONAME ; #<TI>#
+	_ZTI17THuiObjectCommand @ 1086 NONAME ; #<TI>#
+	_ZTI17THuiVisualCommand @ 1087 NONAME ; #<TI>#
+	_ZTI18MHuiBitmapProvider @ 1088 NONAME ; #<TI>#
+	_ZTI18THuiControlCommand @ 1089 NONAME ; #<TI>#
+	_ZTI19CHuiAnimatedTexture @ 1090 NONAME ; #<TI>#
+	_ZTI19CHuiImageLoaderUtil @ 1091 NONAME ; #<TI>#
+	_ZTI19MHuiMappingFunction @ 1092 NONAME ; #<TI>#
+	_ZTI20MHuiSegmentedTexture @ 1093 NONAME ; #<TI>#
+	_ZTI21CHuiDisplayCoeControl @ 1094 NONAME ; #<TI>#
+	_ZTI22THuiCustomEventCommand @ 1095 NONAME ; #<TI>#
+	_ZTI23THuiSineMappingFunction @ 1096 NONAME ; #<TI>#
+	_ZTI25THuiCosineMappingFunction @ 1097 NONAME ; #<TI>#
+	_ZTI25THuiLinearMappingFunction @ 1098 NONAME ; #<TI>#
+	_ZTI25THuiTransformationCommand @ 1099 NONAME ; #<TI>#
+	_ZTI26THuiAverageMappingFunction @ 1100 NONAME ; #<TI>#
+	_ZTI27THuiConstantMappingFunction @ 1101 NONAME ; #<TI>#
+	_ZTI9CHuiBrush @ 1102 NONAME ; #<TI>#
+	_ZTV10CHuiLayout @ 1103 NONAME ; #<VT>#
+	_ZTV10CHuiVisual @ 1104 NONAME ; #<VT>#
+	_ZTV11CHuiControl @ 1105 NONAME ; #<VT>#
+	_ZTV11CHuiS60Skin @ 1106 NONAME ; #<VT>#
+	_ZTV11CHuiTexture @ 1107 NONAME ; #<VT>#
+	_ZTV11MHuiTexture @ 1108 NONAME ; #<VT>#
+	_ZTV11THuiCommand @ 1109 NONAME ; #<VT>#
+	_ZTV13THuiTextStyle @ 1110 NONAME ; #<VT>#
+	_ZTV14CHuiGridLayout @ 1111 NONAME ; #<VT>#
+	_ZTV15MHuiVisualOwner @ 1112 NONAME ; #<VT>#
+	_ZTV15THuiTextCommand @ 1113 NONAME ; #<VT>#
+	_ZTV16MHuiEventHandler @ 1114 NONAME ; #<VT>#
+	_ZTV16THuiGroupCommand @ 1115 NONAME ; #<VT>#
+	_ZTV16THuiImageCommand @ 1116 NONAME ; #<VT>#
+	_ZTV16THuiPointCommand @ 1117 NONAME ; #<VT>#
+	_ZTV16THuiValueCommand @ 1118 NONAME ; #<VT>#
+	_ZTV17THuiActionCommand @ 1119 NONAME ; #<VT>#
+	_ZTV17THuiMarkerCommand @ 1120 NONAME ; #<VT>#
+	_ZTV17THuiObjectCommand @ 1121 NONAME ; #<VT>#
+	_ZTV17THuiVisualCommand @ 1122 NONAME ; #<VT>#
+	_ZTV18MHuiBitmapProvider @ 1123 NONAME ; #<VT>#
+	_ZTV18THuiControlCommand @ 1124 NONAME ; #<VT>#
+	_ZTV19CHuiAnimatedTexture @ 1125 NONAME ; #<VT>#
+	_ZTV19CHuiImageLoaderUtil @ 1126 NONAME ; #<VT>#
+	_ZTV19MHuiMappingFunction @ 1127 NONAME ; #<VT>#
+	_ZTV20MHuiSegmentedTexture @ 1128 NONAME ; #<VT>#
+	_ZTV21CHuiDisplayCoeControl @ 1129 NONAME ; #<VT>#
+	_ZTV22THuiCustomEventCommand @ 1130 NONAME ; #<VT>#
+	_ZTV23THuiSineMappingFunction @ 1131 NONAME ; #<VT>#
+	_ZTV25THuiCosineMappingFunction @ 1132 NONAME ; #<VT>#
+	_ZTV25THuiLinearMappingFunction @ 1133 NONAME ; #<VT>#
+	_ZTV25THuiTransformationCommand @ 1134 NONAME ; #<VT>#
+	_ZTV26THuiAverageMappingFunction @ 1135 NONAME ; #<VT>#
+	_ZTV27THuiConstantMappingFunction @ 1136 NONAME ; #<VT>#
+	_ZTV9CHuiBrush @ 1137 NONAME ; #<VT>#
+	_ZThn12_N11CHuiControl12SetSessionIdEi @ 1138 NONAME ; #<thunk>#
+	_ZThn12_N11CHuiTexture12EnableShadowEi @ 1139 NONAME ; #<thunk>#
+	_ZThn12_N11CHuiTextureD0Ev @ 1140 NONAME ; #<thunk>#
+	_ZThn12_N11CHuiTextureD1Ev @ 1141 NONAME ; #<thunk>#
+	_ZThn12_NK11CHuiControl4TypeEv @ 1142 NONAME ; #<thunk>#
+	_ZThn12_NK11CHuiControl9SessionIdEv @ 1143 NONAME ; #<thunk>#
+	_ZThn12_NK11CHuiTexture15IsShadowEnabledEv @ 1144 NONAME ; #<thunk>#
+	_ZThn16_N11CHuiTexture12SetSessionIdEi @ 1145 NONAME ; #<thunk>#
+	_ZThn16_NK11CHuiTexture4TypeEv @ 1146 NONAME ; #<thunk>#
+	_ZThn16_NK11CHuiTexture9SessionIdEv @ 1147 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiControl12EventHandlerEv @ 1148 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiControl15VisualDestroyedER10CHuiVisual @ 1149 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiControl19VisualLayoutUpdatedER10CHuiVisual @ 1150 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiControl23VisualPrepareDrawFailedER10CHuiVisuali @ 1151 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiControl6RemoveEP10CHuiVisual @ 1152 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiControl7AppendLEP10CHuiVisual @ 1153 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiControlD0Ev @ 1154 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiControlD1Ev @ 1155 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiS60Skin22RestoreTextureContentLER11CHuiTexture @ 1156 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiS60SkinD0Ev @ 1157 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiS60SkinD1Ev @ 1158 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiTexture15ShadowedTextureEv @ 1159 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiTexture16SegmentedTextureEv @ 1160 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiTextureD0Ev @ 1161 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiTextureD1Ev @ 1162 NONAME ; #<thunk>#
+	_ZThn4_N13CHuiCurvePathD0Ev @ 1163 NONAME ; #<thunk>#
+	_ZThn4_N13CHuiCurvePathD1Ev @ 1164 NONAME ; #<thunk>#
+	_ZThn4_N16CHuiControlGroup12SetSessionIdEi @ 1165 NONAME ; #<thunk>#
+	_ZThn4_N19CHuiAnimatedTexture15ShadowedTextureEv @ 1166 NONAME ; #<thunk>#
+	_ZThn4_N19CHuiAnimatedTexture16SegmentedTextureEv @ 1167 NONAME ; #<thunk>#
+	_ZThn4_N19CHuiAnimatedTexture16TextureExtensionERK4TUidPPv @ 1168 NONAME ; #<thunk>#
+	_ZThn4_N19CHuiAnimatedTextureD0Ev @ 1169 NONAME ; #<thunk>#
+	_ZThn4_N19CHuiAnimatedTextureD1Ev @ 1170 NONAME ; #<thunk>#
+	_ZThn4_N23CHuiGifAnimationTextureD0Ev @ 1171 NONAME ; #<thunk>#
+	_ZThn4_N23CHuiGifAnimationTextureD1Ev @ 1172 NONAME ; #<thunk>#
+	_ZThn4_N8CHuiMesh12SetSessionIdEi @ 1173 NONAME ; #<thunk>#
+	_ZThn4_N8CHuiSkin22RestoreTextureContentLER11CHuiTexture @ 1174 NONAME ; #<thunk>#
+	_ZThn4_N8CHuiSkin22TextureContentReleasedER11CHuiTexture @ 1175 NONAME ; #<thunk>#
+	_ZThn4_N8CHuiSkin22TextureContentUploadedER11CHuiTexture @ 1176 NONAME ; #<thunk>#
+	_ZThn4_N9CHuiBrush12SetSessionIdEi @ 1177 NONAME ; #<thunk>#
+	_ZThn4_NK10CHuiLayout12BrushOpacityEv @ 1178 NONAME ; #<thunk>#
+	_ZThn4_NK10CHuiLayout9BrushRectEv @ 1179 NONAME ; #<thunk>#
+	_ZThn4_NK10CHuiLayout9BrushSkinEv @ 1180 NONAME ; #<thunk>#
+	_ZThn4_NK10CHuiVisual12BrushOpacityEv @ 1181 NONAME ; #<thunk>#
+	_ZThn4_NK10CHuiVisual9BrushRectEv @ 1182 NONAME ; #<thunk>#
+	_ZThn4_NK10CHuiVisual9BrushSkinEv @ 1183 NONAME ; #<thunk>#
+	_ZThn4_NK11CHuiControl12ControlGroupEv @ 1184 NONAME ; #<thunk>#
+	_ZThn4_NK11CHuiControl3EnvEv @ 1185 NONAME ; #<thunk>#
+	_ZThn4_NK11CHuiTexture10HasContentEv @ 1186 NONAME ; #<thunk>#
+	_ZThn4_NK11CHuiTexture14TextureChangedEv @ 1187 NONAME ; #<thunk>#
+	_ZThn4_NK11CHuiTexture15ShadowedTextureEv @ 1188 NONAME ; #<thunk>#
+	_ZThn4_NK11CHuiTexture16SegmentedTextureEv @ 1189 NONAME ; #<thunk>#
+	_ZThn4_NK11CHuiTexture19TextureClearChangedEv @ 1190 NONAME ; #<thunk>#
+	_ZThn4_NK16CHuiControlGroup4TypeEv @ 1191 NONAME ; #<thunk>#
+	_ZThn4_NK16CHuiControlGroup9SessionIdEv @ 1192 NONAME ; #<thunk>#
+	_ZThn4_NK17THuiTextureHandle11SegmentNameEi @ 1193 NONAME ; #<thunk>#
+	_ZThn4_NK17THuiTextureHandle11SegmentSizeEi @ 1194 NONAME ; #<thunk>#
+	_ZThn4_NK17THuiTextureHandle12SegmentCountEv @ 1195 NONAME ; #<thunk>#
+	_ZThn4_NK17THuiTextureHandle13SegmentOffsetEi @ 1196 NONAME ; #<thunk>#
+	_ZThn4_NK17THuiTextureHandle18SegmentTextureSizeEi @ 1197 NONAME ; #<thunk>#
+	_ZThn4_NK17THuiTextureHandle4SizeEv @ 1198 NONAME ; #<thunk>#
+	_ZThn4_NK19CHuiAnimatedTexture10HasContentEv @ 1199 NONAME ; #<thunk>#
+	_ZThn4_NK19CHuiAnimatedTexture14TextureChangedEv @ 1200 NONAME ; #<thunk>#
+	_ZThn4_NK19CHuiAnimatedTexture15ShadowedTextureEv @ 1201 NONAME ; #<thunk>#
+	_ZThn4_NK19CHuiAnimatedTexture16SegmentedTextureEv @ 1202 NONAME ; #<thunk>#
+	_ZThn4_NK19CHuiAnimatedTexture19TextureClearChangedEv @ 1203 NONAME ; #<thunk>#
+	_ZThn4_NK8CHuiMesh4TypeEv @ 1204 NONAME ; #<thunk>#
+	_ZThn4_NK8CHuiMesh9SessionIdEv @ 1205 NONAME ; #<thunk>#
+	_ZThn4_NK9CHuiBrush4TypeEv @ 1206 NONAME ; #<thunk>#
+	_ZThn4_NK9CHuiBrush9SessionIdEv @ 1207 NONAME ; #<thunk>#
+	_ZThn52_N21CHuiDisplayCoeControl19HandleControlEventLEP11CCoeControlN19MCoeControlObserver9TCoeEventE @ 1208 NONAME ; #<thunk>#
+	_ZThn8_N10CHuiLayout12SetSessionIdEi @ 1209 NONAME ; #<thunk>#
+	_ZThn8_N10CHuiVisual12SetSessionIdEi @ 1210 NONAME ; #<thunk>#
+	_ZThn8_N11CHuiControl11OfferEventLERK9THuiEvent @ 1211 NONAME ; #<thunk>#
+	_ZThn8_N11CHuiControlD0Ev @ 1212 NONAME ; #<thunk>#
+	_ZThn8_N11CHuiControlD1Ev @ 1213 NONAME ; #<thunk>#
+	_ZThn8_N11CHuiTextureD0Ev @ 1214 NONAME ; #<thunk>#
+	_ZThn8_N11CHuiTextureD1Ev @ 1215 NONAME ; #<thunk>#
+	_ZThn8_N14CHuiGridLayout12SetSessionIdEi @ 1216 NONAME ; #<thunk>#
+	_ZThn8_N19CHuiAnimatedTextureD0Ev @ 1217 NONAME ; #<thunk>#
+	_ZThn8_N19CHuiAnimatedTextureD1Ev @ 1218 NONAME ; #<thunk>#
+	_ZThn8_N23CHuiGifAnimationTextureD0Ev @ 1219 NONAME ; #<thunk>#
+	_ZThn8_N23CHuiGifAnimationTextureD1Ev @ 1220 NONAME ; #<thunk>#
+	_ZThn8_NK10CHuiLayout4TypeEv @ 1221 NONAME ; #<thunk>#
+	_ZThn8_NK10CHuiLayout9SessionIdEv @ 1222 NONAME ; #<thunk>#
+	_ZThn8_NK10CHuiVisual4TypeEv @ 1223 NONAME ; #<thunk>#
+	_ZThn8_NK10CHuiVisual9SessionIdEv @ 1224 NONAME ; #<thunk>#
+	_ZThn8_NK11CHuiTexture11SegmentNameEi @ 1225 NONAME ; #<thunk>#
+	_ZThn8_NK11CHuiTexture11SegmentSizeEi @ 1226 NONAME ; #<thunk>#
+	_ZThn8_NK11CHuiTexture12SegmentCountEv @ 1227 NONAME ; #<thunk>#
+	_ZThn8_NK11CHuiTexture18SegmentTextureSizeEi @ 1228 NONAME ; #<thunk>#
+	_ZThn8_NK11CHuiTexture4SizeEv @ 1229 NONAME ; #<thunk>#
+	_ZThn8_NK14CHuiGridLayout4TypeEv @ 1230 NONAME ; #<thunk>#
+	_ZThn8_NK14CHuiGridLayout9SessionIdEv @ 1231 NONAME ; #<thunk>#
+	_ZThn8_NK19CHuiAnimatedTexture11SegmentNameEi @ 1232 NONAME ; #<thunk>#
+	_ZThn8_NK19CHuiAnimatedTexture11SegmentSizeEi @ 1233 NONAME ; #<thunk>#
+	_ZThn8_NK19CHuiAnimatedTexture12SegmentCountEv @ 1234 NONAME ; #<thunk>#
+	_ZThn8_NK19CHuiAnimatedTexture13SegmentOffsetEi @ 1235 NONAME ; #<thunk>#
+	_ZThn8_NK19CHuiAnimatedTexture18SegmentTextureSizeEi @ 1236 NONAME ; #<thunk>#
+	_ZThn8_NK19CHuiAnimatedTexture4SizeEv @ 1237 NONAME ; #<thunk>#
+	_ZN10CHuiVisual19UpdateSiblingLayoutEi @ 1238 NONAME
+	_ZNK10CHuiVisual14PixelsToMetricERK13THuiRealPointR12THuiXYMetric18THuiReferenceState @ 1239 NONAME
+	_ZNK10CHuiVisual15PaddingInPixelsE18THuiReferenceState @ 1240 NONAME
+	_ZNK10CHuiVisual17PixelPointInLocalERK13THuiRealPoint18THuiReferenceState @ 1241 NONAME
+	_ZNK10CHuiVisual18LocalPointInPixelsERK13THuiRealPoint18THuiReferenceState @ 1242 NONAME
+	_ZNK10CHuiVisual20BoxMetricToPixelRectERK13THuiBoxMetricR12THuiRealRect18THuiReferenceState @ 1243 NONAME
+	_ZNK10CHuiVisual23MetricReferenceInPixelsERK12THuiXYMetric18THuiReferenceState @ 1244 NONAME
+	_ZNK10CHuiVisual14MetricToPixelsERK12THuiXYMetric18THuiReferenceState @ 1245 NONAME
+	_ZN14CHuiLineVisual8SetColorERK4TRgb @ 1246 NONAME
+	_ZNK10CHuiLayout32MetricReferenceForLayoutInPixelsERK12THuiXYMetric @ 1247 NONAME
+	_ZN13CHuiCurvePath10AppendArcLERK13THuiRealPointRK12THuiRealSizefff @ 1248 NONAME
+	_ZN13CHuiCurvePath11AppendLineLERK13THuiRealPointS2_f @ 1249 NONAME
+	_ZN15CHuiImageVisual13SetDropShadowERK10THuiMetric @ 1250 NONAME
+	_ZN15CHuiImageVisual13SetDropShadowERK12THuiXYMetric @ 1251 NONAME
+	_ZN14CHuiFrameBrush13SetEdgeOffsetERK12THuiXYMetric @ 1252 NONAME
+	_ZN14CHuiFrameBrush4NewLERK11TAknsItemIDRK12THuiXYMetric @ 1253 NONAME
+	_ZN14CHuiFrameBrush5NewLCERK11TAknsItemIDRK12THuiXYMetric @ 1254 NONAME
+	_ZN15CHuiBorderBrush12SetThicknessERK12THuiXYMetric @ 1255 NONAME
+	_ZN15CHuiBorderBrush13SetEdgeOffsetERK12THuiXYMetric @ 1256 NONAME
+	_ZN15CHuiBorderBrush14SetImageOffsetERK12THuiXYMetric @ 1257 NONAME
+	_ZN15CHuiBorderBrush4NewLERK12THuiXYMetricS2_ @ 1258 NONAME
+	_ZN15CHuiBorderBrush5NewLCERK12THuiXYMetricS2_ @ 1259 NONAME
+	_ZN19CHuiDropShadowBrush11SetSoftnessERK10THuiMetric @ 1260 NONAME
+	_ZN19CHuiDropShadowBrush4NewLERK10THuiMetric @ 1261 NONAME
+	_ZN19CHuiDropShadowBrush5NewLCERK10THuiMetric @ 1262 NONAME
+	_ZN19CHuiDropShadowBrush8SetColorERK4TRgb @ 1263 NONAME
+	_ZN19CHuiDropShadowBrush8SetDepthERK10THuiMetric @ 1264 NONAME
+	_ZN21CHuiShadowBorderBrush4NewLERK10THuiMetric @ 1265 NONAME
+	_ZN21CHuiShadowBorderBrush5NewLCERK10THuiMetric @ 1266 NONAME
+	_ZN21CHuiShadowBorderBrush8SetWidthERK10THuiMetric @ 1267 NONAME
+	_ZN24CHuiSkinAnimationTexture2IdEv @ 1268 NONAME
+	_ZN24CHuiSkinAnimationTexture4NewLERK7TDesC16R18CHuiTextureManageri22THuiTextureUploadFlags @ 1269 NONAME
+	_ZN24CHuiSkinAnimationTexture4StopEv @ 1270 NONAME
+	_ZN24CHuiSkinAnimationTexture5StartEv @ 1271 NONAME
+	_ZN24CHuiSkinAnimationTextureD0Ev @ 1272 NONAME
+	_ZN24CHuiSkinAnimationTextureD1Ev @ 1273 NONAME
+	_ZN24CHuiSkinAnimationTextureD2Ev @ 1274 NONAME
+	_ZThn4_N24CHuiSkinAnimationTextureD0Ev @ 1275 NONAME ; #<thunk>#
+	_ZThn4_N24CHuiSkinAnimationTextureD1Ev @ 1276 NONAME ; #<thunk>#
+	_ZThn8_N24CHuiSkinAnimationTextureD0Ev @ 1277 NONAME ; #<thunk>#
+	_ZThn8_N24CHuiSkinAnimationTextureD1Ev @ 1278 NONAME ; #<thunk>#
+	_ZN10CHuiLayout26SetScrollOffsetInBaseUnitsERK13THuiRealPointi @ 1279 NONAME
+	_ZN10CHuiVisual10SetMaxSizeERK12THuiRealSize @ 1280 NONAME
+	_ZN10CHuiVisual10SetMinSizeERK12THuiRealSize @ 1281 NONAME
+	_ZN10CHuiVisual21SetCenteredPosAndSizeERK13THuiRealPointRK12THuiRealSizei @ 1282 NONAME
+	_ZN10CHuiVisual4MoveERK13THuiRealPointi @ 1283 NONAME
+	_ZNK10CHuiVisual18MaxSizeInBaseUnitsEv @ 1284 NONAME
+	_ZNK10CHuiVisual18MinSizeInBaseUnitsEv @ 1285 NONAME
+	_ZN10CHuiVisual19SetTactileFeedbackLEii @ 1286 NONAME
+	_ZN10CHuiVisual21RemoveTactileFeedbackEi @ 1287 NONAME
+	_ZNK10CHuiVisual18HasTactileFeedbackEi @ 1288 NONAME
+	_ZN14CHuiGridLayout15LayoutModeFlagsE17THuiGridDimension @ 1289 NONAME
+	_ZN14CHuiGridLayout18SetLayoutModeFlagsE17THuiGridDimensionj @ 1290 NONAME
+	_ZN14CHuiGridLayout20ClearLayoutModeFlagsE17THuiGridDimensionj @ 1291 NONAME
+	_ZN16CHuiThemeManager18GetSkinImageParamsERK7TDesC16 @ 1292 NONAME
+	_ZN16CHuiThemeManager9GetItemIDERK7TDesC16R11TAknsItemID @ 1293 NONAME
+	_ZNK7CHuiEnv12ThemeManagerEv @ 1294 NONAME
+	_ZN11CHuiDisplay11DisplayTypeEv @ 1295 NONAME
+	_ZN11CHuiDisplay15ScreenBufferUidEv @ 1296 NONAME
+	_ZN11CHuiDisplay18GetGraphicsContextERK4TUid @ 1297 NONAME
+	_ZN11CHuiDisplay19GetDrawingInterfaceERK4TUid @ 1298 NONAME
+	_ZN11CHuiDisplay19SetScreenBufferLockEi @ 1299 NONAME
+	_ZN11CHuiDisplay24AddScreenBufferObserverLEP24MHuiScreenBufferObserver @ 1300 NONAME
+	_ZN11CHuiDisplay26RemoveScreenBufferObserverEv @ 1301 NONAME
+	_ZN7CHuiEnv11NewDisplayLERK5TRectP11CCoeControliP11CHuiDisplayi4TUid @ 1302 NONAME
+	_ZNK11CHuiDisplay20IsScreenBufferLockedEv @ 1303 NONAME
+	_ZNK7CHuiEnv7DisplayEi @ 1304 NONAME
+	_ZTI21CHuiFbsBitmapBufferGc @ 1305 NONAME ; #<TI>#
+	_ZTV21CHuiFbsBitmapBufferGc @ 1306 NONAME ; #<VT>#
+	_ZN16CHuiThemeManager10GetItemIdLERK7TDesC16R11TAknsItemID @ 1307 NONAME
+	_ZN16CHuiThemeManager19GetSkinImageParamsLERK7TDesC16 @ 1308 NONAME
+	_ZN20CHuiTextStyleManager15DeleteTextStyleEi @ 1309 NONAME
+	_ZN7CHuiEnv22SetFPSCounterThresholdEj @ 1310 NONAME
+	_ZN11CHuiDisplay16ShowDirtyRegionsEi @ 1311 NONAME
+	_ZN11CHuiDisplay19SetBackgroundItemsLERK6RArrayI25THuiDisplayBackgroundItemE @ 1312 NONAME
+	_ZN25THuiDisplayBackgroundItem17SetSkinBackgroundERK11TAknsItemID @ 1313 NONAME
+	_ZN25THuiDisplayBackgroundItem7SetRectERK5TRect @ 1314 NONAME
+	_ZN25THuiDisplayBackgroundItem8SetColorERK11TAknsItemIDi @ 1315 NONAME
+	_ZN25THuiDisplayBackgroundItem8SetColorERK4TRgb @ 1316 NONAME
+	_ZN25THuiDisplayBackgroundItemC1ERK5TRect @ 1317 NONAME
+	_ZN25THuiDisplayBackgroundItemC1ERK5TRectRK11TAknsItemID @ 1318 NONAME
+	_ZN25THuiDisplayBackgroundItemC1ERK5TRectRK11TAknsItemIDi @ 1319 NONAME
+	_ZN25THuiDisplayBackgroundItemC1ERK5TRectRK4TRgb @ 1320 NONAME
+	_ZN25THuiDisplayBackgroundItemC1Ev @ 1321 NONAME
+	_ZN25THuiDisplayBackgroundItemC2ERK5TRect @ 1322 NONAME
+	_ZN25THuiDisplayBackgroundItemC2ERK5TRectRK11TAknsItemID @ 1323 NONAME
+	_ZN25THuiDisplayBackgroundItemC2ERK5TRectRK11TAknsItemIDi @ 1324 NONAME
+	_ZN25THuiDisplayBackgroundItemC2ERK5TRectRK4TRgb @ 1325 NONAME
+	_ZN25THuiDisplayBackgroundItemC2Ev @ 1326 NONAME
+	_ZN11CHuiDisplay26GetPreferredTextureFormatsER13RPointerArrayINS_20CTextureBitmapFormatEE @ 1327 NONAME
+	_ZN18CHuiTextureManager24UpdateTextureFromBitmapLEiP18MHuiBitmapProvider @ 1328 NONAME
+	_ZN13THuiTextStyle25SetTextPaneHeightInPixelsEii @ 1329 NONAME
+	_ZNK14CHuiTextVisual9TextStyleEv @ 1330 NONAME
+	_ZN8THuiFontC1ERKS_ @ 1331 NONAME
+	_ZN8THuiFontC2ERKS_ @ 1332 NONAME
+	_ZN8THuiFontaSERKS_ @ 1333 NONAME
+	_ZN11CHuiTexture17SetAutoSizeParamsERK25THuiTextureAutoSizeParams @ 1334 NONAME
+	_ZN11CHuiTexture25EnableAutoSizeCalculationEi @ 1335 NONAME
+	_ZN25THuiTextureAutoSizeParams16SetMinSizeChangeEi @ 1336 NONAME
+	_ZN25THuiTextureAutoSizeParams21SetSizeLowerThresholdEi @ 1337 NONAME
+	_ZN25THuiTextureAutoSizeParams21SetSizeUpperThresholdEi @ 1338 NONAME
+	_ZN25THuiTextureAutoSizeParams26SetDownsizeSettleThresholdEi @ 1339 NONAME
+	_ZN25THuiTextureAutoSizeParamsC1Ev @ 1340 NONAME
+	_ZN25THuiTextureAutoSizeParamsC2Ev @ 1341 NONAME
+	_ZN27CHuiAutoSizeImageLoaderUtil20PreferredSizeChangedERK11CHuiTextureiRK12THuiRealSize @ 1342 NONAME
+	_ZN27CHuiAutoSizeImageLoaderUtil28PreferredSizeReportCompletedEv @ 1343 NONAME
+	_ZNK11CHuiTexture14AutoSizeParamsEv @ 1344 NONAME
+	_ZNK25THuiTextureAutoSizeParams13MinSizeChangeEv @ 1345 NONAME
+	_ZNK25THuiTextureAutoSizeParams18SizeLowerThresholdEv @ 1346 NONAME
+	_ZNK25THuiTextureAutoSizeParams18SizeUpperThresholdEv @ 1347 NONAME
+	_ZNK25THuiTextureAutoSizeParams23DownsizeSettleThresholdEv @ 1348 NONAME
+	_ZTI27CHuiAutoSizeImageLoaderUtil @ 1349 NONAME ; #<TI>#
+	_ZTV27CHuiAutoSizeImageLoaderUtil @ 1350 NONAME ; #<VT>#
+	_ZThn48_N27CHuiAutoSizeImageLoaderUtil20PreferredSizeChangedERK11CHuiTextureiRK12THuiRealSize @ 1351 NONAME ; #<thunk>#
+	_ZThn48_N27CHuiAutoSizeImageLoaderUtil28PreferredSizeReportCompletedEv @ 1352 NONAME ; #<thunk>#
+	_ZN11CHuiDisplay20ScreenBufferObserverEv @ 1353 NONAME
+	_ZN7CHuiEnv25ChangeRefreshLoopPriorityEN7CActive9TPriorityE @ 1354 NONAME
+	_ZN14CHuiFrameBrush4NewLERK9THuiImageRK12THuiXYMetric @ 1355 NONAME
+	_ZN14CHuiFrameBrush5NewLCERK9THuiImageRK12THuiXYMetric @ 1356 NONAME
+	_ZN14CHuiFrameBrush8SetImageENS_11TFramePartsERK9THuiImage @ 1357 NONAME
+	_ZN14CHuiFrameBrush8SetImageERK9THuiImage @ 1358 NONAME
+	_ZN11CHuiDisplay16DrawScreenBufferEv @ 1359 NONAME
+	_ZN10CHuiVisual17EnableDropShadowLEi @ 1360 NONAME
+	_ZN14CHuiDropShadow8SetColorERK11TAknsItemIDii @ 1361 NONAME
+	_ZN14CHuiDropShadow8SetColorERK4TRgbi @ 1362 NONAME
+	_ZN14CHuiDropShadow9SetOffsetEf10THuiMetrici @ 1363 NONAME
+	_ZNK10CHuiVisual17DropShadowHandlerEv @ 1364 NONAME
+	_ZN23CHuiGifAnimationTexture15EnableAnimationEi @ 1365 NONAME
+	_ZN11CHuiDisplay26SetVisibleAreaClippingRectERK5TRect @ 1366 NONAME
+	_ZN11CHuiDisplay20SetDrawVisualOutlineEj @ 1367 NONAME
+	_ZN14CHuiTextVisual17SetHighlightRangeEiiR4TRgbS1_ @ 1368 NONAME
+	_ZN10CHuiStatic14Gles10RendererEv @ 1369 NONAME
+	_ZN10CHuiStatic15ContinueRefreshEv @ 1370 NONAME
+	_ZN10CHuiStatic20CurrentRenderSurfaceEv @ 1371 NONAME
+	_ZN10CHuiStatic23SetCurrentRenderSurfaceEP17MHuiRenderSurface @ 1372 NONAME
+	_ZN10CHuiStatic8RendererEv @ 1373 NONAME
+	_ZN10CHuiVisual12GetDualAlphaEffRiS0_ @ 1374 NONAME
+	_ZN11CHuiDisplay12NativeWindowEv @ 1375 NONAME
+	_ZN11CHuiDisplay13NativeControlEv @ 1376 NONAME
+	_ZN11CHuiM3GMesh10ConstructLEv @ 1377 NONAME
+	_ZN11CHuiM3GMesh10LoadSceneLERK7TDesC16P16M3GInterfaceImpl @ 1378 NONAME
+	_ZN11CHuiM3GMesh11RotatePitchEf @ 1379 NONAME
+	_ZN11CHuiM3GMesh11StoreCameraEv @ 1380 NONAME
+	_ZN11CHuiM3GMesh12ReleaseSceneEv @ 1381 NONAME
+	_ZN11CHuiM3GMesh13RestoreCameraEv @ 1382 NONAME
+	_ZN11CHuiM3GMesh15SetViewportRectERK12THuiRealRect @ 1383 NONAME
+	_ZN11CHuiM3GMesh18AnimateControllersEv @ 1384 NONAME
+	_ZN11CHuiM3GMesh9RotateYawEf @ 1385 NONAME
+	_ZN11CHuiM3GMeshC1Ev @ 1386 NONAME
+	_ZN11CHuiM3GMeshC2Ev @ 1387 NONAME
+	_ZN11CHuiM3GMeshD0Ev @ 1388 NONAME
+	_ZN11CHuiM3GMeshD1Ev @ 1389 NONAME
+	_ZN11CHuiM3GMeshD2Ev @ 1390 NONAME
+	_ZN11CHuiTexture10SetSegmentEiRK5TSizeRK6TPointS2_ @ 1391 NONAME
+	_ZN11CHuiTexture12ResetShadowsEv @ 1392 NONAME
+	_ZN11CHuiTexture14BaseConstructLEv @ 1393 NONAME
+	_ZN11CHuiTexture16TextureExtensionERK4TUidPPv @ 1394 NONAME
+	_ZN11CHuiTexture17SetTextureChangedEi @ 1395 NONAME
+	_ZN11CHuiTexture5ResetEv @ 1396 NONAME
+	_ZN11CHuiTexture7ReleaseEv @ 1397 NONAME
+	_ZN11CHuiTexture8RestoreLEv @ 1398 NONAME
+	_ZN11CHuiTextureC2Ev @ 1399 NONAME
+	_ZN13CHuiCurvePath27MappingFunctionClearChangedEv @ 1400 NONAME
+	_ZN13CHuiCurvePath6UpdateEfffP19MHuiMappingFunctionS1_ @ 1401 NONAME
+	_ZN13CHuiCurvePathC1Ev @ 1402 NONAME
+	_ZN13CHuiCurvePathC2Ev @ 1403 NONAME
+	_ZN15CHuiMatrixStack12LoadIdentityEv @ 1404 NONAME
+	_ZN15CHuiMatrixStack3PopEv @ 1405 NONAME
+	_ZN15CHuiMatrixStack4NewLEv @ 1406 NONAME
+	_ZN15CHuiMatrixStack4PushEv @ 1407 NONAME
+	_ZN15CHuiMatrixStack7CurrentEv @ 1408 NONAME
+	_ZN15CHuiMatrixStack7TMatrixC1Ev @ 1409 NONAME
+	_ZN15CHuiMatrixStack7TMatrixC2Ev @ 1410 NONAME
+	_ZN15CHuiMatrixStack8MultiplyERKNS_7TMatrixE @ 1411 NONAME
+	_ZN15THuiFontManagerC1Ev @ 1412 NONAME
+	_ZN15THuiFontManagerC2Ev @ 1413 NONAME
+	_ZN15THuiFontManagerD0Ev @ 1414 NONAME
+	_ZN15THuiFontManagerD1Ev @ 1415 NONAME
+	_ZN15THuiFontManagerD2Ev @ 1416 NONAME
+	_ZN17MHuiRenderSurfaceD0Ev @ 1417 NONAME
+	_ZN17MHuiRenderSurfaceD1Ev @ 1418 NONAME
+	_ZN17MHuiRenderSurfaceD2Ev @ 1419 NONAME
+	_ZN18CHuiProceduralMeshC1Ev @ 1420 NONAME
+	_ZN18CHuiProceduralMeshC2Ev @ 1421 NONAME
+	_ZN18CHuiTextureManager12SetProcessorEP20CHuiTextureProcessor @ 1422 NONAME
+	_ZN18CHuiTextureManager13RemoveTextureER11CHuiTexture @ 1423 NONAME
+	_ZN18CHuiTextureManager14AppendTextureLEP11CHuiTexturei @ 1424 NONAME
+	_ZN18CHuiTextureManager14BaseConstructLEv @ 1425 NONAME
+	_ZN18CHuiTextureManager14CreateTextureLER10CFbsBitmapPKS0_22THuiTextureUploadFlagsi @ 1426 NONAME
+	_ZN18CHuiTextureManager4RunLEv @ 1427 NONAME
+	_ZN18CHuiTextureManager7ReleaseEv @ 1428 NONAME
+	_ZN18CHuiTextureManager8DoCancelEv @ 1429 NONAME
+	_ZN18CHuiTextureManager8RestoreLEv @ 1430 NONAME
+	_ZN18CHuiTextureManager8RunErrorEi @ 1431 NONAME
+	_ZN18CHuiTextureManagerC1ER7CHuiEnv @ 1432 NONAME
+	_ZN18CHuiTextureManagerC2ER7CHuiEnv @ 1433 NONAME
+	_ZN18CHuiTextureManagerD0Ev @ 1434 NONAME
+	_ZN18CHuiTextureManagerD1Ev @ 1435 NONAME
+	_ZN18CHuiTextureManagerD2Ev @ 1436 NONAME
+	_ZN20CHuiTextureProcessor7ReleaseEv @ 1437 NONAME
+	_ZN20CHuiTextureProcessor8RestoreLEv @ 1438 NONAME
+	_ZN20CHuiTextureProcessorC2ER7CHuiEnv @ 1439 NONAME
+	_ZN20CHuiTextureProcessorD0Ev @ 1440 NONAME
+	_ZN20CHuiTextureProcessorD1Ev @ 1441 NONAME
+	_ZN20CHuiTextureProcessorD2Ev @ 1442 NONAME
+	_ZN22CHuiRasterizedTextMesh4NewLEv @ 1443 NONAME
+	_ZN6CHuiGc10SetQualityE11THuiQuality @ 1444 NONAME
+	_ZN6CHuiGc11SetPenColorERK4TRgb @ 1445 NONAME
+	_ZN6CHuiGc16DrawStretchImageENS_12TStretchModeERK9THuiImageRK12THuiRealRectii @ 1446 NONAME
+	_ZN6CHuiGc4ClipERK5TRect @ 1447 NONAME
+	_ZN6CHuiGc7DisableENS_8TFeatureE @ 1448 NONAME
+	_ZN6CHuiGc7PopClipEv @ 1449 NONAME
+	_ZN6CHuiGc7SetClipERK5TRect @ 1450 NONAME
+	_ZN6CHuiGc8DrawTextERK12CHuiTextMeshRK12THuiRealRectf @ 1451 NONAME
+	_ZN6CHuiGc8PushClipEv @ 1452 NONAME
+	_ZN6CHuiGc9DrawTextLERK7TDesC16RK12THuiRealRectf @ 1453 NONAME
+	_ZN6CHuiGcC2Ev @ 1454 NONAME
+	_ZN6CHuiGcD0Ev @ 1455 NONAME
+	_ZN6CHuiGcD1Ev @ 1456 NONAME
+	_ZN6CHuiGcD2Ev @ 1457 NONAME
+	_ZN7CHuiEnv14GlesRefCounterEv @ 1458 NONAME
+	_ZN7HuiUtil11CopyBitmapLERK10CFbsBitmap @ 1459 NONAME
+	_ZN7HuiUtil11RealCompareEfff @ 1460 NONAME
+	_ZN7HuiUtil6AssertEi @ 1461 NONAME
+	_ZNK11CHuiDisplay13RenderSurfaceEv @ 1462 NONAME
+	_ZNK11CHuiDisplay18IsDisplayTypeTvOutEv @ 1463 NONAME
+	_ZNK11CHuiM3GMesh24AnimationControllerCountEv @ 1464 NONAME
+	_ZNK11CHuiTexture16GetShadowTextureER17THuiTextureHandle @ 1465 NONAME
+	_ZNK13CHuiCurvePath10NeedUpdateEv @ 1466 NONAME
+	_ZNK13CHuiCurvePath12SegmentCountEv @ 1467 NONAME
+	_ZNK13CHuiCurvePath15EvaluateSegmentEfRKNS_8TSegmentER13THuiRealPointPS3_ @ 1468 NONAME
+	_ZNK13CHuiCurvePath22MappingFunctionChangedEv @ 1469 NONAME
+	_ZNK13CHuiCurvePath7SegmentEi @ 1470 NONAME
+	_ZNK13CHuiCurvePath8MapValueEfi @ 1471 NONAME
+	_ZNK13CHuiCurvePath9GetVisualEv @ 1472 NONAME
+	_ZNK15CHuiMatrixStack7TMatrix8MultiplyER13THuiRealPoint @ 1473 NONAME
+	_ZNK6CHuiGc10ProjectionEv @ 1474 NONAME
+	_ZNK6CHuiGc11DisplayAreaEv @ 1475 NONAME
+	_ZNK6CHuiGc11OrientationEv @ 1476 NONAME
+	_ZNK6CHuiGc12UnOrientRectERK5TRect @ 1477 NONAME
+	_ZNK6CHuiGc13FrustumOffsetEv @ 1478 NONAME
+	_ZNK6CHuiGc13PenColorAlphaEv @ 1479 NONAME
+	_ZNK6CHuiGc14RawDisplayAreaEv @ 1480 NONAME
+	_ZNK6CHuiGc18ProjectionViewportEv @ 1481 NONAME
+	_ZNK6CHuiGc20WindowTransformationEv @ 1482 NONAME
+	_ZNK6CHuiGc7QualityEv @ 1483 NONAME
+	_ZNK6CHuiGc8ClipRectEv @ 1484 NONAME
+	_ZNK6CHuiGc8PenAlphaEv @ 1485 NONAME
+	_ZNK6CHuiGc8PenColorEv @ 1486 NONAME
+	_ZThn12_NK11CHuiTexture16GetShadowTextureER17THuiTextureHandle @ 1487 NONAME ; #<thunk>#
+	_ZThn4_N11CHuiTexture16TextureExtensionERK4TUidPPv @ 1488 NONAME ; #<thunk>#
+	_ZThn4_N13CHuiCurvePath27MappingFunctionClearChangedEv @ 1489 NONAME ; #<thunk>#
+	_ZThn4_NK13CHuiCurvePath22MappingFunctionChangedEv @ 1490 NONAME ; #<thunk>#
+	_ZThn4_NK13CHuiCurvePath8MapValueEfi @ 1491 NONAME ; #<thunk>#
+	_ZN10CHuiStatic14Gles20RendererEv @ 1492 NONAME
+	_ZN10CHuiStatic12Vg10RendererEv @ 1493 NONAME
+	_ZN10CHuiStatic14Gles11RendererEv @ 1494 NONAME
+	_ZN11CHuiM3GMesh20SetAnimationPositionEifi @ 1495 NONAME
+	_ZN11CHuiM3GMesh23StopAnimationControllerEi @ 1496 NONAME
+	_ZN11CHuiM3GMesh24StartAnimationControllerEi @ 1497 NONAME
+	_ZN6CHuiGc10DrawImagesERK9THuiImageS2_RK12THuiRealSizeRK12THuiRealRect @ 1498 NONAME
+	_ZN6CHuiGc10DrawImagesERK9THuiImageS2_RK13THuiRealPointRK12THuiRealSize @ 1499 NONAME
+	_ZN6CHuiGc9DrawImageERK9THuiImageRK12THuiRealRect @ 1500 NONAME
+	_ZN6CHuiGc9DrawImageERK9THuiImageRK12THuiRealSizeRK12THuiRealRect @ 1501 NONAME
+	_ZN6CHuiGc9DrawImageERK9THuiImageRK13THuiRealPointRK12THuiRealSize @ 1502 NONAME
+	_ZN8CHuiMesh23StopAnimationControllerEi @ 1503 NONAME
+	_ZN8CHuiMesh24StartAnimationControllerEi @ 1504 NONAME
+	_ZNK11CHuiDisplay5UsageEv @ 1505 NONAME
+	_ZNK11CHuiTexture13SegmentOffsetEi @ 1506 NONAME
+	_ZNK6CHuiGc15FarClipDistanceEv @ 1507 NONAME
+	_ZNK6CHuiGc16NearClipDistanceEv @ 1508 NONAME
+	_ZTI11CHuiM3GMesh @ 1509 NONAME ; #<TI>#
+	_ZTI13CHuiCurvePath @ 1510 NONAME ; #<TI>#
+	_ZTI17MHuiRenderSurface @ 1511 NONAME ; #<TI>#
+	_ZTI18CHuiProceduralMesh @ 1512 NONAME ; #<TI>#
+	_ZTI18CHuiTextureManager @ 1513 NONAME ; #<TI>#
+	_ZTI20CHuiTextureProcessor @ 1514 NONAME ; #<TI>#
+	_ZTI6CHuiGc @ 1515 NONAME ; #<TI>#
+	_ZTV11CHuiM3GMesh @ 1516 NONAME ; #<VT>#
+	_ZTV13CHuiCurvePath @ 1517 NONAME ; #<VT>#
+	_ZTV17MHuiRenderSurface @ 1518 NONAME ; #<VT>#
+	_ZTV18CHuiProceduralMesh @ 1519 NONAME ; #<VT>#
+	_ZTV18CHuiTextureManager @ 1520 NONAME ; #<VT>#
+	_ZTV20CHuiTextureProcessor @ 1521 NONAME ; #<VT>#
+	_ZTV6CHuiGc @ 1522 NONAME ; #<VT>#
+	_ZThn8_NK11CHuiTexture13SegmentOffsetEi @ 1523 NONAME ; #<thunk>#
+	_ZN7CHuiEnv15EnableDebugFlagEj @ 1524 NONAME
+	_ZN11CHuiM3GMesh10LoadSceneLERK7TDesC16 @ 1525 NONAME
+	_ZN13CHuiCurvePath14SetNeedsUpdateEv @ 1526 NONAME
+	_ZN18CHuiProceduralMesh13UpdateSurfaceEff @ 1527 NONAME
+	_ZN18CHuiTextureManager12TextureEntryEi @ 1528 NONAME
+	_ZN18CHuiTextureManager13CTextureEntryD0Ev @ 1529 NONAME
+	_ZN18CHuiTextureManager13CTextureEntryD1Ev @ 1530 NONAME
+	_ZN18CHuiTextureManager13CTextureEntryD2Ev @ 1531 NONAME
+	_ZN18CHuiTextureManager18NotifySkinChangedLEv @ 1532 NONAME
+	_ZN18CHuiTextureManager20ClearChangedTexturesEv @ 1533 NONAME
+	_ZN18CHuiTextureManager21SetHasChangedTexturesEv @ 1534 NONAME
+	_ZN18CHuiTextureManager24AddAnimatedTextureGroupLERK6RArrayIiE @ 1535 NONAME
+	_ZN18CHuiTextureManager26EnableTexMemoryCalculationEi @ 1536 NONAME
+	_ZN18CHuiTextureManager26RemoveAnimatedTextureGroupEi @ 1537 NONAME
+	_ZN20CHuiTextureProcessor3EnvEv @ 1538 NONAME
+	_ZN6CHuiGc11SetPenAlphaEi @ 1539 NONAME
+	_ZN6CHuiGc13SetProjectionENS_11TProjectionE @ 1540 NONAME
+	_ZN6CHuiGc13SetProjectionENS_11TProjectionERK5TRect @ 1541 NONAME
+	_ZN6CHuiGc14SetDisplayAreaERK5TRect @ 1542 NONAME
+	_ZN6CHuiGc14SetOrientationENS_12TOrientationE @ 1543 NONAME
+	_ZN6CHuiGc16SetFrustumOffsetERK13THuiRealPoint @ 1544 NONAME
+	_ZN6CHuiGc16SetPenColorAlphaERK4TRgb @ 1545 NONAME
+	_ZN6CHuiGc19LocaleTextAlignmentEv @ 1546 NONAME
+	_ZN6CHuiGc23SetWindowTransformationEP18CHuiTransformation @ 1547 NONAME
+	_ZN6CHuiGc24NotifyImagePreferredSizeERK9THuiImage12THuiRealRect @ 1548 NONAME
+	_ZN6CHuiGc4FontEv @ 1549 NONAME
+	_ZN6CHuiGc7SetFontER8THuiFont @ 1550 NONAME
+	_ZN6CHuiGc8SetAlignE19THuiAlignHorizontal17THuiAlignVertical @ 1551 NONAME
+	_ZNK11CHuiM3GMesh4DrawER6CHuiGcPK9THuiImageS4_f @ 1552 NONAME
+	_ZNK13CHuiCurvePath15CalculateLengthEv @ 1553 NONAME
+	_ZNK13CHuiCurvePath15IsLegacyApiUsedEv @ 1554 NONAME
+	_ZNK13CHuiCurvePath4DrawERK6TPointP6CHuiGc @ 1555 NONAME
+	_ZNK13CHuiCurvePath9SetVisualEPK10CHuiVisual @ 1556 NONAME
+	_ZNK18CHuiProceduralMesh4DrawER6CHuiGcPK9THuiImageS4_f @ 1557 NONAME
+	_ZNK18CHuiTextureManager11AdvanceTimeEf @ 1558 NONAME
+	_ZNK18CHuiTextureManager12CheckTextureERK7TDesC16i @ 1559 NONAME
+	_ZNK18CHuiTextureManager12CheckTextureEi @ 1560 NONAME
+	_ZNK18CHuiTextureManager17TextureEntryCountEv @ 1561 NONAME
+	_ZNK18CHuiTextureManager19NotifyTextureLoadedER11CHuiTextureii @ 1562 NONAME
+	_ZNK6CHuiGc11AlignOffsetERK5TSize @ 1563 NONAME
+	_ZNK6CHuiGc13AlignVerticalEv @ 1564 NONAME
+	_ZNK6CHuiGc14ClipStackCountEv @ 1565 NONAME
+	_ZNK6CHuiGc15AlignHorizontalEv @ 1566 NONAME
+	_ZNK6CHuiGc8Offset2DEv @ 1567 NONAME
+	_ZNK6CHuiGc9FovFactorEv @ 1568 NONAME
+	_ZThn4_N18CHuiTextureManager13CTextureEntryD1Ev @ 1569 NONAME ; #<thunk>#
+	_ZN16CHuiRenderPlugin11CreateMeshLE12THuiMeshType @ 1570 NONAME
+	_ZN16CHuiRenderPlugin14CreateTextureLEPK17THuiTextureHandle @ 1571 NONAME
+	_ZN16CHuiRenderPlugin15CreateTextureLCEPK17THuiTextureHandle @ 1572 NONAME
+	_ZN16CHuiRenderPlugin16CreateCurvePathLEv @ 1573 NONAME
+	_ZN16CHuiRenderPlugin18DeleteNamedTextureEj @ 1574 NONAME
+	_ZN16CHuiRenderPlugin19NotifyDisplayCountLEj @ 1575 NONAME
+	_ZN16CHuiRenderPlugin20CreateRenderSurfaceLER11CHuiDisplay @ 1576 NONAME
+	_ZN16CHuiRenderPlugin21CreateTextureManagerLER7CHuiEnv @ 1577 NONAME
+	_ZN16CHuiRenderPlugin22DisableOffScreenBitmapEv @ 1578 NONAME
+	_ZN16CHuiRenderPlugin22EnableOffScreenBitmapLEi @ 1579 NONAME
+	_ZN16CHuiRenderPlugin22UpdateOffScreenBitmapLER11CHuiDisplay @ 1580 NONAME
+	_ZN16CHuiRenderPlugin28DrawOffScreenBitmapToWindowLER11CHuiDisplay @ 1581 NONAME
+	_ZN16CHuiRenderPlugin7ReleaseEv @ 1582 NONAME
+	_ZN16CHuiRenderPlugin8RestoreLEv @ 1583 NONAME
+	_ZN16CHuiRenderPlugin9CreateGcLEv @ 1584 NONAME
+	_ZN16CHuiRenderPluginC2E18THuiRenderPluginId @ 1585 NONAME
+	_ZN16CHuiRenderPluginD0Ev @ 1586 NONAME
+	_ZN16CHuiRenderPluginD1Ev @ 1587 NONAME
+	_ZN16CHuiRenderPluginD2Ev @ 1588 NONAME
+	_ZNK16CHuiRenderPlugin15OffScreenBitmapEv @ 1589 NONAME
+	_ZNK16CHuiRenderPlugin18CreateFontManagerLEv @ 1590 NONAME
+	_ZNK16CHuiRenderPlugin2IdEv @ 1591 NONAME
+	_ZNK16CHuiRenderPlugin6AllowsE21THuiRenderPluginAllow @ 1592 NONAME
+	_ZTI16CHuiRenderPlugin @ 1593 NONAME ; #<TI>#
+	_ZTV16CHuiRenderPlugin @ 1594 NONAME ; #<VT>#
+	_ZN6CHuiGc30EnableTransformedClippingRectsEi @ 1595 NONAME
+	_ZN6CHuiGc7SetClipERK5TRecti @ 1596 NONAME
+	_ZN6CHuiGc18TransformDirtyRectER12THuiRealRect @ 1597 NONAME
+	_ZN11CHuiM3GMesh16M3GMeshExtensionERK4TUidPPv @ 1598 NONAME
+	_ZN13CHuiCurvePath18CurvePathExtensionERK4TUidPPv @ 1599 NONAME
+	_ZN18CHuiProceduralMesh23ProceduralMeshExtensionERK4TUidPPv @ 1600 NONAME
+	_ZN18CHuiTextureManager23TextureManagerExtensionERK4TUidPPv @ 1601 NONAME
+	_ZN20CHuiTextureProcessor25TextureProcessorExtensionERK4TUidPPv @ 1602 NONAME
+	_ZN6CHuiGc11GcExtensionERK4TUidPPv @ 1603 NONAME
+	_ZN16CHuiRenderPlugin21RenderPluginExtensionERK4TUidPPv @ 1604 NONAME
+	_ZNK15CHuiMatrixStack5CountEv @ 1605 NONAME
+	_ZN12CHuiCanvasGc10DrawPointsER6RArrayI13THuiRealPointE @ 1606 NONAME
+	_ZN12CHuiCanvasGc10SetOpacityERKf @ 1607 NONAME
+	_ZN12CHuiCanvasGc11DrawEllipseERK12THuiRealRect @ 1608 NONAME
+	_ZN12CHuiCanvasGc11DrawPolygonER6RArrayI13THuiRealPointE @ 1609 NONAME
+	_ZN12CHuiCanvasGc11SetDefaultsEv @ 1610 NONAME
+	_ZN12CHuiCanvasGc11SetPenColorERK4TRgb @ 1611 NONAME
+	_ZN12CHuiCanvasGc11SetPenWidthERKf @ 1612 NONAME
+	_ZN12CHuiCanvasGc12LoadIdentityEv @ 1613 NONAME
+	_ZN12CHuiCanvasGc12SetTextAlignE19THuiAlignHorizontal17THuiAlignVertical @ 1614 NONAME
+	_ZN12CHuiCanvasGc12SetTextStyleEi @ 1615 NONAME
+	_ZN12CHuiCanvasGc18SetPolygonDrawModeE12THuiFillMode @ 1616 NONAME
+	_ZN12CHuiCanvasGc5ScaleERKfS1_S1_ @ 1617 NONAME
+	_ZN12CHuiCanvasGc5SetGcER6CHuiGc @ 1618 NONAME
+	_ZN12CHuiCanvasGc6RotateERKfS1_S1_S1_ @ 1619 NONAME
+	_ZN12CHuiCanvasGc8DrawTextERK12CHuiTextMeshRK12THuiRealRect @ 1620 NONAME
+	_ZN12CHuiCanvasGc9DrawImageERK11CHuiTextureRK12THuiRealRect @ 1621 NONAME
+	_ZN12CHuiCanvasGc9DrawLinesER6RArrayI12THuiRealLineE @ 1622 NONAME
+	_ZN12CHuiCanvasGc9DrawRectsER6RArrayI12THuiRealRectE @ 1623 NONAME
+	_ZN12CHuiCanvasGc9SetVisualERK16CHuiCanvasVisual @ 1624 NONAME
+	_ZN12CHuiCanvasGc9TranslateERKfS1_S1_ @ 1625 NONAME
+	_ZN12CHuiCanvasGcC1Ev @ 1626 NONAME
+	_ZN12CHuiCanvasGcC2Ev @ 1627 NONAME
+	_ZN12CHuiCanvasGcD0Ev @ 1628 NONAME
+	_ZN12CHuiCanvasGcD1Ev @ 1629 NONAME
+	_ZN12CHuiCanvasGcD2Ev @ 1630 NONAME
+	_ZN16CHuiCanvasVisual14SetCommandSetLERK6TDesC8 @ 1631 NONAME
+	_ZN16CHuiCanvasVisual7AddNewLER11CHuiControlP10CHuiLayout @ 1632 NONAME
+	_ZN16CHuiRenderPlugin15CreateCanvasGcLEv @ 1633 NONAME
+	_ZNK12CHuiCanvasGc17TextVerticalAlignEv @ 1634 NONAME
+	_ZNK12CHuiCanvasGc19TextHorizontalAlignEv @ 1635 NONAME
+	_ZNK12CHuiCanvasGc8PenWidthEv @ 1636 NONAME
+	_ZNK12CHuiCanvasGc9TextStyleEv @ 1637 NONAME
+	_ZTI12CHuiCanvasGc @ 1638 NONAME ; #<TI>#
+	_ZTV12CHuiCanvasGc @ 1639 NONAME ; #<VT>#
+	_ZN10CHuiStatic14BitgdiRendererEv @ 1640 NONAME
+	_ZN12CHuiCanvasGc9DrawImageERK11CHuiTextureRK12THuiRealRectS5_ @ 1641 NONAME
+	_ZN16CHuiCanvasVisual10ClearCacheEv @ 1642 NONAME
+	_ZN16CHuiCanvasVisual14AddCommandSetLERK6TDesC8 @ 1643 NONAME
+	_ZN16CHuiCanvasVisual14SetCommandTypeEi @ 1644 NONAME
+	_ZN16CHuiCanvasVisual15ClearCommandSetEv @ 1645 NONAME
+	_ZNK12CHuiCanvasGc15PolygonDrawModeEv @ 1646 NONAME
+	_ZTI25CHuiCanvasCmdBufferReader @ 1647 NONAME ; #<TI>#
+	_ZTV25CHuiCanvasCmdBufferReader @ 1648 NONAME ; #<VT>#
+	_ZN12CHuiCanvasGc9DrawImageERK11CHuiTextureRK12THuiRealRectS5_N6CHuiGc12TStretchModeE @ 1649 NONAME
+	_ZN7HuiUtil29GetValueFromCentralRepositoryEmRi @ 1650 NONAME
+	_ZN16CHuiCanvasVisual21AddPartialCommandSetLERK6TDesC8i @ 1651 NONAME
+	_ZTI22CHuiCanvasTextureCache @ 1652 NONAME ; #<TI>#
+	_ZTV22CHuiCanvasTextureCache @ 1653 NONAME ; #<VT>#
+	_ZN12CHuiCanvasGc4ClipERK5TRect @ 1654 NONAME
+	_ZN12CHuiCanvasGc23ClearWithSkinBackgroundERK12THuiRealRect @ 1655 NONAME
+	_ZN12CHuiCanvasGc24ClearWithBackgroundItemsERK12THuiRealRectRK6RArrayI25THuiDisplayBackgroundItemE @ 1656 NONAME
+	_ZN12CHuiCanvasGc5ClearERK12THuiRealRect @ 1657 NONAME
+	_ZN16CHuiCanvasVisual18SetBackgroundColorERK4TRgb @ 1658 NONAME
+	_ZN16CHuiCanvasVisual18SetClearBackgroundEN11CHuiDisplay10TClearModeE @ 1659 NONAME
+	_ZTI20CHuiCanvasBackground @ 1660 NONAME ; #<TI>#
+	_ZTV20CHuiCanvasBackground @ 1661 NONAME ; #<VT>#
+	_ZN12CHuiCanvasGc22EnableBlendingIfNeededEPK11CHuiTexture @ 1662 NONAME
+	_ZN16CHuiCanvasVisual18SetBackgroundItemsERK6RArrayI25THuiDisplayBackgroundItemE @ 1663 NONAME
+	_ZNK25THuiDisplayBackgroundItem14SkinBackgroundEv @ 1664 NONAME
+	_ZNK25THuiDisplayBackgroundItem4RectEv @ 1665 NONAME
+	_ZNK25THuiDisplayBackgroundItem5ColorEv @ 1666 NONAME
+	_ZNK25THuiDisplayBackgroundItem9ClearModeEv @ 1667 NONAME
+	_Z14GetRectForItemRK11TAknsItemIDR5TRectS3_ @ 1668 NONAME
+	_ZN11CHuiS60Skin17BackgroundTextureERK11TAknsItemID @ 1669 NONAME
+	_ZN16CHuiCanvasVisual12PrepareCacheEv @ 1670 NONAME
+	_ZNK16CHuiControlGroup10ResourceIdEv @ 1671 NONAME
+	_ZN12CHuiCanvasGc13DrawRoundRectERK12THuiRealRectRK12THuiRealSize @ 1672 NONAME
+	_ZN12CHuiCanvasGc7DrawArcERK12THuiRealRectRK13THuiRealPointS5_ @ 1673 NONAME
+	_ZN12CHuiCanvasGc7DrawPieERK12THuiRealRectRK13THuiRealPointS5_ @ 1674 NONAME
+	_ZN16CHuiRenderPlugin20CreateEffectsEngineLEv @ 1675 NONAME
+	_ZN12CHuiCanvasGc10ClipRegionERK7TRegion @ 1676 NONAME
+	_ZN12CHuiCanvasGc14CancelClippingEv @ 1677 NONAME
+	_ZN6CHuiGc13SetClipRegionERK7TRegion @ 1678 NONAME
+	_ZN6CHuiGc14CancelClippingEv @ 1679 NONAME
+	_ZN16CHuiCanvasVisual11PaintedAreaEi @ 1680 NONAME
+	_ZNK16CHuiCanvasVisual16PaintedAreaCountEv @ 1681 NONAME
+	_ZN16CHuiCanvasVisual14SetCanvasFlagsEi @ 1682 NONAME
+	_ZN16CHuiCanvasVisual16ClearCanvasFlagsEi @ 1683 NONAME
+	_ZN16CHuiCanvasVisual19SetCapturingBufferLEP10CFbsBitmap @ 1684 NONAME
+	_ZNK14CHuiImageBrush5ImageEv @ 1685 NONAME
+	_ZN12CHuiCanvasGc15SetClippingModeE18THuiCanvasClipMode @ 1686 NONAME
+	_ZN12CHuiCanvasGc29EnableDelayedClippingIfNeededERK12THuiRealRect @ 1687 NONAME
+	_ZN12CHuiCanvasGc29EnableDelayedClippingIfNeededERK6RArrayI12THuiRealLineE @ 1688 NONAME
+	_ZN12CHuiCanvasGc29EnableDelayedClippingIfNeededERK6RArrayI12THuiRealRectE @ 1689 NONAME
+	_ZN12CHuiCanvasGc29EnableDelayedClippingIfNeededERK6RArrayI13THuiRealPointE @ 1690 NONAME
+	_ZN12CHuiCanvasGc30DisableDelayedClippingIfNeededEv @ 1691 NONAME
+	_ZN12CHuiCanvasGc5SetupEv @ 1692 NONAME
+	_ZN12CHuiCanvasGc7CleanupEv @ 1693 NONAME
+	_ZN12CHuiCanvasGc8ClipNextEv @ 1694 NONAME
+	_ZNK12CHuiCanvasGc20MaxNumberOfClipRectsEv @ 1695 NONAME
+	_ZNK12CHuiCanvasGc9IsClippedERK5TRect @ 1696 NONAME
+	_ZNK12CHuiCanvasGc9IsClippedERK6TPoint @ 1697 NONAME
+	_ZN6CHuiGc4ClipERK7TRegion @ 1698 NONAME
+	_ZN12CHuiCanvasGc11DoDrawLinesER6RArrayI12THuiRealLineE @ 1699 NONAME
+	_ZN12CHuiCanvasGc11DoDrawRectsER6RArrayI12THuiRealRectE @ 1700 NONAME
+	_ZN12CHuiCanvasGc12DoDrawPointsER6RArrayI13THuiRealPointE @ 1701 NONAME
+	_ZN12CHuiCanvasGc13DoDrawPolygonER6RArrayI13THuiRealPointE @ 1702 NONAME
+	_ZN12CHuiCanvasGc15DoDrawRoundRectERK12THuiRealRectRK12THuiRealSize @ 1703 NONAME
+	_ZN12CHuiCanvasGc9DoDrawArcERK12THuiRealRectRK13THuiRealPointS5_ @ 1704 NONAME
+	_ZN12CHuiCanvasGc9DoDrawPieERK12THuiRealRectRK13THuiRealPointS5_ @ 1705 NONAME
+	_ZNK6CHuiGc14UnOrientRegionER7TRegion @ 1706 NONAME
+	_ZN11CHuiTexture13SetNvgContentEi @ 1707 NONAME
+	_ZNK11CHuiTexture12IsNvgContentEv @ 1708 NONAME
+	_ZN9THuiImage10SetTextureERK11CHuiTexture @ 1709 NONAME
+	_ZN9THuiImageC1ERK11CHuiTextureffff @ 1710 NONAME
+	_ZN9THuiImageC2ERK11CHuiTextureffff @ 1711 NONAME
+	_ZN16CHuiCanvasVisual15ExternalContentEv @ 1712 NONAME
+	_ZN16CHuiCanvasVisual19SetExternalContentLEP10CHuiVisual @ 1713 NONAME
+	_ZN10CHuiStatic12ScreenDeviceEi @ 1714 NONAME
+	_ZN10CHuiStatic9WsSessionEv @ 1715 NONAME
+	_ZN10CHuiStatic7RootWinEi @ 1716 NONAME
+	_ZN7CHuiEnv11NewDisplayLEP7RWindowiP11CHuiDisplayi4TUid @ 1717 NONAME
+	_ZN10CHuiVisual9SetEffectEP12CHuiFxEffect @ 1718 NONAME
+	_ZN11CHuiFxLayer10ConstructLE15THuiFxLayerType @ 1719 NONAME
+	_ZN11CHuiFxLayer10VisualAreaER5TRect @ 1720 NONAME
+	_ZN11CHuiFxLayer11AdvanceTimeEf @ 1721 NONAME
+	_ZN11CHuiFxLayer12PrepareDrawLER12CHuiFxEngine @ 1722 NONAME
+	_ZN11CHuiFxLayer13SetSourceRectERK5TRect @ 1723 NONAME
+	_ZN11CHuiFxLayer13SetTargetRectERK5TRect @ 1724 NONAME
+	_ZN11CHuiFxLayer13SetVisualRectERK5TRect @ 1725 NONAME
+	_ZN11CHuiFxLayer15SetBlendingModeE18THuiFxBlendingMode @ 1726 NONAME
+	_ZN11CHuiFxLayer4TypeEv @ 1727 NONAME
+	_ZN11CHuiFxLayerC2Ev @ 1728 NONAME
+	_ZN11CHuiFxLayerD0Ev @ 1729 NONAME
+	_ZN11CHuiFxLayerD1Ev @ 1730 NONAME
+	_ZN11CHuiFxLayerD2Ev @ 1731 NONAME
+	_ZN12CHuiFxEffect10ConstructLEv @ 1732 NONAME
+	_ZN12CHuiFxEffect11AdvanceTimeEf @ 1733 NONAME
+	_ZN12CHuiFxEffect20SetEffectEndObserverEP21MAlfGfxEffectObserveri @ 1734 NONAME
+	_ZN12CHuiFxEffect4DrawER6CHuiGcRK5TRecti @ 1735 NONAME
+	_ZN12CHuiFxEffect4NewLER12CHuiFxEngine @ 1736 NONAME
+	_ZN12CHuiFxEffect7ChangedEv @ 1737 NONAME
+	_ZN12CHuiFxEffect9AddLayerLEPK11CHuiFxLayer @ 1738 NONAME
+	_ZN12CHuiFxEffectD0Ev @ 1739 NONAME
+	_ZN12CHuiFxEffectD1Ev @ 1740 NONAME
+	_ZN12CHuiFxEffectD2Ev @ 1741 NONAME
+	_ZN12CHuiFxEngine10AddEffectLEP12CHuiFxEffect @ 1742 NONAME
+	_ZN12CHuiFxEngine10ConstructLE16THuiFxEngineType @ 1743 NONAME
+	_ZN12CHuiFxEngine10EngineTypeEv @ 1744 NONAME
+	_ZN12CHuiFxEngine11AdvanceTimeEf @ 1745 NONAME  	
+	_ZN12CHuiFxEngine11LoadEffectLERK7TDesC16RP12CHuiFxEffectP14MHuiEffectableP5TRectP21MAlfGfxEffectObserverii @ 1746 NONAME
+	_ZN12CHuiFxEngine12RemoveEffectEP12CHuiFxEffect @ 1747 NONAME
+	_ZN12CHuiFxEngine17GetReferenceValueE20THuiFxReferencePoint @ 1748 NONAME
+	_ZN12CHuiFxEngine19AcquireRenderbufferERK5TSize @ 1749 NONAME
+	_ZN12CHuiFxEngine19ReleaseRenderbufferEP18CHuiFxRenderbuffer @ 1750 NONAME
+	_ZN12CHuiFxEngine7ReleaseEv @ 1751 NONAME
+	_ZN12CHuiFxEngine8RestoreLEv @ 1752 NONAME
+	_ZN12CHuiFxEngineD0Ev @ 1753 NONAME
+	_ZN12CHuiFxEngineD1Ev @ 1754 NONAME
+	_ZN12CHuiFxEngineD2Ev @ 1755 NONAME
+	_ZN12CHuiFxFilter10ConstructLEv @ 1756 NONAME
+	_ZN12CHuiFxFilter11AdvanceTimeEf @ 1757 NONAME
+	_ZN12CHuiFxFilter11SetFreeFormEi @ 1758 NONAME
+	_ZN12CHuiFxFilter12PrepareDrawLER12CHuiFxEngine @ 1759 NONAME
+	_ZN12CHuiFxFilter13SetVisualRectERK5TRect @ 1760 NONAME
+	_ZN12CHuiFxFilter16ParameterChangedEv @ 1761 NONAME
+	_ZN12CHuiFxFilter18RegisterParameterLERK7TDesC16P4TRgb @ 1762 NONAME
+	_ZN12CHuiFxFilter18RegisterParameterLERK7TDesC16Pf @ 1763 NONAME
+	_ZN12CHuiFxFilter9ParameterERK7TDesC16 @ 1764 NONAME
+	_ZN12CHuiFxFilter9SetMarginERK5TSize @ 1765 NONAME
+	_ZN12CHuiFxFilterD0Ev @ 1766 NONAME
+	_ZN12CHuiFxFilterD1Ev @ 1767 NONAME
+	_ZN12CHuiFxFilterD2Ev @ 1768 NONAME
+	_ZN16CHuiCanvasVisual10SetChangedEv @ 1769 NONAME
+	_ZN16CHuiCanvasVisual12ClearChangedEv @ 1770 NONAME
+	_ZN16CHuiFxGroupLayer10ConstructLEi @ 1771 NONAME
+	_ZN16CHuiFxGroupLayer10VisualAreaER5TRect @ 1772 NONAME
+	_ZN16CHuiFxGroupLayer11AdvanceTimeEf @ 1773 NONAME
+	_ZN16CHuiFxGroupLayer12PrepareDrawLER12CHuiFxEngine @ 1774 NONAME
+	_ZN16CHuiFxGroupLayer4DrawER12CHuiFxEngineR6CHuiGcR18CHuiFxRenderbufferS5_i @ 1775 NONAME
+	_ZN16CHuiFxGroupLayer4NewLEi @ 1776 NONAME
+	_ZN16CHuiFxGroupLayer9AddLayerLEPK11CHuiFxLayer @ 1777 NONAME
+	_ZN16CHuiFxGroupLayerC1Ev @ 1778 NONAME
+	_ZN16CHuiFxGroupLayerC2Ev @ 1779 NONAME
+	_ZN16CHuiFxGroupLayerD0Ev @ 1780 NONAME
+	_ZN16CHuiFxGroupLayerD1Ev @ 1781 NONAME
+	_ZN16CHuiFxGroupLayerD2Ev @ 1782 NONAME
+	_ZN17CHuiFxFilterLayer10ConstructLEP12CHuiFxFilter @ 1783 NONAME
+	_ZN17CHuiFxFilterLayer11AdvanceTimeEf @ 1784 NONAME
+	_ZN17CHuiFxFilterLayer12PrepareDrawLER12CHuiFxEngine @ 1785 NONAME
+	_ZN17CHuiFxFilterLayer4DrawER12CHuiFxEngineR6CHuiGcR18CHuiFxRenderbufferS5_i @ 1786 NONAME
+	_ZN17CHuiFxVisualLayer10ConstructLEP14MHuiEffectable @ 1787 NONAME
+	_ZN17CHuiFxVisualLayer10VisualAreaER5TRect @ 1788 NONAME
+	_ZN17CHuiFxVisualLayer11AdvanceTimeEf @ 1789 NONAME
+	_ZN17CHuiFxVisualLayer12PrepareDrawLER12CHuiFxEngine @ 1790 NONAME
+	_ZN17CHuiFxVisualLayer18RegisterParameterLERK7TDesC16P4TRgb @ 1791 NONAME
+	_ZN17CHuiFxVisualLayer18RegisterParameterLERK7TDesC16Pf @ 1792 NONAME
+	_ZN17CHuiFxVisualLayer4DrawER12CHuiFxEngineR6CHuiGcR18CHuiFxRenderbufferS5_i @ 1793 NONAME
+	_ZN17CHuiFxVisualLayer4NewLEP14MHuiEffectable @ 1794 NONAME
+	_ZN17CHuiFxVisualLayer9ParameterERK7TDesC16 @ 1795 NONAME
+	_ZN17CHuiFxVisualLayerD0Ev @ 1796 NONAME
+	_ZN17CHuiFxVisualLayerD1Ev @ 1797 NONAME
+	_ZN17CHuiFxVisualLayerD2Ev @ 1798 NONAME
+	_ZN18CHuiFxRenderbuffer10ConstructLERK5TSize17TRenderBufferType @ 1799 NONAME
+	_ZN18CHuiFxRenderbufferC2Ev @ 1800 NONAME
+	_ZN18CHuiFxRenderbufferD0Ev @ 1801 NONAME
+	_ZN18CHuiFxRenderbufferD1Ev @ 1802 NONAME
+	_ZN18CHuiFxRenderbufferD2Ev @ 1803 NONAME
+	_ZNK10CHuiVisual6EffectEv @ 1804 NONAME
+	_ZNK11CHuiFxLayer10SourceRectEv @ 1805 NONAME
+	_ZNK11CHuiFxLayer10TargetRectEv @ 1806 NONAME
+	_ZNK11CHuiFxLayer10VisualRectEv @ 1807 NONAME
+	_ZNK11CHuiFxLayer12BlendingModeEv @ 1808 NONAME
+	_ZNK11CHuiFxLayer7ChangedEv @ 1809 NONAME
+	_ZNK12CHuiFxEffect10VisualAreaER5TRect @ 1810 NONAME
+	_ZNK12CHuiFxEffect6EngineEv @ 1811 NONAME
+	_ZNK12CHuiFxFilter10IsFreeFormEv @ 1812 NONAME
+	_ZNK12CHuiFxFilter10VisualRectEv @ 1813 NONAME
+	_ZNK12CHuiFxFilter6MarginEv @ 1814 NONAME
+	_ZNK12CHuiFxFilter7ChangedEv @ 1815 NONAME
+	_ZNK16CHuiFxGroupLayer7ChangedEv @ 1816 NONAME
+	_ZNK17CHuiFxFilterLayer6FilterEv @ 1817 NONAME
+	_ZNK17CHuiFxFilterLayer7ChangedEv @ 1818 NONAME
+	_ZNK17CHuiFxVisualLayer7ChangedEv @ 1819 NONAME
+	_ZNK18CHuiFxRenderbuffer10BufferTypeEv @ 1820 NONAME
+	_ZNK18CHuiFxRenderbuffer4SizeEv @ 1821 NONAME
+	_ZNK7CHuiEnv13EffectsEngineEv @ 1822 NONAME
+	_ZTI11CHuiFxLayer @ 1823 NONAME ; #<TI>#
+	_ZTI12CHuiFxEffect @ 1824 NONAME ; #<TI>#
+	_ZTI12CHuiFxEngine @ 1825 NONAME ; #<TI>#
+	_ZTI12CHuiFxFilter @ 1826 NONAME ; #<TI>#
+	_ZTI16CHuiFxGroupLayer @ 1827 NONAME ; #<TI>#
+	_ZTI17CHuiFxFilterLayer @ 1828 NONAME ; #<TI>#
+	_ZTI17CHuiFxVisualLayer @ 1829 NONAME ; #<TI>#
+	_ZTI18CHuiFxEffectParser @ 1830 NONAME ; #<TI>#
+	_ZTI18CHuiFxRenderbuffer @ 1831 NONAME ; #<TI>#
+	_ZTI22CHuiFxGenericParameterI4TRgb14RHuiFxTimeLineIS0_mEL19THuiFxParameterType1EE @ 1832 NONAME ; #<TI>#
+	_ZTI22CHuiFxGenericParameterIf14RHuiFxTimeLineIflEL19THuiFxParameterType0EE @ 1833 NONAME ; #<TI>#
+	_ZTI22CHuiFxParameterManager @ 1834 NONAME ; #<TI>#
+	_ZTV11CHuiFxLayer @ 1835 NONAME ; #<VT>#
+	_ZTV12CHuiFxEffect @ 1836 NONAME ; #<VT>#
+	_ZTV12CHuiFxEngine @ 1837 NONAME ; #<VT>#
+	_ZTV12CHuiFxFilter @ 1838 NONAME ; #<VT>#
+	_ZTV16CHuiFxGroupLayer @ 1839 NONAME ; #<VT>#
+	_ZTV17CHuiFxFilterLayer @ 1840 NONAME ; #<VT>#
+	_ZTV17CHuiFxVisualLayer @ 1841 NONAME ; #<VT>#
+	_ZTV18CHuiFxEffectParser @ 1842 NONAME ; #<VT>#
+	_ZTV18CHuiFxRenderbuffer @ 1843 NONAME ; #<VT>#
+	_ZTV22CHuiFxGenericParameterI4TRgb14RHuiFxTimeLineIS0_mEL19THuiFxParameterType1EE @ 1844 NONAME ; #<VT>#
+	_ZTV22CHuiFxGenericParameterIf14RHuiFxTimeLineIflEL19THuiFxParameterType0EE @ 1845 NONAME ; #<VT>#
+	_ZTV22CHuiFxParameterManager @ 1846 NONAME ; #<VT>#
+	_ZThn4_N12CHuiFxFilter9ParameterERK7TDesC16 @ 1847 NONAME ; #<thunk>#
+	_ZN10CHuiStatic12SkinInstanceEv @ 1848 NONAME
+	_ZN16CHuiCanvasVisual18SetTrackCommandSetER4TBufILi256EEi @ 1849 NONAME
+	_ZN12CHuiCanvasGc18DoDrawRenderBufferERK22CHuiCanvasRenderBufferRK13THuiRealPoint @ 1850 NONAME
+	_ZN12CHuiCanvasGc19CreateRenderBufferLERK5TSize @ 1851 NONAME
+	_ZN12CHuiCanvasGc23PopTransformationMatrixEv @ 1852 NONAME
+	_ZN12CHuiCanvasGc24PushTransformationMatrixEv @ 1853 NONAME
+	_ZN12CHuiCanvasGc9DrawImageERK22CHuiCanvasRenderBufferRK13THuiRealPoint @ 1854 NONAME
+	_ZN22CHuiCanvasRenderBuffer11InitializeLERK5TSize @ 1855 NONAME
+	_ZN22CHuiCanvasRenderBuffer12UnInitializeEv @ 1856 NONAME
+	_ZN22CHuiCanvasRenderBuffer4BindEv @ 1857 NONAME
+	_ZN22CHuiCanvasRenderBuffer6UnBindEv @ 1858 NONAME
+	_ZN22CHuiCanvasRenderBufferC1Ev @ 1859 NONAME
+	_ZN22CHuiCanvasRenderBufferC2Ev @ 1860 NONAME
+	_ZN22CHuiCanvasRenderBufferD0Ev @ 1861 NONAME
+	_ZN22CHuiCanvasRenderBufferD1Ev @ 1862 NONAME
+	_ZN22CHuiCanvasRenderBufferD2Ev @ 1863 NONAME
+	_ZTI22CHuiCanvasRenderBuffer @ 1864 NONAME ; #<TI>#
+	_ZTV22CHuiCanvasRenderBuffer @ 1865 NONAME ; #<VT>#
+	_ZN12CHuiCanvasGc11SetDrawModeE18THuiCanvasDrawMode @ 1866 NONAME
+	_ZN8THuiFont11ReleaseFontEv @ 1867 NONAME
+	_ZN8THuiFont11SetCategoryE16TAknFontCategory @ 1868 NONAME
+	_ZN8THuiFont11SetFontSpecERK9TFontSpec @ 1869 NONAME
+	_ZN8THuiFont12LineExtentsLERK7TDesC16 @ 1870 NONAME
+	_ZN8THuiFont12NearestFontLEf @ 1871 NONAME
+	_ZN8THuiFont14RasterizeLineLERK7TDesC16R9CFbsBitGc @ 1872 NONAME
+	_ZN8THuiFont17SetTextPaneHeightEi @ 1873 NONAME
+	_ZNK8THuiFont14TextPaneHeightEv @ 1874 NONAME
+	_ZN14CHuiTextVisual11UpdateMeshLERK6TDesC8 @ 1875 NONAME
+	_ZN16CHuiRenderPlugin20AddRestoreStateFlagsEi @ 1876 NONAME
+	_ZN16CHuiRenderPlugin20GetRestoreStateFlagsEv @ 1877 NONAME
+	_ZN16CHuiRenderPlugin22ClearRestoreStateFlagsEv @ 1878 NONAME
+	_ZN12CHuiFxEffect11EffectFlagsEv @ 1879 NONAME
+	_ZN12CHuiFxEffect14SetEffectFlagsEi @ 1880 NONAME
+	_ZN7CHuiEnv15NotifyLowMemoryEi @ 1881 NONAME
+	_ZN7CHuiEnv20AddLowMemoryObserverEP21MHuiLowMemoryObserver @ 1882 NONAME
+	_ZN7CHuiEnv23RemoveLowMemoryObserverEP21MHuiLowMemoryObserver @ 1883 NONAME
+	_ZN12CHuiFxEngine20EnableLowMemoryStateEi @ 1884 NONAME
+	_ZThn4_N12CHuiFxEngine20EnableLowMemoryStateEi @ 1885 NONAME ; #<thunk>#
+	_ZN11CHuiFxLayer6MarginER8TMargins @ 1886 NONAME
+	_ZN16CHuiFxGroupLayer11ApplyMarginER5TRect @ 1887 NONAME
+	_ZN16CHuiFxGroupLayer6MarginER8TMargins @ 1888 NONAME
+	_ZN17CHuiFxFilterLayer6MarginER8TMargins @ 1889 NONAME
+	_ZN17CHuiFxVisualLayer6MarginER8TMargins @ 1890 NONAME
+	_ZNK12CHuiFxFilter15CalculateMarginER8TMargins @ 1891 NONAME
+	_ZNK12CHuiFxFilter7Margin2Ev @ 1892 NONAME
+	_ZN11CHuiFxLayer9CopyFromLEPKS_ @ 1893 NONAME
+	_ZN12CHuiFxEffect10SetExtRectEP5TRect @ 1894 NONAME
+	_ZN12CHuiFxEffect9SetEngineEP12CHuiFxEngine @ 1895 NONAME
+	_ZN12CHuiFxEffect9SetVisualEP10CHuiVisual @ 1896 NONAME
+	_ZN12CHuiFxFilter14CopyParameterLERK7TDesC16P4TRgbPKS_ @ 1897 NONAME
+	_ZN12CHuiFxFilter14CopyParameterLERK7TDesC16PfPKS_ @ 1898 NONAME
+	_ZN12CHuiFxFilter9CopyFromLEPKS_ @ 1899 NONAME
+	_ZN16CHuiFxGroupLayer10SetExtRectEP5TRect @ 1900 NONAME
+	_ZN16CHuiFxGroupLayer9SetVisualEP10CHuiVisual @ 1901 NONAME
+	_ZN17CHuiFxFilterLayer10SetExtRectEP5TRect @ 1902 NONAME
+	_ZN17CHuiFxFilterLayer9SetVisualEP10CHuiVisual @ 1903 NONAME
+	_ZN17CHuiFxVisualLayer10SetExtRectEP5TRect @ 1904 NONAME
+	_ZN17CHuiFxVisualLayer9SetVisualEP10CHuiVisual @ 1905 NONAME
+	_ZNK12CHuiFxEffect6CloneLEv @ 1906 NONAME
+	_ZNK16CHuiFxGroupLayer6CloneLEv @ 1907 NONAME
+	_ZNK17CHuiFxFilterLayer6CloneLEv @ 1908 NONAME
+	_ZNK17CHuiFxVisualLayer6CloneLEv @ 1909 NONAME
+	_ZTI17CHuiFxEffectCache @ 1910 NONAME ; #<TI>#
+	_ZTI27CHuiFxEffectCacheEffectNode @ 1911 NONAME ; #<TI>#
+	_ZTV17CHuiFxEffectCache @ 1912 NONAME ; #<VT>#
+	_ZTV27CHuiFxEffectCacheEffectNode @ 1913 NONAME ; #<VT>#
+	_ZN12CHuiFxEngine15RegisterEffectLERK7TDesC16 @ 1914 NONAME
+	_ZN12CHuiFxEngine17UnRegisterEffectLERK7TDesC16 @ 1915 NONAME
+	_ZN11CHuiFxLayer14SetDisplayAreaERK5TRect @ 1916 NONAME
+	_ZN12CHuiFxEngine9CompositeER6CHuiGcR18CHuiFxRenderbufferRK6TPointii @ 1917 NONAME
+	_ZN18CHuiFxRenderbuffer11SetPositionE6TPoint @ 1918 NONAME
+	_ZNK18CHuiFxRenderbuffer8PositionEv @ 1919 NONAME
+	_ZNK12CHuiFxEffect10IsAnimatedEv @ 1920 NONAME
+	_ZNK12CHuiFxEffect13IsTransformedEv @ 1921 NONAME
+	_ZN16CHuiCanvasVisual11CanvasFlagsEv @ 1922 NONAME
+	_ZN17CHuiFxEffectCache13FindOrCreateLEP21MHuiFxEffectCacheNode @ 1923 NONAME
+	_ZNK12CHuiCanvasGc19RestoreFlaggedStateEv @ 1924 NONAME
+	_ZN16CHuiCanvasVisual15SetParentCanvasEPS_ @ 1925 NONAME
+	_ZTI18CHuiCmdBufferBrush @ 1926 NONAME
+	_ZTV18CHuiCmdBufferBrush @ 1927 NONAME
+	_ZN18CHuiFxRenderbuffer16EnableBackgroundEi @ 1928 NONAME
+	_ZN12CHuiCanvasGc17ClearRenderBufferER22CHuiCanvasRenderBufferRK5TRect @ 1929 NONAME
+	_ZN12CHuiCanvasGc19DoClearRenderBufferER22CHuiCanvasRenderBufferRK5TRect @ 1930 NONAME
+	_ZN14CHuiBrushArray15BrushWithTypeAtEii @ 1931 NONAME
+	_ZNK14CHuiBrushArray18BrushWithTypeCountEi @ 1932 NONAME
+	_ZN12CHuiFxEffect9SetVisualEP14MHuiEffectable @ 1933 NONAME
+	_ZN16CHuiFxGroupLayer9SetVisualEP14MHuiEffectable @ 1934 NONAME
+	_ZN17CHuiFxFilterLayer9SetVisualEP14MHuiEffectable @ 1935 NONAME
+	_ZN17CHuiFxVisualLayer9SetVisualEP14MHuiEffectable @ 1936 NONAME
+	_ZNK10CHuiVisual10EffectableEv @ 1937 NONAME
+	_ZTI14CHuiEffectable @ 1938 NONAME
+	_ZTV14CHuiEffectable @ 1939 NONAME
+	_ZNK16CHuiCanvasVisual26IsBackgroundDrawingEnabledEv @ 1940 NONAME
+	_ZNK22CHuiCanvasRenderBuffer4SizeEv @ 1941 NONAME
+	_ZN22CHuiCanvasRenderBuffer4CopyERKS_ @ 1942 NONAME
+	_ZNK22CHuiCanvasRenderBuffer13IsInitializedEv @ 1943 NONAME
+	_ZN16CHuiCanvasVisual16FreeRenderBufferEv @ 1944 NONAME
+	_ZN16CHuiCanvasVisual18StoreRenderBufferLEv @ 1945 NONAME
+	_ZTI16CHuiCanvasVisual @ 1946 NONAME
+	_ZTV16CHuiCanvasVisual @ 1947 NONAME
+	_ZN12CHuiFxEngine14FxmlUsesInput1ERK7TDesC16 @ 1948 NONAME
+	_ZN16CHuiCanvasVisual11LayerExtentEv @ 1949 NONAME
+	_ZN16CHuiCanvasVisual14SetLayerExtentER5TRect @ 1950 NONAME
+	_ZN16CHuiCanvasVisual18LayerUsesAlphaFlagEv @ 1951 NONAME
+	_ZN16CHuiCanvasVisual21SetLayerUsesAlphaFlagEi @ 1952 NONAME
+	_ZN10CHuiVisual21SetStoredRenderBufferEP22CHuiCanvasRenderBuffer @ 1953 NONAME
+	_ZN22CHuiCanvasRenderBuffer4CopyE6TPoint @ 1954 NONAME
+	_ZNK10CHuiVisual18StoredRenderBufferEv @ 1955 NONAME
+	_ZN10CHuiVisual14SetFreezeStateEi @ 1956 NONAME
+	_ZN10CHuiVisual41SetStoredRenderBufferModificationsEnabledEi @ 1957 NONAME
+	_ZN12CHuiCanvasGc21SetPolygonFillTextureEP11CHuiTexture @ 1958 NONAME
+	_ZNK12CHuiCanvasGc18PolygonFillTextureEv @ 1959 NONAME
+	_ZN12CHuiCanvasGc27SetPolygonFillTextureOriginERK6TPoint @ 1960 NONAME
+	_ZNK12CHuiCanvasGc24PolygonFillTextureOriginEv @ 1961 NONAME
+	_ZN7CHuiEnv11MemoryLevelEv @ 1962 NONAME
+	_ZN7CHuiEnv17NotifyMemoryLevelE15THuiMemoryLevel @ 1963 NONAME
+	_ZN7CHuiEnv22AddMemoryLevelObserverEP23MHuiMemoryLevelObserver @ 1964 NONAME
+	_ZN7CHuiEnv25RemoveMemoryLevelObserverEP23MHuiMemoryLevelObserver @ 1965 NONAME
+	_ZN11CHuiDisplay20SetForegroundTextureEP11CHuiTexture @ 1966 NONAME
+	_ZNK11CHuiDisplay17ForegroundTextureEv @ 1967 NONAME
+	_ZN12CHuiFxEffect14SetEffectGroupEi @ 1968 NONAME
+	_ZN12CHuiFxEffect7GroupIdEv @ 1969 NONAME
+	_ZN12CHuiFxEngine16BeginGroupEffectEi @ 1970 NONAME
+	_ZN12CHuiFxEngine16LoadGroupEffectLERK7TDesC16RP12CHuiFxEffectP14MHuiEffectableiP5TRectP21MAlfGfxEffectObserverii @ 1971 NONAME
+	_ZN12CHuiFxEngine16StartGroupEffectEi @ 1972 NONAME
+	_ZN12CHuiFxEngine17ActiveGroupEffectEv @ 1973 NONAME
+	_ZN12CHuiFxEngine14SetMemoryLevelE15THuiMemoryLevel @ 1974 NONAME
+	_ZThn8_N12CHuiFxEngine14SetMemoryLevelE15THuiMemoryLevel @ 1975 NONAME
+	_ZN11CHuiDisplay20SetForegroundBitmapLEP10CFbsBitmap @ 1976 NONAME
+	_ZNK11CHuiDisplay16ForegroundBitmapEv @ 1977 NONAME
+	_ZTI15MHuiFxParameter @ 1978 NONAME
+	_ZTV15MHuiFxParameter @ 1979 NONAME
+	_ZNK16CHuiCanvasVisual17HasCommandBuffersEi @ 1980 NONAME
+	_ZN11CHuiS60Skin18SkinContentChangedEv @ 1981 NONAME
+	_ZN11CHuiS60Skin18SkinPackageChangedE34TAknsSkinStatusPackageChangeReason @ 1982 NONAME
+	_ZN11CHuiS60Skin24SkinConfigurationChangedE40TAknsSkinStatusConfigurationChangeReason @ 1983 NONAME
+	_ZThn28_N11CHuiS60Skin18SkinContentChangedEv @ 1984 NONAME
+	_ZThn28_N11CHuiS60Skin18SkinPackageChangedE34TAknsSkinStatusPackageChangeReason @ 1985 NONAME
+	_ZThn28_N11CHuiS60Skin24SkinConfigurationChangedE40TAknsSkinStatusConfigurationChangeReason @ 1986 NONAME
+	_ZN7CHuiEnv11SynchronizeEiP27MHuiSynchronizationObserver @ 1987 NONAME
+	_ZN11CHuiDisplay27SetForegroundTextureOptionsEi @ 1988 NONAME
+	_ZN16CHuiCanvasVisual8SetShapeERK6TPointRK7TRegion @ 1989 NONAME
+	_ZNK16CHuiCanvasVisual11ShapeOriginEv @ 1990 NONAME
+	_ZNK16CHuiCanvasVisual11ShapeRegionEv @ 1991 NONAME
+	_ZNK16CHuiCanvasVisual14HasCustomShapeEv @ 1992 NONAME
+	_ZN16CHuiCanvasVisual21CommandBufferCoverageEi @ 1993 NONAME
+	_ZN11CHuiDisplay19CopyScreenToBitmapLEP10CFbsBitmap @ 1994 NONAME
+	_ZN16CHuiControlGroup11SetSecureIdEi @ 1995 NONAME
+	_ZN16CHuiControlGroup8SecureIdEv @ 1996 NONAME
+	_ZNK16CHuiCanvasVisual19HasTransParentClearEv @ 1997 NONAME
+	_ZN12CHuiFxEngine16AddEffectToGroupEi @ 1998 NONAME
+	_ZN12CHuiFxEngine18FxmlUsesOpaqueHintERK7TDesC16 @ 1999 NONAME
+	_ZN22CHuiCanvasRenderBuffer11InitializeLERK5TSizei @ 2000 NONAME
+	_ZN13CAppIconCache4FindEx5TSize @ 2001 NONAME
+	_ZN13CAppIconCache5ClearEv @ 2002 NONAME
+	_ZN13CAppIconCache6InsertER17TRasterizedBitmap @ 2003 NONAME
+	_ZNK7CHuiEnv12AppIconCacheEv @ 2004 NONAME
+	_ZN11CHuiDisplay24SetSkinSizeChangePendingEv @ 2005 NONAME
+

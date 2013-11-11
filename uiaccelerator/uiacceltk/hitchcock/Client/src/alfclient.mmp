@@ -1,0 +1,162 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project alfclient
+*
+*/
+
+
+
+#include "../../CommonInc/alfuids.h"
+#include <data_caging_paths.hrh>
+#include <bldvariant.hrh>
+
+TARGET                  alfclient.dll
+TARGETTYPE              dll
+UID                     0x1000008d KAlfClientUid3
+VERSION                 10.0
+
+CAPABILITY              CAP_CLIENT_DLL
+VENDORID                VID_DEFAULT
+
+MACRO ALF_RASTER_TEXT
+
+SOURCEPATH              ../src
+SOURCE                  alfclientBase.cpp
+SOURCE                  alfclient.cpp
+SOURCE                  alfenv.cpp
+SOURCE                  alfscreenbuffer.cpp
+SOURCE                  alfdisplay.cpp
+SOURCE                  alfroster.cpp
+SOURCE                  alfcontrolgroup.cpp
+SOURCE                  alfcontrol.cpp
+SOURCE                  alfvisual.cpp
+SOURCE                  alflayout.cpp
+SOURCE                  alfvisualfactory.cpp
+SOURCE                  alftextvisual.cpp
+SOURCE                  alfanchorlayout.cpp
+SOURCE                  alfbrush.cpp
+SOURCE                  alfbrusharray.cpp
+SOURCE                  alfborderbrush.cpp
+SOURCE                  alfevent.cpp
+SOURCE                  alftransformation.cpp
+SOURCE                  alftexture.cpp
+SOURCE                  alftextureprocessor.cpp
+SOURCE                  alftexturemanager.cpp
+SOURCE                  alfimage.cpp
+SOURCE                  alfimagevisual.cpp
+SOURCE                  alfgridlayout.cpp
+SOURCE                  alfdisplaysubsession.cpp
+SOURCE                  alfcontrolgroupsubsession.cpp
+SOURCE                  alftransformationsubsession.cpp
+SOURCE                  alfgencomponent.cpp
+SOURCE                  alfcommand.cpp
+SOURCE                  alftimedvalue.cpp
+SOURCE                  alfmappingfunctions.cpp
+SOURCE                  alfimagebrush.cpp
+SOURCE                  alfdecklayout.cpp
+SOURCE                  alfflowlayout.cpp
+SOURCE                  alfcurvepath.cpp
+SOURCE                  alfcurvepathlayout.cpp
+SOURCE                  alflinevisual.cpp
+SOURCE                  alfdropshadowbrush.cpp
+SOURCE                  alfshadowborderbrush.cpp
+SOURCE                  alfcommandscheduler.cpp
+SOURCE                  alfgradientbrush.cpp
+SOURCE                  alfutil.cpp
+SOURCE                  alfimageloaderutil.cpp
+SOURCE                  alfframebrush.cpp
+SOURCE                  alfviewportlayout.cpp
+SOURCE                  alflctanchorlayout.cpp
+SOURCE                  alfmeshvisual.cpp
+SOURCE                  alfmesh.cpp
+SOURCE                  alfproceduralmesh.cpp
+SOURCE                  alfm3gmesh.cpp
+SOURCE                  alflctgridlayout.cpp
+SOURCE                  alflcttextvisual.cpp
+SOURCE                  alflayoutmetrics.cpp
+SOURCE	                 alftextstylemanager.cpp
+SOURCE	                 alftextstyle.cpp
+SOURCE                  alfskinnableimage.cpp
+SOURCE                  alfstatic.cpp
+SOURCE                  alfpanic.cpp
+SOURCE                  alfmetric.cpp
+SOURCE                  alfproperty.cpp
+SOURCE                  alfpropertyowner.cpp
+SOURCE                  alfscrollerevent.cpp
+SOURCE                  alfsymbiansbdrawer.cpp
+SOURCE                  alfdisplaybackgrounditem.cpp
+SOURCE                  alfbatchbuffer.cpp
+SOURCE                  alftextureautosizeparams.cpp
+SOURCE                  alfdropshadow.cpp
+SOURCE                  alftexturegroup.cpp
+
+SOURCE                  alfgc.cpp
+SOURCE                  alfcanvasvisual.cpp 
+SOURCE                  alfclientwindow.cpp
+SOURCE                  alfdirectclient.cpp
+
+SOURCE                  alfdrawer.cpp
+SOURCE                  alfcrppluginclient.cpp
+
+USERINCLUDE             ../inc
+USERINCLUDE             ../../CommonInc
+
+
+#include <platform_paths.hrh>
+MW_LAYER_SYSTEMINCLUDE
+
+
+
+SYSTEMINCLUDE           ../../../../inc
+
+LIBRARY                 apgrfx.lib
+LIBRARY                 apparc.lib
+LIBRARY                 avkon.lib
+LIBRARY                 cone.lib
+LIBRARY                 eikcore.lib 
+LIBRARY                 euser.lib
+LIBRARY                 flogger.lib
+LIBRARY                 ws32.lib 
+LIBRARY                 fbscli.lib 
+LIBRARY                 imageconversion.lib
+LIBRARY                 efsrv.lib
+LIBRARY                 hal.lib
+LIBRARY                 bitgdi.lib
+LIBRARY     	        aknicon.lib
+LIBRARY                 aknskins.lib
+LIBRARY                 ftokenclient.lib
+LIBRARY                 fontutils.lib 
+LIBRARY                 gdi.lib
+LIBRARY                 tagma.lib
+LIBRARY                 linebreak.lib
+LIBRARY                 fntstr.lib
+LIBRARY                 eikcoctl.lib
+LIBRARY                 fepbase.lib
+LIBRARY                 hwrmlightclient.lib
+LIBRARY                 etext.lib
+LIBRARY                 bafl.lib
+LIBRARY                 estor.lib
+LIBRARY                 svgengine.lib
+LIBRARY                 charconv.lib
+LIBRARY                 centralrepository.lib
+
+#if defined (__S60_32__) || defined (RD_ALF_IN_PLATFORM)
+LIBRARY                 inlinetext.lib
+#endif
+
+LIBRARY                 aknlayout2hierarchy.lib
+LIBRARY                 aknfepuiinterface.lib
+LIBRARY 		hitchcock.lib
+LIBRARY         	fontprovider.lib
+LIBRARY			goommonitor.lib

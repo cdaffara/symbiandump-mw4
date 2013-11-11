@@ -1,0 +1,12 @@
+EXPORTS
+	?StartL@CUpnpSsdpServer@@QAEXXZ @ 1 NONAME ; void CUpnpSsdpServer::StartL(void)
+	??1CUpnpSsdpServer@@UAE@XZ @ 2 NONAME ; CUpnpSsdpServer::~CUpnpSsdpServer(void)
+	?AddressChangedL@CUpnpUdpServer@@QAEXAAVTInetAddr@@@Z @ 3 NONAME ; void CUpnpUdpServer::AddressChangedL(class TInetAddr &)
+	?AdvertiseByebyeL@CUpnpSsdpServer@@QAEXAAVCUpnpDeviceLibraryElement@@@Z @ 4 NONAME ; void CUpnpSsdpServer::AdvertiseByebyeL(class CUpnpDeviceLibraryElement &)
+	?Stop@CUpnpSsdpServer@@QAEXXZ @ 5 NONAME ; void CUpnpSsdpServer::Stop(void)
+	?NewL@CUpnpSsdpServer@@SAPAV1@PAVMUpnpSsdpServerObserver@@PAVRSocketServ@@H@Z @ 6 NONAME ; class CUpnpSsdpServer * CUpnpSsdpServer::NewL(class MUpnpSsdpServerObserver *, class RSocketServ *, int)
+	?AdvertiseAliveL@CUpnpSsdpServer@@QAEXAAVCUpnpDeviceLibraryElement@@@Z @ 7 NONAME ; void CUpnpSsdpServer::AdvertiseAliveL(class CUpnpDeviceLibraryElement &)
+	?SearchL@CUpnpSsdpServer@@QAEXAAVTDesC8@@0@Z @ 8 NONAME ; void CUpnpSsdpServer::SearchL(class TDesC8 &, class TDesC8 &)
+	?NewL@CUpnpSsdpServer@@SAPAV1@PAVMUpnpSsdpServerObserver@@PAVRSocketServ@@HPAV1@@Z @ 9 NONAME ; class CUpnpSsdpServer * CUpnpSsdpServer::NewL(class MUpnpSsdpServerObserver *, class RSocketServ *, int, class CUpnpSsdpServer *)
+	?SearchL@CUpnpSsdpServer@@QAEXAAVTDesC8@@@Z @ 10 NONAME ; void CUpnpSsdpServer::SearchL(class TDesC8 &)
+

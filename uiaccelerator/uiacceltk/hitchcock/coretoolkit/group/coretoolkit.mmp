@@ -1,0 +1,86 @@
+/*
+* Copyright (c) 2006-2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project Hitchcock Core
+*
+*/
+
+
+
+// There is a bug that CScreen::DisplayMode() returns non-alpha display mode (TSW error: ??)
+// That is why WServ clears the window with the color that is opaque (0xFF000400) instead of transparent (0x00000000) 
+#if !defined(WINS)
+MACRO __ALF_SYMBIAN_RWINDOW_CLEARING_BUG_WORKAROUND__
+#endif
+
+// Canvas clipping should be disbaled until MNIA-7VYJLU is fixed. After fix, this macro should be removed. 
+//MACRO HUI_DISABLE_CANVAS_VISUAL_CLIPPING
+
+// Compile for Series 60. (This is the default)
+MACRO           SERIES_60
+
+// Compile for Series 80.
+// Note: not tested, most probably will not work any more...
+// MACRO           SERIES_80
+
+// The DLL will use CAPABILITY NONE if this is defined. This allows installing
+// it in all devices using a SIS package.
+//
+// Should not be used in platformised environments
+//
+//MACRO           HUI_NO_CAPABILITIES
+//#define HUI_NO_CAPABILITIES
+
+// Print debug messages using CHuiStatic::Printf(). This affects only debug
+// builds - there is no debug output for release builds. To make release
+// builds to generate debug output with CHuiStatic::Printf(), you have to
+// manually tune HuiUtil.h header and recompile everything. You have to
+// know what you're doing there! ;)
+// MACRO           HUI_DEBUG_WITH_PRINTF
+
+// Print debug messages from the frame draw code, using RDebug
+// Be aware that this creates A LOT of debug output.-
+// MACRO           HUI_DEBUG_FRAMEDRAW
+
+// Print debug messages from the frame drawing code, using CHuiStatic::Printf()
+// This is an alternative for HUI_DEBUG_FRAMEDRAW
+// MACRO           HUI_DEBUG_FRAMEDRAW_WITH_PRINTF
+
+// These  will constrain the used APIs to ones that are available in public SDK.
+// Enable these, if using a public SDK!
+// MACRO           PUBLIC_SDK
+// #define PUBLIC_SDK
+
+// Enable or disable the HUITK probing with HUI_PROBE_ENABLED
+// MACRO           HUI_PROBE_ENABLED
+
+// Enable or disable drawing tracking in debugger for coretoolkit
+//  MACRO HUI_DEBUG_TRACK_DRAWING
+
+// Enable NVG in coretoolkit
+MACRO __NVG
+
+// Enable subwindow effects
+//MACRO HUI_ENABLE_SUBWINDOW_FX 
+
+#include "../../CommonInc/coretkoptions.mmh"
+
+#include "huitk_base.mmp"
+
+// M3G support:
+
+// M3G Libraries needed
+LIBRARY         m3gcore.lib // M3G Core library
+LIBRARY         estor.lib // RFileWriteStream, RFileReadStream
+
+

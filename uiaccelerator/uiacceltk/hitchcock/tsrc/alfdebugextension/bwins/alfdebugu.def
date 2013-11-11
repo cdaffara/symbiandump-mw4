@@ -1,0 +1,2 @@
+EXPORTS	?CreateDebugExtensionFactoryL@@YAPAVCAlfDebugFactory@@XZ @ 1 NONAME ; class CAlfDebugFactory * CreateDebugExtensionFactoryL(void)
+

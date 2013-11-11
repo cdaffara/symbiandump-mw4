@@ -1,0 +1,51 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This is a top level bld file that drives all sub-components
+*                that make up SVGT Engine
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+//Platforms listed are not built by the SVGT Engine
+PRJ_PLATFORMS
+DEFAULT 
+
+
+#define __JAVA_JSR_226_2D_SVG_API
+PRJ_MMPFILES
+// ../cXML/Group/cXML.mmp
+
+../SVG/SVGEngine/group/SVGEngine.mmp
+../SVG/SVGRecog/Group/SvgRecog.MMP
+../nvgdecoder/group/nvgdecoder.mmp
+../nvgdecoder/group/NVGDecoder_SW.mmp
+../VGRenderer/group/VGRenderer.mmp
+../VGRenderer/PseudoVG/group/PseudoVG.mmp
+../VGRenderer/SWVG/group/SWVG.mmp
+//#ifdef __JAVA_JSR_226_2D_SVG_API
+../SVGEngineJI/group/SVGEngineJI.mmp
+//#endif
+
+
+PRJ_EXPORTS
+/*
+*   Changes for CP50 Build Improvement
+*/
+../rom/SVGEngine.iby          CORE_MW_LAYER_IBY_EXPORT_PATH(SVGEngine.iby)
+ ../rom/nvgdecoder.iby     CORE_MW_LAYER_IBY_EXPORT_PATH(NVGDecoder.iby)
+ ../rom/NVGDecoder_SW.iby     CORE_MW_LAYER_IBY_EXPORT_PATH(NVGDecoder_SW.iby)
+../rom/VGRenderer.iby 				CORE_MW_LAYER_IBY_EXPORT_PATH(VGRenderer.iby)
+//  End of File

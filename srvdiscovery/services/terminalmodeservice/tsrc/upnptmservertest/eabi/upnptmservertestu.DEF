@@ -1,0 +1,10 @@
+EXPORTS	
+	_Z9LibEntryLv @ 1 NONAME
+        _Z15SetRequirementsRP16CTestModuleParamRm @ 2 NONAME
+	_ZTI10CTestTimer @ 3 NONAME
+	_ZTI15CDiscoverDevice @ 4 NONAME
+	_ZTI19CDiscoveryTestTimer @ 5 NONAME
+	_ZTV10CTestTimer @ 6 NONAME
+	_ZTV15CDiscoverDevice @ 7 NONAME
+	_ZTV19CDiscoveryTestTimer @ 8 NONAME
+

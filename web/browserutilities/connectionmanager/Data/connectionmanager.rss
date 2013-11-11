@@ -1,0 +1,218 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This file contains all the resources for Connection Manager.
+*
+*/
+
+
+//  RESOURCE IDENTIFIER
+NAME    CnMn // 4 letter ID
+
+//  INCLUDES
+#include <eikon.rh>
+#include <avkon.loc>
+#include <connectionmanager.loc>
+#include "eikon.rsg"
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <uikon.rh>
+#include <ConnMan.mbg>
+#include "ConnMan.hrh"
+
+#define connman_bitmap_file "z:\\resource\\Apps\\connman.mbm"
+
+//  RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+
+RESOURCE TBUF { buf="ConnectionManager"; }
+
+
+RESOURCE TBUF r_ics_note_use_another_ap
+	{
+	buf = qtn_ics_note_use_another_ap;
+	}
+
+RESOURCE TBUF r_ext_err_no_network_cover
+	{
+	buf = qtn_ext_err_no_network_cover;
+	}
+
+RESOURCE TBUF r_ics_query_use_extng
+	{
+	buf = qtn_ics_query_use_extng;
+	}
+
+RESOURCE TBUF r_ics_note_close_connection
+	{
+	buf = qtn_ics_note_close_conn_try_again;
+	}
+
+RESOURCE TBUF r_wml_query_new_conn
+	{
+	buf = qtn_wml_query_new_conn;
+	}
+
+RESOURCE TBUF r_wml_query_make_secure_conn 
+	{
+	buf = qtn_wml_query_make_secure_conn;
+	}
+
+RESOURCE TBUF r_wml_conf_conn_need
+	{
+	buf = qtn_wml_conf_conn_need;
+	}
+
+RESOURCE TBUF r_wml_info_insert_ap
+        {
+        buf = qtn_wml_info_insert_ap;
+
+        }
+
+RESOURCE TBUF r_ics_wait_connecting_ell
+	{
+	buf =	qtn_ics_conct_note_ell;
+	}
+
+RESOURCE TBUF r_ics_wait_connecting
+	{
+	buf = qtn_ics_conct_note_txt;
+	}
+
+RESOURCE TBUF r_qtn_offline_not_possible
+    {
+    buf = qtn_offline_not_possible;
+    }
+
+RESOURCE TBUF r_qtn_offline_activate_wlan
+    {
+    buf = qtn_offline_activate_wlan;
+    }
+
+RESOURCE DIALOG r_connman_conf_query
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO__YES;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+			control= AVKON_CONFIRMATION_QUERY 
+				{ 
+					layout = EConfirmationLayout;
+					label = "";
+				};
+			}
+        };
+    }
+
+
+RESOURCE DIALOG r_connman_wait_note_csd
+	{
+	flags = EAknWaitNoteFlags;
+	buttons=R_AVKON_SOFTKEYS_CANCEL;
+    items=
+		{
+		DLG_LINE
+			{
+			type = EAknCtNote;
+			id = EConnManWaitNote;
+			control= AVKON_NOTE 
+                { 
+				layout = EWaitLayout;
+				singular_label = "";
+				imagefile = connman_bitmap_file;
+				imageid = EMbmConnmanQgn_note_csd;
+				imagemask = EMbmConnmanQgn_note_csd_mask;
+				animation =R_QGN_GRAF_WAIT_BAR_ANIM;
+				};
+			}
+		};
+	}
+
+
+RESOURCE DIALOG r_connman_wait_note_gprs
+	{
+	flags = EAknWaitNoteFlags;
+	buttons=R_AVKON_SOFTKEYS_CANCEL;
+    items=
+		{
+		DLG_LINE
+			{
+			type = EAknCtNote;
+			id = EConnManWaitNote;
+			control= AVKON_NOTE 
+                { 
+				layout = EWaitLayout;
+				singular_label = qtn_ics_conct_note_ell;
+				imagefile = connman_bitmap_file;
+				imageid = EMbmConnmanQgn_note_gprs;
+				imagemask = EMbmConnmanQgn_note_gprs_mask;
+				animation =R_QGN_GRAF_WAIT_BAR_ANIM;
+				};
+			}
+		};
+	}
+
+
+RESOURCE DIALOG r_connman_wait_note
+	{
+	flags = EAknWaitNoteFlags;
+	buttons=R_AVKON_SOFTKEYS_CANCEL;
+    items=
+		{
+		DLG_LINE
+			{
+			type = EAknCtNote;
+			id = EConnManWaitNote;
+			control= AVKON_NOTE 
+                { 
+				layout = EWaitLayout;
+				singular_label = "";
+				animation =R_QGN_GRAF_WAIT_BAR_ANIM;
+				};
+			}
+		};
+	}
+
+
+RESOURCE DIALOG r_connman_information_note
+	{
+	flags = EAknInformationNoteFlags;
+	buttons=R_AVKON_SOFTKEYS_EMPTY;
+    items=
+		{
+		DLG_LINE
+			{
+			type=EAknCtNote;
+			id=EConnManInfoNote;
+			control= AVKON_NOTE 
+				{ 
+					layout = EGeneralLayout;
+					singular_label = "";
+					plural_label = "";
+					imagefile = AVKON_BITMAP_FILE;
+					imageid = EMbmAvkonQgn_note_info;
+					imagemask = EMbmAvkonQgn_note_info_mask;
+				};
+			}
+		};
+	}
+
+// End of File

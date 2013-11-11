@@ -1,0 +1,156 @@
+/** @file
+* Copyright (c) 2002-2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*  This is the project specification file for Upnp.
+*
+*/
+
+#include "../../../inc/upnpcompvariant.hrh"
+
+TARGETTYPE        dll
+#if defined(__HN_31__) || defined(__HN_32__)
+TARGET            hnserviceframework.dll
+UID               0x1000008d 0x2000F883
+#else
+TARGET            upnpserviceframework.dll
+UID               0x1000008d 0x2001B2B8
+#endif
+
+CAPABILITY        CAP_GENERAL_DLL
+VENDORID          VID_DEFAULT
+
+SOURCEPATH        ../src
+
+SOURCE            upnpservice.cpp
+SOURCE            upnpserviceimplementation.cpp
+SOURCE            upnpaction.cpp
+SOURCE            upnpargument.cpp
+SOURCE            upnpdevice.cpp
+SOURCE            upnpdeviceimplementationbase.cpp
+SOURCE            upnpdeviceimplementation.cpp
+SOURCE            upnpsilentdeviceimplementation.cpp
+SOURCE            upnpstatevariable.cpp
+SOURCE            upnpsubscriberlibrary.cpp
+SOURCE            upnpsubscriberlibraryelement.cpp
+SOURCE            upnpsoapmessage.cpp
+SOURCE            upnpsoapmessagefactory.cpp
+SOURCE            upnpgenamessage.cpp
+SOURCE            upnpgenamessagefactory.cpp
+SOURCE            upnpicon.cpp
+SOURCE            upnpdispatcher.cpp
+SOURCE            upnpdispatcherengine.cpp
+SOURCE            upnpdispatchersession.cpp
+SOURCE            upnpdispatcherrequest.cpp
+SOURCE            upnpsettings.cpp
+SOURCE            upnpdescriptionproperty.cpp
+SOURCE            upnpdevicecontenthandler.cpp
+SOURCE            upnpdevicedescriptionstore.cpp
+SOURCE            upnpcontenthandler.cpp
+SOURCE            upnpiconcontenthandler.cpp
+SOURCE            upnpscpdcontenthandler.cpp
+SOURCE            upnpactionlistcontenthandler.cpp
+SOURCE            upnpactioncontenthandler.cpp
+SOURCE            upnpactionnamecontenthandler.cpp
+SOURCE            upnpargumentlistcontenthandler.cpp
+SOURCE            upnpargumentcontenthandler.cpp
+SOURCE            upnpservicestatetablecontenthandler.cpp
+SOURCE            upnpstatevariablecontenthandler.cpp
+SOURCE            upnpallowedvaluerangecontenthandler.cpp
+SOURCE            upnpallowedvaluelistcontenthandler.cpp
+SOURCE            upnpignorecontenthandler.cpp
+SOURCE            upnpcontenthandlerscontroller.cpp
+SOURCE            upnpservicecontenthandler.cpp
+SOURCE            upnpdevicetagcontenthandler.cpp
+SOURCE            upnpiconlistcontenthandler.cpp
+SOURCE            upnpdevicelistcontenthandler.cpp
+SOURCE            upnpservicelistcontenthandler.cpp
+SOURCE            upnpservicetagcontenthandler.cpp
+SOURCE            upnppropertysetcontenthandler.cpp
+SOURCE            upnpsingletagcontenthandler.cpp
+SOURCE            upnpsoapcontenthandler.cpp
+SOURCE            upnpbodyofsoapcontenthandler.cpp
+SOURCE            upnperrorcodeseekercontenthandler.cpp
+SOURCE            upnpsoapparser.cpp
+SOURCE            upnprootcontenthandler.cpp
+SOURCE            upnphttpclientengine.cpp
+SOURCE            upnphttpmessagesender.cpp
+SOURCE            upnphttptransaction.cpp
+SOURCE            upnphttpinitialeventtransaction.cpp 
+SOURCE            upnphttpnonmoderatedeventtransaction.cpp
+SOURCE            upnphttpmoderatedeventtransaction.cpp
+SOURCE            upnpinitialeventqueuemanager.cpp
+SOURCE            upnpnonmoderatedeventqueuemanager.cpp
+SOURCE            upnpmoderatedeventqueuemanager.cpp
+SOURCE            upnpeventqueuemanagerbase.cpp
+SOURCE            upnpeventcontroller.cpp
+SOURCE            upnphttpservertransactionhandler.cpp
+SOURCE            upnphttpservertransactiondescription.cpp
+SOURCE            upnpdevicedescriptionrequest.cpp
+SOURCE		  upnpdevicedescription.cpp
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../../inc
+SYSTEMINCLUDE   ../../inc
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../messagehandler/inc
+USERINCLUDE     ../../upnputils/inc
+USERINCLUDE     ../../dlnawebserver/inc
+
+LIBRARY           euser.lib
+LIBRARY           efsrv.lib
+LIBRARY           bafl.lib
+LIBRARY           insock.lib
+LIBRARY           esock.lib
+LIBRARY           commdb.lib
+LIBRARY           ecom.lib
+LIBRARY           http.lib
+
+// UPnP
+#if defined(__HN_31__) || defined(__HN_32__)
+LIBRARY           hndlnawebserver.lib
+LIBRARY           hnipserversutils.lib
+#else
+LIBRARY           dlnawebserver.lib
+LIBRARY           upnpipserversutils.lib
+LIBRARY           upnpconnectionmanagersession.lib
+#endif
+
+//LibXml2
+#if defined(__HN_31__)
+LIBRARY           wsstarxmlengineutils.lib
+LIBRARY           wsstarxmlenginedom.lib
+#else
+LIBRARY           xmlengineutils.lib
+LIBRARY           xmlenginedom.lib
+#endif
+LIBRARY           xmlframework.lib
+
+LIBRARY           inetprotutil.lib
+LIBRARY           estlib.lib
+//central repository
+LIBRARY           centralrepository.lib
+
+LIBRARY           flogger.lib
+LIBRARY           estor.lib
+DEFFILE           UpnpServiceFramework
+
+//end of file
+
+VERSION 10.1
+
+paged
+
+SMPSAFE
+

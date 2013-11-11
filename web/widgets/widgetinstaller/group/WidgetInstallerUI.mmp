@@ -1,0 +1,95 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*    mmp file for WidgetInstallerUI component
+*
+*
+*/
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <bldvariant.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+// TARGET INFO
+TARGET          WidgetInstallerUI.dll
+TARGETTYPE      PLUGIN
+UID             0x10009D8D 0x1028281F
+
+// Capability assignment.
+CAPABILITY      CAP_ECOM_PLUGIN
+VENDORID        VID_DEFAULT
+
+// Resources
+START RESOURCE  ../data/1028281F.rss
+TARGET          WidgetInstallerUI.rsc
+END
+
+START RESOURCE  ../data/WidgetInstallerUI.rss
+DEPENDS avkon.rsg
+DEPENDS swinstcommonui.rsg
+HEADER
+TARGETPATH      Resource
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END
+
+// Sources
+SOURCEPATH      ../src 
+SOURCE          WidgetUIMain.cpp
+SOURCE          WidgetInstallerUi.cpp
+SOURCE          WidgetUIOperationsWatcher.cpp
+SOURCE          WidgetUIHandler.cpp
+SOURCE          WidgetUIConfigHandler.cpp
+SOURCE          WidgetRegistrationManager.cpp
+SOURCE          Iconconverter.cpp
+
+// Includes
+USERINCLUDE     ../inc
+USERINCLUDE     ../../../inc
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+
+// Libraries
+LIBRARY         euser.lib
+LIBRARY         ezip.lib
+LIBRARY         ecom.lib
+LIBRARY         avkon.lib
+LIBRARY         SWInstCommonUI.lib
+LIBRARY         cone.lib
+LIBRARY         bafl.lib
+LIBRARY         commonengine.lib
+LIBRARY         efsrv.lib
+LIBRARY         platformenv.lib
+LIBRARY         centralrepository.lib
+LIBRARY         SWInstTaskManager.lib
+DEBUGLIBRARY    flogger.lib
+LIBRARY         XmlEngineUtils.lib 
+LIBRARY         XMLEngine.lib
+LIBRARY         XmlEngineDOM.lib
+LIBRARY         apgrfx.lib
+LIBRARY         estor.lib
+LIBRARY         fbscli.lib
+LIBRARY         imageconversion.lib
+LIBRARY         bitmaptransforms.lib 
+LIBRARY         bitgdi.lib
+LIBRARY         WidgetRegistryClient.lib
+LIBRARY         charconv.lib 
+LIBRARY         apparc.lib
+
+// End of file

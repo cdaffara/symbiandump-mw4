@@ -1,0 +1,46 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_vendor_device_description_0029_3.script
+//! @SYMTestSuiteName	multiple_machines_client 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client 
+
+LOAD_SUITE multiple_machines_client
+LOAD_SUITE test_synchronize_client
+LOAD_SUITE testdelay
+
+START_TESTCASE	upnp_vendor_device_description_0029_3
+//! @file					
+//! @SYMTestCaseID			UPNP_POS_0029
+//! @SYMTestCaseDesc 		Retrieve  the device description of an UPnP device with a vendor defined device type(ST: urn:domain-name:device:deviceType:v)
+//! @SYMREQ					REQ8627, REQ8605, REQ8606, REQ8607, REQ8611, REQ8681, REQ10588, REQ10589,REQ4877, REQ8617, REQ8618
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Issue a discovery search request for all UPnP enabled vendor defined devices in the LAN with ST: urn:domain-name:device:deviceType:v 
+//! 						2.	Retrieve the Device description by issuing HTTP GET request for the URL retrieved from the LOCATION field specified in successful Discovery response.
+//! @SYMTestExpectedResults	
+//!							Retrieval of device description for a desired device is completed. i.e.,
+//!							If control point provides a valid LOCATION then it retrieves a file containing device description for a vendor defined device.
+//!							It is expected to receive only one describe response for describe request.
+//!							If it is an invalid location or unable to retrieve the description then it is expected return with appropriate error message.  
+//! @SYMTestType 			CIT
+
+RUN_TEST_STEP 1000 testdelay TestUPnPManager  
+RUN_TEST_STEP 1000 testdelay TestUPnPManager
+RUN_TEST_STEP 1000 test_synchronize_client TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini clientdata
+RUN_TEST_STEP 500 multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\describe_0029.ini upnp_vendor_device_description_0003
+END_TESTCASE	upnp_vendor_device_description_0029_3

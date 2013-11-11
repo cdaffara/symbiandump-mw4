@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE SystemDefinition SYSTEM "sysdef_1_4_0.dtd"
+  [ <!ENTITY layer_real_source_path "sf/mw/web" > ]>
+
+
+<SystemDefinition name="web" schema="1.4.0">
+  <systemModel>
+    <layer name="mw_layer">
+      <module name="web">
+	    <unit unitID="browsing_domain.web" mrp="" bldFile="&layer_real_source_path;/group" name="web"/>
+      </module>
+    </layer>
+  </systemModel>
+</SystemDefinition>

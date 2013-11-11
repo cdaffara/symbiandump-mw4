@@ -1,0 +1,586 @@
+EXPORTS
+	_ZN11CSenContext14BaseConstructLEv @ 1 NONAME
+	_ZN11CSenContext4NewLEN10SenContext17TContextDirectionE @ 2 NONAME
+	_ZN11CSenContext5NewLCEN10SenContext17TContextDirectionE @ 3 NONAME
+	_ZN11CSenContextC1EN10SenContext17TContextDirectionE @ 4 NONAME
+	_ZN11CSenContextC2EN10SenContext17TContextDirectionE @ 5 NONAME
+	_ZN11CSenContextD0Ev @ 6 NONAME
+	_ZN11CSenContextD1Ev @ 7 NONAME
+	_ZN11CSenContextD2Ev @ 8 NONAME
+	_ZN13CSenWSPattern13ConsumerIapIdERm @ 9 NONAME
+	_ZN13CSenWSPattern13HasSuperClassEN22MSenServiceDescription21TDescriptionClassTypeE @ 10 NONAME
+	_ZN13CSenWSPattern13StartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 11 NONAME
+	_ZN13CSenWSPattern14BaseConstructLERK6TDesC8 @ 12 NONAME
+	_ZN13CSenWSPattern14BaseConstructLERK6TDesC8S2_ @ 13 NONAME
+	_ZN13CSenWSPattern14BaseConstructLEv @ 14 NONAME
+	_ZN13CSenWSPattern14ConsumerSnapIdERm @ 15 NONAME
+	_ZN13CSenWSPattern17SetConsumerIapIdLEm @ 16 NONAME
+	_ZN13CSenWSPattern18SetConsumerSnapIdLEm @ 17 NONAME
+	_ZN13CSenWSPattern20ConsumerPolicyAsXmlLEv @ 18 NONAME
+	_ZN13CSenWSPattern21AcceptsConsumerPolicyER18MSenConsumerPolicy @ 19 NONAME
+	_ZN13CSenWSPattern25RebuildFromConsumerPolicyER18MSenConsumerPolicy @ 20 NONAME
+	_ZN13CSenWSPattern29ConsumerIdentityProviderIds8LEv @ 21 NONAME
+	_ZN13CSenWSPattern30AddConsumerIdentityProviderIdLERK6TDesC8 @ 22 NONAME
+	_ZN13CSenWSPattern31SetConsumerIdentityProviderIdsLER28CSenIdentityProviderIdArray8 @ 23 NONAME
+	_ZN13CSenWSPattern4NewLERK6TDesC8 @ 24 NONAME
+	_ZN13CSenWSPattern4NewLERK6TDesC8S2_ @ 25 NONAME
+	_ZN13CSenWSPattern4NewLEv @ 26 NONAME
+	_ZN13CSenWSPattern5NewLCERK6TDesC8 @ 27 NONAME
+	_ZN13CSenWSPattern5NewLCERK6TDesC8S2_ @ 28 NONAME
+	_ZN13CSenWSPattern5NewLCEv @ 29 NONAME
+	_ZN13CSenWSPattern7MatchesER22MSenServiceDescription @ 30 NONAME
+	_ZN13CSenWSPatternC1EN22MSenServiceDescription21TDescriptionClassTypeE @ 31 NONAME
+	_ZN13CSenWSPatternC2EN22MSenServiceDescription21TDescriptionClassTypeE @ 32 NONAME
+	_ZN13CSenWSPatternD0Ev @ 33 NONAME
+	_ZN13CSenWSPatternD1Ev @ 34 NONAME
+	_ZN13CSenWSPatternD2Ev @ 35 NONAME
+	_ZN14CSaslMechanism10Password8LEv @ 36 NONAME
+	_ZN14CSaslMechanism11MaxAttemptsEv @ 37 NONAME
+	_ZN14CSaslMechanism11SetIdentityEP20CSenIdentityProviderP19MSenIdentityManager @ 38 NONAME
+	_ZN14CSaslMechanism13SetTransformsE13RPointerArrayI21CSenPasswordTransformE @ 39 NONAME
+	_ZN14CSaslMechanism14ClearPasswordLEv @ 40 NONAME
+	_ZN14CSaslMechanism18IsPasswordFromUserEv @ 41 NONAME
+	_ZN14CSaslMechanism4NewLEv @ 42 NONAME
+	_ZN14CSaslMechanism5NewLCEv @ 43 NONAME
+	_ZN14CSaslMechanism7AccountEv @ 44 NONAME
+	_ZN14CSaslMechanism8InitFromES_ @ 45 NONAME
+	_ZN14CSaslMechanismC1Ev @ 46 NONAME
+	_ZN14CSaslMechanismC2Ev @ 47 NONAME
+	_ZN14CSaslMechanismD0Ev @ 48 NONAME
+	_ZN14CSaslMechanismD1Ev @ 49 NONAME
+	_ZN14CSaslMechanismD2Ev @ 50 NONAME
+	_ZN15CSenContextItem4NewLEP11CSenElement @ 51 NONAME
+	_ZN15CSenContextItem4NewLEP13CSenAtomEntry @ 52 NONAME
+	_ZN15CSenContextItem4NewLEP13CSenXmlReader @ 53 NONAME
+	_ZN15CSenContextItem4NewLEP15CSenMessageBase @ 54 NONAME
+	_ZN15CSenContextItem4NewLEP15CSenSoapMessage @ 55 NONAME
+	_ZN15CSenContextItem4NewLEP17CSenSoapEnvelope2 @ 56 NONAME
+	_ZN15CSenContextItem4NewLEP17CSenWSDescription @ 57 NONAME
+	_ZN15CSenContextItem4NewLEP17CSenXmlProperties @ 58 NONAME
+	_ZN15CSenContextItem4NewLEP24CSenLayeredXmlProperties @ 59 NONAME
+	_ZN15CSenContextItem4NewLEP6TDesC8 @ 60 NONAME
+	_ZN15CSenContextItem4NewLEP9CSenChunk @ 61 NONAME
+	_ZN15CSenContextItem4NewLEPi @ 62 NONAME
+	_ZN15CSenContextItem4NewLEPj @ 63 NONAME
+	_ZN15CSenContextItem4NewLEPv @ 64 NONAME
+	_ZN15CSenContextItem4NewLER11CSenElement @ 65 NONAME
+	_ZN15CSenContextItem4NewLER11MSenMessage @ 66 NONAME
+	_ZN15CSenContextItem4NewLER13CSenXmlReader @ 67 NONAME
+	_ZN15CSenContextItem4NewLER14MSenProperties @ 68 NONAME
+	_ZN15CSenContextItem4NewLER15CSenSoapMessage @ 69 NONAME
+	_ZN15CSenContextItem4NewLER17CSenWSDescription @ 70 NONAME
+	_ZN15CSenContextItem4NewLER17MSenRemoteHostlet @ 71 NONAME
+	_ZN15CSenContextItem4NewLER22MSenCoreServiceManager @ 72 NONAME
+	_ZN15CSenContextItem4NewLER25MSenRemoteServiceConsumer @ 73 NONAME
+	_ZN15CSenContextItem4NewLER9CSenChunk @ 74 NONAME
+	_ZN15CSenContextItem4NewLERK6TDesC8 @ 75 NONAME
+	_ZN15CSenContextItem4NewLEi @ 76 NONAME
+	_ZN15CSenContextItem4NewLEj @ 77 NONAME
+	_ZN15CSenContextItem5NewLCEP11CSenElement @ 78 NONAME
+	_ZN15CSenContextItem5NewLCEP13CSenAtomEntry @ 79 NONAME
+	_ZN15CSenContextItem5NewLCEP13CSenXmlReader @ 80 NONAME
+	_ZN15CSenContextItem5NewLCEP15CSenMessageBase @ 81 NONAME
+	_ZN15CSenContextItem5NewLCEP15CSenSoapMessage @ 82 NONAME
+	_ZN15CSenContextItem5NewLCEP17CSenSoapEnvelope2 @ 83 NONAME
+	_ZN15CSenContextItem5NewLCEP17CSenWSDescription @ 84 NONAME
+	_ZN15CSenContextItem5NewLCEP17CSenXmlProperties @ 85 NONAME
+	_ZN15CSenContextItem5NewLCEP24CSenLayeredXmlProperties @ 86 NONAME
+	_ZN15CSenContextItem5NewLCEP6TDesC8 @ 87 NONAME
+	_ZN15CSenContextItem5NewLCEP9CSenChunk @ 88 NONAME
+	_ZN15CSenContextItem5NewLCEPi @ 89 NONAME
+	_ZN15CSenContextItem5NewLCEPj @ 90 NONAME
+	_ZN15CSenContextItem5NewLCEPv @ 91 NONAME
+	_ZN15CSenContextItem5NewLCER11CSenElement @ 92 NONAME
+	_ZN15CSenContextItem5NewLCER11MSenMessage @ 93 NONAME
+	_ZN15CSenContextItem5NewLCER13CSenXmlReader @ 94 NONAME
+	_ZN15CSenContextItem5NewLCER14MSenProperties @ 95 NONAME
+	_ZN15CSenContextItem5NewLCER15CSenSoapMessage @ 96 NONAME
+	_ZN15CSenContextItem5NewLCER17CSenWSDescription @ 97 NONAME
+	_ZN15CSenContextItem5NewLCER17MSenRemoteHostlet @ 98 NONAME
+	_ZN15CSenContextItem5NewLCER22MSenCoreServiceManager @ 99 NONAME
+	_ZN15CSenContextItem5NewLCER25MSenRemoteServiceConsumer @ 100 NONAME
+	_ZN15CSenContextItem5NewLCER9CSenChunk @ 101 NONAME
+	_ZN15CSenContextItem5NewLCERK6TDesC8 @ 102 NONAME
+	_ZN15CSenContextItem5NewLCEi @ 103 NONAME
+	_ZN15CSenContextItem5NewLCEj @ 104 NONAME
+	_ZN15CSenContextItemD0Ev @ 105 NONAME
+	_ZN15CSenContextItemD1Ev @ 106 NONAME
+	_ZN15CSenContextItemD2Ev @ 107 NONAME
+	_ZN15CSenHandlerBase13WriteAsXMLToLER12RWriteStream @ 108 NONAME
+	_ZN15CSenHandlerBase22ProcessHandlerContextLER18MSenHandlerContext @ 109 NONAME
+	_ZN15CSenHandlerBase6AsXmlLEv @ 110 NONAME
+	_ZN15CSenHandlerBaseC2Ev @ 111 NONAME
+	_ZN15CSenHandlerBaseD0Ev @ 112 NONAME
+	_ZN15CSenHandlerBaseD1Ev @ 113 NONAME
+	_ZN15CSenHandlerBaseD2Ev @ 114 NONAME
+	_ZN17CSenClientContext14BaseConstructLEv @ 115 NONAME
+	_ZN17CSenClientContext4NewLEiR22CSenApplicationContext @ 116 NONAME
+	_ZN17CSenClientContext5NewLCEiR22CSenApplicationContext @ 117 NONAME
+	_ZN17CSenClientContextC1EiR22CSenApplicationContext @ 118 NONAME
+	_ZN17CSenClientContextC2EiR22CSenApplicationContext @ 119 NONAME
+	_ZN17CSenClientContextD0Ev @ 120 NONAME
+	_ZN17CSenClientContextD1Ev @ 121 NONAME
+	_ZN17CSenClientContextD2Ev @ 122 NONAME
+	_ZN17CSenServerContext14BaseConstructLEv @ 123 NONAME
+	_ZN17CSenServerContext4NewLER22MSenCoreServiceManager @ 124 NONAME
+	_ZN17CSenServerContext5NewLCER22MSenCoreServiceManager @ 125 NONAME
+	_ZN17CSenServerContextC1ER22MSenCoreServiceManager @ 126 NONAME
+	_ZN17CSenServerContextC2ER22MSenCoreServiceManager @ 127 NONAME
+	_ZN17CSenServerContextD0Ev @ 128 NONAME
+	_ZN17CSenServerContextD1Ev @ 129 NONAME
+	_ZN17CSenServerContextD2Ev @ 130 NONAME
+	_ZN17CSenSyncRequester14BaseConstructLEv @ 131 NONAME
+	_ZN17CSenSyncRequester4NewLER13MSenTransportR22MSenCoreServiceManager @ 132 NONAME
+	_ZN17CSenSyncRequester5NewLCER13MSenTransportR22MSenCoreServiceManager @ 133 NONAME
+	_ZN17CSenSyncRequesterC1ER13MSenTransportR22MSenCoreServiceManager @ 134 NONAME
+	_ZN17CSenSyncRequesterC2ER13MSenTransportR22MSenCoreServiceManager @ 135 NONAME
+	_ZN17CSenSyncRequesterD0Ev @ 136 NONAME
+	_ZN17CSenSyncRequesterD1Ev @ 137 NONAME
+	_ZN17CSenSyncRequesterD2Ev @ 138 NONAME
+	_ZN17CSenWSDescription10SetPolicyLERK6TDesC8 @ 139 NONAME
+	_ZN17CSenWSDescription10SetPolicyLERK6TDesC8S2_ @ 140 NONAME
+	_ZN17CSenWSDescription10SetPolicyLERK6TDesC8S2_S2_S2_ @ 141 NONAME
+	_ZN17CSenWSDescription10SetSnapIdLEm @ 142 NONAME
+	_ZN17CSenWSDescription12TransportCueEv @ 143 NONAME
+	_ZN17CSenWSDescription13HasSuperClassEN22MSenServiceDescription21TDescriptionClassTypeE @ 144 NONAME
+	_ZN17CSenWSDescription13ServicePolicyEv @ 145 NONAME
+	_ZN17CSenWSDescription14SetProviderIdLERK6TDesC8 @ 146 NONAME
+	_ZN17CSenWSDescription16SetTransportCueLERK6TDesC8 @ 147 NONAME
+	_ZN17CSenWSDescription20HasEqualPrimaryKeysLER22MSenServiceDescription @ 148 NONAME
+	_ZN17CSenWSDescription4NewLERK6TDesC8 @ 149 NONAME
+	_ZN17CSenWSDescription4NewLERK6TDesC8S2_ @ 150 NONAME
+	_ZN17CSenWSDescription4NewLEv @ 151 NONAME
+	_ZN17CSenWSDescription5NewLCERK6TDesC8 @ 152 NONAME
+	_ZN17CSenWSDescription5NewLCERK6TDesC8S2_ @ 153 NONAME
+	_ZN17CSenWSDescription5NewLCEv @ 154 NONAME
+	_ZN17CSenWSDescription6SnapIdERm @ 155 NONAME
+	_ZN17CSenWSDescription8IsLocalLEv @ 156 NONAME
+	_ZN17CSenWSDescriptionC1EN22MSenServiceDescription21TDescriptionClassTypeE @ 157 NONAME
+	_ZN17CSenWSDescriptionC2EN22MSenServiceDescription21TDescriptionClassTypeE @ 158 NONAME
+	_ZN17CSenWSDescriptionD0Ev @ 159 NONAME
+	_ZN17CSenWSDescriptionD1Ev @ 160 NONAME
+	_ZN17CSenWSDescriptionD2Ev @ 161 NONAME
+	_ZN17SenMultiPartUtils11HeaderRootLEP11MSenMessageRK5RBuf8RS2_ @ 162 NONAME
+	_ZN17SenMultiPartUtils13FileDataPartLEjjR6RArrayI20TXmlEngDataContainerER5RBuf8 @ 163 NONAME
+	_ZN17SenMultiPartUtils13FileDataRestLEjjjR6RArrayI20TXmlEngDataContainerER5RBuf8 @ 164 NONAME
+	_ZN17SenMultiPartUtils16BoundaryLineEndLERK5RBuf8RS0_ @ 165 NONAME
+	_ZN17SenMultiPartUtils17HeaderBinaryDataLEjR6RArrayI20TXmlEngDataContainerER5RBuf8 @ 166 NONAME
+	_ZN17SenMultiPartUtils17SerializeMessageLER16CSenFragmentBaseR5RBuf821TXmlEngSerializerType @ 167 NONAME
+	_ZN17SenMultiPartUtils18BoundaryLineStartLERK5RBuf8RS0_ @ 168 NONAME
+	_ZN17SenMultiPartUtils22GenerateRandomRootCidLER5RBuf8 @ 169 NONAME
+	_ZN17SenMultiPartUtils23GenerateRandomBoundaryLER5RBuf8 @ 170 NONAME
+	_ZN17SenMultiPartUtils4CidLERK5RBuf8R6RArrayIS0_E @ 171 NONAME
+	_ZN17SenMultiPartUtils8SetFileLEjiR6TDesC8R6RArrayI5RBuf8E @ 172 NONAME
+	_ZN18CSenMessageContext14BaseConstructLEv @ 173 NONAME
+	_ZN18CSenMessageContext4NewLEN10SenContext17TContextDirectionEP14MSenProperties @ 174 NONAME
+	_ZN18CSenMessageContext5NewLCEN10SenContext17TContextDirectionEP14MSenProperties @ 175 NONAME
+	_ZN18CSenMessageContextC1EN10SenContext17TContextDirectionEP14MSenProperties @ 176 NONAME
+	_ZN18CSenMessageContextC2EN10SenContext17TContextDirectionEP14MSenProperties @ 177 NONAME
+	_ZN18CSenMessageContextD0Ev @ 178 NONAME
+	_ZN18CSenMessageContextD1Ev @ 179 NONAME
+	_ZN18CSenMessageContextD2Ev @ 180 NONAME
+	_ZN18CSenServiceSession10FacetValueER6TDesC8RP6HBufC8 @ 181 NONAME
+	_ZN18CSenServiceSession10RefreshMTLERP6HBufC8 @ 182 NONAME
+	_ZN18CSenServiceSession10SetStatusLEv @ 183 NONAME
+	_ZN18CSenServiceSession10TransportLER25MSenRemoteServiceConsumer @ 184 NONAME
+	_ZN18CSenServiceSession11FrameworkIdEv @ 185 NONAME
+	_ZN18CSenServiceSession11RemoveFacetERK6TDesC8 @ 186 NONAME
+	_ZN18CSenServiceSession11ScoreMatchLER22MSenServiceDescription @ 187 NONAME
+	_ZN18CSenServiceSession11SetHostletLEP17MSenRemoteHostlet @ 188 NONAME
+	_ZN18CSenServiceSession12TransportCueEv @ 189 NONAME
+	_ZN18CSenServiceSession13HasSuperClassEN22MSenServiceDescription21TDescriptionClassTypeE @ 190 NONAME
+	_ZN18CSenServiceSession13SetTransportLEP17CSenTransportBase @ 191 NONAME
+	_ZN18CSenServiceSession14BaseConstructLEv @ 192 NONAME
+	_ZN18CSenServiceSession14ComputeStatusLEv @ 193 NONAME
+	_ZN18CSenServiceSession14ParseResponseLERK6TDesC8RP6HBufC8 @ 194 NONAME
+	_ZN18CSenServiceSession14SendToHostletLER17MSenRemoteHostletRK6TDesC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 195 NONAME
+	_ZN18CSenServiceSession15InitializeFromLER22MSenServiceDescription @ 196 NONAME
+	_ZN18CSenServiceSession15RemoteConsumerLERK6TDesC8 @ 197 NONAME
+	_ZN18CSenServiceSession15RemoveConsumerLER25MSenRemoteServiceConsumer @ 198 NONAME
+	_ZN18CSenServiceSession16SetTransportCueLERK6TDesC8 @ 199 NONAME
+	_ZN18CSenServiceSession20AsServiceDescriptionEv @ 200 NONAME
+	_ZN18CSenServiceSession20DescriptionClassTypeEv @ 201 NONAME
+	_ZN18CSenServiceSession20TransportPropertiesLERP6HBufC8R25MSenRemoteServiceConsumer @ 202 NONAME
+	_ZN18CSenServiceSession23ProvideHostletResponseLER17MSenRemoteHostletiiRK6TDesC8R9CSenChunk @ 203 NONAME
+	_ZN18CSenServiceSession23SetTransportPropertiesLERK6TDesC8R25MSenRemoteServiceConsumer @ 204 NONAME
+	_ZN18CSenServiceSession23WriteExtensionsAsXMLToLER12RWriteStream @ 205 NONAME
+	_ZN18CSenServiceSession28CompleteServerMessagesOnOffLERKi @ 206 NONAME
+	_ZN18CSenServiceSession5SaveLEv @ 207 NONAME
+	_ZN18CSenServiceSession5SendLERK6TDesC8S2_R25MSenRemoteServiceConsumerRiRP6HBufC8 @ 208 NONAME
+	_ZN18CSenServiceSession7FacetsLER13RPointerArrayI9CSenFacetE @ 209 NONAME
+	_ZN18CSenServiceSession7MatchesER22MSenServiceDescription @ 210 NONAME
+	_ZN18CSenServiceSession7StatusLEv @ 211 NONAME
+	_ZN18CSenServiceSession7SubmitLERK6TDesC8S2_R25MSenRemoteServiceConsumerRP6HBufC8 @ 212 NONAME
+	_ZN18CSenServiceSession8ContractEv @ 213 NONAME
+	_ZN18CSenServiceSession8EndpointEv @ 214 NONAME
+	_ZN18CSenServiceSession8IsReadyLEv @ 215 NONAME
+	_ZN18CSenServiceSession9AddFacetLERK9CSenFacet @ 216 NONAME
+	_ZN18CSenServiceSession9HasFacetLERK6TDesC8Ri @ 217 NONAME
+	_ZN18CSenServiceSession9SetFacetLERK9CSenFacet @ 218 NONAME
+	_ZN18CSenServiceSessionC2EN22MSenServiceDescription21TDescriptionClassTypeER4MSIF @ 219 NONAME
+	_ZN18CSenServiceSessionD0Ev @ 220 NONAME
+	_ZN18CSenServiceSessionD1Ev @ 221 NONAME
+	_ZN18CSenServiceSessionD2Ev @ 222 NONAME
+	_ZN18CSenSessionContext14BaseConstructLEv @ 223 NONAME
+	_ZN18CSenSessionContext4NewLEv @ 224 NONAME
+	_ZN18CSenSessionContext5NewLCEv @ 225 NONAME
+	_ZN18CSenSessionContextC1Ev @ 226 NONAME
+	_ZN18CSenSessionContextC2Ev @ 227 NONAME
+	_ZN18CSenSessionContextD0Ev @ 228 NONAME
+	_ZN18CSenSessionContextD1Ev @ 229 NONAME
+	_ZN18CSenSessionContextD2Ev @ 230 NONAME
+	_ZN20CSenTransportContext14BaseConstructLER22MSenCoreServiceManagerR17CSenWSDescriptionP18CSenServiceSession @ 231 NONAME
+	_ZN20CSenTransportContext4NewLER22MSenCoreServiceManagerR17CSenWSDescription @ 232 NONAME
+	_ZN20CSenTransportContext4NewLER22MSenCoreServiceManagerR17CSenWSDescriptionR18CSenServiceSession @ 233 NONAME
+	_ZN20CSenTransportContext5NewLCER22MSenCoreServiceManagerR17CSenWSDescription @ 234 NONAME
+	_ZN20CSenTransportContext5NewLCER22MSenCoreServiceManagerR17CSenWSDescriptionR18CSenServiceSession @ 235 NONAME
+	_ZN20CSenTransportContextC1Ev @ 236 NONAME
+	_ZN20CSenTransportContextC2Ev @ 237 NONAME
+	_ZN20CSenTransportContextD0Ev @ 238 NONAME
+	_ZN20CSenTransportContextD1Ev @ 239 NONAME
+	_ZN20CSenTransportContextD2Ev @ 240 NONAME
+	_ZN21CSenWebServiceSession10ConstructLEv @ 241 NONAME
+	_ZN21CSenWebServiceSession10IsExpiredLEv @ 242 NONAME
+	_ZN21CSenWebServiceSession11FrameworkIdEv @ 243 NONAME
+	_ZN21CSenWebServiceSession11HasSecurityEv @ 244 NONAME
+	_ZN21CSenWebServiceSession11NewMessageLERP15CSenSoapMessage @ 245 NONAME
+	_ZN21CSenWebServiceSession11SubmitSoapLERK6TDesC8S2_R25MSenRemoteServiceConsumerRP6HBufC8 @ 246 NONAME
+	_ZN21CSenWebServiceSession11ValidUntilLEv @ 247 NONAME
+	_ZN21CSenWebServiceSession12AddConsumerLER25MSenRemoteServiceConsumer @ 248 NONAME
+	_ZN21CSenWebServiceSession12HandleErrorLEiP6HBufC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 249 NONAME
+	_ZN21CSenWebServiceSession12SetContractLERK6TDesC8 @ 250 NONAME
+	_ZN21CSenWebServiceSession12SetEndPointLERK6TDesC8 @ 251 NONAME
+	_ZN21CSenWebServiceSession12SetSecurityLERK6TDesC8 @ 252 NONAME
+	_ZN21CSenWebServiceSession12SetUserNameLER6TDesC8 @ 253 NONAME
+	_ZN21CSenWebServiceSession12TransportCueEv @ 254 NONAME
+	_ZN21CSenWebServiceSession13HasSuperClassEN22MSenServiceDescription21TDescriptionClassTypeE @ 255 NONAME
+	_ZN21CSenWebServiceSession13ParseMessageLER15CSenSoapMessage @ 256 NONAME
+	_ZN21CSenWebServiceSession13WriteAsXMLToLER12RWriteStream @ 257 NONAME
+	_ZN21CSenWebServiceSession14AddCredentialLER14CSenCredential @ 258 NONAME
+	_ZN21CSenWebServiceSession14ComputeStatusLEv @ 259 NONAME
+	_ZN21CSenWebServiceSession14ParseResponseLERK6TDesC8RP15CSenSoapMessage @ 260 NONAME
+	_ZN21CSenWebServiceSession14ParseResponseLERK6TDesC8RP6HBufC8 @ 261 NONAME
+	_ZN21CSenWebServiceSession14SendToHostletLER17MSenRemoteHostletRK6TDesC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 262 NONAME
+	_ZN21CSenWebServiceSession15InitializeFromLER22MSenServiceDescription @ 263 NONAME
+	_ZN21CSenWebServiceSession15SendToConsumerLEP6HBufC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 264 NONAME
+	_ZN21CSenWebServiceSession16FrameworkVersionEv @ 265 NONAME
+	_ZN21CSenWebServiceSession16GetCredentialIdLEv @ 266 NONAME
+	_ZN21CSenWebServiceSession16HandleSoapFaultLEP15CSenSoapMessageRP6HBufC8 @ 267 NONAME
+	_ZN21CSenWebServiceSession16HandleSoapFaultLEP15CSenSoapMessageiiR25MSenRemoteServiceConsumerP14MSenProperties @ 268 NONAME
+	_ZN21CSenWebServiceSession16SetTransportCueLERK6TDesC8 @ 269 NONAME
+	_ZN21CSenWebServiceSession16StartTransactionEv @ 270 NONAME
+	_ZN21CSenWebServiceSession17CredentialChangedEN22MSenCredentialObserver20TSenCredentialChangeEPv @ 271 NONAME
+	_ZN21CSenWebServiceSession17SetCredentialPtrLE17RSenCredentialPtr @ 272 NONAME
+	_ZN21CSenWebServiceSession18MessageForSendingLERK6TDesC8S2_RP15CSenSoapMessage @ 273 NONAME
+	_ZN21CSenWebServiceSession20ClientServerIntervalEv @ 274 NONAME
+	_ZN21CSenWebServiceSession20SendErrorToConsumerLEiP6HBufC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 275 NONAME
+	_ZN21CSenWebServiceSession20SetFrameworkHeadersLER15CSenSoapMessage @ 276 NONAME
+	_ZN21CSenWebServiceSession20TransactionCompletedEv @ 277 NONAME
+	_ZN21CSenWebServiceSession22AddCredentialObserverLER22CSenInternalCredential @ 278 NONAME
+	_ZN21CSenWebServiceSession23ConstructSecurityTokenLER14CSenCredentialRP6HBufC8 @ 279 NONAME
+	_ZN21CSenWebServiceSession23ProvideHostletResponseLER17MSenRemoteHostletiiRK6TDesC8R9CSenChunk @ 280 NONAME
+	_ZN21CSenWebServiceSession24SetClientServerIntervalLE25TTimeIntervalMicroSeconds @ 281 NONAME
+	_ZN21CSenWebServiceSession25FillCredentialIdentifierLER24CSenCredentialIdentifier @ 282 NONAME
+	_ZN21CSenWebServiceSession26SendSoapMessageToConsumerLEP15CSenSoapMessageiR25MSenRemoteServiceConsumerP14MSenProperties @ 283 NONAME
+	_ZN21CSenWebServiceSession27TryToSearchValidCredentialLEv @ 284 NONAME
+	_ZN21CSenWebServiceSession5SendLERK6TDesC8S2_R25MSenRemoteServiceConsumerRiRP6HBufC8 @ 285 NONAME
+	_ZN21CSenWebServiceSession7SubmitLERK6TDesC8S2_R25MSenRemoteServiceConsumerRP6HBufC8 @ 286 NONAME
+	_ZN21CSenWebServiceSession8ConsumerEv @ 287 NONAME
+	_ZN21CSenWebServiceSession8ContractEv @ 288 NONAME
+	_ZN21CSenWebServiceSession8EndpointEv @ 289 NONAME
+	_ZN21CSenWebServiceSession8IsReadyLEv @ 290 NONAME
+	_ZN21CSenWebServiceSession9SecurityLEv @ 291 NONAME
+	_ZN21CSenWebServiceSession9SendSoapLERK6TDesC8S2_R25MSenRemoteServiceConsumerRiRP6HBufC8 @ 292 NONAME
+	_ZN21CSenWebServiceSession9XmlReaderEv @ 293 NONAME
+	_ZN21CSenWebServiceSessionC1EN22MSenServiceDescription21TDescriptionClassTypeER4MSIF @ 294 NONAME
+	_ZN21CSenWebServiceSessionC2EN22MSenServiceDescription21TDescriptionClassTypeER4MSIF @ 295 NONAME
+	_ZN21CSenWebServiceSessionD0Ev @ 296 NONAME
+	_ZN21CSenWebServiceSessionD1Ev @ 297 NONAME
+	_ZN21CSenWebServiceSessionD2Ev @ 298 NONAME
+	_ZN22CSenApplicationContext14BaseConstructLEv @ 299 NONAME
+	_ZN22CSenApplicationContext4NewLE9TSecureIdR17CSenServerContext @ 300 NONAME
+	_ZN22CSenApplicationContext5NewLCE9TSecureIdR17CSenServerContext @ 301 NONAME
+	_ZN22CSenApplicationContextC1E9TSecureIdR17CSenServerContext @ 302 NONAME
+	_ZN22CSenApplicationContextC2E9TSecureIdR17CSenServerContext @ 303 NONAME
+	_ZN22CSenApplicationContextD0Ev @ 304 NONAME
+	_ZN22CSenApplicationContextD1Ev @ 305 NONAME
+	_ZN22CSenApplicationContextD2Ev @ 306 NONAME
+	_ZN27CSenInternalServiceConsumer10ConstructLEv @ 307 NONAME
+	_ZN27CSenInternalServiceConsumer10SetStatusLEi @ 308 NONAME
+	_ZN27CSenInternalServiceConsumer11SetSessionLER24MSenRemoteServiceSession @ 309 NONAME
+	_ZN27CSenInternalServiceConsumer12FileProgressEiiiRK6TDesC8i @ 310 NONAME
+	_ZN27CSenInternalServiceConsumer12HandleErrorLEP6HBufC8iiP14MSenProperties @ 311 NONAME
+	_ZN27CSenInternalServiceConsumer13ChunkByTxnIdLEiRP9CSenChunk @ 312 NONAME
+	_ZN27CSenInternalServiceConsumer13HasSuperClassEN22MSenServiceDescription21TDescriptionClassTypeE @ 313 NONAME
+	_ZN27CSenInternalServiceConsumer14HandleMessageLEP6HBufC8iP14MSenProperties @ 314 NONAME
+	_ZN27CSenInternalServiceConsumer8IsReadyLEv @ 315 NONAME
+	_ZN27CSenInternalServiceConsumer9FrameworkEv @ 316 NONAME
+	_ZN27CSenInternalServiceConsumerC2EN22MSenServiceDescription21TDescriptionClassTypeER4CSIF @ 317 NONAME
+	_ZN27CSenInternalServiceConsumerD0Ev @ 318 NONAME
+	_ZN27CSenInternalServiceConsumerD1Ev @ 319 NONAME
+	_ZN27CSenInternalServiceConsumerD2Ev @ 320 NONAME
+	_ZN30CSenLayeredTransportProperties10HeartbeatLERi @ 321 NONAME
+	_ZN30CSenLayeredTransportProperties10IAPDialogLERi @ 322 NONAME
+	_ZN30CSenLayeredTransportProperties10ProxyHostLER6TPtrC8 @ 323 NONAME
+	_ZN30CSenLayeredTransportProperties10ProxyPortLERi @ 324 NONAME
+	_ZN30CSenLayeredTransportProperties10UserAgentLER6TPtrC8 @ 325 NONAME
+	_ZN30CSenLayeredTransportProperties11ProxyUsageLERi @ 326 NONAME
+	_ZN30CSenLayeredTransportProperties11SnapDialogLERi @ 327 NONAME
+	_ZN30CSenLayeredTransportProperties11SoapActionLER6TPtrC8 @ 328 NONAME
+	_ZN30CSenLayeredTransportProperties12IntPropertyLERK6TDesC8Ri @ 329 NONAME
+	_ZN30CSenLayeredTransportProperties12IntPropertyLERK6TDesC8RiN21MSenLayeredProperties19TSenPropertiesLayerE @ 330 NONAME
+	_ZN30CSenLayeredTransportProperties12IsSafeToCastEN14MSenProperties23TSenPropertiesClassTypeE @ 331 NONAME
+	_ZN30CSenLayeredTransportProperties12SetPropertyLERK6TDesC8S2_ @ 332 NONAME
+	_ZN30CSenLayeredTransportProperties12SetPropertyLERK6TDesC8S2_N21MSenLayeredProperties19TSenPropertiesLayerE @ 333 NONAME
+	_ZN30CSenLayeredTransportProperties12SetPropertyLERK6TDesC8S2_S2_ @ 334 NONAME
+	_ZN30CSenLayeredTransportProperties13BoolPropertyLERK6TDesC8Ri @ 335 NONAME
+	_ZN30CSenLayeredTransportProperties13BoolPropertyLERK6TDesC8RiN21MSenLayeredProperties19TSenPropertiesLayerE @ 336 NONAME
+	_ZN30CSenLayeredTransportProperties13MwsNamespaceLER6TPtrC8 @ 337 NONAME
+	_ZN30CSenLayeredTransportProperties14BaseConstructLERK11CSenElementP11RStringPool @ 338 NONAME
+	_ZN30CSenLayeredTransportProperties14BaseConstructLERK6TDesC8S2_P13CSenXmlReaderP11RStringPool @ 339 NONAME
+	_ZN30CSenLayeredTransportProperties14BaseConstructLERK6TDesC8S2_S2_P13CSenXmlReaderP11RStringPool @ 340 NONAME
+	_ZN30CSenLayeredTransportProperties14BaseConstructLERK6TDesC8S2_S2_S2_P13CSenXmlReaderP11RStringPool @ 341 NONAME
+	_ZN30CSenLayeredTransportProperties14MaxTimeToLiveLERi @ 342 NONAME
+	_ZN30CSenLayeredTransportProperties14MinTimeToLiveLERi @ 343 NONAME
+	_ZN30CSenLayeredTransportProperties15DownloadFolderLER6TPtrC8 @ 344 NONAME
+	_ZN30CSenLayeredTransportProperties15FileAttachmentLERK6TDesC8RP6HBufC8 @ 345 NONAME
+	_ZN30CSenLayeredTransportProperties15SetIntPropertyLERK6TDesC8i @ 346 NONAME
+	_ZN30CSenLayeredTransportProperties15SetIntPropertyLERK6TDesC8iN21MSenLayeredProperties19TSenPropertiesLayerE @ 347 NONAME
+	_ZN30CSenLayeredTransportProperties16SetBoolPropertyLERK6TDesC8i @ 348 NONAME
+	_ZN30CSenLayeredTransportProperties16SetBoolPropertyLERK6TDesC8iN21MSenLayeredProperties19TSenPropertiesLayerE @ 349 NONAME
+	_ZN30CSenLayeredTransportProperties17PropertiesByTypeLERK6TDesC8R13RPointerArrayI12MSenPropertyE @ 350 NONAME
+	_ZN30CSenLayeredTransportProperties19PropertiesClassTypeEv @ 351 NONAME
+	_ZN30CSenLayeredTransportProperties4NewLER11RStringPool @ 352 NONAME
+	_ZN30CSenLayeredTransportProperties4NewLERK11CSenElement @ 353 NONAME
+	_ZN30CSenLayeredTransportProperties4NewLERK11CSenElementR11RStringPool @ 354 NONAME
+	_ZN30CSenLayeredTransportProperties4NewLERK6TDesC8R13CSenXmlReader @ 355 NONAME
+	_ZN30CSenLayeredTransportProperties4NewLERK6TDesC8R13CSenXmlReaderR11RStringPool @ 356 NONAME
+	_ZN30CSenLayeredTransportProperties4NewLEv @ 357 NONAME
+	_ZN30CSenLayeredTransportProperties5NewLCER11RStringPool @ 358 NONAME
+	_ZN30CSenLayeredTransportProperties5NewLCERK11CSenElement @ 359 NONAME
+	_ZN30CSenLayeredTransportProperties5NewLCERK11CSenElementR11RStringPool @ 360 NONAME
+	_ZN30CSenLayeredTransportProperties5NewLCERK6TDesC8R13CSenXmlReader @ 361 NONAME
+	_ZN30CSenLayeredTransportProperties5NewLCERK6TDesC8R13CSenXmlReaderR11RStringPool @ 362 NONAME
+	_ZN30CSenLayeredTransportProperties5NewLCEv @ 363 NONAME
+	_ZN30CSenLayeredTransportProperties6IapIdLERm @ 364 NONAME
+	_ZN30CSenLayeredTransportProperties7AsUtf8LEN21MSenLayeredProperties19TSenPropertiesLayerE @ 365 NONAME
+	_ZN30CSenLayeredTransportProperties7AsUtf8LEv @ 366 NONAME
+	_ZN30CSenLayeredTransportProperties7SnapIdLERm @ 367 NONAME
+	_ZN30CSenLayeredTransportProperties8AsUtf8LCEN21MSenLayeredProperties19TSenPropertiesLayerE @ 368 NONAME
+	_ZN30CSenLayeredTransportProperties8AsUtf8LCEv @ 369 NONAME
+	_ZN30CSenLayeredTransportProperties8ShrinkToEN21MSenLayeredProperties19TSenPropertiesLayerE @ 370 NONAME
+	_ZN30CSenLayeredTransportProperties8TopLayerEv @ 371 NONAME
+	_ZN30CSenLayeredTransportProperties8WriteToLER12RWriteStream @ 372 NONAME
+	_ZN30CSenLayeredTransportProperties8WriteToLER12RWriteStreamN21MSenLayeredProperties19TSenPropertiesLayerE @ 373 NONAME
+	_ZN30CSenLayeredTransportProperties9DeviceIDLER6TPtrC8 @ 374 NONAME
+	_ZN30CSenLayeredTransportProperties9ExpandToLEN21MSenLayeredProperties19TSenPropertiesLayerE @ 375 NONAME
+	_ZN30CSenLayeredTransportProperties9PropertyLERK6TDesC8R6TPtrC8 @ 376 NONAME
+	_ZN30CSenLayeredTransportProperties9PropertyLERK6TDesC8R6TPtrC8N21MSenLayeredProperties19TSenPropertiesLayerE @ 377 NONAME
+	_ZN30CSenLayeredTransportProperties9PropertyLERK6TDesC8R6TPtrC8S4_ @ 378 NONAME
+	_ZN30CSenLayeredTransportProperties9PropertyLERK6TDesC8RP12MSenProperty @ 379 NONAME
+	_ZN30CSenLayeredTransportProperties9PropertyLERK6TDesC8RP12MSenPropertyN21MSenLayeredProperties19TSenPropertiesLayerE @ 380 NONAME
+	_ZN30CSenLayeredTransportProperties9ReadFromLERK6TDesC8 @ 381 NONAME
+	_ZN30CSenLayeredTransportProperties9ReadFromLERK6TDesC8N21MSenLayeredProperties19TSenPropertiesLayerE @ 382 NONAME
+	_ZN30CSenLayeredTransportProperties9SetReaderER13CSenXmlReader @ 383 NONAME
+	_ZN30CSenLayeredTransportPropertiesC1Ev @ 384 NONAME
+	_ZN30CSenLayeredTransportPropertiesC2Ev @ 385 NONAME
+	_ZN30CSenLayeredTransportPropertiesD0Ev @ 386 NONAME
+	_ZN30CSenLayeredTransportPropertiesD1Ev @ 387 NONAME
+	_ZN30CSenLayeredTransportPropertiesD2Ev @ 388 NONAME
+	_ZN34CSenLayeredHttpTransportProperties4NewLER11RStringPool @ 389 NONAME
+	_ZN34CSenLayeredHttpTransportProperties4NewLERK11CSenElement @ 390 NONAME
+	_ZN34CSenLayeredHttpTransportProperties4NewLERK11CSenElementR11RStringPool @ 391 NONAME
+	_ZN34CSenLayeredHttpTransportProperties4NewLERK6TDesC8R13CSenXmlReader @ 392 NONAME
+	_ZN34CSenLayeredHttpTransportProperties4NewLERK6TDesC8R13CSenXmlReaderR11RStringPool @ 393 NONAME
+	_ZN34CSenLayeredHttpTransportProperties4NewLEv @ 394 NONAME
+	_ZN34CSenLayeredHttpTransportProperties5NewLCER11RStringPool @ 395 NONAME
+	_ZN34CSenLayeredHttpTransportProperties5NewLCERK11CSenElement @ 396 NONAME
+	_ZN34CSenLayeredHttpTransportProperties5NewLCERK11CSenElementR11RStringPool @ 397 NONAME
+	_ZN34CSenLayeredHttpTransportProperties5NewLCERK6TDesC8R13CSenXmlReader @ 398 NONAME
+	_ZN34CSenLayeredHttpTransportProperties5NewLCERK6TDesC8R13CSenXmlReaderR11RStringPool @ 399 NONAME
+	_ZN34CSenLayeredHttpTransportProperties5NewLCEv @ 400 NONAME
+	_ZN34CSenLayeredVtcpTransportProperties4NewLERK11CSenElement @ 401 NONAME
+	_ZN34CSenLayeredVtcpTransportProperties4NewLEv @ 402 NONAME
+	_ZN34CSenLayeredVtcpTransportProperties5NewLCERK11CSenElement @ 403 NONAME
+	_ZN34CSenLayeredVtcpTransportProperties5NewLCEv @ 404 NONAME
+	_ZNK14CSaslMechanism10TransformLE6TPtrC8 @ 405 NONAME
+	_ZNK18CSenServiceSession3LogEv @ 406 NONAME
+	_ZNK18CSenServiceSession7HostletEv @ 407 NONAME
+	_ZNK18CSenServiceSession9TransportEv @ 408 NONAME
+	_ZNK21CSenWebServiceSession11HasConsumerEv @ 409 NONAME
+	_ZNK21CSenWebServiceSession9ConsumersER13RPointerArrayI25MSenRemoteServiceConsumerE @ 410 NONAME
+	_ZNK27CSenInternalServiceConsumer10IdentifierEv @ 411 NONAME
+	_ZNK27CSenInternalServiceConsumer2IdEv @ 412 NONAME
+	_ZNK30CSenLayeredTransportProperties5CloneERi @ 413 NONAME
+	_ZNK30CSenLayeredTransportProperties6CloneLEv @ 414 NONAME
+	_ZTI11CSenContext @ 415 NONAME ; #<TI>#
+	_ZTI13CSenWSPattern @ 416 NONAME ; #<TI>#
+	_ZTI14CSaslMechanism @ 417 NONAME ; #<TI>#
+	_ZTI15CSenContextItem @ 418 NONAME ; #<TI>#
+	_ZTI15CSenHandlerBase @ 419 NONAME ; #<TI>#
+	_ZTI17CSenClientContext @ 420 NONAME ; #<TI>#
+	_ZTI17CSenServerContext @ 421 NONAME ; #<TI>#
+	_ZTI17CSenSyncRequester @ 422 NONAME ; #<TI>#
+	_ZTI17CSenWSDescription @ 423 NONAME ; #<TI>#
+	_ZTI18CSenMessageContext @ 424 NONAME ; #<TI>#
+	_ZTI18CSenServiceSession @ 425 NONAME ; #<TI>#
+	_ZTI18CSenSessionContext @ 426 NONAME ; #<TI>#
+	_ZTI20CSenTransportContext @ 427 NONAME ; #<TI>#
+	_ZTI21CSenWebServiceSession @ 428 NONAME ; #<TI>#
+	_ZTI22CSenApplicationContext @ 429 NONAME ; #<TI>#
+	_ZTI24CSenLayeredXmlProperties @ 430 NONAME ; #<TI>#
+	_ZTI27CSenInternalServiceConsumer @ 431 NONAME ; #<TI>#
+	_ZTI30CSenLayeredTransportProperties @ 432 NONAME ; #<TI>#
+	_ZTI34CSenLayeredHttpTransportProperties @ 433 NONAME ; #<TI>#
+	_ZTI34CSenLayeredVtcpTransportProperties @ 434 NONAME ; #<TI>#
+	_ZTV11CSenContext @ 435 NONAME ; #<VT>#
+	_ZTV13CSenWSPattern @ 436 NONAME ; #<VT>#
+	_ZTV14CSaslMechanism @ 437 NONAME ; #<VT>#
+	_ZTV15CSenContextItem @ 438 NONAME ; #<VT>#
+	_ZTV15CSenHandlerBase @ 439 NONAME ; #<VT>#
+	_ZTV17CSenClientContext @ 440 NONAME ; #<VT>#
+	_ZTV17CSenServerContext @ 441 NONAME ; #<VT>#
+	_ZTV17CSenSyncRequester @ 442 NONAME ; #<VT>#
+	_ZTV17CSenWSDescription @ 443 NONAME ; #<VT>#
+	_ZTV18CSenMessageContext @ 444 NONAME ; #<VT>#
+	_ZTV18CSenServiceSession @ 445 NONAME ; #<VT>#
+	_ZTV18CSenSessionContext @ 446 NONAME ; #<VT>#
+	_ZTV20CSenTransportContext @ 447 NONAME ; #<VT>#
+	_ZTV21CSenWebServiceSession @ 448 NONAME ; #<VT>#
+	_ZTV22CSenApplicationContext @ 449 NONAME ; #<VT>#
+	_ZTV24CSenLayeredXmlProperties @ 450 NONAME ; #<VT>#
+	_ZTV27CSenInternalServiceConsumer @ 451 NONAME ; #<VT>#
+	_ZTV30CSenLayeredTransportProperties @ 452 NONAME ; #<VT>#
+	_ZTV34CSenLayeredHttpTransportProperties @ 453 NONAME ; #<VT>#
+	_ZTV34CSenLayeredVtcpTransportProperties @ 454 NONAME ; #<VT>#
+	_ZThn100_N15CSenHandlerBase13WriteAsXMLToLER12RWriteStream @ 455 NONAME ; #<thunk>#
+	_ZThn100_N15CSenHandlerBase6AsXmlLEv @ 456 NONAME ; #<thunk>#
+	_ZThn104_N13CSenWSPattern7MatchesER22MSenServiceDescription @ 457 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession10FacetValueER6TDesC8RP6HBufC8 @ 458 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession11FrameworkIdEv @ 459 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession11RemoveFacetERK6TDesC8 @ 460 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession11ScoreMatchLER22MSenServiceDescription @ 461 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession20DescriptionClassTypeEv @ 462 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession7FacetsLER13RPointerArrayI9CSenFacetE @ 463 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession7MatchesER22MSenServiceDescription @ 464 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession8ContractEv @ 465 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession8EndpointEv @ 466 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession9AddFacetLERK9CSenFacet @ 467 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession9HasFacetLERK6TDesC8Ri @ 468 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServiceSession9SetFacetLERK9CSenFacet @ 469 NONAME ; #<thunk>#
+	_ZThn104_N21CSenWebServiceSession11FrameworkIdEv @ 470 NONAME ; #<thunk>#
+	_ZThn104_N21CSenWebServiceSession12SetContractLERK6TDesC8 @ 471 NONAME ; #<thunk>#
+	_ZThn104_N21CSenWebServiceSession12SetEndPointLERK6TDesC8 @ 472 NONAME ; #<thunk>#
+	_ZThn104_N21CSenWebServiceSession13WriteAsXMLToLER12RWriteStream @ 473 NONAME ; #<thunk>#
+	_ZThn104_N21CSenWebServiceSession16FrameworkVersionEv @ 474 NONAME ; #<thunk>#
+	_ZThn104_N21CSenWebServiceSession8ContractEv @ 475 NONAME ; #<thunk>#
+	_ZThn104_N21CSenWebServiceSession8EndpointEv @ 476 NONAME ; #<thunk>#
+	_ZThn168_N13CSenWSPattern13ConsumerIapIdERm @ 477 NONAME ; #<thunk>#
+	_ZThn168_N13CSenWSPattern17SetConsumerIapIdLEm @ 478 NONAME ; #<thunk>#
+	_ZThn168_N13CSenWSPattern21AcceptsConsumerPolicyER18MSenConsumerPolicy @ 479 NONAME ; #<thunk>#
+	_ZThn168_N13CSenWSPattern25RebuildFromConsumerPolicyER18MSenConsumerPolicy @ 480 NONAME ; #<thunk>#
+	_ZThn168_N13CSenWSPattern29ConsumerIdentityProviderIds8LEv @ 481 NONAME ; #<thunk>#
+	_ZThn168_N13CSenWSPattern30AddConsumerIdentityProviderIdLERK6TDesC8 @ 482 NONAME ; #<thunk>#
+	_ZThn168_N13CSenWSPattern31SetConsumerIdentityProviderIdsLER28CSenIdentityProviderIdArray8 @ 483 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession10FacetValueER6TDesC8RP6HBufC8 @ 484 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession10TransportLER25MSenRemoteServiceConsumer @ 485 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession11FrameworkIdEv @ 486 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession11SetHostletLEP17MSenRemoteHostlet @ 487 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession13SetTransportLEP17CSenTransportBase @ 488 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession15RemoveConsumerLER25MSenRemoteServiceConsumer @ 489 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession20AsServiceDescriptionEv @ 490 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession20DescriptionClassTypeEv @ 491 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession20TransportPropertiesLERP6HBufC8R25MSenRemoteServiceConsumer @ 492 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession23ProvideHostletResponseLER17MSenRemoteHostletiiRK6TDesC8R9CSenChunk @ 493 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession23SetTransportPropertiesLERK6TDesC8R25MSenRemoteServiceConsumer @ 494 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession28CompleteServerMessagesOnOffLERKi @ 495 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession5SendLERK6TDesC8S2_R25MSenRemoteServiceConsumerRiRP6HBufC8 @ 496 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession7StatusLEv @ 497 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession7SubmitLERK6TDesC8S2_R25MSenRemoteServiceConsumerRP6HBufC8 @ 498 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession8ContractEv @ 499 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession8EndpointEv @ 500 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession8IsReadyLEv @ 501 NONAME ; #<thunk>#
+	_ZThn168_N18CSenServiceSession9HasFacetLERK6TDesC8Ri @ 502 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession11FrameworkIdEv @ 503 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession11SubmitSoapLERK6TDesC8S2_R25MSenRemoteServiceConsumerRP6HBufC8 @ 504 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession13WriteAsXMLToLER12RWriteStream @ 505 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession16StartTransactionEv @ 506 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession20TransactionCompletedEv @ 507 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession23ProvideHostletResponseLER17MSenRemoteHostletiiRK6TDesC8R9CSenChunk @ 508 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession5SendLERK6TDesC8S2_R25MSenRemoteServiceConsumerRiRP6HBufC8 @ 509 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession7SubmitLERK6TDesC8S2_R25MSenRemoteServiceConsumerRP6HBufC8 @ 510 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession8ContractEv @ 511 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession8EndpointEv @ 512 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession8IsReadyLEv @ 513 NONAME ; #<thunk>#
+	_ZThn168_N21CSenWebServiceSession9SendSoapLERK6TDesC8S2_R25MSenRemoteServiceConsumerRiRP6HBufC8 @ 514 NONAME ; #<thunk>#
+	_ZThn168_N27CSenInternalServiceConsumer10SetStatusLEi @ 515 NONAME ; #<thunk>#
+	_ZThn168_N27CSenInternalServiceConsumer11SetSessionLER24MSenRemoteServiceSession @ 516 NONAME ; #<thunk>#
+	_ZThn168_N27CSenInternalServiceConsumer12FileProgressEiiiRK6TDesC8i @ 517 NONAME ; #<thunk>#
+	_ZThn168_N27CSenInternalServiceConsumer12HandleErrorLEP6HBufC8iiP14MSenProperties @ 518 NONAME ; #<thunk>#
+	_ZThn168_N27CSenInternalServiceConsumer13ChunkByTxnIdLEiRP9CSenChunk @ 519 NONAME ; #<thunk>#
+	_ZThn168_N27CSenInternalServiceConsumer14HandleMessageLEP6HBufC8iP14MSenProperties @ 520 NONAME ; #<thunk>#
+	_ZThn168_NK18CSenServiceSession7HostletEv @ 521 NONAME ; #<thunk>#
+	_ZThn168_NK18CSenServiceSession9TransportEv @ 522 NONAME ; #<thunk>#
+	_ZThn168_NK27CSenInternalServiceConsumer10IdentifierEv @ 523 NONAME ; #<thunk>#
+	_ZThn168_NK27CSenInternalServiceConsumer2IdEv @ 524 NONAME ; #<thunk>#
+	_ZThn172_N18CSenServiceSession14SendToHostletLER17MSenRemoteHostletRK6TDesC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 525 NONAME ; #<thunk>#
+	_ZThn172_N21CSenWebServiceSession12HandleErrorLEiP6HBufC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 526 NONAME ; #<thunk>#
+	_ZThn172_N21CSenWebServiceSession14SendToHostletLER17MSenRemoteHostletRK6TDesC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 527 NONAME ; #<thunk>#
+	_ZThn172_N21CSenWebServiceSession15SendToConsumerLEP6HBufC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 528 NONAME ; #<thunk>#
+	_ZThn172_N21CSenWebServiceSession20SendErrorToConsumerLEiP6HBufC8iR25MSenRemoteServiceConsumerP14MSenProperties @ 529 NONAME ; #<thunk>#
+	_ZThn172_NK18CSenServiceSession7HostletEv @ 530 NONAME ; #<thunk>#
+	_ZThn244_N21CSenWebServiceSession17CredentialChangedEN22MSenCredentialObserver20TSenCredentialChangeEPv @ 531 NONAME ; #<thunk>#
+	_ZThn4_N15CSenHandlerBase13WriteAsXMLToLER12RWriteStream @ 532 NONAME ; #<thunk>#
+	_ZThn4_N15CSenHandlerBase6AsXmlLEv @ 533 NONAME ; #<thunk>#
+	_ZThn4_N21CSenWebServiceSession13WriteAsXMLToLER12RWriteStream @ 534 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties12IntPropertyLERK6TDesC8Ri @ 535 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties12IntPropertyLERK6TDesC8RiN21MSenLayeredProperties19TSenPropertiesLayerE @ 536 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties12IsSafeToCastEN14MSenProperties23TSenPropertiesClassTypeE @ 537 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties12SetPropertyLERK6TDesC8S2_ @ 538 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties12SetPropertyLERK6TDesC8S2_N21MSenLayeredProperties19TSenPropertiesLayerE @ 539 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties13BoolPropertyLERK6TDesC8Ri @ 540 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties13BoolPropertyLERK6TDesC8RiN21MSenLayeredProperties19TSenPropertiesLayerE @ 541 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties15SetIntPropertyLERK6TDesC8i @ 542 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties15SetIntPropertyLERK6TDesC8iN21MSenLayeredProperties19TSenPropertiesLayerE @ 543 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties16SetBoolPropertyLERK6TDesC8i @ 544 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties16SetBoolPropertyLERK6TDesC8iN21MSenLayeredProperties19TSenPropertiesLayerE @ 545 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties17PropertiesByTypeLERK6TDesC8R13RPointerArrayI12MSenPropertyE @ 546 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties19PropertiesClassTypeEv @ 547 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties7AsUtf8LEN21MSenLayeredProperties19TSenPropertiesLayerE @ 548 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties7AsUtf8LEv @ 549 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties8AsUtf8LCEN21MSenLayeredProperties19TSenPropertiesLayerE @ 550 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties8AsUtf8LCEv @ 551 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties8ShrinkToEN21MSenLayeredProperties19TSenPropertiesLayerE @ 552 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties8TopLayerEv @ 553 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties8WriteToLER12RWriteStream @ 554 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties8WriteToLER12RWriteStreamN21MSenLayeredProperties19TSenPropertiesLayerE @ 555 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties9ExpandToLEN21MSenLayeredProperties19TSenPropertiesLayerE @ 556 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties9PropertyLERK6TDesC8R6TPtrC8 @ 557 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties9PropertyLERK6TDesC8R6TPtrC8N21MSenLayeredProperties19TSenPropertiesLayerE @ 558 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties9PropertyLERK6TDesC8RP12MSenProperty @ 559 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties9PropertyLERK6TDesC8RP12MSenPropertyN21MSenLayeredProperties19TSenPropertiesLayerE @ 560 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties9ReadFromLERK6TDesC8 @ 561 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties9ReadFromLERK6TDesC8N21MSenLayeredProperties19TSenPropertiesLayerE @ 562 NONAME ; #<thunk>#
+	_ZThn4_N30CSenLayeredTransportProperties9SetReaderER13CSenXmlReader @ 563 NONAME ; #<thunk>#
+	_ZThn4_NK30CSenLayeredTransportProperties5CloneERi @ 564 NONAME ; #<thunk>#
+	_ZThn4_NK30CSenLayeredTransportProperties6CloneLEv @ 565 NONAME ; #<thunk>#
+	_ZN12SenMtomUtils11HeaderRootLER17CSenSoapEnvelope2RK5RBuf8RS2_ @ 566 NONAME
+	_ZN12SenMtomUtils13FileDataPartLEjjR6RArrayI20TXmlEngDataContainerER5RBuf8 @ 567 NONAME
+	_ZN12SenMtomUtils13FileDataRestLEjjjR6RArrayI20TXmlEngDataContainerER5RBuf8 @ 568 NONAME
+	_ZN12SenMtomUtils16BoundaryLineEndLERK5RBuf8RS0_ @ 569 NONAME
+	_ZN12SenMtomUtils17HeaderBinaryDataLEjR6RArrayI20TXmlEngDataContainerER5RBuf8 @ 570 NONAME
+	_ZN12SenMtomUtils18BoundaryLineStartLERK5RBuf8RS0_ @ 571 NONAME
+	_ZN12SenMtomUtils19SerializeEnvelope2LER17CSenSoapEnvelope2R5RBuf8 @ 572 NONAME
+	_ZN12SenMtomUtils22GenerateRandomRootCidLER5RBuf8 @ 573 NONAME
+	_ZN12SenMtomUtils23GenerateRandomBoundaryLER5RBuf8 @ 574 NONAME
+	_ZN12SenMtomUtils4CidLERK5RBuf8R6RArrayIS0_E @ 575 NONAME
+	_ZN12SenMtomUtils8SetFileLEjiR6TDesC8R6RArrayI5RBuf8E @ 576 NONAME
+	_ZN27CSenInternalServiceConsumer21SetDataTrafficDetailsER22TSenDataTrafficDetails @ 577 NONAME
+	_ZThn168_N27CSenInternalServiceConsumer21SetDataTrafficDetailsER22TSenDataTrafficDetails @ 578 NONAME ; #<thunk>#
+	_ZN30CSenLayeredTransportProperties12MaxRetryTTLLERi @ 579 NONAME
+	_ZN30CSenLayeredTransportProperties12MinRetryTTLLERi @ 580 NONAME
+	_ZN30CSenLayeredTransportProperties15SetMaxRetryTTLLEi @ 581 NONAME
+	_ZN30CSenLayeredTransportProperties15SetMinRetryTTLLEi @ 582 NONAME
+	_ZN30CSenLayeredTransportProperties18RetryDeltaTimeoutLERi @ 583 NONAME
+	_ZN30CSenLayeredTransportProperties21SetRetryDeltaTimeoutLEi @ 584 NONAME
+

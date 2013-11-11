@@ -1,0 +1,85 @@
+/*
+ * Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+ * All rights reserved.
+ * This component and the accompanying materials are made available
+ * under the terms of "Eclipse Public License v1.0"
+ * which accompanies this distribution, and is available
+ * at the URL "http://www.eclipse.org/legal/epl-v10.html".
+ *
+ * Initial Contributors:
+ * Nokia Corporation - initial contribution.
+ *
+ * Contributors:
+ *
+ * Description:
+ */
+
+// System includes
+
+// User includes
+
+// External function prototypes
+
+// Local constants
+
+#define tc_eap_outer_page_orientation_change_enabled
+#define tc_eap_aka_enabled
+#define tc_eap_sim_enabled
+#define tc_eap_leap_enabled
+#define tc_eap_peap_gtc_enabled
+#define tc_eap_peap_mschapv2_enabled
+#define tc_eap_ttls_mschapv2_enabled
+#define tc_eap_ttls_pap_enabled
+#define tc_eap_ttls_gtc_enabled
+#define tc_eap_aka_connect_KErrWlanUserRejected_enabled
+#define tc_eap_aka_connect_KErrWlanUserCertificateExpired_enabled
+#define tc_eap_aka_connect_KErrWlanServerCertificateExpired_enabled
+#define tc_eap_aka_connect_KErrWlanCerficateVerifyFailed_enabled
+#define tc_eap_aka_connect_KErrWlanNoCipherSuite_enabled
+#define tc_eap_aka_connect_KErrWlanSimNotInstalled_enabled
+#define tc_eap_aka_connect_KErrWlanEapFastPacStoreCorrupted_enabled
+#define tc_eap_aka_connect_KErrWlanEapSimFailed_enabled
+#define tc_eap_aka_connect_KErrWlanNotSubscribed_enabled
+#define tc_eap_aka_connect_KErrCancel_enabled
+#define tc_eap_aka_connect_KErrWlanEapTlsFailed_enabled
+#define tc_eap_aka_connect_KErrWlanEapPeapFailed_enabled 
+#define tc_eap_aka_connect_KErrWlanEapAkaFailed_enabled
+#define tc_eap_aka_connect_KErrWlanEapTtlsFailed_enabled
+#define tc_eap_aka_connect_KErrWlanLeapFailed_enabled 
+#define tc_eap_aka_connect_KErrWlanNoUserCertificate_enabled
+#define tc_eap_aka_connect_KErrWlanEapFastTunnelCompromiseError_enabled
+#define tc_eap_aka_connect_KErrWlanEapFastUnexpextedTlvExhanged_enabled
+#define tc_eap_aka_connect_KErrWlanEapFastNoPacNorCertsToAuthenticateWithProvDisabled_enabled
+#define tc_eap_aka_connect_KErrWlanEapFastNoMatchingPacForAid_enabled
+#define tc_eap_aka_connect_KErrWlanEapFastAuthFailed_enabled
+#define tc_eap_aka_connect_KErrWlanAccessBarred_enabled
+#define tc_eap_aka_connect_KErrWlanPasswordExpired_enabled
+#define tc_eap_aka_connect_KErrWlanNoDialinPermissions_enabled
+#define tc_eap_aka_connect_KErrWlanAccountDisabled_enabled
+#define tc_eap_aka_connect_KErrWlanRestrictedLogonHours_enabled
+#define tc_eap_ttls_mschapv2_connect_KErrWlanEapGtcFailed_enabled
+#define tc_eap_ttls_mschapv2_connect_KErrWlanEapMsChapv2_enabled
+#define tc_eap_ttls_mschapv2_connect_KErrWlanNotSubscribed_enabled
+#define tc_eap_ttls_gtc_back_and_forward_enabled
+#define tc_eap_aka_set_outer_type_fails_enabled
+#define tc_eap_aka_save_outer_configuration_fails_enabled
+#define tc_eap_aka_set_configuration_reference_fails_enabled
+#define tc_eap_peap_gtc_save_inner_configuration_fails_enabled
+#define tc_eap_peap_identity_validators_enabled
+#define tc_eap_leap_user_password_validators_enabled
+#define tc_eap_tls_no_user_certificate_enabled
+#define tc_eap_tls_one_user_certificate_with_ca_selection_enabled
+#define tc_eap_tls_two_user_certificates_enabled
+#define tc_eap_tls_back_and_forward_certs_with_cert_update_enabled
+#define tc_eap_sim_finish_enabled
+#define tc_eap_sim_cancel_enabled
+#define tc_eap_fast_confirmed_enabled
+#define tc_eap_fast_new_store_enabled
+#define tc_eap_fast_new_store_save_fails_enabled
+#define tc_eap_fast_new_store_and_validators_enabled
+#define tc_eap_fast_new_store_back_and_forwards_enabled
+#define tc_eap_fast_new_store_read_config_fail_enabled
+#define tc_eap_fast_confirm_store_enabled
+#define tc_eap_fast_confirm_store_and_validators_enabled
+#define tc_eap_fast_confirm_store_back_and_forwards_enabled
+

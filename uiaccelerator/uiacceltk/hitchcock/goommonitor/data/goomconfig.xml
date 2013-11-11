@@ -1,0 +1,96 @@
+
+<!-- This is the configuration file for the new GOOM Monitor. This configuration file
+defines a GOOM policy where Graphics RAM is released. The order below is the order in which the OOM Monitor releases RAM. 
+Work on the GOOM Moitor config file will be based on this.
+
+Aim of GOOM:
+Run ALF plugin
+Call on Policy Server of MM to free G Ram
+
+-->
+<goom_config>
+
+<!-- 	Low RAM and good RAM thresholds are defined here in kilobytes.
+	The max_app_close_batch indicates how many applications can be closed in parallel.
+	The value 1 means that applications are not closed in parallel.
+	default_wait_after_plugin defines how long is waited (in milliseconds) after
+	an GOOM plugin is called and before the free RAM is checked to determine if more
+	actions are needed. This value is meaningful only when "check" or "estimate" sync mode is
+	used with plugins.
+-->
+	<global_settings 
+		low_ram_threshold="3637" 
+		good_ram_threshold="10000" 
+		max_app_close_batch="3" 
+		default_wait_after_plugin="200"
+		default_icon_cache="6000"
+		>
+	</global_settings>
+
+<!--	Application specific low RAM and good RAM thresholds are defined here. The higher values of
+the low and good thresholds are defined to avoid GOOM errors with these applications when the default
+threshold values are used.
+-->
+	<app_specific_thresholds>
+
+  <app uid="101F857A" low_ram_threshold="1000" good_ram_threshold="30000" skip_plugin="2002B3AE" icon_cache="0" use_sw_rend="Yes"></app> <!-- Camera --> 
+  <app uid="200159B2" low_ram_threshold="5000" good_ram_threshold="10000" skip_plugin="2002B3AE"></app> <!-- MPlayer -->
+  <app uid="102824CD" low_ram_threshold="5000" good_ram_threshold="10000" skip_plugin="2002B3AE"></app> <!-- Embedded mplayer -->
+  <app uid="200009EE" low_ram_threshold="3637" good_ram_threshold="10000" target_free_on_startup="10000"></app> <!-- Photos -->
+  <app uid="101FD693" low_ram_threshold="5000" good_ram_threshold="10000" skip_plugin="2002C30A" target_free_on_startup="26000"></app> <!-- Flashlite -->
+
+	</app_specific_thresholds>
+
+<!--	The priority of closing each application is defined here.
+-->
+	<app_close_settings>
+<!--		The uid DEFAULT_APP refers to all applications, which priority is not specifically
+		defined in the conf file.
+-->
+		<close_app uid="DEFAULT_APP" priority="80" sync_mode="check" close_timeout="1000" wait_after_close="1000">
+			<app_close_idle_priority idle_time="900" priority="50"></app_close_idle_priority>
+			<app_close_idle_priority idle_time="43200" priority="20"></app_close_idle_priority>
+		</close_app>
+<!--		The uid BUSY_APP refers to applications, which have set the OOM priority BUSY
+		by using the GOOM Monitor API SetGOomPriority(). The priority NEVER_CLOSE
+		means that the application is not closed at all.
+-->
+		<close_app uid="BUSY_APP" priority="NEVER_CLOSE" sync_mode="check"></close_app>
+<!--		The uid HIGH_PRIORITY_APP refers to applications, which have set the GOOM priority HIGH
+		by using the GOOM Monitor API SetGOomPriority().
+-->
+		<close_app uid="HIGH_PRIORITY_APP" priority="90" sync_mode="check">
+			<app_close_idle_priority idle_time="43200" priority="20"></app_close_idle_priority>
+		</close_app>
+		
+<!-- policy server takes time to release resources aftr apps close
+		this line may be enabled for flashlite and other apps that allocate mem through policy server
+		close_app uid="101FD693" priority="80" sync_mode="check" close_timeout="3000" wait_after_close="5000"
+-->
+	<close_app uid="AF00ABBA" priority="NEVER_CLOSE" sync_mode="check"></close_app> <!--QtLauncher-->
+	
+	</app_close_settings>
+	
+<!--	The priority of executing each system plugin is defined here.
+	System plugin is a plugin, which priority is not related to any application.
+-->
+	<system_plugin_settings>
+<!--		The uid DEFAULT_PLUGIN refers to all plugins, which priority is not specificly
+		defined in the conf file.
+-->
+		<system_plugin uid="DEFAULT_PLUGIN" priority="10" sync_mode="check" sw_rend="not_supported"></system_plugin>
+		<system_plugin uid="2002DC75" priority="3" sync_mode="continue" sw_rend="not_supported"></system_plugin> <!-- HbThemeserverOOGMPLUGIN? -->
+		<system_plugin uid="E4B6C988" priority="4" sync_mode="check" sw_rend="supported"></system_plugin> <!-- ALFOOGMPLUGIN -->
+		<system_plugin uid="2002DC75" priority="5" sync_mode="continue" sw_rend="supported" ></system_plugin> <!-- HbThemeserverOOGMPLUGIN? -->
+		<system_plugin uid="2002C30A" priority="6" sync_mode="continue"></system_plugin> <!-- FLASHOOGMPLUGIN -->
+	</system_plugin_settings>
+	
+<!--	The priority of executing each application plugin is defined here.
+	Application plugin is a plugin, which priority depends on the target application.
+	The target application must be defined for each application plugin.
+	By default all plugins are system plugins unless specifically defined as application
+	plugin in this section.
+-->
+	<app_plugin_settings>
+	</app_plugin_settings>
+</goom_config>

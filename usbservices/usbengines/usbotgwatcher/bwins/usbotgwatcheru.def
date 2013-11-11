@@ -1,0 +1,5 @@
+EXPORTS
+	?IsDeviceA@CUsbOtgWatcher@@QAEHXZ @ 1 NONAME ; int CUsbOtgWatcher::IsDeviceA(void)
+	??1CUsbOtgWatcher@@UAE@XZ @ 2 NONAME ; CUsbOtgWatcher::~CUsbOtgWatcher(void)
+	?NewL@CUsbOtgWatcher@@SAPAV1@AAVRUsb@@@Z @ 3 NONAME ; class CUsbOtgWatcher * CUsbOtgWatcher::NewL(class RUsb &)
+

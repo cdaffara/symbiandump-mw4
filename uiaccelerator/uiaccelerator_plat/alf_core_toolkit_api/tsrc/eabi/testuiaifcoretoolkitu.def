@@ -1,0 +1,31 @@
+EXPORTS
+	_Z9LibEntryLR13CTestModuleIf @ 1 NONAME
+	_ZTI28CTestUiAifBlocksManagerChild @ 2 NONAME
+	_ZTI28CTestUiAifBlocksTextureChild @ 3 NONAME
+	_ZTI31CTestUiAifBlocksHuiControlChild @ 4 NONAME
+	_ZTI35TTestUiAifBlocksHuiTextCommandChild @ 5 NONAME
+	_ZTI36TTestUiAifBlocksHuiGroupCommandChild @ 6 NONAME
+	_ZTI36TTestUiAifBlocksHuiImageCommandChild @ 7 NONAME
+	_ZTI36TTestUiAifBlocksHuiPointCommandChild @ 8 NONAME
+	_ZTI36TTestUiAifBlocksHuiTransCommandChild @ 9 NONAME
+	_ZTI36TTestUiAifBlocksHuiValueCommandChild @ 10 NONAME
+	_ZTI37TTestUiAifBlocksHuiActionCommandChild @ 11 NONAME
+	_ZTI37TTestUiAifBlocksHuiMarkerCommandChild @ 12 NONAME
+	_ZTI37TTestUiAifBlocksHuiVisualCommandChild @ 13 NONAME
+	_ZTI38TTestUiAifBlocksHuiControlCommandChild @ 14 NONAME
+	_ZTI42TTestUiAifBlocksHuiCustomEventCommandChild @ 15 NONAME
+	_ZTV28CTestUiAifBlocksManagerChild @ 16 NONAME
+	_ZTV28CTestUiAifBlocksTextureChild @ 17 NONAME
+	_ZTV31CTestUiAifBlocksHuiControlChild @ 18 NONAME
+	_ZTV35TTestUiAifBlocksHuiTextCommandChild @ 19 NONAME
+	_ZTV36TTestUiAifBlocksHuiGroupCommandChild @ 20 NONAME
+	_ZTV36TTestUiAifBlocksHuiImageCommandChild @ 21 NONAME
+	_ZTV36TTestUiAifBlocksHuiPointCommandChild @ 22 NONAME
+	_ZTV36TTestUiAifBlocksHuiTransCommandChild @ 23 NONAME
+	_ZTV36TTestUiAifBlocksHuiValueCommandChild @ 24 NONAME
+	_ZTV37TTestUiAifBlocksHuiActionCommandChild @ 25 NONAME
+	_ZTV37TTestUiAifBlocksHuiMarkerCommandChild @ 26 NONAME
+	_ZTV37TTestUiAifBlocksHuiVisualCommandChild @ 27 NONAME
+	_ZTV38TTestUiAifBlocksHuiControlCommandChild @ 28 NONAME
+	_ZTV42TTestUiAifBlocksHuiCustomEventCommandChild @ 29 NONAME
+

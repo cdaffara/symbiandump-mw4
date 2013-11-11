@@ -1,0 +1,206 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET				svgtbinencode.exe
+TARGETTYPE		exe
+
+// These options enable exception handling and set the warning level to 3 for command
+// line builds. STL code generates too many warnings at level 4, but is clean at
+// level 3. Also require RTTI.
+
+option MSVC /GX /W3 /GR
+option GCC  -w -DXML_LIBRARY -m32
+
+SOURCEPATH ../Internal/xmlReader/src
+SOURCE MyRXMLReader.cpp
+
+SOURCEPATH  ../Internal/Sax2Print
+SOURCE SAX2PrintHandlers.cpp
+
+
+SOURCEPATH ../Internal/SVGEngine/src
+SOURCE  SVGAttributeVerifier.cpp
+SOURCE  SVGContentHandler.cpp
+SOURCE  Svgencoder.cpp
+SOURCE  SVGEncoderMain.cpp
+SOURCE  SVGEngineImpl.cpp
+SOURCE  SVGErrorImpl.cpp
+SOURCE  SVGEvent.cpp
+SOURCE  SVGTEncodeInterfaceImpl.cpp
+
+SOURCEPATH ../Internal/SVGImpl/src
+SOURCE  SVGAElementImpl.cpp
+SOURCE  SVGAnimateElementImpl.cpp
+SOURCE  SVGAnimateMotionElementImpl.cpp
+SOURCE  SVGAnimateTransformElementImpl.cpp
+SOURCE  SVGAnimationBase.cpp
+SOURCE  SVGAnimTimeController.cpp
+SOURCE  SVGAnimTimingParser.cpp
+SOURCE  SVGAudioElementImpl.cpp
+SOURCE  SVGCircleElementImpl.cpp
+SOURCE  SVGClrCssValueImpl.cpp
+SOURCE  SVGColor.cpp
+SOURCE  SVGDiscardElementImpl.cpp
+SOURCE  SVGDocumentImpl.cpp
+SOURCE  SVGDOMImplementationImpl.cpp
+SOURCE  SVGElementImpl.cpp
+SOURCE  SVGEllipseElementImpl.cpp
+SOURCE  SVGFitToViewBoxImpl.cpp
+SOURCE  SVGFloatCssValueImpl.cpp
+SOURCE  SVGFontElementImpl.cpp
+SOURCE  SVGFontFaceElementImpl.cpp
+SOURCE  SVGFontMap.cpp
+SOURCE  SVGGElementImpl.cpp
+SOURCE  SVGGlyphElementImpl.cpp
+SOURCE  SVGGradientElementImpl.cpp
+SOURCE  SVGImageElementImpl.cpp
+SOURCE  SVGIntCssValueImpl.cpp
+SOURCE  SVGLangSpaceImpl.cpp
+SOURCE  SVGLinearGradientElementImpl.cpp
+SOURCE  SVGLineElementImpl.cpp
+SOURCE  SVGMediaAnimationElementImpl.cpp
+SOURCE  SVGMediaElementBase.cpp
+SOURCE  SVGMissingGlyphElementImpl.cpp
+SOURCE  SVGMpathElementImpl.cpp
+SOURCE  SVGPaintCssValueImpl.cpp
+SOURCE  SVGPathDataParser.cpp
+SOURCE  SVGPathElementImpl.cpp
+SOURCE  SVGPointLexer.cpp
+SOURCE  SVGPolylineElementImpl.cpp
+SOURCE  SVGPreserveAspectRatioImpl.cpp
+SOURCE  SVGRadialGradientElementImpl.cpp
+SOURCE  SVGRectElementImpl.cpp
+SOURCE  SVGRelToAbsPath.cpp
+SOURCE  SVGSchemaData.cpp
+SOURCE  SVGSetElementImpl.cpp
+SOURCE  SVGSolidColorElementImpl.cpp
+SOURCE  SVGStopElementImpl.cpp
+SOURCE  SVGStrCssValueImpl.cpp
+SOURCE  SVGStringTokenizer.cpp
+SOURCE  SVGStyleElementImpl.cpp
+SOURCE  SVGTestsImpl.cpp
+SOURCE  SVGTextElementImpl.cpp
+SOURCE  SVGTransformListImpl.cpp
+SOURCE  SVGTransformableImpl.cpp
+SOURCE  SVGUriReferenceImpl.cpp
+SOURCE  SVGUseElementImpl.cpp
+SOURCE  SVGVectorCssValueImpl.cpp
+SOURCE  SvgHkernelementimpl.cpp
+SOURCE  Svgsvgelementimpl.cpp
+
+SOURCEPATH ../Internal/Xmldomimpl/src
+SOURCE SVGXmlElementImpl.cpp
+
+SOURCEPATH ../Internal/Gfx2D/src
+SOURCE GfxFloatFixPt.cpp
+SOURCE Gfxtrignometric.cpp
+
+SOURCEPATH ../Internal/Gfx2D/src/GfxGeom
+
+SOURCE  GfxAffineTransform.cpp
+SOURCE  GfxEllipse2D.cpp
+SOURCE  GfxEllipseIteratorP.cpp
+SOURCE  GfxFlatteningPathIterator.cpp
+SOURCE  GfxGeneralPath.cpp
+SOURCE  GfxGeneralPathIteratorP.cpp
+SOURCE  GfxLine2D.cpp
+SOURCE  GfxLineIteratorP.cpp
+SOURCE  GfxPoint2D.cpp
+SOURCE  GfxRectangle2D.cpp
+SOURCE  GfxRectangleIteratorP.cpp
+SOURCE  GfxRectangularShape.cpp
+SOURCE  GfxRoundRectangle2D.cpp
+SOURCE  GfxRoundRectangleIteratorP.cpp
+
+SOURCEPATH ../Internal/Gfx2D/src/GfxGc
+SOURCE GfxColor.cpp
+SOURCE GfxGradientPaint.cpp
+
+SOURCEPATH ../Internal/testingsymdefcppdll
+SOURCE  Buf.cpp
+SOURCE  Des16.cpp
+SOURCE  Des8.cpp
+SOURCE  Desc16.cpp
+SOURCE  Desc8.cpp
+SOURCE  Hbufc16.cpp
+SOURCE  Hbufc8.cpp
+SOURCE  Rfile.cpp
+SOURCE  Rpointerarraybase.cpp
+SOURCE  Tbufbase16.cpp
+SOURCE  Tbufbase8.cpp
+SOURCE  TBufC.cpp
+SOURCE  Tbufcbase16.cpp
+SOURCE  Tbufcbase8.cpp
+SOURCE  Tchar.cpp
+SOURCE  TInt64.cpp
+SOURCE  Tkeydesc8array.cpp
+SOURCE  Tlex.cpp
+SOURCE  Tptr16.cpp
+SOURCE  Tptr8.cpp
+SOURCE  Tptrc16.cpp
+SOURCE  Tptrc8.cpp
+SOURCE  Trgb.cpp
+SOURCE  utf.cpp
+
+SOURCEPATH ../Internal/Gfx2D/VGRasterizer/src
+SOURCE svgapi.c
+SOURCE svgmath.c
+SOURCE svgpath.c
+SOURCE svgsubdivide.c
+
+SOURCEPATH ../Internal/Nvg/src
+SOURCE  NVGCircleElement.cpp
+SOURCE  NvgCommandSection.cpp
+SOURCE  NVGDefElement.cpp
+SOURCE  NVGElement.cpp
+SOURCE  NVGElementFactory.cpp
+SOURCE  NVGEllipseElement.cpp
+SOURCE  NVGEncoder.cpp
+SOURCE  NVGGElement.cpp
+SOURCE  NvgHeaderSection.cpp
+SOURCE  NVGLinearGradientElement.cpp
+SOURCE  NVGLineElement.cpp
+SOURCE  NvgOffsetVector.cpp
+SOURCE 	NvgPaintSection.cpp
+SOURCE  NVGPathElement.cpp
+SOURCE  NvgPathSection.cpp
+SOURCE  NVGPolygonElement.cpp
+SOURCE  NVGRadialGradientElement.cpp
+SOURCE  NVGRectElement.cpp
+SOURCE  NVGStopElement.cpp
+SOURCE  NVGSVGElement.cpp
+
+USERINCLUDE ../Internal/SVGEngine/inc
+USERINCLUDE ../Internal/Gfx2D/inc
+USERINCLUDE ../Internal/Gfx2D/VGRasterizer/inc
+USERINCLUDE ../Internal/Xmldomimpl/inc
+USERINCLUDE ../Internal/SVGImpl/inc/SVGDOM
+USERINCLUDE ../Internal/SVGImpl/inc
+USERINCLUDE ../Internal/xmlReader/inc
+USERINCLUDE ../Internal/Sax2Print
+USERINCLUDE ../Internal/Nvg/inc
+USERINCLUDE ../Internal/Path/inc
+
+//#ifndef SBSV2
+//START TOOLS
+//   win32_library /epoc32/release/tools/rel/xerces-c_2.lib
+//END
+//#endif  
+
+staticlibrary xercesenc-c

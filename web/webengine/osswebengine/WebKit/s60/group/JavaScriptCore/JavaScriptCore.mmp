@@ -1,0 +1,182 @@
+/*
+* Copyright (c) 2005-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+
+
+TARGET      JavaScriptCore.DLL
+TARGETTYPE  dll
+UID 0x1000008d 0x10281B70
+
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+CAPABILITY  CAP_GENERAL_DLL
+VENDORID    VID_DEFAULT
+
+EPOCALLOWDLLDATA
+EPOCHEAPSIZE 0x5000 0x1000000
+
+#if defined(__S60_32__)
+#if defined(ARMCC)
+deffile ../EABI/JavaScriptCore_3_2.def
+#elif defined( WINSCW )
+deffile ../Bwinscw/JavaScriptCore_3_2.def
+#endif
+#elif defined(ARMCC)
+deffile ../eabi/JavaScriptCore.def
+#elif defined( WINSCW )
+deffile ../bwinscw/JavaScriptCore.def
+#endif
+
+MACRO __S60__
+MACRO arm
+MACRO __OOM__
+MACRO ASSERT_DISABLED
+
+OPTION ARMCC -O3 -Otime --diag_suppress 1134,111,1293,550,830,177
+OPTION CW -warn noempty,nounused,nounwanted,nopedantic
+
+MW_LAYER_SYSTEMINCLUDE
+
+USERINCLUDE ../../../../MemoryManager/Inc 
+
+SYSTEMINCLUDE ../../../../DerivedSources/JavaScriptCore
+SYSTEMINCLUDE ../../../../JavaScriptCore
+SYSTEMINCLUDE ../../../../JavaScriptCore/kjs
+SYSTEMINCLUDE ../../../../JavaScriptCore/pcre
+SYSTEMINCLUDE ../../../../JavaScriptCore/bindings
+SYSTEMINCLUDE ../../../../JavaScriptCore/bindings/c
+SYSTEMINCLUDE ../../../../JavaScriptCore/wtf
+SYSTEMINCLUDE ../../../../JavaScriptCore/wtf/unicode
+SYSTEMINCLUDE ../../../../JavaScriptCore/wtf/unicode/symbian
+SYSTEMINCLUDE ../../../../JavaScriptCore/wtf/symbian
+SYSTEMINCLUDE ../../../../JavaScriptCore/icu
+SYSTEMINCLUDE ../../../../JavaScriptCore/ForwardingHeaders
+SYSTEMINCLUDE ../../../../
+
+MW_LAYER_LIBC_SYSTEMINCLUDE
+MW_LAYER_STDAPIS_SYSTEMINCLUDE
+
+SOURCEPATH ../../../../DerivedSources/JavaScriptCore
+SOURCE grammar.cpp
+
+SOURCEPATH ../../../../JavaScriptCore/API
+SOURCE JSCallbackConstructor.cpp
+SOURCE JSCallbackFunction.cpp
+SOURCE JSCallbackObject.cpp
+SOURCE JSClassRef.cpp
+SOURCE JSContextRef.cpp
+SOURCE JSObjectRef.cpp
+SOURCE JSStringRef.cpp
+SOURCE JSValueRef.cpp
+
+SOURCEPATH ../../../../JavaScriptCore/kjs
+SOURCE array_object.cpp
+SOURCE bool_object.cpp
+SOURCE collector.cpp
+SOURCE CommonIdentifiers.cpp
+SOURCE Context.cpp
+SOURCE date_object.cpp
+SOURCE debugger.cpp
+SOURCE dtoa.cpp
+SOURCE error_object.cpp
+SOURCE ExecState.cpp
+SOURCE fpconst.cpp
+SOURCE function.cpp
+SOURCE function_object.cpp
+SOURCE identifier.cpp
+SOURCE internal.cpp
+SOURCE interpreter.cpp
+SOURCE JSImmediate.cpp
+SOURCE JSLock.cpp
+SOURCE lexer.cpp
+SOURCE list.cpp
+SOURCE lookup.cpp
+SOURCE math_object.cpp
+SOURCE nodes.cpp
+SOURCE nodes2string.cpp
+SOURCE number_object.cpp
+SOURCE object.cpp
+SOURCE object_object.cpp
+SOURCE operations.cpp
+SOURCE Parser.cpp
+SOURCE property_map.cpp
+SOURCE property_slot.cpp
+SOURCE regexp.cpp
+SOURCE regexp_object.cpp
+SOURCE scope_chain.cpp
+SOURCE string_object.cpp
+SOURCE ustring.cpp
+SOURCE value.cpp
+SOURCE DateMath.cpp
+SOURCE JSWrapperObject.cpp
+SOURCE PropertyNameArray.cpp
+
+
+SOURCEPATH ../../../../JavaScriptCore/pcre
+SOURCE pcre_refcount.c
+SOURCE pcre_ucp_findchar.c
+SOURCE pcre_compile.c
+SOURCE pcre_info.c
+SOURCE pcre_version.c
+SOURCE pcre_config.c
+SOURCE pcre_xclass.c
+SOURCE pcre_ord2utf8.c
+SOURCE pcre_study.c
+SOURCE pcre_tables.c
+SOURCE pcre_fullinfo.c
+SOURCE pcre_get.c
+SOURCE pcre_exec.c
+SOURCE pcre_globals.c
+SOURCE pcre_try_flipped.c
+
+SOURCEPATH ../../../../JavaScriptCore/wtf
+SOURCE FastMalloc.cpp
+SOURCE HashTable.cpp
+
+SOURCEPATH ../../../../JavaScriptCore/wtf/symbian
+SOURCE snprintf.c
+
+SOURCEPATH ../../../../JavaScriptCore/bindings/c
+SOURCE c_class.cpp
+SOURCE c_instance.cpp
+SOURCE c_runtime.cpp
+SOURCE c_utility.cpp
+
+SOURCEPATH ../../../../JavaScriptCore/bindings
+SOURCE NP_jsobject.cpp
+SOURCE npruntime.cpp
+SOURCE runtime.cpp
+SOURCE runtime_array.cpp
+SOURCE runtime_method.cpp
+SOURCE runtime_object.cpp
+SOURCE runtime_root.cpp
+
+#if defined( __S60_32__ )
+SOURCEPATH      ../../../../npscript/npscript
+SOURCE          npscript.cpp
+#endif
+LIBRARY         estlib.lib
+LIBRARY         euser.lib
+LIBRARY		memman.lib
+LIBRARY     charconv.lib
+
+

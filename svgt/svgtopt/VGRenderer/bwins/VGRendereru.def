@@ -1,0 +1,3 @@
+EXPORTS
+	?NewL@CVGRenderer@@SAPAV1@W4SVGRendererId@@H@Z @ 1 NONAME ; class CVGRenderer * CVGRenderer::NewL(enum SVGRendererId, int)
+

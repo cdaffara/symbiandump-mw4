@@ -1,0 +1,50 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// UPnP specific dll that provides support for applications to create parameter bundles of
+// desired type for carrying out various operations like discovery,describe etc.
+// 
+//
+
+
+TARGET testplugin.dll
+TARGETTYPE PLUGIN
+CAPABILITY ALL -TCB
+
+UID 0x10009D8D 0x2025D05D
+VENDORID 0x70000001
+
+SOURCEPATH ../src
+SOURCE  ecom_testimpl.cpp
+SOURCE  testpnpparamsextfactory.cpp
+SOURCE 	ctestpnpservicediscovery.cpp
+SOURCE 	ctestpnpservicepublisher.cpp
+SOURCE 	ctestcontrolchannel.cpp
+
+
+START RESOURCE 2025D05D.rss
+TARGET testplugin.rsc
+END
+
+USERINCLUDE ../inc
+
+SYSTEMINCLUDE /epoc32/include 
+SYSTEMINCLUDE /epoc32/include/pnp
+
+LIBRARY euser.lib 
+LIBRARY esock.lib 
+LIBRARY insock.lib
+LIBRARY rpnp.lib
+LIBRARY netmeta.lib
+
+SMPSAFE

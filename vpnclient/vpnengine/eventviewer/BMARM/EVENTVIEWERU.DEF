@@ -1,0 +1,10 @@
+EXPORTS
+	NewL__12CEventViewer @ 1 NONAME R3UNUSED ; CEventViewer::NewL(void)
+	GetEventUsingEventNumber__12CEventViewerRP7HBufC16UlR16TEventProperties @ 2 NONAME ; CEventViewer::GetEventUsingEventNumber(HBufC16 *&, unsigned long, TEventProperties &)
+	GetIapName__11EventViewerUlRt5TBuf81i50 @ 3 NONAME R3UNUSED ; EventViewer::GetIapName(unsigned long, TBuf8<50> &)
+	GetIapNames__11EventViewerUlRt5TBuf81i50UlT2 @ 4 NONAME ; EventViewer::GetIapNames(unsigned long, TBuf8<50> &, unsigned long, TBuf8<50> &)
+	GetMostRecentEvent__12CEventViewerRP7HBufC16R16TEventProperties @ 5 NONAME R3UNUSED ; CEventViewer::GetMostRecentEvent(HBufC16 *&, TEventProperties &)
+	GetNextEvent__12CEventViewerRP7HBufC16R16TEventProperties @ 6 NONAME R3UNUSED ; CEventViewer::GetNextEvent(HBufC16 *&, TEventProperties &)
+	GetPreviousEvent__12CEventViewerRP7HBufC16R16TEventProperties @ 7 NONAME R3UNUSED ; CEventViewer::GetPreviousEvent(HBufC16 *&, TEventProperties &)
+	DeleteLogFile__12CEventViewer @ 8 NONAME R3UNUSED ; CEventViewer::DeleteLogFile(void)
+

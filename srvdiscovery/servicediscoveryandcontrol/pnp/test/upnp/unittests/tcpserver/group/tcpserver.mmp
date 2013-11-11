@@ -1,0 +1,77 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+TARGET			tcpserver.prt
+TARGETTYPE		DLL
+UID      0x10003d38
+VENDORID 0x70000001
+
+DEFFILE		tcpserver.def
+
+
+SOURCEPATH		../src
+SOURCE			protocolfamily.cpp
+SOURCE			proxyprotocol.cpp
+SOURCE			ptcpservertests.cpp ctcpservertestupnp1.cpp ctcpservertestupnp2.cpp ctcpservertestupnp3.cpp ctcpservertestupnp4.cpp ctcpservertestupnp5.cpp ctcpservertestupnp6.cpp ctcpservertestupnp7.cpp ctcpservertestupnp8.cpp ctcpservertestupnp9.cpp ctcpservertestupnp10.cpp ctcpservertestupnp11.cpp ctcpservertestupnp12.cpp ctcpservertestupnp13.cpp ctcpservertestupnp14.cpp ctcpservertestupnp15.cpp ctcpservertestupnp16.cpp ctcpservertestupnp17.cpp ctcpservertestupnp18.cpp ctcpservertestupnp19.cpp ctcpservertestupnp20.cpp ctcpservertestupnp21.cpp ctcpservertestupnp22.cpp ctcpservertestcase.cpp ctcpservertestupnp23.cpp ctcpservertestupnp24.cpp ctcpservertestupnp25.cpp ctcpservertestupnp26.cpp ctcpservertestupnp27.cpp ctcpservertestupnp28.cpp ctcpservertestupnp29.cpp ctcpservertestupnp30.cpp ctcpservertestupnp31.cpp ctcpservertestupnp32.cpp ctcpservertestupnp33.cpp ctcpservertestupnp34.cpp
+
+USERINCLUDE		../inc
+USERINCLUDE   	../../udpclient/inc
+USERINCLUDE		../../../server/flow/inc
+USERINCLUDE		../../../upnputils/inc
+USERINCLUDE		../../../upnpmessage/inc
+USERINCLUDE		../../../upnpplugin/inc
+
+SOURCEPATH		../../../server/flow/src
+SOURCE			cupnptimer.cpp
+
+
+SYSTEMINCLUDE	/epoc32/include
+SYSTEMINCLUDE	/epoc32/include/comms-infras
+SYSTEMINCLUDE   /epoc32/include/test
+
+LIBRARY		euser.lib     
+LIBRARY		esock.lib
+LIBRARY		esocksvr.lib
+LIBRARY		mbufmgr.lib
+LIBRARY		testexecutelogclient.lib
+LIBRARY		efsrv.lib
+LIBRARY		cinidata.lib
+LIBRARY     nifman.lib
+LIBRARY		commsfw.lib
+LIBRARY		testexecuteutils.lib
+LIBRARY		rfileloggerclient.lib
+LIBRARY     netmeta.lib		// for the ABIv2
+LIBRARY		insock.lib 
+LIBRARY		sockethandler.lib
+LIBRARY 	upnputils.lib
+LIBRARY		nodemessages.lib
+LIBRARY 	netinterfaces.lib
+LIBRARY 	factories.lib
+LIBRARY 	chunkmgr.lib
+
+START WINS
+BASEADDRESS		0x59000000
+END
+
+CAPABILITY CommDD PowerMgmt ReadDeviceData WriteDeviceData TrustedUI ProtServ NetworkControl NetworkServices LocalServices ReadUserData WriteUserData
+
+UNPAGED
+
+SOURCEPATH ..\src
+SOURCE ctcpservertestupnp41.cpp
+
+SMPSAFE

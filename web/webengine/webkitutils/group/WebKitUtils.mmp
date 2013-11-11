@@ -1,0 +1,134 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  
+*
+*/
+
+
+TARGET          webkitutils.dll
+TARGETTYPE      dll
+UID 0x1000008D  0x2000B19D  
+
+#include <bldvariant.hrh>
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+#include "SqliteMacros.mmpi"
+
+VENDORID    VID_DEFAULT
+CAPABILITY  CAP_GENERAL_DLL
+EPOCALLOWDLLDATA
+
+MACRO __OOM__
+
+#if defined(WINSCW)
+deffile Bwinscw/WebKitUtils.def
+#elif defined(ARMCC)
+deffile EABI/WebKitUtils.def
+#endif
+
+START RESOURCE ../data/WebKitUtils.rss
+HEADER
+TARGETPATH      RESOURCE_FILES_DIR
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END
+
+SOURCEPATH      ../ToolBar
+SOURCE          ToolBar.cpp
+SOURCE          ToolBarButton.cpp
+
+SOURCEPATH      ../HistoryProvider
+SOURCE          HistoryEntry.cpp
+SOURCE          HistoryController.cpp
+SOURCE          HistoryView.cpp
+
+SOURCEPATH      ../SqliteSymbian
+SOURCE          alter.c
+SOURCE          analyze.c
+SOURCE          attach.c
+SOURCE          auth.c
+SOURCE          btree.c
+SOURCE          build.c
+SOURCE          callback.c
+SOURCE          complete.c
+SOURCE          date.c
+SOURCE          delete.c
+SOURCE          expr.c
+SOURCE          func.c
+SOURCE          hash.c
+SOURCE          insert.c
+SOURCE          legacy.c
+SOURCE          loadext.c
+SOURCE          main.c
+SOURCE          opcodes.c
+SOURCE          os.c
+SOURCE          os_symbian.cpp
+SOURCE          pager.c
+SOURCE          parse.c
+SOURCE          pragma.c
+SOURCE          prepare.c
+SOURCE          printf.c
+SOURCE          random.c
+SOURCE          select.c
+SOURCE          table.c
+SOURCE          tokenize.c
+SOURCE          trigger.c
+SOURCE          update.c
+SOURCE          utf.c
+SOURCE          util.c
+SOURCE          vacuum.c
+SOURCE          vdbe.c
+SOURCE          vdbeapi.c
+SOURCE          vdbeaux.c
+SOURCE          vdbefifo.c
+SOURCE          vdbemem.c
+SOURCE          vtab.c
+SOURCE          where.c
+
+USERINCLUDE     ../../osswebengine/WebKit/s60/webview
+
+USERINCLUDE     ../ToolBar
+USERINCLUDE     ../HistoryProvider
+USERINCLUDE     ../SqliteSymbian
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../../inc 
+MW_LAYER_LIBC_SYSTEMINCLUDE
+
+LIBRARY         estlib.lib 
+LIBRARY         euser.lib 
+LIBRARY         fbscli.lib 
+LIBRARY         bitgdi.lib 
+LIBRARY         gdi.lib 
+LIBRARY         ws32.lib
+LIBRARY         RecentUrlStore.lib
+LIBRARY         cone.lib
+LIBRARY         AknSkins.lib 
+LIBRARY         aknicon.lib
+LIBRARY         CommonEngine.lib
+LIBRARY         egul.lib
+LIBRARY         estor.lib
+LIBRARY         avkon.lib 
+LIBRARY         InetProtUtil.lib
+LIBRARY         favouritesengine.lib
+LIBRARY         bafl.lib
+LIBRARY         efsrv.lib
+LIBRARY         eikcore.lib 
+LIBRARY         eikcoctl.lib 
+LIBRARY         MemMan.lib

@@ -1,0 +1,56 @@
+/*
+* Copyright (c) 2002-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project HotSpot Server
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET          HotSpotServer.exe
+TARGETTYPE      exe
+TARGETPATH      /system/programs
+UID             0x1000008d 0x10282ECB 
+VENDORID        VID_DEFAULT
+
+EPOCSTACKSIZE   0x05000 
+
+SOURCEPATH		../src
+SOURCE          hotspotserver.cpp
+SOURCE          hotspotsession.cpp
+SOURCE          hssnotif.cpp
+SOURCE          hssiapsettingshandler.cpp
+SOURCE          hsslogintimer.cpp
+SOURCE          hsslogouttimer.cpp
+
+USERINCLUDE		../inc
+USERINCLUDE		../../hsclient/inc
+
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   /epoc32/include/ecom
+
+LIBRARY       euser.lib efsrv.lib esock.lib insock.lib
+LIBRARY       inetprotutil.lib
+LIBRARY       ecom.lib
+LIBRARY       bafl.lib 
+LIBRARY       commdb.lib
+LIBRARY       commsdat.lib
+LIBRARY       wlandbif.lib
+LIBRARY       hal.lib
+LIBRARY       estor.lib 
+LIBRARY       centralrepository.lib
+LIBRARY       cmmanager.lib
+STATICLIBRARY    hssscanlist.lib
+
+CAPABILITY    CAP_SERVER NetworkControl 

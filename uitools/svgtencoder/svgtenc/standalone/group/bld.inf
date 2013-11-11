@@ -1,0 +1,66 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+//#ifdef SBSV2
+   TOOLS2
+//#else
+   TOOLS
+//#endif
+
+PRJ_EXPORTS
+
+
+../binary/svgtbinencode.exe	/epoc32/tools/svgtbinencode.exe
+../binary/xerces-c_2_6.dll	/epoc32/tools/xerces-c_2_6.dll
+../binary/svgtbinencode	/epoc32/tools/svgtbinencode
+				
+
+#if HOSTPLATFORM_DIR==win32
+	#if defined(SBSV2) && defined(TOOLS2) 
+		// For Windows Raptor Support "Link with static xerces-c.2.8.0 mingw"
+
+	#endif
+#endif
+
+#if HOSTPLATFORM_DIR!=win32
+	#if defined(SBSV2) && defined(TOOLS2) 
+		// For Linux Raptor Support "Link with static xerces-c.2.8.0 mingw"
+
+	#endif
+#endif
+
+
+PRJ_MMPFILES
+
+#if defined(SBSV2) && defined(TOOLS2) 
+		
+		/*
+		 * NOTICE! svgtbinencode is not compiled any more during usual build.
+		 * It is just exported from ../binary directory.
+		 * If you really want compile svgtbinencode from sources you need to 
+		 * uncomment below line, build this project using "sbs -c tools2 - b bld.inf" and copy 
+		 * /epoc32/tools/svgtbinencode.exe to ../binary directory and 
+		 * put the binary to version control.
+		*/
+		 
+//	svgtbinencoder.mmp
+
+#endif
+

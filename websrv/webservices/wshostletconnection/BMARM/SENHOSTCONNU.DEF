@@ -1,0 +1,4 @@
+EXPORTS
+	NewLC__21CSenHostletConnectionR11MSenHostlet @ 1 NONAME R3UNUSED ; CSenHostletConnection::NewLC(MSenHostlet &)
+	NewL__21CSenHostletConnectionR11MSenHostlet @ 2 NONAME R3UNUSED ; CSenHostletConnection::NewL(MSenHostlet &)
+

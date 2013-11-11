@@ -1,0 +1,37 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+
+
+PRJ_TESTEXPORTS
+#ifdef SYMBIAN_OLD_EXPORT_LOCATION
+../inc/cchunkmanager.h	/epoc32/include/cchunkmanager.h
+#endif
+#ifdef SYMBIAN_OLD_EXPORT_LOCATION
+../inc/rmemchunk.h 		/epoc32/include/rmemchunk.h
+#endif
+#ifdef SYMBIAN_OLD_EXPORT_LOCATION
+../inc/rmemcell.h 		/epoc32/include/rmemcell.h
+#endif
+
+
+PRJ_TESTMMPFILES
+chunkmgr.mmp
+#include "../ts_chunkmgr/group/bld.inf"
+
+
+

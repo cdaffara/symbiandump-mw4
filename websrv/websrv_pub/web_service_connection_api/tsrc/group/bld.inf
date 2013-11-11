@@ -1,0 +1,36 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Build information file for web_service_connection_api test source  
+*
+*/
+
+
+
+
+PRJ_PLATFORMS
+    DEFAULT
+
+PRJ_EXPORTS
+
+PRJ_TESTMMPFILES
+../SenConnectionTimeoutsTester/group/SenConnectionTimeoutsTester.mmp
+../SenLayeredPropertiesTester/group/SenLayeredPropertiesTester.mmp 
+../senutilsTestCases/group/senutilsTestCases.mmp
+../wsPolicyTester/group/wsPolicyTester.mmp
+../WsStarMessageHandlerTester/group/WsStarMessageHandlerTester.mmp
+../wsstarPluginTester/group/wsstarPluginTester.mmp
+../senConnectionTester/group/senConnectionTester.mmp
+
+
+// End of file

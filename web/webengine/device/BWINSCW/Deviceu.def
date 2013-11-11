@@ -1,0 +1,5 @@
+EXPORTS
+	?CreateDeviceBridgeL@@YAPAVMDeviceBridge@@XZ @ 1 NONAME ; class MDeviceBridge * CreateDeviceBridgeL(void)
+	?getNumber@JSValue@KJS@@QBE_NAAN@Z @ 2 NONAME ; bool KJS::JSValue::getNumber(double &) const
+
+

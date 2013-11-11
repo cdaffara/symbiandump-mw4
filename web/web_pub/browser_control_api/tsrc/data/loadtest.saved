@@ -1,0 +1,19 @@
+SAVED-PAGE/3.1
+Content-Location: file://c:/brctltest/loadtest.html
+Content-Type: multipart/mixed; boundary="S60BrowserSavedPage"
+Content-Length: 407
+Last-Modified: Tue, 09 May 2006 17:56:03 GMT
+
+--S60BrowserSavedPage
+Content-Location: file://c:/brctltest/loadtest.html
+Content-Type: text/html
+
+<HTML><HEAD><TITLE>Demo </TITLE></HEAD><BODY bgcolor="#ffffff" leftmargin="0" topmargin="0" marginheight="2" marginwidth="2">
+
+	<P>
+	This test tests that LoadData actually works.
+	If you see this page the test passed.
+	<IMG src="img8.jpg" alt="No image here">
+
+</P></BODY></HTML>
+--S60BrowserSavedPage--

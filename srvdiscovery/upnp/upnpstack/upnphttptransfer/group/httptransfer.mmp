@@ -1,0 +1,86 @@
+/** @file
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file for HttpTransfer component
+*
+*/
+
+
+// System include files
+#include "../../../inc/upnpcompvariant.hrh"
+
+// Build target
+
+#if defined(__HN_31__) || defined(__HN_32__)
+TARGET          hnhttptransfer.dll
+UID             0x1000008d 0x20011373
+#else
+TARGET          httptransfer.dll
+UID             0x1000008d 0x20009CA0
+#endif
+
+TARGETTYPE      DLL
+CAPABILITY      CAP_GENERAL_DLL
+VENDORID        VID_DEFAULT
+
+TARGETPATH      /sys/bin
+
+// Source files
+SOURCEPATH      ../src
+SOURCE          httpfile.cpp
+SOURCE          httpheader.cpp
+
+SOURCE          httptransferbase.cpp
+SOURCE          httpdownloader.cpp
+SOURCE          httpuploader.cpp
+
+SOURCE          httptransferworker.cpp
+SOURCE          httpdownloadworker.cpp
+SOURCE          httpuploadworker.cpp
+SOURCE          httptransfertimer.cpp
+SOURCE          httpnotifytimer.cpp
+
+// Include directories
+USERINCLUDE     ../../../inc
+USERINCLUDE     ../../inc
+USERINCLUDE     ../inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+// Libraries
+LIBRARY         http.lib
+LIBRARY         euser.lib
+LIBRARY         esock.lib
+LIBRARY         commdb.lib
+LIBRARY         bafl.lib
+LIBRARY         ecom.lib
+LIBRARY         efsrv.lib  // TParse
+LIBRARY         inetprotutil.lib
+LIBRARY         sysutil.lib
+LIBRARY         platformenv.lib // DriveInfo
+#if defined(__HN_31__) || defined(__HN_32__)
+LIBRARY         hnupnpconnectionmanagersession.lib
+#else
+LIBRARY         upnpconnectionmanagersession.lib
+#endif
+
+DEFFILE         httptransfer
+
+
+VERSION 10.1
+
+paged
+
+SMPSAFE
+
+// End of file

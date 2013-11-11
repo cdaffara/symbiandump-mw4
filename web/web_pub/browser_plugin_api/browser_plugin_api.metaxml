@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<api id="57c1ce6f49acf3f566df870d9ee872c7" dataversion="1.0">
+  <name>Browser Plug-in API</name>
+  <description>Provides an interface conforming to netscape plug-in API to write an add-on module that extends the capabilities of a browser.</description>
+  <type>c++</type>
+  <subsystem>WebEngine</subsystem>
+  <libs>
+    <lib name="BrowserEngine.lib" />
+  </libs>
+  <release category="sdk" sinceversion="2.0"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

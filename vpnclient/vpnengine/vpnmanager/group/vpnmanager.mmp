@@ -1,0 +1,81 @@
+/*
+* Copyright (c) 2003-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project vpnmanager
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET          vpnmanager.exe
+TARGETTYPE      exe
+UID             0x1000008d 0x101F7993
+
+CAPABILITY      NetworkControl NetworkServices ProtServ WriteDeviceData
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          fileutil.cpp
+SOURCE          pinparser.cpp
+SOURCE          pkiutil.cpp
+SOURCE          pwdchanger.cpp
+SOURCE          policyimporter.cpp
+SOURCE          policypatcher.cpp 
+SOURCE          policystore.cpp
+SOURCE          vpnapiservant.cpp
+SOURCE          vpnmanagersession.cpp
+SOURCE          vpnmanagerstarter.cpp
+SOURCE          uuid.cpp
+SOURCE          eventlogger.cpp
+SOURCE          vpnmanagerserver.cpp
+SOURCE          cmmanagerutils.cpp
+
+SOURCEPATH      ../../vpncommon/src
+SOURCE          srvstatic.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../../vpnapiimpl/inc
+USERINCLUDE     ../../pkiserviceapi/inc
+USERINCLUDE     ../../ikepolparser/inc
+USERINCLUDE     ../../vpncommon/inc
+USERINCLUDE     ../../utlxml/inc
+USERINCLUDE     ../../utlbase64/inc
+USERINCLUDE     ../../utlpkcs10/inc
+USERINCLUDE     ../../../vpnui/vpnecomnotifier/inc
+USERINCLUDE     ../../eventmediatorapi/inc
+USERINCLUDE     ../../eventviewer/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         euser.lib 
+LIBRARY         efsrv.lib 
+LIBRARY         esock.lib
+LIBRARY         x509.lib 
+LIBRARY         x500.lib
+LIBRARY         pkiserviceapi.lib
+LIBRARY         ikepolparser.lib
+LIBRARY         crypto.lib
+LIBRARY         utlxml.lib
+LIBRARY         bafl.lib
+LIBRARY         utlbase64.lib
+LIBRARY         utlpkcs10.lib
+LIBRARY         eventmedapi.lib
+LIBRARY         eventviewer.lib
+LIBRARY         random.lib
+LIBRARY         charconv.lib 
+LIBRARY         cmmanager.lib
+LIBRARY         cryptography.lib
+
+DEBUGLIBRARY    flogger.lib
+
+EPOCSTACKSIZE     0x4000

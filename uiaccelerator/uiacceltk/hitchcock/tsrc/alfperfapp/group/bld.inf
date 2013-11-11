@@ -1,0 +1,132 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build information file for alfperfapp.
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+// put them in apps private folder
+../gfx/alfperfapp_imagetest.gif /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfperfapp_imagetest.gif
+../gfx/alfperfapp_imagetest.png /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfperfapp_imagetest.png
+../gfx/alfperfapp_imagetest.svg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfperfapp_imagetest.svg
+// Mif files need to go in apps resource dir, since they have to be loaded by AknIconSrv
+../gfx/alfperfapp_imagetest_NVGCS.mif /epoc32/RELEASE/winscw/urel/Z/resource/apps/alfperfapp_imagetest_NVGCS.mif
+../gfx/icons_mif_new2.mif       /epoc32/RELEASE/winscw/urel/Z/resource/apps/icons_mif_new2.mif
+../gfx/3musk.mif                /epoc32/RELEASE/winscw/urel/Z/data/nvg_mif/3musk.mif
+../gfx/alfperfapp_test1.mbm /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfperfapp_test1.mbm
+../gfx/alfperfapp_imagetest.gif /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfperfapp_imagetest.gif
+../gfx/alfperfapp_imagetest.png /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfperfapp_imagetest.png
+../gfx/alfperfapp_imagetest.svg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfperfapp_imagetest.svg
+../gfx/alfperfapp_imagetest_NVGCS.mif /epoc32/RELEASE/winscw/udeb/Z/resource/apps/alfperfapp_imagetest_NVGCS.mif
+../gfx/icons_mif_new2.mif       /epoc32/RELEASE/winscw/udeb/Z/resource/apps/icons_mif_new2.mif
+../gfx/3musk.mif                /epoc32/RELEASE/winscw/udeb/Z/data/nvg_mif/3musk.mif
+../gfx/alfperfapp_test1.mbm /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfperfapp_test1.mbm
+../gfx/alfphotos1.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos1.jpg
+../gfx/alfphotos2.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos2.jpg
+../gfx/alfphotos3.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos3.jpg
+../gfx/alfphotos4.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos4.jpg
+../gfx/alfphotos5.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos5.jpg
+../gfx/alfphotos6.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos6.jpg
+../gfx/alfphotos7.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos7.jpg
+../gfx/alfphotos8.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos8.jpg
+../gfx/alfphotos9.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos9.jpg
+../gfx/jpg_sun.jpg    /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/jpg_sun.jpg
+../gfx/alfphotos_5mpx.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_5mpx.jpg
+../gfx/alfphotos_2mpx.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_2mpx.jpg
+../gfx/alfphotos_vga.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_vga.jpg
+
+../gfx/alfphotos_small1.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_small1.jpg
+../gfx/alfphotos_small2.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_small2.jpg
+../gfx/alfphotos_small3.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_small3.jpg
+../gfx/alfphotos_small4.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_small4.jpg
+../gfx/alfphotos_small5.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_small5.jpg
+../gfx/alfphotos_small6.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_small6.jpg
+../gfx/alfphotos_small7.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_small7.jpg
+../gfx/alfphotos_small8.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_small8.jpg
+../gfx/alfphotos_small9.jpg /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/alfphotos_small9.jpg
+../gfx/jpg_sun_small.jpg    /epoc32/RELEASE/winscw/urel/Z/private/20016B8D/jpg_sun_small.jpg
+
+
+../gfx/alfphotos1.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos1.jpg
+../gfx/alfphotos2.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos2.jpg
+../gfx/alfphotos3.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos3.jpg
+../gfx/alfphotos4.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos4.jpg
+../gfx/alfphotos5.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos5.jpg
+../gfx/alfphotos6.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos6.jpg
+../gfx/alfphotos7.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos7.jpg
+../gfx/alfphotos8.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos8.jpg
+../gfx/alfphotos9.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos9.jpg
+../gfx/jpg_sun.jpg    /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/jpg_sun.jpg
+../gfx/alfphotos_5mpx.jpg  /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_5mpx.jpg
+../gfx/alfphotos_2mpx.jpg  /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_2mpx.jpg
+../gfx/alfphotos_vga.jpg  /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_vga.jpg
+
+../gfx/alfphotos_small1.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_small1.jpg
+../gfx/alfphotos_small2.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_small2.jpg
+../gfx/alfphotos_small3.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_small3.jpg
+../gfx/alfphotos_small4.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_small4.jpg
+../gfx/alfphotos_small5.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_small5.jpg
+../gfx/alfphotos_small6.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_small6.jpg
+../gfx/alfphotos_small7.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_small7.jpg
+../gfx/alfphotos_small8.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_small8.jpg
+../gfx/alfphotos_small9.jpg /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/alfphotos_small9.jpg
+../gfx/jpg_sun_small.jpg    /epoc32/RELEASE/winscw/udeb/Z/private/20016B8D/jpg_sun_small.jpg
+
+
+// Images for app suite test
+// winscw udeb
+../gfx/people.png                       /epoc32/release/winscw/udeb/Z/private/20016B8D/people.png
+../gfx/jim.png                          /epoc32/release/winscw/udeb/Z/private/20016B8D/jim.png
+../gfx/mtv3.png                         /epoc32/release/winscw/udeb/Z/private/20016B8D/mtv3.png
+../gfx/mtv3_scifi.png                   /epoc32/release/winscw/udeb/Z/private/20016B8D/mtv3_scifi.png
+../gfx/nelonen.png                      /epoc32/release/winscw/udeb/Z/private/20016B8D/nelonen.png
+../gfx/discoveryhd.png                  /epoc32/release/winscw/udeb/Z/private/20016B8D/discoveryhd.png
+../gfx/nationalgeographic.jpg           /epoc32/release/winscw/udeb/Z/private/20016B8D/nationalgeographic.jpg
+
+// winscw urel
+../gfx/people.png                       /epoc32/release/winscw/urel/Z/private/20016B8D/people.png
+../gfx/jim.png                          /epoc32/release/winscw/urel/Z/private/20016B8D/jim.png
+../gfx/mtv3.png                         /epoc32/release/winscw/urel/Z/private/20016B8D/mtv3.png
+../gfx/mtv3_scifi.png                   /epoc32/release/winscw/urel/Z/private/20016B8D/mtv3_scifi.png
+../gfx/nelonen.png                      /epoc32/release/winscw/urel/Z/private/20016B8D/nelonen.png
+../gfx/discoveryhd.png                  /epoc32/release/winscw/urel/Z/private/20016B8D/discoveryhd.png
+../gfx/nationalgeographic.jpg           /epoc32/release/winscw/urel/Z/private/20016B8D/nationalgeographic.jpg
+
+PRJ_MMPFILES
+// make sure the dependencies are compiled as well
+../../alfdebugextension/group/alfdebug.mmp
+../../alfdebugextension/group/alfdebugserver.mmp
+
+alfperfappdaemon.mmp
+alfperfapp.mmp
+
+PRJ_EXTENSIONS
+
+START EXTENSION s60/mifconv
+OPTION TARGETFILE alfperfapp_imagetest.mif
+OPTION HEADERFILE alfperfapp_imagetest.mbg
+OPTION SOURCES -c8,8 qgn_menu_radio \
+	    -c8,8 qgn_menu_voirec \
+	    -c8,8 qgn_menu_log \
+	    -c8,8 qgn_menu_cams
+
+END
+

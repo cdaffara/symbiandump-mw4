@@ -1,0 +1,29 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+
+PRJ_MMPFILES
+
+alfexcalendar.mmp
+
+PRJ_EXPORTS
+
+../gfx/background.svg         /epoc32/winscw/c/data/images/background.svg
+../gfx/normaldaybutton.svg    /epoc32/winscw/c/data/images/normaldaybutton.svg
+../gfx/eventsdaybutton.svg    /epoc32/winscw/c/data/images/eventsdaybutton.svg
+../gfx/title.svg              /epoc32/winscw/c/data/images/title.svg
+../gfx/selectedday.svg        /epoc32/winscw/c/data/images/selectedday.svg

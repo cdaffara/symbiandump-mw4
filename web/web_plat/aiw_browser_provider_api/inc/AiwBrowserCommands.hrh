@@ -1,0 +1,39 @@
+/*
+* Copyright (c) 2002-2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  command id's
+*
+*/
+
+
+#ifndef AIWBROWSERPROVIDER_HRH
+#define AIWBROWSERPROVIDER_HRH
+
+#warning The AIW Browser API will be removed wk25. Please see http://wikis.in.nokia.com/Browser/APIMigration for more information
+
+// DATA TYPES
+enum TAiwTestMenuSaveCommands
+    {
+    EBrowserAiwCmdSaveUrl = 51,     //command id for saving url
+    EBrowserAiwCmdLastSave = 100
+    };
+
+enum TAiwTestMenuOpenCommands
+    {
+    EBrowserAiwCmdOpenUrl = 101,        //command id for opening url
+    EBrowserAiwCmdLastOpen = 200
+    };
+
+#endif
+
+// End of File

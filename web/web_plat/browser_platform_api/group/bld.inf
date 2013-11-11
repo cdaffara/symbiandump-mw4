@@ -1,0 +1,40 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build information for the Browser Platform Api
+*
+*/
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+../inc/Browser_platform_variant.hrh  MW_LAYER_PLATFORM_EXPORT_PATH(Browser_platform_variant.hrh)
+
+#ifdef BRDO_ADDED_EXPORT_LOCATION
+../inc/Browser_platform_variant.hrh  BRDO_ADDED_EXPORT_LOCATION(Browser_platform_variant.hrh)
+#endif
+
+#ifdef __PLATFORM_VERSION_50_TUBE__
+../inc/Browser_platform_variant.hrh  /epoc32/include/oem/Browser_platform_variant.hrh
+../inc/Browser_platform_variant.hrh  /epoc32/include/oem/platform/mw/Browser_platform_variant.hrh
+#endif
+
+#ifdef __PLATFORM_VERSION_50__
+../inc/Browser_platform_variant.hrh  /epoc32/include/oem/Browser_platform_variant.hrh
+#endif
+
+PRJ_MMPFILES

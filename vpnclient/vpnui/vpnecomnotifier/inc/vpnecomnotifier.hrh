@@ -1,0 +1,43 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   VPN Ecom Notifier's resource headers
+*
+*/
+
+
+
+#ifndef VPNECOMNOTIFIER_HRH
+#define VPNECOMNOTIFIER_HRH
+
+// IDs
+#define EAcuServersListBox       1
+#define EAcuIapListBox           2
+#define EAcuExactChangesListBox  3
+#define EAcuNoteText1            4
+#define EAcuNoteText2            5
+#define EAcuFingerprint          6
+#define EAcuServerUrl            7
+#define EVpnDomain               8
+
+// Buttons
+#define EAcuBidCancel            -1 //Must be same as EEikBidCancel
+#define EAcuBidNull              -6 //Must be same as EEikBidBlank
+#define EAcuBidNew               1
+#define EAcuBidDelete            2
+#define EAcuBidDone              3
+#define EAcuBidDetails           4
+#define EAcuBidOK                -2  // Must be same as EEikBidOk
+#define EAcuBidChange            6
+
+#endif // VPNECOMNOTIFIER_HRH

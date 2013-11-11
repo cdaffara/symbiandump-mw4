@@ -1,0 +1,142 @@
+/*
+* Copyright (c) 2002-2005 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        
+*
+*/
+
+
+
+
+
+
+
+
+// RESOURCE IDENTIFIER
+NAME TMPL 
+
+// INCLUDES
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+
+#include "sennotplugindlgimpl.hrh"
+#include <sennotplugindlgimpl.loc>
+//#if (defined LANGUAGE_SC) // default (U.K. English)
+  //  #include "SenNotPluginDlgImpl.loc"
+//#endif
+
+// RESOURCE DEFINITIONS
+// ---------------------------------------------------------
+//   
+//    Define the resource file signature 
+//    This resource should be empty.
+//
+// ---------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE 
+    { 
+    }
+
+// ---------------------------------------------------------
+//   
+//    Default Document Name
+//
+// ---------------------------------------------------------
+//
+RESOURCE TBUF 
+    { 
+    buf=""; 
+    }
+
+//----------------------------------------------------
+//    r_common_yes_no_query
+//
+// This is used to show user simple yes/no query.
+// This resource is used by CAknQueryDialog.
+//
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_common_yes_no_query
+{
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_CANCEL; // EAknSoftkeyOk & EAknSoftkeyCancel
+    items = 
+    {
+        DLG_LINE
+        {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+            {
+                layout = EConfirmationQueryLayout;
+            };
+        }
+    };
+}
+
+//----------------------------------------------------
+//    r_custom_usernamepasswd_dialog
+//
+// This is used to show user custom authentication 
+// dialog. 
+//
+//----------------------------------------------------
+//
+RESOURCE DIALOG r_custom_usernamepasswd_dialog
+{
+        flags = EGeneralQueryFlags;
+    buttons=R_AVKON_SOFTKEYS_OK_CANCEL;
+    items = {
+        DLG_LINE {
+            type = EAknCtMultilineQuery;
+            id = EMultilineFirstLine;
+            control = AVERELL_DATA_QUERY {
+                layout = EMultiDataFirstEdwin;
+                label = qtn_sen_notdlg_auth_username;
+                control = EDWIN {
+                    flags = EEikEdwinNoHorizScrolling | EEikEdwinResizable;
+                    width = 25;
+                    maxlength = 32;//KSenMaxUsernameLength
+                };
+            };
+        },
+        DLG_LINE {
+            type = EAknCtMultilineQuery;
+            id = EMultilineSecondLine;
+            control = AVERELL_DATA_QUERY {
+                layout = EMultiDataSecondSecEd;
+                label = qtn_sen_notdlg_auth_password;
+                control = SECRETED {
+                    num_letters = 16;//KSenMaxPasswordLength
+                };
+            };
+        }
+    };
+}
+
+//----------------------------------------------------
+//    STRING RESOURCES
+//
+// This is used to show user custom authentication 
+// dialog. 
+//----------------------------------------------------
+//    
+RESOURCE TBUF r_sennotdlg_auth_title                { buf = qtn_sen_notdlg_auth_title; }
+RESOURCE TBUF r_sennotdlg_auth_username             { buf = qtn_sen_notdlg_auth_username; }
+RESOURCE TBUF r_sennotdlg_auth_password             { buf = qtn_sen_notdlg_auth_password; }
+RESOURCE TBUF r_sennotdlg_ask_save_query            { buf = qtn_sen_notdlg_ask_save; }
+RESOURCE TBUF r_sennotdlg_allow_register_query      { buf = qtn_sen_notdlg_allow_register; }
+RESOURCE TBUF r_sennotdlg_allow_unregister_query    { buf = qtn_sen_notdlg_allow_unregister; }
+
+// End of File

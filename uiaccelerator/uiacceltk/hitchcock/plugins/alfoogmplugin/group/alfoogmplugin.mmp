@@ -1,0 +1,54 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This is the .mmp for building ALFServer Oogm Plugin
+*         			for the complementary transitions feature.
+*
+*/
+
+
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+
+
+TARGET      alfoogmplugin.dll
+TARGETTYPE  PLUGIN
+UID			0x10009d8d 0xE4B6C988
+
+CAPABILITY  CAP_ECOM_PLUGIN 
+VENDORID    VID_DEFAULT
+
+
+// This is a SYSTEMINCLUDE macro containing the middleware
+// layer specific include directories
+MW_LAYER_SYSTEMINCLUDE
+
+USERINCLUDE .
+USERINCLUDE ../inc
+
+TARGETPATH  /sys/bin  
+SOURCEPATH  ../src
+SOURCE      alfoogmplugin.cpp
+
+START RESOURCE alfoogmplugin.rss
+TARGET         alfoogmplugin.rsc
+END
+
+
+LIBRARY 	ecom.lib
+LIBRARY   euser.lib
+LIBRARY   goommonitor.lib
+LIBRARY   alfclient.lib
+
+// End of File

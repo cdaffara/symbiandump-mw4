@@ -1,0 +1,43 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+
+#ifndef __WIDGETS_IBY__
+#define __WIDGETS_IBY__
+
+#ifdef  __WEB_WIDGETS
+
+// APP
+S60_APP_EXE(WidgetUi)
+S60_UPGRADABLE_APP_REG_RSC(WidgetUi)
+S60_APP_CAPTION(WidgetUi)
+S60_APP_EXE(WidgetLauncher)
+
+ECOM_PLUGIN(WidgetInstallerUI.dll, WidgetInstallerUI.rsc)
+ECOM_PLUGIN(WidgetRecognizer.dll, WidgetRecognizer.rsc)
+
+#ifdef RD_WIDGET_PREINSTALLER
+// Startup
+S60_APP_EXE(WidgetStartup)
+S60_APP_AIF_RSC(WidgetStartup)
+// PreInstaller
+S60_APP_EXE(WidgetPreInstaller)
+S60_APP_AIF_RSC(WidgetPreInstaller)
+#endif // RD_WIDGET_PREINSTALLER
+
+#endif //__WEB_WIDGETS
+#endif

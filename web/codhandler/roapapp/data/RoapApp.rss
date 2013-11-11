@@ -1,0 +1,253 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Resource definitions.   
+*      
+*
+*/
+
+
+// RESOURCE IDENTIFIER
+
+NAME ROAP
+
+// INCLUDES
+
+#include <eikon.rh>
+#include <drmcommon.loc>
+#include "RoapApp.hrh"
+#include "eikon.rsg"
+#include <avkon.loc>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <appinfo.rh>
+#include <AvkonIcons.hrh>
+
+// RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf = "Activation"; }
+
+RESOURCE EIK_APP_INFO
+    {
+    cba = R_AVKON_SOFTKEYS_BACK;
+    }
+
+RESOURCE LOCALISABLE_APP_INFO r_roap_app_localisable_app_info
+    {
+    short_caption = qtn_drm_roap_title;
+    caption_and_icon = CAPTION_AND_ICON_INFO { caption = qtn_drm_roap_title; };
+    }
+
+RESOURCE LABEL r_roap_app_label
+    {
+    txt = "";
+    }
+
+RESOURCE CBA r_roap_app_cba_empty_cancel
+    {
+    buttons =
+	    {
+	    CBA_BUTTON { id = 0; txt = ""; },
+	    CBA_BUTTON { id = ERoapAppCmdCancel; txt = text_softkey_cancel; }
+	    };
+    }
+
+RESOURCE DIALOG r_roap_app_wait_note
+    {
+    flags = EAknWaitNoteFlags;
+    buttons = r_roap_app_cba_empty_cancel;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE 
+                { 
+                layout = EWaitLayout;
+                singular_label = qtn_drm_wait_getting_key;   // Dynamically set runtime.
+                animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_roap_app_confirm_query
+    {
+    flags = EAknDialogGenericQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO__YES;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY 
+                { 
+                layout = EConfirmationQueryLayout;
+                label = ""; // Dynamically set runtime.
+                };
+            }
+        };
+    }
+
+RESOURCE CBA r_roap_app_cba_register_cancel
+    {
+    buttons =
+	    {
+      CBA_BUTTON { id = EAknSoftkeyYes; txt = qtn_drm_sk1_register; },
+	    CBA_BUTTON { id = EAknSoftkeyCancel; txt = text_softkey_cancel; },
+	    CBA_BUTTON { id = EAknSoftkeyYes; txt = qtn_drm_sk1_register; }
+	    };
+    }
+
+
+    
+RESOURCE DIALOG r_roap_registercancel_query
+        {
+        flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+        buttons = r_roap_app_cba_register_cancel;
+        items=
+            {
+            DLG_LINE
+                {
+                type = EAknCtPopupHeadingPane;
+                id = EAknMessageQueryHeaderId;
+                control = AVKON_HEADING
+                    {
+                    headinglayout = R_AVKON_WML_SIGN_QUERY_HEADING_PANE;
+                    };
+                },
+            DLG_LINE
+                {
+                type = EAknCtMessageQuery;
+                id = EAknMessageQueryContentId;
+                control = AVKON_MESSAGE_QUERY
+                    {
+                    };
+                }
+            };
+        }
+
+
+RESOURCE DIALOG r_roap_register_cancel_ok_info
+    {
+     flags = EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar |
+             EEikDialogFlagCbaButtons | EEikDialogFlagWait;
+    buttons=R_AVKON_SOFTKEYS_OK_EMPTY__OK;            
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVERELL_NOTE 
+                { 
+                layout = EGeneralLayout;
+                singular_label = "";
+                plural_label = "";
+                imagefile = AVKON_ICON_FILE;
+                imageid = EMbmAvkonQgn_note_info;
+                imagemask = EMbmAvkonQgn_note_info_mask;                
+                };
+            }
+        };
+    }
+
+
+
+
+// Wait note texts
+
+RESOURCE TBUF r_qtn_drm_wait_registering_device
+    { buf = qtn_drm_wait_registering_device; }
+
+RESOURCE TBUF r_qtn_drm_wait_joining_domain
+    { buf = qtn_drm_wait_joining_domain; }
+
+RESOURCE TBUF r_qtn_drm_wait_getting_key
+    { buf = qtn_drm_wait_getting_key; }
+
+RESOURCE TBUF r_qtn_drm_wait_updating_account
+    { buf = qtn_drm_wait_updating_account; }
+
+RESOURCE TBUF r_qtn_drm_wait_remove_fr_account
+    { buf = qtn_drm_wait_remove_fr_account; }
+
+RESOURCE TBUF r_qtn_drm_wait_update_metering_info
+    { buf = qtn_drm_wait_update_metering_info; }    
+// Messages
+
+RESOURCE TBUF r_qtn_drm_conf_joined_to_domain
+    { buf = qtn_drm_conf_joined_to_domain; }
+
+RESOURCE TBUF r_qtn_drm_info_act_key_received
+    { buf = qtn_drm_info_act_key_received; }
+
+RESOURCE TBUF r_qtn_drm_query_key_received_open
+    { buf = qtn_drm_query_key_received_open; }
+
+RESOURCE TBUF r_qtn_drm_conf_account_updated
+    { buf = qtn_drm_conf_account_updated; }
+
+RESOURCE TBUF r_qtn_drm_info_remove_fr_account
+    { buf = qtn_drm_info_remove_fr_account; }
+
+RESOURCE TBUF r_qtn_drm_conf_device_registered
+    { buf = qtn_drm_conf_device_registered; }
+
+RESOURCE TBUF r_qtn_drm_info_getting_key_failed
+    { buf = qtn_drm_info_getting_key_failed; }
+
+RESOURCE TBUF r_qtn_drm_get_key_failed_retry
+    { buf = qtn_drm_get_key_failed_retry; }
+
+RESOURCE TBUF r_qtn_drm_info_update_domain_fail
+    { buf = qtn_drm_info_update_domain_fail; }
+
+RESOURCE TBUF r_qtn_drm_info_account_is_full
+    { buf = qtn_drm_info_account_is_full; }
+
+RESOURCE TBUF r_qtn_drm_remove_fr_account_fail
+    { buf = qtn_drm_remove_fr_account_fail; }
+
+RESOURCE TBUF r_qtn_drm_info_device_regist_fail
+    { buf = qtn_drm_info_device_regist_fail; }
+
+RESOURCE TBUF r_qtn_drm_info_registration_failed
+    { buf = qtn_drm_info_registration_failed; }
+
+RESOURCE TBUF r_qtn_drm_info_phone_not_register
+    { buf = qtn_drm_info_phone_not_register; }
+
+RESOURCE TBUF r_qtn_drm_account_not_recognised
+    { buf = qtn_drm_account_not_recognised; }
+
+RESOURCE TBUF r_qtn_drm_query_register_with_u
+    { buf = qtn_drm_query_register_with_u; }
+
+RESOURCE TBUF r_qtn_drm_query_register_with_cp
+    { buf = qtn_drm_query_register_with_cp; }
+
+RESOURCE TBUF r_qtn_drm_msq_qry_title_registrat
+    { buf = qtn_drm_msq_qry_title_registrat; }
+
+RESOURCE TBUF r_qtn_drm_msq_query_registration
+    { buf = qtn_drm_msq_query_registration; }
+
+RESOURCE TBUF r_qtn_drm_msq_query_link_more_inf
+    { buf = qtn_drm_msq_query_link_more_inf; }

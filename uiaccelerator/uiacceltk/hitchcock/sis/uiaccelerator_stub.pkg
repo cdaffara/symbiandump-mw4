@@ -1,0 +1,37 @@
+;
+; Copyright (c) 2006-2007 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description:   Stub package file for UI Accelerator Toolkit.
+;
+
+&EN
+;Localised Vendor name
+%{"Nokia"}
+
+;Unique Vendor name
+:"Nokia"
+
+; NOTE! Be sure that version numbers in this file are same as in 
+; \s60\mw\uiaccelerator\uiaccelerator_dom\alf_visual_api\inc\alf\alfversion.h .
+; Also run createstubsis.bat to re-generate stubbed sis file which goes to the ROM. 
+
+; UID is same as UID of ALF Server executable
+#{"UI Accelerator Toolkit"},(0x10282845),1,1,3, TYPE=SA
+
+"" - "z:\Sys\Bin\hitchcock.dll"
+"" - "z:\Sys\Bin\alfclient.dll"
+"" - "z:\Sys\Bin\alfappservercore.dll"
+"" - "z:\Sys\Bin\!ftokenserver.exe"
+"" - "z:\Sys\Bin\ftokenclient.dll"
+"" - "z:\sys\bin\alfredserver.exe"
+"" - "z:\private\10003a3f\import\apps\alfredserver_reg.rsc"

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0">
+ <package id="uitools" name="UI Tools" levels="compile encode tool if">
+  <collection id="uitools_pub" name="UI Tools Public Interfaces" level="if">
+   <component id="third_party_bitmap_palette_api" name="Third Party Bitmap Palette API" class="api" filter="s60">
+    <meta rel="Api" href="uitools_pub/third_party_bitmap_palette_api/third_party_bitmap_palette_api.metaxml"/>
+    <unit bldFile="uitools_pub/third_party_bitmap_palette_api/group"/>
+   </component>
+  </collection>
+  <collection id="uitools_plat" name="UI Tools Platform Interfaces" level="if">
+   <component id="uitools_cdl_api" name="CDL API" class="api" filter="s60">
+    <meta rel="Api" href="uitools_plat/cdl_api/cdl_api.metaxml"/>
+    <unit bldFile="uitools_plat/cdl_api/group"/>
+   </component>
+   <component id="uitools_layout_system_private_api" name="Layout System Private API" class="api" filter="s60">
+    <meta rel="Api" href="uitools_plat/layout_system_private_api/layout_system_private_api.metaxml"/>
+    <unit bldFile="uitools_plat/layout_system_private_api/group"/>
+   </component>
+  </collection>
+  <collection id="cdlcompilertoolkit" name="CDL Compiler Toolkit" level="compile">
+   <!-- collection is actually a component. Needs to be moved down a directory -->
+   <component id="cdlcompilertoolkit_build" filter="s60" name="CDL Compiler Toolkit Build">
+    <unit bldFile="cdlcompilertoolkit/group"/>
+   </component>
+  </collection>
+  <collection id="cdlcompiler" name="CDL Compiler" level="compile">
+   <!-- collection is actually a component. Needs to be moved down a directory -->
+   <component id="cdlcompiler_build" filter="s60" name="CDL Compiler Build">
+    <unit bldFile="cdlcompiler/group"/>
+   </component>
+  </collection>
+  <collection id="gfxtools" name="Graphics Tools" level="tool">
+   <component id="color" filter="s60" name="Bitmap Colour Palette" target="desktop">
+    <unit bldFile="gfxtools/color/group"/>
+   </component>
+  </collection>
+  <collection id="aknlayoutcompiler" name="Avkon Layout Compiler" level="compile">
+   <!-- collection is actually a component. Needs to be moved down a directory -->
+   <component id="aknlayoutcompiler_build" filter="s60" name="Avkon Layout Compiler Build">
+    <unit bldFile="../uitools/aknlayoutcompiler/group"/>
+   </component>
+  </collection>
+  <collection id="skincompiler" name="Skin Compiler" level="compile">
+   <component id="aknskindesccompiler" filter="s60" name="Avkon Skin Descriptor Compiler">
+    <unit bldFile="skincompiler/AknSkinDescCompiler/group"/>
+   </component>
+  </collection>
+  <collection id="reszip" name="Resource Zip" level="encode">
+   <!-- collection is actually a component. Needs to be moved down a directory -->
+   <component id="reszip_build" filter="s60" name="Resource Zip Build">
+    <unit bldFile="reszip/group"/>
+   </component>
+  </collection>
+  <collection id="toollibraries" name="Tool Libraries" level="tool"/>
+  <collection id="svgtencoder" name="SVGT Encoder" level="encode">
+   <component id="svgtenc" filter="s60" name="Standalone SVGT Encoder" target="desktop">
+    <unit bldFile="svgtencoder/svgtenc/standalone/group"/>
+   </component>
+  </collection>
+ </package>
+</SystemDefinition>

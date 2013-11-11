@@ -1,0 +1,41 @@
+/*
+* Copyright (c) 2008-2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Application registration resource file for Analog Dialer
+*
+*/
+
+
+
+//AnalogDialer application's registration resource file 
+
+#include <appinfo.rh>
+
+// UIDs for Analog Dialer
+UID2 KUidAppRegistrationResourceFile
+UID3 0x2001247F
+
+// ---------------------------------------------------------------------------
+// APP_REGISTRATION_INFO
+// ---------------------------------------------------------------------------
+//
+RESOURCE APP_REGISTRATION_INFO 
+	{
+	app_file="alfexanalogdialer";
+
+	localisable_resource_file= APP_RESOURCE_DIR"\\alfexanalogdialer";
+    //localisable_resource_id = R_ANALOGDIALER_LOCALISABLE_APP_INFO;
+
+	//
+	group_name = "UI Acceler";
+	}

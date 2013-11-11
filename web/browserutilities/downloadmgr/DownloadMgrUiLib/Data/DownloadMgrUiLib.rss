@@ -1,0 +1,498 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Resources for the UI Lib
+*
+*/
+
+
+//  RESOURCE IDENTIFIER
+NAME    DMUL
+
+//  INCLUDES
+#include "DownloadMgrUiLib.hrh"
+#include <DownloadMgrUiLib.loc>
+#include <avkon.loc>
+#include <badef.rh>
+#include <uikon.rh>
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.hrh>
+#include <CommonDialogs.rh>
+#include <avkon.rsg>
+#include <pathconfiguration.hrh>
+#include <AvkonIcons.hrh>
+#include <avkon.mbg>
+#include <AiwCommon.hrh>
+#include <AiwCommon.rh>
+
+//  RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+// -----------------------------------------------------------------------------
+//   
+// Resources for the download confirmation dialog
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_dmul_downloadconf_title { buf = qtn_browser_query_object_info_header; }
+RESOURCE TBUF r_dmul_downloadconf_name { buf = qtn_browser_query_object_info_name; }
+RESOURCE TBUF r_dmul_downloadconf_size { buf = qtn_browser_query_object_info_filesize; }
+RESOURCE TBUF r_dmul_downloadconf_openwith  { buf = qtn_browser_query_object_info_openwith; }
+RESOURCE TBUF r_dmul_downloadconf_filetype  { buf = qtn_browser_query_object_info_filetype; }
+RESOURCE TBUF r_dmul_downloadconf_not_supp  { buf = qtn_browser_query_object_info_notsupported; }
+RESOURCE TBUF r_dmul_downloadconf_unknown   { buf = qtn_browser_query_object_unknown; }
+RESOURCE TBUF r_dmul_downloadconf_not_enough_mem { buf = qtn_browser_downloads_note_not_enough_memory; }
+
+// ============================================================================
+//Formatter for default name suffix when filename index is under ten.
+//This is used when generating unused name for files.
+//When replacing filenumber in filename, the right place is searched
+//using first character of the string. It must not be a number!
+//In english versions, this characted is "(".
+//%N will be replaced with needed number under ten
+// ============================================================================
+//
+RESOURCE TBUF r_qtn_iv_name_suffix_under_ten_formatter { buf = "(0%N)"; }
+
+// ============================================================================
+//Formatter for default name suffix when filename index is ten or more.
+//This is used when generating unused name for files.
+//When replacing filenumber in filename, the right place is searched
+//using first character of the string. It must not be a number!
+//In english versions, this characted is "(".
+//%N will be replaced with needed number greater that nine
+// ============================================================================
+//
+RESOURCE TBUF r_qtn_iv_name_suffix_over_ten_formatter { buf = "(%N)"; }
+
+// -----------------------------------------------------------------------------
+//   
+// Notifications
+//
+// -----------------------------------------------------------------------------
+//
+// Use this with CUserInteractionsUtils::InfoNoteL(...); set prompt there.
+RESOURCE DIALOG r_dmul_ok_note
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar |
+            EEikDialogFlagCbaButtons | EEikDialogFlagWait;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVERELL_NOTE 
+                { 
+                layout = EGeneralLayout;
+                singular_label = "";
+                plural_label = "";
+                animation = R_QGN_NOTE_OK_ANIM;
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_dmul_err_note
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar |
+            EEikDialogFlagCbaButtons | EEikDialogFlagWait;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVERELL_NOTE 
+                { 
+                layout = EGeneralLayout;
+                singular_label = "";
+                plural_label = "";
+                animation = R_QGN_NOTE_WARNING_ANIM;
+                };
+            }
+        };
+    }
+
+RESOURCE TBUF r_dmul_note_downloading { buf = qtn_browser_downloads_downloading; }
+
+// -----------------------------------------------------------------------------
+//   
+// Completed download confirmation dialog
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_dmul_completed_conf { buf = qtn_browser_downloads_query_downloaded; }
+
+RESOURCE CBA r_dmul_softkeys_compl_dl
+    {
+    buttons =
+        {
+        CBA_BUTTON { id = EAknSoftkeyShow; txt = qtn_browser_downloads_query_sk_open;},
+        CBA_BUTTON { id = EAknSoftkeyCancel; txt = qtn_browser_downloads_query_sk_later;},
+        CBA_BUTTON { id = EAknSoftkeyShow; txt = qtn_browser_downloads_query_sk_open;}
+        };
+    }
+
+RESOURCE CBA r_dmul_softkeys_unsupp_compl_dl
+    {
+    buttons =
+        {
+        CBA_BUTTON { id = EAknSoftkeySave; txt = qtn_browser_downloads_query_sk_save;},
+        CBA_BUTTON { id = EAknSoftkeyCancel; txt = qtn_browser_downloads_query_sk_later;},
+        CBA_BUTTON { id = EAknSoftkeySave; txt = qtn_browser_downloads_query_sk_save;}
+        };
+    }
+
+RESOURCE CBA r_dmul_softkeys_compl_drm
+    {
+    buttons =
+        {
+        CBA_BUTTON { id = EAknSoftkeyShow; txt = qtn_browser_downloads_query_sk_open;},
+        CBA_BUTTON { id = EAknSoftkeySave; txt = qtn_browser_downloads_query_sk_save;},
+        CBA_BUTTON { id = EAknSoftkeyShow; txt = qtn_browser_downloads_query_sk_open;}
+        };
+    }
+
+RESOURCE CBA r_dmul_softkeys_compl_drm_save
+    {
+    buttons =
+        {
+        CBA_BUTTON { id = EAknSoftkeySave; txt = qtn_browser_downloads_query_sk_save;},
+        CBA_BUTTON { txt = text_softkey_empty;},
+        CBA_BUTTON { id = EAknSoftkeySave; txt = qtn_browser_downloads_query_sk_save;}
+        };
+    }
+
+RESOURCE DIALOG r_dmul_compl_download_conf
+    {
+    flags = EGeneralQueryFlags;
+    buttons = r_dmul_softkeys_compl_dl;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY 
+                { 
+                    layout = EConfirmationQueryLayout;
+                    label = "";
+                };
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//   
+// For Save As dialog
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MEMORYSELECTIONDIALOG r_dmul_memory_selection_dlg
+    {
+    title = "";
+    softkey_1 = text_softkey_select;
+    locations =
+        {
+        LOCATION { root_path = text_phone_memory_root_path; },
+        LOCATION { root_path = text_memory_card_root_path; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//   
+// For Save As dialog
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE FILESELECTIONDIALOG r_dmul_file_selection_dlg
+    {
+    title = "";
+    root_path = text_phone_memory_root_path;
+    default_folder = "";
+    }
+
+RESOURCE FILESELECTIONDIALOG r_dmul_mmc_file_selection_dlg
+    {
+    title = "";
+    root_path = text_memory_card_root_path;
+    default_folder = "";
+    }
+
+// -----------------------------------------------------------------------------
+//   
+// Exit confirmation query
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_dmul_exit_conf
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO__YES;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY 
+                { 
+                    layout = EConfirmationQueryLayout;
+                    label = "";
+                };
+            }
+        };
+    }
+
+RESOURCE TBUF r_dmul_exit_conf_sing { buf = qtn_browser_downloads_query_download_active; }
+RESOURCE TBUF r_dmul_exit_conf_plur { buf = qtn_browser_downloads_query_downloads_active; }
+
+// -----------------------------------------------------------------------------
+//   
+// Grouped Soft Notifications
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_NOTE r_dmul_gsn_stnd
+    {
+    layout = EGeneralLayout;
+    singular_label = qtn_browser_downloads_query_incomplete;
+    }
+
+RESOURCE AVKON_NOTE r_dmul_gsn_emb
+    {
+    layout = EGeneralLayout;
+    singular_label = qtn_browser_downloads_query_moved;
+    }
+
+// -----------------------------------------------------------------------------
+//   
+// Downloads List
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE CBA r_dmul_downloadslist_softkeys_open
+    {
+    buttons =
+        {
+        CBA_BUTTON { id = EAknSoftkeyOptions; txt = text_softkey_option; },
+        CBA_BUTTON { id = EAknSoftkeyCancel; txt = qtn_browser_downloads_hide; },
+        CBA_BUTTON { id = EAknSoftkeyOpen; txt = qtn_browser_downloads_open; }
+        };
+    }
+        
+RESOURCE CBA r_dmul_downloadslist_softkeys_play
+    {
+    buttons =
+        {
+        CBA_BUTTON { id = EAknSoftkeyOptions; txt = text_softkey_option; },
+        CBA_BUTTON { id = EAknSoftkeyCancel; txt = qtn_browser_downloads_hide; },
+        CBA_BUTTON { id = EAknSoftkeyOpen; txt = qtn_browser_downloads_play_msk; }
+        };
+    }
+
+        
+RESOURCE TBUF r_dmul_downloadslist_header { buf = qtn_browser_downloads_header; }
+RESOURCE TBUF r_dmul_download_complete { buf = qtn_browser_downloads_complete; }
+RESOURCE TBUF r_dmul_download_content_saved_to_gallery { buf = qtn_browser_downloads_content_saved_to_gallery; }
+
+RESOURCE TBUF r_dmul_download_content_saved_to_downloads_folder { buf =  qtn_dl_saved_to_folder; } 
+
+
+RESOURCE MENU_BAR r_dmul_downloadslist_menubar
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_dmul_downloadslist_menu; txt = ""; }
+        };
+    }
+
+RESOURCE MENU_PANE r_dmul_downloadslist_menu
+    {
+    items =
+        {
+        MENU_ITEM { command = EDownloadsListCmdOpen; txt = qtn_browser_downloads_open; },
+        MENU_ITEM { command = EDownloadsListCmdPlay; txt = qtn_browser_downloads_play; },
+        MENU_ITEM { command = EDownloadsListCmdUseAs; txt = qtn_browser_downloads_use_as; cascade = AIW_CASCADE_ID; },
+        MENU_ITEM { command = EDownloadsListCmdGallery; txt = qtn_browser_downloads_gallery; },
+        MENU_ITEM { command = EDownloadsListCmdSave; txt = qtn_browser_downloads_save; },
+        MENU_ITEM { command = EDownloadsListCmdDelete; txt = qtn_browser_downloads_delete; },
+//PHAN-6KVK5R: Disallow Manually Pausing a Download    
+//MENU_ITEM { command = EDownloadsListCmdPause; txt = qtn_browser_downloads_pause; },
+        MENU_ITEM { command = EDownloadsListCmdResume; txt = qtn_browser_downloads_resume; },
+        MENU_ITEM { command = EDownloadsListCmdResumeAll; txt = qtn_browser_downloads_resume_all; },
+        MENU_ITEM { command = EDownloadsListCmdCancel; txt = qtn_browser_downloads_cancel_download; },
+        MENU_ITEM { command = EDownloadsListCmdFileManager; txt =qtn_browser_downloads_open_file_manager;},
+        MENU_ITEM { command = EDownloadsListCmdCancelAll; txt = qtn_browser_downloads_cancel_all; }
+        };
+    }
+
+STRUCT DMUL_AIW_INTEREST_MENUPANE_MAPPING_LIST
+    {
+    STRUCT pairs[];
+    }
+
+
+
+STRUCT DMUL_AIW_INTEREST_MENUPANE_PAIR
+    {
+    LLINK interest;
+    LLINK menupane;
+    }
+
+
+
+
+    
+
+
+RESOURCE AIW_INTEREST r_dmul_aiw_use_as_interest
+    {
+    items=
+        {
+        AIW_CRITERIA_ITEM
+            {
+            id = EDownloadsListCmdUseAs;
+            serviceCmd = KAiwCmdAssign;
+            contentType = "*";
+            serviceClass = KAiwClassMenu;
+            }
+        };
+    }
+
+RESOURCE DMUL_AIW_INTEREST_MENUPANE_MAPPING_LIST r_dmul_aiw_interest_menupane_mappings
+    {
+   pairs =
+        {
+        DMUL_AIW_INTEREST_MENUPANE_PAIR
+            {
+            interest = r_dmul_aiw_use_as_interest;
+            menupane = r_dmul_downloadslist_menu;
+            }
+        };
+    }
+
+RESOURCE TBUF r_dmul_download_del_conf { buf = qtn_query_common_conf_delete; } 
+RESOURCE TBUF r_dmul_download_can_conf { buf = qtn_browser_downloads_query_cancel; }
+
+RESOURCE DIALOG r_dmul_download_yesno_conf_q
+    {
+    flags = EGeneralQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO__YES; 
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY 
+                { 
+                layout = EConfirmationQueryLayout;
+                label = "";
+                };
+            }
+        };
+    }
+
+RESOURCE TBUF r_dmul_unit_kb { buf = qtn_wml_unit_kb; }
+RESOURCE TBUF r_dmul_unit_mb { buf = qtn_wml_unit_mb; }
+RESOURCE TBUF r_dmul_unit_percent { buf = qtn_wml_unit_percent; }
+
+// -----------------------------------------------------------------------------
+//   
+// Download Menu
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_dmul_downloadmenu_item_text { buf = qtn_browser_list_downloads; }
+
+// -----------------------------------------------------------------------------
+//   
+// Error handling
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_dmul_error_ext_mem_removed { buf = qtn_browser_downloads_note_ext_memory_removed; }
+RESOURCE TBUF r_dmul_error_start_from_beginning { buf = qtn_browser_downloads_note_from_beginning; }
+RESOURCE TBUF r_dmul_error_cancelled { buf = qtn_browser_downloads_note_cancelled; }
+RESOURCE TBUF r_dmul_error_corrupted { buf = qtn_cd_info_syntax_err; }
+RESOURCE TBUF r_dmul_error_file_not_found { buf = qtn_browser_error_file_not_found; }
+
+RESOURCE DIALOG r_dmul_download_ok_info
+    {
+    flags = EAknInformationNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_OK_EMPTY__OK;
+    items=
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralQuery;
+            control = AVKON_NOTE
+                {
+                layout = EGeneralLayout;
+                singular_label = "";
+                plural_label = "";
+                imagefile = AVKON_ICON_FILE;
+                imageid = EMbmAvkonQgn_note_info;
+                imagemask = EMbmAvkonQgn_note_info_mask;
+                };
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//   
+// Authentication
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_dmul_query_basic_authentication { buf = qtn_browser_query_basic_authentication; }
+RESOURCE TBUF r_dmul_cancel_button { buf = text_softkey_cancel; }
+RESOURCE TBUF r_dmul_ok_button     { buf = text_softkey_accept; }
+
+// -----------------------------------------------------------------------------
+//   
+// For Gallery removal Changes
+//
+// -----------------------------------------------------------------------------
+//
+
+RESOURCE TBUF r_dmul_download_file_saved { buf =  qtn_browser_downloads_file_saved; } 
+RESOURCE TBUF r_dmul_download_files_saved { buf =  qtn_browser_downloads_files_saved; } 
+
+RESOURCE AIW_INTEREST r_dmul_filemanager_aiw_interest
+    {
+    items=
+        {
+        AIW_CRITERIA_ITEM
+            {
+            id = KAiwCmdEdit;
+            serviceCmd = KAiwCmdEdit;
+            contentType = "*";
+            serviceClass = KAiwClassBase; 
+            defaultProvider = 0x200110F9; // The service UID
+            maxProviders = 1;
+            }
+        };
+    }
+
+// End of File
+
+
+
+
+

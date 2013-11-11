@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="03d7bb6eaffebb13c9ab7b447618985f" dataversion="1.0">
+  <name>UPnP Device API</name>
+  <description>UPnP Device API is used by developers of UPnP devices. It provides a way to receive actions from control points and to respond to those actions. Responses are further forwarded to the originating control point. Furthermore the API provides information on which eventable state variables are available in the device, and which actions and their parameters are available. It also provides a way to edit the DOM tree containing information on the services in the device.</description>
+  <type>c++</type>
+  <subsystem>upnpstack</subsystem>
+  <libs>
+    <lib name="upnpserviceframework.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

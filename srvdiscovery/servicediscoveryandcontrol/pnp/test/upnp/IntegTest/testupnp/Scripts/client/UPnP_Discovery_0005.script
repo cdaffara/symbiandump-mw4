@@ -1,0 +1,44 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! @file
+//! @SYMTestSuiteName	multiple_machines_client 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client 
+
+LOAD_SUITE multiple_machines_client
+LOAD_SUITE test_synchronize_client
+LOAD_SUITE testdelay
+
+START_TESTCASE				UPnP_Discovery_0005
+//! @file					
+//! @SYMTestCaseID			upnp-pos-0005 to upnp-pos-0007	
+//! @SYMTestCaseDesc 		Search for UPnP Vendor defined devices
+//! @SYMREQ					REQ8605,REQ8606,REQ8607,REQ8668	
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		High	
+//! @SYMTestActions 		M-Search with ST: urn:domain-name:device:deviceType:v
+//! @SYMTestExpectedResults Should send desired discovery information	
+//! @SYMTestType 			CIT
+
+RUN_TEST_STEP 1000 testdelay TestUPnPManager  
+RUN_TEST_STEP 1000 testdelay TestUPnPManager
+RUN_TEST_STEP 1000 test_synchronize_client TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini clientdata
+RUN_TEST_STEP 500 multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\discovery0005.ini discovery_0005
+END_TESTCASE	UPnP_Discovery_0005
+
+
+PRINT Completed multiple_machines_client

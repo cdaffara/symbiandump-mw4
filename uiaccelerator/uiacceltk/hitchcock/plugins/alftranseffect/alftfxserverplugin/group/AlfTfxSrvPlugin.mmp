@@ -1,0 +1,87 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   This is the .mmp for building TFX Server Plugin
+*         			for the complementary transitions feature.
+*
+*/
+
+
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+// #include <TfxSrvEcomIds.h>
+
+TARGET tfxsrvplugin.dll
+
+TARGETTYPE PLUGIN 
+
+// We use the old uid for the time being.
+// We must use the old implementation uid as aknskin uses that,
+// but we could have a different uid for our dll.
+// second uid is KTfxSrvEcomDllUid from TfxSrvEcomIds.h
+UID 0x10009D8D 0x10282DBA 
+
+CAPABILITY CAP_ECOM_PLUGIN 
+VENDORID VID_DEFAULT
+
+TARGETPATH   /sys/bin  
+
+SOURCEPATH     ../src
+START RESOURCE 10282DBA.rss
+TARGET         tfxsrvplugin.rsc
+END
+
+// This is a SYSTEMINCLUDE macro containing the middleware
+// layer specific include directories
+MW_LAYER_SYSTEMINCLUDE
+
+SYSTEMINCLUDE	/epoc32/include/libc
+SYSTEMINCLUDE	/epoc32/include/ecom  //Platform security
+SYSTEMINCLUDE	/epoc32/include/caf
+SYSTEMINCLUDE   ../../../../CommonInc
+
+USERINCLUDE ../inc
+USERINCLUDE ../../../../CommonInc
+
+SOURCEPATH ../src
+
+SOURCE alftfxsrvplugin.cpp
+SOURCE alftransitionserver.cpp
+SOURCE alftransitionservercontroller.cpp
+SOURCE alfpsobserver.cpp
+
+
+//#if defined(ARMCC)
+//deffile ../eabi/ 
+//#elif defined(WINSCW)
+//deffile ../bwinscw/ 
+//#elif defined(WINS)
+//deffile ../bwins/ 
+//#else
+//deffile ../bmarm/ 
+//#endif
+
+LIBRARY         euser.lib
+LIBRARY         ecom.lib
+LIBRARY         alfdecoderserverclient.lib
+LIBRARY         ws32.lib
+LIBRARY         alfclient.lib
+LIBRARY         centralrepository.lib
+LIBRARY         estor.lib
+LIBRARY         efsrv.lib 
+LIBRARY         flogger.lib
+
+EXPORTUNFROZEN
+
+// End of File

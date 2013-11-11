@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<api id="a51f299ab6fbc76b6f9f11fff944dddf" dataversion="1.0">
+  <name>Third Party Bitmap Palette API</name>
+  <description>Defines color values for the palette used with 3rd party bitmaps.</description>
+  <type>c++</type>
+  <subsystem>gfxtools</subsystem>
+  <libs>
+  </libs>
+  <release category="sdk" sinceversion="0.9"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

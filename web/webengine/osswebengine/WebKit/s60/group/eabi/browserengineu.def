@@ -1,0 +1,61 @@
+EXPORTS
+	_Z21CreateBrowserControlLP11CCoeControl5TRectjjP22MBrCtlSoftkeysObserverP18MBrCtlLinkResolverP25MBrCtlSpecialLoadObserverP20MBrCtlLayoutObserverP21MBrCtlDialogsProviderP20MBrCtlWindowObserverP22MBrCtlDownloadObserver @ 1 NONAME
+	_ZN6CBrCtl10ClearCacheEv @ 2 NONAME
+	_ZN6CBrCtl10PageInfoLCEN10TBrCtlDefs14TBrCtlPageInfoE @ 3 NONAME
+	_ZN6CBrCtl11ContentSizeEv @ 4 NONAME
+	_ZN6CBrCtl11FindKeywordERK7TDesC16 @ 5 NONAME
+	_ZN6CBrCtl11ImageCountLEv @ 6 NONAME
+	_ZN6CBrCtl11MinimumSizeEv @ 7 NONAME
+	_ZN6CBrCtl11SaveToFileLERK7TDesC16 @ 8 NONAME
+	_ZN6CBrCtl12IsUrlInCacheER7TDesC16 @ 9 NONAME
+	_ZN6CBrCtl13InitLoadDataLERK7TDesC16RK9TDataType4TUidjP22MBrCtlDataLoadSupplierPP22MBrCtlDataLoadConsumer @ 10 NONAME
+	_ZN6CBrCtl13VersionInfoLCEN10TBrCtlDefs17TBrCtlVersionInfoE @ 11 NONAME
+	_ZN6CBrCtl14HandleCommandLEi @ 12 NONAME
+	_ZN6CBrCtl14LoadSavedPageLERK7TDesC16RS0_ @ 13 NONAME
+	_ZN6CBrCtl14OfferKeyEventLERK9TKeyEvent10TEventCode @ 14 NONAME
+	_ZN6CBrCtl15BrowserSettingLEj @ 15 NONAME
+	_ZN6CBrCtl16ClearItemInCacheER7TDesC16 @ 16 NONAME
+	_ZN6CBrCtl16FindKeywordAgainEi @ 17 NONAME
+	_ZN6CBrCtl18FocusedElementTypeEv @ 18 NONAME
+	_ZN6CBrCtl18SetBrowserSettingLEjj @ 19 NONAME
+	_ZN6CBrCtl19AddOptionMenuItemsLER12CEikMenuPaneii @ 20 NONAME
+	_ZN6CBrCtl19NavigationAvailableEN10TBrCtlDefs25TBrCtlNavigationDirectionE @ 21 NONAME
+	_ZN6CBrCtl19WMLOptionMenuItemsLEv @ 22 NONAME
+	_ZN6CBrCtl21AddLoadEventObserverLEP23MBrCtlLoadEventObserver @ 23 NONAME
+	_ZN6CBrCtl22HandleDownloadCommandLEtN10TBrCtlDefs17TBrCtlDownloadCmdE @ 24 NONAME
+	_ZN6CBrCtl23AddStateChangeObserverLEP25MBrCtlStateChangeObserver @ 25 NONAME
+	_ZN6CBrCtl23RemoveLoadEventObserverEP23MBrCtlLoadEventObserver @ 26 NONAME
+	_ZN6CBrCtl25RemoveStateChangeObserverEP25MBrCtlStateChangeObserver @ 27 NONAME
+	_ZN6CBrCtl28SetSelfDownloadContentTypesLER7TDesC16 @ 28 NONAME
+	_ZN6CBrCtl8CertInfoEv @ 29 NONAME
+	_ZN6CBrCtl8LoadUrlLERK7TDesC16iN10TBrCtlDefs15TBrCtlCacheModeE @ 30 NONAME
+	_ZN6CBrCtl8OkToExitEv @ 31 NONAME
+	_ZN6CBrCtl8SetFocusEi8TDrawNow @ 32 NONAME
+	_ZN6CBrCtl9LoadDataLERK7TDesC16RK6TDesC8RK9TDataType4TUid @ 33 NONAME
+	_ZN6CBrCtl9LoadFileLER5RFile @ 34 NONAME
+	_ZN6CBrCtl9LoadFileLERK7TDesC16 @ 35 NONAME
+	_ZN6CBrCtl9SetParamLEN10TBrCtlDefs12TBrCtlParamsERK7TDesC16 @ 36 NONAME
+	_ZN6CBrCtlD0Ev @ 37 NONAME
+	_ZN6CBrCtlD1Ev @ 38 NONAME
+	_ZN6CBrCtlD2Ev @ 39 NONAME
+	_ZNK6CBrCtl10ZoomLevelsEv @ 40 NONAME
+	_ZTI6CBrCtl @ 41 NONAME ; #<TI>#
+	_ZTV6CBrCtl @ 42 NONAME ; #<VT>#
+	_ZN6CBrCtl21SubscribeToMenuItemsLEv @ 43 NONAME
+	_ZN6CBrCtl13GetBitmapDataERK7TDesC16N10TBrCtlDefs16TBrCtlBitmapInfoE @ 44 NONAME
+	_ZN6CBrCtl19AddCommandObserverLEP21MBrCtlCommandObserver @ 45 NONAME
+	_ZN6CBrCtl21RemoveCommandObserverEP21MBrCtlCommandObserver @ 46 NONAME
+	_ZN6CBrCtl14FocusedImageLCEv @ 47 NONAME
+	_ZN6CBrCtl22CreateWidgetExtensionLER15MWidgetCallback @ 48 NONAME
+	_ZN6CBrCtl8PostUrlLERK7TDesC16RK6TDesC8S5_PS4_Pv @ 49 NONAME
+	_ZTI14HistoryHandler @ 50 NONAME ; #<TI>#
+	_ZTV14HistoryHandler @ 51 NONAME ; #<VT>#
+	_ZN6CBrCtl13TakeSnapshotLER10CFbsBitmap @ 52 NONAME
+
+
+
+
+
+
+
+

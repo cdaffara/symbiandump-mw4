@@ -1,0 +1,17 @@
+EXPORTS
+	??1CSenHostletRequest@@UAE@XZ @ 1 NONAME ; public: virtual __thiscall CSenHostletRequest::~CSenHostletRequest(void)
+	??1CSenHostletResponse@@UAE@XZ @ 2 NONAME ; public: virtual __thiscall CSenHostletResponse::~CSenHostletResponse(void)
+	?ConsumerId@CSenHostletRequest@@UBE?AVTPtrC8@@XZ @ 3 NONAME ; public: virtual class TPtrC8 __thiscall CSenHostletRequest::ConsumerId(void)const 
+	?ExtractResponseUtf8@CSenHostletResponse@@QAEPAVHBufC8@@XZ @ 4 NONAME ; public: class HBufC8 * __thiscall CSenHostletResponse::ExtractResponseUtf8(void)
+	?NewL@CSenHostletRequest@@SAPAV1@HABVTDesC8@@VRThread@@ABVCSenIdentifier@@@Z @ 5 NONAME ; public: static class CSenHostletRequest * __cdecl CSenHostletRequest::NewL(int,class TDesC8 const &,class RThread,class CSenIdentifier const &)
+	?NewL@CSenHostletResponse@@SAPAV1@H@Z @ 6 NONAME ; public: static class CSenHostletResponse * __cdecl CSenHostletResponse::NewL(int)
+	?NewLC@CSenHostletRequest@@SAPAV1@HABVTDesC8@@VRThread@@ABVCSenIdentifier@@@Z @ 7 NONAME ; public: static class CSenHostletRequest * __cdecl CSenHostletRequest::NewLC(int,class TDesC8 const &,class RThread,class CSenIdentifier const &)
+	?NewLC@CSenHostletResponse@@SAPAV1@H@Z @ 8 NONAME ; public: static class CSenHostletResponse * __cdecl CSenHostletResponse::NewLC(int)
+	?RequestId@CSenHostletRequest@@UBEHXZ @ 9 NONAME ; public: virtual int __thiscall CSenHostletRequest::RequestId(void)const 
+	?RequestId@CSenHostletResponse@@UBEHXZ @ 10 NONAME ; public: virtual int __thiscall CSenHostletResponse::RequestId(void)const 
+	?RequestUtf8@CSenHostletRequest@@UBE?AVTPtrC8@@XZ @ 11 NONAME ; public: virtual class TPtrC8 __thiscall CSenHostletRequest::RequestUtf8(void)const 
+	?ResponseCode@CSenHostletResponse@@UBEHXZ @ 12 NONAME ; public: virtual int __thiscall CSenHostletResponse::ResponseCode(void)const 
+	?ResponseUtf8@CSenHostletResponse@@UAE?AVTPtrC8@@XZ @ 13 NONAME ; public: virtual class TPtrC8 __thiscall CSenHostletResponse::ResponseUtf8(void)
+	?SetResponseUtf8L@CSenHostletResponse@@UAEXABVTDesC8@@H@Z @ 14 NONAME ; public: virtual void __thiscall CSenHostletResponse::SetResponseUtf8L(class TDesC8 const &,int)
+	?ThreadId@CSenHostletRequest@@UBE?AVTPtrC16@@XZ @ 15 NONAME ; public: virtual class TPtrC16 __thiscall CSenHostletRequest::ThreadId(void)const 
+

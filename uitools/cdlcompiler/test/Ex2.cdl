@@ -1,0 +1,22 @@
+// ********** this is the original v1.0 interface ***********
+
+Name: extension test
+Version: 1.0
+UID: 0x1f123556
+
+
+%% API
+
+TInt v1_API;
+
+
+// ********** this is the start of the v1.1 extension ***********
+
+%% header
+
+Version: 1.1
+
+
+%% API
+
+TInt v2_API;

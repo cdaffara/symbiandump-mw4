@@ -1,0 +1,123 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for newsoapclasses 
+*
+*/
+
+
+
+
+#if defined(__S60_)
+        #include <platform_paths.hrh>
+#endif
+
+TARGET          newsoapclassesTester.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E3
+
+CAPABILITY      ALL -TCB
+/* Remove comments and replace 0x00000000 with correct vendor id */
+// VENDORID     0x00000000
+/* Remove comments and replace 0x00000000 with correct secure id */
+// SECUREID     0x00000000
+
+//TARGETPATH      ?target_path
+DEFFILE         newsoapclassesTester.def
+
+SYSTEMINCLUDE           /epoc32/include/xml
+SYSTEMINCLUDE           /epoc32/include/libc
+APP_LAYER_SYSTEMINCLUDE  //SYSTEMINCLUDE
+#ifdef SBSV2
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#else // SBSV2 not defined
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#endif // SBSV2
+LIBRARY                 bafl.lib
+LIBRARY                 estor.lib
+LIBRARY                 euser.lib
+LIBRARY                 flogger.lib
+LIBRARY                 hash.lib
+LIBRARY         		stiftestinterface.lib
+LIBRARY         		charconv.lib
+LIBRARY         		efsrv.lib
+LIBRARY                 SenFragment.lib
+LIBRARY                 SenUtils.lib
+LIBRARY                 SenXml.lib
+LIBRARY                 SenServDesc.lib
+LIBRARY                 SenMessages.lib
+LIBRARY         				SenFramework.lib 
+
+LIBRARY                 XMLFRAMEWORK.lib
+
+SOURCE          newsoapclassesTester.cpp
+SOURCE          newsoapclassesTesterBlocks.cpp
+
+//RESOURCE        resource_file
+//RESOURCE        resource_file2
+
+LIBRARY         euser.lib
+LIBRARY         stiftestinterface.lib
+LIBRARY         stiftestengine.lib
+// LibXml2 libraries
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    LIBRARY                 XmlEngine.lib
+    LIBRARY                 XmlEngineDOM.lib
+    LIBRARY                 XmlEngineUtils.lib
+#else
+    LIBRARY         WsStarXmlEngine.lib
+    LIBRARY         WsStarXmlEngineDOM.lib
+    LIBRARY         WsStarXmlEngineUtils.lib
+#endif
+
+LANG            SC
+
+/*
+START WINS      
+?wins_specific_information
+END
+
+START MARM
+?marm_specific_information
+END
+*/
+// Other possible keywords:
+ 
+// DOCUMENT     ?file, that is not compiled, but added to MSVC project workspace (i.e. release notes)
+/*
+START BITMAP ?target
+TARGETPATH   ?emulated_path_on_target_machine
+HEADER
+SOURCE       ?color_depth ?source_bitmap
+END
+*/
+// DEFFILE ?filename
+// AIF ?filename
+
+// End of File

@@ -1,0 +1,83 @@
+/*
+* Copyright (c) 2006, 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This is the project file for Image Print UI Provider
+*
+*/
+
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+
+TARGET	imageprintuiprovider.dll
+
+TARGETTYPE      PLUGIN
+CAPABILITY 	    CAP_GENERAL_DLL
+UID			0x10009D8D 0x1020E471 
+VENDORID VID_DEFAULT
+
+
+SOURCEPATH			../src
+SOURCE				dllmain.cpp
+SOURCE          	caiwprintingprovider.cpp
+SOURCE				caiwimageprintIf.cpp
+
+
+USERINCLUDE 	../inc 
+USERINCLUDE		../data
+
+SYSTEMINCLUDE	 /epoc32/include/ecom 
+
+MW_LAYER_SYSTEMINCLUDE
+
+
+START RESOURCE  ../data/1020E471.rss
+TARGET imageprintuiprovider.rsc
+END
+
+
+START RESOURCE ../data/imageprintuiprovider.rss
+HEADER
+TARGETPATH  RESOURCE_FILES_DIR
+LANGUAGE_IDS
+END
+
+
+LIBRARY	euser.lib cone.lib 
+LIBRARY ecom.lib
+LIBRARY servicehandler.lib 
+LIBRARY estor.lib
+LIBRARY apgrfx.lib 
+LIBRARY apparc.lib 
+LIBRARY ws32.lib 
+LIBRARY efsrv.lib 
+LIBRARY bafl.lib 
+LIBRARY avkon.lib 
+LIBRARY DRMCommon.lib
+LIBRARY imageconversion.lib
+LIBRARY eikcdlg.lib 
+LIBRARY eikctl.lib
+LIBRARY PlatformEnv.lib 
+LIBRARY CommonEngine.lib  
+
+
+DEBUGLIBRARY       flogger.lib
+
+
+#ifdef ENABLE_LOGGING
+#ifdef LOG_TO_FILE
+LIBRARY	flogger.lib		// Only in debug builds
+#endif // ENABLE_LOGGING
+#endif // LOG_TO_FILE
+
+// End of File

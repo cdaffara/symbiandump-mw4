@@ -1,0 +1,131 @@
+/*
+* Copyright (c) 2006-2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  bld.inf file for WidgetUI component
+*
+*/
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <bldvariant.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+// TARGET INFO
+
+TARGET      WidgetUi.exe
+TARGETTYPE  exe
+UID         0x100039CE 0x10282822
+
+epocstacksize 0x14000
+EPOCHEAPSIZE 0x5000 0x1000000
+
+VENDORID    VID_DEFAULT
+CAPABILITY CAP_APPLICATION NetworkControl
+
+EpocAllowDllData
+
+// RESOURCE INFO
+
+START RESOURCE ../data/WidgetUi.rss
+DEPENDS avkon.rsg
+HEADER
+TARGETPATH APP_RESOURCE_DIR
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END
+
+// SRC INFO
+
+SOURCEPATH ../src
+
+SOURCE  WidgetUiApp.cpp 
+SOURCE  WidgetUiAppUi.cpp
+SOURCE  WidgetUiDocument.cpp
+SOURCE  WidgetUiWindowContainer.cpp
+SOURCE  WidgetUiObserver.cpp
+SOURCE  WidgetUiWindowView.cpp
+SOURCE  WidgetUiWindowManager.cpp
+SOURCE  WidgetUiWindow.cpp
+SOURCE  WidgetUiAsyncExit.cpp
+SOURCE  WidgetUiDialogsProviderProxy.cpp
+SOURCE	WidgetUiNetworkListener.cpp
+#ifdef BRDO_WRT_HS_FF
+SOURCE  cpspublisher.cpp
+#endif
+
+START RESOURCE ../data/WidgetUi_reg.rss
+DEPENDS widgetui.rsg
+// Do not change the UID below.
+TARGETPATH /private/10003a3f/apps
+END
+
+MACRO OOM_WIDGET_CLOSEALL
+// INCLUDE PATHS
+
+USERINCLUDE .
+USERINCLUDE ../inc
+USERINCLUDE ../../widgetinstaller/inc
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_LIBC_SYSTEMINCLUDE
+MW_LAYER_ECOM_SYSTEMINCLUDE
+
+// LIB DEPENDENCIES
+
+LIBRARY euser.lib 
+LIBRARY apparc.lib 
+LIBRARY bafl.lib 
+LIBRARY cone.lib 
+LIBRARY eikcore.lib 
+LIBRARY avkon.lib 
+LIBRARY apmime.lib 
+LIBRARY apgrfx.lib 
+LIBRARY efsrv.lib 
+LIBRARY eikcoctl.lib 
+LIBRARY ConnectionManager.lib
+LIBRARY apengine.lib
+LIBRARY CommonEngine.lib
+LIBRARY CommonUI.LIB
+LIBRARY BrowserDialogsProvider.lib
+LIBRARY estor.lib
+LIBRARY WidgetRegistryClient.lib
+LIBRARY centralrepository.lib
+LIBRARY ws32.lib
+LIBRARY inetprotutil.lib
+LIBRARY fbscli.lib
+LIBRARY AknSkins.lib
+LIBRARY ImageConversion.lib
+LIBRARY ecom.lib  // for schemeHandler
+LIBRARY MemMan.lib
+#ifdef BRDO_WRT_HS_FF
+LIBRARY	liwservicehandler.lib
+#endif
+LIBRARY bitgdi.lib
+LIBRARY aknnotify.lib
+#ifdef RD_SCALABLE_UI_V2
+LIBRARY cdlengine.lib 
+#endif
+LIBRARY esock.lib
+
+DEBUGLIBRARY flogger.lib 
+
+LIBRARY     browserengine.lib
+LIBRARY     oommonitor.lib
+
+#if defined( RD_PF_SEC_APPARC )
+LIBRARY         ServiceHandler.lib
+#endif 
+// End of File

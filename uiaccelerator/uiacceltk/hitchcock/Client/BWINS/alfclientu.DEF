@@ -1,0 +1,1114 @@
+EXPORTS
+	?NewL@CAlfEnv@@SAPAV1@VTVersion@@@Z @ 1 NONAME ; class CAlfEnv * CAlfEnv::NewL(class TVersion)
+	?NewLC@CAlfEnv@@SAPAV1@VTVersion@@@Z @ 2 NONAME ; class CAlfEnv * CAlfEnv::NewLC(class TVersion)
+	?Version@CAlfEnv@@QBE?AVTVersion@@XZ @ 3 NONAME ; class TVersion CAlfEnv::Version(void) const
+	??0CAlfControl@@QAE@XZ @ 4 NONAME ; CAlfControl::CAlfControl(void)
+	??0CAlfCurvePathLayout@@QAE@XZ @ 5 NONAME ; CAlfCurvePathLayout::CAlfCurvePathLayout(void)
+	??0CAlfDeckLayout@@QAE@XZ @ 6 NONAME ; CAlfDeckLayout::CAlfDeckLayout(void)
+	??0CAlfFlowLayout@@QAE@XZ @ 7 NONAME ; CAlfFlowLayout::CAlfFlowLayout(void)
+	??0CAlfGridLayout@@QAE@XZ @ 8 NONAME ; CAlfGridLayout::CAlfGridLayout(void)
+	??0CAlfImageLoaderUtil@@QAE@XZ @ 9 NONAME ; CAlfImageLoaderUtil::CAlfImageLoaderUtil(void)
+	??0CAlfImageVisual@@QAE@XZ @ 10 NONAME ; CAlfImageVisual::CAlfImageVisual(void)
+	??0CAlfLCTAnchorLayout@@QAE@XZ @ 11 NONAME ; CAlfLCTAnchorLayout::CAlfLCTAnchorLayout(void)
+	??0CAlfLCTGridLayout@@QAE@XZ @ 12 NONAME ; CAlfLCTGridLayout::CAlfLCTGridLayout(void)
+	??0CAlfLCTTextVisual@@QAE@XZ @ 13 NONAME ; CAlfLCTTextVisual::CAlfLCTTextVisual(void)
+	??0CAlfLayout@@QAE@XZ @ 14 NONAME ; CAlfLayout::CAlfLayout(void)
+	??0CAlfLineVisual@@QAE@XZ @ 15 NONAME ; CAlfLineVisual::CAlfLineVisual(void)
+	??0CAlfMeshVisual@@QAE@XZ @ 16 NONAME ; CAlfMeshVisual::CAlfMeshVisual(void)
+	??0CAlfPropertyOwner@@QAE@XZ @ 17 NONAME ; CAlfPropertyOwner::CAlfPropertyOwner(void)
+	??0CAlfTextVisual@@QAE@XZ @ 18 NONAME ; CAlfTextVisual::CAlfTextVisual(void)
+	??0CAlfViewportLayout@@QAE@XZ @ 19 NONAME ; CAlfViewportLayout::CAlfViewportLayout(void)
+	??0CAlfVisual@@QAE@XZ @ 20 NONAME ; CAlfVisual::CAlfVisual(void)
+	??0RAlfClientBase@@QAE@H@Z @ 21 NONAME ; RAlfClientBase::RAlfClientBase(int)
+	??0TAlfActionCommand@@QAE@H@Z @ 22 NONAME ; TAlfActionCommand::TAlfActionCommand(int)
+	??0TAlfBoxMetric@@QAE@ABUTAlfMetric@@000@Z @ 23 NONAME ; TAlfBoxMetric::TAlfBoxMetric(struct TAlfMetric const &, struct TAlfMetric const &, struct TAlfMetric const &, struct TAlfMetric const &)
+	??0TAlfBoxMetric@@QAE@ABUTAlfMetric@@@Z @ 24 NONAME ; TAlfBoxMetric::TAlfBoxMetric(struct TAlfMetric const &)
+	??0TAlfBoxMetric@@QAE@ABUTAlfXYMetric@@@Z @ 25 NONAME ; TAlfBoxMetric::TAlfBoxMetric(struct TAlfXYMetric const &)
+	??0TAlfBoxMetric@@QAE@XZ @ 26 NONAME ; TAlfBoxMetric::TAlfBoxMetric(void)
+	??0TAlfCommand@@IAE@W4TAlfCommandType@@@Z @ 27 NONAME ; TAlfCommand::TAlfCommand(enum TAlfCommandType)
+	??0TAlfControlCommand@@QAE@AAVCAlfControl@@W4TAlfOp@@@Z @ 28 NONAME ; TAlfControlCommand::TAlfControlCommand(class CAlfControl &, enum TAlfOp)
+	??0TAlfCustomEventCommand@@QAE@HPAVMAlfEventHandler@@H@Z @ 29 NONAME ; TAlfCustomEventCommand::TAlfCustomEventCommand(int, class MAlfEventHandler *, int)
+	??0TAlfEvent@@QAE@AAVCAlfDisplay@@ABUTKeyEvent@@W4TEventCode@@@Z @ 30 NONAME ; TAlfEvent::TAlfEvent(class CAlfDisplay &, struct TKeyEvent const &, enum TEventCode)
+	??0TAlfEvent@@QAE@AAVCAlfDisplay@@ABUTPointerEvent@@@Z @ 31 NONAME ; TAlfEvent::TAlfEvent(class CAlfDisplay &, struct TPointerEvent const &)
+	??0TAlfEvent@@QAE@AAVCAlfDisplay@@ABVTAlfScrollerEvent@@@Z @ 32 NONAME ; TAlfEvent::TAlfEvent(class CAlfDisplay &, class TAlfScrollerEvent const &)
+	??0TAlfEvent@@QAE@H@Z @ 33 NONAME ; TAlfEvent::TAlfEvent(int)
+	??0TAlfEvent@@QAE@HH@Z @ 34 NONAME ; TAlfEvent::TAlfEvent(int, int)
+	??0TAlfGroupCommand@@QAE@AAVCAlfControlGroup@@W4TAlfOp@@PAVCAlfDisplay@@@Z @ 35 NONAME ; TAlfGroupCommand::TAlfGroupCommand(class CAlfControlGroup &, enum TAlfOp, class CAlfDisplay *)
+	??0TAlfImage@@QAE@ABVCAlfTexture@@MMMM@Z @ 36 NONAME ; TAlfImage::TAlfImage(class CAlfTexture const &, float, float, float, float)
+	??0TAlfImage@@QAE@VTAknsItemID@@VTSize@@W4TScaleMode@@PBVTDesC16@@HHMMMMW4TAlfTextureFlags@@HPAVCAlfTextureManager@@@Z @ 37 NONAME ; TAlfImage::TAlfImage(class TAknsItemID, class TSize, enum TScaleMode, class TDesC16 const *, int, int, float, float, float, float, enum TAlfTextureFlags, int, class CAlfTextureManager *)
+	??0TAlfImage@@QAE@VTUid@@W4TAknsAppIconType@@VTSize@@W4TScaleMode@@MMMMW4TAlfTextureFlags@@HPAVCAlfTextureManager@@@Z @ 38 NONAME ; TAlfImage::TAlfImage(class TUid, enum TAknsAppIconType, class TSize, enum TScaleMode, float, float, float, float, enum TAlfTextureFlags, int, class CAlfTextureManager *)
+	??0TAlfImage@@QAE@XZ @ 39 NONAME ; TAlfImage::TAlfImage(void)
+	??0TAlfImageCommand@@QAE@AAVCAlfImageVisual@@ABVTAlfImage@@W4TAlfOp@@@Z @ 40 NONAME ; TAlfImageCommand::TAlfImageCommand(class CAlfImageVisual &, class TAlfImage const &, enum TAlfOp)
+	??0TAlfMarkerCommand@@QAE@H@Z @ 41 NONAME ; TAlfMarkerCommand::TAlfMarkerCommand(int)
+	??0TAlfMetric@@QAE@H@Z @ 42 NONAME ; TAlfMetric::TAlfMetric(int)
+	??0TAlfMetric@@QAE@MHH@Z @ 43 NONAME ; TAlfMetric::TAlfMetric(float, int, int)
+	??0TAlfObjectCommand@@IAE@W4TAlfCommandType@@PAXW4TAlfOp@@@Z @ 44 NONAME ; TAlfObjectCommand::TAlfObjectCommand(enum TAlfCommandType, void *, enum TAlfOp)
+	??0TAlfPointCommand@@QAE@PAXW4TAlfPointCommandTarget@@UTAlfRealPoint@@HW4TParameterTarget@0@@Z @ 45 NONAME ; TAlfPointCommand::TAlfPointCommand(void *, enum TAlfPointCommandTarget, struct TAlfRealPoint, int, enum TAlfPointCommand::TParameterTarget)
+	??0TAlfPointCommand@@QAE@PAXW4TAlfPointCommandTarget@@W4TAlfOp@@@Z @ 46 NONAME ; TAlfPointCommand::TAlfPointCommand(void *, enum TAlfPointCommandTarget, enum TAlfOp)
+	??0TAlfPointCommand@@QAE@PAXW4TAlfPointCommandTarget@@W4TAlfOp@@UTAlfRealPoint@@MW4TParameterTarget@0@@Z @ 47 NONAME ; TAlfPointCommand::TAlfPointCommand(void *, enum TAlfPointCommandTarget, enum TAlfOp, struct TAlfRealPoint, float, enum TAlfPointCommand::TParameterTarget)
+	??0TAlfScrollerEvent@@QAE@W4TCode@0@W4TOrientation@0@H@Z @ 48 NONAME ; TAlfScrollerEvent::TAlfScrollerEvent(enum TAlfScrollerEvent::TCode, enum TAlfScrollerEvent::TOrientation, int)
+	??0TAlfTextCommand@@QAE@AAVCAlfTextVisual@@ABVTDesC16@@W4TAlfOp@@@Z @ 49 NONAME ; TAlfTextCommand::TAlfTextCommand(class CAlfTextVisual &, class TDesC16 const &, enum TAlfOp)
+	??0TAlfTimedPoint@@QAE@MM@Z @ 50 NONAME ; TAlfTimedPoint::TAlfTimedPoint(float, float)
+	??0TAlfTimedPoint@@QAE@MMH@Z @ 51 NONAME ; TAlfTimedPoint::TAlfTimedPoint(float, float, int)
+	??0TAlfTimedPoint@@QAE@XZ @ 52 NONAME ; TAlfTimedPoint::TAlfTimedPoint(void)
+	??0TAlfTimedValue@@QAE@M@Z @ 53 NONAME ; TAlfTimedValue::TAlfTimedValue(float)
+	??0TAlfTimedValue@@QAE@MH@Z @ 54 NONAME ; TAlfTimedValue::TAlfTimedValue(float, int)
+	??0TAlfTimedValue@@QAE@XZ @ 55 NONAME ; TAlfTimedValue::TAlfTimedValue(void)
+	??0TAlfTransformationCommand@@QAE@PAXAAVCAlfTransformation@@W4TAlfOp@@H@Z @ 56 NONAME ; TAlfTransformationCommand::TAlfTransformationCommand(void *, class CAlfTransformation &, enum TAlfOp, int)
+	??0TAlfValueCommand@@QAE@PAXW4TAlfValueCommandTarget@@MH@Z @ 57 NONAME ; TAlfValueCommand::TAlfValueCommand(void *, enum TAlfValueCommandTarget, float, int)
+	??0TAlfValueCommand@@QAE@PAXW4TAlfValueCommandTarget@@W4TAlfOp@@MM@Z @ 58 NONAME ; TAlfValueCommand::TAlfValueCommand(void *, enum TAlfValueCommandTarget, enum TAlfOp, float, float)
+	??0TAlfVisualCommand@@QAE@AAVCAlfVisual@@W4TAlfOp@@HH@Z @ 59 NONAME ; TAlfVisualCommand::TAlfVisualCommand(class CAlfVisual &, enum TAlfOp, int, int)
+	??0TAlfXYMetric@@QAE@ABUTAlfMetric@@0@Z @ 60 NONAME ; TAlfXYMetric::TAlfXYMetric(struct TAlfMetric const &, struct TAlfMetric const &)
+	??0TAlfXYMetric@@QAE@ABUTAlfMetric@@@Z @ 61 NONAME ; TAlfXYMetric::TAlfXYMetric(struct TAlfMetric const &)
+	??0TAlfXYMetric@@QAE@XZ @ 62 NONAME ; TAlfXYMetric::TAlfXYMetric(void)
+	??1CAlfAnchorLayout@@UAE@XZ @ 63 NONAME ; CAlfAnchorLayout::~CAlfAnchorLayout(void)
+	??1CAlfAverageMappingFunction@@UAE@XZ @ 64 NONAME ; CAlfAverageMappingFunction::~CAlfAverageMappingFunction(void)
+	??1CAlfBrush@@UAE@XZ @ 65 NONAME ; CAlfBrush::~CAlfBrush(void)
+	??1CAlfConstantMappingFunction@@UAE@XZ @ 66 NONAME ; CAlfConstantMappingFunction::~CAlfConstantMappingFunction(void)
+	??1CAlfControl@@UAE@XZ @ 67 NONAME ; CAlfControl::~CAlfControl(void)
+	??1CAlfCosineMappingFunction@@UAE@XZ @ 68 NONAME ; CAlfCosineMappingFunction::~CAlfCosineMappingFunction(void)
+	??1CAlfCurvePath@@UAE@XZ @ 69 NONAME ; CAlfCurvePath::~CAlfCurvePath(void)
+	??1CAlfCurvePathLayout@@UAE@XZ @ 70 NONAME ; CAlfCurvePathLayout::~CAlfCurvePathLayout(void)
+	??1CAlfDeckLayout@@UAE@XZ @ 71 NONAME ; CAlfDeckLayout::~CAlfDeckLayout(void)
+	??1CAlfEnv@@UAE@XZ @ 72 NONAME ; CAlfEnv::~CAlfEnv(void)
+	??1CAlfFlowLayout@@UAE@XZ @ 73 NONAME ; CAlfFlowLayout::~CAlfFlowLayout(void)
+	??1CAlfGenComponent@@UAE@XZ @ 74 NONAME ; CAlfGenComponent::~CAlfGenComponent(void)
+	??1CAlfGridLayout@@UAE@XZ @ 75 NONAME ; CAlfGridLayout::~CAlfGridLayout(void)
+	??1CAlfImageLoaderUtil@@UAE@XZ @ 76 NONAME ; CAlfImageLoaderUtil::~CAlfImageLoaderUtil(void)
+	??1CAlfImageVisual@@UAE@XZ @ 77 NONAME ; CAlfImageVisual::~CAlfImageVisual(void)
+	??1CAlfLCTAnchorLayout@@UAE@XZ @ 78 NONAME ; CAlfLCTAnchorLayout::~CAlfLCTAnchorLayout(void)
+	??1CAlfLCTGridLayout@@UAE@XZ @ 79 NONAME ; CAlfLCTGridLayout::~CAlfLCTGridLayout(void)
+	??1CAlfLCTTextVisual@@UAE@XZ @ 80 NONAME ; CAlfLCTTextVisual::~CAlfLCTTextVisual(void)
+	??1CAlfLayout@@UAE@XZ @ 81 NONAME ; CAlfLayout::~CAlfLayout(void)
+	??1CAlfLineVisual@@UAE@XZ @ 82 NONAME ; CAlfLineVisual::~CAlfLineVisual(void)
+	??1CAlfLinearMappingFunction@@UAE@XZ @ 83 NONAME ; CAlfLinearMappingFunction::~CAlfLinearMappingFunction(void)
+	??1CAlfMeshVisual@@UAE@XZ @ 84 NONAME ; CAlfMeshVisual::~CAlfMeshVisual(void)
+	??1CAlfPropertyOwner@@UAE@XZ @ 85 NONAME ; CAlfPropertyOwner::~CAlfPropertyOwner(void)
+	??1CAlfSineMappingFunction@@UAE@XZ @ 86 NONAME ; CAlfSineMappingFunction::~CAlfSineMappingFunction(void)
+	??1CAlfTableMappingFunction@@UAE@XZ @ 87 NONAME ; CAlfTableMappingFunction::~CAlfTableMappingFunction(void)
+	??1CAlfTextVisual@@UAE@XZ @ 88 NONAME ; CAlfTextVisual::~CAlfTextVisual(void)
+	??1CAlfTransformation@@UAE@XZ @ 89 NONAME ; CAlfTransformation::~CAlfTransformation(void)
+	??1CAlfViewportLayout@@UAE@XZ @ 90 NONAME ; CAlfViewportLayout::~CAlfViewportLayout(void)
+	??1CAlfVisual@@UAE@XZ @ 91 NONAME ; CAlfVisual::~CAlfVisual(void)
+	??1TAlfCommand@@UAE@XZ @ 92 NONAME ; TAlfCommand::~TAlfCommand(void)
+	??1TAlfImage@@QAE@XZ @ 93 NONAME ; TAlfImage::~TAlfImage(void)
+	??ACAlfBrushArray@@QAEAAVCAlfBrush@@H@Z @ 94 NONAME ; class CAlfBrush & CAlfBrushArray::operator[](int)
+	?AcceptInput@CAlfControl@@QBEHXZ @ 95 NONAME ; int CAlfControl::AcceptInput(void) const
+	?AcceptInput@CAlfControlGroup@@QBEHXZ @ 96 NONAME ; int CAlfControlGroup::AcceptInput(void) const
+	?AcquireFocus@CAlfControl@@QAEXXZ @ 97 NONAME ; void CAlfControl::AcquireFocus(void)
+	?AddActionObserverL@CAlfEnv@@QAEXPAVMAlfActionObserver@@@Z @ 98 NONAME ; void CAlfEnv::AddActionObserverL(class MAlfActionObserver *)
+	?AddConnectionL@CAlfControl@@UAEXPAV1@H@Z @ 99 NONAME ; void CAlfControl::AddConnectionL(class CAlfControl *, int)
+	?AddLoadObserverL@CAlfTextureManager@@QAEXPAVMAlfTextureLoadingCompletedObserver@@@Z @ 100 NONAME ; void CAlfTextureManager::AddLoadObserverL(class MAlfTextureLoadingCompletedObserver *)
+	?AddNewL@CAlfAnchorLayout@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 101 NONAME ; class CAlfAnchorLayout * CAlfAnchorLayout::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfCurvePathLayout@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 102 NONAME ; class CAlfCurvePathLayout * CAlfCurvePathLayout::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfDeckLayout@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 103 NONAME ; class CAlfDeckLayout * CAlfDeckLayout::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfFlowLayout@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 104 NONAME ; class CAlfFlowLayout * CAlfFlowLayout::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfGridLayout@@SAPAV1@AAVCAlfControl@@HHPAVCAlfLayout@@@Z @ 105 NONAME ; class CAlfGridLayout * CAlfGridLayout::AddNewL(class CAlfControl &, int, int, class CAlfLayout *)
+	?AddNewL@CAlfImageVisual@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 106 NONAME ; class CAlfImageVisual * CAlfImageVisual::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfLCTAnchorLayout@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 107 NONAME ; class CAlfLCTAnchorLayout * CAlfLCTAnchorLayout::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfLCTGridLayout@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 108 NONAME ; class CAlfLCTGridLayout * CAlfLCTGridLayout::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfLCTTextVisual@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 109 NONAME ; class CAlfLCTTextVisual * CAlfLCTTextVisual::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfLayout@@SAPAV1@AAVCAlfControl@@PAV1@@Z @ 110 NONAME ; class CAlfLayout * CAlfLayout::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfLineVisual@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 111 NONAME ; class CAlfLineVisual * CAlfLineVisual::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfMeshVisual@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 112 NONAME ; class CAlfMeshVisual * CAlfMeshVisual::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfTextVisual@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 113 NONAME ; class CAlfTextVisual * CAlfTextVisual::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddNewL@CAlfViewportLayout@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 114 NONAME ; class CAlfViewportLayout * CAlfViewportLayout::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?AddPointerEventObserver@CAlfRoster@@QAEHW4TAlfPointerEventFlags@@AAVCAlfControl@@@Z @ 115 NONAME ; int CAlfRoster::AddPointerEventObserver(enum TAlfPointerEventFlags, class CAlfControl &)
+	?AddStateObserverL@CAlfTextureManager@@QAEXPAVMAlfTextureManagerStateChangedObserver@@@Z @ 116 NONAME ; void CAlfTextureManager::AddStateObserverL(class MAlfTextureManagerStateChangedObserver *)
+	?AlignByOrigin@CAlfVisual@@QBEXAAUTAlfRealRect@@@Z @ 117 NONAME ; void CAlfVisual::AlignByOrigin(struct TAlfRealRect &) const
+	?AnimationControllerCount@CAlfMesh@@UBEHXZ @ 118 NONAME ; int CAlfMesh::AnimationControllerCount(void) const
+	?Append@CAlfControl@@QAEHPAVCAlfVisual@@PAVCAlfLayout@@@Z @ 119 NONAME ; int CAlfControl::Append(class CAlfVisual *, class CAlfLayout *)
+	?Append@CAlfLayout@@QAEHPAVCAlfVisual@@HH@Z @ 120 NONAME ; int CAlfLayout::Append(class CAlfVisual *, int, int)
+	?AppendArcL@CAlfCurvePath@@QAEXABVTPoint@@ABVTSize@@MMM@Z @ 121 NONAME ; void CAlfCurvePath::AppendArcL(class TPoint const &, class TSize const &, float, float, float)
+	?AppendColorL@CAlfGradientBrush@@QAEXMABVTRgb@@M@Z @ 122 NONAME ; void CAlfGradientBrush::AppendColorL(float, class TRgb const &, float)
+	?AppendL@CAlfBrushArray@@QAEXPAVCAlfBrush@@W4TAlfOwnership@@@Z @ 123 NONAME ; void CAlfBrushArray::AppendL(class CAlfBrush *, enum TAlfOwnership)
+	?AppendL@CAlfControlGroup@@QAEXPAVCAlfControl@@@Z @ 124 NONAME ; void CAlfControlGroup::AppendL(class CAlfControl *)
+	?AppendLayoutL@CAlfControl@@QAEPAVCAlfLayout@@W4TAlfLayoutType@@PAV2@H@Z @ 125 NONAME ; class CAlfLayout * CAlfControl::AppendLayoutL(enum TAlfLayoutType, class CAlfLayout *, int)
+	?AppendLineL@CAlfCurvePath@@QAEXABVTPoint@@0M@Z @ 126 NONAME ; void CAlfCurvePath::AppendLineL(class TPoint const &, class TPoint const &, float)
+	?AppendVisualL@CAlfControl@@QAEPAVCAlfVisual@@W4TAlfVisualType@@PAVCAlfLayout@@H@Z @ 127 NONAME ; class CAlfVisual * CAlfControl::AppendVisualL(enum TAlfVisualType, class CAlfLayout *, int)
+	?AppendWeightL@CAlfGridLayout@@QAEXW4TAlfGridDimension@@ABUTAlfMetric@@@Z @ 128 NONAME ; void CAlfGridLayout::AppendWeightL(enum TAlfGridDimension, struct TAlfMetric const &)
+	?AppendWidgetL@CAlfEnv@@QAEXPAVIAlfWidget@Alf@@@Z @ 129 NONAME ; void CAlfEnv::AppendWidgetL(class Alf::IAlfWidget *)
+	?At@CAlfBrushArray@@QAEAAVCAlfBrush@@H@Z @ 130 NONAME ; class CAlfBrush & CAlfBrushArray::At(int)
+	?AutoMarking@CAlfLayoutMetricsUtility@@QAEHXZ @ 131 NONAME ; int CAlfLayoutMetricsUtility::AutoMarking(void)
+	?BackgroundType@CAlfTextVisual@@QAE?AW4TAlfBackgroundType@@XZ @ 132 NONAME ; enum TAlfBackgroundType CAlfTextVisual::BackgroundType(void)
+	?BaseUnit@CAlfAnchorLayout@@UBE?AUTAlfXYMetric@@XZ @ 133 NONAME ; struct TAlfXYMetric CAlfAnchorLayout::BaseUnit(void) const
+	?BaseUnit@CAlfCurvePathLayout@@UBE?AUTAlfXYMetric@@XZ @ 134 NONAME ; struct TAlfXYMetric CAlfCurvePathLayout::BaseUnit(void) const
+	?BaseUnit@CAlfDeckLayout@@UBE?AUTAlfXYMetric@@XZ @ 135 NONAME ; struct TAlfXYMetric CAlfDeckLayout::BaseUnit(void) const
+	?BaseUnit@CAlfFlowLayout@@UBE?AUTAlfXYMetric@@XZ @ 136 NONAME ; struct TAlfXYMetric CAlfFlowLayout::BaseUnit(void) const
+	?BaseUnit@CAlfGridLayout@@UBE?AUTAlfXYMetric@@XZ @ 137 NONAME ; struct TAlfXYMetric CAlfGridLayout::BaseUnit(void) const
+	?BaseUnit@CAlfLCTAnchorLayout@@UBE?AUTAlfXYMetric@@XZ @ 138 NONAME ; struct TAlfXYMetric CAlfLCTAnchorLayout::BaseUnit(void) const
+	?BaseUnit@CAlfLCTGridLayout@@UBE?AUTAlfXYMetric@@XZ @ 139 NONAME ; struct TAlfXYMetric CAlfLCTGridLayout::BaseUnit(void) const
+	?BaseUnit@CAlfLayout@@UBE?AUTAlfXYMetric@@XZ @ 140 NONAME ; struct TAlfXYMetric CAlfLayout::BaseUnit(void) const
+	?BaseUnit@CAlfViewportLayout@@UBE?AUTAlfXYMetric@@XZ @ 141 NONAME ; struct TAlfXYMetric CAlfViewportLayout::BaseUnit(void) const
+	?BindDisplay@CAlfControl@@QAEXAAVCAlfDisplay@@@Z @ 142 NONAME ; void CAlfControl::BindDisplay(class CAlfDisplay &)
+	?BlankTexture@CAlfTextureManager@@QAEAAVCAlfTexture@@XZ @ 143 NONAME ; class CAlfTexture & CAlfTextureManager::BlankTexture(void)
+	?BlankTexture@CAlfTextureManager@@QBEABVCAlfTexture@@XZ @ 144 NONAME ; class CAlfTexture const & CAlfTextureManager::BlankTexture(void) const
+	?BlurL@CAlfTextureProcessor@@QAEXABVCAlfTexture@@AAV2@ABVTSize@@HH@Z @ 145 NONAME ; void CAlfTextureProcessor::BlurL(class CAlfTexture const &, class CAlfTexture &, class TSize const &, int, int)
+	?BlurL@CAlfTextureProcessor@@QAEXABVCAlfTexture@@AAV2@HH@Z @ 146 NONAME ; void CAlfTextureProcessor::BlurL(class CAlfTexture const &, class CAlfTexture &, int, int)
+	?BorderDrawingEnabled@CAlfImageBrush@@QBEHXZ @ 147 NONAME ; int CAlfImageBrush::BorderDrawingEnabled(void) const
+	?BottomRight@TAlfImage@@QBE?AUTAlfRealPoint@@XZ @ 148 NONAME ; struct TAlfRealPoint TAlfImage::BottomRight(void) const
+	?Bounds@CAlfControl@@QBE?AVTRect@@XZ @ 149 NONAME ; class TRect CAlfControl::Bounds(void) const
+	?Brushes@CAlfVisual@@QAEPAVCAlfBrushArray@@XZ @ 150 NONAME ; class CAlfBrushArray * CAlfVisual::Brushes(void)
+	?CancelAllCommands@CAlfControl@@QAEXXZ @ 151 NONAME ; void CAlfControl::CancelAllCommands(void)
+	?CancelAsynchCmd@CAlfGenComponent@@QAEXH@Z @ 152 NONAME ; void CAlfGenComponent::CancelAsynchCmd(int)
+	?CancelCommands@CAlfEnv@@QAEXPAX@Z @ 153 NONAME ; void CAlfEnv::CancelCommands(void *)
+	?CancelCommands@CAlfEnv@@QAEXPAXW4TAlfCommandType@@@Z @ 154 NONAME ; void CAlfEnv::CancelCommands(void *, enum TAlfCommandType)
+	?CancelCommands@CAlfEnv@@QAEXPAXW4TAlfOp@@@Z @ 155 NONAME ; void CAlfEnv::CancelCommands(void *, enum TAlfOp)
+	?CancelCustomCommands@CAlfEnv@@QAEXPAVMAlfEventHandler@@@Z @ 156 NONAME ; void CAlfEnv::CancelCustomCommands(class MAlfEventHandler *)
+	?CancelCustomCommands@CAlfEnv@@QAEXPAVMAlfEventHandler@@H@Z @ 157 NONAME ; void CAlfEnv::CancelCustomCommands(class MAlfEventHandler *, int)
+	?CenterDrawingEnabled@CAlfImageBrush@@QBEHXZ @ 158 NONAME ; int CAlfImageBrush::CenterDrawingEnabled(void) const
+	?ChildOrdinal@CAlfLayout@@QAEHH@Z @ 159 NONAME ; int CAlfLayout::ChildOrdinal(int)
+	?ChildPos@CAlfLayout@@QAEHHAAVTPoint@@@Z @ 160 NONAME ; int CAlfLayout::ChildPos(int, class TPoint &)
+	?ChildSize@CAlfLayout@@QAEHHAAVTSize@@@Z @ 161 NONAME ; int CAlfLayout::ChildSize(int, class TSize &)
+	?ClearFlag@CAlfVisual@@QAEXW4TAlfVisualFlags@@@Z @ 162 NONAME ; void CAlfVisual::ClearFlag(enum TAlfVisualFlags)
+	?ClearFlags@CAlfVisual@@QAEXI@Z @ 163 NONAME ; void CAlfVisual::ClearFlags(unsigned int)
+	?ClearFocus@CAlfRoster@@QAEXXZ @ 164 NONAME ; void CAlfRoster::ClearFocus(void)
+	?Client@CAlfEnv@@QAEAAVRAlfClient@@XZ @ 165 NONAME ; class RAlfClient & CAlfEnv::Client(void)
+	?Clipping@CAlfVisual@@QBEHXZ @ 166 NONAME ; int CAlfVisual::Clipping(void) const
+	?Code@TAlfEvent@@QBEABW4TEventCode@@XZ @ 167 NONAME ; enum TEventCode const & TAlfEvent::Code(void) const
+	?Code@TAlfScrollerEvent@@QBE?AW4TCode@1@XZ @ 168 NONAME ; enum TAlfScrollerEvent::TCode TAlfScrollerEvent::Code(void) const
+	?Color@CAlfGradientBrush@@QBE?AVTRgb@@H@Z @ 169 NONAME ; class TRgb CAlfGradientBrush::Color(int) const
+	?ColorLightness@AlfUtil@@SAMABVTRgb@@@Z @ 170 NONAME ; float AlfUtil::ColorLightness(class TRgb const &)
+	?ColumnCount@CAlfGridLayout@@QBEHXZ @ 171 NONAME ; int CAlfGridLayout::ColumnCount(void) const
+	?CombineMaskFbsBitmapL@AlfUtil@@SAXABVCFbsBitmap@@0AAV2@@Z @ 172 NONAME ; void AlfUtil::CombineMaskFbsBitmapL(class CFbsBitmap const &, class CFbsBitmap const &, class CFbsBitmap &)
+	?CommandExtension@TAlfActionCommand@@MAEXABVTUid@@PAPAX@Z @ 173 NONAME ; void TAlfActionCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfCommand@@MAEXABVTUid@@PAPAX@Z @ 174 NONAME ; void TAlfCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfControlCommand@@MAEXABVTUid@@PAPAX@Z @ 175 NONAME ; void TAlfControlCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfCustomEventCommand@@MAEXABVTUid@@PAPAX@Z @ 176 NONAME ; void TAlfCustomEventCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfGroupCommand@@MAEXABVTUid@@PAPAX@Z @ 177 NONAME ; void TAlfGroupCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfImageCommand@@MAEXABVTUid@@PAPAX@Z @ 178 NONAME ; void TAlfImageCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfMarkerCommand@@MAEXABVTUid@@PAPAX@Z @ 179 NONAME ; void TAlfMarkerCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfObjectCommand@@MAEXABVTUid@@PAPAX@Z @ 180 NONAME ; void TAlfObjectCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfPointCommand@@MAEXABVTUid@@PAPAX@Z @ 181 NONAME ; void TAlfPointCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfTextCommand@@MAEXABVTUid@@PAPAX@Z @ 182 NONAME ; void TAlfTextCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfTransformationCommand@@MAEXABVTUid@@PAPAX@Z @ 183 NONAME ; void TAlfTransformationCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfValueCommand@@MAEXABVTUid@@PAPAX@Z @ 184 NONAME ; void TAlfValueCommand::CommandExtension(class TUid const &, void * *)
+	?CommandExtension@TAlfVisualCommand@@MAEXABVTUid@@PAPAX@Z @ 185 NONAME ; void TAlfVisualCommand::CommandExtension(class TUid const &, void * *)
+	?Comms@CAlfBrush@@QBEPAVCAlfGenComponent@@XZ @ 186 NONAME ; class CAlfGenComponent * CAlfBrush::Comms(void) const
+	?Comms@CAlfVisual@@QBEPAVCAlfGenComponent@@XZ @ 187 NONAME ; class CAlfGenComponent * CAlfVisual::Comms(void) const
+	?Connection@CAlfControl@@QBEAAV1@H@Z @ 188 NONAME ; class CAlfControl & CAlfControl::Connection(int) const
+	?ConnectionAddedL@CAlfControl@@MAEXPAV1@H@Z @ 189 NONAME ; void CAlfControl::ConnectionAddedL(class CAlfControl *, int)
+	?ConnectionByOrdinal@CAlfControl@@QBEAAV1@H@Z @ 190 NONAME ; class CAlfControl & CAlfControl::ConnectionByOrdinal(int) const
+	?ConnectionCount@CAlfControl@@QBEHXZ @ 191 NONAME ; int CAlfControl::ConnectionCount(void) const
+	?ConnectionOrdinal@CAlfControl@@QBEHH@Z @ 192 NONAME ; int CAlfControl::ConnectionOrdinal(int) const
+	?ConnectionRemoved@CAlfControl@@MAEXPAV1@H@Z @ 193 NONAME ; void CAlfControl::ConnectionRemoved(class CAlfControl *, int)
+	?ConnectionRole@CAlfControl@@QBEHH@Z @ 194 NONAME ; int CAlfControl::ConnectionRole(int) const
+	?ConstructL@CAlfAnchorLayout@@UAEXAAVCAlfControl@@@Z @ 195 NONAME ; void CAlfAnchorLayout::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfBrush@@IAEXAAVCAlfEnv@@HHABVTDesC8@@@Z @ 196 NONAME ; void CAlfBrush::ConstructL(class CAlfEnv &, int, int, class TDesC8 const &)
+	?ConstructL@CAlfBrush@@IAEXXZ @ 197 NONAME ; void CAlfBrush::ConstructL(void)
+	?ConstructL@CAlfControl@@QAEXAAVCAlfEnv@@@Z @ 198 NONAME ; void CAlfControl::ConstructL(class CAlfEnv &)
+	?ConstructL@CAlfCurvePathLayout@@UAEXAAVCAlfControl@@@Z @ 199 NONAME ; void CAlfCurvePathLayout::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfDeckLayout@@UAEXAAVCAlfControl@@@Z @ 200 NONAME ; void CAlfDeckLayout::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfFlowLayout@@UAEXAAVCAlfControl@@@Z @ 201 NONAME ; void CAlfFlowLayout::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfGridLayout@@UAEXAAVCAlfControl@@@Z @ 202 NONAME ; void CAlfGridLayout::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfImageVisual@@UAEXAAVCAlfControl@@@Z @ 203 NONAME ; void CAlfImageVisual::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfLCTAnchorLayout@@UAEXAAVCAlfControl@@@Z @ 204 NONAME ; void CAlfLCTAnchorLayout::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfLCTGridLayout@@UAEXAAVCAlfControl@@@Z @ 205 NONAME ; void CAlfLCTGridLayout::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfLCTTextVisual@@UAEXAAVCAlfControl@@@Z @ 206 NONAME ; void CAlfLCTTextVisual::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfLayout@@UAEXAAVCAlfControl@@@Z @ 207 NONAME ; void CAlfLayout::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfLineVisual@@UAEXAAVCAlfControl@@@Z @ 208 NONAME ; void CAlfLineVisual::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfMeshVisual@@UAEXAAVCAlfControl@@@Z @ 209 NONAME ; void CAlfMeshVisual::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfTextVisual@@UAEXAAVCAlfControl@@@Z @ 210 NONAME ; void CAlfTextVisual::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfViewportLayout@@UAEXAAVCAlfControl@@@Z @ 211 NONAME ; void CAlfViewportLayout::ConstructL(class CAlfControl &)
+	?ConstructL@CAlfVisual@@QAEXAAVCAlfControl@@HHABVTDesC8@@@Z @ 212 NONAME ; void CAlfVisual::ConstructL(class CAlfControl &, int, int, class TDesC8 const &)
+	?ConstructL@CAlfVisual@@UAEXAAVCAlfControl@@@Z @ 213 NONAME ; void CAlfVisual::ConstructL(class CAlfControl &)
+	?ConstructServerName@RAlfClientBase@@KAXAAV?$TBuf@$0IA@@@VTUid@@I@Z @ 214 NONAME ; void RAlfClientBase::ConstructServerName(class TBuf<128> &, class TUid, unsigned int)
+	?ContainerLayout@CAlfControl@@UBEPAVCAlfLayout@@PBV1@@Z @ 215 NONAME ; class CAlfLayout * CAlfControl::ContainerLayout(class CAlfControl const *) const
+	?ContinueRefresh@CAlfEnv@@QAEXXZ @ 216 NONAME ; void CAlfEnv::ContinueRefresh(void)
+	?Control@CAlfControlGroup@@QBEAAVCAlfControl@@H@Z @ 217 NONAME ; class CAlfControl & CAlfControlGroup::Control(int) const
+	?Control@TAlfControlCommand@@QBEAAVCAlfControl@@XZ @ 218 NONAME ; class CAlfControl & TAlfControlCommand::Control(void) const
+	?ControlGroup@CAlfControl@@QBEPAVCAlfControlGroup@@XZ @ 219 NONAME ; class CAlfControlGroup * CAlfControl::ControlGroup(void) const
+	?ControlGroup@CAlfEnv@@QAEAAVCAlfControlGroup@@H@Z @ 220 NONAME ; class CAlfControlGroup & CAlfEnv::ControlGroup(int)
+	?ControlGroup@CAlfRoster@@QBEAAVCAlfControlGroup@@H@Z @ 221 NONAME ; class CAlfControlGroup & CAlfRoster::ControlGroup(int) const
+	?ControlGroup@TAlfGroupCommand@@QBEAAVCAlfControlGroup@@XZ @ 222 NONAME ; class CAlfControlGroup & TAlfGroupCommand::ControlGroup(void) const
+	?ConvertBitmapToDisplayModeLC@AlfUtil@@SAPAVCFbsBitmap@@ABV2@ABW4TDisplayMode@@@Z @ 223 NONAME ; class CFbsBitmap * AlfUtil::ConvertBitmapToDisplayModeLC(class CFbsBitmap const &, enum TDisplayMode const &)
+	?CopyProperty@CAlfPropertyOwner@@QAEHABV1@ABVTDesC8@@@Z @ 224 NONAME ; int CAlfPropertyOwner::CopyProperty(class CAlfPropertyOwner const &, class TDesC8 const &)
+	?CopyTextStyleL@CAlfTextStyleManager@@QAEHH@Z @ 225 NONAME ; int CAlfTextStyleManager::CopyTextStyleL(int)
+	?CopyValues@CAlfVisual@@QAEHABV1@HH@Z @ 226 NONAME ; int CAlfVisual::CopyValues(class CAlfVisual const &, int, int)
+	?Count@CAlfBrushArray@@QBEHXZ @ 227 NONAME ; int CAlfBrushArray::Count(void) const
+	?Count@CAlfControlGroup@@QBEHXZ @ 228 NONAME ; int CAlfControlGroup::Count(void) const
+	?Count@CAlfLayout@@QBEHXZ @ 229 NONAME ; int CAlfLayout::Count(void) const
+	?Count@CAlfRoster@@QBEHXZ @ 230 NONAME ; int CAlfRoster::Count(void) const
+	?Count@CAlfTransformation@@QBEHXZ @ 231 NONAME ; int CAlfTransformation::Count(void) const
+	?CreateImageLoaderL@CAlfImageLoaderUtil@@QAEPAVMAlfBitmapProvider@@ABVTAknsItemID@@ABVTDesC16@@HH@Z @ 232 NONAME ; class MAlfBitmapProvider * CAlfImageLoaderUtil::CreateImageLoaderL(class TAknsItemID const &, class TDesC16 const &, int, int)
+	?CreateImageLoaderL@CAlfImageLoaderUtil@@QAEPAVMAlfBitmapProvider@@VTUid@@W4TAknsAppIconType@@@Z @ 233 NONAME ; class MAlfBitmapProvider * CAlfImageLoaderUtil::CreateImageLoaderL(class TUid, enum TAknsAppIconType)
+	?CreateMeshL@CAlfMeshVisual@@QAEXH@Z @ 234 NONAME ; void CAlfMeshVisual::CreateMeshL(int)
+	?CreatePlatformTextStyleL@CAlfTextStyleManager@@QAEHH@Z @ 235 NONAME ; int CAlfTextStyleManager::CreatePlatformTextStyleL(int)
+	?CreatePlatformTextStyleL@CAlfTextStyleManager@@QAEHHH@Z @ 236 NONAME ; int CAlfTextStyleManager::CreatePlatformTextStyleL(int, int)
+	?CreateSharedTextureManagerL@CAlfEnv@@QAEPAVCAlfTextureManager@@VTUid@@@Z @ 237 NONAME ; class CAlfTextureManager * CAlfEnv::CreateSharedTextureManagerL(class TUid)
+	?CreateTextureL@CAlfTextureManager@@QAEAAVCAlfTexture@@HPAVMAlfBitmapProvider@@W4TAlfTextureFlags@@@Z @ 238 NONAME ; class CAlfTexture & CAlfTextureManager::CreateTextureL(int, class MAlfBitmapProvider *, enum TAlfTextureFlags)
+	?CropFbsBitmapL@AlfUtil@@SAXABVCFbsBitmap@@AAV2@VTPoint@@@Z @ 239 NONAME ; void AlfUtil::CropFbsBitmapL(class CFbsBitmap const &, class CFbsBitmap &, class TPoint)
+	?CropImage@AlfUtil@@SAXHABVTSize@@PBEABVTPoint@@0PAE@Z @ 240 NONAME ; void AlfUtil::CropImage(int, class TSize const &, unsigned char const *, class TPoint const &, class TSize const &, unsigned char *)
+	?CrossProduct@AlfUtil@@SAXQBM0QAM@Z @ 241 NONAME ; void AlfUtil::CrossProduct(float const * const, float const * const, float * const)
+	?CurvePath@CAlfCurvePathLayout@@QAEAAVCAlfCurvePath@@XZ @ 242 NONAME ; class CAlfCurvePath & CAlfCurvePathLayout::CurvePath(void)
+	?CustomEventData@TAlfEvent@@QBEHXZ @ 243 NONAME ; int TAlfEvent::CustomEventData(void) const
+	?CustomParameter@TAlfEvent@@QBEHXZ @ 244 NONAME ; int TAlfEvent::CustomParameter(void) const
+	?Data@CAlfStatic@@CAPAUTTlsData@@XZ @ 245 NONAME ; struct TTlsData * CAlfStatic::Data(void)
+	?DefineFileNameL@CAlfTextureManager@@QAEXHABVTDesC16@@@Z @ 246 NONAME ; void CAlfTextureManager::DefineFileNameL(int, class TDesC16 const &)
+	?DeleteControlGroup@CAlfEnv@@QAEHH@Z @ 247 NONAME ; int CAlfEnv::DeleteControlGroup(int)
+	?DeleteSharedTextureManager@CAlfEnv@@QAEXVTUid@@@Z @ 248 NONAME ; void CAlfEnv::DeleteSharedTextureManager(class TUid)
+	?Depth@CAlfDropShadowBrush@@QBEABVTAlfTimedValue@@XZ @ 249 NONAME ; class TAlfTimedValue const & CAlfDropShadowBrush::Depth(void) const
+	?DepthOffset@CAlfVisual@@QBE?AVTAlfTimedValue@@XZ @ 250 NONAME ; class TAlfTimedValue CAlfVisual::DepthOffset(void) const
+	?DimensionCount@CAlfGridLayout@@QBEHW4TAlfGridDimension@@@Z @ 251 NONAME ; int CAlfGridLayout::DimensionCount(enum TAlfGridDimension) const
+	?Display@CAlfControl@@QBEPAVCAlfDisplay@@XZ @ 252 NONAME ; class CAlfDisplay * CAlfControl::Display(void) const
+	?Display@CAlfVisual@@QBEPAVCAlfDisplay@@XZ @ 253 NONAME ; class CAlfDisplay * CAlfVisual::Display(void) const
+	?Display@TAlfEvent@@QBEPAVCAlfDisplay@@XZ @ 254 NONAME ; class CAlfDisplay * TAlfEvent::Display(void) const
+	?Display@TAlfGroupCommand@@QBEPAVCAlfDisplay@@XZ @ 255 NONAME ; class CAlfDisplay * TAlfGroupCommand::Display(void) const
+	?DisplayArea@CAlfControl@@QBE?AVTRect@@XZ @ 256 NONAME ; class TRect CAlfControl::DisplayArea(void) const
+	?DisplayCenter@CAlfControl@@QBE?AUTAlfRealPoint@@XZ @ 257 NONAME ; struct TAlfRealPoint CAlfControl::DisplayCenter(void) const
+	?DisplayCount@CAlfEnv@@QBEHXZ @ 258 NONAME ; int CAlfEnv::DisplayCount(void) const
+	?DisplayRect@CAlfVisual@@QBE?AUTAlfRealRect@@XZ @ 259 NONAME ; struct TAlfRealRect CAlfVisual::DisplayRect(void) const
+	?DisplayRectTarget@CAlfVisual@@QBE?AUTAlfRealRect@@XZ @ 260 NONAME ; struct TAlfRealRect CAlfVisual::DisplayRectTarget(void) const
+	?DisplayToHost@CAlfControl@@QBE?AVTPoint@@ABV2@@Z @ 261 NONAME ; class TPoint CAlfControl::DisplayToHost(class TPoint const &) const
+	?DisplayToLocal@CAlfVisual@@QBE?AUTAlfRealPoint@@ABU2@@Z @ 262 NONAME ; struct TAlfRealPoint CAlfVisual::DisplayToLocal(struct TAlfRealPoint const &) const
+	?DisplayToLocal@CAlfVisual@@QBE?AVTPoint@@ABV2@@Z @ 263 NONAME ; class TPoint CAlfVisual::DisplayToLocal(class TPoint const &) const
+	?DoAsynchronousCmdL@CAlfGenComponent@@QAEHIABVTDesC8@@AAVTDes8@@PAVMAlfAsyncOpObserver@@@Z @ 264 NONAME ; int CAlfGenComponent::DoAsynchronousCmdL(unsigned int, class TDesC8 const &, class TDes8 &, class MAlfAsyncOpObserver *)
+	?DoRemoveAndDestroyAllD@CAlfAnchorLayout@@MAEXXZ @ 265 NONAME ; void CAlfAnchorLayout::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfCurvePathLayout@@MAEXXZ @ 266 NONAME ; void CAlfCurvePathLayout::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfDeckLayout@@MAEXXZ @ 267 NONAME ; void CAlfDeckLayout::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfFlowLayout@@MAEXXZ @ 268 NONAME ; void CAlfFlowLayout::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfGridLayout@@MAEXXZ @ 269 NONAME ; void CAlfGridLayout::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfImageVisual@@MAEXXZ @ 270 NONAME ; void CAlfImageVisual::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfLCTAnchorLayout@@MAEXXZ @ 271 NONAME ; void CAlfLCTAnchorLayout::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfLCTGridLayout@@MAEXXZ @ 272 NONAME ; void CAlfLCTGridLayout::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfLCTTextVisual@@MAEXXZ @ 273 NONAME ; void CAlfLCTTextVisual::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfLayout@@MAEXXZ @ 274 NONAME ; void CAlfLayout::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfLineVisual@@MAEXXZ @ 275 NONAME ; void CAlfLineVisual::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfMeshVisual@@MAEXXZ @ 276 NONAME ; void CAlfMeshVisual::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfTextVisual@@MAEXXZ @ 277 NONAME ; void CAlfTextVisual::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfViewportLayout@@MAEXXZ @ 278 NONAME ; void CAlfViewportLayout::DoRemoveAndDestroyAllD(void)
+	?DoRemoveAndDestroyAllD@CAlfVisual@@UAEXXZ @ 279 NONAME ; void CAlfVisual::DoRemoveAndDestroyAllD(void)
+	?DoSynchronousCmd@CAlfGenComponent@@QAEHIABVTDesC8@@AAVTDes8@@@Z @ 280 NONAME ; int CAlfGenComponent::DoSynchronousCmd(unsigned int, class TDesC8 const &, class TDes8 &)
+	?EdgeOffset@CAlfBorderBrush@@QBEABVTAlfTimedPoint@@XZ @ 281 NONAME ; class TAlfTimedPoint const & CAlfBorderBrush::EdgeOffset(void) const
+	?EffectiveLayoutOrdinal@CAlfLayout@@QBEHABVCAlfVisual@@@Z @ 282 NONAME ; int CAlfLayout::EffectiveLayoutOrdinal(class CAlfVisual const &) const
+	?EffectiveOpacity@CAlfVisual@@QBEMXZ @ 283 NONAME ; float CAlfVisual::EffectiveOpacity(void) const
+	?EnableAutoMarking@CAlfLayoutMetricsUtility@@QAEXH@Z @ 284 NONAME ; void CAlfLayoutMetricsUtility::EnableAutoMarking(int)
+	?EnableBrushesL@CAlfVisual@@QAEXH@Z @ 285 NONAME ; void CAlfVisual::EnableBrushesL(int)
+	?EnableLoop@CAlfCurvePath@@QAEXH@Z @ 286 NONAME ; void CAlfCurvePath::EnableLoop(int)
+	?EnableScrollingL@CAlfLayout@@QAEXH@Z @ 287 NONAME ; void CAlfLayout::EnableScrollingL(int)
+	?EnableShadow@CAlfTextVisual@@QAEXH@Z @ 288 NONAME ; void CAlfTextVisual::EnableShadow(int)
+	?EnableTransformationL@CAlfControlGroup@@QAEXH@Z @ 289 NONAME ; void CAlfControlGroup::EnableTransformationL(int)
+	?EnableTransformationL@CAlfVisual@@QAEXH@Z @ 290 NONAME ; void CAlfVisual::EnableTransformationL(int)
+	?EndPos@CAlfLineVisual@@QBEABVTAlfTimedValue@@XZ @ 291 NONAME ; class TAlfTimedValue const & CAlfLineVisual::EndPos(void) const
+	?Env@CAlfControl@@QBEAAVCAlfEnv@@XZ @ 292 NONAME ; class CAlfEnv & CAlfControl::Env(void) const
+	?Env@CAlfDisplay@@QAEAAVCAlfEnv@@XZ @ 293 NONAME ; class CAlfEnv & CAlfDisplay::Env(void)
+	?Env@CAlfStatic@@SAAAVCAlfEnv@@XZ @ 294 NONAME ; class CAlfEnv & CAlfStatic::Env(void)
+	?Env@CAlfTextureManager@@QAEAAVCAlfEnv@@XZ @ 295 NONAME ; class CAlfEnv & CAlfTextureManager::Env(void)
+	?Env@CAlfVisual@@QBEAAVCAlfEnv@@XZ @ 296 NONAME ; class CAlfEnv & CAlfVisual::Env(void) const
+	?Evaluate@CAlfCurvePath@@QBEXMAAUTAlfRealPoint@@@Z @ 297 NONAME ; void CAlfCurvePath::Evaluate(float, struct TAlfRealPoint &) const
+	?EventData@TAlfCustomEventCommand@@QBEHXZ @ 298 NONAME ; int TAlfCustomEventCommand::EventData(void) const
+	?ExecuteL@TAlfActionCommand@@UBEXAAVCAlfEnv@@@Z @ 299 NONAME ; void TAlfActionCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfControlCommand@@UBEXAAVCAlfEnv@@@Z @ 300 NONAME ; void TAlfControlCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfCustomEventCommand@@UBEXAAVCAlfEnv@@@Z @ 301 NONAME ; void TAlfCustomEventCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfGroupCommand@@UBEXAAVCAlfEnv@@@Z @ 302 NONAME ; void TAlfGroupCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfImageCommand@@UBEXAAVCAlfEnv@@@Z @ 303 NONAME ; void TAlfImageCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfMarkerCommand@@UBEXAAVCAlfEnv@@@Z @ 304 NONAME ; void TAlfMarkerCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfObjectCommand@@UBEXAAVCAlfEnv@@@Z @ 305 NONAME ; void TAlfObjectCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfPointCommand@@UBEXAAVCAlfEnv@@@Z @ 306 NONAME ; void TAlfPointCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfTextCommand@@UBEXAAVCAlfEnv@@@Z @ 307 NONAME ; void TAlfTextCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfTransformationCommand@@UBEXAAVCAlfEnv@@@Z @ 308 NONAME ; void TAlfTransformationCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfValueCommand@@UBEXAAVCAlfEnv@@@Z @ 309 NONAME ; void TAlfValueCommand::ExecuteL(class CAlfEnv &) const
+	?ExecuteL@TAlfVisualCommand@@UBEXAAVCAlfEnv@@@Z @ 310 NONAME ; void TAlfVisualCommand::ExecuteL(class CAlfEnv &) const
+	?Factor@CAlfCosineMappingFunction@@QBEMXZ @ 311 NONAME ; float CAlfCosineMappingFunction::Factor(void) const
+	?Factor@CAlfLinearMappingFunction@@QBEMXZ @ 312 NONAME ; float CAlfLinearMappingFunction::Factor(void) const
+	?Factor@CAlfSineMappingFunction@@QBEMXZ @ 313 NONAME ; float CAlfSineMappingFunction::Factor(void) const
+	?FileName@CAlfTexture@@QBEPAVHBufC16@@XZ @ 314 NONAME ; class HBufC16 * CAlfTexture::FileName(void) const
+	?FillWeightsL@CAlfGridLayout@@QAEXW4TAlfGridDimension@@HABUTAlfMetric@@@Z @ 315 NONAME ; void CAlfGridLayout::FillWeightsL(enum TAlfGridDimension, int, struct TAlfMetric const &)
+	?Find@CAlfRoster@@QBEHABVCAlfControlGroup@@@Z @ 316 NONAME ; int CAlfRoster::Find(class CAlfControlGroup const &) const
+	?FindConnection@CAlfControl@@QBEHPBV1@@Z @ 317 NONAME ; int CAlfControl::FindConnection(class CAlfControl const *) const
+	?FindControl@CAlfControlGroup@@QBEPAVCAlfControl@@HH@Z @ 318 NONAME ; class CAlfControl * CAlfControlGroup::FindControl(int, int) const
+	?FindControl@CAlfEnv@@QBEPAVCAlfControl@@HH@Z @ 319 NONAME ; class CAlfControl * CAlfEnv::FindControl(int, int) const
+	?FindControl@CAlfRoster@@QBEPAVCAlfControl@@H@Z @ 320 NONAME ; class CAlfControl * CAlfRoster::FindControl(int) const
+	?FindTag@CAlfAnchorLayout@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 321 NONAME ; class CAlfVisual * CAlfAnchorLayout::FindTag(class TDesC8 const &)
+	?FindTag@CAlfControl@@QBEPAVCAlfVisual@@ABVTDesC8@@@Z @ 322 NONAME ; class CAlfVisual * CAlfControl::FindTag(class TDesC8 const &) const
+	?FindTag@CAlfCurvePathLayout@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 323 NONAME ; class CAlfVisual * CAlfCurvePathLayout::FindTag(class TDesC8 const &)
+	?FindTag@CAlfDeckLayout@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 324 NONAME ; class CAlfVisual * CAlfDeckLayout::FindTag(class TDesC8 const &)
+	?FindTag@CAlfFlowLayout@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 325 NONAME ; class CAlfVisual * CAlfFlowLayout::FindTag(class TDesC8 const &)
+	?FindTag@CAlfGridLayout@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 326 NONAME ; class CAlfVisual * CAlfGridLayout::FindTag(class TDesC8 const &)
+	?FindTag@CAlfImageVisual@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 327 NONAME ; class CAlfVisual * CAlfImageVisual::FindTag(class TDesC8 const &)
+	?FindTag@CAlfLCTAnchorLayout@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 328 NONAME ; class CAlfVisual * CAlfLCTAnchorLayout::FindTag(class TDesC8 const &)
+	?FindTag@CAlfLCTGridLayout@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 329 NONAME ; class CAlfVisual * CAlfLCTGridLayout::FindTag(class TDesC8 const &)
+	?FindTag@CAlfLCTTextVisual@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 330 NONAME ; class CAlfVisual * CAlfLCTTextVisual::FindTag(class TDesC8 const &)
+	?FindTag@CAlfLayout@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 331 NONAME ; class CAlfVisual * CAlfLayout::FindTag(class TDesC8 const &)
+	?FindTag@CAlfLineVisual@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 332 NONAME ; class CAlfVisual * CAlfLineVisual::FindTag(class TDesC8 const &)
+	?FindTag@CAlfMeshVisual@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 333 NONAME ; class CAlfVisual * CAlfMeshVisual::FindTag(class TDesC8 const &)
+	?FindTag@CAlfTextVisual@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 334 NONAME ; class CAlfVisual * CAlfTextVisual::FindTag(class TDesC8 const &)
+	?FindTag@CAlfViewportLayout@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 335 NONAME ; class CAlfVisual * CAlfViewportLayout::FindTag(class TDesC8 const &)
+	?FindTag@CAlfVisual@@UAEPAV1@ABVTDesC8@@@Z @ 336 NONAME ; class CAlfVisual * CAlfVisual::FindTag(class TDesC8 const &)
+	?FindVisual@CAlfLayout@@QBEHPAVCAlfVisual@@@Z @ 337 NONAME ; int CAlfLayout::FindVisual(class CAlfVisual *) const
+	?FindWidget@CAlfEnv@@QBEPAVIAlfWidget@Alf@@PBD@Z @ 338 NONAME ; class Alf::IAlfWidget * CAlfEnv::FindWidget(char const *) const
+	?Flags@CAlfVisual@@QBEIXZ @ 339 NONAME ; unsigned int CAlfVisual::Flags(void) const
+	?Flags@TAlfTimedValue@@QAEAAHXZ @ 340 NONAME ; int & TAlfTimedValue::Flags(void)
+	?FlagsToClear@TAlfVisualCommand@@QBEHXZ @ 341 NONAME ; int TAlfVisualCommand::FlagsToClear(void) const
+	?FlagsToSet@TAlfVisualCommand@@QBEHXZ @ 342 NONAME ; int TAlfVisualCommand::FlagsToSet(void) const
+	?Focus@CAlfControl@@QBEHXZ @ 343 NONAME ; int CAlfControl::Focus(void) const
+	?FocusChanged@CAlfControl@@UAEXAAVCAlfDisplay@@H@Z @ 344 NONAME ; void CAlfControl::FocusChanged(class CAlfDisplay &, int)
+	?FreeMemory@AlfUtil@@SAIPAI@Z @ 345 NONAME ; unsigned int AlfUtil::FreeMemory(unsigned int *)
+	?GrantAccessToPrivateFile@RAlfClientBase@@QAEHABVRFile@@HH@Z @ 346 NONAME ; int RAlfClientBase::GrantAccessToPrivateFile(class RFile const &, int, int)
+	?GrantAccessToPrivateFile@RAlfClientBase@@QAEHABVTDesC16@@HH@Z @ 347 NONAME ; int RAlfClientBase::GrantAccessToPrivateFile(class TDesC16 const &, int, int)
+	?HandleKeyEventL@CAlfEnv@@QAE?AW4TKeyResponse@@ABUTKeyEvent@@W4TEventCode@@PAVCAlfDisplay@@@Z @ 348 NONAME ; enum TKeyResponse CAlfEnv::HandleKeyEventL(struct TKeyEvent const &, enum TEventCode, class CAlfDisplay *)
+	?HasContent@CAlfTexture@@QBEHXZ @ 349 NONAME ; int CAlfTexture::HasContent(void) const
+	?HasTexture@TAlfImage@@QBEHXZ @ 350 NONAME ; int TAlfImage::HasTexture(void) const
+	?Hide@CAlfRoster@@QAEXAAVCAlfControlGroup@@@Z @ 351 NONAME ; void CAlfRoster::Hide(class CAlfControlGroup &)
+	?HideVisual@CAlfRoster@@QAEXAAVCAlfVisual@@@Z @ 352 NONAME ; void CAlfRoster::HideVisual(class CAlfVisual &)
+	?HitTest@CAlfControl@@QBEHABVTPoint@@@Z @ 353 NONAME ; int CAlfControl::HitTest(class TPoint const &) const
+	?HorizontalInnerPadding@CAlfLayout@@QBEHXZ @ 354 NONAME ; int CAlfLayout::HorizontalInnerPadding(void) const
+	?HorizontalOrigin@CAlfVisual@@QBE?AW4TAlfVisualHOrigin@@XZ @ 355 NONAME ; enum TAlfVisualHOrigin CAlfVisual::HorizontalOrigin(void) const
+	?HorizontalPadding@CAlfVisual@@QBEHXZ @ 356 NONAME ; int CAlfVisual::HorizontalPadding(void) const
+	?Host@CAlfControl@@QBEPAV1@XZ @ 357 NONAME ; class CAlfControl * CAlfControl::Host(void) const
+	?HostChangingL@CAlfControl@@MAEXPAV1@@Z @ 358 NONAME ; void CAlfControl::HostChangingL(class CAlfControl *)
+	?HostId@CAlfControl@@QBEHXZ @ 359 NONAME ; int CAlfControl::HostId(void) const
+	?HostToDisplay@CAlfControl@@QBE?AVTPoint@@ABV2@@Z @ 360 NONAME ; class TPoint CAlfControl::HostToDisplay(class TPoint const &) const
+	?Id@CAlfControl@@QBEHXZ @ 361 NONAME ; int CAlfControl::Id(void) const
+	?Id@CAlfTextStyle@@QBEHXZ @ 362 NONAME ; int CAlfTextStyle::Id(void) const
+	?Id@CAlfTexture@@QBEHXZ @ 363 NONAME ; int CAlfTexture::Id(void) const
+	?Id@TAlfActionCommand@@QBEHXZ @ 364 NONAME ; int TAlfActionCommand::Id(void) const
+	?Id@TAlfMarkerCommand@@QBEHXZ @ 365 NONAME ; int TAlfMarkerCommand::Id(void) const
+	?Identifier@CAlfBrush@@QBEHXZ @ 366 NONAME ; int CAlfBrush::Identifier(void) const
+	?Identifier@CAlfControl@@QBEHXZ @ 367 NONAME ; int CAlfControl::Identifier(void) const
+	?Identifier@CAlfGenComponent@@QAEHXZ @ 368 NONAME ; int CAlfGenComponent::Identifier(void)
+	?Identifier@CAlfVisual@@QBEHXZ @ 369 NONAME ; int CAlfVisual::Identifier(void) const
+	?Image@CAlfBorderBrush@@QBEABVTAlfImage@@XZ @ 370 NONAME ; class TAlfImage const & CAlfBorderBrush::Image(void) const
+	?Image@CAlfGradientBrush@@QBEABVTAlfImage@@XZ @ 371 NONAME ; class TAlfImage const & CAlfGradientBrush::Image(void) const
+	?Image@CAlfImageBrush@@QBEABVTAlfImage@@XZ @ 372 NONAME ; class TAlfImage const & CAlfImageBrush::Image(void) const
+	?Image@CAlfImageVisual@@QBEABVTAlfImage@@XZ @ 373 NONAME ; class TAlfImage const & CAlfImageVisual::Image(void) const
+	?Image@CAlfLineVisual@@QBEABVTAlfImage@@XZ @ 374 NONAME ; class TAlfImage const & CAlfLineVisual::Image(void) const
+	?Image@CAlfMeshVisual@@QBEABVTAlfImage@@XZ @ 375 NONAME ; class TAlfImage const & CAlfMeshVisual::Image(void) const
+	?Image@TAlfImageCommand@@QBEABVTAlfImage@@XZ @ 376 NONAME ; class TAlfImage const & TAlfImageCommand::Image(void) const
+	?ImageOffset@CAlfBorderBrush@@QBEABVTAlfTimedPoint@@XZ @ 377 NONAME ; class TAlfTimedPoint const & CAlfBorderBrush::ImageOffset(void) const
+	?ImagePath@CAlfTextureManager@@QBEABVTDesC16@@XZ @ 378 NONAME ; class TDesC16 const & CAlfTextureManager::ImagePath(void) const
+	?ImageVisual@TAlfImageCommand@@QBEAAVCAlfImageVisual@@XZ @ 379 NONAME ; class CAlfImageVisual & TAlfImageCommand::ImageVisual(void) const
+	?InnerPadding@CAlfLayout@@QBE?AVTPoint@@XZ @ 380 NONAME ; class TPoint CAlfLayout::InnerPadding(void) const
+	?InnerPaddingAsMetric@CAlfLayout@@QBEABUTAlfXYMetric@@XZ @ 381 NONAME ; struct TAlfXYMetric const & CAlfLayout::InnerPaddingAsMetric(void) const
+	?InnerPaddingInBaseUnits@CAlfLayout@@QBE?AUTAlfRealPoint@@XZ @ 382 NONAME ; struct TAlfRealPoint CAlfLayout::InnerPaddingInBaseUnits(void) const
+	?Insert@CAlfLayout@@QAEHPAVCAlfVisual@@H@Z @ 383 NONAME ; int CAlfLayout::Insert(class CAlfVisual *, int)
+	?InsertL@CAlfBrushArray@@QAEXHPAVCAlfBrush@@W4TAlfOwnership@@@Z @ 384 NONAME ; void CAlfBrushArray::InsertL(int, class CAlfBrush *, enum TAlfOwnership)
+	?InsertWeightL@CAlfGridLayout@@QAEXW4TAlfGridDimension@@ABUTAlfMetric@@H@Z @ 385 NONAME ; void CAlfGridLayout::InsertWeightL(enum TAlfGridDimension, struct TAlfMetric const &, int)
+	?IntTarget@TAlfTimedPoint@@QBE?AVTPoint@@XZ @ 386 NONAME ; class TPoint TAlfTimedPoint::IntTarget(void) const
+	?IntValueNow@TAlfTimedPoint@@QBE?AVTPoint@@XZ @ 387 NONAME ; class TPoint TAlfTimedPoint::IntValueNow(void) const
+	?Interpolate@AlfUtil@@SAMMMM@Z @ 388 NONAME ; float AlfUtil::Interpolate(float, float, float)
+	?IsAnimated@CAlfTexture@@QBEHXZ @ 389 NONAME ; int CAlfTexture::IsAnimated(void) const
+	?IsBold@CAlfTextStyle@@QBEHXZ @ 390 NONAME ; int CAlfTextStyle::IsBold(void) const
+	?IsCustomEvent@TAlfEvent@@QBEHXZ @ 391 NONAME ; int TAlfEvent::IsCustomEvent(void) const
+	?IsFocusing@CAlfControl@@UBEHXZ @ 392 NONAME ; int CAlfControl::IsFocusing(void) const
+	?IsItalic@CAlfTextStyle@@QBEHXZ @ 393 NONAME ; int CAlfTextStyle::IsItalic(void) const
+	?IsKeyEvent@TAlfEvent@@QBEHXZ @ 394 NONAME ; int TAlfEvent::IsKeyEvent(void) const
+	?IsLoaded@CAlfTextureManager@@QBEHABVTDesC16@@@Z @ 395 NONAME ; int CAlfTextureManager::IsLoaded(class TDesC16 const &) const
+	?IsLoaded@CAlfTextureManager@@QBEHH@Z @ 396 NONAME ; int CAlfTextureManager::IsLoaded(int) const
+	?IsLoaded@CAlfTextureManager@@QBEHPBVCAlfTexture@@@Z @ 397 NONAME ; int CAlfTextureManager::IsLoaded(class CAlfTexture const *) const
+	?IsPointerEvent@TAlfEvent@@QBEHXZ @ 398 NONAME ; int TAlfEvent::IsPointerEvent(void) const
+	?IsScrollerEvent@TAlfEvent@@QBEHXZ @ 399 NONAME ; int TAlfEvent::IsScrollerEvent(void) const
+	?IsStrikeThrough@CAlfTextStyle@@QBEHXZ @ 400 NONAME ; int CAlfTextStyle::IsStrikeThrough(void) const
+	?IsTagged@CAlfVisual@@QBEHXZ @ 401 NONAME ; int CAlfVisual::IsTagged(void) const
+	?IsTransformed@CAlfControlGroup@@QBEHXZ @ 402 NONAME ; int CAlfControlGroup::IsTransformed(void) const
+	?IsUnderline@CAlfTextStyle@@QBEHXZ @ 403 NONAME ; int CAlfTextStyle::IsUnderline(void) const
+	?KeyEvent@TAlfEvent@@QBEABUTKeyEvent@@XZ @ 404 NONAME ; struct TKeyEvent const & TAlfEvent::KeyEvent(void) const
+	?LastReceivedPtrEvent@CAlfEnv@@QAEPAUTPointerEvent@@XZ @ 405 NONAME ; struct TPointerEvent * CAlfEnv::LastReceivedPtrEvent(void)
+	?LaunchAppL@RAlfClientBase@@IAEXVTUid@@IAAVTThreadId@@@Z @ 406 NONAME ; void RAlfClientBase::LaunchAppL(class TUid, unsigned int, class TThreadId &)
+	?Layout@CAlfVisual@@QBEPAVCAlfLayout@@XZ @ 407 NONAME ; class CAlfLayout * CAlfVisual::Layout(void) const
+	?LayoutMetricsUtility@CAlfEnv@@QAEPAVCAlfLayoutMetricsUtility@@XZ @ 408 NONAME ; class CAlfLayoutMetricsUtility * CAlfEnv::LayoutMetricsUtility(void)
+	?Length@CAlfCurvePath@@QBEMXZ @ 409 NONAME ; float CAlfCurvePath::Length(void) const
+	?LengthUnit@AlfUtil@@SAMXZ @ 410 NONAME ; float AlfUtil::LengthUnit(void)
+	?LoadIdentity@CAlfTransformation@@QAEXXZ @ 411 NONAME ; void CAlfTransformation::LoadIdentity(void)
+	?LoadSceneL@CAlfM3GMesh@@UAEXABVTDesC16@@@Z @ 412 NONAME ; void CAlfM3GMesh::LoadSceneL(class TDesC16 const &)
+	?LoadTextureL@CAlfTextureManager@@QAEAAVCAlfTexture@@ABVTDesC16@@VTSize@@W4TAlfTextureFlags@@H@Z @ 413 NONAME ; class CAlfTexture & CAlfTextureManager::LoadTextureL(class TDesC16 const &, class TSize, enum TAlfTextureFlags, int)
+	?LoadTextureL@CAlfTextureManager@@QAEAAVCAlfTexture@@ABVTDesC16@@W4TAlfTextureFlags@@H@Z @ 414 NONAME ; class CAlfTexture & CAlfTextureManager::LoadTextureL(class TDesC16 const &, enum TAlfTextureFlags, int)
+	?LoadTextureL@CAlfTextureManager@@QAEAAVCAlfTexture@@HVTSize@@W4TAlfTextureFlags@@@Z @ 415 NONAME ; class CAlfTexture & CAlfTextureManager::LoadTextureL(int, class TSize, enum TAlfTextureFlags)
+	?LocalToDisplay@CAlfVisual@@QBE?AUTAlfRealPoint@@ABU2@@Z @ 416 NONAME ; struct TAlfRealPoint CAlfVisual::LocalToDisplay(struct TAlfRealPoint const &) const
+	?LocalToDisplay@CAlfVisual@@QBE?AVTPoint@@ABV2@@Z @ 417 NONAME ; class TPoint CAlfVisual::LocalToDisplay(class TPoint const &) const
+	?Loop@CAlfCurvePath@@QBEHXZ @ 418 NONAME ; int CAlfCurvePath::Loop(void) const
+	?M3GMesh@CAlfMeshVisual@@QBEPAVCAlfM3GMesh@@XZ @ 419 NONAME ; class CAlfM3GMesh * CAlfMeshVisual::M3GMesh(void) const
+	?Magnitude@TAlfScrollerEvent@@QBEHXZ @ 420 NONAME ; int TAlfScrollerEvent::Magnitude(void) const
+	?MakeCubeL@CAlfProceduralMesh@@QAEXMMMM@Z @ 421 NONAME ; void CAlfProceduralMesh::MakeCubeL(float, float, float, float)
+	?MakeSphereL@CAlfProceduralMesh@@QAEXMHH@Z @ 422 NONAME ; void CAlfProceduralMesh::MakeSphereL(float, int, int)
+	?MakeTorusL@CAlfProceduralMesh@@QAEXMMHHM@Z @ 423 NONAME ; void CAlfProceduralMesh::MakeTorusL(float, float, int, int, float)
+	?MapValue@CAlfCurvePath@@UBEMMH@Z @ 424 NONAME ; float CAlfCurvePath::MapValue(float, int) const
+	?MapValue@CAlfCurvePathLayout@@UBEMMH@Z @ 425 NONAME ; float CAlfCurvePathLayout::MapValue(float, int) const
+	?MappingFunctionIdentifier@CAlfCurvePath@@UBEHXZ @ 426 NONAME ; int CAlfCurvePath::MappingFunctionIdentifier(void) const
+	?MappingFunctionIdentifier@CAlfCurvePathLayout@@UBEHXZ @ 427 NONAME ; int CAlfCurvePathLayout::MappingFunctionIdentifier(void) const
+	?MappingFunctionIdentifier@TAlfTimedValue@@QBEHXZ @ 428 NONAME ; int TAlfTimedValue::MappingFunctionIdentifier(void) const
+	?MarkVisual@CAlfLayoutMetricsUtility@@QAEXPAVTDesC16@@PAVCAlfTextVisual@@@Z @ 429 NONAME ; void CAlfLayoutMetricsUtility::MarkVisual(class TDesC16 *, class CAlfTextVisual *)
+	?Material@CAlfProceduralMesh@@QBEABUTAlfMaterial@@XZ @ 430 NONAME ; struct TAlfMaterial const & CAlfProceduralMesh::Material(void) const
+	?MaxLineCount@CAlfTextVisual@@QBEHXZ @ 431 NONAME ; int CAlfTextVisual::MaxLineCount(void) const
+	?MaxSize@CAlfVisual@@QBE?AVTSize@@XZ @ 432 NONAME ; class TSize CAlfVisual::MaxSize(void) const
+	?MaxTextureSize@CAlfTexture@@QAE?AVTSize@@XZ @ 433 NONAME ; class TSize CAlfTexture::MaxTextureSize(void)
+	?MeasureVisuals@CAlfLayoutMetricsUtility@@QAEXXZ @ 434 NONAME ; void CAlfLayoutMetricsUtility::MeasureVisuals(void)
+	?Mesh@CAlfMeshVisual@@QAEAAVCAlfMesh@@XZ @ 435 NONAME ; class CAlfMesh & CAlfMeshVisual::Mesh(void)
+	?MeshType@CAlfMesh@@QBEHXZ @ 436 NONAME ; int CAlfMesh::MeshType(void) const
+	?MilliSecondsUntilCommand@CAlfEnv@@QAEHPAX@Z @ 437 NONAME ; int CAlfEnv::MilliSecondsUntilCommand(void *)
+	?MilliSecondsUntilCommand@CAlfEnv@@QAEHPAXW4TAlfCommandType@@@Z @ 438 NONAME ; int CAlfEnv::MilliSecondsUntilCommand(void *, enum TAlfCommandType)
+	?MilliSecondsUntilCommand@CAlfEnv@@QAEHPAXW4TAlfOp@@@Z @ 439 NONAME ; int CAlfEnv::MilliSecondsUntilCommand(void *, enum TAlfOp)
+	?MilliSecondsUntilCustomCommand@CAlfEnv@@QAEHPAVMAlfEventHandler@@@Z @ 440 NONAME ; int CAlfEnv::MilliSecondsUntilCustomCommand(class MAlfEventHandler *)
+	?MilliSecondsUntilCustomCommand@CAlfEnv@@QAEHPAVMAlfEventHandler@@H@Z @ 441 NONAME ; int CAlfEnv::MilliSecondsUntilCustomCommand(class MAlfEventHandler *, int)
+	?Mimic@CAlfVisual@@QAEXAAV1@H@Z @ 442 NONAME ; void CAlfVisual::Mimic(class CAlfVisual &, int)
+	?MinSize@CAlfVisual@@QBE?AVTSize@@XZ @ 443 NONAME ; class TSize CAlfVisual::MinSize(void) const
+	?Mode@CAlfFlowLayout@@QBEHXZ @ 444 NONAME ; int CAlfFlowLayout::Mode(void) const
+	?Move@CAlfVisual@@QAEXABVTPoint@@H@Z @ 445 NONAME ; void CAlfVisual::Move(class TPoint const &, int)
+	?MoveToFront@CAlfVisual@@QAEXH@Z @ 446 NONAME ; void CAlfVisual::MoveToFront(int)
+	?MoveVisualToBack@CAlfLayout@@QAEXAAVCAlfVisual@@H@Z @ 447 NONAME ; void CAlfLayout::MoveVisualToBack(class CAlfVisual &, int)
+	?MoveVisualToFront@CAlfLayout@@QAEXAAVCAlfVisual@@H@Z @ 448 NONAME ; void CAlfLayout::MoveVisualToFront(class CAlfVisual &, int)
+	?MoveVisualToFront@CAlfRoster@@QAEXAAVCAlfVisual@@@Z @ 449 NONAME ; void CAlfRoster::MoveVisualToFront(class CAlfVisual &)
+	?NearestFontInTwipsL@AlfUtil@@SAPAVCFont@@ABVTFontSpec@@@Z @ 450 NONAME ; class CFont * AlfUtil::NearestFontInTwipsL(class TFontSpec const &)
+	?NewControlGroupL@CAlfEnv@@QAEAAVCAlfControlGroup@@H@Z @ 451 NONAME ; class CAlfControlGroup & CAlfEnv::NewControlGroupL(int)
+	?NewDisplayL@CAlfEnv@@QAEAAVCAlfDisplay@@ABVTRect@@HH@Z @ 452 NONAME ; class CAlfDisplay & CAlfEnv::NewDisplayL(class TRect const &, int, int)
+	?NewL@CAlfAverageMappingFunction@@SAPAV1@AAVCAlfEnv@@PAVMAlfMappingFunction@@1@Z @ 453 NONAME ; class CAlfAverageMappingFunction * CAlfAverageMappingFunction::NewL(class CAlfEnv &, class MAlfMappingFunction *, class MAlfMappingFunction *)
+	?NewL@CAlfBorderBrush@@SAPAV1@AAVCAlfEnv@@HHHH@Z @ 454 NONAME ; class CAlfBorderBrush * CAlfBorderBrush::NewL(class CAlfEnv &, int, int, int, int)
+	?NewL@CAlfConstantMappingFunction@@SAPAV1@AAVCAlfEnv@@M@Z @ 455 NONAME ; class CAlfConstantMappingFunction * CAlfConstantMappingFunction::NewL(class CAlfEnv &, float)
+	?NewL@CAlfCosineMappingFunction@@SAPAV1@AAVCAlfEnv@@MM@Z @ 456 NONAME ; class CAlfCosineMappingFunction * CAlfCosineMappingFunction::NewL(class CAlfEnv &, float, float)
+	?NewL@CAlfCurvePath@@SAPAV1@AAVCAlfEnv@@H@Z @ 457 NONAME ; class CAlfCurvePath * CAlfCurvePath::NewL(class CAlfEnv &, int)
+	?NewL@CAlfDropShadowBrush@@SAPAV1@AAVCAlfEnv@@H@Z @ 458 NONAME ; class CAlfDropShadowBrush * CAlfDropShadowBrush::NewL(class CAlfEnv &, int)
+	?NewL@CAlfFrameBrush@@SAPAV1@AAVCAlfEnv@@ABVTAknsItemID@@HH@Z @ 459 NONAME ; class CAlfFrameBrush * CAlfFrameBrush::NewL(class CAlfEnv &, class TAknsItemID const &, int, int)
+	?NewL@CAlfGenComponent@@SAPAV1@AAVCAlfEnv@@HHABVTDesC8@@@Z @ 460 NONAME ; class CAlfGenComponent * CAlfGenComponent::NewL(class CAlfEnv &, int, int, class TDesC8 const &)
+	?NewL@CAlfGradientBrush@@SAPAV1@AAVCAlfEnv@@@Z @ 461 NONAME ; class CAlfGradientBrush * CAlfGradientBrush::NewL(class CAlfEnv &)
+	?NewL@CAlfImageBrush@@SAPAV1@AAVCAlfEnv@@ABVTAlfImage@@@Z @ 462 NONAME ; class CAlfImageBrush * CAlfImageBrush::NewL(class CAlfEnv &, class TAlfImage const &)
+	?NewL@CAlfLinearMappingFunction@@SAPAV1@AAVCAlfEnv@@MM@Z @ 463 NONAME ; class CAlfLinearMappingFunction * CAlfLinearMappingFunction::NewL(class CAlfEnv &, float, float)
+	?NewL@CAlfShadowBorderBrush@@SAPAV1@AAVCAlfEnv@@H@Z @ 464 NONAME ; class CAlfShadowBorderBrush * CAlfShadowBorderBrush::NewL(class CAlfEnv &, int)
+	?NewL@CAlfSineMappingFunction@@SAPAV1@AAVCAlfEnv@@MM@Z @ 465 NONAME ; class CAlfSineMappingFunction * CAlfSineMappingFunction::NewL(class CAlfEnv &, float, float)
+	?NewL@CAlfStatic@@SAPAV1@PAVCAlfEnv@@@Z @ 466 NONAME ; class CAlfStatic * CAlfStatic::NewL(class CAlfEnv *)
+	?NewL@CAlfTableMappingFunction@@SAPAV1@AAVCAlfEnv@@@Z @ 467 NONAME ; class CAlfTableMappingFunction * CAlfTableMappingFunction::NewL(class CAlfEnv &)
+	?NewL@CAlfTransformation@@SAPAV1@AAVCAlfEnv@@@Z @ 468 NONAME ; class CAlfTransformation * CAlfTransformation::NewL(class CAlfEnv &)
+	?NewLC@CAlfBorderBrush@@SAPAV1@AAVCAlfEnv@@HHHH@Z @ 469 NONAME ; class CAlfBorderBrush * CAlfBorderBrush::NewLC(class CAlfEnv &, int, int, int, int)
+	?NewLC@CAlfCurvePath@@SAPAV1@AAVCAlfEnv@@H@Z @ 470 NONAME ; class CAlfCurvePath * CAlfCurvePath::NewLC(class CAlfEnv &, int)
+	?NewLC@CAlfDropShadowBrush@@SAPAV1@AAVCAlfEnv@@H@Z @ 471 NONAME ; class CAlfDropShadowBrush * CAlfDropShadowBrush::NewLC(class CAlfEnv &, int)
+	??0CAlfAnchorLayout@@QAE@XZ @ 472 NONAME ; CAlfAnchorLayout::CAlfAnchorLayout(void)
+	?NewLC@CAlfFrameBrush@@SAPAV1@AAVCAlfEnv@@ABVTAknsItemID@@HH@Z @ 473 NONAME ; class CAlfFrameBrush * CAlfFrameBrush::NewLC(class CAlfEnv &, class TAknsItemID const &, int, int)
+	?NewLC@CAlfGradientBrush@@SAPAV1@AAVCAlfEnv@@@Z @ 474 NONAME ; class CAlfGradientBrush * CAlfGradientBrush::NewLC(class CAlfEnv &)
+	?NewLC@CAlfImageBrush@@SAPAV1@AAVCAlfEnv@@ABVTAlfImage@@@Z @ 475 NONAME ; class CAlfImageBrush * CAlfImageBrush::NewLC(class CAlfEnv &, class TAlfImage const &)
+	?NewLC@CAlfShadowBorderBrush@@SAPAV1@AAVCAlfEnv@@H@Z @ 476 NONAME ; class CAlfShadowBorderBrush * CAlfShadowBorderBrush::NewLC(class CAlfEnv &, int)
+	?NewLC@CAlfStatic@@SAPAV1@PAVCAlfEnv@@@Z @ 477 NONAME ; class CAlfStatic * CAlfStatic::NewLC(class CAlfEnv *)
+	?NewLC@CAlfTransformation@@SAPAV1@AAVCAlfEnv@@@Z @ 478 NONAME ; class CAlfTransformation * CAlfTransformation::NewLC(class CAlfEnv &)
+	?NewLayoutL@AlfVisualFactory@@SAPAVCAlfLayout@@W4TAlfLayoutType@@PAV2@AAVCAlfControl@@AAVCAlfEnv@@H@Z @ 479 NONAME ; class CAlfLayout * AlfVisualFactory::NewLayoutL(enum TAlfLayoutType, class CAlfLayout *, class CAlfControl &, class CAlfEnv &, int)
+	?NewLayoutLC@AlfVisualFactory@@SAPAVCAlfLayout@@W4TAlfLayoutType@@PAV2@AAVCAlfControl@@AAVCAlfEnv@@H@Z @ 480 NONAME ; class CAlfLayout * AlfVisualFactory::NewLayoutLC(enum TAlfLayoutType, class CAlfLayout *, class CAlfControl &, class CAlfEnv &, int)
+	?NewVisualL@AlfVisualFactory@@SAPAVCAlfVisual@@W4TAlfVisualType@@PAVCAlfLayout@@AAVCAlfControl@@AAVCAlfEnv@@H@Z @ 481 NONAME ; class CAlfVisual * AlfVisualFactory::NewVisualL(enum TAlfVisualType, class CAlfLayout *, class CAlfControl &, class CAlfEnv &, int)
+	?NewVisualLC@AlfVisualFactory@@SAPAVCAlfVisual@@W4TAlfVisualType@@PAVCAlfLayout@@AAVCAlfControl@@AAVCAlfEnv@@H@Z @ 482 NONAME ; class CAlfVisual * AlfVisualFactory::NewVisualLC(enum TAlfVisualType, class CAlfLayout *, class CAlfControl &, class CAlfEnv &, int)
+	?NonIdentityCount@CAlfTransformation@@QBEHXZ @ 483 NONAME ; int CAlfTransformation::NonIdentityCount(void) const
+	?NormalFromPoints@AlfUtil@@SAXQAY02MQAM@Z @ 484 NONAME ; void AlfUtil::NormalFromPoints(float [3] * const, float * const)
+	?NotifyControlVisibility@CAlfControl@@MAEXHAAVCAlfDisplay@@@Z @ 485 NONAME ; void CAlfControl::NotifyControlVisibility(int, class CAlfDisplay &)
+	?NotifyLayoutChangedL@CAlfEnv@@QAEXXZ @ 486 NONAME ; void CAlfEnv::NotifyLayoutChangedL(void)
+	?NotifySkinChangedL@CAlfEnv@@QAEXXZ @ 487 NONAME ; void CAlfEnv::NotifySkinChangedL(void)
+	?Object@TAlfObjectCommand@@QBEPAXXZ @ 488 NONAME ; void * TAlfObjectCommand::Object(void) const
+	?ObjectCommand@TAlfCommand@@UBEPBVTAlfObjectCommand@@XZ @ 489 NONAME ; class TAlfObjectCommand const * TAlfCommand::ObjectCommand(void) const
+	?ObjectCommand@TAlfObjectCommand@@UBEPBV1@XZ @ 490 NONAME ; class TAlfObjectCommand const * TAlfObjectCommand::ObjectCommand(void) const
+	?ObjectProvider@CAlfDisplay@@QBEPAVMObjectProvider@@XZ @ 491 NONAME ; class MObjectProvider * CAlfDisplay::ObjectProvider(void) const
+	?OfferEventL@CAlfControl@@UAEHABVTAlfEvent@@@Z @ 492 NONAME ; int CAlfControl::OfferEventL(class TAlfEvent const &)
+	?Offset@CAlfCosineMappingFunction@@QBEMXZ @ 493 NONAME ; float CAlfCosineMappingFunction::Offset(void) const
+	?Offset@CAlfCurvePath@@QBEABVTAlfTimedPoint@@XZ @ 494 NONAME ; class TAlfTimedPoint const & CAlfCurvePath::Offset(void) const
+	?Offset@CAlfImageBrush@@QBEABVTAlfTimedPoint@@XZ @ 495 NONAME ; class TAlfTimedPoint const & CAlfImageBrush::Offset(void) const
+	?Offset@CAlfImageVisual@@QAE?AVTAlfTimedPoint@@XZ @ 496 NONAME ; class TAlfTimedPoint CAlfImageVisual::Offset(void)
+	?Offset@CAlfLinearMappingFunction@@QBEMXZ @ 497 NONAME ; float CAlfLinearMappingFunction::Offset(void) const
+	?Offset@CAlfSineMappingFunction@@QBEMXZ @ 498 NONAME ; float CAlfSineMappingFunction::Offset(void) const
+	?Opacity@CAlfBrush@@QBEABVTAlfTimedValue@@XZ @ 499 NONAME ; class TAlfTimedValue const & CAlfBrush::Opacity(void) const
+	?Opacity@CAlfGradientBrush@@QBEMH@Z @ 500 NONAME ; float CAlfGradientBrush::Opacity(int) const
+	?Opacity@CAlfVisual@@QBEABVTAlfTimedValue@@XZ @ 501 NONAME ; class TAlfTimedValue const & CAlfVisual::Opacity(void) const
+	?OpenL@RAlfClientBase@@QAEXXZ @ 502 NONAME ; void RAlfClientBase::OpenL(void)
+	?Operation@TAlfObjectCommand@@QBE?AW4TAlfOp@@XZ @ 503 NONAME ; enum TAlfOp TAlfObjectCommand::Operation(void) const
+	?OrdinalToBlock@CAlfGridLayout@@QBE?AVTPoint@@H@Z @ 504 NONAME ; class TPoint CAlfGridLayout::OrdinalToBlock(int) const
+	?Orientation@TAlfScrollerEvent@@QBE?AW4TOrientation@1@XZ @ 505 NONAME ; enum TAlfScrollerEvent::TOrientation TAlfScrollerEvent::Orientation(void) const
+	?Owner@CAlfVisual@@QBEAAVCAlfControl@@XZ @ 506 NONAME ; class CAlfControl & CAlfVisual::Owner(void) const
+	?Padding@CAlfVisual@@QBE?AVTPoint@@XZ @ 507 NONAME ; class TPoint CAlfVisual::Padding(void) const
+	?PaddingAsMetric@CAlfVisual@@QBEABUTAlfBoxMetric@@XZ @ 508 NONAME ; struct TAlfBoxMetric const & CAlfVisual::PaddingAsMetric(void) const
+	?PaddingInPixels@CAlfVisual@@QBE?AUTAlfRealRect@@XZ @ 509 NONAME ; struct TAlfRealRect CAlfVisual::PaddingInPixels(void) const
+	?Param@TAlfCustomEventCommand@@QBEHXZ @ 510 NONAME ; int TAlfCustomEventCommand::Param(void) const
+	?ParentId@CAlfTextStyle@@QBEHXZ @ 511 NONAME ; int CAlfTextStyle::ParentId(void) const
+	?Path@CAlfLineVisual@@QAEPAVCAlfCurvePath@@XZ @ 512 NONAME ; class CAlfCurvePath * CAlfLineVisual::Path(void)
+	?PauseRefresh@CAlfEnv@@QAEXXZ @ 513 NONAME ; void CAlfEnv::PauseRefresh(void)
+	?PitchAngle@CAlfMeshVisual@@QBE?AVTAlfTimedValue@@XZ @ 514 NONAME ; class TAlfTimedValue CAlfMeshVisual::PitchAngle(void) const
+	?PointerDown@TAlfEvent@@QBEHXZ @ 515 NONAME ; int TAlfEvent::PointerDown(void) const
+	?PointerEvent@TAlfEvent@@QBEABUTPointerEvent@@XZ @ 516 NONAME ; struct TPointerEvent const & TAlfEvent::PointerEvent(void) const
+	?PointerLongTap@TAlfEvent@@QBEHXZ @ 517 NONAME ; int TAlfEvent::PointerLongTap(void) const
+	?PointerUp@TAlfEvent@@QBEHXZ @ 518 NONAME ; int TAlfEvent::PointerUp(void) const
+	?Pos@CAlfVisual@@QBE?AVTAlfTimedPoint@@XZ @ 519 NONAME ; class TAlfTimedPoint CAlfVisual::Pos(void) const
+	?Power2@AlfUtil@@SAHH@Z @ 520 NONAME ; int AlfUtil::Power2(int)
+	?Power2RoundDown@AlfUtil@@SAHH@Z @ 521 NONAME ; int AlfUtil::Power2RoundDown(int)
+	?PrependImagePath@CAlfTextureManager@@QAEXAAVTDes16@@@Z @ 522 NONAME ; void CAlfTextureManager::PrependImagePath(class TDes16 &)
+	?PrimaryDisplay@CAlfEnv@@QBEAAVCAlfDisplay@@XZ @ 523 NONAME ; class CAlfDisplay & CAlfEnv::PrimaryDisplay(void) const
+	?Priority@CAlfTexture@@QBEHXZ @ 524 NONAME ; int CAlfTexture::Priority(void) const
+	?ProceduralMesh@CAlfMeshVisual@@QBEPAVCAlfProceduralMesh@@XZ @ 525 NONAME ; class CAlfProceduralMesh * CAlfMeshVisual::ProceduralMesh(void) const
+	?Processor@CAlfTextureManager@@QAEAAVCAlfTextureProcessor@@XZ @ 526 NONAME ; class CAlfTextureProcessor & CAlfTextureManager::Processor(void)
+	?PropertyClear@CAlfPropertyOwner@@QAEXXZ @ 527 NONAME ; void CAlfPropertyOwner::PropertyClear(void)
+	?PropertyFindInteger@CAlfPropertyOwner@@QBEHABVTDesC8@@PAH@Z @ 528 NONAME ; int CAlfPropertyOwner::PropertyFindInteger(class TDesC8 const &, int *) const
+	?PropertyFindString@CAlfPropertyOwner@@QBEHABVTDesC8@@PAPAVTDesC16@@@Z @ 529 NONAME ; int CAlfPropertyOwner::PropertyFindString(class TDesC8 const &, class TDesC16 * *) const
+	?PropertyOwnerExtension@CAlfAnchorLayout@@MAEXABVTUid@@PAPAX@Z @ 530 NONAME ; void CAlfAnchorLayout::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfBrush@@MAEXABVTUid@@PAPAX@Z @ 531 NONAME ; void CAlfBrush::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfControl@@MAEXABVTUid@@PAPAX@Z @ 532 NONAME ; void CAlfControl::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfCurvePathLayout@@MAEXABVTUid@@PAPAX@Z @ 533 NONAME ; void CAlfCurvePathLayout::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfDeckLayout@@MAEXABVTUid@@PAPAX@Z @ 534 NONAME ; void CAlfDeckLayout::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfFlowLayout@@MAEXABVTUid@@PAPAX@Z @ 535 NONAME ; void CAlfFlowLayout::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfGridLayout@@MAEXABVTUid@@PAPAX@Z @ 536 NONAME ; void CAlfGridLayout::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfImageVisual@@MAEXABVTUid@@PAPAX@Z @ 537 NONAME ; void CAlfImageVisual::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfLCTAnchorLayout@@MAEXABVTUid@@PAPAX@Z @ 538 NONAME ; void CAlfLCTAnchorLayout::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfLCTGridLayout@@MAEXABVTUid@@PAPAX@Z @ 539 NONAME ; void CAlfLCTGridLayout::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfLCTTextVisual@@MAEXABVTUid@@PAPAX@Z @ 540 NONAME ; void CAlfLCTTextVisual::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfLayout@@MAEXABVTUid@@PAPAX@Z @ 541 NONAME ; void CAlfLayout::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfLineVisual@@MAEXABVTUid@@PAPAX@Z @ 542 NONAME ; void CAlfLineVisual::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfMeshVisual@@MAEXABVTUid@@PAPAX@Z @ 543 NONAME ; void CAlfMeshVisual::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfPropertyOwner@@MAEXABVTUid@@PAPAX@Z @ 544 NONAME ; void CAlfPropertyOwner::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfTextVisual@@MAEXABVTUid@@PAPAX@Z @ 545 NONAME ; void CAlfTextVisual::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfViewportLayout@@MAEXABVTUid@@PAPAX@Z @ 546 NONAME ; void CAlfViewportLayout::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyOwnerExtension@CAlfVisual@@MAEXABVTUid@@PAPAX@Z @ 547 NONAME ; void CAlfVisual::PropertyOwnerExtension(class TUid const &, void * *)
+	?PropertyRemove@CAlfPropertyOwner@@QAEHABVTDesC8@@@Z @ 548 NONAME ; int CAlfPropertyOwner::PropertyRemove(class TDesC8 const &)
+	?PropertySetIntegerL@CAlfPropertyOwner@@QAEHABVTDesC8@@HHH@Z @ 549 NONAME ; int CAlfPropertyOwner::PropertySetIntegerL(class TDesC8 const &, int, int, int)
+	?PropertySetStringL@CAlfPropertyOwner@@QAEHABVTDesC8@@ABVTDesC16@@@Z @ 550 NONAME ; int CAlfPropertyOwner::PropertySetStringL(class TDesC8 const &, class TDesC16 const &)
+	?Quality@CAlfDisplay@@QBE?AW4TAlfQuality@@XZ @ 551 NONAME ; enum TAlfQuality CAlfDisplay::Quality(void) const
+	?QuickLength@AlfUtil@@SAMAAUTAlfRealPoint@@@Z @ 552 NONAME ; float AlfUtil::QuickLength(struct TAlfRealPoint &)
+	?QuickLength@AlfUtil@@SAMMM@Z @ 553 NONAME ; float AlfUtil::QuickLength(float, float)
+	?QuickNormalize@AlfUtil@@SAXAAUTAlfRealPoint@@@Z @ 554 NONAME ; void AlfUtil::QuickNormalize(struct TAlfRealPoint &)
+	?QuickNormalize@AlfUtil@@SAXQAM@Z @ 555 NONAME ; void AlfUtil::QuickNormalize(float * const)
+	?RandomInt@AlfUtil@@SAHHH@Z @ 556 NONAME ; int AlfUtil::RandomInt(int, int)
+	?RandomReal@AlfUtil@@SAMMM@Z @ 557 NONAME ; float AlfUtil::RandomReal(float, float)
+	?Recipient@TAlfCustomEventCommand@@QBEPAVMAlfEventHandler@@XZ @ 558 NONAME ; class MAlfEventHandler * TAlfCustomEventCommand::Recipient(void) const
+	?RefreshCallBack@CAlfEnv@@SAHPAX@Z @ 559 NONAME ; int CAlfEnv::RefreshCallBack(void *)
+	?RefreshMode@CAlfEnv@@QAE?AW4TAlfRefreshMode@@XZ @ 560 NONAME ; enum TAlfRefreshMode CAlfEnv::RefreshMode(void)
+	?Release@CAlfEnv@@QAEXH@Z @ 561 NONAME ; void CAlfEnv::Release(int)
+	?ReleaseFont@AlfUtil@@SAXPAVCFont@@@Z @ 562 NONAME ; void AlfUtil::ReleaseFont(class CFont *)
+	?RelinquishFocus@CAlfControl@@QAEXXZ @ 563 NONAME ; void CAlfControl::RelinquishFocus(void)
+	?Remove@CAlfBrushArray@@QAEXH@Z @ 564 NONAME ; void CAlfBrushArray::Remove(int)
+	?Remove@CAlfControl@@QAEXPAVCAlfVisual@@@Z @ 565 NONAME ; void CAlfControl::Remove(class CAlfVisual *)
+	?Remove@CAlfControlGroup@@QAEHPAVCAlfControl@@@Z @ 566 NONAME ; int CAlfControlGroup::Remove(class CAlfControl *)
+	?Remove@CAlfLayout@@QAEXPAVCAlfVisual@@H@Z @ 567 NONAME ; void CAlfLayout::Remove(class CAlfVisual *, int)
+	?RemoveActionObserver@CAlfEnv@@QAEXPAVMAlfActionObserver@@@Z @ 568 NONAME ; void CAlfEnv::RemoveActionObserver(class MAlfActionObserver *)
+	?RemoveAnchor@CAlfAnchorLayout@@QAEXW4TAlfAnchor@@H@Z @ 569 NONAME ; void CAlfAnchorLayout::RemoveAnchor(enum TAlfAnchor, int)
+	?RemoveAndDestroyAllD@CAlfAnchorLayout@@UAEXXZ @ 570 NONAME ; void CAlfAnchorLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfCurvePathLayout@@UAEXXZ @ 571 NONAME ; void CAlfCurvePathLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfDeckLayout@@UAEXXZ @ 572 NONAME ; void CAlfDeckLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfFlowLayout@@UAEXXZ @ 573 NONAME ; void CAlfFlowLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfGridLayout@@UAEXXZ @ 574 NONAME ; void CAlfGridLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfImageVisual@@UAEXXZ @ 575 NONAME ; void CAlfImageVisual::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfLCTAnchorLayout@@UAEXXZ @ 576 NONAME ; void CAlfLCTAnchorLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfLCTGridLayout@@UAEXXZ @ 577 NONAME ; void CAlfLCTGridLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfLCTTextVisual@@UAEXXZ @ 578 NONAME ; void CAlfLCTTextVisual::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfLayout@@UAEXXZ @ 579 NONAME ; void CAlfLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfLineVisual@@UAEXXZ @ 580 NONAME ; void CAlfLineVisual::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfMeshVisual@@UAEXXZ @ 581 NONAME ; void CAlfMeshVisual::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfTextVisual@@UAEXXZ @ 582 NONAME ; void CAlfTextVisual::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfViewportLayout@@UAEXXZ @ 583 NONAME ; void CAlfViewportLayout::RemoveAndDestroyAllD(void)
+	?RemoveAndDestroyAllD@CAlfVisual@@UAEXXZ @ 584 NONAME ; void CAlfVisual::RemoveAndDestroyAllD(void)
+	?RemoveConnection@CAlfControl@@QAEXPAV1@@Z @ 585 NONAME ; void CAlfControl::RemoveConnection(class CAlfControl *)
+	?RemoveLoadObserver@CAlfTextureManager@@QAEXPAVMAlfTextureLoadingCompletedObserver@@@Z @ 586 NONAME ; void CAlfTextureManager::RemoveLoadObserver(class MAlfTextureLoadingCompletedObserver *)
+	?RemovePointerEventObserver@CAlfRoster@@QAEHW4TAlfPointerEventFlags@@AAVCAlfControl@@@Z @ 587 NONAME ; int CAlfRoster::RemovePointerEventObserver(enum TAlfPointerEventFlags, class CAlfControl &)
+	?RemoveStateObserver@CAlfTextureManager@@QAEXPAVMAlfTextureManagerStateChangedObserver@@@Z @ 588 NONAME ; void CAlfTextureManager::RemoveStateObserver(class MAlfTextureManagerStateChangedObserver *)
+	?RemoveWeightL@CAlfGridLayout@@QAEXW4TAlfGridDimension@@H@Z @ 589 NONAME ; void CAlfGridLayout::RemoveWeightL(enum TAlfGridDimension, int)
+	?Renderer@CAlfEnv@@QBE?AW4TAlfRenderer@@XZ @ 590 NONAME ; enum TAlfRenderer CAlfEnv::Renderer(void) const
+	?Reorder@CAlfLayout@@QAEXAAVCAlfVisual@@HH@Z @ 591 NONAME ; void CAlfLayout::Reorder(class CAlfVisual &, int, int)
+	?ReplaceStep@CAlfTransformation@@QAEXHUTTransform@1@@Z @ 592 NONAME ; void CAlfTransformation::ReplaceStep(int, struct CAlfTransformation::TTransform)
+	?ReplaceWeightL@CAlfGridLayout@@QAEXW4TAlfGridDimension@@ABUTAlfMetric@@H@Z @ 593 NONAME ; void CAlfGridLayout::ReplaceWeightL(enum TAlfGridDimension, struct TAlfMetric const &, int)
+	?Reset@CAlfAnchorLayout@@QAEXXZ @ 594 NONAME ; void CAlfAnchorLayout::Reset(void)
+	?Reset@CAlfBrushArray@@QAEXXZ @ 595 NONAME ; void CAlfBrushArray::Reset(void)
+	?Reset@CAlfCurvePath@@QAEXXZ @ 596 NONAME ; void CAlfCurvePath::Reset(void)
+	?Reset@CAlfMesh@@QAEXXZ @ 597 NONAME ; void CAlfMesh::Reset(void)
+	?ResourceId@CAlfControlGroup@@QBEHXZ @ 598 NONAME ; int CAlfControlGroup::ResourceId(void) const
+	?RestoreL@CAlfEnv@@QAEXXZ @ 599 NONAME ; void CAlfEnv::RestoreL(void)
+	?Role@CAlfControl@@QBEHXZ @ 600 NONAME ; int CAlfControl::Role(void) const
+	?Roster@CAlfDisplay@@QAEAAVCAlfRoster@@XZ @ 601 NONAME ; class CAlfRoster & CAlfDisplay::Roster(void)
+	?Roster@CAlfDisplay@@QBEABVCAlfRoster@@XZ @ 602 NONAME ; class CAlfRoster const & CAlfDisplay::Roster(void) const
+	?Rotate@CAlfTransformation@@QAEXABVTAlfTimedValue@@@Z @ 603 NONAME ; void CAlfTransformation::Rotate(class TAlfTimedValue const &)
+	?Rotate@CAlfTransformation@@QAEXABVTAlfTimedValue@@MMM@Z @ 604 NONAME ; void CAlfTransformation::Rotate(class TAlfTimedValue const &, float, float, float)
+	?Rotate@CAlfTransformation@@QAEXM@Z @ 605 NONAME ; void CAlfTransformation::Rotate(float)
+	?Rotate@CAlfTransformation@@QAEXMMMM@Z @ 606 NONAME ; void CAlfTransformation::Rotate(float, float, float, float)
+	?RowCount@CAlfGridLayout@@QBEHXZ @ 607 NONAME ; int CAlfGridLayout::RowCount(void) const
+	?Scale@CAlfImageBrush@@QBEABVTAlfTimedValue@@XZ @ 608 NONAME ; class TAlfTimedValue const & CAlfImageBrush::Scale(void) const
+	?Scale@CAlfImageVisual@@QAE?AVTAlfTimedValue@@XZ @ 609 NONAME ; class TAlfTimedValue CAlfImageVisual::Scale(void)
+	?Scale@CAlfMeshVisual@@QBE?AVTAlfTimedValue@@XZ @ 610 NONAME ; class TAlfTimedValue CAlfMeshVisual::Scale(void) const
+	?Scale@CAlfTransformation@@QAEXABVTAlfTimedValue@@00@Z @ 611 NONAME ; void CAlfTransformation::Scale(class TAlfTimedValue const &, class TAlfTimedValue const &, class TAlfTimedValue const &)
+	?Scale@CAlfTransformation@@QAEXABVTAlfTimedValue@@0@Z @ 612 NONAME ; void CAlfTransformation::Scale(class TAlfTimedValue const &, class TAlfTimedValue const &)
+	?Scale@CAlfTransformation@@QAEXMM@Z @ 613 NONAME ; void CAlfTransformation::Scale(float, float)
+	?Scale@CAlfTransformation@@QAEXMMM@Z @ 614 NONAME ; void CAlfTransformation::Scale(float, float, float)
+	?Scale@TAlfImage@@QAEXMMH@Z @ 615 NONAME ; void TAlfImage::Scale(float, float, int)
+	?ScaleFbsBitmapL@AlfUtil@@SAXABVCFbsBitmap@@AAV2@@Z @ 616 NONAME ; void AlfUtil::ScaleFbsBitmapL(class CFbsBitmap const &, class CFbsBitmap &)
+	?ScaleImage@AlfUtil@@SAXHABVTSize@@PBE0PAE@Z @ 617 NONAME ; void AlfUtil::ScaleImage(int, class TSize const &, unsigned char const *, class TSize const &, unsigned char *)
+	?ScaleUniformly@CAlfMesh@@QAEXMMM@Z @ 618 NONAME ; void CAlfMesh::ScaleUniformly(float, float, float)
+	?ScreenSize@AlfUtil@@SA?AVTSize@@XZ @ 619 NONAME ; class TSize AlfUtil::ScreenSize(void)
+	?ScrollOffset@CAlfLayout@@QBEABVTAlfTimedPoint@@XZ @ 620 NONAME ; class TAlfTimedPoint const & CAlfLayout::ScrollOffset(void) const
+	?ScrollerEvent@TAlfEvent@@QBE?AVTAlfScrollerEvent@@XZ @ 621 NONAME ; class TAlfScrollerEvent TAlfEvent::ScrollerEvent(void) const
+	?Scrolling@CAlfLayout@@QBEHXZ @ 622 NONAME ; int CAlfLayout::Scrolling(void) const
+	?SecondaryAlpha@CAlfImageVisual@@QAE?AVTAlfTimedValue@@XZ @ 623 NONAME ; class TAlfTimedValue CAlfImageVisual::SecondaryAlpha(void)
+	?SecondaryAlpha@CAlfMeshVisual@@QBE?AVTAlfTimedValue@@XZ @ 624 NONAME ; class TAlfTimedValue CAlfMeshVisual::SecondaryAlpha(void) const
+	?SecondaryImage@CAlfImageVisual@@QBEABVTAlfImage@@XZ @ 625 NONAME ; class TAlfImage const & CAlfImageVisual::SecondaryImage(void) const
+	?SecondaryImage@CAlfMeshVisual@@QBEABVTAlfImage@@XZ @ 626 NONAME ; class TAlfImage const & CAlfMeshVisual::SecondaryImage(void) const
+	?Send@CAlfEnv@@QAEHABVTAlfCommand@@H@Z @ 627 NONAME ; int CAlfEnv::Send(class TAlfCommand const &, int)
+	?ServerHandle@CAlfTexture@@QBEHXZ @ 628 NONAME ; int CAlfTexture::ServerHandle(void) const
+	?ServiceUid@RAlfClientBase@@UBE?AVTUid@@XZ @ 629 NONAME ; class TUid RAlfClientBase::ServiceUid(void) const
+	?SetAcceptInput@CAlfControlGroup@@QAEXH@Z @ 630 NONAME ; void CAlfControlGroup::SetAcceptInput(int)
+	?SetAlign@CAlfTextVisual@@QAEXW4TAlfAlignHorizontal@@W4TAlfAlignVertical@@@Z @ 631 NONAME ; void CAlfTextVisual::SetAlign(enum TAlfAlignHorizontal, enum TAlfAlignVertical)
+	?SetAlphaFunction@CAlfLineVisual@@QAEXPAVMAlfMappingFunction@@@Z @ 632 NONAME ; void CAlfLineVisual::SetAlphaFunction(class MAlfMappingFunction *)
+	?SetAnchor@CAlfAnchorLayout@@QAEHW4TAlfAnchor@@HW4TAlfAnchorOrigin@@1W4TAlfAnchorMetric@@2ABVTAlfTimedPoint@@@Z @ 633 NONAME ; int CAlfAnchorLayout::SetAnchor(enum TAlfAnchor, int, enum TAlfAnchorOrigin, enum TAlfAnchorOrigin, enum TAlfAnchorMetric, enum TAlfAnchorMetric, class TAlfTimedPoint const &)
+	?SetAnchors@CAlfLCTAnchorLayout@@QAEXHAAVTAknLayoutHierarchyComponentHandle@@ABVTAlfTimedPoint@@@Z @ 634 NONAME ; void CAlfLCTAnchorLayout::SetAnchors(int, class TAknLayoutHierarchyComponentHandle &, class TAlfTimedPoint const &)
+	?SetAngle@TAlfTransformationCommand@@QAEXABVTAlfTimedValue@@@Z @ 635 NONAME ; void TAlfTransformationCommand::SetAngle(class TAlfTimedValue const &)
+	?SetAnimationPosition@CAlfMesh@@UAEXHMH@Z @ 636 NONAME ; void CAlfMesh::SetAnimationPosition(int, float, int)
+	?SetAutomaticTextureIdRange@CAlfTextureManager@@QAEXHH@Z @ 637 NONAME ; void CAlfTextureManager::SetAutomaticTextureIdRange(int, int)
+	?SetBaseUnit@CAlfLayout@@QAEXABUTAlfMetric@@@Z @ 638 NONAME ; void CAlfLayout::SetBaseUnit(struct TAlfMetric const &)
+	?SetBaseUnit@CAlfLayout@@QAEXABUTAlfXYMetric@@@Z @ 639 NONAME ; void CAlfLayout::SetBaseUnit(struct TAlfXYMetric const &)
+	?SetBold@CAlfTextStyle@@QAEXH@Z @ 640 NONAME ; void CAlfTextStyle::SetBold(int)
+	?SetBorders@CAlfImageBrush@@QAEXHHHH@Z @ 641 NONAME ; void CAlfImageBrush::SetBorders(int, int, int, int)
+	?SetCenteredPosAndSize@CAlfVisual@@QAEXABVTPoint@@ABVTSize@@H@Z @ 642 NONAME ; void CAlfVisual::SetCenteredPosAndSize(class TPoint const &, class TSize const &, int)
+	?SetCentering@CAlfFlowLayout@@QAEXH@Z @ 643 NONAME ; void CAlfFlowLayout::SetCentering(int)
+	?SetClearBackgroundL@CAlfDisplay@@QAEXH@Z @ 644 NONAME ; void CAlfDisplay::SetClearBackgroundL(int)
+	?SetClipping@CAlfVisual@@QAEXH@Z @ 645 NONAME ; void CAlfVisual::SetClipping(int)
+	?SetColor@CAlfBorderBrush@@QAEXABVTRgb@@@Z @ 646 NONAME ; void CAlfBorderBrush::SetColor(class TRgb const &)
+	?SetColor@CAlfGradientBrush@@QAEXABVTRgb@@M@Z @ 647 NONAME ; void CAlfGradientBrush::SetColor(class TRgb const &, float)
+	?SetColor@CAlfImageVisual@@QAEXABVTRgb@@@Z @ 648 NONAME ; void CAlfImageVisual::SetColor(class TRgb const &)
+	?SetColor@CAlfTextVisual@@QAEXABVTAknsItemID@@H@Z @ 649 NONAME ; void CAlfTextVisual::SetColor(class TAknsItemID const &, int)
+	?SetColor@CAlfTextVisual@@QAEXVTRgb@@@Z @ 650 NONAME ; void CAlfTextVisual::SetColor(class TRgb)
+	?SetColorMode@CAlfImageVisual@@QAEXW4TColorMode@1@M@Z @ 651 NONAME ; void CAlfImageVisual::SetColorMode(enum CAlfImageVisual::TColorMode, float)
+	?SetColsAndRows@CAlfLCTGridLayout@@QAEXAAVTAknLayoutHierarchyComponentHandle@@ABVTAlfTimedPoint@@@Z @ 652 NONAME ; void CAlfLCTGridLayout::SetColsAndRows(class TAknLayoutHierarchyComponentHandle &, class TAlfTimedPoint const &)
+	?SetColumnsL@CAlfGridLayout@@QAEXABV?$RArray@H@@@Z @ 653 NONAME ; void CAlfGridLayout::SetColumnsL(class RArray<int> const &)
+	?SetColumnsL@CAlfGridLayout@@QAEXH@Z @ 654 NONAME ; void CAlfGridLayout::SetColumnsL(int)
+	?SetDepth@CAlfDropShadowBrush@@QAEXABVTAlfTimedValue@@@Z @ 655 NONAME ; void CAlfDropShadowBrush::SetDepth(class TAlfTimedValue const &)
+	?SetDepthOffset@CAlfVisual@@QAEXABVTAlfTimedValue@@@Z @ 656 NONAME ; void CAlfVisual::SetDepthOffset(class TAlfTimedValue const &)
+	?SetDirection@CAlfGradientBrush@@QAEXW4TDirection@1@@Z @ 657 NONAME ; void CAlfGradientBrush::SetDirection(enum CAlfGradientBrush::TDirection)
+	?SetDirty@CAlfDisplay@@QAEXXZ @ 658 NONAME ; void CAlfDisplay::SetDirty(void)
+	?SetDropShadow@CAlfImageVisual@@QAEXH@Z @ 659 NONAME ; void CAlfImageVisual::SetDropShadow(int)
+	?SetEdgeOffset@CAlfBorderBrush@@QAEXABVTAlfTimedPoint@@@Z @ 660 NONAME ; void CAlfBorderBrush::SetEdgeOffset(class TAlfTimedPoint const &)
+	?SetEndPos@CAlfLineVisual@@QAEXABVTAlfTimedValue@@@Z @ 661 NONAME ; void CAlfLineVisual::SetEndPos(class TAlfTimedValue const &)
+	?SetExpanding@CAlfGridLayout@@QAEXH@Z @ 662 NONAME ; void CAlfGridLayout::SetExpanding(int)
+	?SetFactor@CAlfCosineMappingFunction@@QAEXM@Z @ 663 NONAME ; void CAlfCosineMappingFunction::SetFactor(float)
+	?SetFactor@CAlfLinearMappingFunction@@QAEXM@Z @ 664 NONAME ; void CAlfLinearMappingFunction::SetFactor(float)
+	?SetFactor@CAlfSineMappingFunction@@QAEXM@Z @ 665 NONAME ; void CAlfSineMappingFunction::SetFactor(float)
+	?SetFlag@CAlfVisual@@QAEXW4TAlfVisualFlags@@@Z @ 666 NONAME ; void CAlfVisual::SetFlag(enum TAlfVisualFlags)
+	?SetFlags@CAlfVisual@@QAEXI@Z @ 667 NONAME ; void CAlfVisual::SetFlags(unsigned int)
+	?SetFlowDirection@CAlfFlowLayout@@QAEXW4TFlowDirection@1@@Z @ 668 NONAME ; void CAlfFlowLayout::SetFlowDirection(enum CAlfFlowLayout::TFlowDirection)
+	?SetFocus@CAlfRoster@@QAEXAAVCAlfControl@@@Z @ 669 NONAME ; void CAlfRoster::SetFocus(class CAlfControl &)
+	?SetFocusedEditor@CAlfDisplay@@QAEXPAVMAlfInputCapabilitiesSupplier@@@Z @ 670 NONAME ; void CAlfDisplay::SetFocusedEditor(class MAlfInputCapabilitiesSupplier *)
+	?SetFrameRectsL@CAlfFrameBrush@@QAEXABVTRect@@0@Z @ 671 NONAME ; void CAlfFrameBrush::SetFrameRectsL(class TRect const &, class TRect const &)
+	?SetFullScreenDrawing@CAlfEnv@@QAEXH@Z @ 672 NONAME ; void CAlfEnv::SetFullScreenDrawing(int)
+	?SetHost@CAlfControl@@QAEXPAV1@@Z @ 673 NONAME ; void CAlfControl::SetHost(class CAlfControl *)
+	?SetHostId@CAlfControl@@QAEXH@Z @ 674 NONAME ; void CAlfControl::SetHostId(int)
+	?SetId@CAlfControl@@QAEXH@Z @ 675 NONAME ; void CAlfControl::SetId(int)
+	?SetIdleThreshold@CAlfEnv@@QAEXH@Z @ 676 NONAME ; void CAlfEnv::SetIdleThreshold(int)
+	?SetImage@CAlfBorderBrush@@QAEXABVTAlfImage@@@Z @ 677 NONAME ; void CAlfBorderBrush::SetImage(class TAlfImage const &)
+	?SetImage@CAlfGradientBrush@@QAEXABVTAlfImage@@@Z @ 678 NONAME ; void CAlfGradientBrush::SetImage(class TAlfImage const &)
+	?SetImage@CAlfImageBrush@@QAEXABVTAlfImage@@@Z @ 679 NONAME ; void CAlfImageBrush::SetImage(class TAlfImage const &)
+	?SetImage@CAlfImageVisual@@QAEXABVTAlfImage@@@Z @ 680 NONAME ; void CAlfImageVisual::SetImage(class TAlfImage const &)
+	?SetImage@CAlfLineVisual@@QAEXABVTAlfImage@@@Z @ 681 NONAME ; void CAlfLineVisual::SetImage(class TAlfImage const &)
+	?SetImage@CAlfMeshVisual@@QAEXABVTAlfImage@@@Z @ 682 NONAME ; void CAlfMeshVisual::SetImage(class TAlfImage const &)
+	?SetImageOffset@CAlfBorderBrush@@QAEXABVTAlfTimedPoint@@@Z @ 683 NONAME ; void CAlfBorderBrush::SetImageOffset(class TAlfTimedPoint const &)
+	?SetImagePathL@CAlfTextureManager@@QAEXABVTDesC16@@@Z @ 684 NONAME ; void CAlfTextureManager::SetImagePathL(class TDesC16 const &)
+	?SetInnerPadding@CAlfLayout@@QAEXABUTAlfXYMetric@@@Z @ 685 NONAME ; void CAlfLayout::SetInnerPadding(struct TAlfXYMetric const &)
+	?SetInnerPadding@CAlfLayout@@QAEXABVTPoint@@@Z @ 686 NONAME ; void CAlfLayout::SetInnerPadding(class TPoint const &)
+	?SetItalic@CAlfTextStyle@@QAEXH@Z @ 687 NONAME ; void CAlfTextStyle::SetItalic(int)
+	?SetLayer@CAlfBrush@@QAEXW4TAlfBrushLayer@@@Z @ 688 NONAME ; void CAlfBrush::SetLayer(enum TAlfBrushLayer)
+	?SetLineSpacing@CAlfTextVisual@@QAEXHW4TLineSpacingUnits@1@@Z @ 689 NONAME ; void CAlfTextVisual::SetLineSpacing(int, enum CAlfTextVisual::TLineSpacingUnits)
+	?SetMappingFunction1@CAlfAverageMappingFunction@@QAEXPAVMAlfMappingFunction@@@Z @ 690 NONAME ; void CAlfAverageMappingFunction::SetMappingFunction1(class MAlfMappingFunction *)
+	?SetMappingFunction2@CAlfAverageMappingFunction@@QAEXPAVMAlfMappingFunction@@@Z @ 691 NONAME ; void CAlfAverageMappingFunction::SetMappingFunction2(class MAlfMappingFunction *)
+	?SetMappingFunctionIdentifier@TAlfTimedPoint@@QAEXH@Z @ 692 NONAME ; void TAlfTimedPoint::SetMappingFunctionIdentifier(int)
+	?SetMappingFunctionIdentifier@TAlfTimedValue@@QAEXH@Z @ 693 NONAME ; void TAlfTimedValue::SetMappingFunctionIdentifier(int)
+	?SetMappingFunctions@CAlfAverageMappingFunction@@QAEXPAVMAlfMappingFunction@@0@Z @ 694 NONAME ; void CAlfAverageMappingFunction::SetMappingFunctions(class MAlfMappingFunction *, class MAlfMappingFunction *)
+	?SetMappingTableValues@CAlfTableMappingFunction@@QAEXMMPAVMAlfTableMappingFunctionDataProvider@@@Z @ 695 NONAME ; void CAlfTableMappingFunction::SetMappingTableValues(float, float, class MAlfTableMappingFunctionDataProvider *)
+	?SetMaterial@CAlfProceduralMesh@@QAEXABUTAlfMaterial@@@Z @ 696 NONAME ; void CAlfProceduralMesh::SetMaterial(struct TAlfMaterial const &)
+	?SetMaxFrameRate@CAlfEnv@@QAEXM@Z @ 697 NONAME ; void CAlfEnv::SetMaxFrameRate(float)
+	?SetMaxLineCount@CAlfTextVisual@@QAEXH@Z @ 698 NONAME ; void CAlfTextVisual::SetMaxLineCount(int)
+	?SetMaxSize@CAlfVisual@@QAEXABVTSize@@@Z @ 699 NONAME ; void CAlfVisual::SetMaxSize(class TSize const &)
+	?SetMinSize@CAlfVisual@@QAEXABVTSize@@@Z @ 700 NONAME ; void CAlfVisual::SetMinSize(class TSize const &)
+	?SetMode@CAlfFlowLayout@@QAEXH@Z @ 701 NONAME ; void CAlfFlowLayout::SetMode(int)
+	?SetOffset@CAlfCosineMappingFunction@@QAEXM@Z @ 702 NONAME ; void CAlfCosineMappingFunction::SetOffset(float)
+	?SetOffset@CAlfCurvePath@@QAEXABVTAlfTimedPoint@@@Z @ 703 NONAME ; void CAlfCurvePath::SetOffset(class TAlfTimedPoint const &)
+	?SetOffset@CAlfImageBrush@@QAEXABVTAlfTimedPoint@@@Z @ 704 NONAME ; void CAlfImageBrush::SetOffset(class TAlfTimedPoint const &)
+	?SetOffset@CAlfImageVisual@@QAEXABVTAlfTimedPoint@@@Z @ 705 NONAME ; void CAlfImageVisual::SetOffset(class TAlfTimedPoint const &)
+	?SetOffset@CAlfLinearMappingFunction@@QAEXM@Z @ 706 NONAME ; void CAlfLinearMappingFunction::SetOffset(float)
+	?SetOffset@CAlfSineMappingFunction@@QAEXM@Z @ 707 NONAME ; void CAlfSineMappingFunction::SetOffset(float)
+	?SetOpacity@CAlfBrush@@QAEXABVTAlfTimedValue@@@Z @ 708 NONAME ; void CAlfBrush::SetOpacity(class TAlfTimedValue const &)
+	?SetOpacity@CAlfVisual@@QAEXABVTAlfTimedValue@@@Z @ 709 NONAME ; void CAlfVisual::SetOpacity(class TAlfTimedValue const &)
+	?SetOrigin@CAlfCurvePath@@QAEXM@Z @ 710 NONAME ; void CAlfCurvePath::SetOrigin(float)
+	?SetOrigin@CAlfVisual@@QAEXW4TAlfVisualHOrigin@@W4TAlfVisualVOrigin@@@Z @ 711 NONAME ; void CAlfVisual::SetOrigin(enum TAlfVisualHOrigin, enum TAlfVisualVOrigin)
+	?SetOwner@CAlfVisual@@QAEXAAVCAlfControl@@@Z @ 712 NONAME ; void CAlfVisual::SetOwner(class CAlfControl &)
+	?SetPadding@CAlfVisual@@QAEXABUTAlfBoxMetric@@@Z @ 713 NONAME ; void CAlfVisual::SetPadding(struct TAlfBoxMetric const &)
+	?SetPadding@CAlfVisual@@QAEXABVTPoint@@@Z @ 714 NONAME ; void CAlfVisual::SetPadding(class TPoint const &)
+	?SetPadding@CAlfVisual@@QAEXH@Z @ 715 NONAME ; void CAlfVisual::SetPadding(int)
+	?SetParentId@CAlfTextStyle@@QAEXH@Z @ 716 NONAME ; void CAlfTextStyle::SetParentId(int)
+	?SetPath@CAlfLineVisual@@QAEXPAVCAlfCurvePath@@W4TAlfOwnership@@@Z @ 717 NONAME ; void CAlfLineVisual::SetPath(class CAlfCurvePath *, enum TAlfOwnership)
+	?SetPitchAngle@CAlfMeshVisual@@QAEXABVTAlfTimedValue@@@Z @ 718 NONAME ; void CAlfMeshVisual::SetPitchAngle(class TAlfTimedValue const &)
+	?SetPointerEventObservers@CAlfRoster@@QAEHIAAVCAlfControl@@@Z @ 719 NONAME ; int CAlfRoster::SetPointerEventObservers(unsigned int, class CAlfControl &)
+	?SetPos@CAlfVisual@@QAEXABUTAlfRealPoint@@H@Z @ 720 NONAME ; void CAlfVisual::SetPos(struct TAlfRealPoint const &, int)
+	?SetPos@CAlfVisual@@QAEXABVTAlfTimedPoint@@@Z @ 721 NONAME ; void CAlfVisual::SetPos(class TAlfTimedPoint const &)
+	?SetPriority@CAlfTexture@@QAEXH@Z @ 722 NONAME ; void CAlfTexture::SetPriority(int)
+	?SetQuality@CAlfDisplay@@QAEXW4TAlfQuality@@@Z @ 723 NONAME ; void CAlfDisplay::SetQuality(enum TAlfQuality)
+	?SetRect@CAlfVisual@@QAEXABUTAlfRealRect@@H@Z @ 724 NONAME ; void CAlfVisual::SetRect(struct TAlfRealRect const &, int)
+	?SetRefreshMode@CAlfEnv@@QAEXW4TAlfRefreshMode@@@Z @ 725 NONAME ; void CAlfEnv::SetRefreshMode(enum TAlfRefreshMode)
+	?SetRelativeAnchorRect@CAlfAnchorLayout@@QAEHHW4TAlfAnchorOrigin@@0ABUTAlfRealPoint@@001@Z @ 726 NONAME ; int CAlfAnchorLayout::SetRelativeAnchorRect(int, enum TAlfAnchorOrigin, enum TAlfAnchorOrigin, struct TAlfRealPoint const &, enum TAlfAnchorOrigin, enum TAlfAnchorOrigin, struct TAlfRealPoint const &)
+	?SetRole@CAlfControl@@QAEXH@Z @ 727 NONAME ; void CAlfControl::SetRole(int)
+	?SetRowsL@CAlfGridLayout@@QAEXABV?$RArray@H@@@Z @ 728 NONAME ; void CAlfGridLayout::SetRowsL(class RArray<int> const &)
+	?SetRowsL@CAlfGridLayout@@QAEXH@Z @ 729 NONAME ; void CAlfGridLayout::SetRowsL(int)
+	?SetScale@CAlfImageBrush@@QAEXABVTAlfTimedValue@@@Z @ 730 NONAME ; void CAlfImageBrush::SetScale(class TAlfTimedValue const &)
+	?SetScale@CAlfImageVisual@@QAEXABVTAlfTimedValue@@@Z @ 731 NONAME ; void CAlfImageVisual::SetScale(class TAlfTimedValue const &)
+	?SetScale@CAlfMeshVisual@@QAEXABVTAlfTimedValue@@@Z @ 732 NONAME ; void CAlfMeshVisual::SetScale(class TAlfTimedValue const &)
+	?SetScaleMode@CAlfImageBrush@@QAEXW4TScaleMode@CAlfImageVisual@@@Z @ 733 NONAME ; void CAlfImageBrush::SetScaleMode(enum CAlfImageVisual::TScaleMode)
+	?SetScaleMode@CAlfImageVisual@@QAEXW4TScaleMode@1@@Z @ 734 NONAME ; void CAlfImageVisual::SetScaleMode(enum CAlfImageVisual::TScaleMode)
+	?SetScrollOffset@CAlfLayout@@QAEXABVTAlfTimedPoint@@@Z @ 735 NONAME ; void CAlfLayout::SetScrollOffset(class TAlfTimedPoint const &)
+	?SetSecondaryAlpha@CAlfImageVisual@@QAEXABVTAlfTimedValue@@@Z @ 736 NONAME ; void CAlfImageVisual::SetSecondaryAlpha(class TAlfTimedValue const &)
+	?SetSecondaryAlpha@CAlfMeshVisual@@QAEXABVTAlfTimedValue@@@Z @ 737 NONAME ; void CAlfMeshVisual::SetSecondaryAlpha(class TAlfTimedValue const &)
+	?SetSecondaryImage@CAlfImageVisual@@QAEXABVTAlfImage@@@Z @ 738 NONAME ; void CAlfImageVisual::SetSecondaryImage(class TAlfImage const &)
+	?SetSecondaryImage@CAlfMeshVisual@@QAEXABVTAlfImage@@@Z @ 739 NONAME ; void CAlfMeshVisual::SetSecondaryImage(class TAlfImage const &)
+	?SetShadowOpacity@CAlfTextVisual@@QAEXABVTAlfTimedValue@@@Z @ 740 NONAME ; void CAlfTextVisual::SetShadowOpacity(class TAlfTimedValue const &)
+	?SetShadowThickness@CAlfLineVisual@@QAEXABVTAlfTimedValue@@@Z @ 741 NONAME ; void CAlfLineVisual::SetShadowThickness(class TAlfTimedValue const &)
+	?SetSize@CAlfImageLoaderUtil@@QAEXVTSize@@W4TScaleMode@@@Z @ 742 NONAME ; void CAlfImageLoaderUtil::SetSize(class TSize, enum TScaleMode)
+	?SetSize@CAlfVisual@@QAEXABUTAlfRealSize@@H@Z @ 743 NONAME ; void CAlfVisual::SetSize(struct TAlfRealSize const &, int)
+	?SetSize@CAlfVisual@@QAEXABVTAlfTimedPoint@@@Z @ 744 NONAME ; void CAlfVisual::SetSize(class TAlfTimedPoint const &)
+	?SetSkinInstance@CAlfImageLoaderUtil@@QAEXPAVMAknsSkinInstance@@@Z @ 745 NONAME ; void CAlfImageLoaderUtil::SetSkinInstance(class MAknsSkinInstance *)
+	?SetSoftness@CAlfDropShadowBrush@@QAEXABVTAlfTimedValue@@@Z @ 746 NONAME ; void CAlfDropShadowBrush::SetSoftness(class TAlfTimedValue const &)
+	?SetSpecularImage@CAlfMeshVisual@@QAEXABVTAlfImage@@@Z @ 747 NONAME ; void CAlfMeshVisual::SetSpecularImage(class TAlfImage const &)
+	?SetStartPos@CAlfLineVisual@@QAEXABVTAlfTimedValue@@@Z @ 748 NONAME ; void CAlfLineVisual::SetStartPos(class TAlfTimedValue const &)
+	?SetStretch@CAlfImageVisual@@QAEXHH@Z @ 749 NONAME ; void CAlfImageVisual::SetStretch(int, int)
+	?SetStretchMode@CAlfImageVisual@@QAEXW4TStretchMode@CAlfGc@@@Z @ 750 NONAME ; void CAlfImageVisual::SetStretchMode(enum CAlfGc::TStretchMode)
+	?SetStrikeThrough@CAlfTextStyle@@QAEXH@Z @ 751 NONAME ; void CAlfTextStyle::SetStrikeThrough(int)
+	?SetStyle@CAlfTextVisual@@QAEXW4TAlfPreconfiguredTextStyle@@W4TAlfBackgroundType@@@Z @ 752 NONAME ; void CAlfTextVisual::SetStyle(enum TAlfPreconfiguredTextStyle, enum TAlfBackgroundType)
+	?SetStyle@TAlfTimedPoint@@QAEXW4TAlfInterpolationStyle@@@Z @ 753 NONAME ; void TAlfTimedPoint::SetStyle(enum TAlfInterpolationStyle)
+	?SetStyle@TAlfTimedValue@@QAEXW4TAlfInterpolationStyle@@@Z @ 754 NONAME ; void TAlfTimedValue::SetStyle(enum TAlfInterpolationStyle)
+	?SetTagL@CAlfVisual@@QAEXABVTDesC8@@@Z @ 755 NONAME ; void CAlfVisual::SetTagL(class TDesC8 const &)
+	?SetTarget@TAlfTimedPoint@@QAEXABUTAlfRealPoint@@H@Z @ 756 NONAME ; void TAlfTimedPoint::SetTarget(struct TAlfRealPoint const &, int)
+	?SetTarget@TAlfTimedPoint@@QAEXMH@Z @ 757 NONAME ; void TAlfTimedPoint::SetTarget(float, int)
+	?SetTarget@TAlfTimedValue@@QAEXABMH@Z @ 758 NONAME ; void TAlfTimedValue::SetTarget(float const &, int)
+	?SetTargetWithSpeed@TAlfTimedPoint@@QAEXABUTAlfRealPoint@@M@Z @ 759 NONAME ; void TAlfTimedPoint::SetTargetWithSpeed(struct TAlfRealPoint const &, float)
+	?SetTargetWithSpeed@TAlfTimedPoint@@QAEXMM@Z @ 760 NONAME ; void TAlfTimedPoint::SetTargetWithSpeed(float, float)
+	?SetTargetWithSpeed@TAlfTimedValue@@QAEXMM@Z @ 761 NONAME ; void TAlfTimedValue::SetTargetWithSpeed(float, float)
+	?SetTexCoords@TAlfImage@@QAEXMMMMH@Z @ 762 NONAME ; void TAlfImage::SetTexCoords(float, float, float, float, int)
+	?SetTextColor@CAlfTextStyle@@QAEXABVTRgb@@@Z @ 763 NONAME ; void CAlfTextStyle::SetTextColor(class TRgb const &)
+	?SetTextL@CAlfTextVisual@@QAEXABVTDesC16@@@Z @ 764 NONAME ; void CAlfTextVisual::SetTextL(class TDesC16 const &)
+	?SetTextPane@CAlfLCTTextVisual@@QAEXAAVTAknLayoutHierarchyComponentHandle@@@Z @ 765 NONAME ; void CAlfLCTTextVisual::SetTextPane(class TAknLayoutHierarchyComponentHandle &)
+	?SetTextSizeInPixels@CAlfTextStyle@@QAEXHH@Z @ 766 NONAME ; void CAlfTextStyle::SetTextSizeInPixels(int, int)
+	?SetTextSizeInTwips@CAlfTextStyle@@QAEXHH@Z @ 767 NONAME ; void CAlfTextStyle::SetTextSizeInTwips(int, int)
+	?SetTextStyle@CAlfTextVisual@@QAEXH@Z @ 768 NONAME ; void CAlfTextVisual::SetTextStyle(int)
+	?SetTexture@TAlfImage@@QAEXAAVCAlfTexture@@@Z @ 769 NONAME ; void TAlfImage::SetTexture(class CAlfTexture &)
+	?SetThickness@CAlfBorderBrush@@QAEXABVTAlfTimedPoint@@@Z @ 770 NONAME ; void CAlfBorderBrush::SetThickness(class TAlfTimedPoint const &)
+	?SetThickness@CAlfLineVisual@@QAEXABVTAlfTimedValue@@@Z @ 771 NONAME ; void CAlfLineVisual::SetThickness(class TAlfTimedValue const &)
+	?SetTransitionTime@CAlfLayout@@QAEXH@Z @ 772 NONAME ; void CAlfLayout::SetTransitionTime(int)
+	?SetTurnAngle@CAlfImageVisual@@QAEXABVTAlfTimedValue@@@Z @ 773 NONAME ; void CAlfImageVisual::SetTurnAngle(class TAlfTimedValue const &)
+	?SetUnderline@CAlfTextStyle@@QAEXH@Z @ 774 NONAME ; void CAlfTextStyle::SetUnderline(int)
+	?SetUsageL@CAlfDisplay@@QAEXI@Z @ 775 NONAME ; void CAlfDisplay::SetUsageL(unsigned int)
+	?SetUseDepth@CAlfDisplay@@QAEXH@Z @ 776 NONAME ; void CAlfDisplay::SetUseDepth(int)
+	?SetValue@CAlfConstantMappingFunction@@QAEXM@Z @ 777 NONAME ; void CAlfConstantMappingFunction::SetValue(float)
+	?SetValueNow@TAlfTimedValue@@QAEXABM@Z @ 778 NONAME ; void TAlfTimedValue::SetValueNow(float const &)
+	?SetViewportPos@CAlfViewportLayout@@QAEXABUTAlfRealPoint@@H@Z @ 779 NONAME ; void CAlfViewportLayout::SetViewportPos(struct TAlfRealPoint const &, int)
+	?SetViewportSize@CAlfViewportLayout@@QAEXABUTAlfRealSize@@H@Z @ 780 NONAME ; void CAlfViewportLayout::SetViewportSize(struct TAlfRealSize const &, int)
+	?SetVirtualSize@CAlfViewportLayout@@QAEXABUTAlfRealSize@@H@Z @ 781 NONAME ; void CAlfViewportLayout::SetVirtualSize(struct TAlfRealSize const &, int)
+	?SetVisibleArea@CAlfDisplay@@QAEXABVTRect@@@Z @ 782 NONAME ; void CAlfDisplay::SetVisibleArea(class TRect const &)
+	?SetVisual@TAlfEvent@@QAEXPAVCAlfVisual@@@Z @ 783 NONAME ; void TAlfEvent::SetVisual(class CAlfVisual *)
+	?SetWeight@CAlfAverageMappingFunction@@QAEXABVTAlfTimedValue@@@Z @ 784 NONAME ; void CAlfAverageMappingFunction::SetWeight(class TAlfTimedValue const &)
+	?SetWidth@CAlfShadowBorderBrush@@QAEXABVTAlfTimedValue@@@Z @ 785 NONAME ; void CAlfShadowBorderBrush::SetWidth(class TAlfTimedValue const &)
+	?SetWidthFunction@CAlfLineVisual@@QAEXPAVMAlfMappingFunction@@@Z @ 786 NONAME ; void CAlfLineVisual::SetWidthFunction(class MAlfMappingFunction *)
+	?SetWrapping@CAlfTextVisual@@QAEXW4TLineWrap@1@@Z @ 787 NONAME ; void CAlfTextVisual::SetWrapping(enum CAlfTextVisual::TLineWrap)
+	?SetX@TAlfTransformationCommand@@QAEXABVTAlfTimedValue@@@Z @ 788 NONAME ; void TAlfTransformationCommand::SetX(class TAlfTimedValue const &)
+	?SetY@TAlfTransformationCommand@@QAEXABVTAlfTimedValue@@@Z @ 789 NONAME ; void TAlfTransformationCommand::SetY(class TAlfTimedValue const &)
+	?SetYawAngle@CAlfMeshVisual@@QAEXABVTAlfTimedValue@@@Z @ 790 NONAME ; void CAlfMeshVisual::SetYawAngle(class TAlfTimedValue const &)
+	?SetZ@TAlfTransformationCommand@@QAEXABVTAlfTimedValue@@@Z @ 791 NONAME ; void TAlfTransformationCommand::SetZ(class TAlfTimedValue const &)
+	?ShadowMatrix@AlfUtil@@SAXQBM00QAM@Z @ 792 NONAME ; void AlfUtil::ShadowMatrix(float const * const, float const * const, float const * const, float * const)
+	?ShadowOpacity@CAlfTextVisual@@QAE?AVTAlfTimedValue@@XZ @ 793 NONAME ; class TAlfTimedValue CAlfTextVisual::ShadowOpacity(void)
+	?ShadowThickness@CAlfLineVisual@@QBEABVTAlfTimedValue@@XZ @ 794 NONAME ; class TAlfTimedValue const & CAlfLineVisual::ShadowThickness(void) const
+	?SharedTextureManager@CAlfEnv@@QBEPAVCAlfTextureManager@@VTUid@@@Z @ 795 NONAME ; class CAlfTextureManager * CAlfEnv::SharedTextureManager(class TUid) const
+	?ShowL@CAlfControl@@QAEXAAVCAlfDisplay@@@Z @ 796 NONAME ; void CAlfControl::ShowL(class CAlfDisplay &)
+	?ShowL@CAlfRoster@@QAEXAAVCAlfControlGroup@@H@Z @ 797 NONAME ; void CAlfRoster::ShowL(class CAlfControlGroup &, int)
+	?ShowVisualL@CAlfRoster@@QAEXAAVCAlfVisual@@@Z @ 798 NONAME ; void CAlfRoster::ShowVisualL(class CAlfVisual &)
+	?Size@CAlfTexture@@QBE?AVTSize@@XZ @ 799 NONAME ; class TSize CAlfTexture::Size(void) const
+	?Size@CAlfVisual@@QBE?BVTAlfTimedPoint@@XZ @ 800 NONAME ; class TAlfTimedPoint const CAlfVisual::Size(void) const
+	?Size@TAlfActionCommand@@UBEHXZ @ 801 NONAME ; int TAlfActionCommand::Size(void) const
+	?Size@TAlfControlCommand@@UBEHXZ @ 802 NONAME ; int TAlfControlCommand::Size(void) const
+	?Size@TAlfCustomEventCommand@@UBEHXZ @ 803 NONAME ; int TAlfCustomEventCommand::Size(void) const
+	?Size@TAlfGroupCommand@@UBEHXZ @ 804 NONAME ; int TAlfGroupCommand::Size(void) const
+	?Size@TAlfImageCommand@@UBEHXZ @ 805 NONAME ; int TAlfImageCommand::Size(void) const
+	?Size@TAlfMarkerCommand@@UBEHXZ @ 806 NONAME ; int TAlfMarkerCommand::Size(void) const
+	?Size@TAlfObjectCommand@@UBEHXZ @ 807 NONAME ; int TAlfObjectCommand::Size(void) const
+	?Size@TAlfPointCommand@@UBEHXZ @ 808 NONAME ; int TAlfPointCommand::Size(void) const
+	?Size@TAlfTextCommand@@UBEHXZ @ 809 NONAME ; int TAlfTextCommand::Size(void) const
+	?Size@TAlfTransformationCommand@@UBEHXZ @ 810 NONAME ; int TAlfTransformationCommand::Size(void) const
+	?Size@TAlfValueCommand@@UBEHXZ @ 811 NONAME ; int TAlfValueCommand::Size(void) const
+	?Size@TAlfVisualCommand@@UBEHXZ @ 812 NONAME ; int TAlfVisualCommand::Size(void) const
+	?Softness@CAlfDropShadowBrush@@QBEABVTAlfTimedValue@@XZ @ 813 NONAME ; class TAlfTimedValue const & CAlfDropShadowBrush::Softness(void) const
+	?SpecularImage@CAlfMeshVisual@@QBEABVTAlfImage@@XZ @ 814 NONAME ; class TAlfImage const & CAlfMeshVisual::SpecularImage(void) const
+	?Speed@TAlfPointCommand@@QBEMXZ @ 815 NONAME ; float TAlfPointCommand::Speed(void) const
+	?Speed@TAlfTimedValue@@QBEMXZ @ 816 NONAME ; float TAlfTimedValue::Speed(void) const
+	?Speed@TAlfValueCommand@@QBEMXZ @ 817 NONAME ; float TAlfValueCommand::Speed(void) const
+	?StartAnimation@CAlfTexture@@QAEXXZ @ 818 NONAME ; void CAlfTexture::StartAnimation(void)
+	?StartAnimationController@CAlfMesh@@UAEXH@Z @ 819 NONAME ; void CAlfMesh::StartAnimationController(int)
+	?StartPos@CAlfLineVisual@@QBEABVTAlfTimedValue@@XZ @ 820 NONAME ; class TAlfTimedValue const & CAlfLineVisual::StartPos(void) const
+	?StartServerL@RAlfClientBase@@IAEIVTUid@@@Z @ 821 NONAME ; unsigned int RAlfClientBase::StartServerL(class TUid)
+	?Static@CAlfEnv@@SAPAV1@XZ @ 822 NONAME ; class CAlfEnv * CAlfEnv::Static(void)
+	?Step@CAlfTransformation@@QAE?AUTTransform@1@H@Z @ 823 NONAME ; struct CAlfTransformation::TTransform CAlfTransformation::Step(int)
+	?Step@TAlfTransformationCommand@@QBEHXZ @ 824 NONAME ; int TAlfTransformationCommand::Step(void) const
+	?StopAnimation@CAlfTexture@@QAEXXZ @ 825 NONAME ; void CAlfTexture::StopAnimation(void)
+	?StopAnimationController@CAlfMesh@@UAEXH@Z @ 826 NONAME ; void CAlfMesh::StopAnimationController(int)
+	?StretchUniformly@CAlfMesh@@QAEXMMMMMM@Z @ 827 NONAME ; void CAlfMesh::StretchUniformly(float, float, float, float, float, float)
+	?Style@CAlfTextVisual@@QAE?AW4TAlfPreconfiguredTextStyle@@XZ @ 828 NONAME ; enum TAlfPreconfiguredTextStyle CAlfTextVisual::Style(void)
+	?Style@TAlfTimedValue@@QAE?AW4TAlfInterpolationStyle@@XZ @ 829 NONAME ; enum TAlfInterpolationStyle TAlfTimedValue::Style(void)
+	?SubstringExtents@CAlfTextVisual@@QBE?AVTRect@@II@Z @ 830 NONAME ; class TRect CAlfTextVisual::SubstringExtents(unsigned int, unsigned int) const
+	?Tag@CAlfVisual@@QBEABVTDesC8@@XZ @ 831 NONAME ; class TDesC8 const & CAlfVisual::Tag(void) const
+	?TagMatches@AlfUtil@@SAHABVTDesC8@@0@Z @ 832 NONAME ; int AlfUtil::TagMatches(class TDesC8 const &, class TDesC8 const &)
+	?Target@TAlfPointCommand@@QBE?AUTAlfRealPoint@@XZ @ 833 NONAME ; struct TAlfRealPoint TAlfPointCommand::Target(void) const
+	?Target@TAlfTimedValue@@QBEMXZ @ 834 NONAME ; float TAlfTimedValue::Target(void) const
+	?Target@TAlfValueCommand@@QBEMXZ @ 835 NONAME ; float TAlfValueCommand::Target(void) const
+	?Text@CAlfTextVisual@@QBEABVTDesC16@@XZ @ 836 NONAME ; class TDesC16 const & CAlfTextVisual::Text(void) const
+	?Text@TAlfTextCommand@@QBEABVTDesC16@@XZ @ 837 NONAME ; class TDesC16 const & TAlfTextCommand::Text(void) const
+	?TextColor@CAlfTextStyle@@QBE?AVTRgb@@XZ @ 838 NONAME ; class TRgb CAlfTextStyle::TextColor(void) const
+	?TextExtents@CAlfTextVisual@@QBE?AVTSize@@XZ @ 839 NONAME ; class TSize CAlfTextVisual::TextExtents(void) const
+	?TextSizeInPixels@CAlfTextStyle@@QBEHH@Z @ 840 NONAME ; int CAlfTextStyle::TextSizeInPixels(int) const
+	?TextSizeInTwips@CAlfTextStyle@@QBEHH@Z @ 841 NONAME ; int CAlfTextStyle::TextSizeInTwips(int) const
+	?TextStyle@CAlfTextStyleManager@@QAEPAVCAlfTextStyle@@H@Z @ 842 NONAME ; class CAlfTextStyle * CAlfTextStyleManager::TextStyle(int)
+	?TextStyleManager@CAlfEnv@@QBEAAVCAlfTextStyleManager@@XZ @ 843 NONAME ; class CAlfTextStyleManager & CAlfEnv::TextStyleManager(void) const
+	?TextVisual@TAlfTextCommand@@QBEAAVCAlfTextVisual@@XZ @ 844 NONAME ; class CAlfTextVisual & TAlfTextCommand::TextVisual(void) const
+	?Texture@CAlfTextureManager@@QBEPBVCAlfTexture@@H@Z @ 845 NONAME ; class CAlfTexture const * CAlfTextureManager::Texture(int) const
+	?Texture@TAlfImage@@QBEABVCAlfTexture@@XZ @ 846 NONAME ; class CAlfTexture const & TAlfImage::Texture(void) const
+	?TextureL@CAlfTextureManager@@QAEPAVCAlfTexture@@H@Z @ 847 NONAME ; class CAlfTexture * CAlfTextureManager::TextureL(int)
+	?TextureManager@CAlfEnv@@QBEAAVCAlfTextureManager@@XZ @ 848 NONAME ; class CAlfTextureManager & CAlfEnv::TextureManager(void) const
+	?Thickness@CAlfBorderBrush@@QBEABVTAlfTimedPoint@@XZ @ 849 NONAME ; class TAlfTimedPoint const & CAlfBorderBrush::Thickness(void) const
+	?Thickness@CAlfLineVisual@@QBEABVTAlfTimedValue@@XZ @ 850 NONAME ; class TAlfTimedValue const & CAlfLineVisual::Thickness(void) const
+	?TimeToTargetinMilliSeconds@TAlfTimedValue@@QBEHXZ @ 851 NONAME ; int TAlfTimedValue::TimeToTargetinMilliSeconds(void) const
+	?TimedPoint@TAlfPointCommand@@QBE?AW4TAlfPointCommandTarget@@XZ @ 852 NONAME ; enum TAlfPointCommandTarget TAlfPointCommand::TimedPoint(void) const
+	?TimedValue@TAlfValueCommand@@QBE?AW4TAlfValueCommandTarget@@XZ @ 853 NONAME ; enum TAlfValueCommandTarget TAlfValueCommand::TimedValue(void) const
+	?TokenClient@CAlfEnv@@QAEPAVRFTokenClient@@XZ @ 854 NONAME ; class RFTokenClient * CAlfEnv::TokenClient(void)
+	?TopLeft@TAlfImage@@QBE?AUTAlfRealPoint@@XZ @ 855 NONAME ; struct TAlfRealPoint TAlfImage::TopLeft(void) const
+	?Transformation@CAlfControlGroup@@QAEAAVCAlfTransformation@@XZ @ 856 NONAME ; class CAlfTransformation & CAlfControlGroup::Transformation(void)
+	?Transformation@CAlfVisual@@QAEAAVCAlfTransformation@@XZ @ 857 NONAME ; class CAlfTransformation & CAlfVisual::Transformation(void)
+	?Transformation@TAlfTransformationCommand@@QBEAAVCAlfTransformation@@XZ @ 858 NONAME ; class CAlfTransformation & TAlfTransformationCommand::Transformation(void) const
+	?TransitionTime@CAlfLayout@@QBEHXZ @ 859 NONAME ; int CAlfLayout::TransitionTime(void) const
+	?TransitionTime@TAlfPointCommand@@QBEHXZ @ 860 NONAME ; int TAlfPointCommand::TransitionTime(void) const
+	?TransitionTime@TAlfValueCommand@@QBEHXZ @ 861 NONAME ; int TAlfValueCommand::TransitionTime(void) const
+	?Translate@CAlfTransformation@@QAEXABVTAlfTimedValue@@0@Z @ 862 NONAME ; void CAlfTransformation::Translate(class TAlfTimedValue const &, class TAlfTimedValue const &)
+	?Translate@CAlfTransformation@@QAEXMM@Z @ 863 NONAME ; void CAlfTransformation::Translate(float, float)
+	?Translate@TAlfImage@@QAEXMMH@Z @ 864 NONAME ; void TAlfImage::Translate(float, float, int)
+	?TurnAngle@CAlfImageVisual@@QAE?AVTAlfTimedValue@@XZ @ 865 NONAME ; class TAlfTimedValue CAlfImageVisual::TurnAngle(void)
+	?Type@TAlfCommand@@QBE?AW4TAlfCommandType@@XZ @ 866 NONAME ; enum TAlfCommandType TAlfCommand::Type(void) const
+	?Type@TAlfEvent@@QBE?AW4TType@1@XZ @ 867 NONAME ; enum TAlfEvent::TType TAlfEvent::Type(void) const
+	?TypefaceNameL@CAlfTextStyle@@QBEPAVHBufC16@@XZ @ 868 NONAME ; class HBufC16 * CAlfTextStyle::TypefaceNameL(void) const
+	?UnloadTexture@CAlfTextureManager@@QAEXABVTDesC16@@@Z @ 869 NONAME ; void CAlfTextureManager::UnloadTexture(class TDesC16 const &)
+	?UnloadTexture@CAlfTextureManager@@QAEXH@Z @ 870 NONAME ; void CAlfTextureManager::UnloadTexture(int)
+	?UnmarkVisual@CAlfLayoutMetricsUtility@@QAEXPAVCAlfTextVisual@@@Z @ 871 NONAME ; void CAlfLayoutMetricsUtility::UnmarkVisual(class CAlfTextVisual *)
+	?UpdateChildrenLayout@CAlfAnchorLayout@@UAEXH@Z @ 872 NONAME ; void CAlfAnchorLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfCurvePathLayout@@UAEXH@Z @ 873 NONAME ; void CAlfCurvePathLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfDeckLayout@@UAEXH@Z @ 874 NONAME ; void CAlfDeckLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfFlowLayout@@UAEXH@Z @ 875 NONAME ; void CAlfFlowLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfGridLayout@@UAEXH@Z @ 876 NONAME ; void CAlfGridLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfImageVisual@@UAEXH@Z @ 877 NONAME ; void CAlfImageVisual::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfLCTAnchorLayout@@UAEXH@Z @ 878 NONAME ; void CAlfLCTAnchorLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfLCTGridLayout@@UAEXH@Z @ 879 NONAME ; void CAlfLCTGridLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfLCTTextVisual@@UAEXH@Z @ 880 NONAME ; void CAlfLCTTextVisual::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfLayout@@UAEXH@Z @ 881 NONAME ; void CAlfLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfLineVisual@@UAEXH@Z @ 882 NONAME ; void CAlfLineVisual::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfMeshVisual@@UAEXH@Z @ 883 NONAME ; void CAlfMeshVisual::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfTextVisual@@UAEXH@Z @ 884 NONAME ; void CAlfTextVisual::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfViewportLayout@@UAEXH@Z @ 885 NONAME ; void CAlfViewportLayout::UpdateChildrenLayout(int)
+	?UpdateChildrenLayout@CAlfVisual@@UAEXH@Z @ 886 NONAME ; void CAlfVisual::UpdateChildrenLayout(int)
+	?Value@CAlfConstantMappingFunction@@QBEMXZ @ 887 NONAME ; float CAlfConstantMappingFunction::Value(void) const
+	?ValueNow@TAlfTimedValue@@QBEMXZ @ 888 NONAME ; float TAlfTimedValue::ValueNow(void) const
+	??0CAlfBrush@@IAE@XZ @ 889 NONAME ; CAlfBrush::CAlfBrush(void)
+	?VerticalInnerPadding@CAlfLayout@@QBEHXZ @ 890 NONAME ; int CAlfLayout::VerticalInnerPadding(void) const
+	?VerticalOrigin@CAlfVisual@@QBE?AW4TAlfVisualVOrigin@@XZ @ 891 NONAME ; enum TAlfVisualVOrigin CAlfVisual::VerticalOrigin(void) const
+	?VerticalPadding@CAlfVisual@@QBEHXZ @ 892 NONAME ; int CAlfVisual::VerticalPadding(void) const
+	?VirtualSize@CAlfLayout@@QBE?AVTSize@@XZ @ 893 NONAME ; class TSize CAlfLayout::VirtualSize(void) const
+	?VisibleArea@CAlfDisplay@@QBE?AVTRect@@XZ @ 894 NONAME ; class TRect CAlfDisplay::VisibleArea(void) const
+	?Visual@CAlfControl@@QBEAAVCAlfVisual@@H@Z @ 895 NONAME ; class CAlfVisual & CAlfControl::Visual(int) const
+	?Visual@CAlfLayout@@QBEAAVCAlfVisual@@H@Z @ 896 NONAME ; class CAlfVisual & CAlfLayout::Visual(int) const
+	?Visual@TAlfEvent@@QBEPAVCAlfVisual@@XZ @ 897 NONAME ; class CAlfVisual * TAlfEvent::Visual(void) const
+	?Visual@TAlfVisualCommand@@QBEAAVCAlfVisual@@XZ @ 898 NONAME ; class CAlfVisual & TAlfVisualCommand::Visual(void) const
+	?VisualAddedL@CAlfControl@@MAEXPAVCAlfVisual@@@Z @ 899 NONAME ; void CAlfControl::VisualAddedL(class CAlfVisual *)
+	?VisualCount@CAlfControl@@QBEHXZ @ 900 NONAME ; int CAlfControl::VisualCount(void) const
+	?VisualDestroyed@CAlfControl@@UAEXAAVCAlfVisual@@@Z @ 901 NONAME ; void CAlfControl::VisualDestroyed(class CAlfVisual &)
+	?VisualLayoutUpdated@CAlfControl@@UAEXAAVCAlfVisual@@@Z @ 902 NONAME ; void CAlfControl::VisualLayoutUpdated(class CAlfVisual &)
+	?VisualPrepareDrawFailed@CAlfControl@@UAEXAAVCAlfVisual@@H@Z @ 903 NONAME ; void CAlfControl::VisualPrepareDrawFailed(class CAlfVisual &, int)
+	?VisualRemoved@CAlfControl@@MAEXPAVCAlfVisual@@@Z @ 904 NONAME ; void CAlfControl::VisualRemoved(class CAlfVisual *)
+	?Weight@CAlfGridLayout@@QBE?AUTAlfMetric@@W4TAlfGridDimension@@H@Z @ 905 NONAME ; struct TAlfMetric CAlfGridLayout::Weight(enum TAlfGridDimension, int) const
+	?WidgetFactory@CAlfEnv@@QBEAAVIAlfWidgetFactory@Alf@@XZ @ 906 NONAME ; class Alf::IAlfWidgetFactory & CAlfEnv::WidgetFactory(void) const
+	?Width@CAlfShadowBorderBrush@@QBEABVTAlfTimedValue@@XZ @ 907 NONAME ; class TAlfTimedValue const & CAlfShadowBorderBrush::Width(void) const
+	?WrapValue@AlfUtil@@SAXAAMMM@Z @ 908 NONAME ; void AlfUtil::WrapValue(float &, float, float)
+	?Wrapping@CAlfTextVisual@@QBE?AW4TLineWrap@1@XZ @ 909 NONAME ; enum CAlfTextVisual::TLineWrap CAlfTextVisual::Wrapping(void) const
+	?WriteReport@CAlfLayoutMetricsUtility@@QAEXXZ @ 910 NONAME ; void CAlfLayoutMetricsUtility::WriteReport(void)
+	?YawAngle@CAlfMeshVisual@@QBE?AVTAlfTimedValue@@XZ @ 911 NONAME ; class TAlfTimedValue CAlfMeshVisual::YawAngle(void) const
+	?CreateSVGImageLoaderL@CAlfImageLoaderUtil@@QAEPAVMAlfBitmapProvider@@ABVTDesC16@@@Z @ 912 NONAME ; class MAlfBitmapProvider * CAlfImageLoaderUtil::CreateSVGImageLoaderL(class TDesC16 const &)
+	?SetColor@CAlfLineVisual@@QAEXABVTRgb@@@Z @ 913 NONAME ; void CAlfLineVisual::SetColor(class TRgb const &)
+	?AppendArcL@CAlfCurvePath@@QAEXABUTAlfRealPoint@@ABUTAlfRealSize@@MMM@Z @ 914 NONAME ; void CAlfCurvePath::AppendArcL(struct TAlfRealPoint const &, struct TAlfRealSize const &, float, float, float)
+	?AppendLineL@CAlfCurvePath@@QAEXABUTAlfRealPoint@@0M@Z @ 915 NONAME ; void CAlfCurvePath::AppendLineL(struct TAlfRealPoint const &, struct TAlfRealPoint const &, float)
+	?SetDropShadow@CAlfImageVisual@@QAEXABUTAlfMetric@@@Z @ 916 NONAME ; void CAlfImageVisual::SetDropShadow(struct TAlfMetric const &)
+	?SetDropShadow@CAlfImageVisual@@QAEXABUTAlfXYMetric@@@Z @ 917 NONAME ; void CAlfImageVisual::SetDropShadow(struct TAlfXYMetric const &)
+	?NewL@CAlfBorderBrush@@SAPAV1@AAVCAlfEnv@@ABUTAlfXYMetric@@1@Z @ 918 NONAME ; class CAlfBorderBrush * CAlfBorderBrush::NewL(class CAlfEnv &, struct TAlfXYMetric const &, struct TAlfXYMetric const &)
+	?NewL@CAlfDropShadowBrush@@SAPAV1@AAVCAlfEnv@@ABUTAlfMetric@@@Z @ 919 NONAME ; class CAlfDropShadowBrush * CAlfDropShadowBrush::NewL(class CAlfEnv &, struct TAlfMetric const &)
+	?NewL@CAlfFrameBrush@@SAPAV1@AAVCAlfEnv@@ABVTAknsItemID@@ABUTAlfXYMetric@@@Z @ 920 NONAME ; class CAlfFrameBrush * CAlfFrameBrush::NewL(class CAlfEnv &, class TAknsItemID const &, struct TAlfXYMetric const &)
+	?NewL@CAlfShadowBorderBrush@@SAPAV1@AAVCAlfEnv@@ABUTAlfMetric@@@Z @ 921 NONAME ; class CAlfShadowBorderBrush * CAlfShadowBorderBrush::NewL(class CAlfEnv &, struct TAlfMetric const &)
+	?NewLC@CAlfBorderBrush@@SAPAV1@AAVCAlfEnv@@ABUTAlfXYMetric@@1@Z @ 922 NONAME ; class CAlfBorderBrush * CAlfBorderBrush::NewLC(class CAlfEnv &, struct TAlfXYMetric const &, struct TAlfXYMetric const &)
+	?NewLC@CAlfDropShadowBrush@@SAPAV1@AAVCAlfEnv@@ABUTAlfMetric@@@Z @ 923 NONAME ; class CAlfDropShadowBrush * CAlfDropShadowBrush::NewLC(class CAlfEnv &, struct TAlfMetric const &)
+	?NewLC@CAlfFrameBrush@@SAPAV1@AAVCAlfEnv@@ABVTAknsItemID@@ABUTAlfXYMetric@@@Z @ 924 NONAME ; class CAlfFrameBrush * CAlfFrameBrush::NewLC(class CAlfEnv &, class TAknsItemID const &, struct TAlfXYMetric const &)
+	?NewLC@CAlfShadowBorderBrush@@SAPAV1@AAVCAlfEnv@@ABUTAlfMetric@@@Z @ 925 NONAME ; class CAlfShadowBorderBrush * CAlfShadowBorderBrush::NewLC(class CAlfEnv &, struct TAlfMetric const &)
+	?SetColor@CAlfDropShadowBrush@@QAEXABVTRgb@@@Z @ 926 NONAME ; void CAlfDropShadowBrush::SetColor(class TRgb const &)
+	?SetDepth@CAlfDropShadowBrush@@QAEXABUTAlfMetric@@@Z @ 927 NONAME ; void CAlfDropShadowBrush::SetDepth(struct TAlfMetric const &)
+	?SetEdgeOffset@CAlfBorderBrush@@QAEXABUTAlfXYMetric@@@Z @ 928 NONAME ; void CAlfBorderBrush::SetEdgeOffset(struct TAlfXYMetric const &)
+	?SetEdgeOffset@CAlfFrameBrush@@QAEXABUTAlfXYMetric@@@Z @ 929 NONAME ; void CAlfFrameBrush::SetEdgeOffset(struct TAlfXYMetric const &)
+	?SetImageOffset@CAlfBorderBrush@@QAEXABUTAlfXYMetric@@@Z @ 930 NONAME ; void CAlfBorderBrush::SetImageOffset(struct TAlfXYMetric const &)
+	?SetSoftness@CAlfDropShadowBrush@@QAEXABUTAlfMetric@@@Z @ 931 NONAME ; void CAlfDropShadowBrush::SetSoftness(struct TAlfMetric const &)
+	?SetThickness@CAlfBorderBrush@@QAEXABUTAlfXYMetric@@@Z @ 932 NONAME ; void CAlfBorderBrush::SetThickness(struct TAlfXYMetric const &)
+	?SetWidth@CAlfShadowBorderBrush@@QAEXABUTAlfMetric@@@Z @ 933 NONAME ; void CAlfShadowBorderBrush::SetWidth(struct TAlfMetric const &)
+	?LoadAnimatedTextureL@CAlfTextureManager@@QAEAAVCAlfTexture@@ABVTDesC16@@VTSize@@W4TAlfTextureFlags@@H@Z @ 934 NONAME ; class CAlfTexture & CAlfTextureManager::LoadAnimatedTextureL(class TDesC16 const &, class TSize, enum TAlfTextureFlags, int)
+	?DestroyWidget@CAlfEnv@@QAEHPAVIAlfWidget@Alf@@@Z @ 935 NONAME ; int CAlfEnv::DestroyWidget(class Alf::IAlfWidget *)
+	?Attach@CAlfAnchorLayout@@QAEHHABUTAlfBoxMetric@@W4TAlfAnchorAttachmentOrigin@@H@Z @ 936 NONAME ; int CAlfAnchorLayout::Attach(int, struct TAlfBoxMetric const &, enum TAlfAnchorAttachmentOrigin, int)
+	?Attach@CAlfAnchorLayout@@QAEHHW4TAlfAnchorType@@ABUTAlfMetric@@W4TAlfAnchorAttachmentOrigin@@H@Z @ 937 NONAME ; int CAlfAnchorLayout::Attach(int, enum TAlfAnchorType, struct TAlfMetric const &, enum TAlfAnchorAttachmentOrigin, int)
+	?Attach@CAlfAnchorLayout@@QAEHHW4TAlfAnchorType@@ABUTAlfXYMetric@@W4TAlfAnchorAttachmentOrigin@@H@Z @ 938 NONAME ; int CAlfAnchorLayout::Attach(int, enum TAlfAnchorType, struct TAlfXYMetric const &, enum TAlfAnchorAttachmentOrigin, int)
+	?Detach@CAlfAnchorLayout@@QAEXH@Z @ 939 NONAME ; void CAlfAnchorLayout::Detach(int)
+	?Detach@CAlfAnchorLayout@@QAEXHW4TAlfAnchorType@@@Z @ 940 NONAME ; void CAlfAnchorLayout::Detach(int, enum TAlfAnchorType)
+	?MaxSizeInBaseUnits@CAlfVisual@@QBE?AUTAlfRealSize@@XZ @ 941 NONAME ; struct TAlfRealSize CAlfVisual::MaxSizeInBaseUnits(void) const
+	?MinSizeInBaseUnits@CAlfVisual@@QBE?AUTAlfRealSize@@XZ @ 942 NONAME ; struct TAlfRealSize CAlfVisual::MinSizeInBaseUnits(void) const
+	?Move@CAlfVisual@@QAEXABUTAlfRealPoint@@H@Z @ 943 NONAME ; void CAlfVisual::Move(struct TAlfRealPoint const &, int)
+	?SetCenteredPosAndSize@CAlfVisual@@QAEXABUTAlfRealPoint@@ABUTAlfRealSize@@H@Z @ 944 NONAME ; void CAlfVisual::SetCenteredPosAndSize(struct TAlfRealPoint const &, struct TAlfRealSize const &, int)
+	?SetMaxSize@CAlfVisual@@QAEXABUTAlfRealSize@@@Z @ 945 NONAME ; void CAlfVisual::SetMaxSize(struct TAlfRealSize const &)
+	?SetMinSize@CAlfVisual@@QAEXABUTAlfRealSize@@@Z @ 946 NONAME ; void CAlfVisual::SetMinSize(struct TAlfRealSize const &)
+	??0TAlfBoxMetric@@QAE@ABUTAlfXYMetric@@0@Z @ 947 NONAME ; TAlfBoxMetric::TAlfBoxMetric(struct TAlfXYMetric const &, struct TAlfXYMetric const &)
+	??1CAlfTexture@@UAE@XZ @ 948 NONAME ; CAlfTexture::~CAlfTexture(void)
+	?ClearLayoutModeFlags@CAlfGridLayout@@QAEXW4TAlfGridDimension@@I@Z @ 949 NONAME ; void CAlfGridLayout::ClearLayoutModeFlags(enum TAlfGridDimension, unsigned int)
+	?LayoutModeFlags@CAlfGridLayout@@QAEHW4TAlfGridDimension@@@Z @ 950 NONAME ; int CAlfGridLayout::LayoutModeFlags(enum TAlfGridDimension)
+	?SetLayoutModeFlags@CAlfGridLayout@@QAEXW4TAlfGridDimension@@I@Z @ 951 NONAME ; void CAlfGridLayout::SetLayoutModeFlags(enum TAlfGridDimension, unsigned int)
+	?HasTactileFeedback@CAlfVisual@@QBEHH@Z @ 952 NONAME ; int CAlfVisual::HasTactileFeedback(int) const
+	?RemoveTactileFeedback@CAlfVisual@@QAEXH@Z @ 953 NONAME ; void CAlfVisual::RemoveTactileFeedback(int)
+	?SetTactileFeedbackL@CAlfVisual@@QAEXHH@Z @ 954 NONAME ; void CAlfVisual::SetTactileFeedbackL(int, int)
+	?DisableLongTapEventsWhenDragging@CAlfRoster@@QAEHABVCAlfControl@@H@Z @ 955 NONAME ; int CAlfRoster::DisableLongTapEventsWhenDragging(class CAlfControl const &, int)
+	?SetPointerDragThreshold@CAlfRoster@@QAEHABVCAlfControl@@ABUTAlfXYMetric@@@Z @ 956 NONAME ; int CAlfRoster::SetPointerDragThreshold(class CAlfControl const &, struct TAlfXYMetric const &)
+	??0TAlfImage@@QAE@PBVTDesC16@@VTSize@@W4TScaleMode@@0HHMMMMW4TAlfTextureFlags@@HPAVCAlfTextureManager@@@Z @ 957 NONAME ; TAlfImage::TAlfImage(class TDesC16 const *, class TSize, enum TScaleMode, class TDesC16 const *, int, int, float, float, float, float, enum TAlfTextureFlags, int, class CAlfTextureManager *)
+	?SetColor@CAlfTextVisual@@QAEXABVTDesC16@@0@Z @ 958 NONAME ; void CAlfTextVisual::SetColor(class TDesC16 const &, class TDesC16 const &)
+	??0CAlfScreenBuffer@@AAE@AAVCAlfEnv@@@Z @ 959 NONAME ; CAlfScreenBuffer::CAlfScreenBuffer(class CAlfEnv &)
+	??1CAlfScreenBuffer@@UAE@XZ @ 960 NONAME ; CAlfScreenBuffer::~CAlfScreenBuffer(void)
+	?AddObserverL@CAlfScreenBuffer@@QAEXVTUid@@PAVMAlfScreenBufferObserver@@H@Z @ 961 NONAME ; void CAlfScreenBuffer::AddObserverL(class TUid, class MAlfScreenBufferObserver *, int)
+	?ConstructL@CAlfScreenBuffer@@AAEXXZ @ 962 NONAME ; void CAlfScreenBuffer::ConstructL(void)
+	?DrawBuffer@CAlfSymbianBufferDrawer@@QAEXAAVCBitmapContext@@ABVTPoint@@ABVTRect@@@Z @ 963 NONAME ; void CAlfSymbianBufferDrawer::DrawBuffer(class CBitmapContext &, class TPoint const &, class TRect const &)
+	?DrawBufferMasked@CAlfSymbianBufferDrawer@@QAEXAAVCBitmapContext@@PBVCFbsBitmap@@ABVTPoint@@ABVTRect@@@Z @ 964 NONAME ; void CAlfSymbianBufferDrawer::DrawBufferMasked(class CBitmapContext &, class CFbsBitmap const *, class TPoint const &, class TRect const &)
+	?GetDrawingInterface@CAlfScreenBuffer@@QAEPAVMAlfBufferDrawer@@VTUid@@0@Z @ 965 NONAME ; class MAlfBufferDrawer * CAlfScreenBuffer::GetDrawingInterface(class TUid, class TUid)
+	?GetGraphicsContext@CAlfScreenBuffer@@QAEPAVMAlfBufferGc@@VTUid@@0@Z @ 966 NONAME ; class MAlfBufferGc * CAlfScreenBuffer::GetGraphicsContext(class TUid, class TUid)
+	?NewDisplayL@CAlfEnv@@QAEAAVCAlfDisplay@@ABVTRect@@HPAV2@HVTUid@@@Z @ 967 NONAME ; class CAlfDisplay & CAlfEnv::NewDisplayL(class TRect const &, int, class CAlfDisplay *, int, class TUid)
+	?NewL@CAlfScreenBuffer@@SAPAV1@AAVCAlfEnv@@@Z @ 968 NONAME ; class CAlfScreenBuffer * CAlfScreenBuffer::NewL(class CAlfEnv &)
+	?ReleaseDrawer@CAlfSymbianBufferDrawer@@UAEXXZ @ 969 NONAME ; void CAlfSymbianBufferDrawer::ReleaseDrawer(void)
+	?RemoveObserver@CAlfScreenBuffer@@QAEXVTUid@@@Z @ 970 NONAME ; void CAlfScreenBuffer::RemoveObserver(class TUid)
+	?RequestNextBuffer@CAlfScreenBuffer@@QAEXVTUid@@@Z @ 971 NONAME ; void CAlfScreenBuffer::RequestNextBuffer(class TUid)
+	?DeleteTextStyle@CAlfTextStyleManager@@QAEHH@Z @ 972 NONAME ; int CAlfTextStyleManager::DeleteTextStyle(int)
+	?UpdateTextureFromBitmapL@CAlfTextureManager@@QAEXHPAVMAlfBitmapProvider@@@Z @ 973 NONAME ; void CAlfTextureManager::UpdateTextureFromBitmapL(int, class MAlfBitmapProvider *)
+	?UpdateTextureFromFileL@CAlfTextureManager@@QAEXHPBVTDesC16@@@Z @ 974 NONAME ; void CAlfTextureManager::UpdateTextureFromFileL(int, class TDesC16 const *)
+	?Pause@CAlfVisual@@QAEXH@Z @ 975 NONAME ; void CAlfVisual::Pause(int)
+	?Resume@CAlfVisual@@QAEXH@Z @ 976 NONAME ; void CAlfVisual::Resume(int)
+	??0TAlfDisplayBackgroundItem@@QAE@ABVTRect@@@Z @ 977 NONAME ; TAlfDisplayBackgroundItem::TAlfDisplayBackgroundItem(class TRect const &)
+	??0TAlfDisplayBackgroundItem@@QAE@ABVTRect@@ABVTAknsItemID@@@Z @ 978 NONAME ; TAlfDisplayBackgroundItem::TAlfDisplayBackgroundItem(class TRect const &, class TAknsItemID const &)
+	??0TAlfDisplayBackgroundItem@@QAE@ABVTRect@@ABVTAknsItemID@@H@Z @ 979 NONAME ; TAlfDisplayBackgroundItem::TAlfDisplayBackgroundItem(class TRect const &, class TAknsItemID const &, int)
+	??0TAlfDisplayBackgroundItem@@QAE@ABVTRect@@ABVTRgb@@@Z @ 980 NONAME ; TAlfDisplayBackgroundItem::TAlfDisplayBackgroundItem(class TRect const &, class TRgb const &)
+	??0TAlfDisplayBackgroundItem@@QAE@XZ @ 981 NONAME ; TAlfDisplayBackgroundItem::TAlfDisplayBackgroundItem(void)
+	?SetBackgroundItemsL@CAlfDisplay@@QAEXABV?$RArray@VTAlfDisplayBackgroundItem@@@@@Z @ 982 NONAME ; void CAlfDisplay::SetBackgroundItemsL(class RArray<class TAlfDisplayBackgroundItem> const &)
+	?SetColor@TAlfDisplayBackgroundItem@@QAEXABVTAknsItemID@@H@Z @ 983 NONAME ; void TAlfDisplayBackgroundItem::SetColor(class TAknsItemID const &, int)
+	?SetColor@TAlfDisplayBackgroundItem@@QAEXABVTRgb@@@Z @ 984 NONAME ; void TAlfDisplayBackgroundItem::SetColor(class TRgb const &)
+	?SetRect@TAlfDisplayBackgroundItem@@QAEXABVTRect@@@Z @ 985 NONAME ; void TAlfDisplayBackgroundItem::SetRect(class TRect const &)
+	?SetSkinBackground@TAlfDisplayBackgroundItem@@QAEXABVTAknsItemID@@@Z @ 986 NONAME ; void TAlfDisplayBackgroundItem::SetSkinBackground(class TAknsItemID const &)
+	?AutoFlushMode@CAlfBatchBuffer@@QBE?AW4TAlfAutoFlushMode@@XZ @ 987 NONAME ; enum TAlfAutoFlushMode CAlfBatchBuffer::AutoFlushMode(void) const
+	?BatchBufferHandler@CAlfEnv@@QBEAAVCAlfBatchBuffer@@XZ @ 988 NONAME ; class CAlfBatchBuffer & CAlfEnv::BatchBufferHandler(void) const
+	?DoCmdNoReply@CAlfGenComponent@@QAEHIABVTDesC8@@@Z @ 989 NONAME ; int CAlfGenComponent::DoCmdNoReply(unsigned int, class TDesC8 const &)
+	?FlushBatchBuffer@CAlfBatchBuffer@@QAEHXZ @ 990 NONAME ; int CAlfBatchBuffer::FlushBatchBuffer(void)
+	?GetBatchBufferInfo@CAlfBatchBuffer@@QBEHW4TAlfBatchBufferInfoType@@@Z @ 991 NONAME ; int CAlfBatchBuffer::GetBatchBufferInfo(enum TAlfBatchBufferInfoType) const
+	?SetAutoFlushMode@CAlfBatchBuffer@@QAEXW4TAlfAutoFlushMode@@@Z @ 992 NONAME ; void CAlfBatchBuffer::SetAutoFlushMode(enum TAlfAutoFlushMode)
+	?SetMaxBatchBufferSize@CAlfBatchBuffer@@QAEXH@Z @ 993 NONAME ; void CAlfBatchBuffer::SetMaxBatchBufferSize(int)
+	?SetTextPaneHeightInPixels@CAlfTextStyle@@QAEXHH@Z @ 994 NONAME ; void CAlfTextStyle::SetTextPaneHeightInPixels(int, int)
+	?TextStyle@CAlfTextVisual@@QBEHXZ @ 995 NONAME ; int CAlfTextVisual::TextStyle(void) const
+	?ThemeItemIdL@AlfUtil@@SA?AVTAknsItemID@@AAVCAlfEnv@@ABVTDesC16@@@Z @ 996 NONAME ; class TAknsItemID AlfUtil::ThemeItemIdL(class CAlfEnv &, class TDesC16 const &)
+	?TextureId@CAlfTextureManager@@QBEHABVTDesC16@@@Z @ 997 NONAME ; int CAlfTextureManager::TextureId(class TDesC16 const &) const
+	?FocusedConnection@CAlfControl@@QBEPAV1@XZ @ 998 NONAME ; class CAlfControl * CAlfControl::FocusedConnection(void) const
+	??0TAlfTextureAutoSizeParams@@QAE@XZ @ 999 NONAME ; TAlfTextureAutoSizeParams::TAlfTextureAutoSizeParams(void)
+	?AddAutoSizeObserverL@CAlfTextureManager@@QAEXPAVMAlfTextureAutoSizeObserver@@@Z @ 1000 NONAME ; void CAlfTextureManager::AddAutoSizeObserverL(class MAlfTextureAutoSizeObserver *)
+	?AutoSizeParams@CAlfTexture@@QBE?AVTAlfTextureAutoSizeParams@@XZ @ 1001 NONAME ; class TAlfTextureAutoSizeParams CAlfTexture::AutoSizeParams(void) const
+	?DownsizeSettleThreshold@TAlfTextureAutoSizeParams@@QBEHXZ @ 1002 NONAME ; int TAlfTextureAutoSizeParams::DownsizeSettleThreshold(void) const
+	?MinSizeChange@TAlfTextureAutoSizeParams@@QBEHXZ @ 1003 NONAME ; int TAlfTextureAutoSizeParams::MinSizeChange(void) const
+	?PreferredSizeChanged@CAlfAutoSizeImageLoaderUtil@@EAEHABVCAlfTexture@@VTSize@@@Z @ 1004 NONAME ; int CAlfAutoSizeImageLoaderUtil::PreferredSizeChanged(class CAlfTexture const &, class TSize)
+	?RemoveAutoSizeObserver@CAlfTextureManager@@QAEXPAVMAlfTextureAutoSizeObserver@@@Z @ 1005 NONAME ; void CAlfTextureManager::RemoveAutoSizeObserver(class MAlfTextureAutoSizeObserver *)
+	?SetAutoSizeParams@CAlfTexture@@QAEXABVTAlfTextureAutoSizeParams@@@Z @ 1006 NONAME ; void CAlfTexture::SetAutoSizeParams(class TAlfTextureAutoSizeParams const &)
+	?SetDownsizeSettleThreshold@TAlfTextureAutoSizeParams@@QAEXH@Z @ 1007 NONAME ; void TAlfTextureAutoSizeParams::SetDownsizeSettleThreshold(int)
+	?SetMinSizeChange@TAlfTextureAutoSizeParams@@QAEXH@Z @ 1008 NONAME ; void TAlfTextureAutoSizeParams::SetMinSizeChange(int)
+	?SetSizeLowerThreshold@TAlfTextureAutoSizeParams@@QAEXH@Z @ 1009 NONAME ; void TAlfTextureAutoSizeParams::SetSizeLowerThreshold(int)
+	?SetSizeUpperThreshold@TAlfTextureAutoSizeParams@@QAEXH@Z @ 1010 NONAME ; void TAlfTextureAutoSizeParams::SetSizeUpperThreshold(int)
+	?SizeLowerThreshold@TAlfTextureAutoSizeParams@@QBEHXZ @ 1011 NONAME ; int TAlfTextureAutoSizeParams::SizeLowerThreshold(void) const
+	?SizeUpperThreshold@TAlfTextureAutoSizeParams@@QBEHXZ @ 1012 NONAME ; int TAlfTextureAutoSizeParams::SizeUpperThreshold(void) const
+	?EnableRefCounting@CAlfTexture@@QAEXH@Z @ 1013 NONAME ; void CAlfTexture::EnableRefCounting(int)
+	?RefCountingEnabled@CAlfTexture@@QAEHXZ @ 1014 NONAME ; int CAlfTexture::RefCountingEnabled(void)
+	?GetBufferBitmaps@CAlfSymbianBufferDrawer@@QBEXAAPAVCFbsBitmap@@0@Z @ 1015 NONAME ; void CAlfSymbianBufferDrawer::GetBufferBitmaps(class CFbsBitmap * &, class CFbsBitmap * &) const
+	?NewL@CAlfScreenBuffer@@SAPAV1@XZ @ 1016 NONAME ; class CAlfScreenBuffer * CAlfScreenBuffer::NewL(void)
+	??0CAlfAutoSizeImageLoaderUtil@@QAE@XZ @ 1017 NONAME ; CAlfAutoSizeImageLoaderUtil::CAlfAutoSizeImageLoaderUtil(void)
+	?FindControlGroup@CAlfEnv@@QBEPAVCAlfControlGroup@@H@Z @ 1018 NONAME ; class CAlfControlGroup * CAlfEnv::FindControlGroup(int) const
+	?AddExtension@CAlfEnv@@QAEHHPAVMAlfEnvObject@@@Z @ 1019 NONAME ; int CAlfEnv::AddExtension(int, class MAlfEnvObject *)
+	?Extension@CAlfEnv@@QBEPAVMAlfEnvObject@@H@Z @ 1020 NONAME ; class MAlfEnvObject * CAlfEnv::Extension(int) const
+	?CreateImageLoaderL@CAlfImageLoaderUtil@@QAEPAVMAlfBitmapProvider@@ABVTAknsItemID@@ABVTRect@@1@Z @ 1021 NONAME ; class MAlfBitmapProvider * CAlfImageLoaderUtil::CreateImageLoaderL(class TAknsItemID const &, class TRect const &, class TRect const &)
+	?NewL@CAlfFrameBrush@@SAPAV1@AAVCAlfEnv@@ABVTAlfImage@@ABUTAlfXYMetric@@@Z @ 1022 NONAME ; class CAlfFrameBrush * CAlfFrameBrush::NewL(class CAlfEnv &, class TAlfImage const &, struct TAlfXYMetric const &)
+	?NewLC@CAlfFrameBrush@@SAPAV1@AAVCAlfEnv@@ABVTAlfImage@@ABUTAlfXYMetric@@@Z @ 1023 NONAME ; class CAlfFrameBrush * CAlfFrameBrush::NewLC(class CAlfEnv &, class TAlfImage const &, struct TAlfXYMetric const &)
+	?SetImage@CAlfFrameBrush@@QAEXABVTAlfImage@@@Z @ 1024 NONAME ; void CAlfFrameBrush::SetImage(class TAlfImage const &)
+	?HandlePointerEventL@CAlfDisplay@@QAEXABUTPointerEvent@@@Z @ 1025 NONAME ; void CAlfDisplay::HandlePointerEventL(struct TPointerEvent const &)
+	?HandlePointerEventL@CAlfEnv@@QAEXABUTPointerEvent@@AAVCAlfDisplay@@@Z @ 1026 NONAME ; void CAlfEnv::HandlePointerEventL(struct TPointerEvent const &, class CAlfDisplay &)
+	?RefCountingAction@CAlfTexture@@QBEHXZ @ 1027 NONAME ; int CAlfTexture::RefCountingAction(void) const
+	?SetImage@CAlfFrameBrush@@QAEXW4TFrameParts@1@ABVTAlfImage@@@Z @ 1028 NONAME ; void CAlfFrameBrush::SetImage(enum CAlfFrameBrush::TFrameParts, class TAlfImage const &)
+	?SetRefCountingAction@CAlfTexture@@QAEXH@Z @ 1029 NONAME ; void CAlfTexture::SetRefCountingAction(int)
+	?AddObserverL@CAlfScreenBuffer@@QAEXVTUid@@IPAVMAlfScreenBufferObserver@@H@Z @ 1030 NONAME ; void CAlfScreenBuffer::AddObserverL(class TUid, unsigned int, class MAlfScreenBufferObserver *, int)
+	?RequestBufferDraw@CAlfScreenBuffer@@QAEXVTUid@@@Z @ 1031 NONAME ; void CAlfScreenBuffer::RequestBufferDraw(class TUid)
+	?SuppressAutomaticFading@CAlfDisplay@@QAEHH@Z @ 1032 NONAME ; int CAlfDisplay::SuppressAutomaticFading(int)
+	?DropShadowHandler@CAlfVisual@@QBEPAVCAlfDropShadow@@XZ @ 1033 NONAME ; class CAlfDropShadow * CAlfVisual::DropShadowHandler(void) const
+	?EnableDropShadowL@CAlfVisual@@QAEXH@Z @ 1034 NONAME ; void CAlfVisual::EnableDropShadowL(int)
+	?SetColor@CAlfDropShadow@@QAEXABVTAknsItemID@@HH@Z @ 1035 NONAME ; void CAlfDropShadow::SetColor(class TAknsItemID const &, int, int)
+	?SetColor@CAlfDropShadow@@QAEXABVTRgb@@H@Z @ 1036 NONAME ; void CAlfDropShadow::SetColor(class TRgb const &, int)
+	?SetOffset@CAlfDropShadow@@QAEXABVTAlfTimedPoint@@H@Z @ 1037 NONAME ; void CAlfDropShadow::SetOffset(class TAlfTimedPoint const &, int)
+	?SetOffset@CAlfDropShadow@@QAEXMUTAlfMetric@@H@Z @ 1038 NONAME ; void CAlfDropShadow::SetOffset(float, struct TAlfMetric, int)
+	?SetOpacity@CAlfDropShadow@@QAEXABVTAlfTimedValue@@@Z @ 1039 NONAME ; void CAlfDropShadow::SetOpacity(class TAlfTimedValue const &)
+	?SetRadius@CAlfDropShadow@@QAEXABVTAlfTimedValue@@@Z @ 1040 NONAME ; void CAlfDropShadow::SetRadius(class TAlfTimedValue const &)
+	?SetScale@CAlfDropShadow@@QAEXABVTAlfTimedValue@@@Z @ 1041 NONAME ; void CAlfDropShadow::SetScale(class TAlfTimedValue const &)
+	?AddControlGroupOrderChangedObserverL@CAlfRoster@@QAEXAAVMAlfControlGroupOrderChangedObserver@@@Z @ 1042 NONAME ; void CAlfRoster::AddControlGroupOrderChangedObserverL(class MAlfControlGroupOrderChangedObserver &)
+	?RemoveControlGroupOrderChangedObserver@CAlfRoster@@QAEXAAVMAlfControlGroupOrderChangedObserver@@@Z @ 1043 NONAME ; void CAlfRoster::RemoveControlGroupOrderChangedObserver(class MAlfControlGroupOrderChangedObserver &)
+	?ClipToVisual@CAlfBrush@@QBEHXZ @ 1044 NONAME ; int CAlfBrush::ClipToVisual(void) const
+	?Offset@CAlfTextVisual@@QBE?AVTAlfTimedPoint@@XZ @ 1045 NONAME ; class TAlfTimedPoint CAlfTextVisual::Offset(void) const
+	?SetClipToVisual@CAlfBrush@@QAEXH@Z @ 1046 NONAME ; void CAlfBrush::SetClipToVisual(int)
+	?SetOffset@CAlfTextVisual@@QAEXABVTAlfTimedPoint@@@Z @ 1047 NONAME ; void CAlfTextVisual::SetOffset(class TAlfTimedPoint const &)
+	??0CAlfTextureGroup@@AAE@XZ @ 1048 NONAME ; CAlfTextureGroup::CAlfTextureGroup(void)
+	??1CAlfTextureGroup@@UAE@XZ @ 1049 NONAME ; CAlfTextureGroup::~CAlfTextureGroup(void)
+	?AddLoadObserverL@CAlfTextureGroup@@QAEXAAVMAlfTextureGroupLoadingCompletedObserver@@@Z @ 1050 NONAME ; void CAlfTextureGroup::AddLoadObserverL(class MAlfTextureGroupLoadingCompletedObserver &)
+	?AddTextureL@CAlfTextureGroup@@QAEXAAVCAlfTexture@@@Z @ 1051 NONAME ; void CAlfTextureGroup::AddTextureL(class CAlfTexture &)
+	?ConstructL@CAlfTextureGroup@@AAEXAAVCAlfEnv@@@Z @ 1052 NONAME ; void CAlfTextureGroup::ConstructL(class CAlfEnv &)
+	?Count@CAlfTextureGroup@@QBEHXZ @ 1053 NONAME ; int CAlfTextureGroup::Count(void) const
+	?IsLoadingCompleted@CAlfTextureGroup@@QBEHXZ @ 1054 NONAME ; int CAlfTextureGroup::IsLoadingCompleted(void) const
+	?NewL@CAlfTextureGroup@@SAPAV1@AAVCAlfEnv@@@Z @ 1055 NONAME ; class CAlfTextureGroup * CAlfTextureGroup::NewL(class CAlfEnv &)
+	?NewLC@CAlfTextureGroup@@SAPAV1@AAVCAlfEnv@@@Z @ 1056 NONAME ; class CAlfTextureGroup * CAlfTextureGroup::NewLC(class CAlfEnv &)
+	?RemoveLoadObserver@CAlfTextureGroup@@QAEXAAVMAlfTextureGroupLoadingCompletedObserver@@@Z @ 1057 NONAME ; void CAlfTextureGroup::RemoveLoadObserver(class MAlfTextureGroupLoadingCompletedObserver &)
+	?RemoveTexture@CAlfTextureGroup@@QAEXAAVCAlfTexture@@@Z @ 1058 NONAME ; void CAlfTextureGroup::RemoveTexture(class CAlfTexture &)
+	?Texture@CAlfTextureGroup@@QBEAAVCAlfTexture@@H@Z @ 1059 NONAME ; class CAlfTexture & CAlfTextureGroup::Texture(int) const
+	?EnableLoadObservers@CAlfTextureGroup@@QAEXH@Z @ 1060 NONAME ; void CAlfTextureGroup::EnableLoadObservers(int)
+	?Display@CAlfEnv@@QBEAAVCAlfDisplay@@H@Z @ 1061 NONAME ; class CAlfDisplay & CAlfEnv::Display(int) const
+	?FindDisplayIndex@CAlfEnv@@QBEHABVCAlfDisplay@@@Z @ 1062 NONAME ; int CAlfEnv::FindDisplayIndex(class CAlfDisplay const &) const
+	??0CAlfCanvasVisual@@QAE@XZ @ 1063 NONAME ; CAlfCanvasVisual::CAlfCanvasVisual(void)
+	??1CAlfCanvasVisual@@UAE@XZ @ 1064 NONAME ; CAlfCanvasVisual::~CAlfCanvasVisual(void)
+	?AddNewL@CAlfCanvasVisual@@SAPAV1@AAVCAlfControl@@PAVCAlfLayout@@@Z @ 1065 NONAME ; class CAlfCanvasVisual * CAlfCanvasVisual::AddNewL(class CAlfControl &, class CAlfLayout *)
+	?BeginDraw@CAlfCanvasVisual@@QAEXXZ @ 1066 NONAME ; void CAlfCanvasVisual::BeginDraw(void)
+	?ConstructL@CAlfCanvasVisual@@UAEXAAVCAlfControl@@@Z @ 1067 NONAME ; void CAlfCanvasVisual::ConstructL(class CAlfControl &)
+	?DoRemoveAndDestroyAllD@CAlfCanvasVisual@@MAEXXZ @ 1068 NONAME ; void CAlfCanvasVisual::DoRemoveAndDestroyAllD(void)
+	?DrawEllipse@CAlfCanvasVisual@@QAEXABUTAlfRealRect@@@Z @ 1069 NONAME ; void CAlfCanvasVisual::DrawEllipse(struct TAlfRealRect const &)
+	?DrawImage@CAlfCanvasVisual@@QAEXABVCAlfTexture@@ABUTAlfRealRect@@@Z @ 1070 NONAME ; void CAlfCanvasVisual::DrawImage(class CAlfTexture const &, struct TAlfRealRect const &)
+	?DrawLines@CAlfCanvasVisual@@QAEXPBUTAlfRealLine@@H@Z @ 1071 NONAME ; void CAlfCanvasVisual::DrawLines(struct TAlfRealLine const *, int)
+	?DrawPoints@CAlfCanvasVisual@@QAEXPBUTAlfRealPoint@@H@Z @ 1072 NONAME ; void CAlfCanvasVisual::DrawPoints(struct TAlfRealPoint const *, int)
+	?DrawPolygon@CAlfCanvasVisual@@QAEXPBUTAlfRealPoint@@H@Z @ 1073 NONAME ; void CAlfCanvasVisual::DrawPolygon(struct TAlfRealPoint const *, int)
+	?DrawRects@CAlfCanvasVisual@@QAEXPBUTAlfRealRect@@H@Z @ 1074 NONAME ; void CAlfCanvasVisual::DrawRects(struct TAlfRealRect const *, int)
+	?DrawText@CAlfCanvasVisual@@QAEXABVTDesC16@@ABUTAlfRealRect@@@Z @ 1075 NONAME ; void CAlfCanvasVisual::DrawText(class TDesC16 const &, struct TAlfRealRect const &)
+	?EndDraw@CAlfCanvasVisual@@QAEXXZ @ 1076 NONAME ; void CAlfCanvasVisual::EndDraw(void)
+	?FindTag@CAlfCanvasVisual@@UAEPAVCAlfVisual@@ABVTDesC8@@@Z @ 1077 NONAME ; class CAlfVisual * CAlfCanvasVisual::FindTag(class TDesC8 const &)
+	?LoadIdentity@CAlfCanvasVisual@@QAEXXZ @ 1078 NONAME ; void CAlfCanvasVisual::LoadIdentity(void)
+	?PropertyOwnerExtension@CAlfCanvasVisual@@MAEXABVTUid@@PAPAX@Z @ 1079 NONAME ; void CAlfCanvasVisual::PropertyOwnerExtension(class TUid const &, void * *)
+	?RemoveAndDestroyAllD@CAlfCanvasVisual@@UAEXXZ @ 1080 NONAME ; void CAlfCanvasVisual::RemoveAndDestroyAllD(void)
+	?Rotate@CAlfCanvasVisual@@QAEXABM000@Z @ 1081 NONAME ; void CAlfCanvasVisual::Rotate(float const &, float const &, float const &, float const &)
+	?Scale@CAlfCanvasVisual@@QAEXABM00@Z @ 1082 NONAME ; void CAlfCanvasVisual::Scale(float const &, float const &, float const &)
+	?SetCanvasObserver@CAlfCanvasVisual@@QAEXPAVMAlfCanvasObserver@@@Z @ 1083 NONAME ; void CAlfCanvasVisual::SetCanvasObserver(class MAlfCanvasObserver *)
+	?SetPenOpacity@CAlfCanvasVisual@@QAEXABM@Z @ 1084 NONAME ; void CAlfCanvasVisual::SetPenOpacity(float const &)
+	?SetPenColor@CAlfCanvasVisual@@QAEXABVTRgb@@@Z @ 1085 NONAME ; void CAlfCanvasVisual::SetPenColor(class TRgb const &)
+	?SetPenWidth@CAlfCanvasVisual@@QAEXABM@Z @ 1086 NONAME ; void CAlfCanvasVisual::SetPenWidth(float const &)
+	?SetPolygonDrawMode@CAlfCanvasVisual@@QAEXW4TAlfPolygonDrawMode@@@Z @ 1087 NONAME ; void CAlfCanvasVisual::SetPolygonDrawMode(enum TAlfPolygonDrawMode)
+	?SetTextAlign@CAlfCanvasVisual@@QAEXW4TAlfAlignHorizontal@@W4TAlfAlignVertical@@@Z @ 1088 NONAME ; void CAlfCanvasVisual::SetTextAlign(enum TAlfAlignHorizontal, enum TAlfAlignVertical)
+	?SetTextStyle@CAlfCanvasVisual@@QAEXABVCAlfTextStyle@@@Z @ 1089 NONAME ; void CAlfCanvasVisual::SetTextStyle(class CAlfTextStyle const &)
+	?Translate@CAlfCanvasVisual@@QAEXABM00@Z @ 1090 NONAME ; void CAlfCanvasVisual::Translate(float const &, float const &, float const &)
+	?UpdateChildrenLayout@CAlfCanvasVisual@@UAEXH@Z @ 1091 NONAME ; void CAlfCanvasVisual::UpdateChildrenLayout(int)
+	?SetHighlightRange@CAlfTextVisual@@QAEXHHAAVTRgb@@0@Z @ 1092 NONAME ; void CAlfTextVisual::SetHighlightRange(int, int, class TRgb &, class TRgb &)
+	?ScaleMode@CAlfImageVisual@@QAE?AW4TScaleMode@1@XZ @ 1093 NONAME ; enum CAlfImageVisual::TScaleMode CAlfImageVisual::ScaleMode(void)
+	?StartL@CAlfAsynchStartup@@SAXXZ @ 1094 NONAME ; void CAlfAsynchStartup::StartL(void)
+	?ForceSetVisibleArea@CAlfDisplay@@QAEXABVTRect@@@Z @ 1095 NONAME ; void CAlfDisplay::ForceSetVisibleArea(class TRect const &)
+	?SetClientWindowForDrawingL@CAlfDisplay@@QAEXPAVRWindow@@PAVCAlfVisual@@@Z @ 1096 NONAME ; void CAlfDisplay::SetClientWindowForDrawingL(class RWindow *, class CAlfVisual *)
+	?PostCommandsL@CAlfClientWindow@@QAEXAAVTDes8@@W4TAlfCommandBufferStatus@@@Z @ 1097 NONAME ; void CAlfClientWindow::PostCommandsL(class TDes8 &, enum TAlfCommandBufferStatus)
+	?SetEffectL@CAlfVisual@@QAEXABVTDesC16@@@Z @ 1098 NONAME ; void CAlfVisual::SetEffectL(class TDesC16 const &)
+	?NewL@CAlfClientWindow@@SAPAV1@AAVCAlfEnv@@AAVRWindow@@@Z @ 1099 NONAME ; class CAlfClientWindow * CAlfClientWindow::NewL(class CAlfEnv &, class RWindow &)
+	??1CAlfClientWindow@@UAE@XZ @ 1100 NONAME ; CAlfClientWindow::~CAlfClientWindow(void)
+	?MeasureFPS@RAlfDirectClient@@QAEXJH@Z @ 1101 NONAME ; void RAlfDirectClient::MeasureFPS(long, int)
+	??0RAlfDirectClient@@QAE@XZ @ 1102 NONAME ; RAlfDirectClient::RAlfDirectClient(void)
+	?Disconnect@RAlfDirectClient@@QAEXXZ @ 1103 NONAME ; void RAlfDirectClient::Disconnect(void)
+	?EnableLowMemoryState@RAlfDirectClient@@QAEXHH@Z @ 1104 NONAME ; void RAlfDirectClient::EnableLowMemoryState(int, int)
+	?SetGroupEffectL@CAlfVisual@@QAEXABVTDesC16@@H@Z @ 1105 NONAME ; void CAlfVisual::SetGroupEffectL(class TDesC16 const &, int)
+	?ForceSwRendering@RAlfDirectClient@@QAEHH@Z @ 1106 NONAME ; int RAlfDirectClient::ForceSwRendering(int)
+	?Finish@CAlfDrawer@@QAEHXZ @ 1107 NONAME ; int CAlfDrawer::Finish(void)
+	??1CAlfDrawer@@UAE@XZ @ 1108 NONAME ; CAlfDrawer::~CAlfDrawer(void)
+	?NewL@CAlfDrawer@@SAPAV1@XZ @ 1109 NONAME ; class CAlfDrawer * CAlfDrawer::NewL(void)
+	?BlankScreen@RAlfDirectClient@@QAEHH@Z @ 1110 NONAME ; int RAlfDirectClient::BlankScreen(int)
+	?FallbackCopyScreenToBitmap@CAlfDrawer@@SAHAAVCWsScreenDevice@@PAVCFbsBitmap@@ABVTRect@@@Z @ 1111 NONAME ; int CAlfDrawer::FallbackCopyScreenToBitmap(class CWsScreenDevice &, class CFbsBitmap *, class TRect const &)
+	?CopyScreenToBitmap@AlfDrawerInternal@@SAHPAVMAlfDrawerScreenInterface@@PAVCFbsBitmap@@ABVTRect@@@Z @ 1112 NONAME ; int AlfDrawerInternal::CopyScreenToBitmap(class MAlfDrawerScreenInterface *, class CFbsBitmap *, class TRect const &)
+

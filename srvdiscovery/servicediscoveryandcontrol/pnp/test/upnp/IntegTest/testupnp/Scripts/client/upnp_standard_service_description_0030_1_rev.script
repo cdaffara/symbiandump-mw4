@@ -1,0 +1,49 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_standard_service_description_0030_1_rev.script
+//! @SYMTestSuiteName	multiple_machines_client 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client 
+
+LOAD_SUITE multiple_machines_client
+LOAD_SUITE test_synchronize_client
+LOAD_SUITE testdelay
+
+START_TESTCASE	upnp_standard_service_description_0030_1_rev
+//! @file					
+//! @SYMTestCaseID			UPNP_POS_0030
+//! @SYMTestCaseDesc 		Retrieve the service description of an UPnP device with a standard service type (urn:schemas-upnp-org:service: serviceType:v).	
+//! @SYMREQ					REQ8627,  REQ8629, REQ8605, REQ8606, REQ8607, REQ8611, REQ8681, REQ10588, REQ10589,REQ4877, REQ8617,REQ8618
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Issue a discovery search request for all UPnP enabled services of standard service type in the LAN with urn:schemas-upnp-org:service: serviceType:v.
+//! 						2.	Retrieve the Device description by issuing HTTP GET request for the URL retrieved from the LOCATION field specified in successful Discovery response.
+//! 						3.	From the step 2 above parse the data for SCPDURL, this specifies the relative URL for service description.
+//! 						4.	Retrieve the service description by issuing HTTP GET request for the URL (convert this to absolute URI) from step 3.
+//! @SYMTestExpectedResults	
+//!								Retrieval of service description for a standard service of UPnP Device is completed. i.e.,
+//!								If control point provides a valid LOCATION then it retrieves a file containing standard service description for a root device.
+//!								It is expected to receive only one describe response for describe request.
+//!								If it is an invalid location or unable to retrieve the description then it is expected return with appropriate error message.  
+//! @SYMTestType 			CIT
+
+RUN_TEST_STEP 1000 testdelay TestUPnPManager  
+RUN_TEST_STEP 1000 testdelay TestUPnPManager
+RUN_TEST_STEP 1000 test_synchronize_client TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini clientdata
+RUN_TEST_STEP 500  multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\describe_0030_rev.ini UPnP_Describe_Standard_Root_Service_rev
+
+END_TESTCASE	upnp_standard_service_description_0030_1_rev

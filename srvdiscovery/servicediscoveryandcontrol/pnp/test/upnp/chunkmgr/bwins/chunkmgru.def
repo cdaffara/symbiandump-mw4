@@ -1,0 +1,23 @@
+EXPORTS
+	?Free@RMemChunk@@QAEXXZ @ 1 NONAME ; void RMemChunk::Free(void)
+	?CreateL@RMemChunk@@QAEXAAVTDesC8@@AAVRMemoryAllocator@@@Z @ 2 NONAME ABSENT ; void RMemChunk::CreateL(class TDesC8 &, class RMemoryAllocator &)
+	?Alloc@RMemChunk@@QAEHHAAVRMemoryAllocator@@@Z @ 3 NONAME ; int RMemChunk::Alloc(int, class RMemoryAllocator &)
+	?AddPoolL@CChunkManager@@QAEXHHHH@Z @ 4 NONAME ; void CChunkManager::AddPoolL(int, int, int, int)
+	?NewL@CChunkManager@@SAPAV1@H@Z @ 5 NONAME ; class CChunkManager * CChunkManager::NewL(int)
+	??1CChunkManager@@UAE@XZ @ 6 NONAME ; CChunkManager::~CChunkManager(void)
+	?Create@RMemChunk@@QAEHAAVTDesC8@@AAVRMemoryAllocator@@@Z @ 7 NONAME ABSENT ; int RMemChunk::Create(class TDesC8 &, class RMemoryAllocator &)
+	?CopyIn@RMemChunk@@QAEXABVTDesC8@@H@Z @ 8 NONAME ; void RMemChunk::CopyIn(class TDesC8 const &, int)
+	?Length@RMemChunk@@QBEHXZ @ 9 NONAME ; int RMemChunk::Length(void) const
+	?Goto@RMemChunk@@QBEHHAAPAVRMemCell@@AAH10@Z @ 10 NONAME ; int RMemChunk::Goto(int, class RMemCell * &, int &, int &, class RMemCell * &) const
+	?Assign@RMemChunk@@QAEXAAV1@@Z @ 11 NONAME ; void RMemChunk::Assign(class RMemChunk &)
+	?TrimStart@RMemChunk@@QAEXH@Z @ 12 NONAME ; void RMemChunk::TrimStart(int)
+	??ETMemCellIterator@@QAEPAVRMemCell@@H@Z @ 13 NONAME ; class RMemCell * TMemCellIterator::operator++(int)
+	?CopyOut@RMemChunk@@QBEXAAVTDes8@@H@Z @ 14 NONAME ; void RMemChunk::CopyOut(class TDes8 &, int) const
+	?Append@RMemChunk@@QAEXAAV1@@Z @ 15 NONAME ; void RMemChunk::Append(class RMemChunk &)
+	?Last@RMemCell@@QAEPAV1@XZ @ 16 NONAME ; class RMemCell * RMemCell::Last(void)
+	?Last@RMemChunk@@QBEPAVRMemCell@@XZ @ 17 NONAME ; class RMemCell * RMemChunk::Last(void) const
+	?Create@RMemChunk@@QAEHABVTDesC8@@AAVRMemoryAllocator@@@Z @ 18 NONAME ; int RMemChunk::Create(class TDesC8 const &, class RMemoryAllocator &)
+	?CreateL@RMemChunk@@QAEXABVTDesC8@@AAVRMemoryAllocator@@@Z @ 19 NONAME ; void RMemChunk::CreateL(class TDesC8 const &, class RMemoryAllocator &)
+	?Remove@RMemChunk@@QAEPAVRMemCell@@XZ @ 20 NONAME ; class RMemCell * RMemChunk::Remove(void)
+	?NumBufs@RMemChunk@@QBEHXZ @ 21 NONAME ; int RMemChunk::NumBufs(void) const
+

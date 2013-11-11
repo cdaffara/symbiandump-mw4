@@ -1,0 +1,79 @@
+// *
+// * Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// * All rights reserved.
+// * This component and the accompanying materials are made available
+// * under the terms of the License "Eclipse Public License v1.0"
+// * which accompanies this distribution, and is available
+// * at the URL "http://www.eclipse.org/legal/epl-v10.html".
+// *
+// * Initial Contributors:
+// * Nokia Corporation - initial contribution.
+// *
+// * Contributors:
+// *
+// * Description:  This is the project specification file for WebCore.
+// *
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#include "../../common.mmpi"
+
+TARGET  WebCoreloader.lib
+
+TARGETTYPE  lib
+
+VENDORID    VID_DEFAULT
+
+//OPTION CW -prefix pragmas.pref
+
+SOURCEPATH ../../../../../WebCore/loader
+
+SOURCE Cache.cpp
+SOURCE CachedCSSStyleSheet.cpp
+SOURCE CachedImage.cpp
+SOURCE CachedResource.cpp
+SOURCE CachedResourceClientWalker.cpp
+SOURCE CachedScript.cpp
+SOURCE CachedXBLDocument.cpp
+SOURCE CachedXSLStyleSheet.cpp
+SOURCE DocLoader.cpp
+SOURCE DocumentLoader.cpp
+SOURCE FormState.cpp
+SOURCE FrameLoader.cpp
+//SOURCE FTPDirectoryDocument.cpp
+//SOURCE FTPDirectoryParser.cpp
+SOURCE ImageDocument.cpp
+SOURCE loader.cpp
+SOURCE MainResourceLoader.cpp
+SOURCE NavigationAction.cpp
+SOURCE NetscapePlugInStreamLoader.cpp
+SOURCE PluginDocument.cpp
+SOURCE ProgressTracker.cpp
+SOURCE Request.cpp
+SOURCE ResourceLoader.cpp
+SOURCE SubresourceLoader.cpp
+SOURCE TextDocument.cpp
+SOURCE TextResourceDecoder.cpp
+SOURCE WmlResourceLoader.cpp
+
+SOURCEPATH ../../../../../WebCore/loader/Symbian
+
+SOURCE DocumentLoaderSymbian.cpp
+SOURCE IconLoaderSymbian.cpp
+SOURCE NetscapePlugInStreamLoaderSymbian.cpp
+SOURCE WmlLoaderSymbian.cpp
+
+SOURCEPATH ../../../../../WebCore/loader/icon
+
+SOURCE IconDatabase.cpp
+SOURCE IconLoader.cpp
+SOURCE IconRecord.cpp
+SOURCE PageURLRecord.cpp
+SOURCE SQLDatabase.cpp
+SOURCE SQLStatement.cpp
+SOURCE SQLTransaction.cpp
+
+SOURCEPATH ../../../../../WebCore/loader/wml
+
+SOURCE WmlLoader.cpp

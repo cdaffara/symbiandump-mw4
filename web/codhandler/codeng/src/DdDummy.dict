@@ -1,0 +1,40 @@
+#
+# Dummy dictionary to be used with DD documents.
+# No document type / public id is available.
+#
+######################################################
+#
+# dictionary name
+#
+DdDummy
+#
+# Public id - a value from WINA "experimental" number space.
+# This will not conflict with any real application.
+#
+65535
+#
+# Doc type
+#
+-//DD_DUMMY_dasnjfvcjwec DD_DUMMY 1.0//EN
+#
+# Tag table - all are in code page 0
+#
+TAGS_FOR_CODE_PAGE 0
+0x05    name
+0x06    vendor
+0x07    description
+0x08    objectURI
+0x09    size
+0x0a    type
+0x0b    installNotifyURI
+0x0c    nextURL
+0x0d    infoURL
+0x0e    iconURI
+0x0f    DDVersion
+0x10    media
+
+
+#
+# Attribute table - all are in code page 0
+#
+ATTRIBUTES_FOR_CODE_PAGE 0

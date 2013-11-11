@@ -1,0 +1,84 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project AlfTransEffectPlugin
+*
+*/
+
+
+
+#include <data_caging_paths.hrh>
+#include <bldvariant.hrh>
+
+#include "../inc/alftfxplugincommon.hrh"
+
+TARGET      alftranseffectplugin.dll
+
+TARGETTYPE  PLUGIN
+
+CAPABILITY CAP_ECOM_PLUGIN
+VENDORID VID_DEFAULT
+
+UID         0x10009D8D KAlfTransEffectPlugDllUidValue
+//UID         0x10009D8D 0x10282CAF
+
+SOURCEPATH  ../src
+
+SOURCE      alftfxplugincommon.cpp
+SOURCE      alfsystemeffects.cpp
+SOURCE      alfgfxeffects.cpp
+SOURCE      wsserverdrawercontroller.cpp
+SOURCE      uidexception.cpp
+SOURCE      uidblock.cpp
+SOURCE      statehandler.cpp
+SOURCE      debuglogger.cpp
+SOURCE      alfserverdrawer.cpp
+SOURCE      states.cpp
+SOURCE      repositoryhandler.cpp
+SOURCE      alfpolicy.cpp
+SOURCE      alfpolicyhandler.cpp
+SOURCE      alfpolicyrequesthandler.cpp
+
+START RESOURCE 10282CAF.rss
+TARGET alftranseffectplugin.rsc
+END
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../alftfxserverplugin/inc
+
+#include <platform_paths.hrh>
+MW_LAYER_SYSTEMINCLUDE
+
+
+SYSTEMINCLUDE	/epoc32/include/ecom
+SYSTEMINCLUDE   ../../../../../../inc
+SYSTEMINCLUDE   ../../../../ServerCore/Inc
+SYSTEMINCLUDE   ../../../../CommonInc
+
+LIBRARY     euser.lib
+LIBRARY     ecom.lib
+LIBRARY     bitgdi.lib
+LIBRARY     fbscli.lib
+LIBRARY     alfappservercore.lib
+LIBRARY     hitchcock.lib
+LIBRARY     efsrv.lib
+LIBRARY     bafl.lib 
+LIBRARY     apgrfx.lib 
+LIBRARY     ws32.lib
+LIBRARY     estor.lib
+LIBRARY     centralrepository.lib
+LIBRARY     flogger.lib
+
+EXPORTUNFROZEN
+
+// End of File

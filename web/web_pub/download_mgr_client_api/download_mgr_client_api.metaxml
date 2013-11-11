@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<api id="6b55639d702d4d54f72bcfa93a035e37" dataversion="1.0">
+  <name>Download Manager Client API</name>
+  <description>Provides the client interface to the download manager server.</description>
+  <type>c++</type>
+  <subsystem>BrowserUtilities</subsystem>
+  <libs>
+    <lib name="DownloadMgr.lib" />
+  </libs>
+  <release category="sdk" sinceversion="2.8"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

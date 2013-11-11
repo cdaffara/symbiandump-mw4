@@ -1,0 +1,11 @@
+EXPORTS
+	_Z9LibEntryLR13CTestModuleIf @ 1 NONAME
+	_ZTI21CBrCtlApiTestObserver @ 2 NONAME ; #<TI>#
+	_ZTI22CBrCtlApiTestContainer @ 3 NONAME ; #<TI>#
+	_ZTI28CBrowserDialogsProviderProxy @ 4 NONAME ; #<TI>#
+	_ZTI32CBrCtlApiTestStateChangeObserver @ 5 NONAME ; #<TI>#
+	_ZTV21CBrCtlApiTestObserver @ 6 NONAME ; #<VT>#
+	_ZTV22CBrCtlApiTestContainer @ 7 NONAME ; #<VT>#
+	_ZTV28CBrowserDialogsProviderProxy @ 8 NONAME ; #<VT>#
+	_ZTV32CBrCtlApiTestStateChangeObserver @ 9 NONAME ; #<VT>#
+

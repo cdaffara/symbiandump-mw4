@@ -1,0 +1,44 @@
+/*
+* Copyright (c) 2006, 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  The resource header file for Phone capability configuration. 
+*
+*/
+
+
+
+STRUCT phonecapability_configuration 
+    {
+    BYTE QualityCount = 4;
+    BYTE PaperSizeCount = 6;
+    BYTE LayoutCount = 6;
+
+    WORD EDpsPrintQualityDefault = 0x5000; 
+    WORD EDpsPrintQualityNormal =  0x5001; 
+    WORD EDpsPrintQualityDraft =   0x5002; 
+    WORD EDpsPrintQualityFine =    0x5003; 
+
+    WORD EDpsPaperSizeDefault =    0x5100; 
+    WORD EDpsPaperSizeCard =       0x5104; 
+    WORD EDpsPaperSize4x6 =        0x5106; 
+    WORD EDpsPaperSizeLetter =     0x5108; 
+    WORD EDpsPaperSizeA4 =         0x5114; 
+    WORD EDpsPaperSizeA6 =         0x5116; 
+    
+    WORD EDpsLayoutDefault = 	   0x5700; 
+    WORD EDpsLayout1Up =         0x5701; 
+    WORD EDpsLayout2Up =         0x5702;
+    WORD EDpsLayout4Up =         0x5704;
+    WORD EDpsLayout6Up =         0x5706; 
+    WORD EDpsLayout9Up =         0x5709; 
+    } 

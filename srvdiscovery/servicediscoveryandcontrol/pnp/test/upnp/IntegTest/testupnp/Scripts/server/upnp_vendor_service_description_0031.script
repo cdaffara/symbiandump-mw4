@@ -1,0 +1,50 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//upnp_vendor_service_description_0031.script
+//! @SYMTestSuiteName	multiple_machines_client 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client 
+
+LOAD_SUITE multiple_machines_client
+
+START_TESTCASE	upnp_vendor_service_description_0031
+//! @file					
+//! @SYMTestCaseID			UPNP - POS - 0031
+//! @SYMTestCaseDesc 		Retrieve the service description of an UPnP device with a vendor defined service type (ST:urn:domain-name:service:serviceType:v).
+//! @SYMREQ 				REQ8627	
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Issue a discovery search request for all UPnP enabled services of standard service type in the LAN with ST:urn:domain-name:service:serviceType:v.
+//! 						2.	Retrieve the Device description by issuing HTTP GET request for the URL retrieved from the LOCATION field specified in successful Discovery response.
+//! 						3.	From the step 2 above parse the data for SCPDURL, this specifies the relative URL for service description.
+//! 						4.	Retrieve the service description by issuing HTTP GET request for the URL (convert this to absolute URI) from step 3.
+//! @SYMTestExpectedResults	Retrieval of service description for a standard service of UPnP Device is completed. i.e.,
+//!								If control point provides a valid LOCATION then it retrieves a file containing standard service description for a root device.
+//!								It is expected to receive only one describe response for describe request.
+//!								If it is an invalid location or unable to retrieve the description then it is expected return with appropriate error message.  
+//! @SYMTestType 			CIT
+RUN_TEST_STEP 200 multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\describe.ini UPnP_Describe_Vendor_Root_Service
+Delay 100
+RUN_TEST_STEP 200 multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\describe.ini UPnP_Describe_vendor_Root_MltplServices
+Delay 100
+RUN_TEST_STEP 200 multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\describe.ini upnp_embedded_device_vendor_service_level1_description
+Delay 100
+RUN_TEST_STEP 200 multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\describe.ini upnp_embedded_devices_5levels_vendor_service_description
+Delay 100
+RUN_TEST_STEP 200 multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\describe.ini upnp_embd_devices_3levels_multiple_vendor_service_description
+Delay 100
+END_TESTCASE	upnp_vendor_service_description_0031

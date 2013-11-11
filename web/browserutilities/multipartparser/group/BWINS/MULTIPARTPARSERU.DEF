@@ -1,0 +1,5 @@
+EXPORTS
+	??1CBodyPart@@UAE@XZ @ 1 NONAME ; public: virtual __thiscall CBodyPart::~CBodyPart(void)
+	?NewL@CBodyPart@@SAPAV1@XZ @ 2 NONAME ; public: static class CBodyPart * __cdecl CBodyPart::NewL(void)
+	?ParseL@MultipartParser@@SAXABVTDesC8@@00ABVTDesC16@@AAV?$RPointerArray@VCBodyPart@@@@H@Z @ 3 NONAME ; public: static void __cdecl MultipartParser::ParseL(class TDesC8 const &,class TDesC8 const &,class TDesC8 const &,class TDesC16 const &,class RPointerArray<class CBodyPart> &,int)
+

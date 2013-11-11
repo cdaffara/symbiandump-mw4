@@ -1,0 +1,444 @@
+EXPORTS
+	_ZN11SenXmlUtils10StartsWithERK6TDesC8S2_ @ 1 NONAME
+	_ZN11SenXmlUtils11BuildQNameLERK6TDesC8S2_RP6HBufC8 @ 2 NONAME
+	_ZN11SenXmlUtils11ToUnicodeLCERK6TDesC8 @ 3 NONAME
+	_ZN11SenXmlUtils15AllocAttrValueLERK6RArrayIN3Xml10RAttributeEERK6TDesC8 @ 4 NONAME
+	_ZN11SenXmlUtils18LeaveOnXmlEscapesLERK6TDesC8 @ 5 NONAME
+	_ZN11SenXmlUtils21DecodeHttpCharactersLERK6TDesC8RP6HBufC8 @ 6 NONAME
+	_ZN11SenXmlUtils21EncodeHttpCharactersLERK6TDesC8RP6HBufC8 @ 7 NONAME
+	_ZN11SenXmlUtils22DecodeHttpCharactersLCERK6TDesC8 @ 8 NONAME
+	_ZN11SenXmlUtils22EncodeHttpCharactersLCERK6TDesC8 @ 9 NONAME
+	_ZN11SenXmlUtils8EndsWithERK6TDesC8S2_ @ 10 NONAME
+	_ZN11SenXmlUtils8NsPrefixERK6TDesC8 @ 11 NONAME
+	_ZN11SenXmlUtils8ToUtf8LCERK7TDesC16 @ 12 NONAME
+	_ZN11SenXmlUtils9AttrValueERK6RArrayIN3Xml10RAttributeEERK6TDesC8 @ 13 NONAME
+	_ZN11SenXmlUtils9LocalNameERK6TDesC8 @ 14 NONAME
+	_ZN13CSenNamespace10SetPrefixLERK6TDesC8 @ 15 NONAME
+	_ZN13CSenNamespace4NewLERK6TDesC8 @ 16 NONAME
+	_ZN13CSenNamespace4NewLERK6TDesC8S2_ @ 17 NONAME
+	_ZN13CSenNamespace5NewLCERK6TDesC8 @ 18 NONAME
+	_ZN13CSenNamespace5NewLCERK6TDesC8S2_ @ 19 NONAME
+	_ZN13CSenNamespace7InsertLER15RBufWriteStream @ 20 NONAME
+	_ZN13CSenNamespace7SetUriLERK6TDesC8 @ 21 NONAME
+	_ZN13CSenNamespaceD0Ev @ 22 NONAME
+	_ZN13CSenNamespaceD1Ev @ 23 NONAME
+	_ZN13CSenNamespaceD2Ev @ 24 NONAME
+	_ZN13CSenXmlReader13ParserFeatureEv @ 25 NONAME
+	_ZN13CSenXmlReader17SetContentHandlerER24MSenContentHandlerClient @ 26 NONAME
+	_ZN13CSenXmlReader20EnabledParserFeatureEv @ 27 NONAME
+	_ZN13CSenXmlReader4NewLEi @ 28 NONAME
+	_ZN13CSenXmlReader4NewLEv @ 29 NONAME
+	_ZN13CSenXmlReader5NewLCEi @ 30 NONAME
+	_ZN13CSenXmlReader5NewLCEv @ 31 NONAME
+	_ZN13CSenXmlReader6ParseLER3RFsRK7TDesC16 @ 32 NONAME
+	_ZN13CSenXmlReader6ParseLERK6TDesC8 @ 33 NONAME
+	_ZN13CSenXmlReaderC1Ei @ 34 NONAME
+	_ZN13CSenXmlReaderC2Ei @ 35 NONAME
+	_ZN13CSenXmlReaderD0Ev @ 36 NONAME
+	_ZN13CSenXmlReaderD1Ev @ 37 NONAME
+	_ZN13CSenXmlReaderD2Ev @ 38 NONAME
+	_ZN15CSenBaseElement11AddElementLER11CSenElement @ 39 NONAME
+	_ZN15CSenBaseElement11AddElementLERK6TDesC8 @ 40 NONAME
+	_ZN15CSenBaseElement11AddElementLERK6TDesC8S2_ @ 41 NONAME
+	_ZN15CSenBaseElement11AddElementLERK6TDesC8S2_S2_ @ 42 NONAME
+	_ZN15CSenBaseElement11AttributesLEv @ 43 NONAME
+	_ZN15CSenBaseElement11ConsistsOfLER11MSenElement @ 44 NONAME
+	_ZN15CSenBaseElement11NamespacesLEv @ 45 NONAME
+	_ZN15CSenBaseElement11SetContentLERK6TDesC8 @ 46 NONAME
+	_ZN15CSenBaseElement11WriteToBufLER8CBufBase @ 47 NONAME
+	_ZN15CSenBaseElement13SetNamespaceLERK6TDesC8 @ 48 NONAME
+	_ZN15CSenBaseElement13SetNamespaceLERK6TDesC8S2_ @ 49 NONAME
+	_ZN15CSenBaseElement12WriteAttrToLER12RWriteStreamRK6TDesC8S4_ @ 50 NONAME
+	_ZN15CSenBaseElement13AddAttributeLEP17CSenBaseAttribute @ 51 NONAME
+	_ZN15CSenBaseElement13AddAttributeLERK6TDesC8S2_ @ 52 NONAME
+	_ZN15CSenBaseElement13AddAttributeLERK6TDesC8S2_S2_ @ 53 NONAME
+	_ZN15CSenBaseElement13AddNamespaceLER13CSenNamespacei @ 54 NONAME
+	_ZN15CSenBaseElement13AddNamespaceLERK6TDesC8S2_ @ 55 NONAME
+	_ZN15CSenBaseElement13AsXmlUnicodeLEv @ 56 NONAME
+	_ZN15CSenBaseElement13RemoveElementER11CSenElement @ 57 NONAME
+	_ZN15CSenBaseElement13RemoveElementERK6TDesC8 @ 58 NONAME
+	_ZN15CSenBaseElement13RemoveElementERK6TDesC8S2_ @ 59 NONAME
+	_ZN15CSenBaseElement13WriteAsXMLToLER12RWriteStream @ 60 NONAME
+	_ZN15CSenBaseElement13WriteAttrsToLER12RWriteStream @ 61 NONAME
+	_ZN15CSenBaseElement14AddAttributesLERK6RArrayIN3Xml10RAttributeEE @ 62 NONAME
+	_ZN15CSenBaseElement14BaseConstructLERK6TDesC8 @ 63 NONAME
+	_ZN15CSenBaseElement14BaseConstructLERK6TDesC8S2_ @ 64 NONAME
+	_ZN15CSenBaseElement14BaseConstructLERK6TDesC8S2_S2_ @ 65 NONAME
+	_ZN15CSenBaseElement14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 66 NONAME
+	_ZN15CSenBaseElement14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 67 NONAME
+	_ZN15CSenBaseElement14CreateElementLERK6TDesC8S2_ @ 68 NONAME
+	_ZN15CSenBaseElement14InsertElementLER11CSenElementRKS0_ @ 69 NONAME
+	_ZN15CSenBaseElement14SetAttributesLERK6RArrayIN3Xml10RAttributeEE @ 70 NONAME
+	_ZN15CSenBaseElement15ReplaceElementLER11CSenElement @ 71 NONAME
+	_ZN15CSenBaseElement15WriteContentToLER12RWriteStream @ 72 NONAME
+	_ZN15CSenBaseElement16AllocContentBufLEv @ 73 NONAME
+	_ZN15CSenBaseElement16WriteElementsToLER12RWriteStream @ 74 NONAME
+	_ZN15CSenBaseElement19ContentWriteStreamLEv @ 75 NONAME
+	_ZN15CSenBaseElement18WriteNamespacesToLER12RWriteStream @ 76 NONAME
+	_ZN15CSenBaseElement3SetERK6TDesC8S2_S2_ @ 77 NONAME
+	_ZN15CSenBaseElement4NewLERK6TDesC8 @ 78 NONAME
+	_ZN15CSenBaseElement4NewLERK6TDesC8S2_ @ 79 NONAME
+	_ZN15CSenBaseElement4NewLERK6TDesC8S2_S2_ @ 80 NONAME
+	_ZN15CSenBaseElement4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 81 NONAME
+	_ZN15CSenBaseElement4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 82 NONAME
+	_ZN15CSenBaseElement4RootEv @ 83 NONAME
+	_ZN15CSenBaseElement5ChildEi @ 84 NONAME
+	_ZN15CSenBaseElement6AsXmlLEv @ 85 NONAME
+	_ZN15CSenBaseElement7DetachLEv @ 86 NONAME
+	_ZN15CSenBaseElement6ParentEv @ 87 NONAME
+	_ZN15CSenBaseElement7ElementERK6TDesC8 @ 88 NONAME
+	_ZN15CSenBaseElement7ElementERK6TDesC8S2_ @ 89 NONAME
+	_ZN15CSenBaseElement8AddAttrLERK6TDesC8S2_ @ 90 NONAME
+	_ZN15CSenBaseElement8FindAttrERK6TDesC8 @ 91 NONAME
+	_ZN15CSenBaseElement9AsElementEv @ 92 NONAME
+	_ZN15CSenBaseElement9AttrValueERK6TDesC8 @ 93 NONAME
+	_ZN15CSenBaseElement9CopyFromLER11CSenElement @ 94 NONAME
+	_ZN15CSenBaseElement9ElementsLER13RPointerArrayI11CSenElementERK6TDesC8 @ 95 NONAME
+	_ZN15CSenBaseElement9ElementsLER13RPointerArrayI11CSenElementERK6TDesC8S6_ @ 96 NONAME
+	_ZN15CSenBaseElement9ElementsLEv @ 97 NONAME
+	_ZN15CSenBaseElement9NamespaceERK6TDesC8 @ 98 NONAME
+	_ZN15CSenBaseElement9NamespaceERK6TDesC8S2_ @ 99 NONAME
+	_ZN15CSenBaseElement9NamespaceERK6TDesC8i @ 100 NONAME
+	_ZN15CSenBaseElement9NamespaceEv @ 101 NONAME
+	_ZN15CSenBaseElement9SetParentEP11CSenElement @ 102 NONAME
+	_ZN15CSenBaseElement10SetPrefixLERK6TDesC8 @ 103 NONAME
+	_ZN15CSenBaseElementC1Ev @ 104 NONAME
+	_ZN15CSenBaseElementC2Ev @ 105 NONAME
+	_ZN15CSenBaseElementD0Ev @ 106 NONAME
+	_ZN15CSenBaseElementD1Ev @ 107 NONAME
+	_ZN15CSenBaseElementD2Ev @ 108 NONAME
+	_ZN15CSenDomFragment10ParseWithLER13CSenXmlReader @ 109 NONAME
+	_ZN15CSenDomFragment11CharactersLERK6TDesC8ii @ 110 NONAME
+	_ZN15CSenDomFragment13StartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 111 NONAME
+	_ZN15CSenDomFragment14BaseConstructLER13CSenXmlReader @ 112 NONAME
+	_ZN15CSenDomFragment14BaseConstructLERK11CSenElement @ 113 NONAME
+	_ZN15CSenDomFragment14BaseConstructLERK6TDesC8 @ 114 NONAME
+	_ZN15CSenDomFragment14BaseConstructLERK6TDesC8S2_ @ 115 NONAME
+	_ZN15CSenDomFragment14BaseConstructLERK6TDesC8S2_S2_ @ 116 NONAME
+	_ZN15CSenDomFragment14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 117 NONAME
+	_ZN15CSenDomFragment14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 118 NONAME
+	_ZN15CSenDomFragment14SetAttributesLERK6RArrayIN3Xml10RAttributeEE @ 119 NONAME
+	_ZN15CSenDomFragment16WriteEndElementLERK6TDesC8S2_S2_ @ 120 NONAME
+	_ZN15CSenDomFragment18ResumeParsingFromLERK6TDesC8S2_S2_ @ 121 NONAME
+	_ZN15CSenDomFragment18WriteStartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 122 NONAME
+	_ZN15CSenDomFragment4NewLERK11CSenElement @ 123 NONAME
+	_ZN15CSenDomFragment4NewLERK6TDesC8 @ 124 NONAME
+	_ZN15CSenDomFragment4NewLERK6TDesC8S2_ @ 125 NONAME
+	_ZN15CSenDomFragment4NewLERK6TDesC8S2_S2_ @ 126 NONAME
+	_ZN15CSenDomFragment4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 127 NONAME
+	_ZN15CSenDomFragment4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 128 NONAME
+	_ZN15CSenDomFragment4NewLEv @ 129 NONAME
+	_ZN15CSenDomFragment7ExpandLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 130 NONAME
+	_ZN15CSenDomFragmentC1Ev @ 131 NONAME
+	_ZN15CSenDomFragmentC2Ev @ 132 NONAME
+	_ZN15CSenDomFragmentD0Ev @ 133 NONAME
+	_ZN15CSenDomFragmentD1Ev @ 134 NONAME
+	_ZN15CSenDomFragmentD2Ev @ 135 NONAME
+	_ZN16CSenBaseFragment10CharactersERK6TDesC8ii @ 136 NONAME
+	_ZN16CSenBaseFragment10EndElementERK6TDesC8S2_S2_ @ 137 NONAME
+	_ZN16CSenBaseFragment10ParseWithLER13CSenXmlReader @ 138 NONAME
+	_ZN16CSenBaseFragment11CharactersLERK6TDesC8ii @ 139 NONAME
+	_ZN16CSenBaseFragment11ConsistsOfLER12MSenFragment @ 140 NONAME
+	_ZN16CSenBaseFragment11EndDocumentEv @ 141 NONAME
+	_ZN16CSenBaseFragment11EndElementLERK6TDesC8S2_S2_ @ 142 NONAME
+	_ZN16CSenBaseFragment11StartEntityER6TDesC8 @ 143 NONAME
+	_ZN16CSenBaseFragment13ResetContentLEv @ 144 NONAME
+	_ZN16CSenBaseFragment12StartElementERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 145 NONAME
+	_ZN16CSenBaseFragment13AsXmlUnicodeLEv @ 146 NONAME
+	_ZN16CSenBaseFragment13SetContentOfLERK6TDesC8S2_ @ 147 NONAME
+	_ZN16CSenBaseFragment13StartDocumentEv @ 148 NONAME
+	_ZN16CSenBaseFragment13StartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 149 NONAME
+	_ZN16CSenBaseFragment13WriteAsXMLToLER12RWriteStream @ 150 NONAME
+	_ZN16CSenBaseFragment14BaseConstructLER13CSenXmlReader @ 151 NONAME
+	_ZN16CSenBaseFragment14BaseConstructLERK11CSenElement @ 152 NONAME
+	_ZN16CSenBaseFragment14BaseConstructLERK6TDesC8 @ 153 NONAME
+	_ZN16CSenBaseFragment14BaseConstructLERK6TDesC8S2_ @ 154 NONAME
+	_ZN16CSenBaseFragment14BaseConstructLERK6TDesC8S2_S2_ @ 155 NONAME
+	_ZN16CSenBaseFragment14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 156 NONAME
+	_ZN16CSenBaseFragment14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 157 NONAME
+	_ZN16CSenBaseFragment14ExtractElementEv @ 158 NONAME
+	_ZN16CSenBaseFragment14SetAttributesLERK6RArrayIN3Xml10RAttributeEE @ 159 NONAME
+	_ZN16CSenBaseFragment15EnsureNamespaceERK6TDesC8 @ 160 NONAME
+	_ZN16CSenBaseFragment15SaveNamespacesLERK6RArrayIN3Xml10RAttributeEEi @ 161 NONAME
+	_ZN16CSenBaseFragment16DelegateParsingLER12MSenFragment @ 162 NONAME
+	_ZN16CSenBaseFragment16DelegateParsingLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 163 NONAME
+	_ZN16CSenBaseFragment16WriteEndElementLERK6TDesC8S2_S2_ @ 164 NONAME
+	_ZN16CSenBaseFragment18AllocContentSaverLEv @ 165 NONAME
+	_ZN16CSenBaseFragment18ResumeParsingFromLERK6TDesC8S2_S2_ @ 166 NONAME
+	_ZN16CSenBaseFragment18WriteStartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 167 NONAME
+	_ZN16CSenBaseFragment4NewLERK11CSenElement @ 168 NONAME
+	_ZN16CSenBaseFragment4NewLERK6TDesC8 @ 169 NONAME
+	_ZN16CSenBaseFragment4NewLERK6TDesC8S2_ @ 170 NONAME
+	_ZN16CSenBaseFragment4NewLERK6TDesC8S2_S2_ @ 171 NONAME
+	_ZN16CSenBaseFragment4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 172 NONAME
+	_ZN16CSenBaseFragment4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 173 NONAME
+	_ZN16CSenBaseFragment5ErrorEi @ 174 NONAME
+	_ZN16CSenBaseFragment6AsXmlLEv @ 175 NONAME
+	_ZN16CSenBaseFragment7DetachLEv @ 176 NONAME
+	_ZN16CSenBaseFragment6ParseLERK6TDesC8 @ 177 NONAME
+	_ZN16CSenBaseFragment6ReaderEv @ 178 NONAME
+	_ZN16CSenBaseFragment7ContentEv @ 179 NONAME
+	_ZN16CSenBaseFragment8SetOwnerER12MSenFragment @ 180 NONAME
+	_ZN16CSenBaseFragment9AsElementEv @ 181 NONAME
+	_ZN16CSenBaseFragment9BuildFromERK6TDesC8 @ 182 NONAME
+	_ZN16CSenBaseFragment9ContentOfERK6TDesC8 @ 183 NONAME
+	_ZN16CSenBaseFragment9NamespaceERK6TDesC8 @ 184 NONAME
+	_ZN16CSenBaseFragment9SetReaderER13CSenXmlReader @ 185 NONAME
+	_ZN16CSenBaseFragmentC1Ev @ 186 NONAME
+	_ZN16CSenBaseFragmentC2Ev @ 187 NONAME
+	_ZN16CSenBaseFragmentD0Ev @ 188 NONAME
+	_ZN16CSenBaseFragmentD1Ev @ 189 NONAME
+	_ZN16CSenBaseFragmentD2Ev @ 190 NONAME
+	_ZN17CSenBaseAttribute14BaseConstructLERK6TDesC8S2_ @ 191 NONAME
+	_ZN17CSenBaseAttribute14BaseConstructLERK6TDesC8S2_S2_ @ 192 NONAME
+	_ZN17CSenBaseAttribute4NewLERK6TDesC8S2_ @ 193 NONAME
+	_ZN17CSenBaseAttribute4NewLERK6TDesC8S2_S2_ @ 194 NONAME
+	_ZN17CSenBaseAttributeC1Ev @ 195 NONAME
+	_ZN17CSenBaseAttributeC2Ev @ 196 NONAME
+	_ZN17CSenBaseAttributeD0Ev @ 197 NONAME
+	_ZN17CSenBaseAttributeD1Ev @ 198 NONAME
+	_ZN17CSenBaseAttributeD2Ev @ 199 NONAME
+	_ZNK13CSenNamespace3URIEv @ 200 NONAME
+	_ZNK13CSenNamespace6PrefixEv @ 201 NONAME
+	_ZNK13CSenNamespace7CompareERK6TDesC8S2_ @ 202 NONAME
+	_ZNK13CSenNamespace7CompareERKS_ @ 203 NONAME
+	_ZNK13CSenNamespace8MatchesLERKS_ @ 204 NONAME
+	_ZNK15CSenBaseElement10HasContentEv @ 205 NONAME
+	_ZNK15CSenBaseElement12NamespaceURIEv @ 206 NONAME
+	_ZNK15CSenBaseElement14IndexOfElementERK6TDesC8S2_ @ 207 NONAME
+	_ZNK15CSenBaseElement15ContentUnicodeLEv @ 208 NONAME
+	_ZNK15CSenBaseElement7ContentEv @ 209 NONAME
+	_ZNK15CSenBaseElement8NsPrefixEv @ 210 NONAME
+	_ZNK15CSenBaseElement9LocalNameEv @ 211 NONAME
+	_ZNK16CSenBaseFragment5NsUriEv @ 212 NONAME
+	_ZNK16CSenBaseFragment8NsPrefixEv @ 213 NONAME
+	_ZNK16CSenBaseFragment9LocalNameEv @ 214 NONAME
+	_ZTI13CSenNamespace @ 215 NONAME ; #<TI>#
+	_ZTI13CSenXmlReader @ 216 NONAME ; #<TI>#
+	_ZTI15CSenBaseElement @ 217 NONAME ; #<TI>#
+	_ZTI15CSenDomFragment @ 218 NONAME ; #<TI>#
+	_ZTI16CSenBaseFragment @ 219 NONAME ; #<TI>#
+	_ZTI17CSenBaseAttribute @ 220 NONAME ; #<TI>#
+	_ZTV13CSenNamespace @ 221 NONAME ; #<VT>#
+	_ZTV13CSenXmlReader @ 222 NONAME ; #<VT>#
+	_ZTV15CSenBaseElement @ 223 NONAME ; #<VT>#
+	_ZTV15CSenDomFragment @ 224 NONAME ; #<VT>#
+	_ZTV16CSenBaseFragment @ 225 NONAME ; #<VT>#
+	_ZTV17CSenBaseAttribute @ 226 NONAME ; #<VT>#
+	_ZThn4_N15CSenBaseElement11AddElementLER11CSenElement @ 227 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement11AddElementLERK6TDesC8 @ 228 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement11AddElementLERK6TDesC8S2_ @ 229 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement11AddElementLERK6TDesC8S2_S2_ @ 230 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement11AttributesLEv @ 231 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement11ConsistsOfLER11MSenElement @ 232 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement11NamespacesLEv @ 233 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement11SetContentLERK6TDesC8 @ 234 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement13SetNamespaceLERK6TDesC8 @ 235 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement13SetNamespaceLERK6TDesC8S2_ @ 236 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement13AddNamespaceLER13CSenNamespacei @ 237 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement13AddNamespaceLERK6TDesC8S2_ @ 238 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement13AsXmlUnicodeLEv @ 239 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement13RemoveElementER11CSenElement @ 240 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement13RemoveElementERK6TDesC8 @ 241 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement13RemoveElementERK6TDesC8S2_ @ 242 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement13WriteAsXMLToLER12RWriteStream @ 243 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement14AddAttributesLERK6RArrayIN3Xml10RAttributeEE @ 244 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement14CreateElementLERK6TDesC8S2_ @ 245 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement14InsertElementLER11CSenElementRKS0_ @ 246 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement15ReplaceElementLER11CSenElement @ 247 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement19ContentWriteStreamLEv @ 248 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement18WriteNamespacesToLER12RWriteStream @ 249 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement3SetERK6TDesC8S2_S2_ @ 250 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement4RootEv @ 251 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement5ChildEi @ 252 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement6AsXmlLEv @ 253 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement7DetachLEv @ 254 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement6ParentEv @ 255 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement7ElementERK6TDesC8 @ 256 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement7ElementERK6TDesC8S2_ @ 257 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement8AddAttrLERK6TDesC8S2_ @ 258 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement9AsElementEv @ 259 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement9AttrValueERK6TDesC8 @ 260 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement9CopyFromLER11CSenElement @ 261 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement9ElementsLEv @ 262 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement9NamespaceERK6TDesC8 @ 263 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement9NamespaceERK6TDesC8S2_ @ 264 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement9NamespaceERK6TDesC8i @ 265 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement9NamespaceEv @ 266 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement9SetParentEP11CSenElement @ 267 NONAME ; #<thunk>#
+	_ZThn4_N15CSenBaseElement10SetPrefixLERK6TDesC8 @ 268 NONAME ; #<thunk>#
+	_ZThn4_N15CSenDomFragment10ParseWithLER13CSenXmlReader @ 269 NONAME ; #<thunk>#
+	_ZThn4_N15CSenDomFragment14SetAttributesLERK6RArrayIN3Xml10RAttributeEE @ 270 NONAME ; #<thunk>#
+	_ZThn4_N15CSenDomFragment16WriteEndElementLERK6TDesC8S2_S2_ @ 271 NONAME ; #<thunk>#
+	_ZThn4_N15CSenDomFragment18ResumeParsingFromLERK6TDesC8S2_S2_ @ 272 NONAME ; #<thunk>#
+	_ZThn4_N15CSenDomFragment18WriteStartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 273 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment10ParseWithLER13CSenXmlReader @ 274 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment11ConsistsOfLER12MSenFragment @ 275 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment13AsXmlUnicodeLEv @ 276 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment13WriteAsXMLToLER12RWriteStream @ 277 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment14ExtractElementEv @ 278 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment14SetAttributesLERK6RArrayIN3Xml10RAttributeEE @ 279 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment16DelegateParsingLER12MSenFragment @ 280 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment16DelegateParsingLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 281 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment16WriteEndElementLERK6TDesC8S2_S2_ @ 282 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment18ResumeParsingFromLERK6TDesC8S2_S2_ @ 283 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment18WriteStartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 284 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment6AsXmlLEv @ 285 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment6ParseLERK6TDesC8 @ 286 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment6ReaderEv @ 287 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment8SetOwnerER12MSenFragment @ 288 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment9AsElementEv @ 289 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment9BuildFromERK6TDesC8 @ 290 NONAME ; #<thunk>#
+	_ZThn4_N16CSenBaseFragment9SetReaderER13CSenXmlReader @ 291 NONAME ; #<thunk>#
+	_ZThn4_NK15CSenBaseElement10HasContentEv @ 292 NONAME ; #<thunk>#
+	_ZThn4_NK15CSenBaseElement12NamespaceURIEv @ 293 NONAME ; #<thunk>#
+	_ZThn4_NK15CSenBaseElement15ContentUnicodeLEv @ 294 NONAME ; #<thunk>#
+	_ZThn4_NK15CSenBaseElement7ContentEv @ 295 NONAME ; #<thunk>#
+	_ZThn4_NK15CSenBaseElement8NsPrefixEv @ 296 NONAME ; #<thunk>#
+	_ZThn4_NK15CSenBaseElement9LocalNameEv @ 297 NONAME ; #<thunk>#
+	_ZThn4_NK16CSenBaseFragment5NsUriEv @ 298 NONAME ; #<thunk>#
+	_ZThn4_NK16CSenBaseFragment8NsPrefixEv @ 299 NONAME ; #<thunk>#
+	_ZThn4_NK16CSenBaseFragment9LocalNameEv @ 300 NONAME ; #<thunk>#
+	_ZThn8_N16CSenBaseFragment10CharactersERK6TDesC8ii @ 301 NONAME ; #<thunk>#
+	_ZThn8_N16CSenBaseFragment10EndElementERK6TDesC8S2_S2_ @ 302 NONAME ; #<thunk>#
+	_ZThn8_N16CSenBaseFragment11EndDocumentEv @ 303 NONAME ; #<thunk>#
+	_ZThn8_N16CSenBaseFragment12StartElementERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 304 NONAME ; #<thunk>#
+	_ZThn8_N16CSenBaseFragment13StartDocumentEv @ 305 NONAME ; #<thunk>#
+	_ZThn8_N16CSenBaseFragment5ErrorEi @ 306 NONAME ; #<thunk>#
+	_ZN11SenXmlUtils13AddAttributeLER11CSenElementP17CSenBaseAttribute @ 307 NONAME
+	_ZN11SenXmlUtils13AddAttributeLER11CSenElementRK6TDesC8S4_ @ 308 NONAME
+	_ZN11SenXmlUtils13AddAttributeLER11CSenElementRK6TDesC8S4_S4_ @ 309 NONAME
+	_ZN11SenXmlUtils16RemoveAttributeLER11CSenElementP17CSenBaseAttribute @ 310 NONAME
+	_ZN11SenXmlUtils16RemoveAttributeLER11CSenElementRK6TDesC8 @ 311 NONAME
+	_ZN13CSenXmlReader4NewLERK6TDesC8 @ 312 NONAME
+	_ZN13CSenXmlReader4NewLERK6TDesC8i @ 313 NONAME
+	_ZN13CSenXmlReader5NewLCERK6TDesC8 @ 314 NONAME
+	_ZN13CSenXmlReader5NewLCERK6TDesC8i @ 315 NONAME
+	_ZN14CSenXmlElement10SetPrefixLERK6TDesC8 @ 316 NONAME
+	_ZN14CSenXmlElement11AddElementLER11CSenElement @ 317 NONAME
+	_ZN14CSenXmlElement11AddElementLERK6TDesC8 @ 318 NONAME
+	_ZN14CSenXmlElement11AddElementLERK6TDesC8S2_ @ 319 NONAME
+	_ZN14CSenXmlElement11AddElementLERK6TDesC8S2_S2_ @ 320 NONAME
+	_ZN14CSenXmlElement11AttributesLEv @ 321 NONAME
+	_ZN14CSenXmlElement11ConsistsOfLER11MSenElement @ 322 NONAME
+	_ZN14CSenXmlElement11NamespacesLEv @ 323 NONAME
+	_ZN14CSenXmlElement11SetContentLERK6TDesC8 @ 324 NONAME
+	_ZN14CSenXmlElement11WriteToBufLER8CBufBase @ 325 NONAME
+	_ZN14CSenXmlElement12WriteAttrToLER12RWriteStreamRK6TDesC8S4_ @ 326 NONAME
+	_ZN14CSenXmlElement13AddAttributeLEP17CSenBaseAttribute @ 327 NONAME
+	_ZN14CSenXmlElement13AddAttributeLERK6TDesC8S2_ @ 328 NONAME
+	_ZN14CSenXmlElement13AddAttributeLERK6TDesC8S2_S2_ @ 329 NONAME
+	_ZN14CSenXmlElement13AddNamespaceLER13CSenNamespacei @ 330 NONAME
+	_ZN14CSenXmlElement13AddNamespaceLERK6TDesC8S2_ @ 331 NONAME
+	_ZN14CSenXmlElement13AsXmlUnicodeLEv @ 332 NONAME
+	_ZN14CSenXmlElement13RemoveElementER11CSenElement @ 333 NONAME
+	_ZN14CSenXmlElement13RemoveElementERK6TDesC8 @ 334 NONAME
+	_ZN14CSenXmlElement13RemoveElementERK6TDesC8S2_ @ 335 NONAME
+	_ZN14CSenXmlElement13SetNamespaceLERK6TDesC8 @ 336 NONAME
+	_ZN14CSenXmlElement13SetNamespaceLERK6TDesC8S2_ @ 337 NONAME
+	_ZN14CSenXmlElement13WriteAsXMLToLER12RWriteStream @ 338 NONAME
+	_ZN14CSenXmlElement13WriteAttrsToLER12RWriteStream @ 339 NONAME
+	_ZN14CSenXmlElement14AddAttributesLERK6RArrayIN3Xml10RAttributeEE @ 340 NONAME
+	_ZN14CSenXmlElement14BaseConstructLERK6TDesC8 @ 341 NONAME
+	_ZN14CSenXmlElement14BaseConstructLERK6TDesC8S2_ @ 342 NONAME
+	_ZN14CSenXmlElement14BaseConstructLERK6TDesC8S2_S2_ @ 343 NONAME
+	_ZN14CSenXmlElement14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 344 NONAME
+	_ZN14CSenXmlElement14BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 345 NONAME
+	_ZN14CSenXmlElement14CreateElementLERK6TDesC8S2_ @ 346 NONAME
+	_ZN14CSenXmlElement14InsertElementLER11CSenElementRKS0_ @ 347 NONAME
+	_ZN14CSenXmlElement14SetAttributesLERK6RArrayIN3Xml10RAttributeEE @ 348 NONAME
+	_ZN14CSenXmlElement15ReplaceElementLER11CSenElement @ 349 NONAME
+	_ZN14CSenXmlElement15WriteContentToLER12RWriteStream @ 350 NONAME
+	_ZN14CSenXmlElement16AllocContentBufLEv @ 351 NONAME
+	_ZN14CSenXmlElement16WriteElementsToLER12RWriteStream @ 352 NONAME
+	_ZN14CSenXmlElement18WriteNamespacesToLER12RWriteStream @ 353 NONAME
+	_ZN14CSenXmlElement19ContentWriteStreamLEv @ 354 NONAME
+	_ZN14CSenXmlElement3SetERK6TDesC8S2_S2_ @ 355 NONAME
+	_ZN14CSenXmlElement4NewLERK6TDesC8 @ 356 NONAME
+	_ZN14CSenXmlElement4NewLERK6TDesC8S2_ @ 357 NONAME
+	_ZN14CSenXmlElement4NewLERK6TDesC8S2_S2_ @ 358 NONAME
+	_ZN14CSenXmlElement4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 359 NONAME
+	_ZN14CSenXmlElement4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 360 NONAME
+	_ZN14CSenXmlElement4RootEv @ 361 NONAME
+	_ZN14CSenXmlElement5ChildEi @ 362 NONAME
+	_ZN14CSenXmlElement6AsXmlLEv @ 363 NONAME
+	_ZN14CSenXmlElement6ParentEv @ 364 NONAME
+	_ZN14CSenXmlElement7DetachLEv @ 365 NONAME
+	_ZN14CSenXmlElement7ElementERK6TDesC8 @ 366 NONAME
+	_ZN14CSenXmlElement7ElementERK6TDesC8S2_ @ 367 NONAME
+	_ZN14CSenXmlElement8AddAttrLERK6TDesC8S2_ @ 368 NONAME
+	_ZN14CSenXmlElement8FindAttrERK6TDesC8 @ 369 NONAME
+	_ZN14CSenXmlElement9AsElementEv @ 370 NONAME
+	_ZN14CSenXmlElement9AttrValueERK6TDesC8 @ 371 NONAME
+	_ZN14CSenXmlElement9CopyFromLER11CSenElement @ 372 NONAME
+	_ZN14CSenXmlElement9ElementsLER13RPointerArrayI11CSenElementERK6TDesC8 @ 373 NONAME
+	_ZN14CSenXmlElement9ElementsLER13RPointerArrayI11CSenElementERK6TDesC8S6_ @ 374 NONAME
+	_ZN14CSenXmlElement9ElementsLEv @ 375 NONAME
+	_ZN14CSenXmlElement9NamespaceERK6TDesC8 @ 376 NONAME
+	_ZN14CSenXmlElement9NamespaceERK6TDesC8S2_ @ 377 NONAME
+	_ZN14CSenXmlElement9NamespaceERK6TDesC8i @ 378 NONAME
+	_ZN14CSenXmlElement9NamespaceEv @ 379 NONAME
+	_ZN14CSenXmlElement9SetParentEP11CSenElement @ 380 NONAME
+	_ZN14CSenXmlElementC1Ev @ 381 NONAME
+	_ZN14CSenXmlElementC2Ev @ 382 NONAME
+	_ZN14CSenXmlElementD0Ev @ 383 NONAME
+	_ZN14CSenXmlElementD1Ev @ 384 NONAME
+	_ZN14CSenXmlElementD2Ev @ 385 NONAME
+	_ZNK14CSenXmlElement10HasContentEv @ 386 NONAME
+	_ZNK14CSenXmlElement12NamespaceURIEv @ 387 NONAME
+	_ZNK14CSenXmlElement14IndexOfElementERK6TDesC8S2_ @ 388 NONAME
+	_ZNK14CSenXmlElement15ContentUnicodeLEv @ 389 NONAME
+	_ZNK14CSenXmlElement7ContentEv @ 390 NONAME
+	_ZNK14CSenXmlElement8NsPrefixEv @ 391 NONAME
+	_ZNK14CSenXmlElement9LocalNameEv @ 392 NONAME
+	_ZTI14CSenXmlElement @ 393 NONAME ; #<TI>#
+	_ZTV14CSenXmlElement @ 394 NONAME ; #<VT>#
+	_ZThn4_N14CSenXmlElement10SetPrefixLERK6TDesC8 @ 395 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement11AddElementLER11CSenElement @ 396 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement11AddElementLERK6TDesC8 @ 397 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement11AddElementLERK6TDesC8S2_ @ 398 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement11AddElementLERK6TDesC8S2_S2_ @ 399 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement11AttributesLEv @ 400 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement11ConsistsOfLER11MSenElement @ 401 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement11NamespacesLEv @ 402 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement11SetContentLERK6TDesC8 @ 403 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement13AddNamespaceLER13CSenNamespacei @ 404 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement13AddNamespaceLERK6TDesC8S2_ @ 405 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement13AsXmlUnicodeLEv @ 406 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement13RemoveElementER11CSenElement @ 407 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement13RemoveElementERK6TDesC8 @ 408 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement13RemoveElementERK6TDesC8S2_ @ 409 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement13SetNamespaceLERK6TDesC8 @ 410 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement13SetNamespaceLERK6TDesC8S2_ @ 411 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement13WriteAsXMLToLER12RWriteStream @ 412 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement14AddAttributesLERK6RArrayIN3Xml10RAttributeEE @ 413 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement14CreateElementLERK6TDesC8S2_ @ 414 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement14InsertElementLER11CSenElementRKS0_ @ 415 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement15ReplaceElementLER11CSenElement @ 416 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement18WriteNamespacesToLER12RWriteStream @ 417 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement19ContentWriteStreamLEv @ 418 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement3SetERK6TDesC8S2_S2_ @ 419 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement4RootEv @ 420 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement5ChildEi @ 421 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement6AsXmlLEv @ 422 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement6ParentEv @ 423 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement7DetachLEv @ 424 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement7ElementERK6TDesC8 @ 425 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement7ElementERK6TDesC8S2_ @ 426 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement8AddAttrLERK6TDesC8S2_ @ 427 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement9AsElementEv @ 428 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement9AttrValueERK6TDesC8 @ 429 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement9CopyFromLER11CSenElement @ 430 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement9ElementsLEv @ 431 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement9NamespaceERK6TDesC8 @ 432 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement9NamespaceERK6TDesC8S2_ @ 433 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement9NamespaceERK6TDesC8i @ 434 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement9NamespaceEv @ 435 NONAME ; #<thunk>#
+	_ZThn4_N14CSenXmlElement9SetParentEP11CSenElement @ 436 NONAME ; #<thunk>#
+	_ZThn4_NK14CSenXmlElement10HasContentEv @ 437 NONAME ; #<thunk>#
+	_ZThn4_NK14CSenXmlElement12NamespaceURIEv @ 438 NONAME ; #<thunk>#
+	_ZThn4_NK14CSenXmlElement15ContentUnicodeLEv @ 439 NONAME ; #<thunk>#
+	_ZThn4_NK14CSenXmlElement7ContentEv @ 440 NONAME ; #<thunk>#
+	_ZThn4_NK14CSenXmlElement8NsPrefixEv @ 441 NONAME ; #<thunk>#
+	_ZThn4_NK14CSenXmlElement9LocalNameEv @ 442 NONAME ; #<thunk>#
+

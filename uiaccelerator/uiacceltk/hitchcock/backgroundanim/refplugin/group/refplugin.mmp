@@ -1,0 +1,52 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+
+#ifdef             VSW_IVE3_ENABLED
+TARGET              bga_reference_plugin.dll
+TARGETTYPE          dll
+UID                 0x1000008D 0x200286D4
+                                 
+EPOCALLOWDLLDATA
+
+ALWAYS_BUILD_AS_ARM
+OPTION ARMCC        -O3 -Otime --cpu 6 --fpmode fast
+ARMFPU VFPV2
+
+CAPABILITY          CAP_GENERAL_DLL
+VENDORID	    VID_DEFAULT
+LANG                SC
+
+USERINCLUDE         .
+USERINCLUDE         ../inc
+USERINCLUDE         ../../inc // for plugin interface definition
+#include <platform_paths.hrh>
+MW_LAYER_SYSTEMINCLUDE
+OS_LAYER_LIBC_SYSTEMINCLUDE
+APP_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH          ../src
+SOURCE              plugin.c
+SOURCE              shader.c
+
+LIBRARY             libc.lib
+LIBRARY             libm.lib
+LIBRARY             libglesv2.lib
+#else
+TARGETTYPE          none
+#endif

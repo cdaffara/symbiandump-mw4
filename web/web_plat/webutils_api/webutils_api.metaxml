@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="4faf0d01532a306584193ce4b640012e" dataversion="1.0">
+  <name>Web Utils API</name>
+  <description>Web Utils API generates HTTP User-Agent string.</description>
+  <type>c++</type>
+  <subsystem>BrowserUtilities</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="5.1"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

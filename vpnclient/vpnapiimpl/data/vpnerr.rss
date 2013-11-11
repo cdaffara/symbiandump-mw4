@@ -1,0 +1,100 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: Resource definitions for VPN API.
+*
+*/
+
+
+NAME VPNE
+   
+#include <uikon.rh>
+#include <baerrrsvr.rh>
+#include "vpnerr.rls"
+   
+RESOURCE RSS_SIGNATURE { }
+
+// The error code range reserved by Symbian for IPSec and IPSec
+// VPN modules is [-5135, -5299] (165 error code values in total).
+// From this range, the sub-range [-5154, -5228] is reserved to
+// ipsec6. This leaves two sub-ranges, [-5135, -5153] and
+// [-5229, -5299] for use by the IPSec VPN modules.
+// From these two ranges, error code values are allocated
+// as follows:
+//
+// - IPSec Policy API:      [-5135, -5147] (13 values)
+// - VPN API:               [-5229, -5239] (11 values)
+// - PKI Service API:       [-5240, -5252] (13 values)
+// - KMD API:               [-5253, -5262] (10 values)
+// - IKE Policy Parser:     [-5263, -5297] (35 values)
+// - VPN API 2:             [-5298, -5298] (1 value)
+//
+// To add new error codes:
+// - Add a new range to the above list (just for clarity)
+// - Add a new ERROR_ARRAY definition to the below
+//   ERROR_SET resource with startError set to the
+//   beginning of the new error code range
+// - Add a new ARRAY resource to the vpnerr.ra
+//   resource file corresponding to the new ERROR_ARRAY
+//   definition. In the ARRAY resource, add a single
+//   SINGLE_ERROR definition for each error code that your
+//   source code uses.
+//   NOTE. The error code value associated with each
+//   SINGLE_ERROR definition depends on the startError
+//   value of corresponding ERROR_ARRAY definition and
+//   the position of the SINGLE_ERROR definition.
+// - Add the necessary TBUF resources to the vpnerr.ra
+//   file add the corresponding rls_string definitions
+//   to the vpnerr.rls file.
+// - Set the error code constant values in your source code
+//   to be same as the implicit values of the corresponding
+//   SINGLE_ERROR definitions in the vpnerr.ra file.
+
+RESOURCE ERROR_SET r_error_set_vpn
+	{
+	errorarrays=
+		{
+		ERROR_ARRAY
+			{
+			startError=-5135;
+			errors=r_error_array_ipsecpolapi_errors;
+			},
+		ERROR_ARRAY
+			{
+			startError=-5229;
+			errors=r_error_array_vpnapi_errors;
+			},
+		ERROR_ARRAY
+			{
+			startError=-5240;
+			errors=r_error_array_pkiserviceapi_errors;
+			},
+		ERROR_ARRAY
+			{
+			startError=-5253;
+			errors=r_error_array_kmdapi_errors;
+			},
+		ERROR_ARRAY
+			{
+			startError=-5263;
+			errors=r_error_array_ikepolparser_errors;
+			},
+		ERROR_ARRAY
+			{
+			startError=-5298;
+			errors=r_error_array_vpnapi_errors_2;
+			}
+		};
+	}
+
+#include "vpnerr.ra"

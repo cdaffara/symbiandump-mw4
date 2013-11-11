@@ -1,0 +1,44 @@
+# The items on the left are names of TextEncodingID values
+# The items on the right are IANA character set names. Names listed in character-sets.txt are not
+# repeated here; mentioning any one character set from a group in there pulls in all the aliases in
+# that group.
+
+KCharacterSetIdentifierIso88591: iso-8859-1, cp819
+KCharacterSetIdentifierUtf8: utf-8
+KCharacterSetIdentifierGbk: chinese, cngb, cp936, gb2312, xeuccn, xgbk
+KCharacterSetIdentifierBig5: big5
+KCharacterSetIdentifierIso88592: iso-8859-2
+KCharacterSetIdentifierIso88593: iso-8859-3
+KCharacterSetIdentifierIso88594: iso-8859-4
+KCharacterSetIdentifierIso88595: iso-8859-5
+KCharacterSetIdentifierIso88596: iso-8859-6, arabic
+KCharacterSetIdentifierIso88597: iso-8859-7, greek
+KCharacterSetIdentifierIso88598: cp1255, hebrew, logical, visual
+KCharacterSetIdentifierIso88599: iso-8859-9, cp1254
+KCharacterSetIdentifierIso885910: iso-8859-10
+KCharacterSetIdentifierIso885913: iso-8859-13, latin7
+KCharacterSetIdentifierIso885914: iso-8859-14
+KCharacterSetIdentifierIso885915: iso-8859-15, l9
+KCharacterSetIdentifierWindow1250: windows-1250, cp1250
+KCharacterSetIdentifierWindow1251: windows-1251, cp1251
+KCharacterSetIdentifierWindow1252: windows-1252, cp1252
+KCharacterSetIdentifierWindow1253: windows-1253, cp1253
+KCharacterSetIdentifierWindow1254: windows-1254, cp1254
+KCharacterSetIdentifierWindow1255: windows-1255, cp1255
+KCharacterSetIdentifierWindow1256: windows-1256, cp1256
+KCharacterSetIdentifierWindow1257: windows-1257, cp1257
+KCharacterSetIdentifierWindow1258: windows-1258
+KCharacterSetIdentifierShiftJis, IsJapanese: cp932, ms932, windows932
+KCharacterSetIdentifierJis, IsJapanese: jis_x0201-1997
+KCharacterSetIdentifierEucJpPacked, IsJapanese: euc-jp
+KCharacterSetIdentifierIso2022Jp, IsJapanese: iso-2022-jp
+KCharacterSetIdentifierIso2022Jp1, IsJapanese: iso-2022-jp-1
+0x101F854A: windows-874
+0x101F8778: koi8-r
+0x101F8761: koi8-u
+KCharacterSetIdentifierUcs2: iso-10646-ucs-2, ucs2, unicode, utf16
+KCharacterSetIdentifierUnicodeBig, BigEndian: ucs-2-big
+KCharacterSetIdentifierUnicodeLittle, LittleEndian: ucs-2-little
+0x1027508E: iscii
+
+

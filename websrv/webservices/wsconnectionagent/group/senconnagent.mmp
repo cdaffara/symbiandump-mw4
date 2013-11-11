@@ -1,0 +1,89 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:     Project specification file for wsconnectionagent
+*
+*/
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+TARGETTYPE      DLL
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+	TARGET      wsconnagent.dll
+	UID         0x1000008d 0x001F9707
+#else
+	TARGET      senconnagent.dll
+	UID         0x1000008d 0x2001951A
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_CLIENT_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_CLIENT_DLL
+    #endif
+#endif
+
+
+SOURCEPATH      ../src
+SOURCE          senconnagentserver.cpp
+SOURCE          senconnagentsession.cpp
+MW_LAYER_SYSTEMINCLUDE
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../wscore/inc  // SenServiceManagerDefines.h  - IPC enumerations
+USERINCLUDE		../../wsframework/inc
+USERINCLUDE		../../wsutils/inc
+USERINCLUDE		../../wsxml/inc
+
+
+
+// System libs:
+LIBRARY         euser.lib
+#ifdef __ENABLE_ALR__
+LIBRARY         netmeta.lib
+#endif
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY			SenServDesc.lib
+LIBRARY			SenXml.lib
+LIBRARY			SenUtils.lib
+#else
+LIBRARY			wsServDesc.lib
+LIBRARY			wsXml.lib
+LIBRARY			wsUtils.lib
+#endif
+LANG        SC
+
+#if defined(ARMCC)
+#ifdef __ENABLE_ALR__
+	DEFFILE ../EABI/senconnagent32.def
+#else
+  DEFFILE ../eabi/senconnagent.def
+#endif
+#elif defined(WINSCW)
+  DEFFILE ../BWINSCW/senconnagent.def
+#endif
+
+SMPSAFE
+

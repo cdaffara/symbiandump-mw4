@@ -1,0 +1,8 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/docml" >
+        <file alias="wlanloginview.docml">wlanloginview.docml.bin</file>
+    </qresource>
+</RCC>
+
+

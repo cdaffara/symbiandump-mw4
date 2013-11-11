@@ -1,0 +1,96 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Project specification.   
+*      
+*
+*/
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET          RoapApp.exe
+TARGETTYPE      exe
+EPOCSTACKSIZE   0x5000
+UID             0x100039ce 0x10008d64
+CAPABILITY      CAP_APPLICATION
+VENDORID        VID_DEFAULT
+
+SOURCEPATH  ../src
+
+SOURCE      RoapApp.cpp 
+SOURCE      RoapAppUi.cpp
+SOURCE      RoapAppDocument.cpp
+SOURCE      RoapAppView.cpp
+SOURCE      RoapAppWaitDialog.cpp
+SOURCE      RoapAppData.cpp
+SOURCE      RoapAppPanic.cpp
+SOURCE      RequestCompleteCallback.cpp
+SOURCE      RoapAppLogger.cpp
+
+START RESOURCE ../data/RoapApp.rss
+DEPENDS eikon.rsg
+DEPENDS avkon.rsg
+HEADER
+TARGETPATH APP_RESOURCE_DIR
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END
+
+USERINCLUDE     ../inc
+MW_LAYER_SYSTEMINCLUDE
+
+
+
+LIBRARY     efsrv.lib
+LIBRARY     apparc.lib
+LIBRARY     apgrfx.lib
+LIBRARY     apmime.lib
+LIBRARY     eikcoctl.lib
+LIBRARY     avkon.lib
+LIBRARY     eikdlg.lib
+LIBRARY     eikctl.lib
+LIBRARY     cone.lib
+LIBRARY     eikcore.lib
+LIBRARY     euser.lib
+LIBRARY     etext.lib
+LIBRARY     form.lib
+LIBRARY     CommonEngine.lib
+LIBRARY     CommonUi.lib
+LIBRARY     FeatMgr.lib
+LIBRARY     ROAPHandler.lib
+LIBRARY     DcfRep.lib
+LIBRARY     caf.lib
+LIBRARY     cafutils.lib
+LIBRARY     DrmRights.lib
+LIBRARY     aknskins.lib
+LIBRARY     aknskinsrv.lib
+LIBRARY     DownloadMgr.lib 
+LIBRARY		Centralrepository.lib
+
+
+#ifdef __SERIES60_HELP
+LIBRARY         hlplch.lib 
+#endif // __SERIES60_HELP
+DEBUGLIBRARY    flogger.lib
+
+START RESOURCE ../data/RoapApp_reg.rss
+DEPENDS roapapp.rsg
+// Do not change the UID below.
+TARGETPATH /private/10003a3f/apps
+END

@@ -1,0 +1,34 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  JSDEVICE
+*
+*
+*/
+
+#ifndef __DEVICE_IBY__
+#define __DEVICE_IBY__
+#include <platform/mw/Browser_platform_variant.hrh>
+
+
+// bitmaps
+
+// DLLs
+#ifdef BRDO_LIW_FF 
+file=ABI_DIR\BUILD_DIR\jsdevice.dll                 SHARED_LIB_DIR\jsdevice.dll
+#endif
+
+// data
+
+
+#endif

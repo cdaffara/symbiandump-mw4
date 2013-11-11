@@ -1,0 +1,11 @@
+EXPORTS
+	??1CSenBaseIdentity@@UAE@XZ @ 1 NONAME ; public: virtual __thiscall CSenBaseIdentity::~CSenBaseIdentity(void)
+	??1CSenBaseIdentityManager@@UAE@XZ @ 2 NONAME ; public: virtual __thiscall CSenBaseIdentityManager::~CSenBaseIdentityManager(void)
+	??1CSenWiseIdentityProvider@@UAE@XZ @ 3 NONAME ; public: virtual __thiscall CSenWiseIdentityProvider::~CSenWiseIdentityProvider(void)
+	?NewL@CSenBaseIdentity@@SAPAV1@VTPtrC8@@@Z @ 4 NONAME ; public: static class CSenBaseIdentity * __cdecl CSenBaseIdentity::NewL(class TPtrC8)
+	?NewL@CSenBaseIdentityManager@@SAPAV1@AAVMSenCoreServiceManager@@@Z @ 5 NONAME ; public: static class CSenBaseIdentityManager * __cdecl CSenBaseIdentityManager::NewL(class MSenCoreServiceManager &)
+	?NewL@CSenWiseIdentityProvider@@SAPAV1@VTPtrC8@@ABVTDesC8@@1@Z @ 6 NONAME ; public: static class CSenWiseIdentityProvider * __cdecl CSenWiseIdentityProvider::NewL(class TPtrC8,class TDesC8 const &,class TDesC8 const &)
+	?NewLC@CSenBaseIdentity@@SAPAV1@VTPtrC8@@@Z @ 7 NONAME ; public: static class CSenBaseIdentity * __cdecl CSenBaseIdentity::NewLC(class TPtrC8)
+	?NewLC@CSenBaseIdentityManager@@SAPAV1@AAVMSenCoreServiceManager@@@Z @ 8 NONAME ; public: static class CSenBaseIdentityManager * __cdecl CSenBaseIdentityManager::NewLC(class MSenCoreServiceManager &)
+	?NewLC@CSenWiseIdentityProvider@@SAPAV1@VTPtrC8@@ABVTDesC8@@1@Z @ 9 NONAME ; public: static class CSenWiseIdentityProvider * __cdecl CSenWiseIdentityProvider::NewLC(class TPtrC8,class TDesC8 const &,class TDesC8 const &)
+

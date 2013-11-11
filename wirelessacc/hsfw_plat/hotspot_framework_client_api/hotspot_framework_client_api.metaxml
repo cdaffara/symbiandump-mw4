@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<api id="b33fc808f03706a382a99cd720402f81" dataversion="1.0">
+  <name>HotSpot Framework Client API</name>
+  <description>An API for the clients to request services from HotSpot Framework.</description>
+  <type>c++</type>
+  <subsystem>hotspotfw</subsystem>
+  <libs>
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>yes</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

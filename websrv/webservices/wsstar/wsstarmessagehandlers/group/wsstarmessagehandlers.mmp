@@ -1,0 +1,162 @@
+/*
+* Copyright (c) 2006-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:       Project specification file for wsstarmessagehandlers    
+*
+*/
+
+
+
+
+
+
+
+
+
+#include "../../../inc/webservices.hrh"
+
+
+// ECOM DLL recognition UID followed by the unique UID for this dll
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET WSStarMessageHandlers.dll
+UID 0x10009D8D 0x101F971C
+#else
+TARGET wsWSStarMessageHandlers.dll
+UID 0x10009D8D 0x10282C48
+#endif
+
+#ifdef SYMBIAN_SECURE_ECOM 
+    TARGETTYPE PLUGIN
+#else
+    TARGETTYPE ECOMIIC
+#endif
+
+
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_ECOM_PLUGIN )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_ECOM_PLUGIN
+    #endif
+#endif
+
+SOURCEPATH      ../src
+SOURCE            wsstarmessagehandlersproxy.cpp
+SOURCE            wsstarmessageutils.cpp
+
+//enveloper handler
+SOURCE            wsstarenveloperhandler.cpp
+
+//passport handler
+SOURCE            wsstarpassporthandler.cpp
+
+#ifdef RD_SEN_VTCP_SUPPORT
+SOURCE            wsstarpassportheaderinbound.cpp
+#endif//RD_SEN_VTCP_SUPPORT
+
+//addressing handler
+SOURCE            wsstaraddressinghandler.cpp
+SOURCE            wsstaraddressingheaderinbound.cpp
+SOURCE            wsstaraddressingepr.cpp
+
+//credential collector handler
+SOURCE            wsstarcredentialcollectorhandler.cpp
+
+//signature handler
+SOURCE            wsstarsecurityhandler.cpp
+
+SOURCEPATH      ../data
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+START RESOURCE    101f971c.rss
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET WSStarMessageHandlers.rsc
+#endif 
+
+#else
+START RESOURCE    10282C48.RSS
+#ifdef SYMBIAN_SECURE_ECOM 
+   TARGET wsWSStarMessageHandlers.rsc
+#endif 
+
+#endif
+
+END
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../../inc
+
+
+USERINCLUDE      ../inc
+USERINCLUDE     ../../wsstarplugin/inc
+USERINCLUDE     ../../../wsutils/inc
+USERINCLUDE     ../../../wsframework/inc
+USERINCLUDE     ../../../wsfragment/inc
+USERINCLUDE     ../../../wslogger/inc // for TLS based file logging
+
+USERINCLUDE    ../../../wscore/inc
+USERINCLUDE     ../../../wsidentitymanager/inc
+USERINCLUDE    ../../../wsxml/inc
+
+SYSTEMINCLUDE     /epoc32/include/xml
+SYSTEMINCLUDE    /epoc32/include/libc
+
+SOURCEPATH      ../data
+
+// System libs
+LIBRARY ecom.lib
+LIBRARY efsrv.lib
+LIBRARY euser.lib 
+LIBRARY estlib.lib
+LIBRARY flogger.lib
+LIBRARY hash.lib
+LIBRARY imut.lib    //base64 encoding
+LIBRARY inetprotutil.lib
+LIBRARY xmlframework.lib // Symbian XML framework (SAX) - for CMatchData during creating Parser
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// Web Services Framework libs
+LIBRARY SenFragment.lib
+LIBRARY SenFramework.lib
+LIBRARY SenUtils.lib
+LIBRARY SenXml.lib
+LIBRARY SenLogger.lib // for TLS based logging
+#else
+// Web Services Framework libs
+LIBRARY wsFragment.lib
+LIBRARY wsFramework.lib
+LIBRARY wsUtils.lib
+LIBRARY wsXml.lib
+LIBRARY wsLogger.lib // for TLS based logging
+#endif
+
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    LIBRARY         XmlEngineDOM.lib
+    LIBRARY         XmlEngineUtils.lib
+#else
+    LIBRARY         WsStarXmlEngineDOM.lib
+    LIBRARY         WsStarXmlEngineUtils.lib
+#endif
+
+LIBRARY XmlSecWrapper.lib
+
+SMPSAFE
+
+

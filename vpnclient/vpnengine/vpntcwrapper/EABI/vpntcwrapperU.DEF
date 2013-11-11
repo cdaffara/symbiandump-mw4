@@ -1,0 +1,5 @@
+EXPORTS
+	_Z10NewTcStubLv @ 1 NONAME
+	_ZTI13CVpnTcWrapper @ 2 NONAME ; #<TI>#
+	_ZTV13CVpnTcWrapper @ 3 NONAME ; #<VT>#
+

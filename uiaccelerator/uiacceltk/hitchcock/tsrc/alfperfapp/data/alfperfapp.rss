@@ -1,0 +1,555 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Resource definitions for project alfperfapp.
+*
+*/
+
+
+NAME    TPRF
+
+#include <eikon.rh>
+#include <avkon.rh>
+#include <appinfo.rh>
+#include <avkon.rsg>
+#include <data_caging_paths_strings.hrh>
+#include <bldvariant.hrh>
+#include "alfperfapp.hrh"
+#include "alfperfapp.rh"
+
+RESOURCE RSS_SIGNATURE { }
+RESOURCE TBUF { buf=""; }
+
+RESOURCE EIK_APP_INFO
+    {
+    status_pane = r_alfperfapp_status_pane;
+    }
+
+RESOURCE LOCALISABLE_APP_INFO r_alfperfapp_localisable_app_info
+    {
+    short_caption = "AlfPerfApp";
+    caption_and_icon =
+        CAPTION_AND_ICON_INFO
+            {
+            caption = "AlfPerfApp";
+            };
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    r_alfperfapp_status_pane
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE STATUS_PANE_APP_MODEL r_alfperfapp_status_pane
+    {
+    panes =
+        {
+        SPANE_PANE
+            {
+            id = EEikStatusPaneUidTitle;
+            type = EAknCtTitlePane;
+            resource = r_alfperfapp_default_title_pane;
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    r_alfperfapp_default_title_pane
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TITLE_PANE r_alfperfapp_default_title_pane
+    {
+    txt = "AlfPerfApp";
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    r_alfperfapp_test_case_selection_view
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_alfperfapp_test_case_selection_view
+    {
+    menubar = r_alfperfapp_test_case_selection_menubar;
+    cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+//     r_alfperfapp_test_case_selection_menubar
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_alfperfapp_test_case_selection_menubar
+    {
+    titles =
+        {
+        MENU_TITLE { menu_pane = r_alfperfapp_test_case_selection_menupane; }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    r_alfperfapp_test_case_selection_menupane
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_alfperfapp_test_case_selection_menupane
+    {
+    items =
+        {
+        MENU_ITEM
+            {
+            command = EAlfPerfAppCmdRunAll;
+            txt = "Run All";
+            },
+        MENU_ITEM
+            {
+            command = EAlfPerfAppCmdRunAllContinuously;
+            txt = "Run Continuously";
+            },
+        MENU_ITEM
+            {
+            command = EAlfPerfAppCmdClearFiles;
+            txt = "Clear Files";
+            },
+        MENU_ITEM
+            {
+            command = EAknCmdExit;
+            txt = "Exit";
+            }
+        };
+    }
+
+RESOURCE MENU_PANE r_alfperfapp_test_case_selection_suite_menupane
+    {
+    items =
+        {
+        // Holder for menu items
+        };
+    }
+    
+// -----------------------------------------------------------------------------
+//
+//    r_alfperfapp_test_case_execution_view
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_alfperfapp_test_case_execution_view
+    {
+    cba = R_AVKON_SOFTKEYS_EMPTY;
+    }
+
+// -----------------------------------------------------------------------------
+//
+//    r_alfperfapp_test_case_execution_view_continuous_run
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_alfperfapp_test_case_execution_view_continuous_run
+    {
+    cba = R_AVKON_SOFTKEYS_OK_EMPTY;
+    }
+
+
+
+// -----------------------------------------------------------------------------
+//
+//    r_alfperfapp_testset
+//    Defines all test suites and cases.
+//
+//    Customizations:
+//      Test Suite
+//        flags = EAlfPerfAppTestSuiteFlagExcludeFromRunAll; <- excludes from Run All and Run Continuously       
+//
+//      Test Case
+//        flags = EAlfPerfAppTestCaseFlagRequiresInActiveFlag; <- Disables this case if Inactive flag is
+//                                                                not supported.
+//        sequenceLength = X; <- Marks this as a sequence case (if X > 0) --> Repetive runs get
+//                               their testCounter increased if the cases are run after each other.
+//                               X denotes the number of times this case is added in the sequence                     
+// -----------------------------------------------------------------------------
+//
+RESOURCE ALFPERFAPP_TESTSET r_alfperfapp_testset
+    {
+    folders =
+        {
+        //
+        // Image tests - implementation in CAlfPerfAppImageTestCase
+        //
+        ALFPERFAPP_TESTSUITE
+            {
+            name = "Image";
+            
+            items = 
+                {
+#ifdef __NVG
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageManyNvgCSImages;
+                    name = "Nvg CS-images";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageManyNvgTLVImages;
+                    name = "Nvg TLV-images";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageBasicMoveScaleNvgCS;
+                    name = "NvgCS: Basic Move & Scale";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageBasicMoveScaleNvgTLV;
+                    name = "NvgTLV: Basic Move & Scale";
+                    },
+#endif
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageBasicMoveScale;
+                    name = "Basic Move & Scale";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageManyImages;
+                    name = "Mif images";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageManyGifImages;
+                    name = "Gif images ";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageManyPngImages;
+                    name = "Png images";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageManySvgImages;
+                    name = "Svgt images";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageManyImagesWithPointerEvent;
+                    name = "Pointer events to visuals";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageManyImagesWithAutoSize;
+                    name = "Auto sized textures";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageAnimate1of2;
+                    name = "Animate 1/2 screen";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageAnimate1of4;
+                    name = "Animate 1/4 screen";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppImageAnimate1of8;
+                    name = "Animate 1/8 screen";
+                    }
+                };
+            },
+            
+        //
+        // Cover tests - implementation in CAlfPerfAppCoverTestCase
+        //
+        ALFPERFAPP_TESTSUITE
+            {
+            name = "Cover";
+            
+            items = 
+                {
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppCover;
+                    name = "Scroll & Scale";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppCoverLandscape;
+                    name = "Scroll & Scale in Landscape";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppCoverRotate;
+                    name = "Rotate";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppCoverClipZoomLargeImage;
+                    name = "Clip-Zoom-Pan large image";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppCoverClipZoomBigImage;
+                    name = "Clip-Zoom-Pan big image";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppCoverClipZoomVga;
+                    name = "Clip-Zoom-Pan Vga image";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppCoverClipZoomAutoSize;
+                    name = "Clip-Zoom-Pan Autosize";
+                    }
+                };
+            },
+
+        //
+        // Gallery tests - implementation in CAlfPerfAppGalleryTestCase
+        //
+        ALFPERFAPP_TESTSUITE
+            {
+            name = "Gallery";
+              
+            items = 
+                {
+                    ALFPERFAPP_TESTCASE
+                        {
+                        id = EAlfPerfAppGallery;
+                        name = "Gallery Test";
+                        },
+                    ALFPERFAPP_TESTCASE
+                        {
+                        id = EAlfPerfAppGalleryLandscape;
+                        name = "Gallery Test Landscape";
+                        }
+                };
+            },
+            
+        //
+        // AppSuite tests - implementation in CAlfPerfAppSuiteTestCase
+        //
+        ALFPERFAPP_TESTSUITE
+            {
+            name = "AppSuite";
+            
+            items = 
+                {
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppSuiteCaseScrollContinuousPortrait;
+                    name = "Scroll continuous - portrait";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppSuiteCaseScrollIncrementalPortrait;
+                    name = "Scroll incremental - portrait";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppSuiteCaseScrollContinuousLandscape;
+                    name = "Scroll continuous - landscape";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppSuiteCaseScrollIncrementalLandscape;
+                    name = "Scroll incremental - landscape";
+                    }                      
+                };
+            },                
+                
+        //
+        // Text tests - implementation in CAlfPerfAppTextTestCase
+        //
+        ALFPERFAPP_TESTSUITE
+            {
+            name = "Text";
+            
+            items = 
+                {
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppTextBasicMoveScale;
+                    name = "Basic Move & Scale";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppTextManyTexts;
+                    name = "Many texts";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppTextManyTextsWithPointerEvent;
+                    name = "Pointer events to visuals";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppTextManyTextsWithAutoSize;
+                    name = "Auto sized";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppTextInactiveVisuals;
+                    name = "Inactive visuals";
+                    flags = EAlfPerfAppTestCaseFlagRequiresInActiveFlag;
+                    }
+                };
+            },
+
+
+        //
+        // Framework tests - implementation in CAlfPerfAppFrameworkTestCase
+        //
+        ALFPERFAPP_TESTSUITE
+            {
+            name = "Framework";
+            flags = EAlfPerfAppTestSuiteFlagExcludeFromRunAll;
+
+            items = 
+                {
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppFrameworkEmpty;
+                    name = "Empty";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppFrameworkCreateFail;
+                    name = "Create Fail";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppFrameworkSetupFailSynch;
+                    name = "Setup fails - synch";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppFrameworkSetupFailAsynch;
+                    name = "Setup fails - asynch";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppFrameworkExecuteFailSynch;
+                    name = "Execute fails - synch";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppFrameworkExecuteFailAsynch;
+                    name = "Execute fails - asynch";
+                    }
+                };            
+            },            
+        //
+        // Layout tests - implementation in CAlfPerfAppLayoutTestCase
+        //
+        ALFPERFAPP_TESTSUITE
+            {
+            name = "Layout";
+            
+            items = 
+                {
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppLayoutGrid;
+                    name = "Grid";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppLayoutDeck;
+                    name = "Deck";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppLayoutAnchor;
+                    name = "Anchor";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppLayoutCurvePath;
+                    name = "CurvePath";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppLayoutFlow;
+                    name = "Flow";
+                    },
+                ALFPERFAPP_TESTCASE
+                    {
+                    id = EAlfPerfAppLayoutViewport;
+                    name = "Viewport";
+                    }
+                    
+                };
+            },
+                //
+                // Avkon tests - implementation in CAlfPerfAppAvkonTestCase
+                //
+                ALFPERFAPP_TESTSUITE
+                    {
+                    name = "Avkon";
+                    
+                    items = 
+                        {
+                        ALFPERFAPP_TESTCASE
+                            {
+                            id = EAlfPerfAppAvkonBasicWinGc;
+                            name = "WinGC primitives";
+                            }
+                        };
+                    },
+        ///
+        /// Sequence test cases.
+        /// --------------------
+        /// If adding new cases, increase size of KAlfPerfAppReserveExecution
+        /// to fit all cases from this suite. (In case of RunAllFromSuite)
+        ///
+        ALFPERFAPP_TESTSUITE
+                    {
+                    name = "Sequence";
+                    flags = EAlfPerfAppTestSuiteFlagExcludeFromRunAll;
+                    
+                    items = 
+                        {
+                        ALFPERFAPP_TESTCASE
+                            {
+                            id = EAlfPerfAppImageManyImages;
+                            name = "Image Sequence";
+                            sequenceLength = 49;
+                            },
+                        ALFPERFAPP_TESTCASE
+                            {
+                            id = EAlfPerfAppTextManyTexts;
+                            name = "Text Sequence";
+                            sequenceLength = 49;
+                            }                            
+                        };
+                    }
+                };
+    }
+    
+// -----------------------------------------------------------------------------
+//
+//    r_alfperfapp_text_runall
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_alfperfapp_text_runall
+    {
+    buf = "Run All";
+    }
+    

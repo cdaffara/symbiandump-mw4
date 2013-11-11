@@ -1,0 +1,67 @@
+// *
+// * Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// * All rights reserved.
+// * This component and the accompanying materials are made available
+// * under the terms of the License "Eclipse Public License v1.0"
+// * which accompanies this distribution, and is available
+// * at the URL "http://www.eclipse.org/legal/epl-v10.html".
+// *
+// * Initial Contributors:
+// * Nokia Corporation - initial contribution.
+// *
+// * Contributors:
+// *
+// * Description:  This is the project specification file for WebCore.
+// *
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#include "../../common.mmpi"
+
+TARGET  WebCorecss.lib
+
+TARGETTYPE  lib
+
+VENDORID    VID_DEFAULT
+
+//OPTION CW -prefix pragmas.pref
+
+SOURCEPATH ../../../../../WebCore/css
+
+SOURCE CSSBorderImageValue.cpp
+SOURCE CSSCharsetRule.cpp
+SOURCE CSSComputedStyleDeclaration.cpp
+SOURCE CSSCursorImageValue.cpp
+SOURCE CSSFontFaceRule.cpp
+SOURCE csshelper.cpp
+SOURCE CSSImageValue.cpp
+SOURCE CSSImportRule.cpp
+SOURCE CSSInheritedValue.cpp
+SOURCE CSSInitialValue.cpp
+SOURCE CSSMediaRule.cpp
+SOURCE CSSMutableStyleDeclaration.cpp
+SOURCE CSSPageRule.cpp
+SOURCE cssparser.cpp
+SOURCE CSSPrimitiveValue.cpp
+SOURCE CSSProperty.cpp
+SOURCE CSSRule.cpp
+SOURCE CSSRuleList.cpp
+SOURCE CSSSelector.cpp
+SOURCE CSSStyleDeclaration.cpp
+SOURCE CSSStyleRule.cpp
+SOURCE cssstyleselector.cpp
+SOURCE CSSStyleSheet.cpp
+SOURCE CSSValueList.cpp
+SOURCE FontFamilyValue.cpp
+SOURCE FontValue.cpp
+SOURCE MediaFeatureNames.cpp
+SOURCE MediaList.cpp
+SOURCE MediaQuery.cpp
+SOURCE MediaQueryEvaluator.cpp
+SOURCE MediaQueryExp.cpp
+SOURCE ShadowValue.cpp
+SOURCE StyleBase.cpp
+SOURCE StyleList.cpp
+SOURCE StyleSheet.cpp
+SOURCE StyleSheetList.cpp

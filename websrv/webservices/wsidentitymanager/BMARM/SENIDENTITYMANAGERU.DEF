@@ -1,0 +1,11 @@
+EXPORTS
+	"_._24CSenWiseIdentityProvider" @ 1 NONAME R3UNUSED ; CSenWiseIdentityProvider::~CSenWiseIdentityProvider(void)
+	NewLC__23CSenBaseIdentityManagerR22MSenCoreServiceManager @ 2 NONAME R3UNUSED ; CSenBaseIdentityManager::NewLC(MSenCoreServiceManager &)
+	NewLC__24CSenWiseIdentityProviderG6TPtrC8RC6TDesC8T2 @ 3 NONAME ; CSenWiseIdentityProvider::NewLC(TPtrC8, TDesC8 const &, TDesC8 const &)
+	NewL__16CSenBaseIdentityG6TPtrC8 @ 4 NONAME ; CSenBaseIdentity::NewL(TPtrC8)
+	NewL__23CSenBaseIdentityManagerR22MSenCoreServiceManager @ 5 NONAME R3UNUSED ; CSenBaseIdentityManager::NewL(MSenCoreServiceManager &)
+	NewL__24CSenWiseIdentityProviderG6TPtrC8RC6TDesC8T2 @ 6 NONAME ; CSenWiseIdentityProvider::NewL(TPtrC8, TDesC8 const &, TDesC8 const &)
+	"_._16CSenBaseIdentity" @ 7 NONAME R3UNUSED ; CSenBaseIdentity::~CSenBaseIdentity(void)
+	"_._23CSenBaseIdentityManager" @ 8 NONAME R3UNUSED ; CSenBaseIdentityManager::~CSenBaseIdentityManager(void)
+	NewLC__16CSenBaseIdentityG6TPtrC8 @ 9 NONAME ; CSenBaseIdentity::NewLC(TPtrC8)
+

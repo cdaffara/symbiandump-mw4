@@ -1,0 +1,3 @@
+EXPORTS
+	?NewDialogManagerL@@YAPAVMVpnDialogManager@@XZ @ 1 NONAME ; class MVpnDialogManager * NewDialogManagerL(void)
+

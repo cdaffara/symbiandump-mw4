@@ -1,0 +1,44 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:      Defines flags which are needed for compatibility with
+* S60 3.2 SDKs and IAD branch.
+*
+*/
+
+
+
+
+
+
+#ifndef UPNPPLATFORMVAR_HRH
+#define UPNPPLATFORMVAR_HRH
+
+#ifndef __SERIES60_32__
+#include <platform_paths.hrh>
+#else
+#include <platform_paths.hrh>
+#endif
+
+// LOC export for MCL SDKs.
+// Loc files have to be exported to /epoc32/include/... in MCL SDKs.
+#define UPNP_LOC_EXPORT(exported) ../loc/##exported MW_LAYER_LOC_EXPORT_PATH(exported)
+
+// No need for language ids in MCL SDKs
+
+// No need for LOC file include paths MCL SDKs.
+// But they need to be defined.
+#define UPNP_LOC_INCLUDE_PATH_COMPONENT
+#define UPNP_LOC_INCLUDE_PATH_SUBCOMPONENT
+
+#endif // UPNPPLATFORMVAR_HRH

@@ -1,0 +1,291 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This mmp file generates makefile for SVG Engine
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+ALWAYS_BUILD_AS_ARM
+/* Srini: Raptor automatically adds --cpu 5te when building for rvct4.0
+                           and adds --cpu 5t when building with rvct 2.2.
+                           basically the option is redundant. please don't add the option.
+
+  */     
+OPTION_REPLACE ARMCC -O3 -Otime
+TARGET SVGEngine.dll
+TARGETTYPE dll
+
+
+VENDORID      VID_DEFAULT
+
+UID 0x1000008D 0x101F856E
+
+
+	#if defined( ARMCC )
+	deffile ../eabi/SVGENGINE-OpenVG.def
+	#elif defined( WINSCW )
+	deffile ../BWINSCW/SVGENGINE-OpenVG.def
+	#elif defined( WINS )
+	deffile ../bwins/SVGENGINE-OpenVG.def
+	#else
+	deffile ../bmarm/SVGENGINE-OpenVG.def
+	#endif
+
+CAPABILITY  CAP_GENERAL_DLL DRM
+
+SOURCEPATH ../src
+
+//SOURCE SVGEngineMain.cpp
+SOURCE SVGEngineImpl.cpp
+SOURCE SVGEngineInterfaceImpl.cpp
+SOURCE SVGTimer.cpp
+SOURCE SVGEventHandler.cpp
+SOURCE SVGEvent.cpp
+SOURCE SVGContentHandler.cpp
+SOURCE SvgBitmapFontProvider.cpp
+//SOURCE SVGXmlParser.cpp
+SOURCE SVGAttributeVerifier.cpp
+SOURCE SVGErrorImpl.cpp
+SOURCE Svgdecoder.cpp
+SOURCE SVGFourPointRect.cpp
+
+
+SOURCEPATH ../../SVGImpl/src
+
+SOURCE SVGElementImpl.cpp
+SOURCE SVGDocumentImpl.cpp
+SOURCE SVGDOMImplementationImpl.cpp
+
+// Structure Elements
+SOURCE Svgsvgelementimpl.cpp
+SOURCE SVGGElementImpl.cpp
+SOURCE SVGUseElementImpl.cpp
+SOURCE SVGStyleElementImpl.cpp
+SOURCE SVGForeignObjectElementImpl.cpp
+SOURCE SVGTitleElementImpl.cpp
+SOURCE SVGMetadataElementImpl.cpp
+SOURCE SVGDefsElementImpl.cpp
+SOURCE SVGDescElementImpl.cpp
+
+// Hyper linking
+SOURCE SVGAElementImpl.cpp
+SOURCE SVGUriReferenceImpl.cpp
+
+// Basic Shape Elements
+SOURCE SVGLineElementImpl.cpp
+SOURCE SVGRectElementImpl.cpp
+SOURCE SVGCircleElementImpl.cpp
+SOURCE SVGEllipseElementImpl.cpp
+SOURCE SVGPolylineElementImpl.cpp
+SOURCE SVGPathElementImpl.cpp
+SOURCE SVGMpathElementImpl.cpp
+
+// Text and Image Elements
+SOURCE SVGTextElementImpl.cpp
+SOURCE SVGTextAreaElementImpl.cpp
+SOURCE SVGImageElementImpl.cpp
+
+//Font Elements
+SOURCE SVGFontElementImpl.cpp
+SOURCE SVGFontFaceElementImpl.cpp
+SOURCE SVGGlyphElementImpl.cpp
+SOURCE SVGMissingGlyphElementImpl.cpp
+SOURCE SvgHkernelementimpl.cpp
+
+// Animation Elements
+SOURCE SVGAnimationBase.cpp
+SOURCE SVGSetElementImpl.cpp
+SOURCE SVGAnimateElementImpl.cpp
+SOURCE SVGAnimateTransformElementImpl.cpp
+SOURCE SVGAnimateMotionElementImpl.cpp
+SOURCE SVGDiscardElementImpl.cpp
+SOURCE SVGAnimationElementImpl.cpp
+
+// Gradient Elements
+SOURCE SVGLinearGradientElementImpl.cpp
+SOURCE SVGGradientElementImpl.cpp
+SOURCE SVGRadialGradientElementImpl.cpp
+SOURCE SVGStopElementImpl.cpp
+
+SOURCE SVGSolidColorElementImpl.cpp
+SOURCE SVGScriptElementImpl.cpp
+
+// CSS Classes
+SOURCE SVGClrCssValueImpl.cpp
+SOURCE SVGPaintCssValueImpl.cpp
+SOURCE SVGIntCssValueImpl.cpp
+SOURCE SVGFloatCssValueImpl.cpp
+SOURCE SVGStrCssValueImpl.cpp
+SOURCE SVGVectorCssValueImpl.cpp
+//SOURCE SVGCssStyleDeclarationImpl.cpp
+SOURCE SVGEventAttributes.cpp
+
+// Transform Classes
+SOURCE SVGTransformListImpl.cpp
+SOURCE SVGTransformableImpl.cpp
+
+// Switch Related Classes
+SOURCE SVGTestsImpl.cpp
+
+// XML Language Space Class
+SOURCE SVGLangSpaceImpl.cpp
+
+// Viewbox Classes
+SOURCE SVGFitToViewBoxImpl.cpp
+SOURCE SVGPreserveAspectRatioImpl.cpp
+
+// Utility Classes
+SOURCE SVGPointLexer.cpp
+SOURCE SVGSchemaData.cpp
+SOURCE SVGPathDataParser.cpp
+SOURCE SVGAnimTimeController.cpp
+SOURCE SVGStringTokenizer.cpp
+SOURCE SVGRelToAbsPath.cpp
+SOURCE SVGAnimTimingParser.cpp
+SOURCE SVGImageHashMap.cpp
+SOURCE SVGFontHashMap.cpp
+SOURCE SVGMemoryManager.cpp
+SOURCE SVGColor.cpp
+SOURCE SVGTokenizer.cpp
+
+// Media Element Classes
+SOURCE SVGAudioElementImpl.cpp
+SOURCE SVGMediaAnimationElementImpl.cpp
+SOURCE SVGMediaElementBase.cpp
+SOURCE SVGTimeContainer.cpp
+SOURCE SVGLockedRealTimeEntity.cpp
+
+SOURCEPATH ../../Xmldomimpl/src
+
+SOURCE SVGXmlElementImpl.cpp
+
+
+USERINCLUDE ../inc
+USERINCLUDE ../../Xmldomimpl/inc
+USERINCLUDE ../../SVGImpl/inc/SVGDOM
+USERINCLUDE ../../SVGImpl/inc
+USERINCLUDE ../../../VGRenderer/inc
+
+// This is a SYSTEMINCLUDE macro containing the middleware
+// layer specific include directories
+MW_LAYER_SYSTEMINCLUDE
+
+SYSTEMINCLUDE /epoc32/include/libc
+
+APP_LAYER_SYSTEMINCLUDE
+
+LIBRARY cone.lib
+LIBRARY euser.lib
+LIBRARY bafl.lib
+LIBRARY efsrv.lib
+LIBRARY fbscli.lib
+LIBRARY estor.lib 
+LIBRARY gdi.lib
+
+// Library for image converter utilities
+//LIBRARY MediaClientImage.lib
+LIBRARY ImageConversion.lib
+
+// Library for XML Parser utilities
+LIBRARY XMLINTERFACE.lib
+
+
+// CXML parser
+//LIBRARY CXMLParser.lib
+// For CnvUtfConverter class
+LIBRARY charconv.lib
+
+//#include <oem/DRM.mmp>
+//#if !defined(__DRM_FULL)
+
+//LIBRARY       DrmParsers.lib DrmDcf.lib DrmRights.lib DrmServerInterfaces.lib
+//LIBRARY       DRMCommon.lib
+
+LIBRARY       estlib.lib
+//#endif
+
+// Base64 Encoding
+LIBRARY         imut.lib
+
+// GZip library
+LIBRARY         EZLib.lib
+
+// CAF library: for DRM
+LIBRARY         caf.lib
+
+LIBRARY  mediaclientaudio.lib
+// Added for localized bidirectional textArea wrapping support
+LIBRARY         avkon.lib
+
+//--------------------------------------------
+// Graphics library Information--------
+//LIBRARY Gfx2D.lib
+//--------------------------------------------
+SOURCEPATH ../../../gfx2d/src
+SOURCE GfxMath.c
+SOURCE GfxFloatFixPt.cpp
+SOURCE Gfxtrignometric.cpp
+/* this file is needed for ADS, RVCT, or GCC builds (mem operation wrappers) */
+SOURCE RastSymbianWrapper.cpp
+
+// GFXGC source files
+SOURCEPATH ../../../gfx2d/src/GfxGc
+SOURCE          GfxStroke.cpp
+SOURCE          GfxColor.cpp
+SOURCE          GfxRenderingHints.cpp
+SOURCE          GfxGradientPaint.cpp
+SOURCE          Gfx2dGcOpenVG.cpp
+SOURCE          Gfx2dGc.cpp
+
+
+// GFXGEOM source files
+SOURCEPATH      ../../../gfx2d/src/GfxGeom
+SOURCE          GfxEllipse2D.cpp
+SOURCE          GfxEllipseIteratorP.cpp
+SOURCE          GfxFlatteningPathIterator.cpp
+SOURCE          GfxGeneralPath.cpp
+SOURCE          GfxGeneralPathIteratorP.cpp
+SOURCE          GfxRectangle2D.cpp
+SOURCE          GfxRectangleIteratorP.cpp
+SOURCE          GfxRectangularShape.cpp
+SOURCE          GfxRoundRectangle2D.cpp
+SOURCE          GfxRoundRectangleIteratorP.cpp
+SOURCE          GfxLine2D.cpp
+SOURCE          GfxLineIteratorP.cpp
+SOURCE          GfxAffineTransform.cpp
+SOURCE          GfxPoint2D.cpp
+
+// GFXIMAGE source files
+SOURCEPATH      ../../../gfx2d/src/GfxImage
+SOURCE          GfxImageTransformer.cpp
+
+// Internal Rendering Engine source files
+SOURCEPATH      ../../../gfx2d/src/GfxRenderer
+SOURCE          GfxRendererInfoP.cpp
+
+
+USERINCLUDE     ../../../gfx2d/inc
+
+
+LIBRARY VGRenderer.lib
+
+
+LIBRARY         eikcore.lib
+LIBRARY         bitgdi.lib
+LIBRARY hal.lib
+//--------------------------------------------
+// End of Graphics library Information--------
+//--------------------------------------------

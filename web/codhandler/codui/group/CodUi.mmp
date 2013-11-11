@@ -1,0 +1,96 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project specification.
+*
+*/
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#include "../../codeng/inc/CodDefs.h"
+
+TARGET      CodUi.dll
+TARGETTYPE  dll
+UID         0x1000008d COD_UI_UID
+CAPABILITY  CAP_GENERAL_DLL
+VENDORID    VID_DEFAULT
+
+SOURCEPATH  ../src
+
+SOURCE      CodUiResource.cpp
+SOURCE      CodAppUi.cpp
+SOURCE      CodDocument.cpp
+SOURCE      CodView.cpp
+SOURCE      CodWaitDialog.cpp
+SOURCE      CodViewDialog.cpp
+SOURCE      CodUiPanic.cpp
+SOURCE      RequestCompleteCallback.cpp
+SOURCE      CodLogger.cpp
+SOURCE      CodViewerApp.cpp
+SOURCE      DdViewerApp.cpp
+SOURCE      CodDownloadImpl.cpp
+SOURCE      CodDialog.cpp
+SOURCE		CodConfirm.cpp 
+
+START RESOURCE ../data/CodUi.rss
+DEPENDS avkon.rsg
+HEADER
+TARGETPATH RESOURCE_FILES_DIR
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END
+
+USERINCLUDE     ../inc
+
+
+SYSTEMINCLUDE   ../../codeng/inc
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_ECOM_SYSTEMINCLUDE
+
+LIBRARY         efsrv.lib
+LIBRARY         apparc.lib
+LIBRARY         apgrfx.lib
+LIBRARY         eikcoctl.lib
+LIBRARY         avkon.lib
+LIBRARY         eikdlg.lib
+LIBRARY         eikctl.lib
+LIBRARY         cone.lib
+LIBRARY         sysutil.lib
+LIBRARY         eikcore.lib
+LIBRARY         euser.lib
+LIBRARY         etext.lib
+LIBRARY         form.lib
+LIBRARY         CommonEngine.lib
+LIBRARY         CommonUi.lib
+LIBRARY         ServiceHandler.lib
+LIBRARY         CodEng.lib
+LIBRARY         ApMime.lib
+LIBRARY         DRMCommon.lib
+LIBRARY         CommonDialogs.lib
+LIBRARY         bafl.lib
+LIBRARY         DcfRep.lib
+LIBRARY         MultipartParser.lib
+LIBRARY         PlatformEnv.lib
+LIBRARY         gdi.lib
+LIBRARY         CdlEngine.lib
+LIBRARY         CentralRepository.lib
+
+DEBUGLIBRARY    flogger.lib
+#ifdef __SERIES60_HELP
+LIBRARY         hlplch.lib // for "Help" options menu
+#endif // __SERIES60_HELP

@@ -1,0 +1,99 @@
+/*
+* Copyright (c) 2002-2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        S60 4.0 reference implementation
+*
+*/
+
+
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+
+TARGETTYPE      DLL
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET          SenFragment.dll
+UID             0x1000008d 0x2000039A
+#else
+TARGET          wsfragment.dll
+UID             0x1000008d 0x101F9746
+#endif
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_GENERAL_DLL )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_GENERAL_DLL
+    #endif
+#endif
+
+SOURCEPATH      ../src
+
+SOURCE          senfragmentbase.cpp
+SOURCE          sendomfragmentbase.cpp
+SOURCE          senparser.cpp
+SOURCE          senparserimpl.cpp
+SOURCE          rsendocument.cpp
+SOURCE          wslibxml2utils.cpp
+
+USERINCLUDE     ../inc
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+SYSTEMINCLUDE   /epoc32/include/libc
+
+
+
+
+LIBRARY         charconv.lib
+LIBRARY estlib.lib // strlen 
+LIBRARY         estor.lib
+LIBRARY         euser.lib
+LIBRARY         bafl.lib    // RStringbase
+
+// Symbian XML framework is used since S60 3rd edition (3.0)
+LIBRARY         XMLFRAMEWORK.lib
+
+// LibXml2 libraries
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    LIBRARY         XmlEngine.lib
+    LIBRARY         XmlEngineDOM.lib
+    LIBRARY         XmlEngineUtils.lib
+#else
+    LIBRARY         WsStarXmlEngine.lib
+    LIBRARY         WsStarXmlEngineDOM.lib
+    LIBRARY         WsStarXmlEngineUtils.lib
+#endif
+
+    #if defined(ARMCC)
+      DEFFILE ../eabi/SenFragment_3.0.DEF
+    #elif defined(WINSCW)
+      DEFFILE ../BWINSCW/SenFragment_3.0.DEF
+    #elif defined(WINS)
+      DEFFILE ../BWINS/SenFragment_3.0.DEF
+    #else 
+      DEFFILE ../BMARM/SenFragment_3.0.DEF
+    #endif
+
+SMPSAFE

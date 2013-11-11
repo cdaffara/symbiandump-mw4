@@ -1,0 +1,4 @@
+EXPORTS
+	?HasOverlaySupport@CPageScaler@@SAHXZ @ 1 NONAME ; int CPageScaler::HasOverlaySupport(void)
+	?NewL@CPageScaler@@SAPAV1@AAVMPageScalerCallback@@W4TDisplayMode@@H@Z @ 2 NONAME ; class CPageScaler * CPageScaler::NewL(class MPageScalerCallback &, enum TDisplayMode, int)
+

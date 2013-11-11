@@ -1,0 +1,50 @@
+/*
+* Copyright (c) 2003-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project eventmed
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+
+TARGET      eventmed.exe
+TARGETTYPE  exe
+UID         0x1000008d 0x101FD288
+
+CAPABILITY ProtServ NetworkControl NetworkServices
+VENDORID   VID_DEFAULT
+
+SOURCEPATH  ../src
+SOURCE      eventmediator.cpp
+SOURCE      eventlogger.cpp
+SOURCE      eventmediatorstarter.cpp
+
+SOURCEPATH  ../../vpncommon/src
+SOURCE      srvstatic.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../eventmediatorapi/inc
+USERINCLUDE     ../../vpncommon/inc
+USERINCLUDE     ../../sit/inc
+USERINCLUDE     ../../vpnmanager/inc
+USERINCLUDE     ../../../vpnapiimpl/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY         euser.lib
+LIBRARY         efsrv.lib 
+LIBRARY         eventmedsit.lib
+DEBUGLIBRARY    flogger.lib

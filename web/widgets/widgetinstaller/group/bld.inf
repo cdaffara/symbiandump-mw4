@@ -1,0 +1,36 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+* This file provides the information required for building the
+*   whole of a WidgetEngineApp.
+*
+*/
+
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+DEFAULT GCCE
+
+PRJ_EXPORTS
+// export localization files
+../loc/WidgetInstallerUI.loc  MW_LAYER_LOC_EXPORT_PATH(WidgetInstallerUI.loc)
+
+// If EKA2 Kernel Architecture is supported, assume S60 3rd Edition Platform
+
+../conf/widgetinstaller.confml           		MW_LAYER_CONFML(widgetinstaller.confml)
+../conf/widgetinstaller_1028281F.crml           MW_LAYER_CRML(widgetinstaller_1028281F.crml)
+
+PRJ_MMPFILES
+WidgetInstallerUI.mmp

@@ -1,0 +1,39 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:     Build information file for connection 
+*
+*/
+
+
+
+
+
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+// Specify the source file followed by its destination here
+// copy will be used to copy the source file to its destination
+// If there's no destination then the source file will be copied
+// to the same name in /epoc32/include
+
+../sis/testsc_c.bat		/epoc32/winscw/c/testsc_c.bat
+../sis/testsc_z.bat		/epoc32/winscw/c/testsc_z.bat	
+../sis/testframework.ini		/epoc32/winscw/c/testframework/testframework_connection.ini
+
+PRJ_TESTMMPFILES
+senserviceconnection.mmp
+
+

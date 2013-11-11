@@ -1,0 +1,52 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build information for the Connection Manager
+*
+*
+*/
+
+
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../rom/Connectionmanager.iby			CORE_MW_LAYER_IBY_EXPORT_PATH(ConnectionManager.iby)
+../rom/connectionmanagerresources.iby	LANGUAGE_MW_LAYER_IBY_EXPORT_PATH(ConnectionManagerResources.iby)
+../loc/connectionmanager.loc			MW_LAYER_LOC_EXPORT_PATH(connectionmanager.loc)
+
+#ifdef __SERIES60_32__
+
+PRJ_MMPFILES
+gnumakefile conmaniconsdc.mk
+ConnectionManager.mmp
+
+#else
+
+PRJ_EXTENSIONS
+START EXTENSION s60/mifconv
+OPTION TARGETFILE connman.mif
+OPTION HEADERFILE connman.mbg
+OPTION SOURCES -c8,8 qgn_note_csd -c8,8 qgn_note_gprs
+END
+
+PRJ_MMPFILES
+
+ConnectionManager.mmp
+
+#endif
+
+// End of File

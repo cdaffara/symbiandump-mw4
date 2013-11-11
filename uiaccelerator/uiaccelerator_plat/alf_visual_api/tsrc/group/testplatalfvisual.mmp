@@ -1,0 +1,109 @@
+/*
+* Copyright (c) 2002 - 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  mmp file
+*
+*/
+
+
+#include <data_caging_paths.hrh> 
+#include <platform_paths.hrh>
+
+TARGET          testplatalfvisual.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x2001CB80
+
+CAPABILITY      ALL -TCB
+
+DEFFILE         testplatalfvisual.def
+
+USERINCLUDE     ../inc 
+
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH      ../src
+
+SOURCE          testplatalfvisual.cpp
+SOURCE          testplatalfvisualblocks.cpp
+SOURCE          testplatalfvisualblocksvisual.cpp
+SOURCE          testplatalfvisualblocksanchorlayout.cpp
+SOURCE          testplatalfvisualblocksbatchbuffer.cpp
+SOURCE          testplatalfvisualblocksborderbrush.cpp
+SOURCE          testplatalfvisualblocksvisualfactory.cpp
+SOURCE          testplatalfvisualblockscontrol.cpp
+SOURCE          testplatalfvisualblockscontrolgroup.cpp
+SOURCE          testplatalfvisualblocksviewportlayout.cpp
+SOURCE          testplatalfvisualblockscurvepath.cpp
+SOURCE          testplatalfvisualblocksutil.cpp
+SOURCE          testplatalfvisualblockscurvepathlayout.cpp
+SOURCE          testplatalfvisualblocksdecklayout.cpp
+SOURCE          testplatalfvisualblocksdisplay.cpp
+SOURCE          testplatalfvisualblocksdisplaybackgrounditem.cpp
+SOURCE          testplatalfvisualblocksdropshadow.cpp
+SOURCE          testplatalfvisualblocksdropshadowbrush.cpp
+SOURCE          testplatalfvisualblocksenv.cpp
+SOURCE          testplatalfvisualblockstransformation.cpp
+SOURCE          testplatalfvisualblockstimedvalue.cpp
+SOURCE          testplatalfvisualblocksevent.cpp
+SOURCE          testplatalfvisualblocksflowlayout.cpp
+SOURCE          testplatalfvisualblocksframebrush.cpp
+SOURCE          testplatalfvisualblocksimage.cpp
+SOURCE          testplatalfvisualblocksgencomponent.cpp
+SOURCE          testplatalfvisualblockstextvisual.cpp
+SOURCE          testplatalfvisualblocksgradientbrush.cpp
+SOURCE          testplatalfvisualblocksgridlayout.cpp
+SOURCE          testplatalfvisualblockstextureprocessor.cpp
+SOURCE          testplatalfvisualblocksimagebrush.cpp
+SOURCE          testplatalfvisualblocksimageloaderutil.cpp
+SOURCE          testplatalfvisualblocksimagevisual.cpp
+SOURCE          testplatalfvisualblockstexturegroup.cpp
+SOURCE          testplatalfvisualblockstexturemanager.cpp
+SOURCE          testplatalfvisualblockslayout.cpp
+SOURCE          testplatalfvisualblocksstatic.cpp
+SOURCE          testplatalfvisualblockssymbiansbdrawer.cpp
+SOURCE          testplatalfvisualblockstextstylemanager.cpp
+SOURCE          testplatalfvisualblockstextstyle.cpp
+SOURCE          testplatalfvisualblockstexture.cpp
+SOURCE          testplatalfvisualblockstextureautosizeparams.cpp
+SOURCE          testplatalfvisualblocksshadowborderbrush.cpp
+SOURCE          testplatalfvisualblockslinevisual.cpp
+SOURCE          testplatalfvisualblocksmeshvisual.cpp
+SOURCE          testplatalfvisualblockspropertyowner.cpp
+SOURCE          testplatalfvisualblocksroster.cpp
+SOURCE          testplatalfvisualblocksscreenbuffer.cpp
+SOURCE          testplatalfvisualblocksscrollerevent.cpp
+SOURCE          testplatalfvisualblocksmetric.cpp
+SOURCE          testplatalfvisualblocksproceduralmesh.cpp
+SOURCE          testplatalfvisualblocksmesh.cpp
+SOURCE          testplatalfvisualblocksmaterial.cpp
+SOURCE          testplatalfvisualblocksmappingfunctions.cpp
+SOURCE          testplatalfvisualblocksm3gmesh.cpp
+SOURCE          testplatalfvisualblockscommand.cpp
+SOURCE          testplatalfvisualblocksbrush.cpp
+SOURCE          testplatalfvisualblocksbrusharray.cpp
+
+
+LIBRARY         euser.lib
+LIBRARY         stiftestinterface.lib
+LIBRARY         stiftestengine.lib
+LIBRARY         alfclient.lib
+LIBRARY         eikcore.lib
+LIBRARY         cone.lib
+LIBRARY         fbscli.lib
+LIBRARY         gdi.lib
+LIBRARY         aknicon.lib
+LIBRARY         bitgdi.lib
+
+LANG            SC
+
+// End of File

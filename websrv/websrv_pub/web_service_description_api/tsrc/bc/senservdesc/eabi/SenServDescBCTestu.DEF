@@ -1,0 +1,11 @@
+EXPORTS
+	_Z9LibEntryLv @ 1 NONAME
+	_Z15SetRequirementsRP16CTestModuleParamRm @ 2 NONAME
+	_ZN15CTestCredential13StartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 3 NONAME
+	_ZN23CTestServiceDescription11EndElementLERK6TDesC8S2_S2_ @ 4 NONAME
+	_ZN23CTestServiceDescription13StartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 5 NONAME
+	_ZTI15CTestCredential @ 6 NONAME ; #<TI>#
+	_ZTI23CTestServiceDescription @ 7 NONAME ; #<TI>#
+	_ZTV15CTestCredential @ 8 NONAME ; #<VT>#
+	_ZTV23CTestServiceDescription @ 9 NONAME ; #<VT>#
+

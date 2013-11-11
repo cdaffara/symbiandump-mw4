@@ -1,0 +1,15 @@
+EXPORTS
+	_ZN15CAlfHintGraphic13HandleMessageERK6TDesC8 @ 1 NONAME
+	_ZN15CAlfHintGraphic13ShareGloballyEv @ 2 NONAME
+	_ZN15CAlfHintGraphic15UnShareGloballyEv @ 3 NONAME
+	_ZN15CAlfHintGraphic4NewLEv @ 4 NONAME
+	_ZN15CAlfHintGraphic5ShareE9TSecureId @ 5 NONAME
+	_ZN15CAlfHintGraphic7UnShareE9TSecureId @ 6 NONAME
+	_ZN15CAlfHintGraphic9InsertTagEi @ 7 NONAME
+	_ZN15CAlfHintGraphic9OnReplaceEv @ 8 NONAME
+	_ZN15CAlfHintGraphicD0Ev @ 9 NONAME
+	_ZN15CAlfHintGraphicD1Ev @ 10 NONAME
+	_ZN15CAlfHintGraphicD2Ev @ 11 NONAME
+	_ZN15CAlfHintGraphic5SetGcEP9CWindowGc @ 12 NONAME
+	_ZN15CAlfHintGraphic9InsertTagEi5TRecti @ 13 NONAME
+

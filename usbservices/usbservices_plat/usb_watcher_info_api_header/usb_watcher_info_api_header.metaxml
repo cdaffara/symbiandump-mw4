@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<api id="9b7ed6942f45ceeb62fcbb1ee8320888" dataversion="2.0">
+  <name>USB Watcher Info API header</name>
+  <description>This is header file for "USB Watcher Info API" which is PubSub API</description>
+  <type>c++</type>
+  <collection>usbengines</collection>
+  <libs>
+  </libs>
+  <release category="platform"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

@@ -1,0 +1,104 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for hostconntester 
+*
+*/
+
+#if defined(__S60_)
+        #include <platform_paths.hrh>
+#endif
+
+TARGET          hostconnTester.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E3
+
+CAPABILITY      ALL -TCB
+
+
+DEFFILE         hostconnTester.def
+SOURCEPATH              ../src
+SOURCE                  TestConsumer.cpp
+SOURCE                  TestHostlet.cpp
+
+//USERINCLUDE             ../inc
+
+SYSTEMINCLUDE       	/Epoc32/include/libc
+MW_LAYER_SYSTEMINCLUDE //SYSTEMINCLUDE
+
+#ifdef SBSV2
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#else // SBSV2 not defined
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#endif // SBSV2
+
+SOURCE          hostconnTester.cpp
+SOURCE          hostconnTesterBlocks.cpp
+
+//RESOURCE        resource_file
+//RESOURCE        resource_file2
+
+LIBRARY         stiftestengine.lib
+LIBRARY                 stiftestinterface.lib
+LIBRARY                 euser.lib
+LIBRARY                 flogger.lib
+LIBRARY                 SenLogger.lib
+LIBRARY                 SenProvider.lib
+LIBRARY                 SenServDesc.lib
+LIBRARY                 SenUtils.lib
+LIBRARY                 SenXml.lib
+LIBRARY                 SenHostConn.lib
+LIBRARY                 SenServConn.lib
+LIBRARY					avkon.lib 
+
+LANG            SC
+
+/*
+START WINS      
+?wins_specific_information
+END
+
+START MARM
+?marm_specific_information
+END
+*/
+// Other possible keywords:
+ 
+// DOCUMENT     ?file, that is not compiled, but added to MSVC project workspace (i.e. release notes)
+/*
+START BITMAP ?target
+TARGETPATH   ?emulated_path_on_target_machine
+HEADER
+SOURCE       ?color_depth ?source_bitmap
+END
+*/
+// DEFFILE ?filename
+// AIF ?filename
+
+// End of File

@@ -1,0 +1,101 @@
+/*
+* Copyright (c) 2006-2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project alfrenderstageplugin
+*
+*/
+
+
+
+#include <data_caging_paths.hrh>
+#include <bldvariant.hrh>
+#include <platform_paths.hrh>
+#include "../../CommonInc/huicompileroptions.mmh"
+
+TARGET		alfrenderstage.dll //200184B5.dll
+TARGETTYPE	PLUGIN
+UID			0x10009D8D 0x200184B5
+CAPABILITY  PowerMgmt ReadDeviceData WriteDeviceData ProtServ
+VENDORID	VID_DEFAULT
+
+//macro _ALF_PRINT_WS_COMMANDS_
+//#define _ALF_PRINT_WS_COMMANDS_
+
+// Basic optimization, delayed state change, use of previously defined text
+// macro _OPTIMIZE_WS_COMMANDS_BASIC_
+
+// unsolved issues with font optimization. e.g. when err
+// macro _OPTIMIZE_WS_COMMANDS_FONT_
+
+// Clipping, still some problems with these
+// macro _OPTIMIZE_WS_COMMANDS_ADVANCED_
+
+#ifndef USERINCLUDE_WSGRAPHICDRAWERINTERFACE_H
+macro USERINCLUDE_WSGRAPHICDRAWERINTERFACE_H
+#endif
+
+#ifndef SYMBIAN_VARIATION_POLICY_DOES_NOT_SUCK
+macro SYMBIAN_GRAPHICS_GCE
+#endif
+
+MACRO WS_SETSHAPE_SUPPORT
+
+// MACRO ALF_DEBUG_TRACK_DRAWING
+
+// For disabling the DoPatternSearch command when using NVG
+MACRO __NVG
+
+SOURCEPATH      ../group
+START RESOURCE alfnonsupportedwscommands.rss
+HEADER
+TARGETPATH ECOM_RESOURCE_DIR
+END
+
+
+USERINCLUDE 	../inc
+SYSTEMINCLUDE /epoc32/include 
+SYSTEMINCLUDE ../../CommonInc
+SYSTEMINCLUDE ../../ServerCore/Inc // todo..
+
+MW_LAYER_SYSTEMINCLUDE
+
+SOURCEPATH	../src
+SOURCE      alfrenderstageplugin.cpp 
+SOURCE      alfrenderstage.cpp
+SOURCE      alfrenderstagefactory.cpp
+SOURCE      alfrssendbuffer.cpp
+SOURCE      alfrsgc.cpp
+SOURCE      alfasynchgoomsession.cpp
+
+SOURCEPATH	../group
+RESOURCE	alfrenderstage.rss // 200184B5.rss
+
+LIBRARY     bitgdi.lib
+LIBRARY     ecom.lib
+LIBRARY     estor.lib
+LIBRARY     euser.lib
+LIBRARY     fbscli.lib
+LIBRARY     gdi.lib
+LIBRARY     alfdecoderserverclient.lib
+LIBRARY     wsgraphicdrawer.lib
+LIBRARY     hal.lib
+LIBRARY     lookuptable.lib // for fader
+LIBRARY     bafl.lib
+LIBRARY     commonengine.lib        // Resource loader
+LIBRARY     efsrv.lib
+LIBRARY     flogger.lib
+LIBRARY     goommonitor.lib
+
+#ifdef _ALF_PRINT_WS_COMMANDS_
+LIBRARY 	    alfcommanddebug.lib
+#endif

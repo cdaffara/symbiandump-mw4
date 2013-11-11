@@ -1,0 +1,13 @@
+EXPORTS
+	_ZN11EventViewer10GetIapNameEmR5TBuf8ILi50EE @ 1 NONAME
+	_ZN11EventViewer11GetIapNamesEmR5TBuf8ILi50EEmS2_ @ 2 NONAME
+	_ZN12CEventViewer12GetNextEventERP7HBufC16R16TEventProperties @ 3 NONAME
+	_ZN12CEventViewer13DeleteLogFileEv @ 4 NONAME
+	_ZN12CEventViewer16GetPreviousEventERP7HBufC16R16TEventProperties @ 5 NONAME
+	_ZN12CEventViewer18GetMostRecentEventERP7HBufC16R16TEventProperties @ 6 NONAME
+	_ZN12CEventViewer24GetEventUsingEventNumberERP7HBufC16mR16TEventProperties @ 7 NONAME
+	_ZN12CEventViewer4NewLEv @ 8 NONAME
+	_ZTI12CEventViewer @ 9 NONAME ; #<TI>#
+	_ZTV12CEventViewer @ 10 NONAME ; #<VT>#
+	_ZN11EventViewer11GetSnapNameEmR5TBuf8ILi50EE @ 11 NONAME
+

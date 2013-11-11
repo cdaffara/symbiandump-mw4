@@ -1,0 +1,59 @@
+/*
+* Copyright (c) 2002-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for hostletconnection 
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET          HostletConnectionBCTest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E7
+
+CAPABILITY              ALL -TCB
+VENDORID        VID_DEFAULT  
+//VENDORID 0x70000001 
+/* Remove comments and replace 0x00000000 with correct secure id */
+// SECUREID     0x00000000
+//TARGETPATH      ?target_path
+DEFFILE         HostletConnectionBCTest.def
+
+ 
+SOURCEPATH              ../src
+SOURCE          		hostletconnection.cpp
+SOURCE          		hostletconnectioncases.cpp
+SOURCE                  testconsumer.cpp
+SOURCE                  testhostlet.cpp
+
+USERINCLUDE	../inc
+
+SYSTEMINCLUDE       	/epoc32/include/libc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY                 stiftestinterface.lib
+LIBRARY                 euser.lib
+LIBRARY                 flogger.lib
+//LIBRARY                 SenLogger.lib
+//LIBRARY                 SenProvider.lib
+LIBRARY                 SenServDesc.lib
+LIBRARY                 SenUtils.lib
+LIBRARY                 SenXml.lib
+LIBRARY                 SenHostConn.lib
+LIBRARY                 SenServConn.lib
+LIBRARY					avkon.lib 
+LANG            		SC
+
+// End of File

@@ -1,0 +1,76 @@
+/*
+* Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This is a localisation file.
+*     A .loc file is the one and only place where the logical strings
+*     to be localised are defined. 
+*     
+*
+*/
+
+
+
+
+//d:text for open url command for aiw plugin
+//d:this text will appear in the menu list of
+//d:caller application which wants to use the
+//d:browser aiw plugin
+//l:list_single_pane_t1_cp2
+//w:
+//r:3.1
+//
+#define qtn_browser_aiw_open_url    "Open URL"
+
+//d:text for save url command for aiw plugin
+//d:this text will appear in the menu list of
+//d:caller application which wants to use the
+//d:browser aiw plugin
+//l:list_single_pane_t1_cp2
+//w:
+//r:3.1
+//
+#define qtn_browser_aiw_add_bookmark    "Add bookmark"
+
+// Taken from the wmlbrowser.loc
+//d:Error note message: bookmark was not saved.
+//l:popup_note_window
+//w:
+//r:3.1
+//
+#define qtn_wmlbm_bm_not_saved          "Bookmark not saved"
+
+//d:Information note text in Bookmarks View: name is conflicting with existing name.
+//d:Information note text in Saved Decks View: name is conflicting with existing name.
+//l:popup_note_window
+//w:
+//r:3.1
+//
+#define qtn_wmlbm_name_already_used     "Name already in use"
+
+//d:Info note message: bookmark was saved.
+//l:popup_note_window
+//w:
+//r:3.1
+//
+#define text_wml_bm_saved               "Bookmark saved"
+
+//d:label for bookmark name query
+//l:popup_query_data_window
+//w:
+//r:3.1
+//
+#define qtn_wml_query_bookmark_title          "Enter bookmark name"
+
+
+// End of File

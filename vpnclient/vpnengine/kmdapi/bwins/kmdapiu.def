@@ -1,0 +1,10 @@
+EXPORTS
+	?Activate@RKMD@@QBEXKABVTDesC16@@ABVTDesC8@@AAV?$TPckg@VTVPNAddress@@@@AAVTRequestStatus@@@Z @ 1 NONAME ; void RKMD::Activate(unsigned long, class TDesC16 const &, class TDesC8 const &, class TPckg<class TVPNAddress> &, class TRequestStatus &) const
+	?CancelActivate@RKMD@@QBEXXZ @ 2 NONAME ; void RKMD::CancelActivate(void) const
+	?CancelResolve@RKMD@@QBEXXZ @ 3 NONAME ; void RKMD::CancelResolve(void) const
+	?CancelStartRealConnection@RKMD@@QBEXXZ @ 4 NONAME ; void RKMD::CancelStartRealConnection(void) const
+	?Connect@RKMD@@QAEHXZ @ 5 NONAME ; int RKMD::Connect(void)
+	?ResolveAddress@RKMD@@QBEXKABVTDesC16@@AAV?$TPckgBuf@VTNameRecord@@@@AAVTRequestStatus@@@Z @ 6 NONAME ; void RKMD::ResolveAddress(unsigned long, class TDesC16 const &, class TPckgBuf<class TNameRecord> &, class TRequestStatus &) const
+	?StartRealConnection@RKMD@@QBEXKAAV?$TPckg@VTVpnRealConnectionParams@@@@AAVTRequestStatus@@@Z @ 7 NONAME ; void RKMD::StartRealConnection(unsigned long, class TPckg<class TVpnRealConnectionParams> &, class TRequestStatus &) const
+	?StopVpnConnection@RKMD@@QAEHKW4TType@TKmdStopConnection@@@Z @ 8 NONAME ; int RKMD::StopVpnConnection(unsigned long, enum TKmdStopConnection::TType)
+

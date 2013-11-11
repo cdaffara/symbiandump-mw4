@@ -1,0 +1,14 @@
+EXPORTS
+	_Z9LibEntryLv @ 1 NONAME
+	_Z15SetRequirementsRP16CTestModuleParamRm @ 2 NONAME
+	_ZTI13CTestConsumer @ 3 NONAME ; #<TI>#
+	_ZTI13CTestProperty @ 4 NONAME ; #<TI>#
+	_ZTI13CTestProvider @ 5 NONAME ; #<TI>#
+	_ZTI15CTestConnection @ 6 NONAME ; #<TI>#
+	_ZTI17CTestFileObserver @ 7 NONAME ; #<TI>#
+	_ZTV13CTestConsumer @ 8 NONAME ; #<VT>#
+	_ZTV13CTestProperty @ 9 NONAME ; #<VT>#
+	_ZTV13CTestProvider @ 10 NONAME ; #<VT>#
+	_ZTV15CTestConnection @ 11 NONAME ; #<VT>#
+	_ZTV17CTestFileObserver @ 12 NONAME ; #<VT>#
+

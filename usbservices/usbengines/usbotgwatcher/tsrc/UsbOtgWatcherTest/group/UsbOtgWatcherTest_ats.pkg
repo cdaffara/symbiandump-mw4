@@ -1,0 +1,69 @@
+;
+; Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description:  Installation file for STIF
+;
+
+
+;
+; Installation file for STIF
+;
+
+; Languages
+&EN
+
+; Provide value for uid
+#{"UsbOtgWatcherTest"},(0x00000000),1,1,0,TYPE=SA
+
+; Series60 product id for S60 5.2
+[0x20022E6D], 0, 0, 0, {"Series60ProductID"}
+
+; Localised Vendor name
+%{"Nokia"}
+
+; Unique Vendor name;
+:"Nokia"
+
+
+; Logo
+; None
+
+; Package signature - Optional
+; None
+
+; Start of Package body
+
+; Condition blocks
+; None
+
+; Options list
+; None
+
+; Install files
+"/epoc32/release/armv5/udeb/UsbOtgWatcherTest.dll"-"C:/Sys/Bin/UsbOtgWatcherTest.dll"
+"/epoc32/release/armv5/udeb/UsbOtgWatcherTest.exe"-"C:/Sys/Bin/UsbOtgWatcherTest.exe"
+
+"../conf/UsbOtgWatcherTest.cfg"-"E:/testing/conf/UsbOtgWatcherTest.cfg"
+"../init/UsbOtgWatcherTest.ini"-"E:/testing/init/UsbOtgWatcherTest_ats.ini"
+  
+; Embedded SIS 
+; None
+
+; End of Package body
+
+; PKG dependencies
+; None
+
+; PKG capabilities
+; None
+

@@ -1,0 +1,54 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Highlevel bld.inf 
+*
+*/
+
+
+/*
+*   Order is important
+*/
+
+#include "../osswebengine/cache/group/bld.inf"
+#include "../osswebengine/MemoryManager/Group/bld.inf"
+
+#include "../osswebengine/WebKit/s60/group/JavaScriptCore/bld.inf"
+
+#include "../osswebengine/npscript/group/bld.inf"
+
+#include "../webkitutils/group/bld.inf"
+#include "../pagescaler/group/bld.inf"
+#include "../widgetinstaller/group/bld.inf"
+#include "../widgetregistry/group/BLD.INF"
+#include "../osswebengine/WebKit/s60/group/bld.inf"
+
+#include "../device/group/bld.inf"
+
+#include "../widgetengine/group/bld.inf"
+
+#include "../memoryplugin/group/bld.inf"
+#include "../widgetmemoryplugin/group/bld.inf"
+#include "../widgetbackuprestore/group/bld.inf"
+#include "../browserrecognizers/group/bld.inf"
+#include "../wrtharvester/group/bld.inf"
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+
+PRJ_MMPFILES
+
+PRJ_TESTMMPFILES

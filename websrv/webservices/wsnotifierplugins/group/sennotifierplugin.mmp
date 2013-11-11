@@ -1,0 +1,172 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:     Project specification file for sennotifierplugin   
+*
+*/
+
+
+
+
+
+
+#include "../../inc/webservices.hrh"
+
+#ifdef EKA2
+    #include <data_caging_paths.hrh>
+#endif
+
+#ifdef _DEBUG
+    // Define application specific log macro flag for debug builds only:
+    //MACRO __CUSTOM_LOG_ENABLED__
+#endif    
+
+
+#ifdef EKA2
+
+TARGETTYPE PLUGIN
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+    TARGET sennotifierplugin.dll
+    UID 0x10009D8D 0x101F9764
+#else
+    TARGET wsnotifierplugin.dll
+    UID 0x10009D8D 0x101F9743
+#endif
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_ECOM_PLUGIN )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_ECOM_PLUGIN
+    #endif
+#else 
+    // EKA1
+    TARGET sennotifierplugin.dll    
+    TARGETTYPE NOTIFIER
+    UID 0x10005522 0x101F9764
+#endif
+
+SOURCEPATH      .
+SOURCEPATH      ../src
+
+SOURCE sennotplugindlgmain.cpp
+SOURCE sennotplugindlgimpl.cpp
+SOURCE logger.cpp
+
+#ifdef SYMBIAN_SECURE_ECOM
+    // ECom resource file
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES    
+    START RESOURCE ../data/101f9764.rss
+    #ifdef SYMBIAN_SECURE_ECOM
+    TARGET  sennotifierplugin.rsc 
+    #endif
+#else
+    START RESOURCE ../data/101F9743.rss
+    #ifdef SYMBIAN_SECURE_ECOM
+    TARGET  wsnotifierplugin.rsc 
+    #endif
+#endif    
+        
+    END // ECom resource file 
+MW_LAYER_SYSTEMINCLUDE    
+    // Notifier resource file
+    START RESOURCE  ../data/sennotifierplugindlgimpl.rss
+        HEADER
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES    
+        TARGET SenNotifierPluginDlgImpl.rsc
+#else
+        TARGET WsNotifierPluginDlgImpl.rsc
+#endif        
+    
+        #ifdef SYMBIAN_SECURE_ECOM
+            TARGETPATH /private/10003a4a // 3.0
+        #endif
+    LANGUAGE_IDS
+    END // RESOURCE
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES    
+    RESOURCE ../data/sennotifierplugin_reg.rss
+#else
+    RESOURCE ../data/wsnotifierplugin_REG.rss
+#endif        
+#else 
+    TARGETPATH      /system/notifiers
+    RESOURCE ../data/SenNotifierPluginDlgImpl.rss
+    #ifdef __SERIES60_26__
+    	RESOURCE ../data/sennotifierplugin_REG.rss
+    #endif
+    LANGUAGE_IDS
+#endif
+
+
+USERINCLUDE     .
+USERINCLUDE     ../inc
+
+SYSTEMINCLUDE   ../../inc
+SYSTEMINCLUDE   /epoc32/include/libc
+//SYSTEMINCLUDE   /epoc32/include/uikon 
+SYSTEMINCLUDE   /epoc32/include/ecom
+
+LIBRARY avkon.lib
+LIBRARY commonengine.lib 
+LIBRARY cone.lib
+//LIBRARY egul.lib 
+//LIBRARY eikcoctl.lib
+//LIBRARY eikcore.lib 
+//LIBRARY eikctl.lib
+//LIBRARY eikdlg.lib 
+LIBRARY eiksrv.lib
+LIBRARY euser.lib 
+LIBRARY efsrv.lib  // for logging
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+LIBRARY sennotdlg.lib
+#else
+LIBRARY wsnotdlg.lib
+#endif
+#ifndef EKA2
+   EXPORTUNFROZEN
+#endif
+
+#ifdef EKA2
+  #if defined(ARMCC)
+    DEFFILE ../eabi/SENNOTIFIERPLUGIN.DEF
+  #elif defined(WINSCW)
+    DEFFILE ../BWINSCW/SENNOTIFIERPLUGIN.DEF
+  #elif defined(WINS)
+    DEFFILE ../BWINS/SENNOTIFIERPLUGIN.DEF
+  #else 
+    DEFFILE ../BMARM/SENNOTIFIERPLUGIN.DEF
+  #endif
+#endif
+
+SMPSAFE
+
+//#ifdef SYMBIAN_SECURE_ECOM 
+//#else // not SYMBIAN_SECURE_ECOM 
+//  #if defined(ARMCC)
+//    DEFFILE ../EABI/SENNOTIFIERPLUGIN_2.6.DEF
+//  #elif defined(WINSCW)
+//    DEFFILE ../BWINSCW/SENNOTIFIERPLUGIN_2.6.DEF
+//  #elif defined(WINS)
+//    DEFFILE ../BWINS/SENNOTIFIERPLUGIN_2.6.DEF
+//  #else 
+//    DEFFILE ../BMARM/SENNOTIFIERPLUGIN_2.6.DEF
+//  #endif
+//#endif // SYMBIAN_SECURE_ECOM 
+
+// End of file

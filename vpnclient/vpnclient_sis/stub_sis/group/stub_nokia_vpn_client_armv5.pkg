@@ -1,0 +1,332 @@
+;
+; Copyright (c) 2009-2010 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description: vpnclient package file for stub SIS
+;
+
+; LANGUAGES
+; - None (English only by default)
+&EN,FR,GE,SP,IT,SW,DA,NO,FI,AM,PO,TU,IC,RU,HU,DU,CS,SK,PL,SL,TC,HK,ZH,JA,TH,AR,TL,BG,HR,ET,FA,CF,EL,HE,IN,LV,LT,MS,BP,RO,SR,LS,UK,UR,VI,44,102,103
+
+; INSTALLATION HEADER 
+; UID of acuagentcrypto
+#{"Nokia VPN",
+  "Cl. VPN Nokia",
+  "Nokia VPN-Clnt.",
+  "Nokia VPN",
+  "Client Nokia VPN",
+  "Nokia VPN-klient",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Cli. VPN Nokia",
+  "Nokia VPN is.",
+  "Nokia VPN",
+  "Клиент Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN-cl.",
+  "Nokia VPN kl.",
+  "VPN Nokia",
+  "Klient Nokia VPN",
+  "Odj. NZO Nokia",
+  "諾基亞VPN用戶端",
+  "諾基亞VPN客戶端",
+  "诺基亚VPN客户端",
+  "Nokia VPN クライアント",
+  "Nokia VPN client",
+  "Nokia VPN",
+  "Nokia VPN client",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN klient",
+  "مشتري Nokia VPN",
+  "RPV Nokia",
+  "Πελάτης της Nokia VPN",
+  "לקוח Nokia VPN",
+  "Klien VPN Nokia",
+  "Nokia VPN",
+  "Nokia VPT kl.",
+  "Klien Nokia VPN",
+  "VPN Nokia",
+  "Client Nokia RVP",
+  "Nokia VPN klijent",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN client",
+  "Nokia VPN",
+  "Nokia VPN",
+  "Nokia VPN"},
+(0x101F5147),32,08,0124, TYPE=SA, RU
+
+; Product / platform version compatibility - S60 5.1
+[0x10283160],0,0,0,{
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID"}
+
+; Product / platform version compatibility - S60 5.2
+[0x20022e6d],0,0,0,{
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID",
+"Series60ProductID"}
+
+; List of localised vendor names - one per language.
+%{"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia",
+"Nokia"}
+
+; The non-localised, globally unique vendor name (mandatory)
+:"Nokia"
+
+; LIST OF FILES
+
+;///////////////////////////////////////////////
+
+; ipsecpolparser; remove later
+""-"z:\sys\bin\vpnipsecpolparser.dll"
+
+; VPN Connection Agent
+""-"z:\sys\bin\vpnconnagt.agt"
+
+;   VPN Policy Parser
+""-"z:\sys\bin\ikepolparser.dll"
+
+;   Symmetric crypto API wrapper
+""-"z:\sys\bin\utlcrypto.dll"
+
+;   Key Management Daemon
+""-"z:\sys\bin\kmdserver.exe"
+
+;   Key Management Daemon API
+""-"z:\sys\bin\kmdapi.dll"
+
+;   IKEUTILS library
+""-"z:\sys\bin\ikeutils.dll"
+
+""-"z:\sys\bin\ikecert.dll"
+""-"z:\sys\bin\ikev1lib.dll"
+""-"z:\sys\bin\ikev2lib.dll"
+
+; IKE socket plugin
+""-"z:\sys\bin\ikesocket.dll"
+
+; VPN DM
+""-"z:\sys\bin\dmadengine.dll"
+""-"z:\sys\bin\dmadipsecvpn.dll"
+""-"z:\resource\plugins\dmadipsecvpn.rsc"
+""-"z:\sys\bin\dmadpki.dll"
+""-"z:\resource\plugins\dmadpki.rsc"
+
+
+; VPN API (comes with platform)
+""-"z:\sys\bin\vpnapi.dll"
+
+; VPN help resources (not localized yet)
+; Help resources should be already in ROM but content can be updated from SIS package
+""-"z:\resource\help\vpn.h*"
+
+; PKI Services Server
+""-"z:\sys\bin\pkiservice.exe"
+; PKI Services API
+""-"z:\sys\bin\pkiserviceapi.dll"
+
+; PKCS#10 Module
+""-"z:\sys\bin\utlpkcs10.dll"
+; PKCS#12 Module
+""-"z:\sys\bin\utlpkcs12.dll"
+; Base64 Module
+""-"z:\sys\bin\utlbase64.dll"
+; Socket Interaction Thread
+""-"z:\sys\bin\eventmedsit.dll"
+; Event Viewer
+""-"z:\sys\bin\eventviewer.dll"
+;
+""-"z:\resource\vpnlogmessages.rsc"
+
+; Terminal control stubs (for downwards compatibility)
+""-"z:\sys\bin\vpntcwrapper.dll"
+
+; VPN dialog manager
+""-"z:\sys\bin\vpndialogmanager.dll"
+
+; VPN ECOM Notifier plug-in
+""-"z:\sys\bin\vpnecomnotifier.dll"
+
+""-"z:\resource\plugins\vpnecomnotifier.rsc"
+
+""-"z:\resource\vpnecomnotifier.r*"
+
+; XML Parser
+""-"z:\sys\bin\utlxml.dll"
+
+""-"z:\sys\bin\vpnpolicyrecognizer.dll"
+""-"z:\resource\plugins\vpnpolicyrecognizer.rsc"
+
+""-"z:\sys\bin\vpnpolins.exe"
+""-"z:\Private\10003a3f\import\apps\vpnpolins_reg.rsc"
+; Embedded VPN Policy Installer sis file
+@"..\..\ce_sis\sub_sisses\mVPN_vpnpolins_armv5.sis",(0xA0000131)
+
+;
+; VPN Cleaner
+;
+""-"z:\sys\bin\vpncleaner.exe"
+;
+; VPN Manager
+""-"z:\sys\bin\vpnmanager.exe"
+
+; Event Mediator
+""-"z:\sys\bin\eventmed.exe"
+
+; Event Mediator API
+""-"z:\sys\bin\eventmedapi.dll"
+
+; VPN Installer
+""-"z:\sys\bin\vpnins.exe"

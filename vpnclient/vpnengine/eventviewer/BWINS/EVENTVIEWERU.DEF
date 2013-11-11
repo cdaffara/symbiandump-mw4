@@ -1,0 +1,12 @@
+EXPORTS
+	??1CEventViewer@@UAE@XZ @ 1 NONAME ; CEventViewer::~CEventViewer(void)
+	?DeleteLogFile@CEventViewer@@QAEHXZ @ 2 NONAME ; int CEventViewer::DeleteLogFile(void)
+	?GetEventUsingEventNumber@CEventViewer@@QAEHAAPAVHBufC16@@KAAUTEventProperties@@@Z @ 3 NONAME ; int CEventViewer::GetEventUsingEventNumber(class HBufC16 * &, unsigned long, struct TEventProperties &)
+	?GetIapName@EventViewer@@SAHKAAV?$TBuf8@$0DC@@@@Z @ 4 NONAME ; int EventViewer::GetIapName(unsigned long, class TBuf8<50> &)
+	?GetIapNames@EventViewer@@SAHKAAV?$TBuf8@$0DC@@@K0@Z @ 5 NONAME ; int EventViewer::GetIapNames(unsigned long, class TBuf8<50> &, unsigned long, class TBuf8<50> &)
+	?GetMostRecentEvent@CEventViewer@@QAEHAAPAVHBufC16@@AAUTEventProperties@@@Z @ 6 NONAME ; int CEventViewer::GetMostRecentEvent(class HBufC16 * &, struct TEventProperties &)
+	?GetNextEvent@CEventViewer@@QAEHAAPAVHBufC16@@AAUTEventProperties@@@Z @ 7 NONAME ; int CEventViewer::GetNextEvent(class HBufC16 * &, struct TEventProperties &)
+	?GetPreviousEvent@CEventViewer@@QAEHAAPAVHBufC16@@AAUTEventProperties@@@Z @ 8 NONAME ; int CEventViewer::GetPreviousEvent(class HBufC16 * &, struct TEventProperties &)
+	?NewL@CEventViewer@@SAPAV1@XZ @ 9 NONAME ; class CEventViewer * CEventViewer::NewL(void)
+	?GetSnapName@EventViewer@@SAHKAAV?$TBuf8@$0DC@@@@Z @ 10 NONAME ; int EventViewer::GetSnapName(unsigned long, class TBuf8<50> &)
+

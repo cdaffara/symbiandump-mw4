@@ -1,0 +1,104 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This is a localisation file for Connection Manager
+*     A .loc file is the one and only place where the logical strings
+*     to be localised are defined. 
+*
+*  -------------------------------------------------------------------
+*
+*/
+
+
+
+// LOCALISATION STRINGS
+
+
+//d:Query popped up when an AP is already in use.
+//l: popup_note_window
+// 
+
+#define qtn_ics_query_use_extng "Another Access Point in use. Try to use existing?"
+
+
+//d:Text after use of existing copnnection is rejected by the user
+//l: popup_note_window
+// 
+#define qtn_ics_note_close_conn_try_again "Close existing network connections and try again."
+
+
+//d:Text to use when exisisting connection is unusable for the selected purpose
+//l: popup_note_window
+// 
+#define qtn_ics_note_use_another_ap "Unable to connect to the network. Try to use another Access Point instead?"
+
+
+//d: When there is no network cover user is shown this error note
+//l: popup_note_window
+// 
+#define qtn_ext_err_no_network_cover "No network cover. Unable to connect to network."
+
+
+//d: Wait note text during connection cration
+//l: popup_note_wait_window
+// 
+#define qtn_ics_conct_note_txt "Connecting via %U"
+
+
+//d: Wait note text during connection cration
+//l: popup_note_wait_window
+//w:
+//r:3.0
+//
+#define qtn_ics_conct_note_ell "Connecting ..."
+
+
+//d: A not showing that we are canccelling network operation
+//l: popup_note_window
+// 
+#define qtn_ics_note_cncl_nw_operation "Canceling network operation..."
+
+
+//d: Shown after disconnection
+//l: popup_note_window
+// 
+#define qtn_ics_note_disconn_from_service "Connection to service is closed"
+
+
+//Browser specific!!!
+//d: A not showing that active connection is not usable in this case.
+//l: popup_note_window
+// 
+#define qtn_wml_query_new_conn "Browser can not use active connection. Establish a new connection?"
+
+
+//d: query text for ignoring security warning 
+//l: popup_note_window
+// 
+#define qtn_wml_query_make_secure_conn "Unsecure connection active. Establish a new secure connection?"
+
+
+//d: query text for going online
+//l: popup_note_window
+//
+#define qtn_wml_conf_conn_need "Connection to server needed. Create connection?"
+
+//d:"Off-line mode" - confirmation query
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_offline_activate_wlan "Do you want to create a WLAN connection in Off-line mode?"
+
+// End of File

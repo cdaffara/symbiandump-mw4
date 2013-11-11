@@ -1,0 +1,61 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Constants used both in code and resources of Scheme Handler.   
+*      
+*
+*/
+
+
+#ifndef SCHEME_DEFS_HRH
+#define SCHEME_DEFS_HRH
+
+// ***************************************************************************
+// **  THIS FILE IS INCLUDED IN RESOURCES (.rss) AND PROJECT FILES (.mmp).  **
+// **                     ONLY MACROS ARE ALLOWED.                          **
+// ***************************************************************************
+
+// MACROS
+
+/// Scheme MIME type.
+#define SCHEME_MIME_TYPE                   "text/x-scheme"
+
+
+/// Scheme dispatcher UID value.
+#define SCHEME_DISPATCHER_UID							0x101f8531
+#define SCHEME_DISPATCHER_UID_RSS_NAME                  101f8531.rss
+
+/// Scheme App UID value.
+#define SCHEME_APP_UID									0x101f8532
+
+/// SCHEME Recognizer UID value.
+#define SCHEME_RECOG_UID								0x101f8533
+
+/// Scheme handler interface definition Uid
+#define 	SCHEME_INTERFACE_DEF						0x101f8534
+
+/// Scheme handler interface implementation Uids
+#define		SCHEME_WTAI_IMP								0x101f8546
+#define		SCHEME_FILE_IMP								0x101f8535
+#define		SCHEME_HTTP_IMP								0x101f8536
+#define		SCHEME_HTTPS_IMP							0x101F8573
+#define		SCHEME_RTSP_IMP								0x101f8537
+#define		SCHEME_MAIL_TO_IMP							0x101f8538
+#define		SCHEME_TEL_IMP						    	0x101F8574
+#define		SCHEME_CTI_IMP		    					0x101F8575
+#define		SCHEME_MMS_IMP		    					0x2000B05D
+
+
+
+#endif /* def SCHEME_DEFS_HRH */

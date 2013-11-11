@@ -1,0 +1,157 @@
+// *
+// * Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// * All rights reserved.
+// * This component and the accompanying materials are made available
+// * under the terms of the License "Eclipse Public License v1.0"
+// * which accompanies this distribution, and is available
+// * at the URL "http://www.eclipse.org/legal/epl-v10.html".
+// *
+// * Initial Contributors:
+// * Nokia Corporation - initial contribution.
+// *
+// * Contributors:
+// *
+// * Description:  This is the project specification file for WebCore.
+// *
+
+#include <platform_paths.hrh>
+#include <data_caging_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+#include "../../common.mmpi"
+
+TARGET  WebCoreDerivedSources.lib
+
+TARGETTYPE  lib
+
+VENDORID    VID_DEFAULT
+
+SOURCEPATH ../../../../../DerivedSources/WebCore     
+
+SOURCE CharsetData.cpp
+SOURCE CSSGrammar.cpp
+SOURCE HTMLNames.cpp
+SOURCE JSAttr.cpp
+SOURCE JSBarInfo.cpp
+SOURCE JSCanvasGradient.cpp
+SOURCE JSCanvasPattern.cpp
+SOURCE JSCanvasRenderingContext2D.cpp
+SOURCE JSCDATASection.cpp
+SOURCE JSCharacterData.cpp
+SOURCE JSComment.cpp
+SOURCE JSCounter.cpp
+SOURCE JSCSSCharsetRule.cpp
+SOURCE JSCSSFontFaceRule.cpp
+SOURCE JSCSSImportRule.cpp
+SOURCE JSCSSMediaRule.cpp
+SOURCE JSCSSPageRule.cpp
+SOURCE JSCSSPrimitiveValue.cpp
+SOURCE JSCSSRule.cpp
+SOURCE JSCSSRuleList.cpp
+SOURCE JSCSSStyleDeclaration.cpp
+SOURCE JSCSSStyleRule.cpp
+SOURCE JSCSSStyleSheet.cpp
+SOURCE JSCSSValue.cpp
+SOURCE JSCSSValueList.cpp
+SOURCE JSDocument.cpp
+SOURCE JSDocumentFragment.cpp
+SOURCE JSDocumentType.cpp
+SOURCE JSDOMImplementation.cpp
+SOURCE JSDOMParser.cpp
+SOURCE JSDOMSelection.cpp
+SOURCE JSDOMWindow.cpp
+SOURCE JSElement.cpp
+SOURCE JSEntity.cpp
+SOURCE JSEntityReference.cpp
+SOURCE JSEvent.cpp
+SOURCE JSHistory.cpp
+SOURCE JSHTMLAnchorElement.cpp
+SOURCE JSHTMLAppletElement.cpp
+SOURCE JSHTMLAreaElement.cpp
+SOURCE JSHTMLBaseElement.cpp
+SOURCE JSHTMLBaseFontElement.cpp
+SOURCE JSHTMLBlockquoteElement.cpp
+SOURCE JSHTMLBodyElement.cpp
+SOURCE JSHTMLBRElement.cpp
+SOURCE JSHTMLButtonElement.cpp
+SOURCE JSHTMLCanvasElement.cpp
+SOURCE JSHTMLCollection.cpp
+SOURCE JSHTMLDirectoryElement.cpp
+SOURCE JSHTMLDivElement.cpp
+SOURCE JSHTMLDListElement.cpp
+SOURCE JSHTMLDocument.cpp
+SOURCE JSHTMLElement.cpp
+SOURCE JSHTMLEmbedElement.cpp
+SOURCE JSHTMLFieldSetElement.cpp
+SOURCE JSHTMLFontElement.cpp
+SOURCE JSHTMLFormElement.cpp
+SOURCE JSHTMLFrameElement.cpp
+SOURCE JSHTMLFrameSetElement.cpp
+SOURCE JSHTMLHeadElement.cpp
+SOURCE JSHTMLHeadingElement.cpp
+SOURCE JSHTMLHRElement.cpp
+SOURCE JSHTMLHtmlElement.cpp
+SOURCE JSHTMLIFrameElement.cpp
+SOURCE JSHTMLImageElement.cpp
+SOURCE JSHTMLInputElement.cpp
+SOURCE JSHTMLIsIndexElement.cpp
+SOURCE JSHTMLLabelElement.cpp
+SOURCE JSHTMLLegendElement.cpp
+SOURCE JSHTMLLIElement.cpp
+SOURCE JSHTMLLinkElement.cpp
+SOURCE JSHTMLMapElement.cpp
+SOURCE JSHTMLMarqueeElement.cpp
+SOURCE JSHTMLMenuElement.cpp
+SOURCE JSHTMLMetaElement.cpp
+SOURCE JSHTMLModElement.cpp
+SOURCE JSHTMLObjectElement.cpp
+SOURCE JSHTMLOListElement.cpp
+SOURCE JSHTMLOptGroupElement.cpp
+SOURCE JSHTMLOptionElement.cpp
+SOURCE JSHTMLOptionsCollection.cpp
+SOURCE JSHTMLParagraphElement.cpp
+SOURCE JSHTMLParamElement.cpp
+SOURCE JSHTMLPreElement.cpp
+SOURCE JSHTMLQuoteElement.cpp
+SOURCE JSHTMLScriptElement.cpp
+SOURCE JSHTMLSelectElement.cpp
+SOURCE JSHTMLStyleElement.cpp
+SOURCE JSHTMLTableCaptionElement.cpp
+SOURCE JSHTMLTableCellElement.cpp
+SOURCE JSHTMLTableColElement.cpp
+SOURCE JSHTMLTableElement.cpp
+SOURCE JSHTMLTableRowElement.cpp
+SOURCE JSHTMLTableSectionElement.cpp
+SOURCE JSHTMLTextAreaElement.cpp
+SOURCE JSHTMLTitleElement.cpp
+SOURCE JSHTMLUListElement.cpp
+SOURCE JSKeyboardEvent.cpp
+SOURCE JSMediaList.cpp
+SOURCE JSMouseEvent.cpp
+SOURCE JSMutationEvent.cpp
+SOURCE JSNamedNodeMap.cpp
+SOURCE JSNode.cpp
+SOURCE JSNodeFilter.cpp
+SOURCE JSNodeIterator.cpp
+SOURCE JSNodeList.cpp
+SOURCE JSNotation.cpp
+SOURCE JSOverflowEvent.cpp
+SOURCE JSProcessingInstruction.cpp
+SOURCE JSRange.cpp
+SOURCE JSRect.cpp
+SOURCE JSScreen.cpp
+SOURCE JSRangeException.cpp
+SOURCE JSStyleSheet.cpp
+SOURCE JSText.cpp
+SOURCE JSTextEvent.cpp
+SOURCE JSTreeWalker.cpp
+SOURCE JSUIEvent.cpp
+SOURCE JSWheelEvent.cpp
+SOURCE JSXMLSerializer.cpp
+SOURCE JSXPathEvaluator.cpp
+SOURCE JSXPathExpression.cpp
+SOURCE JSXPathNSResolver.cpp
+SOURCE JSXPathResult.cpp
+SOURCE UserAgentStyleSheetsData.cpp
+SOURCE XLinkNames.cpp
+SOURCE XMLNames.cpp
+SOURCE XPathGrammar.cpp

@@ -1,0 +1,9 @@
+EXPORTS
+	??0TApiBehavior@@QAE@II@Z @ 1 NONAME ; TApiBehavior::TApiBehavior(unsigned int, unsigned int)
+	?MatchId@TApiBehavior@@QBEHII@Z @ 2 NONAME ; int TApiBehavior::MatchId(unsigned int, unsigned int) const
+	?MatchId@TApiBehavior@@QBEHABV1@@Z @ 3 NONAME ; int TApiBehavior::MatchId(class TApiBehavior const &) const
+	??0TApiBehavior@@QAE@IIHHABVTDesC8@@@Z @ 4 NONAME ; TApiBehavior::TApiBehavior(unsigned int, unsigned int, int, int, class TDesC8 const &)
+	??8TApiBehavior@@QBEHABV0@@Z @ 5 NONAME ; int TApiBehavior::operator==(class TApiBehavior const &) const
+	??9TApiBehavior@@QBEHABV0@@Z @ 6 NONAME ; int TApiBehavior::operator!=(class TApiBehavior const &) const
+	??0TApiBehavior@@QAE@XZ @ 7 NONAME ; TApiBehavior::TApiBehavior(void)
+

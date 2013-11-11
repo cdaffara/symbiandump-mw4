@@ -1,0 +1,50 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+
+#if defined(__S60_)
+        // To get the OSEXT_LAYER_SYSTEMINCLUDE-definition
+        #include <platform_paths.hrh>
+#endif
+
+TARGET          USBRemotePersonalityTest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E3
+
+CAPABILITY      LocalServices CommDD
+
+DEFFILE         USBRemotePersonalityTest.def
+
+MW_LAYER_SYSTEMINCLUDE
+
+USERINCLUDE	../inc
+USERINCLUDE	../../../inc
+
+SOURCEPATH      ../src
+SOURCE          USBRemotePersonalityTest.cpp
+SOURCE          USBRemotePersonalityTestBlocks.cpp
+
+LIBRARY         euser.lib
+LIBRARY         StifTestInterface.lib
+LIBRARY         stiftestengine.lib
+LIBRARY		ecom.lib
+LIBRARY         usbman.lib
+LIBRARY         usbwatcher.lib
+
+LANG            SC
+
+// End of File

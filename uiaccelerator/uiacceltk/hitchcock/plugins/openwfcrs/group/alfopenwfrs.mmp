@@ -1,0 +1,74 @@
+// Copyright (c) 2007-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+// OpenWF composition render stage plugin for Window Server
+// 
+//
+
+/**
+ @file
+*/
+
+TARGET		alfopenwfrs.dll
+TARGETTYPE	PLUGIN //ECOMIIC
+UID 		0x10009D8D 0x2002BCFA
+CAPABILITY      PowerMgmt ReadDeviceData WriteDeviceData ProtServ
+VENDORID	0x70000001
+
+#ifndef USERINCLUDE_WSGRAPHICDRAWERINTERFACE_H
+macro USERINCLUDE_WSGRAPHICDRAWERINTERFACE_H
+#endif
+
+macro SYMBIAN_GRAPHICS_GCE
+macro USE_UI_SURFACE_FOR_ALF
+
+
+USERINCLUDE ../inc
+USERINCLUDE ../../../CommonInc
+USERINCLUDE ../../../ServerCore/Inc
+MW_LAYER_SYSTEMINCLUDE
+
+
+SOURCEPATH	../src
+SOURCE		displayrenderstage.cpp
+SOURCE		displayrenderstagefactory.cpp
+SOURCE		openwfcwrapper.cpp
+SOURCE		elementwrapper.cpp
+SOURCE		stdplugin.cpp
+SOURCE		utils.cpp
+SOURCE		displaypolicy.cpp
+SOURCE		rsdisplaychangeao.cpp
+SOURCE    openwfcjobmanager.cpp
+SOURCE    openwfcthreadmanager.cpp
+SOURCE 		screencaptureutil.cpp
+
+TARGETPATH ECOM_RESOURCE_DIR
+RESOURCE	alfopenwfrs.rss
+
+LIBRARY     estor.lib
+LIBRARY     euser.lib
+LIBRARY     fbscli.lib
+LIBRARY     graphicsresource.lib
+LIBRARY     hal.lib
+LIBRARY     lookuptable.lib
+LIBRARY     surfaceupdateclient.lib
+LIBRARY     wsgraphicdrawer.lib
+LIBRARY     libwfc.lib
+LIBRARY     wfcinterop.lib
+LIBRARY     surfacemanager.lib
+LIBRARY	 	libegl.lib
+//TODO Change the following line once eglsynchelper has been corrected
+//     to be available as a dynamic library
+STATICLIBRARY  eglsynchelper.lib
+
+//SMPSAFE

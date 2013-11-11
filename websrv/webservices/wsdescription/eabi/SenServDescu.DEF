@@ -1,0 +1,311 @@
+EXPORTS
+	_ZN10CSenPolicy11RebuildFromER10MSenPolicy @ 1 NONAME
+	_ZN10CSenPolicy14BaseConstructLERK6TDesC8 @ 2 NONAME
+	_ZN10CSenPolicy14BaseConstructLERK6TDesC8m @ 3 NONAME
+	_ZN10CSenPolicy21IdentityProviderIds8LEv @ 4 NONAME
+	_ZN10CSenPolicy22AddIdentityProviderIdLERK6TDesC8 @ 5 NONAME
+	_ZN10CSenPolicy23SetIdentityProviderIdsLER28CSenIdentityProviderIdArray8 @ 6 NONAME
+	_ZN10CSenPolicy4NewLEm @ 7 NONAME
+	_ZN10CSenPolicy4NewLEv @ 8 NONAME
+	_ZN10CSenPolicy5IapIdERm @ 9 NONAME
+	_ZN10CSenPolicy5NewLCEm @ 10 NONAME
+	_ZN10CSenPolicy5NewLCEv @ 11 NONAME
+	_ZN10CSenPolicy7AcceptsER10MSenPolicy @ 12 NONAME
+	_ZN10CSenPolicy9SetIapIdLEm @ 13 NONAME
+	_ZN14CSenCredential10ConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 14 NONAME
+	_ZN14CSenCredential10ConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 15 NONAME
+	_ZN14CSenCredential10ConstructLERS_ @ 16 NONAME
+	_ZN14CSenCredential10ValidUntilEv @ 17 NONAME
+	_ZN14CSenCredential13SetValidUntilER5TTime @ 18 NONAME
+	_ZN14CSenCredential13StartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 19 NONAME
+	_ZN14CSenCredential2IdEv @ 20 NONAME
+	_ZN14CSenCredential4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 21 NONAME
+	_ZN14CSenCredential4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 22 NONAME
+	_ZN14CSenCredential4NewLERKS_ @ 23 NONAME
+	_ZN14CSenCredential5NewLCERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 24 NONAME
+	_ZN14CSenCredential5NewLCERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER11CSenElement @ 25 NONAME
+	_ZN14CSenCredential5NewLCERKS_ @ 26 NONAME
+	_ZN14CSenCredentialC1Ev @ 27 NONAME
+	_ZN14CSenCredentialC2Ev @ 28 NONAME
+	_ZN14CSenCredentialD0Ev @ 29 NONAME
+	_ZN14CSenCredentialD1Ev @ 30 NONAME
+	_ZN14CSenCredentialD2Ev @ 31 NONAME
+	_ZN18CSenConsumerPolicy11RebuildFromER18MSenConsumerPolicy @ 32 NONAME
+	_ZN18CSenConsumerPolicy14BaseConstructLEm @ 33 NONAME
+	_ZN18CSenConsumerPolicy14BaseConstructLEv @ 34 NONAME
+	_ZN18CSenConsumerPolicy4NewLEm @ 35 NONAME
+	_ZN18CSenConsumerPolicy4NewLEv @ 36 NONAME
+	_ZN18CSenConsumerPolicy5NewLCEm @ 37 NONAME
+	_ZN18CSenConsumerPolicy5NewLCEv @ 38 NONAME
+	_ZN18CSenConsumerPolicy7AcceptsER18MSenConsumerPolicy @ 39 NONAME
+	_ZN18CSenProviderPolicy11RebuildFromER18MSenProviderPolicy @ 40 NONAME
+	_ZN18CSenProviderPolicy14BaseConstructLEm @ 41 NONAME
+	_ZN18CSenProviderPolicy14BaseConstructLEv @ 42 NONAME
+	_ZN18CSenProviderPolicy4NewLEm @ 43 NONAME
+	_ZN18CSenProviderPolicy4NewLEv @ 44 NONAME
+	_ZN18CSenProviderPolicy5NewLCEm @ 45 NONAME
+	_ZN18CSenProviderPolicy5NewLCEv @ 46 NONAME
+	_ZN18CSenProviderPolicy7AcceptsER18MSenProviderPolicy @ 47 NONAME
+	_ZN18CSenServicePattern13ConsumerIapIdERm @ 48 NONAME
+	_ZN18CSenServicePattern13StartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 49 NONAME
+	_ZN18CSenServicePattern14BaseConstructLERK6TDesC8 @ 50 NONAME
+	_ZN18CSenServicePattern14BaseConstructLERK6TDesC8S2_ @ 51 NONAME
+	_ZN18CSenServicePattern14BaseConstructLEv @ 52 NONAME
+	_ZN18CSenServicePattern17SetConsumerIapIdLEm @ 53 NONAME
+	_ZN18CSenServicePattern20ConsumerPolicyAsXmlLEv @ 54 NONAME
+	_ZN18CSenServicePattern21AcceptsConsumerPolicyER18MSenConsumerPolicy @ 55 NONAME
+	_ZN18CSenServicePattern25RebuildFromConsumerPolicyER18MSenConsumerPolicy @ 56 NONAME
+	_ZN18CSenServicePattern29ConsumerIdentityProviderIds8LEv @ 57 NONAME
+	_ZN18CSenServicePattern30AddConsumerIdentityProviderIdLERK6TDesC8 @ 58 NONAME
+	_ZN18CSenServicePattern31SetConsumerIdentityProviderIdsLER28CSenIdentityProviderIdArray8 @ 59 NONAME
+	_ZN18CSenServicePattern4NewLERK6TDesC8 @ 60 NONAME
+	_ZN18CSenServicePattern4NewLERK6TDesC8S2_ @ 61 NONAME
+	_ZN18CSenServicePattern4NewLEv @ 62 NONAME
+	_ZN18CSenServicePattern5NewLCERK6TDesC8 @ 63 NONAME
+	_ZN18CSenServicePattern5NewLCERK6TDesC8S2_ @ 64 NONAME
+	_ZN18CSenServicePattern5NewLCEv @ 65 NONAME
+	_ZN18CSenServicePattern7MatchesER22MSenServiceDescription @ 66 NONAME
+	_ZN18CSenServicePatternC1EN22MSenServiceDescription21TDescriptionClassTypeE @ 67 NONAME
+	_ZN18CSenServicePatternC2EN22MSenServiceDescription21TDescriptionClassTypeE @ 68 NONAME
+	_ZN18CSenServicePatternD0Ev @ 69 NONAME
+	_ZN18CSenServicePatternD1Ev @ 70 NONAME
+	_ZN18CSenServicePatternD2Ev @ 71 NONAME
+	_ZN20CSenIdentityProvider10ConstructLERK6TDesC8 @ 72 NONAME
+	_ZN20CSenIdentityProvider10ConstructLERK6TDesC8S2_ @ 73 NONAME
+	_ZN20CSenIdentityProvider10ConstructLERK6TDesC8S2_S2_ @ 74 NONAME
+	_ZN20CSenIdentityProvider10ConstructLERK6TDesC8S2_S2_S2_ @ 75 NONAME
+	_ZN20CSenIdentityProvider10ProviderIDEv @ 76 NONAME
+	_ZN20CSenIdentityProvider12SetUserInfoLERK6TDesC8S2_S2_ @ 77 NONAME
+	_ZN20CSenIdentityProvider12IsTrustedByLER22MSenServiceDescription @ 78 NONAME
+	_ZN20CSenIdentityProvider12IsTrustedByLERK6TDesC8 @ 79 NONAME
+	_ZN20CSenIdentityProvider12SetServiceIDERK6TDesC8 @ 80 NONAME
+	_ZN20CSenIdentityProvider13SetProviderIDERK6TDesC8 @ 81 NONAME
+	_ZN20CSenIdentityProvider14NewElementNameEv @ 82 NONAME
+	_ZN20CSenIdentityProvider15AdvisoryAuthnIDEv @ 83 NONAME
+	_ZN20CSenIdentityProvider16HttpCredentialsLER19MSenIdentityManager @ 84 NONAME
+	_ZN20CSenIdentityProvider4IMEIEv @ 85 NONAME
+	_ZN20CSenIdentityProvider4NewLERK6TDesC8 @ 86 NONAME
+	_ZN20CSenIdentityProvider4NewLERK6TDesC8S2_ @ 87 NONAME
+	_ZN20CSenIdentityProvider4NewLERK6TDesC8S2_S2_ @ 88 NONAME
+	_ZN20CSenIdentityProvider4NewLERK6TDesC8S2_S2_S2_ @ 89 NONAME
+	_ZN20CSenIdentityProvider5NewLCERK6TDesC8 @ 90 NONAME
+	_ZN20CSenIdentityProvider5NewLCERK6TDesC8S2_ @ 91 NONAME
+	_ZN20CSenIdentityProvider5NewLCERK6TDesC8S2_S2_ @ 92 NONAME
+	_ZN20CSenIdentityProvider5NewLCERK6TDesC8S2_S2_S2_ @ 93 NONAME
+	_ZN20CSenIdentityProvider7AuthzIDEv @ 94 NONAME
+	_ZN20CSenIdentityProvider8PasswordEv @ 95 NONAME
+	_ZN20CSenIdentityProvider8UserNameEv @ 96 NONAME
+	_ZN20CSenIdentityProvider9IsDefaultEv @ 97 NONAME
+	_ZN20CSenIdentityProviderC1EN22MSenServiceDescription21TDescriptionClassTypeE @ 98 NONAME
+	_ZN20CSenIdentityProviderC2EN22MSenServiceDescription21TDescriptionClassTypeE @ 99 NONAME
+	_ZN20CSenIdentityProviderD0Ev @ 100 NONAME
+	_ZN20CSenIdentityProviderD1Ev @ 101 NONAME
+	_ZN20CSenIdentityProviderD2Ev @ 102 NONAME
+	_ZN25CSenXmlServiceDescription10ConstructLERK6TDesC8S2_ @ 103 NONAME
+	_ZN25CSenXmlServiceDescription10ConstructLEv @ 104 NONAME
+	_ZN25CSenXmlServiceDescription10FacetValueER6TDesC8RP6HBufC8 @ 105 NONAME
+	_ZN25CSenXmlServiceDescription11ScoreMatchLER22MSenServiceDescription @ 106 NONAME
+	_ZN25CSenXmlServiceDescription11CredentialsEv @ 107 NONAME
+	_ZN25CSenXmlServiceDescription11EndElementLERK6TDesC8S2_S2_ @ 108 NONAME
+	_ZN25CSenXmlServiceDescription11FrameworkIdEv @ 109 NONAME
+	_ZN25CSenXmlServiceDescription11RebuildFromER18MSenProviderPolicy @ 110 NONAME
+	_ZN25CSenXmlServiceDescription11RemoveFacetERK6TDesC8 @ 111 NONAME
+	_ZN25CSenXmlServiceDescription12SetContractLERK6TDesC8 @ 112 NONAME
+	_ZN25CSenXmlServiceDescription12SetEndPointLERK6TDesC8 @ 113 NONAME
+	_ZN25CSenXmlServiceDescription13AsXmlUnicodeLEv @ 114 NONAME
+	_ZN25CSenXmlServiceDescription13StartElementLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 115 NONAME
+	_ZN25CSenXmlServiceDescription13WriteAsXMLToLER12RWriteStream @ 116 NONAME
+	_ZN25CSenXmlServiceDescription14NewElementNameEv @ 117 NONAME
+	_ZN25CSenXmlServiceDescription14SetAttributesLERK6RArrayIN3Xml10RAttributeEE @ 118 NONAME
+	_ZN25CSenXmlServiceDescription15SetFrameworkIdLERK6TDesC8 @ 119 NONAME
+	_ZN25CSenXmlServiceDescription16FrameworkVersionEv @ 120 NONAME
+	_ZN25CSenXmlServiceDescription18ResumeParsingFromLERK6TDesC8S2_S2_ @ 121 NONAME
+	_ZN25CSenXmlServiceDescription20DescriptionClassTypeEv @ 122 NONAME
+	_ZN25CSenXmlServiceDescription21IdentityProviderIds8LEv @ 123 NONAME
+	_ZN25CSenXmlServiceDescription22AddIdentityProviderIdLER6TDesC8 @ 124 NONAME
+	_ZN25CSenXmlServiceDescription23SetIdentityProviderIdsLER28CSenIdentityProviderIdArray8 @ 125 NONAME
+	_ZN25CSenXmlServiceDescription4NewLERK6TDesC8 @ 126 NONAME
+	_ZN25CSenXmlServiceDescription4NewLERK6TDesC8S2_ @ 127 NONAME
+	_ZN25CSenXmlServiceDescription4NewLEv @ 128 NONAME
+	_ZN25CSenXmlServiceDescription5IapIdERm @ 129 NONAME
+	_ZN25CSenXmlServiceDescription5NewLCERK6TDesC8 @ 130 NONAME
+	_ZN25CSenXmlServiceDescription5NewLCERK6TDesC8S2_ @ 131 NONAME
+	_ZN25CSenXmlServiceDescription5NewLCEv @ 132 NONAME
+	_ZN25CSenXmlServiceDescription6AsXmlLEv @ 133 NONAME
+	_ZN25CSenXmlServiceDescription7AcceptsER18MSenProviderPolicy @ 134 NONAME
+	_ZN25CSenXmlServiceDescription7FacetsLER13RPointerArrayI9CSenFacetE @ 135 NONAME
+	_ZN25CSenXmlServiceDescription7MatchesER22MSenServiceDescription @ 136 NONAME
+	_ZN25CSenXmlServiceDescription8ContractEv @ 137 NONAME
+	_ZN25CSenXmlServiceDescription8EndpointEv @ 138 NONAME
+	_ZN25CSenXmlServiceDescription9HasFacetLERK6TDesC8Ri @ 139 NONAME
+	_ZN25CSenXmlServiceDescription9AddFacetLERK9CSenFacet @ 140 NONAME
+	_ZN25CSenXmlServiceDescription9SetFacetLERK9CSenFacet @ 141 NONAME
+	_ZN25CSenXmlServiceDescription9SetIapIdLEm @ 142 NONAME
+	_ZN25CSenXmlServiceDescriptionC1EN22MSenServiceDescription21TDescriptionClassTypeE @ 143 NONAME
+	_ZN25CSenXmlServiceDescriptionC2EN22MSenServiceDescription21TDescriptionClassTypeE @ 144 NONAME
+	_ZN25CSenXmlServiceDescriptionD0Ev @ 145 NONAME
+	_ZN25CSenXmlServiceDescriptionD1Ev @ 146 NONAME
+	_ZN25CSenXmlServiceDescriptionD2Ev @ 147 NONAME
+	_ZN28CSenIdentityProviderIdArray84NewLEi @ 148 NONAME
+	_ZN28CSenIdentityProviderIdArray84NewLEv @ 149 NONAME
+	_ZN28CSenIdentityProviderIdArray85NewLCEi @ 150 NONAME
+	_ZN28CSenIdentityProviderIdArray85NewLCEv @ 151 NONAME
+	_ZN28CSenIdentityProviderIdArray89SetStrictEi @ 152 NONAME
+	_ZN28CSenIdentityProviderIdArray8D0Ev @ 153 NONAME
+	_ZN28CSenIdentityProviderIdArray8D1Ev @ 154 NONAME
+	_ZN28CSenIdentityProviderIdArray8D2Ev @ 155 NONAME
+	_ZN9CSenFacet10ConstructLER11CSenElement @ 156 NONAME
+	_ZN9CSenFacet10ConstructLERK6TDesC8 @ 157 NONAME
+	_ZN9CSenFacet10ConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 158 NONAME
+	_ZN9CSenFacet4NameEv @ 159 NONAME
+	_ZN9CSenFacet4NewLER11CSenElement @ 160 NONAME
+	_ZN9CSenFacet4NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 161 NONAME
+	_ZN9CSenFacet4NewLEv @ 162 NONAME
+	_ZN9CSenFacet4TypeEv @ 163 NONAME
+	_ZN9CSenFacet5ValueEv @ 164 NONAME
+	_ZN9CSenFacet8SetNameLERK6TDesC8 @ 165 NONAME
+	_ZN9CSenFacet8SetTypeLERK6TDesC8 @ 166 NONAME
+	_ZN9CSenFacet9SetValueLERK6TDesC8 @ 167 NONAME
+	_ZN9CSenFacetC1Ev @ 168 NONAME
+	_ZN9CSenFacetC2Ev @ 169 NONAME
+	_ZN9CSenFacetD0Ev @ 170 NONAME
+	_ZN9CSenFacetD1Ev @ 171 NONAME
+	_ZN9CSenFacetD2Ev @ 172 NONAME
+	_ZNK28CSenIdentityProviderIdArray88IsStrictEv @ 173 NONAME
+	_ZTI10CSenPolicy @ 174 NONAME ; #<TI>#
+	_ZTI14CSenCredential @ 175 NONAME ; #<TI>#
+	_ZTI18CSenConsumerPolicy @ 176 NONAME ; #<TI>#
+	_ZTI18CSenProviderPolicy @ 177 NONAME ; #<TI>#
+	_ZTI18CSenServicePattern @ 178 NONAME ; #<TI>#
+	_ZTI20CSenIdentityProvider @ 179 NONAME ; #<TI>#
+	_ZTI25CSenXmlServiceDescription @ 180 NONAME ; #<TI>#
+	_ZTI28CSenIdentityProviderIdArray8 @ 181 NONAME ; #<TI>#
+	_ZTI9CSenFacet @ 182 NONAME ; #<TI>#
+	_ZTV10CSenPolicy @ 183 NONAME ; #<VT>#
+	_ZTV14CSenCredential @ 184 NONAME ; #<VT>#
+	_ZTV18CSenConsumerPolicy @ 185 NONAME ; #<VT>#
+	_ZTV18CSenProviderPolicy @ 186 NONAME ; #<VT>#
+	_ZTV18CSenServicePattern @ 187 NONAME ; #<VT>#
+	_ZTV20CSenIdentityProvider @ 188 NONAME ; #<VT>#
+	_ZTV25CSenXmlServiceDescription @ 189 NONAME ; #<VT>#
+	_ZTV28CSenIdentityProviderIdArray8 @ 190 NONAME ; #<VT>#
+	_ZTV9CSenFacet @ 191 NONAME ; #<VT>#
+	_ZThn104_N10CSenPolicy11RebuildFromER10MSenPolicy @ 192 NONAME ; #<thunk>#
+	_ZThn104_N10CSenPolicy21IdentityProviderIds8LEv @ 193 NONAME ; #<thunk>#
+	_ZThn104_N10CSenPolicy22AddIdentityProviderIdLERK6TDesC8 @ 194 NONAME ; #<thunk>#
+	_ZThn104_N10CSenPolicy23SetIdentityProviderIdsLER28CSenIdentityProviderIdArray8 @ 195 NONAME ; #<thunk>#
+	_ZThn104_N10CSenPolicy5IapIdERm @ 196 NONAME ; #<thunk>#
+	_ZThn104_N10CSenPolicy7AcceptsER10MSenPolicy @ 197 NONAME ; #<thunk>#
+	_ZThn104_N10CSenPolicy9SetIapIdLEm @ 198 NONAME ; #<thunk>#
+	_ZThn104_N18CSenServicePattern7MatchesER22MSenServiceDescription @ 199 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription10FacetValueER6TDesC8RP6HBufC8 @ 200 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription11ScoreMatchLER22MSenServiceDescription @ 201 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription11FrameworkIdEv @ 202 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription11RemoveFacetERK6TDesC8 @ 203 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription12SetContractLERK6TDesC8 @ 204 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription12SetEndPointLERK6TDesC8 @ 205 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription13AsXmlUnicodeLEv @ 206 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription13WriteAsXMLToLER12RWriteStream @ 207 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription16FrameworkVersionEv @ 208 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription20DescriptionClassTypeEv @ 209 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription6AsXmlLEv @ 210 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription7FacetsLER13RPointerArrayI9CSenFacetE @ 211 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription7MatchesER22MSenServiceDescription @ 212 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription8ContractEv @ 213 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription8EndpointEv @ 214 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription9HasFacetLERK6TDesC8Ri @ 215 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription9AddFacetLERK9CSenFacet @ 216 NONAME ; #<thunk>#
+	_ZThn104_N25CSenXmlServiceDescription9SetFacetLERK9CSenFacet @ 217 NONAME ; #<thunk>#
+	_ZThn108_N25CSenXmlServiceDescription11RebuildFromER18MSenProviderPolicy @ 218 NONAME ; #<thunk>#
+	_ZThn108_N25CSenXmlServiceDescription21IdentityProviderIds8LEv @ 219 NONAME ; #<thunk>#
+	_ZThn108_N25CSenXmlServiceDescription22AddIdentityProviderIdLER6TDesC8 @ 220 NONAME ; #<thunk>#
+	_ZThn108_N25CSenXmlServiceDescription23SetIdentityProviderIdsLER28CSenIdentityProviderIdArray8 @ 221 NONAME ; #<thunk>#
+	_ZThn108_N25CSenXmlServiceDescription5IapIdERm @ 222 NONAME ; #<thunk>#
+	_ZThn108_N25CSenXmlServiceDescription7AcceptsER18MSenProviderPolicy @ 223 NONAME ; #<thunk>#
+	_ZThn108_N25CSenXmlServiceDescription9SetIapIdLEm @ 224 NONAME ; #<thunk>#
+	_ZThn164_N18CSenServicePattern13ConsumerIapIdERm @ 225 NONAME ; #<thunk>#
+	_ZThn164_N18CSenServicePattern17SetConsumerIapIdLEm @ 226 NONAME ; #<thunk>#
+	_ZThn164_N18CSenServicePattern21AcceptsConsumerPolicyER18MSenConsumerPolicy @ 227 NONAME ; #<thunk>#
+	_ZThn164_N18CSenServicePattern25RebuildFromConsumerPolicyER18MSenConsumerPolicy @ 228 NONAME ; #<thunk>#
+	_ZThn164_N18CSenServicePattern29ConsumerIdentityProviderIds8LEv @ 229 NONAME ; #<thunk>#
+	_ZThn164_N18CSenServicePattern30AddConsumerIdentityProviderIdLERK6TDesC8 @ 230 NONAME ; #<thunk>#
+	_ZThn164_N18CSenServicePattern31SetConsumerIdentityProviderIdsLER28CSenIdentityProviderIdArray8 @ 231 NONAME ; #<thunk>#
+	_ZThn24_N28CSenIdentityProviderIdArray8D0Ev @ 232 NONAME ; #<thunk>#
+	_ZThn24_N28CSenIdentityProviderIdArray8D1Ev @ 233 NONAME ; #<thunk>#
+	_ZThn28_N28CSenIdentityProviderIdArray89SetStrictEi @ 234 NONAME ; #<thunk>#
+	_ZThn28_NK28CSenIdentityProviderIdArray88IsStrictEv @ 235 NONAME ; #<thunk>#
+	_ZThn4_N25CSenXmlServiceDescription13AsXmlUnicodeLEv @ 236 NONAME ; #<thunk>#
+	_ZThn4_N25CSenXmlServiceDescription13WriteAsXMLToLER12RWriteStream @ 237 NONAME ; #<thunk>#
+	_ZThn4_N25CSenXmlServiceDescription14SetAttributesLERK6RArrayIN3Xml10RAttributeEE @ 238 NONAME ; #<thunk>#
+	_ZThn4_N25CSenXmlServiceDescription18ResumeParsingFromLERK6TDesC8S2_S2_ @ 239 NONAME ; #<thunk>#
+	_ZThn4_N25CSenXmlServiceDescription6AsXmlLEv @ 240 NONAME ; #<thunk>#
+	_ZN15CSenCredential210ConstructLERK6TDesC8 @ 241 NONAME
+	_ZN15CSenCredential210ValidUntilEv @ 242 NONAME
+	_ZN15CSenCredential213SetValidUntilER5TTime @ 243 NONAME
+	_ZN15CSenCredential214BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 244 NONAME
+	_ZN15CSenCredential214BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElement @ 245 NONAME
+	_ZN15CSenCredential214BaseConstructLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 246 NONAME
+	_ZN15CSenCredential214BaseConstructLERS_ @ 247 NONAME
+	_ZN15CSenCredential215OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 248 NONAME
+	_ZN15CSenCredential22IdEv @ 249 NONAME
+	_ZN15CSenCredential24NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 250 NONAME
+	_ZN15CSenCredential24NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElement @ 251 NONAME
+	_ZN15CSenCredential24NewLERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 252 NONAME
+	_ZN15CSenCredential24NewLERKS_ @ 253 NONAME
+	_ZN15CSenCredential24NewLEv @ 254 NONAME
+	_ZN15CSenCredential25NewLCERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEE @ 255 NONAME
+	_ZN15CSenCredential25NewLCERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElement @ 256 NONAME
+	_ZN15CSenCredential25NewLCERK6TDesC8S2_S2_RK6RArrayIN3Xml10RAttributeEER14TXmlEngElementR12RSenDocument @ 257 NONAME
+	_ZN15CSenCredential25NewLCERKS_ @ 258 NONAME
+	_ZN15CSenCredential25NewLCEv @ 259 NONAME
+	_ZN15CSenCredential26SetIdLERK6TDesC8 @ 260 NONAME
+	_ZN15CSenCredential2C1Ev @ 261 NONAME
+	_ZN15CSenCredential2C2Ev @ 262 NONAME
+	_ZN15CSenCredential2D0Ev @ 263 NONAME
+	_ZN15CSenCredential2D1Ev @ 264 NONAME
+	_ZN15CSenCredential2D2Ev @ 265 NONAME
+	_ZN20CSenIdentityProvider14SetProviderIdLERK6TDesC8 @ 266 NONAME
+	_ZN25CSenXmlServiceDescription10ProviderIdEv @ 267 NONAME
+	_ZN25CSenXmlServiceDescription10SetPolicyLERK6TDesC8 @ 268 NONAME
+	_ZN25CSenXmlServiceDescription10SetPolicyLERK6TDesC8S2_ @ 269 NONAME
+	_ZN25CSenXmlServiceDescription10SetPolicyLERK6TDesC8S2_S2_S2_ @ 270 NONAME
+	_ZN25CSenXmlServiceDescription12TransportCueEv @ 271 NONAME
+	_ZN25CSenXmlServiceDescription13ServicePolicyEv @ 272 NONAME
+	_ZN25CSenXmlServiceDescription14PromptUserInfoEv @ 273 NONAME
+	_ZN25CSenXmlServiceDescription14SetProviderIdLERK6TDesC8 @ 274 NONAME
+	_ZN25CSenXmlServiceDescription16SetTransportCueLERK6TDesC8 @ 275 NONAME
+	_ZN25CSenXmlServiceDescription18SetPromptUserInfoLEi @ 276 NONAME
+	_ZN25CSenXmlServiceDescription20HasEqualPrimaryKeysLER22MSenServiceDescription @ 277 NONAME
+	_ZN25CSenXmlServiceDescription8IsLocalLEv @ 278 NONAME
+	_ZTI14CServicePolicy @ 279 NONAME ; #<TI>#
+	_ZTI15CSenCredential2 @ 280 NONAME ; #<TI>#
+	_ZTI17CSenServicePolicy @ 281 NONAME ; #<TI>#
+	_ZTV14CServicePolicy @ 282 NONAME ; #<VT>#
+	_ZTV15CSenCredential2 @ 283 NONAME ; #<VT>#
+	_ZTV17CSenServicePolicy @ 284 NONAME ; #<VT>#
+	_ZThn4_N15CSenCredential215OnStartElementLERKN3Xml8RTagInfoERK6RArrayINS0_10RAttributeEEi @ 285 NONAME ; #<thunk>#
+	_ZN25CSenXmlServiceDescription10ConstructLERK6TDesC8 @ 286 NONAME
+	_ZN20CSenIdentityProvider17AccountExtensionsERP11CSenElement @ 287 NONAME
+	_ZN20CSenIdentityProvider21SetAccountExtensionsLERK6TDesC8 @ 288 NONAME
+	_ZN18CSenProviderPolicy20TransportPropertiesLERP6HBufC8 @ 289 NONAME
+	_ZN18CSenProviderPolicy23SetTransportPropertiesLERK6TDesC8 @ 290 NONAME
+	_ZN25CSenXmlServiceDescription20TransportPropertiesLERP6HBufC8 @ 291 NONAME
+	_ZN25CSenXmlServiceDescription23SetTransportPropertiesLERK6TDesC8 @ 292 NONAME
+	_ZN10CSenPolicy10SetSnapIdLEm @ 293 NONAME
+	_ZN10CSenPolicy14BaseConstructLERK6TDesC8mi @ 294 NONAME
+	_ZN10CSenPolicy4NewLEmi @ 295 NONAME
+	_ZN10CSenPolicy5NewLCEmi @ 296 NONAME
+	_ZN10CSenPolicy6SnapIdERm @ 297 NONAME
+	_ZN18CSenConsumerPolicy14BaseConstructLEmi @ 298 NONAME
+	_ZN18CSenConsumerPolicy4NewLEmi @ 299 NONAME
+	_ZN18CSenConsumerPolicy5NewLCEmi @ 300 NONAME
+	_ZN18CSenProviderPolicy14BaseConstructLEmi @ 301 NONAME
+	_ZN18CSenProviderPolicy4NewLEmi @ 302 NONAME
+	_ZN18CSenProviderPolicy5NewLCEmi @ 303 NONAME
+	_ZN18CSenServicePattern14ConsumerSnapIdERm @ 304 NONAME
+	_ZN18CSenServicePattern18SetConsumerSnapIdLEm @ 305 NONAME
+	_ZN25CSenXmlServiceDescription10SetSnapIdLEm @ 306 NONAME
+	_ZN25CSenXmlServiceDescription6SnapIdERm @ 307 NONAME
+	_ZThn104_N10CSenPolicy10SetSnapIdLEm @ 308 NONAME ; #<thunk>#
+	_ZThn104_N10CSenPolicy6SnapIdERm @ 309 NONAME ; #<thunk>#
+

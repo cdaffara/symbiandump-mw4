@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="7f2b380ed7ffc245ce6667e3aa9dfc09" dataversion="1.0">
+  <name>Recent URL Store API</name>
+  <description>Recent URL Store API</description>
+  <type>c++</type>
+  <subsystem>BrowserUtilities</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="5.1"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

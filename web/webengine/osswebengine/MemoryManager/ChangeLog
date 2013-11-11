@@ -1,0 +1,118 @@
+2006-10-20  yongjzha  <yongjun.zhang@nokia.com>
+
+        Reviewed by Sachin
+        DESC: WebKit Lite edition memory saving adjustment
+        http://bugs.webkit.org/show_bug.cgi?id=11369
+
+        * Src/fast_malloc.cpp:
+
+2006-10-12  brmorris  <thisisbradley@gmail.com>
+
+        Reviewed by Zalan.
+        DESC: Gcce compilation fixes
+        http://bugs.webkit.org/show_bug.cgi?id=9435
+
+        * EABI/MemMan_sdkU.DEF: Added.
+
+2006-10-04  sareen  <shyam.sareen@nokia.com>
+
+        Reviewed by Yongjun Zhang.
+        DESC: Change the dll names under open source and change the 
+              def file.
+        http://bugzilla.opendarwin.org/show_bug.cgi?id=11149
+
+        * BWINS/MemMan_sdkU.DEF: Added.
+        * Group/MemMan.mmp:
+        * Group/MemManTest.mmp:
+
+2006-09-29  spadma  <Sachin.Padma@nokia.com>
+
+        Reviewed by Yongjun.
+        DESC: Cancel the active object before deleting it.
+        http://bugzilla.opendarwin.org/show_bug.cgi?id=11087
+
+        * Src/StopScheduler.cpp:
+        (CStopScheduler::~CStopScheduler):
+
+2006-09-26  yongjzha  <yongjun.zhang@nokia.com>
+
+        Reviewed by Sachine.
+        DESC: 
+        http://bugs.webkit.org/show_bug.cgi?id=11048
+
+        * BWINS/MEMMANU.DEF:
+        * EABI/MemManU.DEF:
+        * Inc/Allocator.h:
+        * Inc/MemoryManager.h:
+        * Inc/fast_malloc.h:
+        * Src/Allocator.cpp:
+        (CPlainAllocator::SetRescueBufferSize):
+        * Src/MemoryManager.cpp:
+        (MemoryManager::SetRescueBufferSize):
+        * Src/fast_malloc.cpp:
+        (fast_set_rescue_buffer_size):
+
+2006-09-21  sareen  <shyam.sareen@nokia.com>
+
+        Reviewed by Sachin.
+        Desc: Directory  include hierarchy change 
+              for S60 code base in memory manager
+        http://bugs.webkit.org/show_bug.cgi?id=10969
+
+        * Group/MemMan.mmp:
+        * Group/MemManTest.mmp:
+
+2006-08-31  yongjzha  <yongjun.zhang@nokia.com>
+
+        Reviewed by Zalan
+        DESC: debug 
+        http://bugs.webkit.org/show_bug.cgi?id=10212
+
+        * Src/Allocator.cpp:
+        (CPlainAllocator::ReAllocate):
+
+2006-08-24  bujtas  <zbujtas@gmail.com>
+
+        Reviewed by Yongjun.
+        
+        http://bugs.webkit.org/show_bug.cgi?id=10539
+        
+        switch to oom state when fast_malloc is not able to allocate more memory.
+        
+        * Src/fast_malloc.cpp:
+        (mmap_resize):
+        (sys_alloc):
+        (dlmalloc):
+        (mspace_malloc):
+        (check_system_heap):
+        (chunkMoreCore):
+        (fast_pre_check):
+        (fast_post_check):
+
+2006-08-08  yongjzha  <yongjun.zhang@nokia.com>
+
+        Reviewed by Zalan
+
+        http://bugs.webkit.org/show_bug.cgi?id=10311
+        
+        * Src/fast_malloc.cpp:
+        (close_mem_pool):
+        (ChunkClosingUtil::~ChunkClosingUtil):
+
+2006-07-18  brmorris  <bradley.morrison@nokia.com>
+
+        Reviewed by Zala/Sachin.
+
+        * Src/Allocator.cpp: Removed unused vars
+        (CAllocator::PreCheck):
+        (CAllocator::CollectMemory):
+        * Src/StopScheduler.cpp: Removed unused vars
+        * Src/fast_malloc.cpp: Removed unused vars
+        (check_system_heap):
+
+2006-06-04  Zalan  <zalan.bujtas@nokia.com>
+
+        Reviewed by Sachin/Bradley
+        
+        This commit introduces S60 3.1 support to S60WebKit's
+        JavaScriptCore, MemoryManager and S60Internals (part 1 of 3).

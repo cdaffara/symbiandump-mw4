@@ -1,0 +1,53 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This mmp file generates makefile for SVG Recognizer
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET        SvgRecog.DLL
+TARGETTYPE    PLUGIN
+
+UID           0x10009D8D 0x101F8570
+SOURCEPATH    ../src
+
+// This is a SYSTEMINCLUDE macro containing the middleware
+// layer specific include directories
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE /epoc32/include/ecom
+
+START RESOURCE  101F8570.rss
+TARGET SvgRecog.rsc
+END
+//RESOURCE      101F8570.rss
+
+VENDORID      VID_DEFAULT
+CAPABILITY    CAP_RECOGNISER
+
+USERINCLUDE   ../inc
+SOURCEPATH    ../src
+SOURCE        SvgRecognizer.cpp
+
+LIBRARY       EUSER.LIB 
+LIBRARY       APMIME.LIB 
+LIBRARY       efsrv.lib
+
+START WINS
+  baseaddress 0x70800000
+END
+
+START MARM
+END

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hbdocument version="1.2">
+    <widget name="occ_eap_wizard_03" type="HbWidget">
+        <!-- layout id: txt_occ_dialog_insert_the_name_of_the_new_wlan_net -->
+        <widget name="setlabel_53" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <fontspec name="fontSpec" role="Primary" textheight="var(hb-param-text-height-primary)"/>
+            <integer name="maximumLines" value="4"/>
+        </widget>
+        <!-- layout id: txt_occ_setlabel_user_name_val_generate_automatic -->
+        <widget name="setlabel_53_val" type="HbCheckBox">
+            <enums name="checkState" value="Checked"/>
+            <string locid="txt_occ_setlabel_user_name_val_generate_automatic" name="text" value="Generate automatically"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+        </widget>
+        <widget name="lineEditUsername" type="HbLineEdit"/>
+        <!-- layout id: txt_occ_dialog_insert_the_name_of_the_new_wlan_net -->
+        <widget name="setlabel_54" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <string locid="txt_occ_setlabel_eap_realm" name="plainText" value="Realm"/>
+            <fontspec name="fontSpec" role="Primary" textheight="var(hb-param-text-height-primary)"/>
+            <integer name="maximumLines" value="4"/>
+        </widget>
+        <!-- layout id: txt_occ_setlabel_user_name_val_generate_automatic -->
+        <widget name="setlabel_54_val" type="HbCheckBox">
+            <enums name="checkState" value="Checked"/>
+            <string locid="txt_occ_setlabel_eap_realm_val_generate_automatic" name="text" value="Generate automatically"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+        </widget>
+        <widget name="lineEditRealm" type="HbLineEdit"/>
+        <sizepolicy horizontalPolicy="Expanding" horizontalStretch="0" verticalPolicy="Expanding" verticalStretch="0"/>
+        <layout type="anchor"/>
+    </widget>
+    <section name="portrait_section">
+        <widget name="occ_eap_wizard_03" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="setlabel_53" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_53" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="setlabel_53" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="setlabel_53_val" dstEdge="LEFT" src="setlabel_53" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_53_val" dstEdge="TOP" prefLength="var(hb-param-margin-gene-middle-vertical)" src="setlabel_53" srcEdge="BOTTOM"/>
+                <anchoritem dst="setlabel_53_val" dstEdge="RIGHT" src="setlabel_53" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditUsername" dstEdge="LEFT" src="setlabel_53" srcEdge="LEFT"/>
+                <anchoritem dst="lineEditUsername" dstEdge="TOP" prefLength="var(hb-param-margin-gene-bottom)" src="setlabel_53_val" srcEdge="BOTTOM"/>
+                <anchoritem dst="lineEditUsername" dstEdge="RIGHT" src="setlabel_53" srcEdge="RIGHT"/>
+                <anchoritem dst="setlabel_54" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_54" dstEdge="TOP" prefLength="expr(var(hb-param-margin-gene-popup) + var(hb-param-margin-gene-bottom))" src="lineEditUsername" srcEdge="BOTTOM"/>
+                <anchoritem direction="NEGATIVE" dst="setlabel_54" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="setlabel_54_val" dstEdge="LEFT" src="setlabel_53" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_54_val" dstEdge="TOP" prefLength="var(hb-param-margin-gene-middle-vertical)" src="setlabel_54" srcEdge="BOTTOM"/>
+                <anchoritem dst="setlabel_54_val" dstEdge="RIGHT" src="setlabel_53" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditRealm" dstEdge="LEFT" src="setlabel_53" srcEdge="LEFT"/>
+                <anchoritem dst="lineEditRealm" dstEdge="TOP" prefLength="var(hb-param-margin-gene-bottom)" src="setlabel_54_val" srcEdge="BOTTOM"/>
+                <anchoritem dst="lineEditRealm" dstEdge="RIGHT" src="setlabel_53" srcEdge="RIGHT"/>
+            </layout>
+        </widget>
+    </section>
+    <section name="landscape_section">
+        <widget name="occ_eap_wizard_03" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="setlabel_53" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_53" dstEdge="TOP" src="" srcEdge="TOP"/>
+                <anchoritem dst="setlabel_53" dstEdge="BOTTOM" src="lineEditUsername" srcEdge="BOTTOM"/>
+                <anchoritem direction="NEGATIVE" dst="setlabel_53" dstEdge="RIGHT" prefLength="expr(var(hb-param-margin-gene-middle-horizontal) / 2)" src="" srcEdge="CENTERH"/>
+                <anchoritem dst="setlabel_53_val" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-middle-horizontal)" src="setlabel_53" srcEdge="RIGHT"/>
+                <anchoritem dst="setlabel_53_val" dstEdge="TOP" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="setlabel_53_val" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditUsername" dstEdge="LEFT" src="setlabel_53_val" srcEdge="LEFT"/>
+                <anchoritem dst="lineEditUsername" dstEdge="TOP" src="setlabel_53_val" srcEdge="BOTTOM"/>
+                <anchoritem dst="lineEditUsername" dstEdge="RIGHT" src="setlabel_53_val" srcEdge="RIGHT"/>
+                <anchoritem dst="setlabel_54" dstEdge="LEFT" src="setlabel_53" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_54" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="lineEditUsername" srcEdge="BOTTOM"/>
+                <anchoritem dst="setlabel_54" dstEdge="RIGHT" src="setlabel_53" srcEdge="RIGHT"/>
+                <anchoritem dst="setlabel_54" dstEdge="BOTTOM" src="lineEditRealm" srcEdge="BOTTOM"/>
+                <anchoritem dst="setlabel_54_val" dstEdge="LEFT" src="setlabel_53_val" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_54_val" dstEdge="TOP" prefLength="var(hb-param-margin-gene-bottom)" src="lineEditUsername" srcEdge="BOTTOM"/>
+                <anchoritem dst="setlabel_54_val" dstEdge="RIGHT" src="setlabel_53_val" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditRealm" dstEdge="LEFT" src="setlabel_53_val" srcEdge="LEFT"/>
+                <anchoritem dst="lineEditRealm" dstEdge="TOP" src="setlabel_54_val" srcEdge="BOTTOM"/>
+                <anchoritem dst="lineEditRealm" dstEdge="RIGHT" src="setlabel_53_val" srcEdge="RIGHT"/>
+            </layout>
+        </widget>
+    </section>
+    <metadata activeUIState="portrait" display="NHD-3.2-inch_portrait" unit="un">
+        <uistate name="Common ui state" sections="#common"/>
+        <uistate name="portrait" sections="#common portrait_section"/>
+        <uistate name="landscape" sections="#common landscape_section"/>
+    </metadata>
+</hbdocument>

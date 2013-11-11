@@ -1,0 +1,45 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_validate_describe_requests_headers_0060_3_rev.script
+//! @SYMTestSuiteName	multiple_machines_client 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client 
+
+LOAD_SUITE multiple_machines_client
+LOAD_SUITE test_synchronize_client
+LOAD_SUITE testdelay
+
+START_TESTCASE	upnp_validate_describe_requests_headers_0060_3_rev
+//! @file					
+//! @SYMTestCaseID			UPNP - NEG - 0060
+//! @SYMTestCaseDesc 		Service points ignores describe requests without the mandatory headers. 
+//! @SYMREQ 				REQ8650
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Join a control point to UPnP enabled network.
+//! 						2.	Issue Discovery request with method ST:ssdp:all.
+//! 						3.	Issues HTTP GET request for a device description without setting all mandatory headers.
+//! 						4.	The service point must ignore such request.
+//! @SYMTestExpectedResults	Service points must ignore invalid describe request.
+//! @SYMTestType 			CIT
+RUN_TEST_STEP 1000 testdelay TestUPnPManager  
+RUN_TEST_STEP 1000 testdelay TestUPnPManager
+RUN_TEST_STEP 1000 test_synchronize_client TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini clientdata
+RUN_TEST_STEP  500  multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\describe_0060_rev.ini upnp_validate_describe_requests_headers_0060_3_rev
+END_TESTCASE	upnp_validate_describe_requests_headers_0060_3_rev
+
+PRINT Completed upnp_validate_describe_requests_headers_0060_3_rev

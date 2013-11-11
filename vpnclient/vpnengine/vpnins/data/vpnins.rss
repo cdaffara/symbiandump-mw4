@@ -1,0 +1,51 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: Resource definitions for VpnIns.
+*
+*/
+
+
+NAME    VPNI // 4 letter ID
+
+//  INCLUDES
+
+#include <eikon.rh>
+
+#include <eikcore.rsg>
+
+#ifdef LANGUAGE_00 // if code is for ...
+//#include "vpnins00.rls"
+#elif defined LANGUAGE_01 // if code is for UK English
+//#include "vpnins01.rls"
+#endif // end condititional compile
+   
+//#include "vpnins.hrh"
+//#include "vpnins.loc"
+
+//  CONSTANTS  
+//#define ?constant   ?value
+
+//  MACROS  
+//#define ?macro
+
+//  RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf="VpnIns"; }
+
+RESOURCE EIK_APP_INFO
+{
+}
+

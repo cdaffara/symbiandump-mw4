@@ -1,0 +1,88 @@
+EXPORTS
+	??0RFeed@@QAE@AAVMFeedObserver@@@Z @ 1 NONAME ; RFeed::RFeed(class MFeedObserver &)
+	??0RFeedsServer@@QAE@AAVMFeedsServerObserver@@H@Z @ 2 NONAME ; RFeedsServer::RFeedsServer(class MFeedsServerObserver &, int)
+	??0RFolderItem@@QAE@AAVMFolderItemObserver@@HH@Z @ 3 NONAME ; RFolderItem::RFolderItem(class MFolderItemObserver &, int, int)
+	??1CEnclosure@@UAE@XZ @ 4 NONAME ; CEnclosure::~CEnclosure(void)
+	??1CFeed@@UAE@XZ @ 5 NONAME ; CFeed::~CFeed(void)
+	??1CFolderItem@@UAE@XZ @ 6 NONAME ; CFolderItem::~CFolderItem(void)
+	??1CItem@@UAE@XZ @ 7 NONAME ; CItem::~CItem(void)
+	??1CItemMini@@UAE@XZ @ 8 NONAME ; CItemMini::~CItemMini(void)
+	?AddFolderItemL@RFolderItem@@QAEXABVTDesC16@@0HABVCFolderItem@@@Z @ 9 NONAME ; void RFolderItem::AddFolderItemL(class TDesC16 const &, class TDesC16 const &, int, class CFolderItem const &)
+	?AddMiniItem@CFolderItem@@AAEXPAVCItemMini@@@Z @ 10 NONAME ; void CFolderItem::AddMiniItem(class CItemMini *)
+	?CancelAllL@RFeedsServer@@QAEXXZ @ 11 NONAME ; void RFeedsServer::CancelAllL(void)
+	?ChangeFolderItemL@RFolderItem@@QAEXABVCFolderItem@@ABVTDesC16@@1@Z @ 12 NONAME ; void RFolderItem::ChangeFolderItemL(class CFolderItem const &, class TDesC16 const &, class TDesC16 const &)
+	?Close@RFeed@@QAEXXZ @ 13 NONAME ; void RFeed::Close(void)
+	?Close@RFeedsServer@@QAEXXZ @ 14 NONAME ; void RFeedsServer::Close(void)
+	?Close@RFolderItem@@QAEXXZ @ 15 NONAME ; void RFolderItem::Close(void)
+	?Connect@RFeedsServer@@QAEHXZ @ 16 NONAME ; int RFeedsServer::Connect(void)
+	?ContentType@CEnclosure@@QBEABVTDesC16@@XZ @ 17 NONAME ; class TDesC16 const & CEnclosure::ContentType(void) const
+	?Date@CFeed@@QBEABVTTime@@XZ @ 18 NONAME ; class TTime const & CFeed::Date(void) const
+	?DebugPrintTablesL@RFeedsServer@@QAEXXZ @ 19 NONAME ; void RFeedsServer::DebugPrintTablesL(void)
+	?Debug_Print@CEnclosure@@QBEXXZ @ 20 NONAME ; void CEnclosure::Debug_Print(void) const
+	?Debug_Print@CFeed@@QBEXXZ @ 21 NONAME ; void CFeed::Debug_Print(void) const
+	?Debug_Print@CItem@@QBEXXZ @ 22 NONAME ; void CItem::Debug_Print(void) const
+	?Debug_PrintInfo@CFeed@@QBEXABVTDesC16@@AAVRFile@@@Z @ 23 NONAME ; void CFeed::Debug_PrintInfo(class TDesC16 const &, class RFile &) const
+	?DeleteFolderItemsL@RFolderItem@@QAEXAAV?$RPointerArray@$$CBVCFolderItem@@@@@Z @ 24 NONAME ; void RFolderItem::DeleteFolderItemsL(class RPointerArray<class CFolderItem const > &)
+	?Description@CFeed@@QBEABVTDesC16@@XZ @ 25 NONAME ; class TDesC16 const & CFeed::Description(void) const
+	?Description@CItem@@QBEABVTDesC16@@XZ @ 26 NONAME ; class TDesC16 const & CItem::Description(void) const
+	?DisconnectManualUpdateConnectionL@RFeedsServer@@QAEXXZ @ 27 NONAME ; void RFeedsServer::DisconnectManualUpdateConnectionL(void)
+	?EnclosureAt@CItem@@QBEABVCEnclosure@@H@Z @ 28 NONAME ; class CEnclosure const & CItem::EnclosureAt(int) const
+	?EnclosureCount@CItem@@QBEHXZ @ 29 NONAME ; int CItem::EnclosureCount(void) const
+	?Feed@RFeed@@QBEABVCFeed@@XZ @ 30 NONAME ; class CFeed const & RFeed::Feed(void) const
+	?FeedId@CFolderItem@@QBEHXZ @ 31 NONAME ; int CFolderItem::FeedId(void) const
+	?FetchFeedL@RFeed@@QAEXABVTDesC16@@HHH@Z @ 32 NONAME ; void RFeed::FetchFeedL(class TDesC16 const &, int, int, int)
+	?FetchFeedL@RFeed@@QAEXHHH@Z @ 33 NONAME ; void RFeed::FetchFeedL(int, int, int)
+	?FetchRootFolderItemL@RFolderItem@@QAEXXZ @ 34 NONAME ; void RFolderItem::FetchRootFolderItemL(void)
+	?FetchServerSettingsL@RFeedsServer@@QAEXXZ @ 35 NONAME ; void RFeedsServer::FetchServerSettingsL(void)
+	?FetchServerSettingsSyncL@RFeedsServer@@QBE?BVTFeedsServerSettings@@XZ @ 36 NONAME ; class TFeedsServerSettings const RFeedsServer::FetchServerSettingsSyncL(void) const
+	?FolderItemAt@CFolderItem@@QBEPBV1@H@Z @ 37 NONAME ; class CFolderItem const * CFolderItem::FolderItemAt(int) const
+	?FolderItemCount@CFolderItem@@QBEHXZ @ 38 NONAME ; int CFolderItem::FolderItemCount(void) const
+	?FolderListId@CFolderItem@@QBEHXZ @ 39 NONAME ; int CFolderItem::FolderListId(void) const
+	?HasCurrentFeed@RFeed@@QBEHXZ @ 40 NONAME ; int RFeed::HasCurrentFeed(void) const
+	?HasRootFolderItem@RFolderItem@@QBEHXZ @ 41 NONAME ; int RFolderItem::HasRootFolderItem(void) const
+	?Id@CFeed@@QBEHXZ @ 42 NONAME ; int CFeed::Id(void) const
+	?Id@CFolderItem@@QBEHXZ @ 43 NONAME ; int CFolderItem::Id(void) const
+	?Id@CItem@@QBEHXZ @ 44 NONAME ; int CItem::Id(void) const
+	?Id@CItemMini@@QBEHXZ @ 45 NONAME ; int CItemMini::Id(void) const
+	?ImportOPMLL@RFolderItem@@QAEXABVTDesC16@@H@Z @ 46 NONAME ; void RFolderItem::ImportOPMLL(class TDesC16 const &, int)
+	?Index@CFolderItem@@QBEHABV1@@Z @ 47 NONAME ; int CFolderItem::Index(class CFolderItem const &) const
+	?IsFolder@CFolderItem@@QBEHXZ @ 48 NONAME ; int CFolderItem::IsFolder(void) const
+	?ItemAt@CFeed@@QBEABVCItem@@H@Z @ 49 NONAME ; class CItem const & CFeed::ItemAt(int) const
+	?ItemCount@CFeed@@QBEHXZ @ 50 NONAME ; int CFeed::ItemCount(void) const
+	?ItemStatus@CItem@@QBE?AW4TItemStatus@@XZ @ 51 NONAME ; enum TItemStatus CItem::ItemStatus(void) const
+	?ItemStatusL@CFeed@@QBEXAAV?$RArray@H@@AAV?$RArray@W4TItemStatus@@@@@Z @ 52 NONAME ; void CFeed::ItemStatusL(class RArray<int> &, class RArray<enum TItemStatus> &) const
+	?MiniItemAt@CFolderItem@@QBEPBVCItemMini@@H@Z @ 53 NONAME ; class CItemMini const * CFolderItem::MiniItemAt(int) const
+	?MiniItemsCount@CFolderItem@@QBEHXZ @ 54 NONAME ; int CFolderItem::MiniItemsCount(void) const
+	?MoveFolderItemsL@RFolderItem@@QAEXAAV?$RPointerArray@$$CBVCFolderItem@@@@H@Z @ 55 NONAME ; void RFolderItem::MoveFolderItemsL(class RPointerArray<class CFolderItem const > &, int)
+	?MoveFolderItemsToL@RFolderItem@@QAEXAAV?$RPointerArray@$$CBVCFolderItem@@@@ABVCFolderItem@@@Z @ 56 NONAME ; void RFolderItem::MoveFolderItemsToL(class RPointerArray<class CFolderItem const > &, class CFolderItem const &)
+	?Name@CFolderItem@@QBEABVTDesC16@@XZ @ 57 NONAME ; class TDesC16 const & CFolderItem::Name(void) const
+	?Open@RFeed@@QAEHAAVRFeedsServer@@@Z @ 58 NONAME ; int RFeed::Open(class RFeedsServer &)
+	?Open@RFolderItem@@QAEHAAVRFeedsServer@@@Z @ 59 NONAME ; int RFolderItem::Open(class RFeedsServer &)
+	?Parent@CFolderItem@@QBEPBV1@XZ @ 60 NONAME ; class CFolderItem const * CFolderItem::Parent(void) const
+	?RootFolderItem@RFolderItem@@QBEABVCFolderItem@@XZ @ 61 NONAME ; class CFolderItem const & RFolderItem::RootFolderItem(void) const
+	?Search@CFolderItem@@QBEPBV1@ABVTDesC16@@@Z @ 62 NONAME ; class CFolderItem const * CFolderItem::Search(class TDesC16 const &) const
+	?Search@CFolderItem@@QBEPBV1@H@Z @ 63 NONAME ; class CFolderItem const * CFolderItem::Search(int) const
+	?SetUnreadCount@CFolderItem@@QAEXH@Z @ 64 NONAME ; void CFolderItem::SetUnreadCount(int)
+	?Settings@RFeedsServer@@QBE?BVTFeedsServerSettings@@XZ @ 65 NONAME ; class TFeedsServerSettings const RFeedsServer::Settings(void) const
+	?Size@CEnclosure@@QBEABVTDesC16@@XZ @ 66 NONAME ; class TDesC16 const & CEnclosure::Size(void) const
+	?SourceUrl@CFolderItem@@QBEABVTDesC16@@XZ @ 67 NONAME ; class TDesC16 const & CFolderItem::SourceUrl(void) const
+	?Timestamp@CFolderItem@@QBEABVTTime@@XZ @ 68 NONAME ; class TTime const & CFolderItem::Timestamp(void) const
+	?Timestamp@CItem@@QBEABVTTime@@XZ @ 69 NONAME ; class TTime const & CItem::Timestamp(void) const
+	?Title@CFeed@@QBEABVTDesC16@@XZ @ 70 NONAME ; class TDesC16 const & CFeed::Title(void) const
+	?Title@CItem@@QBEABVTDesC16@@XZ @ 71 NONAME ; class TDesC16 const & CItem::Title(void) const
+	?Title@CItemMini@@QBEABVTDesC16@@XZ @ 72 NONAME ; class TDesC16 const & CItemMini::Title(void) const
+	?UnreadCount@CFolderItem@@QBEHXZ @ 73 NONAME ; int CFolderItem::UnreadCount(void) const
+	?UpdateAllL@RFolderItem@@QAEXXZ @ 74 NONAME ; void RFolderItem::UpdateAllL(void)
+	?UpdateFeedItemStatusL@RFeed@@QAEXABV?$RArray@H@@ABV?$RArray@W4TItemStatus@@@@H@Z @ 75 NONAME ; void RFeed::UpdateFeedItemStatusL(class RArray<int> const &, class RArray<enum TItemStatus> const &, int)
+	?UpdateFolderItemsL@RFolderItem@@QAEXABV?$RPointerArray@$$CBVCFolderItem@@@@@Z @ 76 NONAME ; void RFolderItem::UpdateFolderItemsL(class RPointerArray<class CFolderItem const > const &)
+	?UpdateSettingsL@RFeedsServer@@QAEXABVTFeedsServerSettings@@@Z @ 77 NONAME ; void RFeedsServer::UpdateSettingsL(class TFeedsServerSettings const &)
+	?Url@CEnclosure@@QBEABVTDesC16@@XZ @ 78 NONAME ; class TDesC16 const & CEnclosure::Url(void) const
+	?Url@CFeed@@QBEABVTDesC16@@XZ @ 79 NONAME ; class TDesC16 const & CFeed::Url(void) const
+	?Url@CItem@@QBEABVTDesC16@@XZ @ 80 NONAME ; class TDesC16 const & CItem::Url(void) const
+	?Version@RFeedsServer@@QBE?AVTVersion@@XZ @ 81 NONAME ; class TVersion RFeedsServer::Version(void) const
+	?WatchFolderListL@RFolderItem@@QAEXXZ @ 82 NONAME ; void RFolderItem::WatchFolderListL(void)
+	?WatchSettingsL@RFeedsServer@@QAEXXZ @ 83 NONAME ; void RFeedsServer::WatchSettingsL(void)
+	?ExportFolderItemsL@RFolderItem@@QAEXAAV?$RPointerArray@$$CBVCFolderItem@@@@ABVTDesC16@@@Z @ 84 NONAME ; void RFolderItem::ExportFolderItemsL(class RPointerArray<class CFolderItem const > &, class TDesC16 const &)
+	?UnreadFeedCountRecursive@CFolderItem@@QBEHXZ @ 85 NONAME ; int CFolderItem::UnreadFeedCountRecursive(void) const
+	?UnreadTopicCountRecursive@CFolderItem@@QBEHXZ @ 86 NONAME ; int CFolderItem::UnreadTopicCountRecursive(void) const
+	?Status@CFolderItem@@QBEHXZ @ 87 NONAME ; int CFolderItem::Status(void) const

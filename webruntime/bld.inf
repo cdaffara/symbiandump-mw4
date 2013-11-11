@@ -1,0 +1,5 @@
+prj_exports
+
+./downloadevent.h    /epoc32/include/platform/mw/cwrt/downloadevent.h
+./downloadmanager.h  /epoc32/include/platform/mw/cwrt/downloadmanager.h
+./download.h         /epoc32/include/platform/mw/cwrt/download.h

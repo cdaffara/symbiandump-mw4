@@ -1,0 +1,13 @@
+EXPORTS
+	?NewL@CAlfHintGraphic@@SAPAV1@XZ @ 1 NONAME ; class CAlfHintGraphic * CAlfHintGraphic::NewL(void)
+	??1CAlfHintGraphic@@UAE@XZ @ 2 NONAME ; CAlfHintGraphic::~CAlfHintGraphic(void)
+	?UnShare@CAlfHintGraphic@@UAEHVTSecureId@@@Z @ 3 NONAME ; int CAlfHintGraphic::UnShare(class TSecureId)
+	?ShareGlobally@CAlfHintGraphic@@UAEHXZ @ 4 NONAME ; int CAlfHintGraphic::ShareGlobally(void)
+	?HandleMessage@CAlfHintGraphic@@EAEXABVTDesC8@@@Z @ 5 NONAME ; void CAlfHintGraphic::HandleMessage(class TDesC8 const &)
+	?Share@CAlfHintGraphic@@UAEHVTSecureId@@@Z @ 6 NONAME ; int CAlfHintGraphic::Share(class TSecureId)
+	?UnShareGlobally@CAlfHintGraphic@@UAEHXZ @ 7 NONAME ; int CAlfHintGraphic::UnShareGlobally(void)
+	?OnReplace@CAlfHintGraphic@@EAEXXZ @ 8 NONAME ; void CAlfHintGraphic::OnReplace(void)
+	?SetGc@CAlfHintGraphic@@QAEXPAVCWindowGc@@@Z @ 9 NONAME ; void CAlfHintGraphic::SetGc(class CWindowGc *)
+	?InsertTag@CAlfHintGraphic@@QAEHH@Z @ 10 NONAME ; int CAlfHintGraphic::InsertTag(int)
+	?InsertTag@CAlfHintGraphic@@QAEHHVTRect@@H@Z @ 11 NONAME ; int CAlfHintGraphic::InsertTag(int, class TRect, int)
+

@@ -1,0 +1,112 @@
+EXPORTS
+	??0CActiveFavouritesDbNotifier@@QAE@AAVRFavouritesDb@@AAVMFavouritesDbObserver@@@Z @ 1 NONAME ; CActiveFavouritesDbNotifier::CActiveFavouritesDbNotifier(class RFavouritesDb &, class MFavouritesDbObserver &)
+	??0CFavouritesItemList@@QAE@XZ @ 2 NONAME ; CFavouritesItemList::CFavouritesItemList(void)
+	??0TFavouritesWapAp@@QAE@XZ @ 3 NONAME ; TFavouritesWapAp::TFavouritesWapAp(void)
+	??1CActiveFavouritesDbNotifier@@UAE@XZ @ 4 NONAME ; CActiveFavouritesDbNotifier::~CActiveFavouritesDbNotifier(void)
+	??1CFavouritesItem@@UAE@XZ @ 5 NONAME ; CFavouritesItem::~CFavouritesItem(void)
+	??1CFavouritesItemList@@UAE@XZ @ 6 NONAME ; CFavouritesItemList::~CFavouritesItemList(void)
+	??4CFavouritesItem@@QAEAAV0@ABV0@@Z @ 7 NONAME ; class CFavouritesItem & CFavouritesItem::operator=(class CFavouritesItem const &)
+	??4TFavouritesWapAp@@QAEAAV0@ABV0@@Z @ 8 NONAME ; class TFavouritesWapAp & TFavouritesWapAp::operator=(class TFavouritesWapAp const &)
+	??4TFavouritesWapAp@@QAEAAV0@K@Z @ 9 NONAME ; class TFavouritesWapAp & TFavouritesWapAp::operator=(unsigned long)
+	?Add@RFavouritesDb@@QAEHAAVCFavouritesItem@@H@Z @ 10 NONAME ; int RFavouritesDb::Add(class CFavouritesItem &, int)
+	?ApId@TFavouritesWapAp@@QBEKXZ @ 11 NONAME ; unsigned long TFavouritesWapAp::ApId(void) const
+	?Begin@RFavouritesDb@@QAEHH@Z @ 12 NONAME ; int RFavouritesDb::Begin(int)
+	?Cancel@RFavouritesDbNotifier@@QAEXXZ @ 13 NONAME ; void RFavouritesDbNotifier::Cancel(void)
+	?CleanupRollbackPushL@RFavouritesDb@@QAEXXZ @ 14 NONAME ; void RFavouritesDb::CleanupRollbackPushL(void)
+	?ClearL@CFavouritesItem@@QAEXXZ @ 15 NONAME ; void CFavouritesItem::ClearL(void)
+	?Close@RFavouritesFile@@QAEXXZ @ 16 NONAME ; void RFavouritesFile::Close(void)
+	?Close@RFavouritesHandle@@QAEXXZ @ 17 NONAME ; void RFavouritesHandle::Close(void)
+	?Commit@RFavouritesDb@@QAEHXZ @ 18 NONAME ; int RFavouritesDb::Commit(void)
+	?Compact@RFavouritesDb@@QAEHXZ @ 19 NONAME ; int RFavouritesDb::Compact(void)
+	?Compact@RFavouritesDbIncremental@@QAEHAAVRFavouritesDb@@AAH@Z @ 20 NONAME ; int RFavouritesDbIncremental::Compact(class RFavouritesDb &, int &)
+	?Connect@RFavouritesSession@@QAEHXZ @ 21 NONAME ; int RFavouritesSession::Connect(void)
+	?ContextId@CFavouritesItem@@QBEJXZ @ 22 NONAME ; long CFavouritesItem::ContextId(void) const
+	?Count@RFavouritesDb@@QAEHAAHHW4TType@CFavouritesItem@@PBVTDesC16@@J@Z @ 23 NONAME ; int RFavouritesDb::Count(int &, int, enum CFavouritesItem::TType, class TDesC16 const *, long)
+	?CreateAdaptiveItemsFolderL@RFavouritesDb@@QAEPAVCFavouritesItem@@XZ @ 24 NONAME ; class CFavouritesItem * RFavouritesDb::CreateAdaptiveItemsFolderL(void)
+	?CreateStartPageItemL@RFavouritesDb@@QAEPAVCFavouritesItem@@XZ @ 25 NONAME ; class CFavouritesItem * RFavouritesDb::CreateStartPageItemL(void)
+	?Delete@CFavouritesItemList@@QAEXH@Z @ 26 NONAME ; void CFavouritesItemList::Delete(int)
+	?Delete@CFavouritesItemList@@QAEXHH@Z @ 27 NONAME ; void CFavouritesItemList::Delete(int, int)
+	?Delete@RFavouritesDb@@QAEHH@Z @ 28 NONAME ; int RFavouritesDb::Delete(int)
+	?DeleteDatabase@RFavouritesSession@@QAEHABVTDesC16@@@Z @ 29 NONAME ; int RFavouritesSession::DeleteDatabase(class TDesC16 const &)
+	?DeleteFile@RFavouritesDb@@QAEHH@Z @ 30 NONAME ; int RFavouritesDb::DeleteFile(int)
+	?DoCancel@CActiveFavouritesDbNotifier@@MAEXXZ @ 31 NONAME ; void CActiveFavouritesDbNotifier::DoCancel(void)
+	?FolderExists@RFavouritesDb@@QAEHHAAH@Z @ 32 NONAME ; int RFavouritesDb::FolderExists(int, int &)
+	?Get@RFavouritesDb@@QAEHHAAVCFavouritesItem@@@Z @ 33 NONAME ; int RFavouritesDb::Get(int, class CFavouritesItem &)
+	?GetAll@RFavouritesDb@@QAEHAAVCFavouritesItemList@@HW4TType@CFavouritesItem@@PBVTDesC16@@J@Z @ 34 NONAME ; int RFavouritesDb::GetAll(class CFavouritesItemList &, int, enum CFavouritesItem::TType, class TDesC16 const *, long)
+	?GetBrowserData@RFavouritesDb@@QAEHHAAVMFavouritesItemData@@@Z @ 35 NONAME ; int RFavouritesDb::GetBrowserData(int, class MFavouritesItemData &)
+	?GetData@RFavouritesDb@@QAEHHAAVMFavouritesItemData@@@Z @ 36 NONAME ; int RFavouritesDb::GetData(int, class MFavouritesItemData &)
+	?GetUids@RFavouritesDb@@QAEHAAV?$CArrayFix@H@@HW4TType@CFavouritesItem@@PBVTDesC16@@J@Z @ 37 NONAME ; int RFavouritesDb::GetUids(class CArrayFix<int> &, int, enum CFavouritesItem::TType, class TDesC16 const *, long)
+	?IndexToUid@CFavouritesItemList@@QBEHH@Z @ 38 NONAME ; int CFavouritesItemList::IndexToUid(int) const
+	?IsDamaged@RFavouritesDb@@QAEHAAH@Z @ 39 NONAME ; int RFavouritesDb::IsDamaged(int &)
+	?IsDefault@TFavouritesWapAp@@QBEHXZ @ 40 NONAME ; int TFavouritesWapAp::IsDefault(void) const
+	?IsFactoryItem@CFavouritesItem@@QBEHXZ @ 41 NONAME ; int CFavouritesItem::IsFactoryItem(void) const
+	?IsFolder@CFavouritesItem@@QBEHXZ @ 42 NONAME ; int CFavouritesItem::IsFolder(void) const
+	?IsItem@CFavouritesItem@@QBEHXZ @ 43 NONAME ; int CFavouritesItem::IsItem(void) const
+	?IsNull@TFavouritesWapAp@@QBEHXZ @ 44 NONAME ; int TFavouritesWapAp::IsNull(void) const
+	?IsReadOnly@CFavouritesItem@@QBEHXZ @ 45 NONAME ; int CFavouritesItem::IsReadOnly(void) const
+	?ItemByUid@CFavouritesItemList@@QBEPBVCFavouritesItem@@H@Z @ 46 NONAME ; class CFavouritesItem const * CFavouritesItemList::ItemByUid(int) const
+	?ItemExists@RFavouritesDb@@QAEHHAAH@Z @ 47 NONAME ; int RFavouritesDb::ItemExists(int, int &)
+	?MakeUniqueName@RFavouritesDb@@QAEHAAVCFavouritesItem@@@Z @ 48 NONAME ; int RFavouritesDb::MakeUniqueName(class CFavouritesItem &)
+	?MakeUniqueName@RFavouritesDb@@QAEHAAVTDes16@@H@Z @ 49 NONAME ; int RFavouritesDb::MakeUniqueName(class TDes16 &, int)
+	?Modified@CFavouritesItem@@QBE?AVTTime@@XZ @ 50 NONAME ; class TTime CFavouritesItem::Modified(void) const
+	?Name@CFavouritesItem@@QBE?BVTPtrC16@@XZ @ 51 NONAME ; class TPtrC16 const CFavouritesItem::Name(void) const
+	?NewL@CFavouritesItem@@SAPAV1@XZ @ 52 NONAME ; class CFavouritesItem * CFavouritesItem::NewL(void)
+	?NewLC@CFavouritesItem@@SAPAV1@XZ @ 53 NONAME ; class CFavouritesItem * CFavouritesItem::NewLC(void)
+	?Next@RFavouritesDbIncremental@@QAEHAAH@Z @ 54 NONAME ; int RFavouritesDbIncremental::Next(int &)
+	?NotifyAllEvents@RFavouritesDbNotifier@@QAEXAAVTRequestStatus@@@Z @ 55 NONAME ; void RFavouritesDbNotifier::NotifyAllEvents(class TRequestStatus &)
+	?NotifyChange@RFavouritesDbNotifier@@QAEXAAVTRequestStatus@@@Z @ 56 NONAME ; void RFavouritesDbNotifier::NotifyChange(class TRequestStatus &)
+	?Open@RFavouritesDb@@QAEHAAVRFavouritesSession@@ABVTDesC16@@@Z @ 57 NONAME ; int RFavouritesDb::Open(class RFavouritesSession &, class TDesC16 const &)
+	?Open@RFavouritesDbNotifier@@QAEHAAVRFavouritesDb@@@Z @ 58 NONAME ; int RFavouritesDbNotifier::Open(class RFavouritesDb &)
+	?Open@RFavouritesFile@@QAEHAAVRFavouritesDb@@H@Z @ 59 NONAME ; int RFavouritesFile::Open(class RFavouritesDb &, int)
+	?ParentFolder@CFavouritesItem@@QBEHXZ @ 60 NONAME ; int CFavouritesItem::ParentFolder(void) const
+	?Password@CFavouritesItem@@QBE?BVTPtrC16@@XZ @ 61 NONAME ; class TPtrC16 const CFavouritesItem::Password(void) const
+	?PreferredUid@RFavouritesDb@@QAEHHAAH@Z @ 62 NONAME ; int RFavouritesDb::PreferredUid(int, int &)
+	?Read@RFavouritesFile@@QBEHAAVTDes8@@@Z @ 63 NONAME ; int RFavouritesFile::Read(class TDes8 &) const
+	?Recover@RFavouritesDb@@QAEHXZ @ 64 NONAME ; int RFavouritesDb::Recover(void)
+	?Recover@RFavouritesDbIncremental@@QAEHAAVRFavouritesDb@@AAH@Z @ 65 NONAME ; int RFavouritesDbIncremental::Recover(class RFavouritesDb &, int &)
+	?Replace@RFavouritesFile@@QAEHAAVRFavouritesDb@@H@Z @ 66 NONAME ; int RFavouritesFile::Replace(class RFavouritesDb &, int)
+	?ResourceCheck@RFavouritesSession@@QAEXXZ @ 67 NONAME ; void RFavouritesSession::ResourceCheck(void)
+	?ResourceCount@RFavouritesSession@@QAEHXZ @ 68 NONAME ; int RFavouritesSession::ResourceCount(void)
+	?ResourceMark@RFavouritesSession@@QAEXXZ @ 69 NONAME ; void RFavouritesSession::ResourceMark(void)
+	?RestoreFactorySettingsL@RFavouritesDb@@SAXABVTDesC16@@0AAVMRfsApMapper@@@Z @ 70 NONAME ; void RFavouritesDb::RestoreFactorySettingsL(class TDesC16 const &, class TDesC16 const &, class MRfsApMapper &)
+	?Rollback@RFavouritesDb@@QAEXXZ @ 71 NONAME ; void RFavouritesDb::Rollback(void)
+	?Run@FavouritesSrv@@SAHXZ @ 72 NONAME ; int FavouritesSrv::Run(void)
+	?RunL@CActiveFavouritesDbNotifier@@MAEXXZ @ 73 NONAME ; void CActiveFavouritesDbNotifier::RunL(void)
+	?SetApId@TFavouritesWapAp@@QAEXK@Z @ 74 NONAME ; void TFavouritesWapAp::SetApId(unsigned long)
+	?SetBrowserData@RFavouritesDb@@QAEHHABVMFavouritesItemData@@@Z @ 75 NONAME ; int RFavouritesDb::SetBrowserData(int, class MFavouritesItemData const &)
+	?SetContextId@CFavouritesItem@@QAEXJ@Z @ 76 NONAME ; void CFavouritesItem::SetContextId(long)
+	?SetData@RFavouritesDb@@QAEHHABVMFavouritesItemData@@@Z @ 77 NONAME ; int RFavouritesDb::SetData(int, class MFavouritesItemData const &)
+	?SetDefault@TFavouritesWapAp@@QAEXXZ @ 78 NONAME ; void TFavouritesWapAp::SetDefault(void)
+	?SetFactoryItem@RFavouritesDb@@QAEHHH@Z @ 79 NONAME ; int RFavouritesDb::SetFactoryItem(int, int)
+	?SetHomepage@RFavouritesDb@@QAEHAAVCFavouritesItem@@@Z @ 80 NONAME ; int RFavouritesDb::SetHomepage(class CFavouritesItem &)
+	?SetLastVisited@RFavouritesDb@@QAEHAAVCFavouritesItem@@@Z @ 81 NONAME ; int RFavouritesDb::SetLastVisited(class CFavouritesItem &)
+	?SetModified@RFavouritesDb@@QAEHHVTTime@@@Z @ 82 NONAME ; int RFavouritesDb::SetModified(int, class TTime)
+	?SetNameL@CFavouritesItem@@QAEXABVTDesC16@@@Z @ 83 NONAME ; void CFavouritesItem::SetNameL(class TDesC16 const &)
+	?SetNull@TFavouritesWapAp@@QAEXXZ @ 84 NONAME ; void TFavouritesWapAp::SetNull(void)
+	?SetParentFolder@CFavouritesItem@@QAEXH@Z @ 85 NONAME ; void CFavouritesItem::SetParentFolder(int)
+	?SetPasswordL@CFavouritesItem@@QAEXABVTDesC16@@@Z @ 86 NONAME ; void CFavouritesItem::SetPasswordL(class TDesC16 const &)
+	?SetPreferredUid@RFavouritesDb@@QAEHHH@Z @ 87 NONAME ; int RFavouritesDb::SetPreferredUid(int, int)
+	?SetReadOnly@RFavouritesDb@@QAEHHH@Z @ 88 NONAME ; int RFavouritesDb::SetReadOnly(int, int)
+	?SetType@CFavouritesItem@@QAEXW4TType@1@@Z @ 89 NONAME ; void CFavouritesItem::SetType(enum CFavouritesItem::TType)
+	?SetUrlL@CFavouritesItem@@QAEXABVTDesC16@@@Z @ 90 NONAME ; void CFavouritesItem::SetUrlL(class TDesC16 const &)
+	?SetUserNameL@CFavouritesItem@@QAEXABVTDesC16@@@Z @ 91 NONAME ; void CFavouritesItem::SetUserNameL(class TDesC16 const &)
+	?SetWapAp@CFavouritesItem@@QAEXABVTFavouritesWapAp@@@Z @ 92 NONAME ; void CFavouritesItem::SetWapAp(class TFavouritesWapAp const &)
+	?Size@RFavouritesDb@@QBEHAAUTSize@RDbDatabase@@@Z @ 93 NONAME ; int RFavouritesDb::Size(struct RDbDatabase::TSize &) const
+	?Size@RFavouritesFile@@QBEHAAH@Z @ 94 NONAME ; int RFavouritesFile::Size(int &) const
+	?SortL@CFavouritesItemList@@QAEXP6AHABVCFavouritesItem@@0@Z@Z @ 95 NONAME ; void CFavouritesItemList::SortL(int (*)(class CFavouritesItem const &, class CFavouritesItem const &))
+	?Start@CActiveFavouritesDbNotifier@@QAEHXZ @ 96 NONAME ; int CActiveFavouritesDbNotifier::Start(void)
+	?Type@CFavouritesItem@@QBE?AW4TType@1@XZ @ 97 NONAME ; enum CFavouritesItem::TType CFavouritesItem::Type(void) const
+	?Uid@CFavouritesItem@@QBEHXZ @ 98 NONAME ; int CFavouritesItem::Uid(void) const
+	?UidToIndex@CFavouritesItemList@@QBEHH@Z @ 99 NONAME ; int CFavouritesItemList::UidToIndex(int) const
+	?Update@RFavouritesDb@@QAEHAAVCFavouritesItem@@HH@Z @ 100 NONAME ; int RFavouritesDb::Update(class CFavouritesItem &, int, int)
+	?UpdateStats@RFavouritesDb@@QAEHXZ @ 101 NONAME ; int RFavouritesDb::UpdateStats(void)
+	?Url@CFavouritesItem@@QBE?BVTPtrC16@@XZ @ 102 NONAME ; class TPtrC16 const CFavouritesItem::Url(void) const
+	?UserName@CFavouritesItem@@QBE?BVTPtrC16@@XZ @ 103 NONAME ; class TPtrC16 const CFavouritesItem::UserName(void) const
+	?Version@RFavouritesDb@@QBE?AVTVersion@@XZ @ 104 NONAME ; class TVersion RFavouritesDb::Version(void) const
+	?Version@RFavouritesSession@@SA?AVTVersion@@XZ @ 105 NONAME ; class TVersion RFavouritesSession::Version(void)
+	?WapAp@CFavouritesItem@@QBE?AVTFavouritesWapAp@@XZ @ 106 NONAME ; class TFavouritesWapAp CFavouritesItem::WapAp(void) const
+	?Write@RFavouritesFile@@QAEHABVTDesC8@@@Z @ 107 NONAME ; int RFavouritesFile::Write(class TDesC8 const &)
+	?__DbgSetAllocFail@RFavouritesSession@@QAEXW4TAllocFail@RAllocator@@H@Z @ 108 NONAME ; void RFavouritesSession::__DbgSetAllocFail(enum RAllocator::TAllocFail, int)
+	?IsHidden@CFavouritesItem@@QBEHXZ @ 109 NONAME ; int CFavouritesItem::IsHidden(void) const
+	?SetHidden@CFavouritesItem@@QBEHH@Z @ 110 NONAME ; int CFavouritesItem::SetHidden(int) const
+

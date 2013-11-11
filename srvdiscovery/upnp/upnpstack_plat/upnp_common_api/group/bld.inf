@@ -1,0 +1,50 @@
+/** @file
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies  this distribution, and is available 
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  File that exports the files belonging to 
+:                UPnP Common API
+*
+*/
+
+
+#include "../../../group/upnpplatformvar.hrh"
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+../inc/upnpdiscoveryobserver.h            MW_LAYER_PLATFORM_EXPORT_PATH( upnpdiscoveryobserver.h )
+../inc/upnpicon.h                         MW_LAYER_PLATFORM_EXPORT_PATH( upnpicon.h )
+../inc/upnperrors.h                       MW_LAYER_PLATFORM_EXPORT_PATH( upnperrors.h )
+../inc/upnpcons.h                         MW_LAYER_PLATFORM_EXPORT_PATH( upnpcons.h )
+../inc/upnpaction.h                       MW_LAYER_PLATFORM_EXPORT_PATH( upnpaction.h )
+../inc/upnpdevice.h                       MW_LAYER_PLATFORM_EXPORT_PATH( upnpdevice.h )
+../inc/upnpdescriptionproperty.h          MW_LAYER_PLATFORM_EXPORT_PATH( upnpdescriptionproperty.h )
+../inc/upnpdispatcher.h                   MW_LAYER_PLATFORM_EXPORT_PATH( upnpdispatcher.h )
+../inc/upnpcommonstructs.h                MW_LAYER_PLATFORM_EXPORT_PATH( upnpcommonstructs.h )
+../inc/upnpdispatchercustomer.h           MW_LAYER_PLATFORM_EXPORT_PATH( upnpdispatchercustomer.h )
+../inc/upnpservice.h                      MW_LAYER_PLATFORM_EXPORT_PATH( upnpservice.h )
+../inc/upnpnotifytimer.h                  MW_LAYER_PLATFORM_EXPORT_PATH( upnpnotifytimer.h )
+../inc/upnpargument.h                     MW_LAYER_PLATFORM_EXPORT_PATH( upnpargument.h )
+../inc/upnpstatevariable.h                MW_LAYER_PLATFORM_EXPORT_PATH( upnpstatevariable.h )
+../inc/upnpdispatcherengineobserver.h     MW_LAYER_PLATFORM_EXPORT_PATH( upnpdispatcherengineobserver.h )
+../inc/upnpsettings.h                     MW_LAYER_PLATFORM_EXPORT_PATH( upnpsettings.h )
+../inc/upnpconnmanagereventtypes.h        MW_LAYER_PLATFORM_EXPORT_PATH( upnpconnmanagereventtypes.h )
+../inc/upnpnetworkeventobserver.h         MW_LAYER_PLATFORM_EXPORT_PATH( upnpnetworkeventobserver.h )
+../inc/upnpnetworkeventbase.h             MW_LAYER_PLATFORM_EXPORT_PATH( upnpnetworkeventbase.h )
+../inc/upnpnetworkeventaddresschange.h    MW_LAYER_PLATFORM_EXPORT_PATH( upnpnetworkeventaddresschange.h )
+../inc/upnpconnectionmanagernetworkeventprovider.h MW_LAYER_PLATFORM_EXPORT_PATH( upnpconnectionmanagernetworkeventprovider.h )
+../inc/upnpconnectionmanagernetworkevent.h MW_LAYER_PLATFORM_EXPORT_PATH( upnpconnectionmanagernetworkevent.h )
+../inc/upnpcommonupnplits.h               MW_LAYER_PLATFORM_EXPORT_PATH( upnpcommonupnplits.h )
+../inc/upnpdevicedescription.h            MW_LAYER_PLATFORM_EXPORT_PATH( upnpdevicedescription.h )

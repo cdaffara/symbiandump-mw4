@@ -1,0 +1,7 @@
+EXPORTS
+	InstallProxy @ 1 NONAME
+	_ZTI15CTestMUdpServer @ 2 NONAME
+	_ZTIN4Meta18RMetaDataContainerINS_13SMetaDataEComEEE @ 3 NONAME
+	_ZTV15CTestMUdpServer @ 4 NONAME
+	_ZTVN4Meta18RMetaDataContainerINS_13SMetaDataEComEEE @ 5 NONAME
+

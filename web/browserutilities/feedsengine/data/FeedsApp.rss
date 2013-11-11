@@ -1,0 +1,365 @@
+/*
+* Copyright (c) 2003 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Resource definitions
+*
+*/
+
+
+NAME FEED
+
+//  INCLUDES
+#include <appinfo.rh>
+#include <eikon.rh>
+#include <avkon.rh>
+#include <avkon.rsg>
+#include <avkon.loc>
+
+#include "FeedsApp.hrh"
+
+
+// *****************************************************************************
+// Application related
+// -----------------------------------------------------------------------------
+//
+//    Define the resource file signature
+//    This resource should be empty.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE RSS_SIGNATURE
+    {
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+//    Default Document Name
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE TBUF r_feeds_default_docname
+    {
+    buf="Feeds";
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+//    Define default menu and CBA key.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE EIK_APP_INFO
+    {
+    }
+
+
+// *****************************************************************************
+// CTestHarnessView
+
+// -----------------------------------------------------------------------------
+//
+//    r_feeds_test_harness_view
+//    Define view 1
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE AVKON_VIEW r_feeds_test_harness_view
+    {
+    menubar = r_feeds_test_harness_view_menubar;
+    cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+//   r_feeds_test_harness_view_menubar
+//   Menu title definition
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_BAR r_feeds_test_harness_view_menubar
+    {
+        titles =
+        {
+            MENU_TITLE
+            {
+                menu_pane = r_feeds_test_harness_view_menu;
+            }
+        };
+    }
+
+// -----------------------------------------------------------------------------
+//
+//   r_feeds_test_harness_view_menu
+//   Menu for "Options"
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_feeds_test_harness_view_menu
+    {
+        items =
+        {
+            MENU_ITEM
+            {
+                command = EShowFolderView;
+                txt = "Show Web Feeds";
+            },
+            
+            MENU_ITEM
+            {
+                command = ESubscribeTo;
+                txt = "Subscribe to TechDirt";
+            },
+            
+            MENU_ITEM
+            {
+                command = EFeedsDebug;
+                txt = "Debug";
+                cascade = r_feeds_debug_menu;
+            },
+            
+            MENU_ITEM
+            {
+                command = EAknCmdHelp;
+                txt = qtn_options_help;
+            },
+            
+            MENU_ITEM
+            {
+                command = EEikCmdExit;
+                txt = qtn_options_exit;
+            }
+        };
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+//   r_feeds_view_debug_menu
+//   Tools sub-menu
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE MENU_PANE r_feeds_debug_menu
+    {
+        items =
+        {
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd0;
+                txt = "Canned RSS";
+            },
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd1;
+                txt = "Canned Atom";
+            },
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd2;
+                txt = "Live - 500";
+            },
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd22;
+                txt = "Print DB Tables";
+            },            
+
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd3;
+                txt = "Fetch Root Folder";
+            },
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd4;
+                txt = "Watch Folder List";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd5;
+                txt = "Import OPML";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd21;
+                txt = "ImportOPML ClearOld";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd6;
+                txt = "Update All";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd7;
+                txt = "Add Folder";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd8;
+                txt = "Add Feed";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd9;
+                txt = "Change Folder Item";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd10;
+                txt = "Delete Folder Items";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd11;
+                txt = "Delete All Folder Items";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd12;
+                txt = "Move Folder Items To";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd13;
+                txt = "Move Folder Items";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd14;
+                txt = "Update Folder Items";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd15;
+                txt = "Fetch Feed";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd16;
+                txt = "Update Item Status";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd17;
+                txt = "Settings Sync";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd23;
+                txt = "Settings Async";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd18;
+                txt = "Settings On";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd19;
+                txt = "Settings Off";
+            },            
+            
+            MENU_ITEM
+            {
+                command = EFeedsAppCmd20;
+                txt = "Disconnect";
+            }            
+        };
+    }
+
+
+// *****************************************************************************
+// CFeedsWaitDialog
+// -----------------------------------------------------------------------------
+//
+//    r_feeds_wait_note_dialog
+//    General wait-note dialog.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_feeds_wait_note_dialog
+    {
+    flags = EAknWaitNoteFlags;
+    buttons = R_AVKON_SOFTKEYS_CANCEL;
+    items=
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EFeedsWaitNoteDlgId;
+            control= AVKON_NOTE 
+                { 
+                layout = EWaitLayout;
+                animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+                };
+            }
+        };
+    }
+
+
+// -----------------------------------------------------------------------------
+//
+//    r_feeds_progress_note_dialog
+//    General progress-note dialog.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_feeds_progress_note_dialog
+	{
+	flags = EAknProgressNoteFlags;
+	buttons = R_AVKON_SOFTKEYS_CANCEL;
+	items =
+		{
+		DLG_LINE
+			{
+			type = EAknCtNote;
+			id = EFeedsProgressDlgId;
+			control = AVKON_NOTE
+				{
+				layout = EProgressLayout;
+				};
+			}
+		};
+	}
+
+
+// CWaitDialog
+RESOURCE TBUF r_feeds_opening_folders           { buf = "Updating"; }
+RESOURCE TBUF r_feeds_opening_feed              { buf = "Updating"; }
+RESOURCE TBUF r_feeds_updating_all_wait_dialog  { buf = "Updating all feeds"; }
+

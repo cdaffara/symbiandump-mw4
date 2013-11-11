@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="b82563f04b36bd44ae3f843d4937d4a2" dataversion="1.0">
+  <name>Settings API</name>
+  <description>Constants defining the unique Browser keys in the central repository</description>
+  <type>c++</type>
+  <subsystem>WebUI</subsystem>
+  <libs>
+  </libs>
+  <release category="sdk" sinceversion="3.1"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

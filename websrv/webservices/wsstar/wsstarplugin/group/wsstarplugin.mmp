@@ -1,0 +1,251 @@
+/*
+* Copyright (c) 2006-2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:       Project specification file for wsstarplugin    
+*
+*/
+
+
+
+
+
+
+
+
+#include <data_caging_paths.hrh> 
+
+#include "../../../inc/webservices.hrh"
+
+//MACRO _DISABLE_DICTIONARY_FETCHING
+//#if !defined( _DISABLE_DICTIONARY_FETCHING )
+//	#define _DISABLE_DICTIONARY_FETCHING 1
+//#endif    
+#ifdef RD_SEN_WS_STAR__WBXML
+	EPOCALLOWDLLDATA 
+#endif
+
+// ECOM DLL recognition UID followed by the unique UID for this dll
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+TARGET WSStarPlugin.dll
+UID 0x10009D8D 0x101F9717
+#else
+TARGET wswsstarplugin.dll
+UID 0x10009D8D 0x10282C49
+#endif
+
+#ifdef SYMBIAN_SECURE_ECOM 
+    TARGETTYPE PLUGIN
+#else
+    TARGETTYPE ECOMIIC
+#endif
+
+
+#ifdef EKA2
+    #if !defined ( VID_DEFAULT ) 
+        VENDORID 0x101FB657
+    #else
+        VENDORID VID_DEFAULT
+    #endif 
+  
+    #if !defined ( CAP_ECOM_PLUGIN )
+        CAPABILITY ALL -TCB
+    #else
+        CAPABILITY CAP_ECOM_PLUGIN
+    #endif
+#endif
+
+SOURCEPATH      ../src
+SOURCE            wsstarproxy.cpp
+SOURCE            wsstarplugin.cpp
+SOURCE            wsstarservicesession.cpp
+SOURCE            wsstarsessionconsumer.cpp
+SOURCE            wsstarhandlercontext.cpp
+SOURCE            wsstarsessioncontext.cpp
+SOURCE            wsstarmessagecontext.cpp
+SOURCE            wsstarcredentialobserver.cpp
+//handler Validate
+SOURCE            wsstarvalidatehandler.cpp
+SOURCE            wsstartrustclient.cpp
+SOURCE            wsstarrstresponse.cpp
+
+//handler Register
+SOURCE            wsstarregisterhandler.cpp
+
+//handler ServiceUpdate
+SOURCE            wsstarserviceupdatehandler.cpp
+
+//Policy handler
+SOURCE						wsstarhttpclient.cpp
+SOURCE						wsstarpolicyhandler.cpp
+SOURCE            wsstarpolicy.cpp
+SOURCE						wsstarpolicymanager.cpp
+SOURCE						wsstarpolicyrequest.cpp
+
+//VTCP handler // wsstarvtcphandler plugin is moved from wsstarplugin to vtcptransportplugin
+//#ifdef RD_SEN_VTCP_SUPPORT
+//SOURCE            WSStarVtcpHandler.cpp 
+//#endif
+//dictionary providers
+SOURCE 						wsstardictionary.cpp
+#ifdef RD_SEN_VTCP_SUPPORT
+SOURCE 						wsstarcobrandinghandler.cpp
+SOURCE 						wsstarcobrandingclient.cpp
+#endif//RD_SEN_VTCP_SUPPORT
+
+
+#ifdef RD_SEN_WS_STAR__WBXML 
+    SOURCEPATH      ../msrc
+    SOURCE            SAXAttributes.cpp
+    SOURCE            SAXConfigContentHandler.cpp
+    SOURCE            SAXMsgContentHandler.cpp
+    SOURCE            SAXStringContentHandler.cpp
+    SOURCE            WBXMLCompressor.cpp
+    SOURCE            WBXMLToken.cpp
+    SOURCE            StringBuilder.cpp
+    SOURCE            WBXMLPlugin.cpp
+#endif 
+
+
+#ifdef RD_SEN_WS_STAR__WBXML
+
+	SOURCEPATH      ../mdata
+	
+	#ifndef RD_SEN_VTCP_SUPPORT
+		START RESOURCE    101F9717.RSS
+	#else
+		START RESOURCE    101F9717_vtcp.RSS
+	#endif //RD_SEN_VTCP_SUPPORT
+	
+#else
+
+	SOURCEPATH      ../data
+	
+	#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+	
+		#ifndef RD_SEN_VTCP_SUPPORT
+			START RESOURCE    101F9717.RSS
+		#else
+			START RESOURCE    101f9717_vtcp.rss
+		#endif //RD_SEN_VTCP_SUPPORT
+		
+		#ifdef SYMBIAN_SECURE_ECOM 
+   			TARGET WSStarPlugin.rsc
+		#endif //SYMBIAN_SECURE_ECOM
+		
+	#else
+	
+		#ifndef RD_SEN_VTCP_SUPPORT
+			START RESOURCE    10282C49.RSS
+		#else
+			START RESOURCE    10282C49_vtcp.RSS
+		#endif //RD_SEN_VTCP_SUPPORT
+		
+		#ifdef SYMBIAN_SECURE_ECOM 
+   		TARGET wswsstarplugin.rsc
+		#endif //SYMBIAN_SECURE_ECOM
+		
+	#endif //RD_SEN_COMPILE_SIS_PACKAGE_FILES
+	
+#endif //RD_SEN_WS_STAR__WBXML
+
+
+
+END
+
+USERINCLUDE      ../inc
+USERINCLUDE     ../../../wsfragment/inc
+USERINCLUDE     ../../../wsframework/inc
+USERINCLUDE     ../../../wsmessages/inc
+USERINCLUDE     ../../../wsidentitymanager/inc
+USERINCLUDE     ../../../wscredentialmanager/inc
+USERINCLUDE    ../../../wsdescription/inc
+USERINCLUDE    ../../../wsutils/inc
+USERINCLUDE    ../../../wslogger/inc
+USERINCLUDE    ../../../wscore/inc
+USERINCLUDE    ../../wsstarpolicy/inc
+
+//for validate plugin
+USERINCLUDE    ../../../wsxml/inc
+
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../../inc
+
+
+#ifdef RD_SEN_WS_STAR__WBXML 
+    USERINCLUDE        ../minc
+#endif 
+
+SYSTEMINCLUDE   /epoc32/include/xml
+SYSTEMINCLUDE   /epoc32/include/libc
+
+// System libs
+LIBRARY bafl.lib
+LIBRARY charconv.lib
+LIBRARY ecom.lib
+LIBRARY efsrv.lib       //for saving dictionaries
+LIBRARY euser.lib 
+LIBRARY estor.lib 
+LIBRARY ezlib.lib
+LIBRARY flogger.lib
+LIBRARY sysutil.lib
+
+
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// SOA for S60 libraries
+LIBRARY SenLogger.lib // for TLS based logging
+LIBRARY SenFragment.lib
+LIBRARY SenMessages.lib
+LIBRARY SenXml.lib
+LIBRARY SenUtils.lib
+LIBRARY SenServDesc.lib
+LIBRARY SenServMgr.lib
+LIBRARY SenServConn.lib
+LIBRARY SenFramework.lib
+LIBRARY WsPolicy.lib
+LIBRARY SenCredentialManager.lib
+#else
+LIBRARY wsLogger.lib // for TLS based logging
+LIBRARY wsFragment.lib
+LIBRARY wsMessages.lib
+LIBRARY wsXml.lib
+LIBRARY wsUtils.lib
+LIBRARY wsServDesc.lib
+LIBRARY wsServMgr.lib
+LIBRARY wsServConn.lib
+LIBRARY wsFramework.lib
+LIBRARY wsstarpolicy.lib
+LIBRARY wsCredentialManager.lib
+#endif
+// LibXml2 libraries
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    LIBRARY         XmlEngineDOM.lib        // needed for XOP serializing
+#else
+    LIBRARY         WsStarXmlEngineDOM.lib  // needed for XOP serializing
+#endif
+
+
+#ifdef RD_SEN_WS_STAR__WBXML 
+    LIBRARY xmlframework.lib
+    LIBRARY apparc.lib
+    LIBRARY cone.lib
+    LIBRARY eikcore.lib
+    LIBRARY avkon.lib
+    LIBRARY commonengine.lib
+    LIBRARY estlib.lib
+#endif 
+
+SMPSAFE
+
+

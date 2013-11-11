@@ -1,0 +1,20 @@
+EXPORTS
+	NPN_CreateObject @ 1 NONAME
+	NPN_Enumerate @ 2 NONAME
+	NPN_Evaluate @ 3 NONAME
+	NPN_GetIntIdentifier @ 4 NONAME
+	NPN_GetProperty @ 5 NONAME
+	NPN_GetStringIdentifier @ 6 NONAME
+	NPN_GetStringIdentifiers @ 7 NONAME
+	NPN_HasMethod @ 8 NONAME
+	NPN_HasProperty @ 9 NONAME
+	NPN_IdentifierIsString @ 10 NONAME
+	NPN_IntFromIdentifier @ 11 NONAME
+	NPN_Invoke @ 12 NONAME
+	NPN_InvokeDefault @ 13 NONAME
+	NPN_ReleaseObject @ 14 NONAME
+	NPN_RemoveProperty @ 15 NONAME
+	NPN_RetainObject @ 16 NONAME
+	NPN_SetProperty @ 17 NONAME
+	NPN_UTF8FromIdentifier @ 18 NONAME
+

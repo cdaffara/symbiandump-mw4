@@ -1,0 +1,117 @@
+/*
+* Copyright (c) 2006-2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project Hitchcock Core
+*                Do not try to build this directly, this is included
+*                as a part of huitk.mmp and huitk_publicsdk.mmp.
+*
+*/
+
+
+
+#include <bldvariant.hrh>
+#include <platform_paths.hrh>
+#include "../../../CommonInc/huicompileroptions.mmh"
+
+// Default render surface flag is in coretkoptions.mmp
+#include "../../../CommonInc/coretkoptions.mmh"
+
+// NVG Flags for locally defining the NVG to be in use
+#define __NVG_MMP
+MACRO __NVG
+
+TARGET          huirenderpluginvg.dll
+TARGETTYPE      PLUGIN
+
+// uid2 specifies an ECOM dll, uid3 specifies a unique identifier for dll
+UID             0x10009D8D 0x200184B7
+VERSION         1.0
+
+CAPABILITY      CAP_ECOM_PLUGIN
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   ../../inc
+SYSTEMINCLUDE   /epoc32/include/ecom
+
+USERINCLUDE     ../../inc
+USERINCLUDE     ../inc
+USERINCLUDE     ../../../CommonInc
+
+//Added as part of break team support changes.
+#include "../../../../../group/stdinc.mmh"
+
+// OpenVG 1.0 Renderer
+SOURCE          HuiVg10RenderPlugin.cpp
+SOURCE          HuiVg10Gc.cpp
+SOURCE          HuiVg10RenderSurface.cpp
+SOURCE          HuiVg10PBufferSurface.cpp
+SOURCE          HuiVg10CurvePath.cpp
+SOURCE          HuiVg10Texture.cpp
+SOURCE          HuiVg10TextureManager.cpp
+SOURCE          HuiVg10TextureProcessor.cpp
+SOURCE          huivg10canvasgc.cpp
+SOURCE          huivg10canvasrenderbuffer.cpp
+SOURCE          HuiVg10VGImageBinder.cpp
+
+
+START RESOURCE 200184B7.rss
+TARGET         huirenderpluginvg.rsc
+END
+// Effects
+SOURCE          HuiFxVg10BlurFilter.cpp
+SOURCE          HuiFxVg10BrightnessContrastFilter.cpp
+SOURCE          HuiFxVg10Engine.cpp
+SOURCE          HuiFxVg10FilterBase.cpp
+SOURCE          HuiFxVg10HSLFilter.cpp
+SOURCE          HuiFxVg10OffscreenRenderbuffer.cpp
+SOURCE          HuiFxVg10OnscreenRenderbuffer.cpp
+SOURCE          HuiFxVg10RenderbufferBase.cpp
+SOURCE          HuiFxVg10ColorizeFilter.cpp
+SOURCE          HuiFxVg10OutlineFilter.cpp
+SOURCE          HuiFxVg10BevelFilter.cpp
+SOURCE          HuiFxVg10ColorMatrixFilterBase.cpp
+SOURCE          HuiFxVg10TransformFilter.cpp
+
+LIBRARY         euser.lib
+LIBRARY         ecom.lib
+LIBRARY         hitchcock.lib
+LIBRARY         fbscli.lib
+LIBRARY         cone.lib
+LIBRARY         ws32.lib
+LIBRARY         gdi.lib
+LIBRARY         bitgdi.lib // For CFbsScreenDevice
+LIBRARY         libc.lib libm.lib
+#ifdef __NVG_MMP
+LIBRARY         nvgdecoder.lib aknicon.lib
+#endif
+// TODO: when proper libopenvg.lib is available effects should use it
+//			 instead of libopenvg_nok.lib.
+LIBRARY         estlib.lib
+
+LIBRARY         libEGL.lib
+
+//#if defined(WINS)
+//LIBRARY         libopenvg_sw.lib
+//LIBRARY         libopenvgu_sw.lib
+//#else
+
+LIBRARY         libOpenVG.lib
+LIBRARY         libOpenVGU.lib
+
+//#endif
+
+
+EXPORTUNFROZEN

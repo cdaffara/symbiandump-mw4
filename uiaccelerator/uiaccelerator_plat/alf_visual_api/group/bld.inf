@@ -1,0 +1,105 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   File that exports the files belonging to 
+:                ALF Visual API
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+../inc/alf/alftextstylemanager.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftextstylemanager.h)
+../inc/alf/alftextvisual.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftextvisual.h)
+../inc/alf/alfgencomponent.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfgencomponent.h)
+../inc/alf/alfcurvepathlayout.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfcurvepathlayout.h)
+../inc/alf/alfcontrol.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfcontrol.h)
+../inc/alf/alfviewportlayout.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfviewportlayout.h)
+../inc/alf/alfdecklayout.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfdecklayout.h)
+../inc/alf/alfimage.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfimage.h)
+../inc/alf/alfownership.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfownership.h)
+../inc/alf/alfimageloaderutil.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfimageloaderutil.h)
+../inc/alf/alfenv.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfenv.h)
+../inc/alf/alfmeshvisual.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfmeshvisual.h)
+../inc/alf/alfvisualfactory.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfvisualfactory.h)
+../inc/alf/alfgridlayout.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfgridlayout.h)
+../inc/alf/alfcurvepath.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfcurvepath.h)
+../inc/alf/alftimedvalue.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftimedvalue.h)
+../inc/alf/alfgradientbrush.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfgradientbrush.h)
+../inc/alf/alftextstyle.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftextstyle.h)
+../inc/alf/alfmetric.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfmetric.h)
+../inc/alf/alfbitmapprovider.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfbitmapprovider.h)
+../inc/alf/alfimagevisual.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfimagevisual.h)
+../inc/alf/alfanchorlayout.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfanchorlayout.h)
+../inc/alf/alfdropshadowbrush.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfdropshadowbrush.h)
+../inc/alf/alfmesh.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfmesh.h)
+../inc/alf/alfframebrush.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfframebrush.h)
+../inc/alf/alfeventhandler.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfeventhandler.h)
+../inc/alf/alfflowlayout.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfflowlayout.h)
+../inc/alf/alfimagebrush.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfimagebrush.h)
+../inc/alf/alfinputcapabilitiessupplier.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfinputcapabilitiessupplier.h)
+../inc/alf/alflayout.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alflayout.h)
+../inc/alf/alfborderbrush.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfborderbrush.h)
+../inc/alf/alfutil.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfutil.h)
+../inc/alf/alflinevisual.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alflinevisual.h)
+../inc/alf/alfproperty.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfproperty.h)
+../inc/alf/alfbrusharray.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfbrusharray.h)
+../inc/alf/alfstatic.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfstatic.h)
+../inc/alf/alfcommand.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfcommand.h)
+../inc/alf/alfmaterial.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfmaterial.h)
+../inc/alf/alfm3gmesh.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfm3gmesh.h)
+../inc/alf/alfpropertyowner.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfpropertyowner.h)
+../inc/alf/alftexturemanager.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftexturemanager.h)
+../inc/alf/alfcontrolgroup.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfcontrolgroup.h)
+../inc/alf/alftransformation.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftransformation.h)
+../inc/alf/alfbrush.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfbrush.h)
+../inc/alf/alfdisplay.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfdisplay.h)
+../inc/alf/alftexture.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftexture.h)
+../inc/alf/alfroster.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfroster.h)
+../inc/alf/alfevent.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfevent.h)
+../inc/alf/alfgc.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfgc.h)
+../inc/alf/alfproceduralmesh.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfproceduralmesh.h)
+../inc/alf/alfmappingfunctions.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfmappingfunctions.h)
+../inc/alf/alfvisual.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfvisual.h)
+../inc/alf/alftextureprocessor.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftextureprocessor.h)
+../inc/alf/alfshadowborderbrush.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfshadowborderbrush.h)
+../inc/alf/alfscrollerevent.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfscrollerevent.h)
+../inc/alf/alfversion.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfversion.h)
+../inc/alf/alfscreenbuffer.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfscreenbuffer.h)
+../inc/alf/alfsymbiansbdrawer.h MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfsymbiansbdrawer.h)
+../inc/alf/alfdisplaybackgrounditem.h MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfdisplaybackgrounditem.h)
+../inc/alf/alfbatchbuffer.h MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfbatchbuffer.h)
+../inc/alf/alfenvobject.h MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfenvobject.h)
+../inc/alf/alftextureautosizeparams.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftextureautosizeparams.h)
+../inc/alf/alfdropshadow.h MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfdropshadow.h)
+../inc/alf/alftexturegroup.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alftexturegroup.h)
+../inc/alf/alfcanvasvisual.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfcanvasvisual.h)
+../inc/alf/alfrealline.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfrealline.h)
+../inc/alf/alfclientwindow.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfclientwindow.h)
+
+// for now
+../inc/goommonitor/goommonitor.h     MW_LAYER_PLATFORM_EXPORT_PATH(goommonitor.h)
+../inc/goommonitor/goommonitorsession.h     MW_LAYER_PLATFORM_EXPORT_PATH(goommonitorsession.h)
+../inc/goommonitor/goommonitorplugin.h     MW_LAYER_PLATFORM_EXPORT_PATH(goommonitorplugin.h)
+../inc/goommonitor/goommonitorplugin.hrh     MW_LAYER_PLATFORM_EXPORT_PATH(goommonitorplugin.hrh)
+
+../inc/alf/alfcompositionclient.h	MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfcompositionclient.h)
+../inc/alf/alfcompositionutility.h	MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfcompositionutility.h)
+
+../inc/alf/alfdrawer.h     MW_LAYER_PLATFORM_EXPORT_PATH(alf/alfdrawer.h)

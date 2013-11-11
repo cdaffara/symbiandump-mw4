@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="05ea62bfa2dae27cc35f0faf44ab6845" dataversion="1.0">
+<name>Web Service Messaging API</name>
+<description>This API provides message objects that ease up communication between service consumers and providers. Functionality is based on XML, including implementation that meets SOAP standards.</description>
+<type>c++</type>
+<collection>webservices</collection>
+<libs><lib name="senmessages.lib"/>
+</libs>
+<release category="public" sinceversion="5.0"/>
+<attributes>
+<htmldocprovided>no</htmldocprovided>
+<adaptation>no</adaptation>
+</attributes>
+</api>

@@ -1,0 +1,66 @@
+/*
+* Copyright (c) 2008-2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Common compiler options for coretoolkit and renderers
+*
+*/
+
+
+// This file is a collection of options that affect both hitchcock.dll
+// and the different backends.
+// Both coretoolkit.mmp and all renderer backend .mmp files must include
+// this file to make sure the flags are defined in all relevant places
+// and no conflicts arise because some flag has a different value in one place
+// MACRO affects the source files, #define affects .mmp files
+
+
+// Uses glReadPixels instead of glCopyTexSubImage in CHuiGles10TextureProcessor.
+// and CHuiGles20TextureProcessor.
+// If there is a need to control the renderers separately, move this to each
+// .mmp file and turn on for each renderer separately
+// This flag is not used in hitchcock.dll
+// MACRO           HUI_PROCESSOR_READPIXELS
+
+// Use this to compile on software driver. Will disable full screen anti-aliasing.
+// This does not seem to have any effect at the moment
+// MACRO           OPENGLES_SW_DRIVER
+
+// Here is the common control for disabling all default render surface
+// handling in systems that do not support pBuffers.
+// Has no effect on BitGDI.
+// The disabling can be done for all renderers or only for some
+// If disabled, a display must be created before textures can be loaded.
+// If pBuffers are to be disabled for all, remove comments from both #define and MACRO
+
+// #define DISABLE_ALL_DEFAULT_RENDER_SURFACES
+// MACRO DISABLE_ALL_DEFAULT_RENDER_SURFACES
+
+// Do not turn the flags on by hand in .cpp files, they are needed
+// both in HuiDisplay.cpp and in the individual renderers
+
+#ifdef DISABLE_ALL_DEFAULT_RENDER_SURFACES
+// These are always left without comment marks because they are
+// controlled by the common flag.
+MACRO           GLES10_DISABLE_DEFAULT_RENDER_SURFACE
+MACRO           GLES20_DISABLE_DEFAULT_RENDER_SURFACE
+MACRO           VG10_DISABLE_DEFAULT_RENDER_SURFACE
+#else
+// These are the individual definitions to be used to disable 
+// the pBuffer only for some renderers and allow others to use it.
+// If the flag that disables all pBuffers is turned on,
+// setting these individual flags here has no effect.
+// MACRO           GLES10_DISABLE_DEFAULT_RENDER_SURFACE
+MACRO           GLES20_DISABLE_DEFAULT_RENDER_SURFACE
+MACRO           VG10_DISABLE_DEFAULT_RENDER_SURFACE
+#endif
+

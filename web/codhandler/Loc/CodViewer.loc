@@ -1,0 +1,274 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Macros for localized strings.   
+*      
+*
+*/
+
+
+// Localized texts for the following are not in this file (common ones
+// from avkon.loc):
+//
+// - text_softkey_accept ("Accept")
+// - text_softkey_cancel ("Cancel")
+// - qtn_size_kb ("%N kB")
+// - qtn_size_b ("%N B")
+
+/********** Title Pane **********/
+
+//d:COD Viewer Application title
+//l:title_pane_t2/opt9
+//w:
+//r:1.2
+//
+#define qtn_cd_title                        "Download"
+
+/********** Details view **********/
+
+//d:COD Details View, value for undefined data.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_value_undefined              "Undefined"
+
+//d:COD Details View, label of "Name" field.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_detail_name                  "Name:"
+
+//d:COD Details View, label of "Price" field.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_detail_price                 "Price:"
+
+//d:COD Details View, label of "Description" field.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_detail_descript              "Description:"
+
+//d:COD Details View, label of "Size" field.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_detail_size                  "Size:"
+
+//d:COD Details View, label of "Vendor" field.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_detail_vendor                "Vendor:"
+
+//d:COD Details View, label of "Type" field.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_detail_type                  "Type:"
+
+/********** Content types **********/
+
+//d:Name of unclassified content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_not_classified          "File"
+
+//d:Name of sound content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_sound                   "Sound"
+
+//d:Name of ringing tone content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_rtone                   "Ringing tone"
+
+//d:Name of picture message content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_picture_message         "Picture message"
+
+//d:Name of operator logo content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_operator_logo           "Operator logo"
+
+//d:Name of image content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_image                   "Image"
+
+//d:Name of game level content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_game_level              "Game level"
+
+//d:Name of game content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_game                    "Game"
+
+//d:Name of document content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_document                "Document"
+
+//d:Name of business card content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_vcard                   "Business card"
+
+//d:Name of application content type.
+//l:msg_header_pane_t2
+//w:
+//r:1.2
+//
+#define qtn_cd_type_application             "Application"
+
+/********** Queries **********/
+
+//d:Memory selection dialog header text.
+//d:User must choose download location: phone memory or MMC card.
+//l:heading_pane_t1
+//w:
+//r:3.0
+//
+#define qtn_cd_header_mem_selec             "Download to:"
+
+//d:Confirmation query prompt: file download completed, ask user if he wants
+//to open the file. %U is the name of the downloaded file.
+//l:popup_note_window
+//w:
+//r:3.0
+//
+#define qtn_cd_query_download_complete      "%U downloaded. Open the file now?"
+
+/********** Wait note texts **********/
+
+//d:Wait note text: downloading
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_wait_downloading             "Downloading"
+
+//d:Wait note text: cancelling
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_wait_reject                  "Cancelling, please wait"
+
+//d:Wait note text: cancelling
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_wait_please_wait              "Please wait"
+
+//d:Waiting for license note text: waiting for license
+//l:popup_note_wait_window
+//w:
+//r:3.2
+//
+#define qtn_browser_downloads_waiting_for_license             "Waiting for license"
+
+/********** Error messages **********/
+
+//d:Info note text: no Access points available
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_info_no_valid_ap             "No access points available. Add one and try again"
+
+//d:Info note text: download failed
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_info_generic_error           "Downloading failed"
+
+//d:Info note text: type of received content  (923)
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_info_unsupp_mime_type        "Content could not be loaded"
+
+//d:Info note text: storage space insufficient (901)
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_info_file_too_large          "File too large to be saved"
+
+//d:Info note text: type described in COD unsupported (922)
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_info_unknown_type            "Content could not be used in this device"
+
+//d:Info note text: syntax error in COD (906)
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_info_syntax_err              "File corrupted"
+
+
+
+//d:Confirmation query prompt: to download unsupported file type
+//l:popup_note_window
+//w:
+//r:3.2
+//
+#define qtn_browser_downloads_unsupported_content_query      "You are downloading content that is not supported by this device. Continue downloading?"  
+
+//d:Info note text: To be shown when device has insufficient memory (901)
+//l:popup_note_window
+//w:
+//r:1.2
+//
+#define qtn_cd_info_not_enough_mem          "Not enough memory available"

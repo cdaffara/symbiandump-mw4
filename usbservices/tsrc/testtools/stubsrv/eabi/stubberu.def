@@ -1,0 +1,11 @@
+EXPORTS
+	_ZN8CStubber10InvokeApiLER11MApiInvokerjj14TApiInvokeMode @ 1 NONAME
+	_ZN8CStubber13EnqueBehaviorERK12TApiBehaviori @ 2 NONAME
+	_ZN8CStubber15DeleteBehaviorsEjj @ 3 NONAME
+	_ZN8CStubber15InvokeApiCancelEv @ 4 NONAME
+	_ZN8CStubber4NewLEv @ 5 NONAME
+	_ZN8CStubber9InvokeApiER12TApiBehavior14TApiInvokeMode @ 6 NONAME
+	_ZN8CStubberD0Ev @ 7 NONAME
+	_ZN8CStubberD1Ev @ 8 NONAME
+	_ZN8CStubberD2Ev @ 9 NONAME
+

@@ -1,0 +1,42 @@
+/*
+* Copyright (c) 2004-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:        
+*
+*/
+
+
+
+
+
+PRJ_PLATFORMS
+    DEFAULT
+
+// Specify the source file followed by its destination here
+// copy will be used to copy the source file to its destination
+// If there's no destination then the source file will be copied
+// to the same name in /epoc32/include
+
+PRJ_EXPORTS
+../sis/testhc_c.bat		/epoc32/winscw/c/testhc_c.bat
+../sis/testhc_z.bat		/epoc32/winscw/c/testhc_z.bat
+../sis/testframework.ini		/epoc32/winscw/c/testframework/testframework_hostlet.ini
+
+PRJ_MMPFILES
+
+
+
+PRJ_TESTMMPFILES
+hostletconnection.mmp
+
+// End of file

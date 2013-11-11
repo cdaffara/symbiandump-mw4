@@ -1,0 +1,73 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file for project usbotgwatcher
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET                  usbotgwatcher.dll
+TARGETTYPE              dll
+UID                     0x1000008d 0x2000AFFF
+
+CAPABILITY   LocalServices ReadDeviceData NetworkControl WriteDeviceData DiskAdmin ReadUserData WriteUserData ProtServ CommDD	
+VENDORID                VID_DEFAULT
+
+SOURCEPATH              ../src
+
+SOURCE                  cusbtimer.cpp
+
+SOURCE                  cusbidpinobserver.cpp
+SOURCE                  cusbvbusobserver.cpp
+SOURCE                  cusbotgstateobserver.cpp
+SOURCE                  cusbhosteventnotificationobserver.cpp
+SOURCE                  cusbmessagenotificationobserver.cpp
+SOURCE                  cusbbusactivityobserver.cpp
+
+SOURCE                  cusbotgwatcher.cpp
+SOURCE                  cusbservicecontrol.cpp
+
+SOURCE                  cusbstate.cpp
+SOURCE                  cusbstatehostabase.cpp
+SOURCE                  cusbstatehostainitiate.cpp
+SOURCE                  cusbstatehostahost.cpp
+SOURCE                  cusbstatehostaperipheral.cpp
+SOURCE                  cusbstatehosthandle.cpp
+SOURCE                  cusbstatehostdelayhandle.cpp
+SOURCE                  cusbstatehostdelayattachedhandle.cpp
+SOURCE                  cusbstatehostdelaynotattachedhandle.cpp
+SOURCE                  cusbstatehosthandledropping.cpp
+SOURCE                  cusbstatehostundefined.cpp
+
+SOURCE                  cusbwaitnotifier.cpp
+SOURCE                  cusbnotifmanager.cpp
+SOURCE                  cusbnotifier.cpp 
+SOURCE                  cusbnotenotifier.cpp 
+SOURCE                  cusbwarningnotifier.cpp 
+SOURCE                  cusbindicatornotifier.cpp
+
+USERINCLUDE             ../inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY                 euser.lib
+LIBRARY                 usbman.lib
+#if defined(MARM_ARMV5)
+LIBRARY                 usbdescriptors.lib
+LIBRARY                 usbdi_utils.lib
+#endif
+LIBRARY                 HbCore.lib
+
+DEBUGLIBRARY            flogger.lib

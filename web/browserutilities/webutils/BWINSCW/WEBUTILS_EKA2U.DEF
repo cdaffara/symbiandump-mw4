@@ -1,0 +1,21 @@
+EXPORTS
+	?AddFragmentL@CUserAgent@@QAEHABVTDes8@@W4TUserAgentFragment@@H@Z @ 1 NONAME ABSENT
+	?AddImeiToUserAgentL@CUserAgent@@QAEXABVTDesC8@@H@Z @ 2 NONAME ABSENT
+	?AddSubfragmentL@CUserAgent@@QAEHABVTDes8@@W4TUserAgentFragment@@IH@Z @ 3 NONAME ABSENT
+	?AppNameL@CUserAgent@@QAEPAVHBufC8@@XZ @ 4 NONAME ABSENT
+	?AppNameMMSL@CUserAgent@@QAEPAVHBufC8@@XZ @ 5 NONAME ABSENT
+	?AppVersionL@CUserAgent@@QAEPAVHBufC8@@XZ @ 6 NONAME ABSENT
+	?FragmentCount@CUserAgent@@QAEIXZ @ 7 NONAME ABSENT
+	?FragmentL@CUserAgent@@QAEPAVHBufC8@@W4TUserAgentFragment@@@Z @ 8 NONAME ABSENT
+	?MMSUserAgentL@CUserAgent@@QAEPAVHBufC8@@XZ @ 9 NONAME ; class HBufC8 * CUserAgent::MMSUserAgentL(void)
+	?NewL@CUserAgent@@SAPAV1@XZ @ 10 NONAME ; class CUserAgent * CUserAgent::NewL(void)
+	?RemoveFragment@CUserAgent@@QAEXW4TUserAgentFragment@@@Z @ 11 NONAME ABSENT
+	?RemoveSubfragment@CUserAgent@@QAEXW4TUserAgentFragment@@I@Z @ 12 NONAME ABSENT
+	?ResetFragmentL@CUserAgent@@QAEXW4TUserAgentFragment@@@Z @ 13 NONAME ABSENT
+	?ResetUserAgentStringL@CUserAgent@@QAEXXZ @ 14 NONAME ABSENT
+	?SubfragmentCount@CUserAgent@@QAEIW4TUserAgentFragment@@@Z @ 15 NONAME ABSENT
+	?SubfragmentL@CUserAgent@@QAEPAVHBufC8@@W4TUserAgentFragment@@I@Z @ 16 NONAME ABSENT
+	?UserAgentL@CUserAgent@@QAEPAVHBufC8@@XZ @ 17 NONAME ; class HBufC8 * CUserAgent::UserAgentL(void)
+	?URLToUserAgentProfileL@CUserAgent@@QAEHAAVTDes8@@0@Z @ 18 NONAME ; int CUserAgent::URLToUserAgentProfileL(class TDes8 &, class TDes8 &)
+	?BrowserNameAndVersionL@CUserAgent@@QAEPAVHBufC16@@XZ @ 19 NONAME ; class HBufC16 * CUserAgent::BrowserNameAndVersionL(void)
+	?BrowserVersionL@CUserAgent@@QAEPAVHBufC16@@XZ @ 20 NONAME ; class HBufC16 * CUserAgent::BrowserVersionL(void)

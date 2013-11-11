@@ -1,0 +1,4 @@
+EXPORTS
+	?NewL@CSenServiceManager@@SAPAV1@XZ @ 1 NONAME ; public: static class CSenServiceManager * __cdecl CSenServiceManager::NewL(void)
+	?NewLC@CSenServiceManager@@SAPAV1@XZ @ 2 NONAME ; public: static class CSenServiceManager * __cdecl CSenServiceManager::NewLC(void)
+

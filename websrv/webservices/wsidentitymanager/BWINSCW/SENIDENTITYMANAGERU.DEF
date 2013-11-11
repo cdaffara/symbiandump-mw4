@@ -1,0 +1,20 @@
+EXPORTS
+	?UserName@CSenUser@@QBEAAVTDesC8@@XZ @ 1 NONAME ; class TDesC8 & CSenUser::UserName(void) const
+	?PIN@CSenUser@@QBEAAVTDesC8@@XZ @ 2 NONAME ; class TDesC8 & CSenUser::PIN(void) const
+	?UpdateTouchIdentityDBL@CSenBaseIdentityManager@@QAEXAAVMSenServiceDescription@@@Z @ 3 NONAME ; void CSenBaseIdentityManager::UpdateTouchIdentityDBL(class MSenServiceDescription &)
+	?Active@CSenUser@@QBEHXZ @ 4 NONAME ; int CSenUser::Active(void) const
+	?NewL@CSenMultiUserIdentityManager@@SAPAV1@AAVMSenCoreServiceManager@@@Z @ 5 NONAME ; class CSenMultiUserIdentityManager * CSenMultiUserIdentityManager::NewL(class MSenCoreServiceManager &)
+	?NewLC@CSenMultiUserIdentityManager@@SAPAV1@AAVMSenCoreServiceManager@@@Z @ 6 NONAME ; class CSenMultiUserIdentityManager * CSenMultiUserIdentityManager::NewLC(class MSenCoreServiceManager &)
+	??1CSenWiseIdentityProvider@@UAE@XZ @ 7 NONAME ; CSenWiseIdentityProvider::~CSenWiseIdentityProvider(void)
+	?NewL@CSenBaseIdentity@@SAPAV1@VTPtrC8@@@Z @ 8 NONAME ; class CSenBaseIdentity * CSenBaseIdentity::NewL(class TPtrC8)
+	??1CSenBaseIdentityManager@@UAE@XZ @ 9 NONAME ; CSenBaseIdentityManager::~CSenBaseIdentityManager(void)
+	?NewLC@CSenBaseIdentityManager@@SAPAV1@AAVMSenCoreServiceManager@@@Z @ 10 NONAME ; class CSenBaseIdentityManager * CSenBaseIdentityManager::NewLC(class MSenCoreServiceManager &)
+	?NewL@CSenWiseIdentityProvider@@SAPAV1@VTPtrC8@@ABVTDesC8@@1@Z @ 11 NONAME ; class CSenWiseIdentityProvider * CSenWiseIdentityProvider::NewL(class TPtrC8, class TDesC8 const &, class TDesC8 const &)
+	?NewLC@CSenBaseIdentity@@SAPAV1@VTPtrC8@@@Z @ 12 NONAME ; class CSenBaseIdentity * CSenBaseIdentity::NewLC(class TPtrC8)
+	?NewLC@CSenWiseIdentityProvider@@SAPAV1@VTPtrC8@@ABVTDesC8@@1@Z @ 13 NONAME ; class CSenWiseIdentityProvider * CSenWiseIdentityProvider::NewLC(class TPtrC8, class TDesC8 const &, class TDesC8 const &)
+	?Identites@CSenUser@@QAEAAV?$RPointerArray@VCSenBaseIdentity@@@@XZ @ 14 NONAME ; class RPointerArray<class CSenBaseIdentity> & CSenUser::Identites(void)
+	??1CSenMultiUserIdentityManager@@UAE@XZ @ 15 NONAME ; CSenMultiUserIdentityManager::~CSenMultiUserIdentityManager(void)
+	??1CSenBaseIdentity@@UAE@XZ @ 16 NONAME ; CSenBaseIdentity::~CSenBaseIdentity(void)
+	?NewL@CSenBaseIdentityManager@@SAPAV1@AAVMSenCoreServiceManager@@@Z @ 17 NONAME ; class CSenBaseIdentityManager * CSenBaseIdentityManager::NewL(class MSenCoreServiceManager &)
+	?WriteDatabase@CSenBaseIdentityManager@@QAEHXZ @ 18 NONAME ; int CSenBaseIdentityManager::WriteDatabase(void)
+

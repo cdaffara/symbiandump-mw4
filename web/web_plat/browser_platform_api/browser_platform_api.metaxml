@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<api id="74a262b7808690577a2198af62e5fe7e" dataversion="1.0">
+  <name>Browser Platform API</name>
+  <description>Browser platform configuration API. Not for use outside of the packages web and webuis.</description>
+  <type>c++</type>
+  <subsystem>WebEngine</subsystem>
+  <libs>
+  </libs>
+  <release category="domain" sinceversion="5.1"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

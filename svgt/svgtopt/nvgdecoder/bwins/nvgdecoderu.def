@@ -1,0 +1,11 @@
+EXPORTS
+	?Rotate@CNvgEngine@@QAEXMMM@Z @ 1 NONAME ; void CNvgEngine::Rotate(float, float, float)
+	?ContentDimensions@CNvgEngine@@QAE?AVTSize@@ABVTDesC8@@@Z @ 2 NONAME ; class TSize CNvgEngine::ContentDimensions(class TDesC8 const &)
+	?SetPreserveAspectRatio@CNvgEngine@@QAEXW4TNvgAlignStatusType@@W4TNvgMeetOrSliceType@@@Z @ 3 NONAME ; void CNvgEngine::SetPreserveAspectRatio(enum TNvgAlignStatusType, enum TNvgMeetOrSliceType)
+	?ResetNvgState@CNvgEngine@@QAEXXZ @ 4 NONAME ; void CNvgEngine::ResetNvgState(void)
+	?CreateNVGIcon@CNvgEngine@@QAEPAVMNVGIcon@@ABVTDesC8@@ABVTSize@@@Z @ 5 NONAME ; class MNVGIcon * CNvgEngine::CreateNVGIcon(class TDesC8 const &, class TSize const &)
+	?DrawNvg@CNvgEngine@@QAEHABVTDesC8@@ABVTSize@@PAVCFbsBitmap@@2@Z @ 6 NONAME ; int CNvgEngine::DrawNvg(class TDesC8 const &, class TSize const &, class CFbsBitmap *, class CFbsBitmap *)
+	??1CNvgEngine@@UAE@XZ @ 7 NONAME ; CNvgEngine::~CNvgEngine(void)
+	?NewL@CNvgEngine@@SAPAV1@XZ @ 8 NONAME ; class CNvgEngine * CNvgEngine::NewL(void)
+	?SetBackgroundColor@CNvgEngine@@QAEXK@Z @ 9 NONAME ; void CNvgEngine::SetBackgroundColor(unsigned long)
+

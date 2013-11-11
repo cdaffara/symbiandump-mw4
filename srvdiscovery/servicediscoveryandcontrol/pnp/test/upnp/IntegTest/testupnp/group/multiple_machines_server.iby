@@ -1,0 +1,229 @@
+// Copyright (c) 2008-2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+
+#ifndef __MULTIPLE_MACHINES_SERVER_IBY__
+#define __MULTIPLE_MACHINES_SERVER_IBY__
+
+#include <testexecute.iby>
+// Product code iby files
+
+file=ABI_DIR\BUILD_DIR\multiple_machines_server.exe		                 Sys\Bin\multiple_machines_server.exe	
+
+//server scripts
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0001.script																					upnp\testupnp\server\scripts\upnp_discovery_0001.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0002.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0002.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0002_1.script                                                                                  upnp\testupnp\server\scripts\upnp_discovery_0002_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0003.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0003.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0004.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0004.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0005.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0005.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0006.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0006.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0007.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0007.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0008.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0008.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0008_1.script                                                                                  upnp\testupnp\server\scripts\upnp_discovery_0008_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0009.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0009.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0010.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0010.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0011.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0011.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0012.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0012.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0012_1.script                                                                                  upnp\testupnp\server\scripts\upnp_discovery_0012_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0013.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0013.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0014.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0014.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0015.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0015.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0016.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0016.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0017.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0017.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0018.script                                                                                    upnp\testupnp\server\scripts\upnp_discovery_0018.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_discovery_0018_1.script                                                                                  upnp\testupnp\server\scripts\upnp_discovery_0018_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_open_discovery_001.script                                                         						upnp\testupnp\server\scripts\upnp_open_discovery_001.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_open_discovery_001_rev.script                                                     						upnp\testupnp\server\scripts\upnp_open_discovery_001_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_initiateaction_0019.script                                                                               upnp\testupnp\server\scripts\upnp_initiateaction_0019.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_initiateaction_0019_rev.script                                                                           upnp\testupnp\server\scripts\upnp_initiateaction_0019_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_cancel_discovery.script                                                                                  upnp\testupnp\server\scripts\upnp_cancel_discovery.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_cancel_discovery_rev.script                                                                              upnp\testupnp\server\scripts\upnp_cancel_discovery_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_cancel_discovery_1.script                                                                                upnp\testupnp\server\scripts\upnp_cancel_discovery_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_cancel_discovery_1_rev.script                                                                            upnp\testupnp\server\scripts\upnp_cancel_discovery_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_cancel_discovery_0001.script                                                                             upnp\testupnp\server\scripts\upnp_cancel_discovery_0001.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_cancel_discovery_0001_rev.script                                                                         upnp\testupnp\server\scripts\upnp_cancel_discovery_0001_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_publish_regression.script                                                                                upnp\testupnp\server\scripts\upnp_publish_regression.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_service_description_0031.script                                                                   upnp\testupnp\server\scripts\upnp_vendor_service_description_0031.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036.script	                                                                            upnp\testupnp\server\scripts\upnp_register_notify_0036.script	
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_discovery_response_time_0049_1.script                                                           upnp\testupnp\server\scripts\upnp_validate_discovery_response_time_0049_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_discovery_response_time_0049_1_rev.script                                                       upnp\testupnp\server\scripts\upnp_validate_discovery_response_time_0049_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_1.script                                                                  upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_1_rev.script                                                              upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_2.script                                                                  upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_2_rev.script                                                              upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_2_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_3.script                                                                  upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_3.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_3_rev.script                                                              upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_3_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_4.script                                                                  upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_4.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_4_rev.script                                                              upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_4_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_5.script                                                                  upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_5.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_5_rev.script                                                              upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_5_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_6.script                                                                  upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_6.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_6_rev.script                                                              upnp\testupnp\server\scripts\upnp_vendor_device_description_0029_6_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_1.script                                                               upnp\testupnp\server\scripts\upnp_standard_service_description_0030_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_1_rev.script                                                           upnp\testupnp\server\scripts\upnp_standard_service_description_0030_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_2.script                                                               upnp\testupnp\server\scripts\upnp_standard_service_description_0030_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_2_rev.script                                                           upnp\testupnp\server\scripts\upnp_standard_service_description_0030_2_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_3.script                                                               upnp\testupnp\server\scripts\upnp_standard_service_description_0030_3.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_3_rev.script                                                           upnp\testupnp\server\scripts\upnp_standard_service_description_0030_3_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_4.script                                                               upnp\testupnp\server\scripts\upnp_standard_service_description_0030_4.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_4_rev.script                                                           upnp\testupnp\server\scripts\upnp_standard_service_description_0030_4_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_5.script                                                               upnp\testupnp\server\scripts\upnp_standard_service_description_0030_5.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_standard_service_description_0030_5_rev.script                                                           upnp\testupnp\server\scripts\upnp_standard_service_description_0030_5_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_1.script                                                                            upnp\testupnp\server\scripts\upnp_register_notify_0036_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_1_rev.script                                                                        upnp\testupnp\server\scripts\upnp_register_notify_0036_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_2.script                                                                            upnp\testupnp\server\scripts\upnp_register_notify_0036_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_2_rev.script                                                                        upnp\testupnp\server\scripts\upnp_register_notify_0036_2_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_3.script                                                                            upnp\testupnp\server\scripts\upnp_register_notify_0036_3.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_3_rev.script                                                                        upnp\testupnp\server\scripts\upnp_register_notify_0036_3_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_4.script                                                                            upnp\testupnp\server\scripts\upnp_register_notify_0036_4.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_4_rev.script                                                                        upnp\testupnp\server\scripts\upnp_register_notify_0036_4_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_5.script                                                                            upnp\testupnp\server\scripts\upnp_register_notify_0036_5.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_5_rev.script                                                                        upnp\testupnp\server\scripts\upnp_register_notify_0036_5_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_6.script                                                                            upnp\testupnp\server\scripts\upnp_register_notify_0036_6.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_6_rev.script                                                                        upnp\testupnp\server\scripts\upnp_register_notify_0036_6_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_7.script                                                                            upnp\testupnp\server\scripts\upnp_register_notify_0036_7.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_notify_0036_7_rev.script                                                                        upnp\testupnp\server\scripts\upnp_register_notify_0036_7_rev.script
+
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_cancel_register_notify_0037_1.script                                                                     upnp\testupnp\server\scripts\upnp_cancel_register_notify_0037_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_cancel_register_notify_0037_1_rev.script                                                                 upnp\testupnp\server\scripts\upnp_cancel_register_notify_0037_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_1.script                                                             upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_1_rev.script                                                         upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_2.script                                                             upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_2_rev.script                                                         upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_2_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_1.script                                                                         upnp\testupnp\server\scripts\upnp_renew_subscription_0039_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_1_rev.script                                                                     upnp\testupnp\server\scripts\upnp_renew_subscription_0039_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_2.script                                                                         upnp\testupnp\server\scripts\upnp_renew_subscription_0039_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_2_rev.script                                                                     upnp\testupnp\server\scripts\upnp_renew_subscription_0039_2_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_unsubscribe_0042_1.script                                                                                upnp\testupnp\server\scripts\upnp_unsubscribe_0042_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_unsubscribe_0042_1_rev.script                                                                            upnp\testupnp\server\scripts\upnp_unsubscribe_0042_1_rev.script                        
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_unsubscribe_0042_2.script                                                                                upnp\testupnp\server\scripts\upnp_unsubscribe_0042_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_unsubscribe_0042_2_rev.script                                                                            upnp\testupnp\server\scripts\upnp_unsubscribe_0042_2_rev.script 
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_send_notify_1.script                                                                                     upnp\testupnp\server\scripts\upnp_send_notify_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_send_notify_1_rev.script                                                                                 upnp\testupnp\server\scripts\upnp_send_notify_1_rev.script 
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_root_0001_1.script                                                                              upnp\testupnp\server\scripts\upnp_validate_root_0001_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_root_0001_1_rev.script		                                                                    upnp\testupnp\server\scripts\upnp_validate_root_0001_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_1.script                                                                 upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_2.script                                                                 upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_3.script                                                                 upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_3.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_1_rev.script                                                             upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_2_rev.script                                                             upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_2_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_3_rev.script                                                             upnp\testupnp\server\scripts\upnp_invalid_discovery_requests_0048_3_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_1.script                                                         upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_1.script  
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_1_rev.script                                                     upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_1_rev.script 
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_2.script                                                         upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_2.script  
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_2_rev.script                                                     upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_2_rev.script 
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_3.script                                                         upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_3.script  
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_3_rev.script                                                     upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_3_rev.script 
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_4.script                                                         upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_4.script  
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_4_rev.script                                                     upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_4_rev.script 
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_5.script                                                         upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_5.script  
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_5_rev.script                                                     upnp\testupnp\server\scripts\upnp_validate_describe_requests_headers_0060_5_rev.script 
+//data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_11.script                          upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_11.script
+//data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_12.script                          upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_12.script
+//data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_13.script                          upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_13.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_14.script                          upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_14.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_15.script                          upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_15.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_16.script                          upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_16.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0062_1.script                           upnp\testupnp\server\scripts\upnp_validate_device_registration_0062_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0062_1_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0062_1_rev.script
+//data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_11_rev.script                      upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_11_rev.script
+//data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_12_rev.script                      upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_12_rev.script
+//data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_13_rev.script                      upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_13_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_14_rev.script                      upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_14_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_15_rev.script                      upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_15_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_16_rev.script                      upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_16_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_3.script										upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_3.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_4.script                                     upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_4.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_5.script                                     upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_5.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_6.script                                     upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_6.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_7.script                                     upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_7.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_8.script                                     upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_8.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_9.script                                     upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_9.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_10.script                                    upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_10.script               
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_11.script                                    upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_11.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_12.script                                    upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_12.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_13.script                                    upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_13.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_3_rev.script                                 upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_3_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_4_rev.script                                 upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_4_rev.script                  
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_5_rev.script                                 upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_5_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_6_rev.script                                 upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_6_rev.script 
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_7_rev.script                                 upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_7_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_8_rev.script                                 upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_8_rev.script 
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_9_rev.script                                 upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_9_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_10_rev.script                                upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_10_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_11_rev.script                                upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_11_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_12_rev.script                                upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_12_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_13_rev.script                                upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_13_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_14_rev.script                                upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_14_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_15_rev.script                                upnp\testupnp\server\scripts\upnp_register_state_change_services_0038_15_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_abruptclose_discovery_43_1.script                                                upnp\testupnp\server\scripts\upnp_abruptclose_discovery_43_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_abruptclose_describe_44_1.script                                                 upnp\testupnp\server\scripts\upnp_abruptclose_describe_44_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_abruptclose_discovery_43_1_rev.script                                            upnp\testupnp\server\scripts\upnp_abruptclose_discovery_43_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_abruptclose_describe_44_1_rev.script                                             upnp\testupnp\server\scripts\upnp_abruptclose_describe_44_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_3.script                                                 upnp\testupnp\server\scripts\upnp_renew_subscription_0039_3.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_4.script                                                 upnp\testupnp\server\scripts\upnp_renew_subscription_0039_4.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_5.script                                                 upnp\testupnp\server\scripts\upnp_renew_subscription_0039_5.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_6.script                                                 upnp\testupnp\server\scripts\upnp_renew_subscription_0039_6.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_7.script                                                 upnp\testupnp\server\scripts\upnp_renew_subscription_0039_7.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_8.script                                                 upnp\testupnp\server\scripts\upnp_renew_subscription_0039_8.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_9.script                                                 upnp\testupnp\server\scripts\upnp_renew_subscription_0039_9.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_10.script                                                upnp\testupnp\server\scripts\upnp_renew_subscription_0039_10.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_3_rev.script	                                            upnp\testupnp\server\scripts\upnp_renew_subscription_0039_3_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_4_rev.script	                                            upnp\testupnp\server\scripts\upnp_renew_subscription_0039_4_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_5_rev.script	                                            upnp\testupnp\server\scripts\upnp_renew_subscription_0039_5_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_6_rev.script	                                            upnp\testupnp\server\scripts\upnp_renew_subscription_0039_6_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_7_rev.script	                                            upnp\testupnp\server\scripts\upnp_renew_subscription_0039_7_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_8_rev.script	                                            upnp\testupnp\server\scripts\upnp_renew_subscription_0039_8_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_9_rev.script	                                            upnp\testupnp\server\scripts\upnp_renew_subscription_0039_9_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_renew_subscription_0039_10_rev.script                                            upnp\testupnp\server\scripts\upnp_renew_subscription_0039_10_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_refresh_advertisement_0045_1.script	                                            upnp\testupnp\server\scripts\upnp_refresh_advertisement_0045_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_refresh_advertisement_0045_2.script	                                            upnp\testupnp\server\scripts\upnp_refresh_advertisement_0045_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_refresh_advertisement_0045_1_rev.script	                                        upnp\testupnp\server\scripts\upnp_refresh_advertisement_0045_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_refresh_advertisement_0045_2_rev.script	                                        upnp\testupnp\server\scripts\upnp_refresh_advertisement_0045_2_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_initiateaction_0019_2.script                                                     upnp\testupnp\server\scripts\upnp_initiateaction_0019_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_initiateaction_0019_2_rev.script                                                 upnp\testupnp\server\scripts\upnp_initiateaction_0019_2_rev.script
+
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\discover_low_ver.script                                                 upnp\testupnp\server\scripts\discover_low_ver.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\discover_low_ver_1.script                                                 upnp\testupnp\server\scripts\discover_low_ver_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\discover_low_ver_2.script                                                 upnp\testupnp\server\scripts\discover_low_ver_2.script
+
+//The following tests to be executed only in UDEB mode
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_1.script							upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_1.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_2.script                           upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_2.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_3.script                           upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_3.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_4.script                           upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_4.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_5.script                           upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_5.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_6.script                           upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_6.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_7.script                           upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_7.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_8.script                           upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_8.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_9.script                           upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_9.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_10.script                          upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_10.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_1_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_1_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_2_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_2_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_3_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_3_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_4_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_4_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_5_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_5_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_6_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_6_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_7_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_7_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_8_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_8_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_9_rev.script                       upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_9_rev.script
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_10_rev.script                      upnp\testupnp\server\scripts\upnp_validate_device_registration_0061_10_rev.script
+
+
+//ini file
+data=EPOCROOT##epoc32\data\z\upnp\testupnp\server\testdata\ini_files\multiplemachines.ini                                                       			upnp\testupnp\server\testdata\ini_files\multiplemachines.ini
+
+#endif
+

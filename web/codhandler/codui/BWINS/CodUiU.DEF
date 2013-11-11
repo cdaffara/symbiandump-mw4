@@ -1,0 +1,26 @@
+EXPORTS
+	??0CCodViewerApp@@QAE@XZ @ 1 NONAME ; CCodViewerApp::CCodViewerApp(void)
+	??0CDdViewerApp@@QAE@XZ @ 2 NONAME ; CDdViewerApp::CDdViewerApp(void)
+	??1CCodDownloadImpl@@UAE@XZ @ 3 NONAME ; CCodDownloadImpl::~CCodDownloadImpl(void)
+	?GetPath@CCodDownloadImpl@@QBE?AVTPtrC16@@XZ @ 4 NONAME ; class TPtrC16 CCodDownloadImpl::GetPath(void) const
+	?Name@CCodDownloadImpl@@QAE?AVTPtrC16@@XZ @ 5 NONAME ; class TPtrC16 CCodDownloadImpl::Name(void)
+	?NewL@CCodDownloadImpl@@SAPAV1@AAVCCodDownload@@ABVTDesC8@@1AAVMCodDownloadObserver@@PAVCEikonEnv@@PBV3@PBVTDesC16@@@Z @ 6 NONAME ; class CCodDownloadImpl * CCodDownloadImpl::NewL(class CCodDownload &, class TDesC8 const &, class TDesC8 const &, class MCodDownloadObserver &, class CEikonEnv *, class TDesC8 const *, class TDesC16 const *)
+	?Progress@CCodDownloadImpl@@QBEABUTCodDownloadProgress@@XZ @ 7 NONAME ; struct TCodDownloadProgress const & CCodDownloadImpl::Progress(void) const
+	?ServiceFlowL@CCodDownloadImpl@@QAEXXZ @ 8 NONAME ; void CCodDownloadImpl::ServiceFlowL(void)
+	?SetUserData@CCodDownloadImpl@@QAEXPAX@Z @ 9 NONAME ; void CCodDownloadImpl::SetUserData(void *)
+	?StartL@CCodDownloadImpl@@QAEXPBVCAiwGenericParamList@@@Z @ 10 NONAME ; void CCodDownloadImpl::StartL(class CAiwGenericParamList const *)
+	?Stop@CCodDownloadImpl@@QAEXXZ @ 11 NONAME ; void CCodDownloadImpl::Stop(void)
+	?Type@CCodDownloadImpl@@QBE?AVTPtrC8@@XZ @ 12 NONAME ; class TPtrC8 CCodDownloadImpl::Type(void) const
+	?UserData@CCodDownloadImpl@@QBEPAXXZ @ 13 NONAME ; void * CCodDownloadImpl::UserData(void) const
+	?NextUrlL@CCodDownloadImpl@@QBEPAVHBufC8@@XZ @ 14 NONAME ; class HBufC8 * CCodDownloadImpl::NextUrlL(void) const
+	?RemovableMedia@CCodDownloadImpl@@QBEHXZ @ 15 NONAME ; int CCodDownloadImpl::RemovableMedia(void) const
+	?SetCodDlAttached@CCodDownloadImpl@@QAEXH@Z @ 16 NONAME ; void CCodDownloadImpl::SetCodDlAttached(int)
+	?UpdatedDDUriL@CCodDownloadImpl@@QBEPAVHBufC8@@XZ @ 17 NONAME ; class HBufC8 * CCodDownloadImpl::UpdatedDDUriL(void) const
+	?Pause@CCodDownloadImpl@@QAEXXZ @ 18 NONAME ; void CCodDownloadImpl::Pause(void)
+	?GetPostResponseUrlL@CCodDownloadImpl@@QBEPAVHBufC8@@XZ @ 19 NONAME ; class HBufC8 * CCodDownloadImpl::GetPostResponseUrlL(void) const
+	?ActiveDownload@CCodDownloadImpl@@QAEHXZ @ 20 NONAME ; int CCodDownloadImpl::ActiveDownload(void)
+	?GetDestFilePath@CCodDownloadImpl@@QBE?AVTPtrC16@@H@Z @ 21 NONAME ; class TPtrC16 CCodDownloadImpl::GetDestFilePath(int) const
+	?NewL@CCodDownloadImpl@@SAPAV1@AAVCCodDownload@@HVTUid@@ABVTDesC8@@AAVMCodDownloadObserver@@PAVCEikonEnv@@PBV4@PBVTDesC16@@@Z @ 22 NONAME ; class CCodDownloadImpl * CCodDownloadImpl::NewL(class CCodDownload &, int, class TUid, class TDesC8 const &, class MCodDownloadObserver &, class CEikonEnv *, class TDesC8 const *, class TDesC16 const *)
+	?UpdatedDownloadDataL@CCodDownloadImpl@@QBEPAVHBufC8@@XZ @ 23 NONAME ; class HBufC8 * CCodDownloadImpl::UpdatedDownloadDataL(void) const
+	?UpdatedTrackDataL@CCodDownloadImpl@@QBEPAVHBufC8@@AAH@Z @ 24 NONAME ; class HBufC8 * CCodDownloadImpl::UpdatedTrackDataL(int &) const
+

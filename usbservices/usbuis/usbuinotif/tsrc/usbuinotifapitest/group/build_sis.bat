@@ -1,0 +1,23 @@
+@rem
+@rem Copyright (c) 2006 - 2010 Nokia Corporation and/or its subsidiary(-ies).
+@rem All rights reserved.
+@rem This material, including documentation and any related 
+@rem computer programs, is protected by copyright controlled by 
+@rem Nokia. All rights are reserved. Copying, including 
+@rem reproducing, storing, adapting or translating, any 
+@rem or all of this material requires the prior written consent of 
+@rem Nokia. This material also contains confidential 
+@rem information which may not be disclosed to others without the 
+@rem prior written consent of Nokia.
+@rem
+@rem Initial Contributors:
+@rem Nokia Corporation - initial contribution.
+@rem
+@rem Contributors:
+@rem
+@rem Description:  
+@rem
+
+call abld test build armv5
+call makesis usbuinotifapitest.pkg
+call signsis usbuinotifapitest.sis usbuinotifapitest.sisx rd.cer rd-key.pem

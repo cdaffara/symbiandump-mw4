@@ -1,0 +1,69 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Global definitions for Widget UI.
+*
+*/
+
+
+#ifndef WIDGETAPPDEFS_RH
+#define WIDGETAPPDEFS_RH
+
+/* Application UID of WidgetUI. */
+#define KWidgetAppUid 0x10282822 
+
+/**
+* When launching a widget, widget UID needs to be provided. In case the
+* widget is supposed to be put to Home Screen's miniview, the size of 
+* widget must be provided also. Default non-miniview value for size is (0, 0).
+*
+* The data is provided to WidgetUI in TUInt8 descriptor, so it can be read
+* with RReadStream. The descriptor is passed to WidgetUI as command line 
+* parameter, as in RApaLsSession::StartDocument.
+*
+* Message parameter format for WidgetUI for launching a widget:
+* TUInt32 TUInt32 TInt32 TInt32 
+* Description:
+*
+* Protocol version (currently 1)
+* UID of widget
+* Miniview width value (scaled down to TInt automatically)
+* Miniview height value (scaled down to TInt automatically).
+
+* There is no protocol version identifier in the message due to 
+* legacy reasons (S60 ver 3.2.3). For 5.0
+*
+* It is possible to bring a widget to foreground also by 
+* calling TApaTask::BringToForeground when WidgetUI is already running. 
+* In this case, use UID KNullUid.
+*/
+/* sizeof( TUint32 )+ sizeof( TUid ) + sizeof( TInt32 ) */
+#define KWidgetUiMaxMessageLength 12
+
+enum TWidgetOperations
+    {
+    LaunchFullscreen,
+    LaunchMiniview,
+    Deactivate,
+    WidgetResume,
+    WidgetSuspend,
+    WidgetSelect,
+    WidgetOnline,
+    WidgetOffline,
+    WidgetRestart,
+    Uninitialized
+    };
+
+#endif // WIDGETAPPDEFS_RH
+
+// End of File

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0" xmlns:qt="http://www.nokia.com/qt">
+ <package id="web" name="Web" levels="plugin utils support main">
+  <collection id="web" name="Web Engine" level="support">
+    <component id="web_build" name="Web Engine Build" introduced="^4" filter="s60">
+      <unit bldFile="group" />
+    </component>
+  </collection>
+ </package>
+</SystemDefinition>

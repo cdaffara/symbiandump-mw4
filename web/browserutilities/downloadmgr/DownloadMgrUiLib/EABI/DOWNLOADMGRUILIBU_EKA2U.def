@@ -1,0 +1,35 @@
+EXPORTS
+	_ZN18CDownloadMgrUiBase24SetServerAppExitObserverEP25MAknServerAppExitObserver @ 1 NONAME
+	_ZN25CDownloadMgrUiLibRegistry22RegisterDownloadsListLEv @ 2 NONAME
+	_ZN25CDownloadMgrUiLibRegistry25RegisterUserInteractionsLEv @ 3 NONAME
+	_ZN25CDownloadMgrUiLibRegistry4NewLER16RHttpDownloadMgr @ 4 NONAME
+	_ZN25CDownloadMgrUiLibRegistryD0Ev @ 5 NONAME
+	_ZN25CDownloadMgrUiLibRegistryD1Ev @ 6 NONAME
+	_ZN25CDownloadMgrUiLibRegistryD2Ev @ 7 NONAME
+	_ZN26CDownloadMgrUiDownloadMenu8AddMenuLEiR12CEikMenuPanei @ 8 NONAME
+	_ZN27CDownloadMgrUiDownloadsList16GetIntAttributeLEjRl @ 9 NONAME
+	_ZN27CDownloadMgrUiDownloadsList16SetIntAttributeLEjl @ 10 NONAME
+	_ZN27CDownloadMgrUiDownloadsList17GetBoolAttributeLEjRi @ 11 NONAME
+	_ZN27CDownloadMgrUiDownloadsList17SetBoolAttributeLEji @ 12 NONAME
+	_ZN27CDownloadMgrUiDownloadsList19GetStringAttributeLEjR5TDes8 @ 13 NONAME
+	_ZN27CDownloadMgrUiDownloadsList19GetStringAttributeLEjR6TDes16 @ 14 NONAME
+	_ZN27CDownloadMgrUiDownloadsList19SetStringAttributeLEjRK6TDesC8 @ 15 NONAME
+	_ZN27CDownloadMgrUiDownloadsList19SetStringAttributeLEjRK7TDesC16 @ 16 NONAME
+	_ZN27CDownloadMgrUiDownloadsList21DisplayDownloadsListLEv @ 17 NONAME
+	_ZN27CDownloadMgrUiDownloadsList29CancelDisplayingDownloadsListEv @ 18 NONAME
+	_ZN30CDownloadMgrUiUserInteractions13PrepareToExitER9CEikAppUi18TClientAppExitType10TVwsViewId4TUidRK6TDesC8 @ 19 NONAME
+	_ZN30CDownloadMgrUiUserInteractions15HandleDownloadLER13RHttpDownload @ 20 NONAME
+	_ZN30CDownloadMgrUiUserInteractions16GetIntAttributeLEjRl @ 21 NONAME
+	_ZN30CDownloadMgrUiUserInteractions16SetIntAttributeLEjl @ 22 NONAME
+	_ZN30CDownloadMgrUiUserInteractions17GetBoolAttributeLEjRi @ 23 NONAME
+	_ZN30CDownloadMgrUiUserInteractions17SetBoolAttributeLEji @ 24 NONAME
+	_ZN30CDownloadMgrUiUserInteractions19GetStringAttributeLEjR5TDes8 @ 25 NONAME
+	_ZN30CDownloadMgrUiUserInteractions19GetStringAttributeLEjR6TDes16 @ 26 NONAME
+	_ZN30CDownloadMgrUiUserInteractions19SetStringAttributeLEjRK6TDesC8 @ 27 NONAME
+	_ZN30CDownloadMgrUiUserInteractions19SetStringAttributeLEjRK7TDesC16 @ 28 NONAME
+	_ZN30CDownloadMgrUiUserInteractions9OkToExitLEv @ 29 NONAME
+	_ZNK27CDownloadMgrUiDownloadsList12DownloadMenuEv @ 30 NONAME
+	_ZNK27CDownloadMgrUiDownloadsList5CountEv @ 31 NONAME
+	_ZNK27CDownloadMgrUiDownloadsList9IsVisibleEv @ 32 NONAME
+	_ZN30CDownloadMgrUiUserInteractions13PrepareToExitEmmm @ 33 NONAME
+

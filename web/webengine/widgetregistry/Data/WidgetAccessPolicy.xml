@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<policy>
+<!--  an alias groups a set of capabilities under one name 
+--> 
+        <alias name="UserDataGroup">
+                <info>This can contain info which can be displayed with capabilities while prompting</info> 
+                <capabilities>
+                        <capability>ReadUserData</capability> 
+                        <capability>WriteUserData</capability> 
+                        <capability>Location</capability> 
+                        <capability>UserEnvironment</capability> 
+                </capabilities>
+        </alias>
+        <alias name="NetworkGroup">
+                <capabilities>
+                        <!-- capability>UserPrivacyData</capability
+                        --> 
+                        <capability>NetworkServices</capability> 
+                        <capability>LocalServices</capability> 
+                </capabilities>
+        </alias>
+        <alias name="DeviceResourcesGroup">
+                <capabilities>
+                        <!-- capability>UserPrivacyData</capability
+                        --> 
+                        <capability>MultimediaDD</capability> 
+                        <capability>ReadDeviceData</capability> 
+                        <capability>WriteDeviceData</capability> 
+                        <capability>CommDD</capability> 
+                        <capability>SurroundingsDD</capability> 
+                        <capability>NetworkControl</capability> 
+                </capabilities>
+        </alias>
+        <!--  specify a protection domain 
+        --> 
+        <domain name="UnTrusted">
+        <!--  user-grantable capabilities for this domain 
+        --> 
+                <user>
+                        <condition>session</condition> 
+                        <!-- <condition>blanket</condition> to permanenty allow these capabilities
+                        -->
+                        <defaultCondition>session</defaultCondition> 
+                        <capabilities>
+                                <capability>UserDataGroup</capability> 
+                                <capability>NetworkGroup</capability> 
+                        </capabilities>
+                </user>
+                <user>
+                        <!-- will prompt every time these capbilities are required
+                        -->
+                        <defaultCondition>session</defaultCondition>
+                        <condition>oneshot</condition>
+                        <capabilities>
+                                <capability>DeviceResourcesGroup</capability> 
+                        </capabilities>
+                </user>
+        <!--  could extend this to other types of conditional capabilities 
+        --> 
+        </domain>
+</policy>

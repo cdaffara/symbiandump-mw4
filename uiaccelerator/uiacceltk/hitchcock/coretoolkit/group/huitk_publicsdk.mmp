@@ -1,0 +1,61 @@
+/*
+* Copyright (c) 2006-2007 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project Hitchcock Core
+*                intended for building the Hitchcock UI Toolkit using
+*                a public S60 3.0 SDK.
+*
+*/
+
+
+
+// Compile for Series 60. (This is the default)
+MACRO           SERIES_60
+
+// Compile for Series 80.
+// Note: not tested, most probably will not work..
+//MACRO           SERIES_80
+
+// Uses glReadPixels instead of glCopyTexSubImage in CHuiGles10TextureProcessor.
+//MACRO           HUI_PROCESSOR_READPIXELS
+
+// Use this to compile on software driver. Will disable full screen anti-aliasing.
+//MACRO           OPENGLES_SW_DRIVER
+
+// Print debug messages using CHuiStatic::Printf(). This affects only debug
+// builds - there is no debug output for release builds. To make release
+// builds to generate debug output with CHuiStatic::Printf(), you have to
+// manually tune HuiUtil.h header and recompile everything. You have to
+// know what you're doing there! ;)
+// MACRO           HUI_DEBUG_WITH_PRINTF
+
+// Print debug messages from the frame draw code, using RDebug
+// Be aware that this creates A LOT of debug output.-
+// MACRO 			HUI_DEBUG_FRAMEDRAW
+
+// Print debug messages from the frame drawing code, using CHuiStatic::Printf()
+// This is an alternative for HUI_DEBUG_FRAMEDRAW
+// MACRO 			HUI_DEBUG_FRAMEDRAW_WITH_PRINTF
+
+// Disable the default render surface. If disabled, a display must be
+// created before textures can be loaded.
+//MACRO         GLES10_DISABLE_DEFAULT_RENDER_SURFACE
+
+// These  will constrain the used APIs to ones that are available in public SDK.
+// Enable these, if using a public SDK!
+MACRO           PUBLIC_SDK
+#define PUBLIC_SDK
+
+#include "huitk_base.mmp"
+
+

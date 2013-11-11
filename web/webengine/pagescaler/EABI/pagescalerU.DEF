@@ -1,0 +1,14 @@
+EXPORTS
+	_ZN11CPageScaler17HasOverlaySupportEv @ 1 NONAME
+	_ZN11CPageScaler4NewLER19MPageScalerCallback12TDisplayModei @ 2 NONAME
+	_ZTI11CPageScaler @ 3 NONAME ; #<TI>#
+	_ZTI13CMinimapTimer @ 4 NONAME ; #<TI>#
+	_ZTI14CMinimapScaler @ 5 NONAME ; #<TI>#
+	_ZTI17CMinimapGenerator @ 6 NONAME ; #<TI>#
+	_ZTI8CMinimap @ 7 NONAME ; #<TI>#
+	_ZTV11CPageScaler @ 8 NONAME ; #<VT>#
+	_ZTV13CMinimapTimer @ 9 NONAME ; #<VT>#
+	_ZTV14CMinimapScaler @ 10 NONAME ; #<VT>#
+	_ZTV17CMinimapGenerator @ 11 NONAME ; #<VT>#
+	_ZTV8CMinimap @ 12 NONAME ; #<VT>#
+

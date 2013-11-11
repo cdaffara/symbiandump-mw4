@@ -1,0 +1,108 @@
+;
+; Copyright (c) 2005 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description:         
+;
+&EN
+; Header
+#{"S60SOA"}, (0x101F96F4), 1,0,0, TYPE=SA
+
+;Supports Series 60 v 5.0
+;[0x101F7961], 0, 0, 0, {"Series60ProductID"} 
+
+; Localized Vendor name
+%{"Nokia"}
+
+; Unique Vendor Name
+:"Nokia"
+; The WSF server - do not rename(!)
+
+; The WSF server - do not rename(!)
+"" -"z:\sys\bin\sen.exe"
+
+"" -"z:\sys\bin\sennotdlg.dll"
+
+"" -"z:\sys\bin\senframework.dll"
+"" -"z:\sys\bin\senservconn.dll"
+"" -"z:\sys\bin\sencredentialmanager.dll"
+"" -"z:\sys\bin\senfragment.dll"
+"" -"z:\sys\bin\senhostconn.dll"
+"" -"z:\sys\bin\senhostlettransportplugin.dll"
+""-"z:\Resource\Plugins\senHostletTransportPlugin.RSC"
+"" -"z:\sys\bin\senhttpchanneltransport.dll"
+""-"z:\Resource\Plugins\senHttpChannelTransport.RSC"
+"" -"z:\sys\bin\senlocaltransportplugin.dll"
+""-"z:\Resource\Plugins\senLocalTransportPlugin.RSC"
+"" -"z:\sys\bin\senlogger.dll"
+"" -"z:\sys\bin\senmessages.dll"
+"" -"z:\sys\bin\senprovider.dll"
+"" -"z:\sys\bin\senrestplugin.dll"
+""-"z:\Resource\Plugins\senrestplugin.RSC"
+"" -"z:\sys\bin\senservmgr.dll"
+"" -"z:\sys\bin\senwsibasicplugin.dll"
+""-"z:\Resource\Plugins\senWsiBasicPlugin.RSC"
+"" -"z:\sys\bin\wsconnagent.dll"    
+""-"z:\sys\bin\senidentitymanager.dll"
+
+"" -"z:\sys\bin\wspolicy.dll"
+"" -"z:\sys\bin\wsstarmessagehandlers.dll"
+""-"z:\Resource\Plugins\WSStarMessageHandlers.RSC"
+"" -"z:\sys\bin\wsstarplugin.dll"
+""-"z:\Resource\Plugins\wsstarplugin.RSC"
+
+"" -"z:\sys\bin\senservdesc.dll"
+"" -"z:\sys\bin\senxml.dll"
+"" -"z:\sys\bin\senutils.dll"
+
+
+; ECOM plugins
+; IdWsfPlugin
+"" -"z:\sys\bin\senidwsfplugin.dll"
+"" -"z:\Resource\Plugins\SenIDWSFplugin.RSC"
+
+; IdWsfSecurityMechanism
+"" -"z:\sys\bin\senidwsfsecmech.dll" 
+"" -"z:\Resource\Plugins\SenIdWsfSecMech.RSC"
+
+; PasswordTransforms
+"" -"z:\sys\bin\senpasswordtransforms.dll"
+"" -"z:\Resource\Plugins\SenPasswordTransforms.RSC"
+
+; Notifier plugin
+"" -"z:\sys\bin\sennotifierplugin.dll"
+"" -"z:\Resource\Plugins\sennotifierplugin.RSC"
+;\epoc32\release\armv5\urel\sennotifierplugin_REG.RSC" -"z:\Resource\Plugins\sennotifierplugin_REG.RSC"
+"" -"z:\private\10003a4a\SenNotifierPluginDlgImpl.RSC"
+
+; NCIM dlls
+"" -"z:\sys\bin\wsovi.dll"
+"" -"z:\sys\bin\OviPlugin.dll"
+"" -"z:\sys\bin\wsaccountmanager.dll"
+
+""-"z:\Resource\Plugins\wsovi.RSC"
+""-"z:\Resource\Plugins\OviPlugin.RSC"
+""-"z:\Resource\apps\ncimoviavkonpluginrss.*"
+"" -"z:\sys\bin\oviuicontrols.dll"
+"" -"z:\sys\bin\wsatompub.dll"
+""-"z:\private\101F96F4\backup_registration.xml"  
+
+; VTCP dlls
+"" -"z:\sys\bin\vtcpclient.dll"
+"" -"z:\sys\bin\vtcpserver.exe"
+"" -"z:\sys\bin\vtcpnetworkmonitor.dll"
+"" -"z:\sys\bin\vtcpcmpfilter.dll"
+"" -"z:\sys\bin\senvtcptransport.dll"
+
+""-"z:\Resource\Plugins\vtcpnetworkmonitor.rsc"
+""-"z:\Resource\Plugins\vtcpcmpfilter.rsc"
+""-"z:\Resource\Plugins\senvtcptransport.rsc"

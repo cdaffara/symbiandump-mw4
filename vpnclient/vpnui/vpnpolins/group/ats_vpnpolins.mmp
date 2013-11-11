@@ -1,0 +1,65 @@
+/*
+* Copyright (c) 2006 - 2008 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file for project vpnpolins
+*
+*/
+
+#include <platform_paths.hrh>
+
+TARGET          vpnpolins.exe
+TARGETTYPE      exe
+UID             0 0x1000597E
+
+CAPABILITY		NetworkControl ReadDeviceData DiskAdmin
+VENDORID		VID_DEFAULT 
+
+MACRO ATS_BUILD
+
+SOURCEPATH      ../src
+SOURCE          policyinstaller.cpp 
+SOURCE          zipfiledecompressor.cpp
+SOURCE          cmdfileparser.cpp
+SOURCE          vpnbundlehandler.cpp
+SOURCE          vpndevlockhandler.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../vpnpolicyrecognizer/inc
+USERINCLUDE     ../../../vpnengine/vpnmanager/inc
+USERINCLUDE		../../vpnecomnotifier/inc
+USERINCLUDE     ../../../vpnengine/pkiserviceapi/inc
+USERINCLUDE     ../../../vpnengine/vpncommon/inc
+USERINCLUDE     ../../../vpnengine/utlpkcs12/inc
+USERINCLUDE     ../../../vpnengine/utlxml/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+START RESOURCE ..\data\vpnpolins_reg.rss
+TARGETPATH  \private\10003a3f\apps
+END
+
+LIBRARY         vpnapi.lib
+LIBRARY         euser.lib
+LIBRARY         apparc.lib 
+LIBRARY         efsrv.lib
+LIBRARY         bafl.lib 
+LIBRARY         ezip.lib
+LIBRARY         sysutil.lib
+
+LIBRARY         utlpkcs12.lib
+LIBRARY         utlxml.lib
+
+// File logger only needed for debug builds
+DEBUGLIBRARY         flogger.lib
+
+

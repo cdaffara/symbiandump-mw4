@@ -1,0 +1,42 @@
+/*
+* Copyright (c) 2006 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file for project UsbBasicPersonality
+*
+*/
+
+#include <platform_paths.hrh>
+
+target usbbasicpersonality.dll
+UID              	0x10009d8d 0x10274797
+VENDORID      VID_DEFAULT
+
+CAPABILITY    LocalServices ReadDeviceData NetworkControl WriteDeviceData DiskAdmin ReadUserData WriteUserData ProtServ
+targettype plugin
+
+SOURCEPATH ../src
+SOURCE CUsbActiveBasicHandler.cpp UsbActiveBasicHandlerImp.cpp
+USERINCLUDE ../inc
+
+systeminclude ../../../inc
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE /epoc32/include/ecom
+
+start resource 10274797.rss
+target usbbasicpersonality.rsc
+end
+
+LIBRARY euser.lib
+LIBRARY usbpersonality.lib
+
+DEBUGLIBRARY  flogger.lib            // File logging

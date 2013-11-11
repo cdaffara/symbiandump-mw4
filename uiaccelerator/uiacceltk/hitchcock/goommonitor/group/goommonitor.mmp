@@ -1,0 +1,84 @@
+/*
+* Copyright (c) 2006-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+TARGET          goommonitor.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x10282DBF
+
+CAPABILITY      CAP_GENERAL_DLL
+VENDORID        VID_DEFAULT
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../CommonInc
+
+
+// This is a SYSTEMINCLUDE macro containing the middleware
+// layer specific include directories
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE /epoc32/include/libc
+
+SOURCEPATH      ../src
+SOURCE          goomIdletimerule.cpp
+SOURCE          goomaction.cpp
+SOURCE          goomactionconfig.cpp
+SOURCE          goomactionlist.cpp
+SOURCE          goomactionref.cpp
+SOURCE          goomappclosetimer.cpp
+SOURCE          goomappclosewatcher.cpp
+SOURCE          goomapplicationconfig.cpp
+SOURCE          goomcloseapp.cpp
+SOURCE          goomcloseappconfig.cpp
+SOURCE          goomconfig.cpp
+SOURCE          goomconfigparser.cpp
+SOURCE          goomforegroundrule.cpp
+SOURCE          goomglobalconfig.cpp
+SOURCE          goomlog.cpp
+SOURCE          goommemorymonitor.cpp
+SOURCE          goommemorymonitorserver.cpp
+SOURCE          goommemorymonitorsession.cpp
+SOURCE          goommonitor.cpp
+SOURCE          goommonitorplugin.cpp
+SOURCE          goommonitorsession.cpp
+SOURCE          goompanic.cpp
+SOURCE          goompluginwaiter.cpp
+SOURCE          goomrunplugin.cpp
+SOURCE          goomrunpluginconfig.cpp
+SOURCE          goomwindowgrouplist.cpp
+SOURCE          goomwserveventreceiver.cpp
+
+LIBRARY         euser.lib
+LIBRARY         apparc.lib
+LIBRARY         eikcore.lib
+LIBRARY         aknnotify.lib
+LIBRARY         apgrfx.lib
+LIBRARY         ws32.lib
+LIBRARY         bafl.lib
+LIBRARY         ecom.lib
+LIBRARY         hal.lib
+LIBRARY         efsrv.lib
+LIBRARY         xmlframework.lib
+LIBRARY         cone.lib
+LIBRARY		libEGL.lib
+LIBRARY		libc.lib
+LIBRARY         alfdecoderserverclient.lib
+
+#ifdef _DEBUG
+LIBRARY         flogger.lib
+#endif

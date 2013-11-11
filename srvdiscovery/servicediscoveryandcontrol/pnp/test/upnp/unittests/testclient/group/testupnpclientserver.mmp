@@ -1,0 +1,57 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+TARGET		  testupnpclientserver.exe
+TARGETTYPE	  exe
+UID			 0 0xEBC6E6DE
+CAPABILITY       ReadDeviceData WriteDeviceData NetworkServices LocalServices ReadUserData WriteUserData
+
+USERINCLUDE	 	..\inc
+USERINCLUDE  	..\..\..\pnp\inc
+USERINCLUDE  	..\..\..\upnpplugin\inc
+USERINCLUDE 	..\..\..\upnputils\inc
+
+SYSTEMINCLUDE   \epoc32\include
+SYSTEMINCLUDE	\epoc32\include\upnp
+SYSTEMINCLUDE  	\epoc32\include\test
+
+
+SOURCEPATH	  ..\src
+SOURCE		  	testupnpclientserver.cpp 
+SOURCE			testclientstep.cpp
+
+SOURCE			..\..\..\upnpplugin\src\pnputils.cpp
+
+LIBRARY		euser.lib
+LIBRARY		pnp.lib
+LIBRARY		c32.lib 
+LIBRARY		estor.lib 
+LIBRARY		ecom.lib 
+LIBRARY		crypto.lib 
+LIBRARY		efsrv.lib 
+LIBRARY		testexecuteutils.lib 
+LIBRARY		testexecutelogclient.lib
+LIBRARY 	esock.lib 
+LIBRARY 	upnputils.lib
+LIBRARY 	netmeta.lib
+LIBRARY 	nodemessages.lib
+LIBRARY 	esocksvr.lib
+LIBRARY 	insock.lib
+LIBRARY 	inetprotutil.lib 
+
+
+SMPSAFE

@@ -1,0 +1,59 @@
+/*
+* Copyright (c) 2002-2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Resource header
+*
+*/
+
+
+#ifndef DOWNLOADMGRUILIB_HRH
+#define DOWNLOADMGRUILIB_HRH
+
+
+// DATA TYPES
+//enum ?declaration			// ?comment
+//typedef ?declaration		// ?comment
+
+enum TDownloadsListBoxControls
+    {
+    EDownloadsListBoxControl = 1
+    };
+
+enum TDownloadsListCommands
+    {
+    EDownloadsListCmdOpen = 1,
+    EDownloadsListCmdSave,
+    EDownloadsListCmdDelete,
+    EDownloadsListCmdPause,
+    EDownloadsListCmdResume,
+    EDownloadsListCmdResumeAll,
+    EDownloadsListCmdPlay,
+    EDownloadsListCmdCancel,
+    EDownloadsListCmdUseAs, 
+    EDownloadsListCmdGallery,
+    EDownloadsListCmdFileManager,
+    EDownloadsListCmdCancelAll
+    };
+
+
+#define KUiLibMaxDefAttrLength 32 // See KMaxDefAttrLength in HttpDownloadMgrCommon.h!
+
+enum TDMULAIWMENUIDs
+    {
+    EAIWPluginMenu  	=  0x6025,
+    EAIWPluginSubMenu 	=  0x7000
+    };
+
+#endif /* DOWNLOADMGRUILIB_HRH */
+
+// End of File

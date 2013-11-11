@@ -1,0 +1,169 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Command definitions for alfperfapp application.
+*
+*/
+
+
+#ifndef ALFPERFAPP_HRH
+#define ALFPERFAPP_HRH
+
+// UID of alfperfapp. This must be in synch with MMP file UID.
+#define KAlfPerfAppUidValue 0x20016B8D
+#define KAlfPerfAppDaemonUidValue 0x20016BB7
+
+enum TAlfPerfAppMenuCommands
+    {
+    EAlfPerfAppCmdRunAll = 0x5000,
+    EAlfPerfAppCmdRunAllContinuously = 0x5001,
+    EAlfPerfAppCmdClearFiles = 0x5002,
+        
+    // This starts range of command ids reserved for
+    // test cases. Range ends to 0xABAFFFF.
+    EAlfPerfAppCmdTestCase = 0xABA0000
+    };
+
+enum TAlfPerfAppTestCases
+    {
+    //
+    // Framework testing related commands
+    //
+    ElfPerfAppNoCase = 0x5000,
+    EAlfPerfAppFrameworkMin = 0x5100,
+    EAlfPerfAppFrameworkEmpty,
+    EAlfPerfAppFrameworkCreateFail,
+    EAlfPerfAppFrameworkSetupFailSynch,
+    EAlfPerfAppFrameworkExecuteFailSynch,
+    EAlfPerfAppFrameworkSetupFailAsynch,
+    EAlfPerfAppFrameworkExecuteFailAsynch,
+    EAlfPerfAppFrameworkMax,
+    
+    //
+    // Image related commands
+    //
+    EAlfPerfAppImageMin = 0x5200,
+    EAlfPerfAppImageBasicMoveScale,
+    EAlfPerfAppImageBasicMoveScaleNvgCS,
+    EAlfPerfAppImageBasicMoveScaleNvgTLV,
+    EAlfPerfAppImageManyImages,
+    EAlfPerfAppImageManyGifImages,
+    EAlfPerfAppImageManyPngImages,
+    EAlfPerfAppImageManySvgImages,
+    EAlfPerfAppImageManyNvgCSImages,
+    EAlfPerfAppImageManyNvgTLVImages,
+    EAlfPerfAppImageManyImagesWithPointerEvent,
+    EAlfPerfAppImageManyImagesWithAutoSize,
+    EAlfPerfAppImageAnimateFull,
+    EAlfPerfAppImageAnimate1of2,
+    EAlfPerfAppImageAnimate1of4,
+    EAlfPerfAppImageAnimate1of8,
+    EAlfPerfAppImageMax,
+    
+    //
+    // Layout related commands
+    //
+    EAlfPerfAppLayoutMin = 0x5300,
+    EAlfPerfAppLayoutGrid,
+    EAlfPerfAppLayoutDeck,
+    EAlfPerfAppLayoutAnchor,
+    EAlfPerfAppLayoutCurvePath,
+    EAlfPerfAppLayoutFlow, 
+    EAlfPerfAppLayoutViewport,
+    EAlfPerfAppLayoutMax,
+
+    //
+    // Text related commands
+    //
+    EAlfPerfAppTextMin = 0x5400,
+    EAlfPerfAppTextBasicMoveScale,
+    EAlfPerfAppTextManyTexts,
+    EAlfPerfAppTextManyTextsWithPointerEvent,
+    EAlfPerfAppTextManyTextsWithAutoSize,
+    EAlfPerfAppTextInactiveVisuals,
+    EAlfPerfAppTextMax,
+
+    //
+    // Cover test related commands
+    //
+    EAlfPerfAppCoverMin = 0x5500,
+    EAlfPerfAppCover,
+    EAlfPerfAppCoverLandscape,
+    EAlfPerfAppCoverRotate,
+    EAlfPerfAppCoverClipZoomLargeImage,
+    EAlfPerfAppCoverClipZoomBigImage,
+    EAlfPerfAppCoverClipZoomVga,
+    EAlfPerfAppCoverClipZoomAutoSize,
+    EAlfPerfAppCoverMax,
+
+    //
+    // App Suite test related commands
+    //
+    EAlfPerfAppSuiteMin = 0x5600,
+    EAlfPerfAppSuiteCaseScrollContinuousPortrait,
+    EAlfPerfAppSuiteCaseScrollIncrementalPortrait,
+    EAlfPerfAppSuiteCaseScrollContinuousLandscape,
+    EAlfPerfAppSuiteCaseScrollIncrementalLandscape,
+    EAlfPerfAppSuiteMax,
+    
+    //
+    // Gallery related commands
+    //
+    EAlfPerfAppGalleryMin = 0x5700,
+    EAlfPerfAppGallery,
+    EAlfPerfAppGalleryLandscape,
+    EAlfPerfAppGalleryMax,
+    
+    //
+    // Avkon related commands
+    //
+    EAlfPerfAppAvkonMin = 0x5800,
+    EAlfPerfAppAvkonBasicWinGc,
+    EAlfPerfAppAvkonMax
+   };
+
+#define KAlfPerfAppMenuPaneResourceId 0xBAB0000
+
+/**
+ * This defines flags that can be used in ALFPERFAPP_TESTSUITE's flags field.
+ */
+enum TAlfPerfAppTestSuiteFlags
+    {
+    /**
+     * Excludes this suite from being executed when top level run all option 
+     * is selected.
+     */
+    EAlfPerfAppTestSuiteFlagExcludeFromRunAll = 0x1
+    };
+
+enum TAlfPerfAppTestCaseFlags
+    {
+    /*
+     * Marks that this case requires InActive-flag from uiaccelerator.
+     * These cases will be omitted if ALFPERFAPP_ENABLE_INACTIVE_FLAG_CASES is not defined.
+     */ 
+    EAlfPerfAppTestCaseFlagRequiresInActiveFlag = 0x1
+    };
+
+/**
+ * Ipc commands for daemon.
+ */
+enum TAlfPerfAppDaemonIpc
+    {
+    EAlfPerfAppIpcGetMeasurements = 0xA0000,
+    EAlfPerfAppIpcEnableActivityPoll
+    };
+
+
+
+#endif // ALFPERFAPP_HRH

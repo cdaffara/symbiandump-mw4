@@ -1,0 +1,96 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senxml
+*
+*/
+
+
+
+
+
+
+
+
+#if defined(__SERIES60_) && defined(EKA2)
+
+    #ifndef __SERIES60_30__
+        // To get the OS_LAYER_SYSTEMINCLUDE-definition
+        #include <platform_paths.hrh>
+    #endif
+
+#endif
+
+TARGET         SenXmlBCTest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E7
+
+#if defined(EKA2)
+CAPABILITY      ALL -TCB
+VENDORID VID_DEFAULT
+// SECUREID     0x00000000
+#endif
+
+//TARGETPATH      ?target_path
+DEFFILE         SenXmlBCTest.def
+
+SOURCEPATH      ../src
+SOURCE          SenXml.cpp
+SOURCE          SenXmlCases.cpp
+SOURCE					testxml.cpp
+
+
+//RESOURCE        resource_file
+//RESOURCE        resource_file2
+
+USERINCLUDE     ../inc
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   /epoc32/include/libc
+
+#if defined(__SERIES60_) && defined(EKA2)
+
+    #ifndef __SERIES60_30__
+        OS_LAYER_SYSTEMINCLUDE
+    #endif
+
+
+#endif
+
+LIBRARY         bafl.lib
+LIBRARY         charconv.lib
+LIBRARY         euser.lib
+LIBRARY         estor.lib
+LIBRARY         efsrv.lib
+LIBRARY         stiftestinterface.lib
+LIBRARY         euser.lib
+LIBRARY         SenXml.lib
+LIBRARY         XMLFRAMEWORK.lib
+
+LANG            SC
+
+
+#if !defined( RD_SEN_BACKPORT_CHANGE_FOR_LIBXML2_UIDS_AND_WSSTAR_IMAGE_NAME_PREFIXES )
+    LIBRARY                 XmlEngine.lib
+    LIBRARY                 XmlEngineDOM.lib
+    LIBRARY                 XmlEngineUtils.lib
+#else
+    LIBRARY         WsStarXmlEngine.lib
+    LIBRARY         WsStarXmlEngineDOM.lib
+    LIBRARY         WsStarXmlEngineUtils.lib
+#endif
+
+LIBRARY                 XMLFRAMEWORK.lib
+
+LANG            SC
+
+// AIF ?filename// End of File

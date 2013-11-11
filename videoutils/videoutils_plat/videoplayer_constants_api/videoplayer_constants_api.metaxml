@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<api id="21b87e81b29cc0ef90733f45855d411b" dataversion="1.0">
+<name>Videoplayer Constants API</name>
+<description>Constants used in Videoplayer components</description>
+<type>c++</type>
+<subsystem>videoserviceutils</subsystem>
+<libs></libs>
+<release category="domain" sinceversion=""/>
+<attributes>
+<htmldocprovided>no</htmldocprovided>
+<adaptation>no</adaptation>
+</attributes>
+</api>

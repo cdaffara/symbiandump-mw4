@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hbdocument version="1.2">
+    <widget name="occ_add_wlan_error" type="HbWidget">
+        <!-- layout id: qtl_dialog_pri3 -->
+        <widget name="dialog" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+            <integer name="maximumLines" value="3"/>
+        </widget>
+        <real name="z" value="0"/>
+        <sizepolicy horizontalPolicy="Expanding" horizontalStretch="0" verticalPolicy="Expanding" verticalStretch="0"/>
+        <layout type="anchor">
+            <anchoritem dst="dialog" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+            <anchoritem dst="dialog" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+            <anchoritem direction="NEGATIVE" dst="dialog" dstEdge="RIGHT" minLength="var(hb-param-margin-gene-popup)" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+        </layout>
+    </widget>
+    <metadata activeUIState="Common ui state" display="NHD-3.2-inch_portrait" unit="un">
+        <uistate name="Common ui state" sections="#common"/>
+    </metadata>
+</hbdocument>

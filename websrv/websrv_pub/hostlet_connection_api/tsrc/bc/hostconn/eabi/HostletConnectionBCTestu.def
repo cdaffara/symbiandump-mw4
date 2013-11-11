@@ -1,0 +1,8 @@
+EXPORTS
+	_Z9LibEntryLv @ 1 NONAME
+	_Z15SetRequirementsRP16CTestModuleParamRm @ 2 NONAME
+	_ZTI12CTestHostlet @ 3 NONAME ; #<TI>#
+	_ZTI13CTestConsumer @ 4 NONAME ; #<TI>#
+	_ZTV12CTestHostlet @ 5 NONAME ; #<VT>#
+	_ZTV13CTestConsumer @ 6 NONAME ; #<VT>#
+

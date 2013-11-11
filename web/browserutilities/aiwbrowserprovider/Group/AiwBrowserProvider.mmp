@@ -1,0 +1,61 @@
+/*
+* Copyright (c) 2002-2005 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  mmp file
+*
+*/
+
+
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET      AiwBrowserProvider.dll
+TARGETTYPE      PLUGIN
+CAPABILITY      CAP_ECOM_PLUGIN NetworkServices LocalServices ReadUserData WriteUserData ReadDeviceData WriteDeviceData Location SwEvent UserEnvironment
+VENDORID    VID_DEFAULT
+
+UID     0x10009d8d 0x101FD682
+
+SOURCEPATH		../src
+SOURCE			Dllmain.cpp
+SOURCE          AiwBrowserProviderOpenUrl.cpp
+SOURCE          AiwBrowserProviderSaveUrl.cpp
+
+USERINCLUDE     ../inc ../data
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_ECOM_SYSTEMINCLUDE
+
+START RESOURCE    ../data/101FD682.rss
+TARGET      AiwBrowserProvider
+TARGETPATH    ECOM_RESOURCE_DIR
+END
+
+START RESOURCE    ../data/AiwBrowserProvider.rss
+DEPENDS avkon.rsg
+HEADER
+TARGET      AiwBrowserProvider
+TARGETPATH    RESOURCE_FILES_DIR
+END
+
+LIBRARY	    euser.lib eikcoctl.lib cone.lib commonengine.lib
+LIBRARY     avkon.lib
+LIBRARY     ECom.lib ServiceHandler.lib
+LIBRARY     apgrfx.lib
+LIBRARY     FavouritesEngine.lib
+LIBRARY BrowserDialogsProvider.lib
+LIBRARY efsrv.lib 
+DEBUGLIBRARY    flogger.lib
+// End of File

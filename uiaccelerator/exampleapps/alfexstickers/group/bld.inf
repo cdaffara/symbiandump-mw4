@@ -1,0 +1,30 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+
+PRJ_MMPFILES
+
+AlfExStickers.mmp
+
+
+PRJ_EXPORTS
+
+../gfx/photo/application_bg.svg         /epoc32/winscw/c/private/20012480/application_bg.svg
+../gfx/photo/sticker_blue.svg  /epoc32/winscw/c/private/20012480/sticker_blue.svg
+../gfx/photo/sticker_green.svg  /epoc32/winscw/c/private/20012480/sticker_green.svg
+../gfx/photo/sticker_pink.svg  /epoc32/winscw/c/private/20012480/sticker_pink.svg
+../gfx/photo/sticker_yellow.svg  /epoc32/winscw/c/private/20012480/sticker_yellow.svg

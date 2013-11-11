@@ -1,0 +1,39 @@
+;
+; Copyright (c) 2006-2007 Nokia Corporation and/or its subsidiary(-ies).
+; All rights reserved.
+; This component and the accompanying materials are made available
+; under the terms of "Eclipse Public License v1.0"
+; which accompanies this distribution, and is available
+; at the URL "http://www.eclipse.org/legal/epl-v10.html".
+;
+; Initial Contributors:
+; Nokia Corporation - initial contribution.
+;
+; Contributors:
+;
+; Description:   Package file for UI Accelerator
+;
+
+&EN
+
+;Localized Vendor Name
+%{"Nokia-EN"}
+
+;Unique Vendor name
+:"Nokia"
+
+; NOTE! Be sure that version numbers in this file are same as in 
+; \s60\mw\uiaccelerator\uiaccelerator_dom\alf_visual_api\inc\alf\alfversion.h .
+#{"UI Accelerator Toolkit"},(0x10282845),1,1,22, TYPE=PU
+
+;Supports S60 3.0
+[0x101F7961], 0, 0, 0, {"S60ProductID"}
+
+;Files to copy
+"\epoc32\release\armv5\urel\hitchcock.dll"-"c:\sys\bin\hitchcock.dll"
+"\epoc32\release\armv5\urel\alfclient.dll"-"c:\sys\bin\alfclient.dll"
+"\epoc32\release\armv5\urel\alfappservercore.dll"-"c:\sys\bin\alfappservercore.dll"
+"\epoc32\release\armv5\urel\!ftokenserver.exe"-"c:\sys\bin\!ftokenserver.exe"
+"\epoc32\release\armv5\urel\ftokenclient.dll"-"c:\Sys\Bin\ftokenclient.dll"
+"\epoc32\release\armv5\urel\alfredserver.exe"-"c:\sys\bin\alfredserver.exe"
+"\epoc32\data\z\private\10003a3f\apps\alfredserver_reg.rsc"-"c:\private\10003a3f\import\apps\alfredserver_reg.rsc"

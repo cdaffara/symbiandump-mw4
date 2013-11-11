@@ -1,0 +1,3 @@
+EXPORTS
+	?KCdlMainExport@@3USCdlMain@@B @ 1 NONAME ; struct SCdlMain const  KCdlMainExport
+

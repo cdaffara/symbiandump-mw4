@@ -1,0 +1,34 @@
+/*
+* Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+PRJ_TESTEXPORTS
+../inc/apibehavior.h /epoc32/include/mw/stubsrv/apibehavior.h
+../inc/stubber.h /epoc32/include/mw/stubsrv/stubber.h
+../inc/stubsrvconst.h /epoc32/include/mw/stubsrv/stubsrvconst.h
+../rom/stubsrv.iby /epoc32/rom/include/core/mw/stubsrv.iby
+
+PRJ_MMPFILES
+
+PRJ_TESTMMPFILES
+apibehavior.mmp
+stubber.mmp
+stubsrv.mmp

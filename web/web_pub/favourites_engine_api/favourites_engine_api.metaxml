@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<api id="fffc1424af00645c8b3c107238b96adf" dataversion="1.0">
+  <name>Favourites Engine API</name>
+  <description>API to the browser favorites engine, which manages browser bookmarks and pushed/saved decks.</description>
+  <type>c++</type>
+  <subsystem>BrowserUtilities</subsystem>
+  <libs>
+    <lib name="FavouritesEngine.lib" />
+  </libs>
+  <release category="sdk" sinceversion="0.9"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

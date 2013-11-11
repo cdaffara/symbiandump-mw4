@@ -1,0 +1,104 @@
+/*
+* Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+
+#if defined(__S60_)
+        // To get the MW_LAYER_SYSTEMINCLUDE-definition
+        #include <platform_paths.hrh>
+#endif
+
+TARGET          UsbOtgWatcherTest.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E3
+
+CAPABILITY      ALL -TCB
+//CAPABILITY	LocalServices ReadDeviceData NetworkControl WriteDeviceData DiskAdmin ReadUserData WriteUserData ProtServ CommDD
+//CAPABILITY CommDD NetworkControl WriteDeviceData NetworkServices LocalServices ProtServ	
+VENDORID                VID_DEFAULT
+
+DEFFILE         UsbOtgWatcherTest.def
+
+MW_LAYER_SYSTEMINCLUDE
+MACRO STIF_STUB
+MACRO STIF
+
+//includes for stubbing
+SYSTEMINCLUDE 	/epoc32/include/mw/stubsrv/
+SYSTEMINCLUDE 	/epoc32/include/mw/taf/
+
+USERINCLUDE	../inc
+SOURCEPATH 	../src
+
+SOURCE          UsbOtgWatcherTest.cpp
+SOURCE          UsbOtgWatcherTestBlocks.cpp
+
+// Mock classes (used for emulation of real ones)
+SOURCE                  mockcusbidpinobserver.cpp
+SOURCE                  mockcusbvbusobserver.cpp
+SOURCE                  mockcusbotgstateobserver.cpp
+SOURCE                  mockcusbhosteventnotificationobserver.cpp
+SOURCE                  mockcusbmessagenotificationobserver.cpp
+SOURCE                  mockcusbbusactivityobserver.cpp 
+SOURCE                  mockrusb.cpp 
+SOURCE                  mockcusbtimer.cpp 
+SOURCE                  mockcusbnotifmanager.cpp
+SOURCE                  mockchbindicatorsymbian.cpp
+
+// real classes to be tested
+SOURCEPATH ../../../src
+USERINCLUDE	../../../inc
+
+SOURCE        	cusbotgwatcher.cpp
+SOURCE        	cusbstate.cpp
+SOURCE       	cusbstatehostabase.cpp
+SOURCE        	cusbstatehostainitiate.cpp
+SOURCE        	cusbstatehostahost.cpp
+SOURCE        	cusbstatehostaperipheral.cpp
+SOURCE        	cusbstatehosthandle.cpp
+SOURCE			cusbservicecontrol.cpp
+SOURCE			cusbnotifier.cpp
+SOURCE			cusbwarningnotifier.cpp
+SOURCE			CUsbNoteNotifier.cpp
+SOURCE          CUsbStateHostHandleDropping.cpp
+SOURCE          CUsbStateHostDelayNotAttachedHandle.cpp
+SOURCE          CUsbStateHostDelayAttachedHandle.cpp
+SOURCE          CUsbStateHostUndefined.cpp
+SOURCE          cusbstatehostdelayhandle.cpp
+SOURCE          cusbindicatornotifier.cpp
+
+
+
+
+//standart lib for stif testing
+LIBRARY         euser.lib
+LIBRARY         StifTestInterface.lib
+LIBRARY         stiftestengine.lib
+
+//lib for stubbing
+LIBRARY		apibehavior.lib
+LIBRARY		stubber.lib 
+
+//lib for component testing
+LIBRARY     usbdescriptors.lib
+LIBRARY     usbdi_utils.lib
+LIBRARY                 aknnotify.lib
+
+LANG            SC
+
+
+
+// End of File

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hbdocument version="1.2">
+    <widget name="view" type="HbWidget">
+        <!-- layout id: txt_occ_dialog_insert_the_name_of_the_new_wlan_net -->
+        <widget name="setlabel_55" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+            <integer name="maximumLines" value="4"/>
+        </widget>
+        <widget name="lineEditUsername" type="HbLineEdit"/>
+        <!-- layout id: txt_occ_dialog_insert_the_name_of_the_new_wlan_net -->        
+        <widget name="setlabel_56" type="HbLabel">
+            <enums name="textWrapping" value="TextWordWrap"/>
+            <fontspec name="fontSpec" role="Secondary" textheight="var(hb-param-text-height-secondary)"/>
+            <integer name="maximumLines" value="4"/>
+        </widget>
+        <widget name="lineEditPassword" type="HbLineEdit"/>
+        <layout type="anchor"/>
+    </widget>
+    <section name="portrait_section">
+        <widget name="view" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="setlabel_55" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_55" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="setlabel_55" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditUsername" dstEdge="LEFT" src="setlabel_55" srcEdge="LEFT"/>
+                <anchoritem dst="lineEditUsername" dstEdge="TOP" prefLength="var(hb-param-margin-gene-middle-vertical)" src="setlabel_55" srcEdge="BOTTOM"/>
+                <anchoritem dst="lineEditUsername" dstEdge="RIGHT" src="setlabel_55" srcEdge="RIGHT"/>
+                <anchoritem dst="setlabel_56" dstEdge="LEFT" src="setlabel_55" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_56" dstEdge="TOP" prefLength="var(hb-param-margin-gene-bottom)" src="lineEditUsername" srcEdge="BOTTOM"/>
+                <anchoritem dst="setlabel_56" dstEdge="RIGHT" src="setlabel_55" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditPassword" dstEdge="LEFT" src="setlabel_55" srcEdge="LEFT"/>
+                <anchoritem dst="lineEditPassword" dstEdge="TOP" prefLength="var(hb-param-margin-gene-middle-vertical)" src="setlabel_56" srcEdge="BOTTOM"/>
+                <anchoritem dst="lineEditPassword" dstEdge="RIGHT" src="setlabel_55" srcEdge="RIGHT"/>
+            </layout>
+        </widget>
+    </section>
+    <section name="landscape_section">
+        <widget name="view" type="HbWidget">
+            <layout type="anchor">
+                <anchoritem dst="setlabel_55" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_55" dstEdge="TOP" src="" srcEdge="TOP"/>
+                <anchoritem dst="setlabel_55" dstEdge="BOTTOM" prefLength="var(hb-param-margin-gene-bottom)" src="lineEditUsername" srcEdge="BOTTOM"/>
+                <anchoritem direction="NEGATIVE" dst="setlabel_55" dstEdge="RIGHT" prefLength="expr(var(hb-param-margin-gene-middle-horizontal) / 2)" src="" srcEdge="CENTERH"/>
+                <anchoritem dst="lineEditUsername" dstEdge="LEFT" prefLength="var(hb-param-margin-gene-middle-horizontal)" src="setlabel_55" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditUsername" dstEdge="TOP" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="TOP"/>
+                <anchoritem direction="NEGATIVE" dst="lineEditUsername" dstEdge="RIGHT" prefLength="var(hb-param-margin-gene-popup)" src="" srcEdge="RIGHT"/>
+                <anchoritem dst="setlabel_56" dstEdge="LEFT" src="setlabel_55" srcEdge="LEFT"/>
+                <anchoritem dst="setlabel_56" dstEdge="TOP" src="setlabel_55" srcEdge="BOTTOM"/>
+                <anchoritem dst="setlabel_56" dstEdge="RIGHT" src="setlabel_55" srcEdge="RIGHT"/>
+                <anchoritem dst="setlabel_56" dstEdge="BOTTOM" prefLength="var(hb-param-margin-gene-bottom)" src="lineEditPassword" srcEdge="BOTTOM"/>
+                <anchoritem dst="lineEditPassword" dstEdge="LEFT" src="lineEditUsername" srcEdge="LEFT"/>
+                <anchoritem dst="lineEditPassword" dstEdge="RIGHT" src="lineEditUsername" srcEdge="RIGHT"/>
+                <anchoritem dst="lineEditPassword" dstEdge="TOP" prefLength="expr(var(hb-param-margin-gene-bottom)+var(hb-param-margin-gene-popup))" src="lineEditUsername" srcEdge="BOTTOM"/>
+            </layout>
+        </widget>
+    </section>
+    <metadata activeUIState="landscape" display="NHD-3.2-inch_landscape" unit="un">
+        <uistate name="Common ui state" sections="#common"/>
+        <uistate name="portrait" sections="#common portrait_section"/>
+        <uistate name="landscape" sections="#common landscape_section"/>
+    </metadata>
+</hbdocument>

@@ -1,0 +1,60 @@
+EXPORTS
+	??0RFeedsInterface@@QAE@AAVMFeedsApiObserver@@H@Z @ 1 NONAME ; RFeedsInterface::RFeedsInterface(class MFeedsApiObserver &, int)
+	??1CFeedsMap@@UAE@XZ @ 2 NONAME ; CFeedsMap::~CFeedsMap(void)
+	??ACFeedsMap@@QBEIH@Z @ 3 NONAME ; unsigned int CFeedsMap::operator[](int) const
+	?AddL@RFeedsInterface@@QAEXW4TFeedsEntityType@@ABVCFeedsMap@@ABVCFeedsEntity@@@Z @ 4 NONAME ; void RFeedsInterface::AddL(enum TFeedsEntityType, class CFeedsMap const &, class CFeedsEntity const &)
+	?AutoDelete@CTransaction@@QAEXXZ @ 5 NONAME ; void CTransaction::AutoDelete(void)
+	?CancelAllL@RFeedsInterface@@QAEXXZ @ 6 NONAME ; void RFeedsInterface::CancelAllL(void)
+	?CancelRequest@CTransaction@@QAEXXZ @ 7 NONAME ; void CTransaction::CancelRequest(void)
+	?ChangeValueL@CFeedsEntity@@QAEHABVCFeedsMap@@@Z @ 8 NONAME ; int CFeedsEntity::ChangeValueL(class CFeedsMap const &)
+	?Close@RFeedsInterface@@QAEXXZ @ 9 NONAME ; void RFeedsInterface::Close(void)
+	?Connect@RFeedsInterface@@QAEHXZ @ 10 NONAME ; int RFeedsInterface::Connect(void)
+	?Count@CFeedsMap@@QBEHXZ @ 11 NONAME ; int CFeedsMap::Count(void) const
+	?DebugPrintTablesL@RFeedsInterface@@QAEXXZ @ 12 NONAME ; void RFeedsInterface::DebugPrintTablesL(void)
+	?DeleteL@RFeedsInterface@@QAEXV?$RPointerArray@$$CBVCFeedsEntity@@@@@Z @ 13 NONAME ; void RFeedsInterface::DeleteL(class RPointerArray<class CFeedsEntity const >)
+	?DisconnectManualUpdateConnectionL@RFeedsInterface@@QAEXXZ @ 14 NONAME ; void RFeedsInterface::DisconnectManualUpdateConnectionL(void)
+	?ExportFoldersL@RFeedsInterface@@QAEXABV?$RPointerArray@$$CBVCFeedsEntity@@@@ABVTDesC16@@@Z @ 15 NONAME ; void RFeedsInterface::ExportFoldersL(class RPointerArray<class CFeedsEntity const > const &, class TDesC16 const &)
+	?Feed@RFeedsInterface@@QAEPAVCFeedsEntity@@XZ @ 16 NONAME ; class CFeedsEntity * RFeedsInterface::Feed(void)
+	?FetchL@RFeedsInterface@@QAEHABVCFeedsEntity@@HH@Z @ 17 NONAME ; int RFeedsInterface::FetchL(class CFeedsEntity const &, int, int)
+	?FetchL@RFeedsInterface@@QAEHABVTDesC16@@HH@Z @ 18 NONAME ; int RFeedsInterface::FetchL(class TDesC16 const &, int, int)
+	?GetChildren@CFeedsEntity@@QBEABV?$RPointerArray@VCFeedsEntity@@@@XZ @ 19 NONAME ; class RPointerArray<class CFeedsEntity> const & CFeedsEntity::GetChildren(void) const
+	?GetId@CFeedsEntity@@QBEHXZ @ 20 NONAME ; int CFeedsEntity::GetId(void) const
+	?GetId@CTransaction@@QAEHXZ @ 21 NONAME ; int CTransaction::GetId(void)
+	?GetIntegerAttribute@CFeedsMap@@QBEHIAAH@Z @ 22 NONAME ; int CFeedsMap::GetIntegerAttribute(unsigned int, int &) const
+	?GetIntegerValue@CFeedsEntity@@QBEHIAAH@Z @ 23 NONAME ; int CFeedsEntity::GetIntegerValue(unsigned int, int &) const
+	?GetParent@CFeedsEntity@@QBEPAV1@XZ @ 24 NONAME ; class CFeedsEntity * CFeedsEntity::GetParent(void) const
+	?GetRootFolderL@RFeedsInterface@@QAEHXZ @ 25 NONAME ; int RFeedsInterface::GetRootFolderL(void)
+	?GetSettingsL@RFeedsInterface@@QAEHAAUTFeedsServerSetting@@H@Z @ 26 NONAME ; int RFeedsInterface::GetSettingsL(struct TFeedsServerSetting &, int)
+	?GetStatusCode@CTransaction@@QAEHXZ @ 27 NONAME ; int CTransaction::GetStatusCode(void)
+	?GetStringAttribute@CFeedsMap@@QBEHIAAVTPtrC16@@@Z @ 28 NONAME ; int CFeedsMap::GetStringAttribute(unsigned int, class TPtrC16 &) const
+	?GetStringValue@CFeedsEntity@@QBEHIAAVTPtrC16@@@Z @ 29 NONAME ; int CFeedsEntity::GetStringValue(unsigned int, class TPtrC16 &) const
+	?GetTimeAttribute@CFeedsMap@@QBEHIAAVTTime@@@Z @ 30 NONAME ; int CFeedsMap::GetTimeAttribute(unsigned int, class TTime &) const
+	?GetTimeValue@CFeedsEntity@@QBEHIAAVTTime@@@Z @ 31 NONAME ; int CFeedsEntity::GetTimeValue(unsigned int, class TTime &) const
+	?GetType@CFeedsEntity@@QBE?AW4TFeedsEntityType@@XZ @ 32 NONAME ; enum TFeedsEntityType CFeedsEntity::GetType(void) const
+	?GetType@CTransaction@@QAE?AW4TTransactionType@1@XZ @ 33 NONAME ; enum CTransaction::TTransactionType CTransaction::GetType(void)
+	?ImportOPMLL@RFeedsInterface@@QAEXABVTDesC16@@@Z @ 34 NONAME ; void RFeedsInterface::ImportOPMLL(class TDesC16 const &)
+	?IsExist@CFeedsMap@@QBEHI@Z @ 35 NONAME ; int CFeedsMap::IsExist(unsigned int) const
+	?MoveL@RFeedsInterface@@QAEXABV?$RPointerArray@$$CBVCFeedsEntity@@@@H@Z @ 36 NONAME ; void RFeedsInterface::MoveL(class RPointerArray<class CFeedsEntity const > const &, int)
+	?MoveToFolderL@RFeedsInterface@@QAEXABV?$RPointerArray@$$CBVCFeedsEntity@@@@ABVCFeedsEntity@@@Z @ 37 NONAME ; void RFeedsInterface::MoveToFolderL(class RPointerArray<class CFeedsEntity const > const &, class CFeedsEntity const &)
+	?NewL@CFeedsMap@@SAPAV1@XZ @ 38 NONAME ; class CFeedsMap * CFeedsMap::NewL(void)
+	?ResetL@CFeedsMap@@QAEXXZ @ 39 NONAME ; void CFeedsMap::ResetL(void)
+	?RootFolder@RFeedsInterface@@QAEPAVCFeedsEntity@@XZ @ 40 NONAME ; class CFeedsEntity * RFeedsInterface::RootFolder(void)
+	?SearchFeed@RFeedsInterface@@QAEPAVCFeedsEntity@@HPAV2@@Z @ 41 NONAME ; class CFeedsEntity * RFeedsInterface::SearchFeed(int, class CFeedsEntity *)
+	?SetAttributeL@RFeedsInterface@@QAEHABVCFeedsEntity@@ABVCFeedsMap@@@Z @ 42 NONAME ; int RFeedsInterface::SetAttributeL(class CFeedsEntity const &, class CFeedsMap const &)
+	?SetIntegerAttribute@CFeedsMap@@QAEHIH@Z @ 43 NONAME ; int CFeedsMap::SetIntegerAttribute(unsigned int, int)
+	?SetSettingsL@RFeedsInterface@@QAEXABUTFeedsServerSetting@@@Z @ 44 NONAME ; void RFeedsInterface::SetSettingsL(struct TFeedsServerSetting const &)
+	?SetStringAttribute@CFeedsMap@@QAEHIABVTDesC16@@@Z @ 45 NONAME ; int CFeedsMap::SetStringAttribute(unsigned int, class TDesC16 const &)
+	?SetTimeAttribute@CFeedsMap@@QAEHIVTTime@@@Z @ 46 NONAME ; int CFeedsMap::SetTimeAttribute(unsigned int, class TTime)
+	?Settings@CTransaction@@QAE?AUTFeedsServerSetting@@XZ @ 47 NONAME ; struct TFeedsServerSetting CTransaction::Settings(void)
+	?Type@CTransaction@@QAE?AW4TTransactionType@1@XZ @ 48 NONAME ; enum CTransaction::TTransactionType CTransaction::Type(void)
+	?UpdateFeedItemStatusL@RFeedsInterface@@QAEXABV?$RArray@H@@ABV?$RArray@W4TFeedItemStatus@@@@H@Z @ 49 NONAME ; void RFeedsInterface::UpdateFeedItemStatusL(class RArray<int> const &, class RArray<enum TFeedItemStatus> const &, int)
+	?UpdateL@RFeedsInterface@@QAEHABV?$RPointerArray@$$CBVCFeedsEntity@@@@@Z @ 50 NONAME ; int RFeedsInterface::UpdateL(class RPointerArray<class CFeedsEntity const > const &)
+	?Version@RFeedsInterface@@QBE?AVTVersion@@XZ @ 51 NONAME ; class TVersion RFeedsInterface::Version(void) const
+	?WatchFolderListL@RFeedsInterface@@QAEXXZ @ 52 NONAME ; void RFeedsInterface::WatchFolderListL(void)
+	?WatchSettingsL@RFeedsInterface@@QAEXXZ @ 53 NONAME ; void RFeedsInterface::WatchSettingsL(void)
+	?ConvertToUcs2L@CXmlEncoding@@QBEPAVHBufC16@@IABVTDesC8@@@Z @ 54 NONAME ; class HBufC16 * CXmlEncoding::ConvertToUcs2L(unsigned int, class TDesC8 const &) const
+	?ConvertToUtf8L@CXmlEncoding@@QBEPAVHBufC8@@IABVTDesC8@@@Z @ 55 NONAME ; class HBufC8 * CXmlEncoding::ConvertToUtf8L(unsigned int, class TDesC8 const &) const
+	?DetermineCharEncodingL@CXmlEncoding@@QBEHABVTDesC8@@ABVTDesC16@@AAI@Z @ 56 NONAME ; int CXmlEncoding::DetermineCharEncodingL(class TDesC8 const &, class TDesC16 const &, unsigned int &) const
+	?NewL@CXmlEncoding@@SAPAV1@XZ @ 57 NONAME ; class CXmlEncoding * CXmlEncoding::NewL(void)
+	?Settings@RFeedsInterface@@QAE?AUTFeedsServerSetting@@XZ @ 58 NONAME ; struct TFeedsServerSetting RFeedsInterface::Settings(void)
+

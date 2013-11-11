@@ -1,0 +1,5 @@
+EXPORTS
+	_Z16CreateRecognizerv @ 1 NONAME
+	_ZTI14CSvgRecognizer @ 2 NONAME ; #<TI>#
+	_ZTV14CSvgRecognizer @ 3 NONAME ; #<VT>#
+

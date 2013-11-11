@@ -1,0 +1,31 @@
+EXPORTS
+	?CopyL@CInternalAddress@@QAEXABV1@@Z @ 1 NONAME ; void CInternalAddress::CopyL(class CInternalAddress const &)
+	?Match@TIkeSendQueueItem@@SAHABV1@0@Z @ 2 NONAME ; int TIkeSendQueueItem::Match(class TIkeSendQueueItem const &, class TIkeSendQueueItem const &)
+	?AddSAL@CPFKeySocketIf@@QAEXABVTIpsecSAData@@@Z @ 3 NONAME ; void CPFKeySocketIf::AddSAL(class TIpsecSAData const &)
+	?NewL@CInternalAddress@@SAPAV1@ABV1@@Z @ 4 NONAME ; class CInternalAddress * CInternalAddress::NewL(class CInternalAddress const &)
+	??0TIpsecSAData@@QAE@XZ @ 5 NONAME ; TIpsecSAData::TIpsecSAData(void)
+	?UdpData@TIkeSendQueueItem@@QAEPAVHBufC8@@XZ @ 6 NONAME ; class HBufC8 * TIkeSendQueueItem::UdpData(void)
+	?Dscp@TIkeSendQueueItem@@QBEEXZ @ 7 NONAME ; unsigned char TIkeSendQueueItem::Dscp(void) const
+	?UpdateSAL@CPFKeySocketIf@@QAEXABVTIpsecSAData@@@Z @ 8 NONAME ; void CPFKeySocketIf::UpdateSAL(class TIpsecSAData const &)
+	??0CIpsecSaSpecList@@QAE@XZ @ 9 NONAME ; CIpsecSaSpecList::CIpsecSaSpecList(void)
+	??4TIpsecSALifetime@@QAEAAV0@ABV0@@Z @ 10 NONAME ; class TIpsecSALifetime & TIpsecSALifetime::operator=(class TIpsecSALifetime const &)
+	?Address@TPfkeyAddress@@QBEABVTInetAddr@@XZ @ 11 NONAME ; class TInetAddr const & TPfkeyAddress::Address(void) const
+	??0CInternalAddress@@QAE@H@Z @ 12 NONAME ; CInternalAddress::CInternalAddress(int)
+	?NewL@CIpsecPolicyUtil@@SAPAV1@XZ @ 13 NONAME ; class CIpsecPolicyUtil * CIpsecPolicyUtil::NewL(void)
+	?BuildVPNAddrInfo@VPNAddrInfo@@SAXPBVCInternalAddress@@ABVTInetAddr@@AAVTVPNAddress@@AAVMIkeDebug@@@Z @ 14 NONAME ; void VPNAddrInfo::BuildVPNAddrInfo(class CInternalAddress const *, class TInetAddr const &, class TVPNAddress &, class MIkeDebug &)
+	?NewL@CPFKeySocketIf@@SAPAV1@PAVMPFKeyMessageListener@@AAVMIkeDebug@@@Z @ 15 NONAME ; class CPFKeySocketIf * CPFKeySocketIf::NewL(class MPFKeyMessageListener *, class MIkeDebug &)
+	?BuildUdpEncExtensionData@PFKeyExtDataUtil@@SAXAAVTDes8@@KHHGGABVTInetAddr@@1@Z @ 16 NONAME ; void PFKeyExtDataUtil::BuildUdpEncExtensionData(class TDes8 &, unsigned long, int, int, unsigned short, unsigned short, class TInetAddr const &, class TInetAddr const &)
+	??0TIpsecSALifetime@@QAE@KAB_J00@Z @ 17 NONAME ; TIpsecSALifetime::TIpsecSALifetime(unsigned long, long long const &, long long const &, long long const &)
+	??0TIkeSendQueueItem@@QAE@PAVHBufC8@@@Z @ 18 NONAME ; TIkeSendQueueItem::TIkeSendQueueItem(class HBufC8 *)
+	?SelectorCount@TPfkeyTs@@QBEHXZ @ 19 NONAME ; int TPfkeyTs::SelectorCount(void) const
+	?GetIpsecSaSpi@CIpsecSaSpiRetriever@@QAEXKEABVTInetAddr@@0@Z @ 20 NONAME ; void CIpsecSaSpiRetriever::GetIpsecSaSpi(unsigned long, unsigned char, class TInetAddr const &, class TInetAddr const &)
+	??0TIkeSendQueueItem@@QAE@PAVHBufC8@@ABVTInetAddr@@HE@Z @ 21 NONAME ; TIkeSendQueueItem::TIkeSendQueueItem(class HBufC8 *, class TInetAddr const &, int, unsigned char)
+	?AcquireSAError@CPFKeySocketIf@@QAEXABVTIpsecSAData@@H@Z @ 22 NONAME ; void CPFKeySocketIf::AcquireSAError(class TIpsecSAData const &, int)
+	?DeleteSA@CPFKeySocketIf@@QAEXKABVTInetAddr@@0E@Z @ 23 NONAME ; void CPFKeySocketIf::DeleteSA(unsigned long, class TInetAddr const &, class TInetAddr const &, unsigned char)
+	?Selector@TPfkeyTs@@QBEABVTPfKeySelector@@H@Z @ 24 NONAME ; class TPfKeySelector const & TPfkeyTs::Selector(int) const
+	?LocalPort@TIkeSendQueueItem@@QBEHXZ @ 25 NONAME ; int TIkeSendQueueItem::LocalPort(void) const
+	?FlushSAs@CPFKeySocketIf@@QAEXXZ @ 26 NONAME ; void CPFKeySocketIf::FlushSAs(void)
+	?NewL@CIpsecSaSpiRetriever@@SAPAV1@AAVMIpsecSaSpiRetrieverCallback@@AAVCPFKeySocketIf@@@Z @ 27 NONAME ; class CIpsecSaSpiRetriever * CIpsecSaSpiRetriever::NewL(class MIpsecSaSpiRetrieverCallback &, class CPFKeySocketIf &)
+	?GetIpseSaSpecListLC@CIpsecPolicyUtil@@QAEPAVCIpsecSaSpecList@@VTInetAddr@@000HK@Z @ 28 NONAME ; class CIpsecSaSpecList * CIpsecPolicyUtil::GetIpseSaSpecListLC(class TInetAddr, class TInetAddr, class TInetAddr, class TInetAddr, int, unsigned long)
+	?DestAddr@TIkeSendQueueItem@@QAEABVTInetAddr@@XZ @ 29 NONAME ; class TInetAddr const & TIkeSendQueueItem::DestAddr(void)
+

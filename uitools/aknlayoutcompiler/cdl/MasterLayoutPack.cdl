@@ -1,0 +1,17 @@
+// MasterLayoutPack.cdl - Acts as a layout index for a whole layout DLL.
+
+Name: MasterLayoutPack
+Version: 1.0
+UID: 0x101feb1b
+
+%% C++
+
+#include <aknlayoutdef.h>
+#include <akndef.hrh>
+
+%% API
+
+TCdlArray<SCdlSize> sizes;
+TCdlArray<TAknLayoutId> variants;
+TCdlArray<TAknUiZoom> zooms;
+TCdlArray<TCdlArray<TCdlRef>*> contents;

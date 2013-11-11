@@ -1,0 +1,62 @@
+/*
+* Copyright (c) 2003-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project ikecert
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+TARGET          ikecert.dll
+TARGETTYPE      DLL
+UID             0x1000008d 0x10206995
+
+CAPABILITY      CAP_SERVER CommDD NetworkControl
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          ikev1pkiservice.cpp
+SOURCE          ikecert.cpp
+SOURCE          ikecaelem.cpp
+SOURCE          ikepublickey.cpp
+SOURCE          ikecalist.cpp
+SOURCE          ikepkiutils.cpp
+SOURCE          ikev2pkiservice.cpp
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../kmdserver/inc
+USERINCLUDE     ../../ikeutils/inc
+USERINCLUDE     ../../ikev2lib/inc
+USERINCLUDE     ../../pkiserviceapi/inc
+USERINCLUDE     ../../ikepolparser/inc
+USERINCLUDE     ../../utlcrypto/inc 
+USERINCLUDE     ../../../vpnapiimpl/inc
+USERINCLUDE     ../../utlpkcs10/inc
+USERINCLUDE     ../../vpnmanager/inc
+
+MW_LAYER_SYSTEMINCLUDE
+
+LIBRARY     euser.lib 
+LIBRARY     x509.lib 
+LIBRARY     x500.lib 
+LIBRARY     crypto.lib 
+LIBRARY     asn1.lib
+LIBRARY     pkiserviceapi.lib
+LIBRARY     utlcrypto.lib
+LIBRARY     utlpkcs10.lib
+LIBRARY     ikepolparser.lib
+LIBRARY     insock.lib
+LIBRARY     charconv.lib 
+DEBUGLIBRARY    flogger.lib

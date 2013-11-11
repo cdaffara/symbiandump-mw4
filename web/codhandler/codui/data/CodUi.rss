@@ -1,0 +1,385 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Resource definitions.   
+*      
+*
+*/
+
+
+// RESOURCE IDENTIFIER
+
+NAME CODU
+
+// INCLUDES
+
+#include <eikon.rh>
+#include <CodDefs.h>
+#include "CodUi.hrh"
+#include <CodViewer.loc>
+#include "eikon.rsg"
+#include <avkon.loc>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <appinfo.rh>
+#include <CommonDialogs.rh>
+#include <pathconfiguration.hrh>
+#include <drmcommon.loc>
+
+// RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF
+    {
+    buf = "codui";
+    }
+
+RESOURCE CBA r_cod_ui_cba_accept_reject
+    {
+    buttons =
+	    {
+	    CBA_BUTTON { id = ECodUiCmdAccept; txt = text_softkey_ok; },
+	    CBA_BUTTON { id = ECodUiCmdReject; txt = text_softkey_cancel; },
+   	    CBA_BUTTON { id = ECodUiCmdAccept; txt = text_softkey_ok; }
+	    };
+    }
+
+RESOURCE CBA r_cod_ui_cba_accept_cancel
+    {
+    buttons =
+	    {
+	    CBA_BUTTON { id = EAknSoftkeyOk; txt = text_softkey_accept; },
+	    CBA_BUTTON { id = EAknSoftkeyCancel; txt = text_softkey_cancel; },
+	    CBA_BUTTON { id = EAknSoftkeyOk; txt = ""; }
+	    };
+    }
+
+RESOURCE CBA r_cod_ui_cba_empty_cancel
+    {
+    buttons =
+	    {
+	    CBA_BUTTON { id = 0; txt = ""; },
+	    CBA_BUTTON { id = ECodUiCmdCancel; txt = text_softkey_cancel; }
+	    };
+    }
+
+RESOURCE DIALOG r_cod_ui_wait_note
+    {
+    flags = EAknWaitNoteFlags;
+    buttons = r_cod_ui_cba_empty_cancel;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtNote;
+            id = EGeneralNote;
+            control = AVKON_NOTE 
+                { 
+                layout = EWaitLayout;
+                singular_label = qtn_cd_wait_downloading;   // Dynamically set runtime.
+                animation = R_QGN_GRAF_WAIT_BAR_ANIM;
+                };
+            }
+        };
+    }
+
+RESOURCE RTXTED r_cod_ui_rtxed
+    {
+    numlines = 5;
+    textlimit = 10000;
+    flags = EEikEdwinDisplayOnly | EEikEdwinReadOnly;
+    }
+
+RESOURCE MEMORYSELECTIONDIALOG r_cod_ui_memory_selection_dlg
+    {
+    title = qtn_cd_header_mem_selec;
+    softkey_1 = text_softkey_select;
+    locations =
+        {
+        LOCATION { root_path = text_phone_memory_root_path; },
+        LOCATION { root_path = text_memory_card_root_path; }
+        };
+    }
+
+RESOURCE DIALOG r_cod_ui_cod_view_dialog
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagFillAppClientRect |
+            EEikDialogFlagButtonsRight | EEikDialogFlagCbaButtons |
+            EEikDialogFlagNoBorder | EEikDialogFlagWait;
+    title = qtn_cd_title;
+    buttons = r_cod_ui_cba_accept_reject;
+    items =
+        {
+        DLG_LINE
+            {
+            type = ECodUiCodView;
+            itemflags = EEikDlgItemTakesEnterKey | EEikDlgItemOfferAllHotKeys;
+            id = ECodUiCtlCodViewRtxEd;
+            control = RTXTED
+                {
+                numlines = 5;
+                textlimit = 10000;
+                flags = EEikEdwinDisplayOnly | EEikEdwinReadOnly;
+                };
+            }
+        };
+    }
+
+RESOURCE DIALOG r_cod_ui_confirm_note
+    {
+    flags = EAknDialogGenericQueryFlags;
+    buttons = R_AVKON_SOFTKEYS_YES_NO__YES;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY 
+                { 
+                layout = EConfirmationQueryLayout;
+                label = ""; // Dynamically set runtime.
+                };
+            }
+        };
+    }
+
+RESOURCE CBA r_cod_app_cba_register_cancel
+    {
+    buttons =
+	    {
+      CBA_BUTTON { id = EAknSoftkeyYes; txt = qtn_drm_sk1_register; },
+	    CBA_BUTTON { id = EAknSoftkeyCancel; txt = text_softkey_cancel; },
+	    CBA_BUTTON { id = EAknSoftkeyYes; txt = qtn_drm_sk1_register; }
+	    };
+    }
+
+
+    
+RESOURCE DIALOG r_cod_registercancel_query
+        {
+        flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+        buttons = r_cod_app_cba_register_cancel;
+        items=
+            {
+            DLG_LINE
+                {
+                type = EAknCtPopupHeadingPane;
+                id = EAknMessageQueryHeaderId;
+                control = AVKON_HEADING
+                    {
+                    headinglayout = R_AVKON_WML_SIGN_QUERY_HEADING_PANE;
+                    };
+                },
+            DLG_LINE
+                {
+                type = EAknCtMessageQuery;
+                id = EAknMessageQueryContentId;
+                control = AVKON_MESSAGE_QUERY
+                    {
+                    };
+                }
+            };
+        }
+
+RESOURCE TBUF r_qtn_cd_title
+    { buf = qtn_cd_title; }
+
+RESOURCE TBUF r_qtn_cd_value_undefined
+    { buf = qtn_cd_value_undefined; }
+
+RESOURCE TBUF r_qtn_cd_detail_name
+    { buf = qtn_cd_detail_name; }
+
+RESOURCE TBUF r_qtn_cd_detail_price
+    { buf = qtn_cd_detail_price; }
+
+RESOURCE TBUF r_qtn_cd_detail_descript
+    { buf = qtn_cd_detail_descript; }
+
+RESOURCE TBUF r_qtn_cd_detail_size
+    { buf = qtn_cd_detail_size; }
+
+RESOURCE TBUF r_qtn_cd_detail_vendor
+    { buf = qtn_cd_detail_vendor; }
+
+RESOURCE TBUF r_qtn_cd_detail_type
+    { buf = qtn_cd_detail_type; }
+
+// Content types
+
+RESOURCE TBUF r_qtn_cd_type_not_classified
+    { buf = qtn_cd_type_not_classified; }
+
+RESOURCE TBUF r_qtn_cd_type_sound
+    { buf = qtn_cd_type_sound; }
+
+RESOURCE TBUF r_qtn_cd_type_rtone
+    { buf = qtn_cd_type_rtone; }
+
+RESOURCE TBUF r_qtn_cd_type_picture_message
+    { buf = qtn_cd_type_picture_message; }
+
+RESOURCE TBUF r_qtn_cd_type_operator_logo
+    { buf = qtn_cd_type_operator_logo; }
+
+RESOURCE TBUF r_qtn_cd_type_image
+    { buf = qtn_cd_type_image; }
+
+RESOURCE TBUF r_qtn_cd_type_game_level
+    { buf = qtn_cd_type_game_level; }
+
+RESOURCE TBUF r_qtn_cd_type_game
+    { buf = qtn_cd_type_game; }
+
+RESOURCE TBUF r_qtn_cd_type_document
+    { buf = qtn_cd_type_document; }
+
+RESOURCE TBUF r_qtn_cd_type_vcard
+    { buf = qtn_cd_type_vcard; }
+
+RESOURCE TBUF r_qtn_cd_type_application
+    { buf = qtn_cd_type_application; }
+
+// Wait note texts
+
+RESOURCE TBUF r_qtn_cd_wait_downloading
+    { buf = qtn_cd_wait_downloading; }
+
+RESOURCE TBUF r_qtn_cd_wait_reject
+    { buf = qtn_cd_wait_reject; }
+
+RESOURCE TBUF r_qtn_cd_wait_please_wait
+    { buf = qtn_cd_wait_please_wait; }
+
+// Error messages
+
+RESOURCE TBUF r_qtn_cd_info_no_valid_ap
+    { buf = qtn_cd_info_no_valid_ap; }
+
+RESOURCE TBUF r_qtn_cd_info_generic_error
+    { buf = qtn_cd_info_generic_error; }
+
+//RESOURCE TBUF r_text_wml_err_conn_timeout
+//    { buf = text_wml_err_conn_timeout; }
+
+RESOURCE TBUF r_qtn_cd_info_unsupp_mime_type
+    { buf = qtn_cd_info_unsupp_mime_type; }
+
+RESOURCE TBUF r_qtn_cd_info_file_too_large
+    { buf = qtn_cd_info_file_too_large; }
+
+RESOURCE TBUF r_qtn_cd_info_unknown_type
+    { buf = qtn_cd_info_unknown_type; }
+
+RESOURCE TBUF r_qtn_cd_info_syntax_err
+    { buf = qtn_cd_info_syntax_err; }
+
+RESOURCE TBUF r_qtn_fldr_file_saved_to
+    { buf = qtn_fldr_file_saved_to; }
+
+RESOURCE TBUF r_qtn_cd_query_download_complete
+    { buf = qtn_cd_query_download_complete; }
+
+RESOURCE TBUF r_qtn_drm_msq_qry_title_registrat
+    { buf = qtn_drm_msq_qry_title_registrat; }
+  
+RESOURCE TBUF r_qtn_browser_downloads_unsupported_content_query
+    { buf = qtn_browser_downloads_unsupported_content_query;}    
+    
+
+RESOURCE TBUF r_qtn_cd_info_not_enough_mem
+    { buf = qtn_cd_info_not_enough_mem; }
+    
+//
+// ROAP related resources
+//
+
+// Wait note texts
+
+RESOURCE TBUF r_qtn_drm_wait_registering_device
+    { buf = qtn_drm_wait_registering_device; }
+
+RESOURCE TBUF r_qtn_drm_wait_joining_domain
+    { buf = qtn_drm_wait_joining_domain; }
+
+RESOURCE TBUF r_qtn_drm_wait_getting_key
+    { buf = qtn_drm_wait_getting_key; }
+
+RESOURCE TBUF r_qtn_drm_wait_updating_account
+    { buf = qtn_drm_wait_updating_account; }
+
+RESOURCE TBUF r_qtn_drm_wait_remove_fr_account
+    { buf = qtn_drm_wait_remove_fr_account; }
+
+RESOURCE TBUF r_qtn_browser_downloads_waiting_for_license
+    { buf = qtn_browser_downloads_waiting_for_license; }
+
+// Messages
+
+RESOURCE TBUF r_qtn_drm_conf_joined_to_domain
+    { buf = qtn_drm_conf_joined_to_domain; }
+    
+RESOURCE TBUF r_qtn_drm_info_act_key_received
+    { buf = qtn_drm_info_act_key_received; }
+
+RESOURCE TBUF r_qtn_drm_query_key_received_open
+    { buf = qtn_drm_query_key_received_open; }
+
+RESOURCE TBUF r_qtn_drm_conf_account_updated
+    { buf = qtn_drm_conf_account_updated; }
+
+RESOURCE TBUF r_qtn_drm_info_remove_fr_account
+    { buf = qtn_drm_info_remove_fr_account; }
+
+RESOURCE TBUF r_qtn_drm_conf_device_registered
+    { buf = qtn_drm_conf_device_registered; }
+
+RESOURCE TBUF r_qtn_drm_info_getting_key_failed
+    { buf = qtn_drm_info_getting_key_failed; }
+
+RESOURCE TBUF r_qtn_drm_get_key_failed_retry
+    { buf = qtn_drm_get_key_failed_retry; }
+
+RESOURCE TBUF r_qtn_drm_info_update_domain_fail
+    { buf = qtn_drm_info_update_domain_fail; }
+
+RESOURCE TBUF r_qtn_drm_info_account_is_full
+    { buf = qtn_drm_info_account_is_full; }
+
+RESOURCE TBUF r_qtn_drm_remove_fr_account_fail
+    { buf = qtn_drm_remove_fr_account_fail; }
+
+RESOURCE TBUF r_qtn_drm_info_device_regist_fail
+    { buf = qtn_drm_info_device_regist_fail; }
+
+RESOURCE TBUF r_qtn_drm_info_registration_failed
+    { buf = qtn_drm_info_registration_failed; }
+
+RESOURCE TBUF r_qtn_drm_account_not_recognised
+    { buf = qtn_drm_account_not_recognised; }
+
+RESOURCE TBUF r_qtn_drm_query_register_with_u
+    { buf = qtn_drm_query_register_with_u; }
+
+RESOURCE TBUF r_qtn_drm_query_register_with_cp
+    { buf = qtn_drm_query_register_with_cp; }
+
+RESOURCE TBUF r_qtn_drm_msq_query_registration
+    { buf = qtn_drm_msq_query_registration; }
+
+RESOURCE TBUF r_qtn_drm_msq_query_link_more_inf
+    { buf = qtn_drm_msq_query_link_more_inf; }

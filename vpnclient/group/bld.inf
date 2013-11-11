@@ -1,0 +1,120 @@
+/*
+* Copyright (c) 2006-2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build information file for VPN components
+*
+*/
+
+#include <platform_paths.hrh>
+
+PRJ_EXPORTS
+
+../vpnengine/dmadengine/rom/dmadengine.iby                             CORE_MW_LAYER_IBY_EXPORT_PATH(dmadengine.iby)
+../vpnengine/dmadipsecvpn/rom/dmadipsecvpn.iby                         CORE_MW_LAYER_IBY_EXPORT_PATH(dmadipsecvpn.iby)
+../vpnengine/dmadpki/rom/dmadpki.iby                                   CORE_MW_LAYER_IBY_EXPORT_PATH(dmadpki.iby)
+../vpnengine/eventmediator/rom/eventmediator.iby                       CORE_MW_LAYER_IBY_EXPORT_PATH(eventmediator.iby)
+../vpnengine/eventmediatorapi/rom/eventmediatorapi.iby                 CORE_MW_LAYER_IBY_EXPORT_PATH(eventmediatorapi.iby)
+../vpnengine/eventviewer/rom/eventviewer.iby                           CORE_MW_LAYER_IBY_EXPORT_PATH(eventviewer.iby)
+../vpnengine/ikepolparser/rom/ikepolparser.iby                         CORE_MW_LAYER_IBY_EXPORT_PATH(ikepolparser.iby)
+../vpnengine/ikesocket/rom/ikesocket.iby                               CORE_MW_LAYER_IBY_EXPORT_PATH(ikesocket.iby)
+../vpnengine/ikecert/rom/ikecert.iby                                   CORE_MW_LAYER_IBY_EXPORT_PATH(ikecert.iby)
+../vpnengine/kmdapi/rom/kmdapi.iby                                     CORE_MW_LAYER_IBY_EXPORT_PATH(kmdapi.iby)
+../vpnengine/kmdserver/rom/kmdserver.iby                               CORE_MW_LAYER_IBY_EXPORT_PATH(kmdserver.iby)
+../vpnengine/ikeutils/rom/ikeutils.iby                                 CORE_MW_LAYER_IBY_EXPORT_PATH(ikeutils.iby)
+../vpnengine/ikev1lib/rom/ikev1lib.iby                                 CORE_MW_LAYER_IBY_EXPORT_PATH(ikev1lib.iby)
+../vpnengine/ikev2lib/rom/ikev2lib.iby                                 CORE_MW_LAYER_IBY_EXPORT_PATH(ikev2lib.iby)
+../vpnengine/pkiservice/rom/pkiservice.iby                             CORE_MW_LAYER_IBY_EXPORT_PATH(pkiservice.iby)
+../vpnengine/pkiserviceapi/rom/pkiserviceapi.iby                       CORE_MW_LAYER_IBY_EXPORT_PATH(pkiserviceapi.iby)
+../vpnengine/sit/rom/eventmedsit.iby                                   CORE_MW_LAYER_IBY_EXPORT_PATH(eventmedsit.iby)
+../vpnengine/utlbase64/rom/utlbase64.iby                               CORE_MW_LAYER_IBY_EXPORT_PATH(utlbase64.iby)
+../vpnengine/utlcrypto/rom/utlcrypto.iby                               CORE_MW_LAYER_IBY_EXPORT_PATH(utlcrypto.iby)
+../vpnengine/utlpkcs10/rom/utlpkcs10.iby                               CORE_MW_LAYER_IBY_EXPORT_PATH(utlpkcs10.iby)
+../vpnengine/utlpkcs12/rom/utlpkcs12.iby                               CORE_MW_LAYER_IBY_EXPORT_PATH(utlpkcs12.iby)
+../vpnengine/utlxml/rom/utlxml.iby                                     CORE_MW_LAYER_IBY_EXPORT_PATH(utlxml.iby)
+../vpnengine/vpncleaner/rom/vpncleaner.iby                             CORE_MW_LAYER_IBY_EXPORT_PATH(vpncleaner.iby)
+../vpnengine/vpnconnagt/rom/vpnconnagt.iby                             CORE_MW_LAYER_IBY_EXPORT_PATH(vpnconnagt.iby)
+../vpnengine/vpnmanager/rom/vpnmanager.iby                             CORE_MW_LAYER_IBY_EXPORT_PATH(vpnmanager.iby)
+../vpnengine/vpnins/rom/vpnins.iby                                     CORE_MW_LAYER_IBY_EXPORT_PATH(vpnins.iby)
+../vpnengine/vpnipsecpolparser/rom/vpnipsecpolparser.iby               CORE_MW_LAYER_IBY_EXPORT_PATH(vpnipsecpolparser.iby)
+../vpnengine/vpntcwrapper/rom/vpntcwrapper.iby                         CORE_MW_LAYER_IBY_EXPORT_PATH(vpntcwrapper.iby)
+
+../vpnui/vpnecomnotifier/rom/vpnecomnotifier.iby                       CORE_MW_LAYER_IBY_EXPORT_PATH(vpnecomnotifier.iby)
+../vpnui/vpndialogmanager/rom/vpndialogmanager.iby                     CORE_MW_LAYER_IBY_EXPORT_PATH(vpndialogmanager.iby)
+../vpnui/vpnpolins/rom/vpnpolins.iby                                   CORE_MW_LAYER_IBY_EXPORT_PATH(vpnpolins.iby)
+
+../vpnui/vpnecomnotifier/rom/vpnecomnotifierResources.iby              LANGUAGE_MW_LAYER_IBY_EXPORT_PATH(vpnecomnotifierResources.iby)
+
+../vpnui/vpnpolicyrecognizer/rom/vpnpolicyrecognizer.iby               CORE_MW_LAYER_IBY_EXPORT_PATH(vpnpolicyrecognizer.iby)
+../rom/ipsecvpn.iby                                                    CORE_MW_LAYER_IBY_EXPORT_PATH(ipsecvpn.iby)
+
+// export localised loc file
+../vpnui/vpnecomnotifier/loc/vpnnotifier.loc                           MW_LAYER_LOC_EXPORT_PATH(vpnnotifier.loc)
+
+./vpnclient_version_update.flm                                         /epoc32/tools/makefile_templates/vpnclient/vpnclient_version_update.flm
+./vpnclient_version_update.xml                                         /epoc32/tools/makefile_templates/vpnclient/vpnclient_version_update.xml
+
+
+PRJ_MMPFILES
+
+// Update version information
+#ifndef SBSV2
+gnumakefile vpnclient_version_update.make
+#endif
+
+#include "../vpnc_plat/vpnapi/group/bld.inf"
+#include "../vpnapiimpl/group/bld.inf"
+
+#include "../vpnengine/eventmediatorapi/group/bld.inf"
+#include "../vpnengine/eventviewer/group/bld.inf"
+#include "../vpnengine/vpnins/group/bld.inf"
+#include "../vpnengine/ikepolparser/group/bld.inf"
+#include "../vpnengine/utlbase64/group/bld.inf"
+#include "../vpnengine/utlcrypto/group/bld.inf"
+#include "../vpnengine/utlxml/group/bld.inf"
+#include "../vpnengine/utlpkcs10/group/bld.inf"
+
+#include "../vpnengine/pkiserviceapi/group/bld.inf"
+#include "../vpnengine/ikecert/group/bld.inf"
+#include "../vpnengine/kmdapi/group/bld.inf"
+#include "../vpnengine/kmdserver/group/bld.inf"
+#include "../vpnengine/ikeutils/group/bld.inf"
+#include "../vpnengine/ikev1lib/group/bld.inf"
+#include "../vpnengine/ikev2lib/group/bld.inf"
+#include "../vpnengine/vpnipsecpolparser/group/bld.inf"
+#include "../vpnengine/sit/group/bld.inf"
+
+#include "../vpnengine/vpntcwrapper/group/bld.inf"
+#include "../vpnui/vpnecomnotifier/group/bld.inf"
+#include "../vpnui/vpndialogmanager/group/bld.inf"
+#include "../vpnengine/eventmediator/group/bld.inf"
+#include "../vpnengine/pkiservice/group/bld.inf"
+#include "../vpnengine/vpnconnagt/group/bld.inf"
+#include "../vpnengine/vpnmanager/group/bld.inf"
+#include "../vpnui/vpnpolins/group/bld.inf"
+#include "../vpnui/vpnpolicyrecognizer/group/bld.inf"
+#include "../vpnengine/vpncleaner/group/bld.inf"
+
+#include "../vpnengine/utlpkcs12/group/bld.inf"
+#include "../vpnengine/dmadengine/group/bld.inf"
+#include "../vpnengine/dmadipsecvpn/group/bld.inf"
+#include "../vpnengine/dmadpki/group/bld.inf"
+#include "../vpnengine/ikesocket/group/bld.inf"
+
+#include "../help/group/bld.inf"
+
+PRJ_EXTENSIONS
+
+#ifdef SBSV2
+START EXTENSION vpnclient/version_update vpnclient_vu
+END
+#endif

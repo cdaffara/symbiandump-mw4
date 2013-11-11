@@ -1,0 +1,243 @@
+/*
+* Copyright (c) 2006-2007 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project Hitchcock Core
+*                Do not try to build this directly, this is included
+*                as a part of huitk.mmp and huitk_publicsdk.mmp.
+*
+*/
+
+
+
+#include <bldvariant.hrh>
+#include "../../CommonInc/huicompileroptions.mmh"
+
+TARGET          hitchcock.dll
+TARGETTYPE      dll
+UID             0x1000008d 0xA48A362E
+VERSION         10.0
+
+#ifndef WINS
+EPOCALLOWDLLDATA
+#endif
+
+#ifdef EKA2
+#ifndef HUI_NO_CAPABILITIES
+CAPABILITY      ALL -TCB
+#else
+// No capabilities to make it possible to install on all devices using a SIS package.
+CAPABILITY      None
+#endif
+#endif
+
+// MACRO HUI_DEBUG_TRACK_DRAWING
+// #define HUI_DEBUG_TRACK_DRAWING
+
+#include <platform_paths.hrh>
+MW_LAYER_SYSTEMINCLUDE
+APP_LAYER_SYSTEMINCLUDE
+
+SYSTEMINCLUDE   ../inc
+USERINCLUDE     ../inc ../../CommonInc
+
+#ifdef __SERIES60_30__
+USERINCLUDE     ../../../../uiaccelerator_dom/alf_core_toolkit_api/inc
+USERINCLUDE     ../../../../uiaccelerator_dom/alf_visual_api/inc
+USERINCLUDE     ../../../../uiaccelerator_dom/alf_tracing_api/inc
+USERINCLUDE     ../../../../uiaccelerator_dom/alf_extension_api/inc
+SYSTEMINCLUDE     ../../../../uiaccelerator_dom/alf_visual_api/inc
+SYSTEMINCLUDE /epoc32/include/m3g
+#endif
+
+SYSTEMINCLUDE           ../../../../inc
+
+//Added as part of break team support changes.
+#include "../../../../group/stdinc.mmh"
+
+SOURCEPATH      ../src
+
+// Utilities
+SOURCE          HuiUtil.cpp
+SOURCE          HuiStatic.cpp
+SOURCE          HuiPanic.cpp
+SOURCE          HuiMappingFunctions.cpp
+SOURCE          HuiDisplayCoeControl.cpp
+SOURCE          HuiInteractionInterval.cpp
+SOURCE          HuiImageLoaderUtil.cpp
+SOURCE          huifixmath.cpp
+
+SOURCE		appiconcache.cpp
+
+// Toolkit Core
+SOURCE          HuiTimedValue.cpp
+SOURCE          HuiTimedPoint.cpp
+SOURCE          HuiEnv.cpp
+SOURCE          HuiDisplay.cpp
+SOURCE          HuiEvent.cpp
+SOURCE          HuiCommand.cpp
+SOURCE          HuiScheduler.cpp
+SOURCE          HuiRoster.cpp
+SOURCE          HuiRosterImpl.cpp
+SOURCE          HuiRosterEntry.cpp
+SOURCE			huieventhandler.cpp
+SOURCE			huifontmanager.cpp
+SOURCE			huifontspecification.cpp
+SOURCE			HuiTextStyleManager.cpp
+SOURCE			HuiTextStyle.cpp
+SOURCE			HuiS60TextStyle.cpp
+SOURCE          huilongtapdetector.cpp
+SOURCE			huimetric.cpp
+SOURCE          huiskinbackgroundlayout.cpp
+SOURCE          huidisplaybackgrounditem.cpp
+
+// Renderer Core
+SOURCE          HuiRenderPlugin.cpp
+SOURCE          HuiRenderSurface.cpp
+SOURCE          HuiGc.cpp
+SOURCE          HuiMatrixStack.cpp
+SOURCE          HuiTextureManager.cpp
+SOURCE          huitextureanimationstate.cpp
+SOURCE          HuiTextureProcessor.cpp
+SOURCE          HuiSegmentedTexture.cpp
+SOURCE          HuiTextureHandle.cpp
+SOURCE          HuiTexture.cpp
+SOURCE          HuiAnimatedTexture.cpp
+SOURCE          huigifanimationtexture.cpp
+SOURCE          huiskinanimationtexture.cpp
+SOURCE          HuiFont.cpp
+SOURCE          HuiTextMesh.cpp
+SOURCE          HuiRasterizedTextMesh.cpp
+SOURCE          HuiMaterial.cpp
+SOURCE          HuiMesh.cpp
+SOURCE          huiproceduralmesh.cpp
+SOURCE          huim3gmesh.cpp
+SOURCE          HuiImage.cpp
+SOURCE          HuiCurvePath.cpp
+SOURCE          HuiSkin.cpp
+SOURCE          HuiS60Skin.cpp
+SOURCE          huitextureautosizeparams.cpp
+SOURCE          huidropshadow.cpp
+
+// Visuals
+SOURCE          HuiTransformation.cpp
+SOURCE          HuiVisualFactory.cpp
+SOURCE          HuiVisual.cpp
+SOURCE          HuiImageVisual.cpp
+SOURCE          HuiTextVisual.cpp
+SOURCE          HuiLineVisual.cpp
+SOURCE          HuiMeshVisual.cpp
+SOURCE          HuiLayout.cpp
+SOURCE          HuiDeckLayout.cpp
+SOURCE          HuiFlowLayout.cpp
+SOURCE          HuiGridLayout.cpp
+SOURCE          HuiAnchorLayout.cpp
+SOURCE          HuiCurvePathLayout.cpp
+SOURCE          huiviewportlayout.cpp
+SOURCE          HuiBrush.cpp
+SOURCE          HuiImageBrush.cpp
+SOURCE          HuiGradientBrush.cpp
+SOURCE          HuiBorderBrush.cpp
+SOURCE          huiframebrush.cpp
+SOURCE          HuiShadowBorderBrush.cpp
+SOURCE          HuiDropShadowBrush.cpp
+SOURCE          HuiBrushArray.cpp
+
+// Controls
+SOURCE          HuiControl.cpp
+SOURCE          HuiControlGroup.cpp
+
+// Common Controls
+SOURCE          HuiSoftKeyControl.cpp
+
+// Theme Interface
+SOURCE          HuiThemeManager.cpp
+// Canvas
+SOURCE					HuiCanvasVisual.cpp
+SOURCE					huicanvasgc.cpp
+SOURCE					HuiCanvasCmdBufferReader.cpp
+SOURCE					HuiCanvasTextureCache.cpp
+SOURCE					huicanvasbackground.cpp
+SOURCE 					huicanvasalfpainter.cpp
+SOURCE					huicanvaswspainter.cpp
+SOURCE					huicanvaspainter.cpp
+SOURCE					huicanvaswshwgc.cpp
+SOURCE					huicanvaswsswgc.cpp
+SOURCE					huicanvasrenderbuffer.cpp
+SOURCE					huicanvaswsbitgc.cpp
+
+// Effects
+SOURCE          HuiFxColorParameter.cpp
+SOURCE          HuiFxEffect.cpp
+SOURCE		    HuiFxEffectCache.cpp
+SOURCE          HuiFxEffectParser.cpp
+SOURCE          HuiFxEngine.cpp
+SOURCE          HuiFxFilter.cpp
+SOURCE          HuiFxFilterLayer.cpp
+SOURCE          HuiFxGroupLayer.cpp
+SOURCE          HuiFxLayer.cpp
+SOURCE          HuiFxParameter.cpp
+SOURCE          HuiFxRenderbuffer.cpp
+SOURCE          HuiFxScalarParameter.cpp
+SOURCE          HuiFxVisualLayer.cpp
+SOURCE          HuiFxParameterManager.cpp
+#ifdef HUI_DEBUG_TRACK_DRAWING
+SOURCE          huicanvasdebugwsgc.cpp
+#endif
+SOURCE		HuiCmdBufferBrush.cpp
+
+LIBRARY         euser.lib
+LIBRARY         efsrv.lib
+LIBRARY         apparc.lib
+LIBRARY         cone.lib
+LIBRARY         bafl.lib
+LIBRARY         eikcore.lib
+LIBRARY         ws32.lib
+LIBRARY         fbscli.lib
+LIBRARY         gdi.lib
+LIBRARY         bitgdi.lib
+LIBRARY         libGLES_CM.lib
+LIBRARY         imageconversion.lib
+LIBRARY         charconv.lib
+LIBRARY         hal.lib
+LIBRARY         scdv.lib
+LIBRARY         flogger.lib
+LIBRARY         avkon.lib
+LIBRARY         aknskins.lib
+LIBRARY         aknskinsrv.lib
+LIBRARY     	aknicon.lib
+LIBRARY         fontutils.lib
+LIBRARY         aknpictograph.lib
+LIBRARY         cdlengine.lib
+LIBRARY         aknlayout2scalable.lib
+LIBRARY         aknlayout2.lib
+LIBRARY         centralrepository.lib
+
+LIBRARY	        xmlparser.lib
+LIBRARY	        xmldom.lib
+LIBRARY         libc.lib
+LIBRARY         libm.lib
+
+#ifdef RD_TACTILE_FEEDBACK
+LIBRARY         touchfeedback.lib 
+#endif
+LIBRARY         fontprovider.lib
+
+// Needed because the renderers have become ecom plugins....
+LIBRARY         ecom.lib
+LIBRARY         lookuptable.lib // for fader in canvaswspainter
+
+#ifdef HUI_DEBUG_TRACK_DRAWING
+LIBRARY 	    alfcommanddebug.lib
+#endif 
+
+LIBRARY			platformenv.lib

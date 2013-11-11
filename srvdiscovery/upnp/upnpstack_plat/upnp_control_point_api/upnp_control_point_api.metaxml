@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<api id="6f534afa09f07fc25a19214b7c1ce7b1" dataversion="1.0">
+  <name>UPnP Control Point API</name>
+  <description>UPnP Control Point API is used by developers of UPnP control points. This API is used to control and show the status of available UPnP collaborating devices in the network. It hides the addressing, discovery, description and eventing layers and provides control layer functionality. It can be used to send HTTP messages and actions to remote services, and receive action responses from them. Furthermore it offers functionality to control the eventing subscriptions (subscriptions, subscription renewals and unsubscriptions).</description>
+  <type>c++</type>
+  <subsystem>upnpstack</subsystem>
+  <libs>
+    <lib name="upnpcontrolpointbase.lib" />
+  </libs>
+  <release category="domain"/>
+  <attributes>
+     <!-- This indicates wether the api provedes separate html documentation -->
+     <!-- or is the additional documentation generated from headers. -->
+     <!-- If you are unsuere then the value is "no" -->
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>

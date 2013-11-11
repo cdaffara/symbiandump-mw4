@@ -1,0 +1,89 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Project description file for the Scheme Handler App
+*
+*
+*/
+
+
+#include <platform_paths.hrh>
+#include <platform/mw/SchemeDefs.hrh>
+#include <data_caging_paths.hrh>
+#include <bldvariant.hrh>
+#include <platform/mw/Browser_platform_variant.hrh>
+
+TARGET        SchemeApp.exe
+EPOCSTACKSIZE 0x5000
+TARGETTYPE    exe
+
+UID         0x100039ce SCHEME_APP_UID
+TARGETPATH  /system/apps/SchemeApp
+
+CAPABILITY	CAP_APPLICATION NetworkControl
+
+epocstacksize 0x5000
+
+SOURCEPATH  ../src
+
+// Test application.
+SOURCE      SchemeApp.cpp 
+SOURCE      SchemeAppUi.cpp
+SOURCE      SchemeDocument.cpp
+SOURCE	    SchemeDialog.cpp 
+
+
+START RESOURCE ../data/SchemeApp.rss
+DEPENDS avkon.rsg
+HEADER
+TARGETPATH APP_RESOURCE_DIR
+#ifdef __S60_32__
+LANG sc 
+#else
+LANGUAGE_IDS 
+#endif
+END  // RESOURCE
+
+USERINCLUDE     ../inc
+
+MW_LAYER_SYSTEMINCLUDE
+MW_LAYER_ECOM_SYSTEMINCLUDE
+
+LIBRARY     apparc.lib
+LIBRARY     avkon.lib
+LIBRARY     cone.lib
+LIBRARY     eikcore.lib
+LIBRARY     euser.lib
+LIBRARY     eikcoctl.lib
+LIBRARY     eikdlg.lib
+LIBRARY	    ecom.lib
+LIBRARY     COMMONUI.lib
+LIBRARY     estor.lib
+LIBRARY     ServiceHandler.lib
+
+VENDORID VID_DEFAULT
+
+// Define this macro is you wish to enable logging
+//#define __TEST_SCHEMEAPP_LOG_ENABLED
+
+#ifdef __TEST_SCHEMEAPP_LOG_ENABLED
+	MACRO __SCHEMEAPP_LOG__
+	DEBUGLIBRARY     flogger.lib
+#endif	// __TEST_SCHEMEAPP_LOG_ENABLED
+
+START RESOURCE ../data/SchemeApp_reg.rss
+DEPENDS schemeapp.rsg
+// Do not change the UID below.
+TARGETPATH /private/10003a3f/apps
+END

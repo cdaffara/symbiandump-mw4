@@ -1,0 +1,51 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+*
+*/
+
+
+TARGET			ts_chunkmgr.exe
+TARGETTYPE  	exe
+UID         	0 0x101F529F
+
+
+USERINCLUDE   	../inc
+
+SYSTEMINCLUDE	/epoc32/include
+SYSTEMINCLUDE	/epoc32/include/test
+
+
+SOURCEPATH		../src
+SOURCE      	testsuitechunkmgr.cpp
+SOURCE      	chunkmgrteststepbase.cpp
+SOURCE      	test01createdeletechunkmgr.cpp
+SOURCE      	test02allocdealloc.cpp
+SOURCE      	test03allocerror.cpp
+SOURCE      	test04defaultheapfreecheck.cpp
+SOURCE      	test05allocdeallocperformance.cpp
+SOURCE      	test06alloccheckblocksize.cpp
+SOURCE      	test07exhaustchunkpools.cpp
+SOURCE      	test08multiplethreads.cpp
+
+
+LIBRARY			euser.lib
+LIBRARY     	chunkmgr.lib
+LIBRARY     	efsrv.lib
+LIBRARY			testexecuteutils.lib // for TEF
+LIBRARY			testexecutelogclient.lib // for TEF
+
+CAPABILITY	 CommDD PowerMgmt ReadDeviceData WriteDeviceData TrustedUI ProtServ NetworkControl NetworkServices LocalServices ReadUserData WriteUserData
+
+SMPSAFE

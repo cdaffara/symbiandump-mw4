@@ -1,0 +1,53 @@
+/*
+* Copyright (c) 2002-2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*      Build information for the Favourites Engine
+*
+*
+*/
+
+#include <platform_paths.hrh>
+#include "../../../../web_plat/browser_platform_api/inc/Browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../rom/FavouritesEngine.iby	CORE_MW_LAYER_IBY_EXPORT_PATH(FavouritesEngine.iby)
+../rom/favouriges_variant.iby	CUSTOMER_MW_LAYER_IBY_EXPORT_PATH(favouriges_variant.iby)
+
+//Default bookmarks
+./BookmarkImportSample.txt             /epoc32/data/z/private/10008d38/BookmarkImportSample.txt
+./BookmarkImportSample.txt             /epoc32/winscw/c/private/10008d38/BookmarkImportSample.txt
+
+
+// Favourites database security policy file
+
+./101FD685.SPD						 /epoc32/release/winscw/UDEB/Z/private/100012a5/policy/101FD685.SPD
+./101FD685.SPD						 /epoc32/release/winscw/UREL/Z/private/100012a5/policy/101FD685.SPD
+./101FD685.SPD	 					 /epoc32/data/Z/private/100012a5/policy/101FD685.SPD
+
+// Secure Backup registration file
+./backup_registration_31.xml            /epoc32/wins/c/private/10008d38/backup_registration.xml
+./backup_registration_31.xml            /epoc32/winscw/c/private/10008d38/backup_registration.xml
+./backup_registration_31.xml            /epoc32/data/z/private/10008d38/backup_registration.xml
+
+
+PRJ_MMPFILES
+./FavouritesEngine.mmp
+./FavouritesSrv.mmp
+
+//PRJ_TESTMMPFILES
+//./BookmarkImport.mmp
+//./BookmarkDump.mmp

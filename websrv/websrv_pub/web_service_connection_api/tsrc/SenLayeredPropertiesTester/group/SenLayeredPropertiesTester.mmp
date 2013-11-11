@@ -1,0 +1,117 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Project specification file for senlayeredpropertiestester 
+*
+*/
+#if defined(__S60_)
+        #include <platform_paths.hrh>
+#endif
+TARGET          SenLayeredPropertiesTester.dll
+TARGETTYPE      dll
+UID             0x1000008D 0x101FB3E3
+
+CAPABILITY      ALL -TCB
+/* Remove comments and replace 0x00000000 with correct vendor id */
+// VENDORID     0x00000000
+/* Remove comments and replace 0x00000000 with correct secure id */
+// SECUREID     0x00000000
+
+#ifdef EKA2
+		    EPOCALLOWDLLDATA
+#endif // EKA2
+//TARGETPATH      ?target_path
+DEFFILE         SenLayeredPropertiesTester.def
+// Sources needed by the test
+SOURCEPATH              ../../../../../webservices/wsframework/src
+//SOURCE                  SenLayeredTransportProperties.cpp
+//SOURCE                  SenLayeredHttpTransportProperties.cpp
+SOURCE                  senlayeredxmlproperties.cpp
+
+USERINCLUDE             ../../../../../webservices/wsframework/inc
+USERINCLUDE             ../../../../../webservices/wsutils/inc
+USERINCLUDE             ../../../../../webservices/wsxml/inc
+#ifdef SBSV2
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE 
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include 
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#else // SBSV2 not defined
+	USERINCLUDE     ../inc 
+
+	#if defined(__S60_)
+	    OS_LAYER_SYSTEMINCLUDE
+	#else // __S60_ not defined
+	    SYSTEMINCLUDE   /epoc32/include
+	#endif // __S60_
+
+	SOURCEPATH      ../src
+#endif // SBSV2
+
+MW_LAYER_SYSTEMINCLUDE //SYSTEMINCLUDE
+SOURCE          SenLayeredPropertiesTester.cpp
+SOURCE          SenLayeredPropertiesTesterBlocks.cpp
+
+//RESOURCE        resource_file
+//RESOURCE        resource_file2
+
+LIBRARY         euser.lib
+LIBRARY         stiftestinterface.lib
+LIBRARY         stiftestengine.lib
+LIBRARY                 ecom.lib
+LIBRARY                 estor.lib
+LIBRARY                 flogger.lib
+LIBRARY                 bafl.lib    // RStringPool
+LIBRARY   efsrv.lib 
+LANG            SC
+
+#ifndef RD_SEN_COMPILE_SIS_PACKAGE_FILES
+// SOA for S60 libraries
+		LIBRARY SenServDesc.lib
+		LIBRARY SenUtils.lib
+		LIBRARY SenXml.lib
+		LIBRARY SenFramework.lib
+#else
+		LIBRARY wsServDesc.lib
+		LIBRARY wsUtils.lib
+		LIBRARY wsXml.lib
+		LIBRARY wsFramework.lib
+#endif
+/*
+START WINS      
+?wins_specific_information
+END
+
+START MARM
+?marm_specific_information
+END
+*/
+// Other possible keywords:
+ 
+// DOCUMENT     ?file, that is not compiled, but added to MSVC project workspace (i.e. release notes)
+/*
+START BITMAP ?target
+TARGETPATH   ?emulated_path_on_target_machine
+HEADER
+SOURCE       ?color_depth ?source_bitmap
+END
+*/
+// DEFFILE ?filename
+// AIF ?filename
+
+// End of File

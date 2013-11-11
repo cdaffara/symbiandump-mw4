@@ -1,0 +1,108 @@
+/*
+* Copyright (c) 2008 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Project definition file for alfperfapp.
+*
+*/
+
+
+#include <data_caging_paths.hrh>
+#include <platform_paths.hrh>
+
+TARGET                  alfperfapp.exe
+TARGETTYPE              exe
+UID                     0x100039CE 0x20016B8D
+
+EPOCSTACKSIZE           0xA000 //0x5000
+EPOCHEAPSIZE            0x7FFF 0x1A00000 //0xF4FFFF
+
+CAPABILITY              CAP_APPLICATION
+VENDORID                VID_DEFAULT
+
+SOURCEPATH              ../src
+
+// Enables test cases that require InActive flag (marked with EAlfPerfAppTestCaseFlagRequiresInActiveFlag)
+// You need to clean your build to make the change effective.
+//MACRO ALFPERFAPP_ENABLE_INACTIVE_FLAG_CASES
+
+// framework:
+SOURCE                  alfperfappapplication.cpp
+SOURCE                  alfperfappdocument.cpp
+SOURCE                  alfperfappappui.cpp
+SOURCE                  alfperfapptestcaseexecutionview.cpp
+SOURCE					alfperfapptestcaseselectionview.cpp
+SOURCE                  alfperfapptestcasefactory.cpp
+SOURCE                  alfperfappmodel.cpp
+SOURCE                  alfperfappbasetestcasecontrol.cpp
+
+// test cases:
+SOURCE                  alfperfappframeworktestcase.cpp
+SOURCE                  alfperfappimagetestcase.cpp
+SOURCE                  alfperfapplayouttestcase.cpp
+SOURCE                  alfperfapptexttestcase.cpp
+SOURCE                  alfperfappcovertestcase.cpp
+SOURCE                  alfperfappsuitetestcase.cpp
+SOURCE                  alfperfappsuitetestcasecontrol.cpp
+SOURCE                  alfperfappsuitetestcasescroll.cpp
+SOURCE                  alfperfappsuiteepgcontrol.cpp
+SOURCE                  alfperfappsuitepeoplecontrol.cpp
+SOURCE                  alfperfappsuitehelper.cpp
+SOURCE                  alfperfappgallerytestcase.cpp
+SOURCE                  alfperfappavkontestcase.cpp
+SOURCE                  alfperftestcase.cpp
+
+SOURCEPATH              ../data
+
+START RESOURCE          alfperfapp.rss
+HEADER
+TARGETPATH              APP_RESOURCE_DIR
+LANGUAGE_IDS
+END // RESOURCE
+
+START RESOURCE          alfperfapp_reg.rss
+DEPENDS alfperfapp.rsg
+TARGETPATH              /private/10003a3f/apps
+END
+
+USERINCLUDE             ../group  
+USERINCLUDE             ../inc
+
+// This is a SYSTEMINCLUDE macro containing the application
+// layer specific include directories
+APP_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE           ../../../../../inc
+
+LIBRARY                 apparc.lib
+LIBRARY                 avkon.lib
+LIBRARY                 bafl.lib 
+LIBRARY                 cone.lib
+LIBRARY                 eikcoctl.lib 
+LIBRARY                 eikcore.lib 
+LIBRARY                 eikctl.lib 
+LIBRARY                 euser.lib
+LIBRARY                 efsrv.lib 
+LIBRARY                 fbscli.lib 
+LIBRARY                 aknskins.lib
+LIBRARY                 commonengine.lib
+LIBRARY                 ws32.lib
+LIBRARY                 apgrfx.lib
+LIBRARY                 gdi.lib
+LIBRARY                 hal.lib
+LIBRARY                 bitgdi.lib 
+LIBRARY                 alfclient.lib
+
+LIBRARY           		aknicon.lib
+
+
+
+

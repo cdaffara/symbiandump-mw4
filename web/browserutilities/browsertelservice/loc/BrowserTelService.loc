@@ -1,0 +1,59 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+//*****************************************************************************
+// MAKE CALL STRINGS
+//*****************************************************************************
+
+//d:make call confirmation query
+//l:popup_note_window
+//
+#define qtn_wml_wtai_call_no			"Call\n%U?"
+
+//d:call not allowed error note
+//l:popup_note_window
+//
+#define text_call_not_allowed			"Call not allowed"
+
+//*****************************************************************************
+// SEND DTMF STRINGS
+//*****************************************************************************
+
+//d:send dtmf confirmation query
+//l:popup_note_window
+//
+#define qtn_wml_wtai_send_dtmf			"Send DTMF number\n%U?"
+
+//d:dtmf sending wait note
+//l:popup_note_wait_window
+//
+#define qtn_dtmf_sending_wait_note		"Sending\n%U"
+
+//*****************************************************************************
+// ADD TO PB STRINGS
+//*****************************************************************************
+
+//d:prompt create new contact
+//l:list_single_popup_submenu_pane_t1
+//
+#define qtn_options_contacts_new		"Create new"
+
+//d:prompt update existing contact
+//l:list_single_popup_submenu_pane_t1
+//
+#define qtn_options_contacts_update		"Update existing"
+

@@ -1,0 +1,31 @@
+EXPORTS
+	??1CUtlDiffieHellman@@UAE@XZ @ 1 NONAME ; CUtlDiffieHellman::~CUtlDiffieHellman(void)
+	??1CUtlMessageDigest@@UAE@XZ @ 2 NONAME ; CUtlMessageDigest::~CUtlMessageDigest(void)
+	??1CUtlSymmetricCipher@@UAE@XZ @ 3 NONAME ; CUtlSymmetricCipher::~CUtlSymmetricCipher(void)
+	?BlockSize@CUtlMessageDigest@@QBEHXZ @ 4 NONAME ; int CUtlMessageDigest::BlockSize(void) const
+	?BlockSize@CUtlSymmetricCipher@@QBEHXZ @ 5 NONAME ; int CUtlSymmetricCipher::BlockSize(void) const
+	?CompleteKL@CUtlDiffieHellman@@QAEPBVHBufC8@@ABVTDesC8@@@Z @ 6 NONAME ; class HBufC8 const * CUtlDiffieHellman::CompleteKL(class TDesC8 const &)
+	?CopyL@CUtlMessageDigest@@QAEPAVCMessageDigest@@XZ @ 7 NONAME ; class CMessageDigest * CUtlMessageDigest::CopyL(void)
+	?DsaVerifySignatureL@TUtlCrypto@@SAHABVTDesC8@@0000@Z @ 8 NONAME ; int TUtlCrypto::DsaVerifySignatureL(class TDesC8 const &, class TDesC8 const &, class TDesC8 const &, class TDesC8 const &, class TDesC8 const &)
+	?Final@CUtlMessageDigest@@QAE?AVTPtrC8@@ABVTDesC8@@@Z @ 9 NONAME ; class TPtrC8 CUtlMessageDigest::Final(class TDesC8 const &)
+	?Final@CUtlMessageDigest@@QAE?AVTPtrC8@@XZ @ 10 NONAME ; class TPtrC8 CUtlMessageDigest::Final(void)
+	?GenerateXL@CUtlDiffieHellman@@QAEPBVHBufC8@@XZ @ 11 NONAME ; class HBufC8 const * CUtlDiffieHellman::GenerateXL(void)
+	?HashSize@CUtlMessageDigest@@QBEHXZ @ 12 NONAME ; int CUtlMessageDigest::HashSize(void) const
+	?IsWeakCryptoLibrary@TUtlCrypto@@SAHXZ @ 13 NONAME ; int TUtlCrypto::IsWeakCryptoLibrary(void)
+	?KeySize@CUtlSymmetricCipher@@QBEHXZ @ 14 NONAME ; int CUtlSymmetricCipher::KeySize(void) const
+	?MakeDiffieHellmanL@TUtlCrypto@@SAPAVCUtlDiffieHellman@@ABVTDesC8@@0@Z @ 15 NONAME ; class CUtlDiffieHellman * TUtlCrypto::MakeDiffieHellmanL(class TDesC8 const &, class TDesC8 const &)
+	?MakeMessageDigesterL@TUtlCrypto@@SAPAVCUtlMessageDigest@@W4TUtlMessageDigestId@1@ABVTDesC8@@@Z @ 16 NONAME ; class CUtlMessageDigest * TUtlCrypto::MakeMessageDigesterL(enum TUtlCrypto::TUtlMessageDigestId, class TDesC8 const &)
+	?MakeSymmetricDecryptorL@TUtlCrypto@@SAPAVCUtlSymmetricCipher@@W4TUtlSymmetricCipherId@1@ABVTDesC8@@1@Z @ 17 NONAME ; class CUtlSymmetricCipher * TUtlCrypto::MakeSymmetricDecryptorL(enum TUtlCrypto::TUtlSymmetricCipherId, class TDesC8 const &, class TDesC8 const &)
+	?MakeSymmetricEncryptorL@TUtlCrypto@@SAPAVCUtlSymmetricCipher@@W4TUtlSymmetricCipherId@1@ABVTDesC8@@1@Z @ 18 NONAME ; class CUtlSymmetricCipher * TUtlCrypto::MakeSymmetricEncryptorL(enum TUtlCrypto::TUtlSymmetricCipherId, class TDesC8 const &, class TDesC8 const &)
+	?MaxFinalOutputLength@CUtlSymmetricCipher@@QBEHH@Z @ 19 NONAME ; int CUtlSymmetricCipher::MaxFinalOutputLength(int) const
+	?MaxOutputLength@CUtlSymmetricCipher@@QBEHH@Z @ 20 NONAME ; int CUtlSymmetricCipher::MaxOutputLength(int) const
+	?Process@CUtlSymmetricCipher@@QAEXABVTDesC8@@AAVTDes8@@@Z @ 21 NONAME ; void CUtlSymmetricCipher::Process(class TDesC8 const &, class TDes8 &)
+	?ProcessFinalL@CUtlSymmetricCipher@@QAEXABVTDesC8@@AAVTDes8@@@Z @ 22 NONAME ; void CUtlSymmetricCipher::ProcessFinalL(class TDesC8 const &, class TDes8 &)
+	?ReplicateL@CUtlMessageDigest@@QAEPAVCMessageDigest@@XZ @ 23 NONAME ; class CMessageDigest * CUtlMessageDigest::ReplicateL(void)
+	?Reset@CUtlMessageDigest@@QAEXXZ @ 24 NONAME ; void CUtlMessageDigest::Reset(void)
+	?Reset@CUtlSymmetricCipher@@QAEXXZ @ 25 NONAME ; void CUtlSymmetricCipher::Reset(void)
+	?RsaPublicKeyDecryptL@TUtlCrypto@@SAXABVTDesC8@@0AAPAVHBufC8@@@Z @ 26 NONAME ; void TUtlCrypto::RsaPublicKeyDecryptL(class TDesC8 const &, class TDesC8 const &, class HBufC8 * &)
+	?RsaPublicKeyEncryptL@TUtlCrypto@@SAXABVTDesC8@@0AAPAVHBufC8@@@Z @ 27 NONAME ; void TUtlCrypto::RsaPublicKeyEncryptL(class TDesC8 const &, class TDesC8 const &, class HBufC8 * &)
+	?Update@CUtlMessageDigest@@QAEXABVTDesC8@@@Z @ 28 NONAME ; void CUtlMessageDigest::Update(class TDesC8 const &)
+	?CryptoVersion@TUtlCrypto@@SA?AW4TUtlCryptoVersion@1@XZ @ 29 NONAME ; public: static enum TUtlCrypto::TUtlCryptoVersion  __cdecl TUtlCrypto::CryptoVersion(void)
+

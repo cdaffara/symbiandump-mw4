@@ -1,0 +1,6 @@
+EXPORTS
+	?NewL@CSenServiceManager@@SAPAV1@XZ @ 1 NONAME ; class CSenServiceManager * CSenServiceManager::NewL(void)
+	?NewLC@CSenServiceManager@@SAPAV1@XZ @ 2 NONAME ; class CSenServiceManager * CSenServiceManager::NewLC(void)
+	?NewL@CSenServiceManager@@SAPAV1@AAVMSenAuthenticationProvider@@@Z @ 3 NONAME ; class CSenServiceManager * CSenServiceManager::NewL(class MSenAuthenticationProvider &)
+	?NewLC@CSenServiceManager@@SAPAV1@AAVMSenAuthenticationProvider@@@Z @ 4 NONAME ; class CSenServiceManager * CSenServiceManager::NewLC(class MSenAuthenticationProvider &)
+

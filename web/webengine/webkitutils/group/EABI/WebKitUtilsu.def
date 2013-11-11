@@ -1,0 +1,58 @@
+EXPORTS
+	_ZN17HistoryController16initWithCallbackEP15HistoryCallbackbb @ 1 NONAME
+	_ZN8CToolBar19HandlePointerEventLERK13TPointerEvent @ 2 NONAME
+	_ZN8CToolBar20HandleOfferKeyEventLERK9TKeyEvent10TEventCode @ 3 NONAME
+	_ZN8CToolBar21AnimateToolBarClosingEi @ 4 NONAME
+	_ZN8CToolBar4NewLER16MToolBarCallback @ 5 NONAME
+	_ZNK8CToolBar4DrawEv @ 6 NONAME
+	_ZTI10CRssButton @ 7 NONAME ; #<TI>#
+	_ZTI11HistoryView @ 8 NONAME ; #<TI>#
+	_ZTI13CDropDownList @ 9 NONAME ; #<TI>#
+	_ZTI14CToolBarButton @ 10 NONAME ; #<TI>#
+	_ZTI14CVisitedButton @ 11 NONAME ; #<TI>#
+	_ZTI15CDropDownButton @ 12 NONAME ; #<TI>#
+	_ZTI16CBookmarksButton @ 13 NONAME ; #<TI>#
+	_ZTI17HistoryController @ 14 NONAME ; #<TI>#
+	_ZTI8CToolBar @ 15 NONAME ; #<TI>#
+	_ZTV10CRssButton @ 16 NONAME ; #<VT>#
+	_ZTV11HistoryView @ 17 NONAME ; #<VT>#
+	_ZTV13CDropDownList @ 18 NONAME ; #<VT>#
+	_ZTV14CToolBarButton @ 19 NONAME ; #<VT>#
+	_ZTV14CVisitedButton @ 20 NONAME ; #<VT>#
+	_ZTV15CDropDownButton @ 21 NONAME ; #<VT>#
+	_ZTV16CBookmarksButton @ 22 NONAME ; #<VT>#
+	_ZTV17HistoryController @ 23 NONAME ; #<VT>#
+	_ZTV8CToolBar @ 24 NONAME ; #<VT>#
+	_Z16sqlite3SymbianFsv @ 25 NONAME
+	_Z21sqlite3SymbianLibInitv @ 26 NONAME
+	_Z25sqlite3SymbianLastOsErrorv @ 27 NONAME
+	_Z25sqlite3SymbianLibFinalizev @ 28 NONAME
+	sqlite3_bind_blob @ 29 NONAME
+	sqlite3_bind_int64 @ 30 NONAME
+	sqlite3_bind_null @ 31 NONAME
+	sqlite3_bind_text16 @ 32 NONAME
+	sqlite3_close @ 33 NONAME
+	sqlite3_column_blob @ 34 NONAME
+	sqlite3_column_bytes @ 35 NONAME
+	sqlite3_column_int @ 36 NONAME
+	sqlite3_column_int64 @ 37 NONAME
+	sqlite3_column_text16 @ 38 NONAME
+	sqlite3_data_count @ 39 NONAME
+	sqlite3_errcode @ 40 NONAME
+	sqlite3_expired @ 41 NONAME
+	sqlite3_finalize @ 42 NONAME
+	sqlite3_last_insert_rowid @ 43 NONAME
+	sqlite3_open16 @ 44 NONAME
+	sqlite3_prepare16 @ 45 NONAME
+	sqlite3_reset @ 46 NONAME
+	sqlite3_step @ 47 NONAME
+	sqlite3_bind_text @ 48 NONAME
+	sqlite3_busy_handler @ 49 NONAME
+	sqlite3_busy_timeout @ 50 NONAME
+	sqlite3_changes @ 51 NONAME
+	sqlite3_column_double @ 52 NONAME
+	sqlite3_column_name @ 53 NONAME
+	sqlite3_column_name16 @ 54 NONAME
+	sqlite3_column_text @ 55 NONAME
+	sqlite3_errmsg @ 56 NONAME
+

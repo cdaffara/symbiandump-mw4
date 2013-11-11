@@ -1,0 +1,184 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+#ifndef __ALFRED_IBY__
+#define __ALFRED_IBY__
+
+#include <bldvariant.hrh>
+
+REM ALFRED
+
+// HUIToolkit
+file=ABI_DIR\BUILD_DIR\hitchcock.dll                            SHARED_LIB_DIR\hitchcock.dll
+// client
+file=ABI_DIR\BUILD_DIR\alfclient.dll                            SHARED_LIB_DIR\alfclient.dll
+// Server core
+file=ABI_DIR\BUILD_DIR\alfappservercore.dll                     SHARED_LIB_DIR\alfappservercore.dll
+
+// RENDERER PLUGINS
+// OpenGL 1.0 & 1.1
+#ifndef SYMBIAN_BUILD_GCE
+//ECOM_PLUGIN(huirenderplugingles.dll, 200113D5.rsc)
+//ECOM_PLUGIN(huirenderpluginbitgdi.dll, 200113D8.rsc)
+// App Server exe
+file=ABI_DIR\BUILD_DIR\alfredserver.exe                         PROGRAMS_DIR\alfredserver.exe
+data=DATAZ_\APP_RESOURCE_DIR\alfredserver.RSC                   APP_RESOURCE_DIR\alfredserver.rsc
+data=ZSYSTEM\..\PRIVATE\10003A3F\APPS\alfredserver_REG.RSC      Private\10003a3f\apps\alfredserver_reg.rsc
+#else
+// Open VG
+ECOM_PLUGIN(huirenderpluginvg.dll, 200184B7.rsc)
+//ECOM_PLUGIN(huirenderplugingles20.dll, 20018425.rsc)
+
+file=ABI_DIR\BUILD_DIR\alfdecoderserverclient.dll               SHARED_LIB_DIR\alfdecoderserverclient.dll
+// Alf render stage
+ECOM_PLUGIN(alfrenderstage.dll, alfrenderstage.RSC)
+// Alf CRP Hint Plugin
+ECOM_PLUGIN(alfhintplugindrawer.dll, alfhintplugindrawer.RSC)
+file=ABI_DIR\BUILD_DIR\alfhintplugin.dll               	SHARED_LIB_DIR\alfhintplugin.dll
+
+ECOM_PLUGIN(alfoogmplugin.dll, alfoogmplugin.RSC)
+ECOM_PLUGIN(alfcrpplugin.dll, alfcrpplugin.RSC)
+
+data=DATAZ_\ECOM_RESOURCE_DIR\alfnonsupportedwscommands.rsc     ECOM_RESOURCE_DIR\alfnonsupportedwscommands.rsc
+
+// Enable the 2 following lines, if _ALF_PRINT_WS_COMMANDS_ or HUI_DEBUG_TRACK_DRAWING is enabled in some component
+// You might need to add alfcommanddebug.dll to \epoc32\rombuild\my_romfiles.txt also, depends on build configuration.
+// file=ABI_DIR\BUILD_DIR\alfcommanddebug.dll               	SHARED_LIB_DIR\alfcommanddebug.dll
+// data=DATAZ_\ECOM_RESOURCE_DIR\alfcommanddescriptions.rsc        ECOM_RESOURCE_DIR\alfcommanddescriptions.rsc
+
+// proxy for running inside wserv
+ECOM_PLUGIN(alfappfwproxy.dll, alfappfwproxy.RSC)
+#endif // #ifdef SYMBIAN_BUILD_GCE
+
+// File token server
+file=ABI_DIR\BUILD_DIR\ftokenclient.dll                         SHARED_LIB_DIR\ftokenclient.dll
+file=ABI_DIR\BUILD_DIR\!ftokenserver.exe                        PROGRAMS_DIR\!ftokenserver.exe
+
+// Stub sis file
+data=ABI_DIR\BUILD_DIR\uiaccelerator_stub.sis system\install\uiaccelerator_stub.sis
+
+// For testing purposes we put our manifest file into the rom.
+// 101f84b9.sel file should be put to rom by aknskins even if we override the file during build.
+// After aknskins has taken over 101f84b9.sel and manifest.mf, we should no longe export them
+// or put them onto the rom.
+
+#ifndef SYMBIAN_GRAPHICS_WSERV_QT_EFFECTS
+#ifndef ALF_USE_OPENWF_COMPOSITION
+data=DATAZ_/RESOURCE_FILES_DIR/effects/manifest.mf RESOURCE_FILES_DIR/effects/manifest.mf
+
+// Effect fxmls. Keep the list in alphabetical order. When updating the list below, REMEMBER TO ALSO UPDATE core_exports.inc!
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_add_page.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_add_page.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_bg_anim_to_image.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_bg_anim_to_image.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_bg_image_to_image.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_bg_image_to_image.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_close_editmode.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_close_editmode.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_close_widgetmanager.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_close_widgetmanager.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left_appear_prt.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left_appear_prt.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left_appear_lsc.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left_appear_lsc.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left_disappear_prt.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left_disappear_prt.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left_disappear_lsc.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_left_disappear_lsc.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_open_editmode.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_open_editmode.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_open_widgetmanager.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_open_widgetmanager.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_remove_page.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_remove_page.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right_appear_prt.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right_appear_prt.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right_appear_lsc.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right_appear_lsc.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right_disappear_prt.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right_disappear_prt.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right_disappear_lsc.fxml RESOURCE_FILES_DIR/effects/activeidle_viewswitch_right_disappear_lsc.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/app_activate.fxml RESOURCE_FILES_DIR/effects/app_activate.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/app_exit.fxml RESOURCE_FILES_DIR/effects/app_exit.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/app_start.fxml RESOURCE_FILES_DIR/effects/app_start.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/app_start_long.fxml RESOURCE_FILES_DIR/effects/app_start_long.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/app_start_rect.fxml RESOURCE_FILES_DIR/effects/app_start_rect.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/app_start_switch.fxml RESOURCE_FILES_DIR/effects/app_start_switch.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/app_start_switch_rect.fxml RESOURCE_FILES_DIR/effects/app_start_switch_rect.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/appshell_exit.fxml RESOURCE_FILES_DIR/effects/appshell_exit.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/confirmationnote_appear.fxml RESOURCE_FILES_DIR/effects/confirmationnote_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/confirmationnote_disappear.fxml RESOURCE_FILES_DIR/effects/confirmationnote_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/contextmenu_appear.fxml RESOURCE_FILES_DIR/effects/contextmenu_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/contextmenu_disappear.fxml RESOURCE_FILES_DIR/effects/contextmenu_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/dialer_close.fxml RESOURCE_FILES_DIR/effects/dialer_close.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/dialer_list_appear.fxml RESOURCE_FILES_DIR/effects/dialer_list_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/dialer_list_disappear.fxml RESOURCE_FILES_DIR/effects/dialer_list_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/dialer_open.fxml RESOURCE_FILES_DIR/effects/dialer_open.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/discreet_popup_appear.fxml RESOURCE_FILES_DIR/effects/discreet_popup_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/discreet_popup_disappear.fxml RESOURCE_FILES_DIR/effects/discreet_popup_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/editingmenu_appear.fxml RESOURCE_FILES_DIR/effects/editingmenu_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/editingmenu_disappear.fxml RESOURCE_FILES_DIR/effects/editingmenu_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/errornote_appear.fxml RESOURCE_FILES_DIR/effects/errornote_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/errornote_disappear.fxml RESOURCE_FILES_DIR/effects/errornote_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/fade_effect.fxml RESOURCE_FILES_DIR/effects/fade_effect.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/folder_close.fxml RESOURCE_FILES_DIR/effects/folder_close.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/folder_open.fxml RESOURCE_FILES_DIR/effects/folder_open.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/informationnote_appear.fxml RESOURCE_FILES_DIR/effects/informationnote_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/informationnote_disappear.fxml RESOURCE_FILES_DIR/effects/informationnote_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/layoutswitch_appear.fxml RESOURCE_FILES_DIR/effects/layoutswitch_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/layoutswitch_disappear.fxml RESOURCE_FILES_DIR/effects/layoutswitch_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/musicplayer_popup_appear.fxml RESOURCE_FILES_DIR/effects/musicplayer_popup_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/musicplayer_popup_disappear.fxml RESOURCE_FILES_DIR/effects/musicplayer_popup_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/musicplayer_viewswitch_in.fxml RESOURCE_FILES_DIR/effects/musicplayer_viewswitch_in.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/musicplayer_viewswitch_out.fxml RESOURCE_FILES_DIR/effects/musicplayer_viewswitch_out.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/notificationwidget_appear.fxml RESOURCE_FILES_DIR/effects/notificationwidget_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/notificationwidget_dd_appear.fxml RESOURCE_FILES_DIR/effects/notificationwidget_dd_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/notificationwidget_dd_disappear.fxml RESOURCE_FILES_DIR/effects/notificationwidget_dd_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/notificationwidget_disappear.fxml RESOURCE_FILES_DIR/effects/notificationwidget_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/optionsmenu_appear.fxml RESOURCE_FILES_DIR/effects/optionsmenu_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/optionsmenu_cascade_appear.fxml RESOURCE_FILES_DIR/effects/optionsmenu_cascade_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/optionsmenu_cascade_disappear.fxml RESOURCE_FILES_DIR/effects/optionsmenu_cascade_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/optionsmenu_disappear.fxml RESOURCE_FILES_DIR/effects/optionsmenu_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/photos_fullscreen_close.fxml RESOURCE_FILES_DIR/effects/photos_fullscreen_close.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/photos_fullscreen_open.fxml RESOURCE_FILES_DIR/effects/photos_fullscreen_open.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/photos_gridview_appear.fxml RESOURCE_FILES_DIR/effects/photos_gridview_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/photos_gridview_disappear.fxml RESOURCE_FILES_DIR/effects/photos_gridview_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/popup_appear.fxml RESOURCE_FILES_DIR/effects/popup_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/popup_disappear.fxml RESOURCE_FILES_DIR/effects/popup_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/popup_disappear_screenshot.fxml RESOURCE_FILES_DIR/effects/popup_disappear_screenshot.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/preview_popup_appear.fxml RESOURCE_FILES_DIR/effects/preview_popup_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/preview_popup_disappear.fxml RESOURCE_FILES_DIR/effects/preview_popup_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/screensaver_activate.fxml RESOURCE_FILES_DIR/effects/screensaver_activate.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/screensaver_deactivate.fxml RESOURCE_FILES_DIR/effects/screensaver_deactivate.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/skinchange.fxml RESOURCE_FILES_DIR/effects/skinchange.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/systemnotify_appear.fxml RESOURCE_FILES_DIR/effects/systemnotify_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/systemnotify_disappear.fxml RESOURCE_FILES_DIR/effects/systemnotify_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/tab_effect.fxml RESOURCE_FILES_DIR/effects/tab_effect.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/taskswapper_app_start_rect.fxml RESOURCE_FILES_DIR/effects/taskswapper_app_start_rect.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/taskswapper_appear.fxml RESOURCE_FILES_DIR/effects/taskswapper_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/taskswapper_disappear.fxml RESOURCE_FILES_DIR/effects/taskswapper_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/toolbar_ext_appear.fxml RESOURCE_FILES_DIR/effects/toolbar_ext_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/toolbar_ext_disappear.fxml RESOURCE_FILES_DIR/effects/toolbar_ext_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/touchinput_close.fxml RESOURCE_FILES_DIR/effects/touchinput_close.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/touchinput_open.fxml RESOURCE_FILES_DIR/effects/touchinput_open.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/viewswitch_left.fxml RESOURCE_FILES_DIR/effects/viewswitch_left.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/viewswitch_left_appear.fxml RESOURCE_FILES_DIR/effects/viewswitch_left_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/viewswitch_left_disappear.fxml RESOURCE_FILES_DIR/effects/viewswitch_left_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/viewswitch_right.fxml RESOURCE_FILES_DIR/effects/viewswitch_right.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/viewswitch_right_appear.fxml RESOURCE_FILES_DIR/effects/viewswitch_right_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/viewswitch_right_disappear.fxml RESOURCE_FILES_DIR/effects/viewswitch_right_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/waitnote_appear.fxml RESOURCE_FILES_DIR/effects/waitnote_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/waitnote_disappear.fxml RESOURCE_FILES_DIR/effects/waitnote_disappear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/warningnote_appear.fxml RESOURCE_FILES_DIR/effects/warningnote_appear.fxml
+data=DATAZ_/RESOURCE_FILES_DIR/effects/warningnote_disappear.fxml RESOURCE_FILES_DIR/effects/warningnote_disappear.fxml
+
+#endif // SYMBIAN_GRAPHICS_WSERV_QT_EFFECTS
+#endif // ALF_USE_OPENWF_COMPOSITION
+
+file=ABI_DIR\BUILD_DIR\backgroundanimhost.exe PROGRAMS_DIR\backgroundanimhost.exe
+file=ABI_DIR\BUILD_DIR\bga_reference_plugin.dll SHARED_LIB_DIR\bga_reference_plugin.dll
+data=DATAZ_\private\200286D3\refvertexshader.vsh private\200286D3\refvertexshader.vsh
+data=DATAZ_\private\200286D3\reffragmentshader.fsh private\200286D3\reffragmentshader.fsh
+
+#endif

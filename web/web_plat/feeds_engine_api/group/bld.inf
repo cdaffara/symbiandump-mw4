@@ -1,0 +1,43 @@
+/*
+* Copyright (c) 2007 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  Build information for the Feeds Server Api
+*
+*/
+#include <platform_paths.hrh>
+#include "../../../web_plat/browser_platform_api/inc/browser_platform_variant.hrh"
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+
+../inc/FeedsServerClient.h          MW_LAYER_PLATFORM_EXPORT_PATH(FeedsServerClient.h)
+../inc/FeedsServerFeed.h            MW_LAYER_PLATFORM_EXPORT_PATH(FeedsServerFeed.h)
+../inc/FeedsServerFolderItem.h      MW_LAYER_PLATFORM_EXPORT_PATH(FeedsServerFolderItem.h)
+
+../inc/FeedsServerMsg.h             MW_LAYER_PLATFORM_EXPORT_PATH(FeedsServerMsg.h)
+../inc/Transaction.h                MW_LAYER_PLATFORM_EXPORT_PATH(Transaction.h)
+../inc/FeedsEntity.h                MW_LAYER_PLATFORM_EXPORT_PATH(FeedsEntity.h)
+../inc/FeedsMap.h                   MW_LAYER_PLATFORM_EXPORT_PATH(FeedsMap.h)
+../inc/FeedsInterface.h             MW_LAYER_PLATFORM_EXPORT_PATH(FeedsInterface.h)
+../inc/FeedAttributes.h             MW_LAYER_PLATFORM_EXPORT_PATH(FeedAttributes.h)
+../inc/FolderAttributes.h           MW_LAYER_PLATFORM_EXPORT_PATH(FolderAttributes.h)
+
+../inc/FeedsServerRequestHandler.h  MW_LAYER_PLATFORM_EXPORT_PATH(FeedsServerRequestHandler.h)
+../inc/FeedsServerSettings.h        MW_LAYER_PLATFORM_EXPORT_PATH(FeedsServerSettings.h)
+../inc/ConnectionObserver.h         MW_LAYER_PLATFORM_EXPORT_PATH(ConnectionObserver.h)
+../inc/LeakTracker.h                MW_LAYER_PLATFORM_EXPORT_PATH(LeakTracker.h)
+../inc/XmlEncoding.h                MW_LAYER_PLATFORM_EXPORT_PATH(XmlEncoding.h)
+
+PRJ_MMPFILES

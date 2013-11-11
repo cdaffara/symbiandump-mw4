@@ -1,0 +1,90 @@
+/*
+* Copyright (c) 2002 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*     This file contains all the resources for the Scheme Handler App.
+*
+*/
+
+
+// RESOURCE IDENTIFIER
+
+NAME FAET
+
+// INCLUDES
+
+#include <eikon.rh>
+#include "Scheme.hrh"
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.mbg>
+#include <data_caging_paths_strings.hrh>
+#include <SchemeApp.loc>
+
+// RESOURCE DEFINITIONS 
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf = "SchemeApp"; }
+
+RESOURCE EIK_APP_INFO
+    {
+    }
+
+#include <appinfo.rh>
+
+//----------------------------------------------------
+//   
+//    r_schemeapp_localisable_app_info
+//    ?description
+//
+//----------------------------------------------------
+//
+RESOURCE LOCALISABLE_APP_INFO r_schemeapp_localisable_app_info
+    {
+    short_caption = qtn_apps_services_grid;
+    caption_and_icon = 
+    CAPTION_AND_ICON_INFO
+        {
+        caption = qtn_apps_services_list;
+
+#ifdef __SCALABLE_ICONS
+        number_of_icons = 1;
+        icon_file = 
+        APP_RESOURCE_DIR"\\schemeapp_aif.mif";
+#else
+        number_of_icons = 2;
+        icon_file = 
+        APP_RESOURCE_DIR"\\schemeapp_aif.mbm";
+#endif  // __SCALABLE_ICONS
+        };
+    }
+
+RESOURCE DIALOG r_scheme_dialog
+    {
+    flags = EEikDialogFlagNoDrag | EEikDialogFlagNoTitleBar |
+            EEikDialogFlagFillAppClientRect | EEikDialogFlagCbaButtons |
+            EEikDialogFlagModeless;
+
+    buttons = R_AVKON_SOFTKEYS_BACK;
+    items =
+        {
+        DLG_LINE
+            {
+            id = ESchemeAppCtlLabel;
+            type = EEikCtLabel;
+            control = LABEL { txt = "";};
+            }
+        };
+    }
+

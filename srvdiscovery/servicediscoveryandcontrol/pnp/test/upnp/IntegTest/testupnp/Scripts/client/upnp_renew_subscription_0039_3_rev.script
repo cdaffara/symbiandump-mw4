@@ -1,0 +1,41 @@
+//
+// Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+// All rights reserved.
+// This component and the accompanying materials are made available
+// under the terms of "Eclipse Public License v1.0"
+// which accompanies this distribution, and is available
+// at the URL "http://www.eclipse.org/legal/epl-v10.html".
+//
+// Initial Contributors:
+// Nokia Corporation - initial contribution.
+//
+// Contributors:
+//
+// Description:
+//
+//! upnp_renew_subscription_0039_3_rev.script
+//! @SYMTestSuiteName	testupnp 
+//! @SYMScriptTestEnvironment
+
+PRINT Run all multiple_machines_client
+
+LOAD_SUITE multiple_machines_client
+LOAD_SUITE test_synchronize_client
+
+START_TESTCASE	upnp_renew_subscription_0039_3_rev
+//! @file					
+//! @SYMTestCaseID			UPNP - POS - 0039
+//! @SYMTestCaseDesc 		Renew a subscription 
+//! @SYMREQ					REQ8633, REQ8634, REQ8627, REQ8629,REQ8605, REQ8606, REQ8607,REQ8681, REQ8611, REQ10588, REQ10589,REQ4877, REQ8617,REQ8618, REQ8626
+//! @SYMTestStatus 			Implemented
+//! @SYMTestPriority 		1
+//! @SYMTestActions 		1.	Control point in an UPnP issues a request to renew subscription using the SUBSCRIBE method and SID.
+//! 						2.	If requested subscription renewal is approved then Service point acknowledges with SID else with an appropriate error message.
+//! @SYMTestExpectedResults	If the renewal of the subscription is approved then control points gets an SID.
+//! @SYMTestType 			CIT
+
+RUN_TEST_STEP 1000 test_synchronize_client TestUPnPManager  z:\upnp\testupnp\client\testdata\ini_files\test_synchronize_client.ini clientdata
+
+RUN_TEST_STEP 500  multiple_machines_client TestUPnPManager z:\upnp\testupnp\client\testdata\ini_files\subscribe_0039_rev.ini upnp_renew_subscription_0039_3_rev
+
+END_TESTCASE	upnp_renew_subscription_0039_3_rev

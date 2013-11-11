@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition xmlns:sf="http://www.symbian.org/system-definition" schema="3.0.0" id-namespace="http://www.nokia.com/schema/drd/system-definition">
+  <package id="sf:uitools" name="UI Tools" levels="compile encode tool">
+    <collection id="sf:toollibraries" name="Tool Libraries" level="tool">
+      <component id="arabica" filter="s60" name="Arabica" target="desktop">
+        <unit base="../../toollibraries/arabica"/>
+      </component>
+      <component id="xercesc" filter="s60" name="Xerces C" target="desktop">
+        <unit base="../../toollibraries/xercesc"/>
+      </component>
+    </collection>
+  </package>
+</SystemDefinition>

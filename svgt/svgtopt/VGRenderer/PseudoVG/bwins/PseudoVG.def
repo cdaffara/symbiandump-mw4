@@ -1,0 +1,3 @@
+EXPORTS
+	?CreateVGRendererImplL@@YAPAVMVGRendererImpl@@XZ @ 1 NONAME ; class MVGRendererImpl * CreateVGRendererImplL(void)
+

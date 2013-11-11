@@ -1,0 +1,67 @@
+/*
+* Copyright (c) 2000-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:   Project definition file for project dmadipsecvpn
+*
+*/
+
+
+
+#include <platform_paths.hrh>
+
+TARGET          dmadipsecvpn.dll
+TARGETTYPE      PLUGIN
+UID             0x10009D8D 0x1020699C
+
+CAPABILITY      CAP_ECOM_PLUGIN
+VENDORID        VID_DEFAULT
+
+SOURCEPATH      ../src
+SOURCE          dmadadapter.cpp
+SOURCE          dmadddf.cpp
+SOURCE          DmAdRtNodeData.cpp
+SOURCE          dmadrtnodedataapi.cpp
+SOURCE          DmAdStore.cpp
+SOURCE          dmadstorevpnapcmm.cpp
+SOURCE          dmadeventlog.cpp
+SOURCE          eventlogger.cpp
+
+START RESOURCE  ../data/1020699c.rss
+TARGET dmadipsecvpn.rsc
+END
+
+USERINCLUDE     ../inc
+USERINCLUDE     ../../dmadengine/inc
+USERINCLUDE     ../../eventviewer/inc
+USERINCLUDE     ../../../vpnapiimpl/inc
+USERINCLUDE     ../../eventmediatorapi/inc
+USERINCLUDE     ../../vpncommon/inc
+USERINCLUDE     ../../vpnmanager/inc
+
+MW_LAYER_SYSTEMINCLUDE
+SYSTEMINCLUDE   /epoc32/include/ecom
+
+LIBRARY         euser.lib 
+LIBRARY         ecom.lib 
+LIBRARY         charconv.lib
+LIBRARY         dmadengine.lib
+LIBRARY         eventmedapi.lib
+LIBRARY         vpnapi.lib
+LIBRARY         eventviewer.lib
+LIBRARY         efsrv.lib
+LIBRARY         bafl.lib
+LIBRARY         cmmanager.lib
+
+DEBUGLIBRARY    flogger.lib
+
+MACRO           DMAD_ENGINE_EXPORT

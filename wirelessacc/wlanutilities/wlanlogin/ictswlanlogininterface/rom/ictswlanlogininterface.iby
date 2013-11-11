@@ -1,0 +1,28 @@
+/*
+* Copyright (c) 2010 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:
+* ictswlanlogininterface.dll IBY file for ROM image.
+*
+*/
+
+#ifndef ICTSWLANLOGININTERFACE_IBY
+#define ICTSWLANLOGININTERFACE_IBY
+
+#include <bldvariant.hrh>
+
+#ifdef __PROTOCOL_WLAN
+file=ABI_DIR/BUILD_DIR/ictswlanlogininterface.dll SHARED_LIB_DIR/ictswlanlogininterface.dll
+#endif // __PROTOCOL_WLAN
+
+#endif //ICTSWLANLOGININTERFACE_IBY

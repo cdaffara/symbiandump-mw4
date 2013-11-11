@@ -1,0 +1,126 @@
+EXPORTS
+	_ZN21CWapConnectionManager10ConnectionEv @ 1 NONAME ABSENT
+	_ZN21CWapConnectionManager10DisconnectEv @ 2 NONAME ABSENT
+	_ZN21CWapConnectionManager12SocketServerEv @ 3 NONAME ABSENT
+	_ZN21CWapConnectionManager14SetRequestedAPEmi @ 4 NONAME ABSENT
+	_ZN21CWapConnectionManager15ConnectionNameLEv @ 5 NONAME ABSENT
+	_ZN21CWapConnectionManager15SetRequestedAPsE7TIdPair @ 6 NONAME ABSENT
+	_ZN21CWapConnectionManager16StartConnectionLEii @ 7 NONAME ABSENT
+	_ZN21CWapConnectionManager19SetApChangeObserverER17MApChangeObserver @ 8 NONAME ABSENT
+	_ZN21CWapConnectionManager20RequestedAPValidityLEv @ 9 NONAME ABSENT
+	_ZN21CWapConnectionManager21UnsetApChangeObserverEv @ 10 NONAME ABSENT
+	_ZN21CWapConnectionManager29IsThereActiveHSCSDConnectionLEv @ 11 NONAME ABSENT
+	_ZN21CWapConnectionManager4NewLEP14CCommsDatabaseii @ 12 NONAME ABSENT
+	_ZN21CWapConnectionManager4NewLEii @ 13 NONAME ABSENT
+	_ZN21CWapConnectionManager9ConnectedEv @ 14 NONAME ABSENT
+	_ZN21CWapConnectionManager9GoOffLineEv @ 15 NONAME ABSENT
+	_ZN21CWapConnectionManagerD0Ev @ 16 NONAME ABSENT
+	_ZN21CWapConnectionManagerD1Ev @ 17 NONAME ABSENT
+	_ZN21CWapConnectionManagerD2Ev @ 18 NONAME ABSENT
+	_ZN26CInternetConnectionManager10ChangeIapLER17TConManChangeConnRm @ 19 NONAME
+	_ZN26CInternetConnectionManager10ConnectionEv @ 20 NONAME
+	_ZN26CInternetConnectionManager10DisconnectEv @ 21 NONAME
+	_ZN26CInternetConnectionManager12SocketServerEv @ 22 NONAME
+	_ZN26CInternetConnectionManager14SetRequestedAPEmi @ 23 NONAME
+	_ZN26CInternetConnectionManager15ConnectionNameLEv @ 24 NONAME
+	_ZN26CInternetConnectionManager15SetRequestedAPsE7TIdPair @ 25 NONAME
+	_ZN26CInternetConnectionManager15StopConnectionLEv @ 26 NONAME
+	_ZN26CInternetConnectionManager16StartConnectionLEii @ 27 NONAME
+	_ZN26CInternetConnectionManager19SetApChangeObserverER17MApChangeObserver @ 28 NONAME
+	_ZN26CInternetConnectionManager20RequestedAPValidityLEv @ 29 NONAME
+	_ZN26CInternetConnectionManager21UnsetApChangeObserverEv @ 30 NONAME
+	_ZN26CInternetConnectionManager27ShowGeneralConnectionErrorLEv @ 31 NONAME
+	_ZN26CInternetConnectionManager29IsThereActiveHSCSDConnectionLEv @ 32 NONAME
+	_ZN26CInternetConnectionManager4NewLEP14CCommsDatabasei @ 33 NONAME
+	_ZN26CInternetConnectionManager4NewLEi @ 34 NONAME
+	_ZN26CInternetConnectionManager5NewLCEP14CCommsDatabasei @ 35 NONAME
+	_ZN26CInternetConnectionManager5NewLCEi @ 36 NONAME
+	_ZN26CInternetConnectionManager6AskIapERm @ 37 NONAME
+	_ZN26CInternetConnectionManager8ConnectLEm @ 38 NONAME
+	_ZN26CInternetConnectionManager8ConnectLEmm @ 39 NONAME
+	_ZN26CInternetConnectionManager9ConnectedEv @ 40 NONAME
+	_ZN26CInternetConnectionManager9CurrentAPEv @ 41 NONAME
+	_ZN27CConnectionStageNotifierWCB18StartNotificationLEP4TBufILi128EEPiiP29MConnectionMultiStageObserveri @ 42 NONAME
+	_ZN27CConnectionStageNotifierWCB18StartNotificationLEP4TBufILi128EEiP24MConnectionStageObserveri @ 43 NONAME
+	_ZN27CConnectionStageNotifierWCB18StartNotificationLEiP24MConnectionStageObserveri @ 44 NONAME
+	_ZN27CConnectionStageNotifierWCB4NewLEi @ 45 NONAME
+	_ZN27CConnectionStageNotifierWCB5NewLCEi @ 46 NONAME
+	_ZN27CConnectionStageNotifierWCBD0Ev @ 47 NONAME
+	_ZN27CConnectionStageNotifierWCBD1Ev @ 48 NONAME
+	_ZN27CConnectionStageNotifierWCBD2Ev @ 49 NONAME
+	_ZN7TIdPairC1Emm @ 50 NONAME
+	_ZN7TIdPairC1Ev @ 51 NONAME
+	_ZN7TIdPairC2Emm @ 52 NONAME
+	_ZN7TIdPairC2Ev @ 53 NONAME
+	_ZNK21CWapConnectionManager11AccessPointEv @ 54 NONAME ABSENT
+	_ZNK21CWapConnectionManager11CurrentAPIdEv @ 55 NONAME ABSENT
+	_ZNK21CWapConnectionManager15CurrentApExistsEv @ 56 NONAME ABSENT
+	_ZNK21CWapConnectionManager15CurrentApNameLCEv @ 57 NONAME ABSENT
+	_ZNK21CWapConnectionManager16CurrentGatewayLCEv @ 58 NONAME ABSENT
+	_ZNK21CWapConnectionManager18CurrentAccessPointEv @ 59 NONAME ABSENT
+	_ZNK21CWapConnectionManager18CurrentBearerTypeLEv @ 60 NONAME ABSENT
+	_ZNK21CWapConnectionManager18CurrentStartPageLCEv @ 61 NONAME ABSENT
+	_ZNK21CWapConnectionManager20CurrentSessionSecureEv @ 62 NONAME ABSENT
+	_ZNK21CWapConnectionManager22CurrentConnectionSpeedEv @ 63 NONAME ABSENT
+	_ZNK21CWapConnectionManager24NewConnectionEstablishedEv @ 64 NONAME ABSENT
+	_ZNK21CWapConnectionManager32CurrentSessionConnectionOrientedEv @ 65 NONAME ABSENT
+	_ZNK26CInternetConnectionManager11CurrentAPIdEv @ 66 NONAME
+	_ZNK26CInternetConnectionManager15CurrentApNameLCEv @ 67 NONAME
+	_ZNK26CInternetConnectionManager16CurrentGatewayLCEv @ 68 NONAME
+	_ZNK26CInternetConnectionManager18CurrentAccessPointEv @ 69 NONAME
+	_ZNK26CInternetConnectionManager18CurrentBearerTypeLEv @ 70 NONAME
+	_ZNK26CInternetConnectionManager18CurrentStartPageLCEv @ 71 NONAME
+	_ZNK26CInternetConnectionManager20CurrentSessionSecureEv @ 72 NONAME
+	_ZNK26CInternetConnectionManager22CurrentConnectionSpeedEv @ 73 NONAME
+	_ZNK26CInternetConnectionManager24NewConnectionEstablishedEv @ 74 NONAME
+	_ZNK26CInternetConnectionManager32CurrentSessionConnectionOrientedEv @ 75 NONAME
+	_ZThn4_N21CWapConnectionManager10ConnectionEv @ 76 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager10DisconnectEv @ 77 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager12SocketServerEv @ 78 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager14SetRequestedAPEmi @ 79 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager15ConnectionNameLEv @ 80 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager15SetRequestedAPsE7TIdPair @ 81 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager16StartConnectionLEii @ 82 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager19SetApChangeObserverER17MApChangeObserver @ 83 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager20RequestedAPValidityLEv @ 84 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager21UnsetApChangeObserverEv @ 85 NONAME ABSENT ; #<thunk># 
+	_ZThn4_N21CWapConnectionManager9ConnectedEv @ 86 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager11CurrentAPIdEv @ 87 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager15CurrentApNameLCEv @ 88 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager16CurrentGatewayLCEv @ 89 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager18CurrentAccessPointEv @ 90 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager18CurrentBearerTypeLEv @ 91 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager18CurrentStartPageLCEv @ 92 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager20CurrentSessionSecureEv @ 93 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager22CurrentConnectionSpeedEv @ 94 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager24NewConnectionEstablishedEv @ 95 NONAME ABSENT ; #<thunk># 
+	_ZThn4_NK21CWapConnectionManager32CurrentSessionConnectionOrientedEv @ 96 NONAME ABSENT ; #<thunk># 
+	_ZThn8_N26CInternetConnectionManager10ChangeIapLER17TConManChangeConnRm @ 97 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager10ConnectionEv @ 98 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager10DisconnectEv @ 99 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager12SocketServerEv @ 100 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager14SetRequestedAPEmi @ 101 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager15ConnectionNameLEv @ 102 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager15SetRequestedAPsE7TIdPair @ 103 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager16StartConnectionLEii @ 104 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager19SetApChangeObserverER17MApChangeObserver @ 105 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager20RequestedAPValidityLEv @ 106 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager21UnsetApChangeObserverEv @ 107 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager6AskIapERm @ 108 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager9ConnectedEv @ 109 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager11CurrentAPIdEv @ 110 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager15CurrentApNameLCEv @ 111 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager16CurrentGatewayLCEv @ 112 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager18CurrentAccessPointEv @ 113 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager18CurrentBearerTypeLEv @ 114 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager18CurrentStartPageLCEv @ 115 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager20CurrentSessionSecureEv @ 116 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager22CurrentConnectionSpeedEv @ 117 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager24NewConnectionEstablishedEv @ 118 NONAME ; #<thunk>#
+	_ZThn8_NK26CInternetConnectionManager32CurrentSessionConnectionOrientedEv @ 119 NONAME ; #<thunk>#
+	_ZN26CInternetConnectionManager24ShowConnectionChangedDlgEv @ 120 NONAME
+	_ZThn8_N26CInternetConnectionManager24ShowConnectionChangedDlgEv @ 121 NONAME ; #<thunk>#
+	_ZN26CInternetConnectionManager16SetRequestedSnapEm @ 122 NONAME
+	_ZN26CInternetConnectionManager17SetConnectionTypeEN9CMManager23TCmSettingSelectionModeE @ 123 NONAME
+	_ZThn8_N26CInternetConnectionManager16SetRequestedSnapEm @ 124 NONAME ; #<thunk>#
+	_ZThn8_N26CInternetConnectionManager17SetConnectionTypeEN9CMManager23TCmSettingSelectionModeE @ 125 NONAME ; #<thunk>#

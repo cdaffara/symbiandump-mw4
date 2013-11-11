@@ -1,0 +1,30 @@
+/*
+* Copyright (c) 2004 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of the License "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:  This file contains all the bit flag declarations to variate 
+*		 locally BrowserUtilities
+*
+*/
+
+
+#ifndef BROWSERUTILITIESVARIANT_HRH
+#define BROWSERUTILITIESVARIANT_HRH
+
+// BrowserUtilities related values are in 101F87E2.ini
+
+// If first bit is 1, mailto scheme launches mms editor.
+//
+#define KBrowserUtilitiesMailtoSchemeToMmsEditor   0x01
+
+#endif // BROWSERUTILITIESVARIANT_HRH
+

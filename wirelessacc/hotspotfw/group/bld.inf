@@ -1,0 +1,56 @@
+/*
+* Copyright (c) 2002-2009 Nokia Corporation and/or its subsidiary(-ies).
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description:    Build information file for project HotSpot Server
+*
+*/
+
+
+#include <platform_paths.hrh>
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_EXPORTS
+../rom/hotspot.iby                      CORE_MW_LAYER_IBY_EXPORT_PATH(hotspot.iby)
+../rom/hotspotfwstub.sis               /epoc32/data/z/system/install/hotspotfwstub.sis
+../rom/ictsstub.sis                    /epoc32/data/z/system/install/ictsstub.sis
+
+../internetconnectivitytestservice/conf/icts.confml		MW_LAYER_CONFML(icts.confml)
+../internetconnectivitytestservice/conf/icts_10282EC7.crml	MW_LAYER_CRML(icts_10282ec7.crml)
+../internetconnectivitytestservice/group/backup_registration.xml	/epoc32/data/z/private/10282ec5/backup_registration.xml
+                                        
+// internal interface
+../hsserver/inc/hssscaninfo.h              |../inc/hssscaninfo.h
+../hsserver/inc/hssscaninfo.inl            |../inc/hssscaninfo.inl
+../hsserver/inc/hssscanlist.h              |../inc/hssscanlist.h
+../hsserver/inc/hssscanlist.inl            |../inc/hssscanlist.inl
+../hsserver/inc/hssscanlistiterator.h      |../inc/hssscanlistiterator.h
+../hsserver/inc/hssscanlistiterator.inl    |../inc/hssscanlistiterator.inl
+../hsserver/inc/hssscanoffsets.h           |../inc/hssscanoffsets.h
+../hsserver/inc/hssiapsettingshandler.h    |../inc/hssiapsettingshandler.h
+../hsserver/inc/hotspotclientserver.h      |../inc/hotspotclientserver.h
+../hsclient/inc/hssinterface.h             |../inc/hssinterface.h
+../hsclient/inc/hssiaphandler.h            |../inc/hssiaphandler.h
+../hsclient/inc/hssscanhandler.h           |../inc/hssscanhandler.h
+../hsclient/inc/hsssrvnotifications.h      |../inc/hsssrvnotifications.h 
+
+PRJ_MMPFILES
+../internetconnectivitytestservice/group/ictsclientinterface.mmp
+../hsserver/group/hotspotserver.mmp
+../hsclient/group/hotspotclient.mmp
+../hsclient/group/NetCfgExtnHotSpot.mmp
+../hsclient/group/hssmgmtimpl.mmp
+../hspluginforagent/group/wlanagthotspotimpl.mmp
+../hsserver/group/hssscanlist.mmp
+PRJ_EXTENSIONS

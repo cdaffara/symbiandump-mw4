@@ -1,0 +1,101 @@
+/*
+* Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). 
+* All rights reserved.
+* This component and the accompanying materials are made available
+* under the terms of "Eclipse Public License v1.0"
+* which accompanies this distribution, and is available
+* at the URL "http://www.eclipse.org/legal/epl-v10.html".
+*
+* Initial Contributors:
+* Nokia Corporation - initial contribution.
+*
+* Contributors:
+*
+* Description: 
+*
+*/
+
+#include <uiacceltk/huitk.hrh>
+
+
+STRUCT BITMAP_LIST
+    {
+    STRUCT bitmaps[];
+    }
+    
+    
+STRUCT BITMAP
+    {
+    LONG id;
+    LTEXT filename;
+    }    
+
+
+STRUCT CONTROL_GROUP
+    {
+    // Add group params here.
+    
+    // Member controls of this group.
+    STRUCT members[];
+    }
+
+
+STRUCT GROUP_MEMBER
+    {
+    WORD type;
+    LONG id = 0;
+    LONG itemflags = 0;
+    LONG role = 0;
+    LONG host = 0;
+    STRUCT control;    
+    }
+    
+    
+STRUCT CT_PANE
+    {
+    WORD layouttype = EHuiLoFlow;
+    STRUCT layout;
+    }
+    
+    
+STRUCT CT_BUTTON
+    {
+    LTEXT text = "";
+    LONG image = 0;
+    }
+    
+    
+STRUCT CT_LIST
+    {
+    }    
+    
+    
+STRUCT CT_GALLERY
+    {
+    }    
+    
+    
+STRUCT LAYOUT_FLOW
+    {
+    WORD outerborder = 0;
+    WORD xborder = 0;
+    WORD yborder = 0;
+    }
+    
+    
+STRUCT LAYOUT_GRID
+    {
+    WORD columns = 1;
+    WORD rows = 1;
+    WORD outerborder = 0;
+    WORD xborder = 0;
+    WORD yborder = 0;
+    }    
+
+
+STRUCT LAYOUT_APP
+    {
+    WORD outerborder = 0;
+    WORD leftwidth = 30;
+    WORD rightwidth = 30;
+    }

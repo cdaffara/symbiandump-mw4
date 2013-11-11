@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<api id="d46a55c5e745b7f8b515e2e0af30baf0" dataversion="1.0">
+  <name>Browser Control API</name>
+  <description>Provides a CCoeControl-style interface to the browser engine. Applications can use this interface to load and render Web content in an embedded control.</description>
+  <type>c++</type>
+  <subsystem>WebEngine</subsystem>
+  <libs>
+    <lib name="BrowserEngine.lib" />
+  </libs>
+  <release category="sdk" sinceversion="2.0"/>
+  <attributes>
+     <htmldocprovided>no</htmldocprovided>
+     <adaptation>no</adaptation>
+  </attributes>
+</api>
